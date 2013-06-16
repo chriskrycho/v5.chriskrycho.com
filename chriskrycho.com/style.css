@@ -1,0 +1,1503 @@
+/*
+Theme Name: chriskrycho.com
+Theme URI: http://www.chriskrycho.com/
+Author: Chris Krycho
+Author URI: http://www.chriskrycho.com/
+Description: The 2011 launch of a new and awesome chriskrycho.com is superb, beautiful, and unrivalled in its amazingness. For reals, kiddos. Note that this theme has children!
+Version: 1.0
+License: Haven't decided yet. Probably worth making public, because that's awesome.
+License URI: Without a license, can't decide this.
+Tags: awesome, blue, white, gray, scarves
+*/
+
+/**
+ * Modular scale:
+ *    http://modularscale.com/scale/?px1=17&px2=1920&ra1=1.333&ra2=0
+ *
+ * Base text size: 17px
+ * Important number: 1920px
+ * Scale: 3:4 - Musical Fourth
+*/
+
+/* Color scheme:
+ *    http://www.colourlovers.com/palette/1875001/The_First_Scarf
+ *
+ * Colors:
+ *    Dark gray:  #20282A (more than the ocean)
+ *    Light gray: #6C7487 (terminal blue gray)
+ *    White:      #FFFFFF (white)
+ *    Light blue: #5592C9 (Scarf Stripe)
+ *    Dark blue:  #01295C (Dark Wash Jeans)
+*/
+
+
+/* ----- Global reset ----- */
+header, footer, nav, article, section {
+   display: block;
+}
+
+
+/* ----- Fix WP automatic crap ----- */
+#wpadminbar { display: none; }
+html.no-wp-admin { margin-top: 0.75em !important; }
+
+
+/* ----- Default global styles ----- */
+html {
+   font-size: 112.5%;     /* 17px: Georgia at 17px has basically the same height as Minion Pro at 18px */
+}
+
+html.wf-loading {
+   visibility: hidden;
+}
+
+html.wf-active {
+   font-size: 118.75%;     /* -> 18px, using percentage to allow IE user stylesheet changes */
+   visibility: visible;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   line-height: 1.333;
+   color: #20282A;      /* more than the ocean */
+   background: #01295C url('images/white-noise.png') top left repeat;    /* Dark Wash Jeans */
+   text-rendering: optimizeLegibility;
+   font-feature-settings: "liga" 1, "pnum" 1, "onum" 1, "kern" 1, "dlig" 0;
+      -o-font-feature-settings: "liga" 1, "pnum" 1, "onum" 1, "kern" 1, "dlig" 0;
+      -ms-font-feature-settings: "liga" 1, "pnum" 1, "onum" 1, "kern" 1, "dlig" 0;
+      -moz-font-feature-settings: "liga=1", "pnum=1", "onum=1", "kern=1", "dlig" 0;
+      -moz-font-feature-settings: "liga" 1, "pnum" 1, "onum" 1, "kern" 1, "dlig" 0;
+      /*-webkit-font-feature-settings: "liga" 1, "pnum" 1, "onum" 1, "kern" 1, "dlig" 0;*/ /* currently breaks line wrapping */
+   hyphens: auto;
+      -o-hyphens: auto;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+}
+
+em {
+   font-style: italic;
+}
+
+   em em {
+      text-decoration: underline;
+   }
+
+strong {
+   font-weight: bold;
+}
+
+   strong strong {
+      text-decoration: underline;
+   }
+
+h1, h2, h3, h4 {
+   text-align: center;
+   font-feature-settings: "kern", "liga", "dlig", "calt";
+      -o-font-feature-settings: "kern", "liga", "dlig", "calt";
+      -ms-font-feature-settings: "kern", "liga", "dlig", "calt";
+      -moz-font-feature-settings: "kern", "liga", "dlig", "calt";
+      -webkit-font-feature-settings: "kern", "liga", "dlig", "calt";
+}
+
+h1, h3 {
+   font-family: cronos-pro, 'Century Gothic', sans-serif;
+   color: #01295C;      /* Dark Wash Jeans */
+}
+
+h2 {
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   font-weight: normal;
+}
+
+h1 {
+   font-size: 1.777em;
+   font-weight: 300;
+}
+
+h2 {
+   font-size: 1.515em;
+}
+
+h3 {
+   font-size: 1.333em;
+   font-weight: 400;
+}
+
+h4 {
+   font-size: 1em;
+   font-weight: 600;
+}
+
+a {
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+   outline: none;
+   transition: color 0.5s, border 0.5s;
+   -o-transition: color 0.5s, border 0.5s;
+   -ms-transition: color 0.5s, border 0.5s;
+   -moz-transition: color 0.5s, border 0.5s;
+   -webkit-transition: color 0.5s, border 0.5s;
+}
+
+a:link,
+a:visited {
+   color: #5592C9;      /* scarf stripe */
+}
+
+a:hover,
+a:active {
+   color: #01295C;      /* dark wash jeans */
+   border-bottom: 1px solid;
+   outline: none;
+}
+
+a.img-link {
+   border-bottom: 0;
+}
+
+ul {
+   list-style: circle;
+}
+
+img {
+   max-width: 100%;
+}
+
+hr {
+   margin: 1.333em 7.479em;
+}
+
+blockquote {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 2.5%;
+   padding-right: 2.5%;
+   padding-top: 0.75em;
+   padding-bottom: 0.75em;
+   width: 80.3%;     /* + 2.5% padding each side = 85.3% */
+   font-family: cronos-pro, 'Century Gothic', sans-serif;
+   color: #5592C9;      /* scarf stripe */
+   font-weight: 300;
+   font-size: 1.137em;
+   line-height: 1em;
+}
+
+.left-quote,
+.right-quote {
+   font-weight: 300;
+   color: #5592C9;      /* scarf stripe */
+   padding: 0;
+   width: 48%;
+   clear: none;
+   border-top: 0;
+   border-bottom: 0;
+}
+
+   .left-quote p,
+   .right-quote p {
+      margin: 0;
+   }
+
+.left-quote {
+   float: left;
+   text-align: right;
+   padding-right: 5%;
+}
+
+.right-quote {
+   float: right;
+   text-align: left;
+   padding-left: 5%;
+}
+
+br.clear {
+   visibility: hidden;
+   clear: both;
+}
+
+.smcp {
+   font-variant: small-caps;
+}
+
+@supports(font-feature-settings: 'smcp') or
+         (-o-font-feature-settings: 'smcp') or
+         (-ie-font-feature-settings: 'smcp') or
+         (-moz-font-feature-settings: 'smcp') or
+         (-webkit-font-feature-settings: 'smcp') {
+
+   .smcp {
+      font-variant: normal;
+      font-feature-settings: 'smcp';
+         -o-font-feature-settings: 'smcp';
+         -ie-font-feature-settings: 'smcp';
+         -moz-font-feature-settings: 'smcp';
+         -webkit-font-feature-settings: 'smcp';
+   }
+
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+figure {
+   box-shadow: 0 0 1em black;
+   padding: 0.48em;
+   font-size: 0.853em;
+   color: #033649;
+   background: white url('images/noise-lighter.png') repeat top left;;
+   display: inline-block;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+   figure.vertical {
+      text-align: center;
+   }
+
+input[type='text']:focus,
+input[type='text']:active,
+textarea:focus,
+textarea:active {
+   outline: none;
+   cursor: text;
+}
+
+.customform {
+   background: #FFFFFF;
+   color: #20282A;      /* (more than the ocean)*/
+   width: 98%;
+   margin: 0.27rem auto;
+   border: 1px solid #5592C9;    /* (Scarf Stripe); */
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   font-size: 1rem;
+   padding: 0;
+   overflow: hidden;
+   line-height: 1;
+   vertical-align: top;
+}
+
+   .customform input {
+      border: 0;
+      background: #FFFFFF;
+      height: 1.333rem;
+      padding: 0.134rem 0;
+      font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+      font-size: 0.853rem;
+      vertical-align: top;
+   }
+
+      .customform input[type='text'] {
+         width: 85.3%;
+         padding-left: 1%;
+         float: left;
+         outline:none;
+         cursor:text;
+      }
+
+      .customform input[type='submit'],
+      .customform input[type='button'] {
+         width: 13.4%;
+         max-width: 1.333rem;
+         margin-top: 0.064rem;
+         text-align: center !important;
+         float: right;
+         font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+         font-size: 1rem;
+      }
+
+   .generator div {
+      width: 100%;
+      height: 1.167em;
+      padding: 0.64em 0;
+      clear: both;
+   }
+
+   .generator input,
+   .generator label {
+      display: block;
+      float: left;
+      clear: none;
+   }
+   
+   .generator label {
+      width: 30%;
+   }
+   
+   .generator input {
+      width: 60%;
+   }
+   
+      .generator input[type='submit'] {
+         margin-left: 30%;
+      }
+  
+
+/* ----- @Miscellaneous styles ----- */
+.italic {     /* For non semantic italicization */
+   font-style: italic;
+}
+
+.center {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.clear {
+   clear: both;
+}
+
+.right {
+   float: right;
+   clear: right;
+   display: block;
+}
+
+.left {
+   float: left;
+   clear: left;
+   display: block;
+}
+
+p.no-top-margin, article p.no-top-margin, .content p.no-top-margin {
+   margin-top: 0;
+}
+
+.screen-reader-only {
+   visibility: hidden;
+   left: -8000;
+}
+
+.spacer {
+   height: 1.777rem;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+}
+
+.hide {
+   display: none !important;
+}
+
+.editorial {
+   font-style: italic;
+}
+
+   cite.bibleref {
+      font-style: normal;
+   }
+
+      
+.column h3:first-child {
+   margin-top: 0;
+}
+
+.overlay {
+    width: 13.289em;
+    background: rgba(01,41,134,0.853);
+    position: fixed;
+    top: 13.289em;
+    left: 50%;
+    margin-left: -6.64em;   /* half of width */
+    box-shadow: 0 0 1.333em #20282A;
+       -o-box-shadow: 0 0 1.333em #20282A;
+       -mx-box-shadow: 0 0 1.333em #20282A;
+       -moz-box-shadow: 0 0 1.333em #20282A;
+       -webkit-box-shadow: 0 0 1.333em #20282A;
+}
+
+   .overlay p {
+      color: white;
+      font-size: 0.853em;
+      margin: 0 auto;
+      padding: 0.75em 0;
+      text-align: center;
+   }
+
+   .overlay a.overlay-closer {
+      color: #FFFFFF;
+      font-family: cronos-pro, 'Century Gothic', sans-serif;
+      font-size: 0.853em;
+      font-weight: bold;
+      position: absolute;
+      top: 0.36em;
+      right: 0.64em;
+      line-height: 1;
+      text-shadow: #FFFFFF 0 0 0.48em;
+   }
+   
+      .overlay a.overlay-closer:link,
+      .overlay a.overlay-closer:hover,
+      .overlay a.overlay-closer:active,
+      .overlay a.overlay-closer:visited {
+         color: #FFFFFF;
+         border: 0;
+      }
+
+   .overlay a.bookmarklet {
+      height: 2.019em;
+      display: block;
+      margin: 2.019em auto 0;
+      position: relative;
+      float: none;
+      text-align: center;
+      color: #20282A;
+      border: 1px solid #5592C9;
+      width: 5.61em;
+      background: #FFFFFF;
+      line-height: 2.019em;
+   }
+
+/* ----- Unique styling for various content types ----- */
+.poem {
+    white-space: pre-wrap;
+}
+
+
+/* Quotation posts */
+article + .quote,
+article + .quote-description {
+   margin-top: 0.563em;
+   margin-bottom: 0.563em;
+}
+
+.quote-description {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.quote {
+   font-family: cronos-pro, 'Century Gothic', sans-serif;
+   font-weight: 300;
+   font-size: 1.333em;
+   line-height: 1em;
+   color: #5592C9;      /* scarf stripe */
+   clear: none;
+   margin-top: 0;       /* for the case that this is being used strangely */
+   margin-bottom: 0;
+   padding: 0;
+   width: 100%;
+   border-top: 0;
+   border-bottom: 0;
+   background: transparent url('../images/quote.png') no-repeat top left;
+}
+
+   .quote p + p {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      text-indent: 1.167em;
+   }
+   
+   .quote p:first-child {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+   }
+
+.attribution {
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   font-size: 1.137em;
+   text-align: center;
+   color: #01295C;     /* Dark wash jeans */
+}
+
+/* Image */
+.image {}
+
+   .image figure {
+      display: block;
+      padding; 1em 0;
+      margin: 0;
+   }
+   
+      .image figure img {
+         max-width: 100%;
+         max-height: 100%;
+      }
+      
+            
+         .image .content-meta h2 {
+            margin: 0;
+            padding: 0;
+         }
+         
+         
+            .wf-active .image .content-meta h2 a,
+            .wf-active .image .content-meta h2 a:hover,
+            .wf-active .image .content-meta h2 a:active,
+            .wf-active .image .content-meta h2 a:visited {
+               border: 0;
+            }
+
+/* Status, Aside, Link */
+.status, .aside, .link {}
+
+   .status .content > p:first-child,
+   .aside .content > p:first-child,
+   .link .content > p:first-child {
+      /*margin-top: 0.75em;*/
+   }
+   
+   .wf-active .status .content-meta,
+   .wf-active .aside .content-meta,
+   .wf-active .link .content-meta {
+      margin-top: 1em;
+   }
+   
+pre {
+   font-size: 0.853rem !important;
+}
+
+sup {
+   line-height: 0;
+   vertical-align: super;
+   font-feature-settings: 'onum' 0;
+      -o-font-feature-settings: 'onum' 0;
+      -ms-font-feature-settings: 'onum' 0;
+      -moz-font-feature-settings: 'onum' 0;
+      -webkit-font-feature-settings: 'onum' 0;
+}
+
+.footnotes, .footnote {
+   font-size: 0.853em;
+}
+
+   .footnotes ol {
+      padding: 0;
+      margin: 0 1.515em;
+   }
+
+.fancy-footnote {
+    border: 1px solid #20282A;
+    box-shadow: 0 0 1.333em #20282A;
+       -o-box-shadow: 0 0 1.333em #20282A;
+       -mx-box-shadow: 0 0 1.333em #20282A;
+       -moz-box-shadow: 0 0 1.333em #20282A;
+       -webkit-box-shadow: 0 0 1.333em #20282A;
+}
+
+
+/* ----- Layout and further styles ----- */
+#decorative-wrapper {
+   margin: 0.317em 0 0;    /* -> 4px */
+   padding: 0.064em 0 0;     /* -> 1px, smallest possible padding to prevent extra margin size */
+   background: #FFFFFF url('images/noise-lighter.png') repeat top left;    /* white */
+   overflow: hidden;
+   box-shadow: 0 0 2.019em black;
+}
+
+/* ----- @Navigation ----- */
+#site-nav {
+   padding-top: 0.48em;
+}
+
+   #site-nav ul {
+      text-align: center;
+      font-size: 1rem;
+   }
+
+.level-1 {
+   font-family: cronos-pro, 'Century Gothic', sans-serif;
+   font-weight: 300;
+   font-feature-settings: "smcp" 1;
+      -o-font-feature-settings: "smcp" 1;
+      -ms-font-feature-settings: "smcp" 1;
+      -moz-font-feature-settings: "smcp" 1;
+      -webkit-font-feature-settings: "smcp" 1;
+}
+
+   li.level-1 {
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+      padding: 0 0.203em;
+   }
+
+   .level-1 a {
+      display: inline-block;
+   }
+
+.level-2 {
+   display: none;
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   font-size: 0.853em;
+   font-feature-settings: "smcp" 0;
+      -o-font-feature-settings: "smcp" 0;
+      -ms-font-feature-settings: "smcp" 0;
+      -moz-font-feature-settings: "smcp" 0;
+      -webkit-font-feature-settings: "smcp" 0;
+}
+
+   .level-2 a {
+      color: #6C7487;      /* terminal blue gray */
+   }
+
+/* ----- @Header ----- */
+#site-header {
+   margin: 0.48rem auto 0;
+   padding: 0 2.5% 1.515rem;
+   width: 90%;
+   max-width: 31.475rem;
+   text-align: center;
+}
+
+   #site-header h1 {
+      font-size: 2.019em;
+      margin: 0 0 0.1em;
+      padding-bottom: 0;
+      color: #6C7487;      /* terminal blue gray */
+   }
+
+      #site-header h1 a,
+      #site-header h1 a:visited {
+         color: #6C7487;      /* terminal blue gray */
+      }
+
+      #site-header h1 a:hover,
+      #site-header h1 a:active {
+         color: #01295C;      /* dark wash jeans */
+         border-bottom: 1px solid transparent;
+      }
+
+
+   #site-header h2 {
+      font-size: 1em;
+      line-height: 1.137;
+      padding: 0;
+      margin: 0;
+   }
+
+      #site-header h2 a,
+      #site-header h2 a:visited {
+         color: #20282A;      /* more than the ocean */
+      }
+
+      #site-header h2 a:hover,
+      #site-header h2 a:active {
+         border-bottom: 1px solid #6C7487;      /* terminal blue gray */
+      }
+
+.break {
+   display: block;
+}
+
+/* ----- @Content-header ----- */
+#content-header {
+   width: 95%;
+   margin: 0 auto;
+   padding: 0;
+   clear: both;
+   text-align: center;
+   font-size: 1.777em;
+   font-style: italic;
+}
+
+/* ----- @Article ----- */
+article {
+   margin: 0 auto;
+   padding: 1em 2.5% 0;
+   width: 95%;
+   max-width: 31.475rem;
+   clear: both;
+   overflow: hidden;
+}
+
+.content {
+   font-feature-settings: 'onum' 1, 'pnum' 1;
+   -o-font-feature-settings: 'onum' 1, 'pnum' 1;
+   -ie-font-feature-settings: 'onum' 1, 'pnum' 1;
+   -moz-font-feature-settings: 'onum' 1, 'pnum' 1;
+   -webkit-font-feature-settings: 'onum' 1, 'pnum' 1;
+}
+
+.content,
+article footer {
+   max-width: 28.944em;
+   margin: 0 auto;
+}
+
+article footer {
+   clear: both;
+   margin-top: 1em;
+}
+
+article h1 {
+   margin-top: 0.563em;
+   margin-bottom: 0.563em;
+}
+
+   article h1 a:hover,
+   article h1 a:active {
+      border-bottom: 1px solid transparent;
+   }
+
+.content {
+   padding-top: 0.64em;
+}
+
+   .content h3,
+   .content h4 {
+      margin-bottom: 0.1em;
+   }
+
+   .content h3 {
+      font-feature-settings: "smcp" 1;
+         -o-font-feature-settings: "smcp" 1;
+         -ms-font-feature-settings: "smcp" 1;
+         -moz-font-feature-settings: "smcp" 1;
+         -webkit-font-feature-settings: "smcp" 1;
+   }
+
+   .content p {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: justify;
+   }
+   
+      .content p + p {
+         text-indent: 2.019em;
+      }
+      
+      .content code {
+         color: #01295C;
+      }
+   
+      .content blockquote,
+      .comment blockquote {
+         margin-top: 0.75em;
+         margin-bottom: 0.75em;
+         padding-top: 0.75em;
+         padding-bottom: 0.75em;
+         text-align: left;
+      }
+
+   .content h3 + p,
+   .content h4 + p,
+   .content h3 + h4 {
+      margin-top: 0.1em;
+   }
+
+   .content li {
+      margin-bottom: 1em;
+   }
+
+      .content .tight li{
+         margin-bottom: 0;
+      }
+
+   .content pre {
+      max-width: 100%;
+      overflow: scroll;
+   }
+
+   .content-meta {
+      font-size: 0.853em;
+      text-align: center;
+      color: #6C7487;      /* terminal blue gray */
+      font-feature-settings: "smcp" 1, "kern" 1;
+         -o-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
+         -ms-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
+         -moz-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
+         -webkit-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
+   }
+
+      .content-meta a {
+         color: #6C7487;
+         font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
+            -o-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
+            -ms-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
+            -moz-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
+            -webkit-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
+      }
+      
+         article:hover .content-meta a {
+            color: #5592C9;      /* scarf stripe */
+         }
+
+         .content-meta a:hover,
+         .content-meta a:active {
+            color: #5592C9;      /* scarf stripe */
+         }
+
+      .content-meta p {
+         margin: 0;
+      }
+
+      .content-meta ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         display: inline;
+      }
+
+      .content-meta li {
+         margin: 0;
+         padding: 0;
+         display: inline;
+      }
+      
+   .toc {
+      font-size: 0.853em;
+      color: #6C7487;
+   }
+   
+      .toc h4 {
+         margin-bottom: 0;
+         margin-top: 1em;
+      }
+   
+      .toc ul,
+      .toc ol {
+         margin-top: 0;
+         padding-top: 0;
+      }
+
+/* ----- @Comments ----- */
+article footer h3 {
+   margin-top: 0;
+   margin-bottom: 0.36em;
+   clear: both;
+}
+
+.comments-ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.comment-li {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.comment {
+   width: 90%;
+   padding: 0 0 1em 10%;
+   margin: 0 0 1em;
+   font-size: 1em;
+   line-height: 1em;
+}
+
+   .comment .avatar {
+      float: left;
+      margin-left: -10%;
+      padding-top: 0.27em;
+      max-width: 8%;
+      height: auto;
+   }
+
+   .comment p {
+      margin: 0;
+   }
+   
+      .comment p + p {
+         text-indent: 1.777em;
+      }
+   
+.comment-date {
+   float: right;
+}
+
+.comment-meta {
+   margin-bottom: 0.32em;
+}
+
+.comment-reply-link {
+   float: right;
+   margin-top: 0.32em;
+}
+
+#cancel-comment-reply-link {
+   float: right;
+   margin-top: -1.777em;
+}
+
+#respond {
+   width: 100%;
+}
+
+   #respond h3 {
+      margin-bottom: 0;
+   }
+
+   #respond .logged-in-as,
+   #respond .require-contact-info,
+   #respond .email-anonymity {
+      text-align: center;
+      margin-top: 0;
+   }
+
+   #respond .require-contact-info {
+      margin-bottom: 0;
+   }
+
+   #respond label,
+   #respond input[type='text'],
+   #respond textarea {
+      width: 98%;
+      font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+      font-size: 1em;
+   }
+
+   #respond input[type='text'],
+   #respond textarea {
+      padding: 1%;
+      border: 1px solid #6C7487;    /* (terminal blue gray) */
+      box-shadow: inset 0.1em 0.1em 0.203em #6C7487;     /* (terminal blue gray) */
+         -o-box-shadow: inset 0.1em 0.1em 0.203em #6C7487;     /* (terminal blue gray) */
+         -ms-box-shadow: inset 0.1em 0.1em 0.203em #6C7487;     /* (terminal blue gray) */
+         -moz-box-shadow: inset 0.1em 0.1em 0.203em #6C7487;     /* (terminal blue gray) */
+         -webkit-box-shadow: inset 0.1em 0.1em 0.203em #6C7487;     /* (terminal blue gray) */
+   }
+
+   #respond input[type='submit'] {
+      width: 33%;
+      margin-bottom: 0.36em;
+      margin-left: 0.36em;
+      float: right;
+      clear: both;
+      display: block;
+      font-family: cronos-pro, 'Century Gothic', san-serif;
+      font-size: 1em;
+      font-weight: 300;
+      background: #FFFFFF;
+      border: 1px solid #6C7487;    /* (terminal blue gray) */
+      box-shadow: 0.1em 0.1em 0.203em #6C7487;     /* (terminal blue gray) */
+   }
+
+   #respond input[type='submit']:active {
+      box-shadow: inset 0.1em 0.1em 0.203em #6C7487;
+   }
+
+li #respond {
+   width: 95%;
+   padding-left: 5%;
+}
+
+   li #respond .allowed-text {
+      width: 95%;
+      padding-left: 5%;
+   }
+
+.pingback {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   font-size: 0.853rem;
+}
+
+article footer code {
+   font-size: 0.853em;
+}
+
+
+/* ----- @Page navigation ----- */
+#page-nav {
+   margin: 0 auto 1.777em;
+   padding: 0 2.5% 0;
+   width: 95%;
+   max-width: 35.771rem;
+   clear: both;
+   font-family: cronos-pro, 'Century Gothic', sans-serif;
+   font-weight: 300;
+   font-size: 1.137em;
+}
+
+#page-nav ul {
+   text-align: center;
+   width: 100%;
+}
+
+#page-nav li {
+   width: 32%;
+   padding: 0;
+   margin: 0;
+   display: inline-block;
+   vertical-align: top;
+}
+
+#page-nav .newer {
+   text-align: left;
+}
+
+#page-nav .home {
+   text-align: center;
+}
+
+#page-nav .older {
+   text-align: right;
+}
+
+/* ----- @Footer ----- */
+#site-footer {
+   margin: 0;
+   padding: 0 0 1em;
+   background: url('images/glow.png') no-repeat top center;    /* dark wash jeans */
+   font-size: 0.853em;
+   color: #FFFFFF;      /* white */
+   text-align: center;
+   max-width: 535px;    /* For IE8 and below */
+   max-width: 31.475rem;      /* For everything else */
+   min-height: 535px;    /* For IE8 and below */
+   min-height: 31.475rem;     /* For everything else */
+   font-feature-settings: "onum" 1, "pnum" 1, "kern" 1;
+      -o-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1;
+      -ms-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1;
+      -moz-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1;
+      -webkit-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1;
+}
+
+   #site-footer h1 {
+       color: white;
+       margin-bottom: 0;
+       margin-top: 0;
+    }
+
+   #site-footer h1 + * {
+      margin-top: 0;
+   }
+
+   #site-footer h2 {
+      font-size: 1.333em;
+      margin: 0;
+      padding: 0;
+   }
+
+   #site-footer a:hover,
+   #site-footer a:active {
+      color: #5592C9;      /* scarf stripe */
+      border-bottom: 1px solid #FFFFFF;      /* white */
+   }
+
+   #site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   #site-footer li {
+      text-align: center;
+      padding-bottom: 0.64em;
+   }
+
+   #site-footer .footer-block {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 auto;
+      width: 90%;
+      padding: 1.515em 5% 0;
+   }
+
+   #site-footer .justifier {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: 0;
+   }
+
+   #site-footer .colophon {
+      display: block;
+      width: 60%;
+      margin: 1em auto 0;
+      border-top: 1px solid #FFFFFF;      /* white */
+      max-width: 17.714em;
+   }
+
+      #site-footer .colophon p {
+         text-align: center;
+         width: 100%;
+      }
+      
+   #site-footer .eg-archives-columns li {
+      padding-bottom: 0;
+   }
+
+   #site-footer i {
+      font-feature-settings: "liga" 1, "dlig" 1, , "calt" 1;
+         -o-font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+         -ms-font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+         -moz-font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+         -webkit-font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+   }
+
+
+/* ----- For devices/views wider than 31.475rem ----- */
+@media (min-width: 535px) {
+   
+   html {
+      font-size: 117.64%;  /* 18-19px in Georgia */
+   }
+
+   html.wf-active {
+      font-size: 125%;     /* 20 px, but using % for IE support */
+   }
+
+   body {
+      line-height: 1.515;
+   }
+
+   .image .content-meta {
+      text-align: center;
+      float: none;
+      margin: 0 auto;
+      padding-top: 0;
+   }
+   
+   .column {
+      overflow: hidden;
+      width: 48%;
+   }
+   
+      .column ul {
+         padding-left: 1.333em;
+         margin: 0;
+      }
+   
+   .content-meta {
+      text-align: left;
+      float: right;
+      margin-top: 0.853em;    /* Adjust so bottom of line matches bottom of line of paragraph */
+      padding: 0 0 0.64em 1.515em;
+      max-width: 13.289rem;
+      width: 13.289rem;
+   }
+   
+   .content p {
+      text-align: left;
+   }
+   
+   .toc {
+      text-align: left;
+      float: right;
+      margin-top: 1.888em;
+      padding: 0 0 0.64em 0em;
+      max-width: 13.289rem;
+      width: 13.289rem;
+   }
+
+   /* ----- @Comments ---- */
+   article footer h3 {
+      text-align: left;
+   }
+
+   #respond .logged-in-as,
+   #respond .require-contact-info {
+      text-align: left;
+   }
+
+   #respond .email-anonymity {
+      text-align: right;
+   }
+
+   /* ----- @Footer ----- */
+   #site-footer {
+      max-width: 100%;
+   }
+
+   #site-footer .footer-block {
+      text-align: left;
+      width: 40%;
+      padding-right: 2.5%;
+      padding-left: 2.5%;
+      border-top: 0;
+   }
+
+   #site-footer *,
+   #site-footer li {
+      text-align: left;
+   }
+
+   #site-footer .colophon {
+      padding-top: 1.515em;
+      margin-top: 1.515em;
+      width: 40%;
+      border-top: 1px solid #FFFFFF;
+   }
+
+}
+
+/* ----- For devices/views wider than (roughly!) 63.561rem ----- */
+@media (min-width: 1120px) {
+
+   .left-image {
+      width: 151.5%;
+      max-width: 41.956rem;
+      margin-left: -51.5%;
+   }
+   
+   .right-image {
+      width: 151.5%;
+      max-width: 41.956rem;
+      margin-right: -51.5%;
+   }
+
+   .left-quote,
+   .right-quote {
+      width: 64%;    /* + padding = 48% */
+   }
+
+   .left-quote {
+      margin-left: -36%;
+   }
+
+   .right-quote {
+      margin-right: -36%;
+   }
+   
+   .quote-description {
+      width: 75%;
+   }
+   
+   .quote {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .attribution {
+      text-align: right;
+      width: 85.3%;
+   }
+   
+   .column {
+      width: 64%;
+      margin-left: -20.3%;
+      margin-right: -20.3%;
+   }
+
+
+   /* ----- @Navigation ----- */
+   #site-nav {
+      float: right;
+      clear: none;
+      padding-right: 0.32em;
+      padding-top: 1.137em;
+   }
+
+   #site-nav ul {
+      text-align: right;
+   }
+
+   #site-nav li.level-1 {
+      padding: 0 1rem 0 0;
+      font-size: 1.137rem;
+   }
+
+   #site-nav .level-1 ul {
+      margin-top: 0.238rem;
+   }
+
+   #site-nav .level-2 {
+      display: block;
+   }
+
+   /* ----- @Header ----- */
+   #site-header {
+      border: 0;
+      margin-top: 1rem;
+      margin-left: 2.369rem;
+      padding-left: 0;
+      padding-right: 0;
+      float: left;
+      clear: none;
+      width: 40%;
+      font-size: 1.137rem;
+   }
+
+   #site-header h1 {
+      text-align: left;
+   }
+
+   #site-header h2 {
+      text-align: right;
+      margin: 0 0 0 2.369rem;
+   }
+
+   /* ----- @Article ----- */
+   article {
+      max-width: 63.561rem;
+      clear: both;
+      padding-bottom: 2.019em;
+   }
+
+   article h2,
+   article h3,
+   article h4 {
+      text-align: left;
+   }
+   
+   .image {}
+   
+      .image .content-meta {
+         text-align: left;
+         float: right;
+         padding: 0 1.515em 0.64em 0;
+         margin-top: 0;
+         max-width: 13.289rem;
+         width: 13.289rem;
+      }
+      
+      .image figure {
+         max-width: 100%;
+         text-align: center;
+         margin-right: 17.714em;
+         padding: 1.515em 0 0;
+      }
+      
+         .image figure.vertical {
+            margin-left: 17.714em;
+         }
+
+         .image figure img {
+            max-width: 100%;
+         }
+      
+      .image .content-meta,
+      .wf-active .image .content-meta {
+         padding-left: 0;
+      }
+      
+      .image figcaption {
+         text-align: right;
+         font-family: cronos-pro, 'Century Gothic', sans-serif;
+         font-weight: 400;
+         font-size: 1.333rem;
+      }
+   
+   /* ----- @Page navigation ----- */
+   #page-nav {
+      font-size: 1.333em;
+   }
+
+   /* ----- @Footer ----- */
+   #site-footer .footer-block {
+      width: 20%;
+      padding-right: 2%;
+      padding-left: 2%;
+   }
+
+   #site-footer .colophon {
+      width: 32%;
+      max-width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+   }
+
+}
+
+
+/* ----- For devices/views wider than 84.727rem ----- */
+@media (min-width: 1440px) {
+
+   .content-meta {
+      padding-right: 1.515em;
+   }
+   
+   .image figure {
+      
+   }
+      
+   #site-nav li.level-1 {
+      font-size: 1.333rem;
+   }
+
+   #site-header {
+      font-size: 1.237rem;    /* 1.137em + 0.1em */
+      max-width: 47.683rem;
+      margin-left: 3.157rem;
+   }
+
+   #site-header h1 {
+   }
+
+   .break {
+      display: inline;
+   }
+
+   /* ----- @Article ----- */
+   article {
+      max-width: 63.561em;
+      font-size: 1.201rem;      /* 1.137em + 0.067em -> 20.417px */
+   }
+   
+   article header h1 {
+
+   }
+
+   article .content,
+   article footer {
+      max-width: 33.494rem;     /* 31.495rem + 2.019rem */
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .content-meta {
+      padding-right: 2.692rem;
+   }
+   
+   .toc {
+      padding-right: 1.515rem;
+   }
+
+   #site-footer .footer-block {
+      width: 15%;
+      padding-right: 2%;
+      padding-left: 2%;
+      font-size: 1rem;
+   }
+   
+      #site-footer .footer-block h1 {
+         font-size: 2.019rem;
+      }
+
+   #site-footer .colophon {
+      display: inline-block;
+      width: 15%;
+      max-width: 15%;
+      padding: 1.515em 2% 0;
+      border-top: 0;
+      margin-top: 0;
+   }
+
+   #site-footer .colophon p {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   #site-footer .colophon h1 {
+      display: block;
+   }
+
+}
+
+/* ----- Special behavior of colophon for most viewports ----- */
+@media (max-width: 1440px) {
+   .colophon {
+      padding: 1em 0 0;
+   }
+
+   .colophon h1 {
+      display: none;
+   }
+
+   .colophon p {
+      width: 11.33rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: auto;
+      margin-left: auto;
+   }
+}

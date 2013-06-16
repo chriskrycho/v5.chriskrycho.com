@@ -1,0 +1,251 @@
+/* From the Heart (chriskrycho.com) theme
+ *
+ * Color replacements:
+ *    Dark gray:  #043442 (Filled With The Ocean)
+ *    Light gray: #808070 (Unnamed Tan)
+ *    White:      #F6F0D6 (The Belgian Coast)
+ *    Light blue: #F0BA40 (Flinders' Street)
+ *    Dark blue:  #043442 (Filled With The Ocean)
+*/
+
+
+/* ----- Color overrides ----- */
+body {
+   color: #043442;      /* Filled With The Ocean */
+   background-color: #043442;    /* (Filled With The Ocean) */
+}
+
+h1, h3 {
+   color: #808070;      /* Unnamed tan */
+}
+
+h2, h4 {
+   color: #043442;      /* Filled With The Ocean */
+}
+
+   a:link,
+   a:visited {
+      color: #808070;      /* Unnamed tan */
+   }
+
+   a:hover,
+   a:active {
+      color: #F0BA40;      /* Flinders' Street */
+   }
+   
+blockquote {
+   color: #808070;      /* scarf stripe */
+}
+
+   blockquote a:link,
+   blockquote a:visited {
+      border-bottom: 1px dotted;
+   }
+
+.left-quote,
+.right-quote {
+   color: #808070;      /* Unnamed tan */
+}
+
+input,
+textarea,
+.customform {
+   border: 1px solid #808070;    /* Unnamed tan */
+}
+
+/* ----- Custom post formats ----- */
+.quote {
+   color: #808070;    /* Filled With The Ocean */
+}
+
+.attribution {
+   color: #043442;    /* Unnamed tan */
+}
+
+/* ----- Layout and further styles ----- */
+#decorative-wrapper {
+   background: #F6F0D6 url('../images/noise-light.png') repeat top left;    /* The Belgian Coast */
+}
+            .level-2 a {
+               color: #043442;      /* Filled With The Ocean */
+            }
+      
+/* ----- @Header ----- */
+   #site-header {
+   }
+
+         #site-header h1,
+         #site-header h1 a,
+         #site-header h1 a:visited {
+            color: #808070;      /* Unnamed tan */
+         }
+         
+            #site-header h1 a:hover,
+            #site-header h1 a:active {
+               color: #043442;      /* Filled With The Ocean */
+            }
+
+         #site-header h2 a,
+         #site-header h2 a:visited {
+            color: #043442;      /* Filled With The Ocean */
+         }
+         
+         #site-header h2 a:hover,
+         #site-header h2 a:active {
+            border-bottom: 1px solid #043442;      /* Filled With The Ocean */
+         }
+
+/* ----- @Article ----- */
+      .content-meta {
+         color: #043442;      /* Filled With The Ocean */
+      }
+      
+         .content-meta a {
+            color: #043442;      /* Filled With The Ocean */
+         }
+         
+         article:hover .content-meta a {
+            color: #808070;      /* scarf stripe */
+         }
+      
+            .content-meta a:hover,
+            .content-meta a:active {
+               color: #808070;      /* scarf stripe */
+            }
+
+/* ----- @Footer ----- */
+   #site-footer {
+      color: #F6F0D6;      /* The Belgian Coast */
+   }
+   
+      #site-footer h1,
+      #site-footer h2 {
+         color: #F6F0D6;      /* The Belgian Coast */
+      }
+   
+         #site-footer a,
+         #site-footer a:visited {
+            color: #F0BA40;      /* Flinders' Street */
+         }
+
+         #site-footer a:hover,
+         #site-footer a:active {
+            color: #F0BA40;      /* Flinders' Street */
+            border-bottom: 1px solid #F6F0D6;      /* The Belgian Coast */
+         }
+
+   #site-footer .colophon {
+      border-top: 1px solid #F6F0D6;      /* The Belgian Coast */
+   }
+
+
+@media (min-width: 950px) {
+   #site-header {
+      border: 0;
+   }
+}
+
+@media (min-width: 1440px) {
+   #site-footer .colophon {
+      border: 0;
+   }
+}
+
+
+/* ----- Reftagger tooltip styles ----- */
+.lbsTooltip
+{
+	background: #F6F0D6;
+	border: 1px solid #043442;
+	z-index: 99;
+	text-align: left;
+	text-indent: 0;
+}
+
+.lbsTooltip div
+{
+	text-align: left;
+}
+
+.lbsTooltipHeader
+{
+	background: url("images/white-noise.png") repeat left top #043442;
+	color: #F6F0D6;
+	font-size: 0.853rem;
+	line-height: 1.167;
+	font-family: cronos-pro, 'Century Gothic', sans-serif;
+	margin: 0;
+	padding: 0.28em;
+	position: relative;
+	border: 0;
+}
+
+.lbsTooltipBody 
+{
+	padding: 0.28em 0.48em 0;
+	margin:0;
+	position:relative;
+	z-index: 2;
+	border: 0;
+	line-height: 1;
+}
+
+.lbsTooltipBody p, .lbsTooltipBody span
+{
+	display: inline;
+	color: black;
+	font-family: garamond-premier-pro, 'Adobe Garamond Pro', Garamond, Times, serif;
+	font-size: 0.853em;
+	line-height: 1.167;
+}
+
+.lbsTooltipFooter
+{
+	font-size: 0.75rem;
+	font-family:Helvetica,Arial,serif;
+	bottom: 0.32em;
+	margin-top: 0.32em;
+	position:absolute;
+	text-align:right;
+	border: 0;
+}
+
+.lbsTooltipFooter a:link, .lbsTooltipFooter a:visited, .lbsTooltipFooter a:hover 
+{
+	font-size: 0.75rem;
+	font-family: garamond-premier-pro, 'Adobe Garamond Pro', Garamond, Times, serif;
+}
+
+.lbsTooltipFooter div
+{
+	text-align:right;
+}
+
+
+.lbsTooltipBody .ch-ref, .lbsTooltipBody .verse-ref
+{
+	font-size: 100%;
+	top: -1px;
+	position: relative;
+}
+
+.lbsTooltipBody .ch-ref
+{
+	font-weight: bold;
+}
+
+.lbsTooltipBody .verse-ref
+{
+	color: dimgray;
+}
+
+.lbsTooltip, .lbsTooltipBody span, .lbsTooltip a, .lbsTooltipBody p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.lbsLibronix img
+{
+	float: none !important;
+}

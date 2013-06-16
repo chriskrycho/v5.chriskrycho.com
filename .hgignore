@@ -1,0 +1,44 @@
+syntax: regexp
+(.*/)?\#[^/]*\#$
+
+syntax: glob
+
+# Emacs save and block files
+*~
+.*\#
+
+# OS X Finder files
+.DS_Store
+
+# Binary files
+*.a
+*.d
+*.o
+*.obj
+*.exe
+
+# Python cache and binary files
+__pycache__
+*.pyc
+
+# Log files
+*.log
+
+# Eclipse settings files
+*.settings
+
+# Eclipse classpath (varies machine to machine)
+.classpath
+
+# IntelliJ IDEA files
+*.iml
+*.eml
+atlassian-ide-plugin.xml
+.idea
+
+# SASS cache
+.sass-cache
+.sass-cache/
+
+# Generated version of site
+sample/generated-site

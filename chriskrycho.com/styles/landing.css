@@ -1,0 +1,132 @@
+/*
+Custom styles for landing page
+*/
+
+/**
+ * Modular scale:
+ *    http://modularscale.com/scale/?px1=17&px2=1920&ra1=1.333&ra2=0
+ *
+ * Base text size: 17px
+ * Important number: 1920px
+ * Scale: 3:4 - Musical Fourth
+*/
+
+/* Color scheme:
+ *    http://www.colourlovers.com/palette/1875001/The_First_Scarf
+ *
+ * Colors:
+ *    Dark gray:  #20282A (more than the ocean)
+ *    Light gray: #6C7487 (terminal blue gray)
+ *    White:      #FFFFFF (white)
+ *    Light blue: #5592C9 (Scarf Stripe)
+ *    Dark blue:  #01295C (Dark Wash Jeans)
+*/
+
+
+/* ----- Fix WP automatic crap ----- */
+#wpadminbar { display: none; }
+
+
+/* ----- Default global styles ----- */
+html {
+   font-size: 100%;     /* 16px: Georgia at 16px has basically the same height as Minion Pro at 17px */
+}
+
+html.wf-active {
+   font-size: 106.25%;     /* -> 17px, using percentage to allow IE user stylesheet changes */
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: garamond-premier-pro, 'Adobe Garamond Pro', Garamond, Times, serif;
+   color: #01295C;      /* more than the ocean */
+   line-height: 1;
+}
+
+a {
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+   outline: none;
+   transition: color 0.5s, border 0.5s;
+   -o-transition: color 0.5s, border 0.5s;
+   -ms-transition: color 0.5s, border 0.5s;
+   -moz-transition: color 0.5s, border 0.5s;
+   -webkit-transition: color 0.5s, border 0.5s;
+}
+
+a:link,
+a:visited {
+   color: #5592C9;      /* scarf stripe */
+}
+
+a:hover,
+a:active {
+   color: #01295C;      /* dark wash jeans */
+   border-bottom: 1px solid;
+   outline: none;
+}
+
+h1, h2 {
+   margin: 0 auto;
+   padding: 0;
+   text-align: center;
+}
+
+h1 {
+   font-size: 11.33em;
+   font-weight: 400;
+   letter-spacing: -0.064em;
+   margin-left: -0.134em;
+}
+
+h2 {
+   font-size: 3.588em;
+   font-family: cronos-pro, Georgia, 'Times New Roman', serif;
+   font-weight: 400;
+   letter-spacing: 0.152em;
+   margin-top: -0.422em;
+   margin-bottom: 0.134em;
+   margin-right: -0.228em; /* Compensate for letter spacing */
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+li {
+   padding: 0;
+   margin: 0;
+   display: inline;
+   font-style: italic;
+}
+
+#wrapper {
+   margin: 0 auto;
+   max-width: 535px;
+   width: 90%;
+}
+
+.italic {
+   font-style: italic;
+}
+
+.mirror {
+   transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+   filter: FlipH;
+}
+
+.big-c, .big-k { display: inline-block; }
+
+.big-c {
+   text-shadow: -2px 0 1px #FFFFFF;
+   margin-right: -0.203em;
+}
+
+@media (}

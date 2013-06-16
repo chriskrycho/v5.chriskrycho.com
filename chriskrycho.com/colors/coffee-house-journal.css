@@ -1,0 +1,257 @@
+/* Coffee House Journal
+ * Colors replacements:
+ *    Dark gray:  #2B1B08 (peat)
+ *    Light gray: #574B37 (barney)
+ *    White:      #DBC286 (human skin)
+ *    Light blue: #B37D27 (down)
+ *    Dark blue:  #804000 (toffee)
+ */
+
+/* ----- Override colors ----- */
+body {
+   color: #2B1B08;      /* peat */
+   background: #2B1B08 url('../images/white-noise.png') repeat top left;    /* peat */
+}
+
+h1 {
+   color: #804000;      /* toffee */
+}
+
+h3 {
+   color: #574B37;      /* barney */
+}
+
+   a:link,
+   a:visited {
+      color: #B37D27;      /* down */
+   }
+
+   a:hover,
+   a:active {
+      color: #804000;      /* toffee */
+   }
+   
+blockquote {
+   color: #804000;      /* toffee */
+}
+
+.left-quote,
+.right-quote {
+   color: #804000;      /* toffee */
+}
+
+.customform, textarea, input {
+   border: 1px solid #804000;    /* toffee */
+}
+
+figure {
+   background: #2B1B08 url('../images/glow-less.png') no-repeat top center;
+   color: #DBC286;
+}
+
+#tooltip {
+   background: #DBC286 url('../images/noise-medium.png') top left repeat!important;
+   border: 1px solid #2B1B08!important;
+   color: #2B1B08!important;
+}
+
+/* ----- Custom post formats ----- */
+.quote {
+   color: #804000;    /* toffee */
+}
+
+.attribution {
+   color: #2B1B08;      /* peat */
+}
+
+/* ----- Layout and further styles ----- */
+#decorative-wrapper {
+   background: #DBC286 url('../images/noise-medium.png') top left repeat;    /* human skin */
+}
+            .level-2 a {
+               color: #574B37;      /* barney */
+            }
+      
+/* ----- @Header ----- */
+   #site-header {
+   }
+
+         #site-header h1,
+         #site-header h1 a,
+         #site-header h1 a:visited {
+            color: #804000;      /* toffee */
+         }
+         
+            #site-header h1 a:hover,
+            #site-header h1 a:active {
+               color: #574B37;      /* barney */
+            }
+
+         #site-header h2 a,
+         #site-header h2 a:visited {
+            color: #2B1B08;      /* peat */
+         }
+         
+         #site-header h2 a:hover,
+         #site-header h2 a:active {
+            border-bottom: 1px solid #574B37;      /* barney */
+         }
+
+/* ----- @Article ----- */
+      .content-meta {
+         color: #574B37;      /* barney */
+      }
+      
+         .content-meta a {
+            color: #574B37;      /* barney */
+         }
+         
+         article:hover .content-meta a {
+            color: #804000;      /* toffee */
+         }
+         
+            .content-meta a:hover,
+            .content-meta a:active {
+               color: #804000;      /* toffee */
+            }
+
+/* ----- @Footer ----- */
+   #site-footer {
+      background: transparent url('../images/glow-less.png') no-repeat top center;
+      color: #DBC286;      /* human skin */
+   }
+   
+      #site-footer h1,
+      #site-footer h2 {
+         color: #DBC286;      /* human skin */
+      }
+      
+         #site-footer a,
+         #site-footer a:visited {
+            color: #B37D27;      /* down */
+         }
+         
+         #site-footer a:hover,
+         #site-footer a:active {
+            color: #B37D27;      /* down */
+            border-bottom: 1px solid #DBC286;      /* human skin */
+         }
+
+   #site-footer .colophon {
+      border-top: 1px solid #DBC286;      /* human skin */
+   }
+
+
+@media (min-width: 950px) {
+   #site-header {
+      border: 0;
+   }
+}
+
+@media (min-width: 1440px) {
+   #site-footer .colophon {
+      border: 0;
+   }
+}
+
+/* ----- Reftagger tooltip styles ----- */
+.lbsTooltip
+{
+	background:#fffade;
+	border: 1px solid gray;
+	z-index: 99;
+	text-align: left;
+	text-indent: 0;
+}
+
+.lbsTooltip div
+{
+	text-align: left;
+}
+
+.lbsTooltipHeader
+{
+	background:#fff4b8;
+	color: black;
+	font-weight:bold;
+	font-size:15px;
+	line-height: 18px;
+	font-family:Arial,Helvetica,serif;
+	margin: 0;
+	padding:4px;
+	position:relative;
+	border: 0;
+}
+
+.lbsTooltipBody 
+{
+	padding: 4px 8px 0 8px;
+	margin:0;
+	position:relative;
+	z-index: 2;
+	border: 0;
+	line-height:16px;
+}
+
+.lbsTooltipBody p, .lbsTooltipBody span
+{
+	display: inline;
+	color: black;
+	font-family:Arial,Helvetica,serif;
+	font-size: 14px;
+	line-height:16px;
+}
+
+.lbsTooltipFooter
+{
+	font-size:11px;
+	font-family:Helvetica,Arial,serif;
+	bottom:4px;
+	margin-top: 4px;
+	position:absolute;
+	text-align:right;
+	border: 0;
+}
+
+.lbsTooltipFooter a:link, .lbsTooltipFooter a:visited, .lbsTooltipFooter a:hover 
+{
+	color: blue;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size:11px;
+	font-family:Helvetica,Arial,serif;
+}
+
+.lbsTooltipFooter div
+{
+	text-align:right;
+}
+
+
+.lbsTooltipBody .ch-ref, .lbsTooltipBody .verse-ref
+{
+	font-size: 85%;
+	top: -1px;
+	position: relative;
+}
+
+.lbsTooltipBody .ch-ref
+{
+	font-weight: bold;
+}
+
+.lbsTooltipBody .verse-ref
+{
+	color: dimgray;
+}
+
+.lbsTooltip, .lbsTooltipBody span, .lbsTooltip a, .lbsTooltipBody p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.lbsLibronix img
+{
+	float: none !important;
+}

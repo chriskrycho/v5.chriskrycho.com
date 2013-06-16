@@ -1,0 +1,27 @@
+/*
+Theme Name: Ardent Fidelity (chriskrycho.com)
+Description: Child theme of chriskrycho.com
+Author: Chris Krycho
+Template: chriskrycho.com
+*/
+
+
+@import url("../chriskrycho.com/style.css");
+@import url("../chriskrycho.com/colors/from-the-heart.css");
+
+.wf-active header h1 {
+   font-family: trajan-pro;
+}
+
+.wf-active article header h1 {
+   font-size: 1.333em;
+}
+
+/* ----- For devices/views wider than 31.475rem ----- */
+@media (min-width: 525px) {
+   
+   .wf-active .content-meta {
+      margin-top: 0.853em;
+   }
+   
+}

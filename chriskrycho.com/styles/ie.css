@@ -1,0 +1,81 @@
+html {
+   font-size: 16px;
+}
+
+html.wf-active {
+   font-size: 17px;
+}
+
+#nav-wrapper {
+   padding-top: 0.48em;
+   margin: 0 auto;
+}
+
+   #nav-wrapper #site-nav {
+      float: none;
+      margin: 0 auto;
+      width: 535px;
+   }
+   
+   #nav-wrapper #site-nav ul {
+      clear: both;
+      display: block;
+      width: 100%;
+      text-align: center;
+   }
+
+   #nav-wrapper #site-nav .level-1 {
+      display: block;
+      text-align: center;
+      float: left;
+      font-size: 1rem;
+      list-style: none;
+      padding: 0 1em;
+   }
+   
+   #nav-wrapper .level-2 {
+      display: block;
+   }
+
+#article-footer-wrapper {
+   max-width: 535px;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 0.853em;
+}
+      
+#footer-outer-wrapper {
+   text-align: center;
+   background-color: #01295C;    /* dark wash jeans */
+   font-size: 0.853em;
+   color: #FFFFFF;   width: 100%;
+   height: 100%;
+}
+
+#footer-wrapper ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#footer-wrapper li {
+   margin: 0;
+   padding-bottom: 0.48em;
+}
+
+#footer-wrapper {
+   text-align: center;
+   max-width: 535px;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+#footer-wrapper h1 {
+   color: #FFFFFF;
+}
+
+#footer-wrapper a:hover,
+#footer-wrapper a:active {
+   color: #5592C9;      /* scarf stripe */
+   border-bottom: 1px solid #FFFFFF;
+}

@@ -1,0 +1,267 @@
+/* chriskrycho.com theme
+ * Note: some styles are overridden in the relevant subtheme files
+*/
+
+/* Color scheme:
+ *    http://www.colourlovers.com/palette/292482/Terra
+ *
+ * Colors:
+ *    Dark gray:  #E8DDCB (terra terra)
+ *    Light gray: #036564 (Acqua)
+ *    White:      #031634 (abisso)
+ *    Light blue: #CDB380 (Terra)
+ *    Dark blue:  #033649 (Acqua Profonda)
+*/
+
+
+body {
+   color: #E8DDCB;      /* terra terra */
+   background-color: #E8DDCB;    /* terra terra */
+}
+
+p {
+   -webkit-font-smoothing: antialiased;
+}
+
+h1, h3 {
+   color: #CDB380;      /* Terra */
+}
+
+h2 {
+   color: #E8DDCB;      /* terra terra */
+}
+
+   a:link,
+   a:visited {
+      color: #CDB380;      /* Terra */
+   }
+
+   a:hover,
+   a:active {
+      color: #CDB380;      /* Terra */
+   }
+   
+blockquote {
+   color: #CDB380;      /* Terra */
+}
+
+.left-quote,
+.right-quote {
+   color: #CDB380;      /* Terra */
+}
+
+input,
+textarea,
+.customform {
+   border: 1px solid #036564;    /* Acqua */
+}
+
+/* ----- Custom post formats ----- */
+.quote {
+   color: #CDB380;    /* Terra  */
+}
+
+.attribution {
+   color: #E8DDCB;    /* Terra Terra  */
+}
+
+/* ----- Layout and further styles ----- */
+#decorative-wrapper {
+   background: #033649 url('../images/white-noise.png') repeat top left;    /* Acqua Profonda */
+}
+            .level-2 a {
+               color: #036564;      /* Acqua */
+            }
+      
+/* ----- @Header ----- */
+   #site-header {
+   }
+
+         #site-header h1,
+         #site-header h1 a,
+         #site-header h1 a:visited {
+            color: #CDB380;      /* Terra */
+         }
+         
+            #site-header h1 a:hover,
+            #site-header h1 a:active {
+               color: #036564;      /* Acqua */
+            }
+
+         #site-header h2 a,
+         #site-header h2 a:visited {
+            color: #E8DDCB;      /* terra terra */
+         }
+         
+         #site-header h2 a:hover,
+         #site-header h2 a:active {
+            border-bottom: 1px solid #CDB380;      /* terra terra */
+         }
+
+/* ----- @Article ----- */
+   article header h1 a:hover,
+   article header h1 a:active {
+      color: #036564;      /* Terra Terra */
+   }
+
+   .content-meta {
+      color: #CDB380;      /* Terra */
+   }
+         .content-meta a,
+         .content-meta a:visited {
+            color: #CDB380;      /* Terra Terra */
+         }
+         
+         article:hover .content-meta a {
+            color: #E8DDCB;      /* Terra Terra */
+         }
+         
+         .content-meta a:hover,
+         .content-meta a:active {
+            color: #E8DDCB;      /* Terra Terra */
+         }
+         
+   article h4 {
+      color: #CDB380;      /* Terra */
+   }
+
+/* ----- @Footer ----- */
+   #site-footer {
+      background: url('../images/noise-medium.png') repeat top left;    /* terra terra */
+      color: #033649;      /* Acqua Profonda */
+   }
+   
+      #site-footer h1,
+      #site-footer h2 {
+         color: #033649;      /* Acqua Profonda */
+      }
+   
+         #site-footer a,
+         #site-footer a:visited {
+            color: #036564;      /* Acqua */
+         }
+         
+         #site-footer a:hover,
+         #site-footer a:active {
+            color: #036564;      /* Acqua */
+            border-bottom: 1px solid #036564;      /* terra */
+         }
+
+   #site-footer .colophon {
+      border-top: 1px solid #033649;      /* Acqua Profonda */
+   }
+
+
+@media (min-width: 950px) {
+   #site-header {
+      border: 0;
+   }
+}
+
+@media (min-width: 1440px) {
+   #site-footer .colophon {
+      border: 0;
+   }
+}
+
+/* ----- Reftagger tooltip styles ----- */
+.lbsTooltip
+{
+	background:#fffade;
+	border: 1px solid gray;
+	z-index: 99;
+	text-align: left;
+	text-indent: 0;
+}
+
+.lbsTooltip div
+{
+	text-align: left;
+}
+
+.lbsTooltipHeader
+{
+	background:#fff4b8;
+	color: black;
+	font-weight:bold;
+	font-size:15px;
+	line-height: 18px;
+	font-family:Arial,Helvetica,serif;
+	margin: 0;
+	padding:4px;
+	position:relative;
+	border: 0;
+}
+
+.lbsTooltipBody 
+{
+	padding: 4px 8px 0 8px;
+	margin:0;
+	position:relative;
+	z-index: 2;
+	border: 0;
+	line-height:16px;
+}
+
+.lbsTooltipBody p, .lbsTooltipBody span
+{
+	display: inline;
+	color: black;
+	font-family:Arial,Helvetica,serif;
+	font-size: 14px;
+	line-height:16px;
+}
+
+.lbsTooltipFooter
+{
+	font-size:11px;
+	font-family:Helvetica,Arial,serif;
+	bottom:4px;
+	margin-top: 4px;
+	position:absolute;
+	text-align:right;
+	border: 0;
+}
+
+.lbsTooltipFooter a:link, .lbsTooltipFooter a:visited, .lbsTooltipFooter a:hover 
+{
+	color: blue;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size:11px;
+	font-family:Helvetica,Arial,serif;
+}
+
+.lbsTooltipFooter div
+{
+	text-align:right;
+}
+
+
+.lbsTooltipBody .ch-ref, .lbsTooltipBody .verse-ref
+{
+	font-size: 85%;
+	top: -1px;
+	position: relative;
+}
+
+.lbsTooltipBody .ch-ref
+{
+	font-weight: bold;
+}
+
+.lbsTooltipBody .verse-ref
+{
+	color: dimgray;
+}
+
+.lbsTooltip, .lbsTooltipBody span, .lbsTooltip a, .lbsTooltipBody p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.lbsLibronix img
+{
+	float: none !important;
+}

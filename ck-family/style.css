@@ -1,0 +1,87 @@
+/*
+Theme Name: From the Hearth (chriskrycho.com)
+Description: Child theme of chriskrycho.com
+Author: Chris Krycho
+Template: chriskrycho.com
+*/
+
+
+@import url("../chriskrycho.com/style.css");
+@import url("../chriskrycho.com/colors/terra.css");
+
+/* ----- Override fonts ----- */
+.wf-active header h1 {
+   font-family: voluta-script-pro;
+   font-size: 3.588em;
+   line-height: 1;
+   margin-top: 0em;
+   margin-bottom: -0.1em;
+}
+
+.wf-active #site-header h1 {
+   font-size: 4.783em;
+   margin-bottom: -0.134em;
+}
+
+.wf-active .image .content-meta h2 {
+   font-family: voluta-script-pro;
+   font-size: 3.588em;
+}
+
+body, #site-header, #site-footer h2 {
+   font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+   .wf-active body, .wf-active #site-footer h2 {
+      font-family: cronos-pro, 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   }
+
+   .wf-active #site-header h2 {
+      font-weight: 300;
+   }
+
+   .wf-active #site-footer {
+      font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   }
+
+/* ----- Embedded image style ----- */
+figure {
+   box-shadow: 0 0 1em black;
+   padding: 0.48em;
+   font-size: 0.853em;
+   color: #033649;
+   background: #E8DDCB url('../images/noise-medium.png') repeat top left;;
+}
+
+/* */
+@media (min-width: 535px) {
+
+}
+
+/* */
+@media (max-width: 535px) {
+
+   .wf-active article h1 {
+      margin-bottom: 0.238em;
+   }
+
+}
+
+/* */
+@media (max-width: 950px) {
+
+   .wf-active article {
+      margin-top: 1.515em;
+   }
+
+}
+
+@media (min-width: 1440px) {
+   .wf-active article header h1 {
+      font-size: 4.209rem;
+   }
+   
+   .wf-active #site-header h1 {
+      font-size: 5.61rem;
+   }
+}

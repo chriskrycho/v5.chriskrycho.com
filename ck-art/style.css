@@ -1,0 +1,60 @@
+/*
+Theme Name: Ars Artis (chriskrycho.com)
+Description: Child theme of chriskrycho.com
+Author: Chris Krycho
+Template: chriskrycho.com
+*/
+
+
+@import url("../chriskrycho.com/style.css");
+@import url("../chriskrycho.com/colors/coffee-house-journal.css");
+
+/* ----- Override fonts ----- */
+html.wf-active {
+   font-size: 125%;
+}
+
+.wf-active body {
+   font-family: cronos-pro, 'Century Gothic', sans-serif;
+}
+
+.wf-active #site-footer {
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+}
+
+.wf-active header h1 {
+   font-family: federico-web;
+   font-size: 2.692em;
+   margin-top: 0rem;
+}
+
+.wf-active #site-header h1 {
+   font-family: federico-web;
+   font-size: 3.157em;
+   margin-top: 0;
+   margin-bottom: -0.203em;
+   margin-left: 1rem;
+}
+
+.wf-active .image .content-meta h2 {
+   font-family: federico-web;
+   font-size: 2.369em;
+}
+
+@media (min-width: 535px) {
+   .wf-active article h1 {
+      margin-bottom: 0;
+   }
+}
+
+@media (max-width: 950px) {
+   .wf-active article header h1 {
+      padding-top: 2.962rem;
+   }
+}
+
+@media (max-width: 1440px) {
+   .wf-active .image .content-meta h2 {
+      font-size: 2.369rem;
+   }
+}

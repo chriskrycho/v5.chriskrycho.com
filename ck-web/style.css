@@ -1,0 +1,59 @@
+/*
+Theme Name: Designgineering (chriskrycho.com)
+Description: Child theme of chriskrycho.com
+Author: Chris Krycho
+Template: chriskrycho.com
+*/
+
+
+@import url("../chriskrycho.com/style.css");
+.wf-active body {
+   font-family: adelle;
+}
+
+.wf-active #site-footer {
+   font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   font-size: 117.5%;
+}
+
+.wf-active #site-header h1 {
+   font-family: adelle;
+   font-weight: 100;
+   font-size: 2.369em;
+}
+
+.wf-active .content code, .wf-active .content pre {
+   font-family: source-code-pro !important;
+   line-height: 1.515 !important;
+}
+
+.content .wp_syntax {
+   margin-top: 1em;
+}
+
+.wp_syntax td.code {
+   background: transparent !important;
+}
+
+.wf-active .content .wp_syntax pre {
+   font-size: 1em !important;
+   line-height: inherit !important;
+}
+
+@media (min-width: 535px) {
+   html.wf-active {
+      font-size: 125%;
+   }
+
+   .wf-active #decorative-wrapper > article {
+      font-size: 85.3%;
+   }
+
+   .wf-active #site-footer {
+      font-size: 0.95em;
+   }
+
+   .wf-active .content-meta {
+      margin-top: 0.853em;    /* compensate for font size variation */
+   }
+}
