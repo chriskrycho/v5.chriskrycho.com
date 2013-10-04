@@ -7,22 +7,39 @@ Template: chriskrycho.com
 
 
 @import url("../chriskrycho.com/style.css");
-.wf-active body {
-   font-family: adelle;
+
+@font-face{
+    font-family: adelle;
+    font-weight: 100;
+    font-style: normal;
+    src:url("../chriskrycho.com/fonts/498b62bf-272a-424f-8438-963e84290a7b.eot?#iefix");
+    src:url("../chriskrycho.com/fonts/498b62bf-272a-424f-8438-963e84290a7b.eot?#iefix") format("eot"),url("../chriskrycho.com/fonts/747b7cce-295f-4e39-903b-5858af155c13.woff") format("woff"),url("../chriskrycho.com/fonts/d1367539-252f-43f2-b898-5585bcee553d.ttf") format("truetype"),url("../chriskrycho.com/fonts/4a93e3f0-a4a0-48bb-a0ac-56b7d14dc1a2.svg#4a93e3f0-a4a0-48bb-a0ac-56b7d14dc1a2") format("svg");
+}
+@font-face{
+    font-family: adelle;
+    font-weight: 100;
+    font-style: italic;
+    src:url("../chriskrycho.com/fonts/bc714449-63c7-400e-a289-1c6604dd49e8.eot?#iefix");
+    src:url("../chriskrycho.com/fonts/bc714449-63c7-400e-a289-1c6604dd49e8.eot?#iefix") format("eot"),url("../chriskrycho.com/fonts/18a324fe-d364-4d8f-aab5-9e81fa1b520c.woff") format("woff"),url("../chriskrycho.com/fonts/a7a2f85c-84d1-4f65-a6e8-c6c36d8232a5.ttf") format("truetype"),url("../chriskrycho.com/fonts/6d5c8a96-bee5-4352-b588-298973002deb.svg#6d5c8a96-bee5-4352-b588-298973002deb") format("svg");
 }
 
-.wf-active #site-footer {
+#site-footer {
    font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
    font-size: 117.5%;
 }
 
-.wf-active #site-header h1 {
+#site-header h1 {
    font-family: adelle;
    font-weight: 100;
    font-size: 2.369em;
 }
 
-.wf-active .content code, .wf-active .content pre {
+article header h1 {
+   font-family: adelle;
+}
+
+.content code, .content pre {
+   font-size: 90%;
    font-family: source-code-pro !important;
    line-height: 1.515 !important;
 }
@@ -35,25 +52,7 @@ Template: chriskrycho.com
    background: transparent !important;
 }
 
-.wf-active .content .wp_syntax pre {
+.content .wp_syntax pre {
    font-size: 1em !important;
    line-height: inherit !important;
-}
-
-@media (min-width: 535px) {
-   html.wf-active {
-      font-size: 125%;
-   }
-
-   .wf-active #decorative-wrapper > article {
-      font-size: 85.3%;
-   }
-
-   .wf-active #site-footer {
-      font-size: 0.95em;
-   }
-
-   .wf-active .content-meta {
-      margin-top: 0.853em;    /* compensate for font size variation */
-   }
 }

@@ -9,8 +9,15 @@ Template: chriskrycho.com
 @import url("../chriskrycho.com/style.css");
 @import url("../chriskrycho.com/colors/terra.css");
 
+@font-face{
+    font-family: voluta-script-pro;
+    src:url("../chriskrycho.com/fonts/cfb6352e-d563-4c37-bc56-a33589cbffc0.eot?#iefix");
+    src:url("../chriskrycho.com/fonts/cfb6352e-d563-4c37-bc56-a33589cbffc0.eot?#iefix") format("eot"),url("../chriskrycho.com/fonts/cada7311-b5a3-4b5f-94c0-55872a1eaf22.woff") format("woff"),url("../chriskrycho.com/fonts/dcb3ec27-db5e-461d-a1d0-659a753f8291.ttf") format("truetype"),url("../chriskrycho.com/fonts/520521c5-5355-432e-a64d-8d501556bb24.svg#520521c5-5355-432e-a64d-8d501556bb24") format("svg");
+}
+
+
 /* ----- Override fonts ----- */
-.wf-active header h1 {
+header h1 {
    font-family: voluta-script-pro;
    font-size: 3.588em;
    line-height: 1;
@@ -18,12 +25,12 @@ Template: chriskrycho.com
    margin-bottom: -0.1em;
 }
 
-.wf-active #site-header h1 {
+#site-header h1 {
    font-size: 4.783em;
    margin-bottom: -0.134em;
 }
 
-.wf-active .image .content-meta h2 {
+.image .content-meta h2 {
    font-family: voluta-script-pro;
    font-size: 3.588em;
 }
@@ -32,15 +39,15 @@ body, #site-header, #site-footer h2 {
    font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-   .wf-active body, .wf-active #site-footer h2 {
+   body, #site-footer h2 {
       font-family: cronos-pro, 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    }
 
-   .wf-active #site-header h2 {
+   #site-header h2 {
       font-weight: 300;
    }
 
-   .wf-active #site-footer {
+   #site-footer {
       font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
    }
 
@@ -61,7 +68,7 @@ figure {
 /* */
 @media (max-width: 535px) {
 
-   .wf-active article h1 {
+   article h1 {
       margin-bottom: 0.238em;
    }
 
@@ -70,18 +77,18 @@ figure {
 /* */
 @media (max-width: 950px) {
 
-   .wf-active article {
+   article {
       margin-top: 1.515em;
    }
 
 }
 
 @media (min-width: 1440px) {
-   .wf-active article header h1 {
+   article header h1 {
       font-size: 4.209rem;
    }
-   
-   .wf-active #site-header h1 {
+
+   #site-header h1 {
       font-size: 5.61rem;
    }
 }

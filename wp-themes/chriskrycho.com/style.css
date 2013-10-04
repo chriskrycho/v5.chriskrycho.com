@@ -30,6 +30,67 @@ Tags: awesome, blue, white, gray, scarves
  *    Dark blue:  #01295C (Dark Wash Jeans)
 */
 
+/* ----- Font faces ----- */
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=a34d2e31-99b5-469a-9b81-128fc0bd9745");
+
+@font-face{
+    font-family: cronos-pro;
+    font-weight: 300;
+    src:url("fonts/6e852986-62bc-4056-a086-04503ce8e74d.eot?#iefix");
+    src:url("fonts/6e852986-62bc-4056-a086-04503ce8e74d.eot?#iefix") format("eot"),url("fonts/0ed610c9-1360-4944-b066-e2616d2f6edd.woff") format("woff"),url("fonts/c639641e-5dca-4f06-828b-4ab02bc7ce16.ttf") format("truetype"),url("fonts/fa118146-9793-4cfa-963f-eb497160972a.svg#fa118146-9793-4cfa-963f-eb497160972a") format("svg");
+}
+
+@font-face{
+    font-family: cronos-pro;
+    font-weight: 300;
+    font-style: italic;
+    src:url("fonts/d1586749-27ed-4757-b076-1d51087e8076.eot?#iefix");
+    src:url("fonts/d1586749-27ed-4757-b076-1d51087e8076.eot?#iefix") format("eot"),url("fonts/6d898e23-7501-4338-95d8-461ef8e6fd29.woff") format("woff"),url("fonts/d99b45ff-bec7-40de-aaed-1ef67cd25b03.ttf") format("truetype"),url("fonts/0762f8ec-52a3-4904-bee1-35dc946afd9e.svg#0762f8ec-52a3-4904-bee1-35dc946afd9e") format("svg");
+}
+
+@font-face{
+    font-family: cronos-pro;
+    font-weight: 700;
+    src:url("fonts/a6c99224-9456-4aae-8aaa-05bb45aa1e77.eot?#iefix");
+    src:url("fonts/a6c99224-9456-4aae-8aaa-05bb45aa1e77.eot?#iefix") format("eot"),url("fonts/4b47472a-4c77-4bde-b2e6-ab9ccbe848db.woff") format("woff"),url("fonts/de498528-620d-4da3-bb35-1dc57bbaaefd.ttf") format("truetype"),url("fonts/9e565b23-eb5f-47f1-8626-ec7a3135e080.svg#9e565b23-eb5f-47f1-8626-ec7a3135e080") format("svg");
+}
+
+@font-face{
+    font-family: cronos-pro;
+    font-weight: 700;
+    font-style: italic;
+    src:url("fonts/db681a5a-42b7-4db5-bc00-07df879b6e7c.eot?#iefix");
+    src:url("fonts/db681a5a-42b7-4db5-bc00-07df879b6e7c.eot?#iefix") format("eot"),url("fonts/121559d8-f404-4314-aa35-7920d58b4872.woff") format("woff"),url("fonts/969bbc95-ead7-49c9-b140-2d0d411786ea.ttf") format("truetype"),url("fonts/bccd317d-af96-433e-acd1-2215c176cc0a.svg#bccd317d-af96-433e-acd1-2215c176cc0a") format("svg");
+}
+
+@font-face{
+    font-family: minion-pro;
+    font-style: italic;
+    src:url("fonts/0d708c6f-d31c-49ad-b92e-ea37b7ba762b.eot?#iefix");
+    src:url("fonts/0d708c6f-d31c-49ad-b92e-ea37b7ba762b.eot?#iefix") format("eot"),url("fonts/e364b06d-aac3-4a54-84ff-4b3a2860debb.woff") format("woff"),url("fonts/6346c02d-13da-4d5c-ab2e-13e40d7f24c2.ttf") format("truetype"),url("fonts/8cda8fb2-6a3e-4e20-b063-4fbfca0025e5.svg#8cda8fb2-6a3e-4e20-b063-4fbfca0025e5") format("svg");
+}
+@font-face{
+    font-family: minion-pro;
+    font-weight: normal;
+    font-style: normal;
+    src:url("fonts/35d9d14d-a31d-4d9b-a998-00ffc9bd46a4.eot?#iefix");
+    src:url("fonts/35d9d14d-a31d-4d9b-a998-00ffc9bd46a4.eot?#iefix") format("eot"),url("fonts/62100580-a2d1-4d98-bb14-d4c4c3f1a5ba.woff") format("woff"),url("fonts/7ae8e168-1c29-4fcb-bb59-0043c943df3b.ttf") format("truetype"),url("fonts/cfa664d4-e518-4a49-b8a3-fccec93c29c1.svg#cfa664d4-e518-4a49-b8a3-fccec93c29c1") format("svg");
+}
+
+@font-face{
+    font-family: minion-pro;
+    font-weight: 700;
+    src:url("fonts/b18202c1-131a-425a-b84d-fdd5a85b6b13.eot?#iefix");
+    src:url("fonts/b18202c1-131a-425a-b84d-fdd5a85b6b13.eot?#iefix") format("eot"),url("fonts/684d90d7-12e2-46fc-8776-cfa0c9bffeff.woff") format("woff"),url("fonts/a6dc410d-45b6-4a66-8143-43f59c362a8b.ttf") format("truetype"),url("fonts/cae2aa90-12f3-4dab-8a67-205fbdf0f046.svg#cae2aa90-12f3-4dab-8a67-205fbdf0f046") format("svg");
+}
+
+@font-face{
+    font-family: minion-pro;
+    font-weight: 700;
+    font-style: italic;
+    src:url("fonts/d185dd2c-5403-4f8c-a0e4-00714e838752.eot?#iefix");
+    src:url("fonts/d185dd2c-5403-4f8c-a0e4-00714e838752.eot?#iefix") format("eot"),url("fonts/e0c4916d-81fe-4c9f-9014-0192b749ac5d.woff") format("woff"),url("fonts/0ca2f9c0-9833-45a9-977f-c071a0560857.ttf") format("truetype"),url("fonts/76687d3a-f199-47f2-be8c-a6ccde14c771.svg#76687d3a-f199-47f2-be8c-a6ccde14c771") format("svg");
+}
 
 /* ----- Global reset ----- */
 header, footer, nav, article, section {
@@ -44,16 +105,7 @@ html.no-wp-admin { margin-top: 0.75em !important; }
 
 /* ----- Default global styles ----- */
 html {
-   font-size: 112.5%;     /* 17px: Georgia at 17px has basically the same height as Minion Pro at 18px */
-}
-
-html.wf-loading {
-   visibility: hidden;
-}
-
-html.wf-active {
    font-size: 118.75%;     /* -> 18px, using percentage to allow IE user stylesheet changes */
-   visibility: visible;
 }
 
 body {
@@ -220,27 +272,6 @@ br.clear {
    clear: both;
 }
 
-.smcp {
-   font-variant: small-caps;
-}
-
-@supports(font-feature-settings: 'smcp') or
-         (-o-font-feature-settings: 'smcp') or
-         (-ie-font-feature-settings: 'smcp') or
-         (-moz-font-feature-settings: 'smcp') or
-         (-webkit-font-feature-settings: 'smcp') {
-
-   .smcp {
-      font-variant: normal;
-      font-feature-settings: 'smcp';
-         -o-font-feature-settings: 'smcp';
-         -ie-font-feature-settings: 'smcp';
-         -moz-font-feature-settings: 'smcp';
-         -webkit-font-feature-settings: 'smcp';
-   }
-
-}
-
 nav ul {
    list-style: none;
    margin: 0;
@@ -326,19 +357,19 @@ textarea:active {
       float: left;
       clear: none;
    }
-   
+
    .generator label {
       width: 30%;
    }
-   
+
    .generator input {
       width: 60%;
    }
-   
+
       .generator input[type='submit'] {
          margin-left: 30%;
       }
-  
+
 
 /* ----- @Miscellaneous styles ----- */
 .italic {     /* For non semantic italicization */
@@ -395,7 +426,7 @@ p.no-top-margin, article p.no-top-margin, .content p.no-top-margin {
       font-style: normal;
    }
 
-      
+
 .column h3:first-child {
    margin-top: 0;
 }
@@ -433,7 +464,7 @@ p.no-top-margin, article p.no-top-margin, .content p.no-top-margin {
       line-height: 1;
       text-shadow: #FFFFFF 0 0 0.48em;
    }
-   
+
       .overlay a.overlay-closer:link,
       .overlay a.overlay-closer:hover,
       .overlay a.overlay-closer:active,
@@ -498,7 +529,7 @@ article + .quote-description {
       padding-bottom: 0;
       text-indent: 1.167em;
    }
-   
+
    .quote p:first-child {
       margin-top: 0;
       margin-bottom: 0;
@@ -520,19 +551,19 @@ article + .quote-description {
       padding; 1em 0;
       margin: 0;
    }
-   
+
       .image figure img {
          max-width: 100%;
          max-height: 100%;
       }
-      
-            
+
+
          .image .content-meta h2 {
             margin: 0;
             padding: 0;
          }
-         
-         
+
+
             .wf-active .image .content-meta h2 a,
             .wf-active .image .content-meta h2 a:hover,
             .wf-active .image .content-meta h2 a:active,
@@ -548,13 +579,13 @@ article + .quote-description {
    .link .content > p:first-child {
       /*margin-top: 0.75em;*/
    }
-   
+
    .wf-active .status .content-meta,
    .wf-active .aside .content-meta,
    .wf-active .link .content-meta {
       margin-top: 1em;
    }
-   
+
 pre {
    font-size: 0.853rem !important;
 }
@@ -610,11 +641,6 @@ sup {
 .level-1 {
    font-family: cronos-pro, 'Century Gothic', sans-serif;
    font-weight: 300;
-   font-feature-settings: "smcp" 1;
-      -o-font-feature-settings: "smcp" 1;
-      -ms-font-feature-settings: "smcp" 1;
-      -moz-font-feature-settings: "smcp" 1;
-      -webkit-font-feature-settings: "smcp" 1;
 }
 
    li.level-1 {
@@ -632,11 +658,6 @@ sup {
    display: none;
    font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
    font-size: 0.853em;
-   font-feature-settings: "smcp" 0;
-      -o-font-feature-settings: "smcp" 0;
-      -ms-font-feature-settings: "smcp" 0;
-      -moz-font-feature-settings: "smcp" 0;
-      -webkit-font-feature-settings: "smcp" 0;
 }
 
    .level-2 a {
@@ -751,28 +772,20 @@ article h1 {
       margin-bottom: 0.1em;
    }
 
-   .content h3 {
-      font-feature-settings: "smcp" 1;
-         -o-font-feature-settings: "smcp" 1;
-         -ms-font-feature-settings: "smcp" 1;
-         -moz-font-feature-settings: "smcp" 1;
-         -webkit-font-feature-settings: "smcp" 1;
-   }
-
    .content p {
       margin-top: 0;
       margin-bottom: 0;
       text-align: justify;
    }
-   
+
       .content p + p {
          text-indent: 2.019em;
       }
-      
+
       .content code {
          color: #01295C;
       }
-   
+
       .content blockquote,
       .comment blockquote {
          margin-top: 0.75em;
@@ -805,22 +818,22 @@ article h1 {
       font-size: 0.853em;
       text-align: center;
       color: #6C7487;      /* terminal blue gray */
-      font-feature-settings: "smcp" 1, "kern" 1;
-         -o-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
-         -ms-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
-         -moz-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
-         -webkit-font-feature-settings: "smcp" 1, "kern" 1, "onum" 1, "pnum" 1;
+      font-feature-settings: "kern" 1;
+         -o-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+         -ms-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+         -moz-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+         -webkit-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
    }
 
       .content-meta a {
          color: #6C7487;
-         font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
-            -o-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
-            -ms-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
-            -moz-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
-            -webkit-font-feature-settings: "smcp" 0, "kern" 1, "onum" 1, "pnum" 1;
+         font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+            -o-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+            -ms-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+            -moz-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
+            -webkit-font-feature-settings: "kern" 1, "onum" 1, "pnum" 1;
       }
-      
+
          article:hover .content-meta a {
             color: #5592C9;      /* scarf stripe */
          }
@@ -846,17 +859,17 @@ article h1 {
          padding: 0;
          display: inline;
       }
-      
+
    .toc {
       font-size: 0.853em;
       color: #6C7487;
    }
-   
+
       .toc h4 {
          margin-bottom: 0;
          margin-top: 1em;
       }
-   
+
       .toc ul,
       .toc ol {
          margin-top: 0;
@@ -901,11 +914,11 @@ article footer h3 {
    .comment p {
       margin: 0;
    }
-   
+
       .comment p + p {
          text-indent: 1.777em;
       }
-   
+
 .comment-date {
    float: right;
 }
@@ -1119,7 +1132,7 @@ article footer code {
          text-align: center;
          width: 100%;
       }
-      
+
    #site-footer .eg-archives-columns li {
       padding-bottom: 0;
    }
@@ -1135,7 +1148,7 @@ article footer code {
 
 /* ----- For devices/views wider than 31.475rem ----- */
 @media (min-width: 535px) {
-   
+
    html {
       font-size: 117.64%;  /* 18-19px in Georgia */
    }
@@ -1154,17 +1167,17 @@ article footer code {
       margin: 0 auto;
       padding-top: 0;
    }
-   
+
    .column {
       overflow: hidden;
       width: 48%;
    }
-   
+
       .column ul {
          padding-left: 1.333em;
          margin: 0;
       }
-   
+
    .content-meta {
       text-align: left;
       float: right;
@@ -1173,11 +1186,11 @@ article footer code {
       max-width: 13.289rem;
       width: 13.289rem;
    }
-   
+
    .content p {
       text-align: left;
    }
-   
+
    .toc {
       text-align: left;
       float: right;
@@ -1236,7 +1249,7 @@ article footer code {
       max-width: 41.956rem;
       margin-left: -51.5%;
    }
-   
+
    .right-image {
       width: 151.5%;
       max-width: 41.956rem;
@@ -1255,22 +1268,22 @@ article footer code {
    .right-quote {
       margin-right: -36%;
    }
-   
+
    .quote-description {
       width: 75%;
    }
-   
+
    .quote {
       width: 75%;
       margin-left: auto;
       margin-right: auto;
    }
-   
+
    .attribution {
       text-align: right;
       width: 85.3%;
    }
-   
+
    .column {
       width: 64%;
       margin-left: -20.3%;
@@ -1337,9 +1350,9 @@ article footer code {
    article h4 {
       text-align: left;
    }
-   
+
    .image {}
-   
+
       .image .content-meta {
          text-align: left;
          float: right;
@@ -1348,14 +1361,14 @@ article footer code {
          max-width: 13.289rem;
          width: 13.289rem;
       }
-      
+
       .image figure {
          max-width: 100%;
          text-align: center;
          margin-right: 17.714em;
          padding: 1.515em 0 0;
       }
-      
+
          .image figure.vertical {
             margin-left: 17.714em;
          }
@@ -1363,19 +1376,19 @@ article footer code {
          .image figure img {
             max-width: 100%;
          }
-      
+
       .image .content-meta,
       .wf-active .image .content-meta {
          padding-left: 0;
       }
-      
+
       .image figcaption {
          text-align: right;
          font-family: cronos-pro, 'Century Gothic', sans-serif;
          font-weight: 400;
          font-size: 1.333rem;
       }
-   
+
    /* ----- @Page navigation ----- */
    #page-nav {
       font-size: 1.333em;
@@ -1404,11 +1417,11 @@ article footer code {
    .content-meta {
       padding-right: 1.515em;
    }
-   
+
    .image figure {
-      
+
    }
-      
+
    #site-nav li.level-1 {
       font-size: 1.333rem;
    }
@@ -1431,7 +1444,7 @@ article footer code {
       max-width: 63.561em;
       font-size: 1.201rem;      /* 1.137em + 0.067em -> 20.417px */
    }
-   
+
    article header h1 {
 
    }
@@ -1446,7 +1459,7 @@ article footer code {
    .content-meta {
       padding-right: 2.692rem;
    }
-   
+
    .toc {
       padding-right: 1.515rem;
    }
@@ -1457,7 +1470,7 @@ article footer code {
       padding-left: 2%;
       font-size: 1rem;
    }
-   
+
       #site-footer .footer-block h1 {
          font-size: 2.019rem;
       }

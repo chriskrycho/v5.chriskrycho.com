@@ -141,7 +141,6 @@ global $homeUrl;
                echo "&copy;2012 Chris Krycho";
             endif; ?>
          </p>
-         <p>Fonts by <a href="http://www.typekit.com/" target="_blank">Typekit</a></p>
          <? dynamic_sidebar('Colophon'); ?>
       </section>
    </footer>

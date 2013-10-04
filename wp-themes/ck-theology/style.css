@@ -9,19 +9,31 @@ Template: chriskrycho.com
 @import url("../chriskrycho.com/style.css");
 @import url("../chriskrycho.com/colors/from-the-heart.css");
 
-.wf-active header h1 {
+@font-face{
+    font-family: "trajan-pro";
+    src:url("../chriskrycho.com/fonts/b1ea5371-054f-484d-aa42-a79997cd4e21.eot?#iefix");
+    src:url("../chriskrycho.com/fonts/b1ea5371-054f-484d-aa42-a79997cd4e21.eot?#iefix") format("eot"),url("../chriskrycho.com/fonts/2649890f-ced1-4b53-9a01-4ce5a76159a6.woff") format("woff"),url("../chriskrycho.com/fonts/b66b7a48-c18d-4214-8f34-27f14538f51f.ttf") format("truetype"),url("../chriskrycho.com/fonts/083f0ff8-1ce1-4e64-bb92-478df522f370.svg#083f0ff8-1ce1-4e64-bb92-478df522f370") format("svg");
+}
+
+header h1 {
    font-family: trajan-pro;
 }
 
-.wf-active article header h1 {
+article header h1 {
    font-size: 1.333em;
+}
+
+blockquote {
+    font-size: 1em;
+    width: 90%;
+    font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
 }
 
 /* ----- For devices/views wider than 31.475rem ----- */
 @media (min-width: 525px) {
-   
-   .wf-active .content-meta {
+
+   .content-meta {
       margin-top: 0.853em;
    }
-   
+
 }

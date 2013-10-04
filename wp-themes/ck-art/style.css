@@ -9,52 +9,66 @@ Template: chriskrycho.com
 @import url("../chriskrycho.com/style.css");
 @import url("../chriskrycho.com/colors/coffee-house-journal.css");
 
+@font-face{
+    font-family: federico-web;
+    font-weight: normal;
+    font-style: normal;
+    src:url("../chriskrycho.com/fonts/dda2869e-0b02-4856-88ff-bb2abc82b694.eot?#iefix");
+    src:url("../chriskrycho.com/fonts/dda2869e-0b02-4856-88ff-bb2abc82b694.eot?#iefix") format("eot"),url("../chriskrycho.com/fonts/cdc9065e-5039-46f3-82d3-56128b36f556.woff") format("woff"),url("../chriskrycho.com/fonts/53edd460-f77c-4c3b-a061-1eb25b2489dc.ttf") format("truetype"),url("../chriskrycho.com/fonts/02cdd60b-1b63-4966-8b27-1120a35b4baa.svg#02cdd60b-1b63-4966-8b27-1120a35b4baa") format("svg");
+}
+
 /* ----- Override fonts ----- */
-html.wf-active {
+html {
    font-size: 125%;
 }
 
-.wf-active body {
+body {
    font-family: cronos-pro, 'Century Gothic', sans-serif;
 }
 
-.wf-active #site-footer {
+#site-footer {
    font-family: 'Minion Pro', minion-pro, Garamond, Times, serif;
+   font-size: 0.81rem;
 }
 
-.wf-active header h1 {
+header h1 {
    font-family: federico-web;
    font-size: 2.692em;
    margin-top: 0rem;
 }
 
-.wf-active #site-header h1 {
+#site-header h1 {
    font-family: federico-web;
    font-size: 3.157em;
-   margin-top: 0;
-   margin-bottom: -0.203em;
+   margin-top: 0.27em;
+   margin-bottom: -0.48em;
    margin-left: 1rem;
 }
 
-.wf-active .image .content-meta h2 {
+#site-header h2 {
+   font-size: 95%;
+   margin-top: -2.019em;
+}
+
+.image .content-meta h2 {
    font-family: federico-web;
    font-size: 2.369em;
 }
 
 @media (min-width: 535px) {
-   .wf-active article h1 {
+   article h1 {
       margin-bottom: 0;
    }
 }
 
 @media (max-width: 950px) {
-   .wf-active article header h1 {
+   article header h1 {
       padding-top: 2.962rem;
    }
 }
 
 @media (max-width: 1440px) {
-   .wf-active .image .content-meta h2 {
+   .image .content-meta h2 {
       font-size: 2.369rem;
    }
 }
