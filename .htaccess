@@ -2,85 +2,357 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
 
-# BEGIN WordPress
-# Redirect url to naked domain
+# Redirect `www` url to naked domain
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-# uploaded files
-RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) wp-includes/ms-files.php?file=$2 [L]
+# Redirect 2012--2013 WordPress Site to archive location
+RedirectMatch 301 (/(art|web|family|theology)/201[23]/\d\d/*) http://2012-2013.chriskrycho.com/$1
 
-# add a trailing slash to /wp-admin
-RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+# Ars Artis
+RedirectMatch 301 (/art/harry-potter-reread-philosophers-stone/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/on-writing-and-missed-days/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/writing-always-something-that-isnt-finished-yet/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/about-that-book/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/spring-forest-after-rain/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/a-covenant-that-bestows-dignity/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/something-rather-than-nothing/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/a-semantic-sacrament/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/a-distant-glorious-echo/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/dependable-as-bread/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/doom-is-held-less-literary/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/jackson-and-tolkien-hollywoods-infatuation-with-angst/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/announcement-the-world-as-it-is/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/the-most-important/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/i-nearly-wept/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/what-really-happens/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/already-an-enchanters-power/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/a-profound-desire/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/no-poetry-tonight/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/a-doxology-in-itself/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/harvest-face/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/bloodlines-serial-fiction-by-jaimie-krycho/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/amid-weeping-there-is-joy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/airplane-window/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/poetry-breeds-poetry/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/on-avid-and-sibelius/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/moon-shadows-dapple/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/evangelistic-tracts-and-real-art/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/restless/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/the-darkness-is-filled/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/the-return-of-the-shadow/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/and-the-stew-tastes-good/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/and-the-night-was-beautiful/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/sunrise-in-fog/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/when-the-cord-of-monotony-is-stretched-most-tight/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/that-ragged-edge/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/not-merely-a-world-full-of-miracles/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/mass-effect-3-and-art-as-dialectic/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/robinsong-and-quiet-rain/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/the-triumph-of-howard-shore/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/consistency/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/zombies-wine-and-christian-music/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/no-more-than-a-chill-mist/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/they-stand-not-lonely/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/venus-after-sunset/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/84/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/wed-call-a-tree-a-fool/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/atrophied-muscles/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/processional-update/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/drive-poem-2/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/art/artists/) http://2012-2013.chriskrycho.com/$1
 
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-RewriteRule  ^[_0-9a-zA-Z-]+/(wp-(content|admin|includes).*) $1 [L]
-RewriteRule  ^[_0-9a-zA-Z-]+/(.*\.php)$ $1 [L]
-RewriteRule . index.php [L]
-# END WordPress
+# From the Hearth
+RedirectMatch 301 (/family/one-semester-down/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/busy-as-can-be/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/growing-pains/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/snow-coffee-and-writing/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/from-north-carolina/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/getting-settled-in/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/christmas-letter-2012/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/early-november-already/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/trying-to-help/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/laying-a-foundation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/three-months-and-a-rant/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/so-that-our-family-page/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/still-on-the-planet-mostly/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/fun-and-games-and-frustrations/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/almost-7-weeks-things-are-changing/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/marriage-depression/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/dancing-ellie-kay/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/elayne-kaylee-krycho/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/reviewed-shepherding-a-childs-heart/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/its-official/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/a-mothers-day-letter-to-my-wife/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/our-past-four-weeks/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/sleeping-during-worship-rehearsal/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/studying-jesus-in-the-pentateuch/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/just-a-little-sleepy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/to-birth-class/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/a-matter-of-hope/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/thoughts-about-labor-the-baby-kind/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/a-timeline-update/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/miscellanies-in-march/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/baby-musings-video-games/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/challenges-blessings-and-transitions/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/success-at-the-cost-of-my-children-is-not-success/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/hi-belch/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/this-is-awesome/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/an-amusing-interlude/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/frightening-revelation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/tripod-antenna/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/50-mph-winds/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/first-kick/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/happiness-on-the-table/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/subscription-info/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/this-one-takes-the-cake/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/up-too-late/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/right-on-mr-tebow/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/first-post/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/friends/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/family/our-family/) http://2012-2013.chriskrycho.com/$1
 
-# BEGIN WPSuperCache
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-#If you serve pages from behind a proxy you may want to change 'RewriteCond %{HTTPS} on' to something more sensible
-AddDefaultCharset UTF-8
-RewriteCond %{REQUEST_URI} !^.*[^/]$
-RewriteCond %{REQUEST_URI} !^.*//.*$
-RewriteCond %{REQUEST_METHOD} !POST
-RewriteCond %{QUERY_STRING} !.*=.*
-RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
-RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
-RewriteCond %{HTTP_user_agent} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
-RewriteCond %{HTTP:Accept-Encoding} gzip
-RewriteCond %{HTTPS} on
-RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html.gz -f
-RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html.gz" [L]
+# Ardent Fidelity
+RedirectMatch 301 (/theology/review-cambridge-introduction-biblical-hebrew/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/predestination-atonement-perseverance-among-reformers/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/zwingli-luther-comparison/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/introduction-to-the-bible/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/concordism/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/end-beginning/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/whose-story/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/will-of-god/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/will-of-god-part-iii/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/will-of-god-part-ii/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/will-of-god-part-i/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/reflections-6-7-weeks-devotional-reflections/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/reflections-knowing-god-chapters-3-4/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/dont-miss-just-familiar/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/jacob-leah-rachel-mess/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/reflections-knowing-god-chapters-1-2/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-passion/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/then-they-spit-in-his-face/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/being-disciplined-or-not/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/be-teachable-jesus-is-coming-back/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-bit-more-boldness-please/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-gospel-in-the-proverbsresurrection-twice/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/doubt-is-not-a-christian-virtue/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-lords-supper-and-gospel-unity/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/thanksgiving-prayer-2013-08-11/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/seek-joy-where-it-lives/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-great-and-humble-god/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/on-race-hammer-nail-head/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/uncontainable-song/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/you-are-the-messiah/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/one-day-hopefully-soon/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/as-sacrifices-living-holy-pleasing-to-god/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/be-broken-or-get-broken/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/marriage-and-sexual-purity/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-living-sacrifice/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/than-many-sparrows/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/speaking-of-wisdom/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/hang-on-did-you-say-calmed-a-storm/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-hardest-passage-in-the-bible-for-me/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/you-already-got-your-prize/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/surrendering-everything-to-win-something/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/four-books-five-passages-one-messiah/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-hope-of-a-righteous-god/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/learning-humility/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/o-god-of-my-righteousness/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/when-the-first-maker-became-made/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/head-coverings-an-exegesis-of-1-corinthians-11_2-16/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/objectivism-and-utilitarianism-in-the-dark-knight-rises/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/he-who-made-all-things-restores-all-things/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/contra-mundum-athanasius/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/to-the-city-of-the-living-god/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-better-priest/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/wilson-and-anyabwile-on-black-and-tan/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/no-trinity-no-dice/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/in-your-face-satan/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/wicked-prophet-righteous-heathens/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-one-who-communicates-himself/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/nine-pointers-on-being-a-seminary-student-at-a-great-commission-seminary/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/when-the-context-is-the-oppressor/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/posts-i-havent-written-yet/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/we-are-not-troubled-by-being-put-to-death/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/great-love-and-great-wrath/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-mere-man-on-two-legs/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-strange-town-our-own-town/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/bless-yahweh/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/banishing-death-like-straw-from-the-fire/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/he-takes-unto-himself-a-body/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/between-the-apostles-and-the-reformation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/revelation-and-salvation-in-psalm-19/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/more-than-a-decorative-flower/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-pivotal-self-revelation-of-god-in-the-old-testament/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/god-will-provide-for-himself-the-lamb/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/dan-and-me-or-dialogue-as-it-should-be/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-theological-question/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/to-be-filed-under-duh/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/something-awesome-in-the-dark/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/pray-for-peace/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/zeal-and-mercy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-local-churchs-competition/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-righteous-branch/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/from-eternity/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/necessarily-linguistically-unprepared/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/to-ground-our-worship-in-reality/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/with-a-grin/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/just-get-along-and-work-together/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/published/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-next-feel-good-moment/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-cross-is-not-enough-and-neither-is-accuracy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/two-black-churches-one-true-one-not/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/three-shots-across-the-bow-of-culture/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/christology-is-the-heart/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/dancing-with-glee-god-and-our-prayers/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/epitaph-write-this-on-my-grave-stone/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/encouragement-and-critique-a-resolution/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/if-you-knew-jesus-were-coming-back-on-friday/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/family-vocation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/paul-apostle-gods-glory-christ/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/marriage-depression/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/less-noisome-insistence-more-joyful-exuberance-heaven/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/our-god-really-is-greater/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/shepherding-a-childs-heart/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/catherine-the-great/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/firebrand-preaching-a-call-for-exultation-and-exhortation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/behind-book-updates/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/what-even-wordsworth-knew/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/church-behind-the-wire/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/collected-works-of-g-k-chesterton-vol-vi/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-central-point-of-this-drama/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-miracle-of-the-killing-fields/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/more-on-jesus-nothing-everything/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/jesus-plus-nothing-equals-everything/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/principled-cooperation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/as-many-striking-evidences/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/lord-haste-the-day/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/an-aspen-in-a-forest-of-pines/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/an-instance-of-true-gratitude/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-end-of-all-tragedies/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/regret-is-not-repentance/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/dear-pastor-from-a-black-female-congregant/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/gospel-vs-ethnocentrism-jesus-wins/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/change-this-legacy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/white-church-alongside-black-pastors/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/pernicious/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/short-interpretively-challenging-or-both/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/to-be-an-abigail/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/on-missions-and-parachurch-ministries/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/deprived-of-our-crutches/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/do-you-have-a-peace-about-that/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/jeremy-lin/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/not-a-private-reality/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-theology-of-vocation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/outmoded/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-book-of-the-dun-cow/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/our-own-three-acres-of-onions/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/shape-of-a-full-throated-laugh/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/the-world-is-flat/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/reading-right-now/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/not-preaching-enough-about-god/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/frightening-revelation/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/back-to-a-theology-of-work-we-go/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/ugh/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/whatdo-you-feel-about/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/an-unbelievable-indictment/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/singleness-and-kingdom/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/subscription-info/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/partakers-of-the-divine-nature/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/book-responses-and-reviews/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/gods-ultimate-goal/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/a-soft-launc/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/theology/theologians/) http://2012-2013.chriskrycho.com/$1
 
-RewriteCond %{REQUEST_URI} !^.*[^/]$
-RewriteCond %{REQUEST_URI} !^.*//.*$
-RewriteCond %{REQUEST_METHOD} !POST
-RewriteCond %{QUERY_STRING} !.*=.*
-RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
-RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
-RewriteCond %{HTTP_user_agent} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
-RewriteCond %{HTTP:Accept-Encoding} gzip
-RewriteCond %{HTTPS} !on
-RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html.gz -f
-RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html.gz" [L]
-
-RewriteCond %{REQUEST_URI} !^.*[^/]$
-RewriteCond %{REQUEST_URI} !^.*//.*$
-RewriteCond %{REQUEST_METHOD} !POST
-RewriteCond %{QUERY_STRING} !.*=.*
-RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
-RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
-RewriteCond %{HTTP_user_agent} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
-RewriteCond %{HTTPS} on
-RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html -f
-RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html" [L]
-
-RewriteCond %{REQUEST_URI} !^.*[^/]$
-RewriteCond %{REQUEST_URI} !^.*//.*$
-RewriteCond %{REQUEST_METHOD} !POST
-RewriteCond %{QUERY_STRING} !.*=.*
-RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
-RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
-RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
-RewriteCond %{HTTP_user_agent} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
-RewriteCond %{HTTPS} !on
-RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html -f
-RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html" [L]
-</IfModule>
-
-# END WPSuperCache
-
+# Designgineering
+RedirectMatch 301 (/web/floating-point-math-hard/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/python-homebrew-virtualenv-os-x-framework-builds/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/itunes-radio-gamechanger/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/great-deglobalization/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/stop-being-a-product/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/the-little-things-why-im-done-with-android/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/os-x-a-few-much-needed-improvements/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/new-sites-live/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/modular-scales-fantastic-but-dont-overdo-it/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/step-stool-io-2/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/step-stool-io-status/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/youtube-video-name-trick/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/markdown-and-academic-writing/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/current-plans/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/a-boat-anchor/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/kindle-custom-fonts-paperwhite-info/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/why-i-love-markdown/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/launch-an-editor-with-a-list-of-files-containing-a-string/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/four-more-anti-patterns/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/two-absurd-anti-patterns/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/bitbucket/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/stupid-facebook/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/dont-confuse-your-semantics/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/a-complaint-ive-made-before/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tumblr-ing/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/not-paying-attention/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/bundling/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/latex-mathjax-test/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/sicp-for-kindle-improved-by-yours-truly/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/hilarious-code-obfuscation-technique/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/psa-android-browser-and-soft-hyphens/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/four-theses-on-responsive-design/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/custom-fonts-on-kindle/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/a-professional-writer-jaimiekrycho-com/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/psa-jquery-validate-1-10-0-accept-method/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/dear-avid-please-sell-sibelius/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/dont-sell-out/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/we-live-in-the-future/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/restructuring-source-eclipse-cdt-makefile-errors/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/good-programming-in-3-simple-rules/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/introducing-jira-commit-acceptance-plugin-tweaks-python-batch/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tools/jira-commit-acceptance-plugin-tweaks/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tools/run-executable-on-a-network-drive-batch-file/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/eclipse-indigo-subversive-and-connectors/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/jira-confluence-intranets-and-windows-firewall/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/oh-my/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/bitstream-vera-sans/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/saving-the-bookstore/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/platforms-and-data-or-why-google-needs-hootsuite/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/user-agent-detection-will-get-you-in-trouble/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/youll-pay-more-tomorrow/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/read-the-source-luke/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/unfortunate-lookalikes/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/a-plea-for-open-data/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/responsive-design-server-side-feature-detection-and-a-big-mess/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/the-danger-of-search-engine-optimization/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/upgrading-wordpress-manually/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tools/fontify/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/dont-kill-kittens/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/introducing-typekitify/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/i-can-hardly-wait/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tools/ligatures-plus-js/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/success-at-the-cost-of-my-children-is-not-success/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tools/typekitify/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/death-to-vendor-prefixes/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/tools/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/introducing-ligatures-plus-js/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/giving-up/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/syntax-is-easy-languages-are-a-bit-harder/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/on-pirates-and-piracy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/adventures-in-css3-typography/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/a-bit-of-a-bear/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/senator-wyden-a-congressional-wakeup-call/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/cookiee/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/for-the-record/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/12-5-hours-of-work/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/measure-matters/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/clay-shirky-pick-up-the-pitchforks/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/best-comment-on-sopapipa/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/no-castle-for-you/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/a-note-on-defeating-piracy/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/problems-with-sopa-pipa/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/subscription-info/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/css3-and-3d-text/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/the-only-mac/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/first-cms/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/keyboard-quality-matters/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/version-3-0/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/web-professionals/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/process/) http://2012-2013.chriskrycho.com/$1
+RedirectMatch 301 (/web/work/) http://2012-2013.chriskrycho.com/$1

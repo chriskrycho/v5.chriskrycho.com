@@ -30,8 +30,9 @@ DEFAULT_CATEGORY = 'blog'
 OUTPUT_SOURCES = True
 OUTPUT_SOURCES_EXTENSION = ".txt"
 
-# Markdown
+# Markdown and text handling
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc', 'headerid']
+# TYPOGRIFY = True
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
