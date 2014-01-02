@@ -36,3 +36,7 @@ MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc', 'headerid']
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+# URLs
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
