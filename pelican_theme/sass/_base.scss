@@ -1,0 +1,37 @@
+/**
+ * Modular scale:
+ *    http://modularscale.com/scale/?px1=17&px2=1920&ra1=1.333&ra2=0
+ *
+ * Base text size: 17px
+ * Important number: 1920px
+ * Scale: 3:4 - Musical Fourth
+ *
+ * Font sizes given in terms of headings/paragraph (fs1 => h1, fsp => p)
+*/
+$fs1: 3.157rem;
+$fs2: 2.369rem;
+$fs3: 1.777rem;
+$fs4: 1.333rem;
+$fsp: 17px;
+$fs5: 0.853rem;
+$fs6: 0.75rem;
+
+$lh: 1.515;
+$lhsmall: 1.137;
+
+
+/* Color scheme:
+ *    http://www.colourlovers.com/palette/1875001/The_First_Scarf
+ *
+ * Colors:
+ *    Dark gray:  #20282A (more than the ocean)
+ *    Light gray: #6C7487 (terminal blue gray)
+ *    White:      #FFFFFF (white)
+ *    Light blue: #5592C9 (Scarf Stripe)
+ *    Dark blue:  #01295C (Dark Wash Jeans)
+*/
+$dark_gray: #20282A;
+$light_gray: #6C7487;
+$white: #FFFFFF;
+$light_blue: #5592C9;
+$dark_blue: #01295C;
