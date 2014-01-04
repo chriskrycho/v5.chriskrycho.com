@@ -38,8 +38,8 @@ TYPOGRIFY = True
 RELATIVE_URLS = True
 
 # URLs
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 
 # Path configuration
 STATIC_PATHS = ['extra/CNAME',]  # Include the CNAME file
