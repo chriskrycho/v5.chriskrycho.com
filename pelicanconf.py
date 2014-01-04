@@ -43,4 +43,5 @@ ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 
 # Path configuration
 STATIC_PATHS = ['extra/CNAME',]  # Include the CNAME file
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}  # Copy CNAME file to /output
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},  # Copy CNAME file to /output
+                       'extra/.htaccess': {'path': '.htaccess'},}  # Copy .htaccess file to /output
