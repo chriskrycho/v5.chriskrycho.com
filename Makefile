@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=chriskrycho.com
 SSH_PORT=22
 SSH_USER=chriskry
-SSH_TARGET_DIR=/home/chriskry/public_html
+SSH_TARGET_DIR=/home/chriskry/domains/chriskrycho.com
 
 S3_BUCKET=my_s3_bucket
 
@@ -105,9 +105,5 @@ cf_upload: publish
 github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
-
-git_shared: publish
-	ghp-impot $(OUTPUTDIR)
-	git push shared gh-pages
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
