@@ -40,3 +40,7 @@ RELATIVE_URLS = True
 # URLs
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
+
+# Path configuration
+STATIC_PATHS = ['extra/CNAME',]  # Include the CNAME file
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}  # Copy CNAME file to /output

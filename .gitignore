@@ -1,0 +1,45 @@
+# Emacs save and block files
+*~
+.*\#
+
+# OS X Finder files
+.DS_Store
+
+# IntelliJ IDEA files
+*.iml
+*.eml
+.idea
+
+# SASS
+.sass-cache
+.sass-cache/
+
+# Python elements
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
