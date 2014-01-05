@@ -16,9 +16,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/chriskrycho'),
-          ('App.net', 'http://app.net/chriskrycho'),
-          ('Facebook', 'http://www.facebook.com/chriskrycho'),)
+IDENTITY = {'App.net': 'https://app.net/chriskrycho',
+            'Facebook': 'https://www.facebook.com/chriskrycho',
+            'Google+': 'https://plus.google.com/+ChrisKrycho',
+            'Twitter': 'https://twitter.com/chriskrycho',}
 
 DEFAULT_PAGINATION = 5
 

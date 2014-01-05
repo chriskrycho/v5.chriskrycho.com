@@ -1,23 +1,29 @@
 /**
  * Modular scale:
- *    http://modularscale.com/scale/?px1=17&px2=1920&ra1=1.333&ra2=0
+ *    http://modularscale.com/scale/?px1=18&px2=36&ra1=1.6&ra2=1.2&name=minorsixthminorthird
  *
  * Base text size: 17px
  * Important number: 1920px
  * Scale: 3:4 - Musical Fourth
  *
  * Font sizes given in terms of headings/paragraph (fs1 => h1, fsp => p)
-*/
-$fs1: 3.157rem;
-$fs2: 2.369rem;
-$fs3: 1.777rem;
-$fs4: 1.333rem;
-$fsp: 17px;
-$fs5: 0.853rem;
-$fs6: 0.75rem;
+ * The commented sizes are at the base scale.
+ */
+$fs_very_large: 3.456em;   // 62px
+$fs_large: 2.88em;   //52px
 
-$lh: 1.515;
-$lhsmall: 1.137;
+$fs1: 2.4em;   // 43px
+$fs2: 2em;     // 36px
+$fs3: 1.667em; // 30px
+$fs4: 1.389em; // 25px
+$fs5: 1.157em; // 21px
+$fsp: 1em;     // 18px
+$fs6: 0.965em; // 17px
+
+$fs_small: 0.804em;  // 14px
+
+$line_height: 1.515;
+$line_height_small: 1.137;
 
 
 /* Color scheme:

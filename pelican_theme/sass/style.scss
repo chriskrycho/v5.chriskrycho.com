@@ -1,4 +1,7 @@
 @import "reset";
-@import "type";
+@import "fonts";
 @import "base";
 
+html {
+   font-size: 118.75%;  /* -> 18px, using percentage to allow IE user stylesheet changes */
+}
