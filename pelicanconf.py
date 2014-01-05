@@ -11,9 +11,8 @@ TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+FEED_ALL_RSS = None
+CATEGORY_FEED_RSS = None
 
 # Social widget
 IDENTITY = {'App.net': 'https://app.net/chriskrycho',
