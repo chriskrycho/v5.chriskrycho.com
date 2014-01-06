@@ -40,6 +40,14 @@ RELATIVE_URLS = True
 # URLs
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+CATEGORY_URL = '{slug}.html'
+CATEGORY_SAVE_AS = '{slug}.html'
+TAG_URL = '{slug}.html'
+TAG_SAVE_AS = '{slug}.html'
+# AUTHOR_URL = None
+# AUTHOR_SAVE_AS = None
 
 # Path configuration
 STATIC_PATHS = ['extra/CNAME', 'extra/.htaccess']  # Include the CNAME file
