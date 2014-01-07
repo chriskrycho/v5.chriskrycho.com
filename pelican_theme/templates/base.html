@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
    <meta name="description" content="" />
 
    <meta charset="UTF-8"/>
-   <meta lang="{{ DEFAULT_LANG }}"
-
-   {# Mobile device viewport settings #}
-   <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=no' />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
 
    {# Authorship #}
    {% include "identity/app.net.html" %}
@@ -17,7 +14,7 @@
    {% include "identity/twitter.html" %}
 
    {# CSS #}
-   <link rel="stylesheet" type="text/css" href=""
+   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_URL }}/css/{{ CSS_FILE }}" />
 
 </head>
 <body>
