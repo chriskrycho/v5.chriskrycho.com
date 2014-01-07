@@ -1,7 +1,7 @@
-Title: Five Things Proverbs 5 Teaches
+Title: Five Things Proverbs 6 Teaches
 Date: 2014-01-06 20:30
 Author: Chris Krycho
-Slug: five-things-proverbs-five
+Slug: five-things-proverbs-six
 Tags: devotions
 Passages: 2 Kings 11–15, Psalm 6, Proverbs 6
 <!--Template: devotions-->
