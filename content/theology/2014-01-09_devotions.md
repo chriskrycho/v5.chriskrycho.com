@@ -14,11 +14,11 @@ As I read the parallel passage in 1 Kings a little while back, it struck me that
 
 We are not a temple-building people, and our monuments tend to be austere and formal. Think of the Lincoln or Washington memorials in Washington, D. C.: they are not exactly *lively* places. Though celebratory and laudatory, they seek to impress rather than to delight, focusing on clean, simple lines and shapes with little ornamentation. The Solomonic temple, and before it the tabernacle, were *not* like that. They were full of color and decoration, even as they were built at striking physical scales. They were designed to engage every sense, sight and smell especially. They were *beautiful*.
 
-So: beautiful the temple may have been. We are still left asking why the beauty of a temple built in ancient Jerusalem almost three millennia ago matters to Christians today. The answer, I think, lies in two passages in the New Testament:
+So: beautiful the temple may have been. We are still left asking why the beauty of a temple built in ancient Jerusalem almost three millennia ago matters to Christians today. The answer, I think, lies in two passages in the New Testament. First:
 
 > So then you are no longer strangers and aliens, but you are fellow citizens with the saints and members of the household of God, built on the foundation of the apostles and prophets, Christ Jesus himself being the cornerstone, in whom the whole structure, being joined together, grows into a holy temple in the Lord. In him you also are being built together into a dwelling place for God by the Spirit. (Ephesians 2:19-22, ESV)
 
-[//]: break
+And again:
 
 > Then I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. And I heard a loud voice from the throne saying, "Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away."
 > 
