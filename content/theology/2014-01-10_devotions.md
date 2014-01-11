@@ -22,5 +22,3 @@ This genealogy stands as a rebuke to our self-adulation and our emphasis on our 
 [^learned]: Even having read through these chapters a number of times, it had escaped me until tonight that David's generals, Joab, Asahel, and Abishai, were his nephews--the sons of his sister Zeruiah (see 1 Chronicles 2:16). This detail sheds interesting light on many of their interactions, especially on David's reticence to remove them from authority even when they were unruly. Yet it had previously been lost on me entirely.
 
 [audio Bible]: http://christianaudio.com/free
-
----
