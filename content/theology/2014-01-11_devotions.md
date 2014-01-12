@@ -1,7 +1,8 @@
-Title: Saul and David
+Title: Saul and David/Righteousness and Folly
 Date: 2014-01-11 20:50
 Author: Chris Krycho
 Tags: devotions
+Slug: saul-david-righteousness-folly
 Passages: 1 Chronicles 6–10, Psalm 11, Proverbs 11
 <!--Template: devotions-->
 
