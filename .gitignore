@@ -5,6 +5,11 @@
 # OS X Finder files
 .DS_Store
 
+# Witing files
+*.Ulysses-Group.plist
+*.marked
+
+
 # IntelliJ IDEA files
 *.iml
 *.eml
