@@ -8,6 +8,7 @@
 # Witing files
 *.Ulysses-Group.plist
 *.marked
+.UlyssesRoot
 
 
 # IntelliJ IDEA files
