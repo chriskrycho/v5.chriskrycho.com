@@ -1,0 +1,59 @@
+Title: Practical Wisdom
+Date: 2014-01-14 23:10
+Author: Chris Krycho
+Tags: devotions
+Slug: 01-14-practical-wisdom
+Passages: 1 Chronicles 21–25, Psalm 14, Proverbs 14
+<!--Template: devotions-->
+
+The Proverbs contain a striking mix of profound theological statements and practical, down-to-earth wisdom. Often the two come right next to each other,[^contrast?] and are both made all the more illuminating by way of the juxtaposition. The book's pages also include no few beautiful gems of insight into the human condition. Some of each caught my attention tonight as I read through Proverbs 14.
+
+## On the human condition
+
+> The heart knows its own bitterness,  
+> and no stranger shares its joy. (Proverbs 14:10, ESV)
+
+And again:
+
+> Even in laughter the heart may ache,  
+> and the end of joy may be grief. (Provebs 14:13, ESV)
+
+Both of these speak to realities we have all experienced. To be human in a fallen world is to be lonely at times---to know that one's heart can never be shared perfectly with another. There are times when our hearts ache with this knowledge: because our grief is so deep that we wish another could partake of it with us and so ease the ache, and because our hearts are so full of gladness that we wish another could partake of it with us and so share the merriment. But we cannot. We are sundered from one another. But not finally so. We were made for better than this. Some day we will taste of it. In the long wait until that day, we may content ourselves with this: that very God of very God has drunk the bowl of our grief and supped with us in joy-making---we are known.
+
+## Practical insights
+
+> A truthful witness saves lives,  
+> but one who breathes out lies is deceitful. (Proverbs 14:25, ESV)
+
+This one seems both straightforward and obvious to me. It is interesting, though, that the author makes the point that the truthful witness *saves lives*. It reminds me that our lenient age, with death a rare punishment for any crime, no matter how severe, is very different from almost every other. The word of a witness, in those days, meant the difference between a man being stoned to death and his going home to his family. Yet it is no less important today. I read recently of a case of wrongful conviction---a man sentenced to prison for a crime he did not commit, which it is now *known* he did not commit, and still he cannot get out of jail---and all this because of a false testimony delivered on the stand many decades ago. [^justice] Our words still have the power to make or ruin lives. Sometimes these are dramatic moments; other times they are the many little moments that add up to a larger shift in the course of one's life. Either way, telling the truth matters.
+
+## Theological profundities
+
+> In the fear of the <span style="font-variant: small-caps">Lord</span> one has strong confidence,  
+> and his children will have a refuge.  
+> The fear of the <span style="font-variant: small-caps">Lord</span> is a fountain of life,  
+> that one may turn away from the snares of death. (Proverbs 14:26--27, ESV)
+
+These verses remind me in the sharpest terms that fearing Yahweh is essential to my own spiritual health and that of my family. Fearing him is confidence, refuge, life, escape from the snares of death. What would it mean, then, *not* to fear God? And make no mistake: fear here is more than mere reverence. God is holy, and his wrath burns hot against sin; we *should* fear him. Not in contradistinction to loving him, though. Note that it is precisely in fearing Yahweh that one has confidence and refuge and life and salvation!
+
+The next one is of a rather different kind, but its anthropological theology is striking:
+
+> Whoever oppresses a poor man insults his Maker,  
+> but he who is generous to the needy honors him. (Proverbs 14:31, ESV)
+
+God so cares about the poor, that to oppress poor people is to insult him. He so loves the needy that being generous to them is to honor him. I think many Christians who are both theologically and politically conservative fail to take these kinds of words sufficiently seriously. Whatever the case may be for others, I know *I* have failed to take them with all the gravity these words carry.
+
+## Striking contrasts
+
+> The poor is disliked even by his neighbor,  
+> but the rich has many friends.  
+> Whoever despises his neighbor is a sinner,  
+> but blessed is he who is generous to the poor. (Proverbs 14:20-21, ESV)
+
+The first stanza is one of those straightforward, practical observations on the way things are in this broken world. It is simply *true* that people look down on those who are poor, and that wealth earns friendship (of a sort). It is not *right* that this is so. But still it is so. The second stanza shows up this reality for what it is, though: a reflection of a broken reality. The man who scorns his neighbor---no matter the cause, but as we have seen perhaps *especially* if for poverty---sins in doing so. The man who gives generously to the poor is blessed. The contrast between the broken world in which we live and the holy ways of God to which we are called could not be clearer.
+
+In summary, I am increasingly grateful for the Proverbs. I appreciate more and more Solomon's (and others') skill in composing them, and the editor's skill in arranging them so thoughtfully. Praise God.
+
+[^contrast?]: It strikes me that we evangelicals---ever jetting between the poles of abstruse dogmatics and applied pragmatics---would do well to spend a bit more time on the way the Proverbs marry the two.
+
+[^justice]: To be sure, this indicates flaws in our justice system, as well.
