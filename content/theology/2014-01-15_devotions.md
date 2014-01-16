@@ -9,7 +9,7 @@ Psalm 15, like many of the Psalms, has a double purpose. It points us simultaneo
 
 David opens with a provocative, challenging question:
 
-> Oh \<span style="font-variant: small-caps"\>Lord\</span\>, who shall sojourn in your tent?  
+> Oh <span style="font-variant: small-caps">Lord</span>, who shall sojourn in your tent?  
 > Who shall dwell on your holy hill? (Psalm 15:1, ESV)
 
 Who indeed? The Psalms have already shown us[^1] the image of a holy God who will brook no injustice and who hates sin passionately, but who is also the covenant-keeper and salvation of Israel.
