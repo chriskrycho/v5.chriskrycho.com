@@ -1,0 +1,42 @@
+Title: Who Can Dwell With God?
+Date: 2014-01-14 23:55
+Author: Chris Krycho
+Tags: devotions
+Passages: 1 Chronicles 26–2 Chronicles 1, Psalm 14, Proverbs 14
+<!--Template: devotions-->
+
+Psalm 15, like many of the Psalms, has a double purpose. It points us simultaneously to whom we ought to aim to be as we strive to be holy as God is holy, and to Christ, the only one who has ever perfectly walked out these words. Walking through the passage tonight provided an opportunity both to pray for the Holy Spirit to make me more like these words, and to worship the Holy One of God who has actually fulfilled them.
+
+David opens with a provocative, challenging question:
+
+> Oh \<span style="font-variant: small-caps"\>Lord\</span\>, who shall sojourn in your tent?  
+> Who shall dwell on your holy hill? (Psalm 15:1, ESV)
+
+Who indeed? The Psalms have already shown us[^1] the image of a holy God who will brook no injustice and who hates sin passionately, but who is also the covenant-keeper and salvation of Israel.
+
+> He who walks blamelessly and does what is right  
+> and speaks truth in his heart; ... (Psalm 15:2, ESV)
+
+This is quite the target to hit already. Who *always* walks blameless and does what is right? Not I. Who is *never* self-deceived (still less never deceitful toward others)? Again, not I.
+
+> ...who does not slander with his tongue  
+> and does no evil to his neighbor,  
+> nor takes up a reproach against his friend; ... (Psalm 15:3, ESV)
+
+All of us have slandered our neighbors and taken up a reproach against friends. We have spoken cruelly of those we love, been harsh in our assessments of people over whom we have no such right to stand in judgment. We have been unkind to friends and held against them their sins. All of us have done evil to our neighbors---there is no one among us who has escaped and managed to avoid ever harming anyone near us.
+
+> ...in whose eyes a vile person is despised,  
+> but who honors those who fear the Lord; ... (Psalm 15:4a, ESV)
+
+How many of us can truly say that we have this kind of heart---that we always earnestly oppose those who rebel against God, and honor those who fear Him? Again: not I. Too often I make excuses for those who do not know God, rather than call their idolatrous and treacherous way of life as it is. Too often I am impatient and unkind and derogatory toward those who *do* walk with God.
+
+> who swears to his own hurt and does not change;  
+> who does not put out his money at interest  
+> and does not take a bribe against the innocent.  
+> He who does these things shall never be moved. (Psalm 15:4b--5, ESV)
+
+How many of us have made a promise and then gone back on it because it became inconvenient? How many of us have, if not literally charged interest, then held it against people when it took them a long time to pay us back on money we lent them? To what extent are we *all* complicit in crimes against the innocent, even when we ourselves have kept our hands clean---just by dint of our lives in a fallen world, as part of a fallen nation, where every year sees innocent lives lost at our hands?
+
+There is not much hope for any of us to stand on God's holy hill even for a moment---still less to dwell there forever. But Christ has measured up to every line that David raised, and gone beyond them. He stands in our stead, his righteousness granted to us, our failings taken on his own body. His Spirit empowers us to pursue this kind of life: fleeing sin and pursuing the holiness of God. May we seek to look more like Christ, who alone  has the right to sojourn in Yahweh's tent and who alone has the right to dwell on his holy hill---but who has invited all of us in to the feast in that temple and to sit at his feet and eat the bread that satisfies on his mountain.
+
+[^1]:	I take the view that the Psalms, in addition to being valuable in their own right individually, were organized by an editor who knew what he or she was about. That editor's decisions about where to put the Psalms is often illuminating---much as it is with any other collection.
