@@ -1,5 +1,5 @@
 Title: Who Can Dwell With God?
-Date: 2014-01-14 23:55
+Date: 2014-01-15 23:55
 Author: Chris Krycho
 Tags: devotions
 Passages: 1 Chronicles 26–2 Chronicles 1, Psalm 14, Proverbs 14
