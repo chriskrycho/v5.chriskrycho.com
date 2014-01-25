@@ -11,11 +11,6 @@
 .UlyssesRoot
 
 
-# IntelliJ IDEA files
-*.iml
-*.eml
-.idea
-
 # SASS
 .sass-cache
 .sass-cache/
