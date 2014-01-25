@@ -11,8 +11,8 @@ Description:
 Some texts are a bit more mysterious than they might at first appear. One such is Psalm 24, at least for me. The poem has three basic sections:
 
 - a declaration of Yahweh's possession of and sovereignty over the world he made (vv. 1--2)
-- a reflection on the character of one who may approach Yahweh
-- a call to and an act of exultation in the glory of Yahweh
+- a reflection on the character of one who may approach Yahweh (vv. 3--6)
+- a call to and an act of exultation in the glory of Yahweh (vv. 7--10)
 
 At first glance, there is no obvious connection between these three elements. The third might seem to follow from the first to some extent, but the emphases are all different. The first section addresses Yahweh's rule over creation; the last enjoins gates and doors[^gates-doors] to worship him on the basis that he---Yahweh of hosts---is the king of glory. The middle section, on the character of those who can approach him, seems completely disconnected from either.
 
