@@ -1,76 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" name="Default" comment="Add IDEA project files (no reason not to).">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pelican_theme/templates/templates/class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pelican_theme/templates/templates/devotions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/01-14-practical-wisdom.html" afterPath="$PROJECT_DIR$/output/2014/01-14-practical-wisdom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/a-note-to-rss-subscribers.html" afterPath="$PROJECT_DIR$/output/2014/a-note-to-rss-subscribers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/about.html" afterPath="$PROJECT_DIR$/output/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/feeds/all-en.atom.xml" afterPath="$PROJECT_DIR$/output/feeds/all-en.atom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/archives.html" afterPath="$PROJECT_DIR$/output/archives.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/article.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/authors.html" afterPath="$PROJECT_DIR$/output/authors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/blog.html" afterPath="$PROJECT_DIR$/output/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/categories.html" afterPath="$PROJECT_DIR$/output/categories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/author/chris-krycho.html" afterPath="$PROJECT_DIR$/output/author/chris-krycho.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/author/chris-krycho2.html" afterPath="$PROJECT_DIR$/output/author/chris-krycho2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/author/chris-krycho3.html" afterPath="$PROJECT_DIR$/output/author/chris-krycho3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/author/chris-krycho4.html" afterPath="$PROJECT_DIR$/output/author/chris-krycho4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/author/chris-krycho5.html" afterPath="$PROJECT_DIR$/output/author/chris-krycho5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/author/chris-krycho6.html" afterPath="$PROJECT_DIR$/output/author/chris-krycho6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chriskrycho.com.iml" afterPath="$PROJECT_DIR$/chriskrycho.com.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/devotions.html" afterPath="$PROJECT_DIR$/output/devotions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/devotions2.html" afterPath="$PROJECT_DIR$/output/devotions2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/devotions3.html" afterPath="$PROJECT_DIR$/output/devotions3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/devotions4.html" afterPath="$PROJECT_DIR$/output/devotions4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/devotions5.html" afterPath="$PROJECT_DIR$/output/devotions5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/elijah-elisha.html" afterPath="$PROJECT_DIR$/output/2014/elijah-elisha.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/ending-badly.html" afterPath="$PROJECT_DIR$/output/2014/ending-badly.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/every-king-broken.html" afterPath="$PROJECT_DIR$/output/2014/every-king-broken.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/finding-god-proverbs.html" afterPath="$PROJECT_DIR$/output/2014/finding-god-proverbs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/five-things-proverbs-six.html" afterPath="$PROJECT_DIR$/output/2014/five-things-proverbs-six.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/folly-of-sin.html" afterPath="$PROJECT_DIR$/output/2014/folly-of-sin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/foreign-wives-and-real-devotion.html" afterPath="$PROJECT_DIR$/output/2014/foreign-wives-and-real-devotion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/from-creation-to-consummation.html" afterPath="$PROJECT_DIR$/output/2014/from-creation-to-consummation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/generation-by-generation.html" afterPath="$PROJECT_DIR$/output/2014/generation-by-generation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/grappling-with-genealogies.html" afterPath="$PROJECT_DIR$/output/2014/grappling-with-genealogies.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/index.html" afterPath="$PROJECT_DIR$/output/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/index2.html" afterPath="$PROJECT_DIR$/output/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/index3.html" afterPath="$PROJECT_DIR$/output/index3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/index4.html" afterPath="$PROJECT_DIR$/output/index4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/index5.html" afterPath="$PROJECT_DIR$/output/index5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/index6.html" afterPath="$PROJECT_DIR$/output/index6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/invest-memorizing-scripture.html" afterPath="$PROJECT_DIR$/output/2014/invest-memorizing-scripture.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/justice-mercy-same-stroke.html" afterPath="$PROJECT_DIR$/output/2014/justice-mercy-same-stroke.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/kings-contrast.html" afterPath="$PROJECT_DIR$/output/2014/kings-contrast.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/life-and-death-of-words.html" afterPath="$PROJECT_DIR$/output/2014/life-and-death-of-words.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/drafts/migrating-to-pelican.html" afterPath="$PROJECT_DIR$/output/drafts/migrating-to-pelican.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/mouths-of-poets.html" afterPath="$PROJECT_DIR$/output/2014/mouths-of-poets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/new-year-devotions.html" afterPath="$PROJECT_DIR$/output/2014/new-year-devotions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/prayer-thanksgiving-jan-12-2014.html" afterPath="$PROJECT_DIR$/output/2014/prayer-thanksgiving-jan-12-2014.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/prayers.html" afterPath="$PROJECT_DIR$/output/prayers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/publishconf.py" afterPath="$PROJECT_DIR$/publishconf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/saul-david-righteousness-folly.html" afterPath="$PROJECT_DIR$/output/2014/saul-david-righteousness-folly.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/scriptural-miscellanies-jan-12-2014.html" afterPath="$PROJECT_DIR$/output/2014/scriptural-miscellanies-jan-12-2014.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/seminary.html" afterPath="$PROJECT_DIR$/output/seminary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/study-in-contrasts-2-kings-16-20.html" afterPath="$PROJECT_DIR$/output/2014/study-in-contrasts-2-kings-16-20.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/tags.html" afterPath="$PROJECT_DIR$/output/tags.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/temple-for-god.html" afterPath="$PROJECT_DIR$/output/2014/temple-for-god.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/theology.html" afterPath="$PROJECT_DIR$/output/theology.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/theology2.html" afterPath="$PROJECT_DIR$/output/theology2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/theology3.html" afterPath="$PROJECT_DIR$/output/theology3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/theology4.html" afterPath="$PROJECT_DIR$/output/theology4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/theology5.html" afterPath="$PROJECT_DIR$/output/theology5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/drafts/thoughts-harry-potter-reread.html" afterPath="$PROJECT_DIR$/output/drafts/thoughts-harry-potter-reread.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/what-was-their-sin.html" afterPath="$PROJECT_DIR$/output/2014/what-was-their-sin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/when-god-built-david-a-house.html" afterPath="$PROJECT_DIR$/output/2014/when-god-built-david-a-house.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/2014/who-can-dwell-with-god.html" afterPath="$PROJECT_DIR$/output/2014/who-can-dwell-with-god.html" />
+    <list default="true" id="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chriskrycho.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390697329118" ignored="false" />
+    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390697474419" ignored="false" />
     <file path="/style.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1388856108728" ignored="false" />
     <file path="/*.regexp" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1388858381025" ignored="false" />
     <file path="$PROJECT_DIR$/output/feeds/all.atom.xml" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1388965136204" ignored="false" />
@@ -542,6 +478,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,7 +489,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -599,7 +535,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add IDEA project files (no reason not to)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Start building out the very basics of the article template, and add templates/class and templates/devotions with custom content for those page types." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -619,6 +555,7 @@
     <MESSAGE value="Add base module for typography and color elements, and import them to style.scss." />
     <MESSAGE value="Remove extraneous comments from top of stylesheet." />
     <MESSAGE value="Add IDEA project files (no reason not to)." />
+    <MESSAGE value="Start building out the very basics of the article template, and add templates/class and templates/devotions with custom content for those page types." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
