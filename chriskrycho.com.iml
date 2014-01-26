@@ -12,5 +12,13 @@
     <orderEntry type="library" name="Python 2.7.3 (/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7) interpreter library" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-stdlib" level="application" />
   </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/pelican_theme/templates" />
+      </list>
+    </option>
+  </component>
 </module>
 
