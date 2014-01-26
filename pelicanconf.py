@@ -34,7 +34,7 @@ OUTPUT_SOURCES = True
 OUTPUT_SOURCES_EXTENSION = ".txt"
 
 # Markdown and text handling
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc', 'headerid', 'smartypants']
+MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc', 'headerid', 'smartypants(smarten=old-school)']
 TYPOGRIFY = True
 
 # Uncomment following line if you want document-relative URLs when developing
