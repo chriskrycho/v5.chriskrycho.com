@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" name="Default" comment="Continue">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pelican_theme/templates/includes/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/base.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/index.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/index.html" />
+    <list default="true" id="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/includes/header.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelicanconf.py" afterPath="$PROJECT_DIR$/pelicanconf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chriskrycho.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877934100" ignored="false" />
+    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877956082" ignored="false" />
     <file path="/style.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876649762" ignored="false" />
     <file path="/*.regexp" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390874659473" ignored="false" />
     <file path="$PROJECT_DIR$/output/feeds/all.atom.xml" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1388965136204" ignored="false" />
@@ -32,13 +31,14 @@
     <file path="/opengraph.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877751736" ignored="false" />
     <file path="/id-twitter.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390875012129" ignored="false" />
     <file path="/twitter.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877714892" ignored="false" />
-    <file path="/pelicanconf.py" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876208620" ignored="false" />
+    <file path="/pelicanconf.py" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390878234149" ignored="false" />
     <file path="/index.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877923092" ignored="false" />
     <file path="/page.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876367685" ignored="false" />
     <file path="/author.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876345927" ignored="false" />
     <file path="/category.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876355717" ignored="false" />
     <file path="/_mixins.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876577897" ignored="false" />
     <file path="/app.net.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876772259" ignored="false" />
+    <file path="/header.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390878191396" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +117,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pelicanconf.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="16" selection-start="152" selection-end="168" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pelican_theme/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -144,10 +153,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pelican_theme/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="601" selection-end="637" vertical-scroll-proportion="0.36129034">
+            <state line="20" column="35" selection-start="625" selection-end="625" vertical-scroll-proportion="-12.173913">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pelican_theme/templates/includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.1083871">
               <folding />
             </state>
           </provider>
@@ -171,12 +189,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/publishconf.py" />
         <option value="$PROJECT_DIR$/pelican_theme/sass/_fonts.scss" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/article.html" />
         <option value="$USER_HOME$/Sites/winningslowly/design/templates/includes/id-common.html" />
         <option value="$USER_HOME$/Sites/winningslowly/design/templates/includes/id-twitter.html" />
-        <option value="$PROJECT_DIR$/pelicanconf.py" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/author.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/category.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/page.html" />
@@ -187,6 +203,8 @@
         <option value="$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/base.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/index.html" />
+        <option value="$PROJECT_DIR$/pelicanconf.py" />
+        <option value="$PROJECT_DIR$/pelican_theme/templates/includes/header.html" />
       </list>
     </option>
   </component>
@@ -660,7 +678,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove podcasting elements accidentally brought over from WS template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Continue building out basics of template." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -685,6 +703,7 @@
     <MESSAGE value="Tweak Twitter identity template." />
     <MESSAGE value="Tweak OpenGraph identity template." />
     <MESSAGE value="Remove podcasting elements accidentally brought over from WS template." />
+    <MESSAGE value="Continue building out basics of template." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -721,13 +740,6 @@
     <entry file="file://$PROJECT_DIR$/pelican_theme/templates/page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="11" selection-start="58" selection-end="58" vertical-scroll-proportion="-1.826087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="56" selection-start="310" selection-end="310" vertical-scroll-proportion="0.2631579">
           <folding />
         </state>
       </provider>
@@ -781,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pelican_theme/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="11" selection-start="79" selection-end="79" vertical-scroll-proportion="-2.4347825">
@@ -797,7 +802,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pelican_theme/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="601" selection-end="637" vertical-scroll-proportion="0.36129034">
+        <state line="20" column="35" selection-start="625" selection-end="625" vertical-scroll-proportion="-12.173913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="152" selection-end="168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.1083871">
           <folding />
         </state>
       </provider>

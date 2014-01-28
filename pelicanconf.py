@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Chris Krycho'
-SITENAME = 'chriskrycho.com'
+SITENAME = 'Chris Krycho'
 SITEURL = ''
-SITE_DESCRIPTION = ''
+SITE_DESCRIPTION = 'Creativity, reflection, & passionate endeavors by a peculiar fellow'
 LOGO = ''
 
 TIMEZONE = 'America/New_York'
