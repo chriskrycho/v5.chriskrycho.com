@@ -1,13 +1,13 @@
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@winningslowly" />
-<meta name="twitter:creator" content="@winningslowly" />
+<meta name="twitter:site" content="@chriskrycho" />
+<meta name="twitter:creator" content="@chriskrycho" />
 {% if article is defined %}
    <meta name="twitter:title" content="{{ article.title }}" />
    <meta name="twitter:description" content="{{ article.subtitle }}" />
    {% if article.image is defined %}
       <meta name="twitter:image" content="{{ article.image }}" />
    {% else %}
-      <meta name="twitter:image" content="{{ SITEURL }}/{{ PODCAST_LOGO }}" />
+      <meta name="twitter:image" content="{{ SITEURL }}/{{ LOGO }}" />
    {% endif %}
 {% else %}
    <meta name="twitter:title" content="{{ SITENAME }}" />
