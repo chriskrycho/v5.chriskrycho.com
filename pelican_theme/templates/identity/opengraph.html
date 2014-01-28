@@ -7,10 +7,6 @@
    {% else %}
       <meta property="og:image" content="{{ SITEURL }}/{{ LOGO }}" />
    {% endif %}
-   {% if article.m4a is defined %}
-      <meta property="og:audio" content="{{ SITEURL }}/{{ article.m4a }}"/>
-      <meta property="og:audio:type" content="audio/aac" />
-   {% endif %}
 {% else %}
    <meta property="og:url" content="{{ SITEURL }}" />
    <meta property="og:title" content="{{ SITENAME }}" />

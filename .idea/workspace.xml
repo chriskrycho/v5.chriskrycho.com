@@ -7,7 +7,7 @@
     </list>
     <ignored path="chriskrycho.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877741392" ignored="false" />
+    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877761033" ignored="false" />
     <file path="/style.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876649762" ignored="false" />
     <file path="/*.regexp" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390874659473" ignored="false" />
     <file path="$PROJECT_DIR$/output/feeds/all.atom.xml" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1388965136204" ignored="false" />
@@ -154,7 +154,7 @@
       <file leaf-file-name="opengraph.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="62" selection-start="400" selection-end="400" vertical-scroll-proportion="0.12645161">
+            <state line="8" column="14" selection-start="422" selection-end="422" vertical-scroll-proportion="0.14451613">
               <folding />
             </state>
           </provider>
@@ -667,7 +667,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tweak Twitter identity template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweak OpenGraph identity template." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -690,6 +690,7 @@
     <MESSAGE value="Start building out the very basics of the article template, and add templates/class and templates/devotions with custom content for those page types." />
     <MESSAGE value="Start building out site templates.&#10;- add a watcher task for generating SASS automatically in IDEA.&#10;- add ADN, OpenGraph, and Twitter settings&#10;- add a mixins SASS stylesheet&#10;- start building out base styles for updated/tweaked chriskrycho.com&#10;- add more configuration elements (as learned from setting up winningslowly.org)" />
     <MESSAGE value="Tweak Twitter identity template." />
+    <MESSAGE value="Tweak OpenGraph identity template." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -802,7 +803,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="62" selection-start="400" selection-end="400" vertical-scroll-proportion="0.12645161">
+        <state line="8" column="14" selection-start="422" selection-end="422" vertical-scroll-proportion="0.14451613">
           <folding />
         </state>
       </provider>
