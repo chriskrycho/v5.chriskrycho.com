@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html" />
+    <list default="true" id="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" name="Default" comment="Continue">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pelican_theme/templates/includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/base.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pelican_theme/templates/index.html" afterPath="$PROJECT_DIR$/pelican_theme/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chriskrycho.com.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877761033" ignored="false" />
+    <file path="/Dummy.txt" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877934100" ignored="false" />
     <file path="/style.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876649762" ignored="false" />
     <file path="/*.regexp" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390874659473" ignored="false" />
     <file path="$PROJECT_DIR$/output/feeds/all.atom.xml" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1388965136204" ignored="false" />
@@ -25,13 +27,13 @@
     <file path="$USER_HOME$/Sites/pjking/assets/sass/_media_queries.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390869368459" ignored="false" />
     <file path="/_media_queries.scss" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390869366135" ignored="false" />
     <file path="$USER_HOME$/Sites/pjking/assets/css/style.css" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390869399518" ignored="false" />
-    <file path="/base.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390874817399" ignored="false" />
+    <file path="/base.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877859484" ignored="false" />
     <file path="/id-common.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390874948793" ignored="false" />
     <file path="/opengraph.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877751736" ignored="false" />
     <file path="/id-twitter.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390875012129" ignored="false" />
     <file path="/twitter.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877714892" ignored="false" />
     <file path="/pelicanconf.py" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876208620" ignored="false" />
-    <file path="/index.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876385260" ignored="false" />
+    <file path="/index.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390877923092" ignored="false" />
     <file path="/page.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876367685" ignored="false" />
     <file path="/author.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876345927" ignored="false" />
     <file path="/category.html" changelist="8a9ec5b3-0f7a-4a53-b554-a072d4d062cb" time="1390876355717" ignored="false" />
@@ -109,7 +111,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pelican_theme/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.2173913">
+            <state line="4" column="11" selection-start="79" selection-end="79" vertical-scroll-proportion="-2.4347825">
               <folding />
             </state>
           </provider>
@@ -142,19 +144,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pelican_theme/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="439" selection-end="439" vertical-scroll-proportion="-7.9130435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="opengraph.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="14" selection-start="422" selection-end="422" vertical-scroll-proportion="0.14451613">
+            <state line="20" column="11" selection-start="601" selection-end="637" vertical-scroll-proportion="0.36129034">
               <folding />
             </state>
           </provider>
@@ -181,19 +174,19 @@
         <option value="$PROJECT_DIR$/publishconf.py" />
         <option value="$PROJECT_DIR$/pelican_theme/sass/_fonts.scss" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/article.html" />
-        <option value="$PROJECT_DIR$/pelican_theme/templates/base.html" />
         <option value="$USER_HOME$/Sites/winningslowly/design/templates/includes/id-common.html" />
         <option value="$USER_HOME$/Sites/winningslowly/design/templates/includes/id-twitter.html" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/author.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/category.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/page.html" />
-        <option value="$PROJECT_DIR$/pelican_theme/templates/index.html" />
         <option value="$PROJECT_DIR$/pelican_theme/sass/_mixins.scss" />
         <option value="$PROJECT_DIR$/pelican_theme/sass/style.scss" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/identity/app.net.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/identity/twitter.html" />
         <option value="$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html" />
+        <option value="$PROJECT_DIR$/pelican_theme/templates/base.html" />
+        <option value="$PROJECT_DIR$/pelican_theme/templates/index.html" />
       </list>
     </option>
   </component>
@@ -667,7 +660,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tweak OpenGraph identity template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove podcasting elements accidentally brought over from WS template." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -691,18 +684,12 @@
     <MESSAGE value="Start building out site templates.&#10;- add a watcher task for generating SASS automatically in IDEA.&#10;- add ADN, OpenGraph, and Twitter settings&#10;- add a mixins SASS stylesheet&#10;- start building out base styles for updated/tweaked chriskrycho.com&#10;- add more configuration elements (as learned from setting up winningslowly.org)" />
     <MESSAGE value="Tweak Twitter identity template." />
     <MESSAGE value="Tweak OpenGraph identity template." />
+    <MESSAGE value="Remove podcasting elements accidentally brought over from WS template." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pelican_theme/sass/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Sites/winningslowly/pelicanconf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="436" selection-end="436" vertical-scroll-proportion="0.2982456">
@@ -745,13 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.2173913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pelican_theme/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
@@ -787,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="439" selection-end="439" vertical-scroll-proportion="-7.9130435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pelican_theme/templates/identity/twitter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="59" selection-start="493" selection-end="493" vertical-scroll-proportion="0.16258064">
@@ -803,7 +776,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pelican_theme/templates/identity/opengraph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="422" selection-end="422" vertical-scroll-proportion="0.14451613">
+        <state line="15" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.27096775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="11" selection-start="79" selection-end="79" vertical-scroll-proportion="-2.4347825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pelican_theme/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="601" selection-end="637" vertical-scroll-proportion="0.36129034">
           <folding />
         </state>
       </provider>
