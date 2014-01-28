@@ -5,25 +5,33 @@ from __future__ import unicode_literals
 AUTHOR = 'Chris Krycho'
 SITENAME = 'chriskrycho.com'
 SITEURL = ''
+SITE_DESCRIPTION = ''
+LOGO = ''
 
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
+# THEME = ''
+
 # Feed generation is usually not desired when developing
-FEED_ATOM = None
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
 FEED_ALL_RSS = None
 CATEGORY_FEED_RSS = None
+TRANSLATION_FEED_RSS = None
 
-# Social widget
+# Social networking/sharing settings
 IDENTITY = {'App.net': 'https://app.net/chriskrycho',
             'Facebook': 'https://www.facebook.com/chriskrycho',
             'Google+': 'https://plus.google.com/+ChrisKrycho',
             'Twitter': 'https://twitter.com/chriskrycho',}
 
-DEFAULT_PAGINATION = 5
+DEFAULT_SHARE_IMAGE = ''
+
+# Index and archive pages
+DEFAULT_PAGINATION = 10
 
 # Category settings
 USE_FOLDER_AS_CATEGORY = True  # note: this is the default
@@ -33,6 +41,8 @@ DEFAULT_CATEGORY = 'blog'
 OUTPUT_SOURCES = True
 OUTPUT_SOURCES_EXTENSION = ".txt"
 
+DEFAULT_DATE_FORMAT = "%B %d, %Y"
+
 # Markdown and text handling
 MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc', 'headerid', 'smartypants(smarten=old-school)']
 TYPOGRIFY = True
@@ -41,18 +51,22 @@ TYPOGRIFY = True
 RELATIVE_URLS = True
 
 # URLs
-ARTICLE_URL = '{date:%Y}/{slug}.html'
-ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
-CATEGORY_URL = '{slug}.html'
-CATEGORY_SAVE_AS = '{slug}.html'
-TAG_URL = '{slug}.html'
-TAG_SAVE_AS = '{slug}.html'
-# AUTHOR_URL = None
-# AUTHOR_SAVE_AS = None
+ARTICLE_URL = '{date:%Y}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS = '{slug}/index.html'
+TAG_URL = '{slug}/'
+TAG_SAVE_AS = '{slug}/index.html'
+AUTHOR_URL = False
+AUTHOR_SAVE_AS = False
+AUTHORS_SAVE_AS = False
 
 # Path configuration
 STATIC_PATHS = ['extra/CNAME', 'extra/.htaccess']  # Include the CNAME file
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},  # Copy CNAME file to /output
                        'extra/.htaccess': {'path': '.htaccess'},}  # Copy .htaccess file to /output
+
+THEME_STATIC_DIR = 'assets'
+CSS_FILE = 'style.css'

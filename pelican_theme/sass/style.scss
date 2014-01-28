@@ -1,7 +1,50 @@
+@import "mixins";
 @import "reset";
 @import "fonts";
 @import "base";
 
 html {
    font-size: 118.75%;  /* -> 18px, using percentage to allow IE user stylesheet changes */
+   font-family: "Minion Pro";
+   color: $dark_gray;
+   line-height: $line_height;
+}
+
+a {
+   color: $light_blue;
+}
+
+img {
+   max-height: 100%;
+   max-width: 100%;
+}
+
+p, ul, ol, li, blockquote {
+   font-size: $fsp;
+}
+
+h1 {
+   font-size: $fs1;
+}
+
+h2 {
+   font-size: $fs2;
+}
+
+h3 {
+   font-size: $fs3;
+}
+
+h4 {
+   font-size: $fs4;
+}
+
+h5 {
+   font-size: $fs5;
+}
+
+h6 {
+   font-size: $fs6;
+   display: inline-block;
+   padding-right: 1em;
 }

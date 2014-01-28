@@ -9,7 +9,7 @@
 
    {# Authorship #}
    {% include "identity/app.net.html" %}
-   {% include "identity/facebook.html" %}
+   {% include "identity/opengraph.html" %}
    {% include "identity/google.html" %}
    {% include "identity/twitter.html" %}
 
@@ -18,6 +18,8 @@
 
 </head>
 <body>
-
+   <header></header>
+   {% block content %}{% endblock %}
+   <footer></footer>
 </body>
 </html>
