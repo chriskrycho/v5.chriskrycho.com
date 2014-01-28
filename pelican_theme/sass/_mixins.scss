@@ -6,3 +6,14 @@
       -ms-transition: $values;
       -o-transition: $values;
 }
+
+@mixin transform($values) {
+   transform: $values;
+      -webkit-transform: $values;
+      -moz-transform: $values;
+      -ms-transform: $values;
+      -o-transform: $values;
+}
+
+// Bezier curves
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);

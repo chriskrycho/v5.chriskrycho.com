@@ -5,13 +5,15 @@
 
 html {
    font-size: 118.75%;  /* -> 18px, using percentage to allow IE user stylesheet changes */
-   font-family: "Minion Pro";
+   font-family: $serif;
    color: $dark_gray;
    line-height: $line_height;
 }
 
 a {
    color: $light_blue;
+
+   @include transition(all 0.5s $easeInOutCubic);
 }
 
 img {
@@ -21,6 +23,10 @@ img {
 
 p, ul, ol, li, blockquote {
    font-size: $fsp;
+}
+
+h1, h2, h3, h4 {
+   font-family: $sans;
 }
 
 h1 {
