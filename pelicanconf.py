@@ -59,14 +59,14 @@ CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 TAG_URL = '{slug}/'
 TAG_SAVE_AS = '{slug}/index.html'
-AUTHOR_URL = False
-AUTHOR_SAVE_AS = False
-AUTHORS_SAVE_AS = False
+# AUTHOR_URL = False
+# AUTHOR_SAVE_AS = False
+# AUTHORS_SAVE_AS = False
 
 # Path configuration
 STATIC_PATHS = ['extra/CNAME', 'extra/.htaccess']  # Include the CNAME file
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},  # Copy CNAME file to /output
                        'extra/.htaccess': {'path': '.htaccess'},}  # Copy .htaccess file to /output
 
-THEME_STATIC_DIR = 'assets'
-CSS_FILE = 'style.css'
+# THEME_STATIC_DIR = 'assets'
+# CSS_FILE = 'style.css'

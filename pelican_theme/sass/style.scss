@@ -7,13 +7,21 @@ html {
    font-size: 118.75%;  /* -> 18px, using percentage to allow IE user stylesheet changes */
    font-family: $serif;
    color: $dark_gray;
+   background: $white;
    line-height: $line_height;
 }
 
-a {
+a, a:visited {
    color: $light_blue;
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
 
    @include transition(all 0.5s $easeInOutCubic);
+
+   &:hover, &:active {
+      color: $dark_blue;
+      border-bottom: 1px solid $dark_gray;
+   }
 }
 
 img {
