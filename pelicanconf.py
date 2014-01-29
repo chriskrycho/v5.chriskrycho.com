@@ -30,9 +30,6 @@ IDENTITY = {'App.net': 'https://app.net/chriskrycho',
 
 DEFAULT_SHARE_IMAGE = ''
 
-# Index and archive pages
-DEFAULT_PAGINATION = 10
-
 # Category settings
 USE_FOLDER_AS_CATEGORY = True  # note: this is the default
 DEFAULT_CATEGORY = 'blog'
@@ -62,6 +59,16 @@ TAG_SAVE_AS = '{slug}/index.html'
 # AUTHOR_URL = False
 # AUTHOR_SAVE_AS = False
 # AUTHORS_SAVE_AS = False
+
+# Index and archive pages
+DEFAULT_PAGINATION = 10
+
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
+
+DEFAULT_ORPHANS = 2
 
 # Path configuration
 STATIC_PATHS = ['extra/CNAME', 'extra/.htaccess']  # Include the CNAME file

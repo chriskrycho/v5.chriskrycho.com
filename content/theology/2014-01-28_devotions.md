@@ -1,7 +1,7 @@
 Title: The New Testament Needs the Old (and So Do You)
 Author: Chris Krycho
 Date: 2014-01-28 22:10
-Passages: Psalm 28, Proverbs 28, Matthew 1–5
+Passages: Psalm 28, Proverbs 28, Matthew 1–4
 Tags: devotions
 Summary: It is difficult if not impossible to understand Matthew's gospel apart from its Old Testament background—but then, it is hard to understand any of the New Testament without the Old as background.
 
