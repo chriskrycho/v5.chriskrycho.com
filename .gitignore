@@ -10,6 +10,8 @@
 *.marked
 .UlyssesRoot
 
+# IntelliJ IDEA files
+.idea/workspace.xml
 
 # SASS
 .sass-cache
