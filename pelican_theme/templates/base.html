@@ -18,10 +18,13 @@
 
 </head>
 <body>
-   <header>
+   <header id="site-header">
       <hgroup>
-         <h1 id="site-title">{{ SITENAME }}</h1>
-         <h2 id="site-subtitle">{{ SITE_DESCRIPTION }}</h2>
+         <h1 id="site-title">
+            {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ SITENAME }}</a>
+            {% else %}{{ SITENAME }}
+            {% endif %}</h1>
+         <h2 id="site-subtitle">{{ SITE_DESCRIPTION_HTML }}</h2>
       </hgroup>
 
       <nav>

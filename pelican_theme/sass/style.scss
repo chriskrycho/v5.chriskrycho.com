@@ -120,8 +120,21 @@ article {
    }
 }
 
-#site-title {
+#site-header {
+   line-height: $line_height_min;
+   margin: {
+      top: $fs3;
+      left: $fs_large;
+   }
+}
 
+#site-title {
+   font-size: $fs_very_large;
+}
+
+#site-subtitle {
+   font-size: $fs4;
+   margin-left: $fs4;
 }
 
 #site-subtitle {
@@ -133,3 +146,6 @@ article {
 .section-title {
    text-transform: capitalize;
 }
+
+
+@import "media";
