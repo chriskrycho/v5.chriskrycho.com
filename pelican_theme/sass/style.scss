@@ -112,7 +112,13 @@ sup {
    white-space: pre-line;
 }
 
-// Layout
+// ----- Layout -----
+body:before {
+   height: $fs_very_small;
+   background-color: $dark_blue;
+   display: block;
+   content: '';
+}
 
 // Header
 #site-header {
@@ -153,8 +159,10 @@ article {
       margin-left: 15.6%;
 
       &> p {
-         &:first-of-type:first-line {
-
+         &:first-of-type {
+            &:first-line {
+               @include font-feature-settings('smcp');
+            }
          }
       }
    }
@@ -216,5 +224,19 @@ sup[id^="fnref:"] a {
    }
 }
 
+// Footer
+#site-footer {
+   background-color: $dark_blue;
+   min-height: $fs_very_large;
+   display: block;
+   color: $white;
+
+   &:after {
+      display: block;
+      background-color: $dark_gray;
+      height: $fs_very_small;
+      content: '';
+   }
+}
 
 @import "media";
