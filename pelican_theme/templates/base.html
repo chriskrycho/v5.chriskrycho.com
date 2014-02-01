@@ -27,7 +27,7 @@
       <nav>
          <ul>
          {% for category, _ in categories %}
-            <li>{{ category }}</li>
+            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
          {% endfor %}
          </ul>
       </nav>

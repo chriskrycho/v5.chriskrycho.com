@@ -91,6 +91,16 @@ h6 {
    padding-right: 1em;
 }
 
+pre, code {
+   font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+sup {
+   line-height: 0;  // Fixes vertical alignment issues
+   vertical-align: super;
+   font-size: $fs_small;
+}
+
 // Special styles
 .proper-name {
    white-space: nowrap;
@@ -117,6 +127,7 @@ article {
 #site-subtitle {
    font-family: $serif;
    font-style: italic;
+   @include font-feature-settings('liga');
 }
 
 .section-title {
