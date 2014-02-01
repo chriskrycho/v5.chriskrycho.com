@@ -14,11 +14,25 @@
    {% include "identity/twitter.html" %}
 
    {# CSS #}
-   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_URL }}/css/{{ CSS_FILE }}" />
+   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ CSS_FILE }}" />
 
 </head>
 <body>
-   <header>{% include "includes/header.html" %}</header>
+   <header>
+      <hgroup>
+         <h1 id="site-title">{{ SITENAME }}</h1>
+         <h2 id="site-subtitle">{{ SITE_DESCRIPTION }}</h2>
+      </hgroup>
+
+      <nav>
+         <ul>
+         {% for category, _ in categories %}
+            <li>{{ category }}</li>
+         {% endfor %}
+         </ul>
+      </nav>
+   </header>
+
    {% block content %}{% endblock %}
    <footer>{% include "includes/footer.html" %}</footer>
 </body>

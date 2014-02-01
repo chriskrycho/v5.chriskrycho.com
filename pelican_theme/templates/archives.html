@@ -1,12 +1,13 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 {% block content %}
    {% if articles %}
       {% for article in articles %}
          <article>
             <header>
-               {% block article_title %}<h1>{{ article.title }}</h1>{% endblock %}
+               <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
             </header>
+            {% include "includes/meta.html" %}
          </article>
       {% endfor %}
    {% endif %}

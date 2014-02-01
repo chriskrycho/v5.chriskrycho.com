@@ -1,7 +1,19 @@
 {% extends "base.html" %}
 
-{% block context %}{% endblock %}
+{% block content %}
+   <article>
+   {% block context %}{% endblock %}
 
-{% if article.intro is defined %}
-   {% block intro %}{% endblock %}
-{% endif %}
+   {% if article.intro is defined %}
+      {% block intro %}{% endblock %}
+   {% endif %}
+
+   <header>
+      <h1>{{ article.title }}</h1>
+   </header>
+   {{ article.content }}
+   </article>
+
+   {% include "includes/meta.html" %}
+{% endblock %}
+

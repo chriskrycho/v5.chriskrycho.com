@@ -1,26 +1,29 @@
 /**
  * Modular scale:
- *    //modularscale.com/scale/?px1=18&px2=36&ra1=1.6&ra2=1.2&name=minorsixthminorthird
+ *    http://modularscale.com/scale/?px1=20&px2=40&ra1=1.6&ra2=1.2&name=minorsixthminorthird
  *
- * Base text size: 17px
- * Important number: 1920px
- * Scale: 3:4 - Musical Fourth
+ * Base text size: 20px @ 5:8 (minor sixth)
+ * Important number: 40px @ 5:6 (minor third)
  *
  * Font sizes given in terms of headings/paragraph (fs1 => h1, fsp => p)
  * The commented sizes are at the base scale.
+ *
+ * Note that the ratios are the important bit; the base text size can be adjusted
+ * at whim and the ratios will remain fixed---only the calculated px values will
+ * change.
  */
-$fs_very_large: 3.456em;   // 62px
-$fs_large: 2.88em;   //52px
+$fs_very_large: 3.456em;   // 69px
+$fs_large: 2.88em;   //58px
 
-$fs1: 2.4em;   // 43px
-$fs2: 2em;     // 36px
-$fs3: 1.667em; // 30px
-$fs4: 1.389em; // 25px
-$fs5: 1.157em; // 21px
-$fsp: 1em;     // 18px
-$fs6: 0.965em; // 17px
+$fs1: 2.4em;   // 48px
+$fs2: 2em;     // 40px
+$fs3: 1.667em; // 33px
+$fs4: 1.389em; // 28px
+$fs5: 1.157em; // 23px
+$fsp: 1em;     // 20px
+$fs6: 0.965em; // 19px
 
-$fs_small: 0.804em;  // 14px
+$fs_small: 0.804em;  // 16px
 
 $line_height: 1.667;
 $line_height_small: 1.389;

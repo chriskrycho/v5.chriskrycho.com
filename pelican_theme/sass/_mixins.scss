@@ -1,5 +1,5 @@
 
-@mixin transition($values) {
+@mixin transition($values...) {
    transition: $values;
       -webkit-transition: $values;
       -moz-transition: $values;
@@ -13,6 +13,14 @@
       -moz-transform: $values;
       -ms-transform: $values;
       -o-transform: $values;
+}
+
+@mixin font-feature-settings($values...) {
+   font-feature-settings: $values;
+      -webkit-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
+      -moz-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
+      -ms-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
+      -o-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
 }
 
 // Bezier curves
