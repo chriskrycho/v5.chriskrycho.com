@@ -6,15 +6,17 @@ AUTHOR = 'Chris Krycho'
 SITENAME = 'Chris Krycho'
 SITEURL = ''
 SITE_DESCRIPTION = 'Creativity, reflection, & passionate endeavors by a peculiar fellow'
+SITE_DESCRIPTION_HTML = 'Creativity, reflection, & passionate endeavors<br class="optional"/> by a peculiar fellow'
 LOGO = ''
 
 TIMEZONE = 'America/New_York'
-
+DEFAULT_DATE_FORMAT = "%B %d, %Y"
 DEFAULT_LANG = 'en'
 
 THEME = 'pelican_theme'
 THEME_STATIC_DIR = 'assets'
 CSS_FILE = 'style.css'
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
