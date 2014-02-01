@@ -18,8 +18,8 @@
 
 </head>
 <body>
-   <header id="site-header">
-      <hgroup>
+   <header>
+      <hgroup id="site-header">
          <h1 id="site-title">
             {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ SITENAME }}</a>
             {% else %}{{ SITENAME }}
@@ -34,6 +34,8 @@
          {% endfor %}
          </ul>
       </nav>
+
+      {% block section_head %}{% endblock %}
    </header>
 
    {% block content %}{% endblock %}

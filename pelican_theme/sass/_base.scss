@@ -12,22 +12,32 @@
  * at whim and the ratios will rremain fixed---only the calculated px values will
  * change.
  */
-$fs_very_large: 3.456rem;   // 69px
-$fs_large: 2.88rem;   //58px
+$fs_very_large: 3.456em;   // 69px
+$fs_large: 2.88em;   //58px
 
-$fs1: 2.4rem;   // 48px
-$fs2: 2rem;     // 40px
-$fs3: 1.667rem; // 33px
-$fs4: 1.389rem; // 28px
-$fs5: 1.157rem; // 23px
-$fsp: 1rem;     // 20px
-$fs6: 0.965rem; // 19px
+$fs1: 2.4em;   // 48px
+$fs2: 2em;     // 40px
+$fs3: 1.667em; // 33px
+$fs4: 1.389em; // 28px
+$fs5: 1.157em; // 23px
+$fsp: 1em;     // 20px
+$fs6: 0.965em; // 19px
 
 $fs_small: 0.804rem;  // 16px
 
 $line_height: 1.667;
 $line_height_small: 1.389;
 $line_height_min: 1;
+
+// Absolute
+$fs1_abs: 2.4rem;   // 48px
+$fs2_abs: 2rem;     // 40px
+$fs3_abs: 1.667rem; // 33px
+$fs4_abs: 1.389rem; // 28px
+$fs5_abs: 1.157rem; // 23px
+$fsp_abs: 1rem;     // 20px
+$fs6_abs: 0.965rem; // 19px
+
 
 
 /* Color schreme:

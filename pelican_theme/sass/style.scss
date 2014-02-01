@@ -40,17 +40,19 @@ p, ul, ol, li, blockquote {
    font-size: $fsp;
 }
 
+// Paragraph styles
 p {
    text-indent: $fs4;
 }
 
-ul, ol {
-   margin-left: $fsp;
-   padding-left: $fsp;
-
-   p {
+h1, h2, h3, h4, h5, h6, ul, ol {
+   &+ p {
       text-indent: 0;
    }
+}
+
+p:first-child, p:first-of-type {
+   text-indent: 0;
 }
 
 ul {
@@ -111,15 +113,8 @@ sup {
 }
 
 // Layout
-article {
-   width: 30.814rem;
-   margin-left: 15.6%;
 
-   p {
-      @include font-feature-settings('liga', 'onum', 'pnum', 'kern');
-   }
-}
-
+// Header
 #site-header {
    line-height: $line_height_min;
    margin: {
@@ -145,6 +140,80 @@ article {
 
 .section-title {
    text-transform: capitalize;
+}
+
+// Article
+article {
+   padding-bottom: $fs_large;
+   clear: both;
+   overflow: hidden;
+
+   .content {
+      width: 30.814rem;
+      margin-left: 15.6%;
+
+      &> p {
+         &:first-of-type:first-line {
+
+         }
+      }
+   }
+
+   header {
+      h1 {
+         line-height: $line_height_min;
+      }
+   }
+
+   .meta {
+      width: 12.384rem;
+   }
+
+   .content, .meta {
+      float: left;
+      clear: none;
+   }
+
+   p {
+      @include font-feature-settings('liga', 'onum', 'pnum', 'kern');
+   }
+
+   ul, ol {
+      padding-left: $fs4;
+
+      li {
+         padding-top: 0.5em;
+         padding-bottom: 0.5em;
+      }
+   }
+
+   .footnote {
+      padding-top: 0.5rem;
+      font-size: $fs_small;
+
+      hr {
+         margin: {
+            top: $fsp;
+            bottom: $fsp;
+            left: 0;
+         }
+         border-top: 1px solid;
+         height: 0;
+         width: 46.5%;
+      }
+   }
+}
+
+sup[id^="fnref:"] a {
+   @include font-feature-settings('lnum', 'tnum');
+
+   &:before {
+      content: "[";
+   }
+
+   &:after {
+      content: "]";
+   }
 }
 
 

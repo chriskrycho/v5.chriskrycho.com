@@ -17,10 +17,10 @@
 
 @mixin font-feature-settings($values...) {
    font-feature-settings: $values;
-      -webkit-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
-      -moz-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
-      -ms-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
-      -o-font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
+      -webkit-font-feature-settings: $values;
+      -moz-font-feature-settings: $values;
+      -ms-font-feature-settings: $values;
+      -o-font-feature-settings: $values;
 }
 
 // Bezier curves

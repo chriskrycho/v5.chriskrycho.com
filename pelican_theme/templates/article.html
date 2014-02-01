@@ -2,18 +2,21 @@
 
 {% block content %}
    <article>
-   {% block context %}{% endblock %}
+   <div class="content">
+      <header>
+         <h1>{{ article.title }}</h1>
+      </header>
+      {{ article.content }}
 
-   {% if article.intro is defined %}
-      {% block intro %}{% endblock %}
-   {% endif %}
+      {% block context %}{% endblock %}
 
-   <header>
-      <h1>{{ article.title }}</h1>
-   </header>
-   {{ article.content }}
-   </article>
+      {% if article.intro is defined %}
+         {% block intro %}{% endblock %}
+      {% endif %}
+   </div>
 
    {% include "includes/meta.html" %}
+   </article>
+
 {% endblock %}
 

@@ -4,11 +4,15 @@
    {% if articles %}
       {% for article in articles %}
          <article>
-            <header>
-               <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-            </header>
+            <div class="content">
+               <header>
+                  <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+               </header>
+            </div>
             {% include "includes/meta.html" %}
          </article>
-      {% endfor %}
+      {% endfor %};
+   {% else %}
+      {% include "includes/404-content.html" %}
    {% endif %}
 {% endblock %}
