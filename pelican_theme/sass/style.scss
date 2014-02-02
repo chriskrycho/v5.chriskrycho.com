@@ -46,7 +46,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, ul, ol {
-   &+ p {
+   + p {
       text-indent: 0;
    }
 }
@@ -65,26 +65,51 @@ ol {
 
 h1, h2, h3, h4, h5, h6 {
    font-family: $sans;
+   line-height: 1;
 }
 
 h1 {
    font-size: $fs1;
+
+   + h2 {
+
+   }
 }
 
 h2 {
    font-size: $fs2;
+
+   + h3 {
+
+   }
 }
 
 h3 {
    font-size: $fs3;
+
+   + h4 {
+
+   }
 }
 
 h4 {
    font-size: $fs4;
+
+   + h5 {
+
+   }
 }
 
 h5 {
-   font-size: $fs5;
+   padding-top: $fsp;
+   font: {
+      style: italic;
+      size: $fs5
+   };
+
+   + h6 {
+      padding-top: 0;
+   }
 }
 
 h6 {
@@ -94,7 +119,10 @@ h6 {
    }
 
    display: inline-block;
-   padding-right: 0.67em;
+   padding: {
+      top: $fs3;
+      right: $fs_very_small;
+   };
 
    + p {
       display: inline;
@@ -138,7 +166,6 @@ body:before {
 
 // Header
 #site-header {
-   line-height: $line_height_min;
    margin: {
       top: $fs3;
       left: $fs_large;
@@ -170,7 +197,10 @@ body:before {
 
 // Article
 article {
-   padding-bottom: $fs2;
+   padding: {
+      right: 0.465em;
+      bottom: $fs2;
+   };
    clear: both;
    overflow: hidden;
 
@@ -187,9 +217,24 @@ article {
 
    header {
       h1 {
-         line-height: $line_height_min;
          font-weight: 600;
       }
+   }
+
+   > h1 {
+      padding-top: $fs3;
+      padding-bottom: $fs_very_small;
+      text-align: center;
+   }
+
+   header, .meta, .context, .intro {
+      + h1 {
+         padding-top: 0.244em;
+      }
+   }
+
+   h2 {
+      color: $dark_blue;
    }
 
    .meta {
