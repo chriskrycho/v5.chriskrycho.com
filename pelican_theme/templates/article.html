@@ -6,6 +6,9 @@
       <header>
          <h1>{{ article.title }}</h1>
       </header>
+
+      {% include "includes/meta.html" %}
+
       {{ article.content }}
 
       {% block context %}{% endblock %}
@@ -15,7 +18,6 @@
       {% endif %}
    </div>
 
-   {% include "includes/meta.html" %}
    </article>
 
 {% endblock %}
