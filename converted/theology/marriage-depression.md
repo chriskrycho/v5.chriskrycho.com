@@ -11,12 +11,12 @@ and a half month engagement. (I was aware of this; she was in denial.)
 Four months after we got back from our honeymoon, she confessed to me
 that she no longer wanted be alive. The two and a half years since then
 have been a bumpy road, but by the grace of God we're still here and
-doing well. Things are better now--not perfect, but better.
+doing well. Things are better now---not perfect, but better.
 
-There are some resources out there--not enough, but some--for people
+There are some resources out there---not enough, but some---for people
 walking through depression. There are far fewer for the people walking
 alongside them: a role that is, in many ways, just as difficult. To
-watch as a beloved family member--especially a spouse--deals with
+watch as a beloved family member---especially a spouse---deals with
 depression is incredibly painful and difficult. There is an enormous
 sense of powerlessness and frustration. We are often at a loss for
 words, for deeds, for any response at all. We desperately want to help,
@@ -26,15 +26,15 @@ your spouse.
 
 So perhaps some of what I learned about walking alongside your spouse
 when he or she is struggling with depression will help
-others.<!--more-->
+others.
 
-h3. The hero
+### The hero
 
 You are not the hero of this story. Jesus is. The sooner you get that,
 the sooner you'll have any chance at all of really helping your spouse
 in this time.
 
-The hard reality--and the good reality--is that, much as we want to, we
+The hard reality---and the good reality---is that, much as we want to, we
 cannot fix our spouse's depression. No words, no encouragement, no
 number of chores taken up on their behalf will do the trick. There is no
 switch to flip, no magic incantation to take away the darkness. That
@@ -44,9 +44,9 @@ husband or wife better with those actions.
 
 This is freeing, really. You can simply do your best every moment, and
 trust that God is bigger and greater and capable of doing all you cannot
-do. You can't carry her; don't try. Do what you \_can\_ do.
+do. You can't carry her; don't try. Do what you _can_ do.
 
-Love unconditionally--really unconditionally. Pray like crazy, and all
+Love unconditionally---really unconditionally. Pray like crazy, and all
 the time. Remind your spouse of the gospel: all that God has done on her
 behalf, all that he is doing in the world, all that he will do in the
 end. Remind him of God's incredible love, poured out on his behalf.
@@ -56,7 +56,7 @@ on his behalf and now lives on his behalf, always praying for him.
 
 You might notice a theme: it's the gospel. There is no other message
 your spouse needs more. He or she may not seem like she hears it, and
-you \_will\_ be frustrated that your words don't seem to be getting
+you _will_ be frustrated that your words don't seem to be getting
 through. Remember: you don't change anyone's heart, you can't restore
 anyone's brain chemistry, and you can't save your spouse. Only God can
 do that. It's no less true of depression than of any other consequence
@@ -78,7 +78,7 @@ identity in your marriage, you will break under the strain. If you set
 it in your job or your hobbies, you will fail your spouse in the moment
 when she needs you most. God alone is great enough to satisfy your soul.
 
-h3. Day to day
+### Day to day
 
 The fact that the day-to-day things won't get your spouse out of
 depression don't make them unimportant. My role, I discovered, was
@@ -86,7 +86,7 @@ oriented less around providing solutions to problems than to removing
 obstacles from Jaimie's path so she could focus on getting better. Small
 tasks, however trivial for a mentally healthy person, can become
 enormous in the eyes of a person struggling with depression. When Jaimie
-was in the darkest points of her depressions, she \_never\_ did the
+was in the darkest points of her depressions, she _never_ did the
 dishes. The thought overwhelmed her. So I did them, every night,
 regardless of who made dinner.
 
@@ -103,7 +103,7 @@ her? Find ways to make those things happen, at great cost to yourself if
 need be. Jesus died to show us his love; we now get to die to show our
 spouses his love.
 
-h3. Medication
+### Medication
 
 I haven't the space to make a robust defense of the notion that
 medication for mental health is a biblical option. For now, suffice it
@@ -114,7 +114,7 @@ a silver bullet, and it does not always address the issues.
 
 On the other hand, a stubborn unwillingness to deal with physiological
 contributions is just stupid. We are not souls that simply inhabit
-bodies; we \_are\_ our bodies. (The view that we are our souls, and
+bodies; we _are_ our bodies. (The view that we are our souls, and
 simply inhabit and use our bodies like tools is called instrumentalism,
 and I think it thoroughly wrong. Lengthy tomes have been written on
 this; I will sum up with a single, provocative question: If we are
@@ -133,7 +133,7 @@ root of depression in the same way that it is at the root of the flu.
 
 In Jaimie's life, depression highlighted sin issues that existed, but it
 was not triggered by sin issues. Rather, it was brought on by a
-combination of circumstances and a biological predisposition--a
+combination of circumstances and a biological predisposition---a
 particularly rough year her sophomore year of college, and a family
 history of depression and other mental illnesses. Within a month or so
 of getting on an anti-depressant, Jaimie went from thinking daily about
@@ -151,7 +151,7 @@ be able to heal. Think of medication like leg braces during a lengthy
 rehabilitation: hopefully they go away, but you might need them for a
 while just to get back on your feet.
 
-h3. Don't walk alone
+### Don't walk alone
 
 You need friends to get through this. I mean it. You cannot do this
 alone. Your spouse needs friends to support her and encourage her and
@@ -175,7 +175,7 @@ can help identify when the problem is primarily physiological. They can
 offer great insight into changing our thoughts and emotional habits (and
 we can do more to influence than we often realize).
 
-h3. Future hope
+### Future hope
 
 Set your eyes not only on the cross of Christ, but on his resurrection.
 The years of darkness that lie behind us forced me to dig deeper on this
@@ -192,19 +192,17 @@ I look forward to the day Jaimie and I stand before the throne of God
 worshipping together, all this dark road only one more picture of God's
 all-sufficient love, overwhelming grace, and supreme value.
 
-h3. An invitation
+### An invitation
 
-This post, even at some 2000 words, is hardly exhaustive. It is barely
-an introduction to the lessons I have learned in the last two years. I
-will probably come back to the topic at various times in the future,
-because this is a hard thing, and it is far more common than people
-know. In the meantime, however, if you are a guy walking through this
-with your wife and just need to talk or need to hear the gospel preached
-to you right where you are or just have someone understand, I invite you
-to send me an email ("(email-link)chris at chriskrycho dot com":\#).
-I'll pray for you, I'll correspond with you as much as time allows, and
-I'll try to help point you to good resources. (Ladies, if I find someone
-who would be willing to do the same for you, I'll put you in touch with
-them; you'll understand if I'm not up for an extended email conversation
-with someone of the opposite sex in an emotionally difficult position in
-her marriage.)
+This post, even at some 2000 words, is hardly exhaustive. It is barely an
+introduction to the lessons I have learned in the last two years. I will
+probably come back to the topic at various times in the future, because this is
+a hard thing, and it is far more common than people know. In the meantime,
+however, if you are a guy walking through this with your wife and just need to
+talk or need to hear the gospel preached to you right where you are or just have
+someone understand, I invite you to send me an email (chris at chriskrycho dot
+com). I'll pray for you, I'll correspond with you as much as time allows, and
+I'll try to help point you to good resources. (Ladies, if I find someone who
+would be willing to do the same for you, I'll put you in touch with them; you'll
+understand if I'm not up for an extended email conversation with someone of the
+opposite sex in an emotionally difficult position in her marriage.)
