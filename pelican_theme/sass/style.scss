@@ -63,7 +63,7 @@ ol {
    list-style: decimal;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
    font-family: $sans;
 }
 
@@ -88,9 +88,17 @@ h5 {
 }
 
 h6 {
-   font-size: $fs6;
+   font: {
+      weight: 600;
+      size: $fs6;
+   }
+
    display: inline-block;
-   padding-right: 1em;
+   padding-right: 0.67em;
+
+   + p {
+      display: inline;
+   }
 }
 
 pre, code {
@@ -134,6 +142,10 @@ body:before {
    margin: {
       top: $fs3;
       left: $fs_large;
+   }
+
+   a, a:hover, a:active, a:visited {
+      border-bottom: none;
    }
 }
 
@@ -191,6 +203,10 @@ article {
       span {
          display: inline-block;
 
+         a {
+            display: inline-block;
+         }
+
          &:before {
             display: inline-block;
             padding: {
@@ -203,6 +219,16 @@ article {
 
          &:first-of-type:before {
             content: none;
+         }
+      }
+
+      .hashtag a {
+         margin: {
+            left: 0.13em;
+            right: 0.13em
+         };
+         &:first-of-type {
+            margin-left: 0;
          }
       }
    }
@@ -235,6 +261,14 @@ article {
          width: 46.5%;
       }
    }
+
+   &.archive {
+      width: auto;
+      margin-right: 15.6%;
+      header h1 {
+         font-weight: 400;
+      }
+   }
 }
 
 sup[id^="fnref:"] a {
@@ -251,16 +285,26 @@ sup[id^="fnref:"] a {
 
 // Footer
 #site-footer {
+   margin-top: $fs_large;
    background-color: $dark_blue;
    min-height: $fs_very_large;
-   display: block;
    color: $white;
+   @include flexbox();
 
-   &:after {
-      display: block;
-      background-color: $dark_gray;
-      height: $fs_very_small;
-      content: '';
+   section {
+      @include flex(1);
+      &:before {
+         display: block;
+         height: 0.244rem;
+         background-color: $dark_gray;
+         content: '';
+      };
+   }
+
+   h1 {
+      background: $light_blue;
+      font-size: $fs2;
+      padding-left: $fsp;
    }
 }
 

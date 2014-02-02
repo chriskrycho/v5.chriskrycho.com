@@ -1,1 +1,1 @@
-{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% endfor %}
+{% if article.tags is defined %}<span class="hashtag">{% for tag in article.tags %}<a class="hashtags" href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% endfor %}</span>{% endif %}

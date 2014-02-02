@@ -1,1 +1,1 @@
-Filed under <a class="section-title" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+{% if article.category is defined %}<span class="section">Filed under <a class="section-title" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>{% endif %}
