@@ -156,6 +156,10 @@ strong {
    white-space: pre-line;
 }
 
+.smcp {
+   font-family: 'gentium_plus_smcp';
+}
+
 // ----- Layout -----
 body:before {
    height: $fs_very_small;
@@ -198,7 +202,6 @@ body:before {
 // Article
 article {
    padding: {
-      right: 0.465em;
       bottom: $fs2;
    };
    clear: both;
@@ -207,34 +210,59 @@ article {
    width: 30.814rem;
    margin-left: 15.6%;
 
-   &> p {
-      &:first-of-type {
-         &:first-line {
-            @include font-feature-settings('smcp');
-         }
-      }
-   }
-
    header {
       h1 {
          font-weight: 600;
       }
    }
 
-   > h1 {
-      padding-top: $fs3;
-      padding-bottom: $fs_very_small;
-      text-align: center;
-   }
+   .content {
 
-   header, .meta, .context, .intro {
-      + h1 {
-         padding-top: 0.244em;
+      @mixin first-line() {
+         font-family: 'gentium_plus_smcp';
+         @include font-feature-settings('smcp');
       }
-   }
 
-   h2 {
-      color: $dark_blue;
+      > p:first-of-type {
+         &:first-line {
+            @include first-line();
+         }
+      }
+
+      h1 {
+         padding-top: $fsp;
+         padding-bottom: 0.323em;
+         text-align: center;
+
+         &:before {
+            content: '\00A7';
+            display: inline-block;
+            padding-right: 0.244em;
+            color: lighten($light_gray, 39.1%);
+         }
+
+         &:first-of-type {
+            padding-top: 0.244em;
+
+            &:before {
+               content: none;
+            }
+         }
+
+         + p:first-line, + h2 + p:first-line {
+            @include first-line();
+         }
+      }
+
+      h2 {
+         color: $dark_blue;
+         border-bottom: 1px solid lighten($light_gray, 39.1%);
+         text-align: center;
+         font-weight: bold;
+         padding-top: $fs_very_small;
+         margin-bottom: 0.323em;
+      }
+
    }
 
    .meta {
@@ -337,13 +365,9 @@ sup[id^="fnref:"] a {
    @include flexbox();
 
    section {
-      @include flex(1);
-      &:before {
-         display: block;
-         height: 0.244rem;
-         background-color: $dark_gray;
-         content: '';
-      };
+      border-top: 0.244rem solid $dark_gray;
+
+      @include flex(1 0);
    }
 
    h1 {

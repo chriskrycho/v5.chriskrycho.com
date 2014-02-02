@@ -1,5 +1,48 @@
 @import url("//fast.fonts.net/t/1.css?apiType=css&projectid=be88e675-4e8a-4b75-9697-22e63fdec3c1");
 
+/* Gentium Plus */
+@font-face {
+   font-family: 'gentium_plus';
+   src: url('fonts/gentiumplus-regular.eot');
+   src: url('fonts/gentiumplus-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/gentiumplus-regular.woff') format('woff'),
+        url('fonts/gentiumplus-regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   font-variant: normal;
+}
+
+@font-face {
+   font-family: 'gentium_plus';
+   src: url('fonts/gentiumplus-italic.eot');
+   src: url('fonts/gentiumplus-italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/gentiumplus-italic.woff') format('woff'),
+        url('fonts/gentiumplus-italic.ttf') format('truetype');
+   font-weight: normal;
+   font-style: italic;
+   font-variant: normal;
+}
+
+@font-face {
+   font-family: 'gentium_plus_smcp';
+   src: url('fonts/gentiumplus-regular-smcp.eot');
+   src: url('fonts/gentiumplus-regular-smcp.eot?#iefix') format('embedded-opentype'),
+        url('fonts/gentiumplus-regular-smcp.woff') format('woff'),
+        url('fonts/gentiumplus-regular-smcp.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'gentium_plus_smcp';
+   src: url('fonts/gentiumplus-italic-smcp.eot');
+   src: url('fonts/gentiumplus-italic-smcp.eot?#iefix') format('embedded-opentype'),
+        url('fonts/gentiumplus-italic-smcp.woff') format('woff'),
+        url('fonts/gentiumplus-italic-smcp.ttf') format('truetype');
+   font-weight: normal;
+   font-style: italic;
+}
+
 /* Cronos Pro */
 @font-face{
     font-family:"Cronos Pro";

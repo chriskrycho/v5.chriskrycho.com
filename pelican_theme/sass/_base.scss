@@ -26,9 +26,6 @@ $fs6: 0.965em; // 19px
 $fs_small: 0.804em;  // 16px
 $fs_very_small: 0.625em; // 12px
 
-$fs_small_abs: 0.804rem;  // 16px
-$fs_very_small_abs: 0.625rem; // 12px
-
 $line_height: 1.667;
 $line_height_small: 1.389;
 $line_height_min: 1;
@@ -42,6 +39,8 @@ $fs5_abs: 1.157rem; // 23px
 $fsp_abs: 1rem;     // 20px
 $fs6_abs: 0.965rem; // 19px
 
+$fs_small_abs: 0.804rem;  // 16px
+$fs_very_small_abs: 0.625rem; // 12px
 
 
 /* Color schreme:
@@ -64,5 +63,5 @@ $dark_blue: #01295C;
  *
  * Font kits hosted locally and served by Fonts.com.
  */
-$serif: 'Gentium Plus', 'Minion Pro', Times, 'Times New Roman', serif;
+$serif: 'gentium_plus', 'Minion Pro', Times, 'Times New Roman', serif;
 $sans: 'Cronos Pro', 'Century Gothic', Trebuchet, sans;
