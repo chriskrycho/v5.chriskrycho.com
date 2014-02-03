@@ -4,7 +4,7 @@ Date: 2014-01-18 22:55
 Author: Chris Krycho
 Tags: devotions
 Passages: 2 Chronicles 17–22, Psalm 18, Proverbs 18
-<!--Template: devotions-->
+Template: templates/devotions
 
 It is no exaggeration to say that I have spent more time thinking on the words Proverbs assigns to warning fools about the quantity of their speech than to almost any other part of the Proverbs.[^1] I have many faults, but one of the most significant and ongoing is a tendency to be quick to speak and slow to hear (and yes, quick to become angry)---to invert the order commended by James in the New Testament. This is no small thing.
 

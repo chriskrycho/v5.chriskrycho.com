@@ -4,7 +4,7 @@ Author: Chris Krycho
 Tags: devotions
 Passages: Ezra 5–10, Psalm 23, Proverbs 23
 Summary: The latter half of Ezra explains how it is that the people of Israel turned away from their pattern of idolatry—and it wasn't pretty or easy. Becoming holy rarely is.
-<!--Template: devotions-->
+Template: templates/devotions
 
 > My son, give me your heart,  
 > and let your eyes observe my ways.  

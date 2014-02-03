@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: study-in-contrasts-2-kings-16-20
 Tags: devotions
 Passages: 2 Kings 16–20, Psalm 7, Proverbs 7
-<!--Template: devotions-->
+Template: templates/devotions
 
 One of the recurring themes of the books of Kings (1 and 2 Samuel, 1 and 2 Kings) is the distinction between those who "did what was right in the eyes of Yahweh" and those who "did what was evil in the sight of Yahweh", e.g. 15:34, 17:2 respectively--to name just two of the *many* passages echoing this refrain in these books. Whereas 1 and 2 Samuel zoomed in on the contrast between Saul and David, 1 and 2 Kings take nearly all their successors at a very high level, often sparing them few more words than necessary to note their parentage, whether they did what was right or what was evil in the eyes of Yahweh, and a reference to other records of their deeds.
 

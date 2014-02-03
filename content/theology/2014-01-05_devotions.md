@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: folly-of-sin
 Tags: devotions
 Passages: 2 Kings 6–10, Psalm 5, Proverbs 5
-<!--Template: devotions-->
+Template: templates/devotions
 
 Adultery. It has torn countless families and destroyed innumerable ministries over the years. Over and over again, the refrain is the same: "I never thought it would happen to me!" and "I never meant for it to go this far!"[^adultery-1] Given the evidence of the years, though, no one should ever cavalierly say, "I'll never do that." Say it, yes. But back it up by making concrete choices every day not to break vows to your spouse.
 

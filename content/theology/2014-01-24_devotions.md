@@ -5,7 +5,7 @@ Date: 2014-01-24 22:05
 Author: Chris Krycho
 Tags: devotions
 Passages: Nehemiah 1–5, Psalm 24, Proverbs 24
-<!--Template: devotions-->
+Template: templates/devotions
 
 Some texts are a bit more mysterious than they might at first appear. One such is Psalm 24, at least for me. The poem has three basic sections:
 

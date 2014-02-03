@@ -4,7 +4,7 @@ Date: 2014-01-30 08:15
 Author: Chris Krycho
 Tags: devotions
 Passages: Matthew 10–13, Psalm 30, Proverbs 30
-<!--Template: devotions-->
+Template: templates/devotions
 
 Psalm 30 stands as one of the most evocative pictures of our human propensity for self-congratulatory folly in all of Scripture. It is a splendid poetic demonstration of an arc we have all traced out. David opens the Psalm by telling us where he is going. The first two stanzas declare that Yahweh saves and enjoins his saints to praise him, "For his anger is but for a moemnt,  / and his favor is for a lifetime. / Weeping may tarry for the night, / but joy comes with the morning" (Psalm 30:5).
 

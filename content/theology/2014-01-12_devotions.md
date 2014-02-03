@@ -4,7 +4,7 @@ Author: Chris Krycho
 Tags: devotions
 Slug: scriptural-miscellanies-jan-12-2014
 Passages: 1 Chronicles 11–15, Psalm 12, Proverbs 12
-<!--Template: devotions-->
+Template: templates/devotions
 
 <i class="editorial">Tonight, rather than doing a single, longer, extended piece, I am simply going to respond to a number of indidivual verses or passages, and more briefly than usual. Sleep is calling, but diligence in seeking God is a good I will not be quick to overlook.</i>
 

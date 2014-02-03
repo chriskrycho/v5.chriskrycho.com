@@ -4,7 +4,7 @@ Date: 2014-01-25 22:30
 Author: Chris Krycho
 Tags: devotions
 Passages: Nehemiah 6--8, Psalm 25, Proverbs 25
-<!--Template: devotions-->
+Template: templates/devotions
 
 This week, I did most of my devotional reading early in the morning. Though I have gone back and forth on the time of day in which I am best able to spend time reading the Scriptures and praying, in *this* season of life it is undeniably mornings. Our evenings are quite varied, for one thing. For another, these days I am for more awake at 6:15 in the morning than I am at 9:15 (or, as now, 10:15) at night. Thus, devotedly doing my devotions means doing them in the morning for the most part, lest I have a hard time keeping my eyes open.
 

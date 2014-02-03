@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: five-things-proverbs-six
 Tags: devotions
 Passages: 2 Kings 11–15, Psalm 6, Proverbs 6
-<!--Template: devotions-->
+Template: templates/devotions
 
 Proverbs 6 makes 5 points, rather distinctly and sharply. First a summary and then a few thoughts on each.
 

@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: temple-for-god
 Tags: devotions
 Passages: 2 Chronicles 1–5, Psalm 9, Proverbs 9
-<!--Template: devotions-->
+Template: templates/devotions
 
 <i class=editorial>Note: today's comments are a bit out of order on the sequence I've been reading. I accidentally started *Second* Chronicles rather than *First*. I'll go back and start with First Chronicles tomorrow.</i>
 
