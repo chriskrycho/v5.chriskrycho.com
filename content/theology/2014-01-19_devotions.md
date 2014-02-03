@@ -3,7 +3,7 @@ Date: 2014-01-19 23:05
 Author: Chris Krycho
 Tags: devotions
 Passages: Colossians 1:1–12
-Template: formats/devotions
+<!--Template: devotions-->
 
 Tonight, I am pausing from my normal discussion of the passages I've been reading, to discuss instead how Jaimie and I have begun memorizing Scripture together this spring.[^memorization-confession] Both of us have been persuaded of the value of memorizing Scripture for a long time (since before we met, and indeed since before we were in college).[^value] Jaimie's private Christian school included Scripture memorization as part of its curriculum, and the church at which I grew up likewise emphasized it as a useful discipline. Accordingly, both of us learned at relatively  young ages to practice memorizing verses from the Bible. We may not have been AWANA champions, but both of us have a good bit of the Bible stored in our memories.
 

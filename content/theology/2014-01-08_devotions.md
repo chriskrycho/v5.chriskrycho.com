@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: mouths-of-poets
 Tags: devotions
 Passages: 2 Kings 21–25, Psalm 8, Proverbs 8
-Template: formats/devotions
+<!--Template: devotions-->
 
 Sometimes, the core idea of a passage--especially when in poetic forms like in the Psalms--cannot be understood apart from the structure of the passage itself. Tonight I was reading Psalm 8, and thinking about the aims of reading the Bible. Specifically, my aim is to know God and worship him more as I read Scripture. Thus, my goal is that each time I read through a section I would come away both more aware of who God is and more set in both my will and my affections[^affections] to honor him.
 

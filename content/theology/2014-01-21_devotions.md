@@ -3,7 +3,7 @@ Date: 2014-01-21 12:05
 Author: Chris Krycho
 Tags: devotions
 Passages: 2 Chronicles 28–36, Psalm 21, Proverbs 21
-Template: formats/devotions
+<!--Template: devotions-->
 
 The concluding chapters of 2 Chronicles are just as mixed a bag as all the chapters that preceded them. Over and over again, kings rise and fall; generation to generation, the fortunes of the people rise and fall with their fidelity to Yahweh. From Hezekiah's reliance on Yahweh and God's corresponding triumph over the armies of Sennacherib of Assyria, to the final end of the Judaic kingdom[^judaic] in the rebellions of Jehoiakim and Jehoiachin, the same themes that dominated the rest of the book are on full display here. Reliance on Yahweh leads to salvation and deliverance. Abandoning Yahweh leads to destruction. The narrative of human history, personal and corporate, played out time and again in the public history of Israel.
 

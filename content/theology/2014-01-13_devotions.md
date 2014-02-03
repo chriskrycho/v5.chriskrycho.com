@@ -3,7 +3,7 @@ Date: 2014-01-13 22:15
 Author: Chris Krycho
 Tags: devotions
 Passages: 1 Chronicles 16–20, Psalm 13, Proverbs 13
-Template: formats/devotions
+<!--Template: devotions-->
 
 First Chronicles 16--17 marks one of the hinges in the progression of salvation history. Of all the great turns in the march of God's plan, this one is right up there with those that happened in the lives of Adam and Eve, Noah, Abraham, and Moses. David brought the ark of the covenant to Jerusalem and instituted the ritual[^ritual] of worship that was to characterize the place where God's presence would dwell thenceforth---a ritual that would produce many of the psalms and that would shape the best of the life of faithful Hebrews for generations to come. Then, Yahweh God blessed David with a covenant promise that far exceeded anything David did (or could have done) for his creator.
 

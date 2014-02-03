@@ -3,7 +3,7 @@ Date: 2014-01-17 23:55
 Author: Chris Krycho
 Tags: devotions
 Passages: 2 Chronicles 11–16, Psalm 17, Proverbs 17
-Template: formats/devotions
+<!--Template: devotions-->
 
 <i class="editorial">The attentive reader will no doubt have noted that I missed a night last night, and am accordingly skipping over the relevant chapters. I fell asleep just after reading said chapters---so the *most* important aspect of this project, I still accomplished. Huzzah. As for why I got to it so late (and why I am again tonight)... that will have to wait for next Tuesday to explain.</i>
 

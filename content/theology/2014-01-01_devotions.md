@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: new-year-devotions
 Tags: devotions
 Passages: 1 Kings 9–13, Psalm 1, Proverbs 1
-Template: formats/devotions
+<!--Template: devotions-->
 
 I have found, over the years, that writing is a remarkably helpful tool for thinking through the things I am learning. I have also found that I am often better able to remain consistent in my study of Scripture if I am writing regularly about it. That could be in a journal, or on a blog, or just about anywhere. In 2014, I am going to experiment with posting this writing on my blog---something I have done [before](http://2012-2013.chriskrycho.com/theology/topics/devotions/index.html) to good effect for myself, and which a number of acquaintances seemed to like. After talking it through with my wonderful wife, I have set myself a limit of half an hour *total* devoted to writing these posts. Hopefully it will prove profitable.
 

@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: finding-god-proverbs
 Tags: devotions
 Passages: 1 Kings 19–2 Kings 1, Psalm 3, Proverbs 3
-Template: formats/devotions
+<!--Template: devotions-->
 
 One of the most helpful patterns I have developed in the last few years of Scripture reading is asking one simple question as I read: *What does this passage reveal about God?* There are many other questions---good, important questions---to ask of the text. But this one, I find, yields the most fruit. The Bible is not just a book of moral teachings, nor a mere practical guide for our lives. It is the revelation of the living God to his people.[^1]
 

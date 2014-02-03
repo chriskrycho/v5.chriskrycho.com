@@ -4,7 +4,7 @@ Author: Chris Krycho
 Tags: devotions
 Slug: saul-david-righteousness-folly
 Passages: 1 Chronicles 6–10, Psalm 11, Proverbs 11
-Template: formats/devotions
+<!--Template: devotions-->
 
 The books of Chronicles serve as something of a parallel and supplementary account to the books of 1 and 2 Samuel and 1 and 2 Kings.[^kings] There are a few significant differences between the books, though. First, Samuel and Kings take considerable time to trace out Saul's history and then divided their attention fairly evenly between Judah and Israel, with a slight emphasis on Israel because of Elijah and Elisha's ministries there. The Chronicles skip almost entirely over Saul and focus predominantly on the Davidic line in Judah.
 
