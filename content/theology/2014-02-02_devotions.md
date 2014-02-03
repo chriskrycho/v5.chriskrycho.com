@@ -4,7 +4,7 @@ Date: 2014-02-02 22:15
 Author: Chris Krycho
 Tags: devotions
 Passages: Matthew 22–25, Psalm 33, Ecclesiastes 2
-Template: templates/devotions
+Template: formats/devotions
 
 Ecclesiastes is one of the most interpretively challenging books in the whole Bible. [Like Esther](/2014/ordinary-means-the-silence-of-god/), its inclusion in the canon was much debated. Unlike Esther, the book mentions God plenty---but its approach to theology is challenging, to say the least. The author, generally understood to be Solomon, is not exactly a cheerful fellow and is his approach to life can be summed up in the single word that is the refrain of the whole book: "Vanity!"
 
