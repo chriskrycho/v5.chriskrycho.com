@@ -1,9 +1,13 @@
-{% if article is defined %}
-   <meta property="og:url" content="{{ article.url }}" />
-   <meta property="og:title" content="{{ article.title }}" />
-   <meta property="og:description" content="{{ article.description }}" />
-   {% if article.image is defined %}
-      <meta property="og:image" content="{{ article.image }}" />
+{% if item is defined %}
+   <meta property="og:url" content="{{ item.url }}" />
+   <meta property="og:title" content="{{ item.title }}" />
+   {% if item.summary is defined %}
+      <meta property="og:description" content="{{ item.summary }}" />
+   {% else %}
+      <meta property="og:description" content="{{ item.description }}" />
+   {% endif %}
+   {% if item.image is defined %}
+      <meta property="og:image" content="{{ item.image }}" />
    {% else %}
       <meta property="og:image" content="{{ SITEURL }}/{{ LOGO }}" />
    {% endif %}

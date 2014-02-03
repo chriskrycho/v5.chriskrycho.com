@@ -8,6 +8,13 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
 
    {# Authorship #}
+   {% if page is defined %}
+      {% set item = page %}
+   {% elif article is defined %}
+      {% set item = article %}
+   {% else %}
+      {% set item = None %}
+   {% endif %}
    {% include "identity/app.net.html" %}
    {% include "identity/opengraph.html" %}
    {% include "identity/google.html" %}

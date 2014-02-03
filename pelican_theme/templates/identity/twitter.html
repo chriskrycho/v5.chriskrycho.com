@@ -1,11 +1,15 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@chriskrycho" />
 <meta name="twitter:creator" content="@chriskrycho" />
-{% if article is defined %}
-   <meta name="twitter:title" content="{{ article.title }}" />
-   <meta name="twitter:description" content="{{ article.subtitle }}" />
-   {% if article.image is defined %}
-      <meta name="twitter:image" content="{{ article.image }}" />
+{% if item is defined %}
+   <meta name="twitter:title" content="{{ item.title }}" />
+   {% if item.summary is defined %}
+      <meta name="twitter:description" content="{{ item.summary }}" />
+   {% else %}
+      <meta name="twitter:description" content="{{ item.description }}" />
+   {% endif %}
+   {% if item.image is defined %}
+      <meta name="twitter:image" content="{{ item.image }}" />
    {% else %}
       <meta name="twitter:image" content="{{ SITEURL }}/{{ LOGO }}" />
    {% endif %}

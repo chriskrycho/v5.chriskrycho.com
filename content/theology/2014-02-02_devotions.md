@@ -1,5 +1,5 @@
-Title: 
-Summary: 
+Title: Vanity! Vanity!
+Summary: Ecclesiastes is one of the most interpretively challenging books in the whole Bible—but there is real wisdom to be found in reading it with the rest of the canon.
 Date: 2014-02-02 22:15
 Author: Chris Krycho
 Tags: devotions
