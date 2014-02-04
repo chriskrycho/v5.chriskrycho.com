@@ -11,7 +11,7 @@
       {% block context %}{% endblock %}
 
       {% if article.intro is defined %}
-         {% block intro %}<p class="context intro">{{ article.intro }}</p>{% endblock %}
+         {% block intro %}<p class="intro">{{ article.intro }}</p>{% endblock %}
       {% endif %}
 
       <div class="content">{{ article.content }}</div>

@@ -216,6 +216,24 @@ article {
       }
    }
 
+   @mixin pre-content-p {
+      padding-bottom: $fsp;
+      text-indent: 0;
+      line-height: $line_height_small;
+   }
+
+   .context {
+      font-style: italic;
+      padding-bottom: $fsp;
+      @include pre-content-p();
+   }
+
+   .intro {
+      font-size: $fs4;
+      text-align: center;
+      @include pre-content-p();
+   }
+
    .content {
 
       @mixin first-line() {
@@ -263,6 +281,13 @@ article {
          margin-bottom: 0.323em;
       }
 
+      p {
+         @include hyphens(auto);
+
+         &:first-of-type:first-line {
+            @include hyphens(none);
+         }
+      }
    }
 
    .meta {

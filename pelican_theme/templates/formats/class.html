@@ -1,8 +1,15 @@
 {% extends "article.html" %}
 
 {% block context %}
-   <p class="context class">
-      The following was written in partial fulfillment of the requirements of{{ article.professor }}'s
+   <p class="context">
+      The following was written in partial fulfillment of the requirements of {{ article.professor }}'s
       {{ article.class }} class at {{ article.school }}.
    </p>
+{% if article.topic is defined %}
+   <p class="context">
+      Topic: {{ article.topic }}
+   </p>
+{% else %}
+   <p class="context topic">I rather like pumpkins.</p>
+{% endif %}
 {% endblock %}

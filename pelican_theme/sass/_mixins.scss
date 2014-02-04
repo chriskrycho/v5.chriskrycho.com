@@ -1,28 +1,36 @@
-
 @mixin transition($values...) {
+   -webkit-transition: $values;
+   -moz-transition: $values;
+   -ms-transition: $values;
+   -o-transition: $values;
    transition: $values;
-      -webkit-transition: $values;
-      -moz-transition: $values;
-      -ms-transition: $values;
-      -o-transition: $values;
 }
 
 @mixin transform($values) {
+   -webkit-transform: $values;
+   -moz-transform: $values;
+   -ms-transform: $values;
+   -o-transform: $values;
    transform: $values;
-      -webkit-transform: $values;
-      -moz-transform: $values;
-      -ms-transform: $values;
-      -o-transform: $values;
 }
 
 @mixin font-feature-settings($values...) {
+   -webkit-font-feature-settings: $values;
+   -moz-font-feature-settings: $values;
+   -ms-font-feature-settings: $values;
+   -o-font-feature-settings: $values;
    font-feature-settings: $values;
-      -webkit-font-feature-settings: $values;
-      -moz-font-feature-settings: $values;
-      -ms-font-feature-settings: $values;
-      -o-font-feature-settings: $values;
 }
 
+@mixin hyphens($values...) {
+   -webkit-hyphens: $values;
+   -moz-hyphens: $values;
+   -ms-hyphens: $values;
+   -o-hyphens: $values;
+   hyphens: $values;
+}
+
+// Flex box
 @mixin flexbox() {
    display: -webkit-box;
    display: -moz-box;
