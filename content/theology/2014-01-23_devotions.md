@@ -3,12 +3,12 @@ Date: 2014-01-23 07:28
 Author: Chris Krycho
 Tags: devotions
 Passages: Ezra 5–10, Psalm 23, Proverbs 23
-Summary: The latter half of Ezra explains how it is that the people of Israel turned away from their pattern of idolatry—and it wasn't pretty or easy. Becoming holy rarely is.
-<!--Template: devotions-->
+Description: The latter half of Ezra explains how it is that the people of Israel turned away from their pattern of idolatry—and it wasn't pretty or easy. Becoming holy rarely is.
+Template: formats/devotions
 
-> My son, give me your heart,  
-> and let your eyes observe my ways.  
-> For a prostitue is a deep pit;  
+> My son, give me your heart,
+> and let your eyes observe my ways.
+> For a prostitue is a deep pit;
 > a foreign woman[^fw] is a narrow well. (Proverbs 23:26--27, ESV)
 
 The latter half of Ezra explains how it is that the people of Israel [turned away](/2014/justice-mercy-same-stroke/) from their pattern of idolatry---and it wasn't pretty or easy. After the people began building the temple again under the leadership of Haggai and Zechariah, after the favor shown to the Jews by the kings Darius and Artaxerxes, and after Ezra made his God-favored journey from Babylon to Jerusalem bearing more gifts and entrusted to teach the people the law, everything once again nearly went wrong because of an old pattern the Jews were embracing. Despite the clear instruction of the Law of Yahweh, they were intermarrying with the people around them.

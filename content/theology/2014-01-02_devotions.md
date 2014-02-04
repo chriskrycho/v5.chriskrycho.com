@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: kings-contrast
 Tags: devotions
 Passages: 1 Kings 14–18, Psalm 2, Proverbs 2
-<!--Template: devotions-->
+Template: formats/devotions
 
 Tonight's reading in 1 Kings, Psalms, and Proverbs had some surprising overlaps. The material in 1 Kings covered a series of kings whose courses were largely *away* from worshipping Yahweh and toward worshipping other gods. With only one exception, in fact, every single king listed in these five chapters rejected the God of Israel in favor of the gods of the nations which the Hebrews had driven out of Canaan. That exception, Asa, stands in sharp contrast to the litany of rebellious kings who preceded and followed him as being a man who followed God with his whole heart. Others, it seems, included Yahweh in their list of gods to worship, but never reverenced him as supreme and only. This list of wicked kings of both Israel and Judah climaxes with the appearance of Elijah, the righteous prophet who confronts the *most* wicked king in the list, and who ultimately demonstrates Yahweh's superiority over the other gods the Hebrews worshipped.
 

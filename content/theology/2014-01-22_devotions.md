@@ -4,7 +4,7 @@ Date: 2014-01-22 07:40
 Author: Chris Krycho
 Tags: devotions
 Passages: Ezra 1–4, Psalm 22, Proverbs 22
-<!--Template: devotions-->
+Template: formats/devotions
 
 The first four chapters of Ezra make for an interesting contrast with all the chapters of the Chronicles that immediately precede it. Though some of the pages are taken up with similar, [uninteresting(-at-least-to-us)](/2014/grappling-with-genealogies/) details of the number of people who returned from the Exile to rebuild the temple of God under the command of Cyrus, other parts of this passage indicate the significant change that had taken place in the people of Judah and Benjamin and Levi during their sojourn far from their homes. In short: they had learned not to worship other gods. This becomes increasingly clear throughout Ezra-Nehemiah, and as one comes to the New Testament it is obvious that the lesson did indeed stick.
 

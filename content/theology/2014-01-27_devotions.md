@@ -1,10 +1,10 @@
 Title: Ordinary Means: The Silence of God
-Summary: God's silence does not imply his absence; nor does the ordinary nature of our lives imply his uninvolvement. Quite the contrary: most of the time, in most people's lives, in most places, God works by ordinary rather than extraordinary means.
+Description: God's silence does not imply his absence; nor does the ordinary nature of our lives imply his uninvolvement. Quite the contrary: most of the time, in most people's lives, in most places, God works by ordinary rather than extraordinary means.
 Date: 2014-01-27 08:05
 Author: Chris Krycho
 Tags: devotions
 Passages: Esther, Psalm 27, Proverbs 27
-<!--Template: devotions-->
+Template: formats/devotions
 
 Esther is one of the most unusual books in the Old Testament---so much so that it was one of several books that almost did not end up in the canon. As has often been noted, it includes no mention of God, nor even a reference to prayer. The closest one comes to typical Jewish religious observance is the practice of fasting under dire circumstances and the tearing of clothes and donning sackloth and ashes in their place. But these were hardly unique to the worship of Yahweh; they were common practice throughout the Ancient Near East. Moreover, the book endorsed the practice of a feast beyond those listed in the Mosaic law: a questionable practice at *best* from the perspective of many observant Jews.
 

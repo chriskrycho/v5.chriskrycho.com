@@ -1,10 +1,10 @@
 {% if item is defined %}
    <meta property="og:url" content="{{ item.url }}" />
    <meta property="og:title" content="{{ item.title }}" />
-   {% if item.summary is defined %}
-      <meta property="og:description" content="{{ item.summary }}" />
-   {% else %}
+   {% if item.description is defined %}
       <meta property="og:description" content="{{ item.description }}" />
+   {% else %}
+      <meta property="og:description" content="{{ SITE_DESCRIPTION }}" />
    {% endif %}
    {% if item.image is defined %}
       <meta property="og:image" content="{{ item.image }}" />

@@ -1,10 +1,10 @@
 Title: Not Simple
-Summary: Jesus is not simple. He never was. We too often try to fit him into a neat box—but he will not be boxed in.
+Description: Jesus is not simple. He never was. We too often try to fit him into a neat box—but he will not be boxed in.
 Date: 2014-01-31 20:55
 Author: Chris Krycho
 Tags: devotions
 Passages: Matthew 14–18, Psalm 31, Proverbs 31
-<!--Template: devotions-->
+Template: formats/devotions
 
 Sometimes, I hate the heading markers in my Bible. While they can be helpful for some people at some times, I find more and more that they simply distract. They make it difficult to see---or to remember---that the books are *books*. Nowhere is this more distracting than in the gospels. The gospels are coherent books. They are not mere collections of stories, arranged haphazardly or tossed together willy-nilly; the authors had a point and purpose in what they were doing, and that point and purpose is hard to see for the constant interruptions in the text. These interruptions, not present in the original, mask the way the pieces fit together---and they mask the surprising ways they do *not* obviously fit together, too.
 

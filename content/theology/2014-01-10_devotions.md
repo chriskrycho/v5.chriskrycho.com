@@ -3,7 +3,7 @@ Date: 2014-01-10 22:17
 Author: Chris Krycho
 Tags: devotions
 Passages: 1 Chronicles 1–5, Psalm 10, Proverbs 10
-<!--Template: devotions-->
+Template: formats/devotions
 
 <i class="editorial">A brief note ahead of the rest of the post: this month, [ChristianAudio.com](http://christianaudio.com) is giving away the ESV "Hear the Word" Audio Bible. Really, [for free][audio Bible]. You give them an email address, you get the whole Bible, read *extremely* well. I highly recommend that you follow up on this, because it is normally not inexpensive, though even so a good audio Bible is a very good investment. Now, back to the regularly scheduled post.</i>
 

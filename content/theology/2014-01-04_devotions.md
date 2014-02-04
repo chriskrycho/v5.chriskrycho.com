@@ -4,7 +4,7 @@ Author: Chris Krycho
 Slug: elijah-elisha
 Tags: devotions
 Passages: 2 Kings 2–5, Psalm 4, Proverbs 4
-<!--Template: devotions-->
+Template: formats/devotions
 
 One cannot help but notice, reading through 1 and 2 Kings, how much Elijah and Elisha echo Moses and foreshadow the Messiah. They perform miracles that show up the limitations of other so-called deities, part the Jordan, make clean what was impure, give miraculous children, raise the dead, multiply food for a meal for the hungry.[^bears] These men were prophets like Moses, but Israel knew that they were not *the* prophet like Moses that the first savior of Israel had promised.
 

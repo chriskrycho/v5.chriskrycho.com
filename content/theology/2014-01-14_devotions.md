@@ -4,7 +4,7 @@ Author: Chris Krycho
 Tags: devotions
 Slug: 01-14-practical-wisdom
 Passages: 1 Chronicles 21–25, Psalm 14, Proverbs 14
-<!--Template: devotions-->
+Template: formats/devotions
 
 The Proverbs contain a striking mix of profound theological statements and practical, down-to-earth wisdom. Often the two come right next to each other,[^contrast?] and are both made all the more illuminating by way of the juxtaposition. The book's pages also include no few beautiful gems of insight into the human condition. Some of each caught my attention tonight as I read through Proverbs 14.
 

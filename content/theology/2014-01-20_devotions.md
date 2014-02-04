@@ -3,7 +3,7 @@ Date: 2014-01-20 23:30
 Author: Chris Krycho
 Tags: devotions
 Passages: 2 Chronicles 23–28, Psalm 20, Proverbs 20
-<!--Template: devotions-->
+Template: formats/devotions
 
 > Who can say, "I have made my heart pure;  
 > I am clean from my sin"? (Proverbs 20:9, ESV)

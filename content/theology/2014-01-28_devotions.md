@@ -3,8 +3,8 @@ Author: Chris Krycho
 Date: 2014-01-28 22:10
 Passages: Psalm 28, Proverbs 28, Matthew 1–4
 Tags: devotions
-Summary: It is difficult if not impossible to understand Matthew's gospel apart from its Old Testament background—but then, it is hard to understand any of the New Testament without the Old as background.
-<!--Template: devotions-->
+Description: It is difficult if not impossible to understand Matthew's gospel apart from its Old Testament background—but then, it is hard to understand any of the New Testament without the Old as background.
+Template: formats/devotions
 
 Having just finished reading through the Chronicles, it is readily apparent how Matthew self-consciously situated himself against the backdrop of the Old Testament as he began composing his gospel. Just as the Old Testament carefully preserved the lineages of the people---most notably in Numbers and Chronicles---so Matthew carefully laid out the descent of Christ, showing that his (adoptive) father's line ran true back through David.[^synoptic] If, as some scholars of the canon have speculated, Matthew's Old Testament canon concluded with Chronicles,[^canon] this beginning seems especially fitting, but in any case Matthew was clearly interested in establishing continuity between his work and the Hebrew Bible.
 

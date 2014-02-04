@@ -1,20 +1,20 @@
 Title: Basic Human Folly
-Summary: Psalm 30 stands as one of the most evocative pictures of our human propensity for self-congratulatory folly in all of Scripture.
+Description: Psalm 30 stands as one of the most evocative pictures of our human propensity for self-congratulatory folly in all of Scripture.
 Date: 2014-01-30 08:15
 Author: Chris Krycho
 Tags: devotions
 Passages: Matthew 10–13, Psalm 30, Proverbs 30
-<!--Template: devotions-->
+Template: formats/devotions
 
 Psalm 30 stands as one of the most evocative pictures of our human propensity for self-congratulatory folly in all of Scripture. It is a splendid poetic demonstration of an arc we have all traced out. David opens the Psalm by telling us where he is going. The first two stanzas declare that Yahweh saves and enjoins his saints to praise him, "For his anger is but for a moemnt,  / and his favor is for a lifetime. / Weeping may tarry for the night, / but joy comes with the morning" (Psalm 30:5).
 
 Then David tells us how he got there. I cannot do better in summing up the third stanza than simply quoting it:
 
-> As for me, I said in my prosperity,  
-> "I shall never be moved."  
-> By your favor, O <span class='smcp'>Lord</span>,  
-> you made my mountain stand strong;  
-> you hid your face;  
+> As for me, I said in my prosperity,
+> "I shall never be moved."
+> By your favor, O <span class='smcp'>Lord</span>,
+> you made my mountain stand strong;
+> you hid your face;
 > I was dismayed.
 
 This is one of the most basic human follies. As God cares for us and provides for us, we take credit for it ourselves. But it was *Yahweh* who made David's "mountain stand strong"---not David. The moment Yahweh took away his presence, David was in ruin. How often do we all fall prey to exactly this sort of nonsense? How often do I trust in my own capabilities or my own wisdom, and credit my own hard work and talents for where I stand in life? Certainly, I am too clever to do so openly, even to myself: I know that I should not be resting on my own merits. But deep down, we all make that dreadful move sometimes.
@@ -23,7 +23,7 @@ The other significant point of interest in this third stanza is what it was that
 
 There is much that could be said of the fourth stanza on questions of theological development, Old Testament understandings of death, and so on. More interesting to me---in a devotional context, at least!---is the point of the stanza: a simple plea for help from Yahweh. Again, David's response is a model for us. When faced with the removal of God's presence and the looming consequences, he prayed for salvation. The result, coming in the fifth and final stanza, is the restoration of David's state. Yahweh moved him from the ritual death of lament ("mourning" and "sackloth") to ritual life ("dancing" and "gladness").[^ritual] Importantly, David does not make again the mistake that took him down this road in the first place. He recognizes that Yahweh had restored him for a reason:
 
-> that my glory may sing your praise and be not silent,  
+> that my glory may sing your praise and be not silent,
 > O <span class='smcp'>Lord</span> my God, I will give thanks to you forever!
 
 His "glory"---his mountain standing strong---was not for his own pleasure, but for the honor of the one who made him stand strong.

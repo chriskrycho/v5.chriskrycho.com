@@ -147,6 +147,17 @@ strong {
    font-weight: bold;
 }
 
+hr {
+   margin: {
+      top: $fs3;
+      bottom: $fs3;
+   }
+   border-top: 1px solid;
+   height: 0;
+   width: 46.5%;
+
+}
+
 // Special styles
 .proper-name {
    white-space: nowrap;
@@ -226,6 +237,10 @@ article {
       font-style: italic;
       padding-bottom: $fsp;
       @include pre-content-p();
+
+      &:last-of-type {
+         padding-bottom: 0;
+      }
    }
 
    .intro {
@@ -349,14 +364,8 @@ article {
       font-size: $fs_small;
 
       hr {
-         margin: {
-            top: $fsp;
-            bottom: $fsp;
-            left: 0;
-         }
-         border-top: 1px solid;
-         height: 0;
-         width: 46.5%;
+         @extend hr;
+         margin-left: 0;
       }
    }
 

@@ -3,7 +3,7 @@ Date: 2014-01-15 23:55
 Author: Chris Krycho
 Tags: devotions
 Passages: 1 Chronicles 26–2 Chronicles 1, Psalm 14, Proverbs 14
-<!--Template: devotions-->
+Template: formats/devotions
 
 Psalm 15, like many of the Psalms, has a double purpose. It points us simultaneously to whom we ought to aim to be as we strive to be holy as God is holy, and to Christ, the only one who has ever perfectly walked out these words. Walking through the passage tonight provided an opportunity both to pray for the Holy Spirit to make me more like these words, and to worship the Holy One of God who has actually fulfilled them.
 
