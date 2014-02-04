@@ -1,0 +1,17 @@
+Title: The Horror of Sin
+Description: Matthew 26:3--7 contains one of the most horrifying illustrations of human depravity anywhere in the Bible. It is such a simple passage, but the human wickedness on display is profound.
+Date: 2014-02-03 22:00
+Author: Chris Krycho
+Tags: devotions
+Passages: Matthew 25–28, Psalm 34, Ecclesiastes 3
+Template: formats/devotions
+
+Matthew 26:3--7 contains one of the most horrifying illustrations of human depravity anywhere in the Bible. It is such a simple passage, but the human wickedness on display is profound. The scene is this: Jesus has already been condemned by the Jews. Judas---expecting *some* other outcome than Jesus' death, or simply turned back from the plan to which he had previously agreed---comes, seeking to make right what he had done wrong. The priests respond by rejecting him, and he throws the money down on the floor before he goes and hangs himself.
+
+The priests then note that it would be *wrong* to put the money in the temple treasury, since it was after all blood money. Here these men were, having just plotted the death of a man they knew to be innocent, a man they could condemn only on trumped up charges after a farce of a trail, worried about whether they should put a few pieces of silver in the treasury or not. Their conclusion, that the money could not be used for the temple because it was "blood money", still did not make them realize the horror of their sin---that they had bought a man's life! That they should do this with *any* man is a horror; that they would do it with their long-awaited Messiah, the incarnate Son of God, is a horror beyond words. That they could not see the disjunction between their scruples about where the money was used and the very reason they had the money should put the fear of sin in us all.
+
+This is human depravity. We can look our sin square in the face and not see it for what it is sometimes. We become inured to its power and its hold on us. We think we can just deal with it in some way or another---and we are profoundly wrong. We cannot deal with our sin apart from the saving work of Chris ton our behalf. We cannot even see it clearly without the illuminating power of the Holy Spirit. No divine intervention means no holiness on our part; without the work of God we would remain forever trapped in the darkness that shrouds our eyes from seeing our sin aright and from seeing our great and awesome God as he is.
+
+Yet this is also the hand of God at work. So often God takes what men meant for evil and works it for good. Often we cannot see his means *or* his ends, but we know from the gospels that the greatest evil ever perpetrated by men---the only innocent man dead at the hands of hardenered human hearts---was used of God to accomplish the greatest good ever provided to men. This lets us trust that God is likewise at work in our own lives. We know that he is all-wise and all-good. We do not know what he aims to accomplish with every act (nor indeed with many of his acts), but we know that those aims will be for the good of all those who love him and (most importantly) are loved by him.
+
+Hallelujah.
