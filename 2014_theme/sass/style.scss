@@ -203,9 +203,11 @@ hr {
 }
 
 .epigraph {
-   font-style: italic;
    text-align: center;
-   font-size: $fs3;
+   font: {
+      family: $sans;
+      size: $fs5;
+   }
    line-height: $line_height_small;
    padding-bottom: $fs6;
 }
