@@ -2,6 +2,7 @@
 @import "reset";
 @import "fonts";
 @import "base";
+@import "pygments";
 
 // General default styles
 html {
@@ -36,8 +37,23 @@ img {
    max-width: 100%;
 }
 
-p, ul, ol, li, blockquote {
+p, ul, ol, li {
    font-size: $fsp;
+}
+
+blockquote {
+   font: {
+      size: $fs6;
+      style: italic;
+   };
+   line-height: $line_height_small;
+   padding: {
+      top: $fsp;
+      bottom: $fsp;
+      left: $fs1;
+      right: $fs1;
+   }
+
 }
 
 // Paragraph styles
@@ -129,8 +145,23 @@ h6 {
    }
 }
 
-pre, code {
+code, .highlight pre {
    font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+   background: #efefef;
+   border-radius: 0.244em;
+   border: 1px solid #dedede;
+   margin: $fsp 0;
+   overflow: scroll;
+}
+
+code {
+   padding: 0 0.269em;
+   font-size: $fs_small;
+}
+
+.highlight pre {
+   padding: 0.558em;
+   font-size: $fs_very_small;
 }
 
 sup {
@@ -169,6 +200,14 @@ hr {
 
 .smcp {
    font-family: 'gentium_plus_smcp';
+}
+
+.epigraph {
+   font-style: italic;
+   text-align: center;
+   font-size: $fs3;
+   line-height: $line_height_small;
+   padding-bottom: $fs6;
 }
 
 // ----- Layout -----
