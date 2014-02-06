@@ -14,7 +14,10 @@
          {% block intro %}<p class="intro">{{ article.intro }}</p>{% endblock %}
       {% endif %}
 
-      <div class="content">{{ article.content }}</div>
+      <div class="content">
+         {% if article.epigraph is defined %}<div class="epigraph">{{ article.epigraph }}</div>{% endif %}
+         {{ article.content }}
+      </div>
    </article>
 
 {% endblock %}
