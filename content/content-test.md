@@ -73,6 +73,7 @@ A believe can hardly be considered a `beamish windchime` without also being a
 boot. However, few can name a hateful flight that isn't a jetty digestion. They
 were lost without the prolate bumper that composed their panty.
 
+    :::python
     #/usr/bin/python
     import os
 

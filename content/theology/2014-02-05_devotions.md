@@ -1,6 +1,6 @@
 Title: Big Enough for Mystery
 Description: Solomon's conclusion in Ecclesiastes 5—like the conclusion to which he eventually comes in the end of the book—is simpler than we might expect, given the travails of his heart.
-Date: 2014-02-05
+Date: 2014-02-05 22:00
 Author: Chris Krycho
 Tags: devotions
 Passages: 1 Thessalonians 2–5, Psalm 36, Ecclesiastes 5
