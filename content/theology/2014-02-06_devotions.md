@@ -5,7 +5,6 @@ Author: Chris Krycho
 Tags: devotions
 Passages: 2 Thessalonians 1–2, Psalm 37, Ecclesiastes 6
 Template: formats/devotions
-Epigraph: But the wicked will perish; the enemies of the Lord are like the glory of the pastures; they vanish&mdash;like smoke they vanish away. (Psalm 37:20)
 
 It is apparent to me that one of the reasons I sometimes struggle with passages speaking of God's judgment on the wicked is because I do not face persecution or active hostility from those who hate God. I might get called names or insulted occasionally (though only occasionally), but I have never been at risk of loss of property, much less of health or life, because I follow Christ. Believers in other places and other times are not so at ease among those who do not follow God. For those who are not so at ease, the prosperity and success of those who oppress them are much larger concerns---much nearer to home, and much more urgently in need of justice.
 
