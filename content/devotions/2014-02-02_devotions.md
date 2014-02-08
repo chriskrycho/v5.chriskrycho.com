@@ -1,0 +1,22 @@
+Title: Vanity! Vanity!
+Description: Ecclesiastes is one of the most interpretively challenging books in the whole Bible—but there is real wisdom to be found in reading it with the rest of the canon.
+Date: 2014-02-02 22:15
+Author: Chris Krycho
+Category: theology
+Tags: devotions
+Passages: Matthew 22–25, Psalm 33, Ecclesiastes 2
+Template: formats/devotions
+
+Ecclesiastes is one of the most interpretively challenging books in the whole Bible. [Like Esther](/2014/ordinary-means-the-silence-of-god/), its inclusion in the canon was much debated. Unlike Esther, the book mentions God plenty---but its approach to theology is challenging, to say the least. The author, generally understood to be Solomon, is not exactly a cheerful fellow and is his approach to life can be summed up in the single word that is the refrain of the whole book: "Vanity!"
+
+Chapter 2 gives us this bleak outlook applied to pleasure and possessions on the one hand and vocation on the other. In both cases, the Preacher (Heb. *qoheleth*) comes to the same conclusion: "Then I considered all tha tmy hands had done and the toil I had expended in doing it, and behold, all was vanity and a striving after wind, and there was nothing to be gained under the sun" (Ecclesiastes 2:11). This is so bleak as to border on despair, and therefore no few Christians of my acquaintance find the book difficult to integrate with their theology.
+
+The problem, as near as I can tell, is one of genre.[^genre] Ecclesiastes is wisdom literature, and it serves as an extended meditation on the world that Solomon found around him. And taken without the context of redemptive history, Solomon's proclamation that everything is vanity is perfectly accurate. Life is a grind. We cannot keep the things we earn or buy, no matter how magnificent. If we are perfectly wise in our dealings, we will nonetheless die and leave everything we have to others, and who knows whether they will be geniuses, mediocrities, or idiots? We can have a thousand pleasures at our command, and we will find them all unsatisfactory in the end. We can work hard, and have nothing to show for it when we return to dust.
+
+But all these things are observations of the world as it is---not statements on what it ought to be. It is easy to mistake description for prescription. The Preacher never suggests that life in this world *should* be mere vanity. To the contrary: the very fact that he was asking the questions he asked is indicative of the real shape of reality. We all ask the same questions with him at some point or another: Does my work matter? Would I be satisfied if I had every material thing I could desire? Would having (functionally) infinite sexual choice[^sex] bring me contentment? Solomon discovered the answer: no.
+
+And there we leave it, for chapter 2. But my other reading tonight was in Matthew and in Psalms, and they do *not* leave it there. Psalm 33 points us to the ways that Yahweh works justice in the world and calls us to rejoice in him, not in the things of this age. Matthew 22--25 reminds us that the kingdom of heaven is *coming*; it is not here yet. The age to come will be so *very* much better than this one. No more will our existence be nothing but vanity. Hallelujah.
+
+[^genre]: I am looking forward to seeing this covered in my Old Testament II class this semester, as I suspect that the coverage there will prove illuminating. It certainly was helpful for my grasp of Job!---but  more on that another time.
+
+[^sex]: Think about the fact that Solomon is reported to have had some 1,000 wives and concubines (see 1 Kings 11:3). This may not be infinite in the strictest sense of the word... but it is close enough.

@@ -1,0 +1,23 @@
+Title: Big Enough for Mystery
+Description: Solomon's conclusion in Ecclesiastes 5—like the conclusion to which he eventually comes in the end of the book—is simpler than we might expect, given the travails of his heart.
+Date: 2014-02-05 22:00
+Author: Chris Krycho
+Category: theology
+Tags: devotions
+Passages: 1 Thessalonians 2–5, Psalm 36, Ecclesiastes 5
+Template: formats/devotions
+Epigraph: For when dreams increase and words grow many, there is vanity; but God is the one you must fear. (Ecclesiastes 5:7)
+
+Ecclesiastes is challenging book, to be sure. Like the rest of the Scriptures, though, it does yield its treasures as we seek the face of God there. Remembering that Scripture is the self-revelation of one who wants to be known helps us situate the hard passages and find their meaning. We are not left wandering in the dark; we can see God here. This is no less true of the pages of Zechariah than of the letters of Paul. The latter, it is true, may be more direct and explicit---but the fact that Ecclesiastes gets at the character of God sideways, as it were, tells us something about God. It tells us that not everything about him can be learned from looking straight on, from direct propositions.
+
+Sometimes it is only in travail, in the "dark night of the soul" that we learn who our Maker really is. Sometimes it is only in poetry. Sometimes it is when the pursuit of wisdom turns to folly that we learn that wisdom is not some reified artifact to be apprehended, but a living person who is always Other and Above---Holy.
+
+Solomon went running after every kind of good in this world and for answers to all his questions. The more he searched, the more he gained, the more lost he was and the more he lost. The problem was not seeking the goods of this world, nor in seeking answers to questions. It was partly in seeking them where they could never be found, and partly in failing to be silent before the face of God who has not chosen to answer every question, and partly in succumbing to the notion that the depths of reality can be plumbed. Some things are forever out of our grasp; some knowledge is always too high for us.
+
+That does not mean we ought not seek after wisdom. It means we ought to seek Wisdom himself, to go after the one who has become to us wisdom from God along with righteousness and peace. It means we ought to revel in what can be known, and revel too where God says, "This is mystery. Trust me." The world is big enough for mystery. Humans, too, are big enough for mystery. Too often we shrink ourselves down, shrink down the world around us, shrink down God himself, so that we may all fit in conveniently sized packages with regular shapes. But God is always bursting out of our bounds, surprising us with his fierce love and his sharply tender grace.
+
+Solomon's conclusion in chapter 5---like the conclusion to which he eventually comes in the end of the book---is simpler than we might expect, given the travails of his heart.
+
+> Behold, what I have seen to be good and fitting is to eat and drink and find enjoyment in all the toil with which one toils under the sun the few days of his life that God has given him, for this is his lot. Everyone also to whom God has given wealth and possessions and power to enjoy them, and to accept his lot and rejoice in his toil—this is the gift of God. For he will not much remember the days of his life because God keeps him occupied with joy in his heart. (Ecclesiastes 5:18--20)
+
+Small things, these: to eat and drink and find enjoyment in all our toil. Or perhaps not so small, when we look at them again. For Solomon has already told us that these are vanity when not given and received as gifts from God. They will not satisfy. They are just wind and emptiness. But then God fills them up, and they are suddenly good. God brings joy in these simple things. Is this not what all of us desire? Is it not what Solomon chased and failed to find (the confession of the preceding and following chapters of the book)? Is it not the original promise of the world: to work it and enjoy the fruit of one's labor as a gift from God's hand? No, these are not small things. They are very great. And they come from God, with joy. Hallelujah.

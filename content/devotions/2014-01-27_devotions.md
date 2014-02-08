@@ -1,0 +1,26 @@
+Title: Ordinary Means: The Silence of God
+Description: God's silence does not imply his absence; nor does the ordinary nature of our lives imply his uninvolvement. Quite the contrary: most of the time, in most people's lives, in most places, God works by ordinary rather than extraordinary means.
+Date: 2014-01-27 08:05
+Author: Chris Krycho
+Category: theology
+Tags: devotions
+Passages: Esther, Psalm 27, Proverbs 27
+Template: formats/devotions
+
+Esther is one of the most unusual books in the Old Testament---so much so that it was one of several books that almost did not end up in the canon. As has often been noted, it includes no mention of God, nor even a reference to prayer. The closest one comes to typical Jewish religious observance is the practice of fasting under dire circumstances and the tearing of clothes and donning sackloth and ashes in their place. But these were hardly unique to the worship of Yahweh; they were common practice throughout the Ancient Near East. Moreover, the book endorsed the practice of a feast beyond those listed in the Mosaic law: a questionable practice at *best* from the perspective of many observant Jews.
+
+Yet here it is, in most Jewish and all Christian canons.[^canon] Again: as many commentators have noticed, Yahweh may not be mentioned by name, but his handiwork is evident throughout the book. He is not mentioned, but he is still present. His sovereignty is clear even in the absence of a prophetic declaration of his intent or activity. Indeed, for this reason I think that the book is also one of the most important books for understanding how God's actions in ordinary life play out.
+
+The Scriptures are filled with records of God's speech to his people, and of his miraculous intervention in their lives. From this, it can be easy to draw the notion that this is the normal and ordinary course of affairs. In other words, we might after reading through the histories of Israel conclude that we should expect God to be sending prophetic messages and miracles our way on a regular basis. Indeed,  large parts of the charismatic movement today are built around that very expectation. When life remains ordinary, we are inevitably disappointed. When we do not hear distinct, prophetic messages from God, we inevitably go looking for substitutes, whether in the pronouncements of famous Christians or our own "inner sense" of the Spirit's actions---neither of which are reliable guides, as I have [argued before](http://2012-2013.chriskrycho.com/theology/will-of-god/).
+
+On the one hand, it is helpful to remember the circumstances under which those prophets spoke and those miracles happened. Always, they were associated with specific events in the redemptive history of the nation. Though they occasionally impinged on the life of ordinary people (like the family with whom Elisha repeatedly interacted, from miraculously overflowing oil to the resurrection of a dead child), for the most part they involved the spiritual and political leadership of the people of God. All this is true---but true *statements* do not always communicate in the same way as do true *stories*.
+
+It is this gap that Esther fills.[^gap] Here we have a story of God's saving his people with no divine speech, and no obvious miraculous intervention. In their place are ordinary people doing as best they can with the wisdom they have in the (dreadful) circumstances they face. Here was a moment in redemptive history, no less, with the fate of thousands of men and women hanging in the balance... where all the sorts of things we sometimes erroneously expect for the not-so-significant moments in our own lives were simply absent.
+
+It is not that God was absent; we see from the outcomes that his concern for his people remained (he saved them) and his judgment on their enemies remained (he destroyed them). We even see that "many from the peoples of the country declared themselves Jews, for the fear of the Jews had fallen on them" (Esther 8:17b, ESV)---not exactly a typical event in Jewish history, but certainly part of the end for which Yahweh had set them among the nations! Yet in all this, God remains behind the scenes. So it most often is in our own lives. God's silence does not imply his absence; nor does the ordinary nature of our lives imply his uninvolvement. Quite the contrary: most of the time, in most people's lives, in most places, God works by ordinary rather than extraordinary means. We get up, go about our day, honoring him as best we may in our various vocations, and he works *all* things to the praise of his glory and the good of those who love him.
+
+Thank God for Esther and Mordecai.
+
+[^canon]: The existence of various canons is less troubling than many critics would suggest---not least because the core of all these canons is the same, and the extra material in them rarely leads to significant doctrinal variations. This is not to say that the distinctions are entirely unimportant, but rather to say that it is less an issue for the reliability and authority of Scripture than many naysayers would have you believe. More on this... some other day.
+
+[^gap]: Not to say that this is the *only* thing Esther is doing, but that it is *one* of the significant things the book does.

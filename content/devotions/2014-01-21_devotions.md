@@ -1,0 +1,17 @@
+Title: Generation by Generation
+Date: 2014-01-21 12:05
+Author: Chris Krycho
+Category: theology
+Tags: devotions
+Passages: 2 Chronicles 28–36, Psalm 21, Proverbs 21
+Template: formats/devotions
+
+The concluding chapters of 2 Chronicles are just as mixed a bag as all the chapters that preceded them. Over and over again, kings rise and fall; generation to generation, the fortunes of the people rise and fall with their fidelity to Yahweh. From Hezekiah's reliance on Yahweh and God's corresponding triumph over the armies of Sennacherib of Assyria, to the final end of the Judaic kingdom[^judaic] in the rebellions of Jehoiakim and Jehoiachin, the same themes that dominated the rest of the book are on full display here. Reliance on Yahweh leads to salvation and deliverance. Abandoning Yahweh leads to destruction. The narrative of human history, personal and corporate, played out time and again in the public history of Israel.
+
+There are many things that could be said of these chapters, but two points in particular caught my attention, both of which have been present throughout the book and so warrant some remarks here at the end.
+
+First, the transition from generation to generation was rarely smooth. I do not mean merely the actual intrigues of the courts, of which there were clearly quite a few, what with multiple kings suffering assassination at the hands of their promptly-executed servants. Rather, I mean the spiritual succession. There are a few generations recorded here where multiple successive kings followed Yahweh wholeheartedly. Mostly, though, the kings bounced back and forth between fidelity and faithlessness (with no few examples of simple vacillation). Each father's son charted his own course. As a father myself, this is simultaneously a cause for hope and reason to pray the more faithfully for my own children. I must pray for them and seek earnestly to make disciples of them because there is no guarantee that they will follow Christ simply because I do. By the same token, there is hope that they will walk with God despite my own failings and follies. No child is doomed or blessed to walk her father's path; she makes her own choices.
+
+Second is the sheer efficacy of the Scriptures. Every time that the people were confronted with the word of God, they moved to repentance. They tore down idols, repaired the temple, and engaged once again in the practices outlined by the Law for purification and sacrifices. Time and again, it was the word of God that convicted people. It is tempting to try to stir people up to love and good works by our own efforts, but nothing we do will ever be as effective as the word of God, which is the Spirit's appointed means for sanctifying his people. For every minister in the world, and indeed for every believer in the world, this ought to be an enormous encouragement. We do not need to be people of unusual skill at public speaking, or especially effective debators. We simply need to know the word of God and lean hard on it, trusting that the Holy Spirit will use it. Yes, we should grow in our knowledge and understanding, and seek to become more skillful in the ways in which we interact with others. Ultimately, though, it is God's words that prove effective for turning people to him. That is good news indeed.
+
+[^judaic]: Yes, there was a "king" in Judea later, but the domain of which Herod was a representative was not Judaic or Davidic but instituted by outsiders for their own ends.
