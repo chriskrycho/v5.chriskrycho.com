@@ -245,7 +245,10 @@ article {
    overflow: hidden;
 
    width: 30.814rem;
-   margin-left: 15.6%;
+   margin: {
+      left: 15.3%;
+      right: 15.3%;
+   }
 
    header {
       h1 {

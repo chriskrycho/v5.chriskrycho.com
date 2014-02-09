@@ -1,4 +1,32 @@
+@import "base";
+@import "mixins";
+
+@media only screen and (max-width: 800px) {
+   article {
+      margin: {
+         left: auto;
+         right: auto;
+      }
+   }
+}
+
 @media only screen and (max-width: 680px) {
+   html {
+      font-size: 16px;
+      line-height: $line_height_small;
+   }
+
+   body {
+      line-height: $line_height_small;
+   }
+
+   article {
+      max-width: 26.844rem;
+      width: auto;
+      padding-left: 1em;
+      padding-right: 1em;
+   }
+
    #site-footer section {
       @include flex(1 0 100%);
    }
