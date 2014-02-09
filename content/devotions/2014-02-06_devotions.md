@@ -16,7 +16,7 @@ Our fellow believers in Saudi Arabia and Iran and North Korea are not reading th
 >     In just a little while, the wicked will be no more;
 >         though you look carefully at his place, he will not be there.
 >     But the meek shall inherit the land
->         and delight themselves in pabundant peace.
+>         and delight themselves in abundant peace.
 
 This points me forward in several ways. First, it reminds me that this is an area in which I need to be sanctified. Contrary to everything the surrounding world says, a lack of judgment on the part of God would be grotesquely unrighteous. We can see this clearly in the most egregious cases: none of us think it would be right for Charles Manson or Stalin to get off without punishment. But God's justice is deeper than ours, and truer, and that is *good*. Lord willing, I will come to understand more and more the goodness of his doing justice and righteousness on the earth, not least as I understand that his *shalom* will not come---could not come---apart from his doing justice. And his doing justice means crushing evil.
 
