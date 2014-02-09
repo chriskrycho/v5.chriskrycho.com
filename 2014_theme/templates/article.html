@@ -2,7 +2,7 @@
 
 {% block content %}
    {% block article_el %}
-   <article {% if article.category == 'tech' or article.code == True %}class="code"{% endif %}>
+   <article {% if article.category == 'tech' or article.code == 'true' %}class="code"{% endif %}>
    {% endblock article_el %}
       <header>
          <h1>{{ article.title }}</h1>
