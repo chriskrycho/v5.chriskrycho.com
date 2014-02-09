@@ -145,23 +145,8 @@ h6 {
    }
 }
 
-code, .highlight pre {
-   font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
-   background: #efefef;
-   border-radius: 0.244em;
-   border: 1px solid #dedede;
-   margin: $fsp 0;
-   overflow: scroll;
-}
-
-code {
-   padding: 0 0.269em;
-   font-size: $fs_small;
-}
-
-.highlight pre {
-   padding: 0.558em;
-   font-size: $fs_very_small;
+pre {
+   white-space: pre-wrap;
 }
 
 sup {
@@ -265,6 +250,14 @@ article {
    header {
       h1 {
          font-weight: 600;
+      }
+
+      h2 {
+         font-size: $fs4;
+         padding: {
+            top: 0.465rem;
+            bottom: 0.465rem;
+         }
       }
    }
 
@@ -415,6 +408,28 @@ article {
       margin-right: 15.6%;
       header h1 {
          font-weight: 400;
+      }
+   }
+
+   &.code {
+      code, .highlight pre {
+         font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+         background: #efefef;
+         border-radius: 0.244em;
+         border: 1px solid #dedede;
+         margin: $fsp 0;
+         overflow: scroll;
+      }
+
+      code {
+         padding: 0 0.269em;
+         font-size: $fs_small;
+      }
+
+      .highlight pre {
+         padding: 0.558em;
+         font-size: $fs_very_small;
+         white-space: pre;
       }
    }
 }

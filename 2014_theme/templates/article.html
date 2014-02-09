@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-   <article>
+   {% block article_el %}
+   <article {% if article.category == 'tech' or article.code == True %}class="code"{% endif %}>
+   {% endblock article_el %}
       <header>
          <h1>{{ article.title }}</h1>
       </header>
