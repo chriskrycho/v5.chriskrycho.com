@@ -25,9 +25,20 @@
       width: auto;
       padding-left: 1em;
       padding-right: 1em;
+
+      header, .meta {
+         text-align: center;
+      }
    }
 
-   #site-footer section {
-      @include flex(1 0 100%);
+   #site-footer {
+      section {
+         @include flex(1 0 100%);
+      }
+
+      h1 {
+         padding-left: 0;
+         text-align: center;
+      }
    }
 }
