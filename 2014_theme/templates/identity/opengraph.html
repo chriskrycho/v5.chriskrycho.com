@@ -1,8 +1,8 @@
 {% if item is defined %}
    <meta property="og:url" content="{{ item.url }}" />
-   <meta property="og:title" content="{{ item.title }}" />
+   <meta property="og:title" content="{{ item.title|striptags }}" />
    {% if item.description is defined %}
-      <meta property="og:description" content="{{ item.description }}" />
+      <meta property="og:description" content="{{ item.description|striptags }}" />
    {% else %}
       <meta property="og:description" content="{{ SITE_DESCRIPTION }}" />
    {% endif %}

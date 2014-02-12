@@ -1,4 +1,4 @@
-Title: "God is Love"
+Title: &ldquo;God is Love&rdquo;
 Description: God is love—but God is not corrupted human sentimentality. He is holy, and his love and justice run hand in hand.
 Date: 2014-02-11 22:00
 Author: Chris Krycho

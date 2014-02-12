@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 
+{% block title %}{{ article.title|striptags }} :: {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.description|striptags }}{% endblock %}
+
 {% block content %}
    {% block article_el %}
    <article {% if article.category == 'tech' or article.code == 'true' %}class="code"{% endif %}>
