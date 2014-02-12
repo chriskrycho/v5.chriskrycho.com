@@ -45,7 +45,7 @@ OUTPUT_SOURCES_EXTENSION = ".txt"
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
 
 # Markdown and text handling
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'toc', 'headerid', 'smartypants(smarten=old-school)']
+MD_EXTENSIONS = ['extra', 'toc', 'headerid', 'smartypants(smarten=old-school)']  # 'codehilite(css_class=highlight)',
 TYPOGRIFY = True
 
 # Uncomment following line if you want document-relative URLs when developing
