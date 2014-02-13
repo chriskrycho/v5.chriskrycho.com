@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-   <meta name="description" content="{% block description %}{{ SITE_DESCRIPTION }}{% endblock %}" />
+   <meta name="description" content="" />
 
    <meta charset="UTF-8"/>
    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -25,8 +25,8 @@
 
 </head>
 <body>
-   <header>
-      <hgroup id="site-header">
+   <header id="site-header">
+      <hgroup>
          <h1 id="site-title">
             {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ SITENAME }}</a>
             {% else %}{{ SITENAME }}
@@ -36,9 +36,7 @@
 
       <nav>
          <ul>
-         {% for category, _ in categories %}
-            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
-         {% endfor %}
+         {% for category, _ in categories %}<li class="section-title"><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>{% endfor %}
          </ul>
       </nav>
 

@@ -7,6 +7,10 @@
          left: auto;
          right: auto;
       }
+
+      &.archive {
+         width: 30.814rem;
+      }
    }
 }
 
@@ -20,12 +24,13 @@
       line-height: $line_height_small;
    }
 
-   article {
+   article, article.archive {
       max-width: 26.844rem;
       width: auto;
-      padding-left: 1em;
-      padding-right: 1em;
-
+      padding: {
+         left: 1em;
+         right: 1em;
+      }
       header, .meta {
          text-align: center;
       }

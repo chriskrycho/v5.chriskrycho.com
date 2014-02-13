@@ -61,7 +61,7 @@ p {
    text-indent: $fs4;
 }
 
-h1, h2, h3, h4, h5, h6, ul, ol {
+h1, h2, h3, h4, h5, h6, ul, ol, blockquote {
    + p {
       text-indent: 0;
    }
@@ -206,6 +206,11 @@ hr {
    padding-bottom: $fs6;
 }
 
+.greek {
+   font-family: $serif;
+   font-weight: normal;
+}
+
 // ----- Layout -----
 body {
    border-top: $fs_very_small solid $dark_blue;
@@ -213,29 +218,76 @@ body {
 
 // Header
 #site-header {
-   margin: {
-      top: $fs3;
-      left: $fs_large;
+   @include flexbox();
+   @include flex-flow(row wrap);
+   @include justify-content(space-around);
+   padding-bottom: $fs1;
+
+   nav {
+      @include flex(1 240px);
+      text-align: right;
+      margin: {
+         right: $fsp;
+         top: $fs3;
+      };
+      font: {
+         family: $sans;
+         size: $fs5;
+      }
+      ul {
+         list-style-type: none;
+
+         li {
+            display: inline-block;
+            padding: {
+               left: 0.224em;
+               right: 0.224em;
+            }
+         }
+      }
    }
 
-   a, a:hover, a:active, a:visited {
+   hgroup {
+      @include flex(1 600px);
+
+      margin: {
+         top: $fs3;
+         left: $fs_large;
+      }
+
+      a, a:hover, a:active, a:visited {
+         border-bottom: none;
+      }
+   }
+
+   #site-title {
+      font-size: $fs_very_large;
+      display: block;
+   }
+
+   #site-subtitle {
+      margin-left: $fs4;
+      display: block;
+      font: {
+         family: $serif;
+         style: italic;
+         size: $fs4;
+      }
+      @include font-feature-settings('liga');
+   }
+
+   h3 {
+      @include flex(0 100%);
       border-bottom: none;
+      padding: {
+         top: $fs4;
+         left: 10.8%
+      };
+
+      i {
+         font-style: italic;
+      }
    }
-}
-
-#site-title {
-   font-size: $fs_very_large;
-}
-
-#site-subtitle {
-   font-size: $fs4;
-   margin-left: $fs4;
-}
-
-#site-subtitle {
-   font-family: $serif;
-   font-style: italic;
-   @include font-feature-settings('liga');
 }
 
 .section-title {
@@ -317,7 +369,7 @@ article {
             color: lighten($light_gray, 39.1%);
          }
 
-         &:first-of-type {
+         &:first-child {
             padding-top: 0.244em;
 
             &:before {
@@ -397,7 +449,7 @@ article {
    }
 
    ul, ol {
-      padding-left: $fs4;
+      margin-left: $fs4;
 
       li {
          padding-top: 0.5em;
@@ -417,7 +469,6 @@ article {
 
    &.archive {
       width: auto;
-      margin-right: 15.6%;
       header h1 {
          font-weight: 400;
       }

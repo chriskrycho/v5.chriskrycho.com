@@ -2,9 +2,9 @@
 <meta name="twitter:site" content="@chriskrycho" />
 <meta name="twitter:creator" content="@chriskrycho" />
 {% if item is defined %}
-   <meta name="twitter:title" content="{{ item.title|striptags }}" />
+   <meta name="twitter:title" content="{{ item.title }}" />
    {% if item.description is defined %}
-      <meta name="twitter:description" content="{{ item.description|striptags }}" />
+      <meta name="twitter:description" content="{{ item.description }}" />
    {% else %}
       <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}" />
    {% endif %}
