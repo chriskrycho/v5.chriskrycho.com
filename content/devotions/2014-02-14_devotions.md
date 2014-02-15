@@ -1,0 +1,37 @@
+Title: Martyr-Saints
+Description: The kingdom of heaven does not come by accident; it comes because men and women sacrifice their lives and die for the gospel.
+Date: 2014-02-14 23:55
+Author: Chris Krycho
+Category: theology
+Tags: devotions
+Passages: Revelation 4–7, Psalm 44
+Template: formats/devotions
+
+As we were praying this evening, I spent a few minutes praying for our brothers and sisters in North Korea. I was deeply moved by the reality that they face every day---persecution, imprisonment, death. There is nothing quite like it in the Western experience of Christianity over the last 1700 years, and little like it elsewhere in the world right now. To be sure, there is persecution that saints around the world face, throughout both the Middle and Far East especially. But North Korea is the harshest and most brutal place in the world---and there are men and women suffering and dying there for the name of Christ. So we prayed for the end of the wicked tyranny of the country's current leadership, and for the gospel to flourish there, and for those faithful saints to be rewarded and delivered.
+
+Then I read tonight in Revelation 4--7. Two things stood out. The first I have written about before in these devotional reflections: there is a clearly articulated expectation of judgment on the eart. Chapter 6 is a fairly dreadful picture of the wrath of God poured out on a sinful world, and it stands all the more starkly for the reality tha t the majority of the content in these four chapters is *not* on judgment, bu ton God and his people. Indeed, these chapters contain some of the most beautiful praises offered to God anywhere in Scripture.
+
+>     Worthy are you to take the scroll
+>         and to open its seals,
+>     for you were slain, and by your blood you ransomed people for God,
+>         from every tribe and language and people and nation,
+>     and you have made them a kingdom and priests to our God,
+>         and they shall reign on the earth.
+>     ...
+>     Worthy is the Lamb who was slain,
+>         to receive power and wealth and wisdom and might,
+>     and honor and glory and blesing!
+>     ...
+>     To him who sits on the throne and to the Lamb
+>         be blessing and honor and glory and might forever and ever!
+>     (Revelation 5:9b--10,12b, 13b)
+
+Set in the midst of this, and against the backdrop of praise and judgment, is this striking image:
+
+> When he opened the fifth seal, I saw under the altar the souls of those who had been slain for the word of God and for the witness they ahd borne. They cried out with a loud voice, "O Sovereign Lord, holy and true, how long before you will judge and avenge our blood on those who dwell on the earth?" Then they were each given a white robe and told to rest a little longer, until the number of their fellow servants and their brothers should be complete, who were to be killed as they themselves had been. (Revelation 6:9--11)
+
+The martyrs of God are asked to wait a bit longer, to be yet more patient, before God executes judgment on the earth. And why? Because the number of martyrs is not yet full. This is a shocking, challenging statement. The kingdom of heaven does not come by accident, or by those who are willing to just let it come on its own time. It comes because men and women sacrifice their lives and die for the gospel. It comes because many of our sisters and brothers over the centuries have not counted their lives more precious than Christ, but have counted the souls of the lost more valuable than their own comfort or short-term physical existence. You and I are believers because of such men and women, who have advanced the kingdom of God through the proclamation of the gospel to hard places since the time of the apostles.
+
+The very least we can do for our brothers and sisters who are helping to fill up that number is pray for them: for their ministry to be effective, for them to be delivered from death, for them to remain faithful in the face of such harsh persecution, and for their governments to cease thte oppression and the gospel to go forth in power. So shall I remembere to do going forward, Lord willing.
+
+ 
