@@ -1,6 +1,7 @@
 @import "mixins";
 @import "reset";
 @import "fonts";
+@import "fontawesome";
 @import "base";
 @import "highlight_js_tomorrow";
 
@@ -517,6 +518,10 @@ sup[id^="fnref:"] a {
    @include flexbox();
    @include flex-flow(row wrap);
 
+   a:hover {
+      color: $white;
+   }
+
    section {
       border-top: 0.244rem solid $dark_gray;
 
@@ -526,7 +531,7 @@ sup[id^="fnref:"] a {
    h1 {
       background: $light_blue;
       font-size: $fs2;
-      padding-left: $fsp;
+      text-align: center;
    }
 }
 
