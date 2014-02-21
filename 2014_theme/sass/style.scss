@@ -2,7 +2,7 @@
 @import "reset";
 @import "fonts";
 @import "base";
-@import "pygments";
+@import "highlight_js_tomorrow";
 
 // General default styles
 html {
@@ -475,7 +475,7 @@ article {
    }
 
    &.code {
-      code, .highlight pre {
+      code {
          font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
          background: #efefef;
          border-radius: 0.244em;
@@ -489,7 +489,7 @@ article {
          font-size: $fs_small;
       }
 
-      .highlight pre {
+      pre code {
          padding: 0.558em;
          font-size: $fs_very_small;
          white-space: pre;
