@@ -352,5 +352,6 @@ Redirect 301 /web/web-professionals/ //2012-2013.chriskrycho.com/web/web-profess
 Redirect 301 /web/process/ //2012-2013.chriskrycho.com/web/process/
 Redirect 301 /web/work/ //2012-2013.chriskrycho.com/web/work/
 
-# Everything else to new site
-Redirect 301 / //www.chriskrycho.com
+# Redirect `www` url to naked domain
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://www.%1/$1 [R=301,L]
