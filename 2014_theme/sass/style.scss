@@ -221,7 +221,7 @@ body {
    @include flexbox();
    @include flex-flow(row wrap);
    @include justify-content(space-around);
-   padding-bottom: $fs1;
+   padding-bottom: $fs1_abs;
 
    nav {
       @include flex(1 240px);
@@ -278,9 +278,8 @@ body {
 
    h3 {
       @include flex(0 100%);
-      border-bottom: none;
       padding: {
-         top: $fs4;
+         top: $fs1_abs;
          left: 10.8%
       };
 
