@@ -77,10 +77,20 @@ were lost without the prolate bumper that composed their panty.
     #/usr/bin/python
     import os
 
-    print("This is a sample string. Because I can. In Python, it's just that neat.")
-    list = ['a string', 14, True]
-    for item in list:
-        print('A list item:', item)
+    class AThing:
+        def __init__(self, a_param, *args, **kwargs):
+            print("This is a sample string. Because I can. In Python, it's just that neat.")
+            list = ['a string', 14, True]
+            for item in list:
+                print('A list item:', item)
+        
+            try:
+                with open('some_file.txt', 'r') as my_file:
+                    the_contents = read(my_file)
+        
+            except FileNotFoundError:
+                print("What a joke! This file doesn't even exist, you jerk!")
+
 
 A medicine sees a freeze as a roughcast balance. Far from the truth, the
 literature would have us believe that a chalky adjustment is not but a traffic.
