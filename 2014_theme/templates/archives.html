@@ -3,6 +3,7 @@
 {% block content %}
    {% if articles %}
       {% for article in articles %}
+         {% set item = article %}
          <article class="archive">
             <header>
                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>

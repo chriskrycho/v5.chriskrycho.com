@@ -52,10 +52,10 @@ TYPOGRIFY = True
 RELATIVE_URLS = True
 
 # URLs
-ARTICLE_URL = '{date:%Y}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
-PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/index.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 TAG_URL = '{slug}/'
