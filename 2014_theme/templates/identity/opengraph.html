@@ -1,19 +1,19 @@
 {% if item is defined %}
-   <meta property="og:url" content="{{ item.url }}" />
-   <meta property="og:title" content="{{ item.title }}" />
-   {% if item.description is defined %}
-      <meta property="og:description" content="{{ item.description }}" />
-   {% else %}
-      <meta property="og:description" content="{{ SITE_DESCRIPTION }}" />
-   {% endif %}
-   {% if item.image is defined %}
-      <meta property="og:image" content="{{ item.image }}" />
-   {% else %}
-      <meta property="og:image" content="{{ SITEURL }}/{{ LOGO }}" />
-   {% endif %}
+    <meta property="og:url" content="{{ item.url }}"/>
+    <meta property="og:title" content="{{ item.title }}"/>
+    {% if item.description is defined %}
+        <meta property="og:description" content="{{ item.description }}"/>
+    {% else %}
+        <meta property="og:description" content="{{ SITE_DESCRIPTION }}"/>
+    {% endif %}
+    {% if item.image is defined %}
+        <meta property="og:image" content="{{ item.image }}"/>
+    {% else %}
+        <meta property="og:image" content="{{ SITEURL }}/{{ LOGO }}"/>
+    {% endif %}
 {% else %}
-   <meta property="og:url" content="{{ SITEURL }}" />
-   <meta property="og:title" content="{{ SITENAME }}" />
-   <meta property="og:description" content="{{ SITE_DESCRIPTION }}" />
-   <meta property="og:image" content="{{ SITEURL }}/{{ LOGO }}" />
+    <meta property="og:url" content="{{ SITEURL }}"/>
+    <meta property="og:title" content="{{ SITENAME }}"/>
+    <meta property="og:description" content="{{ SITE_DESCRIPTION }}"/>
+    <meta property="og:image" content="{{ SITEURL }}/{{ LOGO }}"/>
 {% endif %}

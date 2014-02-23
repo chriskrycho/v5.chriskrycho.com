@@ -2,50 +2,50 @@
 @import "mixins";
 
 @media only screen and (max-width: 800px) {
-   article {
-      margin: {
-         left: auto;
-         right: auto;
-      }
+    article {
+        margin: {
+            left: auto;
+            right: auto;
+        }
 
-      &.archive {
-         width: 30.814rem;
-      }
-   }
+        &.archive {
+            width: 30.814rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 680px), only screen and (max-height: 680px) {
-   html {
-      font-size: 16px;
-      line-height: $line_height_small;
-   }
+    html {
+        font-size: 16px;
+        line-height: $line_height_small;
+    }
 
-   body {
-      line-height: $line_height_small;
-   }
+    body {
+        line-height: $line_height_small;
+    }
 }
 
 @media only screen and (max-width: 680px) {
-   article, article.archive {
-      max-width: 26.844rem;
-      width: auto;
-      padding: {
-         left: 1em;
-         right: 1em;
-      }
-      header, .meta {
-         text-align: center;
-      }
-   }
+    article, article.archive {
+        max-width: 26.844rem;
+        width: auto;
+        padding: {
+            left: 1em;
+            right: 1em;
+        }
+        header, .meta {
+            text-align: center;
+        }
+    }
 
-   #site-footer {
-      section {
-         @include flex(1 0 100%);
-      }
+    #site-footer {
+        section {
+            @include flex(1 0 100%);
+        }
 
-      h1 {
-         padding-left: 0;
-         text-align: center;
-      }
-   }
+        h1 {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
 }

@@ -1,1 +1,7 @@
-<span class=""><a href="{{ SITEURL }}/{{ article.date|strftime('%Y') }}/{{ article.slug + ".txt" }}">Markdown source</a></span>
+{% if article is defined %}
+    {% set source_url = SITEURL + "/" + article.date|strftime('%Y') + "/" + article.slug + ".txt" %}
+{% elif page is defined %}
+    {% set source_url = SITEURL + "/" + page.slug + ".txt" %}
+{% endif %}
+
+<span><a href="{{ source_url }}">Markdown source</a></span>

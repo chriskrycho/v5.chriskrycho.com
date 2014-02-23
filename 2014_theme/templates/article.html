@@ -1,27 +1,6 @@
-{% extends "base.html" %}
+{% extends "item.html" %}
 
-{% block content %}
-   {% block article_el %}
-   <article {% if article.category == 'tech' or article.code == 'true' %}class="code"{% endif %}>
-   {% endblock article_el %}
-      <header>
-         <h1>{{ article.title }}</h1>
-         {% if article.subtitle is defined %}<h2>{{ article.subtitle }}</h2>{% endif %}
-      </header>
-
-      {% include "includes/meta.html" %}
-
-      {% block context %}{% endblock %}
-
-      {% if article.intro is defined %}
-         {% block intro %}<p class="intro">{{ article.intro }}</p>{% endblock %}
-      {% endif %}
-
-      <div class="content">
-         {% if article.epigraph is defined %}<div class="epigraph">{{ article.epigraph }}</div>{% endif %}
-         {{ article.content }}
-      </div>
-   </article>
-
+{% block meta %}
+    {% include "includes/meta.html" %}
 {% endblock %}
 

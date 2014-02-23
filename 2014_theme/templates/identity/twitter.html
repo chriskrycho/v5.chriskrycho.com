@@ -1,24 +1,24 @@
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@chriskrycho" />
-<meta name="twitter:creator" content="@chriskrycho" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@chriskrycho"/>
+<meta name="twitter:creator" content="@chriskrycho"/>
 {% if item is defined %}
-   {% if item.title is defined %}
-      <meta name="twitter:title" content="{{ item.title }}" />
-   {% else %}
-      <meta name="twitter:title" content="{{ SITENAME }}" />
-   {% endif %}
-   {% if item.description is defined %}
-      <meta name="twitter:description" content="{{ item.description }}" />
-   {% else %}
-      <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}" />
-   {% endif %}
-   {% if item.image is defined %}
-      <meta name="twitter:image" content="{{ item.image }}" />
-   {% else %}
-      <meta name="twitter:image" content="{{ SITEURL }}/{{ LOGO }}" />
-   {% endif %}
+    {% if item.title is defined %}
+        <meta name="twitter:title" content="{{ item.title }}"/>
+    {% else %}
+        <meta name="twitter:title" content="{{ SITENAME }}"/>
+    {% endif %}
+    {% if item.description is defined %}
+        <meta name="twitter:description" content="{{ item.description }}"/>
+    {% else %}
+        <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}"/>
+    {% endif %}
+    {% if item.image is defined %}
+        <meta name="twitter:image" content="{{ item.image }}"/>
+    {% else %}
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ LOGO }}"/>
+    {% endif %}
 {% else %}
-   <meta name="twitter:title" content="{{ SITENAME }}" />
-   <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}" />
-   <meta name="twitter:image" content="{{ SITEURL }}/{{ LOGO }}" />
+    <meta name="twitter:title" content="{{ SITENAME }}"/>
+    <meta name="twitter:description" content="{{ SITE_DESCRIPTION }}"/>
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ LOGO }}"/>
 {% endif %}

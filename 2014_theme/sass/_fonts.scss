@@ -2,76 +2,68 @@
 
 /* Gentium Plus */
 @font-face {
-   font-family: 'gentium_plus';
-   src: url('fonts/gentiumplus-regular.eot');
-   src: url('fonts/gentiumplus-regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/gentiumplus-regular.woff') format('woff'),
-        url('fonts/gentiumplus-regular.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-   font-variant: normal;
+    font-family: 'gentium_plus';
+    src: url('fonts/gentiumplus-regular.eot');
+    src: url('fonts/gentiumplus-regular.eot?#iefix') format('embedded-opentype'), url('fonts/gentiumplus-regular.woff') format('woff'), url('fonts/gentiumplus-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
 }
 
 @font-face {
-   font-family: 'gentium_plus';
-   src: url('fonts/gentiumplus-italic.eot');
-   src: url('fonts/gentiumplus-italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/gentiumplus-italic.woff') format('woff'),
-        url('fonts/gentiumplus-italic.ttf') format('truetype');
-   font-weight: normal;
-   font-style: italic;
-   font-variant: normal;
+    font-family: 'gentium_plus';
+    src: url('fonts/gentiumplus-italic.eot');
+    src: url('fonts/gentiumplus-italic.eot?#iefix') format('embedded-opentype'), url('fonts/gentiumplus-italic.woff') format('woff'), url('fonts/gentiumplus-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-variant: normal;
 }
 
 @font-face {
-   font-family: 'gentium_plus_smcp';
-   src: url('fonts/gentiumplus-regular-smcp.eot');
-   src: url('fonts/gentiumplus-regular-smcp.eot?#iefix') format('embedded-opentype'),
-        url('fonts/gentiumplus-regular-smcp.woff') format('woff'),
-        url('fonts/gentiumplus-regular-smcp.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
+    font-family: 'gentium_plus_smcp';
+    src: url('fonts/gentiumplus-regular-smcp.eot');
+    src: url('fonts/gentiumplus-regular-smcp.eot?#iefix') format('embedded-opentype'), url('fonts/gentiumplus-regular-smcp.woff') format('woff'), url('fonts/gentiumplus-regular-smcp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-   font-family: 'gentium_plus_smcp';
-   src: url('fonts/gentiumplus-italic-smcp.eot');
-   src: url('fonts/gentiumplus-italic-smcp.eot?#iefix') format('embedded-opentype'),
-        url('fonts/gentiumplus-italic-smcp.woff') format('woff'),
-        url('fonts/gentiumplus-italic-smcp.ttf') format('truetype');
-   font-weight: normal;
-   font-style: italic;
+    font-family: 'gentium_plus_smcp';
+    src: url('fonts/gentiumplus-italic-smcp.eot');
+    src: url('fonts/gentiumplus-italic-smcp.eot?#iefix') format('embedded-opentype'), url('fonts/gentiumplus-italic-smcp.woff') format('woff'), url('fonts/gentiumplus-italic-smcp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
 /* Cronos Pro */
-@font-face{
-    font-family:"Cronos Pro";
-    src:url("fonts/6e852986-62bc-4056-a086-04503ce8e74d.eot?#iefix");
-    src:url("fonts/6e852986-62bc-4056-a086-04503ce8e74d.eot?#iefix") format("eot"),url("fonts/0ed610c9-1360-4944-b066-e2616d2f6edd.woff") format("woff"),url("fonts/c639641e-5dca-4f06-828b-4ab02bc7ce16.ttf") format("truetype"),url("fonts/fa118146-9793-4cfa-963f-eb497160972a.svg#fa118146-9793-4cfa-963f-eb497160972a") format("svg");
+@font-face {
+    font-family: "Cronos Pro";
+    src: url("fonts/6e852986-62bc-4056-a086-04503ce8e74d.eot?#iefix");
+    src: url("fonts/6e852986-62bc-4056-a086-04503ce8e74d.eot?#iefix") format("eot"), url("fonts/0ed610c9-1360-4944-b066-e2616d2f6edd.woff") format("woff"), url("fonts/c639641e-5dca-4f06-828b-4ab02bc7ce16.ttf") format("truetype"), url("fonts/fa118146-9793-4cfa-963f-eb497160972a.svg#fa118146-9793-4cfa-963f-eb497160972a") format("svg");
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face{
-    font-family:"Cronos Pro";
-    src:url("fonts/d1586749-27ed-4757-b076-1d51087e8076.eot?#iefix");
-    src:url("fonts/d1586749-27ed-4757-b076-1d51087e8076.eot?#iefix") format("eot"),url("fonts/6d898e23-7501-4338-95d8-461ef8e6fd29.woff") format("woff"),url("fonts/d99b45ff-bec7-40de-aaed-1ef67cd25b03.ttf") format("truetype"),url("fonts/0762f8ec-52a3-4904-bee1-35dc946afd9e.svg#0762f8ec-52a3-4904-bee1-35dc946afd9e") format("svg");
+@font-face {
+    font-family: "Cronos Pro";
+    src: url("fonts/d1586749-27ed-4757-b076-1d51087e8076.eot?#iefix");
+    src: url("fonts/d1586749-27ed-4757-b076-1d51087e8076.eot?#iefix") format("eot"), url("fonts/6d898e23-7501-4338-95d8-461ef8e6fd29.woff") format("woff"), url("fonts/d99b45ff-bec7-40de-aaed-1ef67cd25b03.ttf") format("truetype"), url("fonts/0762f8ec-52a3-4904-bee1-35dc946afd9e.svg#0762f8ec-52a3-4904-bee1-35dc946afd9e") format("svg");
     font-weight: 400;
     font-style: italic;
 }
 
-@font-face{
-    font-family:"Cronos Pro";
-    src:url("fonts/a6c99224-9456-4aae-8aaa-05bb45aa1e77.eot?#iefix");
-    src:url("fonts/a6c99224-9456-4aae-8aaa-05bb45aa1e77.eot?#iefix") format("eot"),url("fonts/4b47472a-4c77-4bde-b2e6-ab9ccbe848db.woff") format("woff"),url("fonts/de498528-620d-4da3-bb35-1dc57bbaaefd.ttf") format("truetype"),url("fonts/9e565b23-eb5f-47f1-8626-ec7a3135e080.svg#9e565b23-eb5f-47f1-8626-ec7a3135e080") format("svg");
+@font-face {
+    font-family: "Cronos Pro";
+    src: url("fonts/a6c99224-9456-4aae-8aaa-05bb45aa1e77.eot?#iefix");
+    src: url("fonts/a6c99224-9456-4aae-8aaa-05bb45aa1e77.eot?#iefix") format("eot"), url("fonts/4b47472a-4c77-4bde-b2e6-ab9ccbe848db.woff") format("woff"), url("fonts/de498528-620d-4da3-bb35-1dc57bbaaefd.ttf") format("truetype"), url("fonts/9e565b23-eb5f-47f1-8626-ec7a3135e080.svg#9e565b23-eb5f-47f1-8626-ec7a3135e080") format("svg");
     font-weight: 600;
     font-style: normal;
 }
 
-@font-face{
-    font-family:"Cronos Pro";
-    src:url("fonts/db681a5a-42b7-4db5-bc00-07df879b6e7c.eot?#iefix");
-    src:url("fonts/db681a5a-42b7-4db5-bc00-07df879b6e7c.eot?#iefix") format("eot"),url("fonts/121559d8-f404-4314-aa35-7920d58b4872.woff") format("woff"),url("fonts/969bbc95-ead7-49c9-b140-2d0d411786ea.ttf") format("truetype"),url("fonts/bccd317d-af96-433e-acd1-2215c176cc0a.svg#bccd317d-af96-433e-acd1-2215c176cc0a") format("svg");
+@font-face {
+    font-family: "Cronos Pro";
+    src: url("fonts/db681a5a-42b7-4db5-bc00-07df879b6e7c.eot?#iefix");
+    src: url("fonts/db681a5a-42b7-4db5-bc00-07df879b6e7c.eot?#iefix") format("eot"), url("fonts/121559d8-f404-4314-aa35-7920d58b4872.woff") format("woff"), url("fonts/969bbc95-ead7-49c9-b140-2d0d411786ea.ttf") format("truetype"), url("fonts/bccd317d-af96-433e-acd1-2215c176cc0a.svg#bccd317d-af96-433e-acd1-2215c176cc0a") format("svg");
     font-weight: 600;
     font-style: italic;
 }

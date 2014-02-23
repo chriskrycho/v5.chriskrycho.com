@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% if article is defined %}
+    {% set item = article %}
+{% elif page is defined %}
+    {% set item = page %}
+{% endif %}
+
+{% if item is defined %}
+    {% block content %}
+
+    {% block article_el %}
+    <article {% if item.code == 'true' %}class='code'{% endif %}>
+    {% endblock %}
+
+        <header>
+            <h1>{{ item.title }}</h1>
+
+            {% if item.subtitle is defined %}<h2>{{ item.subtitle }}</h2>{% endif %}
+        </header>
+
+        <div class="meta">{% block meta %}{% endblock %}</div>
+
+        {% block context %}{% endblock %}
+
+        {% if item.intro is defined %}
+            {% block intro %}<p class="intro">{{ item.intro }}</p>{% endblock %}
+        {% endif %}
+
+        <div class="content">
+            {% if item.epigraph is defined %}<div class="epigraph">{{ item.epigraph }}</div>{% endif %}
+
+            {{ item.content }}
+        </div>
+        </article>
+    {% endblock %}
+
+{% else %}
+    {% include "includes/404-content.html" %}
+{% endif %}

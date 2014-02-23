@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-   <meta name="description" content="" />
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <meta name="description" content=""/>
 
-   <meta charset="UTF-8"/>
-   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
-   {# Authorship #}
-   {% if page is defined %}
-      {% set item = page %}
-   {% elif article is defined %}
-      {% set item = article %}
-   {% else %}
-      {% set item = None %}
-   {% endif %}
-   {% include "identity/app.net.html" %}
-   {% include "identity/opengraph.html" %}
-   {% include "identity/google.html" %}
-   {% include "identity/twitter.html" %}
+    {# Authorship #}
+    {% if page is defined %}
+        {% set item = page %}
+    {% elif article is defined %}
+        {% set item = article %}
+    {% else %}
+        {% set item = None %}
+    {% endif %}
+    {% include "identity/app.net.html" %}
+    {% include "identity/opengraph.html" %}
+    {% include "identity/google.html" %}
+    {% include "identity/twitter.html" %}
 
-   {# CSS #}
-   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ CSS_FILE }}" />
+    {# CSS #}
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ CSS_FILE }}"/>
 
-   {# Scripts #}
-   {% if item != None and item.category == 'tech' or item.code == 'true' %}
-      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/highlight.pack.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
-   {% endif %}
+    {# Scripts #}
+    {% if item != None and item.category == 'tech' or item.code == 'true' %}
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    {% endif %}
 
 
 </head>
 <body>
-   <header id="site-header">
-      <hgroup>
-         <h1 id="site-title">
-            {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ SITENAME }}</a>
-            {% else %}{{ SITENAME }}
-            {% endif %}</h1>
-         <h2 id="site-subtitle">{{ SITE_DESCRIPTION_HTML }}</h2>
-      </hgroup>
+    <header id="site-header">
+        <hgroup>
+            <h1 id="site-title">
+                {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ SITENAME }}</a>
+                    {% else %}{{ SITENAME }}
+                {% endif %}</h1>
 
-      <nav>
-         <ul>
-         {% for category, _ in categories %}<li class="section-title"><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>{% endfor %}
-         </ul>
-      </nav>
+            <h2 id="site-subtitle">{{ SITE_DESCRIPTION_HTML }}</h2>
+        </hgroup>
 
-      {% block section_head %}{% endblock %}
-   </header>
+        <nav>
+            <ul>
+                {% for category, _ in categories %}
+                    <li class="section-title">
+                    <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>{% endfor %}
+            </ul>
+        </nav>
 
-   {% block content %}{% endblock %}
+        {% block section_head %}{% endblock %}
+    </header>
 
-   <footer id="site-footer">{% include "includes/footer.html" %}</footer>
+    {% block content %}{% endblock %}
+
+    <footer id="site-footer">{% include "includes/footer.html" %}</footer>
 </body>
 </html>
