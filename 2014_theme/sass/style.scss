@@ -329,6 +329,10 @@ article {
                 top: 0.465rem;
                 bottom: 0.465rem;
             }
+
+            &:after, &:before {
+                content: "\2014";
+            }
         }
     }
 
