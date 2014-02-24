@@ -232,7 +232,7 @@ body {
     padding-bottom: $fs1_abs;
 
     nav {
-        @include flex(1 240px);
+        @include flex(1 0 300px);
         text-align: right;
         margin: {
             right: $fsp;
@@ -257,7 +257,7 @@ body {
     }
 
     hgroup {
-        @include flex(1 600px);
+        @include flex(1 0 500px);
 
         margin: {
             top: $fs3;
@@ -490,7 +490,7 @@ article {
             font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
             background: #efefef;
             border-radius: 0.244em;
-            border: 1px solid #dedede;
+            border: 1px solid lighten($light_gray, 39.1%);
             margin: $fsp 0;
             overflow: scroll;
         }

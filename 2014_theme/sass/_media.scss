@@ -1,7 +1,30 @@
 @import "base";
 @import "mixins";
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
+    #site-header {
+        hgroup {
+            @include flex(1 0 100%);
+        }
+
+        nav {
+            @include flex(1 0 100%);
+            text-align: center;
+            padding: {
+                top: 0.465rem;
+                bottom: 0.244rem;
+            }
+            border: {
+                top: 1px solid lighten($light_gray, 39.1%);
+                bottom: 1px solid lighten($light_gray, 39.1%);
+            }
+            margin: {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+
     article {
         margin: {
             left: auto;
@@ -26,13 +49,46 @@
 }
 
 @media only screen and (max-width: 680px) {
+    header {
+        text-align: center;
+    }
+
+    #site-header {
+        padding-bottom: $fs3;
+
+        hgroup {
+            margin: {
+                left: 0;
+                right: 0;
+            }
+        }
+
+        #site-subtitle {
+            margin: {
+                left: 0;
+                right: 0;
+            }
+        }
+
+        h3 {
+            padding: {
+                left: 0;
+                top: $fs4;
+                bottom: 0;
+            }
+            border: none;
+        }
+    }
+
     article, article.archive {
         max-width: 26.844rem;
         width: auto;
         padding: {
-            left: 1em;
-            right: 1em;
+            left: $fsp;
+            right: $fsp;
+            bottom: $fsp;
         }
+
         header, .meta {
             text-align: center;
         }
@@ -45,7 +101,6 @@
 
         h1 {
             padding-left: 0;
-            text-align: center;
         }
     }
 }
