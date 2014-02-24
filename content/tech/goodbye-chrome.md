@@ -1,5 +1,5 @@
 Title: Goodbye, Chrome
-Subtitle: The Creepy Factor Is Just Too High, Now
+Subtitle: The Creepy Factor Is Just Too High Now
 Author: Chris Krycho
 Date: 2014-02-19 12:00
 Status: draft
