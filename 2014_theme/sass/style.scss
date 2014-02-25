@@ -285,16 +285,21 @@ body {
         @include font-feature-settings('liga');
     }
 
-    h3 {
+    #section-head {
         @include flex(0 100%);
+        border-bottom: 1px solid lighten($light_gray, 39.1%);
         padding: {
             top: $fs1_abs;
-            left: 10.8%
+            left: 15.3%;
         }
-        ;
 
         i {
             font-style: italic;
+        }
+
+        h3 {
+            padding-top: 0;
+            border: none;
         }
     }
 }
