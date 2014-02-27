@@ -470,10 +470,10 @@ article {
 
     ul, ol {
         margin-left: $fs4;
+        padding-top: $fsp;
+        padding-bottom: $fsp;
 
         li {
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
         }
     }
 
