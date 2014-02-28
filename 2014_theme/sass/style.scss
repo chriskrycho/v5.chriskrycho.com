@@ -219,6 +219,10 @@ hr {
     font-weight: normal;
 }
 
+.lbsBibleRef, .rtBibleRef {
+    white-space: nowrap;
+}
+
 // ----- Layout -----
 body {
     border-top: $fs_very_small solid $dark_blue;
