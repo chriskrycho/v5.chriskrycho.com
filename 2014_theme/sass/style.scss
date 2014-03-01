@@ -74,7 +74,15 @@ p:first-child, p:first-of-type {
 }
 
 ul {
-    list-style: circle;
+    list-style: none;
+
+    // Fix for the fact that circles look *terrible* in Gentium
+    li:before {
+        display: inline-block;
+        content: '\25E6'; // white bullet
+        margin-left: -0.804em;
+        padding-right: 0.465em;
+    }
 }
 
 ol {
@@ -558,6 +566,12 @@ sup[id^="fnref:"] a {
         background: $light_blue;
         font-size: $fs2;
         text-align: center;
+    }
+
+    ul {
+        li {
+            content: '\2022';
+        }
     }
 }
 
