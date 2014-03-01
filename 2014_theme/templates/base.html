@@ -23,12 +23,16 @@
     {# CSS #}
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ CSS_FILE }}"/>
 
+    {# Favicon #}
+    <link href="{{ SITEURL }}/favicon.png" type="image/png" rel="icon" />
+    <link href="{{ SITEURL }}/favicon.ico" type="image/ico" rel="icon" />
+
     {# Scripts #}
     {% if item != None and item.category == 'tech' or item.code == 'true' %}
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/highlight.pack.js"></script>
+        <script src="{{ JS_DIR }}/js/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     {% endif %}
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/reftagger.js"></script>
+    <script src="{{ JS_DIR }}/reftagger.js"></script>
 
 
 </head>
@@ -36,8 +40,9 @@
     <header id="site-header">
         <hgroup>
             <h1 id="site-title">
-                {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ SITENAME }}</a>
-                    {% else %}{{ SITENAME }}
+                {% set title = '<img class="logotype" src="' + LOGO + '" alt="ck"/>' + SITENAME %}
+                {% if output_file != "index.html" %}<a href="{{ SITEURL }}">{{ title }}</a>
+                    {% else %}{{ title }}
                 {% endif %}</h1>
 
             <h2 id="site-subtitle">{{ SITE_DESCRIPTION_HTML }}</h2>

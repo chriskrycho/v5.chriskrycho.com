@@ -240,7 +240,7 @@ body {
         text-align: right;
         margin: {
             right: $fsp;
-            top: $fs3;
+            top: $fs_large;
         }
         font: {
             family: $sans;
@@ -264,7 +264,7 @@ body {
         @include flex(1 0 500px);
 
         margin: {
-            top: $fs3;
+            top: $fsp;
             left: $fs_large;
         }
 
@@ -306,6 +306,13 @@ body {
             border: none;
         }
     }
+}
+
+.logotype {
+    height: $fs3;
+    width: $fs3;
+    vertical-align: -50%;
+    padding-right: $fs_very_small_abs;
 }
 
 .section-title {
