@@ -42,7 +42,7 @@ h1 { font-size: 2.4em; }
 
 h2 { font-size: 2em; }
 h2 + h3 { padding-top: 0; }
-h2 + section h3:first-of-type { padding-top: 0; }
+h2 + section h3:first-child { padding-top: 0; }
 
 h3 { font-size: 1.667em; font-weight: bold; color: #6c7487; border-bottom: 1px solid #d9dce1; padding-top: 1em; padding-bottom: 0.108em; }
 h3 + h4 { padding-top: 0.244em; }
@@ -97,7 +97,7 @@ h1 + section h2 + p:first-of-type:first-line,
 h1 + h2 + section p:first-of-type:first-line,
 h1 + section h2 + section p:first-of-type:first-line { font-family: 'Gentium Plus'; -webkit-font-feature-settings: "smcp"; -moz-font-feature-settings: "smcp"; -ms-font-feature-settings: "smcp"; -o-font-feature-settings: "smcp"; font-feature-settings: "smcp"; }
 h1 + h2 { padding-top: 0; }
-h1 + section h2:first-of-type { padding-top: 0; }
+h1 + section h2:first-child { padding-top: 0; }
 h2 { color: #01295c; text-align: center; font-weight: bold; padding-top: 1em; margin-bottom: 0.323em; }
 p { -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; hyphens: auto; }
 p:first-of-type:first-line { -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; -o-hyphens: none; hyphens: none; }
