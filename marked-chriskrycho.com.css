@@ -1,0 +1,119 @@
+/* //meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+html { font-size: 20px!important; /* -> 18px, using percentage to allow IE user stylesheet changes */ font-family: "Gentium Plus", "Minion Pro", Times, "Times New Roman", serif; color: #20282a; background: #fefefe; line-height: 1.667; }
+
+body { line-height: 1.667; }
+
+/* Cronos Pro */
+@font-face { font-family: "Cronos Pro"; src: url("fonts/c639641e-5dca-4f06-828b-4ab02bc7ce16.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Cronos Pro"; src: url("fonts/d99b45ff-bec7-40de-aaed-1ef67cd25b03.ttf") format("truetype"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Cronos Pro"; src: url("fonts/de498528-620d-4da3-bb35-1dc57bbaaefd.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Cronos Pro"; src: url("fonts/969bbc95-ead7-49c9-b140-2d0d411786ea.ttf") format("truetype"); font-weight: 600; font-style: italic; }
+
+/** Modular scale: http://modularscale.com/scale/?px1=20&px2=40&ra1=1.6&ra2=1.2&name=minorsixthminorthird  Base text size: 20px @ 5:8 (minor sixth) Important number: 40px @ 5:6 (minor third)  Font sizes given in terms of headings/paragraph (fs1 => h1, fsp => p) The commented sizes are at the base scale.  Note that the ratios are the important bit; the base text size can be adjusted at whim and the ratios will rremain fixed---only the calculated px values will change. */
+/* Color schreme:  //www.colourlovers.com/palette/1875001/The_First_Scarf  Colors: Dark gray:  #20282A (more than the ocean) Light gray: #6C7487 (terminal blue gray) White:      #FFFFFF (white) Light blue: #5592C9 (Scarf Stripe) Dark blue:  #01295C (Dark Wash Jeans)
+*/
+
+a, a:visited { color: #5592c9; text-decoration: none; border-bottom: 1px solid transparent; -webkit-transition: border 0.224s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.224s cubic-bezier(0.645, 0.045, 0.355, 1); -moz-transition: border 0.224s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.224s cubic-bezier(0.645, 0.045, 0.355, 1); -ms-transition: border 0.224s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.224s cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: border 0.224s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.224s cubic-bezier(0.645, 0.045, 0.355, 1); transition: border 0.224s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.224s cubic-bezier(0.645, 0.045, 0.355, 1); }
+a:hover, a:active, a:visited:hover, a:visited:active { color: #01295c; border-bottom: 1px solid #20282a; -webkit-transition: border 0.465s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.465s cubic-bezier(0.645, 0.045, 0.355, 1); -moz-transition: border 0.465s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.465s cubic-bezier(0.645, 0.045, 0.355, 1); -ms-transition: border 0.465s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.465s cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: border 0.465s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.465s cubic-bezier(0.645, 0.045, 0.355, 1); transition: border 0.465s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.465s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+img { max-height: 100%; max-width: 100%; }
+
+p, ul, ol, li { font-size: 1em; }
+
+blockquote { font-size: 0.965em; font-style: italic; line-height: 1.389; padding-top: 1em; padding-bottom: 1em; padding-left: 2.4em; padding-right: 2.4em; }
+
+p { text-indent: 1.389em; }
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ul + p, ol + p, blockquote + p { text-indent: 0; }
+h1 + section p:first-of-type, h2 + section p:first-of-type, h3 + section p:first-of-type, h4 + section p:first-of-type, h5 + section p:first-of-type, h6 + section p:first-of-type, ul + section p:first-of-type, ol + section p:first-of-type, blockquote + section p:first-of-type { text-indent: 0; }
+
+p:first-child, p:first-of-type { text-indent: 0; }
+
+ul { list-style: circle; }
+
+ol { list-style: decimal; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Cronos Pro", "Century Gothic", Trebuchet, sans; line-height: 1; }
+
+h1 { font-size: 2.4em; }
+
+h2 { font-size: 2em; }
+h2 + h3 { padding-top: 0; }
+h2 + section h3:first-of-type { padding-top: 0; }
+
+h3 { font-size: 1.667em; font-weight: bold; color: #6c7487; border-bottom: 1px solid #d9dce1; padding-top: 1em; padding-bottom: 0.108em; }
+h3 + h4 { padding-top: 0.244em; }
+h3 + section h4:first-child { padding-top: 0.244em; }
+
+h4 { font-size: 1.389em; font-weight: bold; padding-top: 1em; }
+h4 + h5 { padding-top: 0.244em; }
+h4 + section h5:first-child { padding-top: 0.244em; }
+
+h5 { padding-top: 1em; font-style: italic; font-size: 1.157em; }
+h5 + h6 { padding-top: 0; }
+h5 + section h6:first-child { padding-top: 0; }
+
+h6 { font-weight: 600; font-size: 0.965em; display: inline-block; padding-top: 1.667em; padding-right: 0.625em; }
+h6 + p { display: inline; }
+h6 + section { display: inline; }
+h6 + section p:first-child { display: inline; }
+
+pre { white-space: pre-wrap; }
+
+sup { line-height: 0; vertical-align: super; font-size: 0.804em; }
+
+em, i, cite { font-style: italic; }
+
+strong { font-weight: bold; }
+
+hr, .footnotes hr { margin-top: 1.667em; margin-bottom: 1.667em; border-top: 1px solid; height: 0; width: 46.5%; }
+
+.proper-name { white-space: nowrap; }
+
+.poetry { white-space: pre-line; }
+
+.smcp { font-family: 'Gentium Plus'; font-feature-settings: 'smcp'; }
+
+.epigraph { text-align: center; font-family: "Cronos Pro", "Century Gothic", Trebuchet, sans; font-size: 1.157em; line-height: 1.389; padding-bottom: 0.965em; }
+
+.greek { font-family: "Gentium Plus", "Minion Pro", Times, "Times New Roman", serif; font-weight: normal; }
+
+body { border-top: 0.625em solid #01295c; }
+
+.section-title { text-transform: capitalize; }
+
+#wrapper { padding: 2em 1em; clear: both; overflow: hidden; max-width: 30.814rem; margin-left: auto; margin-right: auto; }
+p:first-of-type:first-line { font-family: 'Gentium Plus'; -webkit-font-feature-settings: "smcp"; -moz-font-feature-settings: "smcp"; -ms-font-feature-settings: "smcp"; -o-font-feature-settings: "smcp"; font-feature-settings: "smcp"; }
+h1 { padding-top: 1em; padding-bottom: 0.323em; text-align: center; }
+h1:before { content: '\00A7'; display: inline-block; padding-right: 0.244em; color: #d9dce1; }
+h1:first-child { padding-top: 0.244em; }
+h1:first-of-type:before { content: none; }
+h1 + p:first-line, h1 + h2 + p:first-line { font-family: 'Gentium Plus'; -webkit-font-feature-settings: "smcp"; -moz-font-feature-settings: "smcp"; -ms-font-feature-settings: "smcp"; -o-font-feature-settings: "smcp"; font-feature-settings: "smcp"; }
+h1 + section p:first-of-type:first-line,
+h1 + section h2 + p:first-of-type:first-line,
+h1 + h2 + section p:first-of-type:first-line,
+h1 + section h2 + section p:first-of-type:first-line { font-family: 'Gentium Plus'; -webkit-font-feature-settings: "smcp"; -moz-font-feature-settings: "smcp"; -ms-font-feature-settings: "smcp"; -o-font-feature-settings: "smcp"; font-feature-settings: "smcp"; }
+h1 + h2 { padding-top: 0; }
+h1 + section h2:first-of-type { padding-top: 0; }
+h2 { color: #01295c; text-align: center; font-weight: bold; padding-top: 1em; margin-bottom: 0.323em; }
+p { -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; hyphens: auto; }
+p:first-of-type:first-line { -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; -o-hyphens: none; hyphens: none; }
+.meta { color: #6c7487; padding-bottom: 1rem; font-size: 0.804em; font-family: "Cronos Pro", "Century Gothic", Trebuchet, sans; }
+.meta span { display: inline-block; }
+.meta span a { display: inline-block; }
+.meta span:before { display: inline-block; padding-left: 0.25rem; padding-right: 0.25rem; content: '\00A7'; color: #b0b4c0; }
+.meta span:first-of-type:before { content: none; }
+.meta .hashtag a { margin-left: 0.13em; margin-right: 0.13em; }
+.meta .hashtag a:first-of-type { margin-left: 0; }
+p { -webkit-font-feature-settings: "liga", "onum", "pnum", "kern"; -moz-font-feature-settings: "liga", "onum", "pnum", "kern"; -ms-font-feature-settings: "liga", "onum", "pnum", "kern"; -o-font-feature-settings: "liga", "onum", "pnum", "kern"; font-feature-settings: "liga", "onum", "pnum", "kern"; }
+ul, #wrapper ol { margin-left: 1.389em; padding-top: 1em; padding-bottom: 1em; }
+.footnotes { padding-top: 0.5rem; font-size: 0.804em; }
+.footnotes hr { margin-left: 0; }
+code { font-family: 'Source Code Pro', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; background: #efefef; border-radius: 0.244em; border: 1px solid #d9dce1; margin: 1em 0; overflow: scroll; }
+code { padding: 0 0.269em; font-size: 0.804em; }
+pre code { padding: 0.558em; font-size: 0.625em; white-space: pre; }
+
+.footnote { line-height: 0; vertical-align: super; font-size: 0.804em; -webkit-font-feature-settings: "lnum", "tnum"; -moz-font-feature-settings: "lnum", "tnum"; -ms-font-feature-settings: "lnum", "tnum"; -o-font-feature-settings: "lnum", "tnum"; font-feature-settings: "lnum", "tnum"; }
