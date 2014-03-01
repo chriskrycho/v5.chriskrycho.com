@@ -166,10 +166,9 @@ pre {
 }
 
 sup {
-    line-height: 0;
-    // Fixes vertical alignment issues
-    vertical-align: super;
-    font-size: $fs_small;
+    line-height: 0; // Fixes vertical alignment issues
+    vertical-align: 0.558em;
+    font-size: $fs_smaller;
 }
 
 em, i, cite {

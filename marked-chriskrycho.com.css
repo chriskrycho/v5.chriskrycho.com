@@ -63,7 +63,7 @@ h6 + section p:first-child { display: inline; }
 
 pre { white-space: pre-wrap; }
 
-sup { line-height: 0; vertical-align: super; font-size: 0.804em; }
+sup { line-height: 0; vertical-align: 0.558em; font-size: 0.67em; }
 
 em, i, cite { font-style: italic; }
 
