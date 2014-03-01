@@ -20,6 +20,7 @@
                 bottom: 1px solid lighten($light_gray, 39.1%);
             }
             margin: {
+                top: $fs3;
                 left: 0;
                 right: 0;
             }
@@ -62,7 +63,7 @@
     }
 }
 
-@media only screen and (max-width: 680px), only screen and (max-height: 680px) {
+@media only screen and (max-width: 680px), only screen and (max-height: 480px) {
     html {
         font-size: 16px;
         line-height: $line_height_small;
@@ -70,6 +71,22 @@
 
     body {
         line-height: $line_height_small;
+    }
+
+    hr {
+        margin: {
+            top: $fsp;
+            bottom: $fsp;
+        }
+        width: 38.8%;
+    }
+
+    article {
+        padding-bottom: $fs3;
+
+        &.archive .meta {
+            padding-bottom: 0;
+        }
     }
 }
 
