@@ -11,6 +11,12 @@
 </section>
 <section id="sections">
     <h1>Sections</h1>
+    <ul>
+        <li class="section-title"><a href="{{ SITEURL }}/archives.html">archives</a></li>
+        {% for category, _ in categories %}
+            <li class="section-title"><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+        {% endfor %}
+    </ul>
 </section>
 <section id="recent">
     <h1>Recent</h1>

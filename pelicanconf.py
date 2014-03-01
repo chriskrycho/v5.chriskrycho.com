@@ -35,7 +35,9 @@ IDENTITY = {'App.net': 'https://app.net/chriskrycho',
             'Twitter': 'https://twitter.com/chriskrycho',
             'GitHub': 'https://github.com/chriskrycho',
             'Bitbucket': 'https://bitbucket.org/chriskrycho',
-            'Stack Overflow': 'http://stackoverflow.com/users/564181/chris-krycho',}
+            'Stack Overflow': 'http://stackoverflow.com/users/564181/chris-krycho',
+            'Instagram': 'http://instagram.com/chriskrycho',
+            'Soundcloud': 'https://soundcloud.com/chriskrycho',}
 
 DEFAULT_SHARE_IMAGE = ''
 
