@@ -10,12 +10,13 @@ html {
     font-size: 125%; /* -> 20px, using percentage to allow IE user stylesheet changes */
     font-family: $serif;
     color: $dark_gray;
-    background: $white;
+    background: $dark_blue;
     line-height: $line_height;
 }
 
 body {
     line-height: $line_height;
+    background: $white;
 }
 
 a, a:visited {
@@ -490,9 +491,6 @@ article {
         margin-left: $fs4;
         padding-top: $fsp;
         padding-bottom: $fsp;
-
-        li {
-        }
     }
 
     .footnote {
@@ -562,6 +560,7 @@ sup[id^="fnref:"] a {
 
     section {
         border-top: 0.244rem solid $dark_gray;
+        margin-bottom: $fsp;
 
         @include flex(1 0);
     }
@@ -570,11 +569,29 @@ sup[id^="fnref:"] a {
         background: $light_blue;
         font-size: $fs2;
         text-align: center;
+        padding: {
+            top: 0.224em;
+            bottom: 0.153em;
+        }
+        margin-bottom: 0.465em;
     }
 
     ul {
-        li {
+        padding: {
+            left: $fsp;
+            right: $fsp;
+        }
+        li:before {
             content: '\2022';
+        }
+
+        &.social {
+            li:before {
+                display: none;
+                content: none;
+                margin-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }
