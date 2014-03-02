@@ -263,6 +263,10 @@ body {
                     left: 0.224em;
                     right: 0.224em;
                 }
+
+                &:before {
+                    content: none;
+                }
             }
         }
     }
