@@ -22,14 +22,14 @@
     <ul>
         <li><i class="fa fa-fw "></i><a href="{{ SITEURL }}/archives.html">Browse</a></li>
         <li><i class="fa fa-fw fa-rss"></i><a href="{{ FEED_ALL_RSS }}">Feed</a></li>
-        <li><i class="fa fa-fw fa-bullhorn"></i><a href="{{ BROADCAST['all'] }}">Subscribe</a></li>
+        <li><i class="fa fa-fw fa-bolt"></i><a href="{{ BROADCAST['all'] }}">Subscribe</a></li>
     </ul>
 {% for category, _ in categories %}
     <h2 class="section-title">{{ category }}</h2>
     <ul>
         <li><i class="fa fa-fw "></i><a href="{{ category.url }}">Browse</a></li>
         <li><i class="fa fa-fw fa-rss"></i><a href="{{ SITEURL }}/feeds/{{ category }}.xml">Feed</a></li>
-        <li><i class="fa fa-fw fa-bullhorn"></i><a href="{{ BROADCAST[category] }}">Subscribe</a></li>
+        <li><i class="fa fa-fw fa-bolt"></i><a href="{{ BROADCAST[category] }}">Subscribe</a></li>
     </ul>
 {% endfor %}
     <ul>
