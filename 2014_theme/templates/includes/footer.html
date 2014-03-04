@@ -26,13 +26,13 @@
         {% endfor %}
     </ul>
     <h2>Subscribe</h2>
-    <ul class="icons inline">
+    <ul class="inline">
         <li class="section-title">Everything</li>
         <li><a href="{{ FEED_ALL_RSS }}"><i class="fa fa-rss"></i>Feed</a></li>
         <li><a href="{{ BROADCAST['all'] }}"><i class="fa fa-bolt"></i>Subscribe</a></li>
     </ul>
 {% for category, _ in categories %}
-    <ul class="icons inline">
+    <ul class="inline">
         <li class="section-title">{{ category.name }}</li>
         <li><a href="{{ SITEURL }}/feeds/{{ category }}.xml"><i class="fa fa-rss"></i>Feed</a></li>
         <li><a href="{{ BROADCAST[category] }}"><i class="fa fa-bolt"></i>Subscribe</a></li>

@@ -64,6 +64,23 @@
     }
 }
 
+@media only screen and (max-width: 900px) and (min-width: 680px) {
+    #site-footer ul.inline {
+        padding-bottom: $fs_very_small;
+        li.section-title {
+            display: block;
+            width: auto;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) and (min-width: 520px) {
+    #site-footer ul.inline li.section-title {
+        width: 15.3%;
+    }
+}
+
 @media only screen and (max-width: 680px), only screen and (max-height: 480px) {
     html {
         font-size: 16px;
@@ -159,5 +176,12 @@
         h1 {
             padding-left: 0;
         }
+
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #site-footer ul.inline li.section-title {
+        width: 22.4%;
     }
 }
