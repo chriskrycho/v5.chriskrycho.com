@@ -1,43 +1,43 @@
 <section id="connect">
     <h1>Connect</h1>
     <h2>Social</h2>
-    <ul class="social">
-        <li><i class="fa fa-fw fa-adn"></i><a href="{{ IDENTITY['App.net'] }}">App.net</a></li>
-        <li><i class="fa fa-fw fa-twitter"></i><a href="{{ IDENTITY['Twitter'] }}">Twitter</a></li>
-        <li><i class="fa fa-fw fa-facebook"></i><a href="{{ IDENTITY['Facebook'] }}">Facebook</a></li>
-        <li><i class="fa fa-fw fa-cloud"></i><a href="{{ IDENTITY['SoundCloud'] }}">SoundCloud</a></li>
-        <li><i class="fa fa-fw fa-instagram"></i><a href="{{ IDENTITY['Instagram'] }}">Instagram</a></li>
-        <li><i class="fa fa-fw fa-linkedin"></i><a href="{{ IDENTITY['LinkedIn'] }}">LinkedIn</a></li>
+    <ul class="icons">
+        <li><a href="{{ IDENTITY['App.net'] }}"><i class="fa fa-fw fa-adn"></i>App.net</a></li>
+        <li><a href="{{ IDENTITY['Twitter'] }}"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+        <li><a href="{{ IDENTITY['Facebook'] }}"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+        <li><a href="{{ IDENTITY['SoundCloud'] }}"><i class="fa fa-fw fa-cloud"></i>SoundCloud</a></li>
+        <li><a href="{{ IDENTITY['Instagram'] }}"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+        <li><a href="{{ IDENTITY['LinkedIn'] }}"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a></li>
     </ul>
     <h2>Software</h2>
-    <ul class="social">
-        <li><i class="fa fa-fw fa-github"></i><a href="{{ IDENTITY['GitHub'] }}">GitHub</a></li>
-        <li><i class="fa fa-fw fa-bitbucket"></i><a href="{{ IDENTITY['Bitbucket'] }}">Bitbucket</a></li>
-        <li><i class="fa fa-fw fa-stack-overflow"></i><a href="{{ IDENTITY['Stack Overflow'] }}">Stack Overflow</a></li>
+    <ul class="icons">
+        <li><a href="{{ IDENTITY['GitHub'] }}"><i class="fa fa-fw fa-github"></i>GitHub</a></li>
+        <li><a href="{{ IDENTITY['Bitbucket'] }}"><i class="fa fa-fw fa-bitbucket"></i>Bitbucket</a></li>
+        <li><a href="{{ IDENTITY['Stack Overflow'] }}"><i class="fa fa-fw fa-stack-overflow"></i>Stack Overflow</a></li>
     </ul>
 </section>
-<section id="sections">
-    <h1>Sections</h1>
-    <h2 class="section-title">Everything</h2>
+<section id="navigate">
+    <h1>Navigate</h1>
+    <h2>Read</h2>
     <ul>
-        <li><i class="fa fa-fw "></i><a href="{{ SITEURL }}/archives.html">Browse</a></li>
-        <li><i class="fa fa-fw fa-rss"></i><a href="{{ FEED_ALL_RSS }}">Feed</a></li>
-        <li><i class="fa fa-fw fa-bolt"></i><a href="{{ BROADCAST['all'] }}">Subscribe</a></li>
-    </ul>
-{% for category, _ in categories %}
-    <h2 class="section-title">{{ category }}</h2>
-    <ul>
-        <li><i class="fa fa-fw "></i><a href="{{ category.url }}">Browse</a></li>
-        <li><i class="fa fa-fw fa-rss"></i><a href="{{ SITEURL }}/feeds/{{ category }}.xml">Feed</a></li>
-        <li><i class="fa fa-fw fa-bolt"></i><a href="{{ BROADCAST[category] }}">Subscribe</a></li>
-    </ul>
-{% endfor %}
-    <ul>
-        <li class="section-title"><a href="{{ SITEURL }}/archives.html">archives</a></li>
+        <li><a href="{{ SITEURL }}/archives.html">Everything</a></li>
         {% for category, _ in categories %}
-            <li class="section-title"><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+        <li class="section-title"><a href="{{ SITEURL }}/{{ category.url }}">{{ category.name }}</a></li>
         {% endfor %}
     </ul>
+    <h2>Subscribe</h2>
+    <ul class="icons inline">
+        <li class="section-title">Everything</li>
+        <li><a href="{{ FEED_ALL_RSS }}"><i class="fa fa-rss"></i>Feed</a></li>
+        <li><a href="{{ BROADCAST['all'] }}"><i class="fa fa-bolt"></i>Subscribe</a></li>
+    </ul>
+{% for category, _ in categories %}
+    <ul class="icons inline">
+        <li class="section-title">{{ category.name }}</li>
+        <li><a href="{{ SITEURL }}/feeds/{{ category }}.xml"><i class="fa fa-rss"></i>Feed</a></li>
+        <li><a href="{{ BROADCAST[category] }}"><i class="fa fa-bolt"></i>Subscribe</a></li>
+    </ul>
+{% endfor %}
 </section>
 <section id="recent">
     <h1>Recent</h1>

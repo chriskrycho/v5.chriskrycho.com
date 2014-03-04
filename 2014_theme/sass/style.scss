@@ -235,6 +235,11 @@ hr {
     white-space: nowrap;
 }
 
+.fa {
+    font-size: $fs_small;
+    padding-right: 0.224em;
+}
+
 // ----- Layout -----
 body {
     border-top: $fs_very_small solid $dark_blue;
@@ -551,15 +556,29 @@ sup[id^="fnref:"] a {
 
 // Footer
 #site-footer {
-    margin-top: $fs_large;
+    margin: {
+        top: $fs_large;
+        bottom: $fs_large;
+    };
     background-color: $dark_blue;
     min-height: $fs_very_large;
     color: $white;
+    text-align: center;
     @include flexbox();
     @include flex-flow(row wrap);
 
     a:hover {
         color: $white;
+    }
+
+    a .fa, a:visited .fa {
+        color: lighten($light_gray, 24.4%);
+        @include transition(border 0.224s $easeInOutCubic, color 0.224s $easeInOutCubic);
+    }
+
+    a:hover .fa, a:active, .fa {
+        color: $white;
+        @include transition(border 0.465s $easeInOutCubic, color 0.465s $easeInOutCubic);
     }
 
     section {
@@ -572,29 +591,69 @@ sup[id^="fnref:"] a {
     h1 {
         background: $light_blue;
         font-size: $fs2;
-        text-align: center;
         padding: {
             top: 0.224em;
             bottom: 0.153em;
         }
-        margin-bottom: 0.465em;
+        margin-bottom: 0.224em;
+    }
+
+    h2 {
+        font-size: $fs3;
+        padding-top: $fsp;
+        border-bottom: 1px solid $light_gray;
+        width: 80.4%;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+
+        &:first-of-type {
+            padding-top: 0.465em;
+        }
     }
 
     ul {
-        padding: {
-            left: $fsp;
-            right: $fsp;
-        }
         li:before {
-            content: '\2022';
+            content: none;
+            display: none;
+            content: none;
+            margin-left: 0;
+            padding-right: 0;
         }
 
-        &.social {
-            li:before {
-                display: none;
-                content: none;
-                margin-left: 0;
-                padding-right: 0;
+        &.icons {
+            padding: {
+                right: $fs4/2;
+            }
+        }
+
+        &.inline {
+            width: 67%;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+
+            li {
+                display: inline-block;
+                text-align: left;
+                padding: {
+                    right: 0.323em;
+                }
+
+                &:after {
+                    content: none;
+                }
+
+                &.section-title {
+                    width: 38.8%;
+                    text-align: right;
+
+                    &:after {
+                        content: ':';
+                    }
+                }
             }
         }
     }
