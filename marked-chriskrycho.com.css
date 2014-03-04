@@ -67,6 +67,8 @@ sup { line-height: 0; vertical-align: 0.558em; font-size: 0.67em; }
 
 em, i, cite { font-style: italic; }
 
+cite.bibleref { font-style: normal; }
+
 strong { font-weight: bold; }
 
 hr, .footnotes hr { margin-top: 1.667em; margin-bottom: 1.667em; border-top: 1px solid; height: 0; width: 46.5%; }
