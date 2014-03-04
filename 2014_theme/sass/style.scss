@@ -567,7 +567,11 @@ sup[id^="fnref:"] a {
     @include flexbox();
     @include flex-flow(row wrap);
 
-    a:hover {
+    a, a:visited {
+        border-bottom: none;
+    }
+
+    a:hover, a:active {
         color: $white;
         border-bottom: none;
     }
