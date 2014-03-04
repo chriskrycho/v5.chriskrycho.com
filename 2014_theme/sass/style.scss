@@ -569,6 +569,7 @@ sup[id^="fnref:"] a {
 
     a:hover {
         color: $white;
+        border-bottom: none;
     }
 
     a .fa, a:visited .fa {
