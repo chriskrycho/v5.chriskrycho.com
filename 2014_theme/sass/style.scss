@@ -584,7 +584,7 @@ sup[id^="fnref:"] a {
 
     section {
         border-top: 0.244rem solid $dark_gray;
-        margin-bottom: $fsp;
+        padding-bottom: $fs3;
 
         @include flex(1 0);
     }
