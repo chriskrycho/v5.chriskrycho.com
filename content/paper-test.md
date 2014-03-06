@@ -8,6 +8,7 @@ Class: GRK6500
 Professor: Dr. Benjamin Merkle
 School: Southeastern Baptist Theological Seminary
 Template: formats/class
+Marked Style: Turabian
 
 ## Introduction
 
