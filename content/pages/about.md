@@ -22,7 +22,7 @@ work as a software developer and web designer, am also in pursuit of the Master
 of Divinity degree at [Southeastern Baptist Theological Seminary][sebts] in Wake
 Forest, North Carolina.[^nc]
 
-I am a <span class=smcp>Colorado</span> native, and the mountains make my soul sing.[^sing] I had the
+I am a Colorado native, and the mountains make my soul sing.[^sing] I had the
 pleasure of earning a bachelor's degree in physics from the University of
 Oklahoma---where I also took the rough equivalent of a minor in music
 composition from a school that does not offer music minors.[^minor] While in
@@ -38,7 +38,7 @@ not the same as half a marathoner), playing Ultimate, rereading _The Lord of the
 Rings_ again, watching _Doctor Who_ or _Castle_ or _Firefly_ with Jaimie,
 playing Ultimate, working on my [podcast][ws],  or---very occasionally, when the
 stars align just right---[composing][soundcloud].
-<!--  -->
+
 Please take a gander at the various things I've written, and feel free to
 contact me via any of the sundry media I have listed in the "Contact" section
 below.
