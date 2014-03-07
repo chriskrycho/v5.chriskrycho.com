@@ -4,6 +4,7 @@ Author: Chris Krycho
 Description: Creativity, reflection, & passionate endeavors by a peculiar fellow
 URL:
 save_as: index.html
+template: formats/landing
 
 Good day (or evening, as the case may be), and welcome to my home on the
 interwebs!

@@ -1,39 +1,32 @@
 {% extends "base.html" %}
-{% if article is defined %}
-    {% set item = article %}
-{% elif page is defined %}
-    {% set item = page %}
-{% endif %}
 
-{% if item is defined %}
-    {% block content %}
+{% block title %}{{ item.title }} &middot; {{ SITENAME }}{% endblock %}
 
-    {% block article_el %}
-    <article {% if item.code == 'true' %}class='code'{% endif %}>
-    {% endblock %}
+{% block content %}
 
-        <header>
-            <h1>{{ item.title }}</h1>
+{% block article_el %}
+<article {% if item.code == 'true' %}class='code'{% endif %}>
+{% endblock %}
 
-            {% if item.subtitle is defined %}<h2>{{ item.subtitle }}</h2>{% endif %}
-        </header>
+    <header>
+        <h1>{{ item.title }}</h1>
 
-        <div class="meta">{% block meta %}{% endblock %}</div>
+        {% if item.subtitle is defined %}<h2>{{ item.subtitle }}</h2>{% endif %}
+    </header>
 
-        {% block context %}{% endblock %}
+    <div class="meta">{% block meta %}{% endblock %}</div>
 
-        {% if item.intro is defined %}
-            {% block intro %}<p class="intro">{{ item.intro }}</p>{% endblock %}
-        {% endif %}
+    {% block context %}{% endblock %}
 
-        <div class="content">
-            {% if item.epigraph is defined %}<div class="epigraph">{{ item.epigraph }}</div>{% endif %}
+    {% if item.intro is defined %}
+        {% block intro %}<p class="intro">{{ item.intro }}</p>{% endblock %}
+    {% endif %}
 
-            {{ item.content }}
-        </div>
-        </article>
-    {% endblock %}
+    <div class="content">
+        {% if item.epigraph is defined %}<div class="epigraph">{{ item.epigraph }}</div>{% endif %}
 
-{% else %}
-    {% include "includes/404-content.html" %}
-{% endif %}
+        {{ item.content }}
+    </div>
+    </article>
+
+{% endblock %}

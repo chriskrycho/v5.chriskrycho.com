@@ -23,6 +23,7 @@ a, a:visited {
     color: $light_blue;
     text-decoration: none;
     border-bottom: 1px solid transparent;
+    display: inline-block;
 
     @include transition(border 0.224s $easeInOutCubic, color 0.224s $easeInOutCubic);
 
@@ -62,6 +63,10 @@ blockquote {
 // Paragraph styles
 p {
     text-indent: $fs4;
+
+    a {
+        display: inline;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, ul, ol, blockquote {
@@ -264,6 +269,10 @@ body {
             size: $fs5;
         }
 
+        a:hover, a:active {
+            border-bottom: 3px solid $dark_blue;
+        }
+
         ul {
             list-style-type: none;
 
@@ -312,7 +321,6 @@ body {
 
     #section-head {
         @include flex(0 100%);
-        border-bottom: 1px solid lighten($light_gray, 39.1%);
         padding: {
             top: $fs1_abs;
             left: 15.3%;
@@ -323,7 +331,7 @@ body {
         }
 
         h3 {
-            padding-top: 0;
+            padding: 0;
             border: none;
         }
     }
@@ -462,7 +470,7 @@ article {
             display: inline-block;
 
             a {
-                display: inline-block;
+                display: inline;
             }
 
             &:before {
@@ -564,16 +572,17 @@ sup[id^="fnref:"] a {
     min-height: $fs_very_large;
     color: $white;
     text-align: center;
+    line-height: $line_height_small;
     @include flexbox();
     @include flex-flow(row wrap);
 
     a, a:visited {
-        border-bottom: none;
+        //border-bottom: 1px solid transparent;
     }
 
     a:hover, a:active {
         color: $white;
-        border-bottom: none;
+        border-bottom: 1px solid $light_gray;
     }
 
     a .fa, a:visited .fa {
@@ -590,12 +599,14 @@ sup[id^="fnref:"] a {
         border-top: 0.244rem solid $dark_gray;
         padding-bottom: $fs3;
 
-        @include flex(1 0);
+        @include flex(1);
     }
 
     h1 {
         background: $light_blue;
         font-size: $fs2;
+        border-bottom: 0.156rem solid $white;
+        text-shadow: 0 0 2px $dark_blue;
         padding: {
             top: 0.224em;
             bottom: 0.153em;
@@ -606,6 +617,7 @@ sup[id^="fnref:"] a {
     h2 {
         font-size: $fs3;
         padding-top: $fsp;
+        text-shadow: 0 0 2px $dark_gray;
         margin: {
             left: auto;
             right: auto;

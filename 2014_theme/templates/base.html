@@ -1,20 +1,20 @@
+{% if page is defined %}
+    {% set item = page %}
+{% elif article is defined %}
+    {% set item = article %}
+{% else %}
+    {% set item = None %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-    <meta name="description" content=""/>
+    <meta name="description" content="{% block description %}{{ SITE_DESCRIPTION }}{% endblock %}"/>
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
     {# Authorship #}
-    {% if page is defined %}
-        {% set item = page %}
-    {% elif article is defined %}
-        {% set item = article %}
-    {% else %}
-        {% set item = None %}
-    {% endif %}
     {% include "identity/app.net.html" %}
     {% include "identity/opengraph.html" %}
     {% include "identity/google.html" %}

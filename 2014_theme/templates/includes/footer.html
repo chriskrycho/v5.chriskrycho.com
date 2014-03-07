@@ -29,16 +29,25 @@
     <ul class="inline">
         <li class="section-title">Everything</li>
         <li><a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}"><i class="fa fa-rss"></i>Feed</a></li>
-        <li><a href="{{ BROADCAST['all'] }}"><i class="fa fa-bolt"></i>Subscribe</a></li>
+        <li><a href="{{ BROADCAST['all'] }}"><i class="fa fa-bolt"></i>Broadcast</a></li>
     </ul>
 {% for category, _ in categories %}
     <ul class="inline">
         <li class="section-title">{{ category.name }}</li>
         <li><a href="{{ SITEURL }}/feeds/{{ category }}.xml"><i class="fa fa-rss"></i>Feed</a></li>
-        <li><a href="{{ BROADCAST[category] }}"><i class="fa fa-bolt"></i>Subscribe</a></li>
+        <li><a href="{{ BROADCAST[category] }}"><i class="fa fa-bolt"></i>Broadcast</a></li>
     </ul>
 {% endfor %}
 </section>
 <section id="recent">
     <h1>Recent</h1>
+{% for category, category_articles in categories %}
+    {% set category_articles = category_articles[0:3] %}
+    <h2 class="section-title">{{ category.name }}</h2>
+    <ul>
+    {% for category_article in category_articles %}
+        <li><a href="{{ SITEURL }}/{{ category_article.url }}">{{ category_article.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
 </section>
