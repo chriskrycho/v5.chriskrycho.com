@@ -9,7 +9,7 @@ description = "Theology, technology, life, & art"
 default_language = "en"
 
 # Theme name to use
-theme = ""
+# theme = ""
 
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Gutenberg
@@ -20,7 +20,7 @@ highlight_code = true
 highlight_theme = "base16-ocean-dark"
 
 # Whether to generate a RSS feed automatically
-generate_rss = false
+generate_rss = true
 
 # The number of articles to include in the RSS feed
 rss_limit = 20
