@@ -33,7 +33,10 @@ rss_limit = 20
 #       {name = "authors"}, # Basic definition: no RSS or pagination
 #     ]
 #
-taxonomies = []
+taxonomies = [
+  {name = "topics", rss = true},
+  {name = "format", rss = true}, # TODO: or 'medium', maybe?
+]
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
