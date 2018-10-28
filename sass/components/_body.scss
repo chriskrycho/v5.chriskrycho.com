@@ -9,7 +9,8 @@ body {
    display: grid;
    align-items: center;
    grid: {
-      gap: ms(0);
+      column-gap: ms(0);
+      row-gap: ms(2);
       template: {
          columns: repeat(12, 1fr);
          rows: minmax(#{ms(6), auto});
@@ -42,35 +43,39 @@ body {
    }
 }
 
-@media screen and (min-width: $break-1) {
-   body {
-      grid-template-areas:
-         "h h h h h h h . n n n n"
-         ". m m m m m m m m m m ."
-         "f f f f f f f f f f f f";
+@media screen {
+   @media (prefers-color-scheme: dark) {
+      body {
+         --border: var(--medium-blue);
+      }
    }
-}
 
-@media (prefers-color-scheme: dark) {
-   body {
-      --border: var(--medium-blue);
+   @media (min-width: $break-0) {
+      body {
+         grid-template-areas:
+            "h h h h h h h n n n n n"
+            ". m m m m m m m m m m ."
+            "f f f f f f f f f f f f";
+      }
    }
-}
 
-@media screen and (min-width: $break-3) {
-   body {
-      grid-template-areas:
-         ". h h h h h h . n n n ."
-         ". . m m m m m m m m . ."
-         "f f f f f f f f f f f f";
+   @media (min-width: $break-1) {
+      body > nav {
+         margin-top: ms(-4);
+      }
    }
-}
 
-@media screen and (min-width: $break-4) {
-   body {
-      grid-template-areas:
-         ". . h h h h h . n n . ."
-         ". . . m m m m m m . . ."
-         "f f f f f f f f f f f f";
+   @media (min-width: $break-3) {
+      body {
+         padding: {
+            left: ms(8);
+            right: ms(8);
+         }
+   
+         grid-template-areas:
+            "h h h h h h h n n n n n"
+            ". m m m m m m m m m . ."
+            "f f f f f f f f f f f f";
+      }
    }
 }

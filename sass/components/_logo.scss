@@ -8,15 +8,19 @@
    }
 
    a {
-      color: var(--link);
       display: flex;
       text-decoration: none;
       justify-content: center;
       align-items: center;
 
+      &:hover,
+      &:active {
+         color: var(--dark-blue);
+      }
+
       img {
-         height: ms(3);
-         width: ms(3);
+         height: ms(4);
+         width: ms(4);
       }
 
       span {
@@ -27,15 +31,19 @@
 
 @media screen {
    @media (min-width: $break-1) {
-      .Logo a {
-         justify-content: start;
+      .Logo {
+         font-size: ms(8);
+         
+         a {
+            justify-content: start;
+         }
       }
    }
 
-   @media (min-width: $break-2) {
+   @media (min-width: $break-1) {
       .Logo {
-         font-size: ms(7);
-   
+         font-size: ms(8);
+
          a {
             img {
                height: ms(4);
@@ -43,5 +51,14 @@
             }
          }
       }
-   }   
+   }
+
+   @media (prefers-color-scheme: dark) {
+      .Logo a {
+         &:hover,
+         &:active {
+            color: var(--off-white);
+         }
+      }
+   }
 }

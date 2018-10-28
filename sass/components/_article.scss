@@ -13,7 +13,9 @@ article {
    }
 
    a {
-      color: var(--link);
+      &:hover, &:active {
+         text-decoration: none;
+      }
    }
 }
 

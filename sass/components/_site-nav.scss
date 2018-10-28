@@ -1,7 +1,7 @@
 .SiteNav {
    font: {
       family: var(--sans);
-      size: ms(2);
+      size: ms(1);
    }
 
    ul {
@@ -10,22 +10,79 @@
       list-style: none;
       display: flex;
       justify-content: center;
-  
+
       li {
          text-align: center;
          flex: 0 0 auto;
-         padding: 0 ms(-12);
+         padding: 0 ms(-3) 0 ms(-4);
+         position: relative;
+
+         @mixin slash($right) {
+            content: "";
+            border-left: 1px solid var(--fg);
+            height: 100%;
+            transform: translateY(-2px) rotate(15deg);
+            position: absolute;
+            right: $right;
+            top: 0;
+            bottom: 0;
+         }
+
+         &:not(:last-child):before {
+            @include slash(3px);
+         }
+
+         &:not(:last-child):after {
+            @include slash(0);
+         }
       }
    }
 
    a {
-      color: var(--link);
       text-decoration: none;
+      position: relative;
+
+      &:after {
+         content: "";
+         background-color: var(--hover);
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 2px;
+
+         transition: -webkit-clip-path var(--transition), clip-path var(--transition);
+
+         -webkit-clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
+         -moz-clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
+         -ms-clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
+         clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
+      }
+
+      &:hover,
+      &:active {
+         &:after {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         }
+      }
    }
 }
 
-@media screen and (min-width: $break-1) {
-   .SiteNav ul {
-      justify-content: flex-end;
+@media screen {
+   @media (min-width: $break-1) {
+      .SiteNav ul {
+         justify-content: flex-end;
+      }
+   }
+
+   @media (prefers-color-scheme: dark) {
+      .SiteNav {
+         a:hover, a:active {
+            color: var(--off-white);
+         }
+      }
    }
 }

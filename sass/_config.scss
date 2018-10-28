@@ -11,11 +11,11 @@ $modularscale: (
   ratio: 1.333
 );
 
-$break-1: 520px;
-$break-2: 660px;
-$break-text: 720px; // WAG
-$break-3: 960px; // WAG
-$break-4: 1280px; // WAG
+$break-0: 520px;
+$break-1: 660px;
+$break-2: 768px;
+$break-3: 960px;
+$break-4: 1280px;
 
 :root {
    // -- Typography -- //
@@ -27,21 +27,13 @@ $break-4: 1280px; // WAG
    // Sizes and rhythm:
    --fs-base: 19px;
 
-   --fs-xxl: #{ms(5)};
-   --fs-xl: #{ms(4)};
-   --fs-l: #{ms(3)};
-   --fs-m: #{ms(2)};
-   --fs-ms: #{ms(1)};
-   --fs: #{ms(0)};
-   --fs-s: #{ms(-1)};
-
    // -- Colors -- //
    --off-white: hsl(222, 10%, 99%);
    --dark-gray: hsl(222, 10%, 15%);
    --light-gray: hsl(222, 10%, 70%);
 
    --pale-blue: hsl(208, 85%, 71%);
-   --light-blue: hsl(208, 85%, 55%);
+   --light-blue: hsl(208, 85%, 45%);
    --medium-blue: hsl(208, 85%, 33%);
    --dark-blue: hsl(208, 85%, 18%);
 
@@ -49,6 +41,15 @@ $break-4: 1280px; // WAG
    --bg: var(--off-white);
    --fg: var(--dark-gray);
    --link: var(--medium-blue);
+   --hover: var(--light-blue);
+
+   --transition: 0.25s ease-out;
+}
+
+@media screen {
+   @media (prefers-reduced-motion: reduce) {
+      --transition: 0s;
+   }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,10 +59,11 @@ $break-4: 1280px; // WAG
       --bg: var(--dark-gray);
       --fg: var(--off-white);
       --link: var(--pale-blue);
-      }
+      --hover: var(--light-blue);
+   }
 }
 
-@media screen and (max-width: $break-text) {
+@media screen and (max-width: $break-2) {
    :root {
       --fs-base: 16px;
    }
