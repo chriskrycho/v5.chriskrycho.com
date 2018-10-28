@@ -30,26 +30,15 @@
 }
 
 @media screen {
-   @media (min-width: $break-1) {
-      .Logo {
-         font-size: ms(8);
-         
-         a {
-            justify-content: start;
-         }
+   @media (min-width: $break-0) {
+      .Logo a {
+         justify-content: flex-start;
       }
    }
 
-   @media (min-width: $break-1) {
+   @media (min-width: $break-2) {
       .Logo {
          font-size: ms(8);
-
-         a {
-            img {
-               height: ms(4);
-               width: ms(4);
-            }
-         }
       }
    }
 

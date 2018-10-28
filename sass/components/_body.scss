@@ -59,7 +59,13 @@ body {
       }
    }
 
-   @media (min-width: $break-1) {
+   @media (min-width: $break-0) {
+      body > nav {
+         margin-top: ms(-5);
+      }
+   }
+
+   @media (min-width: $break-2) {
       body > nav {
          margin-top: ms(-4);
       }
