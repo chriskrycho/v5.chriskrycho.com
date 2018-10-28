@@ -1,0 +1,77 @@
+@import './_vendor/modularscale';
+@import './fonts';
+
+* {
+   box-sizing: border-box;
+}
+
+// https://www.modularscale.com/?1,4&em&1.333
+$modularscale: (
+  base: 1em 4em,
+  ratio: 1.333
+);
+
+$break-1: 520px;
+$break-2: 660px;
+$break-3: 800px; // WAG
+$break-text: 760px; // WAG
+
+:root {
+   // -- Typography -- //
+   // Font stacks
+   --serif: Sabon, Adobe Garamond Pro, Garamond, serif;
+   --sans: Cronos, Century Gothic, sans-serif;
+   --mono: Hack, Menlo;
+
+   // Sizes and rhythm:
+   --fs-base: 19px;
+
+   --fs-xxl: #{ms(5)};
+   --fs-xl: #{ms(4)};
+   --fs-l: #{ms(3)};
+   --fs-m: #{ms(2)};
+   --fs-ms: #{ms(1)};
+   --fs: #{ms(0)};
+   --fs-s: #{ms(-1)};
+
+   // -- Colors -- //
+   --off-white: hsl(222, 10%, 99%);
+   --dark-gray: hsl(222, 10%, 15%);
+   --light-gray: hsl(222, 10%, 70%);
+
+   --pale-blue: hsl(208, 85%, 71%);
+   --light-blue: hsl(208, 85%, 55%);
+   --medium-blue: hsl(208, 85%, 33%);
+   --dark-blue: hsl(208, 85%, 18%);
+
+   // Basic use of colors (default)
+   --bg: var(--off-white);
+   --fg: var(--dark-gray);
+   --link: var(--medium-blue);
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      --fs-base: 20px;
+
+      --bg: var(--dark-gray);
+      --fg: var(--off-white);
+      --link: var(--pale-blue);
+      }
+}
+
+@media screen and (max-width: $break-text) {
+   :root {
+      --fs-base: 16px;
+   }
+
+   @media (prefers-color-scheme: dark) {
+      :root {
+         --fs-base: 17px;
+      }
+   }
+}
+
+html {
+   font: var(--fs-base)/ms(2) var(--serif);
+}

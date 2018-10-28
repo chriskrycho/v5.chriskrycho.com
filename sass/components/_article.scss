@@ -1,0 +1,15 @@
+article {
+   p, ul, ol {
+      max-width: 32em;
+   }
+
+   a {
+      color: var(--link);
+   }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+   article {
+      --link: var(--pale-blue);
+   }
+}

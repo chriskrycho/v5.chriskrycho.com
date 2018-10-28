@@ -1,0 +1,19 @@
+.SiteNav {
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      
+      li {
+         text-align: center;
+         flex: 0 0 auto;
+         padding: 0 ms(-12);
+      }
+   }
+
+   a {
+      color: var(--link);
+   }
+}

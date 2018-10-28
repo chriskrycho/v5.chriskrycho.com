@@ -1,0 +1,66 @@
+body {
+   --border: var(--dark-blue);
+
+   color: var(--fg);
+   background-color: var(--bg);
+   padding: ms(0);
+   margin: 0;
+
+   display: grid;
+   grid: {
+      gap: ms(0);
+      template: {
+         columns: repeat(12, 1fr);
+         rows: minmax(#{ms(10), auto});
+         areas:
+            "h h h h h h h h h h h h"
+            "n n n n n n n n n n n n"
+            "m m m m m m m m m m m m"
+            "f f f f f f f f f f f f";
+      }
+   }
+
+   border: {
+      top: ms(-6) solid var(--border);
+   }
+
+   & > header {
+      grid-area: h;
+   }
+
+   & > nav {
+      grid-area: n;
+   }
+
+   & > main {
+      grid-area: m;
+   }
+
+   & > footer {
+      grid-area: f;
+   }
+}
+
+@media screen and (min-width: $break-1) {
+   body {
+      grid-template-areas:
+         "h h h h h h h . n n n n"
+         ". m m m m m m m m m m ."
+         "f f f f f f f f f f f f";
+   }
+}
+
+@media screen and (min-width: $break-2) {
+   body {
+      grid-template-areas:
+         "h h h h h h h . . n n n"
+         ". m m m m m m m m m . ."
+         "f f f f f f f f f f f f";
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   body {
+      --border: var(--medium-blue);
+   }
+}
