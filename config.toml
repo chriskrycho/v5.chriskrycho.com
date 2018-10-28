@@ -23,7 +23,7 @@ highlight_theme = "base16-ocean-dark"
 generate_rss = true
 
 # The number of articles to include in the RSS feed
-rss_limit = 20
+# rss_limit = 
 
 # The taxonomies to be rendered for that site and their configuration
 # Example:
@@ -35,7 +35,7 @@ rss_limit = 20
 #
 taxonomies = [
   {name = "topics", rss = true},
-  {name = "format", rss = true}, # TODO: or 'medium', maybe?
+  {name = "medium", rss = true},
 ]
 
 # Whether to automatically compile all Sass files in the sass directory
