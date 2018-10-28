@@ -1,5 +1,5 @@
 body {
-   --border: var(--dark-blue);
+   --border: var(--medium-blue);
 
    color: var(--fg);
    background-color: var(--bg);
@@ -23,7 +23,7 @@ body {
    }
 
    border: {
-      top: ms(-6) solid var(--border);
+      top: ms(-8) solid var(--border);
    }
 
    & > header {
@@ -46,7 +46,7 @@ body {
 @media screen {
    @media (prefers-color-scheme: dark) {
       body {
-         --border: var(--medium-blue);
+         --border: var(--pale-blue);
       }
    }
 
