@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>{{ config.title }}</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-   <script src="main.js"></script>
-</head>
-<body>
-   {% for page in section.pages %}
-      {{ page.title }}<br/>
-      {{ page.content | safe }}
-   {% endfor %}
-</body>
-</html>
+{%- extends '_layouts/base.html' -%}
+{%- block main -%}
+{%- set page = section.pages[0] -%}
+<article class='Bio'>
+   {# <img src='{{config.extra.headshot}}' alt='Headshot of Chris' /> #}
+   <div class='Bio_text'>
+      {{page.content | safe}}
+   </div>
+</article>
+
+{%- if page.extra is defined and page.extra.now is defined -%}
+<article class='Now'>
+   {#
+      I *think* this will do the right thing -- per the docs, `inline` does not
+      wrap the content in a `p` tag, which is what we want for content which
+      should already be paragraphed by way of running the `markdown` filter on
+      it at all. (TODO: confirm!)
+   #}
+   {{page.extra.now | markdown(inline=true)}}
+</article>
+{%- endif -%}
+{%- endblock main -%}

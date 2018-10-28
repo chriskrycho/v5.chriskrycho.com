@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='utf-8' />
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>{{ config.title }}</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+   <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='style.css' />
+
+   {# <script src='main.js'></script> #}
+</head>
+<body>
+   <header class='Logo'>
+      <h1>
+         <a href='/'>
+            <img src='/images/logo.png' alt='CK' />
+            <span>Chris Krycho</span>
+         </a>
+      </h1>
+   </header>
+
+   <nav class='SiteNav'>
+      <ul>
+         <li>
+            <a href='/archives/'>Archives</a>
+         </li>
+         <li>
+            <a href='/cv/'>C.V.</a>
+         </li>
+      </ul>
+      </nav>
+   </header>
+
+   <main>
+      {% block main %}{% endblock main %}
+   </main>
+
+   <footer>
+   </footer>
+</body>
+</html>
