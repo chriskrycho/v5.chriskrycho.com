@@ -3,15 +3,16 @@ body {
 
    color: var(--fg);
    background-color: var(--bg);
-   padding: ms(0);
+   padding: ms(-4) ms(0);
    margin: 0;
 
    display: grid;
+   align-items: center;
    grid: {
       gap: ms(0);
       template: {
          columns: repeat(12, 1fr);
-         rows: minmax(#{ms(10), auto});
+         rows: minmax(#{ms(6), auto});
          areas:
             "h h h h h h h h h h h h"
             "n n n n n n n n n n n n"
@@ -50,17 +51,26 @@ body {
    }
 }
 
-@media screen and (min-width: $break-2) {
+@media (prefers-color-scheme: dark) {
+   body {
+      --border: var(--medium-blue);
+   }
+}
+
+@media screen and (min-width: $break-3) {
    body {
       grid-template-areas:
-         "h h h h h h h . . n n n"
-         ". m m m m m m m m m . ."
+         ". h h h h h h . n n n ."
+         ". . m m m m m m m m . ."
          "f f f f f f f f f f f f";
    }
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (min-width: $break-4) {
    body {
-      --border: var(--medium-blue);
+      grid-template-areas:
+         ". . h h h h h . n n . ."
+         ". . . m m m m m m . . ."
+         "f f f f f f f f f f f f";
    }
 }
