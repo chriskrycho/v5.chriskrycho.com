@@ -1,3 +1,4 @@
-[templates/*.html]
+# Yes, I am a maniac. DEAL WITH IT.
+[*]
 indent_size = 3
 indent_style = space
