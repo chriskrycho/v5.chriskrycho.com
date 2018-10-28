@@ -42,32 +42,7 @@
       text-decoration: none;
       position: relative;
 
-      &:after {
-         content: "";
-         background-color: var(--hover);
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         right: 0;
-         height: 2px;
-
-         transition: -webkit-clip-path var(--transition), clip-path var(--transition);
-
-         -webkit-clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
-         -moz-clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
-         -ms-clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
-         clip-path: polygon(50% 0px, 50% 0px, 50% 100%, 50% 100%);
-      }
-
-      &:hover,
-      &:active {
-         &:after {
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-         }
-      }
+      @include link($height: 2px)
    }
 }
 
@@ -75,14 +50,6 @@
    @media (min-width: $break-1) {
       .SiteNav ul {
          justify-content: flex-end;
-      }
-   }
-
-   @media (prefers-color-scheme: dark) {
-      .SiteNav {
-         a:hover, a:active {
-            color: var(--off-white);
-         }
       }
    }
 }

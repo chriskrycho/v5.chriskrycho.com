@@ -13,11 +13,6 @@
       justify-content: center;
       align-items: center;
 
-      &:hover,
-      &:active {
-         color: var(--dark-blue);
-      }
-
       img {
          height: ms(4);
          width: ms(4);
@@ -25,6 +20,14 @@
 
       span {
          margin-top: ms(-12);
+         @include link-text;
+         @include link-after($height: 2px, $bottom: -4px);
+      }
+
+      &:hover, &:active {
+         span {
+            @include link-after-hover;
+         }
       }
    }
 }
@@ -39,14 +42,9 @@
    @media (min-width: $break-2) {
       .Logo {
          font-size: ms(8);
-      }
-   }
 
-   @media (prefers-color-scheme: dark) {
-      .Logo a {
-         &:hover,
-         &:active {
-            color: var(--off-white);
+         a span {
+            @include link-after($height: 3px, $bottom: -10px);
          }
       }
    }

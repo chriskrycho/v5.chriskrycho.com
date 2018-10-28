@@ -13,14 +13,10 @@ article {
    }
 
    a {
-      &:hover, &:active {
-         text-decoration: none;
-      }
-   }
-}
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
 
-@media screen and (prefers-color-scheme: dark) {
-   article {
-      --link: var(--pale-blue);
+      @include link($height: 1px, $bottom: 2px);
    }
 }

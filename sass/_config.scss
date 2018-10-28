@@ -41,9 +41,10 @@ $break-4: 1280px;
    --bg: var(--off-white);
    --fg: var(--dark-gray);
    --link: var(--medium-blue);
-   --hover: var(--light-blue);
+   --hover: var(--dark-blue);
+   --underline: var(--light-blue);
 
-   --transition: 0.25s ease-out;
+   --transition: 0.25s ease;
 }
 
 @media screen {
@@ -59,7 +60,8 @@ $break-4: 1280px;
       --bg: var(--dark-gray);
       --fg: var(--off-white);
       --link: var(--pale-blue);
-      --hover: var(--light-blue);
+      --hover: var(--off-white);
+      --underline: var(--light-blue);
    }
 }
 
