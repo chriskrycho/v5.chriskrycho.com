@@ -2,3 +2,7 @@
 [*]
 indent_size = 3
 indent_style = space
+
+# But I am not *that* much of a maniac.
+[*.md]
+indent_size = 4
