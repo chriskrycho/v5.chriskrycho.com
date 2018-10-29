@@ -6,10 +6,9 @@
    <title>{{ config.title }}</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-   <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='fonts.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
    <link rel='stylesheet' type='text/css' media='screen' href='style.css' />
-
-   {# <script src='main.js'></script> #}
 </head>
 <body>
    <header>
@@ -36,5 +35,16 @@
 
    <footer>
    </footer>
+
+   {# load fonts #}
+   <script src='/js/fontfaceobserver.standalone.js'></script>
+   <script>
+      Promise.all([
+         new FontFaceObserver('Sabon'),
+         new FontFaceObserver('Cronos')
+      ]).then(() => document.documentElement.classList.add('fonts-loaded'))
+   </script>
+
+   {# <script src='main.js'></script> #}
 </body>
 </html>

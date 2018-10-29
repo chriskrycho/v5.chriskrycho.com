@@ -1,5 +1,4 @@
 @import './_vendor/modularscale';
-@import './fonts';
 
 * {
    box-sizing: border-box;
@@ -20,9 +19,9 @@ $break-4: 1280px;
 :root {
    // -- Typography -- //
    // Font stacks
-   --serif: Sabon, Adobe Garamond Pro, Garamond, serif;
-   --sans: Cronos, Century Gothic, sans-serif;
-   --mono: Hack, Menlo;
+   --serif: Palatino, Book Antiqua, serif;
+   --sans: Century Gothic, sans-serif;
+   --mono: Menlo, Consolas, monospace;
 
    // Sizes and rhythm:
    --fs-base: 19px;
@@ -47,6 +46,12 @@ $break-4: 1280px;
    --code-outline: var(--light-gray);
 
    --transition: 0.25s ease;
+}
+
+.fonts-loaded {
+   --serif: Sabon, Adobe Garamond Pro, Garamond, serif;
+   --sans: Cronos, Century Gothic, sans-serif;
+   --mono: Hack, Menlo, Consolas, monospace;
 }
 
 @media screen {
