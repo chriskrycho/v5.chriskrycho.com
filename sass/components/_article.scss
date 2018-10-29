@@ -4,12 +4,34 @@ article {
    }
 
    p {
-      margin: 0;
-      padding: 0 0 ms(0);
+      margin: 0 0 ms(0);
+      padding: 0;
 
       &:last-child {
          padding-bottom: 0;
       }
+   }
+
+   pre, code, pre code {
+      font: {
+         family: var(--mono);
+         size: ms(-2);
+      }
+
+      border: 1px solid var(--code-outline);
+      border-radius: 2px;
+   }
+
+   pre {
+      margin: ms(0) 0;
+      padding: ms(-4);
+      overflow-x: scroll;
+   }
+
+   code {
+      margin: 1em 0.1em;
+      padding: 0.1em 0.275em;
+      font-size: ms(-2);
    }
 
    a {
@@ -21,7 +43,8 @@ article {
       transition:
          -webkit-text-decoration-color var(--transition),
          -moz-text-decoration-color var(--transition),
-         text-decoration-color var(--transition);
+         text-decoration-color var(--transition),
+         color var(--transition);
 
       &:hover {
          -webkit-text-decoration-color: var(--underline);

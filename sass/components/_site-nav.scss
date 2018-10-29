@@ -1,4 +1,6 @@
 .SiteNav {
+   --divider: var(--light-gray);
+
    font: {
       family: var(--sans);
       size: ms(1);
@@ -19,7 +21,7 @@
 
          @mixin slash($right) {
             content: "";
-            border-left: 1px solid var(--fg);
+            border-left: 1px solid var(--divider);
             height: 100%;
             transform: translateY(-2px) rotate(15deg);
             position: absolute;
@@ -50,6 +52,12 @@
    @media (min-width: $break-1) {
       .SiteNav ul {
          justify-content: flex-end;
+      }
+   }
+
+   @media (prefers-color-scheme: dark) {
+      .SiteNav {
+         --divider: var(--medium-gray);
       }
    }
 }

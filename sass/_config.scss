@@ -30,6 +30,7 @@ $break-4: 1280px;
    // -- Colors -- //
    --off-white: hsl(222, 10%, 99%);
    --dark-gray: hsl(222, 10%, 15%);
+   --medium-gray: hsl(222, 10%, 35%);
    --light-gray: hsl(222, 10%, 70%);
 
    --pale-blue: hsl(208, 85%, 71%);
@@ -43,6 +44,7 @@ $break-4: 1280px;
    --link: var(--medium-blue);
    --hover: var(--dark-blue);
    --underline: var(--light-blue);
+   --code-outline: var(--light-gray);
 
    --transition: 0.25s ease;
 }
@@ -62,6 +64,7 @@ $break-4: 1280px;
       --link: var(--pale-blue);
       --hover: var(--off-white);
       --underline: var(--light-blue);
+      --code-outline: var(--medium-gray);
    }
 }
 
