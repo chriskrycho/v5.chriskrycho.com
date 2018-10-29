@@ -13,10 +13,20 @@ article {
    }
 
    a {
-      text-decoration: none;
-      position: relative;
-      display: inline-block;
+      -webkit-text-decoration-color: transparent;
+      -moz-text-decoration-color: transparent;
+      text-decoration-color: transparent;
+      text-decoration-skip-ink: auto;
 
-      @include link($height: 1px, $bottom: 2px);
+      transition:
+         -webkit-text-decoration-color var(--transition),
+         -moz-text-decoration-color var(--transition),
+         text-decoration-color var(--transition);
+
+      &:hover {
+         -webkit-text-decoration-color: var(--underline);
+         -moz-text-decoration-color: var(--underline);
+         text-decoration-color: var(--underline);
+      }
    }
 }

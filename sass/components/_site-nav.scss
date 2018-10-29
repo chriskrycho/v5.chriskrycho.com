@@ -42,7 +42,7 @@
       text-decoration: none;
       position: relative;
 
-      @include link($height: 2px)
+      @include fancy-link($height: 2px)
    }
 }
 

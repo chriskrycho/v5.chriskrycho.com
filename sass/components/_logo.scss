@@ -20,13 +20,13 @@
 
       span {
          margin-top: ms(-12);
-         @include link-text;
-         @include link-after($height: 2px, $bottom: -4px);
+         @include fancy-link-text;
+         @include fancy-link-after($height: 2px, $bottom: -4px);
       }
 
       &:hover, &:active {
          span {
-            @include link-after-hover;
+            @include fancy-link-after-hover;
          }
       }
    }
@@ -44,7 +44,7 @@
          font-size: ms(8);
 
          a span {
-            @include link-after($height: 3px, $bottom: -10px);
+            @include fancy-link-after($height: 3px, $bottom: -10px);
          }
       }
    }

@@ -1,4 +1,4 @@
-@mixin link-text {
+@mixin fancy-link-text {
    position: relative;
    z-index: 1;
    text-shadow:
@@ -9,7 +9,7 @@
       ;
 }
 
-@mixin link-after($height: 1px, $bottom: 0) {
+@mixin fancy-link-after($height: 1px, $bottom: 0) {
    &:after {
       content: "";
       background-color: var(--underline);
@@ -29,7 +29,7 @@
    }
 }
 
-@mixin link-after-hover {
+@mixin fancy-link-after-hover {
    &:after {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -38,11 +38,11 @@
    }
 }
 
-@mixin link($height: 1px, $bottom: 0) {
-   @include link-text;
-   @include link-after($height, $bottom);
+@mixin fancy-link($height: 1px, $bottom: 0) {
+   @include fancy-link-text;
+   @include fancy-link-after($height, $bottom);
 
    &:hover, &:active {
-      @include link-after-hover;
+      @include fancy-link-after-hover;
    }
 }
