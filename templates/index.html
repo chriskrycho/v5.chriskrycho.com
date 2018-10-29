@@ -1,23 +1,16 @@
 {%- extends '_layouts/base.html' -%}
 {%- block main -%}
-{%- set page = section.pages[0] -%}
-{{__tera_context}}
+
 <article class='Bio'>
    {# <img src='{{config.extra.headshot}}' alt='Headshot of Chris' /> #}
    <div class='Bio_text'>
-      {# {{page.content | safe}} #}
+      {{section.content | safe}}
    </div>
 </article>
 
-{%- if page.extra is defined and page.extra.now is defined -%}
+{%- if section.extra is defined and section.extra.now is defined -%}
 <article class='Now'>
-   {#
-      I *think* this will do the right thing -- per the docs, `inline` does not
-      wrap the content in a `p` tag, which is what we want for content which
-      should already be paragraphed by way of running the `markdown` filter on
-      it at all. (TODO: confirm!)
-   #}
-   {{page.extra.now | markdown(inline=true)}}
+   {{section.extra.now | markdown(inline=true)}}
 </article>
 {%- endif -%}
 {%- endblock main -%}
