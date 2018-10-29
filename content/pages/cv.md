@@ -1,6 +1,6 @@
 +++
 title = "Curriculum Vitae"
-slug = "cv"
+path = "cv"
 
 [extra]
 subtitle = """I am a senior software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics."""   
