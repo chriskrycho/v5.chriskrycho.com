@@ -1,15 +1,4 @@
 +++
-title = "True Myth 2.2"
-# subtitle = """
-# `Maybe` helpers for safe object lookup and `Result` helpers for exception-throwing code.
-# """
-# [taxonomies]
-# topics = [tech, typescript, true myth, open source software, functional programming]
-# date = 2018-10-27T17:00:00-07:00
-# 
-# [extra]
-# summary = "True Myth 2.2 adds two `Maybe` helpers for safe object lookup and two `Result` helpers for handling exception-throwing code."
-
 +++
 
 I just released v2.2[^1] of True Myth, with two new pairs of helpers to deal with [safe JavaScript object property lookup with `Maybe`s](#safe-java-script-object-property-lookup) and [handling exception-throwing code with `Result`s](#handling-exception-throwing-functions).

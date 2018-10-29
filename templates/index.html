@@ -1,10 +1,11 @@
 {%- extends '_layouts/base.html' -%}
 {%- block main -%}
 {%- set page = section.pages[0] -%}
+{{__tera_context}}
 <article class='Bio'>
    {# <img src='{{config.extra.headshot}}' alt='Headshot of Chris' /> #}
    <div class='Bio_text'>
-      {{page.content | safe}}
+      {# {{page.content | safe}} #}
    </div>
 </article>
 
