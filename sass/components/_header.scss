@@ -1,4 +1,4 @@
-.Logo {
+.site-title {
    margin: 0;
    padding: 0;
    font: {
@@ -32,20 +32,43 @@
    }
 }
 
+.site-subtitle {
+   font: {
+      family: var(--serif);
+      weight: 400;
+      size: ms(2);
+      style: italic;
+   }
+
+   margin: 0;
+   padding: 0;
+
+   text-align: center;
+}
+
 @media screen {
    @media (min-width: $break-0) {
-      .Logo a {
+      .site-title a {
          justify-content: flex-start;
+      }
+
+      .site-subtitle {
+         text-align: left;
+         margin-left: ms(3);
       }
    }
 
    @media (min-width: $break-2) {
-      .Logo {
+      .site-title {
          font-size: ms(8);
 
          a span {
             @include fancy-link-after($height: 3px, $bottom: -10px);
          }
+      }
+
+      .site-subtitle {
+         margin-left: ms(6);
       }
    }
 }

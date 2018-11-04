@@ -9,7 +9,7 @@ body {
    display: grid;
    align-items: center;
    grid: {
-      column-gap: ms(0);
+      column-gap: 1%;
       row-gap: ms(2);
       template: {
          columns: repeat(12, 1fr);
@@ -61,13 +61,13 @@ body {
 
    @media (min-width: $break-0) {
       body > nav {
-         margin-top: ms(-5);
+         margin-top: -#{ms(-5)};
       }
    }
 
    @media (min-width: $break-2) {
       body > nav {
-         margin-top: ms(-4);
+         margin-top: -#{ms(-8)};
       }
    }
 
@@ -77,11 +77,6 @@ body {
             left: ms(8);
             right: ms(8);
          }
-
-         grid-template-areas:
-            "h h h h h h h n n n n n"
-            ". m m m m m m m m m . ."
-            "f f f f f f f f f f f f";
       }
    }
 }

@@ -12,26 +12,29 @@
 </head>
 <body>
    <header>
-      <h1 class='Logo'>
+      <h1 class='site-title'>
          <a href='/'>
-            <img src='/images/logo.png' alt='CK' class='Logo_image' />
+            <img src='/images/logo.png' alt='CK' class='logo' />
             <span>Chris Krycho</span>
          </a>
       </h1>
+      <h2 class='site-subtitle'>{{config.description}}</h2>
    </header>
 
    <nav class='SiteNav'>
       <ul>
-         <li><a href=''>Archives</a></li>
+         <li><a href='/archives'>Archives</a></li>
          <li><a href='/cv'>C.V.</a></li>
          <li><a href='/contact'>Contact</a></li>
       </ul>
       </nav>
    </header>
 
+   {%- block main -%}
    <main>
-      {% block main %}{% endblock main %}
+      {% block main_content %}{% endblock main_content %}
    </main>
+   {%- endblock main -%}
 
    <footer>
    </footer>
