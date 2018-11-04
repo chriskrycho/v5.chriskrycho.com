@@ -1,0 +1,9 @@
+{%- extends '_layouts/base.html' -%}
+{%- block main -%}
+   <main class='Archive'>
+      <h2>{{section.title}}</h2>
+      {%- for page in section.pages -%}
+         <a href='{{page.permalink}}'>{{page.title}}</a>
+      {%- endfor -%}
+   </main>
+{%- endblock main -%}
