@@ -6,7 +6,7 @@ subtitle = """
 date = 2018-10-27T17:00:00-07:00
 
 [taxonomies]
-topics = ["tech", "typescript", "true myth", "open source software", "functional programming"]
+topics = ["tech", "typescript", "true myth", "open-source software", "functional programming"]
 
 [extra]
 summary = "True Myth 2.2 adds two `Maybe` helpers for safe object lookup and two `Result` helpers for handling exception-throwing code."
