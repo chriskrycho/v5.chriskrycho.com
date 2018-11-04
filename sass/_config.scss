@@ -41,8 +41,9 @@ $break-4: 1280px;
    --bg: var(--off-white);
    --fg: var(--dark-gray);
    --link: var(--medium-blue);
+   --underline: var(--light-gray);
    --hover: var(--dark-blue);
-   --underline: var(--light-blue);
+   --hover-underline: var(--light-blue);
    --code-outline: var(--light-gray);
 
    --transition: 0.25s ease;
@@ -67,8 +68,9 @@ $break-4: 1280px;
       --bg: var(--dark-gray);
       --fg: var(--off-white);
       --link: var(--pale-blue);
+      --underline: var(--medium-gray);
       --hover: var(--off-white);
-      --underline: var(--light-blue);
+      --hover-underline: var(--light-blue);
       --code-outline: var(--medium-gray);
    }
 }

@@ -9,19 +9,20 @@
       ;
 }
 
-@mixin fancy-link-after($height: 1px, $bottom: 0) {
+@mixin fancy-link-after($height: 2px, $bottom: 0) {
    &:after {
       content: "";
-      background-color: var(--underline);
+      background-color: var(--hover-underline);
       position: absolute;
       bottom: $bottom;
       left: 0;
       right: 0;
       height: $height;
       z-index: -1;
-   
+      border-radius: $height / 2;
+
       transition: -webkit-clip-path var(--transition), clip-path var(--transition);
-   
+
       -webkit-clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);
       -moz-clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);
       -ms-clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);
@@ -34,7 +35,7 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);   
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
    }
 }
 

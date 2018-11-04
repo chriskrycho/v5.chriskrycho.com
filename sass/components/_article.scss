@@ -35,9 +35,9 @@ article {
    }
 
    a {
-      -webkit-text-decoration-color: transparent;
-      -moz-text-decoration-color: transparent;
-      text-decoration-color: transparent;
+      -webkit-text-decoration-color: var(--underline);
+      -moz-text-decoration-color: var(--underline);
+      text-decoration-color: var(--underline);
       text-decoration-skip-ink: auto;
 
       transition:
@@ -47,9 +47,9 @@ article {
          color var(--transition);
 
       &:hover {
-         -webkit-text-decoration-color: var(--underline);
-         -moz-text-decoration-color: var(--underline);
-         text-decoration-color: var(--underline);
+         -webkit-text-decoration-color: var(--hover-underline);
+         -moz-text-decoration-color: var(--hover-underline);
+         text-decoration-color: var(--hover-underline);
       }
    }
 }
