@@ -1,6 +1,14 @@
 {%- extends '_layouts/base.html' -%}
 {%- block main -%}
-<article>
-   {{ page.content | safe }}
-</article>
+<main>
+   <article>
+      <header>
+         <h1>{{page.title}}</h1>
+         {% if page.extra.subtitle -%}
+            <h2>{{page.extra.subtitle | safe}}</h2>
+         {%- endif %}
+      </header>
+      {{ page.content | safe }}
+   </article>
+</main>
 {%- endblock main -%}
