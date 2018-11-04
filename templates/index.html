@@ -1,16 +1,20 @@
 {%- extends '_layouts/base.html' -%}
 {%- block main -%}
 
-<article class='Bio'>
-   {# <img src='{{config.extra.headshot}}' alt='Headshot of Chris' /> #}
-   <div class='Bio_text'>
-      {{section.content | safe}}
-   </div>
-</article>
+<main class='Index'>
+   <article class='Bio'>
+      {%- if config.extra.headshot -%}
+         <img src='{{config.extra.headshot}}' alt='Headshot of Chris' />
+      {%- endif -%}
+      <div class='Bio_text'>
+         {{section.content | safe}}
+      </div>
+   </article>
 
-{%- if section.extra is defined and section.extra.now is defined -%}
-<article class='Now'>
-   {{section.extra.now | markdown(inline=true)}}
-</article>
-{%- endif -%}
+   {%- if section.extra is defined and section.extra.now is defined -%}
+   <article class='Now'>
+      {{section.extra.now | markdown(inline=true)}}
+   </article>
+   {%- endif -%}
+</main>
 {%- endblock main -%}
