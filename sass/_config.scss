@@ -24,7 +24,7 @@ $break-4: 1280px;
    --mono: Menlo, Consolas, monospace;
 
    // Sizes and rhythm:
-   --fs-base: 19px;
+   --fs-base: 16px;
 
    // -- Colors -- //
    --off-white: hsl(222, 10%, 99%);
@@ -63,7 +63,7 @@ $break-4: 1280px;
 
 @media (prefers-color-scheme: dark) {
    :root {
-      --fs-base: 20px;
+      --fs-base: 17px;
 
       --bg: var(--dark-gray);
       --fg: var(--off-white);
@@ -75,14 +75,14 @@ $break-4: 1280px;
    }
 }
 
-@media screen and (max-width: $break-2) {
+@media screen and (min-width: $break-2) {
    :root {
-      --fs-base: 16px;
+      --fs-base: 19px;
    }
 
    @media (prefers-color-scheme: dark) {
       :root {
-         --fs-base: 17px;
+         --fs-base: 20px;
       }
    }
 }
