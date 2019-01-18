@@ -4,13 +4,24 @@ sort_by = "date"
 
 [extra]
 now = """
-- In March, I will be giving an updated version of my workshop on TypeScript and Ember.js [at EmberConf]
-- In February, I began the formal training process to become a ruling elder at [our church].
-- In late January, I joined [LinkedIn] as a Staff Software Engineer, working on front-end infrastructure.
+### Life
+
+In February, I began the formal training process to become a ruling elder at [our church]. I'm also training for a late spring half marathon (actual race to be decided) and planning to ride again in the 2019 [Courage Classic].
+
+[our church]: https://forestgate.org
+[Courage Classic]: http://www.childrenscoloradofoundation.org/courage-classic
+
+### Career
+
+In late January, I joined [LinkedIn] as a Staff Software Engineer, working on front-end infrastructure.
+
+[LinkedIn]: https://linkedin.com
+
+### Speaking
+
+In March, I will be giving an updated version of my workshop on TypeScript and Ember.js [at EmberConf].
 
 [at EmberConf]: https://emberconf.com/speakers.html#chris-krycho
-[our church]: https://forestgate.org
-[LinkedIn]: https://linkedin.com
 """
 +++
 
