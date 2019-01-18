@@ -38,11 +38,11 @@
 
 // Default to light unless the user explicitly specifies they prefer dark.
 :root,
-.light :root {
+.light:root {
    @include light();
 }
 
-.dark :root {
+.dark:root {
    @include dark();
 }
 
@@ -61,14 +61,14 @@
       @include dark();
    }
 
-   .light :root {
+   .light:root {
       @include light();
    }
 }
 
 @media screen and (min-width: $break-2) {
    :root,
-   .light :root {
+   .light:root {
       @include light-large();
    }
 
@@ -78,7 +78,7 @@
 
    @media (prefers-color-scheme: light) {
       :root,
-      .light :root {
+      .light:root {
          @include light-large();
       }
 
@@ -92,7 +92,7 @@
          @include dark-large();
       }
 
-      .light :root {
+      .light:root {
          @include light-large();
       }
    }
