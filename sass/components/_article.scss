@@ -52,4 +52,10 @@ article {
          text-decoration-color: var(--hover-underline);
       }
    }
+
+   .subtitle {
+      font: {
+         style: italic;
+      }
+   }
 }
