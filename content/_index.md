@@ -4,8 +4,12 @@ sort_by = "date"
 
 [extra]
 now = """
-In late January, I joined [LinkedIn] as a Staff Software Engineer, working on front-end infrastructure.
+- In March, I will be giving an updated version of my workshop on TypeScript and Ember.js [at EmberConf]
+- In February, I began the formal training process to become a ruling elder at [our church].
+- In late January, I joined [LinkedIn] as a Staff Software Engineer, working on front-end infrastructure.
 
+[at EmberConf]: https://emberconf.com/speakers.html#chris-krycho
+[our church]: https://forestgate.org
 [LinkedIn]: https://linkedin.com
 """
 +++
