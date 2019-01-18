@@ -19,6 +19,7 @@ $break-4: 1280px;
 :root {
    // -- Typography -- //
    --serif: Palatino, Book Antiqua, serif;
+   --serif-smcp: Palatino, Book Antiqua, serif;
    --sans: Century Gothic, sans-serif;
    --mono: Menlo, Consolas, monospace;
 
@@ -38,6 +39,7 @@ $break-4: 1280px;
 
 .fonts-loaded {
    --serif: Sabon, Adobe Garamond Pro, Garamond, serif;
+   --serif-smcp: Sabon SMCP, Adobe Garamond Pro, Garamond, serif;
    --sans: Cronos, Century Gothic, sans-serif;
    --mono: Hack, Menlo, Consolas, monospace;
 }

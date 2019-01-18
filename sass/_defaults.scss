@@ -6,3 +6,9 @@ a {
       color: var(--hover);
    }
 }
+
+abbr {
+   font-family: var(--serif-smcp);
+   text-transform: lowercase;
+   letter-spacing: 0.2pt;
+}
