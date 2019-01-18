@@ -3,7 +3,7 @@ base_url = "v4.chriskrycho.com"
 
 # Used in RSS by default
 title = "Chris Krycho"
-description = "Seeking excellence & truth."
+description = "Seeking truth & pursuing excellence."
 
 # the default language, used in RSS and coming i18n
 default_language = "en"
