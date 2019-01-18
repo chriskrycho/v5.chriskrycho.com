@@ -4,9 +4,9 @@ sort_by = "date"
 
 [extra]
 now = """
-I currently work as a senior software engineer at [Olo]
+In late January, I joined [LinkedIn] as a Staff Software Engineer, working on front-end infrastructure.
 
-[Olo]: https://www.olo.com
+[LinkedIn]: https://linkedin.com
 """
 +++
 
