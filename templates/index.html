@@ -13,7 +13,9 @@
 
    {%- if section.extra is defined and section.extra.now is defined -%}
    <article class='Now'>
-      {{section.extra.now | markdown(inline=true)}}
+      <h2>Now</h2>
+      <p class='subtitle'>What I'm currently up to.</p>
+      {{section.extra.now | markdown}}
    </article>
    {%- endif -%}
 </main>
