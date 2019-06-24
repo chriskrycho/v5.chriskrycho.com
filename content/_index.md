@@ -5,7 +5,7 @@ sort_by = "date"
 [extra]
 now = """
 * My wife and I just celebrated our tenth anniversary by taking a nice long trip to Jamaica, just the two of us. It was delightful!
-* I recently wrapped up my long-running [New Rustacean](https://newrustacean.com) podcast project, and have just *started* working on an even more ambitious project: to build a genuinely great research writing environment—working title <b><i>re</i>write</b>. There’s a [mailing list for updates][rewrite].
+* I recently wrapped up my long-running [New Rustacean](https://newrustacean.com) podcast project, and have just *started* working on an even more ambitious project: to build a genuinely great research writing environment—working title ***re*write**. There’s a [mailing list for updates][rewrite].
 * I started as a staff software engineer at [LinkedIn] early this year, working on front-end infrastructure.
 * I dealt with some nasty burnout in the latter half of 2018. I [blogged about it][burnout] quite a bit. I expect to *keep* blogging about it as appropriate, but at a lower volume.
 
