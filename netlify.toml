@@ -2,11 +2,11 @@
 # assuming the gutenberg site is in a docs folder, if it isn't you don't need 
 # to have a `base` variable but you do need the `publish` and `command`
 publish = "public"
-command = "gutenberg build"
+command = "zola build"
 
 [build.environment]
 # Set the version name that you want to use and Netlify will automatically use it
-GUTENBERG_VERSION = "0.4.2"
+ZOLA_VERSION = "0.8.0"
 
 # The magic for deploying previews of branches
 # We need to override the base url with whatever url Netlify assigns to our 
@@ -14,4 +14,4 @@ GUTENBERG_VERSION = "0.4.2"
 # `$DEPLOY_PRIME_URL`.
 
 [context.deploy-preview]
-command = "gutenberg build --base-url $DEPLOY_PRIME_URL"
+command = "zola build --base-url $DEPLOY_PRIME_URL"
