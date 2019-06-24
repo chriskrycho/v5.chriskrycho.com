@@ -1,4 +1,8 @@
 article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
    p, ul, ol {
       max-width: 32em;
    }

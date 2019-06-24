@@ -6,7 +6,13 @@ body {
    color: var(--fg);
    background-color: var(--bg);
    padding: 0;
-   margin: 0;
+   margin: {
+      top: 0.5rem;
+      right: 0;
+      bottom: 0;
+      left: 0;
+   }
+   box-shadow: 0 0 1rem var(--gray-0);
 
    display: grid;
    grid: {
@@ -35,22 +41,15 @@ body {
 }
 
 @media screen {
-   @media (min-width: $break-0) {
-      body {
-         grid-template-areas:
-            "h h h"
-            ". m ."
-            "n n n";
-      }
-   }
-
    @media (min-width: $reflow) {
       body {
-         margin-left: 0.5rem;
-         box-shadow: 0 0 1rem var(--gray-0);
-         grid-template-areas:
-            ". h h h h h h n n n"
-            ". . m m m m m n n n";
+         margin: {
+            top: 0;
+            left: 0.5rem;
+         }
+         grid-template:
+            "h h n" auto
+            "m m n" auto / 1fr 1fr minmax(max-content, 20%);
 
          nav {
             min-height: 100%;

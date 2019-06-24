@@ -6,9 +6,7 @@
       {%- if config.extra.headshot -%}
          <img src='{{config.extra.headshot}}' alt='Headshot of Chris' />
       {%- endif -%}
-      <div class='Bio_text'>
-         {{section.content | safe}}
-      </div>
+      {{section.content | safe}}
    </article>
 </main>
 {%- endblock main -%}

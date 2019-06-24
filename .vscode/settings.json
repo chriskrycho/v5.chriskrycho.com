@@ -1,6 +1,14 @@
 {
-  "files.associations": {
-    "*.html": "jinja-html"
-  },
-  "editor.rulers": [90]
+   "files.associations": {
+      "*.html": "jinja-html"
+   },
+   "editor.rulers": [90],
+   "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "public": true
+   }
 }

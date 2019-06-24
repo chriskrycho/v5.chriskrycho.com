@@ -32,18 +32,6 @@
          }
       }
    }
-
-   position: relative;
-   &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: calc(1rem + 100%);
-      z-index: -1;
-      height: 0;
-      width: 100%;
-      border-top: 1px solid green;
-   }
 }
 
 .site-subtitle {
