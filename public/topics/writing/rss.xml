@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Chris Krycho</title>
+        <link>v4.chriskrycho.com</link>
+        <description>Seeking truth &amp; pursuing excellence.</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="v4.chriskrycho.com/topics/writing/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Mon, 16 Jul 2018 07:00:00 -0700</lastBuildDate>
+        
+            <item>
+                <title>Blog as Note-Taking Tool</title>
+                <pubDate>Mon, 16 Jul 2018 07:00:00 -0700</pubDate>
+                <link>v4.chriskrycho.com/blog-as-note-taking-tool/</link>
+                <guid>v4.chriskrycho.com/blog-as-note-taking-tool/</guid>
+                <description>&lt;p&gt;I have a habit that might not make sense to you. I reread my own blog posts fairly regularly. It’s not vanity—not some weird obsession with my own awesomeness in the form of my own writing or some such nonsense. It’s that in my blog posts over the last decade, I have a pretty serious backlog of &lt;em&gt;what I was thinking about at any given point in time.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It’s not exhaustive, by a long shot. It only includes things I actually decided to publish.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; There are, sadly, not many short thoughts in the mix. Nor is it well-tagged or organized in any internally-consistent way—even in any single version of the site, much less across versions. But nonetheless the history is still there, and I &lt;em&gt;can&lt;&#x2F;em&gt; traverse the various lines through it, such as they are. (Sometimes, even, the changes in organization and structure are illuminating about how I was thinking about things at the time!) In any case, my habit of linking to previous references to ideas has proven invaluable for the times when I want to trawl back through old posts and consider those old thoughts again.&lt;&#x2F;p&gt;
+&lt;p&gt;Reading old blog posts is a strange experience, of course. The person who wrote these things was recognizably myself; but I am not who I then I was, and I sometimes disagree with myself on the substance and often on the style. (I occasionally find an old gem and wonder how I ever managed to write so well.) That very strangeness, it turns out, is why I do this every so often, though. Thinking well is often a matter of forging connections between ideas that were previously not connected for us. We cannot consciously hold in our minds even a fraction of all the things we have thought about or even written something about over the years. We can, however, jog our memories, and let new connections form. And rereading one’s own blog post is a great way to do that.&lt;&#x2F;p&gt;
+&lt;p&gt;I’d not heard specifically of the &lt;a href=&quot;https:&#x2F;&#x2F;zettelkasten.de&quot;&gt;Zettelkasten method&lt;&#x2F;a&gt; until Alan Jacobs linked it a while back, but it fits this model pretty perfectly, and maps as well to ways I’ve been &lt;em&gt;trying&lt;&#x2F;em&gt; to structure my note-taking and thinking for the past few years. (I’m going to be consciously doing more of this in &lt;a href=&quot;http:&#x2F;&#x2F;www.bear-writer.com&quot;&gt;Bear&lt;&#x2F;a&gt;, my current notes app of choice. I’ll probably write up my experience that way once I’ve actually had some experience!) But this also ties into some of the things Jacobs has been &lt;a href=&quot;https:&#x2F;&#x2F;blog.ayjay.org&#x2F;the-blog-garden&#x2F;&quot; title=&quot;The Blog Garden&quot;&gt;musing out loud&lt;&#x2F;a&gt; about in his own blog over the last week. It’s not just that a blog can serve as a place to do some of the fleshing-out of ideas. It’s not just that a blog can be a record of the development of ideas. It can also serve to jog new ideas if you read yourself again, displaced (both literally and temporally) from the original writing of the thing. A blog is kind of like a public notebook, and while it &lt;em&gt;may&lt;&#x2F;em&gt; be useful for others to browse through it, is &lt;em&gt;is&lt;&#x2F;em&gt; useful for me to browse back through it.&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;Though: if you look at the archives, especially including those on my [first real blog](http:&#x2F;&#x2F;blog.chriskrycho.com &amp;quot;Thoughts; A Flame&amp;quot;) and [the previous iteration of this site](http:&#x2F;&#x2F;2012-2013.chriskrycho.com), you’ll notice that I published a lot of posts about a lot of subjects, whether my thoughts were especially well-formed or not.
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;&lt;&#x2F;div&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>A Meander</title>
+                <pubDate>Fri, 09 Feb 2018 07:00:00 -0700</pubDate>
+                <link>v4.chriskrycho.com/a-meander/</link>
+                <guid>v4.chriskrycho.com/a-meander/</guid>
+                <description>&lt;p&gt;This is a meander. I have a bunch of mostly-unformed thoughts, and I want to write, and the two come out here, together, in the next few minutes before I start my workday proper (because I stayed up late last night working on open source software and got up late accordingly, and so have a great deal less of &lt;a href=&quot;http:&#x2F;&#x2F;www.chriskrycho.com&#x2F;2017&#x2F;knowing-your-rhythms.html&quot; title=&quot;“Knowing Your Rhythms”&quot;&gt;my normally-allocated writing time&lt;&#x2F;a&gt; available today).&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;1&quot;&gt;1.&lt;&#x2F;h2&gt;
+&lt;p&gt;Open-source software is a very strange place, and the dynamics of it favor those of us who already have well-paying jobs and lots of flexibility in our schedule.&lt;&#x2F;p&gt;
+&lt;p&gt;This isn’t &lt;em&gt;necessarily&lt;&#x2F;em&gt; a bad thing. It means that anyone who wants to use open-source contribution as a gauge of someone’s fitness to work is making a pretty foolish decision, though: they’re inherently cutting off a whole sector---dare I say it, a whole &lt;em&gt;class&lt;&#x2F;em&gt;---of people who simply do not (and, barring being given a pretty surprising break, will never) have that kind of stability and flexibility.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2&quot;&gt;2.&lt;&#x2F;h2&gt;
+&lt;p&gt;Twitter is really, &lt;em&gt;really&lt;&#x2F;em&gt; bad for meaningful discussion. I follow both &lt;a href=&quot;https:&#x2F;&#x2F;mobile.twitter.com&#x2F;noahpinion&quot;&gt;Noah Smith (@noahpinion)&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;mobile.twitter.com&#x2F;lymanstoneky&quot;&gt;Lyman Stone (@lymanstoneky)&lt;&#x2F;a&gt;, and they’re both extremely interesting follows, and they’re both clearly &lt;em&gt;really&lt;&#x2F;em&gt; smart and &lt;em&gt;really&lt;&#x2F;em&gt; well-informed, and in their off-Twitter writing they both do a good job of fairly representing others’ views and interacting with them.&lt;&#x2F;p&gt;
+&lt;p&gt;On Twitter, their arguments are a disaster.&lt;&#x2F;p&gt;
+&lt;p&gt;This is not specific to Smith and Stone. This is Twitter in one pair of interlocutors.&lt;&#x2F;p&gt;
+&lt;p&gt;Seriously: stop tweeting and start blogging again, if you have an &lt;em&gt;argument&lt;&#x2F;em&gt; to make rather than just a pithy, one-off observation or a link to share.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3&quot;&gt;3.&lt;&#x2F;h2&gt;
+&lt;p&gt;You can get a surprising amount of writing done in 5 minutes, if you’re willing to just word-vomit. (This whole post, start to finish, took me 12 minutes.)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4&quot;&gt;4.&lt;&#x2F;h2&gt;
+&lt;p&gt;I need to read more poetry; more rich, good fiction; more rich, good nonfiction. I’ve read a lot of nonfiction in the last five years, but I wouldn’t call most of it &lt;em&gt;rich&lt;&#x2F;em&gt;. Most of it---most of my seminary reading, that is---was &lt;em&gt;just okay&lt;&#x2F;em&gt;; very little of it engaged deeply with thought critical of its own perspective. (Major exceptions: David Koyzis’ really excellent &lt;em&gt;Political Visions and Illusions&lt;&#x2F;em&gt;, Alvin Plantinga’s &lt;em&gt;Where the Conflict Really Lies&lt;&#x2F;em&gt;, and of course St. Athanasius’ &lt;em&gt;On the Incarnation&lt;&#x2F;em&gt;.)&lt;&#x2F;p&gt;
+&lt;p&gt;But I find that my own writing is far sharper, clearer, and better when I’m drawing &lt;em&gt;widely&lt;&#x2F;em&gt; and from &lt;em&gt;deep wells&lt;&#x2F;em&gt;. Widely, because I find that too much time in the same spot overly narrows my focus, whether that is apologetics or programming languages. From deep wells because, frankly, there is too much out there which warrants nothing more than a skim &lt;em&gt;at most&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;And that is all!&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title></title>
+                <pubDate>Sat, 08 Jul 2017 21:45:00 -0700</pubDate>
+                <link>v4.chriskrycho.com/book-list/</link>
+                <guid>v4.chriskrycho.com/book-list/</guid>
+                <description>&lt;p&gt;I&#x27;ve just posted my in-progress &lt;a href=&quot;http:&#x2F;&#x2F;www.chriskrycho.com&#x2F;2017-book-list.html&quot;&gt;2017 Book List&lt;&#x2F;a&gt;. I&#x27;ll update it with books as I finish them, and I&#x27;ll also update it with reviews (even of the &amp;quot;here&#x27;s a brief comment&amp;quot; variety) as I do them. This is something I&#x27;ve been thinking about doing for my own sake for a while, and bumping into &lt;a href=&quot;http:&#x2F;&#x2F;tbrown.org&#x2F;notes&#x2F;2017&#x2F;06&#x2F;23&#x2F;reading-and-sharing&#x2F;&quot;&gt;this post by Tim Brown&lt;&#x2F;a&gt; reminded me how much I want to be sharing what I read with other people.&lt;&#x2F;p&gt;
+&lt;p&gt;Sometimes I get myself spun up on thinking that I need to be reviewing books with the best of them. In reality, I really just want to do like Tim says in that post (emphasis his):&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When I am reading and sharing ideas about what I have read, I feel like my best self. &lt;em&gt;I want more of that feeling.&lt;&#x2F;em&gt;... I’m wondering if acknowledging what I read, along with a substantial visual (a book cover image?) and any highlights or notes, could feel just as good as having a physical book.... Maybe I could list my piles of books here on my website, and link them to blog post entries with highlights&#x2F;notes.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;That&#x27;s it exactly. So I&#x27;m going ahead and doing the work: I&#x27;m going to keep that list up to date, and I&#x27;m going to try to write and share &lt;em&gt;something&lt;&#x2F;em&gt; about every book I read for the rest of the year. It doesn&#x27;t have to be a lot---just a sentence or two will do in many cases. &amp;quot;I liked it&amp;quot; or &amp;quot;This had a lot of potential but didn&#x27;t quite measure up to it.&amp;quot; Something simple like &lt;a href=&quot;https:&#x2F;&#x2F;wynnnetherland.com&#x2F;reviews&#x2F;to-hell-and-back-europe-1914-1949&#x2F;&quot;&gt;what Wynn Netherland does&lt;&#x2F;a&gt;, or something long and careful when it makes good sense.&lt;&#x2F;p&gt;
+&lt;p&gt;Maybe someday I&#x27;ll be able to write one of those killer reviews that ends up changing a whole conversation, or maybe I&#x27;ll just have a bunch of interesting notes I can look back on later and be able to see what I thought about a book when I&#x27;m curious a decade later. Either way, I think it&#x27;ll be a nice win.&lt;&#x2F;p&gt;
+&lt;p&gt;So: &lt;a href=&quot;http:&#x2F;&#x2F;www.chriskrycho.com&#x2F;2017-book-list.html&quot;&gt;book list&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

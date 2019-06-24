@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='utf-8' />
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Chris Krycho</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+   <link rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='/style.css' />
+</head>
+<body>
+   <header>
+      <h1 class='site-title'>
+         <a href='/'>
+            <img src='/images/logo.png' alt='CK' class='logo' />
+            <span>Chris Krycho</span>
+         </a>
+      </h1>
+      <h2 class='site-subtitle'>Seeking truth &amp; pursuing excellence.</h2>
+   </header><main>
+   <article>
+      <header>
+         <h1>True Myth 2.2</h1>
+         
+      </header>
+      <p>I just released v2.2<sup class="footnote-reference"><a href="#1">1</a></sup> of True Myth, with two new pairs of helpers to deal with <a href="v4.chriskrycho.com/true-myth-22/#safe-java-script-object-property-lookup">safe JavaScript object property lookup with <code>Maybe</code>s</a> and <a href="v4.chriskrycho.com/true-myth-22/#handling-exception-throwing-functions">handling exception-throwing code with <code>Result</code>s</a>.</p>
+<h2 id="safe-javascript-object-property-lookup">Safe JavaScript object property lookup</h2>
+<p>We often deal with <em>optional properties</em> on JavaScript objects, and by default JavaScript just gives us <code>undefined</code> if a property doesn't exist on an object and we look it up:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">type </span><span style="color:#c0c5ce;">Person = {
+  </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">?: string;
+};
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">me</span><span style="color:#c0c5ce;">: Person = { name: &#39;</span><span style="color:#a3be8c;">Chris</span><span style="color:#c0c5ce;">&#39; };
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">me</span><span style="color:#c0c5ce;">.name); </span><span style="color:#65737e;">// Chris
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">anonymous</span><span style="color:#c0c5ce;">: Person = {};
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">anonymous</span><span style="color:#c0c5ce;">.name); </span><span style="color:#65737e;">// undefined
+</span></pre>
+<p>We can already work around that with <code>Maybe.of</code>, of course:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">printName</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">: Person) {
+  </span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">name </span><span style="color:#c0c5ce;">= </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">of</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">.name);
+  </span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">unwrapOr</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">&lt;anonymous&gt;</span><span style="color:#c0c5ce;">&#39;));
+}
+</span></pre>
+<p>But this is a <em>really</em> common pattern! <code>Maybe.property</code> is a convenience method for dealing with this:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">printName</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">: Person) {
+  </span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">name </span><span style="color:#c0c5ce;">= </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">property</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;, </span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">);
+  </span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">unwrapOr</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">&lt;anonymous&gt;</span><span style="color:#c0c5ce;">&#39;));
+}
+</span></pre>
+<p>At first blush, this might be a head-scratcher: after all, it's actually slightly <em>longer</em> than doing it with <code>Maybe.of</code>. However, it ends up showing its convenience when you're using the curried form in a functional pipeline. For example, if we had a <em>list</em> of people, and wanted to get a list of just the people's names (ignoring anonymous people), we might do this:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">justNames</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">people</span><span style="color:#c0c5ce;">: Person[]): string[] {
+  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">people
+    </span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">map</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">property</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;))
+    .</span><span style="color:#8fa1b3;">filter</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#bf616a;">isJust</span><span style="color:#c0c5ce;">)
+    .</span><span style="color:#8fa1b3;">map</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Just</span><span style="color:#c0c5ce;">.</span><span style="color:#bf616a;">unwrap</span><span style="color:#c0c5ce;">);
+}
+</span></pre>
+<p>Another common scenario is dealing with the same kind of lookup, but in the context of a <code>Maybe</code> of an object. Prior to 2.2.0, we could do this with a combination of <code>Maybe.of</code> and <code>andThen</code>:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">getName</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">maybePerson</span><span style="color:#c0c5ce;">: Maybe&lt;Person&gt;): string {
+  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">maybePerson</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">andThen</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">p </span><span style="color:#b48ead;">=&gt; </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">of</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">.name));
+}
+</span></pre>
+<p>This is harder to compose than we might like, and we <em>can't</em> really write it in a &quot;point free&quot; style, even if that's more convenient. We also end up repeating the <code>andThen</code> invocation every time we go down a layer if we have a more deeply nested object than this. Accordingly, 2.2.0 also adds another convenience method for dealing with deeply nested lookups on objects in a type-safe way: <code>Maybe.get</code> (and the corresponding instance methods).</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#65737e;">// Function version:
+</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">getNameFn</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">maybePerson</span><span style="color:#c0c5ce;">: Maybe&lt;Person&gt;): string {
+  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;, </span><span style="color:#bf616a;">maybePerson</span><span style="color:#c0c5ce;">);
+}
+
+</span><span style="color:#65737e;">// Method version
+</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">getNameM</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">maybePerson</span><span style="color:#c0c5ce;">: Maybe&lt;Person&gt;): string {
+  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">maybePerson</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;);
+}
+</span></pre>
+<p>Again, since the function version is curried, we can use this to create other little helper functions along the way:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">const </span><span style="color:#bf616a;">getName </span><span style="color:#c0c5ce;">= </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;);
+
+</span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">getAllNames</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">people</span><span style="color:#c0c5ce;">: Maybe&lt;Person&gt;[]): string[] {
+  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">people
+    </span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">map</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">getName</span><span style="color:#c0c5ce;">)
+    .</span><span style="color:#8fa1b3;">filter</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#bf616a;">isJust</span><span style="color:#c0c5ce;">)
+    .</span><span style="color:#8fa1b3;">map</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Just</span><span style="color:#c0c5ce;">.</span><span style="color:#bf616a;">unwrap</span><span style="color:#c0c5ce;">);
+}
+</span></pre>
+<p>And if our object is a deeper type:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">type </span><span style="color:#c0c5ce;">ComplicatedPerson = {
+  </span><span style="color:#bf616a;">name</span><span style="color:#c0c5ce;">?: {
+    </span><span style="color:#bf616a;">first</span><span style="color:#c0c5ce;">?: string;
+    </span><span style="color:#bf616a;">last</span><span style="color:#c0c5ce;">?: string;
+  };
+};
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">none</span><span style="color:#c0c5ce;">: Maybe&lt;ComplicatedPerson&gt; = </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">nothing</span><span style="color:#c0c5ce;">();
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">none</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">toString</span><span style="color:#c0c5ce;">());
+</span><span style="color:#65737e;">// Nothing
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">none</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">first</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">toString</span><span style="color:#c0c5ce;">());
+</span><span style="color:#65737e;">// Nothing
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">nameless</span><span style="color:#c0c5ce;">: Maybe&lt;ComplicatedPerson&gt; = </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">just</span><span style="color:#c0c5ce;">({});
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">nameless</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">toString</span><span style="color:#c0c5ce;">());
+</span><span style="color:#65737e;">// Just([object Object]);
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">nameless</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">first</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">toString</span><span style="color:#c0c5ce;">());
+</span><span style="color:#65737e;">// Nothing
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">firstOnly</span><span style="color:#c0c5ce;">: Maybe&lt;ComplicatedPerson&gt; = </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">just</span><span style="color:#c0c5ce;">({
+  name: {
+    first: &#39;</span><span style="color:#a3be8c;">Chris</span><span style="color:#c0c5ce;">&#39;,
+  },
+});
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">firstOnly</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">toString</span><span style="color:#c0c5ce;">());
+</span><span style="color:#65737e;">// Just([object Object]);
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">firstOnly</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">first</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#96b5b4;">toString</span><span style="color:#c0c5ce;">());
+</span><span style="color:#65737e;">// Just(Chris);
+</span></pre>
+<p>Note that in these cases, since the type we're dealing with is some kind of object with specific keys, if you try to pass in a key which doesn't existing on the relevant object type, you'll get a type error. (Or, if you're using the curried version, if you try to pass an object which doesn't have that key, you'll get a type error.) However, we also often use JavaScript objects as <em>dictionaries</em>, mapping from a key to a value (most often, but not always, a <em>string</em> key to a specific value type). <code>Maybe.property</code> and <code>Maybe.get</code> both work with dictionary types as well.</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">type </span><span style="color:#c0c5ce;">Dict&lt;T&gt; = { [</span><span style="color:#bf616a;">key</span><span style="color:#c0c5ce;">: string]: T };
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">ages</span><span style="color:#c0c5ce;">: Dict&lt;number&gt; = {
+  &#39;</span><span style="color:#a3be8c;">chris</span><span style="color:#c0c5ce;">&#39;: </span><span style="color:#d08770;">31</span><span style="color:#c0c5ce;">,
+};
+
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">property</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">chris</span><span style="color:#c0c5ce;">&#39;, </span><span style="color:#bf616a;">ages</span><span style="color:#c0c5ce;">)); </span><span style="color:#65737e;">// Just(31)
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">property</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">joe</span><span style="color:#c0c5ce;">&#39;, </span><span style="color:#bf616a;">ages</span><span style="color:#c0c5ce;">)); </span><span style="color:#65737e;">// Nothing
+
+</span><span style="color:#b48ead;">let </span><span style="color:#bf616a;">maybeAges</span><span style="color:#c0c5ce;">: Maybe&lt;Dict&lt;number&gt;&gt; = </span><span style="color:#bf616a;">Maybe</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">of</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">ages</span><span style="color:#c0c5ce;">);
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">ages</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">chris</span><span style="color:#c0c5ce;">&#39;)); </span><span style="color:#65737e;">// Just(31)
+</span><span style="color:#ebcb8b;">console</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">log</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">ages</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">get</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">joe</span><span style="color:#c0c5ce;">&#39;)); </span><span style="color:#65737e;">// Nothing
+</span></pre>
+<p>Hopefully you'll find these helpful! I ran into the motivating concerns for them pretty regularly in the codebase I work with each day, so I'm looking forward to integrating them into that app!</p>
+<h2 id="handling-exception-throwing-functions">Handling exception-throwing functions</h2>
+<p>The other big additions are the <code>Result.tryOr</code> and <code>Result.tryOrElse</code> functions. Both of these help us deal with functions which throw exceptions. Since JavaScript doesn't have any <em>native</em> construct like <code>Result</code>, idiomatic JavaScript <em>does</em> often throw exceptions. And that can be frustrating you want to have a value type like a <code>Result</code> to deal with instead.</p>
+<p>Sometimes, you don't care <em>what</em> the exception was; you just want a default value (or a value constructed from the local state of your program, but either way just one value) you can use as the error to keep moving along through your program. In that case, you wrap a function which throws an error in <code>Result.tryOr</code>. Let's assume we have a function either returns a number of throws an error, which we'll just call <code>badFunction</code> because the details here don't really matter.</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">const </span><span style="color:#bf616a;">err </span><span style="color:#c0c5ce;">= &#39;</span><span style="color:#a3be8c;">whoops! something went wrong!</span><span style="color:#c0c5ce;">&#39;;
+</span><span style="color:#b48ead;">const </span><span style="color:#bf616a;">result </span><span style="color:#c0c5ce;">= </span><span style="color:#bf616a;">Result</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">tryOr</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">err</span><span style="color:#c0c5ce;">, </span><span style="color:#8fa1b3;">badFunction</span><span style="color:#c0c5ce;">());
+</span></pre>
+<p>The <code>result</code> value has the type <code>Result&lt;number, string&gt;</code>. If <code>badFunction</code> through an error, we have an <code>Err</code> with the value <code>'whoops! something went wrong!'</code> in it. If it <em>didn't</em> throw an error, we have an <code>Ok</code> with the number returned from <code>badFunction</code> in it. Handy!</p>
+<p>Of course, we often want to <em>do something</em> with the exception that gets thrown. For example, we might want to log an error to a bug-tracking service, or display a nice message to the user, or any number of other things. In that case, we can use the <code>Result.tryOrElse</code> function. Let's imagine we have a function <code>throwsHelpfulErrors</code> which returns a <code>number</code> or does just what it says on the tin: it throws a bunch of different kinds of errors, which are helpfully distinct and carry around useful information with them. Note that the type of the error-handling callback we pass in is <code>(error: unknown) =&gt; E</code>, because JS functions can throw <em>anything</em> as their error.</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">const </span><span style="color:#8fa1b3;">handleErr </span><span style="color:#c0c5ce;">= (</span><span style="color:#bf616a;">e</span><span style="color:#c0c5ce;">: unknown): string </span><span style="color:#b48ead;">=&gt; </span><span style="color:#c0c5ce;">{
+  </span><span style="color:#b48ead;">if </span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">e </span><span style="color:#c0c5ce;">instanceof </span><span style="color:#ebcb8b;">Error</span><span style="color:#c0c5ce;">) {
+    </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">e</span><span style="color:#c0c5ce;">.</span><span style="color:#bf616a;">message</span><span style="color:#c0c5ce;">;
+  } </span><span style="color:#b48ead;">else if </span><span style="color:#c0c5ce;">(typeof </span><span style="color:#bf616a;">e </span><span style="color:#c0c5ce;">=== &#39;</span><span style="color:#a3be8c;">string</span><span style="color:#c0c5ce;">&#39;) {
+    </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">e</span><span style="color:#c0c5ce;">;
+  } </span><span style="color:#b48ead;">else if </span><span style="color:#c0c5ce;">(typeof </span><span style="color:#bf616a;">e </span><span style="color:#c0c5ce;">=== &#39;</span><span style="color:#a3be8c;">number</span><span style="color:#c0c5ce;">&#39;) {
+    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">`</span><span style="color:#a3be8c;">Status code: ${</span><span style="color:#bf616a;">e</span><span style="color:#a3be8c;">}</span><span style="color:#c0c5ce;">`;
+  } </span><span style="color:#b48ead;">else </span><span style="color:#c0c5ce;">{
+    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">Unknown error</span><span style="color:#c0c5ce;">&#39;;
+  }
+}
+
+</span><span style="color:#b48ead;">const </span><span style="color:#bf616a;">result </span><span style="color:#c0c5ce;">= </span><span style="color:#bf616a;">Result</span><span style="color:#c0c5ce;">.</span><span style="color:#8fa1b3;">tryOrElse</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">handleErr</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">throwsHelpfulErrors</span><span style="color:#c0c5ce;">);
+</span></pre>
+<p>Here, <code>result</code> is once again a <code>Result&lt;number, string&gt;</code>, but the error side has whatever explanatory information the exception provided to us, plus some massaging we did ourselves. This is particularly handy for converting exceptions to <code>Result</code>s when you have a library which uses exceptions extensively, but in a carefully structured way. (You could, in fact, just use an identity function to return whatever error the library throws—as long as you write your types carefully and accurately as a union of those error types for the <code>E</code> type parameter! However, doing that would require you to explicitly opt into the use of <code>any</code> to write it as a simple identity function, so I'm not sure I'd <em>recommend</em> it. If you go down that path, do it with care.)</p>
+<hr />
+<p>And that's it for True Myth 2.2! Enjoy, and of course please <a href="https://github.com/true-myth/true-myth/issues">open an issue</a> if you run into any bugs!</p>
+<p>Thanks to <a href="https://github.com/bmakuh">Ben Makuh</a> for implementing <code>Result.tryOr</code> and <code>Result.tryOrElse</code>. Thanks to Ben and also <a href="https://github.com/tansongyang">Frank Tan</a> for helpful input on the <code>Maybe.get</code> and <code>Maybe.property</code> <abbr>API</abbr> design!</p>
+<hr />
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>I published both <code>2.2.0</code> and <code>2.2.1</code>, because once again I missed something along the way. This time it was making sure all the new functions were optionally curried to support partial application.</p>
+</div>
+
+   </article>
+</main><nav class='SiteNav'>
+      <ul>
+         <li><a class='current' href=''>Home</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Posts</a></li>
+         <li><a href=''>Essays</a></li>
+         <li><a href=''>Notes</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Projects</a></li>
+         <li><a href=''>Podcasts</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>About</a></li>
+         <li><a href=''>Curriculum Vitae</a></li>
+         <li><a href=''>Contact</li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Colophon</a></li>
+      </ul>
+   </nav>
+
+   
+   <script src='/js/fontfaceobserver.standalone.js'></script>
+   <script>
+      Promise.all([
+         new FontFaceObserver('Sabon'),
+         new FontFaceObserver('Cronos')
+      ]).then(() => document.documentElement.classList.add('fonts-loaded'))
+   </script>
+
+   
+</body>
+</html>
