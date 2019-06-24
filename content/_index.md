@@ -1,9 +1,24 @@
 +++
 title = "Chris Krycho"
 sort_by = "date"
++++
 
-[extra]
-now = """
+Hello! I am first of all a Christian, husband, and dad. I also [build software][cv], [write][blog], [podcast], [run], and every once in a while [compose music][soundcloud]. Please feel free to say hello by [sending me an email][email].
+
+[cv]: ./pages/cv.md
+[blog]: ./pages/archives.md
+[podcast]: ./pages/podcasts.md
+[run]: https://www.strava.com/athletes/1079509
+[email]: mailto:hello@chriskrycho.com
+[twitter]: https://twitter.com/chriskrycho
+[soundcloud]: https://soundcloud.com/chriskrycho
+
+---
+
+## Now
+
+<p><i class='editorial'>What I'm currently up to</i></p>
+
 * My wife and I just celebrated our tenth anniversary by taking a nice long trip to Jamaica, just the two of us. It was delightful!
 * I recently wrapped up my long-running [New Rustacean](https://newrustacean.com) podcast project, and have just *started* working on an even more ambitious project: to build a genuinely great research writing environment—working title ***re*write**. There’s a [mailing list for updates][rewrite].
 * I started as a staff software engineer at [LinkedIn] early this year, working on front-end infrastructure.
@@ -32,15 +47,3 @@ There’s a lot going on here, and it’s always changing. See the [the dedicate
 * Since early 2017, I've been working on making the experience of writing TypeScript and Ember.js together awesome. [typed-ember](https://github.com/typed-ember) on GitHub is where all the action is at. I've also been writing a series of blog posts, ["Typing Your Ember"](http://www.chriskrycho.com/typing-your-ember/), to help people get off the ground.
 
 * I published [True Myth](https://github.com/chriskrycho/true-myth), a library for safer (functional) programming in TypeScript, Flow, or plain-old JavaScript. You can read about the project [in its docs](https://true-myth.js.org) or in my introductory [blog post](http://www.chriskrycho.com/2017/announcing-true-myth-10.html).
-"""
-+++
-
-Hello! I am first of all a Christian, husband, and dad. I also [build software][cv], [write][blog], [podcast], [run], and every once in a while [compose music][soundcloud]. Please feel free to say hello by [sending me an email][email].
-
-[cv]: ./pages/cv.md
-[blog]: ./pages/archives.md
-[podcast]: ./pages/podcasts.md
-[run]: https://www.strava.com/athletes/1079509
-[email]: mailto:hello@chriskrycho.com
-[twitter]: https://twitter.com/chriskrycho
-[soundcloud]: https://soundcloud.com/chriskrycho
