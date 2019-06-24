@@ -21,24 +21,38 @@
       <h2 class='site-subtitle'>{{config.description}}</h2>
    </header>
 
-   <nav class='SiteNav'>
-      <ul>
-         <li><a href='/archives'>Archives</a></li>
-         <li><a href='/cv'>C.V.</a></li>
-         <li><a href='/contact'>Contact</a></li>
-      </ul>
-   </nav>
-
    {%- block main -%}
    <main>
       {% block main_content %}{% endblock main_content %}
    </main>
    {%- endblock main -%}
 
-   <footer>
-   {%- block footer_content -%}
-   {%- endblock footer_content -%}
-   </footer>
+   <nav class='SiteNav'>
+      <ul>
+         <li><a class='current' href=''>Home</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Posts</a></li>
+         <li><a href=''>Essays</a></li>
+         <li><a href=''>Notes</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Projects</a></li>
+         <li><a href=''>Podcasts</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>About</a></li>
+         <li><a href=''>Curriculum Vitae</a></li>
+         <li><a href=''>Contact</li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Colophon</a></li>
+      </ul>
+   </nav>
 
    {# load fonts #}
    <script src='/js/fontfaceobserver.standalone.js'></script>

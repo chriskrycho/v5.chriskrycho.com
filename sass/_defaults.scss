@@ -2,7 +2,8 @@ a {
    color: var(--link);
    transition: color var(--transition);
 
-   &:hover, &:active {
+   &:hover,
+   &:active {
       color: var(--hover);
    }
 }
@@ -11,4 +12,42 @@ abbr {
    font-family: var(--serif-smcp);
    text-transform: lowercase;
    letter-spacing: 0.2pt;
+}
+
+:root {
+   --divider: hsl(222, 10%, 70%);
+}
+
+// Defines the *shape* of an `hr`. Does *not* define its layout, which needs to be set
+// appropriately in the contexts where it is used, e.g. by centering in the nav or by
+// *visually* centering in body text on large widths.
+hr {
+   height: 1rem;
+   width: 3em;
+   padding: 0;
+   margin: 1rem 0 0.25rem;
+   border: 0;
+   border-top: 1px solid var(--divider);
+   position: relative;
+
+   @mixin slash() {
+      content: "";
+      border-left: 1px solid var(--divider);
+      height: 110%;
+      transform: translateY(-2px) rotate(15deg);
+      position: absolute;
+      display: block;
+   }
+
+   &:before {
+      @include slash();
+      top: -50%;
+      right: calc(50% - 2px);
+   }
+
+   &:after {
+      @include slash();
+      top: -41%;
+      left: calc(50% - 2px);
+   }
 }

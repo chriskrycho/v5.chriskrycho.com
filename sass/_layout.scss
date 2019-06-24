@@ -1,0 +1,61 @@
+html {
+   background: var(--gray-1);
+}
+
+body {
+   color: var(--fg);
+   background-color: var(--bg);
+   padding: 0;
+   margin: 0;
+
+   display: grid;
+   grid: {
+      column-gap: 1%;
+      row-gap: ms(2);
+      template-areas:
+         "h"
+         "m"
+         "n";
+   }
+   align-content: start;
+   align-items: start;
+
+   header {
+      grid-area: h;
+   }
+
+   nav {
+      grid-area: n;
+      box-shadow: inset 0 0.4rem 1rem -0.4rem var(--gray-0);
+   }
+
+   main {
+      grid-area: m;
+   }
+}
+
+@media screen {
+   @media (min-width: $break-0) {
+      body {
+         grid-template-areas:
+            "h h h"
+            ". m ."
+            "n n n";
+      }
+   }
+
+   @media (min-width: $reflow) {
+      body {
+         margin-left: 0.5rem;
+         box-shadow: 0 0 1rem var(--gray-0);
+         grid-template-areas:
+            ". h h h h h h n n n"
+            ". . m m m m m n n n";
+
+         nav {
+            min-height: 100%;
+            box-shadow: inset 0.4rem 0 1rem -0.4rem var(--gray-0);
+         }
+      }
+   }
+}

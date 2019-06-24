@@ -5,13 +5,13 @@
    --fs-base: 16px;
 
    // Colors
-   --bg: var(--off-white);
-   --fg: var(--dark-gray);
+   --bg: var(--gray-5);
+   --fg: var(--gray-0);
    --link: var(--medium-blue);
-   --underline: var(--light-gray);
+   --underline: var(--gray-4);
    --hover: var(--dark-blue);
    --hover-underline: var(--light-blue);
-   --code-outline: var(--light-gray);
+   --code-outline: var(--gray-4);
 }
 
 @mixin dark {
@@ -19,13 +19,13 @@
    --fs-base: 17px;
 
    // Colors
-   --bg: var(--dark-gray);
-   --fg: var(--off-white);
+   --bg: var(--gray-0);
+   --fg: var(--gray-5);
    --link: var(--pale-blue);
-   --underline: var(--light-gray);
-   --hover: var(--off-white);
+   --underline: var(--gray-4);
+   --hover: var(--gray-5);
    --hover-underline: var(--light-blue);
-   --code-outline: var(--medium-gray);
+   --code-outline: var(--gray-2);
 }
 
 @mixin light-large {

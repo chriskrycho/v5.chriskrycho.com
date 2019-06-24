@@ -1,7 +1,8 @@
 @import './config';
-@import './defaults';
 @import './mixins';
+
+@import './defaults';
 
 @import './color-scheme';
 @import './components';
-
+@import './layout';

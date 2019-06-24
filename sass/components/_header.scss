@@ -12,6 +12,8 @@
       text-decoration: none;
       justify-content: center;
       align-items: center;
+      background: var(--bg);
+      z-index: 0;
 
       img {
          height: ms(4);
@@ -30,9 +32,22 @@
          }
       }
    }
+
+   position: relative;
+   &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: calc(1rem + 100%);
+      z-index: -1;
+      height: 0;
+      width: 100%;
+      border-top: 1px solid green;
+   }
 }
 
 .site-subtitle {
+   display: none;
    font: {
       family: var(--serif);
       weight: 400;
