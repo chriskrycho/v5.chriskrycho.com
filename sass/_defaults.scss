@@ -22,10 +22,10 @@ abbr {
 // appropriately in the contexts where it is used, e.g. by centering in the nav or by
 // *visually* centering in body text on large widths.
 hr {
-   height: 1rem;
-   width: 3em;
+   height: 1.25rem;
+   width: 3rem;
    padding: 0;
-   margin: 1rem 0 0.25rem;
+   margin: 1.25rem 0 0.5rem;
    border: 0;
    border-top: 1px solid var(--divider);
    position: relative;
