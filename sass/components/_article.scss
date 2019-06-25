@@ -32,15 +32,21 @@ article {
    }
 
    pre {
+      --pre-max-width: calc(var(--max-width) + 1rem);
+
+      width: 100%;
+      max-width: var(--pre-max-width);
       margin: ms(0) 0;
       padding: ms(-4);
       overflow-x: scroll;
+      background-color: var(--gray-1) !important; // overrides syntax highlighting
    }
 
    code {
       margin: 1em 0.1em;
       padding: 0.1em 0.275em;
       font-size: ms(-2);
+
    }
 
    a {
@@ -72,5 +78,9 @@ article {
 @media screen and (min-width: $reflow) {
    article {
       --width: 32rem;
+
+      pre {
+         width: calc(var(--width) + 1rem);
+      }
    }
 }
