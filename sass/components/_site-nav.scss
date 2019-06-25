@@ -55,20 +55,19 @@
          content: "";
          height: 0;
          border-top: 1px solid var(--bar-color);
-         width: ms(4);
+         width: calc(var(--hr-width) / 2);
          position: absolute;
+         top: 0.4rem;
          transition: border-color var(--transition);
       }
 
       &:before {
          @include bars;
-         top: 0.4rem;
          left: calc(0.4rem + 100%);
       }
 
       &:after {
          @include bars;
-         top: 0.4rem;
          right: calc(0.4rem + 100%);
       }
    }

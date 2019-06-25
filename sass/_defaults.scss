@@ -16,6 +16,8 @@ abbr {
 
 :root {
    --divider: hsl(222, 10%, 70%);
+
+   --hr-width: 3rem;
 }
 
 // Defines the *shape* of an `hr`. Does *not* define its layout, which needs to be set
@@ -25,7 +27,7 @@ hr {
    height: 1.25rem;
    width: 3rem;
    padding: 0;
-   margin: 1.25rem 0 0.5rem;
+   margin: 1.75rem 0 0.5rem;
    border: 0;
    border-top: 1px solid var(--divider);
    position: relative;
