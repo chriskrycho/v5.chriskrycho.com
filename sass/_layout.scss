@@ -23,7 +23,6 @@ body {
          "m"
          "n";
    }
-   align-content: start;
    align-items: start;
 
    header {
@@ -37,6 +36,11 @@ body {
 
    main {
       grid-area: m;
+      max-width: 100vw;
+      padding: {
+         left: ms(-2);
+         right: ms(-2);
+      }
    }
 }
 
