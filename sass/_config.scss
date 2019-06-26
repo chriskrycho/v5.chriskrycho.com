@@ -6,7 +6,7 @@
 
 // https://www.modularscale.com/?1,4&em&1.333
 $modularscale: (
-   base: 1em 5em,
+   base: 1em 4em,
    ratio: 1.5
 );
 
@@ -33,10 +33,10 @@ $reflow: $break-4;
    --gray-4: hsl(222, 10%, 70%);
    --gray-5: hsl(222, 10%, 99%);
 
-   --pale-blue: hsl(208, 85%, 71%);
-   --light-blue: hsl(208, 85%, 45%);
-   --medium-blue: hsl(208, 85%, 33%);
-   --dark-blue: hsl(208, 85%, 18%);
+   --blue-0: hsl(208, 85%, 18%);
+   --blue-1: hsl(208, 85%, 33%);
+   --blue-2: hsl(208, 85%, 45%);
+   --blue-4: hsl(208, 85%, 71%);
 
    --transition: 0.25s ease;
 }

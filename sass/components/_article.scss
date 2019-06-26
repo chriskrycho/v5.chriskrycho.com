@@ -5,6 +5,7 @@ article {
    display: flex;
    flex-direction: column;
    align-items: center;
+   padding-bottom: ms(2);
 
    ul, ol {
       max-width: 32em;
@@ -86,6 +87,8 @@ article {
 @media screen and (min-width: $reflow) {
    article {
       --width: 32rem;
+
+      padding-bottom: ms(3);
 
       pre {
          width: calc(var(--width) + 1rem);

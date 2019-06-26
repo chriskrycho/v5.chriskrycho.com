@@ -45,7 +45,7 @@ body {
 }
 
 @media screen {
-   @media (min-width: $reflow) {
+   @media (min-width: $reflow) and (min-height: 540px) {
       body {
          margin: {
             top: 0;
@@ -53,7 +53,7 @@ body {
          }
          grid-template:
             "h h n" auto
-            "m m n" auto / 1fr 1fr minmax(max-content, 20%);
+            "m m n" auto / 1fr 1fr minmax(max-content, 25vw);
 
          nav {
             min-height: 100%;
