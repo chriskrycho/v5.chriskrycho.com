@@ -10,6 +10,14 @@ article {
       max-width: 32em;
    }
 
+   ol {
+      list-style: decimal outside;
+   }
+
+   ul {
+      list-style: circle outside;
+   }
+
    p {
       width: var(--width);
       max-width: var(--max-width);
