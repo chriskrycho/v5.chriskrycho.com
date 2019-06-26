@@ -42,16 +42,18 @@ hr {
       display: block;
    }
 
+   --slash-offset: calc(50% - 2px);
+
    &:before {
       @include slash();
-      top: -50%;
-      right: calc(50% - 2px);
+      top: -51%;
+      right: var(--slash-offset);
    }
 
    &:after {
       @include slash();
       top: -41%;
-      left: calc(50% - 2px);
+      left: var(--slash-offset);
    }
 }
 
