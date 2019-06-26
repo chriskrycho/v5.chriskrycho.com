@@ -3,8 +3,6 @@ html {
 }
 
 body {
-   color: var(--fg);
-   background-color: var(--bg);
    padding: 0;
    margin: {
       top: ms(-2);
@@ -16,16 +14,13 @@ body {
 
    display: grid;
    grid: {
-      column-gap: 1%;
-      row-gap: ms(2);
-      template-areas:
-         "h"
-         "m"
-         "n";
+      template-areas: "h" "m" "n";
    }
    align-items: start;
 
    header {
+      color: var(--fg);
+      background-color: var(--bg);
       grid-area: h;
    }
 
@@ -35,6 +30,8 @@ body {
    }
 
    main {
+      color: var(--fg);
+      background-color: var(--bg);
       grid-area: m;
       max-width: 100vw;
       padding: {
