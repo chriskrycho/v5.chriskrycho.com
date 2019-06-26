@@ -55,7 +55,9 @@ $reflow: $break-4;
 
 @media screen {
    @media (prefers-reduced-motion: reduce) {
-      --transition: 0s;
+      :root {
+         --transition: 0s;
+      }
    }
 }
 
