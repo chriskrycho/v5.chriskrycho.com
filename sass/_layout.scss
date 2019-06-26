@@ -7,12 +7,12 @@ body {
    background-color: var(--bg);
    padding: 0;
    margin: {
-      top: 0.5rem;
+      top: ms(-2);
       right: 0;
       bottom: 0;
       left: 0;
    }
-   box-shadow: 0 0 1rem var(--gray-0);
+   box-shadow: 0 0 ms(0) var(--gray-0);
 
    display: grid;
    grid: {
@@ -31,7 +31,7 @@ body {
 
    nav {
       grid-area: n;
-      box-shadow: inset 0 0.4rem 1rem -0.4rem var(--gray-0);
+      box-shadow: inset 0 ms(-4) ms(0) -#{ms(-4)} var(--gray-0);
    }
 
    main {
@@ -49,7 +49,7 @@ body {
       body {
          margin: {
             top: 0;
-            left: 0.5rem;
+            left: ms(-2);
          }
          grid-template:
             "h h n" auto
@@ -57,7 +57,7 @@ body {
 
          nav {
             min-height: 100%;
-            box-shadow: inset 0.4rem 0 1rem -0.4rem var(--gray-0);
+            box-shadow: inset ms(-4) 0 1rem -#{ms(-4)} var(--gray-0);
          }
       }
    }
