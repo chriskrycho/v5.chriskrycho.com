@@ -45,7 +45,7 @@ article {
 
       width: 100%;
       max-width: var(--pre-max-width);
-      margin: ms(0) 0;
+      margin: 0 0 ms(0);
       padding: ms(-4);
       overflow-x: scroll;
       background-color: var(--gray-1) !important; // overrides syntax highlighting
