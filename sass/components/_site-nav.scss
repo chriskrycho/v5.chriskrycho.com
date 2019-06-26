@@ -15,7 +15,8 @@
    letter-spacing: 1px;
 
    display: flex;
-   justify-content: space-around;
+   align-content: center;
+   justify-content: center;
 
    ul {
       margin: 0;
@@ -78,7 +79,16 @@
 }
 
 @media screen and (min-width: $reflow) {
-   .SiteNav ul {
-      padding-top: ms(12);
+   .SiteNav {
+      height: 100vh;
+      max-height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      ul {
+         justify-content: center;
+      }
    }
 }
