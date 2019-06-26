@@ -9,14 +9,15 @@ article {
 
    ul, ol {
       max-width: 32em;
+      padding-left: ms(2);
    }
 
    ol {
-      list-style: decimal outside;
+      list-style: decimal;
    }
 
    ul {
-      list-style: circle outside;
+      list-style: circle;
    }
 
    p {
