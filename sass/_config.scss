@@ -4,11 +4,6 @@
    box-sizing: border-box;
 }
 
-html {
-   padding: 0;
-   margin: 0;
-}
-
 // https://www.modularscale.com/?1,4&em&1.333
 $modularscale: (
    base: 1em 5em,
@@ -62,5 +57,7 @@ $reflow: $break-4;
 }
 
 html {
+   padding: 0;
+   margin: 0;
    font: var(--fs-base) / ms(2) var(--serif);
 }
