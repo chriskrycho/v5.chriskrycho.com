@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='utf-8' />
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>{{ config.title }}</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+   {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
+   <link rel='stylesheet' type='text/css' media='screen' href='/style.css' />
+
+   <link preload as='style' rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
+   <link preload as='style' rel='stylesheet' type='text/css' media='screen' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+
+   <link rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
+   <link rel='stylesheet' type='text/css' media='screen' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+</head>
+<body>
+   <header>
+      <h1 class='site-title'>
+         <a href='/'>
+            Chris Krycho
+         </a>
+      </h1>
+   </header>
+
+   {%- block main -%}
+   <main>
+      {% block main_content %}{% endblock main_content %}
+   </main>
+   {%- endblock main -%}
+
+   <nav class='SiteNav'>
+      <ul>
+         <li><a class='current' href=''>Home</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Writing</a></li>
+         <li><a href=''>Podcasts</a></li>
+         <li><a href=''>Speaking</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>About</a></li>
+         <li><a href=''>Curriculum Vitae</a></li>
+
+         <li class='divider'><hr></li>
+
+         <li><a href=''>Colophon</a></li>
+      </ul>
+   </nav>
+
+   {# load fonts #}
+   <script src='/js/fontfaceobserver.standalone.js'></script>
+   <script>
+      Promise.all([
+         new FontFaceObserver('Sabon'),
+         new FontFaceObserver('Cronos')
+      ]).then(() => document.documentElement.classList.add('fonts-loaded'))
+   </script>
+
+   {# <script src='main.js'></script> #}
+</body>
+</html>
