@@ -34,14 +34,32 @@ article {
       }
    }
 
+   blockquote {
+      margin: {
+         bottom: 1em;
+         left: -3px;
+      }
+      padding: {
+         top: ms(-4);
+         bottom: ms(-4);
+      }
+      border-left: 3px solid var(--blockquote-outline);
+      color: var(--blockquote-fg);
+      background: var(--blockquote-bg);
+      font: {
+         family: var(--sans);
+         size: var(--fs-sans-adjust);
+      }
+   }
+
    code {
       font: {
          family: var(--mono);
          size: ms(-1);
       }
-      background: var(--code-background);
+      background: var(--code-bg);
       padding: ms(-8) ms(-4);
-      color: var(--code-foreground);
+      color: var(--code-fg);
    }
 
    pre {
@@ -59,9 +77,9 @@ article {
          width: 100%;
          margin: 0 0;
          padding: ms(-4);
-   
-         background: var(--code-background);
-         color: var(--code-foreground);      
+
+         background: var(--code-bg);
+         color: var(--code-fg);
          font-size: ms(-1);
          line-height: ms(2);
          border-left: 3px solid var(--code-outline);
@@ -105,13 +123,21 @@ article {
    }
 
    @media (min-width: $resize) {
-      article pre {
-         width: calc(var(--max-width) + 2.5rem);
-         max-width: none;
-         margin-left: 0.5em;
+      article {
+         --fancy-width: calc(var(--max-width) + 2.5rem);
 
-         code {
-            padding-left: ms(0);
+         blockquote {
+            width: var(--fancy-width);
+         }
+
+         pre {
+            width: var(--fancy-width);
+            max-width: none;
+            margin-left: 0.5em;
+
+            code {
+               padding-left: ms(0);
+            }
          }
       }
    }

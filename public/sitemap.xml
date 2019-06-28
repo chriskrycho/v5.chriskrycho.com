@@ -43,6 +43,13 @@
         </url>
     
         <url>
+            <loc>v4.chriskrycho.com/ato-2019/</loc>
+            
+                <lastmod>2019-06-25T20:15:00-06:00</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>v4.chriskrycho.com/blog-as-note-taking-tool/</loc>
             
                 <lastmod>2018-07-16T07:00:00-07:00</lastmod>
@@ -127,7 +134,17 @@
         </url>
     
         <url>
+            <loc>v4.chriskrycho.com/topics/speaking/</loc>
+            
+        </url>
+    
+        <url>
             <loc>v4.chriskrycho.com/topics/tech/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>v4.chriskrycho.com/topics/technical-costs/</loc>
             
         </url>
     

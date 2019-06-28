@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Chris Krycho</title>
+        <link>v4.chriskrycho.com</link>
+        <description>Seeking truth &amp; pursuing excellence.</description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="v4.chriskrycho.com/topics/technical-costs/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 25 Jun 2019 20:15:00 -0600</lastBuildDate>
+        
+            <item>
+                <title>All Things Open 2019!</title>
+                <pubDate>Tue, 25 Jun 2019 20:15:00 -0600</pubDate>
+                <link>v4.chriskrycho.com/ato-2019/</link>
+                <guid>v4.chriskrycho.com/ato-2019/</guid>
+                <description>&lt;p&gt;I’m very excited to announce that &lt;a href=&quot;https:&#x2F;&#x2F;allthingsopen.org&#x2F;speakers&#x2F;chris-krycho&#x2F;&quot;&gt;I’ve been accepted&lt;&#x2F;a&gt; to give a talk at this year’s &lt;a href=&quot;https:&#x2F;&#x2F;allthingsopen.org&quot;&gt;All Things Open&lt;&#x2F;a&gt; in Raleigh, North Carolina, October 13–15. Here’s the pitch for the talk, titled “Don’t Go Bankrupt! Managing Technical Costs”:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Every engineering organization—whether in a startup, a Fortune 500 company, or an open source project—must both &lt;em&gt;sustain&lt;&#x2F;em&gt; (keep the lights on!) and &lt;em&gt;innovate&lt;&#x2F;em&gt; (deliver new functionality!). Simultaneously sustaining and innovating requires carefully managing technical costs: debt, maintenance, and investments.&lt;&#x2F;p&gt;
+&lt;p&gt;But managing those technical costs requires &lt;em&gt;understanding&lt;&#x2F;em&gt; them—and most of us don’t. Not everything is “tech debt”! Lumping all our costs into that one moniker misleads us as engineers and fails us in communicating to our users, whether those users are colleagues, customers, or the open source community.&lt;&#x2F;p&gt;
+&lt;p&gt;Too often, that confusion ultimately leads us right into technical bankruptcy. But we can do better!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I gave a shorter, less polished version of this as an internal “tech talk” at Olo back in November 2018. My colleagues’ reception was remarkably positive. (If it gets &lt;em&gt;half&lt;&#x2F;em&gt; so enthusiastic a reception at All Things Open, I’ll be &lt;em&gt;thrilled&lt;&#x2F;em&gt;.) Not just engineers, either! Members of Olo’s product, sales, client success, and executive teams all said they found the material helpful and clarifying. If you’re in a technical business, I trust you may find it helpful as well.&lt;&#x2F;p&gt;
+&lt;p&gt;If you end up at All Things Open yourself—it looks to be a great conference quite independent of my being there!—please &lt;a href=&quot;mailto:hello@chriskrycho.com&quot; title=&quot;All Things Open 2019&quot;&gt;send me a note&lt;&#x2F;a&gt;—I’d love to meet up and chat.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

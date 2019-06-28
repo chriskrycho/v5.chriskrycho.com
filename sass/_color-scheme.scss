@@ -10,9 +10,14 @@
    --underline: var(--gray-4);
    --hover: var(--blue-0);
    --hover-underline: var(--blue-2);
+
    --code-outline: var(--gray-4);
-   --code-background: var(--gray-5);
-   --code-foreground: var(--gray-0);
+   --code-bg: var(--gray-5);
+   --code-fg: var(--gray-0);
+
+   --blockquote-bg: var(--gray-5);
+   --blockquote-fg: var(--gray-1);
+   --blockquote-outline: var(--blue-1);
 
    @include a11y-light();
 }
@@ -20,14 +25,19 @@
 @mixin dark {
    // Colors
    --bg: var(--gray-0);
-   --fg: var(--gray-4);
+   --fg: var(--gray-5);
    --link: var(--blue-4);
    --underline: var(--gray-4);
    --hover: var(--gray-6);
    --hover-underline: var(--blue-2);
+
+   --blockquote-bg: var(--gray-1);
+   --blockquote-fg: var(--gray-5);
+   --blockquote-outline: var(--blue-3);
+
    --code-outline: var(--gray-2);
-   --code-background: var(--gray-1);
-   --code-foreground: var(--gray-6);
+   --code-bg: var(--gray-1);
+   --code-fg: var(--gray-6);
 
    @include tomorrow-night-bright();
 
