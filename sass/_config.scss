@@ -16,6 +16,7 @@ $break-2: 768px;
 $break-3: 960px;
 $break-4: 1080px;
 
+$resize: $break-2;
 $reflow: $break-4;
 
 :root {
@@ -24,6 +25,7 @@ $reflow: $break-4;
    --serif-smcp: Palatino, Book Antiqua, serif;
    --sans: Century Gothic, sans-serif;
    --mono: Menlo, Consolas, monospace;
+   --fs-base: 16px;
 
    // -- Colors -- //
    --gray-0: hsl(222, 10%, 15%);
@@ -52,6 +54,12 @@ $reflow: $break-4;
    @media (prefers-reduced-motion: reduce) {
       :root {
          --transition: 0s;
+      }
+   }
+
+   @media (min-width: $resize) {
+      :root {
+         --fs-base: 18px;
       }
    }
 }

@@ -1,9 +1,6 @@
 @import "./config";
 
 @mixin light {
-   // Sizes and rhythm:
-   --fs-base: 16px;
-
    // Colors
    --bg: var(--gray-5);
    --fg: var(--gray-0);
@@ -15,9 +12,6 @@
 }
 
 @mixin dark {
-   // Sizes and rhythm:
-   --fs-base: 17px;
-
    // Colors
    --bg: var(--gray-0);
    --fg: var(--gray-4);
@@ -28,12 +22,7 @@
    --code-outline: var(--gray-2);
 }
 
-@mixin light-large {
-   --fs-base: 19px;
-}
 
-@mixin dark-large {
-   --fs-base: 20px;
 }
 
 // Default to light unless the user explicitly specifies they prefer dark.
@@ -46,54 +35,24 @@
    @include dark();
 }
 
-@media (prefers-color-scheme: light) {
-   :root {
-      @include light();
-   }
-
-   .dark:root {
-      @include dark();
-   }
-}
-
-@media (prefers-color-scheme: dark) {
-   :root {
-      @include dark();
-   }
-
-   .light:root {
-      @include light();
-   }
-}
-
-@media screen and (min-width: $break-2) {
-   :root,
-   .light:root {
-      @include light-large();
-   }
-
-   .dark:root {
-      @include dark-large();
-   }
-
+@media screen {
    @media (prefers-color-scheme: light) {
-      :root,
-      .light:root {
-         @include light-large();
+      :root {
+         @include light();
       }
-
+   
       .dark:root {
-         @include dark-large();
+         @include dark();
       }
    }
-
+   
    @media (prefers-color-scheme: dark) {
       :root {
-         @include dark-large();
+         @include dark();
       }
-
+   
       .light:root {
-         @include light-large();
+         @include light();
       }
    }
 }
