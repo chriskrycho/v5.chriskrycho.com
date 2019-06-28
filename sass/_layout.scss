@@ -18,18 +18,18 @@ body {
    }
    align-items: start;
 
-   header {
+   > header {
       color: var(--fg);
       background-color: var(--bg);
       grid-area: h;
    }
 
-   nav {
+   > nav {
       grid-area: n;
       box-shadow: inset 0 ms(-4) ms(0) -#{ms(-4)} var(--gray-0);
    }
 
-   main {
+   > main {
       color: var(--fg);
       background-color: var(--bg);
       grid-area: m;
