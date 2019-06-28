@@ -1,5 +1,7 @@
+$width: 32rem;
+
 article {
-   --max-width: 32rem;
+   --max-width: #{$width};
    --width: 100%;
 
    display: flex;
@@ -7,7 +9,8 @@ article {
    align-items: center;
    padding-bottom: ms(2);
 
-   ul, ol {
+   ul,
+   ol {
       max-width: 32em;
       padding-left: ms(2);
    }
@@ -31,32 +34,35 @@ article {
       }
    }
 
-   pre, code, pre code {
+   code {
       font: {
          family: var(--mono);
-         size: ms(-2);
+         size: ms(-1);
       }
-
-      border: 1px solid var(--code-outline);
-      border-radius: 2px;
+      background: var(--code-background);
+      padding: 0.1em 0.275em;
    }
 
    pre {
-      --pre-max-width: calc(var(--max-width) + 1rem);
-
+      align-self: start;
+      margin: {
+         left: -#{ms(-2)};
+         bottom: 1rem;
+      }
       width: 100%;
-      max-width: var(--pre-max-width);
-      margin: 0 0 ms(0);
-      padding: ms(-4);
-      overflow-x: scroll;
-      background-color: var(--gray-1) !important; // overrides syntax highlighting
+      max-width: 100vw;
    }
 
-   code {
-      margin: 1em 0.1em;
-      padding: 0.1em 0.275em;
-      font-size: ms(-2);
+   pre code {
+      font-size: ms(-1);
+      line-height: ms(2);
 
+      width: 100%;
+      margin: 0 0;
+      padding: ms(-4);
+      overflow-x: scroll;
+
+      border-left: 3px solid var(--code-outline);
    }
 
    a {
@@ -65,11 +71,9 @@ article {
       text-decoration-color: var(--underline);
       text-decoration-skip-ink: auto;
 
-      transition:
-         -webkit-text-decoration-color var(--transition),
+      transition: -webkit-text-decoration-color var(--transition),
          -moz-text-decoration-color var(--transition),
-         text-decoration-color var(--transition),
-         color var(--transition);
+         text-decoration-color var(--transition), color var(--transition);
 
       &:hover {
          -webkit-text-decoration-color: var(--hover-underline);
@@ -85,14 +89,31 @@ article {
    }
 }
 
-@media screen and (min-width: $reflow) {
-   article {
-      --width: 32rem;
+@media screen {
+   @media (min-width: $width - 2rem) {
+      article pre {
+         max-width: $width;
+         align-self: center;
+      }
+   }
 
-      padding-bottom: ms(3);
+   @media (min-width: $resize) {
+      article pre {
+         width: calc(var(--max-width) + 2.5rem);
+         max-width: none;
+         margin-left: 0.5em;
 
-      pre {
-         width: calc(var(--width) + 1rem);
+         code {
+            padding-left: ms(0);
+         }
+      }
+   }
+
+   @media (min-width: $reflow) {
+      article {
+         --width: #{$width};
+
+         padding-bottom: ms(3);
       }
    }
 }

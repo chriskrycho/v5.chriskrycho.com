@@ -2,7 +2,7 @@
 
 @mixin light {
    // Colors
-   --bg: var(--gray-5);
+   --bg: var(--gray-6);
    --fg: var(--gray-0);
    --link: var(--blue-1);
    --underline: var(--gray-4);
@@ -17,12 +17,16 @@
    --fg: var(--gray-4);
    --link: var(--blue-4);
    --underline: var(--gray-4);
-   --hover: var(--gray-5);
+   --hover: var(--gray-6);
    --hover-underline: var(--blue-2);
    --code-outline: var(--gray-2);
 }
 
 
+   code, pre code {
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: grayscale;
+   }
 }
 
 // Default to light unless the user explicitly specifies they prefer dark.
