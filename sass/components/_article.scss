@@ -9,6 +9,10 @@ article {
    align-items: center;
    padding-bottom: ms(2);
 
+   header {
+      margin-bottom: 1em;
+   }
+
    ul,
    ol {
       max-width: 32em;
@@ -32,6 +36,15 @@ article {
       &:last-child {
          margin-bottom: 0;
       }
+   }
+
+   h1 {
+      font: {
+         family: var(--sans);
+         weight: 600;
+         size: ms(4);
+      }
+      width: var(--width);
    }
 
    blockquote {
