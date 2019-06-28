@@ -40,7 +40,8 @@ article {
          size: ms(-1);
       }
       background: var(--code-background);
-      padding: 0.1em 0.275em;
+      padding: ms(-8) ms(-4);
+      color: var(--code-foreground);
    }
 
    pre {
