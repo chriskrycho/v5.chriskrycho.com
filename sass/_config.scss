@@ -21,10 +21,10 @@ $reflow: $break-4;
 
 :root {
    // -- Typography -- //
-   --serif: Palatino, Book Antiqua, serif;
-   --serif-smcp: Palatino, Book Antiqua, serif;
-   --sans: Century Gothic, sans-serif;
-   --mono: Menlo, Consolas, monospace;
+   --serif: Sabon, Palatino, Book Antiqua, serif;
+   --serif-smcp: Sabon SMCP, Palatino, Book Antiqua, serif;
+   --sans: Cronos, Century Gothic, sans-serif;
+   --mono: Hack, Menlo, Consolas, monospace;
    --fs-base: 16px;
 
    // -- Colors -- //
@@ -42,13 +42,6 @@ $reflow: $break-4;
    --blue-4: hsl(208, 85%, 71%);
 
    --transition: 0.25s ease;
-}
-
-.fonts-loaded {
-   --serif: Sabon, Adobe Garamond Pro, Garamond, serif;
-   --serif-smcp: Sabon SMCP, Adobe Garamond Pro, Garamond, serif;
-   --sans: Cronos, Century Gothic, sans-serif;
-   --mono: Hack, Menlo, Consolas, monospace;
 }
 
 @media screen {

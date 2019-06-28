@@ -2,13 +2,6 @@
 @import "./syntax-highlighting/a11y-light";
 @import "./syntax-highlighting/tomorrow-night-bright";
 
-.hljs {
-   display: block;
-   overflow-x: auto;
-   background: var(--code-background);
-   color: var(--code-foreground);
-}
-
 @mixin light {
    // Colors
    --bg: var(--gray-6);
