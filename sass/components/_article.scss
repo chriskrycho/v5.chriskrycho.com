@@ -33,6 +33,7 @@ article {
 
    ul,
    ol {
+      width: 100%;
       max-width: 32em;
       padding-left: ms(2);
       margin-bottom: ms(0);
@@ -57,7 +58,11 @@ article {
       }
    }
 
-   @mixin fancy-block {
+   img {
+      width: 100%;
+   }
+
+   @mixin fancy-block($bg, $fg, $border) {
       align-self: start;
       margin: {
          left: -3px;
@@ -65,14 +70,18 @@ article {
       }
       padding: ms(-4);
       width: 100%;
+      color: $fg;
+      background: $bg;
+      border-left: 3px solid $border;
    }
 
    blockquote {
-      @include fancy-block();
+      @include fancy-block(
+         var(--blockquote-bg),
+         var(--blockquote-fg),
+         var(--blockquote-border)
+      );
 
-      border-left: 3px solid var(--blockquote-outline);
-      color: var(--blockquote-fg);
-      background: var(--blockquote-bg);
       font: {
          family: var(--sans);
          size: var(--fs-sans-adjust);
@@ -90,11 +99,11 @@ article {
    }
 
    pre {
-      @include fancy-block();
+      @include fancy-block(var(--code-bg), var(--code-fg), var(--code-border));
 
       background: var(--code-bg);
       color: var(--code-fg);
-      border-left: 3px solid var(--code-outline);
+      border-left: 3px solid var(--code-border);
 
       code {
          display: block;
@@ -105,6 +114,38 @@ article {
          line-height: ms(2);
          font-size: ms(-1);
       }
+   }
+
+   aside {
+      position: relative;
+
+      > :first-child::before {
+         content: "// aside //";
+         display: inline-block;
+         font-family: var(--sans);
+         font-size: 110%;
+         color: var(--aside-marker-fg);
+         background-color: var(--aside-marker-bg);
+         margin-right: ms(-4);
+         padding: 0 ms(-4);
+      }
+
+      code {
+         background-color: var(--aside-code-bg);
+      }
+   }
+
+   .assumed-audience {
+      display: block;
+   }
+
+   aside,
+   .assumed-audience {
+      @include fancy-block(
+         var(--aside-bg),
+         var(--aside-fg),
+         var(--aside-border)
+      );
    }
 
    a {
@@ -135,7 +176,9 @@ article {
          --side-padding: #{ms(-1)};
          --fancy-width: calc(var(--max-width) + calc(2 * var(--side-padding)));
 
-         blockquote, pre {
+         blockquote,
+         pre,
+         aside {
             max-width: var(--fancy-width);
             align-self: center;
             padding: {
@@ -154,12 +197,14 @@ article {
             width: var(--fancy-width);
          }
 
-         blockquote, pre {
+         blockquote,
+         pre,
+         aside {
             width: var(--fancy-width);
             max-width: none;
             margin-left: ms(-4);
             padding-left: ms(0);
-         } 
+         }
       }
    }
 

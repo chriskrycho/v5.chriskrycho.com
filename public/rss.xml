@@ -30,7 +30,7 @@
                 <pubDate>Thu, 13 Jun 2019 15:15:00 -0600</pubDate>
                 <link>v4.chriskrycho.com/breaking-up-with-social-media/</link>
                 <guid>v4.chriskrycho.com/breaking-up-with-social-media/</guid>
-                <description>&lt;p&gt;&lt;i&gt;&lt;b&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.chriskrycho.com&#x2F;2018&#x2F;assumed-audiences.html&quot;&gt;Assumed Audience&lt;&#x2F;a&gt;:&lt;&#x2F;b&gt; anyone &lt;em&gt;willing&lt;&#x2F;em&gt; to think hard about social media and its place in our lives.&lt;&#x2F;i&gt;&lt;&#x2F;p&gt;
+                <description>&lt;p&gt;&lt;i class=&#x27;assumed-audience&#x27;&gt;&lt;b&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.chriskrycho.com&#x2F;2018&#x2F;assumed-audiences.html&quot;&gt;Assumed Audience&lt;&#x2F;a&gt;:&lt;&#x2F;b&gt; anyone &lt;em&gt;willing&lt;&#x2F;em&gt; to think hard about social media and its place in our lives.&lt;&#x2F;i&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;i-the-itch&quot;&gt;I. The Itch&lt;&#x2F;h2&gt;
 &lt;p&gt;I began writing this post from our vacation bedroom in Jamaica, about five days before I could possibly publish it: before we left, I shut down the machines which can generate new versions of my site. I wished, as I started this post, that I had an equally effective measure for cutting off access to social media on this trip.&lt;&#x2F;p&gt;
 &lt;p&gt;I tried, of course. Before we left on June 1, I removed Slack and Discord from my iPad (I had long since taken them off my phone). I likewise removed email from my phone, and I have also mostly been leaving my phone in our room. I kept an email client on my iPad, but I have checked my email only once a day or so—mostly in the interest of clearing my inbox, but also because the newsletters I subscribe to make for very good reading materials.&lt;&#x2F;p&gt;
@@ -267,6 +267,154 @@ const result = Result.tryOrElse(handleErr, throwsHelpfulErrors);
 &lt;p&gt;I’d not heard specifically of the &lt;a href=&quot;https:&#x2F;&#x2F;zettelkasten.de&quot;&gt;Zettelkasten method&lt;&#x2F;a&gt; until Alan Jacobs linked it a while back, but it fits this model pretty perfectly, and maps as well to ways I’ve been &lt;em&gt;trying&lt;&#x2F;em&gt; to structure my note-taking and thinking for the past few years. (I’m going to be consciously doing more of this in &lt;a href=&quot;http:&#x2F;&#x2F;www.bear-writer.com&quot;&gt;Bear&lt;&#x2F;a&gt;, my current notes app of choice. I’ll probably write up my experience that way once I’ve actually had some experience!) But this also ties into some of the things Jacobs has been &lt;a href=&quot;https:&#x2F;&#x2F;blog.ayjay.org&#x2F;the-blog-garden&#x2F;&quot; title=&quot;The Blog Garden&quot;&gt;musing out loud&lt;&#x2F;a&gt; about in his own blog over the last week. It’s not just that a blog can serve as a place to do some of the fleshing-out of ideas. It’s not just that a blog can be a record of the development of ideas. It can also serve to jog new ideas if you read yourself again, displaced (both literally and temporally) from the original writing of the thing. A blog is kind of like a public notebook, and while it &lt;em&gt;may&lt;&#x2F;em&gt; be useful for others to browse through it, is &lt;em&gt;is&lt;&#x2F;em&gt; useful for me to browse back through it.&lt;&#x2F;p&gt;
 &lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;&lt;pre&gt;&lt;code&gt;Though: if you look at the archives, especially including those on my [first real blog](http:&#x2F;&#x2F;blog.chriskrycho.com &amp;quot;Thoughts; A Flame&amp;quot;) and [the previous iteration of this site](http:&#x2F;&#x2F;2012-2013.chriskrycho.com), you’ll notice that I published a lot of posts about a lot of subjects, whether my thoughts were especially well-formed or not.
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Higher-Order Components in Ember.js</title>
+                <pubDate>Sat, 26 May 2018 14:00:00 -0600</pubDate>
+                <link>v4.chriskrycho.com/ember-hoc/</link>
+                <guid>v4.chriskrycho.com/ember-hoc/</guid>
+                <description>&lt;p&gt;One of the most powerful patterns in programming is the idea of &lt;em&gt;higher-order functions&lt;&#x2F;em&gt;: functions which can take other functions as arguments or return them as their return values. If you’ve spent much time at all working in JavaScript, you’ve certainly encountered these—whether you’re using &lt;code&gt;Array.map&lt;&#x2F;code&gt; to transform the values in an array, or passing a function as an argument to an event handler.&lt;&#x2F;p&gt;
+&lt;p&gt;The same pattern is incredibly useful in building components, and most modern front-end frameworks support it—including Ember.js! (In React, the pattern as a whole is often known as the &lt;code&gt;renderProps&lt;&#x2F;code&gt; pattern, for the way you most often accomplish it. It&#x27;s all the same idea, though!)&lt;&#x2F;p&gt;
+&lt;p&gt;In this little post, I’ll show you how to build a small “higher-order component” in Ember.js, hopefully demystifying that term a little bit a long the way. (If you just want to see how the pieces fit together, you can see the finished app &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chriskrycho&#x2F;ember-hoc-example&quot;&gt;in this repo&lt;&#x2F;a&gt;.)&lt;&#x2F;p&gt;
+&lt;aside&gt;
+&lt;p&gt;I’m going to be using classes and decorators throughout. Both are very much ready-to-go in Ember, and I commend them to you! I’m also going to be using some of the new &lt;a href=&quot;https:&#x2F;&#x2F;emberjs.com&#x2F;blog&#x2F;2018&#x2F;04&#x2F;13&#x2F;ember-3-1-released.html#toc_introducing-optional-features-3-of-4&quot;&gt;optional features&lt;&#x2F;a&gt; available in Ember 3.1+ to use template-only components!&lt;&#x2F;p&gt;
+&lt;p&gt;Note that one of the most important consequences of this is that arguments have to be referenced as &lt;code&gt;@theArgumentName&lt;&#x2F;code&gt; rather than just &lt;code&gt;theArgumentName&lt;&#x2F;code&gt; in templates. The reason is precisely that there is no backing JavaScript component. In old-school Ember.js components, &lt;code&gt;{{theArgumentName}}&lt;&#x2F;code&gt; is implicitly turned into &lt;code&gt;{{this.argumentName}}&lt;&#x2F;code&gt;, which does a lookup on the backing component. In Glimmer-style components—of which these are the first part—arguments live on a designated &lt;code&gt;args&lt;&#x2F;code&gt; property and are accessible in templates via &lt;code&gt;@theArgumentName&lt;&#x2F;code&gt; instead.&lt;&#x2F;p&gt;
+&lt;&#x2F;aside&gt;
+&lt;h2 id=&quot;higher-order-components-what-are-they&quot;&gt;Higher-Order Components, What Are They&lt;&#x2F;h2&gt;
+&lt;p&gt;Just like with a “higher-order function,” all we mean when we talk about a “higher-order component” is a component which takes other components as arguments, returns other components itself (in Ember’s case via &lt;code&gt;yield&lt;&#x2F;code&gt; in a template), or both.&lt;&#x2F;p&gt;
+&lt;p&gt;The thing we’re actually going to build here is a “modal” which accepts an optional button as an arguments, and which yields out a component for dividing the modal into sections visually so you can pass your own content in and have it look just right. This is closely based on a component my colleagues and I at Olo built recently, just with some of our specific details stripped away to get at the actually important bits. Here&#x27;s what it looks like in practice:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;f001.backblazeb2.com&#x2F;file&#x2F;chriskrycho-com&#x2F;images&#x2F;hoc-rendered.png&quot; alt=&quot;a modal with sectioned text and a close button&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The goal for the button arguments is to let the modal be able to render the button the caller passes in, while not being concerned with the &lt;em&gt;functionality&lt;&#x2F;em&gt; of the button. Otherwise, we’d have to tie the “API” of the modal to the details of button behavior, bind more actions into it, etc.&lt;&#x2F;p&gt;
+&lt;p&gt;The goal for the yielded sectioning component is for whatever is rendering the modal itself to be able to pass content in and get it chunked up however the modal decides is appropriate—the modal can display its own styles, etc.—without having to worry about the details of applying classes or sectioning up the content itself.&lt;&#x2F;p&gt;
+&lt;p&gt;In short, we want to &lt;em&gt;separate our concerns&lt;&#x2F;em&gt;: the modal knows how to lay out its contents and where to put buttons, but it doesn’t want to have to know &lt;em&gt;anything&lt;&#x2F;em&gt; about what the buttons do. The most complicated interaction in the world could be going on, and the modal won’t have to care. Likewise, things &lt;em&gt;using&lt;&#x2F;em&gt; the modal can pass content and buttons into it, and let the modal manage its own layout and so on without having to be concerned with the details of that. So what does that look like in practice?&lt;&#x2F;p&gt;
+&lt;p&gt;The approach I use here builds on the &amp;quot;contextual components&amp;quot; pattern in Ember.js. The main new idea is that the &lt;em&gt;context&lt;&#x2F;em&gt; includes components!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;implementing-it&quot;&gt;Implementing It&lt;&#x2F;h2&gt;
+&lt;p&gt;We have three components here:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;a button&lt;&#x2F;li&gt;
+&lt;li&gt;a modal&lt;&#x2F;li&gt;
+&lt;li&gt;a modal section&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Since Ember.js still (for now!) requires component names to be at least two words separated by a dash, we’ll just call these &lt;code&gt;x-button&lt;&#x2F;code&gt;, &lt;code&gt;x-modal&lt;&#x2F;code&gt;, and &lt;code&gt;x-modal-section&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;x-button&quot;&gt;&lt;code&gt;x-button&lt;&#x2F;code&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The button component, we’ll keep pretty simple: it’s just a button element with a given label and an action bound to it:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;button class={{@buttonClass}} type=&#x27;button&#x27; {{action @onClick}}&amp;gt;
+  {{@label}}
+&amp;lt;&#x2F;button&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;x-modal&quot;&gt;&lt;code&gt;x-modal&lt;&#x2F;code&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;code&gt;x-modal&lt;&#x2F;code&gt; has the meat of the implementation.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&#x27;modal-backdrop&#x27;&amp;gt;&amp;lt;&#x2F;div&amp;gt;
+&amp;lt;div class=&#x27;modal&#x27;&amp;gt;
+  &amp;lt;div class=&#x27;modal-content&#x27;&amp;gt;
+    {{yield (hash section=(component &#x27;x-modal-section&#x27;))}}
+  &amp;lt;&#x2F;div&amp;gt;
+
+  {{#if @button}}
+    {{component @button buttonClass=&#x27;modal-button&#x27;}}
+  {{&#x2F;if}}
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The two things two notice here are the &lt;code&gt;yield&lt;&#x2F;code&gt; and the &lt;code&gt;component&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;code&gt;yield&lt;&#x2F;code&gt; statement yields a &lt;a href=&quot;https:&#x2F;&#x2F;www.emberjs.com&#x2F;api&#x2F;ember&#x2F;3.1&#x2F;classes&#x2F;Ember.Templates.helpers&quot;&gt;&lt;code&gt;hash&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; with one property: &lt;code&gt;section&lt;&#x2F;code&gt;. Yielding a hash is a convenient pattern in general. Here, we’re doing it to make the &lt;abbr&gt;API&lt;&#x2F;abbr&gt; nicer for users of this component. It means that if we name the yielded value &lt;code&gt;|modal|&lt;&#x2F;code&gt; when we invoke this, we’ll be able to write &lt;code&gt;modal.section&lt;&#x2F;code&gt; to name this particular yielded item. (You’ll see exactly this below.)&lt;&#x2F;p&gt;
+&lt;p&gt;We use the &lt;code&gt;component&lt;&#x2F;code&gt; helper twice: once as the value of the &lt;code&gt;section&lt;&#x2F;code&gt; key in the yielded hash, and once for the &lt;code&gt;button&lt;&#x2F;code&gt; below. In both cases, the helper does the same thing: invokes a component! While the most common way to render a component is with its name, inline—like &lt;code&gt;{{x-modal}}&lt;&#x2F;code&gt;—you can always render it with the &lt;code&gt;component&lt;&#x2F;code&gt; helper and the name as a string: &lt;code&gt;{{component &#x27;x-modal&#x27;}}&lt;&#x2F;code&gt;. This lets you render different components dynamically!&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s remember our initial analogy: the same way you can pass different functions to a higher-order function like &lt;code&gt;Array.prototype.map&lt;&#x2F;code&gt;, you can pass different components to a higher-order component like our &lt;code&gt;x-modal&lt;&#x2F;code&gt; here. And just like you can &lt;em&gt;return&lt;&#x2F;em&gt; a function from a higher-order function, we can &lt;em&gt;yield&lt;&#x2F;em&gt; a component from a higher-order component. Just like higher-order functions, the function passed in or returned just has to have the right shape.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, the argument to &lt;code&gt;Array.prototype.map&lt;&#x2F;code&gt; needs to be a function which performs an operation on a single item in the array (and maybe also the index) and hands back the result of that operation. Similarly, the &lt;code&gt;button&lt;&#x2F;code&gt; argument to our &lt;code&gt;x-modal&lt;&#x2F;code&gt; needs to accept a &lt;code&gt;buttonClass&lt;&#x2F;code&gt; component so that the modal can apply some styling to it. The same thing holds for the component being yielded back out: it has an &lt;abbr&gt;API&lt;&#x2F;abbr&gt; you should use to invoke it, just like any other.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;All of this gets at something really important: you can think of components as just being &lt;em&gt;pure functions&lt;&#x2F;em&gt;: they take some input in the form of arguments, and give you the output of what they &lt;em&gt;render&lt;&#x2F;em&gt; and what they &lt;em&gt;yield&lt;&#x2F;em&gt;—and they always give you the same rendered &lt;abbr&gt;HTML&lt;&#x2F;abbr&gt; and the same yielded values for the same inputs. They&#x27;re just functions!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;x-modal-section&quot;&gt;&lt;code&gt;x-modal-section&lt;&#x2F;code&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The &lt;code&gt;x-modal-section&lt;&#x2F;code&gt; component is the simplest of all of these: it has no behavior, just some styling to actually chunk up the content:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&#x27;modal-section&#x27;&amp;gt;
+  {{yield}}
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;application-controller-and-template&quot;&gt;Application controller and template&lt;&#x2F;h3&gt;
+&lt;p&gt;Now, let’s use in the context of the application template, where we can see how the pieces all fit together. First, let&#x27;s see the application controller backing it—nothing unusual here, just a simple toggle to show or hide the modal.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;import Controller from &amp;quot;@ember&#x2F;controller&amp;quot;;
+import { action } from &amp;quot;@ember-decorators&#x2F;object&amp;quot;;
+
+export default class Application extends Controller {
+  constructor() {
+    super(...arguments);
+    this.showModal = false;
+  }
+
+  @action
+  showIt() {
+    this.set(&amp;quot;showModal&amp;quot;, true);
+  }
+
+  @action
+  hideIt() {
+    this.set(&amp;quot;showModal&amp;quot;, false);
+  }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now for the interesting bit—the template where we invoke &lt;code&gt;x-modal&lt;&#x2F;code&gt; and use its higher-order-component functionality:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;{{#if showModal}}
+  {{#x-modal
+      button=(component &#x27;x-button&#x27;
+        label=&#x27;Close modal!&#x27;
+        onClick=(action &#x27;hideIt&#x27;)
+      )
+      as |modal|
+  }}
+    {{#modal.section}}
+      Here is some content!
+    {{&#x2F;modal.section}}
+
+    {{#modal.section}}
+      Here is some other content.
+    {{&#x2F;modal.section}}
+
+    {{#modal.section}}
+      &amp;lt;p&amp;gt;The content can have its own sections, as you&#x27;d expect!&amp;lt;&#x2F;p&amp;gt;
+      &amp;lt;p&amp;gt;Nothing crazy going on here. Just a normal template!&amp;lt;&#x2F;p&amp;gt;
+    {{&#x2F;modal.section}}
+  {{&#x2F;x-modal}}
+{{&#x2F;if}}
+
+&amp;lt;button class=&#x27;button&#x27; {{action &#x27;showIt&#x27;}}&amp;gt;Show modal&amp;lt;&#x2F;button&amp;gt;
+
+&amp;lt;!-- some other content on the page --&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;We invoke the block form of &lt;code&gt;x-modal&lt;&#x2F;code&gt; just like we would any block component, and we get back the thing it yields with &lt;code&gt;as |modal|&lt;&#x2F;code&gt;. However, one of the arguments we pass to it is a component. But &lt;code&gt;modal&lt;&#x2F;code&gt; is a &lt;code&gt;hash&lt;&#x2F;code&gt; (an object!) with a property named &lt;code&gt;section&lt;&#x2F;code&gt;, which is the &lt;code&gt;x-modal-section&lt;&#x2F;code&gt; component.&lt;&#x2F;p&gt;
+&lt;p&gt;Again, you can think of this like calling a function with one function as an argument and getting another function back as its return value—that returned function being something we could call over and over again once we had it.&lt;&#x2F;p&gt;
+&lt;p&gt;Here, we &amp;quot;call the function&amp;quot;—invoke the &lt;code&gt;x-modal&lt;&#x2F;code&gt; component—with &lt;code&gt;component &#x27;x-button&#x27;&lt;&#x2F;code&gt; as its argument, and the returned &lt;code&gt;modal.section&lt;&#x2F;code&gt; is a component we can invoke like a normal component.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#3&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; We could even pass it into some &lt;em&gt;other&lt;&#x2F;em&gt; component itself if we so desired.&lt;&#x2F;p&gt;
+&lt;p&gt;And that&#x27;s really all there is to it!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;&#x2F;h2&gt;
+&lt;p&gt;&amp;quot;Higher-order components&amp;quot; aren&#x27;t necessarily something you need all the time, but they&#x27;re really convenient and very powerful when you &lt;em&gt;do&lt;&#x2F;em&gt; need them. They&#x27;re also a lot less complicated than the name might seem! Components are just things you can pass around in the context of a component template—they&#x27;re the &lt;em&gt;functions&lt;&#x2F;em&gt; of Handlebars.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#4&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Splitting things into components like this does increase complexity, and in particular it can increase the mental overhead of keeping track of how the pieces fit together. However, they also let us cleanly separate different pieces of functionality from each other. Doing it this way means that our modal can be concerned about &lt;em&gt;positioning&lt;&#x2F;em&gt; a button without needing to expose an &lt;abbr&gt;API&lt;&#x2F;abbr&gt; for all of the button&#x27;s own mechanics for handling clicks and performing whatever actions necessary. That makes our modal &lt;em&gt;and&lt;&#x2F;em&gt; our button way more reusable across our application. The button can be used &lt;em&gt;wherever&lt;&#x2F;em&gt; a button is useful, and the modal doesn&#x27;t need to know or care anything about it. Likewise, the button has no need to know anything about the context where it&#x27;s being used; from the button component&#x27;s perspective, it just gets wired up to some actions as usual. The same thing goes for the modal sections: they let us abstract over how the DOM is laid out, what classes are applied to it, and so on—they chunk up the modal, but the modal itself maintains responsibility for how that chunking up happens. And the caller doesn&#x27;t even &lt;em&gt;have&lt;&#x2F;em&gt; to use that; it&#x27;s just a tool that&#x27;s available for that purpose.&lt;&#x2F;p&gt;
+&lt;p&gt;To sum it all up, I&#x27;ll just reiterate my earlier description: components are just like pure functions: the same inputs give you the same outputs—and, just like functions, those inputs and outputs can be other functions, that is, other components.&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;If you want a good way to document the things a component &lt;code&gt;yield&lt;&#x2F;code&gt;s, check out &lt;a href=&quot;https:&#x2F;&#x2F;ember-learn.github.io&#x2F;ember-cli-addon-docs&#x2F;latest&#x2F;docs&#x2F;api&#x2F;components&#x2F;docs-demo&quot;&gt;ember-cli-addon-docs&lt;&#x2F;a&gt;, which can read an &lt;code&gt;@yield&lt;&#x2F;code&gt; JSDoc annotation.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;And it could just as well be a component; the top-level controller template is just where we put our main app functionality.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;3&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;p&gt;We could also simplify this since we&#x27;re only returning one component, and if we had the full Glimmer component story, this could look &lt;em&gt;very&lt;&#x2F;em&gt; nice:&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;pre&gt;&lt;code&gt;&#96;&#96;&#96;ts
+&amp;lt;Modal @button={{component &#x27;Button&#x27;}} as |Section|&amp;gt;
+  &amp;lt;Section&amp;gt;
+    Some content!
+  &amp;lt;&#x2F;Section&amp;gt;
+  &amp;lt;Section&amp;gt;
+    Some more content!
+  &amp;lt;&#x2F;Section&amp;gt;
+
+  &amp;lt;Section&amp;gt;
+    &amp;lt;p&amp;gt;The content can have its own sections, as you&#x27;d expect!&amp;lt;&#x2F;p&amp;gt;
+    &amp;lt;p&amp;gt;Nothing crazy going on here. Just a normal template!&amp;lt;&#x2F;p&amp;gt;
+  &amp;lt;&#x2F;Section&amp;gt;
+&amp;lt;&#x2F;Modal&amp;gt;
+&#96;&#96;&#96;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;4&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;&#x2F;sup&gt;
+&lt;p&gt;If you&#x27;re inclined to &amp;quot;well actually&amp;quot; me about &lt;em&gt;helpers&lt;&#x2F;em&gt; being the real functions of Handlebars templates: in the Glimmer &lt;abbr&gt;VM&lt;&#x2F;abbr&gt; world, helpers are just a kind of component.&lt;&#x2F;p&gt;
 &lt;&#x2F;div&gt;
 </description>
             </item>

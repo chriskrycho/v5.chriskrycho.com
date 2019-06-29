@@ -33,28 +33,7 @@ hr {
    position: relative;
    overflow: visible;
 
-   @mixin slash() {
-      content: "";
-      border-left: 1px solid var(--divider);
-      height: 110%;
-      transform: translateY(-2px) rotate(15deg);
-      position: absolute;
-      display: block;
-   }
-
-   --slash-offset: calc(50% - 2px);
-
-   &:before {
-      @include slash();
-      top: -51%;
-      right: var(--slash-offset);
-   }
-
-   &:after {
-      @include slash();
-      top: -41%;
-      left: var(--slash-offset);
-   }
+   @include slash();
 }
 
 b {

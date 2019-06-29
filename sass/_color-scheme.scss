@@ -11,13 +11,20 @@
    --hover: var(--blue-0);
    --hover-underline: var(--blue-2);
 
-   --code-outline: var(--gray-4);
-   --code-bg: var(--gray-5);
-   --code-fg: var(--gray-0);
-
    --blockquote-bg: var(--gray-5);
    --blockquote-fg: var(--gray-1);
-   --blockquote-outline: var(--blue-1);
+   --blockquote-border: var(--blue-1);
+
+   --aside-bg: var(--gray-5);
+   --aside-fg: var(--gray-1);
+   --aside-border: var(--gray-3);
+   --aside-marker-fg: var(--gray-6);
+   --aside-marker-bg: var(--gray-3);
+   --aside-code-bg: var(--gray-6);
+
+   --code-border: var(--gray-4);
+   --code-bg: var(--gray-5);
+   --code-fg: var(--gray-0);
 
    @include a11y-light();
 }
@@ -33,9 +40,13 @@
 
    --blockquote-bg: var(--gray-1);
    --blockquote-fg: var(--gray-5);
-   --blockquote-outline: var(--blue-3);
+   --blockquote-border: var(--blue-3);
 
-   --code-outline: var(--gray-2);
+   --aside-bg: var(--gray-1);
+   --aside-fg: var(--gray-5);
+   --aside-code-bg: var(--gray-2);
+
+   --code-border: var(--gray-2);
    --code-bg: var(--gray-1);
    --code-fg: var(--gray-6);
 

@@ -81,6 +81,13 @@
         </url>
     
         <url>
+            <loc>v4.chriskrycho.com/ember-hoc/</loc>
+            
+                <lastmod>2018-05-26T14:00:00-06:00</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>v4.chriskrycho.com/medium/</loc>
             
         </url>
@@ -101,7 +108,17 @@
         </url>
     
         <url>
+            <loc>v4.chriskrycho.com/topics/attention/</loc>
+            
+        </url>
+    
+        <url>
             <loc>v4.chriskrycho.com/topics/blogging/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>v4.chriskrycho.com/topics/emberjs/</loc>
             
         </url>
     
@@ -112,6 +129,11 @@
     
         <url>
             <loc>v4.chriskrycho.com/topics/functional-programming/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>v4.chriskrycho.com/topics/javascript/</loc>
             
         </url>
     
@@ -137,6 +159,11 @@
     
         <url>
             <loc>v4.chriskrycho.com/topics/reading/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>v4.chriskrycho.com/topics/social-media/</loc>
             
         </url>
     

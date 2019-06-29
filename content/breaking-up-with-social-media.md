@@ -2,6 +2,7 @@
 title = "Breaking Up With Social Media"
 date = 2019-06-13T15:15:00-06:00
 
+[taxonomies]
 topics = ["social media", "writing", "attention", "ethics"]
 
 [extra]
@@ -10,7 +11,7 @@ summary = "In which I commit to a kind of social media monasticism—because eno
 
 +++
 
-<i><b>[Assumed Audience][aa]:</b> anyone *willing* to think hard about social media and its place in our lives.</i>
+<i class='assumed-audience'><b>[Assumed Audience][aa]:</b> anyone *willing* to think hard about social media and its place in our lives.</i>
 
 [aa]: https://www.chriskrycho.com/2018/assumed-audiences.html
 
