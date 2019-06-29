@@ -51,7 +51,7 @@
 
       &:hover,
       &:active {
-         --bar-color: var(--hover-underline);
+         --bar-color: var(--link);
          &:before {
             width: var(--left-bar-width);
             left: calc(100% -2px + var(--left-bar-width));
