@@ -1,14 +1,12 @@
 +++
 title = "True Myth 2.2"
-subtitle = """
-`Maybe` helpers for safe object lookup and `Result` helpers for exception-throwing code.
-"""
 date = 2018-10-27T17:00:00-07:00
 
 [taxonomies]
 topics = ["tech", "typescript", "true myth", "open-source software", "functional programming"]
 
 [extra]
+subtitle = "<code>Maybe</code> helpers for safe object lookup and <code>Result</code> helpers for exception-throwing code."
 summary = "True Myth 2.2 adds two `Maybe` helpers for safe object lookup and two `Result` helpers for handling exception-throwing code."
 
 +++
