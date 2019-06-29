@@ -51,3 +51,28 @@ i {
 h1, h2, h3, h4, h5, h6 {
    line-height: 1;
 }
+
+sup {  
+   line-height: 0;
+   vertical-align: 0.558em;
+
+   a {
+      display: inline-block;
+      padding: ms(-6) ms(-4) ms(-12);
+      margin: 0 ms(-8);
+      background: var(--gray-1);
+      text-decoration: none;
+      transition: all var(--transition);
+
+      line-height: 1;
+      font: {
+         size: ms(-1);
+         family: var(--sans);
+         feature-settings: "onum" 0;
+      }
+
+      &:hover, &:active {
+         background: var(--blue-2);
+      }
+   }
+}
