@@ -15,6 +15,20 @@ article {
    header {
       width: 100%;
       margin-bottom: 1em;
+
+      h1 {
+         font: {
+            family: var(--sans);
+            weight: 600;
+            size: ms(4);
+         }
+      }
+
+      h2 {
+         font: {
+            style: italic;
+         }
+         }
    }
 
    ul,
@@ -39,14 +53,6 @@ article {
 
       &:last-child {
          margin-bottom: 0;
-      }
-   }
-
-   h1 {
-      font: {
-         family: var(--sans);
-         weight: 600;
-         size: ms(4);
       }
    }
 
@@ -116,12 +122,6 @@ article {
          -webkit-text-decoration-color: var(--hover-underline);
          -moz-text-decoration-color: var(--hover-underline);
          text-decoration-color: var(--hover-underline);
-      }
-   }
-
-   .subtitle {
-      font: {
-         style: italic;
       }
    }
 
