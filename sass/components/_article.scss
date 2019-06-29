@@ -28,7 +28,7 @@ article {
          font: {
             style: italic;
          }
-         }
+      }
    }
 
    ul,
@@ -48,7 +48,7 @@ article {
    p {
       width: var(--width);
       max-width: var(--max-width);
-      margin: 0 auto ms(0);
+      margin: 0 0 ms(0);
       padding: 0;
 
       &:last-child {
@@ -56,15 +56,19 @@ article {
       }
    }
 
-   blockquote {
+   @mixin fancy-block {
+      align-self: start;
       margin: {
-         bottom: 1em;
          left: -3px;
+         bottom: ms(0);
       }
-      padding: {
-         top: ms(-4);
-         bottom: ms(-4);
-      }
+      padding: ms(-4);
+      width: 100%;
+   }
+
+   blockquote {
+      @include fancy-block();
+
       border-left: 3px solid var(--blockquote-outline);
       color: var(--blockquote-fg);
       background: var(--blockquote-bg);
@@ -85,26 +89,20 @@ article {
    }
 
    pre {
-      align-self: start;
-      margin: {
-         left: -#{ms(-2)};
-         bottom: 1rem;
-      }
-      width: 100vw;
-      max-width: 100vw;
+      @include fancy-block();
+
+      background: var(--code-bg);
+      color: var(--code-fg);
+      border-left: 3px solid var(--code-outline);
 
       code {
          display: block;
          overflow-x: auto;
          width: 100%;
-         margin: 0 0;
-         padding: ms(-4);
-
-         background: var(--code-bg);
-         color: var(--code-fg);
-         font-size: ms(-1);
+         margin: 0;
+         padding: 0;
          line-height: ms(2);
-         border-left: 3px solid var(--code-outline);
+         font-size: ms(-1);
       }
    }
 
@@ -132,9 +130,18 @@ article {
 
 @media screen {
    @media (min-width: 32.6667rem) {
-      article pre {
-         max-width: $width;
-         align-self: center;
+      article {
+         --side-padding: #{ms(-1)};
+         --fancy-width: calc(var(--max-width) + calc(2 * var(--side-padding)));
+
+         blockquote, pre {
+            max-width: var(--fancy-width);
+            align-self: center;
+            padding: {
+               left: var(--side-padding);
+               right: var(--side-padding);
+            }
+         }
       }
    }
 
@@ -146,19 +153,12 @@ article {
             width: var(--fancy-width);
          }
 
-         blockquote {
-            width: var(--fancy-width);
-         }
-
-         pre {
+         blockquote, pre {
             width: var(--fancy-width);
             max-width: none;
-            margin-left: 0.5em;
-
-            code {
-               padding-left: ms(0);
-            }
-         }
+            margin-left: ms(-4);
+            padding-left: ms(0);
+         } 
       }
    }
 
