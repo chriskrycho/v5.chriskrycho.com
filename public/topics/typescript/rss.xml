@@ -280,7 +280,7 @@ export default class Application extends Controller {
 &lt;div class=&quot;footnote-definition&quot; id=&quot;3&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
 &lt;p&gt;We could also simplify this since we&#x27;re only returning one component, and if we had the full Glimmer component story, this could look &lt;em&gt;very&lt;&#x2F;em&gt; nice:&lt;&#x2F;p&gt;
 &lt;&#x2F;div&gt;
-&lt;pre&gt;&lt;code&gt;&#96;&#96;&#96;ts
+&lt;pre&gt;&lt;code&gt;&#96;&#96;&#96;hbs
 &amp;lt;Modal @button={{component &#x27;Button&#x27;}} as |Section|&amp;gt;
   &amp;lt;Section&amp;gt;
     Some content!
