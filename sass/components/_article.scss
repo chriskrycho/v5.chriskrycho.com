@@ -14,6 +14,7 @@ article {
 
    header {
       width: 100%;
+      max-width: var(--max-width);
       margin-bottom: 1em;
 
       h1 {
@@ -193,10 +194,6 @@ article {
       article {
          --fancy-width: calc(var(--max-width) + 2.5rem);
 
-         header {
-            width: var(--fancy-width);
-         }
-
          blockquote,
          pre,
          aside {
@@ -213,6 +210,12 @@ article {
          --width: #{$width};
 
          padding-bottom: ms(3);
+
+         header {
+            width: var(--fancy-width);
+            max-width: none;
+            text-align: left;
+         }
       }
    }
 }
