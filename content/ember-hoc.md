@@ -185,7 +185,7 @@ To sum it all up, I'll just reiterate my earlier description: components are jus
 
 [^3]: We could also simplify this since we're only returning one component, and if we had the full Glimmer component story, this could look *very* nice:
 
-    ```ts
+    ```hbs
     <Modal @button={{component 'Button'}} as |Section|>
       <Section>
         Some content!
