@@ -23,7 +23,8 @@ main {
             top: 0;
             left: ms(-2);
          }
-         max-width: 75vw;
+         padding-right: ms(-2);
+         max-width: calc(75vw - #{ms(-2)};
       }
 
       nav {
