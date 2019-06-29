@@ -187,6 +187,32 @@ article {
          color: var(--figure-fg);
       }
    }
+
+   sup {  
+      line-height: 0;
+      vertical-align: 0.558em;
+   
+      a {
+         display: inline-block;
+         padding: ms(-6) ms(-4) ms(-12);
+         margin: -#{ms(-6)} 0 ms(-8);
+         
+         text-decoration: none;
+         transition: all var(--transition);
+   
+         line-height: 1;
+         font: {
+            size: ms(-1);
+            family: var(--sans);
+            feature-settings: "onum" 0;
+         }
+   
+         &:hover, &:active {
+            background: var(--blue-1);
+            color: var(--gray-5);
+         }
+      }
+   }
 }
 
 @media screen {
