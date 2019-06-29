@@ -26,6 +26,8 @@
    --code-bg: var(--gray-5);
    --code-fg: var(--gray-0);
 
+   --figure-fg: var(--gray-2);
+
    @include a11y-light();
 }
 
@@ -49,6 +51,8 @@
    --code-border: var(--gray-2);
    --code-bg: var(--gray-1);
    --code-fg: var(--gray-6);
+
+   --figure-fg: var(--gray-4);
 
    @include tomorrow-night-bright();
 

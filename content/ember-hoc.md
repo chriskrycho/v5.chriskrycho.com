@@ -32,7 +32,10 @@ Just like with a “higher-order function,” all we mean when we talk about a �
 
 The thing we’re actually going to build here is a “modal” which accepts an optional button as an arguments, and which yields out a component for dividing the modal into sections visually so you can pass your own content in and have it look just right. This is closely based on a component my colleagues and I at Olo built recently, just with some of our specific details stripped away to get at the actually important bits. Here's what it looks like in practice:
 
-![a modal with sectioned text and a close button](https://f001.backblazeb2.com/file/chriskrycho-com/images/hoc-rendered.png)
+<figure>
+<img src="https://f001.backblazeb2.com/file/chriskrycho-com/images/hoc-rendered.png" alt="modal component with sections">
+<figcaption>a modal with sectioned text and a close button</figcaption>
+</figure>
 
 The goal for the button arguments is to let the modal be able to render the button the caller passes in, while not being concerned with the *functionality* of the button. Otherwise, we’d have to tie the “API” of the modal to the details of button behavior, bind more actions into it, etc.
 

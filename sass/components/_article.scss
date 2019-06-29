@@ -169,6 +169,22 @@ article {
    hr {
       margin-bottom: ms(0);
    }
+
+   figure {
+      margin-bottom: 1em;
+      max-width: 48em;
+
+      figcaption {
+         text-align: center;
+         max-width: var(--max-width);
+         margin: auto;
+         font: {
+            family: var(--sans);
+            size: var(--fs-sans-adjust);
+         }
+         color: var(--figure-fg);
+      }
+   }
 }
 
 @media screen {
