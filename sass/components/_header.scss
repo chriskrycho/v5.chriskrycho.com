@@ -1,6 +1,10 @@
+.site-header {
+   color: var(--fg);
+   background-color: var(--bg);
+}
+
 .site-title {
-   margin: 1rem;
-   padding: 0;
+   padding: 1rem;
    font: {
       family: var(--sans);
       weight: 300;
@@ -67,7 +71,7 @@
 @media screen {
    @media (min-width: $break-2) {
       .site-title {
-         margin: {
+         padding: {
             top: ms(-3);
             left: ms(-1);
          }

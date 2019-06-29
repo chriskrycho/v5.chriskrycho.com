@@ -1,10 +1,11 @@
-.SiteNav {
+.site-nav {
    --bg: var(--gray-1);
    --fg-active: var(--gray-6);
    --fg-inactive: var(--gray-4);
    --divider: var(--gray-3);
 
    background-color: var(--bg);
+   box-shadow: inset 0 1rem 1rem -1rem var(--gray-0);
 
    font: {
       family: var(--sans);
@@ -21,11 +22,10 @@
    flex-direction: column;
    padding: {
       top: ms(2);
-      bottom: ms(2);
+      bottom: ms(3);
    }
 
    ul {
-      background: var(--bg);
       margin: 0;
       padding: 0 ms(3);
       list-style: none;
@@ -86,17 +86,17 @@
 }
 
 @media screen and (min-width: $reflow) and (min-height: 540px) {
-   .SiteNav {
+   .site-nav {
+      box-shadow: inset 1rem 0 1rem -1rem var(--gray-0);
+
       padding: {
          top: 0;
          bottom: 0;
       }
-      justify-content: start;
 
       ul {
          height: 100vh;
          justify-content: center;
-         position: fixed;
       }
    }
 }

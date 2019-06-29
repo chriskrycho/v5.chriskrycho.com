@@ -16,21 +16,21 @@
    <link rel='stylesheet' type='text/css' media='screen' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
 </head>
 <body>
-   <header>
-      <h1 class='site-title'>
-         <a href='/'>
-            Chris Krycho
-         </a>
-      </h1>
-   </header>
-
-   {%- block main -%}
    <main>
-      {% block main_content %}{% endblock main_content %}
-   </main>
-   {%- endblock main -%}
+      <header class='site-header'>
+         <h1 class='site-title'>
+            <a href='/'>
+               Chris Krycho
+            </a>
+         </h1>
+      </header>
 
-   <nav class='SiteNav'>
+      <div class='content'>
+      {% block main %}{% endblock main %}
+      </div>
+   </main>
+
+   <nav class='site-nav'>
       <ul>
          <li><a class='current' href=''>Home</a></li>
 
