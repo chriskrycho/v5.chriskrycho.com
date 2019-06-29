@@ -119,16 +119,17 @@ article {
 
    aside {
       position: relative;
+      padding: ms(-4);
 
-      > :first-child::before {
-         content: "// aside //";
-         display: inline-block;
+      &::before {
+         content: "—/ ASIDE /—";
+         display: block;
+         text-align: center;
+         margin: ms(-4) 0;
          font-family: var(--sans);
-         font-size: 110%;
+         text-transform: uppercase;
+         letter-spacing: 1px;
          color: var(--aside-marker-fg);
-         background-color: var(--aside-marker-bg);
-         margin-right: ms(-4);
-         padding: 0 ms(-4);
       }
 
       code {
@@ -138,15 +139,16 @@ article {
 
    .assumed-audience {
       display: block;
-   }
+      padding: ms(-4);   }
 
    aside,
    .assumed-audience {
-      @include fancy-block(
-         var(--aside-bg),
-         var(--aside-fg),
-         var(--aside-border)
-      );
+      margin-bottom: ms(0);
+
+      color: var(--aside-fg);
+      background-color: var(--aside-bg);
+      border-left: none;
+      border-top: 3px solid var(--aside-border);
    }
 
    a {
