@@ -31,7 +31,7 @@
       <h1>True Myth 2.2</h1>
       <h2><code>Maybe</code> helpers for safe object lookup and <code>Result</code> helpers for exception-throwing code.</h2>
    </header>
-   <p>I just released v2.2<sup class="footnote-reference"><a href="#1">1</a></sup> of True Myth, with two new pairs of helpers to deal with <a href="v4.chriskrycho.com/true-myth-22/#safe-java-script-object-property-lookup">safe JavaScript object property lookup with <code>Maybe</code>s</a> and <a href="v4.chriskrycho.com/true-myth-22/#handling-exception-throwing-functions">handling exception-throwing code with <code>Result</code>s</a>.</p>
+   <div class='content'><p>I just released v2.2<sup class="footnote-reference"><a href="#1">1</a></sup> of True Myth, with two new pairs of helpers to deal with <a href="v4.chriskrycho.com/true-myth-22/#safe-java-script-object-property-lookup">safe JavaScript object property lookup with <code>Maybe</code>s</a> and <a href="v4.chriskrycho.com/true-myth-22/#handling-exception-throwing-functions">handling exception-throwing code with <code>Result</code>s</a>.</p>
 <h2 id="safe-javascript-object-property-lookup">Safe JavaScript object property lookup</h2>
 <p>We often deal with <em>optional properties</em> on JavaScript objects, and by default JavaScript just gives us <code>undefined</code> if a property doesn't exist on an object and we look it up:</p>
 <pre><code>type Person = {
@@ -165,7 +165,7 @@ const result = Result.tryOrElse(handleErr, throwsHelpfulErrors);
 <div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
 <p>I published both <code>2.2.0</code> and <code>2.2.1</code>, because once again I missed something along the way. This time it was making sure all the new functions were optionally curried to support partial application.</p>
 </div>
-
+</div>
 </article>
       </div>
    </main>

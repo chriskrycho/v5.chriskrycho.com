@@ -31,7 +31,7 @@
       <h1>Higher-Order Components in Ember.js</h1>
       <h2>Components as arguments! Components getting yielded! Components everywhere!</h2>
    </header>
-   <p>One of the most powerful patterns in programming is the idea of <em>higher-order functions</em>: functions which can take other functions as arguments or return them as their return values. If you’ve spent much time at all working in JavaScript, you’ve certainly encountered these—whether you’re using <code>Array.map</code> to transform the values in an array, or passing a function as an argument to an event handler.</p>
+   <div class='content'><p>One of the most powerful patterns in programming is the idea of <em>higher-order functions</em>: functions which can take other functions as arguments or return them as their return values. If you’ve spent much time at all working in JavaScript, you’ve certainly encountered these—whether you’re using <code>Array.map</code> to transform the values in an array, or passing a function as an argument to an event handler.</p>
 <p>The same pattern is incredibly useful in building components, and most modern front-end frameworks support it—including Ember.js! (In React, the pattern as a whole is often known as the <code>renderProps</code> pattern, for the way you most often accomplish it. It's all the same idea, though!)</p>
 <p>In this little post, I’ll show you how to build a small “higher-order component” in Ember.js, hopefully demystifying that term a little bit a long the way. (If you just want to see how the pieces fit together, you can see the finished app <a href="https://github.com/chriskrycho/ember-hoc-example">in this repo</a>.)</p>
 <aside>
@@ -174,7 +174,7 @@ export default class Application extends Controller {
 <div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
 <p>If you're inclined to &quot;well actually&quot; me about <em>helpers</em> being the real functions of Handlebars templates: in the Glimmer <abbr>VM</abbr> world, helpers are just a kind of component.</p>
 </div>
-
+</div>
 </article>
       </div>
    </main>

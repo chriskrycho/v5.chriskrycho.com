@@ -29,8 +29,25 @@ article {
 
       h2 {
          font: {
+            family: var(--serif);
+            size: ms(0);
             style: italic;
          }
+      }
+   }
+
+   .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+         font: {
+            family: var(--sans);
+            size: ms(2);
+         }
+         color: var(--gray-3);
+         margin: 1rem 0;
       }
    }
 
@@ -190,13 +207,14 @@ article {
 
    aside {
       position: relative;
+      margin-bottom: ms(0);
       padding: ms(-4);
 
       &::before {
          content: "—/ ASIDE /—";
          display: block;
          text-align: center;
-         margin: ms(-4) 0;
+         margin: ms(-4) 0 0 -#{ms(-4)};
          font-family: var(--sans);
          text-transform: uppercase;
          letter-spacing: 1px;
@@ -215,8 +233,6 @@ article {
 
    aside,
    .assumed-audience {
-      margin-bottom: ms(0);
-
       color: var(--aside-fg);
       background-color: var(--aside-bg);
       border-left: none;
