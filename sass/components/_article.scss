@@ -42,8 +42,52 @@ article {
       margin-bottom: ms(0);
    }
 
+   // This is a slightly ridiculoud implementation, but it actually does what I
+   // want: all list items have their normal margins, *except* those at the end
+   // of a list. When the item is the terminal item in a list, it drops that
+   // padding. This works for nested lists because in that case, the parent list
+   // container, `ul` or `ol`, will have its own margin which only gets cleared
+   // when *it* is the final such item in the list.
+   li {
+      &:last-child > {
+         p, ol, ul {
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+
+      p:last-child {
+         margin-bottom: 1em;
+      }      
+   }
+
+   // For a nice little touch, use Cronos for the list markers.
    ol {
-      list-style: decimal;
+      list-style: none;
+      counter-reset: ol-counter;
+
+      li {
+         counter-increment: ol-counter;
+         position: relative;
+
+         &::before {
+            width: ms(0);
+
+            position: absolute;
+            left: calc(-1em - #{ms(-4)});
+            top: 0.1em;
+
+            display: inline-block;
+            text-align: right;
+            content: counter(ol-counter) ". ";
+            font: {
+               family: var(--sans);
+               feature-settings: "onum" 0;
+               size: 1.1rem;
+            }
+         }
+      }
    }
 
    ul {
@@ -55,10 +99,6 @@ article {
       max-width: var(--max-width);
       margin: 0 0 ms(0);
       padding: 0;
-
-      &:last-child {
-         margin-bottom: 0;
-      }
    }
 
    img {
@@ -88,6 +128,35 @@ article {
       font: {
          family: var(--sans);
          size: var(--fs-sans-adjust);
+      }
+
+      // I don't have to do anything special to get Cronos list markers in the
+      // context of a blockquote, where I'm already using it, so unset all of
+      // that and let the layout behave normally.
+      ol {
+         list-style: decimal;
+
+         li {
+            &:before {
+               content: "";
+            }
+         }
+      }
+   }
+
+   // As with list items (above), `blockquote` and `aside` children should have
+   // their normal margins *except* when terminating the container, so that they
+   // do not cause visual disparities between top and bottom.
+   blockquote,
+   aside {
+      > {
+         p,
+         ul,
+         ol {
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
       }
    }
 
@@ -141,7 +210,8 @@ article {
 
    .assumed-audience {
       display: block;
-      padding: ms(-4);   }
+      padding: ms(-4);
+   }
 
    aside,
    .assumed-audience {
@@ -190,26 +260,27 @@ article {
       }
    }
 
-   sup {  
+   sup {
       line-height: 0;
       vertical-align: 0.558em;
-   
+
       a {
          display: inline-block;
          padding: ms(-6) ms(-4) ms(-12);
          margin: -#{ms(-6)} 0 ms(-8);
-         
+
          text-decoration: none;
          transition: all var(--transition);
-   
+
          line-height: 1;
          font: {
             size: ms(-1);
             family: var(--sans);
             feature-settings: "onum" 0;
          }
-   
-         &:hover, &:active {
+
+         &:hover,
+         &:active {
             background: var(--blue-1);
             color: var(--gray-5);
          }
