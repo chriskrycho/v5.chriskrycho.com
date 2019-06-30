@@ -12,6 +12,8 @@ article {
       bottom: ms(2);
    }
 
+   font-feature-settings: "liga", "onum", "pnum", "kern";
+
    header {
       width: 100%;
       max-width: var(--max-width);
