@@ -44,6 +44,39 @@ article {
       margin-left: auto;
       margin-right: auto;
 
+      h1 {
+         font: {
+            family: var(--sans);
+            size: ms(2);
+         }
+
+         margin: ms(0) 0;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         background: var(--bg);
+         display: flex;
+         align-items: center;
+         width: 100%;
+         max-width: var(--max-width);
+         text-align: center;
+
+         &::before, &::after {
+            content: "";
+            height: 1px;
+            border-radius: 1px;
+            background: var(--gray-3);
+            flex: 1 1 auto;
+         }
+
+         &::before {
+            margin-right: ms(-4);
+         }
+
+         &::after {
+            margin-left: ms(-4);
+         }
+      }
+
       h2 {
          font: {
             family: var(--sans);
@@ -70,7 +103,9 @@ article {
    // when *it* is the final such item in the list.
    li {
       &:last-child > {
-         p, ol, ul {
+         p,
+         ol,
+         ul {
             &:last-child {
                margin-bottom: 0;
             }
@@ -79,7 +114,7 @@ article {
 
       p:last-child {
          margin-bottom: 1em;
-      }      
+      }
    }
 
    // For a nice little touch, use Cronos for the list markers.
@@ -324,6 +359,10 @@ article {
                left: var(--side-padding);
                right: var(--side-padding);
             }
+         }
+
+         .article-content h1 {
+            max-width: var(--fancy-width);
          }
       }
    }

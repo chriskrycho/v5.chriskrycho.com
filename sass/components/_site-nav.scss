@@ -61,8 +61,9 @@
 
       @mixin bars {
          content: "";
-         height: 0;
-         border-top: 1px solid var(--bar-color);
+         height: 1px;
+         background: var(--bar-color);
+         border-radius: 1px;
          width: calc(var(--hr-width) / 2);
          position: absolute;
          top: 0.4rem;
