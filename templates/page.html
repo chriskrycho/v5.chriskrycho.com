@@ -7,6 +7,12 @@
          <h2>{{page.extra.subtitle | safe}}</h2>
       {%- endif %}
    </header>
+   {% if page.extra.assumed_audience -%}
+      <i class='assumed-audience'>
+         <b><a href='https://www.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
+         {{page.extra.assumed_audience}}
+      </i>
+   {%- endif %}
    <div class='article-content'>{{ page.content | safe }}</div>
 </article>
 {%- endblock main -%}

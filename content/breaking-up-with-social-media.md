@@ -8,13 +8,9 @@ topics = ["social media", "writing", "attention", "ethics"]
 [extra]
 subtitle = "In which I commit to a kind of social media monasticism—because enough is enough."
 summary = "In which I commit to a kind of social media monasticism—because enough is enough. (I took a vacation and realized I actively dislike Twitter. So now, just shy of 14 years after joining Facebook, I’m quitting social media.)"
+assumed_audience = "anyone *willing* to think hard about social media and its place in our lives."
 
 +++
-
-<i class='assumed-audience'><b>[Assumed Audience][aa]:</b> anyone *willing* to think hard about social media and its place in our lives.</i>
-
-[aa]: https://www.chriskrycho.com/2018/assumed-audiences.html
-
 
 ## I. The Itch
 

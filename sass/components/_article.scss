@@ -14,7 +14,11 @@ article {
    header {
       width: 100%;
       max-width: var(--max-width);
-      margin-bottom: 1em;
+      margin: {
+         bottom: 1em;
+         left: auto;
+         right: auto;
+      }
 
       h1 {
          font: {
@@ -228,6 +232,8 @@ article {
    .assumed-audience {
       display: block;
       padding: ms(-4);
+      max-width: var(--max-width);
+      margin: auto auto ms(0);
    }
 
    aside,
@@ -347,6 +353,10 @@ article {
             width: var(--fancy-width);
             max-width: none;
             text-align: left;
+         }
+
+         .assumed-audience {
+            max-width: var(--fancy-width);
          }
       }
    }
