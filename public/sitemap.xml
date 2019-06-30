@@ -76,6 +76,13 @@
         </url>
     
         <url>
+            <loc>v4.chriskrycho.com/content-test/</loc>
+            
+                <lastmod>2015-06-28T08:00:00-05:00</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>v4.chriskrycho.com/cv/</loc>
             
         </url>
@@ -118,6 +125,11 @@
         </url>
     
         <url>
+            <loc>v4.chriskrycho.com/topics/devotions/</loc>
+            
+        </url>
+    
+        <url>
             <loc>v4.chriskrycho.com/topics/emberjs/</loc>
             
         </url>
@@ -129,6 +141,11 @@
     
         <url>
             <loc>v4.chriskrycho.com/topics/functional-programming/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>v4.chriskrycho.com/topics/hot-tamales/</loc>
             
         </url>
     
@@ -154,6 +171,11 @@
     
         <url>
             <loc>v4.chriskrycho.com/topics/open-source-software/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>v4.chriskrycho.com/topics/papers/</loc>
             
         </url>
     
