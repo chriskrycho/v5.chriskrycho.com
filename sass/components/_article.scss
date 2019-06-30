@@ -4,9 +4,6 @@ article {
    --max-width: #{$width};
    --width: 100%;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    padding: {
       top: ms(2);
       bottom: ms(2);
@@ -36,10 +33,12 @@ article {
       }
    }
 
-   .content {
+   .article-content {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-left: auto;
+      margin-right: auto;
 
       h2 {
          font: {
