@@ -41,19 +41,13 @@ I dislike the feeling intensely. The itch itself is a distraction, and scratchin
 
 [roden-27]: https://craigmod.com/roden/027/
 
-[^draft-2]: in a newsletter he published after I had already written two full drafts of this post: it was confirmation, not inspiration.
-
 ## II. The Costs
 
 I have long observed that my use of Twitter hijacks my mental habits in many other contexts.[^slack] I find myself responding to a book’s ideas not with consideration but with ideas for clever or snarky tweets. (This happened to me multiple times on this trip, including after I had already drafted and repeatedly revised this post!) It is not only Twitter which can have this effect, of course: I have experienced it with blogging as well. But I find that this particularly twisted, *distracted* form of thinking increases in direct proportion to the amount I use Twitter, and much less so with other forms of writing.
 
-[^slack]: So do a number of other platforms, whose use I am reconsidering as well—mostly anything *chat*-like.
-
 Twitter misaligns my mind even when I am away from it. It discourages *thought*. As Mod put it, “if you’re not careful, tweets and their ilk can burn all your fuel with nothing to show.” Exactly that. I spend time on Twitter and come out feeling like I have done *something* but in reality the cycles spent there are pure waste. No thought. No writing. No learning.[^learned] No time spent with my family or friends. Nothing but more fodder for the [data factory] and the advertisement money it generates.
 
 [data factory]: https://stratechery.com/2018/data-factories/
-
-[^learned]: Not *truly* learned. A new fact found, perhaps, but facts acquired are not the same as learning done. More rarely, a link to a place I *can* learn something. But such links exist in many places!
 
 The counter-arguments mount up, of course—as they do whenever we think of eliminating a pleasurable vice:
 
@@ -67,8 +61,6 @@ Moreover, very little of what happens on Twitter is of any lasting import. There
 [noted before]: https://www.chriskrycho.com/2018/on-tweeting-instead-of-writing.html
 [here-1]: https://www.chriskrycho.com/2018/tweet-less-blog-more.html
 [here-2]: https://www.chriskrycho.com/2017/the-value-of-silence.html
-
-[^tl]: and, worse but in far greater quantity, *wannabe* Thought Leading
 
 Mod again:
 
@@ -86,8 +78,6 @@ If I still feel a bit [the way L. M. Sacasas does][cost],[^draft-1] too—
 
 [cost]: https://thefrailestthing.com/2019/06/08/devils-bargain/
 
-[^draft-1]: in a post, I note, which I had not seen when I wrote the *first* draft of this post! There is something in the air right now, and I’m glad of it.
-
 ## III. Complicity
 
 Counting the cost is complicated in another way for me, too: To what extent can I do this *because* of my use of Twitter? This site’s audience includes readers who first encountered me and my work *there*. Even my freedom to leave social media benefits from having used those tools. I cannot escape a degree of complicity in the degradations and distortions that social media have wrought in our culture and our public and our civic life. The best I can say for myself is that I have consciously chosen to eschew click-driven writing for half a decade, whether using Twitter or no. As regards that inescapable complicity, all any of us can do is acknowledge our faults—or, as [my faith] would [have it], confess and repent of our sins—and seek to make amends.
@@ -100,13 +90,6 @@ And there is yet more at stake here. Twitter (like Facebook) is more than merely
 > The decision to be on Twitter (or Facebook, etc.) is not simply a personal choice. It has run-on effects for you but also for others. When you use the big social media platforms you contribute to their power and influence, and you deplete the energy and value of the open web. You make things worse for everyone. I truly believe that.
 
 [aj]: https://blog.ayjay.org/to-put-the-point-plainly/
-
-[^ws]: conclusions I have drawn the more starkly through thinking-out-loud about it with my friend [Stephen] throughout [Winning Slowly][ws] seasons [6][ws6] and [7][ws7].
-
-[Stephen]: https://stephencarradini.com
-[ws]: https://winningslowly.org
-[ws6]: https://winningslowly.org/season-6.html
-[ws7]: https://winningslowly.org/season-7.html
 
 Even insofar as I do get value from being on Twitter—being able to throw out a question about Rust or Swift or Ember or TypeScript, confident that I will get a knowledgeable answer—I increasingly wonder about the power and social dynamics in play. Is it *good* or *right* that, because I have blogged, have worked on open source projects, and have run a successful podcast, I have a greater degree of access? While I have worked hard at those projects, my success in them does not make my questions or interests *more important* than anyone else’s. Put more bluntly: I do not *deserve* the attention of Swift compiler developers or Rust or Ember core team members or the TypeScript <abbr title="product manager">PM</abbr>. But I can get that attention, and easily, on Twitter. Some of this is ordinary human social dynamics: earned social trust and so on. But I wonder if Twitter does not *heighten* the effect. Certainly it seems to me that it may.
 
@@ -121,13 +104,9 @@ And more than that: getting [offline entirely][atss-10] at times and for seasons
 
 [atss-10]: https://buttondown.email/chriskrycho/archive/the-slow-web-and-the-limits-of-solutions/
 
-[^everyone]: I initially wrote “everyone” instead of “so many other people” here, but I noticed that that’s simply (very!) wrong: it’s central to the vicious cycle of pressure that social media *creates*. “Everyone is here; you’ll miss out on such important things!” is *the* lie of these platforms.
-
 [monasticism]: https://thefrailestthing.com/2018/03/27/vows-of-digital-poverty/
 
 So: I have deleted all my tweets save one: a link to this post. I am doing much the same with Facebook and LinkedIn.[^LI] I hope you’ll consider doing something similar!
-
-[^LI]: While I do have reservations about LinkedIn, they are different both in kind and in degree than my concerns about other social media platforms—as my taking a job there just a few months ago should indicate! I would *not* have taken a job with Facebook or Twitter. I will probably elaborate on this at some point, as I think it’s worth tracing out how and why I see these as meaningfully different!
 
 Going forward, I will be doing much more writing here. I will also continue to publish [my newsletter][atss], normally on a weekly basis. I will still be [podcasting][podcasts]. I hope (and expect) to be writing more full-on essays—the area more than any other where I have felt the drain from social media’s interference. And I will be working on [rewrite]! And if you’d like to get in touch, you can always [email me][email]!
 
@@ -135,3 +114,24 @@ Going forward, I will be doing much more writing here. I will also continue to p
 [podcasts]: https://www.chriskrycho.com/podcasts
 [rewrite]: https://buttondown.email/rewrite
 [email]: mailto:hello@chriskrycho.com
+
+[^draft-2]: in a newsletter he published after I had already written two full drafts of this post: it was confirmation, not inspiration.
+
+[^slack]: So do a number of other platforms, whose use I am reconsidering as well—mostly anything *chat*-like.
+
+[^learned]: Not *truly* learned. A new fact found, perhaps, but facts acquired are not the same as learning done. More rarely, a link to a place I *can* learn something. But such links exist in many places!
+
+[^tl]: and, worse but in far greater quantity, *wannabe* Thought Leading
+
+[^draft-1]: in a post, I note, which I had not seen when I wrote the *first* draft of this post! There is something in the air right now, and I’m glad of it.
+
+[^ws]: conclusions I have drawn the more starkly through thinking-out-loud about it with my friend [Stephen] throughout [Winning Slowly][ws] seasons [6][ws6] and [7][ws7].
+
+[Stephen]: https://stephencarradini.com
+[ws]: https://winningslowly.org
+[ws6]: https://winningslowly.org/season-6.html
+[ws7]: https://winningslowly.org/season-7.html
+
+[^everyone]: I initially wrote “everyone” instead of “so many other people” here, but I noticed that that’s simply (very!) wrong: it’s central to the vicious cycle of pressure that social media *creates*. “Everyone is here; you’ll miss out on such important things!” is *the* lie of these platforms.
+
+[^LI]: While I do have reservations about LinkedIn, they are different both in kind and in degree than my concerns about other social media platforms—as my taking a job there just a few months ago should indicate! I would *not* have taken a job with Facebook or Twitter. I will probably elaborate on this at some point, as I think it’s worth tracing out how and why I see these as meaningfully different!
