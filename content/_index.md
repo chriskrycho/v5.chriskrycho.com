@@ -3,15 +3,14 @@ title = "Chris Krycho"
 sort_by = "date"
 +++
 
-Hello! I am first of all a Christian, husband, and dad. I also [build software][cv], [write][blog], [podcast], [run], and every once in a while [compose music][soundcloud]. Please feel free to say hello by [sending me an email][email].
+Hello!
 
-[cv]: ./pages/cv.md
-[blog]: ./pages/archives.md
-[podcast]: ./pages/podcasts.md
-[run]: https://www.strava.com/athletes/1079509
-[email]: mailto:hello@chriskrycho.com
-[twitter]: https://twitter.com/chriskrycho
-[soundcloud]: https://soundcloud.com/chriskrycho
+I’m Chris Krycho—a follower of Christ, a husband, and a dad. I build software for a living; I also write about ethics, tech, faith, and art [here] and [elsewhere]; I [podcast] about the same topics; and I run (regularly) and compose music (less regularly). Please [say hello]!
+
+[here]: /writing
+[elsewhere]: /elsewhere
+[podcast]: /podcasting
+[say hello]: mailto:hello@chriskrycho.com
 
 ---
 
