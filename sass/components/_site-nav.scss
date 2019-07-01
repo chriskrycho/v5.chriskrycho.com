@@ -39,7 +39,7 @@
          flex: 0 0 auto;
          margin: 0.1rem 0;
 
-         &.divider {
+         &[role='separator'] {
             margin: 0.25rem 0;
          }
       }

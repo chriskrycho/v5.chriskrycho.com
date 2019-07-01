@@ -17,7 +17,7 @@ main {
 }
 
 @media screen {
-   @media (min-width: $reflow) and (min-height: 540px) {
+   @media (min-width: $reflow) and (min-height: 600px) {
       main {
          margin: {
             top: 0;
