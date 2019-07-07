@@ -1,7 +1,7 @@
-+++
-title = "Chris Krycho"
-sort_by = "date"
-+++
+---
+title: Chris Krycho
+sort_by: date
+---
 
 Hello!
 
