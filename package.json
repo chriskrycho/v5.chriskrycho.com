@@ -13,10 +13,10 @@
    "devDependencies": {
       "@11ty/eleventy": "^0.8.3",
       "@types/serve-static": "^1.13.2",
-      "eleventy-plugin-typeset": "^1.0.0",
       "eslint": "6.0.1",
       "prettier": "^1.18.2",
-      "typescript": "3.5.2"
+      "typescript": "3.5.2",
+      "typeset": "0.2.2"
    },
    "eslintConfig": {
       "extends": "eslint:recommended",

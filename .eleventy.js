@@ -1,6 +1,6 @@
 // @ts-check
 
-import typesetPlugin from 'eleventy-plugin-typeset'
+const typesetPlugin = require('./eleventy/plugin-typeset')
 
 /**
  *
@@ -29,4 +29,4 @@ function config(config) {
    }
 }
 
-export default config
+module.exports = config
