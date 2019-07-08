@@ -1,14 +1,12 @@
-+++
-title = "Curriculum Vitae"
-path = "cv"
-
-[extra]
-subtitle = """I am a senior software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics."""   
-summary = """
+---
+title: Curriculum Vitae
+path: cv
+subtitle: >
+    I am a senior software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics.
+summary: >
     I am a senior software engineer focused on web UI, typography, functional programming—and ethics. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
-"""
 
-+++
+---
 
 In helping hire people over the last few years, I’ve seen a lot of résumés. Even the best of them leave a lot to be desired: they lack context and narrative. So if you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful. If you're interested, [say hello][email]!
 
