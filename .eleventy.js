@@ -12,7 +12,7 @@ function collectionFromPath(path) {
    return collections =>
       collections
          .getAll()
-         .filter(collection => collection.inputPath.includes('content/writing/essays'))
+         .filter(collection => collection.inputPath.includes(path))
 }
 
 /**
