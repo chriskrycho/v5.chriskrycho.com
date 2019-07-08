@@ -65,9 +65,9 @@ type GrayMatter = {
    stringify(): string
 } & Empty
 
-type Engine = (input: string) => GrayMatter
+export type Engine = (input: string) => GrayMatter
 
-type EngineName =
+export type EngineName =
    | 'html'
    | 'md'
    | 'js'
@@ -80,6 +80,50 @@ type EngineName =
    | 'haml'
    | 'pug'
    | 'jstl'
+
+export interface Collection {
+   /** the full path to the source input file (including the path to the input directory) */
+   inputPath: string
+   /** 
+      Mapped from the input file name, useful for permalinks. Read more about
+      [`fileSlug`].
+
+      [`fileSlug`]: https://www.11ty.io/docs/data/#fileslug
+     */
+   fileSlug: string
+   /** the full path to the output file to be written for this content */
+   outputPath: string
+   /** url used to link to this piece of content. */
+   url: string
+   /**
+      the resolved date used for sorting. Read more about [Content Dates].
+
+      [Content Dates]: https://www.11ty.io/docs/dates/
+     */
+   date: string
+   /** all data for this piece of content (includes any data inherited from layouts) */
+   data: Dict<unknown>
+   /** the rendered content of this template. This does *not• include layout wrappers */
+   templateContent: string
+}
+
+export interface Collections {
+   getAll(): Collection[]
+
+   /**
+      Note that while Array `.reverse()` mutates the array in-place, all Eleventy
+      Collection API methods return new copies of collection arrays and can be modified
+      without side effects to other collections. [However, you do need to be careful ⚠️
+      when using Array `.reverse()` in templates!][warning]
+
+      [warning]: https://www.11ty.io/docs/collections/#array-reverse
+    */
+   getAllSorted(): Collection[]
+
+   getFilteredByTag(tagName: string): Collection[]
+
+   getFilteredByGlob(glob: string | string[]): Collection[]
+}
 
 export interface Config {
    dir?: {
@@ -95,6 +139,8 @@ export interface Config {
         files, but can be consumed by other templates.
 
         [Eleventy layouts]: https://www.11ty.io/docs/layouts/
+
+        **Note:** This value is relative to your input directory.
        */
       includes?: string
 
@@ -114,6 +160,8 @@ export interface Config {
         See [this note about existing templating features][note].
 
         [note]: https://www.11ty.io/docs/layouts/#addendum-about-existing-templating-features
+
+        **Note:** This value is relative to your input directory.
        */
       layouts?: string
 
@@ -134,6 +182,11 @@ export interface Config {
    passthroughFileCopy?: boolean
    htmlOutputSuffx?: string
    jsDataFileSuffix?: string
+
+   addCollection(
+      name: string,
+      builder: (collection: Collections) => Collection[] | object | Promise<object>,
+   ): void
 
    addFilter(name: string, filter: (...args: any[]) => unknown): string
 
@@ -187,6 +240,18 @@ export interface Config {
          to learn what options are available to you.
     */
    addPlugin<F extends Function>(fn: F, config?: Parameters<F>[0]): void
+
+   /**
+      Searching the entire directory structure for files to copy based on file extensions
+      is not optimal with large directory structures. If we know what non-template static
+      content we want to appear in our output, we can opt-in to specify files or
+      directories for Eleventy to copy. This will probably speed up your build times.
+      These entries are relative to the root of your project and not your Eleventy input
+      directory.
+
+      @param path The file path to copy (may be an individual file or directory.)
+    */
+   addPassthroughCopy(path: string): void
 
    /**
      You can namespace parts of your configuration using `eleventyConfig.namespace`. This
