@@ -1,16 +1,18 @@
-+++
-title = "A Meander"
-date = 2018-02-09T07:00:00-07:00
+---
+title: A Meander
+subtitle: Because some days you want to write, but don’t have anything particularly focused or coherent to say.
+date: 2018-02-09 07:00
+medium: writing
+tags: 
+    - writing
+    - open-source software
+    - ethics
+    - reading
+    - literature
+summary: >
+    Because some days you want to write, but don’t have anything particularly focused or coherent to say. So: open-source software, Twitter and blogging, word vomit, and reading widely and deeply.
 
-[taxonomies]
-medium = ["writing"]
-topics = ["writing", "open-source software", "ethics", "reading", "literature"]
-
-[extra]
-subtitle = "Because some days you want to write, but don’t have anything particularly focused or coherent to say."
-summary = "Because some days you want to write, but don’t have anything particularly focused or coherent to say. So: open-source software, Twitter and blogging, word vomit, and reading widely and deeply."
-
-+++
+---
 
 This is a meander. I have a bunch of mostly-unformed thoughts, and I want to write, and the two come out here, together, in the next few minutes before I start my workday proper (because I stayed up late last night working on open source software and got up late accordingly, and so have a great deal less of [my normally-allocated writing time](http://www.chriskrycho.com/2017/knowing-your-rhythms.html "“Knowing Your Rhythms”") available today).
 
