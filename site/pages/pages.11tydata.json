@@ -1,0 +1,4 @@
+{
+   "layout": "page.njk",
+   "permalink": "/{{ title | slug }}/index.html"
+}
