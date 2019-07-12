@@ -178,6 +178,14 @@ export interface Config {
    markdownTemplateEngine?: EngineName | false
    htmlTemplateEngine?: EngineName | false
    templateFormats?: EngineName[]
+
+   /**
+      If your site lives in a different subdirectory (particularly useful with GitHub
+      pages), use pathPrefix to specify this. It’s used by the `url` filter and inserted
+      at the beginning of all absolute url href links. It does not affect your file
+      structure. Leading or trailing slashes are all normalized away, so don’t worry about
+      it.
+    */
    pathPrefix?: string
    passthroughFileCopy?: boolean
    htmlOutputSuffx?: string
