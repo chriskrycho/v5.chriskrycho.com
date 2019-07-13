@@ -1,0 +1,30 @@
+@import '../../_includes/styles/config';
+
+article table {
+   max-width: var(--max-width);
+
+   td,
+   th {
+
+      &:first-child {
+         text-align: right;
+      }
+
+      &:last-child {
+         text-align: left;
+      }
+   }
+
+   th {
+      padding: 0 ms(-4);
+   }
+
+   td {
+      padding: ms(-8) ms(-4);
+      
+      &:first-child {
+         font-weight: bold;
+         min-width: ms(8);
+      }
+   }
+}
