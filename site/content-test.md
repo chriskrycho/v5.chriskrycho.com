@@ -1,26 +1,25 @@
-+++
-title = "An Excursus on Ipsums"
-date = 2015-06-28T08:00:00-05:00
+---
+title: An Excursus on Ipsums
+subtitle: Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity.
+date: 2015-06-28T08:00:00-05:00
+summary: Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity.
+tags: ["devotions", "papers", "hot tamales"]
+layout: post
 
-[extra]
-summary = "Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity."
-subtitle = "Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity."
-
-[taxonomies]
-topics = ["devotions", "papers", "hot tamales"]
-
-+++
+---
 
 # Authors Often Misinterpret
 
-A cutcha belgian is a clutch of the mind. We know that a committee of the dorothy is assumed to be an unbreeched romanian. A sparrow sees a drain as a cercal burma. However, we can assume that any instance of a carp can be construed as a doubting prosecution. Few can name a licit comic that isn't an encased capital.[^1] It's an undeniable fact, really; an argentina of the dredger is assumed to be a bordered peen.
+A cutcha belgian is a "clutch of the mind." We know that a committee of the dorothy is assumed to be an unbreeched romanian. A “sparrow” sees a drain as a cercal burma. However, we can assume that any instance of a carp can be construed as a doubting prosecution. Few can name a licit comic that isn't an encased capital.[^1] It's an undeniable fact, really; an argentina of the dredger is assumed to be a bordered peen.
 
-A pot is a sparry minister. A firewall can hardly be considered a spleenish jeff without also being[^3] a cricket.[^4] However, a taxi can hardly be considered a childless postbox without also being an apartment. Few can name a ninefold siberian that isn't a piebald lemonade. The number of a spark becomes a sleekit beech. In recent years, a cocktail of the caption is assumed to be a clumsy flare.
+‘A pot’ is a sparry minister. A 'firewall' can hardly be considered a spleenish jeff without also being[^3] a cricket.[^4] However, a taxi can hardly be considered a 'childless postbox' without also being an apartment. Few can name a ninefold siberian that isn't a piebald lemonade. The number of a spark becomes a sleekit beech. In recent years, a cocktail of the caption is assumed to be a clumsy flare.
 
 ## An Actor of the Mind
 
-A way sees a quit as a baffling sidecar. However, a tsunami can hardly be considered a purblind vault without also being a foxglove. The first erased egypt is, in its own way, a marble. Framed in a different way---an untombed bladder's moon comes with it the thought---that the portly powder is a gymnast.
-A yugoslavian of the hallway (46--49) is assumed to be an awestruck scanner.
+"A way sees a quit as a baffling sidecar." However, a tsunami can hardly be considered a purblind vault without also being a foxglove. The first erased egypt is, in its own way, a marble. Framed in a different way---an untombed bladder's moon comes with it the thought---that the portly powder is a gymnast.
+
+'A yugoslavian' of the hallway (46--49) is assumed to be an awestruck scanner.
+
 However, a leopard is a detective from the right perspective.
 
 > A darkling lycra is a difference of the mind. A bogus century is a crowd of the mind. A domain of the bank is assumed to be a burdened ox. The zeitgeist contends that a prostyle girdle's orchestra comes with it the thought that the seismal calculus is a larch. However, a crippling rock is a doll of the mind. However, an instrument is a ralline pimple.
@@ -34,37 +33,37 @@ The shiest bit reveals itself as a skewbald cellar to those who look. A seaplane
 
 ### The Right Perspective
 
-An armchair is an armchair from the right perspective. If this was somewhat unclear, authors often misinterpret the pine as a brumous hovercraft, when in actuality it feels more like an eighty panty. A colt is an adapter's inventory.
-A believe can hardly be considered a `beamish windchime` without also being a boot. However, few can name a hateful flight that isn't a jetty digestion. They were lost without the prolate bumper that composed their panty.
+An armchair is an armchair from the right perspective. If this was somewhat unclear, authors often misinterpret the pine as a brumous hovercraft, when in actuality it feels more like an eighty panty. A colt is an adapter's inventory. A believe can hardly be considered a `beamish windchime` without also being a boot. However, few can name a hateful flight that isn't a jetty digestion. They were lost without the prolate bumper that composed their panty.
 
-```python
-#/usr/bin/env python
-import os
+```rust
+struct AThing {
+    a_param: String,
+}
 
-class AThing:
-    def __init__(self, a_param, *args, **kwargs):
-        print("This is a sample string. Because I can. In Python, it's just that neat.")
-        list = ['a string', 14, True]
-        for item in list:
-            print('A list item:', item)
+impl AThing {
+    fn new(a_param: String) -> AThing {
+        AThing { a_param }
+    }
 
-        try:
-            with open('some_file.txt', 'r') as my_file:
-                the_contents = read(my_file)
+    fn hijinks() {
+        let list = ["a string", "14", "True"];
+        for item in list {
+            println!("A list item: {}", item);
+        }
 
-        except FileNotFoundError:
-            print("What a joke! This file doesn't even exist, you jerk!")
+        match std::fs::read_to_string("some_file.txt") {
+            Ok(contents) => println!("Contents:\n{}", contents),
+            Err(err) => eprintln!("Error! {}", err),
+        }
+    }
+}
 ```
 
-A medicine sees a freeze as a roughcast balance. Far from the truth, the literature would have us believe that a chalky adjustment is not but a traffic.
-A scallion can hardly be considered a neuter foot without also being a caption.
-Some assert that a trunk is a bench from the right perspective. A fireman is a betty from the right perspective. Unfortunately, that is wrong; on the contrary,
-they were lost without the pinkish museum that composed their index.
+A medicine sees a freeze as a roughcast balance. Far from the truth, the literature would have us believe that a chalky adjustment is not but a traffic. A scallion can hardly be considered a neuter foot without also being a caption. Some assert that a trunk is a bench from the right perspective. A fireman is a betty from the right perspective. Unfortunately, that is wrong; on the contrary, they were lost without the pinkish museum that composed their index.
 
 #### Far From the Truth
 
-The march is a trial. Authors often misinterpret the shear as a married success,
-when in actuality it feels more like a glummer baker. A sprout is the sister of a church. Some assert that a glaring iris is a thistle of the mind. A perished step-father is an account of the mind. Their stopwatch was, in this moment, an upturned motorcycle.
+The march is a trial. Authors often misinterpret the shear as a married success, when in actuality it feels more like a glummer baker. A sprout is the sister of a church. Some assert that a glaring iris is a thistle of the mind. A perished step-father is an account of the mind. Their stopwatch was, in this moment, an upturned motorcycle.
 
 A dipstick can hardly be considered a gravel vinyl without also being a cactus.
 Far from the truth, the matin fly reveals itself as a turdine lawyer to those who look. A respect is the tiger of a sneeze. Few can name a spicy subway that isn't a mopy orchid. As far as we can estimate, an equinox is a cold from the right perspective. Authors often misinterpret the prose as a homeward captain,
