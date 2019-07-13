@@ -15,9 +15,8 @@ function collectionFromPath(path) {
 }
 
 /**
- *
- * @param {import("./types/eleventy").Config} config
- * @returns {import("./types/eleventy").UserConfig}
+   @param {import("./types/eleventy").Config} config
+   @returns {import("./types/eleventy").UserConfig}
  */
 function config(config) {
    config.addPlugin(
@@ -26,6 +25,9 @@ function config(config) {
          disable: ['smallCaps', 'hyphenate'],
       }),
    )
+
+   config.addFilter('md', markdown.render.bind(markdown))
+   config.addFilter('inlineMd', markdown.renderInline.bind(markdown))
 
    config.addPassthroughCopy('site/_redirects')
    config.addPassthroughCopy('site/assets')
