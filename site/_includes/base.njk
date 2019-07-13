@@ -3,7 +3,7 @@
 <head>
    <meta charset='utf-8' />
    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-   <title>{{ config.title }}</title>
+   {% block title %}<title>{{ config.title }}</title>{% endblock title %}
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
    {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
