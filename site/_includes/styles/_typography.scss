@@ -1,0 +1,18 @@
+$double-margin: 0.5em;
+$single-margin: 0.2em;
+
+.pull-double {
+   margin-left: -$double-margin;
+}
+
+.push-double {
+   margin-left: $double-margin;
+}
+
+.pull-single {
+   margin-left: -$single-margin;
+}
+
+.push-single {
+   margin-left: $single-margin;
+}

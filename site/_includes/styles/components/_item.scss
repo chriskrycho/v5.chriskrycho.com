@@ -142,6 +142,10 @@ article {
       margin-bottom: ms(0);
    }
 
+   thead {
+      font-family: var(--sans);
+   }
+
    // This is a slightly ridiculoud implementation, but it actually does what I
    // want: all list items have their normal margins, *except* those at the end
    // of a list. When the item is the terminal item in a list, it drops that
