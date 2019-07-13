@@ -4,7 +4,7 @@ subtitle: Using pseudo-random ipsum text to test and demonstrate the styles in a
 date: 2015-06-28T08:00:00-05:00
 summary: Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity.
 tags: ["devotions", "papers", "hot tamales"]
-layout: post
+layout: post.njk
 
 ---
 
