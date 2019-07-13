@@ -7,12 +7,12 @@
          <h2>{{subtitle | safe}}</h2>
       {%- endif %}
    </header>
-   {# {% if assumed_audience -%}
+   {% if assumed_audience -%}
       <i class='assumed-audience'>
          <b><a href='https://www.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
          {{page.assumed_audience}}
       </i>
-   {%- endif %} #}
+   {%- endif %}
    <div class='article-content'>{{content | safe}}</div>
 </article>
 {%- endblock main -%}
