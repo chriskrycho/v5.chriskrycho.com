@@ -357,8 +357,7 @@ article {
 
       &.footnote-ref a {
          display: inline-block;
-         padding: ms(-6) ms(-6) ms(-12);
-         margin: -#{ms(-6)} 0 ms(-8);
+         padding-left: ms(-8);
    
          text-decoration: none;
          transition: all var(--transition);
@@ -369,11 +368,29 @@ article {
             family: var(--sans);
             feature-settings: "onum" 0;
          }
+
+         &::before,
+         &::after {
+            content: "/";
+            display: inline-block;
+            color: transparent;
+            transition: color var(--transition);
+         }
+
+         &::before {
+            margin-right: ms(-8);
+         }
+
+         &::after {
+            margin-left: ms(-8);
+         }
    
          &:hover,
          &:active {
-            background: var(--blue-1);
-            color: var(--gray-5);
+            &::before,
+            &::after {
+               color: var(--gray-4);
+            }
          }
       }
    }

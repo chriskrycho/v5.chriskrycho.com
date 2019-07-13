@@ -1,0 +1,10 @@
+{% extends 'item.njk' %}
+
+{% block before_content -%}
+   {% if assumed_audience -%}
+      <i class='assumed-audience'>
+         <b><a href='https://www.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
+         {{page.assumed_audience}}
+      </i>
+   {%- endif %}
+{%- endblock %}

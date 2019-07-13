@@ -1,13 +1,12 @@
 ---
 title: Higher-Order Components in Ember.js
 date: 2018-05-26 14:00:00
-topics: [emberjs, javascript, typescript]
+tags: [emberjs, javascript, typescript]
 subtitle: >
     Components as arguments! Components getting yielded! Components everywhere!
 summary: >
     Components as arguments! Components getting yielded! Components everywhere! A powerful way to make your Ember.js components more flexible and composeable.
 modified: 2018-05-28 06:50:00
-layout: page.njk
 
 ---
 
@@ -184,7 +183,7 @@ To sum it all up, I'll just reiterate my earlier description: components are jus
 
 [^3]: We could also simplify this since we're only returning one component, and if we had the full Glimmer component story, this could look *very* nice:
 
-    ```hbs
+    ```handlebars
     <Modal @button={{component 'Button'}} as |Section|>
       <Section>
         Some content!

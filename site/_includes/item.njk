@@ -1,0 +1,18 @@
+{%- extends 'base.njk' -%}
+{%- block main -%}
+<article>
+   {% block header -%}
+      <header>
+         <h1>{{title}}</h1>
+         {% if subtitle -%}
+            <h2>{{subtitle | safe}}</h2>
+         {%- endif %}
+      </header>
+   {%- endblock header %}
+   {% block before_content %}{% endblock before_content %}
+   {% block article_content -%}
+      <div class='article-content'>{{content | safe}}</div>
+   {%- endblock article_content %}
+   {% block after_content %}{% endblock after_content %}
+</article>
+{%- endblock main -%}
