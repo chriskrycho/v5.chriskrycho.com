@@ -1,9 +1,5 @@
 @import "./_vendor/modularscale";
 
-* {
-   box-sizing: border-box;
-}
-
 // https://www.modularscale.com/?1,4&em&1.333
 $modularscale: (
    base: 1em 4em,
@@ -18,51 +14,3 @@ $break-4: 1080px;
 
 $resize: $break-2;
 $reflow: $break-4;
-
-:root {
-   // -- Typography -- //
-   --serif: Sabon, Palatino, Book Antiqua, serif;
-   --serif-smcp: Sabon SMCP, Palatino, Book Antiqua, serif;
-   --sans: Cronos, Century Gothic, sans-serif;
-   --mono: Hack, Menlo, Consolas, monospace;
-   --fs-base: 16px;
-   --fs-sans-adjust: 1.05em;
-
-   // -- Colors -- //
-   --gray-0: hsl(222, 10%, 15%);
-   --gray-1: hsl(222, 10%, 25%);
-   --gray-2: hsl(222, 10%, 35%);
-   --gray-3: hsl(222, 10%, 50%);
-   --gray-4: hsl(222, 10%, 70%);
-   --gray-5: hsl(222, 10%, 95%);
-   --gray-6: hsl(222, 10%, 99%);
-
-   --blue-0: hsl(208, 85%, 18%);
-   --blue-1: hsl(208, 85%, 33%);
-   --blue-2: hsl(208, 85%, 45%);
-   --blue-3: hsl(208, 85%, 60%);
-   --blue-4: hsl(208, 85%, 71%);
-   --blue-5: hsl(208, 85%, 80%);
-
-   --transition: 0.25s ease;
-}
-
-@media screen {
-   @media (prefers-reduced-motion: reduce) {
-      :root {
-         --transition: 0s;
-      }
-   }
-
-   @media (min-width: $resize) {
-      :root {
-         --fs-base: 18px;
-      }
-   }
-}
-
-html {
-   padding: 0;
-   margin: 0;
-   font: var(--fs-base) / ms(2) var(--serif);
-}
