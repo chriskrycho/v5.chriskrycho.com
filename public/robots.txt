@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: v4.chriskrycho.com/sitemap.xml

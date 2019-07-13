@@ -3,10 +3,10 @@
 <head>
    <meta charset='utf-8' />
    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-   <title>{{ config.title }}</title>
+   <title></title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-   {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
+   
    <link rel='stylesheet' type='text/css' media='screen' href='/style.css' />
 
    <link preload as='style' rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
@@ -18,7 +18,7 @@
    <link href="/assets/images/favicon.png" type="image/png" rel="icon">
    <link href="/assets/images/favicon.ico" type="image/ico" rel="icon">
 
-   <link rel="me" href="mailto:hello@chriskrycho.com">
+   <link rel="me" href="mailto:chris at chriskrycho dot com">
    <link rel="me" href="https://github.com/chriskrycho">
    <link rel="me" href="https://patreon.com/chriskrycho">
    <link rel="me" href="https://soundcloud.com/chriskrycho">
@@ -42,7 +42,14 @@
       </header>
 
       <div class='content'>
-      {% block main %}{% endblock main %}
+      <article>
+   <header>
+      <h1></h1>
+      
+   </header>
+   
+   <div class='article-content'></div>
+</article>
       </div>
    </main>
 

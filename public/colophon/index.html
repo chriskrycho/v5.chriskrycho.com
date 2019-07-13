@@ -3,10 +3,10 @@
 <head>
    <meta charset='utf-8' />
    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-   <title>{{ config.title }}</title>
+   <title></title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-   {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
+   
    <link rel='stylesheet' type='text/css' media='screen' href='/style.css' />
 
    <link preload as='style' rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
@@ -42,7 +42,21 @@
       </header>
 
       <div class='content'>
-      {% block main %}{% endblock main %}
+      <article>
+   <header>
+      <h1>Colophon</h1>
+      <h2>Or, how this site is made.</h2>
+   </header>
+   
+   <div class='article-content'><h2 id="design"><a class="section-link" href="#design"><span class="__marker --open">—</span>Design<span class="__marker --close">—</span></a></h2>
+<h3 id="typography"><a class="section-link" href="#typography"><span class="__marker --open">—</span>Typography<span class="__marker --close">—</span></a></h3>
+<p>| Typeface | Story |
+| Body text | Sabon, designed by Jan Tschichold in the 1960s |</p>
+<p>The body text is Sabon, designed by Jan Tschichold in the 1960’s.</p>
+<h2 id="implementation"><a class="section-link" href="#implementation"><span class="__marker --open">—</span>Implementation<span class="__marker --close">—</span></a></h2>
+<p>I built this with <a href="https://www.11ty.io">Eleventy</a>.</p>
+</div>
+</article>
       </div>
    </main>
 

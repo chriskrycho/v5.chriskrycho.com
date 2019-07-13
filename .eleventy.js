@@ -1,5 +1,6 @@
 // @ts-check
 
+const markdown = require('./eleventy/markdown')
 const typesetPlugin = require('./eleventy/plugin-typeset')
 
 /**
@@ -10,9 +11,7 @@ const typesetPlugin = require('./eleventy/plugin-typeset')
  */
 function collectionFromPath(path) {
    return collections =>
-      collections
-         .getAll()
-         .filter(collection => collection.inputPath.includes(path))
+      collections.getAll().filter(collection => collection.inputPath.includes(path))
 }
 
 /**
@@ -34,6 +33,8 @@ function config(config) {
    config.addCollection('posts', collectionFromPath('content/writing/posts'))
    config.addCollection('essays', collectionFromPath('content/writing/essays'))
    config.addCollection('notes', collectionFromPath('content/writing/notes'))
+
+   config.setLibrary('md', markdown)
 
    return {
       dir: {

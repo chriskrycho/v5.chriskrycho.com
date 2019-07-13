@@ -125,6 +125,10 @@ export interface Collections {
    getFilteredByGlob(glob: string | string[]): Collection[]
 }
 
+interface Renderer {
+   render(input: string): string
+}
+
 export interface Config {
    dir?: {
       /** Controls the top level directory/file/glob that we’ll use to look for templates. */
@@ -281,6 +285,7 @@ export interface Config {
       excerpt_alias?: string
       engines?: Dict<Engine>
    }): void
+   setLibrary(to: EngineName, using: Renderer): void
 }
 
 type NonMethodNames<T> = {

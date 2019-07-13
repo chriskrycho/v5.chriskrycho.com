@@ -44,6 +44,33 @@ article {
       margin-left: auto;
       margin-right: auto;
 
+      h1, h2, h3, h4, h5, h6 {
+         .section-link {
+            text-decoration: none;
+
+            .__marker {
+               display: inline-block;
+               color: transparent;
+               transition: color var(--transition);
+
+               &.--open {
+                  padding-right: ms(-4);
+               }
+
+               &.--close {
+                  padding-left: ms(-4);
+               }
+            }
+
+            &:hover,
+            &:active {
+               .__marker {
+                  color: var(--link);
+               }
+            }
+         }
+      }
+
       h1 {
          font: {
             family: var(--sans);
@@ -83,8 +110,15 @@ article {
             family: var(--sans);
             size: ms(2);
          }
-         color: var(--h2-fg);
          margin: 1rem 0;
+
+         .section-link {
+            color: var(--h2-fg);
+
+            &:hover {
+               color: var(--link);
+            }
+         }
       }
    }
 
@@ -321,21 +355,21 @@ article {
       line-height: 0;
       vertical-align: 0.558em;
 
-      a {
+      &.footnote-ref a {
          display: inline-block;
-         padding: ms(-6) ms(-4) ms(-12);
+         padding: ms(-6) ms(-6) ms(-12);
          margin: -#{ms(-6)} 0 ms(-8);
-
+   
          text-decoration: none;
          transition: all var(--transition);
-
+   
          line-height: 1;
          font: {
             size: ms(-1);
             family: var(--sans);
             feature-settings: "onum" 0;
          }
-
+   
          &:hover,
          &:active {
             background: var(--blue-1);
