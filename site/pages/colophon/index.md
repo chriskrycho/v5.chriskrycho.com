@@ -9,7 +9,7 @@ layout: colophon.njk
 
 I built this version of the site with [Eleventy]. You can find the entirety of the implementation (and indeed the entire *history* of the implementation) [on GitHub][repo]. I'm using it with the following plugins:
 
-- <b>typeset:</b> my own implementation of a plugin for [typeset], heavily inspired by [eleventy-plugin-typeset]
+- <b>typeset:</b> my own implementation of a plugin for [typeset], heavily inspired by [eleventy-plugin-typeset].
 
 - <b>[markdown-it] plugins:</b>
     - [anchor](https://github.com/valeriangalliat/markdown-it-anchor)
@@ -17,7 +17,7 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
     - [footnote](https://github.com/markdown-it/markdown-it-footnote)
     - [superscript](https://github.com/markdown-it/markdown-it-sup)
 
-- <b>spacewell:</b> a little tool I built a few years ago to insert hair spaces around em dashes and thin spaces with non-breaking spans around number-separating en dashes; the source is colocated with the rest of the site
+- <b>spacewell:</b> a little tool I built a few years ago to insert hair spaces around em dashes and thin spaces with non-breaking spans around number-separating en dashes; the source is colocated with the rest of the site.
 
 [Eleventy]: https://www.11ty.io
 [repo]: https://github.com/chriskrycho/v5.chriskrycho.com
