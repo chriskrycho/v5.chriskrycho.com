@@ -24,8 +24,11 @@ article {
          font: {
             family: var(--sans);
             weight: 600;
-            size: ms(4);
+            size: ms(3);
          }
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: var(--h1-fg);
       }
 
       h2 {
