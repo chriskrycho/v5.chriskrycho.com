@@ -1,5 +1,10 @@
 {%- extends 'base.njk' -%}
-{% block title %}<title>{{title}}&hairsp;—&hairsp;Chris Krycho</title>{% endblock title %}
+
+{%- if title -%}
+   {%- block title_meta -%}
+      {{title}}&hairsp;—&hairsp;Chris Krycho
+   {%- endblock title_meta %}
+{%- endif -%}
 
 {%- block main -%}
 <article>
