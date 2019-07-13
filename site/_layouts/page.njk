@@ -1,1 +1,6 @@
 {% extends 'item.njk' %}
+{% import 'macros/item.njk' as item %}
+
+{% block header %}
+{{item.header(type='page', title=title, subtitle=subtitle)}}
+{% endblock header %}

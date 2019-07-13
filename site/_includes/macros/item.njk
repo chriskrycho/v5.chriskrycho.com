@@ -1,0 +1,10 @@
+{% macro header(type, title, subtitle) %}
+
+<header>
+   <h1 class='{{type}}'>{{title}}</h1>
+   {% if subtitle -%}
+      <h2>{{subtitle | safe}}</h2>
+   {%- endif %}
+</header>
+
+{% endmacro %}
