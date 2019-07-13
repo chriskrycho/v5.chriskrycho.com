@@ -2,6 +2,7 @@
 
 const markdown = require('./eleventy/markdown')
 const typesetPlugin = require('./eleventy/plugin-typeset')
+const spacewell = require('./eleventy/plugin-spacewell')
 
 /**
    Use a path to create a collection from all items contained within it.
@@ -25,6 +26,8 @@ function config(config) {
          disable: ['smallCaps', 'hyphenate'],
       }),
    )
+
+   config.addPlugin(spacewell({ emDashes: true, enDashes: true }))
 
    config.addFilter('md', markdown.render.bind(markdown))
    config.addFilter('inlineMd', markdown.renderInline.bind(markdown))
