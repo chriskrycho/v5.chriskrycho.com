@@ -1,7 +1,6 @@
 ---
 title: Essays
-subtitle: Long-form work with a bit of spit-‘n’-polish applied.
-
+subtitle: Longer-form, more deeply considered, better-revised writing.
 layout: page.njk
 permalink: /essays/index.html
 ---
