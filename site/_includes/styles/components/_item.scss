@@ -9,7 +9,7 @@ article {
       bottom: ms(2);
    }
 
-   font-feature-settings: "liga", "onum", "pnum", "kern";
+   font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
 
    header {
       width: 100%;
@@ -26,8 +26,6 @@ article {
             weight: 600;
             size: ms(3);
          }
-         text-transform: uppercase;
-         letter-spacing: 1px;
          color: var(--h1-fg);
       }
 
@@ -40,6 +38,11 @@ article {
       }
    }
 
+   header .page {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
    .article-content {
       display: flex;
       flex-direction: column;
@@ -47,7 +50,12 @@ article {
       margin-left: auto;
       margin-right: auto;
 
-      h1, h2, h3, h4, h5, h6 {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
          .section-link {
             text-decoration: none;
 
@@ -91,8 +99,9 @@ article {
          max-width: var(--max-width);
          text-align: center;
 
-         &::before, &::after {
-            content: "";
+         &::before,
+         &::after {
+            content: '';
             height: 1px;
             border-radius: 1px;
             background: var(--gray-3);
@@ -173,10 +182,10 @@ article {
 
             display: inline-block;
             text-align: right;
-            content: counter(ol-counter) ". ";
+            content: counter(ol-counter) '. ';
             font: {
                family: var(--sans);
-               feature-settings: "onum" 0;
+               feature-settings: 'onum' 0;
                size: 1.1rem;
             }
          }
@@ -231,7 +240,7 @@ article {
 
          li {
             &:before {
-               content: "";
+               content: '';
             }
          }
       }
@@ -287,7 +296,7 @@ article {
       padding: ms(-4);
 
       &::before {
-         content: "—/ ASIDE /—";
+         content: '—/ ASIDE /—';
          display: block;
          text-align: center;
          margin: ms(-4) 0 0 -#{ms(-4)};
@@ -361,20 +370,20 @@ article {
       &.footnote-ref a {
          display: inline-block;
          padding-left: ms(-8);
-   
+
          text-decoration: none;
          transition: all var(--transition);
-   
+
          line-height: 1;
          font: {
             size: ms(-1);
             family: var(--sans);
-            feature-settings: "onum" 0;
+            feature-settings: 'onum' 0;
          }
 
          &::before,
          &::after {
-            content: "/";
+            content: '/';
             display: inline-block;
             color: transparent;
             transition: color var(--transition);
@@ -387,7 +396,7 @@ article {
          &::after {
             margin-left: ms(-8);
          }
-   
+
          &:hover,
          &:active {
             &::before,
