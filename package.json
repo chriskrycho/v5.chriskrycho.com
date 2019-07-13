@@ -23,7 +23,8 @@
       "sass": "1.22.1",
       "true-myth": "^3.0.0",
       "typescript": "3.5.2",
-      "typeset": "0.2.2"
+      "typeset": "0.2.2",
+      "uslug": "^1.0.4"
    },
    "eslintConfig": {
       "extends": "eslint:recommended",

@@ -6,6 +6,7 @@ const anchor = require('markdown-it-anchor')
 const defList = require('markdown-it-deflist')
 const footnotes = require('markdown-it-footnote')
 const sup = require('markdown-it-sup')
+const slugify = require('uslug')
 const { Result } = require('true-myth')
 
 /**
@@ -85,10 +86,11 @@ const md = markdownIt({
    .use(sup)
    .use(anchor, {
       permalink: true,
-      renderPermalink,
       level: 1,
       permalinkClass: 'section-link',
       permalinkSymbol: '—',
+      renderPermalink,
+      slugify,
    })
 
 md.renderer.rules.footnote_caption = /** @type import('markdown-it').TokenRender */ (
@@ -101,7 +103,7 @@ md.renderer.rules.footnote_caption = /** @type import('markdown-it').TokenRender
       n += ':' + tokens[idx].meta.subId
    }
 
-   return `/ ${n} /`
+   return n
 }
 
 module.exports = md

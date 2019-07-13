@@ -46,7 +46,7 @@ function config(config) {
       templateFormats: ['html', 'njk', '11ty.js', 'md'],
       dataTemplateEngine: 'njk',
       htmlTemplateEngine: 'njk',
-      markdownTemplateEngine: 'njk',
+      markdownTemplateEngine: false,
    }
 }
 
