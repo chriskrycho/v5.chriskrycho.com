@@ -21,9 +21,9 @@ function collectionFromPath(path) {
  */
 function config(config) {
    config.addPlugin(
-      typesetPlugin({
-         only: '.article',
-         disable: ['smallCaps', 'hyphenate'],
+      typeset({
+         only: 'article',
+         disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
       }),
    )
 
