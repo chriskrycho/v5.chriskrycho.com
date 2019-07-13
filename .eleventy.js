@@ -1,7 +1,7 @@
 // @ts-check
 
 const markdown = require('./eleventy/markdown')
-const typesetPlugin = require('./eleventy/plugin-typeset')
+const typeset = require('./eleventy/plugin-typeset')
 const spacewell = require('./eleventy/plugin-spacewell')
 
 /**
@@ -36,9 +36,9 @@ function config(config) {
    config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
 
-   config.addCollection('posts', collectionFromPath('content/writing/posts'))
-   config.addCollection('essays', collectionFromPath('content/writing/essays'))
-   config.addCollection('notes', collectionFromPath('content/writing/notes'))
+   config.addCollection('posts', collectionFromPath('posts'))
+   config.addCollection('essays', collectionFromPath('essays'))
+   config.addCollection('notes', collectionFromPath('notes'))
 
    config.setLibrary('md', markdown)
 
