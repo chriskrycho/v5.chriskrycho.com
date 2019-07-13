@@ -31,6 +31,7 @@ function config(config) {
 
    config.addPassthroughCopy('site/_redirects')
    config.addPassthroughCopy('site/assets')
+   config.addPassthroughCopy('site/robots.txt')
 
    config.addCollection('posts', collectionFromPath('content/writing/posts'))
    config.addCollection('essays', collectionFromPath('content/writing/essays'))
