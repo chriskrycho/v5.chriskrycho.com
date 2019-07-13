@@ -3,7 +3,7 @@
 <head>
    <meta charset='utf-8' />
    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-   {% block title %}<title>{{ config.title }}</title>{% endblock title %}
+   <title>{% block title_meta %}{{ config.title }}{% endblock title_meta %}</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
    {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
@@ -11,6 +11,7 @@
 
    <link preload as='style' rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
    <link rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
+   {% block extra_styles %}{% endblock extra_styles %}
 
    <link href="/assets/images/favicon.png" type="image/png" rel="icon">
    <link href="/assets/images/favicon.ico" type="image/ico" rel="icon">
