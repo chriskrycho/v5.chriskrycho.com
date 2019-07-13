@@ -1,3 +1,5 @@
+{% import 'macros/nav.njk' as nav %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,28 +48,28 @@
 
    <nav class='site-nav'>
       <ul>
-         <li><a class='current' href='/'>Home</a></li>
+         {{nav.item(title='Home', path='/', pageUrl=page.url)}}
 
          <li role='separator'><hr></li>
 
-         <li><a href='/posts/'>Posts</a></li>
-         <li><a href='/essays/'>Essays</a></li>
-         <li><a href='/library/'>Library</a></li>
+         {{nav.item(title='Posts', path='/posts/', pageUrl=page.url)}}
+         {{nav.item(title='Essays', path='/essays/', pageUrl=page.url)}}
+         {{nav.item(title='Library', path='/library/', pageUrl=page.url)}}
 
          <li role='separator'><hr></li>
 
-         <li><a href='/podcasts/'>Podcasts</a></li>
-         <li><a href='/projects/'>Projects</a></li>
-         <li><a href='/appearances/'>Appearances</a></li>
+         {{nav.item(title='Podcasts', path='/podcasts/', pageUrl=page.url)}}
+         {{nav.item(title='Projects', path='/projects/', pageUrl=page.url)}}
+         {{nav.item(title='Appearances', path='/appearances/', pageUrl=page.url)}}
 
          <li role='separator'><hr></li>
 
-         <li><a href='/about/'>About</a></li>
-         <li><a href='/cv/'>Curriculum Vitae</a></li>
+         {{nav.item(title='About', path='/about/', pageUrl=page.url)}}
+         {{nav.item(title='Curriculum', path='/cv/', pageUrl=page.url)}}
 
          <li role='separator'><hr></li>
 
-         <li><a href='/colophon/'>Colophon</a></li>
+         {{nav.item(title='Colophon', path='/colophon/', pageUrl=page.url)}}
       </ul>
    </nav>
 </body>
