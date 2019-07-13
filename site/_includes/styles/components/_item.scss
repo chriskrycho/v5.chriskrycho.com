@@ -144,6 +144,8 @@ article {
 
    thead {
       font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 1px;
    }
 
    // This is a slightly ridiculoud implementation, but it actually does what I
