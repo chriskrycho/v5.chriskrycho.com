@@ -1,4 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://v5-chriskrycho-com.netlify.com/* https://v5.chriskrycho.com/:splat 301!
-https://v5-chriskrycho-com.netlify.com/* https://v5.chriskrycho.com/:splat 301!
-http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
