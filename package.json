@@ -7,7 +7,7 @@
    "author": "Chris Krycho <hello@chriskrycho.com>",
    "license": "MIT",
    "volta": {
-      "node": "10.16.0",
+      "node": "12.6.0",
       "yarn": "1.16.0"
    },
    "devDependencies": {
