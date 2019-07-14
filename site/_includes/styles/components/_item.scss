@@ -1,8 +1,7 @@
-$width: 32rem;
+$width: 32em;
 
 article {
    --max-width: #{$width};
-   --width: 100%;
 
    padding: {
       top: ms(2);
@@ -137,7 +136,7 @@ article {
    ul,
    ol {
       width: 100%;
-      max-width: 32em;
+      max-width: $width;
       padding-left: ms(2);
       margin-bottom: ms(0);
    }
@@ -192,7 +191,7 @@ article {
             font: {
                family: var(--sans);
                feature-settings: 'onum' 0;
-               size: 1.1rem;
+               size: 1.1em;
             }
          }
       }
@@ -203,7 +202,7 @@ article {
    }
 
    p {
-      width: var(--width);
+      width: 100%;
       max-width: var(--max-width);
       margin: 0 0 ms(0);
       padding: 0;
@@ -412,6 +411,12 @@ article {
          }
       }
    }
+
+   .footnotes {
+      font-size: calc(var(--fs-base) - 2px);
+      width: 100%;
+      max-width: var(--max-width);
+   }
 }
 
 @media screen {
@@ -454,8 +459,6 @@ article {
 
    @media (min-width: $reflow) {
       article {
-         --width: #{$width};
-
          padding-bottom: ms(3);
 
          header {
