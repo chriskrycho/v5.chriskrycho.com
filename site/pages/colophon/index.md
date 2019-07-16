@@ -29,12 +29,23 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
 
 | Context  | Typeface |
 | -------- | -------- |
-| Body text | [Sabon], designed by Jan Tschichold in the mid-1960s as a Garamond revival. Arguably the most beautiful Garamond in existence. Licensed via [Fonts.com]. |
-| Headings  | [Cronos], designed by Robert Slimbach in 1996. A nice contrast to Sabon with its digital-era, Adobe-sponsored roots. Licensed via [Fonts.com]. |
-| Code      | [Hack], designed by Chris Simpkins in 2015. Licensed in parts under the MIT License, the public domain, and Bitstream Vera License (see details [here][hack-license]). |
+| Body text | [Sabon], designed by Jan Tschichold in the mid-1960s as a Garamond revival. In my opinion, the most beautiful Garamond in existence. Licensed via [Fonts.com]. |
+| Headings  | [Cronos], designed by Robert Slimbach in 1996. A nice contrast to Sabon with its digital-era roots. The typeface I’ve been using on my site the longest at this point! Licensed via [Fonts.com]. |
+| Code      | [Hack], designed by Chris Simpkins in 2015 as an extension of the Deja Vu/Bitstream Vera lineage. Licensed in parts under the MIT License, the public domain, and Bitstream Vera License (see details [here][hack-license]). |
 
 [Sabon]: https://www.myfonts.com/fonts/linotype/sabon/
 [Fonts.com]: https://www.fonts.com
 [Cronos]: https://www.myfonts.com/fonts/adobe/cronos/
 [Hack]: https://sourcefoundry.org/hack/
 [hack-license]: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
+
+## Inspiration
+
+While working on this design, I took more-or-less-direct inspiration in a variety of ways from some of my favorite current or previous designs around the web:
+
+- [Tim Brown](https://tbrown.org)
+* [Ethan Marcotte](https://ethanmarcotte.com)
+- [Trent Walton](https://trentwalton.com)
+- [Craig Mod](https://craigmod.com)—a truly wonderful site, but I actually loved the *previous* design iteration even more.
+- [Jen Simmons](https://jensimmons.com)—as with Mod’s current site, I really like what she’s doing on her site now—it’s all sorts of fun layout-wise—but it’s quite distinct from what she was doing when I was stealing ideas from her late in 2018!
+- [Reda Lemeden](https://redalemeden.com)
