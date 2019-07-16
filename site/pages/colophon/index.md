@@ -31,7 +31,7 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
 | -------- | -------- |
 | Body text | [Sabon], designed by Jan Tschichold in the mid-1960s as a Garamond revival. In my opinion, the most beautiful Garamond in existence. Licensed via [Fonts.com]. |
 | Headings  | [Cronos], designed by Robert Slimbach in 1996. A nice contrast to Sabon with its digital-era roots. The typeface I’ve been using on my site the longest at this point! Licensed via [Fonts.com]. |
-| Code      | [Hack], designed by Chris Simpkins in 2015 as an extension of the Deja Vu/Bitstream Vera lineage. Licensed in parts under the MIT License, the public domain, and Bitstream Vera License (see details [here][hack-license]). |
+| Code      | [Hack], designed by Chris Simpkins in 2015 as an extension of the Deja Vu/Bitstream Vera lineage. Licensed in parts under the <abbr title="Massachusetts Instititue of Technology">MIT</abbr> License, the public domain, and Bitstream Vera License (see details [here][hack-license]). |
 
 [Sabon]: https://www.myfonts.com/fonts/linotype/sabon/
 [Fonts.com]: https://www.fonts.com
