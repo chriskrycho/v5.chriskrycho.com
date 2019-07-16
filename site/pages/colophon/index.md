@@ -44,7 +44,7 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
 While working on this design, I took more-or-less-direct inspiration in a variety of ways from some of my favorite current or previous designs around the web:
 
 - [Tim Brown](https://tbrown.org)
-* [Ethan Marcotte](https://ethanmarcotte.com)
+- [Ethan Marcotte](https://ethanmarcotte.com)
 - [Trent Walton](https://trentwalton.com)
 - [Craig Mod](https://craigmod.com)—a truly wonderful site, but I actually loved the *previous* design iteration even more.
 - [Jen Simmons](https://jensimmons.com)—as with Mod’s current site, I really like what she’s doing on her site now—it’s all sorts of fun layout-wise—but it’s quite distinct from what she was doing when I was stealing ideas from her late in 2018!
