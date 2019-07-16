@@ -67,7 +67,7 @@
          width: calc(var(--hr-width) / 2);
          position: absolute;
          top: 0.4rem;
-         transition: border-color var(--transition);
+         transition: background-color var(--transition);
       }
 
       &:before {
