@@ -449,8 +449,6 @@ article {
          blockquote,
          pre,
          aside {
-            width: var(--fancy-width);
-            max-width: none;
             margin-left: ms(-4);
             padding-left: ms(0);
          }
