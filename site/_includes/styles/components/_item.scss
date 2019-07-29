@@ -255,7 +255,8 @@ article {
    // their normal margins *except* when terminating the container, so that they
    // do not cause visual disparities between top and bottom.
    blockquote,
-   aside {
+   aside,
+   .note {
       > {
          p,
          ul,
@@ -295,13 +296,13 @@ article {
       }
    }
 
-   aside {
+   aside,
+   .note {
       position: relative;
       margin-bottom: ms(0);
       padding: ms(-4);
 
       &::before {
-         content: '—/ ASIDE /—';
          display: block;
          text-align: center;
          margin: ms(-4) 0 0 -#{ms(-4)};
@@ -314,6 +315,15 @@ article {
       code {
          background-color: var(--aside-code-bg);
       }
+   }
+
+   aside::before {
+      content: '—/ Aside /—';
+   }
+
+   .note::before {
+      content: '—/ Note /—';
+      color: var(--note-accent);
    }
 
    .assumed-audience {
@@ -329,6 +339,13 @@ article {
       background-color: var(--aside-bg);
       border-left: none;
       border-top: 3px solid var(--aside-border);
+   }
+
+   .note {
+      font-family: var(--sans);
+      color: var(--note-fg);
+      background-color: var(--note-bg);
+      border-top: 3px solid var(--note-accent);
    }
 
    a {
@@ -427,7 +444,8 @@ article {
 
          blockquote,
          pre,
-         aside {
+         aside,
+         .note {
             max-width: var(--fancy-width);
             align-self: center;
             padding: {
