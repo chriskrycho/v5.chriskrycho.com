@@ -3,9 +3,9 @@ const typeset = require('typeset')
 /** @param {import('typeset').Options} [options] */
 function plugin(options) {
    /**
-   @param {import('../types/eleventy').Config} eleventyConfig
-   @param {string} [pluginNamespace]
- */
+      @param {import('../types/eleventy').Config} eleventyConfig
+      @param {string} [pluginNamespace]
+    */
    function transform(eleventyConfig, pluginNamespace) {
       /** @type {Parameters<import('../types/eleventy').Config['addTransform']>[1]} */
       const t = (content, outputPath) =>

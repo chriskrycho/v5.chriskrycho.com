@@ -11,7 +11,7 @@ const { Result } = require('true-myth')
 
 /**
    @param {string} content
-      @param {string} languageName 
+   @param {string} languageName 
  */
 function highlight(languageName, content) {
    return Result.tryOr(
