@@ -11,8 +11,8 @@ eleventyExcludeFromCollections: true
 {% set c = page.inputPath | toCollection %}
 {%- for entry in collections[c] -%}
    <li>
-      <a href='{{entry.url}}'>{{entry.data.title}}</a>
-      <span class='subtitle'>{{entry.data.subtitle}}</span>
+      <a href='{{entry.url}}'>{{entry.data.title | safe}}</a>
+      <span class='subtitle'>{{entry.data.subtitle | safe}}</span>
    </li>
 {%- endfor -%}
 </ul>
