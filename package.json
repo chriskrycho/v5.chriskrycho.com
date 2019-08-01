@@ -15,6 +15,7 @@
       "@types/serve-static": "^1.13.2",
       "eslint": "6.0.1",
       "highlight.js": "9.15.8",
+      "luxon": "^1.17.2",
       "markdown-it-anchor": "^5.2.4",
       "markdown-it-deflist": "^2.0.3",
       "markdown-it-footnote": "^3.0.2",
