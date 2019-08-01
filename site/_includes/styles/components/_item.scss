@@ -402,7 +402,7 @@ article {
          &::after {
             content: '/';
             display: inline-block;
-            color: transparent;
+            color: var(--gray-4);
             transition: color var(--transition);
          }
 
@@ -418,7 +418,7 @@ article {
          &:active {
             &::before,
             &::after {
-               color: var(--gray-4);
+               color: var(--hover);
             }
          }
       }
