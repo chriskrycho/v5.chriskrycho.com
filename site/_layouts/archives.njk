@@ -1,0 +1,19 @@
+---
+eleventyExcludeFromCollections: true
+---
+
+{%- extends '_page.njk' -%}
+{%- import 'macros/item.njk' as item -%}
+
+
+{%- block content -%}
+<ul>
+{% set c = page.inputPath | toCollection %}
+{%- for entry in collections[c] -%}
+   <li>
+      <a href='{{entry.url}}'>{{entry.data.title}}</a>
+      <span class='subtitle'>{{entry.data.subtitle}}</span>
+   </li>
+{%- endfor -%}
+</ul>
+{%- endblock content -%}

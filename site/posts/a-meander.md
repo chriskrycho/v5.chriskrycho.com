@@ -2,6 +2,7 @@
 title: A Meander
 subtitle: Because some days you want to write, but don’t have anything particularly focused or coherent to say.
 date: 2018-02-09 07:00:00
+updated: 2019-01-01
 medium: writing
 tags: 
     - writing

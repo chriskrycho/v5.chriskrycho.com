@@ -8,3 +8,21 @@
 </header>
 
 {% endmacro %}
+
+{% macro meta(date, tags, updated) %}
+<footer>
+   <section class='dates'>
+   Published {% localeDate date -%}
+   {%- if updated %}, last updated {% localeDate updated %}{% endif %}
+   </section>
+   {%- if tags.length > 0 %}
+   <section class='topics'>Topics:
+      <ul>
+         {%- for tag in tags %}
+         <li><a href='/topics/{{tag | slug}}'>{{tag}}</a></li>
+         {%- endfor -%}
+      </ul>
+   </section>
+   {%- endif %}
+</footer>
+{% endmacro %}

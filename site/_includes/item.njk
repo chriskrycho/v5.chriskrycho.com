@@ -10,9 +10,9 @@
 <article>
    {% block header -%}{%- endblock header %}
    {% block before_content %}{% endblock before_content %}
-   {% block article_content -%}
+   {% block content -%}
       <div class='article-content'>{{content | safe}}</div>
-   {%- endblock article_content %}
+   {%- endblock content %}
    {% block after_content %}{% endblock after_content %}
 </article>
 {%- endblock main -%}

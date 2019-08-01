@@ -13,3 +13,7 @@
       </i>
    {%- endif %}
 {%- endblock %}
+
+{% block after_content %}
+   {{item.meta(date, tags, updated)}}
+{% endblock %}
