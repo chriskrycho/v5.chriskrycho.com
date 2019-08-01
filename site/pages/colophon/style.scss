@@ -3,6 +3,12 @@
 article table {
    max-width: var(--max-width);
 
+   thead {
+      font-family: var(--sans);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
    td,
    th {
 

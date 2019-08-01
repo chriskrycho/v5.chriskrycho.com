@@ -131,20 +131,14 @@ article {
             }
          }
       }
-   }
 
-   ul,
-   ol {
-      width: 100%;
-      max-width: $width;
-      padding-left: ms(2);
-      margin-bottom: ms(0);
-   }
-
-   thead {
-      font-family: var(--sans);
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      ul,
+      ol {
+         width: 100%;
+         max-width: $width;
+         padding-left: ms(2);
+         margin-bottom: ms(0);
+      }
    }
 
    // This is a slightly ridiculoud implementation, but it actually does what I

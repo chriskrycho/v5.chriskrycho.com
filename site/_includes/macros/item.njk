@@ -1,12 +1,10 @@
 {% macro header(type, title, subtitle) %}
-
 <header>
    <h1 class='{{type}}'>{{title | inlineMd | safe}}</h1>
    {% if subtitle -%}
       <h2>{{subtitle | inlineMd | safe}}</h2>
    {%- endif %}
 </header>
-
 {% endmacro %}
 
 {% macro meta(date, tags, updated) %}
