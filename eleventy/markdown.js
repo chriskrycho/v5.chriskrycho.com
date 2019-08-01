@@ -24,7 +24,6 @@ function highlight(languageName, content) {
 }
 
 /**
-  
   @param {{ short: string, long: string }} err
  */
 function logErr(err) {

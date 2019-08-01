@@ -17,24 +17,30 @@ main {
 }
 
 @media screen {
-   @media (min-width: $reflow) and (min-height: 600px) {
+   @media (min-width: $reflow) {
       main {
-         margin: {
-            top: 0;
-            left: ms(-2);
-         }
-         padding-right: ms(-2);
-         max-width: calc(75vw - #{ms(-2)});
+         min-height: 100vh;
       }
 
-      nav {
-         width: 100%;
-         max-width: 25vw;
-         height: 100vh;
-         position: fixed;
-         top: 0;
-         right: 0;
-         bottom: 0;
+      @media (min-height: 600px) {
+         main {
+            margin: {
+               top: 0;
+               left: ms(-2);
+            }
+            padding-right: ms(-2);
+            max-width: calc(75vw - #{ms(-2)});
+         }
+   
+         nav {
+            width: 100%;
+            max-width: 25vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+         }
       }
    }
 }
