@@ -1,4 +1,12 @@
-$width: 32em;
+$width: 32rem;
+
+@mixin fancy-block($bg, $fg) {
+   align-self: start;
+   padding: ms(-4);
+   width: 100%;
+   color: $fg;
+   background: $bg;
+}
 
 article {
    --max-width: #{$width};
@@ -206,29 +214,18 @@ article {
       width: 100%;
    }
 
-   @mixin fancy-block($bg, $fg, $border) {
-      align-self: start;
+   blockquote {
+      @include fancy-block(var(--blockquote-bg), var(--blockquote-fg));
+
+      border-left: 3px solid var(--blockquote-border);
       margin: {
          left: -3px;
          bottom: ms(0);
       }
-      padding: ms(-4);
-      width: 100%;
-      color: $fg;
-      background: $bg;
-      border-left: 3px solid $border;
-   }
-
-   blockquote {
-      @include fancy-block(
-         var(--blockquote-bg),
-         var(--blockquote-fg),
-         var(--blockquote-border)
-      );
 
       font: {
          family: var(--sans);
-         size: var(--fs-sans-adjust);
+         size: var(--sans-adjust);
       }
 
       // I don't have to do anything special to get Cronos list markers in the
@@ -250,7 +247,8 @@ article {
    // do not cause visual disparities between top and bottom.
    blockquote,
    aside,
-   .note {
+   .note,
+   .assumed-audience {
       > {
          p,
          ul,
@@ -273,7 +271,7 @@ article {
    }
 
    pre {
-      @include fancy-block(var(--code-bg), var(--code-fg), var(--code-border));
+      @include fancy-block(var(--code-bg), var(--code-fg));
 
       background: var(--code-bg);
       color: var(--code-fg);
@@ -311,36 +309,50 @@ article {
       }
    }
 
-   aside::before {
-      content: '—/ Aside /—';
-   }
-
-   .note::before {
-      content: '—/ Note /—';
-      color: var(--note-accent);
-      font-weight: bold;
-   }
-
-   .assumed-audience {
-      display: block;
-      padding: ms(-4);
-      max-width: var(--max-width);
-      margin: auto auto ms(0);
-   }
-
    aside,
+   .note,
    .assumed-audience {
-      color: var(--aside-fg);
-      background-color: var(--aside-bg);
-      border-left: none;
-      border-top: 3px solid var(--aside-border);
+      font: {
+         family: var(--sans);
+         size: var(--sans-adjust);
+      }
+
+      margin: {
+         left: -3px;
+         bottom: ms(0);
+      }
+
+      border-top: 3px solid var(--top-border);
+   }
+
+   aside {
+      --top-border: var(--aside-border);
+
+      &::before {
+         content: '—/ Aside /—';
+      }
+   }
+
+   .assumed-audience {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      --top-border: var(--aside-border);
+
+      display: block;
+      margin: {
+         left: auto;
+         right: auto;
+      }
    }
 
    .note {
-      font-family: var(--sans);
-      color: var(--note-fg);
-      background-color: var(--note-bg);
-      border-top: 3px solid var(--note-accent);
+      @include fancy-block(var(--note-bg), var(--note-fg));
+      --top-border: var(--note-accent);
+
+      &::before {
+         content: '—/ Note /—';
+         color: var(--note-accent);
+         font-weight: bold;
+      }
    }
 
    a {
@@ -374,7 +386,7 @@ article {
          margin: auto;
          font: {
             family: var(--sans);
-            size: var(--fs-sans-adjust);
+            size: var(--sans-adjust);
          }
          color: var(--figure-fg);
       }
@@ -440,6 +452,7 @@ article {
          blockquote,
          pre,
          aside,
+         .assumed-audience,
          .note {
             max-width: var(--fancy-width);
             align-self: center;
@@ -459,11 +472,18 @@ article {
       article {
          --fancy-width: calc(var(--max-width) + 2.5rem);
 
-         blockquote,
-         pre,
-         aside {
-            margin-left: ms(-4);
+         .assumed-audience {
             padding-left: ms(0);
+         }
+
+         .article-content {
+            blockquote,
+            pre,
+            aside,
+            .note {
+               margin-left: ms(-4);
+               padding-left: ms(0);
+            }
          }
       }
    }
@@ -473,13 +493,7 @@ article {
          padding-bottom: ms(3);
 
          header {
-            width: var(--fancy-width);
-            max-width: none;
             text-align: left;
-         }
-
-         .assumed-audience {
-            max-width: var(--fancy-width);
          }
       }
    }
