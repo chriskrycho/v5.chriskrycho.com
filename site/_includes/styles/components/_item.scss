@@ -290,15 +290,14 @@ article {
 
    aside,
    .note {
-      position: relative;
-      margin-bottom: ms(0);
-      padding: ms(-4);
-
       &::before {
          display: block;
          text-align: center;
-         margin: ms(-4) 0 0 -#{ms(-4)};
-         font-family: var(--sans);
+         margin: ms(-8) 0 ms(-8) -#{ms(-4)};
+         font: {
+            family: var(--sans);
+            weight: bold;
+         }
          text-transform: uppercase;
          letter-spacing: 1px;
          color: var(--aside-marker-fg);
@@ -326,6 +325,7 @@ article {
    }
 
    aside {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
       --top-border: var(--aside-border);
 
       &::before {
@@ -351,7 +351,6 @@ article {
       &::before {
          content: '—/ Note /—';
          color: var(--note-accent);
-         font-weight: bold;
       }
    }
 
@@ -491,10 +490,6 @@ article {
    @media (min-width: $reflow) {
       article {
          padding-bottom: ms(3);
-
-         header {
-            text-align: left;
-         }
       }
    }
 }
