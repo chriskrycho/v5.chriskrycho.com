@@ -27,7 +27,10 @@ article {
          right: auto;
       }
 
+      --line-height: #{ms(1) / 1em};
+
       h1 {
+         line-height: var(--line-height);
          font: {
             family: var(--sans);
             weight: 600;
@@ -37,11 +40,13 @@ article {
       }
 
       h2 {
+         line-height: var(--line-height);
          font: {
             family: var(--serif);
-            size: ms(0);
+            size: ms(1);
             style: italic;
          }
+         color: var(--h2-fg)
       }
    }
 
