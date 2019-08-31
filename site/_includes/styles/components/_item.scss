@@ -405,6 +405,11 @@ article {
 
          text-decoration: none;
          transition: all var(--transition);
+         font: {
+            size: ms(-1);
+            family: var(--sans);
+            feature-settings: 'onum' 0;
+         }
       }
    }
 
