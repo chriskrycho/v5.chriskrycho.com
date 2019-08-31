@@ -66,8 +66,8 @@ main {
          .nav-control-label {
             position: absolute;
             display: inline-block;
-            top: 1em;
-            right: 0;
+            top: 1.4em;
+            right: $padding;
             transform: translateX(-100%);
             transition: right $transition-in;
          }
