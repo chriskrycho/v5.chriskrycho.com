@@ -32,6 +32,9 @@
 
    --figure-fg: var(--gray-2);
 
+   --nav-ctrl-fg: var(--gray-1);
+   --nav-ctrl-fg-active: var(--blue-2);
+
    @include a11y-light();
 }
 
@@ -62,6 +65,9 @@
    --code-fg: var(--gray-6);
 
    --figure-fg: var(--gray-4);
+
+   --nav-ctrl-fg: var(--gray-4);
+   --nav-ctrl-fg-active: var(--gray-6);
 
    @include tomorrow-night-bright();
 

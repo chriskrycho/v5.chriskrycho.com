@@ -1,3 +1,46 @@
+@mixin bars($top, $width) {
+   content: '';
+   height: 1px;
+   background: var(--bar-color);
+   border-radius: 1px;
+   width: $width;
+   position: absolute;
+   top: $top;
+   transition: background-color var(--transition);
+}
+
+.nav-control-label {
+   --bar-color: transparent;
+
+   display: block;
+   cursor: pointer;
+   font: {
+      family: var(--sans);
+      size: ms(0);
+   }
+   text-transform: uppercase;
+   color: var(--nav-ctrl-fg);
+   position: relative;
+   margin: 0.1rem 0;
+
+   &:before {
+      @include bars(0.6rem, calc(var(--hr-width) / 2.25));
+      left: calc(0.4rem + 100%);
+   }
+
+   &:after {
+      @include bars(0.6rem, calc(var(--hr-width) / 2.25));
+      right: calc(0.4rem + 100%);
+   }
+
+   &:hover,
+   &:focus,
+   &:active {
+      color: var(--nav-ctrl-fg-active);
+      --bar-color: var(--nav-ctrl-fg-active);
+   }
+}
+
 .site-nav {
    --bg: var(--gray-1);
    --fg-active: var(--gray-6);
@@ -49,7 +92,9 @@
       --color: var(--fg-inactive);
       --bar-color: transparent;
 
-      &:hover, &:active, &.current {
+      &:hover,
+      &:active,
+      &.current {
          --color: var(--fg-active);
          --bar-color: var(--fg-active);
       }
@@ -59,24 +104,13 @@
 
       color: var(--color);
 
-      @mixin bars {
-         content: "";
-         height: 1px;
-         background: var(--bar-color);
-         border-radius: 1px;
-         width: calc(var(--hr-width) / 2);
-         position: absolute;
-         top: 0.4rem;
-         transition: background-color var(--transition);
-      }
-
       &:before {
-         @include bars;
+         @include bars(0.4rem, calc(var(--hr-width) / 2));
          left: calc(0.4rem + 100%);
       }
 
       &:after {
-         @include bars;
+         @include bars(0.4rem, calc(var(--hr-width) / 2));
          right: calc(0.4rem + 100%);
       }
    }
