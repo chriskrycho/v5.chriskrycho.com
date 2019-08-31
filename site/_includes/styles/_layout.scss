@@ -64,7 +64,7 @@ main {
          }
 
          .nav-control-label {
-            position: absolute;
+            position: fixed;
             display: inline-block;
             top: 1.4em;
             right: $padding;
