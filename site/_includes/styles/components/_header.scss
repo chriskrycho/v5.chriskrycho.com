@@ -27,7 +27,7 @@
       --bar-color: transparent;
 
       @mixin bar {
-         content: "";
+         content: '';
          position: absolute;
          top: 40%;
          background-color: var(--bar-color);
@@ -56,9 +56,9 @@
       &:hover,
       &:active {
          --bar-color: var(--link);
+
          &:before {
             width: var(--left-bar-width);
-            left: calc(100% -2px + var(--left-bar-width));
          }
 
          &:after {
@@ -73,27 +73,23 @@
       .site-title {
          padding: {
             top: ms(-3);
-            left: ms(-1);
          }
          font-size: ms(6);
-         text-align: left;
 
          a {
             --bar-height: 4px;
-            --right-bar-width: calc(100vw - 100% - #{ms(2)});
-            --left-bar-width: #{ms(-3)};
+            --right-bar-width: calc(100% - #{ms(1)});
+            --left-bar-width: calc(100% - #{ms(1)});
+
+            &:before {
+               right: calc(100% + 8px);
+            }
 
             &:after {
                top: 47%;
-               right: calc(100% + 8px);
+               left: calc(100% + 9px);
             }
          }
-      }
-   }
-
-   @media (min-width: $reflow) {
-      .site-title a {
-         --right-bar-width: calc(75vw - #{ms(2)} - 100%);
       }
    }
 }
