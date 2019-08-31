@@ -2,10 +2,31 @@ $width: 32rem;
 
 @mixin fancy-block($bg, $fg) {
    align-self: start;
-   padding: ms(-4);
+   padding: {
+      left: 0.5em;
+      right: 0.5em;
+   }
    width: 100%;
    color: $fg;
    background: $bg;
+}
+
+@mixin extra-vertical {
+   padding-top: ms(-4);
+   padding-bottom: ms(-4);
+}
+
+@mixin pull-left($border-color: transparent) {
+   $width: 2px;
+   width: calc(100% + 1em + #{$width});
+   border-left: {
+      style: solid;
+      width: $width;
+   }
+   margin: {
+      left: calc(-1 * (calc(0.5em + #{$width})));
+      bottom: ms(0);
+   }
 }
 
 article {
@@ -176,32 +197,9 @@ article {
       }
    }
 
-   // For a nice little touch, use Cronos for the list markers.
    ol {
-      list-style: none;
-      counter-reset: ol-counter;
-
-      li {
-         counter-increment: ol-counter;
-         position: relative;
-
-         &::before {
-            width: ms(0);
-
-            position: absolute;
-            left: calc(-1em - #{ms(-4)});
-            top: 0.1em;
-
-            display: inline-block;
-            text-align: right;
-            content: counter(ol-counter) '. ';
-            font: {
-               family: var(--sans);
-               feature-settings: 'onum' 0;
-               size: 1.1em;
-            }
-         }
-      }
+      list-style: decimal;
+      font-feature-settings: "onum" 0;
    }
 
    ul {
@@ -220,31 +218,19 @@ article {
    }
 
    blockquote {
-      @include fancy-block(var(--blockquote-bg), var(--blockquote-fg));
-
-      border-left: 3px solid var(--blockquote-border);
-      margin: {
-         left: -3px;
-         bottom: ms(0);
-      }
+      --double-margin: 0.35em;
+      --single-margin: 0.2em;
+      --border-width: 3px;
 
       font: {
          family: var(--sans);
          size: var(--sans-adjust);
       }
+      @include fancy-block(var(--bg), var(--fg));
+      @include pull-left();
+      border-left-color: var(--blockquote-border);
 
-      // I don't have to do anything special to get Cronos list markers in the
-      // context of a blockquote, where I'm already using it, so unset all of
-      // that and let the layout behave normally.
-      ol {
-         list-style: decimal;
-
-         li {
-            &:before {
-               content: '';
-            }
-         }
-      }
+      padding-top: 1.5px;
    }
 
    // As with list items (above), `blockquote` and `aside` children should have
@@ -277,10 +263,13 @@ article {
 
    pre {
       @include fancy-block(var(--code-bg), var(--code-fg));
+      @include extra-vertical();
+      @include pull-left();
+      border-left-color: var(--code-border);
 
       background: var(--code-bg);
       color: var(--code-fg);
-      border-left: 3px solid var(--code-border);
+      margin-bottom: 1em;
 
       code {
          display: block;
@@ -290,6 +279,7 @@ article {
          padding: 0;
          line-height: ms(2);
          font-size: ms(-1);
+         -webkit-font-smoothing: antialiased;
       }
    }
 
@@ -326,11 +316,12 @@ article {
          bottom: ms(0);
       }
 
-      border-top: 3px solid var(--top-border);
+      border-top: 2px solid var(--top-border);
    }
 
    aside {
       @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
       --top-border: var(--aside-border);
 
       &::before {
@@ -340,6 +331,7 @@ article {
 
    .assumed-audience {
       @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
       --top-border: var(--aside-border);
 
       display: block;
@@ -351,6 +343,7 @@ article {
 
    .note {
       @include fancy-block(var(--note-bg), var(--note-fg));
+      @include extra-vertical();
       --top-border: var(--note-accent);
 
       &::before {
@@ -400,43 +393,15 @@ article {
       line-height: 0;
       vertical-align: 0.558em;
 
+      font: {
+         feature-settings: "onum" 0;
+      }
+
       &.footnote-ref a {
          display: inline-block;
-         padding-left: ms(-8);
 
          text-decoration: none;
          transition: all var(--transition);
-
-         line-height: 1;
-         font: {
-            size: ms(-1);
-            family: var(--sans);
-            feature-settings: 'onum' 0;
-         }
-
-         &::before,
-         &::after {
-            content: '/';
-            display: inline-block;
-            color: var(--gray-4);
-            transition: color var(--transition);
-         }
-
-         &::before {
-            margin-right: ms(-8);
-         }
-
-         &::after {
-            margin-left: ms(-8);
-         }
-
-         &:hover,
-         &:active {
-            &::before,
-            &::after {
-               color: var(--hover);
-            }
-         }
       }
    }
 

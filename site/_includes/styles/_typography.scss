@@ -1,18 +1,20 @@
-$double-margin: 0.5em;
-$single-margin: 0.2em;
+:root {
+   --double-margin: 0.5em;
+   --single-margin: 0.2em;
+}
 
 .pull-double {
-   margin-left: -$double-margin;
+   margin-left: calc(-1 * var(--double-margin));
 }
 
 .push-double {
-   margin-left: $double-margin;
+   margin-left: var(--double-margin);
 }
 
 .pull-single {
-   margin-left: -$single-margin;
+   margin-left: calc(-1 * var(--single-margin));
 }
 
 .push-single {
-   margin-left: $single-margin;
+   margin-left: var(--single-margin);
 }

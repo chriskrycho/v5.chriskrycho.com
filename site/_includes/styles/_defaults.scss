@@ -36,8 +36,24 @@ hr {
    @include slash();
 }
 
+em {
+   font-style: italic;
+
+   em {
+      text-decoration: underline;
+   }
+}
+
+strong {
+   font-weight: bold;
+
+   strong {
+      text-decoration: underline;
+   }
+}
+
 b {
-   font-weight: bolder;
+   font-weight: bold;
 }
 
 i { 
