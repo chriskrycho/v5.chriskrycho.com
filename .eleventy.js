@@ -55,7 +55,7 @@ function config(config) {
    config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
 
-   config.addCollection('posts', fromPath('posts'))
+   config.addCollection('journal', fromPath('journal'))
    config.addCollection('essays', fromPath('essays'))
    config.addCollection('notes', fromPath('notes'))
 
