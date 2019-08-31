@@ -8,9 +8,9 @@
    box-shadow: inset 0 1rem 1rem -1rem var(--gray-0);
 
    font: {
-      family: var(--ivn);
+      family: var(--iv);
       weight: 200;
-      size: ms(0);
+      size: calc(1em - 1px);
    }
 
    text-transform: uppercase;
