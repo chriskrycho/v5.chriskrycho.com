@@ -48,20 +48,19 @@ article {
          right: auto;
       }
 
-      --line-height: #{ms(1) / 1em};
 
       h1 {
-         line-height: var(--line-height);
+         line-height: 1;
          font: {
-            family: var(--sans);
-            weight: 600;
-            size: ms(3);
+            family: var(--ivc);
+            weight: 700;
+            size: ms(4);
          }
          color: var(--h1-fg);
       }
 
       h2 {
-         line-height: var(--line-height);
+         line-height: ms(1);
          font: {
             family: var(--serif);
             size: ms(1);
@@ -74,6 +73,10 @@ article {
    header .page {
       text-transform: uppercase;
       letter-spacing: 1px;
+      font: {
+         family: var(--ivn);
+         weight: 300;
+      }
    }
 
    .article-content {
@@ -117,7 +120,8 @@ article {
 
       h1 {
          font: {
-            family: var(--sans);
+            family: var(--ivn);
+            weight: 200;
             size: ms(2);
          }
 
@@ -152,7 +156,8 @@ article {
 
       h2 {
          font: {
-            family: var(--sans);
+            family: var(--ivn);
+            weight: 200;
             size: ms(2);
          }
          margin: 1rem 0;
@@ -222,15 +227,17 @@ article {
       --single-margin: 0.2em;
       --border-width: 3px;
 
-      font: {
-         family: var(--sans);
-         size: var(--sans-adjust);
-      }
       @include fancy-block(var(--bg), var(--fg));
       @include pull-left();
       border-left-color: var(--blockquote-border);
 
       padding-top: 1.5px;
+
+      font: {
+         family: var(--iv);
+         size: var(--iv-adjust);
+         weight: 300;
+      }
    }
 
    // As with list items (above), `blockquote` and `aside` children should have
@@ -290,8 +297,8 @@ article {
          text-align: center;
          margin: ms(-8) 0 ms(-8) -#{ms(-4)};
          font: {
-            family: var(--sans);
-            weight: bold;
+            family: var(--ivc);
+            weight: 700;
          }
          text-transform: uppercase;
          letter-spacing: 1px;
@@ -307,13 +314,9 @@ article {
    .note,
    .assumed-audience {
       font: {
-         family: var(--sans);
-         size: var(--sans-adjust);
-      }
-
-      margin: {
-         left: -3px;
-         bottom: ms(0);
+         family: var(--iv);
+         size: var(--iv-adjust);
+         weight: 300;
       }
 
       border-top: 2px solid var(--top-border);
@@ -382,8 +385,8 @@ article {
          max-width: var(--max-width);
          margin: auto;
          font: {
-            family: var(--sans);
-            size: var(--sans-adjust);
+            family: var(--ivn);
+            weight: 300;
          }
          color: var(--figure-fg);
       }
@@ -394,9 +397,8 @@ article {
       vertical-align: 0.558em;
 
       font: {
-         family: var(--sans);
-         weight: bold;
          size: ms(-1);
+         family: var(--iv);
          feature-settings: "onum" 0;
       }
 
@@ -405,11 +407,6 @@ article {
 
          text-decoration: none;
          transition: all var(--transition);
-         font: {
-            size: ms(-1);
-            family: var(--sans);
-            feature-settings: 'onum' 0;
-         }
       }
    }
 
