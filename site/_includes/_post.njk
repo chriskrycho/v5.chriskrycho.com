@@ -6,10 +6,10 @@
 {% endblock header %}
 
 {% block before_content -%}
-   {% if assumed_audience -%}
+   {% if audience -%}
       <i class='assumed-audience'>
          <b><a href='https://www.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
-         {{assumed_audience | inlineMd | safe}}
+         {{audience | inlineMd | safe}}
       </i>
    {%- endif %}
 {%- endblock %}
