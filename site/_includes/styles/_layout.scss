@@ -17,11 +17,6 @@ main {
    }
 }
 
-.nav-control,
-.nav-control-label {
-   display: none;
-}
-
 @media screen {
    @media (min-width: $reflow) {
       main {
@@ -30,21 +25,14 @@ main {
 
       @media (min-height: 600px) {
          $padding: ms(-2);
-         $mw-nav-showing: 75vw;
-         $mw-nav-hidden: 100vw;
          
-         $transition-in: 0.33s ease-out;
-         $transition-out-time: 0.25s;
-         $transition-out-function: ease-in;
-
          main {
             margin: {
                top: 0;
                left: $padding;
             }
             padding-right: $padding;
-            max-width: calc(#{$mw-nav-hidden} - 2 * #{$padding});
-            transition: max-width $transition-in;
+            max-width: calc(75vw - #{$padding});
          }
    
          nav {
@@ -53,43 +41,8 @@ main {
             height: 100vh;
             position: fixed;
             top: 0;
-            right: calc(25vw - 50%);
+            right: 0;
             bottom: 0;
-            transition: right $transition-in;
-         }
-
-         .nav-control {
-            position: absolute;
-            left: -10000px;
-         }
-
-         .nav-control-label {
-            position: fixed;
-            display: inline-block;
-            top: 1.4em;
-            right: $padding;
-            transform: translateX(-100%);
-            transition: right $transition-in;
-         }
-
-         .nav-control:checked ~ {
-            .nav-control-label {
-               right: 25vw;
-               transition-duration: $transition-out-time;
-               transition-timing-function: $transition-out-function;
-            }
-
-            main {
-               max-width: calc(#{$mw-nav-showing} - #{$padding});
-               transition-duration: $transition-out-time;
-               transition-timing-function: $transition-out-function;
-            }
-
-            nav {
-               right: 0;
-               transition-duration: $transition-out-time;
-               transition-timing-function: $transition-out-function;
-            }
          }
       }
    }
