@@ -5,15 +5,18 @@ eleventyExcludeFromCollections: true
 {%- extends '_page.njk' -%}
 {%- import 'macros/item.njk' as item -%}
 
-
 {%- block content -%}
-<ul>
 {% set c = page.inputPath | toCollection %}
-{%- for entry in collections[c] -%}
-   <li>
-      <a href='{{entry.url}}'>{{entry.data.title | safe}}</a>
-      <span class='subtitle'>{{entry.data.subtitle | safe}}</span>
-   </li>
-{%- endfor -%}
-</ul>
+{%- if collections[c].length -%}
+   <ul>
+   {%- for entry in collections[c] -%}
+      <li>
+         <a href='{{entry.url}}'>{{entry.data.title | safe}}</a>
+         <span class='subtitle'>{{entry.data.subtitle | safe}}</span>
+      </li>
+   {%- endfor -%}
+   </ul>
+{%- else -%}
+   {%- include 'blocks/wip.njk' -%}
+{%- endif -%}
 {%- endblock content -%}

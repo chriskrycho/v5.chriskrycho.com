@@ -10,9 +10,3 @@ I’m Chris Krycho—a follower of Christ, a husband, and a dad. I build softwar
 [elsewhere]: /appearances/
 [podcast]: /podcasts/
 [say hello]: mailto:hello@chriskrycho.com
-
-<div class='note'>
-
-Things are under construction around here! I decided it was better to go ahead and launch than to stay in “but it’s not finished yet!” mode forever. A lot of things will look and work better over the next couple months.
-
-</div>

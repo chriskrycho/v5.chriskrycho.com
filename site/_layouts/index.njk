@@ -1,3 +1,9 @@
 {% extends 'item.njk' %}
 
 {% block title_meta %}Chris Krycho{% endblock title_meta %}
+
+{%- block main -%}
+  {{ super() }}
+
+  {%- include 'blocks/wip.njk' -%}
+{%- endblock main -%}
