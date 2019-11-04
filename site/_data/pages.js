@@ -1,0 +1,17 @@
+module.exports = [
+   { type: 'page', title: 'Home', path: '/' },
+   { type: 'separator' },
+   { type: 'page', title: 'Journal', path: '/journal/' },
+   { type: 'page', title: 'Essays', path: '/essays/' },
+   { type: 'page', title: 'Library', path: '/library/' },
+   { type: 'separator' },
+   { type: 'page', title: 'Podcasts', path: '/podcasts/' },
+   { type: 'page', title: 'Projects', path: '/projects/' },
+   { type: 'page', title: 'Photography', path: '/photography/' },
+   { type: 'separator' },
+   { type: 'page', title: 'About', path: '/about/' },
+   { type: 'page', title: 'Curriculum Vitae', path: '/cv/' },
+   { type: 'page', title: 'Appearances', path: '/appearances/' },
+   { type: 'separator' },
+   { type: 'page', title: 'Colophon', path: '/colophon/' },
+]

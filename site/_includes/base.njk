@@ -58,28 +58,13 @@
 
    <nav class='site-nav'>
       <ul>
-         {{nav.item(title='Home', path='/', pageUrl=page.url)}}
-
-         <li role='separator'><hr></li>
-
-         {{nav.item(title='Journal', path='/journal/', pageUrl=page.url)}}
-         {{nav.item(title='Essays', path='/essays/', pageUrl=page.url)}}
-         {{nav.item(title='Library', path='/library/', pageUrl=page.url)}}
-
-         <li role='separator'><hr></li>
-
-         {{nav.item(title='Podcasts', path='/podcasts/', pageUrl=page.url)}}
-         {{nav.item(title='Projects', path='/projects/', pageUrl=page.url)}}
-         {{nav.item(title='Appearances', path='/appearances/', pageUrl=page.url)}}
-
-         <li role='separator'><hr></li>
-
-         {{nav.item(title='About', path='/about/', pageUrl=page.url)}}
-         {{nav.item(title='Curriculum Vitae', path='/cv/', pageUrl=page.url)}}
-
-         <li role='separator'><hr></li>
-
-         {{nav.item(title='Colophon', path='/colophon/', pageUrl=page.url)}}
+         {%- for entry in pages -%}
+            {%- if entry.type === 'page' -%}
+               {{nav.item(entry, pageUrl=page.url)}}
+            {%- elif entry.type === 'separator' -%}
+               <li role='separator'><hr></li>
+            {%- endif -%}
+         {%- endfor -%}
       </ul>
    </nav>
 </body>
