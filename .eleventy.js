@@ -57,7 +57,7 @@ function config(config) {
 
    config.addCollection('journal', fromPath('journal'))
    config.addCollection('essays', fromPath('essays'))
-   config.addCollection('notes', fromPath('notes'))
+   config.addCollection('library', fromPath('library'))
    config.addCollection('photography', fromPath('photography'))
 
    config.setLibrary('md', markdown)
