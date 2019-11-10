@@ -2,22 +2,24 @@ main {
    color: var(--fg);
    background-color: var(--bg);
    background: var(--bg);
+
+   --border: 2px solid var(--main-border);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $reflow) {
    main {
       border: {
-         top: 2px solid var(--main-border);
-         bottom: 2px solid var(--main-border);
+         top: var(--border);
+         bottom: var(--border);
       }
    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $reflow) {
    main {
       border: {
-         left: 2px solid var(--main-border);
-         right: 2px solid var(--main-border);
+         left: var(--border);
+         right: var(--border);
       }
    }
 }
