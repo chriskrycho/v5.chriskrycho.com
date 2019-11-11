@@ -1,7 +1,7 @@
 ---
-title: Resolute 
+title: Faithful Wonderment
 subtitle: Relaunching chriskrycho.com for 2020 and beyond!
-date: null
+date: 2019-11-10 19:50:00
 
 ---
 
