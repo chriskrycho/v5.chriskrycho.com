@@ -1,10 +1,18 @@
 .site-header {
    color: var(--fg);
    background-color: var(--bg);
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+   padding: 1rem;
 }
 
 .site-title {
-   padding: 1rem;
+   flex: 1 1 auto;
+   align-self: center;
+
+   padding-right: 2rem;
    font: {
       family: var(--sans);
       weight: 300;
@@ -12,7 +20,7 @@
    }
 
    line-height: 1;
-   text-align: center;
+   text-align: left;
 
    a {
       text-decoration: none;
@@ -68,13 +76,42 @@
    }
 }
 
+.site-subtitle {
+   flex: 1 1 auto;
+   align-self: center;
+
+   padding-left: 2rem;
+   text-align: right;
+   line-height: 1;
+
+   font: {
+      family: var(--serif);
+      style: italic;
+      size: ms(1);
+   }
+
+   a {
+      font-style: normal;
+      text-decoration: underline;
+      -webkit-text-decoration-color: var(--underline);
+      -moz-text-decoration-color: var(--underline);
+      text-decoration-color: var(--underline);
+      text-decoration-skip-ink: auto;
+   }
+}
+
 @media screen {
    @media (min-width: $break-2) {
-      .site-title {
+      .site-header {
          padding: {
-            top: ms(-3);
+            top: ms(2);
+            left: ms(2);
+            right: ms(2);
          }
-         font-size: ms(6);
+      }
+
+      .site-title {
+         font-size: ms(5);
 
          a {
             --bar-height: 4px;
@@ -89,6 +126,15 @@
                top: 47%;
                left: calc(100% + 9px);
             }
+         }
+      }
+   }
+
+   @media (min-width: $break-5) {
+      .site-header {
+         padding: {
+            left: ms(5);
+            right: ms(5);
          }
       }
    }
