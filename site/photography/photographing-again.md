@@ -7,7 +7,7 @@ medium: writing
 summary: >
     For the past few months, I have been picking back up my long-dormant interest in photography. It feels good to be back at it!
 audience: people who find photography and/or personal biography interesting.
-
+canonical: https://v4.chriskrycho.com/2019/photography-ing-again.html
 ---
 
 For the past few months, I have been picking back up my long-dormant interest in photography. I started trying to learn how to take good photographs back during college—first with an inexpensive point-and-shoot with a decent built-in zoom lens, then with an inexpensive Canon <abbr title="digital single lens reflex">DSLR</abbr> that was my college graduation present. I spent a decent amount of time on the hobby over those years, including doing some family and engagement photos for friends. (They were serviceable, not good; but I was learning a ton and it was a lot of fun… and my friends didn’t have to pay for them.) I was just starting to develop a more serious interest in the technical aspects of the art… when we moved to North Carolina and I started seminary.

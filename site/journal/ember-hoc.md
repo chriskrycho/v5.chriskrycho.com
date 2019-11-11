@@ -7,6 +7,7 @@ subtitle: >
 summary: >
     Components as arguments! Components getting yielded! Components everywhere! A powerful way to make your Ember.js components more flexible and composeable.
 modified: 2018-05-28 06:50:00
+canonical: https://v4.chriskrycho.com/2018/higher-order-components-in-emberjs.html
 
 ---
 

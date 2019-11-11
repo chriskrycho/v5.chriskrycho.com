@@ -5,6 +5,7 @@ medium: ["writing"]
 topics: ["Zettelkasten", "notes", "memory", "writing", "blogging"]
 subtitle: Notes apps, Zettelkasten, external memory, notecards… I just have this website.
 summary: Pretty regularly, I go back and reread my own blog posts—and not for vanity. It’s an illuminating experience, a lot like reading through old notes.
+canonical: https://v4.chriskrycho.com/2018/blog-as-note-taking-tool.html
 ---
 
 I have a habit that might not make sense to you. I reread my own blog posts fairly regularly. It’s not vanity—not some weird obsession with my own awesomeness in the form of my own writing or some such nonsense. It’s that in my blog posts over the last decade, I have a pretty serious backlog of *what I was thinking about at any given point in time.*

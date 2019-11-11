@@ -6,6 +6,7 @@ subtitle: >
     <code>Maybe</code> helpers for safe object lookup and <code>Result</code> helpers for exception-throwing code.
 summary: >
     True Myth 2.2 adds two `Maybe` helpers for safe object lookup and two `Result` helpers for handling exception-throwing code."
+canonical: https://v4.chriskrycho.com/2018/true-myth-22
 
 ---
 

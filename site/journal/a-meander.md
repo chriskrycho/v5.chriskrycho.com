@@ -12,6 +12,7 @@ tags:
     - literature
 summary: >
     Because some days you want to write, but don’t have anything particularly focused or coherent to say. So: open-source software, Twitter and blogging, word vomit, and reading widely and deeply.
+canonical: https://v4.chriskrycho.com/2018/a-meander
 
 ---
 

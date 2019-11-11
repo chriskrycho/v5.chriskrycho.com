@@ -1,5 +1,11 @@
 {%- extends 'base.njk' -%}
 
+{%- block extra_links %}
+{% if canonical %}
+   <link rel='canonical' href='{{canonical}}' />
+{% endif %}
+{%- endblock extra_links %}
+
 {%- block main -%}
 <article>
    {% block header -%}{%- endblock header %}

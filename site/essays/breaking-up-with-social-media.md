@@ -6,6 +6,7 @@ tags: [social media, writing, attention, ethics]
 summary: >
     In which I commit to a kind of social media monasticism—because enough is enough. (I took a vacation and realized I actively dislike Twitter. So now, just shy of 14 years after joining Facebook, I’m quitting social media.)
 audience: anyone *willing* to think hard about social media and its place in our lives.
+canonical: https://v4.chriskrycho.com/2019/breaking-up-with-social-media.html
 ---
 
 [aa]: https://v4.chriskrycho.com/2018/assumed-audiences.html
