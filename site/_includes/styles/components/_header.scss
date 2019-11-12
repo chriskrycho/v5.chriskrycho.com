@@ -12,11 +12,11 @@
    flex: 1 1 auto;
    align-self: center;
 
-   padding-right: 2rem;
+   padding-right: 1rem;
    font: {
       family: var(--sans);
       weight: 300;
-      size: ms(4);
+      size: ms(5);
    }
 
    line-height: 1;
@@ -80,7 +80,7 @@
    flex: 1 1 auto;
    align-self: center;
 
-   padding-left: 2rem;
+   padding-left: 1rem;
    text-align: right;
    line-height: 1;
 
@@ -111,8 +111,6 @@
       }
 
       .site-title {
-         font-size: ms(5);
-
          a {
             --bar-height: 4px;
             --right-bar-width: calc(100% - #{ms(1)});
