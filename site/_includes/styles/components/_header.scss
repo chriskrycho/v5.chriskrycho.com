@@ -101,12 +101,12 @@
 }
 
 @media screen {
-   @media (min-width: $break-2) {
+   @media (min-width: $reflow) {
       .site-header {
          padding: {
             top: ms(2);
-            left: ms(2);
-            right: ms(2);
+            left: ms(4);
+            right: ms(3);
          }
       }
 
@@ -131,8 +131,8 @@
    @media (min-width: $break-5) {
       .site-header {
          padding: {
-            left: ms(5);
-            right: ms(5);
+            left: ms(8);
+            right: ms(8);
          }
       }
    }
