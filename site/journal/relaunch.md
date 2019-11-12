@@ -1,5 +1,5 @@
 ---
-title: Faithful Wonderment
+title: A sympolymathesy
 subtitle: Relaunching chriskrycho.com for 2020 and beyond!
 date: 2019-11-10 19:50:00
 
