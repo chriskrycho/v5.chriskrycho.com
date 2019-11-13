@@ -2,13 +2,13 @@
 title: Curriculum Vitae
 permalink: /cv/index.html
 subtitle: >
-    I am a senior software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics.
+    I am a staff software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics.
 summary: >
-    I am a senior software engineer focused on web UI, typography, functional programming—and ethics. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
+    I am a staff software engineer focused on web UI, typography, functional programming—and ethics. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
 
 ---
 
-In helping hire people over the last few years, I’ve seen a lot of résumés. Even the best of them leave a lot to be desired: they lack context and narrative. So if you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful. If you're interested, [say hello][email]!
+In helping hire people over the last few years, I’ve seen a lot of résumés. Even the best of them leave a lot to be desired: they lack context and narrative. So if you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful. I’m not looking at this point—but you’re still welcome to [say hello][email]!
 
 [resume]: https://f001.backblazeb2.com/file/chriskrycho-com/resume.pdf
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
@@ -42,11 +42,23 @@ Building things the *right way* means I am not interested in slapdash product de
 
 ## My Work
 
-### Current: Olo
+### Current: LinkedIn
+
+Since **January 2019**, I have been a **Staff Software Engineer** at [LinkedIn], working as an infrastructure engineer on the flagship web application—one of the largest JavaScript applications in the world.
+
+- I helped plan major architectural improvements now being rolled out across the application, and spearheaded the process of updating the app to the current versions of Ember.js.
+- I contributed to the development of [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
+
+[LinkedIn]: https://www.linkedin.com/feed/
+[Volta]: https://volta.sh
+
+### Earlier Work
+
+#### Olo
 
 *From individual contributor to a project lead with organization-wide influence.*
 
-**Since January 2016**, I have been a front-end-focused software engineer at [**Olo**][olo], a scale-up-phase startup which is the leading provider of online ordering for large restaurant brands.
+From **January 2016 – January 2019**, I was a front-end-focused software engineer at [**Olo**][olo], a scale-up-phase startup which is the leading provider of online ordering for large restaurant brands.
 
 [olo]: https://www.olo.com
 
@@ -66,16 +78,14 @@ As a **Senior Software Engineer** (May 2017–present):
 
 - I finished our app's conversion to a fully strictly-type-checked TypeScript application.
 
-Throughout my time at Olo, I have:
+Throughout my time at Olo, I:
 
 - led the community effort to **integrate TypeScript with Ember.js**
 - helped launch a shared component library for future rich client projects
-- given over a dozen internal tech talks on subjects including Ember.js basics, functional programming techniques, and introductions to Rust and Elm
+- have delivered over a dozen internal tech talks on subjects including managing technical costs, Ember.js basics, functional programming techniques, and introductions to Rust and Elm
 - substantially reshaped our front-end engineering practices and tooling choices as an informal leader among our front-end engineering group
 
 I have matured significantly as both an individual contributor and a leader in my time at Olo. For the first time, I have been able to make a substantial difference at the team level, at the organizational level, and at the level of the broader technical community.
-
-### Earlier Work
 
 #### [HolyBible.com][hb]
 
@@ -125,7 +135,7 @@ Over those three years I acquired a good dose of humility and basic knowledge of
 
 *Teaching myself web development.*
 
-**Beginning in January 2010**, I taught myself web programming, beginning with <abbr>PHP</abbr> and jQuery and the <abbr>LAMP</abbr> stack. Having a good working knowledge of <abbr>HTML</abbr> and <abbr>CSS</abbr> from designing my own blog in college, I decided to learn web development, I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom <abbr>CMS</abbr> for the Oklahoma Board of Medical Licensure.
+**Beginning in January 2010**, I taught myself web programming, beginning with <abbr>PHP</abbr> and jQuery and the <abbr>LAMP</abbr> stack. Having a good working knowledge of <abbr>HTML</abbr> and <abbr>CSS</abbr> from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom <abbr>CMS</abbr> for the Oklahoma Board of Medical Licensure.
 
 [innova]: https://innovacomputing.com
 
@@ -135,7 +145,7 @@ My goal throughout was not merely to make some extra money, nice though that was
 
 Besides my family life, church participation, and day-to-day work, I am also a prolific writer, podcaster, and open source software contributor. My writing you can find primarily on this website; I focus primarily on technology, ethics, and faith (though if you want to read my so-so poetry, [that’s here too][poetry]).
 
-[poetry]: https://www.chriskrycho.com/poetry
+[poetry]: https://v4.chriskrycho.com/poetry
 
 ### Podcasts
 
@@ -157,7 +167,7 @@ As we began actively adopting TypeScript in our Ember.js app [at Olo](#current),
 In March 2017, I began working on the <abbr>CLI</abbr> tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Over the rest of 2017 and 2018, I have [taught][ts-workshop] and [written extensively][ts-blog] on using TypeScript effectively with Ember. Our small team’s efforts have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
 
 [ts-workshop]: https://emberconf.com/schedule.html#d-typescript-up-your-ember-js-app "EmberConf Workshop: 'TypeScript Up Your Ember.js App'"
-[ts-blog]: https://www.chriskrycho.com/typing-your-ember/ "Typing Your Ember series"
+[ts-blog]: https://v4.chriskrycho.com/typing-your-ember/ "Typing Your Ember series"
 
 #### True Myth
 
@@ -167,34 +177,38 @@ In the **fall of 2017**, I developed [True Myth][tm]: a **TypeScript**-targeted 
 
 True Myth is largely [complete][stable-libraries], with a full set of features and [extensive documentation][tm-docs]. I continue to maintain and expand the library with additional helpers and tooling as TypeScript has supported more capabilities. I have also supported [early efforts to translate the library to C^♯^][tm-C#].
 
-[stable-libraries]: https://www.chriskrycho.com/2018/stable-libraries.html
+[stable-libraries]: https://v4.chriskrycho.com/2018/stable-libraries.html
 [tm-docs]: https://true-myth.js.org/
 [tm-C#]: https://github.com/true-myth/true-myth-csharp "True Myth C♯"
 
 ### Talks
 
-- **Rust and WebAssembly** (Denver/Boulder Rust Meetup, May 2018)
+- <b><abbr>CSS</abbr> Modules lightning talk</b> (Denver Ember.js Meetup, December 2018)
 
-- **[TypeScript and Ember.js: Why And How][ember-atx]** (Ember <abbr title="Austin, Texas">ATX</abbr> Meetup, April 2018):
+- <b>Rust and WebAssembly</b> (Denver/Boulder Rust Meetup, May 2018)
 
-    > **Abstract:** A three-part look at Ember.js and TypeScript today: What are the benefits to me as an Ember developer for using TypeScript? What are the tradeoffs if I adopt TypeScript? Where are things going from here?
+- <b>[TypeScript and Ember.js: Why And How][ember-atx]</b> (Ember <abbr title="Austin, Texas">ATX</abbr> Meetup, April 2018):
 
-- **[TypeScript Up Your Ember.js App][ts-workshop]** (EmberConf 2018 Workshop, March 2018):
+    > <b>Abstract:</b> A three-part look at Ember.js and TypeScript today: What are the benefits to me as an Ember developer for using TypeScript? What are the tradeoffs if I adopt TypeScript? Where are things going from here?
 
-    > **Abstract:** an introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js <abbr>TODO</abbr> <abbr>MVC</abbr> app from JavaScript to TypeScript.
+    (I also delivered a slightly shorter version of this same material at the Denver Ember.js Meetup in June 2018.)
+
+- <b>[TypeScript Up Your Ember.js App][ts-workshop]</b> (EmberConf 2018 Workshop, March 2018):
+
+    > <b>Abstract:</b> an introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js <abbr>TODO</abbr> <abbr>MVC</abbr> app from JavaScript to TypeScript.
 
     The workshop was not recorded, but the teaching materials are all available online:
 
     - [slides][ts-workshop-slides] and [script][ts-workshop-script] for the introduction to TypeScript and overview of using it in Ember
     - [sample code repository][ts-workshop-repo], where each commit is a discrete step in the process of the conversion
 
-- **[Becoming a Contributor][rbr2017]** (Rust Belt Rust 2017, October 2017):
+- <b>[Becoming a Contributor][rbr2017]</b> (Rust Belt Rust 2017, October 2017):
 
-    > **Abstract:** So, you’re new to the Rust community. (Or any community, really!) And you want to help, but, well, you’re new. So how exactly do you start contributing? What kinds of contributions are valuable? We’ll talk about everything from asking questions to writing documentation, from pitching in on forums and chat to writing blog posts, and from starting your own projects to contributing to other open-source projects.
+    > <b>Abstract:</b> So, you’re new to the Rust community. (Or any community, really!) And you want to help, but, well, you’re new. So how exactly do you start contributing? What kinds of contributions are valuable? We’ll talk about everything from asking questions to writing documentation, from pitching in on forums and chat to writing blog posts, and from starting your own projects to contributing to other open-source projects.
 
-- **[*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015]** (BibleTech 2015, May 2015):
+- <b>[*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015]</b> (BibleTech 2015, May 2015):
 
-    > **Abstract:** The Bible has always been a challenging text to display, whether copied by hand or printed on a Gutenberg press, and the task has only grown more complicated in the era of digital text. The challenges are not insurmountable, though. We have the tools to solve them: the principles of good typography, especially careful page design and the deliberate choice and skillful use of appropriate typefaces (fonts). When we apply those principles to the Scriptures—whether in an app or on the web—we can provide people with digital Bibles that are both readable and beautiful.
+    > <b>Abstract:</b> The Bible has always been a challenging text to display, whether copied by hand or printed on a Gutenberg press, and the task has only grown more complicated in the era of digital text. The challenges are not insurmountable, though. We have the tools to solve them: the principles of good typography, especially careful page design and the deliberate choice and skillful use of appropriate typefaces (fonts). When we apply those principles to the Scriptures—whether in an app or on the web—we can provide people with digital Bibles that are both readable and beautiful.
 
 
 [ember-atx]:	https://youtube.com/watch?v=fFzxbBrvytU
