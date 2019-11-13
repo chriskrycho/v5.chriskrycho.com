@@ -255,7 +255,7 @@ article {
    code {
       font: {
          family: var(--mono);
-         size: ms(-1);
+         size: ms(-2);
       }
       background: var(--code-bg);
       padding: ms(-8) ms(-4);
@@ -279,7 +279,7 @@ article {
          margin: 0;
          padding: 0;
          line-height: ms(2);
-         font-size: ms(-1);
+         font-size: ms(-2);
          -webkit-font-smoothing: antialiased;
       }
    }
