@@ -38,15 +38,9 @@ function logErr(err) {
    @param {any} idx
  */
 function renderPermalink(slug, opts, state, idx) {
-   const openTokens = [
-      Object.assign(new state.Token('link_open', 'a', 1), {
-         attrs: [
-            ['class', opts.permalinkClass],
-            ['href', opts.permalinkHref(slug, state)],
-         ],
-      }),
+   const marker = [
       Object.assign(new state.Token('span_open', 'span', 1), {
-         attrs: [['class', '__marker --open']],
+         attrs: [['class', '__marker']],
       }),
       Object.assign(new state.Token('html_block', '', 0), {
          content: opts.permalinkSymbol,
@@ -54,16 +48,17 @@ function renderPermalink(slug, opts, state, idx) {
       new state.Token('span_close', 'span', -1),
    ]
 
-   const closeTokens = [
-      Object.assign(new state.Token('span_open', 'span', 1), {
-         attrs: [['class', '__marker --close']],
+   const openTokens = [
+      Object.assign(new state.Token('link_open', 'a', 1), {
+         attrs: [
+            ['class', opts.permalinkClass],
+            ['href', opts.permalinkHref(slug, state)],
+         ],
       }),
-      Object.assign(new state.Token('html_block', '', 0), {
-         content: opts.permalinkSymbol,
-      }),
-      new state.Token('span_close', 'span', -1),
-      new state.Token('link_close', 'a', -1),
+      ...marker,
    ]
+
+   const closeTokens = [...marker, new state.Token('link_close', 'a', -1)]
 
    state.tokens[idx + 1].children.unshift(...openTokens)
    state.tokens[idx + 1].children.push(...closeTokens)

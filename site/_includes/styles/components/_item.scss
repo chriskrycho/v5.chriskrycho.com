@@ -91,25 +91,28 @@ article {
       h4,
       h5,
       h6 {
+         width: 100%;
+         max-width: var(--max-width);
+         text-align: left;
+
          .section-link {
             text-decoration: none;
+            text-align: left;
+            transition: color var(--transition);
 
             .__marker {
-               display: inline-block;
                color: transparent;
                transition: color var(--transition);
 
-               &.--open {
-                  padding-right: ms(-4);
-               }
-
-               &.--close {
-                  padding-left: ms(-4);
+               &:first-child {
+                  display: none;
                }
             }
 
             &:hover,
             &:active {
+               color: var(--link);
+
                .__marker {
                   color: var(--link);
                }
@@ -161,10 +164,6 @@ article {
 
          .section-link {
             color: var(--h2-fg);
-
-            &:hover {
-               color: var(--link);
-            }
          }
       }
 
@@ -465,6 +464,27 @@ article {
    @media (min-width: $reflow) {
       article {
          padding-bottom: ms(3);
+      }
+   }
+
+   @media (min-width: $break-3) {
+      article {
+         .article-content {
+            h1, h2, h3, h4, h5, h6 {
+               .section-link {
+                  .__marker {
+                     &:first-child {
+                        display: inline-block;
+                        margin-left: -1.275em;
+                     }
+
+                     &:last-child {
+                        display: none;
+                     }
+                  }
+               }
+            }
+         }
       }
    }
 }
