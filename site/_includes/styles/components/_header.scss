@@ -111,6 +111,7 @@
       }
 
       .site-title {
+         font-size: ms(7);
          a {
             --bar-height: 4px;
             --right-bar-width: calc(100% - #{ms(1)});
@@ -125,6 +126,10 @@
                left: calc(100% + 9px);
             }
          }
+      }
+
+      .site-subtitle {
+         font-size: ms(1);
       }
    }
 

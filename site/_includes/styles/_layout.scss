@@ -9,13 +9,21 @@ body {
 
 main {
    width: calc(100%);
-   margin-top: 1px;
 }
 
 @media screen {
+   @media (min-width: $resize) {
+      main {
+         --padding: #{ms(-1)};
+         margin: var(--padding) var(--padding) 0;
+         width: calc(100% - 2 * var(--padding));
+      }
+   }
+
    @media (min-width: $reflow) {
       main {
-         min-height: 100vh;
+         --padding: 0;
+         min-height: calc(100vh - 2 * var(--padding));
       }
 
       @media (min-height: 600px) {
@@ -28,6 +36,7 @@ main {
                bottom: var(--padding);
             };
             padding-right: var(--padding);
+            width: 100%;
             max-width: calc(75vw - var(--padding));
          }
    
@@ -46,13 +55,13 @@ main {
    @media (min-height: 600px) {
       @media (min-width: $break-4) {
          main {
-            --padding: #{ms(0)};
+            --padding: #{ms(1)};
          }
       }
 
       @media (min-width: $break-5) {
          main {
-            --padding: #{ms(2)};
+            --padding: #{ms(3)};
          }
       }
    }
