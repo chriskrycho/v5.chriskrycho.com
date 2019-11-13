@@ -36,7 +36,7 @@ Building things the *right way* means I am not interested in slapdash product de
 
 ### Education
 
-<a name=masters></a>I earned a **Master of Divinity** with honors from **Southeastern Baptist Theological Seminary** in **May 2017**, after 4.5  years simultaneously pursuing the degree and working as a software developer. I am not a pastor by vocation, but I care deeply about the ethical, social and, yes, spiritual implications of the software I build.
+<a name=masters></a>I earned a **Master of Divinity** with honors from **Southeastern Baptist Theological Seminary** in **May 2017**, after 4½ years simultaneously pursuing the degree and working as a software developer. I am not a pastor by vocation, but I care deeply about the ethical, social and, yes, spiritual implications of the software I build.
 
 <a name=undergrad></a>I graduated *magna cum laude* with a **Bachelor of Science in Physics** from **The University of Oklahoma** in **May 2009**, having been a regular departmental award winner. My senior thesis, a project in computational neurophysics (in Fortran 90!), led me into programming—but I admit I still miss doing physics and math on a regular basis.
 
