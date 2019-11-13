@@ -2,24 +2,5 @@ main {
    color: var(--fg);
    background-color: var(--bg);
    background: var(--bg);
-
-   --border: 2px solid var(--main-border);
-}
-
-@media screen and (max-width: $reflow) {
-   main {
-      border: {
-         top: var(--border);
-         bottom: var(--border);
-      }
-   }
-}
-
-@media screen and (min-width: $reflow) {
-   main {
-      border: {
-         left: var(--border);
-         right: var(--border);
-      }
-   }
+   border: 1px solid var(--main-border);
 }

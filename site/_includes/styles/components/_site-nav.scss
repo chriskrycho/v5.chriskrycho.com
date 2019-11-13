@@ -10,12 +10,7 @@
 }
 
 .site-nav {
-   --bg: var(--gray-1);
-   --fg-active: var(--gray-6);
-   --fg-inactive: var(--gray-4);
-   --divider: var(--gray-3);
-
-   background-color: var(--bg);
+   background-color: var(--nav-bg);
 
    font: {
       family: var(--sans);
@@ -31,8 +26,8 @@
    justify-content: space-around;
    flex-direction: column;
    padding: {
-      top: ms(2);
-      bottom: ms(3);
+      top: ms(4);
+      bottom: ms(5);
    }
 
    ul {
@@ -56,14 +51,14 @@
    }
 
    a {
-      --color: var(--fg-inactive);
+      --color: var(--nav-fg-inactive);
       --bar-color: transparent;
 
       &:hover,
       &:active,
       &.current {
-         --color: var(--fg-active);
-         --bar-color: var(--fg-active);
+         --color: var(--nav-fg-active);
+         --bar-color: var(--nav-fg-active);
       }
 
       text-decoration: none;
@@ -72,18 +67,18 @@
       color: var(--color);
 
       &:before {
-         @include bars(0.4em, calc(var(--hr-width) / 2));
-         left: calc(0.4rem + 100%);
+         @include bars(0.4em, calc(var(--hr-width) / 3));
+         left: calc(0.2em + 100%);
       }
 
       &:after {
-         @include bars(0.4em, calc(var(--hr-width) / 2));
-         right: calc(0.4rem + 100%);
+         @include bars(0.4em, calc(var(--hr-width) / 3));
+         right: calc(0.4em + 100%);
       }
    }
 
    hr {
-      border-color: var(--divider);
+      border-color: var(--nav-divider);
    }
 }
 

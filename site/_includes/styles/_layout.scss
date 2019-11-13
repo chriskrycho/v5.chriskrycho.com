@@ -1,20 +1,15 @@
 html {
-   background: var(--gray-1);
+   background: var(--root-bg);
 }
 
 body {
    padding: 0;
-   background-color: var(--gray-1);
+   background-color: var(--root-bg);
 }
 
 main {
-   width: 100%;
-   margin: {
-      top: ms(-3);
-      right: 0;
-      bottom: 0;
-      left: 0;
-   }
+   width: calc(100% - 1px);
+   margin-top: 1px;
 }
 
 @media screen {
@@ -24,25 +19,40 @@ main {
       }
 
       @media (min-height: 600px) {
-         $padding: ms(-2);
-         
          main {
+            --padding: #{ms(-1)};
+
             margin: {
-               top: 0;
-               left: $padding;
-            }
-            padding-right: $padding;
-            max-width: calc(75vw - #{$padding});
+               top: var(--padding);
+               left: var(--padding);
+               bottom: var(--padding);
+            };
+            padding-right: var(--padding);
+            max-width: calc(75vw - var(--padding));
          }
    
          nav {
             width: 100%;
             max-width: 25vw;
-            height: 100vh;
-            position: fixed;
+            height: 100%;
+            position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
+         }
+      }
+   }
+
+   @media (min-height: 600px) {
+      @media (min-width: $break-4) {
+         main {
+            --padding: #{ms(0)};
+         }
+      }
+
+      @media (min-width: $break-5) {
+         main {
+            --padding: #{ms(2)};
          }
       }
    }

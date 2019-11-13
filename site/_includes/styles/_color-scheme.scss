@@ -11,7 +11,14 @@
    --hover: var(--blue-0);
    --hover-underline: var(--blue-2);
 
-   --main-border: var(--gray-3);
+   --root-bg: var(--gray-5);
+
+   --nav-bg: var(--root-bg);
+   --nav-fg-active: var(--gray-0);
+   --nav-fg-inactive: var(--gray-2);
+   --nav-divider: var(--gray-4);
+
+   --main-border: var(--gray-4);
 
    --h1-fg: var(--gray-1);
    --h2-fg: var(--gray-2);
@@ -48,6 +55,12 @@
    --underline: var(--gray-4);
    --hover: var(--gray-6);
    --hover-underline: var(--blue-2);
+
+   --root-bg: var(--gray-1);
+
+   --nav-fg-active: var(--gray-6);
+   --nav-fg-inactive: var(--gray-4);
+   --nav-divider: var(--gray-3);
 
    --main-border: var(--gray-2);
 
