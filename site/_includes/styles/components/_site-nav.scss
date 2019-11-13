@@ -19,7 +19,7 @@
 
    font: {
       family: var(--sans);
-      size: ms(0);
+      size: ms(-1);
    }
 
    text-transform: uppercase;
@@ -72,12 +72,12 @@
       color: var(--color);
 
       &:before {
-         @include bars(0.4rem, calc(var(--hr-width) / 2));
+         @include bars(0.4em, calc(var(--hr-width) / 2));
          left: calc(0.4rem + 100%);
       }
 
       &:after {
-         @include bars(0.4rem, calc(var(--hr-width) / 2));
+         @include bars(0.4em, calc(var(--hr-width) / 2));
          right: calc(0.4rem + 100%);
       }
    }
@@ -89,7 +89,6 @@
 
 @media screen and (min-width: $reflow) and (min-height: 540px) {
    .site-nav {
-
       padding: {
          top: 0;
          bottom: 0;
