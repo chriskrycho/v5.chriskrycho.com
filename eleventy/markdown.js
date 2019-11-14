@@ -55,7 +55,6 @@ function renderPermalink(slug, opts, state, idx) {
             ['href', opts.permalinkHref(slug, state)],
          ],
       }),
-      ...marker,
    ]
 
    const closeTokens = [...marker, new state.Token('link_close', 'a', -1)]
@@ -82,7 +81,7 @@ const md = markdownIt({
       permalink: true,
       level: 1,
       permalinkClass: 'section-link',
-      permalinkSymbol: '—',
+      permalinkSymbol: '',
       renderPermalink,
       slugify,
    })

@@ -1,11 +1,11 @@
 {% import 'macros/nav.njk' as nav %}
 
-
-{%- if title != config.title -%}
-   {% set page_title = (title + '&hairsp;—&hairsp;' + config.title) | safe %}
-{%- else -%}
-   {% set page_title = config.title %}
-{%- endif -%}
+{% set site_title = config.title + ', ' + config.subtitle %}
+{% if title != config.title %}
+   {% set page_title = (title + '&hairsp;—&hairsp;' + site_title) | safe %}
+{% else %}
+   {% set page_title = site_title %}
+{% endif %}
 
 <!DOCTYPE html>
 <html>
@@ -44,8 +44,8 @@
    <main>
       <header class='site-header'>
          <h1 class='site-title'>
-            <a href='/'>
-               sympolymathesy
+            <a href='/' style='letter-spacing: 2px'>
+               {{config.title}}
             </a>
          </h1>
          <h2 class='site-subtitle'>

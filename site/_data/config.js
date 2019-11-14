@@ -1,4 +1,5 @@
 module.exports = {
-   title: 'Sympolymathesy by Chris Krycho',
+   title: 'Sympolymathesy',
+   subtitle: 'by Chris Krycho',
    timeZone: 'America/Denver',
 }

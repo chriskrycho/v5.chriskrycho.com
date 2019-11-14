@@ -101,6 +101,24 @@
 }
 
 @media screen {
+   @media (min-width: $resize) {
+      .site-header {
+         padding: {
+            top: ms(2);
+            left: ms(3);
+            right: ms(3);
+         }
+      }
+
+      .site-title {
+         // font-size: ms(6);
+      }
+
+      .site-subtitle {
+         // font-size: ms(1);
+      }
+   }
+
    @media (min-width: $reflow) {
       .site-header {
          padding: {
@@ -136,8 +154,9 @@
    @media (min-width: $break-5) {
       .site-header {
          padding: {
-            left: ms(8);
-            right: ms(8);
+            top: ms(5);
+            left: ms(7);
+            right: ms(7);
          }
       }
    }

@@ -1,5 +1,5 @@
 ---
-title: Chris Krycho
+title: Sympolymathesy
 layout: index.njk
 ---
 
