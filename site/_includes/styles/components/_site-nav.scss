@@ -67,12 +67,12 @@
       color: var(--color);
 
       &:before {
-         @include bars(0.4em, calc(var(--hr-width) / 3));
+         @include bars(0.4em, calc(var(--hr-width) / 2));
          left: calc(0.2em + 100%);
       }
 
       &:after {
-         @include bars(0.4em, calc(var(--hr-width) / 3));
+         @include bars(0.4em, calc(var(--hr-width) / 2));
          right: calc(0.4em + 100%);
       }
    }
