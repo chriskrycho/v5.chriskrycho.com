@@ -12,6 +12,7 @@
    },
    "devDependencies": {
       "@11ty/eleventy": "^0.9.0",
+      "@types/luxon": "^1.15.2",
       "@types/serve-static": "^1.13.2",
       "@typescript-eslint/eslint-plugin": "^2.7.0",
       "@typescript-eslint/parser": "^2.7.0",
@@ -25,7 +26,7 @@
       "prettier": "^1.18.2",
       "sass": "1.22.1",
       "true-myth": "^3.0.0",
-      "typescript": "3.5.2",
+      "typescript": "~3.6.0",
       "typeset": "0.2.2",
       "uslug": "^1.0.4"
    },
