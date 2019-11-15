@@ -10,5 +10,6 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "public": true
-   }
+   },
+   "typescript.tsdk": "node_modules/typescript/lib"
 }
