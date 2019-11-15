@@ -4,12 +4,12 @@ import { Item } from '../types/eleventy'
 const OPTIONS = { zone: 'utc' }
 
 export interface ItemsByMonth {
-   month: {
-      sort: string
-      name: string
-   }
+   sort: string
+   name: string
    items: Item[]
 }
+
+type MonthMap = Map<string, ItemsByMonth>
 
 function dateTimeFromItem({ date }: Item): DateTime {
    return typeof date === 'string'
@@ -17,22 +17,17 @@ function dateTimeFromItem({ date }: Item): DateTime {
       : DateTime.fromJSDate(date, OPTIONS)
 }
 
-function toMonthMap(
-   map: Map<string, ItemsByMonth>,
-   item: Item,
-): Map<string, ItemsByMonth> {
+function toMonthMap(map: MonthMap, item: Item): MonthMap {
    const itemDateTime = dateTimeFromItem(item)
-   const monthSortDate = itemDateTime.toFormat('YYYY.MM')
+   const monthSortDate = itemDateTime.toFormat('yyyy.mm')
 
    const existingMonth = map.get(monthSortDate)
    if (existingMonth) {
       existingMonth.items.push(item)
    } else {
       map.set(monthSortDate, {
-         month: {
-            sort: monthSortDate,
-            name: itemDateTime.toFormat(''),
-         },
+         sort: monthSortDate,
+         name: itemDateTime.toFormat('MMMM yyyy'),
          items: [item],
       })
    }

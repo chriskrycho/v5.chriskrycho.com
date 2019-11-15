@@ -2,7 +2,10 @@ import { DateTime } from 'luxon'
 
 const OPTIONS = { zone: 'utc' }
 
-function localeDate(date: Date | string, format = DateTime.DATE_FULL): string {
+export default function localeDate(
+   date: Date | string,
+   format = DateTime.DATE_FULL,
+): string {
    const dateTime =
       typeof date === 'string'
          ? DateTime.fromSQL(date, OPTIONS)
@@ -10,5 +13,3 @@ function localeDate(date: Date | string, format = DateTime.DATE_FULL): string {
 
    return dateTime.toLocaleString(format)
 }
-
-module.exports = localeDate

@@ -7,12 +7,19 @@ eleventyExcludeFromCollections: true
 
 {%- block content -%}
 {% set c = page.inputPath | toCollection %}
-{%- if collections[c].length -%}
-   <ul>
-   {%- for entry in collections[c] -%}
-      <li>
-         <a href='{{entry.url}}'>{{entry.data.title | safe}}</a>
-         <span class='subtitle'>{{entry.data.subtitle | safe}}</span>
+{%- if collections[c] and collections[c].length -%}
+   <ul class='archive'>
+   {%- for month in collections[c] %}
+      <li class='month'>
+         <h3>{{month.name}}</h3>
+      {%- for item in month.items %}
+         <ul class='month-items'>
+            <li class='month-item'>
+               <a href='{{item.url}}'>{{item.data.title | safe}}</a>
+               <span class='subtitle'>{{item.data.subtitle | safe}}</span>
+            </li>
+         </ul>
+      {% endfor -%}
       </li>
    {%- endfor -%}
    </ul>
