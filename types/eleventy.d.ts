@@ -81,7 +81,7 @@ export type EngineName =
    | 'pug'
    | 'jstl'
 
-export interface Collection {
+export interface Item {
    /** the full path to the source input file (including the path to the input directory) */
    inputPath: string
    /** 
@@ -108,7 +108,7 @@ export interface Collection {
 }
 
 export interface Collections {
-   getAll(): Collection[]
+   getAll(): Item[]
 
    /**
       Note that while Array `.reverse()` mutates the array in-place, all Eleventy
@@ -118,11 +118,11 @@ export interface Collections {
 
       [warning]: https://www.11ty.io/docs/collections/#array-reverse
     */
-   getAllSorted(): Collection[]
+   getAllSorted(): Item[]
 
-   getFilteredByTag(tagName: string): Collection[]
+   getFilteredByTag(tagName: string): Item[]
 
-   getFilteredByGlob(glob: string | string[]): Collection[]
+   getFilteredByGlob(glob: string | string[]): Item[]
 }
 
 interface Renderer {
@@ -197,7 +197,7 @@ export interface Config {
 
    addCollection(
       name: string,
-      builder: (collection: Collections) => Collection[] | object | Promise<object>,
+      builder: (collection: Collections) => Item[] | object | Promise<object>,
    ): void
 
    addFilter(name: string, filter: (...args: any[]) => unknown): string
