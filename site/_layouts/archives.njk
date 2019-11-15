@@ -8,8 +8,9 @@ eleventyExcludeFromCollections: true
 {%- block content -%}
 {% set c = page.inputPath | toCollection %}
 {%- if collections[c] and collections[c].length -%}
+{%- set collection = collections[c] | reverse -%}
    <ul class='archive'>
-   {%- for month in collections[c] %}
+   {%- for month in collection %}
       <li class='month'>
          <h3>{{month.name}}</h3>
       {%- for item in month.items %}

@@ -31,7 +31,6 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
       itemsByMonth(
          collections
             .getAllSorted()
-            .reverse()
             .filter(collection => collection.inputPath.includes(path)),
       ),
    )

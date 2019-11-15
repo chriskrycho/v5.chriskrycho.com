@@ -19,7 +19,7 @@ function dateTimeFromItem({ date }: Item): DateTime {
 
 function toMonthMap(map: MonthMap, item: Item): MonthMap {
    const itemDateTime = dateTimeFromItem(item)
-   const monthSortDate = itemDateTime.toFormat('yyyy.mm')
+   const monthSortDate = itemDateTime.toFormat('yyyy.MM')
 
    const existingMonth = map.get(monthSortDate)
    if (existingMonth) {
