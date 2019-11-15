@@ -30,6 +30,7 @@ function addCollectionFromDir(config, path, name = path) {
    config.addCollection(name, collections =>
       collections
          .getAllSorted()
+         .reverse()
          .filter(collection => collection.inputPath.includes(path)),
    )
 }
