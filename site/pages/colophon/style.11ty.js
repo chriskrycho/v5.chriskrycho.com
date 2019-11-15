@@ -1,12 +1,9 @@
+// @ts-check
 import path from 'path'
 import Stylesheet from '../../../eleventy/stylesheet'
-import { Dict } from '../../../types/eleventy'
 
-export default class Style extends Stylesheet {
-   outputPath: string
-   inputPath: string
-
-   data(): Dict<string> {
+module.exports = class Style extends Stylesheet {
+   data() {
       return {
          ...super.data(),
          layout: '_custom-css',

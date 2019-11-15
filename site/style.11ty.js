@@ -2,9 +2,6 @@ import path from 'path'
 import Stylesheet from '../eleventy/stylesheet'
 
 module.exports = class Style extends Stylesheet {
-   outputPath: string
-   inputPath: string
-
    constructor() {
       super()
 
