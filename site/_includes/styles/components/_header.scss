@@ -18,7 +18,7 @@
       weight: 300;
       size: ms(5);
    }
-   letter-spacing: 1pt;
+   letter-spacing: normal;
 
    line-height: 1;
    text-align: left;
@@ -112,11 +112,7 @@
       }
 
       .site-title {
-         // font-size: ms(6);
-      }
-
-      .site-subtitle {
-         // font-size: ms(1);
+         letter-spacing: 1pt;
       }
    }
 
