@@ -1,0 +1,38 @@
+.item-header {
+   width: 100%;
+   max-width: var(--max-width);
+   margin: {
+      bottom: 1em;
+      left: auto;
+      right: auto;
+   }
+
+   --line-height: #{ms(1) / 1em};
+
+   .item-title {
+      line-height: var(--line-height);
+      font: {
+         family: var(--sans);
+         weight: 600;
+         size: ms(3);
+      }
+      letter-spacing: -1px;
+      color: var(--h1-fg);
+   }
+
+   .item-subtitle {
+      line-height: var(--line-height);
+      font: {
+         family: var(--serif);
+         size: ms(1);
+         style: italic;
+      }
+      color: var(--h2-fg)
+   }
+
+   .page {
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 1px;   
+   }
+}

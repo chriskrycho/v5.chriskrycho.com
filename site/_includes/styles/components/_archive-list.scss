@@ -1,0 +1,122 @@
+.archive-list {
+   width: 100%;
+   margin: ms(8) auto;
+
+   .date {
+      font-family: var(--sans);
+      text-transform: uppercase;
+      font-size: ms(-1);
+      line-height: 1.1;
+      color: var(--h2-fg);
+   }
+
+   .year {
+      &:not(:last-child) {
+         margin-bottom: ms(8);
+      }
+   }
+
+   .year-info {
+      max-width: 32rem;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   .year-title {
+      display: block;
+      font-weight: bold;
+      line-height: 1;
+      font-size: var(--sans-adjust);
+
+      &::after {
+         --padding: #{ms(-2)};
+         content: '';
+         display: block;
+         width: 1em;
+         height: 0;
+         margin-bottom: var(--padding);
+         padding-bottom: calc(var(--padding) - 2px);
+         border-bottom: 2px solid var(--divider);
+      }
+   }
+
+   .month {
+      width: 100%;
+      margin: {
+         left: auto;
+         right: auto;
+      }
+      list-style-type: none;
+      display: grid;
+      grid-template:
+         "title entries ." auto / 1fr 36rem 1fr;
+      grid-gap: 1rem;
+      gap: 1rem;
+
+      &:not(:last-child) {
+         margin-bottom: ms(8);
+      }
+   }
+
+   .month-title {
+      grid-area: title;
+      display: inline-block;
+      text-align: right;
+      letter-spacing: 1px;
+      margin-bottom: ms(-6);
+   }
+
+   .month-items {
+      grid-area: entries;
+   }
+
+   .item {
+      display: grid;
+      grid-template: 
+         "day title   "
+         " .  subtitle" auto / 1em 1fr;
+      grid-gap: 0 1em;
+      gap: 0 1em;
+      max-width: 36rem;
+      margin: 0 0 ms(1);
+      width: 100%;
+   }
+
+   .item-title {
+      grid-area: title;
+      font: {
+         family: var(--sans);
+         size: var(--sans-adjust);
+         weight: bold;
+      }
+      margin-bottom: ms(-8);
+   }
+
+   .item-date {
+      grid-area: day;
+   }
+
+   .item-permalink {
+      font-family: var(--sans);
+
+      -moz-text-decoration-color: transparent;
+      text-decoration-color: transparent;
+      transition:
+         text-decoration-color var(--transition),
+         -moz-text-decoration-color var(--transition);
+
+      &:hover,
+      &:active {
+         -moz-text-decoration-color: var(--hover-underline);
+         text-decoration-color: var(--hover-underline);
+      }
+   }
+
+   .item-subtitle {
+      grid-area: subtitle;
+      line-height: 1.1;
+      font-size: ms(-1);
+      font-style: italic;
+      color: var(--h2-fg);
+   }
+}

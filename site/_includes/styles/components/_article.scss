@@ -1,0 +1,422 @@
+@mixin fancy-block($bg, $fg) {
+   align-self: start;
+   padding: {
+      left: 0.5em;
+      right: 0.5em;
+   }
+   width: 100%;
+   color: $fg;
+   background: $bg;
+}
+
+@mixin extra-vertical {
+   padding-top: ms(-4);
+   padding-bottom: ms(-4);
+}
+
+@mixin pull-left($border-color: transparent) {
+   --pull-width: 2px;
+   width: calc(100% + 1em + var(--pull-width));
+   border-left: {
+      style: solid;
+      width: var(--pull-width);
+   }
+   margin: {
+      left: calc(-1 * (calc(0.5em + var(--pull-width))));
+      bottom: ms(0);
+   }
+}
+
+article {
+   .article-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         width: 100%;
+         max-width: var(--max-width);
+         text-align: left;
+
+         .section-link {
+            text-decoration: none;
+            text-align: left;
+            transition: color var(--transition);
+            position: relative;
+
+            .__marker {
+               background-color: transparent;
+               transition: background-color var(--transition);
+               display: inline-block;
+               width: 3rem;
+               height: 1px;
+               position: relative;
+               left: 0.5em;
+               top: -0.25em;
+            }
+
+            &:hover,
+            &:active {
+               color: var(--link);
+
+               .__marker {
+                  background-color: var(--link);
+               }
+            }
+         }
+      }
+
+      h1 {
+         font: {
+            family: var(--sans);
+            size: ms(2);
+         }
+
+         margin: ms(0) 0;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         background: var(--bg);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         max-width: var(--max-width);
+         text-align: center;
+
+         &::before,
+         &::after {
+            content: '';
+            height: 1.5px;
+            border-radius: 1.5px;
+            background: var(--gray-3);
+            flex: 0 1 ms(3);
+         }
+
+         &::before {
+            margin-right: ms(-4);
+         }
+
+         &::after {
+            margin-left: ms(-4);
+         }
+      }
+
+      h2 {
+         font: {
+            family: var(--sans);
+            size: ms(2);
+         }
+         margin: 1rem 0;
+
+         .section-link {
+            color: var(--h2-fg);
+         }
+      }
+
+      ul,
+      ol {
+         width: 100%;
+         max-width: 32rem;
+         padding-left: ms(2);
+         margin-bottom: ms(0);
+      }
+   }
+
+   // This is a slightly ridiculoud implementation, but it actually does what I
+   // want: all list items have their normal margins, *except* those at the end
+   // of a list. When the item is the terminal item in a list, it drops that
+   // padding. This works for nested lists because in that case, the parent list
+   // container, `ul` or `ol`, will have its own margin which only gets cleared
+   // when *it* is the final such item in the list.
+   li {
+      &:last-child > {
+         p,
+         ol,
+         ul {
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+
+      p:last-child {
+         margin-bottom: 1em;
+      }
+   }
+
+   ol {
+      list-style: decimal;
+      font-feature-settings: "onum" 0;
+   }
+
+   ul {
+      list-style: circle;
+   }
+
+   p {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 0 ms(0);
+      padding: 0;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   blockquote {
+      --double-margin: 0.35em;
+      --single-margin: 0.2em;
+      --border-width: 3px;
+
+      font: {
+         family: var(--sans);
+         size: var(--sans-adjust);
+      }
+      @include fancy-block(var(--bg), var(--fg));
+      @include pull-left();
+      border-left-color: var(--blockquote-border);
+
+      padding-top: 1.5px;
+   }
+
+   // As with list items (above), `blockquote` and `aside` children should have
+   // their normal margins *except* when terminating the container, so that they
+   // do not cause visual disparities between top and bottom.
+   blockquote,
+   aside,
+   .note,
+   .assumed-audience {
+      > {
+         p,
+         ul,
+         ol {
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+
+   code {
+      font: {
+         family: var(--mono);
+         size: ms(-2);
+      }
+      background: var(--code-bg);
+      padding: ms(-8) ms(-4);
+      color: var(--code-fg);
+   }
+
+   pre {
+      @include fancy-block(var(--code-bg), var(--code-fg));
+      @include extra-vertical();
+      @include pull-left();
+      border-left-color: var(--code-border);
+
+      background: var(--code-bg);
+      color: var(--code-fg);
+      margin-bottom: 1em;
+
+      code {
+         display: block;
+         overflow-x: auto;
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         line-height: ms(2);
+         font-size: ms(-2);
+         -webkit-font-smoothing: antialiased;
+      }
+   }
+
+   aside,
+   .note {
+      &::before {
+         display: block;
+         text-align: center;
+         margin: ms(-8) 0 ms(-8) -#{ms(-4)};
+         font: {
+            family: var(--sans);
+            weight: bold;
+         }
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: var(--aside-marker-fg);
+      }
+
+      code {
+         background-color: var(--aside-code-bg);
+      }
+   }
+
+   aside,
+   .note,
+   .assumed-audience {
+      font: {
+         family: var(--sans);
+         size: var(--sans-adjust);
+      }
+
+      margin: {
+         left: -3px;
+         bottom: ms(0);
+      }
+
+      border-top: 2px solid var(--top-border);
+   }
+
+   aside {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
+      --top-border: var(--aside-border);
+
+      &::before {
+         content: '—/ Aside /—';
+      }
+   }
+
+   .assumed-audience {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
+      --top-border: var(--aside-border);
+
+      display: block;
+      margin: {
+         left: auto;
+         right: auto;
+      }
+   }
+
+   .note {
+      @include fancy-block(var(--note-bg), var(--note-fg));
+      @include extra-vertical();
+      --top-border: var(--note-accent);
+
+      &::before {
+         content: '—/ Note /—';
+         color: var(--note-accent);
+      }
+   }
+
+   a {
+      -webkit-text-decoration-color: var(--underline);
+      -moz-text-decoration-color: var(--underline);
+      text-decoration-color: var(--underline);
+      text-decoration-skip-ink: auto;
+
+      transition: -webkit-text-decoration-color var(--transition),
+         -moz-text-decoration-color var(--transition),
+         text-decoration-color var(--transition), color var(--transition);
+
+      &:hover {
+         -webkit-text-decoration-color: var(--hover-underline);
+         -moz-text-decoration-color: var(--hover-underline);
+         text-decoration-color: var(--hover-underline);
+      }
+   }
+
+   hr {
+      margin-bottom: ms(0);
+   }
+
+   figure {
+      margin-bottom: 1em;
+      max-width: 48em;
+
+      figcaption {
+         text-align: center;
+         max-width: var(--max-width);
+         margin: auto;
+         font: {
+            family: var(--sans);
+            size: var(--sans-adjust);
+         }
+         color: var(--figure-fg);
+      }
+   }
+
+   sup {
+      line-height: 0;
+      vertical-align: 0.558em;
+
+      font: {
+         family: var(--sans);
+         weight: bold;
+         size: ms(-2);
+         feature-settings: "onum" 0;
+      }
+
+      &.footnote-ref a {
+         display: inline-block;
+
+         text-decoration: none;
+         transition: all var(--transition);
+      }
+   }
+
+   .footnotes {
+      font-size: calc(var(--fs-base) - 2px);
+      width: 100%;
+      max-width: var(--max-width);
+   }
+}
+
+@media screen {
+   @media (min-width: 32.6667rem) {
+      article {
+         --side-padding: #{ms(-1)};
+         --fancy-width: calc(var(--max-width) + calc(2 * var(--side-padding)));
+
+         blockquote,
+         pre,
+         aside,
+         .assumed-audience,
+         .note {
+            max-width: var(--fancy-width);
+            align-self: center;
+            padding: {
+               left: var(--side-padding);
+               right: var(--side-padding);
+            }
+         }
+
+         .article-content h1 {
+            max-width: var(--fancy-width);
+         }
+      }
+   }
+
+   @media (min-width: $resize) {
+      article {
+         --fancy-width: calc(var(--max-width) + 2.5rem);
+
+         .assumed-audience {
+            padding-left: ms(0);
+         }
+
+         .article-content {
+            blockquote,
+            pre,
+            aside,
+            .note {
+               margin-left: ms(-4);
+               padding-left: ms(0);
+            }
+         }
+      }
+   }
+
+   @media (min-width: $reflow) {
+      article {
+         padding-bottom: ms(3);
+      }
+   }
+}

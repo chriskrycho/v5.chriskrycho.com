@@ -1,0 +1,31 @@
+{% macro list(collection) %}
+<ul class='archive-list'>
+{%- for year in collection %}
+<li class='year'>
+   <div class='year-info'>
+      <h2 class='year-title date'>{{year.value}}</h2>
+   </div>
+   <ul class='year-items'>
+   {%- for month in year.itemsByMonth %}
+      <li class='month'>
+         <h3 class='month-title date'>{{month.name}}</h3>
+         <ul class='month-items'>
+         {%- for item in month.items %}
+            <li class='item'>
+               <h4 class='item-date date'>{% localeDate item.data.date, 'dd' %}</h4>
+               <h5 class='item-title'>
+                  <a href='{{item.url}}' class='item-permalink'>
+                     {{item.data.title | safe}}
+                  </a>
+               </h5>
+               <p class='item-subtitle'>{{item.data.subtitle | safe}}</h2>
+            </li>
+         {% endfor -%}
+         </ul>
+      </li>
+   {%- endfor -%}
+   </ul>
+</li>
+{% endfor -%}
+</ul>
+{% endmacro %}

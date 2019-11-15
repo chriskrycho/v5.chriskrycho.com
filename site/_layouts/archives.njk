@@ -2,29 +2,19 @@
 eleventyExcludeFromCollections: true
 ---
 
-{%- extends '_page.njk' -%}
-{%- import 'macros/item.njk' as item -%}
+{% extends 'base.njk' %}
+{% import 'components/item.njk' as item %}
+{% import 'components/archive-list.njk' as archive %}
 
-{%- block content -%}
+{%- block main -%}
+<section class='item'>
+{{item.header(type='page', title=title, subtitle=subtitle)}}
+
 {% set c = page.inputPath | toCollection %}
 {%- if collections[c] and collections[c].length -%}
-{%- set collection = collections[c] | reverse -%}
-   <ul class='archive'>
-   {%- for month in collection %}
-      <li class='month'>
-         <h3>{{month.name}}</h3>
-      {%- for item in month.items %}
-         <ul class='month-items'>
-            <li class='month-item'>
-               <a href='{{item.url}}'>{{item.data.title | safe}}</a>
-               <span class='subtitle'>{{item.data.subtitle | safe}}</span>
-            </li>
-         </ul>
-      {% endfor -%}
-      </li>
-   {%- endfor -%}
-   </ul>
+   {{ archive.list(collections[c] | reverse) }}
 {%- else -%}
    {%- include 'blocks/wip.njk' -%}
 {%- endif -%}
-{%- endblock content -%}
+</div>
+{%- endblock main -%}

@@ -1,8 +1,8 @@
 {% macro header(type, title, subtitle) %}
-<header>
-   <h1 class='{{type}}'>{{title | inlineMd | safe}}</h1>
+<header class='item-header'>
+   <h1 class='item-title {{type}}'>{{title | inlineMd | safe}}</h1>
    {% if subtitle -%}
-      <h2>{{subtitle | inlineMd | safe}}</h2>
+      <p class='item-subtitle'>{{subtitle | inlineMd | safe}}</p>
    {%- endif %}
 </header>
 {% endmacro %}
