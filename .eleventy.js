@@ -21,12 +21,17 @@ function toCollection(slug) {
 /**
    Use a path to create a collection from all items contained within it.
 
+   @param {import("./types/eleventy").Config} config The eleventy config
    @param {string} path The path to filter as a collection
-   @return {(collections: import("./types/eleventy").Collections) => import("./types/eleventy").Collection[]}
+   @param {string} [name] An optional override name. If not supplied, the name will be a
+                          slugified version of the path, e.g. `foo/bar` -> `foo-bar`
  */
-function fromPath(path) {
-   return collections =>
-      collections.getAll().filter(collection => collection.inputPath.includes(path))
+function addCollectionFromDir(config, path, name = path) {
+   config.addCollection(name, collections =>
+      collections
+         .getAllSorted()
+         .filter(collection => collection.inputPath.includes(path)),
+   )
 }
 
 /**
@@ -55,10 +60,10 @@ function config(config) {
    config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
 
-   config.addCollection('journal', fromPath('journal'))
-   config.addCollection('essays', fromPath('essays'))
-   config.addCollection('library', fromPath('library'))
-   config.addCollection('photography', fromPath('photography'))
+   addCollectionFromDir(config, 'journal')
+   addCollectionFromDir(config, 'essays')
+   addCollectionFromDir(config, 'library')
+   addCollectionFromDir(config, 'photography')
 
    config.setLibrary('md', markdown)
 
