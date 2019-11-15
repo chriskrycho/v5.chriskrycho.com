@@ -1,5 +1,14 @@
-import { ServeStaticOptions } from 'serve-static'
+type ServeStaticOptions = import('serve-static').ServeStaticOptions
 
+// ---- Utility types
+interface Dict<T> {
+   [key: string]: T | undefined
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnyFunction<T = any> = (...args: any[]) => T
+
+// ---- Eleventy types
 interface BrowserSyncConfig {
    /** Browsersync includes a user-interface that is accessed via a separate port. The UI allows to controls all devices, push sync updates and much more. */
    ui?:
@@ -17,7 +26,7 @@ interface BrowserSyncConfig {
            | string
            | {
                 match?: string[]
-                fn?: (event: any, file: string) => any
+                fn?: (event: unknown, file: string) => unknown
              }
         >
       | false
@@ -200,7 +209,7 @@ export interface Config {
       builder: (collection: Collections) => Item[] | object | Promise<object>,
    ): void
 
-   addFilter(name: string, filter: (...args: any[]) => unknown): string
+   addFilter(name: string, filter: AnyFunction): string | void
 
    addTransform(
       name: string,
@@ -216,30 +225,45 @@ export interface Config {
       ) => void | Promise<void>,
    ): void
 
-   addShortcode(name: string, shortcode: (...args: any[]) => string): string
-   addLiquidShortcode(name: string, shortcode: (...args: unknown[]) => string): void
-   addNunjucksShortcode(name: string, shortcode: (...args: unknown[]) => string): void
-   addHandlebarsShortcode(name: string, shortcode: (...args: unknown[]) => string): void
-   addJavascriptShortcode(name: string, shortcode: (...args: unknown[]) => string): void
+   addShortcode(name: string, shortcode: AnyFunction<string>): string
+   addLiquidShortcode(name: string, shortcode: AnyFunction<string>): void
+   addNunjucksShortcode(name: string, shortcode: AnyFunction<string>): void
+   addHandlebarsShortcode(name: string, shortcode: AnyFunction<string>): void
+   addJavascriptShortcode(name: string, shortcode: AnyFunction<string>): void
    addPairedShortcode(
       name: string,
-      shortcode: (content: string, ...args: unknown[]) => string,
+      shortcode: <A>(content: string, ...args: A[]) => string,
    ): void
 
-   addJavaScriptFunction(name: string, fn: (...args: unknown) => string): void
+   addJavaScriptFunction(name: string, fn: AnyFunction<string>): void
 
-   addFilter(name: string, filter: (...args: unknown[]) => unknown): void
+   addLiquidFilter(name: string, filter: <A>(...args: A[]) => unknown): object
 
-   addLiquidFilter(name: string, filter: (...args: unknown[]) => unknown): object
-
-   addNunjucksFilter(name: string, filter: (...args: unknown[]) => unknown): void
+   addNunjucksFilter(name: string, filter: <A>(...args: A[]) => unknown): void
 
    addNunjucksAsyncFilter(
       name: string,
-      filter: (...args: unknown[], callback: (...args: unknown[]) => unknown) => void,
+      filter: <T>(value: T, callback: <E, R>(err: E | null, res: R) => unknown) => void,
+   ): void
+   addNunjucksAsyncFilter(
+      name: string,
+      filter: <T, U>(
+         value1: T,
+         value2: U,
+         callback: <E, R>(err: E | null, res: R) => unknown,
+      ) => void,
+   ): void
+   addNunjucksAsyncFilter(
+      name: string,
+      filter: <T, U, V>(
+         value1: T,
+         value2: U,
+         value3: V,
+         callback: <E, R>(err: E | null, res: R) => unknown,
+      ) => void,
    ): void
 
-   addHandlebarsHelper(name: string, helper: (...args: unknown[]) => string): object
+   addHandlebarsHelper(name: string, helper: AnyFunction<string>): object
 
    /**
       Plugins are custom code that Eleventy can import into a project from an external
@@ -251,7 +275,7 @@ export interface Config {
          plugin’s documentation (e.g. the [eleventy-plugin-syntaxhighlight README](https://github.com/11ty/eleventy-plugin-syntaxhighlight/blob/master/README.md))
          to learn what options are available to you.
     */
-   addPlugin<F extends Function>(fn: F, config?: Parameters<F>[0]): void
+   addPlugin<F extends AnyFunction>(fn: F, config?: Parameters<F>[0]): void
 
    /**
       Searching the entire directory structure for files to copy based on file extensions
@@ -289,7 +313,9 @@ export interface Config {
 }
 
 type NonMethodNames<T> = {
-   [K in keyof T]: T[K] extends (...args: any[]) => any ? never : K
+   [K in keyof T]: T[K] extends AnyFunction ? never : K
 }[keyof T]
 
-export type UserConfig = Pick<Config, NonMethodNames<Config>>
+type F = NonMethodNames<Config>
+
+export type UserConfig = Pick<Config, NonNullable<NonMethodNames<Config>>>

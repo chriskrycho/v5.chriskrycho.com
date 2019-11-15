@@ -1,13 +1,8 @@
-const { DateTime } = require('luxon')
-const { DATE_FULL } = DateTime
+import { DateTime } from 'luxon'
 
 const OPTIONS = { zone: 'utc' }
 
-/**
-   @param {Date | string} date 
-   @returns {string}
- */
-function localeDate(date, format = DATE_FULL) {
+function localeDate(date: Date | string, format = DateTime.DATE_FULL): string {
    const dateTime =
       typeof date === 'string'
          ? DateTime.fromSQL(date, OPTIONS)

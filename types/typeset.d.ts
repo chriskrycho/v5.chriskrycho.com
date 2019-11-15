@@ -16,5 +16,4 @@ export type Options = {
    disable?: OptionName[]
 }
 
-export function typeset(html: string, options?: Options): string
-export = typeset
+export default function typeset(html: string, options?: Options): string

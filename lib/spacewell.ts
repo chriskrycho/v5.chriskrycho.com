@@ -1,5 +1,3 @@
-// @ts-check
-
 const THIN_SP = '&thinsp;'
 // const HAIR_SP = '&hairsp;'
 const EM_DASH = '&mdash;'
@@ -8,14 +6,8 @@ const EN_DASH = '&ndash;'
 /**
    Wrap em dashes and their immediate neighbors in non-breaking span and hair spaces.
    Normalize which em dash variant is used.
-
-   @param {string} content 
  */
-function emDashes(content) {
-   if (!content) {
-      throw new Error('`spacewell#emDashes()`: no content supplied.')
-   }
-
+export function emDashes(content: string): string {
    return content.replace(
       /(—|&mdash;|&#8212;|&x2014;)/g,
       `${THIN_SP}${EM_DASH}${THIN_SP}`,
@@ -26,14 +18,8 @@ function emDashes(content) {
    Wrap en dashes and their immediate neighbors in non-breaking span and thin spaces (for
    words, replacing normal spaces) or hair spaces (for numbers). Normalize which en dash
    variant is used.
-
-   @param {string} content
  */
-function enDashes(content) {
-   if (!content) {
-      throw new Error('`spacewell#enDashes()`: no content supplied.')
-   }
-
+export function enDashes(content: string): string {
    const OPEN = '<dash-wrap>'
    const CLOSE = '</dash-wrap>'
 
@@ -49,14 +35,8 @@ function enDashes(content) {
 /**
    Take e.g. "J. R. R. Tolkien" or "J.R.R. Tolkien" and use thin spaces
    between the initials.
-
-   @param {string} content 
  */
-function initials(content) {
-   if (!content) {
-      throw new Error('`spacewell#initials()`: no content supplied.')
-   }
-
+export function initials(content: string): string {
    // TODO: implement this in a way that doesn't mistake ends of
    //     sentences. Basically, I *think* it should just be anytime
    //     that the period follows a capital letter, but there may be
@@ -66,30 +46,35 @@ function initials(content) {
 }
 
 // NOTE: keys are mapped to names of functions in the module.
-/** @type {{ [key in string]: (content: string) => string }} */
-const FUNCTIONS = { emDashes, enDashes, initials }
+const FUNCTIONS = {
+   emDashes,
+   enDashes,
+   initials,
+} as const
+
+export interface Options {
+   emDashes?: boolean
+   enDashes?: boolean
+   initials?: boolean
+}
 
 /**
    Given a valid DOM element `container`, apply nice typographical spacing.
 
-   @param {import('./spacewell').Options} options Options for which spacing rules to use.
-   @param {string}  [content] A document element to apply rules to.
+   @param options Options for which spacing rules to use.
+   @param content A document element to apply rules to.
  */
-function spacewell(
-   { emDashes = false, enDashes = false, initials = false } = {},
-   content,
-) {
-   const config = { emDashes, enDashes, initials }
-
-   /** @param {string} content_ */
-   function op(content_) {
-      return Object.keys(config)
-         .filter(key => Boolean(config[key]))
-         .reduce((transformed, cfgKey) => FUNCTIONS[cfgKey](transformed), content_)
+export default function spacewell(options: Options): (content: string) => string
+export default function spacewell(options: Options, content: string): string
+export default function spacewell(
+   options: Options,
+   content?: string,
+): string | ((content: string) => string) {
+   function op(c: string): string {
+      return (Object.keys(options) as Array<keyof Options>)
+         .filter(key => Boolean(options[key]))
+         .reduce((transformed, cfgKey) => FUNCTIONS[cfgKey](transformed), c)
    }
 
    return content ? op(content) : op
 }
-
-// Let the user import whatever they like.
-module.exports = { spacewell, emDashes, enDashes, initials }

@@ -1,7 +1,10 @@
-const path = require('path')
-const Stylesheet = require('../eleventy/stylesheet')
+import path from 'path'
+import Stylesheet from '../eleventy/stylesheet'
 
 module.exports = class Style extends Stylesheet {
+   outputPath: string
+   inputPath: string
+
    constructor() {
       super()
 
