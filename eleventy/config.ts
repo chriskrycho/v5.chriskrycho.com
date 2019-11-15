@@ -31,6 +31,7 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
       years(
          collections
             .getAllSorted()
+            .reverse()
             .filter(collection => collection.inputPath.includes(path)),
       ),
    )

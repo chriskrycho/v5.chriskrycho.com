@@ -12,7 +12,7 @@
 
    .year {
       &:not(:last-child) {
-         margin-bottom: ms(9);
+         margin-bottom: ms(12);
       }
    }
 
@@ -54,7 +54,7 @@
       gap: 1rem;
 
       &:not(:last-child) {
-         margin-bottom: 1rem;
+         margin-bottom: ms(4);
       }
    }
 

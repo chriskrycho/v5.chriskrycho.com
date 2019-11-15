@@ -54,10 +54,10 @@ function toYearMap(yearMap: YearMap, item: Item): YearMap {
    @param items The collection to produce annual groups for
  */
 export default function years(items: Item[]): Year[] {
-   return [...items.reduce(toYearMap, new Map<number, MonthMap>()).entries()].map(
-      ([year, monthMap]) => ({
+   return [...items.reduce(toYearMap, new Map<number, MonthMap>()).entries()]
+      .sort(([yearA], [yearB]) => yearA - yearB)
+      .map(([year, monthMap]) => ({
          value: `${year}`,
          itemsByMonth: [...monthMap.entries()].map(([, month]) => month),
-      }),
-   )
+      }))
 }
