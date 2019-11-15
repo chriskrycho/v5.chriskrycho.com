@@ -10,8 +10,8 @@
 {% macro meta(date, tags, updated) %}
 <footer>
    <section class='dates'>
-   Published {% localeDate date -%}
-   {%- if updated %}, last updated {% localeDate updated %}{% endif %}
+   Published {%- localeDate date -%}
+   {%- if updated -%}, last updated {%- localeDate updated -%}{%- endif -%}
    </section>
    {%- if tags.length > 0 %}
    <section class='topics'>Topics:
