@@ -3,6 +3,7 @@ import markdownIt from 'markdown-it'
 import anchor, { AnchorOptions } from 'markdown-it-anchor'
 import defList from 'markdown-it-deflist'
 import footnotes from 'markdown-it-footnote'
+import implicitFigures from 'markdown-it-implicit-figures'
 import sup from 'markdown-it-sup'
 import Core from 'markdown-it/lib/parser_core'
 import Token from 'markdown-it/lib/token'
@@ -80,6 +81,9 @@ const md = markdownIt({
    .use(footnotes)
    .use(defList)
    .use(sup)
+   .use(implicitFigures, {
+      figcaption: true,
+   })
    .use(anchor, {
       permalink: true,
       level: 1,
