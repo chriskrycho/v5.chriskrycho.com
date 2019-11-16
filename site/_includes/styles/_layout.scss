@@ -7,10 +7,6 @@ body {
    background-color: var(--root-bg);
 }
 
-main {
-   width: calc(100%);
-}
-
 @media screen {
    @media (min-width: $resize) {
       main {

@@ -33,7 +33,7 @@
       z-index: 0;
       position: relative;
 
-      --bar-height: 3px;
+      --bar-height: 2px;
       --bar-width: 0;
       --bar-color: transparent;
 
@@ -58,7 +58,7 @@
 
       &:hover,
       &:active {
-         --bar-color: var(--link);
+         --bar-color: var(--title-hover-bar);
          --bar-width: var(--bar-expanded-width);
       }
    }
@@ -106,6 +106,10 @@
             bottom: ms(2);
             left: ms(3);
             right: ms(3);
+         }
+
+         a {
+            --bar-height: 3px;
          }
       }
 
@@ -157,12 +161,22 @@
    @media (max-width: $break-1) {
       .site-title {
          --bar-expanded-width: 100%;
+         padding: 0;
 
-         a:after {
-            top: unset;
-            left: 0;
-            bottom: var(--bar-height);
+         a {
+            &:after {
+               top: unset;
+               left: 50%;
+               bottom: calc(var(--bar-height) * 2);
+            }
+
+            &:hover, &:active {
+               &:after {
+                  left: 0;
+               }
+            }
          }
+
       }
    }
 }
