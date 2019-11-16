@@ -5,7 +5,7 @@ import typeset from './plugin-typeset'
 import spacewell from './plugin-spacewell'
 import localeDate from './locale-date'
 import { Config, UserConfig } from '../types/eleventy'
-import years from './years'
+import archiveByYear from './archive-by-year'
 
 /**
    @param {string} slug
@@ -28,12 +28,10 @@ function toCollection(slug: string): string | undefined {
  */
 function addCollectionFromDir(config: Config, path: string, name: string = path): void {
    config.addCollection(name, collections =>
-      years(
-         collections
-            .getAllSorted()
-            .reverse()
-            .filter(collection => collection.inputPath.includes(path)),
-      ),
+      collections
+         .getAllSorted()
+         .reverse()
+         .filter(collection => collection.inputPath.includes(path)),
    )
 }
 
@@ -52,6 +50,7 @@ function config(config: Config): UserConfig {
 
    config.addFilter('toCollection', toCollection)
    config.addFilter('stringify', obj => JSON.stringify(obj))
+   config.addFilter('archiveByYears', archiveByYear)
 
    config.addShortcode('localeDate', localeDate)
 
