@@ -63,7 +63,7 @@
 
          &:hover,
          &:active {
-            color: var(--link);
+            color: currentColor;
 
             .__marker {
                width: 100%;
@@ -143,10 +143,14 @@
       }
 
       margin-bottom: ms(-5);
-      padding-bottom: ms(-5);
+      // padding-bottom: ms(-5);
 
       .section-link {
-         color: var(--h4-fg)
+         color: var(--h4-fg);
+
+         .__marker {
+            bottom: -#{ms(-8)};
+         }
       }
    }
 
@@ -158,7 +162,6 @@
       }
 
       margin-bottom: ms(-7);
-      padding-bottom: ms(-10);
 
       .section-link {
          color: var(--h5-fg);
@@ -166,7 +169,7 @@
          text-decoration-color: transparent;
 
          .__marker {
-            bottom: -#{ms(-7)};
+            bottom: -#{ms(-9)};
          }
       }
    }
@@ -179,7 +182,6 @@
       }
 
       margin-bottom: ms(-7);
-      padding-bottom: ms(-10);
 
       .section-link {
          color: var(--h6-fg);
@@ -187,7 +189,7 @@
          text-decoration-color: transparent;
 
          .__marker {
-            bottom: -#{ms(-7)};
+            bottom: -#{ms(-9)};
          }
       }
    }
