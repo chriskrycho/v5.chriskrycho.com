@@ -498,6 +498,10 @@
    @media (min-width: $reflow) {
       .content-block {
          padding-bottom: ms(3);
+
+         figure {
+            max-width: 90%;
+         }
       }
    }
 }
