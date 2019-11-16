@@ -40,7 +40,7 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
 function config(config: Config): UserConfig {
    config.addPlugin(
       typeset({
-         only: 'article',
+         only: '.content-block',
          disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
       }),
    )

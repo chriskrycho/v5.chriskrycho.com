@@ -27,6 +27,142 @@
    }
 }
 
+.article {
+   --max-width: 32rem;
+   font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
+
+   aside,
+   .note {
+      &::before {
+         display: block;
+         text-align: center;
+         margin: ms(-8) 0 ms(-8) -#{ms(-4)};
+         font: {
+            family: var(--sans);
+            weight: bold;
+         }
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: var(--aside-marker-fg);
+      }
+
+      code {
+         background-color: var(--aside-code-bg);
+      }
+   }
+
+   aside,
+   .note,
+   .assumed-audience {
+      font: {
+         family: var(--sans);
+         size: calc(var(--sans-adjust) * #{ms(0)});
+      }
+
+      margin: {
+         left: -3px;
+         bottom: ms(0);
+      }
+
+      border-top: 2px solid var(--top-border);
+   }
+
+   aside {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
+      --top-border: var(--aside-border);
+
+      &::before {
+         content: '—/ Aside /—';
+      }
+   }
+
+   .assumed-audience {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
+      --top-border: var(--aside-border);
+
+      display: block;
+      margin: {
+         left: auto;
+         right: auto;
+      }
+   }
+
+   .note {
+      @include fancy-block(var(--note-bg), var(--note-fg));
+      @include extra-vertical();
+      --top-border: var(--note-accent);
+
+      &::before {
+         content: '—/ Note /—';
+         color: var(--note-accent);
+      }
+   }
+
+   a {
+      -webkit-text-decoration-color: var(--underline);
+      -moz-text-decoration-color: var(--underline);
+      text-decoration-color: var(--underline);
+      text-decoration-skip-ink: auto;
+
+      transition: -webkit-text-decoration-color var(--transition),
+         -moz-text-decoration-color var(--transition),
+         text-decoration-color var(--transition), color var(--transition);
+
+      &:hover {
+         -webkit-text-decoration-color: var(--hover-underline);
+         -moz-text-decoration-color: var(--hover-underline);
+         text-decoration-color: var(--hover-underline);
+      }
+   }
+
+   hr {
+      margin-bottom: ms(0);
+   }
+
+   figure {
+      margin-bottom: 1em;
+      max-width: 48em;
+
+      figcaption {
+         text-align: center;
+         max-width: var(--max-width);
+         margin: auto;
+         font: {
+            family: var(--sans);
+            size: calc(var(--sans-adjust) * #{ms(0)});
+         }
+         color: var(--figure-fg);
+      }
+   }
+
+   sup {
+      line-height: 0;
+      vertical-align: 0.558em;
+
+      font: {
+         family: var(--sans);
+         weight: bold;
+         size: ms(-2);
+         feature-settings: 'onum' 0;
+      }
+
+      &.footnote-ref a {
+         display: inline-block;
+
+         text-decoration: none;
+         transition: all var(--transition);
+      }
+   }
+
+   .footnotes {
+      font-size: calc(var(--fs-base) - 2px);
+      width: 100%;
+      max-width: var(--max-width);
+   }
+}
+
 .article-content {
    display: flex;
    flex-direction: column;
@@ -194,6 +330,10 @@
       }
    }
 
+   h3 + h4, h4 + h5, h5 + h6 {
+      margin-top: 1rem;
+   }
+
    ul,
    ol {
       width: 100%;
@@ -311,142 +451,9 @@
    }
 }
 
-article {
-   aside,
-   .note {
-      &::before {
-         display: block;
-         text-align: center;
-         margin: ms(-8) 0 ms(-8) -#{ms(-4)};
-         font: {
-            family: var(--sans);
-            weight: bold;
-         }
-         text-transform: uppercase;
-         letter-spacing: 1px;
-         color: var(--aside-marker-fg);
-      }
-
-      code {
-         background-color: var(--aside-code-bg);
-      }
-   }
-
-   aside,
-   .note,
-   .assumed-audience {
-      font: {
-         family: var(--sans);
-         size: calc(var(--sans-adjust) * #{ms(0)});
-      }
-
-      margin: {
-         left: -3px;
-         bottom: ms(0);
-      }
-
-      border-top: 2px solid var(--top-border);
-   }
-
-   aside {
-      @include fancy-block(var(--aside-bg), var(--aside-fg));
-      @include extra-vertical();
-      --top-border: var(--aside-border);
-
-      &::before {
-         content: '—/ Aside /—';
-      }
-   }
-
-   .assumed-audience {
-      @include fancy-block(var(--aside-bg), var(--aside-fg));
-      @include extra-vertical();
-      --top-border: var(--aside-border);
-
-      display: block;
-      margin: {
-         left: auto;
-         right: auto;
-      }
-   }
-
-   .note {
-      @include fancy-block(var(--note-bg), var(--note-fg));
-      @include extra-vertical();
-      --top-border: var(--note-accent);
-
-      &::before {
-         content: '—/ Note /—';
-         color: var(--note-accent);
-      }
-   }
-
-   a {
-      -webkit-text-decoration-color: var(--underline);
-      -moz-text-decoration-color: var(--underline);
-      text-decoration-color: var(--underline);
-      text-decoration-skip-ink: auto;
-
-      transition: -webkit-text-decoration-color var(--transition),
-         -moz-text-decoration-color var(--transition),
-         text-decoration-color var(--transition), color var(--transition);
-
-      &:hover {
-         -webkit-text-decoration-color: var(--hover-underline);
-         -moz-text-decoration-color: var(--hover-underline);
-         text-decoration-color: var(--hover-underline);
-      }
-   }
-
-   hr {
-      margin-bottom: ms(0);
-   }
-
-   figure {
-      margin-bottom: 1em;
-      max-width: 48em;
-
-      figcaption {
-         text-align: center;
-         max-width: var(--max-width);
-         margin: auto;
-         font: {
-            family: var(--sans);
-            size: calc(var(--sans-adjust) * #{ms(0)});
-         }
-         color: var(--figure-fg);
-      }
-   }
-
-   sup {
-      line-height: 0;
-      vertical-align: 0.558em;
-
-      font: {
-         family: var(--sans);
-         weight: bold;
-         size: ms(-2);
-         feature-settings: 'onum' 0;
-      }
-
-      &.footnote-ref a {
-         display: inline-block;
-
-         text-decoration: none;
-         transition: all var(--transition);
-      }
-   }
-
-   .footnotes {
-      font-size: calc(var(--fs-base) - 2px);
-      width: 100%;
-      max-width: var(--max-width);
-   }
-}
-
 @media screen {
    @media (min-width: 32.6667rem) {
-      article {
+      .content-block {
          --side-padding: #{ms(-1)};
          --fancy-width: calc(var(--max-width) + calc(2 * var(--side-padding)));
 
@@ -470,7 +477,7 @@ article {
    }
 
    @media (min-width: $resize) {
-      article {
+      .content-block {
          --fancy-width: calc(var(--max-width) + 2.5rem);
 
          .assumed-audience {
@@ -490,7 +497,7 @@ article {
    }
 
    @media (min-width: $reflow) {
-      article {
+      .content-block {
          padding-bottom: ms(3);
       }
    }

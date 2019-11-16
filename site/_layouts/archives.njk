@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 {% import 'components/archive-list.njk' as archive %}
 
 {%- block main -%}
-<section class='item'>
+<section class='content-block'>
 {{item.header(type='page', title=title, subtitle=subtitle)}}
 
 {% set c = page.inputPath | toCollection %}
