@@ -19,7 +19,7 @@ There are a few layers to this, layers I love. First of all, it matters enormous
 
 Second, as I noted [a few years ago][z1], my blogging has served and will continue to serve as something of a public [Zettelkasten][z2]. A Zettelkasten, as a system of notes that grows organically and helps you derive new connections between disparate ideas over time, is *itself* a kind of sympolymathesy. Thus, both _poly_/many and _sym_/together: _poly_ gets at the variety of ideas and subjects in play, and _sym_ speaks to the connections between those ideas and subject. For that reason, the tag pages on this site will very soon now include a link to that same tag or category on previous versions of the site. This is a relaunch, but it is also a continuation of earlier work.
 
-Finally, a clarification: thew rod “polymath” has the connotations of brilliance about it. I’m not particularly interested in claiming that for myself (the arrogance!). To the contrary, in fact. For one thing _sym_ is the more essential of theese modifiers. For another, I have chosen _-polymathy_, not _polymath_, because this site is for me a way of learning about many things. In no way does it represent the state of being one *already* learned about many things.
+Finally, a clarification: the word “polymath” has the connotations of brilliance about it. I’m not particularly interested in claiming that for myself (the arrogance!). To the contrary, in fact. For one thing _sym_ is the more essential of theese modifiers. For another, I have chosen _-polymathy_, not _polymath_, because this site is for me a way of learning about many things. In no way does it represent the state of being one *already* learned about many things.
 
 ### On adding a title at all
 
