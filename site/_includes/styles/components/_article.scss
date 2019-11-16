@@ -27,106 +27,104 @@
    }
 }
 
-article {
-   .article-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
+.article-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-         width: 100%;
-         max-width: var(--max-width);
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      width: 100%;
+      max-width: var(--max-width);
+      text-align: left;
+
+      .section-link {
+         text-decoration: none;
          text-align: left;
+         transition: color var(--transition);
+         position: relative;
 
-         .section-link {
-            text-decoration: none;
-            text-align: left;
-            transition: color var(--transition);
+         .__marker {
+            background-color: transparent;
+            transition: background-color var(--transition);
+            display: inline-block;
+            width: 3rem;
+            height: 1px;
             position: relative;
+            left: 0.5em;
+            top: -0.25em;
+         }
+
+         &:hover,
+         &:active {
+            color: var(--link);
 
             .__marker {
-               background-color: transparent;
-               transition: background-color var(--transition);
-               display: inline-block;
-               width: 3rem;
-               height: 1px;
-               position: relative;
-               left: 0.5em;
-               top: -0.25em;
-            }
-
-            &:hover,
-            &:active {
-               color: var(--link);
-
-               .__marker {
-                  background-color: var(--link);
-               }
+               background-color: var(--link);
             }
          }
       }
+   }
 
-      h1 {
-         font: {
-            family: var(--sans);
-            size: ms(2);
-         }
-
-         margin: ms(0) 0;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-         background: var(--bg);
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 100%;
-         max-width: var(--max-width);
-         text-align: center;
-
-         &::before,
-         &::after {
-            content: '';
-            height: 1.5px;
-            border-radius: 1.5px;
-            background: var(--gray-3);
-            flex: 0 1 ms(3);
-         }
-
-         &::before {
-            margin-right: ms(-4);
-         }
-
-         &::after {
-            margin-left: ms(-4);
-         }
+   h1 {
+      font: {
+         family: var(--sans);
+         size: ms(2);
       }
 
-      h2 {
-         font: {
-            family: var(--sans);
-            size: ms(2);
-         }
-         margin: 1rem 0;
+      margin: ms(0) 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: var(--max-width);
+      text-align: center;
 
-         .section-link {
-            color: var(--h2-fg);
-         }
+      &::before,
+      &::after {
+         content: '';
+         height: 1.5px;
+         border-radius: 1.5px;
+         background: var(--gray-3);
+         flex: 0 1 ms(3);
       }
 
-      ul,
-      ol {
-         width: 100%;
-         max-width: 32rem;
-         padding-left: ms(2);
-         margin-bottom: ms(0);
+      &::before {
+         margin-right: ms(-4);
       }
+
+      &::after {
+         margin-left: ms(-4);
+      }
+   }
+
+   h2 {
+      font: {
+         family: var(--sans);
+         size: ms(2);
+      }
+      margin: 1rem 0;
+
+      .section-link {
+         color: var(--h2-fg);
+      }
+   }
+
+   ul,
+   ol {
+      width: 100%;
+      max-width: 32rem;
+      padding-left: ms(2);
+      margin-bottom: ms(0);
    }
 
    // This is a slightly ridiculoud implementation, but it actually does what I
@@ -153,7 +151,7 @@ article {
 
    ol {
       list-style: decimal;
-      font-feature-settings: "onum" 0;
+      font-feature-settings: 'onum' 0;
    }
 
    ul {
@@ -236,7 +234,9 @@ article {
          -webkit-font-smoothing: antialiased;
       }
    }
+}
 
+article {
    aside,
    .note {
       &::before {
@@ -351,7 +351,7 @@ article {
          family: var(--sans);
          weight: bold;
          size: ms(-2);
-         feature-settings: "onum" 0;
+         feature-settings: 'onum' 0;
       }
 
       &.footnote-ref a {
