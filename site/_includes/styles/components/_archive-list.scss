@@ -29,7 +29,7 @@
       display: block;
       font-weight: bold;
       line-height: 1;
-      font-size: var(--sans-adjust);
+      font-size: calc(var(--sans-adjust) * #{ms(0)});
 
       &::after {
          --padding: #{ms(-2)};
@@ -94,7 +94,7 @@
       grid-area: title;
       font: {
          family: var(--sans);
-         size: var(--sans-adjust);
+         size: calc(var(--sans-adjust) * #{ms(0)});
          weight: bold;
       }
       margin-bottom: ms(-8);

@@ -51,14 +51,14 @@
          position: relative;
 
          .__marker {
-            background-color: transparent;
-            transition: background-color var(--transition);
+            background-color: currentColor;
+            transition: all var(--transition);
             display: inline-block;
-            width: 3rem;
-            height: 1px;
-            position: relative;
-            left: 0.5em;
-            top: -0.25em;
+            width: 1rem;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: -0.5em;
          }
 
          &:hover,
@@ -66,6 +66,7 @@
             color: var(--link);
 
             .__marker {
+               width: 100%;
                background-color: var(--link);
             }
          }
@@ -75,7 +76,8 @@
    h1 {
       font: {
          family: var(--sans);
-         size: ms(2);
+         size: ms(3);
+         weight: bold;
       }
 
       margin: ms(0) 0;
@@ -89,33 +91,104 @@
       max-width: var(--max-width);
       text-align: center;
 
-      &::before,
-      &::after {
-         content: '';
-         height: 1.5px;
-         border-radius: 1.5px;
-         background: var(--gray-3);
-         flex: 0 1 ms(3);
-      }
+      .section-link {
+         color: var(--h1-fg);
 
-      &::before {
-         margin-right: ms(-4);
-      }
+         .__marker {
+            width: 2em;
+            left: calc(50% - 1em);
+         }
 
-      &::after {
-         margin-left: ms(-4);
+         &:hover,
+         &:active {
+            .__marker {
+               left: 0;
+            }
+         }
       }
    }
 
    h2 {
       font: {
          family: var(--sans);
-         size: ms(2);
+         size: ms(1);
+         weight: bold;
       }
-      margin: 1rem 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: ms(2) 0 1em;
 
       .section-link {
          color: var(--h2-fg);
+      }
+   }
+
+   h3 {
+      font: {
+         family: var(--sans);
+         size: calc(var(--sans-adjust) * #{ms(1)});
+         weight: bold;
+      }
+      margin: ms(-3) 0 ms(-1);
+
+      .section-link {
+         color: var(--h3-fg);
+      }
+   }
+
+   h4 {
+      font: {
+         family: var(--sans);
+         size: calc(var(--sans-adjust) * #{ms(1)});
+      }
+
+      margin-bottom: ms(-5);
+      padding-bottom: ms(-5);
+
+      .section-link {
+         color: var(--h4-fg)
+      }
+   }
+
+   h5 {
+      font: {
+         family: var(--sans);
+         size: calc(var(--sans-adjust) * #{ms(0)});
+         weight: bold;
+      }
+
+      margin-bottom: ms(-7);
+      padding-bottom: ms(-10);
+
+      .section-link {
+         color: var(--h5-fg);
+         text-decoration: underline;
+         text-decoration-color: transparent;
+
+         .__marker {
+            bottom: -#{ms(-7)};
+         }
+      }
+   }
+
+   h6 {
+      font: {
+         family: var(--sans);
+         size: calc(var(--sans-adjust) * #{ms(0)});
+         style: italic;
+      }
+
+      margin-bottom: ms(-7);
+      padding-bottom: ms(-10);
+
+      .section-link {
+         color: var(--h6-fg);
+         text-decoration: underline;
+         text-decoration-color: transparent;
+
+         .__marker {
+            bottom: -#{ms(-7)};
+         }
       }
    }
 
@@ -176,7 +249,7 @@
 
       font: {
          family: var(--sans);
-         size: var(--sans-adjust);
+         size: calc(var(--sans-adjust) * #{ms(0)});
       }
       @include fancy-block(var(--bg), var(--fg));
       @include pull-left();
@@ -262,7 +335,7 @@ article {
    .assumed-audience {
       font: {
          family: var(--sans);
-         size: var(--sans-adjust);
+         size: calc(var(--sans-adjust) * #{ms(0)});
       }
 
       margin: {
@@ -337,7 +410,7 @@ article {
          margin: auto;
          font: {
             family: var(--sans);
-            size: var(--sans-adjust);
+            size: calc(var(--sans-adjust) * #{ms(0)});
          }
          color: var(--figure-fg);
       }
