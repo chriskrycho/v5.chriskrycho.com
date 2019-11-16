@@ -87,14 +87,13 @@ Throughout my time at Olo, I:
 
 I have matured significantly as both an individual contributor and a leader in my time at Olo. For the first time, I have been able to make a substantial difference at the team level, at the organizational level, and at the level of the broader technical community.
 
-#### [HolyBible.com][hb]
-
-[hb]: https://holybible.com
+#### HolyBible.com
 
 *A formative experience: a technical success but a product design failure.*
 
 [HolyBible.com][hb] is a beautiful interface for reading the King James Version of the Bible and the [Reformation Heritage Study Bible][sb] materials online, built for [Puritan Reformed Theological Seminary][prts]. The <abbr>MVP</abbr> launched in **December 2014**, with approximately 30 months of small bug fixes and feature enhancements following.
 
+[hb]: https://holybible.com
 [sb]: https://kjvstudybible.org
 [prts]: https://prts.edu
 
