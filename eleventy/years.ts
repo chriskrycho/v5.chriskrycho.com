@@ -9,8 +9,14 @@ export interface Year {
 }
 
 export interface Month {
-   name: string
+   longName: string
+   shortName: string
    items: Item[]
+}
+
+const MONTH_FORMAT = {
+   SHORT: 'MMM',
+   LONG: 'MMMM',
 }
 
 type MonthMap = Map<number, Month>
@@ -34,14 +40,16 @@ function toYearMap(yearMap: YearMap, item: Item): YearMap {
          existingMonth.items.push(item)
       } else {
          existingYear.set(month, {
-            name: itemDateTime.toFormat('MMMM'),
+            longName: itemDateTime.toFormat(MONTH_FORMAT.LONG),
+            shortName: itemDateTime.toFormat(MONTH_FORMAT.SHORT),
             items: [item],
          })
       }
    } else {
       const newMonthMap: MonthMap = new Map()
       newMonthMap.set(month, {
-         name: itemDateTime.toFormat('MMMM'),
+         longName: itemDateTime.toFormat(MONTH_FORMAT.LONG),
+         shortName: itemDateTime.toFormat(MONTH_FORMAT.SHORT),
          items: [item],
       })
       yearMap.set(year, newMonthMap)
