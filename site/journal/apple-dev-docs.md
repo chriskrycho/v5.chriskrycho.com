@@ -12,10 +12,6 @@ canonical: https://v4.chriskrycho.com/2019/apple-your-developer-documentation-is
 
 ---
 
-<i><b>[Assumed Audience][aa]:</b> practitioners or interested lookers-on for software development—and Apple itself.</i>
-
-[aa]: https://v4.chriskrycho.com/2018/assumed-audiences.html
-
 <i class=editorial><b>Edit:</b> some folks [rightly pointed out][hn] that my use of "garbage" suggests that the problem is the quality of the existing documentation; I've retitled the post to capture that the problem is the *massive absence* of documentation. You can see the original title by way of the slug.</i>
 
 [hn]: https://news.ycombinator.com/item?id=21377100

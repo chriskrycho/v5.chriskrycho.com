@@ -42,6 +42,21 @@ Finally, a clarification: “polymath” has the connotations of brilliance abou
 
 ## 2. New Site Design
 
+The previous design of my site lasted me for a solid five years, and I quite liked it. However, I increasingly ran into a issues with it—issues that I have run into with *every* design of my website so far. I have many different interests (as suggested by my site title!) and on every previous iteration of the site I attempted to segment my content by *subject*. But while *some* pieces clearly belonged in one category and not another—a post about some TypeScript code was definitely in *Tech* and not *Theology*—a great many of my posts were *not* so easily bracketed. Under which category should I file an essay on a Christian ethic of tech?
+
+The primary mandate for this redesign, then, was to accomodate that variety. I am now sectioning the site by *medium*, instead of by *subject*:
+
+- General blog posts (of whatever length) go in [Journal]
+- Essays—actual essays!—go in [Essays]
+- Book reviews, quotes, and the like go in [Library]
+- Information about my podcasting lives at [Podcasts]
+- Photos go under [Photography]
+- Ongoing projects, series, etc. will be displayed under [Projects]
+
+As an orthogonal layer of taxonomy over this, I have *tags*. This means I
+
+Once I had started down the road of designing this new information hierarchy, I took the opportunity to rethink the basic navigation and layout of the site. While I liked a lot about the typography of the previous design, it was showing its age. Although I had made some tweaks along the way, I had beeng working with the same underlying structure and layout since [v3], back in 2012!
+
 ## 3. New Site Tech
 
 The previous version of the site was built on [Pelican]. This version is built on [Eleventy]. Long-time readers will recall that once upon a time, ages ago (that is: in 2016) I set out to build [my own static site generator][lx]. My aspirations for that project, much deferred, ended up substantially delaying my ultimate work to relaunch this site: because my goal all along was to be able to relaunch using my own tool. That dream is not dead. But it is deferred. I have a lot of thoughts about what a tool in this space can and should look like. Eleventy gets a lot right! It also has a few (significant-to-me) frustrations.

@@ -53,8 +53,8 @@
       display: grid;
       grid-template:
          "title entries ." auto / 1fr minmax(min-content, 36rem) 1fr;
-      grid-gap: 1rem;
-      gap: 1rem;
+      grid-gap: 0 1rem;
+      gap: 0 1rem;
       justify-content: stretch;
       justify-items: stretch;
 
@@ -126,5 +126,32 @@
       font-size: ms(-1);
       font-style: italic;
       color: var(--h2-fg);
+   }
+}
+
+@media screen and (max-width: $break-2) {
+   .archive-list {
+      .date {
+         line-height: 1.2;
+      }
+
+      .year-info {
+         grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 30rem) minmax(5rem, 1fr);
+      }
+
+      .month {
+         grid-gap: 0.5rem;
+         gap: 0.5rem;
+         grid-template-columns: 1fr minmax(min-content, 34rem) 1fr;
+      }
+
+      .month-title {
+         width: 3rem;
+      }
+
+      .item {
+         grid-gap: 0 0.5rem;
+         gap: 0 0.5rem;
+      }   
    }
 }
