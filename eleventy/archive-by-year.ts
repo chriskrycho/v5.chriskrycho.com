@@ -68,7 +68,7 @@ const sortBy = (order: Order) => ([a]: [number, unknown], [b]: [number, unknown]
    Given a collection of items, generate a yearly-and-monthly grouping.
    @param items The collection to produce annual groups for
  */
-export default function years(items: Item[], order = Order.Descending): Year[] {
+export default function archiveByYears(items: Item[], order = Order.Descending): Year[] {
    let byOrder = sortBy(order)
 
    return [...items.reduce(toYearMap(order), new Map<number, MonthMap>()).entries()]
