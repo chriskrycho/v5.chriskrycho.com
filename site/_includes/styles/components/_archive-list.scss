@@ -132,7 +132,7 @@
 @media screen and (max-width: $break-2) {
    .archive-list {
       .date {
-         line-height: 1.2;
+         line-height: calc(var(--sans-adjust) * 1.1);
       }
 
       .year-info {
