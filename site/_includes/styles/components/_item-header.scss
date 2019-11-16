@@ -27,12 +27,21 @@
          size: ms(1);
          style: italic;
       }
-      color: var(--h2-fg)
+      color: var(--h2-fg);
    }
 
-   .page {
-      text-transform: uppercase;
-      font-weight: 300;
-      letter-spacing: 1px;   
+   &.page {
+      @media screen and (max-width: $reflow) {
+         padding: {
+            left: 1rem;
+            right: 1rem;
+         }
+      }
+
+      .item-title {
+         text-transform: uppercase;
+         font-weight: 300;
+         letter-spacing: 1px;
+      }
    }
 }
