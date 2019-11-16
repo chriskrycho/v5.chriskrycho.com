@@ -128,6 +128,7 @@
       }
 
       .site-title {
+         flex: 1 0 100%;
          font-size: ms(7);
          a {
             --bar-height: 4px;

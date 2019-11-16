@@ -68,7 +68,7 @@
 
       &:before {
          @include bars(0.4em, calc(var(--hr-width) / 2));
-         left: calc(0.2em + 100%);
+         left: calc(0.25em + 100%);
       }
 
       &:after {
