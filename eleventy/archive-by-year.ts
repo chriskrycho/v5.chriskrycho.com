@@ -30,6 +30,11 @@ const enum Order {
 
 type YearMap = Map<number, MonthMap>
 
+const monthFromItem = (item: Item, dateTime: DateTime): Month => ({
+   name: dateTime.toFormat(MONTH_FORMAT),
+   items: [item],
+})
+
 function toYearMap(order: Order): (yearMap: YearMap, item: Item) => YearMap {
    return (yearMap, item) => {
       const itemDateTime = dateTimeFromItem(item)
@@ -40,39 +45,36 @@ function toYearMap(order: Order): (yearMap: YearMap, item: Item) => YearMap {
          const existingMonth = existingYear.get(month)
          if (existingMonth) {
             if (order === Order.Ascending) {
-               existingMonth.items.push(item)
-            } else {
                existingMonth.items = [item, ...existingMonth.items]
+            } else {
+               existingMonth.items.push(item)
             }
          } else {
-            existingYear.set(month, {
-               name: itemDateTime.toFormat(MONTH_FORMAT),
-               items: [item],
-            })
+            existingYear.set(month, monthFromItem(item, itemDateTime))
          }
       } else {
          const newMonthMap: MonthMap = new Map()
-         newMonthMap.set(month, {
-            name: itemDateTime.toFormat(MONTH_FORMAT),
-            items: [item],
-         })
+         newMonthMap.set(month, monthFromItem(item, itemDateTime))
          yearMap.set(year, newMonthMap)
       }
       return yearMap
    }
 }
 
+const sortBy = (order: Order) => ([a]: [number, unknown], [b]: [number, unknown]) =>
+   order === Order.Ascending ? a - b : b - a
+
 /**
    Given a collection of items, generate a yearly-and-monthly grouping.
    @param items The collection to produce annual groups for
  */
 export default function years(items: Item[], order = Order.Descending): Year[] {
+   let byOrder = sortBy(order)
+
    return [...items.reduce(toYearMap(order), new Map<number, MonthMap>()).entries()]
-      .sort(([a], [b]) => (order === Order.Ascending ? a - b : b - a))
+      .sort(byOrder)
       .map(([year, monthMap]) => ({
          value: `${year}`,
-         itemsByMonth: [...monthMap.entries()]
-            .sort(([a], [b]) => (order === Order.Ascending ? a - b : b - a))
-            .map(([, month]) => month),
+         itemsByMonth: [...monthMap.entries()].sort(byOrder).map(([, month]) => month),
       }))
 }
