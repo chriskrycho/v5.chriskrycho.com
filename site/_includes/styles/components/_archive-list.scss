@@ -49,9 +49,9 @@
       list-style-type: none;
       display: grid;
       grid-template:
-         "title entries ." auto / 1fr minmax(35rem, auto) 1fr;
-      grid-gap: 0.5rem;
-      gap: 0.5rem;
+         "title entries ." auto / 1fr minmax(36rem, auto) 1fr;
+      grid-gap: 1rem;
+      gap: 1rem;
 
       &:not(:last-child) {
          margin-bottom: ms(4);
@@ -75,8 +75,8 @@
       grid-template: 
          "day title   "
          " .  subtitle" auto / 1em auto;
-      grid-gap: 0 0.5rem;
-      gap: 0 0.5rem;
+      grid-gap: 0 1rem;
+      gap: 0 1rem;
       max-width: 36rem;
       margin: 0 0 ms(1);
       width: 100%;
