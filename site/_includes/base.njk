@@ -1,18 +1,11 @@
 {% import 'components/nav.njk' as nav %}
 
-{% set site_title = config.title + ', ' + config.subtitle %}
-{% if title != config.title %}
-   {% set page_title = (title + '&hairsp;—&hairsp;' + site_title) | safe %}
-{% else %}
-   {% set page_title = site_title %}
-{% endif %}
-
 <!DOCTYPE html>
 <html>
 <head>
    <meta charset='utf-8' />
    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-   <title>{{page_title}}</title>
+   <title>{{title | siteTitle(config) | safe}}</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
    {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
@@ -47,7 +40,7 @@
       <header class='site-header'>
          <h1 class='site-title'>
             <a href='/'>
-               Sym·poly·mathesis
+               {{config.title.stylized}}
             </a>
          </h1>
          <h2 class='site-subtitle'>

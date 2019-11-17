@@ -8,17 +8,10 @@
    [existing plugin] https://github.com/11ty/eleventy-plugin-rss
 #}
 
-{%- set site_title = config.title + ', ' + config.subtitle -%}
-{%- if title != config.title and title != undefined -%}
-   {%- set page_title = (title + '&hairsp;—&hairsp;' + site_title) | safe -%}
-{%- else -%}
-   {%- set page_title = site_title -%}
-{%- endif -%}
-
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns='http://www.w3.org/2005/Atom'>
    {% block feed_info -%}
-   <title>{{page_title}}</title>
+   <title>{{title | siteTitle(config) | safe}}</title>
    <id>{{config.url}}</id>
    {% include 'blocks/rss-author.njk' %}
    <link href='{{config.url}}' />

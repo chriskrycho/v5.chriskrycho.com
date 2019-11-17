@@ -7,6 +7,7 @@ import copyright from './copyright'
 import isoDate from './iso-date'
 import localeDate from './locale-date'
 import markdown from './markdown'
+import siteTitle from './site-title'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
 import toDateTime from './to-date-time'
@@ -58,6 +59,7 @@ function config(config: Config): UserConfig {
    config.addFilter('absoluteUrl', absoluteUrl)
    config.addFilter('isoDate', isoDate)
    config.addFilter('toDateTime', toDateTime)
+   config.addFilter('siteTitle', siteTitle)
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)
