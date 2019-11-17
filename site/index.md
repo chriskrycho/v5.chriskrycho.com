@@ -1,6 +1,7 @@
 ---
-title: Sympolymathesy
+title: Sympolymathesis
 layout: index.njk
+eleventyExcludeFromCollections: true
 ---
 
 Hello!
