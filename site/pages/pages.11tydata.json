@@ -1,4 +1,5 @@
 {
    "layout": "page.njk",
-   "eleventyExcludeFromCollections": true
+   "eleventyExcludeFromCollections": true,
+   "permalink": "/{{page.fileSlug}}/index.html"
 }

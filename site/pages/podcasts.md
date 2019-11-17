@@ -1,6 +1,5 @@
 ---
 title: Podcasts
-permalink: /podcasts/index.html
 templateEngineOverride: 'njk'
 ---
 

@@ -26,9 +26,10 @@
    {# TODO: logo #}
    {%- endblock feed_info %}
 
-   {%- for item in collections.all | reverse %}
-   {# Invalid to send an item without title or description #}
+   {# invalid without date #}
+   {%- for item in collections.all | withValidDate | reverse %}
    <entry>
+      {# Invalid to send an item without title or description #}
       {% set url = item.url | absoluteUrl(config.url) %}
       <id>{{url}}</id>
       <title type="html">
@@ -40,9 +41,9 @@
       </title>
       {% if item.data.updated %}
       <updated>{{item.data.updated | toDateTime}}</updated>
-      <published>{{item.date | isoDate}}</published>
+      <published>{{item.data.date | isoDate}}</published>
       {% else %}
-      <updated>{{item.date | isoDate}}</updated>
+      <updated>{{item.data.date | isoDate}}</updated>
       {% endif %}
       <link href='{{url}}' />
       {% if item.data.summary %}

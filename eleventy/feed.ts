@@ -1,8 +1,9 @@
-import { Item, EleventyClass } from '../types/eleventy'
+import { Maybe } from 'true-myth'
+import { EleventyClass, Item } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
+import { canParseDate } from './date-time'
 import isoDate from './iso-date'
 import siteTitle from './site-title'
-import { Maybe } from 'true-myth'
 
 const { Just } = Maybe
 
@@ -284,9 +285,6 @@ interface Hub {
 function optionalString(value: unknown) {
    return typeof value === 'string' ? value : undefined
 }
-
-const canParseDate = (date: unknown): date is string | Date =>
-   typeof date === 'string' || date instanceof Date
 
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.

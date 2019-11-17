@@ -1,6 +1,9 @@
 import { DateTime, DateTimeOptions } from 'luxon'
 import { Maybe } from 'true-myth'
 
+export const canParseDate = (date: unknown): date is string | Date =>
+   typeof date === 'string' || date instanceof Date
+
 export const fromDateOrString = (date: Date | string): DateTime =>
    typeof date === 'string'
       ? toDateTime(date)

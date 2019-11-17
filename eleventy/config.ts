@@ -1,6 +1,6 @@
 import path from 'path'
 
-import { Config, UserConfig } from '../types/eleventy'
+import { Config, UserConfig, Item } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
 import archiveByYear from './archive-by-year'
 import copyright from './copyright'
@@ -10,7 +10,7 @@ import markdown from './markdown'
 import siteTitle from './site-title'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
-import toDateTime from './date-time'
+import toDateTime, { canParseDate } from './date-time'
 
 /**
    @param {string} slug
@@ -60,6 +60,9 @@ function config(config: Config): UserConfig {
    config.addFilter('isoDate', isoDate)
    config.addFilter('toDateTime', toDateTime)
    config.addFilter('siteTitle', siteTitle)
+   config.addFilter('withValidDate', (items: Item[]) =>
+      items.filter(item => canParseDate(item.data.date)),
+   )
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)

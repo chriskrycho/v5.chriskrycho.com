@@ -1,7 +1,6 @@
 ---
 title: Colophon
 subtitle: Or, how this site is made.
-permalink: /colophon/index.html
 layout: colophon.njk
 ---
 

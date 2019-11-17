@@ -1,6 +1,5 @@
 ---
 title: Curriculum Vitae
-permalink: /cv/index.html
 subtitle: >
     I am a staff software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics.
 summary: >
