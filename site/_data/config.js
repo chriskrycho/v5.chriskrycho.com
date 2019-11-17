@@ -9,5 +9,16 @@ module.exports = {
    author: {
       name: 'Chris Krycho',
       email: 'hello@chriskrycho.com',
+      links: [
+         'mailto:hello@chriskrycho.com',
+         'https://github.com/chriskrycho',
+         'https://patreon.com/chriskrycho',
+         'https://soundcloud.com/chriskrycho',
+         'https://vimeo.com/chriskrycho',
+         'https://cash.me/$chriskrycho',
+         'https://twitter.com/chriskrycho',
+         'https://www.linkedin.com/in/chriskrycho',
+         'https://stackoverflow.com/users/564181/chris-krycho',
+      ],
    },
 }

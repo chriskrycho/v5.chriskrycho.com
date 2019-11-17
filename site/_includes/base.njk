@@ -20,15 +20,9 @@
 
    <link rel='alternate' href='feed.xml' type='application/atom+xml' title='Atom'>
 
-   <link rel="me" href="mailto:hello@chriskrycho.com">
-   <link rel="me" href="https://github.com/chriskrycho">
-   <link rel="me" href="https://patreon.com/chriskrycho">
-   <link rel="me" href="https://soundcloud.com/chriskrycho">
-   <link rel="me" href="https://vimeo.com/chriskrycho">
-   <link rel="me" href="https://cash.me/$chriskrycho">
-   <link rel="me" href="https://twitter.com/chriskrycho">
-   <link rel="me" href="https://www.linkedin.com/in/chriskrycho">
-   <link rel="me" href="https://stackoverflow.com/users/564181/chris-krycho">
+   {% for link in config.author.links -%}
+   <link rel='me' href='{{link}}'>
+   {% endfor -%}
 
    <link rel="openid.delegate" href="https://v4.chriskrycho.com/">
    <link rel="openid.server" href="https://indieauth.com/openid">
