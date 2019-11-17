@@ -138,6 +138,18 @@ interface Renderer {
    render(input: string): string
 }
 
+type Raw<T = unknown> = string | Buffer | Promise<T>
+
+export interface EleventyClass {
+   data?: () => {
+      excludeFromEleventyCollections?: boolean
+      permalink?: (...args: any[]) => Raw
+      [key: string]: unknown
+   }
+
+   render(...args: unknown[]): Raw
+}
+
 export interface Config {
    dir?: {
       /** Controls the top level directory/file/glob that we’ll use to look for templates. */

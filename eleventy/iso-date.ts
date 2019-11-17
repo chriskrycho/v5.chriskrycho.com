@@ -1,12 +1,5 @@
-import { DateTime } from 'luxon'
-import toDateTime from './to-date-time'
+import { fromDateOrString } from './date-time'
 
-const OPTIONS = { zone: 'America/Denver' }
-
-const isoDate = (date: Date | string): string =>
-   (typeof date === 'string'
-      ? toDateTime(date)
-      : DateTime.fromJSDate(date, OPTIONS)
-   ).toString()
+const isoDate = (date: Date | string): string => fromDateOrString(date).toISO()
 
 export default isoDate

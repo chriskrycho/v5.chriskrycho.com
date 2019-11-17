@@ -10,7 +10,7 @@ import markdown from './markdown'
 import siteTitle from './site-title'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
-import toDateTime from './to-date-time'
+import toDateTime from './date-time'
 
 /**
    @param {string} slug
