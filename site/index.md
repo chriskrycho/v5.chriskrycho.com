@@ -1,5 +1,5 @@
 ---
-title: Sympolymathesis
+title: Sympolymathesy
 layout: index.njk
 eleventyExcludeFromCollections: true
 ---
