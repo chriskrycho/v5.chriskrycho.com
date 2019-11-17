@@ -3,6 +3,10 @@
    --single-margin: 0.2em;
 }
 
+.greek {
+   font-family: var(--greek);
+}
+
 .pull-double {
    margin-left: calc(-1 * var(--double-margin));
 }
