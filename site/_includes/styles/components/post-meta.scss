@@ -29,10 +29,9 @@
 
 .section-label {
    grid-column: 1 / 2;
-   align-self: flex-start;
+   align-self: first baseline;
    font-size: ms(-2);
    display: block;
-   line-height: 1em * (1em / ms(-2));
    font-weight: bold;
    color: var(--meta-label-color);
    text-transform: uppercase;
@@ -41,8 +40,7 @@
 
 .section-content {
    display: block;
-   line-height: 1;
-   align-self: flex-start;
+   align-self: first baseline;
    grid-column: 2 / 3;
 }
 
