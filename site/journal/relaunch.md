@@ -1,25 +1,37 @@
 ---
-title: A sympolymathesy
-subtitle: Relaunching chriskrycho.com for 2020 and beyond!
+title: Relaunch!
+subtitle: >
+    A new website design and implementation for 2020 and beyond—with a new title to boot!
 date: 2019-11-16 20:00:00
+tags:
+  - writing
+  - design
+  - open-source software
+  - TypeScript
+audience: people who care about things like new website designs.
+summary: >
+   Sympolymathesis is the fifth version of chriskrycho.com—and I’m so happy to have it in the world at last!
 
 ---
 
-Welcome to the fifth version of this website! Long-time readers will no doubt notice that it newly has a *title*, as well as a fresh look—albeit one closely connected in many ways to the previous design. Curious nerds will also notice that the tech making this thing go has changed. What follows are some comments on each of the above!
+Welcome to <b>Sympolymathesis</b>—the fifth version of this website! I’m happy to have it in the world at last.
+
+Long-time readers will no doubt notice that it newly has a *title*, as well as a fresh look—albeit one closely connected in many ways to the previous design. Curious nerds will also notice that the tech making this thing go has changed. What follows are some comments on each of the above!
 
 1. [New Site Title](#1-new-site-title)
 2. [New Site Design](#2-new-site-design)
 3. [New Site Tech](#3-new-site-tech)
+4. [Onward!](#4-onward)
 
 ## 1. New Site Title
 
-“Sympolymathesy” is a word I made up.[^neologism] It means “learning (_mathesy_) many things (_poly_) together (_sym_).” As a Greek-derived neologism extending [someone *else’s* nerdy Greek-derived neologism][symmathesy], I think it is both the nerdiest title imaginable for my site and therefore also the *best* title imaginable for my site. It is as close I can get as a statement of both the intent of my blogging and what it has been to me for the past fourteen years.[^14] I am learning here—in public, with you.
+“Sympolymathesis”—<span class="greek">συμπολυμαθησις</span>—is a word I made up.[^neologism] It means “learning (_mathesis_) many things (_poly_) together (_sym_).” As a Greek-derived neologism extending [someone *else’s* nerdy Greek-derived neologism][symmathesy], I think it is both the nerdiest title imaginable for my site and therefore also the *best* title imaginable for my site. It is as close I can get as a statement of both the intent of my blogging and what it has been to me for the past fourteen years.[^14] I am learning here—in public, with you.
 
-There are a few layers to this, layers I love. First of all, it matters enormously to me that I am learning in public. When you read and then respond by [sending me an email][email] or triggering a [Webmention][^webmention], you help this space be what it is meant to be. Adding your voice to mine—whether in agreement or in disagreement—turns my offerings on this site into a conversation, and therefore something bigger than itself.
+There are a few layers to this, layers I love. First of all, it matters enormously to me that I am learning in public. When you read and then respond by [sending me an email][email] or triggering a [Webmention][Webmention][^webmention], you help this space be what it is meant to be. Adding your voice to mine—whether in agreement or in disagreement—turns my offerings on this site into a conversation, and therefore something bigger than itself. It becomes a place of learning *together*.
 
-Second, as I noted [a few years ago][z1], my blogging has served and will continue to serve as something of a public [Zettelkasten][z2]. A Zettelkasten, as a system of notes that grows organically and helps you derive new connections between disparate ideas over time, is *itself* a kind of sympolymathesy. Thus, both _poly_/many and _sym_/together: _poly_ gets at the variety of ideas and subjects in play, and _sym_ speaks to the connections between those ideas and subject. For that reason, the tag pages on this site will very soon now include a link to that same tag or category on previous versions of the site. This is a relaunch, but it is also a continuation of earlier work.
+Second, as I noted [a few years ago][z1], my blogging has served and will continue to serve as something of a public [Zettelkasten][z2]. A Zettelkasten, as a system of notes that grows organically and helps you derive new connections between disparate ideas over time, is *itself* a kind of _sympolymathesy_: a thing-which-learns-many-things-together. Thus, both _poly_/many and _sym_/together: _poly_ gets at the variety of ideas and subjects in play, and _sym_ speaks to the connections between those ideas and subject. For that reason, the tag pages on this site will very soon now include a link to that same tag or category on previous versions of the site. This is a relaunch, but it is also a continuation of earlier work.
 
-Finally, a clarification: the word “polymath” has the connotations of brilliance about it. I’m not particularly interested in claiming that for myself (the arrogance!). To the contrary, in fact. For one thing _sym_ is the more essential of theese modifiers. For another, I have chosen _-polymathy_, not _polymath_, because this site is for me a way of learning about many things. In no way does it represent the state of being one *already* learned about many things.
+Finally, a clarification: don't get any weird ideas about the fact that the word "polymath" is embedded in the middle of this bigger word. I am not in the least claiming *that* word's connotations of brilliance—quite the contrary, in fact! This site is for me a way of learning about many things. In no way does it represent the state of being one *already* learned about many things.
 
 ### On adding a title at all
 
@@ -34,21 +46,21 @@ Second, a long time ago, on [a previous version of this site][v3], I split the v
 [reda]: https://redalemeden.com
 [symmathesy]: https://norabateson.wordpress.com/2015/11/03/symmathesy-a-word-in-progress
 [email]: mailto:hello@chriskrycho.com
-[Webmention]: TODO
+[Webmention]: https://webmention.net
 [z1]: https://v4.chriskrycho.com/2018/blog-as-note-taking-tool.html
 [z2]: https://v4.chriskrycho.com/2019/what-is-a-zettelkasten.html
 
 [^neologism]: I originally went with “a neologism of my own coinage” but what a clunker of a sentence that would have been!
 
-[^webmention]: You know, once I have those set up: soon!
+[^webmention]: You know, once I have those set up: soon! It's a fairly high priority for me—but *lower* priority than just getting this out the door!
 
 [^14]: Fourteen! Years! I find it rather astounding that I have been at this so long—longer than any other endeavor in my life.
 
 ## 2. New Site Design
 
-The previous design of my site lasted me for a solid five years, and I quite liked it. However, I increasingly ran into a issues with it—issues that I have run into with *every* design of my website so far. I have many different interests (as suggested by my site title!) and on every previous iteration of the site I attempted to segment my content by *subject*. But while *some* pieces clearly belonged in one category and not another—a post about some TypeScript code was definitely in *Tech* and not *Theology*—a great many of my posts were *not* so easily bracketed. Under which category should I file an essay on a Christian ethic of tech?
+The previous design of my site lasted me for a solid five years, and I quite liked it. However, I increasingly ran into issues with it—issues that I have run into with *every* design of my website so far. I have many different interests (as suggested by my site title!) and on every previous iteration of the site I attempted to segment my content by *subject*. But while *some* pieces clearly belonged in one category and not another—a post about some TypeScript code was definitely in *Tech* and not *Theology*—a great many of my posts were *not* so easily bracketed. Under which category should I file an essay on a Christian ethic of tech?
 
-The primary mandate for this redesign, then, was to accomodate that variety. I am now sectioning the site by *medium*, instead of by *subject*:
+The primary mandate for this redesign, then, was to accommodate that variety. I am now sectioning the site by *medium*, instead of by *subject*:
 
 - General blog posts (of whatever length) go in [Journal](/journal)
 - Essays—actual essays!—go in [Essays](/essays)
@@ -60,7 +72,7 @@ The primary mandate for this redesign, then, was to accomodate that variety. I a
 
 As an orthogonal layer of taxonomy over this, I have *tags*. This means I can still 
 
-Once I had started down the road of designing this new information hierarchy, I took the opportunity to rethink the basic navigation and layout of the site. While I liked a lot about the typography of the previous design, it was showing its age. Although I had made some tweaks along the way, I had beeng working with the same underlying structure and layout since [v3], back in 2012! That design looks good, and I still quite like it. But I like the new look *much* better. It takes many of the same basic elements of typography (including the two main typefaces from [v4])
+Once I had started down the road of designing this new information hierarchy, I took the opportunity to rethink the basic navigation and layout of the site. While I liked a lot about the typography of the previous design, it was showing its age. Although I had made some tweaks along the way, I had been working with the same underlying structure and layout since [v3], back in 2012! I still quite like that design—but I like the new look *much* better. It takes many of the same basic elements of typography (including the two main typefaces from [v4]), and tightens them up into something fresh and modern.
 
 [v4]: https://v4.chriskrycho.com
 
@@ -85,15 +97,28 @@ As part of this work, I have also invested in some pieces related to the open-so
 
 That last bit was always possible in principle on the previous version of the site. However, there were two reasons it wasn't really all that practical:
 
-1. It *required* the person submitting the fix to have a GitHub account. This is not the end of the world, but it meant that I never even bothered to set it up: while some of my readers and potential correctors would already have that, it would just be another hoop to jump through for most.
+1. It *required* the person submitting the fix to have a GitHub account. This is not the end of the world, but it meant that I never even bothered to set it up: while some of my readers and potential correctors would already have that, it would just be another hoop to jump through for most. More
 
 2. The build process did not, and unfortunately *could* not, run on any of the normal static site build and deploy tools (like Netlify).[^custom-pelican-setup] Even if someone *did* submit a correction, I had to pull it down to my machine, rebuild, and push it back up to [GitHub Pages][ghp].
 
-I am now not only deploying the site via Netlify, but also *building* it there. That lets me solve both of these quite handily! <!-- TODO: elaborate -->
+I am now not only deploying the site via Netlify, but also *building* it there. That lets me solve both of these quite handily! First of all, the build process is extremely straightforward on Netlify with Eleventy. In the best way, it Just Works™. Second, though, and especially delightfully, Netlify [recently announced][open-authoring] a feature that lets you let *anyone* suggest a change to the site. I don’t have that set up yet, and it’ll probably be a few months… but I’m excited to have the possibility there![^HT]
 
 [ghp]: https://pages.github.com
+[open-authoring]: https://www.netlifycms.org/docs/open-authoring/
 
 [^custom-pelican-setup]: I probably could have wrangled a *normal* Pelican setup into building on Netlify, not just deploying there. Unfortunately, [my setup] was not exactly normal: it required having [pandoc] installed along with a custom fork of a non-core plugin, and running all the site content through *that*.
 
 [my setup]: https://github.com/chriskrycho/v4.chriskrycho.com/blob/master/pelicanconf.py
 [pandoc]: https://pandoc.org
+
+[^HT]: Hat tip to Chris Coyier on this—I learned it from [this CSS Tricks article][css-tricks]!
+
+[css-tricks]: https://css-tricks.com/netlify-cms-open-authoring/
+
+## 4. Onward
+
+I’ve been working on this redesign and reimplementation for over a year. It’s bounced through multiple iterations on both implementation and design. And that’s after thinking about it and sketching ideas for years before that! I’m glad to have it out here, and I’m hopeful that it’ll be a satisfying online home for the *next* half decade. As my friend and longtime collaborator [Stephen] put it as we talked about this design recently: this fresh start opens spaces wide enough to fit all of my work.
+
+So now: time to get down to the business of actually filling up this space with words and photography and more!
+
+[Stephen]: https://stephencarradini.com/
