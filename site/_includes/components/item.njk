@@ -9,27 +9,30 @@
 
 {% macro meta(date, tags, updated) %}
 <footer class='post-meta'>
-   <section class='meta dates'>
-      Published {% localeDate date -%}
-      {%- if updated -%}, last updated {%- localeDate updated -%}{%- endif -%}
-   </section>
+   <span class='section-label'>Published:</span>
+   <span class='section-content'>{% localeDate date -%}</span>
+   {%- if updated -%}
+   <span class='section-label'>Updated:</span>
+   <span class='section-content'>{% localeDate updated -%}</span>
+   {%- endif -%}
 
    {%- if tags.length > 0 %}
-   <section class='meta topics'>Topics:
-      <ul>
-         {%- for tag in tags %}
-         <li><a href='/topics/{{tag | slug}}'>{{tag}}</a></li>
-         {%- endfor -%}
-      </ul>
-   </section>
+   <span class='section-label'>Topics:</span>
+   <ul class='topics section-content'>
+      {%- for tag in tags %}
+      <li class='__topic'>{#<a href='/topics/{{tag | slug}}'>#}{{tag}}{#</a>#}</li>
+      {%- endfor -%}
+   </ul>
    {%- endif %}
 
-   <section class='meta git'>
+   {# TODO: implement this!
+   <section class='__section meta-section git'>
       <ul class=''>
          <li>history</li>
          <li>suggest an edit</li>
       </ul>
       history
    </section>
+   #}
 </footer>
 {% endmacro %}
