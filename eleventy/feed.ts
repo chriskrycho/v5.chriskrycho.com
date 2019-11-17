@@ -319,11 +319,11 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
 
    @param items The collection of items from 11ty
  */
-const jsonFeed = (items: Item[], config: SiteConfig): Feed => ({
+const jsonFeed = (items: Item[], config: SiteConfig, permalink: string): Feed => ({
    version: 'https://jsonfeed.org/version/1',
    title: siteTitle(config.title.normal, config),
    home_page_url: config.url,
-   feed_url: '',
+   feed_url: absoluteUrl(permalink, config.url),
    description: config.description,
    items: items
       .map(toFeedItemGivenConfig(config))
@@ -337,8 +337,9 @@ interface EleventyData {
       [key: string]: Item[] | undefined
    }
    config: SiteConfig
-   page: BuildInfo
+   page: Item
    pages: BuildInfo[]
+   permalink?: string
 }
 
 export class JSONFeed implements EleventyClass {
@@ -349,8 +350,8 @@ export class JSONFeed implements EleventyClass {
       }
    }
 
-   render({ collections, config }: EleventyData): string {
-      return JSON.stringify(jsonFeed(collections.all, config))
+   render({ collections, config, page }: EleventyData): string {
+      return JSON.stringify(jsonFeed(collections.all, config, page.url))
    }
 }
 
