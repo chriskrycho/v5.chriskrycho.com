@@ -4,7 +4,7 @@ subtitle: 'A new website design and implementation for 2020 and beyond—with a 
   title to boot!
 
 '
-date: 2019-11-16T20:00:00.000+00:00
+date: 2019-11-17T20:00:00Z
 tags:
 - writing
 - design
