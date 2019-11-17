@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 // @ts-check
 import path from 'path'
 import Stylesheet from '../../../eleventy/stylesheet'

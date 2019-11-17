@@ -1,0 +1,63 @@
+{#
+   I am defining this myself instead of using the quite reasonable [existing plugin]
+   because I want finer-grained control and in particular the ability to extend this to
+   publishing variations on the theme. Controlling this will let me create custom variants
+   of items for link posts, for example, and it will also make it straightforward for me
+   to generate per-collection variants.
+
+   [existing plugin] https://github.com/11ty/eleventy-plugin-rss
+#}
+
+{%- set site_title = config.title + ', ' + config.subtitle -%}
+{%- if title != config.title and title != undefined -%}
+   {%- set page_title = (title + '&hairsp;—&hairsp;' + site_title) | safe -%}
+{%- else -%}
+   {%- set page_title = site_title -%}
+{%- endif -%}
+
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'>
+   {% block feed_info -%}
+   <title>{{page_title}}</title>
+   <id>{{config.url}}</id>
+   {% include 'blocks/rss-author.njk' %}
+   <link href='{{config.url}}' />
+   {% if page.url %}
+   <link href='{{page.url | absoluteUrl(config.url)}}' rel='self'/>
+   {% endif %}
+   <subtitle>{{config.description}}</subtitle>
+   <rights>{% copyright build.date %}</rights>
+   <updated>{{build.date | isoDate}}</updated>
+   <generator>Eleventy RSS Plugin by Chris Krycho</generator>
+   <icon>https://v5.chriskrycho.com/assets/images/favicon.png</icon>
+   {# TODO: logo #}
+   {%- endblock feed_info %}
+
+   {%- for item in collections.all | reverse %}
+   {# Invalid to send an item without title or description #}
+   <entry>
+      {% set url = item.url | absoluteUrl(config.url) %}
+      <id>{{url}}</id>
+      <title type="html">
+         {%- if item.data.title -%}
+            {{item.data.title}}
+         {%- else -%}
+            {% localeDate item.data.date, 'yyyy.MM.dd.HHmm' %}
+         {%- endif -%}
+      </title>
+      {% if item.data.updated %}
+      <updated>{{item.data.updated | toDateTime}}</updated>
+      <published>{{item.date | isoDate}}</published>
+      {% else %}
+      <updated>{{item.date | isoDate}}</updated>
+      {% endif %}
+      <link href='{{url}}' />
+      {% if item.data.summary %}
+      <summary type="html">{{item.data.summary}}</summary>
+      {% endif %}
+      <content type="html">{{item.templateContent}}</content>
+      {% include 'blocks/rss-author.njk' %}
+      {#- <comments>TODO: Webmention!</comments> #}
+   </entry>
+   {%- endfor %}
+</feed>

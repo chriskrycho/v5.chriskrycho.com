@@ -5,9 +5,10 @@ export default abstract class Stylesheet {
    abstract outputPath: string
    abstract inputPath: string
 
-   data(): Dict<string> {
+   data(): Dict {
       return {
          permalink: this.outputPath,
+         eleventyExcludeFromCollections: true,
       }
    }
 

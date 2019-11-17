@@ -1,7 +1,7 @@
 type ServeStaticOptions = import('serve-static').ServeStaticOptions
 
 // ---- Utility types
-interface Dict<T> {
+interface Dict<T = unknown> {
    [key: string]: T | undefined
 }
 

@@ -1,11 +1,15 @@
 import path from 'path'
 
-import markdown from './markdown'
-import typeset from './plugin-typeset'
-import spacewell from './plugin-spacewell'
-import localeDate from './locale-date'
 import { Config, UserConfig } from '../types/eleventy'
+import absoluteUrl from './absolute-url'
 import archiveByYear from './archive-by-year'
+import copyright from './copyright'
+import isoDate from './iso-date'
+import localeDate from './locale-date'
+import markdown from './markdown'
+import spacewell from './plugin-spacewell'
+import typeset from './plugin-typeset'
+import toDateTime from './to-date-time'
 
 /**
    @param {string} slug
@@ -51,8 +55,12 @@ function config(config: Config): UserConfig {
    config.addFilter('toCollection', toCollection)
    config.addFilter('stringify', obj => JSON.stringify(obj))
    config.addFilter('archiveByYears', archiveByYear)
+   config.addFilter('absoluteUrl', absoluteUrl)
+   config.addFilter('isoDate', isoDate)
+   config.addFilter('toDateTime', toDateTime)
 
    config.addShortcode('localeDate', localeDate)
+   config.addShortcode('copyright', copyright)
 
    config.addPassthroughCopy('site/_redirects')
    config.addPassthroughCopy('site/assets')

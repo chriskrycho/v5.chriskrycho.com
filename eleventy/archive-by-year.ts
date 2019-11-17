@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon'
 import { Item } from '../types/eleventy'
 
-const OPTIONS = { zone: 'utc' }
+const OPTIONS = { zone: 'America/Denver' }
 
 export interface Year {
    value: string

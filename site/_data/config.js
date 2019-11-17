@@ -1,5 +1,10 @@
 module.exports = {
    title: 'Sympolymathesy',
+   url: 'https://v5.chriskrycho.com/',
    subtitle: 'by Chris Krycho',
-   timeZone: 'America/Denver',
+   description: 'Writing on faith, art, and technology by Chris Krycho',
+   author: {
+      name: 'Chris Krycho',
+      email: 'hello@chriskrycho.com',
+   },
 }

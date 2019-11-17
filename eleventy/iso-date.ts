@@ -3,10 +3,10 @@ import toDateTime from './to-date-time'
 
 const OPTIONS = { zone: 'America/Denver' }
 
-export const localeDate = (date: Date | string, format = 'DDDD'): string =>
+const isoDate = (date: Date | string): string =>
    (typeof date === 'string'
       ? toDateTime(date)
       : DateTime.fromJSDate(date, OPTIONS)
-   ).toFormat(format)
+   ).toString()
 
-export default localeDate
+export default isoDate
