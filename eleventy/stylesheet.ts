@@ -1,7 +1,7 @@
 import sass from 'sass'
-import { Dict } from '../types/eleventy'
+import { Dict, EleventyClass } from '../types/eleventy'
 
-export default abstract class Stylesheet {
+export default abstract class Stylesheet implements EleventyClass {
    abstract outputPath: string
    abstract inputPath: string
 
