@@ -83,7 +83,7 @@ function config(config: Config): UserConfig {
       templateFormats: ['html', 'njk', '11ty.js', 'md'],
       dataTemplateEngine: 'njk',
       htmlTemplateEngine: 'njk',
-      markdownTemplateEngine: false,
+      markdownTemplateEngine: 'njk',
    }
 }
 

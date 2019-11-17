@@ -8,7 +8,7 @@ summary: >
     Components as arguments! Components getting yielded! Components everywhere! A powerful way to make your Ember.js components more flexible and composeable.
 modified: 2018-05-28 06:50:00
 canonical: https://v4.chriskrycho.com/2018/higher-order-components-in-emberjs.html
-
+templateEngineOverride: 'md' # needed b/c it tries to parse stuff wrong
 ---
 
 One of the most powerful patterns in programming is the idea of *higher-order functions*: functions which can take other functions as arguments or return them as their return values. If you’ve spent much time at all working in JavaScript, you’ve certainly encountered these—whether you’re using `Array.map` to transform the values in an array, or passing a function as an argument to an event handler.

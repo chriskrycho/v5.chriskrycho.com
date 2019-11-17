@@ -16,6 +16,7 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
     - [definition list](https://github.com/markdown-it/markdown-it-deflist)
     - [footnote](https://github.com/markdown-it/markdown-it-footnote)
     - [superscript](https://github.com/markdown-it/markdown-it-sup)
+    - [implicit-figures](https://github.com/arve0/markdown-it-implicit-figures)
 
 - <b>spacewell:</b> a little tool I built a few years ago to insert hair spaces around em dashes and thin spaces with non-breaking spans around number-separating en dashes; the source is colocated with the rest of the site.
 
@@ -30,14 +31,19 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
 | Context  | Typeface |
 | -------- | -------- |
 | Body text | [Sabon], designed by Jan Tschichold in the mid-1960s as a Garamond revival. In my opinion, the most beautiful Garamond in existence. Licensed via [Fonts.com]. |
-| Headings  | [Cronos], designed by Robert Slimbach in 1996. A nice contrast to Sabon with its digital-era roots. The typeface I’ve been using on my site the longest at this point! Licensed via [Fonts.com]. |
+| Headings  | [Cronos], designed by Robert Slimbach in 1996. A nice contrast to Sabon with its digital-era roots. The typeface I’ve been using on my site the longest at this point! Licensed via [Adobe Fonts].[^adobe] |
 | Code      | [Hack], designed by Chris Simpkins in 2015 as an extension of the Deja Vu/Bitstream Vera lineage. Licensed in parts under the <abbr title="Massachusetts Instititue of Technology">MIT</abbr> License, the public domain, and Bitstream Vera License (see details [here][hack-license]). |
 
 [Sabon]: https://www.myfonts.com/fonts/linotype/sabon/
-[Fonts.com]: https://www.fonts.com
+[Adobe Fonts]: https://fonts.adobe.com
 [Cronos]: https://www.myfonts.com/fonts/adobe/cronos/
 [Hack]: https://sourcefoundry.org/hack/
 [hack-license]: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
+
+[^adobe]: Longtime readers may recall (and new readers may be curious about) my [deep frustrations with this situation][cronos-writeup]. Nothing there has changed—but I ended up paying for Adobe's Lightroom package when I [picked back up photography][photographying], and it comes bundled. So here we are.
+
+[cronos-writeup]: https://v4.chriskrycho.com/2019/cronos-follow-up.html
+[photographying]: https://v4.chriskrycho.com/2019/photography-ing-again.html
 
 ## Inspiration
 
@@ -56,3 +62,9 @@ While working on this design, I took more-or-less-direct inspiration in a variet
 - [Reda Lemeden](https://redalemeden.com)
 
 - [Jason Santa Maria](http://jasonsantamaria.com/)—from whom, if I recall, I originally got [the idea](https://v4.chriskrycho.com/2019/my-final-round-of-url-rewrites-ever.html) of a versioned website.
+
+## Copyright and License
+
+All content is {% copyright build.date %}. Software components are MIT-licensed. For the full license text, see [LICENSE.md]
+
+[LICENSE.md]: https://github.com/chriskrycho/v5.chriskrycho.com/blob/master/LICENSE.md
