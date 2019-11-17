@@ -68,6 +68,7 @@
       "trailingComma": "all"
    },
    "scripts": {
+      "build": "yarn eleventy",
       "serve": "yarn eleventy --serve"
    }
 }
