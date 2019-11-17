@@ -81,7 +81,7 @@ Once I had started down the road of designing this new information hierarchy, I 
 
 [v4]: https://v4.chriskrycho.com
 
-[^v4-tweak]: I may go back and do a small tweak to do the same on v4 as one final act of curation and maintenance for the future!
+[^v4-tweak]: I also went back and tweaked to do the same on v4 as one final act of curation and maintenance for the future! 
 
 ## 3. New Site Tech
 
@@ -125,7 +125,9 @@ As a result, each post will soon actually include a direct link to its source on
 
 ## 4. Onward
 
-I’ve been working on this redesign and reimplementation for over a year. It’s bounced through multiple iterations on both implementation and design. And that’s after thinking about it and sketching ideas for years before that! I’m glad to have it out here, and I’m hopeful that it’ll be a satisfying online home for the *next* half decade. As my friend and longtime collaborator [Stephen] put it as we talked about this design recently: this fresh start opens spaces wide enough to fit all of my work.
+I’ve been working on this redesign and reimplementation for over a year. It’s bounced through multiple iterations on both implementation and design. And that’s after thinking about it and sketching ideas for years before that! If you're technically-minded, you can actually see the whole history in [the project repository on GitHub][gh]—and for *most* of the history of the project I have been quite conscientious about my commit history, so you may actually find it informative!
+
+I’m glad to have it out here, and I’m hopeful that it’ll be a satisfying online home for the *next* half decade. As my friend and longtime collaborator [Stephen] put it as we talked about this design recently: this fresh start opens spaces wide enough to fit all of my work.
 
 So now: time to get down to the business of actually filling up this space with words and photography and more!
 
