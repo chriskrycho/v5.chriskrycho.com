@@ -1,19 +1,22 @@
 ---
 title: Relaunch!
-subtitle: >
-    A new website design and implementation for 2020 and beyond—with a new title to boot!
-date: 2019-11-16 20:00:00
+subtitle: 'A new website design and implementation for 2020 and beyond—with a new
+  title to boot!
+
+'
+date: 2019-11-16T20:00:00.000+00:00
 tags:
-  - writing
-  - design
-  - open-source software
-  - TypeScript
+- writing
+- design
+- open-source software
+- TypeScript
 audience: people who care about things like new website designs.
-summary: >
-   Sympolymathesis is the fifth version of chriskrycho.com—and I’m so happy to have it in the world at last!
+summary: 'Sympolymathesis is the fifth version of chriskrycho.com—and I’m so happy
+  to have it in the world at last!
+
+'
 
 ---
-
 Welcome to <b>Sympolymathesis</b>—the fifth version of this website! I’m happy to have it in the world at last.
 
 Long-time readers will no doubt notice that it newly has a *title*, as well as a fresh look—albeit one closely connected in many ways to the previous design. Curious nerds will also notice that the tech making this thing go has changed. What follows are some comments on each of the above!
@@ -70,7 +73,9 @@ The primary mandate for this redesign, then, was to accommodate that variety. I 
 - Ongoing projects, series, etc. will be displayed under [Projects](/projects)
 - I have a dedicated page for speaking, being on other podcasts, etc.: [Appearances](/appearances)
 
-As an orthogonal layer of taxonomy over this, I have *tags*. This means I can still 
+As an orthogonal layer of taxonomy over this, I have *tags*. This means I can still provide ways of sorting through my various subject matter—but overlap is built in. This is an idea I have come to organically by way of my experience with the previous versions of this site, had strongly reinforced by learning about Zettelkasten and reflecting on the design of [rewrite](https://rewrite.software). Even when you *do* have folder-like structures in your projects, you need a way to connect ideas across those. Tags, keywords, topics—call them what you will, you need this tool for structuring the content.
+
+I also have decided that those topical indices will sort the opposite direction from most blog archives (unlike the top-level sections). I have noticed a few times ovee the last few years tha it is quite helpful to be able to follow the development of a person's thoughts. The normal latest-first archive krder of a blog makes sense in many ways—the most recent of a person's thoughts are likely those you are most curious about when first finding your way to their site. Not so much, though, when you want to follow the course their thoughts have taken iver the years! There is more to say here, on the way many of our technologies tend to reinscribe (quite forcefully!) our bent toward recency, and on the unique affordances of blogs as compared to other media, but I will leave those thoughts for another day. The point here is simoly that I am intentionally structuring this site (and may do a small tweak to do the same on v4 as one final act of curation and maintenance for the future!) as a counter to those trends, and in favor of readers' having an easier time following me on the journeys I take.
 
 Once I had started down the road of designing this new information hierarchy, I took the opportunity to rethink the basic navigation and layout of the site. While I liked a lot about the typography of the previous design, it was showing its age. Although I had made some tweaks along the way, I had been working with the same underlying structure and layout since [v3], back in 2012! I still quite like that design—but I like the new look *much* better. It takes many of the same basic elements of typography (including the two main typefaces from [v4]), and tightens them up into something fresh and modern.
 
