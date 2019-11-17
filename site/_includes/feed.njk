@@ -1,4 +1,4 @@
-{#
+{#-
    I am defining this myself instead of using the quite reasonable [existing plugin]
    because I want finer-grained control and in particular the ability to extend this to
    publishing variations on the theme. Controlling this will let me create custom variants
@@ -6,8 +6,7 @@
    to generate per-collection variants.
 
    [existing plugin] https://github.com/11ty/eleventy-plugin-rss
-#}
-
+-#}
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns='http://www.w3.org/2005/Atom'>
    {% block feed_info -%}
