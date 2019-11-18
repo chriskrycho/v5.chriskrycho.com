@@ -4,6 +4,7 @@ import { Config, Item, UserConfig } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
 import archiveByYear from './archive-by-year'
 import copyright from './copyright'
+import currentPage from './current-page'
 import isoDate from './iso-date'
 import localeDate from './locale-date'
 import markdown from './markdown'
@@ -63,6 +64,7 @@ function config(config: Config): UserConfig {
    config.addFilter('withValidDate', (items: Item[]) =>
       items.filter(item => canParseDate(item.data.date)),
    )
+   config.addFilter('current', currentPage)
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)
