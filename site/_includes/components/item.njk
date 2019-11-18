@@ -23,7 +23,7 @@
    <span class='section-label'>Topics:</span>
    <ul class='topics section-content'>
       {%- for tag in tags %}
-      <li class='__topic'>{#<a href='/topics/{{tag | slug}}'>#}{{tag}}{#</a>#}</li>
+      <li class='__topic'><a href='/topics/{{tag | slug}}'>{{tag}}</a></li>
       {%- endfor -%}
    </ul>
    {%- endif %}

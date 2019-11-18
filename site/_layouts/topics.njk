@@ -1,0 +1,25 @@
+{%- set title -%}
+   topic: {{tag}}
+{%- endset -%}
+
+{%- set styled_title -%}
+   <span class='tag-label'>topic:</span> <span class='tag-name'>{{tag}}</span>
+{%- endset -%}
+
+{% extends 'base.njk' %}
+{% import 'components/item.njk' as item %}
+{% import 'components/archive-list.njk' as archive %}
+
+{%- block main -%}
+<section class='content-block'>
+
+{{item.header(type='page', title=styled_title, subtitle=subtitle)}}
+
+{%- set tagCollection = collections[tag] -%}
+{%- if tagCollection and tagCollection.length -%}
+   {{ archive.list(tagCollection | archiveByYears('ASCENDING')) }}
+{%- else -%}
+   {%- include 'blocks/wip.njk' -%}
+{%- endif -%}
+</div>
+{%- endblock main -%}
