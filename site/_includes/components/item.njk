@@ -10,7 +10,7 @@
 {% macro meta(date, tags, updated, inputPath) %}
 {%- set dateFormat = 'yyyy · MM · dd · HHmm' %}
 <footer class='post-meta'>
-   <span class='section-label'><a href='{{inputPath | editLink}}'>Published</a>:</span>
+   <span class='section-label'><a href='{{inputPath | sourceLink}}'>Published</a>:</span>
    <span class='section-content'>{% localeDate date, dateFormat -%}</span>
    {%- if updated -%}
    <span class='section-label'><a href='{{inputPath | historyLink}}'>Updated</a>:</span>

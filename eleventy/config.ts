@@ -12,7 +12,7 @@ import markdown from './markdown'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
 import siteTitle from './site-title'
-import { history, edit } from './page-links'
+import * as PageLinks from './page-links'
 
 /**
    @param {string} slug
@@ -66,8 +66,9 @@ function config(config: Config): UserConfig {
       items.filter(item => canParseDate(item.data.date)),
    )
    config.addFilter('current', currentPage)
-   config.addFilter('editLink', edit)
-   config.addFilter('historyLink', history)
+   config.addFilter('editLink', PageLinks.edit)
+   config.addFilter('historyLink', PageLinks.history)
+   config.addFilter('sourceLink', PageLinks.source)
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)
