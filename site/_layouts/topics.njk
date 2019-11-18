@@ -21,12 +21,12 @@
          Besides these posts, I may also have covered the topic of {{tag}} on previous
          versions of this site:
       </p>
-
+      {%- set tagSlug = tag | slug -%}
       <ul>
          <li>v1: 2006–2011 (archive/link coming soon!)</li>
          <li>v3: 2012–2013 (archive/link coming soon!)</li>
          {# <li><a href='https://2012-2013.chriskrycho.com'>v3: 2012–2013</a></li> #}
-         <li><a href='https://v4.chriskrycho.com/{{tag}}'>v4: 2014–2019</a></li>
+         <li><a href='https://v4.chriskrycho.com/{{tagSlug}}'>v4: 2014–2019</a></li>
       </ul>
    </div>
 </article>
