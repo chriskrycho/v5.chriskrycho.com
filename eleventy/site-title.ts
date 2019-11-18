@@ -1,7 +1,7 @@
 import SiteConfig from '../site/_data/config'
 type SiteConfig = typeof SiteConfig
 
-const SEP = '&hairsp;—&hairsp;'
+const SEP = ' — '
 
 const baseTitle = (siteName: string, authorName: string): string =>
    `${siteName}, by ${authorName}`
