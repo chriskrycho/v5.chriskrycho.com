@@ -14,7 +14,7 @@
 
    font: {
       family: var(--sans);
-      size: 0.85rem;  // Just eyeballing this!
+      size: calc(var(--sans-adjust) *#{ms(0)});
    }
 
    text-transform: uppercase;
@@ -84,7 +84,7 @@
 
 @media screen and (min-width: $reflow) and (min-height: 600px) {
    .site-nav {
-      font-size: calc(var(--sans-adjust) * #{ms(-2)});
+      font-size: 0.85rem; // Just eyeballing this!
 
       padding: {
          top: 0;
