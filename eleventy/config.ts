@@ -5,13 +5,13 @@ import absoluteUrl from './absolute-url'
 import archiveByYear from './archive-by-year'
 import copyright from './copyright'
 import currentPage from './current-page'
+import toDateTime, { canParseDate } from './date-time'
 import isoDate from './iso-date'
 import localeDate from './locale-date'
 import markdown from './markdown'
-import siteTitle from './site-title'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
-import toDateTime, { canParseDate } from './date-time'
+import siteTitle from './site-title'
 
 /**
    @param {string} slug
@@ -79,6 +79,8 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'photography')
 
    config.setLibrary('md', markdown)
+
+   config.setDataDeepMerge(true)
 
    return {
       dir: {
