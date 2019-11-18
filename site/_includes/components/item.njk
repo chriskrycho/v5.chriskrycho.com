@@ -7,13 +7,16 @@
 </header>
 {% endmacro %}
 
-{% macro meta(date, tags, updated) %}
+{% macro meta(date, tags, updated, inputPath) %}
+{%- set dateFormat = 'yyyy · MM · dd · HHmm' %}
 <footer class='post-meta'>
-   <span class='section-label'>Published:</span>
-   <span class='section-content'>{% localeDate date -%}</span>
+   <span class='section-label'><a href='{{inputPath | editLink}}'>Published</a>:</span>
+   <span class='section-content'>{% localeDate date, dateFormat -%}</span>
    {%- if updated -%}
-   <span class='section-label'>Updated:</span>
-   <span class='section-content'>{% localeDate updated -%}</span>
+   <span class='section-label'><a href='{{inputPath | historyLink}}'>Updated</a>:</span>
+   <span class='section-content'>
+      {%- localeDate updated, dateFormat -%}
+   </span>
    {%- endif -%}
 
    {%- if tags.length > 0 %}
@@ -24,15 +27,5 @@
       {%- endfor -%}
    </ul>
    {%- endif %}
-
-   {# TODO: implement this!
-   <section class='__section meta-section git'>
-      <ul class=''>
-         <li>history</li>
-         <li>suggest an edit</li>
-      </ul>
-      history
-   </section>
-   #}
 </footer>
 {% endmacro %}

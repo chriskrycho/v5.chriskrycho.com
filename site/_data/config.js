@@ -1,5 +1,6 @@
 module.exports = {
    url: 'https://v5.chriskrycho.com/',
+   repo: 'https://github.com/chriskrycho/v5.chriskrycho.com',
    title: {
       normal: 'Sympolymathesy',
       stylized: 'Sym·poly·mathesy',
