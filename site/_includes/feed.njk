@@ -14,9 +14,7 @@
    <id>{{config.url}}</id>
    {% include 'blocks/rss-author.njk' %}
    <link href='{{config.url}}' />
-   {% if page.url %}
    <link href='{{page.url | absoluteUrl(config.url)}}' rel='self'/>
-   {% endif %}
    <subtitle>{{config.description}}</subtitle>
    <rights>{% copyright build.date %}</rights>
    <updated>{{build.date | isoDate}}</updated>
