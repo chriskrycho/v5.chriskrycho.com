@@ -37,7 +37,7 @@
          {%- endif -%}
       </title>
       {% if item.data.updated %}
-      <updated>{{item.data.updated | toDateTime}}</updated>
+      <updated>{{item.data.updated | isoDate}}</updated>
       <published>{{item.data.date | isoDate}}</published>
       {% else %}
       <updated>{{item.data.date | isoDate}}</updated>

@@ -1,8 +1,6 @@
 import { DateTime } from 'luxon'
 import { Item } from '../types/eleventy'
 
-const OPTIONS = { zone: 'America/Denver' }
-
 export interface Year {
    value: string
    itemsByMonth: Month[]
@@ -18,9 +16,7 @@ const MONTH_FORMAT = 'MMM'
 type MonthMap = Map<number, Month>
 
 function dateTimeFromItem({ date }: Item): DateTime {
-   return typeof date === 'string'
-      ? DateTime.fromSQL(date, OPTIONS)
-      : DateTime.fromJSDate(date, OPTIONS)
+   return typeof date === 'string' ? DateTime.fromSQL(date) : DateTime.fromJSDate(date)
 }
 
 const enum Order {
