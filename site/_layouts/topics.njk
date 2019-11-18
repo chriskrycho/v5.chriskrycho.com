@@ -15,9 +15,25 @@
 
 {{item.header(type='page', title=styled_title, subtitle=subtitle)}}
 
+<article class='article-content'>
+   <div class='callout'>
+      <p>
+         Besides these posts, I may also have covered the topic of {{tag}} on previous
+         versions of this site:
+      </p>
+
+      <ul>
+         <li>v1: 2006–2011 (archive/link coming soon!)</li>
+         <li>v3: 2012–2013 (archive/link coming soon!)</li>
+         {# <li><a href='https://2012-2013.chriskrycho.com'>v3: 2012–2013</a></li> #}
+         <li><a href='https://v4.chriskrycho.com/{{tag}}'>v4: 2014–2019</a></li>
+      </ul>
+   </div>
+</article>
+
 {%- set tagCollection = collections[tag] -%}
 {%- if tagCollection and tagCollection.length -%}
-   {{ archive.list(tagCollection | archiveByYears('ASCENDING')) }}
+   {{ archive.list(tagCollection | archiveByYears('DESCENDING')) }}
 {%- else -%}
    {%- include 'blocks/wip.njk' -%}
 {%- endif -%}

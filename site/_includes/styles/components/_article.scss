@@ -32,7 +32,8 @@
    font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
 
    aside,
-   .note {
+   .note,
+   .callout {
       &::before {
          display: block;
          text-align: center;
@@ -53,7 +54,8 @@
 
    aside,
    .note,
-   .assumed-audience {
+   .assumed-audience,
+   .callout {
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(0)});
@@ -74,6 +76,16 @@
 
       &::before {
          content: '—/ Aside /—';
+      }
+   }
+
+   .callout {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
+      --top-border: var(--aside-border);
+
+      &::before {
+         display: none;
       }
    }
 
@@ -404,7 +416,8 @@
    blockquote,
    aside,
    .note,
-   .assumed-audience {
+   .assumed-audience,
+   .callout {
       > {
          p,
          ul,
@@ -459,7 +472,8 @@
          pre,
          aside,
          .assumed-audience,
-         .note {
+         .note,
+         .callout {
             max-width: var(--fancy-width);
             align-self: center;
             padding: {
@@ -486,7 +500,8 @@
             blockquote,
             pre,
             aside,
-            .note {
+            .note,
+            .callout {
                margin-left: ms(-4);
                padding-left: ms(0);
             }
