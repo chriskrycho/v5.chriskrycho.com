@@ -4,10 +4,19 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: false
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: datetime
   name: date
-  label: date
+  label: Date
+- name: audience
+  type: text
+  config:
+    required: false
+  label: Audience
+  description: Who is the assumed audience for this post?
+  hidden: true
