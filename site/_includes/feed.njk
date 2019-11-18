@@ -49,6 +49,9 @@
       <content type="html">{{item.templateContent}}</content>
       {% include 'blocks/rss-author.njk' %}
       {#- <comments>TODO: Webmention!</comments> #}
+      {% for tag in item.data.tags %}
+      <category term="{{tag}}">
+      {% endfor %}
    </entry>
    {%- endfor %}
 </feed>
