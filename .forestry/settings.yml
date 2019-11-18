@@ -4,23 +4,36 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: library
-  label: Library
-  create: all
-  match: "**/*.md"
-  templates:
-  - post
+- type: heading
+  label: Writing
 - type: directory
   path: site/essays
   label: Essays
   create: all
   match: "**/*.md"
+  exclude: "**/_*"
 - type: directory
   path: site/journal
   label: Journal
   create: all
   match: "**/*.md"
+  exclude: "**/_*"
+- type: directory
+  path: library
+  label: Library
+  create: all
+  match: "**/*.md"
+  exclude: "**/_*"
+  templates:
+  - post
+- type: heading
+  label: Three Ps
+- type: directory
+  path: site/photography
+  label: Photography
+  create: all
+  match: "**/*.md"
+  exclude: "**/_*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
