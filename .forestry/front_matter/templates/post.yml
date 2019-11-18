@@ -19,4 +19,8 @@ fields:
     required: false
   label: Audience
   description: Who is the assumed audience for this post?
-  hidden: true
+  hidden: false
+- name: tags
+  type: tag_list
+  default: []
+  label: Topics
