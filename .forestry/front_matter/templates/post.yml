@@ -24,3 +24,13 @@ fields:
   type: tag_list
   default: []
   label: Topics
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Summary
+  description: Summary (if different from Subtitle)
