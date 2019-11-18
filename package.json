@@ -3,7 +3,7 @@
    "version": "1.0.0",
    "description": "The fifth version of chriskrycho.com.",
    "main": "index.js",
-   "repository": "git@github.com:chriskrycho/v4.chriskrycho.com.git",
+   "repository": "git@github.com:chriskrycho/v5.chriskrycho.com.git",
    "author": "Chris Krycho <hello@chriskrycho.com>",
    "license": "MIT",
    "volta": {
