@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
 {%- if collections[c] and collections[c].length -%}
    {{ archive.list(collections[c] | archiveByYears('DESCENDING')) }}
 {%- else -%}
-   {%- include 'blocks/wip.njk' -%}
+   {%- include 'blocks/soon.njk' -%}
 {%- endif -%}
 </div>
 {%- endblock main -%}
