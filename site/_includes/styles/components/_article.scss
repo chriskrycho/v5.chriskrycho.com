@@ -41,9 +41,10 @@
          font: {
             family: var(--sans);
             weight: bold;
+            size: calc(var(--sans-adjust) * #{ms(-2)});
          }
          text-transform: uppercase;
-         letter-spacing: 1px;
+         letter-spacing: 2pt;
          color: var(--aside-marker-fg);
       }
 

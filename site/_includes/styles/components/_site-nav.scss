@@ -14,7 +14,7 @@
 
    font: {
       family: var(--sans);
-      size: ms(0);
+      size: 0.85rem;  // Just eyeballing this!
    }
 
    text-transform: uppercase;
@@ -84,7 +84,23 @@
 
 @media screen and (min-width: $reflow) and (min-height: 600px) {
    .site-nav {
-      font-size: ms(-1);
+      font-size: calc(var(--sans-adjust) * #{ms(-2)});
+
+      padding: {
+         top: 0;
+         bottom: 0;
+      }
+
+      ul {
+         height: 100vh;
+         justify-content: center;
+      }
+   }
+}
+
+@media screen and (min-width: $reflow) and (min-height: 800px) {
+   .site-nav {
+      font-size: calc(var(--sans-adjust) * #{ms(-1)});
 
       padding: {
          top: 0;

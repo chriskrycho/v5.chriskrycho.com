@@ -18,7 +18,7 @@
    font: {
       family: var(--sans);
       weight: 300;
-      size: ms(5);
+      size: calc(var(--sans-adjust) * #{ms(5)});
    }
    letter-spacing: normal;
    text-shadow: 0 0 2px var(--bg);
@@ -132,7 +132,7 @@
          --bar-expanded-width: #{ms(5)};
 
          flex: 1 0 100%;
-         font-size: ms(7);
+         font-size: calc(var(--sans-adjust) * #{ms(6)});
 
          a {
             &:after {
@@ -140,10 +140,6 @@
                left: calc(100% + 9px);
             }
          }
-      }
-
-      .site-subtitle {
-         font-size: ms(1);
       }
    }
 
@@ -155,6 +151,14 @@
             left: ms(7);
             right: ms(7);
          }
+      }
+
+      .site-title {
+         font-size: calc(var(--sans-adjust) * #{ms(7)});
+      }
+
+      .site-subtitle {
+         font-size: ms(1);
       }
    }
 
