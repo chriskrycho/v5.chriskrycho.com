@@ -1,7 +1,66 @@
-{#
-  TODO: write as a macro, *not* a partial.
+{%- macro meta(page, config) -%}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@chriskrycho" />
+<meta name="twitter:creator" content="@chriskrycho" />
 
-  - Steal Facebook and Twitter setup basically from Winning Slowly, with
-    appropriate modifications.
-  - Handle both *pages* and *collections*, i.e. .
-#}
+{%- set logo -%}
+   {# TODO: get an image in place! #}
+   {#
+   <meta property="og:image" content="{{SITEURL}}/{{LOGO}}" />
+   <meta property="og:image:type" content="image/png" />
+   <meta property="og:image:width" content="3000" />
+   <meta property="og:image:height" content="3000" />
+   <meta
+      property="og:image:alt"
+      content="Logo for Sympolymathesy"
+   />
+   <meta name="twitter:image" content="{{SITEURL}}/{{LOGO}}" />
+   #}
+{%- endset -%}
+
+{%- if page.url -%}
+   {%- set url = page.url | absoluteUrl(config.url) -%}
+{%- else -%}
+   {%- set url = config.url -%}
+{%- endif %}
+<meta property="og:url" content="{{url}}" />
+<meta name="article:author" content="{{config.url}}" />
+
+<meta property="og:title" content="{{page.data.title | siteTitle(config)}}" />
+<meta name="twitter:title" content="{{page.data.title | siteTitle(config)}}" />
+
+{%- if page.data.summary is defined -%}
+   {%- set description = page.data.summary -%}
+{%- else -%}
+   {%- set description = config.description -%}
+{%- endif %}
+<meta property="og:description" content="{{description}}" />
+<meta name="twitter:description" content="{{description}}" />
+
+<meta property="og:type" content="article" />
+
+{%- if page.data.date is defined %}
+<meta property="article:published_time" content="{{page.data.date | isoDate}}" />
+{%- else %}
+<meta property="article:published_time" content="{{page.date | isoDate}}" />
+{%- endif %}
+
+{%- if page.data.updated is defined %}
+<meta property="article:modified_time" content="{{page.data.updated | isoDate}}" />
+{%- elif page.data.date is defined %}
+<meta property="article:modified_time" content="{{page.data.date | isoDate}}" />
+{%- else %}
+<meta property="article:modified_time" content="{{page.date | isoDate}}" />
+{%- endif %}
+
+{%- for tag in page.data.tags %}
+<meta property="article:tag" content="{{tag}}" />
+{%- endfor -%}
+
+{%- if page.data.image -%}
+   <meta property="og:image" content="{{page.data.image}}" />
+   <meta name="twitter:image" content="{{page.data.image}}" />
+{%- else -%}
+   {{logo}}
+{%- endif -%}
+{%- endmacro -%}
