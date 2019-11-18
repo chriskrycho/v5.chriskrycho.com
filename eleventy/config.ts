@@ -1,6 +1,6 @@
 import path from 'path'
 
-import { Config, UserConfig, Item } from '../types/eleventy'
+import { Config, Item, UserConfig } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
 import archiveByYear from './archive-by-year'
 import copyright from './copyright'

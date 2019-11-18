@@ -90,7 +90,7 @@ export type EngineName =
    | 'pug'
    | 'jstl'
 
-export interface Item {
+export interface Page {
    /** the full path to the source input file (including the path to the input directory) */
    inputPath: string
    /** 
@@ -110,13 +110,18 @@ export interface Item {
       [Content Dates]: https://www.11ty.io/docs/dates/
      */
    date: string
+}
+
+/** An `Item` is just like a `Page`, but with the actual data from render available. */
+interface Item extends Page {
    /** all data for this piece of content (includes any data inherited from layouts) */
    data: Dict<unknown>
+
    /** the rendered content of this template. This does *not• include layout wrappers */
    templateContent: string
 }
 
-export interface Collections {
+export interface Collection {
    getAll(): Item[]
 
    /**
@@ -127,11 +132,11 @@ export interface Collections {
 
       [warning]: https://www.11ty.io/docs/collections/#array-reverse
     */
-   getAllSorted(): Item[]
+   getAllSorted(): Page[]
 
-   getFilteredByTag(tagName: string): Item[]
+   getFilteredByTag(tagName: string): Page[]
 
-   getFilteredByGlob(glob: string | string[]): Item[]
+   getFilteredByGlob(glob: string | string[]): Page[]
 }
 
 interface Renderer {
@@ -218,7 +223,7 @@ export interface Config {
 
    addCollection(
       name: string,
-      builder: (collection: Collections) => Item[] | object | Promise<object>,
+      builder: (collection: Collection) => Page[] | object | Promise<object>,
    ): void
 
    addFilter(name: string, filter: AnyFunction): string | void
