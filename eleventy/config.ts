@@ -74,6 +74,7 @@ function config(config: Config): UserConfig {
    config.addShortcode('copyright', copyright)
 
    config.addPassthroughCopy('site/_redirects')
+   config.addPassthroughCopy('site/admin')
    config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
 

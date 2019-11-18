@@ -6,3 +6,5 @@ indent_style = space
 # But I am not *that* much of a maniac.
 [*.md]
 indent_size = 4
+[*.yml]
+indent_size = 2
