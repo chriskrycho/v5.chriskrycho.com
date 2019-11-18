@@ -9,9 +9,9 @@
    background: $bg;
 }
 
-@mixin extra-vertical {
-   padding-top: ms(-4);
-   padding-bottom: ms(-4);
+@mixin extra-vertical($top: ms(-4), $bottom: ms(-4)) {
+   padding-top: $top;
+   padding-bottom: $bottom;
 }
 
 @mixin pull-left($border-color: transparent) {
@@ -82,7 +82,7 @@
 
    .callout {
       @include fancy-block(var(--aside-bg), var(--aside-fg));
-      @include extra-vertical();
+      @include extra-vertical($bottom: ms(-3)); // balances better
       --top-border: var(--aside-border);
 
       &::before {
