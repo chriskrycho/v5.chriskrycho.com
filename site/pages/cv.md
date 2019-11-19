@@ -162,10 +162,7 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 
 As we began actively adopting TypeScript in our Ember.js app [at Olo](#current), we very soon ran into the limitations of the existing support. Integration with Ember’s <abbr>CLI</abbr> tooling was limited; the type definitions were a mix of incomplete, unhelpful, and outright wrong; there was little information about how to use TypeScript *effectively* with Ember; and, worst of all, no one was actively contributing to fill these gaps—much less leading.
 
-In March 2017, I began working on the <abbr>CLI</abbr> tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Over the rest of 2017 and 2018, I have [taught][ts-workshop] and [written extensively][ts-blog] on using TypeScript effectively with Ember. Our small team’s efforts have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
-
-[ts-workshop]: https://emberconf.com/schedule.html#d-typescript-up-your-ember-js-app "EmberConf Workshop: 'TypeScript Up Your Ember.js App'"
-[ts-blog]: https://v4.chriskrycho.com/typing-your-ember/ "Typing Your Ember series"
+In March 2017, I began working on the <abbr>CLI</abbr> tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Over the rest of 2017 and 2018, I have taught and written extensively on using TypeScript effectively with Ember. Our small team’s efforts have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
 
 #### True Myth
 
@@ -181,6 +178,17 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
 
 ### Talks
 
+- <b>Don’t Go Bankrupt: Managing Technical Costs</b> (All Things Open, October 2019)
+
+- <b>[Supercharging Ember Octane with TypeScript][ember-ts-workshop-2019]</b> (EmberConf Workshop, March 2019):
+
+    > <b>Abstract:</b> You’ve heard about the benefits of TypeScript. But what is it? How hard is it to get started? How can you use it with Ember? What does it have to do with Ember Octane? This training will give you the tools you need to start using TypeScript effectively in your Ember app or addon—and show you how it can supercharge your developer experience with Ember Octane.
+
+    The workshop was not recorded, but the teaching materials are all available online:
+
+    - [slides][ember-ts-workshop-slides-2019] for the introduction to TypeScript and overview of using it in Ember
+    - [sample code repository][ember-ts-workshop-repo-2019], where each commit is a discrete step in the process of the conversion
+
 - <b><abbr>CSS</abbr> Modules lightning talk</b> (Denver Ember.js Meetup, December 2018)
 
 - <b>Rust and WebAssembly</b> (Denver/Boulder Rust Meetup, May 2018)
@@ -191,14 +199,14 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
 
     (I also delivered a slightly shorter version of this same material at the Denver Ember.js Meetup in June 2018.)
 
-- <b>[TypeScript Up Your Ember.js App][ts-workshop]</b> (EmberConf 2018 Workshop, March 2018):
+- <b>[TypeScript Up Your Ember.js App][ember-ts-workshop-2018]</b> (EmberConf Workshop, March 2018):
 
     > <b>Abstract:</b> an introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js <abbr>TODO</abbr> <abbr>MVC</abbr> app from JavaScript to TypeScript.
 
     The workshop was not recorded, but the teaching materials are all available online:
 
-    - [slides][ts-workshop-slides] and [script][ts-workshop-script] for the introduction to TypeScript and overview of using it in Ember
-    - [sample code repository][ts-workshop-repo], where each commit is a discrete step in the process of the conversion
+    - [slides][ember-ts-workshop-slides-2018] and [script][ember-ts-workshop-script-2018] for the introduction to TypeScript and overview of using it in Ember
+    - [sample code repository][ember-ts-workshop-repo-2018], where each commit is a discrete step in the process of the conversion
 
 - <b>[Becoming a Contributor][rbr2017]</b> (Rust Belt Rust 2017, October 2017):
 
@@ -209,9 +217,13 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
     > <b>Abstract:</b> The Bible has always been a challenging text to display, whether copied by hand or printed on a Gutenberg press, and the task has only grown more complicated in the era of digital text. The challenges are not insurmountable, though. We have the tools to solve them: the principles of good typography, especially careful page design and the deliberate choice and skillful use of appropriate typefaces (fonts). When we apply those principles to the Scriptures—whether in an app or on the web—we can provide people with digital Bibles that are both readable and beautiful.
 
 
-[ember-atx]:	https://youtube.com/watch?v=fFzxbBrvytU
-[ts-workshop-slides]:	https://github.com/chriskrycho/emberconf-2018-slides/
-[ts-workshop-script]:	https://github.com/chriskrycho/emberconf-2018-slides/blob/master/talk.md
-[ts-workshop-repo]:	https://github.com/chriskrycho/emberconf-2018
-[rbr2017]:	https://youtube.com/watch?v=Abu2BNixXak
-[bibletech2015]:	https://m.youtube.com/watch?v=cDAh35IwJsE
+[ember-atx]: https://youtube.com/watch?v=fFzxbBrvytU
+[ember-ts-workshop-2019]: https://2019.emberconf.com/speakers.html#chris-krycho "EmberConf Workshop: 'Supercharging Ember Octane with TypeScript'"
+[ember-ts-workshop-slides-2019]: https://github.com/chriskrycho/emberconf-2019-slides
+[ember-ts-workshop-repo-2019]: https://github.com/chriskrycho/emberconf-2019
+[ember-ts-workshop-2018]: https://2018.emberconf.com/schedule.html#d-typescript-up-your-ember-js-app "EmberConf Workshop: 'TypeScript Up Your Ember.js App'"
+[ember-ts-workshop-slides-2018]: https://github.com/chriskrycho/emberconf-2018-slides/
+[ember-ts-workshop-script-2018]: https://github.com/chriskrycho/emberconf-2018-slides/blob/master/talk.md
+[ember-ts-workshop-repo-2018]: https://github.com/chriskrycho/emberconf-2018
+[rbr2017]: https://youtube.com/watch?v=Abu2BNixXak
+[bibletech2015]: https://m.youtube.com/watch?v=cDAh35IwJsE
