@@ -27,6 +27,8 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
 
 ## Typography
 
+Perhaps my favorite part of web design, and also the part with which I spend the most part *fussing*.
+
 | Context  | Typeface |
 | -------- | -------- |
 | Body text | [Sabon], designed by Jan Tschichold in the mid-1960s as a Garamond revival. In my opinion, the most beautiful Garamond in existence. Licensed via [Fonts.com]. |
