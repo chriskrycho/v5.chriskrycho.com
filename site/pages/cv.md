@@ -67,7 +67,7 @@ As a **Software Engineer** (January 2016–May 2017), I was a productive individ
 - I introduced JavaScript type systems to the application (landing on **TypeScript** after an initial experiment with Flow)
 - I helped us achieve **full <abbr>AA</abbr> <abbr>WCAG</abbr> accessibility**.
 
-As a **Senior Software Engineer** (May 2017–present):
+As a **Senior Software Engineer** (May 2017–January 2019):
 
 - I led a team effort to expand our mobile web <abbr>UI</abbr> as a **responsive web <abbr>UI</abbr>** to reduce our maintenance burden, improve our overall <abbr>UX</abbr>, and decrease the cost of launching new features.
 
@@ -149,7 +149,7 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 
 - [**Winning Slowly**][ws] (January 2014–present): cohosted with [Stephen Carradini][stephen], a show about taking the long view on technology, religion, ethics and art. Stephen describes it (accurately) as a show focused on tech, but from the angles of religion, ethics, and art. I describe it (also accurately) as our excuse to talk about whatever we want, since "technology, religion, ethics and art" pretty much touches on all of human existence. For a good sample of the way I approach **software and ethics**, check out [6.06: A Kind of Blindness,][ws-6.06] on smart cities, "big data", and the meaninglessness of mere information.
 
-- [**New Rustacean**][nr] (September 2015–present): a show about the **Rust** programming language and the people who use it—dedicated primarily to *teaching* people Rust. Initially a way of helping myself stay motivated to keep up with learning the language, New Rustacean is now one of the most popular resources for people learning Rust and has inspired a few other teaching-programming-languages podcasts.
+- [**New Rustacean**][nr] (September 2015–May 2019): a show about the **Rust** programming language and the people who use it—dedicated primarily to *teaching* people Rust. Initially a way of helping myself stay motivated to keep up with learning the language, New Rustacean is now one of the most popular resources for people learning Rust and has inspired a few other teaching-programming-languages podcasts.
 
 [ws]: https://winningslowly.org
 [stephen]: https://stephencarradini.com
