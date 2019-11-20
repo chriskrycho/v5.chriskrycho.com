@@ -2,3 +2,7 @@
 http://v5-chriskrycho-com.netlify.com/* https://v5.chriskrycho.com/:splat 301!
 https://v5-chriskrycho-com.netlify.com/* https://v5.chriskrycho.com/:splat 301!
 http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
+
+# Redirect misconfigured URLs from when I accidentally had `title | slug`
+# instead of `fileSlug | slug`.
+/journal/relaunch! https://v5.chriskrycho.com/journal/relaunch 301!

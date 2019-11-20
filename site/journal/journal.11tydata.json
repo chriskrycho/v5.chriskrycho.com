@@ -1,4 +1,4 @@
 {
    "layout": "post.njk",
-   "permalink": "/journal/{{title | slug}}/index.html"
+   "permalink": "/journal/{{page.fileSlug | slug}}/index.html"
 }

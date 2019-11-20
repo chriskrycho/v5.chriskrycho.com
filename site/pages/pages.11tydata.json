@@ -1,5 +1,5 @@
 {
    "layout": "page.njk",
    "eleventyExcludeFromCollections": true,
-   "permalink": "/{{page.fileSlug}}/index.html"
+   "permalink": "/{{page.fileSlug | slug}}/index.html"
 }
