@@ -1,4 +1,4 @@
 {
    "layout": "post.njk",
-   "permalink": "/photography/{{title | slug}}/index.html"
+   "permalink": "/photography/{{page.fileSlug | slug}}/index.html"
 }
