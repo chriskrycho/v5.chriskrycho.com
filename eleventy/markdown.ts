@@ -10,6 +10,7 @@ import Token from 'markdown-it/lib/token'
 import { env } from 'process'
 import { Result } from 'true-myth'
 import slugify from 'uslug'
+import abbr from 'markdown-it-abbr'
 
 type HighlightError = {
    short: string
@@ -92,6 +93,7 @@ const md = markdownIt({
       renderPermalink,
       slugify,
    })
+   .use(abbr)
 
 // eslint-disable-next-line @typescript-eslint/camelcase
 md.renderer.rules.footnote_caption = (tokens, idx): string => {
