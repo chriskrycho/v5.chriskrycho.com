@@ -1,3 +1,5 @@
+/* eslint @typescript-eslint/camelcase: off */
+
 import { Maybe } from 'true-myth'
 import { EleventyClass, Item } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
@@ -282,7 +284,12 @@ interface Hub {
    [key: string]: unknown
 }
 
-function optionalString(value: unknown) {
+// Needless, but delightful, type shenaniganry.
+type NonString<T> = T extends string ? never : T
+
+function optionalString(value: string): string
+function optionalString<T>(value: NonString<T>): undefined
+function optionalString(value: unknown): string | undefined {
    return typeof value === 'string' ? value : undefined
 }
 
