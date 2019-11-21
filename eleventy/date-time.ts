@@ -1,14 +1,6 @@
 import { DateTime, DateTimeOptions } from 'luxon'
 import { Maybe } from 'true-myth'
 
-export const canParseDate = (date: unknown): date is string | Date =>
-   typeof date === 'string' || date instanceof Date
-
-export const fromDateOrString = (date: Date | string): DateTime =>
-   typeof date === 'string'
-      ? toDateTime(date)
-      : DateTime.fromJSDate(date, { zone: 'America/Denver' })
-
 type Parse = (text: string, options?: DateTimeOptions | undefined) => DateTime
 
 const maybeDateTime = (parse: Parse, input: string): Maybe<DateTime> => {
@@ -24,5 +16,11 @@ export const toDateTime = (input: string): DateTime => {
          throw new Error(`Could not parse date: ${input}`)
       })
 }
+
+export const canParseDate = (date: unknown): date is string | Date =>
+   typeof date === 'string' || date instanceof Date
+
+export const fromDateOrString = (date: Date | string): DateTime =>
+   typeof date === 'string' ? toDateTime(date) : DateTime.fromJSDate(date)
 
 export default toDateTime
