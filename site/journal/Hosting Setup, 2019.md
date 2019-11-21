@@ -17,12 +17,12 @@ First up, an overview of the end-to-end stack, then a quick discussion of my cos
 [Mere Orthodoxy]: https://mereorthodoxy.com
 
 * domain name at  [Hover.com][Hover] 
-* DNS at  [Cloudflare.com][Cloudflare] 
+* <abbr title="domain name system">DNS</abbr>DNS<abbr> at  [Cloudflare.com][Cloudflare] 
 * Built with  [11ty.io][11ty], content written in [Markdown]
 * Fonts from  [Fonts.com](http://fonts.com/)  (purchased and self-hosted) and  [fonts.adobe.com](http://fonts.adobe.com/)  (hosted)
 * Content lives on  [GitHub.com][gh]
 * The site is deployed via [Netlify.com][netlify]
-* I am using [Forestry.io] as a <abbr title=" content management system ">CMS</abbr> (when it’s useful)
+* I am using [Forestry.io] as a <abbr title="content management system">CMS</abbr> (when it’s useful)
 * I actually draft the content with a(n ever-changing) mix of text editors, currently primarily [1Writer] on iOS and [Byword] and [Caret] on macOS.
 
 I should clarify, before I go any further: this is *not* a stack I would recommend to anyone else who’s not a total nerd, though this same basic *kind* of stack is workable with a much lower degree of effort than I put in. You need to be willing to do a *small* amount of semi-technical work; you *don’t* have to build an entire site from scratch like I did. (I’ll tackle the details of the actual site tech in more detail in another post in the future.) The support for normal CMS interfaces to this kind of setup has grown enormously in the past few years, and it can actually be a really good, very lightweight experience.[^cms]
@@ -37,7 +37,7 @@ I should clarify, before I go any further: this is *not* a stack I would recomme
 [Byword]: https://www.bywordapp.com 
 [Caret]:  https://caret.io/ 
 
-[^cms]: I’m currently experimenting with [Forestry] and [Netlify <abbr title="content management system">CMS</abbr>]. As I mentioned in my relaunch announcement post, I’m leaning toward Netlify <abbr>CMS</abbr> because it *should* allow me to allow *anyone* to suggest edits to my site—more on that as it develops.
+[^cms]: I’m currently experimenting with [Forestry] and [Netlify <abbr>CMS</abbr>]. As I mentioned in my relaunch announcement post, I’m leaning toward Netlify <abbr>CMS</abbr> because it *should* allow me to allow *anyone* to suggest edits to my site—more on that as it develops.
 
 ### Domain Registrar: Hover
 
@@ -56,7 +56,7 @@ At this point, I basically don’t even shop around, because while other places 
 
 ### <abbr>DNS<abbr>: Cloudflare
 
-I just switched all of my <abbr title="domain name system">DNS</abbr> name servers to [Cloudflare] earlier this year. I had a longstanding goal of having my registration, my name servers, and my actual hosting and deployment in separate places for a few years now. I don’t remember where I first ran into the idea of keeping those separate, but it stuck—forcefully, by dint of experience.
+I just switched all of my <abbr>DNS</abbr> name servers to [Cloudflare] earlier this year. I had a longstanding goal of having my registration, my name servers, and my actual hosting and deployment in separate places for a few years now. I don’t remember where I first ran into the idea of keeping those separate, but it stuck—forcefully, by dint of experience.
 
 At one point I was managing all three—registration, name servers, and hosting—through an old-school shared hosting provider ([Stablehost], still a pretty solid option in that space!)… and migrating *out* of that provider was incredibly painful. (It’s actually not 100% done! The hard parts are all done now, though, which is a relief.)
 
