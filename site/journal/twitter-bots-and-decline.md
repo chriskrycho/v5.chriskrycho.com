@@ -1,7 +1,7 @@
 ---
 title: Twitter Bots and “Decline”
 subtitle: Picking up a dropped thread from Winning Slowly 7.13
-date: 2019-11-21T09:00:00-0700
+date: 2019-11-21T09:00:00
 tags:
 - Winning Slowly
 - social media
