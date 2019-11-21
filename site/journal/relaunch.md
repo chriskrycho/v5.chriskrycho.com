@@ -2,8 +2,8 @@
 title: Relaunch!
 subtitle: >
     A new website design and implementation for 2020 and beyond—with a new title to boot!
-date: 2019-11-17T15:30:00-07:00
-updated: 2019-11-18T06:37:00-07:00
+date: 2019-11-17T15:30:00
+updated: 2019-11-18T06:37:00
 tags:
 - writing
 - blogging
