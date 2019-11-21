@@ -1,7 +1,7 @@
 ---
 title: Hosting Setup, 2019
 summary: All the elements of my delivering this site to you!
-date: 2019-11-20T21:00:00-0700
+date: 2019-11-22T21:00:00
 tags:
 - web design
 - blogging
