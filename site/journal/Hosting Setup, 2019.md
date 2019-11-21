@@ -17,7 +17,7 @@ First up, an overview of the end-to-end stack, then a quick discussion of my cos
 [Mere Orthodoxy]: https://mereorthodoxy.com
 
 * domain name at  [Hover.com][Hover] 
-* <abbr title="domain name system">DNS</abbr>DNS<abbr> at  [Cloudflare.com][Cloudflare] 
+* <abbr title="domain name system">DNS</abbr> at  [Cloudflare.com][Cloudflare] 
 * Built with  [11ty.io][11ty], content written in [Markdown]
 * Fonts from  [Fonts.com](http://fonts.com/)  (purchased and self-hosted) and  [fonts.adobe.com](http://fonts.adobe.com/)  (hosted)
 * Content lives on  [GitHub.com][gh]
