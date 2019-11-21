@@ -23,7 +23,7 @@ This way of talking about these technologies is a mistake, the same mistake comp
 
 <aside>
 
-Now, I very specifically chose to write “as Stephen made it on air” above: Speaking extemporaneously about things like this is *hard*. Stephen may or may not actually think *exactly* that phrase. So take what follows as my disagreement with what he said, but recognizing that I’m interested here primarily in critiquing the idea—whether or not *Stephen* holds it, *lots* of people do. One reason I suspect Stephen may *not* hold it is because this way of describing bots specifically and software generally is one we have both critiqued on air in the past!
+Now, I very specifically chose to write “as Stephen made it on air” above: Speaking extemporaneously about things like this is *hard*. Stephen may or may not actually think *exactly* that phrase. So take this line of critiques as my disagreement with *what he said*… but recognize that I’m interested here primarily in critiquing the idea, and not at all in claiming Stephen thinks exactly this. Whether or not *Stephen* holds this idea, *lots* of people do. One reason I suspect Stephen may *not* hold it is because this way of describing bots specifically and software generally is one we have both critiqued on air in the past!
 
 </aside>
 
