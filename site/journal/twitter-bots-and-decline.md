@@ -7,6 +7,7 @@ tags:
 - social media
 - agency
 - responsibility
+audience: people who care about how we speak and think about tech—and also listeners to Winning Slowly!
 
 ---
 
