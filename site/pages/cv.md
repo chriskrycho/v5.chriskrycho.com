@@ -27,7 +27,9 @@ In helping hire people over the last few years, I’ve seen a lot of résumés. 
 
 ## About Me
 
-I am a senior software engineer focused on web <abbr>UI</abbr>, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
+I am a senior software engineer focused on web UI, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
+
+*[UI]: user interface
 
 Building the *right things* means I am not interested in startups whose vision consists of either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings. **Ethics is foundational for good software engineering.**
 
@@ -63,19 +65,26 @@ From **January 2016 – January 2019**, I was a front-end-focused software engi
 
 As a **Software Engineer** (January 2016–May 2017), I was a productive individual contributor even while working 30-hour weeks as I completed my M. Div.:
 
-- I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of our mobile web <abbr>UI</abbr>.
+- I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of our mobile web UI.
 - I introduced JavaScript type systems to the application (landing on **TypeScript** after an initial experiment with Flow)
-- I helped us achieve **full <abbr>AA</abbr> <abbr>WCAG</abbr> accessibility**.
+- I helped us achieve **full AA [WCAG] accessibility**.
+
+[WCAG]: https://www.w3.org/TR/WCAG21/
+*[WCAG]: Web Content Accessibility Guidelines 
 
 As a **Senior Software Engineer** (May 2017–January 2019):
 
-- I led a team effort to expand our mobile web <abbr>UI</abbr> as a **responsive web <abbr>UI</abbr>** to reduce our maintenance burden, improve our overall <abbr>UX</abbr>, and decrease the cost of launching new features.
+- I led a team effort to expand our mobile web UI as a **responsive web UI** to reduce our maintenance burden, improve our overall UX, and decrease the cost of launching new features.
 
-- I designed a new technical strategy for white-labeling (including the adoption of **<abbr>CSS</abbr> Modules**), enabling the business to support more brands by way of better tooling.
+- I designed a new technical strategy for white-labeling (including the adoption of **CSS Modules**), enabling the business to support more brands by way of better tooling.
 
-- I pioneered Olo's use of **Requests for Comments (<abbr>RFC</abbr>s**), modeled on the <abbr>RFC</abbr> processes from the Rust and Ember communities, as a tool for architecture design and documentation. I began by using <abbr>RFC</abbr>s for several important initiatives in my own team. The success of those initiatives validated <abbr>RFC</abbr>s' utility when I later introduced them to the broader engineering organization. They are now Olo’s standard tool for documenting architectural changes and a prerequisite for all new internal services.
+- I pioneered Olo's use of **Requests for Comments (RFCs)**, modeled on the RFC processes from the Rust and Ember communities, as a tool for architecture design and documentation. I began by using RFCs for several important initiatives in my own team. The success of those initiatives validated RFCs' utility when I later introduced them to the broader engineering organization. They are now Olo’s standard tool for documenting architectural changes and a prerequisite for all new internal services.
 
 - I finished our app's conversion to a fully strictly-type-checked TypeScript application.
+
+*[CSS]: cascading style sheets
+*[UX]: user experience
+*[RFC]: request for comments
 
 Throughout my time at Olo, I:
 
@@ -90,13 +99,17 @@ I matured significantly as both an individual contributor and a leader in my tim
 
 *A formative experience: a technical success but a product design failure.*
 
-[HolyBible.com][hb] is a beautiful interface for reading the King James Version of the Bible and the [Reformation Heritage Study Bible][sb] materials online, built for [Puritan Reformed Theological Seminary][prts]. The <abbr>MVP</abbr> launched in **December 2014**, with approximately 30 months of small bug fixes and feature enhancements following.
+[HolyBible.com][hb] is a beautiful interface for reading the King James Version of the Bible and the [Reformation Heritage Study Bible][sb] materials online, built for [Puritan Reformed Theological Seminary][prts]. The MVP launched in **December 2014**, with approximately 30 months of small bug fixes and feature enhancements following.
 
 [hb]: https://holybible.com
 [sb]: https://kjvstudybible.org
 [prts]: https://prts.edu
 
-I worked closely with a designer to create the visual language for the app before diving into the implementation. The app uses **AngularJS**, **Express/Node.js**, and **PostgreSQL**; I also did a great deal of <abbr>XML</abbr>-mashing in **Python** for the Bible source text and study Bible integration.
+*[MVP]: minimum viable product
+
+I worked closely with a designer to create the visual language for the app before diving into the implementation. The app uses **AngularJS**, **Express/Node.js**, and **PostgreSQL**; I also did a great deal of XML-mashing in **Python** for the Bible source text and study Bible integration.
+
+*[XML]: extensible markup language
 
 The project was a *substantial technical success*: it has rarely crashed and had no bugs reported since spring 2017. I’m doubly proud of the project because it was only the second time in my career I’d built an entire non-trivial web application from scratch, and the first time I did so solo.
 
@@ -133,11 +146,15 @@ Over those three years I acquired a good dose of humility and basic knowledge of
 
 *Teaching myself web development.*
 
-**Beginning in January 2010**, I taught myself web programming, beginning with <abbr>PHP</abbr> and jQuery and the <abbr>LAMP</abbr> stack. Having a good working knowledge of <abbr>HTML</abbr> and <abbr>CSS</abbr> from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom <abbr>CMS</abbr> for the Oklahoma Board of Medical Licensure.
+**Beginning in January 2010**, I taught myself web programming, beginning with PHP and jQuery and the LAMP stack. Having a good working knowledge of HTML and CSS from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom CMS for the Oklahoma Board of Medical Licensure.
 
 [innova]: https://innovacomputing.com
 
-My goal throughout was not merely to make some extra money, nice though that was. Rather, I aimed to transition from the world of C and Fortran where I began my career to working full time in <abbr>UI</abbr>-focused web development. (Mission accomplished.)
+*[LAMP]: Linux, Apache, MySQL, and PHP
+*[HTML]: hypertext markup language
+*[CMS]: content management system
+
+My goal throughout was not merely to make some extra money, nice though that was. Rather, I aimed to transition from the world of C and Fortran where I began my career to working full time in UI-focused web development. (Mission accomplished.)
 
 ## My Projects
 
@@ -160,15 +177,18 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 
 #### TypeScript and Ember.js
 
-As we began actively adopting TypeScript in our Ember.js app [at Olo](#current), we very soon ran into the limitations of the existing support. Integration with Ember’s <abbr>CLI</abbr> tooling was limited; the type definitions were a mix of incomplete, unhelpful, and outright wrong; there was little information about how to use TypeScript *effectively* with Ember; and, worst of all, no one was actively contributing to fill these gaps—much less leading.
+As we began actively adopting TypeScript in our Ember.js app [at Olo](#current), we very soon ran into the limitations of the existing support. Integration with Ember’s CLI tooling was limited; the type definitions were a mix of incomplete, unhelpful, and outright wrong; there was little information about how to use TypeScript *effectively* with Ember; and, worst of all, no one was actively contributing to fill these gaps—much less leading.
 
-In March 2017, I began working on the <abbr>CLI</abbr> tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Over the rest of 2017 and 2018, I have taught and written extensively on using TypeScript effectively with Ember. Our small team’s efforts have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
+*[CLI]: command line interface
+
+In March 2017, I began working on the CLI tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Over the rest of 2017 and 2018, I have taught and written extensively on using TypeScript effectively with Ember. Our small team’s efforts have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
 
 #### True Myth
 
-In the **fall of 2017**, I developed [True Myth][tm]: a **TypeScript**-targeted library with `Maybe` and `Result` types. Several existing libraries in the space work excellently but had a number of downsides, including second-class support for TypeScript, runtime overhead, and <abbr>API</abbr>s designed to mirror Haskell or Scala rather than idiomatic JavaScript. True Myth was my attempt to fill that gap. It takes advantage of TypeScript to supply **idiomatic JavaScript <abbr>API</abbr>s** with **zero runtime overhead** (beyond the inherent cost of the container types themselves).
+In the **fall of 2017**, I developed [True Myth][tm]: a **TypeScript**-targeted library with `Maybe` and `Result` types. Several existing libraries in the space work excellently but had a number of downsides, including second-class support for TypeScript, runtime overhead, and an API designed to mirror Haskell or Scala rather than idiomatic JavaScript. True Myth was my attempt to fill that gap. It takes advantage of TypeScript to supply an **idiomatic JavaScript API** with **zero runtime overhead** (beyond the inherent cost of the container types themselves).
 
 [tm]: https://github.com/chriskrycho/true-myth
+*[API]: application programming interface
 
 True Myth is largely [complete][stable-libraries], with a full set of features and [extensive documentation][tm-docs]. I continue to maintain and expand the library with additional helpers and tooling as TypeScript has supported more capabilities. I have also supported [early efforts to translate the library to C^♯^][tm-C#].
 
@@ -189,7 +209,7 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
     - [slides][ember-ts-workshop-slides-2019] for the introduction to TypeScript and overview of using it in Ember
     - [sample code repository][ember-ts-workshop-repo-2019], where each commit is a discrete step in the process of the conversion
 
-- <b><abbr>CSS</abbr> Modules lightning talk</b> (Denver Ember.js Meetup, December 2018)
+- <b>CSS Modules lightning talk</b> (Denver Ember.js Meetup, December 2018)
 
 - <b>Rust and WebAssembly</b> (Denver/Boulder Rust Meetup, May 2018)
 
@@ -201,7 +221,7 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
 
 - <b>[TypeScript Up Your Ember.js App][ember-ts-workshop-2018]</b> (EmberConf Workshop, March 2018):
 
-    > <b>Abstract:</b> an introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js <abbr>TODO</abbr> <abbr>MVC</abbr> app from JavaScript to TypeScript.
+    > <b>Abstract:</b> an introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js TODO MVC app from JavaScript to TypeScript.
 
     The workshop was not recorded, but the teaching materials are all available online:
 
@@ -227,3 +247,5 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
 [ember-ts-workshop-repo-2018]: https://github.com/chriskrycho/emberconf-2018
 [rbr2017]: https://youtube.com/watch?v=Abu2BNixXak
 [bibletech2015]: https://m.youtube.com/watch?v=cDAh35IwJsE
+
+*[MVC]: model-view-controller
