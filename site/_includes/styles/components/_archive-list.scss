@@ -6,6 +6,7 @@
       font-family: var(--sans);
       text-transform: uppercase;
       font-size: ms(-1);
+      font-variant-numeric: lining-nums tabular-nums;
       line-height: 1.1;
       color: var(--h2-fg);
    }
@@ -93,7 +94,7 @@
    .item-title {
       grid-area: title;
       font: {
-         family: var(--sans);
+         family: var(--sans-subhead);
          size: calc(var(--sans-adjust) * #{ms(0)});
          weight: bold;
       }

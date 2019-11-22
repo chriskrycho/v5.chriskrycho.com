@@ -16,8 +16,8 @@
 
    padding-right: var(--bar-expanded-width);
    font: {
-      family: var(--sans);
-      weight: 300;
+      family: var(--sans-display);
+      weight: 400;
       size: calc(var(--sans-adjust) * #{ms(5)});
    }
    letter-spacing: normal;
