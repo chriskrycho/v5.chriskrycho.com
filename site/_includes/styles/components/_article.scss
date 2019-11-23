@@ -59,6 +59,7 @@
    .callout {
       font: {
          family: var(--sans);
+         weight: 300;
          size: calc(var(--sans-adjust) * #{ms(0)});
       }
 
@@ -402,6 +403,7 @@
 
       font: {
          family: var(--sans);
+         weight: 300;
          size: calc(var(--sans-adjust) * #{ms(0)});
       }
       @include fancy-block(var(--bg), var(--fg));
