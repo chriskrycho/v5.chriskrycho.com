@@ -54,6 +54,41 @@
       }
    }
 
+   table {
+      max-width: var(--max-width);
+   
+      thead {
+         font-family: var(--sans);
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+   
+      td,
+      th {
+   
+         &:first-child {
+            text-align: right;
+         }
+   
+         &:last-child {
+            text-align: left;
+         }
+      }
+   
+      th {
+         padding: 0 ms(-4);
+      }
+   
+      td {
+         padding: ms(-8) ms(-4);
+         
+         &:first-child {
+            font-weight: bold;
+            min-width: ms(8);
+         }
+      }
+   }   
+
    aside,
    .note,
    .qualifiers,

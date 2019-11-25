@@ -15,7 +15,6 @@
 
    <link rel="preload" as='style' href="https://use.typekit.net/azk8hwe.css">
    <link rel="stylesheet" href="https://use.typekit.net/azk8hwe.css">
-
    {% block extra_styles %}{% endblock extra_styles %}
 
    <link href="/assets/images/favicon.png" type="image/png" rel="icon">
@@ -49,6 +48,9 @@
    <link rel="openid.server" href="https://indieauth.com/openid">
 
    {% block extra_links %}{% endblock extra_links %}
+
+   {# <link rel='preload' as='script' type='application/javascript' href='/assets/js/theme.js'> #}
+   <script src='/assets/js/theme.js'></script>
 </head>
 <body>
    <main>
@@ -79,5 +81,7 @@
          {%- endfor -%}
       </ul>
    </nav>
+
+   {% include "blocks/theme.njk" %}
 </body>
 </html>

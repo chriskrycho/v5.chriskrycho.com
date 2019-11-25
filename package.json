@@ -74,6 +74,7 @@
       "trailingComma": "all"
    },
    "scripts": {
+      "precommit": "tsc --project scripts/tsconfig.json",
       "build": "yarn gulp all & yarn eleventy",
       "serve": "yarn gulp watch & yarn eleventy --serve"
    }
