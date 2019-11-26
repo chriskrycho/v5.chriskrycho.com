@@ -87,37 +87,11 @@ There are three states the user can specify:
 - dark
 - system
 
-I chose to represent this with a radio toggle, and the JavaScript is very simple. This is the entire implementation:
+I chose to represent this with a radio toggle, and the JavaScript is fairly simple. (You can check out the entire implementation [here][ts]. I chose to make it *slightly* more robust than it needed to be, but the whole thing is under a kilobyte.)
 
-```ts
-const enum Theme {
-   System = 'system',
-   Light = 'light',
-   Dark = 'dark',
-}
+[ts]: TODO
 
-const THEME_VALUES: Theme[] = [Theme.System, Theme.Light, Theme.Dark]
-
-const themeFromString = (value: string): Theme =>
-   value in THEME_VALUES ? (value as Theme) : Theme.System
-
-const themeFromInput = (event: InputEvent): Theme =>
-   event.target instanceof HTMLInputElement
-      ? themeFromString(event.target.value)
-      : Theme.System
-
-const setTheme = (event: InputEvent): void => {
-   const theme = themeFromInput(event)
-
-   const bodyClasses = document.querySelector('body').classList
-   const removeClass = bodyClasses.remove.bind(bodyClasses)
-
-   THEME_VALUES.forEach(removeClass)
-   bodyClasses.add(theme)
-}
-```
-
-I just set this up on the HTML directly:
+There's no need to do anything fancy in terms of making this actually work; I just set it up on the HTML directly:
 
 ```html
 <form>
@@ -158,75 +132,5 @@ Modern browsers—anything newer than IE8!—all give us easy access to the `loc
 *[IE8]: Internet Explorer 8
 *[API]: application programming interface
 
-[^graceful-degradation]: If the user happens to be in an environment where it *doesn't* exist or work for some reason, it's fine: 
+[^graceful-degradation]: If the user happens to be in an environment where it *doesn't* exist or work for some reason, it's fine: it just falls back to matching the operating system, with a default of the light mode.
 
-Something like this should do the trick: it sets the right default *and* allows the user to toggle afterward.
-
-```ts
-const ColorSchemePref = { None: 0, Light: 1, Dark: 2 };
-const ColorScheme = { Light: 'light', Dark: 'dark' };
-
-function userPreference() {
-  const mqLight = window.matchMedia('prefers-color-scheme: light');
-  const mqDark = window.matchMedia('prefers-color-scheme: dark');
-  return (
-    mqLight.matches ? ColorSchemePref.Light
-    : mqDark.matches ? ColorSchemePref.Dark
-    : ColorSchemePref.None;
-  );
-}
-
-function clearScheme() {
-  Object.values(ColorScheme).forEach(scheme => {
-      document.body.classList.removeClass(scheme);
-  })
-}
-
-function setSchemeTo(scheme) {
-  clearScheme();
-  document.body.classList.addClass(scheme);
-}
-
-function setToggleTo(scheme) {
-  const toggle = document.querySelector('#lightMode');
-  if (!toggle)
-    throw 'Impossible state: no `#lightMode` element';
-
-  toggle.setAttribute('data-mode', scheme);
-}
-
-function setInitialColorScheme() {
-  const pref = userPreference();
-  let scheme;
-  switch (pref) {
-    case ColorSchemePref.Light:
-      scheme = ColorScheme.Light;
-      break;
-
-    case ColorSchemePref.Dark:
-      scheme = ColorScheme.Dark;
-      break;
-
-    case ColorSchemePref.None:
-      scheme = ColorScheme.Light;
-      break;
-
-    default:
-      throw `Impossible state: ${pref}!`;
-  }
-
-  setSchemeTo(scheme);
-  setToggleTo(scheme);
-}
-
-function toggleScheme(event) {
-  event.preventDefault();
-
-  setSchemeTo(scheme);
-  setToggleTo(scheme);
-
-  return false;
-}
-```
-
-To make it work, the CSS needs to override `:root` in some way. The basic rule should be something like: media query *and* not-`.light`.
