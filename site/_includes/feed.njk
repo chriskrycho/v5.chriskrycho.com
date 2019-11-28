@@ -50,7 +50,7 @@
       {% include 'blocks/rss-author.njk' %}
       {#- <comments>TODO: Webmention!</comments> #}
       {% for tag in item.data.tags %}
-      <category term="{{tag}}">
+      <category term="{{tag}}" />
       {% endfor %}
    </entry>
    {%- endfor %}
