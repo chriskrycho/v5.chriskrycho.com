@@ -8,7 +8,7 @@
       text-transform: uppercase;
       font-size: ms(-1);
       font-variant-numeric: lining-nums tabular-nums;
-      line-height: 1.1;
+      line-height: calc(var(--sans-adjust) * 1.1);
       color: var(--h2-fg);
    }
 
@@ -136,10 +136,6 @@
 
 @media screen and (max-width: $break-2) {
    .archive-list {
-      .date {
-         line-height: calc(var(--sans-adjust) * 1.1);
-      }
-
       .year-info {
          grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 30rem) minmax(5rem, 1fr);
       }
