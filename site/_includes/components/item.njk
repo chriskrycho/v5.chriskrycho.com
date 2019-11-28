@@ -29,9 +29,16 @@
    </ul>
    {%- endif %}
 
+   <span class='section-label'>Respond:</span>
+   <div class='section-content'>
+      <p>
+         Have a thought to share about this? <a href='mailto:hello@chriskrycho.com?subject={{item.title}}'>Send me an email!</a> (It’s way better than traditional comments.)
+      </p>
+   </div>
+
    <span class='section-label'>About:</span>
-   <span class='section-content'>
+   <div class='section-content'>
       {% include 'blocks/short-about.njk' %}
-   </span>
+   </div>
 </footer>
 {% endmacro %}
