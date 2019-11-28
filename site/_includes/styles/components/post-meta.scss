@@ -7,11 +7,6 @@
    gap: 0 1rem;
    align-content: start;
 
-   font: {
-      family: var(--sans);
-      size: calc(var(--sans-adjust) * 1em);
-   }
-
    &::before {
       content: '';
 
@@ -30,7 +25,10 @@
 .section-label {
    grid-column: 1 / 2;
    align-self: first baseline;
-   font-size: ms(-2);
+   font: {
+      family: var(--sans-subhead);
+      size: calc(var(--sans-adjust) * #{ms(-2)});
+   }
    display: block;
    font-weight: bold;
    color: var(--meta-label-color);
@@ -39,6 +37,11 @@
 }
 
 .section-content {
+   font: {
+      family: var(--sans);
+      size: calc(var(--sans-adjust) * #{ms(-1)});
+      weight: 300;
+   }
    display: block;
    align-self: first baseline;
    grid-column: 2 / 3;

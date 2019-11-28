@@ -8,16 +8,17 @@
 {% endmacro %}
 
 {% macro meta(date, tags, updated, inputPath) %}
-{%- set dateFormat = 'yyyy · MM · dd · HHmm' %}
+{%- set dateFormat = 'MMMM d, yyyy' %}
 <footer class='post-meta'>
-   <span class='section-label'><a href='{{inputPath | sourceLink}}'>Published</a>:</span>
-   <span class='section-content'>{% localeDate date, dateFormat -%}</span>
-   {%- if updated -%}
-   <span class='section-label'><a href='{{inputPath | historyLink}}'>Updated</a>:</span>
+   <span class='section-label'>Posted:</span>
    <span class='section-content'>
-      {%- localeDate updated, dateFormat -%}
+      This entry was originally posted on {% localeDate date, dateFormat %}.
+      {% if updated is defined %}
+      It was last updated on {%- localeDate updated, dateFormat -%}.
+      {% endif %}
+      You can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>.
+      Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a>
    </span>
-   {%- endif -%}
 
    {%- if tags.length > 0 %}
    <span class='section-label'>Topics:</span>
