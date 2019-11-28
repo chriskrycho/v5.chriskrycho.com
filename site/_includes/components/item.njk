@@ -14,7 +14,7 @@
    <span class='section-content'>
       This entry was originally posted on {% localeDate date, dateFormat %}.
       {% if updated is defined %}
-      It was last updated on {%- localeDate updated, dateFormat -%}.
+      It was last updated on {% localeDate updated, dateFormat %}.
       {% endif %}
       You can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>.
       Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a>
@@ -28,5 +28,10 @@
       {%- endfor -%}
    </ul>
    {%- endif %}
+
+   <span class='section-label'>About:</span>
+   <span class='section-content'>
+      {% include 'blocks/short-about.njk' %}
+   </span>
 </footer>
 {% endmacro %}
