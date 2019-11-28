@@ -169,7 +169,9 @@
    }
 
    .footnotes {
-      font-size: calc(var(--fs-base) - 2px);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: ms(-1);
       width: 100%;
       max-width: var(--max-width);
    }
