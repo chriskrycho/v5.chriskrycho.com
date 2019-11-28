@@ -299,7 +299,7 @@ function optionalString(value: unknown): string | undefined {
 const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedItem> =>
    canParseDate(item.data.date)
       ? Maybe.just<FeedItem>({
-           id: absoluteUrl(config.url, item.url),
+           id: absoluteUrl(item.url, config.url),
            author: {
               name: config.author.name,
               url: config.url,
@@ -356,7 +356,7 @@ export class JSONFeed implements EleventyClass {
    }
 
    render({ collections, config, page }: EleventyData): string {
-      return JSON.stringify(jsonFeed(collections.all, config, page.url))
+      return JSON.stringify(jsonFeed(collections.all.slice().reverse(), config, page.url))
    }
 }
 
