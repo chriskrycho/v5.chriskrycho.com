@@ -3,6 +3,7 @@ title: A JSON Feed Apology and Explanation
 subtitle: >
     All my best efforts and this is still where we end up!
 date: 2019-11-28T23:15
+updated: 2019-11-29T10:40
 tags:
 - TypeScript
 - JavaScript
@@ -44,9 +45,9 @@ class URL {
 }
 ```
 
-This would entirely eliminate the possibility of confusion in building the class instance. When you want a version with a base URL, you just use `withBase`; when you want one to handle absolute paths, you just `fromAbsolute`; if you need a graceful fallback, you can write that yourself, or another static constructor could be supplied. The point here is that 
+This would entirely eliminate the possibility of confusion in building the class instance. When you want a version with a base URL, you just use `withBase`; when you want one to handle absolute paths, you just `fromAbsolute`; if you need a graceful fallback, you can write that yourself, or another static constructor could be supplied. The point here in any case is that you can design the API from the outset not to lead people into these kinds of mistakes.
 
-Now, if you go poking at my site's source, you'll also notice that I didn't call `new URL` directly! The Node type’s constructor function can throw an exception if you give it invalid arguments. In my case, I didn’t want that—instead, I wanted to log errors and just return the path from the root, without the domain, if it didn't work for some reason. That wrapper, named `absoluteUrl`, uses [True Myth]—specifically [its `tryOrElse` function]—to safely provide a reasonable value for all URLs on the site:
+Now, if you go poking at my site's source, you'll also notice that I didn't call `new URL` directly! The Node type’s constructor function can throw an exception if you give it invalid arguments. In my case, I didn’t want that—instead, I wanted to log errors and just return the path from the root, without the domain, if it didn't work for some reason. That wrapper, named `absoluteUrl`, uses [True Myth]—specifically [its `tryOrElse` function][tryOrElse]—to safely provide a reasonable value for all URLs on the site:
 
 ```ts
 import { Result } from 'true-myth'
@@ -74,6 +75,7 @@ const absoluteUrl = ({ path, baseUrl }: Components): string =>
 In my day job, that's *exactly* what I’d do, in fact. However, there’s a challenge to doing that way here: I use this same `absoluteUrl` function as a template helper… and therefore I need to be able to pass it arguments as regular function arguments, *not* as an object. Alas.
 
 [True Myth]: https://github.com/true-myth/true-myth
+[tryOrElse]: https://true-myth.js.org/modules/_result_.html#tryorelse
 
 *[API]: application programming interface
 *[URL]: universal resource link
