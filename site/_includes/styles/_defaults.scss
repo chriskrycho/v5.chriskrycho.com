@@ -74,6 +74,10 @@ p {
    width: 100%;
    margin: 0 0 ms(0);
    padding: 0;
+
+   &:last-child {
+      margin-bottom: 0;
+   }
 }
 
 .optional {
