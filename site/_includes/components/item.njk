@@ -7,7 +7,7 @@
 </header>
 {% endmacro %}
 
-{% macro meta(date, tags, updated, inputPath) %}
+{% macro meta(title, date, tags, updated, inputPath) %}
 {%- set dateFormat = 'MMMM d, yyyy' %}
 <footer class='post-meta'>
    <span class='section-label'>Posted:</span>
@@ -32,7 +32,7 @@
    <span class='section-label'>Respond:</span>
    <div class='section-content'>
       <p>
-         Have a thought to share about this? <a href='mailto:hello@chriskrycho.com?subject={{item.title}}'>Send me an email!</a> (It’s way better than traditional comments.)
+         Have a thought to share about this? <a href='mailto:hello@chriskrycho.com?subject={{title}}'>Send me an email!</a> (It’s way better than traditional comments.)
       </p>
    </div>
 
