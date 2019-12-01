@@ -70,7 +70,6 @@ function renderPermalink(
 
 const md = markdownIt({
    html: true,
-   // typographer: true,
    highlight: (str, lang) =>
       lang && getLanguage(lang)
          ? highlight(lang, str).unwrapOrElse(e => {
