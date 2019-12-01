@@ -17,6 +17,7 @@ module.exports = {
          'https://soundcloud.com/chriskrycho',
          'https://vimeo.com/chriskrycho',
          'https://cash.me/$chriskrycho',
+         'https://micro.blog/chriskrycho',
          'https://twitter.com/chriskrycho',
          'https://www.linkedin.com/in/chriskrycho',
          'https://stackoverflow.com/users/564181/chris-krycho',
