@@ -45,8 +45,15 @@
       <link href='{{url}}' />
       {% if item.data.summary %}
       <summary type="html">{{item.data.summary}}</summary>
+      {% elif item.data.subtitle %}
+      <summary type="html">{{item.data.subtitle}}</summary>
       {% endif %}
-      <content type="html">{{item.templateContent}}</content>
+      <content type="html">
+         {%- if item.data.audience -%}
+            &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{item.data.audience}}&lt;/p&gt;
+         {%- endif -%}
+         {{item.templateContent}}
+      </content>
       {% include 'blocks/rss-author.njk' %}
       {#- <comments>TODO: Webmention!</comments> #}
       {% for tag in item.data.tags %}

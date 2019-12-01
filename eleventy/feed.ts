@@ -6,6 +6,7 @@ import absoluteUrl from './absolute-url'
 import { canParseDate } from './date-time'
 import isoDate from './iso-date'
 import siteTitle from './site-title'
+import { isString } from 'util'
 
 const { Just } = Maybe
 
@@ -86,6 +87,13 @@ export interface FeedItem {
       each item in a feed.)
     */
    content_html?: string
+
+   /**
+      A plain text sentence or two describing the item. This might be presented in a
+      timeline, for instance, where a detail view would display all of `content_html` or
+      `content_text`.
+    */
+   summary?: string
 
    /**
       The URL of the main image for the item. This image may also appear in the
@@ -293,6 +301,11 @@ function optionalString(value: unknown): string | undefined {
    return typeof value === 'string' ? value : undefined
 }
 
+const contentHtmlFor = (item: Item): string =>
+   isString(item.data.audience)
+      ? `<p><b>Assumed audience:</b> ${item.data.audience}</p>${item.templateContent}`
+      : item.templateContent
+
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
@@ -307,7 +320,8 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
            title: item.data.title as string | undefined,
            url: absoluteUrl(item.url, config.url),
            date_published: isoDate(item.data.date),
-           content_html: item.templateContent,
+           content_html: contentHtmlFor(item),
+           summary: optionalString(item.data.summary ?? item.data.subtitle),
            date_modified:
               typeof item.data.updated === 'string' || item.data.updated instanceof Date
                  ? isoDate(item.data.updated)
