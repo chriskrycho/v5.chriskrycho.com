@@ -2,9 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/15dd2381-bb68-4e1e-94d7-38a0b7d6d2fb/deploy-status)](https://app.netlify.com/sites/v5-chriskrycho-com/deploys)
 
-The fifth iteration of my website! Launching sometime in 2019; feel free to follow along in the meantime. I'm building it on [Eleventy] for its ease of configuration and supporting much/all of what I need. (I still have dreams of building a site generator in Rust that's equally flexible and way faster; keep your eyes on this site after it launches for news on that front, someday, hopefully!)
+The fifth iteration of my website! For details, see [the launch post]!
 
-[Eleventy]: https://11ty.io
+[the launch post]: https://v5.chriskrycho.com/journal/relaunch/
 
 Previous versions:
 
