@@ -262,7 +262,7 @@
       font: {
          family: var(--sans);
          size: ms(1);
-         weight: bold;
+         weight: 600;
       }
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -277,7 +277,7 @@
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(1)});
-         weight: bold;
+         weight: 600;
       }
       margin: ms(-3) 0 ms(-1);
 
@@ -290,6 +290,7 @@
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(1)});
+         weight: 600;
       }
 
       margin-bottom: ms(-5);
@@ -308,7 +309,7 @@
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(0)});
-         weight: bold;
+         weight: 600;
       }
 
       margin-bottom: ms(-7);
