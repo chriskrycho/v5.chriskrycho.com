@@ -1,9 +1,9 @@
 {% macro header(type, title, subtitle) %}
 {% if title %}
 <header class='item-header {{type}}'>
-   <h1 class='item-title'>{{title | inlineMd | safe}}</h1>
+   <h1 class='item-title p-name'>{{title | inlineMd | safe}}</h1>
    {% if subtitle -%}
-      <p class='item-subtitle'>{{subtitle | inlineMd | safe}}</p>
+      <p class='item-subtitle p-summary'>{{subtitle | inlineMd | safe}}</p>
    {%- endif %}
 </header>   
 {% endif %}

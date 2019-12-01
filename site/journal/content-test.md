@@ -2,6 +2,7 @@
 title: An Excursus on Ipsums
 subtitle: Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity.
 date: 2015-06-28T08:00
+updated: 2019-11-30T21:28
 tags:
 - writing
 - productivity
