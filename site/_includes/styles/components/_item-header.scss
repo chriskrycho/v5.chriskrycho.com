@@ -14,7 +14,7 @@
       font: {
          family: var(--sans);
          weight: 600;
-         size: calc(var(--sans-adjust) * #{ms(2)});
+         size: calc(var(--sans-adjust) * #{ms(3)});
       }
       color: var(--h1-fg);
    }
@@ -23,7 +23,7 @@
       line-height: var(--line-height);
       font: {
          family: var(--serif);
-         size: ms(0);
+         size: ms(1);
          style: italic;
       }
       color: var(--h2-fg);
