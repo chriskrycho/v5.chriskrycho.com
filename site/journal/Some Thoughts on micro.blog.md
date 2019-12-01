@@ -5,6 +5,12 @@ audience: folks who are thinking about social media and blogging and the IndieWe
 date: 2019-12-01T08:00
 summary: >
     For the last few years, and particularly in the months since I left Twitter, I have been thinking about micro.blog. If you are going to be on a public social network at all. But it’s not for me.
+tags:
+    - social media
+    - writing
+    - productivity
+    - IndieWeb
+    - micro.blog
 
 ---
 
