@@ -3,6 +3,7 @@ title: Some Thoughts on micro.blog
 subtitle: I like the service. But I’m not using it.
 audience: folks who are thinking about social media and blogging and the IndieWeb movement.
 date: 2019-12-01T08:00
+updated: 2019-12-01T10:35
 summary: >
     For the last few years, and particularly in the months since I left Twitter, I have been thinking about micro.blog. If you are going to be on a public social network at all. But it’s not for me.
 tags:
@@ -28,7 +29,7 @@ Maybe at some point micro.blog will be safe for me. Maybe there will come a day 
 
 [buwsm]: https://v4.chriskrycho.com/2019/breaking-up-with-social-media.html
 [micro.blog]: https://micro.blog
-[IndieWeb]: https://www.indieweb.org
+[IndieWeb]: http://www.indieweb.org
 [RSS]: https://validator.w3.org/feed/docs/rss2.html
 [Atom]: https://validator.w3.org/feed/docs/atom.html
 [JSON Feed]: https://jsonfeed.org
@@ -38,7 +39,8 @@ Maybe at some point micro.blog will be safe for me. Maybe there will come a day 
 *[RSS]: Really Simple Syndication
 *[JSON]: JavaScript Object Notation
 
-[^posse]: I am, for now at least, syndicating my post content there, in line with the [POSSE] principle. It does no harm along the lines I have identified as being most an issue for me—and it quietly supports Manton and co.’s efforts in what I think is a very healthy direction.
+[^posse]: I am, for now at least, [syndicating my post content there][syndicating], in line with the [POSSE] principle. It does no harm along the lines I have identified as being most an issue for me—and it quietly supports Manton and co.’s efforts in what I think is a very healthy direction.
 
+[syndicating]: https://micro.blog/chriskrycho
 [POSSE]: http://www.indieweb.org/POSSE
 *[POSSE]: Publish (on your) Own Site, Syndicate Elsewhere
