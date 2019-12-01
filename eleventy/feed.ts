@@ -139,7 +139,7 @@ export interface FeedItem {
       anything. Note: they are not the equivalent of Twitter hashtags. Some blogging
       systems and other feed formats call these categories.
     */
-   tag?: string[]
+   tags?: string[]
 
    /**
       An individual item may have one or more attachments. List related resources.
@@ -328,7 +328,7 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
                  : undefined,
            image: optionalString(item.data.image),
            external_url: optionalString(item.data.link),
-           tag: Array.isArray(item.data.tags) ? item.data.tags : [],
+           tags: Array.isArray(item.data.tags) ? item.data.tags : [],
            banner_image: optionalString(item.data.splash),
         })
       : Maybe.nothing()
