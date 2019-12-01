@@ -328,7 +328,7 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
                  : undefined,
            image: optionalString(item.data.image),
            external_url: optionalString(item.data.link),
-           tag: Array.isArray(item.data.topics) ? item.data.topics : [],
+           tag: Array.isArray(item.data.tags) ? item.data.tags : [],
            banner_image: optionalString(item.data.splash),
         })
       : Maybe.nothing()
