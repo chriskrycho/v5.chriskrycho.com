@@ -2,8 +2,13 @@
 title: An Excursus on Ipsums
 subtitle: Using pseudo-random ipsum text to test and demonstrate the styles in an article of the highest possible complexity.
 date: 2015-06-28T08:00
-tags: [devotions, papers, hot tamales]
+tags:
+- writing
+- productivity
 eleventyExcludeFromCollections: true
+thanks: >
+    Thanks to Ben Makuh and Katie King for being two genuinely awesome friends.
+    I genuinely have no idea what my life would be like without them!
 
 ---
 

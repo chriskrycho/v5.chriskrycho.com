@@ -7,9 +7,16 @@
 </header>
 {% endmacro %}
 
-{% macro meta(title, date, tags, updated, inputPath) %}
+{% macro meta(title, date, tags, updated, inputPath, thanks) %}
 {%- set dateFormat = 'MMMM d, yyyy' %}
 <footer class='post-meta'>
+   {% if thanks is defined %}
+   <span class='section-label'>Thanks:</span>
+   <div class='section-content'>
+      {{thanks}}
+   </div>
+   {% endif %}
+
    <span class='section-label'>Posted:</span>
    <span class='section-content'>
       This entry was originally posted on {% localeDate date, dateFormat %}.
