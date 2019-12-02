@@ -3,7 +3,7 @@ title: Some Thoughts on micro.blog
 subtitle: I like the service. But I’m not using it.
 audience: folks who are thinking about social media and blogging and the IndieWeb movement.
 date: 2019-12-01T08:00
-updated: 2019-12-01T10:35
+updated: 2019-12-01T19:05
 summary: >
     For the last few years, and particularly in the months since I left Twitter, I have been thinking about micro.blog. If you are going to be on a public social network at all. But it’s not for me.
 tags:
@@ -15,7 +15,7 @@ tags:
 
 ---
 
-For the last few years, and particularly in the months since [I left Twitter][buwsm], I have been thinking about [micro.blog]. I like the idea—I like it a *lot* in fact. Manton Reece, the founder, has intentionally eschewed scale in favor of a much more human-sized network, based on [IndieWeb] principles from the outset. He and his team have carefully the things that encourage the worst behavior on Twitter—retweets, like counts, follower counts. He has had a clear and sustainable business model from the beginning, too: it’s free to post from your own existing domain using an RSS, [Atom], or [JSON Feed], or it’s $5/month for micro.blog hosting.
+For the last few years, and particularly in the months since [I left Twitter][buwsm], I have been thinking about [micro.blog]. I like the idea—I like it a *lot* in fact. Manton Reece, the founder, has intentionally eschewed scale in favor of a much more human-sized network, based on [IndieWeb] principles from the outset. He and his team have carefully eschewed the things that encourage the worst behavior on Twitter—retweets, like counts, follower counts. He has had a clear and sustainable business model from the beginning, too: it’s free to post from your own existing domain using an [RSS], [Atom], or [JSON Feed], or it’s $5/month for micro.blog hosting.
 
 In short, if you are going to be on a public social network at all, I think micro.blog is a *great* choice. But that’s the fundamental question: <i>do I want to be on a social network at all?</i>
 
