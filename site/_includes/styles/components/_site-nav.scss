@@ -15,6 +15,7 @@
    font: {
       family: var(--sans-subhead);
       size: calc(var(--sans-adjust) *#{ms(0)});
+      weight: 300;
    }
 
    text-transform: uppercase;
