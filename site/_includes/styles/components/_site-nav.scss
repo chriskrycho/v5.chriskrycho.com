@@ -62,6 +62,10 @@
          --bar-color: var(--nav-fg-active);
       }
 
+      &.current {
+         font-weight: 400;
+      }
+
       text-decoration: none;
       position: relative;
 
