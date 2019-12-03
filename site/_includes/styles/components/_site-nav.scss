@@ -15,7 +15,7 @@
    font: {
       family: var(--sans-subhead);
       size: calc(var(--sans-adjust) *#{ms(0)});
-      weight: 300;
+      weight: var(--nav-fg-weight);
    }
 
    text-transform: uppercase;
@@ -63,7 +63,7 @@
       }
 
       &.current {
-         font-weight: 400;
+         font-weight: var(--nav-fg-currenet-weight);
       }
 
       text-decoration: none;

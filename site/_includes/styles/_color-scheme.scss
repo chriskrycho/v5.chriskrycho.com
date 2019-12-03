@@ -15,6 +15,8 @@
 
    --nav-bg: var(--root-bg);
    --nav-fg-active: var(--gray-0);
+   --nav-fg-weight: 400;
+   --nav-fg-current-weight: 600;
    --nav-fg-inactive: var(--gray-2);
    --nav-divider: var(--gray-4);
 
@@ -50,9 +52,6 @@
 
    --figure-fg: var(--gray-2);
 
-   --nav-ctrl-fg: var(--gray-1);
-   --nav-ctrl-fg-active: var(--blue-2);
-
    @include a11y-light();
 }
 
@@ -67,6 +66,8 @@
 
    --root-bg: var(--gray-1);
 
+   --nav-fg-weight: 300;
+   --nav-fg-active-weight: 400;
    --nav-fg-active: var(--gray-6);
    --nav-fg-inactive: var(--gray-4);
    --nav-divider: var(--gray-3);
@@ -100,9 +101,6 @@
    --code-fg: var(--gray-6);
 
    --figure-fg: var(--gray-4);
-
-   --nav-ctrl-fg: var(--gray-4);
-   --nav-ctrl-fg-active: var(--gray-6);
 
    @include tomorrow-night-bright();
 
