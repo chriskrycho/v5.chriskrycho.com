@@ -50,6 +50,7 @@
       margin: {
          left: auto;
          right: auto;
+         bottom: ms(5)
       }
       list-style-type: none;
       display: grid;
@@ -60,8 +61,8 @@
       justify-content: stretch;
       justify-items: stretch;
 
-      &:not(:last-child) {
-         margin-bottom: ms(4);
+      &:last-child {
+         margin-bottom: 0;
       }
    }
 
@@ -90,6 +91,10 @@
       // max-width: 36rem;
       margin: 0 0 ms(1);
       width: 100%;
+   }
+
+   .item:last-child {
+      margin-bottom: 0;
    }
 
    .item-title {
