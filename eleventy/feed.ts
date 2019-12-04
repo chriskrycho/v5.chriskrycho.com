@@ -83,10 +83,10 @@ interface EleventyData {
 }
 
 export class JSONFeed implements EleventyClass {
-   data() {
+   data(): ReturnType<NonNullable<EleventyClass['data']>> {
       return {
          excludeFromEleventyCollections: true,
-         permalink: (_: EleventyData) => '/feed.json',
+         permalink: (/* _: EleventyData */): string => '/feed.json',
       }
    }
 

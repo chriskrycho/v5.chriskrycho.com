@@ -148,7 +148,7 @@ type Raw<T = unknown> = string | Buffer | Promise<T>
 export interface EleventyClass {
    data?: () => {
       excludeFromEleventyCollections?: boolean
-      permalink?: (...args: any[]) => Raw
+      permalink?: (...args: unknown[]) => Raw
       [key: string]: unknown
    }
 
