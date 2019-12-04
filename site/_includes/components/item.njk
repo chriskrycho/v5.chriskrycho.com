@@ -19,11 +19,11 @@
 
    <span class='section-label'>Posted:</span>
    <span class='section-content'>
-      This entry was originally posted on {% localeDate date, dateFormat %}.
-      {% if updated is defined %}
-      It was last updated on {% localeDate updated, dateFormat %}.
-      {% endif %}
-      You can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>.
+      This entry was originally posted on <span class='dt-published'>{% localeDate date, dateFormat %}</span>
+      {%- if updated is defined -%}
+      , and last updated on {% localeDate updated, dateFormat %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+      {%- endif -%}
+      .
       Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a>
    </span>
 
