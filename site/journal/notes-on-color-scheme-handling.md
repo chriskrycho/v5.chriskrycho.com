@@ -5,6 +5,7 @@ subtitle: >
 date: 2019-12-07T11:45
 tags:
 - JavaScript
+- TypeScript
 - CSS
 - web design
 
