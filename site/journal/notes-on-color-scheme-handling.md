@@ -2,7 +2,7 @@
 title: Color Schemes!
 subtitle: >
     A few notes on pairing <code>prefers-color-scheme</code> and user configurability.
-date: 2019-11-23T11:45
+date: 2019-12-07T11:45
 tags:
 - JavaScript
 - CSS

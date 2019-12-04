@@ -52,7 +52,7 @@ const setThemeOn = (root: HTMLElement) => (event: Event, ..._: any[]): void => {
    savePreference(theme)
 }
 
-window.onload = () => {
+window.onload = (): void => {
    const root = document.querySelector('html')
    const form = document.querySelector('#theme-chooser')
    if (!root || !form) {
