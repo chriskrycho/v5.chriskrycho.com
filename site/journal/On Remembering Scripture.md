@@ -6,6 +6,7 @@ tags:
   - Bible
   - memory
   - learning
+date: 2019-12-04T20:00
 
 ---
 
