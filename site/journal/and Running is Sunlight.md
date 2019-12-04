@@ -7,6 +7,7 @@ tags:
 - fitness
 - travel
 - productivity
+- running
 - writing
 audience: >
     people interested in discussions of travel and of maintaining good habits.
