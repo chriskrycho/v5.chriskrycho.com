@@ -35,10 +35,7 @@ function toCollection(slug: string): string | undefined {
  */
 function addCollectionFromDir(config: Config, path: string, name: string = path): void {
    config.addCollection(name, collections =>
-      collections
-         .getAllSorted()
-         .reverse()
-         .filter(collection => collection.inputPath.includes(path)),
+      collections.getAll().filter(collection => collection.inputPath.includes(path)),
    )
 }
 

@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 
 {% set c = page.inputPath | toCollection %}
 {%- if collections[c] and collections[c].length -%}
-   {{ archive.list(collections[c] | archiveByYears('DESCENDING')) }}
+   {{ archive.list(collections[c] | archiveByYears('NEW_FIRST')) }}
 {%- else -%}
    {%- include 'blocks/soon.njk' -%}
 {%- endif -%}
