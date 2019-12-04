@@ -23,7 +23,7 @@ The order is careful and the word choice precise. The first things on my persona
 
 The single most important fact of my life is that, to quote [Saint Paul](https://www.esv.org/1+Corinthians+6/): I am not my own, but I was bought with a price—and that price was the death of Jesus Christ, God-the-Son, in my place.[^on-1-cor-6]
 
-[^on-1-cor-6]: Paul was writing specifically about sexual immorality, but the form of his argument is to ground that specific injunction in a very sweeping claim about the Christian life.
+[^on-1-cor-6]: Paul was writing specifically about sexual immorality—but the form of his argument is to ground that specific injunction in a very sweeping, indeed a totalizing, claim about the Christian life.
 
 ### A husband and a dad
 
