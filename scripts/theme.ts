@@ -46,7 +46,7 @@ const loadPreference = (): Theme => {
    return fromStorage && stringIsTheme(fromStorage) ? fromStorage : Theme.System
 }
 
-const setThemeOn = (root: HTMLElement) => (event: Event, ..._: any[]): void => {
+const setThemeOn = (root: HTMLElement) => (event: Event): void => {
    const theme = themeFromInput(event)
    updateRootClass(root, theme)
    savePreference(theme)
