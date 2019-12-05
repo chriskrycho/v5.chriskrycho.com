@@ -406,7 +406,7 @@
          weight: 300;
          size: calc(var(--sans-adjust) * #{ms(0)});
       }
-      @include fancy-block(var(--bg), var(--fg));
+      @include fancy-block(transparent, inherit);
       @include pull-left();
       border-left-color: var(--blockquote-border);
 
@@ -421,6 +421,7 @@
    .note,
    .assumed-audience,
    .callout {
+
       > {
          p,
          ul,
@@ -469,7 +470,8 @@
    @media (min-width: 32.6667rem) {
       .content-block {
          --side-padding: #{ms(-1)};
-         --fancy-width: calc(var(--max-width) + calc(2 * var(--side-padding)));
+         --full-side-padding: calc(2 * var(--side-padding));
+         --fancy-width: calc(var(--max-width) + var(--full-side-padding));
 
          blockquote,
          pre,
@@ -482,6 +484,14 @@
             padding: {
                left: var(--side-padding);
                right: var(--side-padding);
+            }
+
+            blockquote,
+            aside,
+            .note,
+            .assumed-audience,
+            .callout {
+               max-width: calc(100% - var(--full-side-padding));
             }
          }
 

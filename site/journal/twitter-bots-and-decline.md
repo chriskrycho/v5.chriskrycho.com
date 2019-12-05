@@ -2,6 +2,7 @@
 title: Twitter Bots and “Decline”
 subtitle: Picking up a dropped thread from Winning Slowly 7.13
 date: 2019-11-21T10:00:00
+updated: 2019-12-04T17:15
 tags:
 - Winning Slowly
 - social media
@@ -31,5 +32,16 @@ I think we do ourselves and our neighbors a very great disservice when we speak 
 
 What is more, though: I do not think those attendant ills, real and serious though they are, represent the full extent of the outcome of Twitter bots. Neither do I think that Twitter bots have created, undirected, out of the air, the malaise so many people feel. Insofar as some of these problems are “only perception,” that remains a real problem; but more than that, the bots are amplifying pre-existing problems, at the behest of their makers. We owe it to each other to say this clearly and truthfully—to hold accountable those who make and employ these technologies, and to counter their effects.
 
+<div class=note>
+
+Stephen has since responded with a very thoughtful piece: [On Twitter Bots and the Presence of Disinformation][response]. This paragraph in particular gets quite clearly at both what I aimed to get at on the episode and what I gestured at a bit above:
+
+> There’s another sense in which the *presence* of disinformation is real and that presence itself can contribute to a sense of decline. Discussing the *presence* of disinformation as a factor that contributes to a perceived sense of decline counts disinformation as “real.” It is “real” in that it is an actual factor contributing to a perceived sense of decline, despite its content being untrue. Things that are not true, do not exist, or never happened should not worry you; their nonexistence cannot affect you in a material sense. But those things being “untrue” does not necessarily mean that the disinformation does not exist–even if it *should not* exist. And the presence of disinformation can contribute to a perceived sense of decline (and perhaps rightfully so); the actual disinformation can contribute to a perceived sense of decline (but I am saying that this should not be so, and we should fight against this tendency).
+
+I commend [the whole post][response] to you.
+
+</div>
+
 [Winning Slowly 7.13]: https://www.winningslowly.org/7.13/
 [Stephen]: https://stephencarradini.com
+[response]: https://stephencarradini.com/2019/12/on-twitter-bots-and-the-presence-of-disinformation/
