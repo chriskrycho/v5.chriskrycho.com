@@ -24,7 +24,7 @@
    {%- endblock feed_info %}
 
    {# invalid without date #}
-   {%- for item in collections.all | withValidDate | reverse %}
+   {%- for item in collections.all | withValidDate %}
    <entry>
       {# Invalid to send an item without title or description #}
       {% set url = item.url | absoluteUrl(config.url) %}

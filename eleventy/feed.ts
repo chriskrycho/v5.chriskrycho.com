@@ -85,21 +85,13 @@ interface EleventyData {
 export class JSONFeed implements EleventyClass {
    data(): ReturnType<NonNullable<EleventyClass['data']>> {
       return {
-         excludeFromEleventyCollections: true,
+         eleventyExcludeFromCollections: true,
          permalink: (/* _: EleventyData */): string => '/feed.json',
       }
    }
 
    render({ collections, config, page }: EleventyData): string {
-      return JSON.stringify(
-         jsonFeed(
-            collections.all
-               .filter(item => !item.data.excludeFromEleventyCollections)
-               .reverse(),
-            config,
-            page.url,
-         ),
-      )
+      return JSON.stringify(jsonFeed(collections.all.reverse(), config, page.url))
    }
 }
 
