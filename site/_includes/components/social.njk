@@ -41,16 +41,16 @@
 
 <meta property="og:type" content="article" />
 
-{%- if page.data.date is defined %}
-<meta property="article:published_time" content="{{page.data.date | isoDate}}" />
+{%- if page.date is defined %}
+<meta property="article:published_time" content="{{page.date | isoDate}}" />
 {%- else %}
 <meta property="article:published_time" content="{{page.date | isoDate}}" />
 {%- endif %}
 
 {%- if page.data.updated is defined %}
 <meta property="article:modified_time" content="{{page.data.updated | isoDate}}" />
-{%- elif page.data.date is defined %}
-<meta property="article:modified_time" content="{{page.data.date | isoDate}}" />
+{%- elif page.date is defined %}
+<meta property="article:modified_time" content="{{page.date | isoDate}}" />
 {%- else %}
 <meta property="article:modified_time" content="{{page.date | isoDate}}" />
 {%- endif %}

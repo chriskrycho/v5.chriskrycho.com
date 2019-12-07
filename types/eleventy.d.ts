@@ -109,7 +109,7 @@ export interface Page {
 
       [Content Dates]: https://www.11ty.io/docs/dates/
      */
-   date: string
+   date: string | Date
 }
 
 /** An `Item` is just like a `Page`, but with the actual data from render available. */

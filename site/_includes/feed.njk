@@ -33,14 +33,14 @@
          {%- if item.data.title -%}
             {{item.data.title}}
          {%- else -%}
-            {% localeDate item.data.date, 'yyyy.MM.dd.HHmm' %}
+            {% localeDate item.date, 'yyyy.MM.dd.HHmm' %}
          {%- endif -%}
       </title>
       {% if item.data.updated %}
       <updated>{{item.data.updated | isoDate}}</updated>
-      <published>{{item.data.date | isoDate}}</published>
+      <published>{{item.date | isoDate}}</published>
       {% else %}
-      <updated>{{item.data.date | isoDate}}</updated>
+      <updated>{{item.date | isoDate}}</updated>
       {% endif %}
       <link href='{{url}}' />
       {% if item.data.summary %}

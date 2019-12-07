@@ -60,7 +60,7 @@ function config(config: Config): UserConfig {
    config.addFilter('toDateTime', toDateTime)
    config.addFilter('siteTitle', siteTitle)
    config.addFilter('withValidDate', (items: Item[]) =>
-      items.filter(item => canParseDate(item.data.date)),
+      items.filter(item => canParseDate(item.date)),
    )
    config.addFilter('current', currentPage)
    config.addFilter('editLink', PageLinks.edit)

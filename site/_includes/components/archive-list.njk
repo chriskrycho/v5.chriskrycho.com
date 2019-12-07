@@ -12,7 +12,7 @@
          <ul class='month-items'>
          {%- for item in month.items %}
             <li class='item'>
-               <h4 class='item-date date'>{% localeDate item.data.date, 'dd' %}</h4>
+               <h4 class='item-date date'>{% localeDate item.date, 'dd' %}</h4>
                <h5 class='item-title'>
                   <a href='{{item.url}}' class='item-permalink'>
                      {{item.data.title | safe}}

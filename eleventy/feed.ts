@@ -31,7 +31,7 @@ const contentHtmlFor = (item: Item): string =>
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
 const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedItem> =>
-   canParseDate(item.data.date)
+   canParseDate(item.date)
       ? just<FeedItem>({
            id: absoluteUrl(item.url, config.url),
            author: {
@@ -40,7 +40,7 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
            },
            title: item.data.title as string | undefined,
            url: absoluteUrl(item.url, config.url),
-           date_published: isoDate(item.data.date),
+           date_published: isoDate(item.date),
            content_html: contentHtmlFor(item),
            summary: optionalString(item.data.summary ?? item.data.subtitle),
            date_modified:
@@ -91,7 +91,15 @@ export class JSONFeed implements EleventyClass {
    }
 
    render({ collections, config, page }: EleventyData): string {
-      return JSON.stringify(jsonFeed(collections.all.slice().reverse(), config, page.url))
+      return JSON.stringify(
+         jsonFeed(
+            collections.all
+               .filter(item => !item.data.excludeFromEleventyCollections)
+               .reverse(),
+            config,
+            page.url,
+         ),
+      )
    }
 }
 

@@ -73,9 +73,9 @@ export default function archiveByYears(items: Item[], order = Order.NewFirst): Y
             .map(([, month]) => month)
             .map(month => {
                month.items = month.items.slice().sort((a, b) => {
-                  if (canParseDate(a.data.date) && canParseDate(b.data.date)) {
-                     const aDate = fromDateOrString(a.data.date).toSeconds()
-                     const bDate = fromDateOrString(b.data.date).toSeconds()
+                  if (canParseDate(a.date) && canParseDate(b.date)) {
+                     const aDate = fromDateOrString(a.date).toSeconds()
+                     const bDate = fromDateOrString(b.date).toSeconds()
                      return order === Order.OldFirst ? aDate - bDate : bDate - aDate
                   } else {
                      return 0
