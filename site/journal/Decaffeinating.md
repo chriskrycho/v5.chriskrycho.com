@@ -15,7 +15,7 @@ date: 2019-12-08T17:20
 
 Thanksgiving week, I went off coffee cold turkey, and it *hurt*. It literally hurt.
 
-Caffeine, though we don’t often think of it in these terms, is a drug—specifically, a stimulant.[^why] As a drug, it has withdrawal symptoms. There is of course the fatigue you’d expect, given caffeine is a stimulant. As bad or worse for me, though, are the headaches. (I hear the same from most people. The headaches are *bad*.) For over half a decade, I have been drinking an 8–10-ounce cup of coffee every morning. It is not a lot, but it is *consistent*. My body has gotten used to the hit. More than that: it has come to *rely* on the hit. Take away the daily dose, and the withdrawals set in.
+Caffeine, though we don’t often think of it in these terms, is a drug.[^why] As a drug, it has withdrawal symptoms. There is of course the fatigue you’d expect (caffeine is a stimulant). Even worse for me, though—and I hear the same from most other coffee-drinkers I talk to—are the headaches. The headaches are *bad*. For over half a decade, I have been drinking an 8–10-ounce cup of coffee every morning. It is not a lot, but it is *consistent*. My body has gotten used to—worse, come to depend on—the daily dose. Take away the hit, and the withdrawals set in.
 
 Here’s the thing, though: I don’t normally drink coffee for the caffeine content the way many people do. I drink coffee because six and a half years ago I learned from [a genuinely great coffee shop][jubala] just how good coffee can be. That it’s a thing you might want to drink simply because it tastes good, the way you eat some foods not only because of your need for sustenance but for the joy of a delicious meal.
 
