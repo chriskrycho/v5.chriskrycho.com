@@ -9,7 +9,7 @@ tags:
   - travel
 summary: >
     Thanksgiving week, I went off coffee cold turkey, and it hurt. It literally hurt. Caffeine is a drug, and it has withdrawal symptoms. So I cut it out entirely—but I’m still drinking coffee
-date: 2019-12-08T17:20
+date: 2019-12-08T19:45
 
 ---
 
@@ -23,7 +23,7 @@ The result: when the coffee around isn’t to my taste, I just don’t drink it!
 
 This past Thanksgiving week was not the first time I have experienced caffeine withdrawals. Hopefully, though, it will be the last. When we got back from that trip, I opted to *stay* off caffeine. I want to be at full capacity whether or not I have light-roast single-origin beans and a good grinder and a pour-over setup. When I want coffee, I am drinking decaf.
 
-This choice comes at a cost. The process of decaffeination cuts out some of coffee’s flavor. The best decaf in the world is *good*, but the best regular coffee in the world is *much* better. This in turn puts coffee producers in a bind. One half of the bind is purely economic: reduced flavor translates fairly directly to reduced demand, even leaving aside the fact that most coffee drinkers *want* the caffeine. The other half is the matter of craft: decaffeinating means reducing the flavor, which means reducing the goodness of the coffee![^yum] As a result, most decaf coffees are blends. A few places have started doing occasional batches of single-origin decafs, but inconsistently, and never of their very best offerings.[^shh]
+This choice comes at a cost. The process of decaffeination cuts out some of coffee’s flavor. The best decaf in the world is *good*, but the best regular coffee in the world is *much* better. This in turn puts coffee producers in a bind. One half of the bind is purely economic: reduced flavor translates fairly directly to reduced demand, even leaving aside the fact that most coffee drinkers *want* the caffeine. The other half is the matter of craft: decaffeinating means reducing the flavor, which means reducing the goodness of the coffee! As a result, most decaf coffees are blends. A few places have started doing occasional batches of single-origin decafs, but inconsistently, and never of their very best offerings.[^shh]
 
 I hope over time that changes. Perhaps more coffee lovers will come to want out of the caffeine addiction and increase economic demand. Perhaps technological innovations will allow us to decaffeinate without the flavor loss, *enabling* more people who love coffee for its goodness to drink it without caffeine.
 
