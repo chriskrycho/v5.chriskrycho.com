@@ -10,6 +10,7 @@ tags:
 summary: >
     Thanksgiving week, I went off coffee cold turkey, and it hurt. It literally hurt. Caffeine is a drug, and it has withdrawal symptoms. So I cut it out entirely—but I’m still drinking coffee
 date: 2019-12-08T19:45
+updated: 2019-12-08T20:20
 
 ---
 
@@ -25,7 +26,7 @@ This past Thanksgiving week was not the first time I have experienced caffeine w
 
 This choice comes at a cost. The process of decaffeination cuts out some of coffee’s flavor. The best decaf in the world is *good*, but the best regular coffee in the world is *much* better. This in turn puts coffee producers in a bind. One half of the bind is purely economic: reduced flavor translates fairly directly to reduced demand, even leaving aside the fact that most coffee drinkers *want* the caffeine. The other half is the matter of craft: decaffeinating means reducing the flavor, which means reducing the goodness of the coffee! As a result, most decaf coffees are blends. A few places have started doing occasional batches of single-origin decafs, but inconsistently, and never of their very best offerings.[^shh]
 
-I hope over time that changes. Perhaps more coffee lovers will come to want out of the caffeine addiction and increase economic demand. Perhaps technological innovations will allow us to decaffeinate without the flavor loss, *enabling* more people who love coffee for its goodness to drink it without caffeine.
+I hope over time that changes. Perhaps more coffee lovers will come to want out of the caffeine addiction and increase economic demand. Perhaps technological innovations will allow us to decaffeinate without the flavor loss, *enabling* more people who love coffee for its goodness to drink it without caffeine. In the meantime, I’ll get by with good decaf.
 
 There have been some unexpected upsides to dropping caffeine. I have long been a morning person anyway, but eliminating the caffeine dependency has made me much *more* awake and alert in the mornings. It seems that eliminating the need for a chemical stimulant has returned my body to a healthier base state. I also now get to enjoy coffee whenever I want, because decaf doesn’t keep me up at night. Some days I have a cup with breakfast; some days I don’t. Some days I make a cup at 4pm. Some days I have three cups! So far I have still had some decaf every day, but I also eat eggs and drink milk every day; the point is that I don’t *need* it.
 
