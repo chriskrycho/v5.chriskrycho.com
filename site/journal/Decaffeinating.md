@@ -8,9 +8,9 @@ tags:
   - habits
   - travel
 summary: >
-    Thanksgiving week, I went off coffee cold turkey, and it hurt. It literally hurt. Caffeine is a drug, and it has withdrawal symptoms. So I cut it out entirely—but I’m still drinking coffee
+    Thanksgiving week, I went off coffee cold turkey, and it hurt. It literally hurt. Caffeine is a drug, and it has withdrawal symptoms. So I cut it out entirely—but I’m still drinking coffee.
 date: 2019-12-08T19:45
-updated: 2019-12-08T20:20
+updated: 2019-12-09T20:35
 
 ---
 
