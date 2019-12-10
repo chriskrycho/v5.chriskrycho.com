@@ -2,13 +2,14 @@
 title: On Remembering Scripture
 subtitle: Time to stop leaning so hard on search.
 date: 2019-12-04T13:10
-updated: 2019-12-04T14:18
+updated: 2019-12-09T20:34
 tags:
 - technology
 - Bible
 - theology
 - memory
 - learning
+- habits
 
 ---
 I recently got fed up with my inability to remember the location of specific passages of Scripture. I have a good memory, but it has been failing me here, and the reason why became very obvious once I started thinking about it: easily-accessible digital search. For years, now, I have had digital Bibles ready to hand ([Accordance](https://www.accordancebible.com), [Logos](https://www.logos.com), [the ESV website](https://www.esv.org/Matthew+1/), you name it). These are wonderful tools in many ways, and all of them have very functional search engines that make it easy to go from remembering a phrase to reading the passage in moments. I’m grateful!

@@ -3,12 +3,15 @@ title: …but Running is Sunlight
 subtitle: >
     (Why yes, that is a riff on Superman.)
 date: 2019-11-27T21:00
+updated: 2019-12-09T20:33
 tags:
-- fitness
-- travel
-- productivity
-- running
-- writing
+    - fitness
+    - travel
+    - productivity
+    - running
+    - writing
+    - health
+    - habits
 audience: >
     people interested in discussions of travel and of maintaining good habits.
 
