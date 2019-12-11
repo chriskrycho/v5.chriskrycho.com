@@ -1,5 +1,6 @@
 import spacewell, { Options } from '../lib/spacewell'
 import { Config } from 'eleventy'
+import cheerio from 'cheerio'
 
 type Plugin = (eleventyConfig: Config, pluginNamespace?: string) => string | void
 type Content = Parameters<Config['addTransform']>[0]
@@ -8,8 +9,21 @@ export default function plugin(options: Options): Plugin {
    const run = spacewell(options)
 
    const transform: Plugin = (eleventyConfig, pluginNamespace) => {
-      const t = (content: Content, outputPath: string): string =>
-         outputPath.endsWith('.html') ? run(content) : content
+      const t = (content: Content, outputPath: string): string => {
+         if (!outputPath.endsWith('.html')) {
+            return content
+         }
+
+         const dom = cheerio.load(content)
+         const body = dom('body').html()
+
+         if (body) {
+            dom('body').replaceWith(run(body))
+            return dom.html()
+         }
+
+         return content
+      }
 
       return pluginNamespace
          ? eleventyConfig.namespace(pluginNamespace, () => {
