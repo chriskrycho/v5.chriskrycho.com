@@ -4,6 +4,7 @@ subtitle: Kim Stanley Robinson’s imagination is provocative in the best ways.
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg
 summary: >
     Red Mars is not a perfect book—but its ambition is astounding, and it made me think hard about things down here on earth (the way the very best sci-fi does).
+audience: readers of sci-fi (…or people who aren’t, but who just like to be challenged in their thinking).
 tags:
     - science fiction
     - ethics
