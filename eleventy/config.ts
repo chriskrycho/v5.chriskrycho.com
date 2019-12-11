@@ -14,10 +14,7 @@ import typeset from './plugin-typeset'
 import siteTitle from './site-title'
 import * as PageLinks from './page-links'
 
-/**
-   @param {string} slug
-   @return {string | undefined}
-*/
+/** Get the collection corresponding to a given path slug */
 function toCollection(slug: string): string | undefined {
    return path
       .dirname(slug.trim())
