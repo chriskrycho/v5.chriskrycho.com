@@ -8,11 +8,11 @@
    <title>{{title | siteTitle(config) | safe}}</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-   {# TODO: can I (a) inline all of this or (b) Critical CSS it up? #}
-   <link rel='stylesheet' type='text/css' media='screen' href='/style.css' />
+   <style type='text/css'>
+      {% include 'styles/style.css' %}
+      {% include 'styles/fonts.css' %}
+   </style>
 
-   <link rel='preload' as='style' type='text/css' media='screen' href='/fonts.css'>
-   <link rel='stylesheet' type='text/css' media='screen' href='/fonts.css'>
    <link rel="preload" as='style' href="https://use.typekit.net/azk8hwe.css">
    <link rel="stylesheet" href="https://use.typekit.net/azk8hwe.css">
 

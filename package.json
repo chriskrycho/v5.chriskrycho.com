@@ -12,19 +12,23 @@
    },
    "devDependencies": {
       "@11ty/eleventy": "^0.9.0",
+      "@types/cheerio": "^0.22.15",
       "@types/highlight.js": "^9.12.3",
       "@types/luxon": "^1.15.2",
       "@types/markdown-it": "^0.0.9",
       "@types/markdown-it-anchor": "^4.0.3",
       "@types/node": "^12.12.7",
-      "@types/sass": "^1.16.0",
       "@types/serve-static": "^1.13.2",
       "@types/uslug": "^1.0.0",
       "@typescript-eslint/eslint-plugin": "^2.7.0",
       "@typescript-eslint/parser": "^2.7.0",
+      "cheerio": "^1.0.0-rc.3",
+      "del": "^5.1.0",
       "eslint": "6.0.1",
       "eslint-config-prettier": "^6.5.0",
       "eslint-plugin-prettier": "^3.1.1",
+      "gulp": "^4.0.2",
+      "gulp-sass": "^4.0.2",
       "highlight.js": "9.16.2",
       "luxon": "^1.17.2",
       "markdown-it": "^10.0.0",
@@ -35,7 +39,6 @@
       "markdown-it-implicit-figures": "^0.9.0",
       "markdown-it-sup": "^1.0.0",
       "prettier": "^1.19.1",
-      "sass": "1.22.1",
       "true-myth": "^3.0.0",
       "ts-node": "^8.5.2",
       "typescript": "^3.7.2",
@@ -69,7 +72,7 @@
       "trailingComma": "all"
    },
    "scripts": {
-      "build": "yarn eleventy",
-      "serve": "yarn eleventy --serve"
+      "build": "yarn gulp all & yarn eleventy",
+      "serve": "yarn gulp watch & yarn eleventy --serve"
    }
 }

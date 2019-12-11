@@ -349,7 +349,9 @@
       }
    }
 
-   h3 + h4, h4 + h5, h5 + h6 {
+   h3 + h4,
+   h4 + h5,
+   h5 + h6 {
       margin-top: 1rem;
    }
 
@@ -425,7 +427,6 @@
    .note,
    .assumed-audience,
    .callout {
-
       > {
          p,
          ul,
@@ -466,6 +467,40 @@
          line-height: ms(2);
          font-size: ms(-2);
          -webkit-font-smoothing: antialiased;
+      }
+   }
+
+   table {
+      max-width: var(--max-width);
+
+      thead {
+         font-family: var(--sans);
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      td,
+      th {
+         &:first-child {
+            text-align: right;
+         }
+
+         &:last-child {
+            text-align: left;
+         }
+      }
+
+      th {
+         padding: 0 ms(-4);
+      }
+
+      td {
+         padding: ms(-8) ms(-4);
+
+         &:first-child {
+            font-weight: bold;
+            min-width: ms(8);
+         }
       }
    }
 }
