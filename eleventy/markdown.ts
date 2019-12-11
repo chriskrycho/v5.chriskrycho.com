@@ -1,5 +1,6 @@
 import { getLanguage, highlight as _highlight } from 'highlight.js'
 import markdownIt from 'markdown-it'
+import abbr from 'markdown-it-abbr'
 import anchor, { AnchorOptions } from 'markdown-it-anchor'
 import defList from 'markdown-it-deflist'
 import footnotes from 'markdown-it-footnote'
@@ -7,10 +8,10 @@ import implicitFigures from 'markdown-it-implicit-figures'
 import sup from 'markdown-it-sup'
 import Core from 'markdown-it/lib/parser_core'
 import Token from 'markdown-it/lib/token'
+import div from 'markdown-it-div'
 import { env } from 'process'
 import { Result } from 'true-myth'
 import slugify from 'uslug'
-import abbr from 'markdown-it-abbr'
 
 type HighlightError = {
    short: string
@@ -93,6 +94,7 @@ const md = markdownIt({
       slugify,
    })
    .use(abbr)
+   .use(div)
 
 // eslint-disable-next-line @typescript-eslint/camelcase
 md.renderer.rules.footnote_caption = (tokens, idx): string => {

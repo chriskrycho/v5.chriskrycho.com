@@ -16,7 +16,11 @@ date: 2019-12-10T23:30
 
 ---
 
-![<cite>Red Mars</cite>, Kim Stanley Robinson (1992)](https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg "cover of Red Mars")
+::: book
+![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg "cover of Red Mars")
+
+<cite>Red Mars</cite>, Kim Stanley Robinson (1992)
+:::
 
 
 A few months ago, I [assigned myself][ws-7.10] some serious science fiction reading: Kim Stanley Robinson’s Mars Trilogy. I’ve [read][icehenge] a bit of KSR’s work before, and found it thought-provoking in the best ways. I hoped that his Mars trilogy would likewise make me think hard about things. I’m only through the first book, but I can say: so far, it has lived up to that hope.
