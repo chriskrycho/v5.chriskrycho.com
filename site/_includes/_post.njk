@@ -14,8 +14,8 @@
    {%- endif %}
 {%- endblock %}
 
-{% if book %}
 {% block content %}
+{% if book %}
 <figure class='book-review'>
    <img src='{{book.cover}}' alt='cover for {{book.title}}' class='book-review__cover' />
    <figcaption class='book-review__details'>
@@ -29,9 +29,9 @@
       </section>
    </figcaption>
 </figure>
+{% endif %}
 {{ super() }}
 {% endblock %}
-{% endif %}
 
 {% block after_content %}
    {{item.meta(title, page.date, tags, updated, page.inputPath, thanks)}}
