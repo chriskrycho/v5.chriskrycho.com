@@ -23,11 +23,15 @@ The order is careful and the word choice precise. The first things on my persona
 
 The single most important fact of my life is that, to quote [Saint Paul](https://www.esv.org/1+Corinthians+6/): I am not my own, but I was bought with a price—and that price was the death of Jesus Christ, God-the-Son, in my place.[^on-1-cor-6]
 
-[^on-1-cor-6]: Paul was writing specifically about sexual immorality—but the form of his argument is to ground that specific injunction in a very sweeping, indeed a totalizing, claim about the Christian life.
+I am specifically a Christian in the historic Reformed tradition—aiming always to be irenic, catholic, and orthodox. We’re glad members of [Forestgate Presbyterian Church][forestgate] in Northern Colorado Springs, where I serve in various lay leadership roles.
 
 ### A husband and a dad
 
 <!-- TODO: picture of family -->
+
+After following Christ, my family is far and away the most important part of my life. Jaimie and I got married in July 2009, and our daughters Elayne and Kate were born in May 2012 and May 2014.
+
+(This site focuses on my public *thinking*; for occasional family updates see [Not a Hint of Hyperbole](https://krycho.com).)
 
 ## By trade: a software engineer
 
@@ -35,3 +39,6 @@ The single most important fact of my life is that, to quote [Saint Paul](https:/
 
 ## By vocation
 
+[forestgate]: https://forestgate.org
+
+[^on-1-cor-6]: Paul was writing specifically about sexual immorality—but the form of his argument is to ground that specific injunction in a very sweeping, indeed a totalizing, claim about the Christian life.
