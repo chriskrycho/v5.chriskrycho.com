@@ -14,6 +14,25 @@
    {%- endif %}
 {%- endblock %}
 
+{% if book %}
+{% block content %}
+<figure class='book-review'>
+   <img src='{{book.cover}}' alt='cover for {{book.title}}' class='book-review__cover' />
+   <figcaption class='book-review__details'>
+      <section class='book-review__about'>
+         <cite>{{book.title}}</cite>,
+         {{book.author}} ({{book.year}})
+      </section>
+      <section class='book-review__summary'>
+         <b>{{book.rating}}</b><br>
+         {{book.review | safe}}
+      </section>
+   </figcaption>
+</figure>
+{{ super() }}
+{% endblock %}
+{% endif %}
+
 {% block after_content %}
    {{item.meta(title, page.date, tags, updated, page.inputPath, thanks)}}
 {% endblock %}

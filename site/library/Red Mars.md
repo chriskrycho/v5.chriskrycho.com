@@ -1,10 +1,15 @@
 ---
 title: Red Mars
 subtitle: Kim Stanley Robinson’s imagination is provocative in the best ways.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg
-summary: >
-    Red Mars is not a perfect book—but its ambition is astounding, and it made me think hard about things down here on earth (the way the very best sci-fi does).
 audience: readers of sci-fi (…or people who aren’t, but who just like to be challenged in their thinking).
+book:
+    title: Red Mars
+    cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg
+    author: Kim Stanley Robinson
+    year: 1992
+    rating: Recommended
+    review: >
+        <cite>Red Mars</cite> is not a perfect book—but its ambition is astounding, and it made me think hard about things down here on earth (the way the very best sci-fi does).
 tags:
     - science fiction
     - ethics
@@ -15,13 +20,6 @@ tags:
 date: 2019-12-10T23:30
 
 ---
-
-::: book
-![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg "cover of Red Mars")
-
-<cite>Red Mars</cite>, Kim Stanley Robinson (1992)
-:::
-
 
 A few months ago, I [assigned myself][ws-7.10] some serious science fiction reading: Kim Stanley Robinson’s Mars Trilogy. I’ve [read][icehenge] a bit of KSR’s work before, and found it thought-provoking in the best ways. I hoped that his Mars trilogy would likewise make me think hard about things. I’m only through the first book, but I can say: so far, it has lived up to that hope.
 

@@ -118,8 +118,38 @@
       }
    }
 
-   .book {
-      
+   .book-review {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: calc(var(--max-width) - 2em);
+      margin: {
+         top: 1em;
+         bottom: ms(3);
+      }
+
+      &__cover {
+         max-width: calc(40vh / 2);
+         text-align: right;
+      }
+
+      &__details {
+         margin-left: 1em;
+         text-align: left;
+      }
+
+      &__about {
+         margin-bottom: 1em;
+      }
+
+      &__summary {
+         font-weight: 300;
+
+         b {
+            font-weight: 600;
+         }
+      }
    }
 
    a {

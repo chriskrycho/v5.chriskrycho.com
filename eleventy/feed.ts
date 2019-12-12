@@ -1,7 +1,7 @@
 /* eslint @typescript-eslint/camelcase: off */
 
 import { Maybe } from 'true-myth'
-import { EleventyClass, Item } from '../types/eleventy'
+import { EleventyClass, Item, Dict } from '../types/eleventy'
 import Feed, { FeedItem } from '../types/json-feed'
 import absoluteUrl from './absolute-url'
 import { canParseDate } from './date-time'
@@ -22,10 +22,52 @@ function optionalString(value: unknown): string | undefined {
    return typeof value === 'string' ? value : undefined
 }
 
-const contentHtmlFor = (item: Item): string =>
-   typeof item.data.audience === 'string'
-      ? `<p><b>Assumed audience:</b> ${item.data.audience}</p>${item.templateContent}`
-      : item.templateContent
+interface Book {
+   title: string
+   author: string
+   year?: number | string
+   review: string
+   rating: string
+   cover?: string
+}
+
+function isBook(maybeBook: unknown): maybeBook is Book {
+   if (!maybeBook || typeof maybeBook !== 'object') {
+      return false
+   }
+
+   let maybe = maybeBook as Dict<unknown>
+
+   return (
+      typeof maybe.title === 'string' &&
+      typeof maybe.author === 'string' &&
+      typeof maybe.review === 'string' &&
+      typeof maybe.rating === 'string' &&
+      (maybe.year
+         ? typeof maybe.year === 'number' || typeof maybe.year === 'string'
+         : true) &&
+      (maybe.cover ? typeof maybe.cover === 'string' : true)
+   )
+}
+
+function describe(book: Book): string {
+   let year = book.year ? ` (${book.year})` : ''
+   return `
+      <p><cite>${book.title}</cite>, ${book.author}${year}</p>
+      <p><b>${book.rating}:</b> ${book.review}</p>
+   `
+}
+
+const contentHtmlFor = (item: Item): string => {
+   const audience =
+      typeof item.data.audience === 'string'
+         ? `<p><b>Assumed audience:</b> ${item.data.audience}</p>`
+         : ''
+
+   const bookInfo = isBook(item.data.book) ? describe(item.data.book) : ''
+
+   return audience + bookInfo + item.templateContent
+}
 
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
@@ -47,7 +89,9 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
               typeof item.data.updated === 'string' || item.data.updated instanceof Date
                  ? isoDate(item.data.updated)
                  : undefined,
-           image: optionalString(item.data.image),
+           image: optionalString(
+              item.data.image ?? (item.data.book as undefined | Dict<string>)?.cover,
+           ),
            external_url: optionalString(item.data.link),
            tags: Array.isArray(item.data.tags) ? item.data.tags : [],
            banner_image: optionalString(item.data.splash),

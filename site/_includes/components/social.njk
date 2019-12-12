@@ -31,6 +31,8 @@
 
 {%- if page.data.summary is defined -%}
    {%- set description = page.data.summary -%}
+{%- elif page.data.book.review is defined -%}
+   {%- set description = page.data.book.review | striptags(true) -%}
 {%- elif page.data.subtitle is defined -%}
    {%- set description = page.data.subtitle -%}
 {%- else -%}
@@ -63,6 +65,9 @@
 {%- if page.data.image -%}
    <meta property="og:image" content="{{page.data.image}}" />
    <meta name="twitter:image" content="{{page.data.image}}" />
+{%- elif page.data.book.cover -%}
+   <meta property="og:image" content="{{page.data.book.cover}}" />
+   <meta name="twitter:image" content="{{page.data.book.cover}}" />
 {%- else -%}
    {{logo}}
 {%- endif -%}

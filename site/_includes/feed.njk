@@ -45,6 +45,8 @@
       <link href='{{url}}' />
       {% if item.data.summary %}
       <summary type="html">{{item.data.summary}}</summary>
+      {% elif item.data.book.review %}
+      <summary type="html">{{item.data.book.review}}</summary>
       {% elif item.data.subtitle %}
       <summary type="html">{{item.data.subtitle}}</summary>
       {% endif %}
@@ -52,6 +54,13 @@
          {%- if item.data.audience -%}
             &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{item.data.audience}}&lt;/p&gt;
          {%- endif -%}
+         {% if item.data.book %}
+            {% set book = item.data.book %}
+            &lt;p&gt;
+               &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
+               &lt;b&gt;{{book.rating}}:&lt;/b&gt; {{book.review | inlineMd}}
+            &lt;/p&gt;
+         {% endif %}
          {{item.templateContent}}
       </content>
       {% include 'blocks/rss-author.njk' %}
