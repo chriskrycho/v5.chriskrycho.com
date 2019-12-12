@@ -1,5 +1,3 @@
-import path from 'path'
-
 import { Config, Item, UserConfig } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
 import archiveByYear from './archive-by-year'
@@ -9,18 +7,11 @@ import toDateTime, { canParseDate } from './date-time'
 import isoDate from './iso-date'
 import localeDate from './locale-date'
 import markdown from './markdown'
+import * as PageLinks from './page-links'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
 import siteTitle from './site-title'
-import * as PageLinks from './page-links'
-
-/** Get the collection corresponding to a given path slug */
-function toCollection(slug: string): string | undefined {
-   return path
-      .dirname(slug.trim())
-      .split(path.sep)
-      .pop()
-}
+import toCollection from './to-collection'
 
 /**
    Use a path to create a collection from all items contained within it.

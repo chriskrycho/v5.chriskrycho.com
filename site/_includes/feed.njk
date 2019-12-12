@@ -30,7 +30,8 @@
       {% set url = item.url | absoluteUrl(config.url) %}
       <id>{{url}}</id>
       <title type="html">
-         {%- if item.data.title -%}
+         [{{item.inputPath | toCollection}}]
+         {% if item.data.title -%}
             {{item.data.title}}
          {%- else -%}
             {% localeDate item.date, 'yyyy.MM.dd.HHmm' %}

@@ -1,12 +1,13 @@
 /* eslint @typescript-eslint/camelcase: off */
 
 import { Maybe } from 'true-myth'
-import { EleventyClass, Item, Dict } from '../types/eleventy'
+import { Dict, EleventyClass, Item } from '../types/eleventy'
 import Feed, { FeedItem } from '../types/json-feed'
 import absoluteUrl from './absolute-url'
 import { canParseDate } from './date-time'
 import isoDate from './iso-date'
 import siteTitle from './site-title'
+import toCollection from './to-collection'
 
 const { Just, just, nothing } = Maybe
 
@@ -69,6 +70,12 @@ const contentHtmlFor = (item: Item): string => {
    return audience + bookInfo + item.templateContent
 }
 
+const itemTitle = (item: Item): string | undefined => {
+   const sectionMarker = toCollection(item.inputPath)
+   const { title } = item.data
+   return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined
+}
+
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
@@ -80,7 +87,7 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
               name: config.author.name,
               url: config.url,
            },
-           title: item.data.title as string | undefined,
+           title: itemTitle(item),
            url: absoluteUrl(item.url, config.url),
            date_published: isoDate(item.date),
            content_html: contentHtmlFor(item),
