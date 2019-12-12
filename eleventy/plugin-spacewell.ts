@@ -5,8 +5,10 @@ import cheerio from 'cheerio'
 type Plugin = (eleventyConfig: Config, pluginNamespace?: string) => string | void
 type Content = Parameters<Config['addTransform']>[0]
 
+const PAGE_CONTENT_SELECTOR = '.content'
+
 export default function plugin(options: Options): Plugin {
-   const run = spacewell(options)
+   const spacedWell = spacewell(options)
 
    const transform: Plugin = (eleventyConfig, pluginNamespace) => {
       const t = (content: Content, outputPath: string): string => {
@@ -15,10 +17,10 @@ export default function plugin(options: Options): Plugin {
          }
 
          const dom = cheerio.load(content)
-         const body = dom('body').html()
+         const pageContent = dom(PAGE_CONTENT_SELECTOR).html()
 
-         if (body) {
-            dom('body').replaceWith(run(body))
+         if (pageContent) {
+            dom(PAGE_CONTENT_SELECTOR).replaceWith(spacedWell(pageContent))
             return dom.html()
          }
 
