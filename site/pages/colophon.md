@@ -1,7 +1,6 @@
 ---
 title: Colophon
 subtitle: Or, how this site is made.
-layout: colophon.njk
 ---
 
 ## Implementation
