@@ -115,7 +115,7 @@ export interface Page {
 /** An `Item` is just like a `Page`, but with the actual data from render available. */
 interface Item extends Page {
    /** all data for this piece of content (includes any data inherited from layouts) */
-   data: Dict<unknown>
+   data?: Dict<unknown>
 
    /** the rendered content of this template. This does *not• include layout wrappers */
    templateContent: string

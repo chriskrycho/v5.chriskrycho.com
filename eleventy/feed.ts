@@ -61,18 +61,19 @@ function describe(book: Book): string {
 
 const contentHtmlFor = (item: Item): string => {
    const audience =
-      typeof item.data.audience === 'string'
+      typeof item.data?.audience === 'string'
          ? `<p><b>Assumed audience:</b> ${item.data.audience}</p>`
          : ''
 
-   const bookInfo = isBook(item.data.book) ? describe(item.data.book) : ''
+   const book = item.data?.book
+   const bookInfo = isBook(book) ? describe(book) : ''
 
    return audience + bookInfo + item.templateContent
 }
 
 const itemTitle = (item: Item): string | undefined => {
    const sectionMarker = toCollection(item.inputPath)
-   const { title } = item.data
+   const { title } = item.data ?? {}
    return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined
 }
 
@@ -91,17 +92,17 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
            url: absoluteUrl(item.url, config.url),
            date_published: isoDate(item.date),
            content_html: contentHtmlFor(item),
-           summary: optionalString(item.data.summary ?? item.data.subtitle),
+           summary: optionalString(item.data?.summary ?? item.data?.subtitle),
            date_modified:
-              typeof item.data.updated === 'string' || item.data.updated instanceof Date
+              typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
                  ? isoDate(item.data.updated)
                  : undefined,
            image: optionalString(
-              item.data.image ?? (item.data.book as undefined | Dict<string>)?.cover,
+              item.data?.image ?? (item.data?.book as undefined | Dict<string>)?.cover,
            ),
-           external_url: optionalString(item.data.link),
-           tags: Array.isArray(item.data.tags) ? item.data.tags : [],
-           banner_image: optionalString(item.data.splash),
+           external_url: optionalString(item.data?.link),
+           tags: Array.isArray(item.data?.tags) ? item.data?.tags : [],
+           banner_image: optionalString(item.data?.splash),
         })
       : nothing()
 
@@ -110,9 +111,14 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
 
    @param items The collection of items from 11ty
  */
-const jsonFeed = (items: Item[], config: SiteConfig, permalink: string): Feed => ({
+const jsonFeed = (
+   items: Item[],
+   config: SiteConfig,
+   permalink: string,
+   title: string,
+): Feed => ({
    version: 'https://jsonfeed.org/version/1',
-   title: siteTitle(config.title.normal, config),
+   title: siteTitle(title, config),
    home_page_url: config.url,
    feed_url: absoluteUrl(permalink, config.url),
    description: config.description,
@@ -134,15 +140,23 @@ interface EleventyData {
 }
 
 export class JSONFeed implements EleventyClass {
+   declare collection?: string
+   declare title?: string
+
    data(): ReturnType<NonNullable<EleventyClass['data']>> {
       return {
          eleventyExcludeFromCollections: true,
-         permalink: (/* _: EleventyData */): string => '/feed.json',
+         permalink: (/* _: EleventyData */): string =>
+            this.collection ? `/${this.collection}/feed.json` : '/feed.json',
       }
    }
 
    render({ collections, config, page }: EleventyData): string {
-      return JSON.stringify(jsonFeed(collections.all.reverse(), config, page.url))
+      const collection = this.collection ?? 'all'
+      const title = this.title ?? config.title.normal
+      return JSON.stringify(
+         jsonFeed((collections[collection] ?? []).reverse(), config, page.url, title),
+      )
    }
 }
 
