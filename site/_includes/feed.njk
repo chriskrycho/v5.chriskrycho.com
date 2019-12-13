@@ -7,6 +7,9 @@
 
    [existing plugin] https://github.com/11ty/eleventy-plugin-rss
 -#}
+
+{%- import 'components/atom.njk' as atom -%}
+
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns='http://www.w3.org/2005/Atom'>
    {% block feed_info -%}
@@ -23,52 +26,7 @@
    {# TODO: logo #}
    {%- endblock feed_info %}
 
-   {# invalid without date #}
-   {%- for item in collections.all | withValidDate %}
-   <entry>
-      {# Invalid to send an item without title or description #}
-      {% set url = item.url | absoluteUrl(config.url) %}
-      <id>{{url}}</id>
-      <title type="html">
-         [{{item.inputPath | toCollection}}]
-         {% if item.data.title -%}
-            {{item.data.title}}
-         {%- else -%}
-            {% localeDate item.date, 'yyyy.MM.dd.HHmm' %}
-         {%- endif -%}
-      </title>
-      {% if item.data.updated %}
-      <updated>{{item.data.updated | isoDate}}</updated>
-      <published>{{item.date | isoDate}}</published>
-      {% else %}
-      <updated>{{item.date | isoDate}}</updated>
-      {% endif %}
-      <link href='{{url}}' />
-      {% if item.data.summary %}
-      <summary type="html">{{item.data.summary}}</summary>
-      {% elif item.data.book.review %}
-      <summary type="html">{{item.data.book.review}}</summary>
-      {% elif item.data.subtitle %}
-      <summary type="html">{{item.data.subtitle}}</summary>
-      {% endif %}
-      <content type="html">
-         {%- if item.data.audience -%}
-            &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{item.data.audience}}&lt;/p&gt;
-         {%- endif -%}
-         {% if item.data.book %}
-            {% set book = item.data.book %}
-            &lt;p&gt;
-               &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
-               &lt;b&gt;{{book.rating}}:&lt;/b&gt; {{book.review | inlineMd}}
-            &lt;/p&gt;
-         {% endif %}
-         {{item.templateContent}}
-      </content>
-      {% include 'blocks/rss-author.njk' %}
-      {#- <comments>TODO: Webmention!</comments> #}
-      {% for tag in item.data.tags %}
-      <category term="{{tag}}" />
-      {% endfor %}
-   </entry>
-   {%- endfor %}
+   {% block entries %}
+      {{atom.entries(collections.all)}}
+   {% endblock entries %}
 </feed>
