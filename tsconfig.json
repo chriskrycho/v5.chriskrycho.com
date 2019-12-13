@@ -50,5 +50,5 @@
       "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
    },
    "include": ["site", "lib", "eleventy", "types", ".eleventy.ts"],
-   "exclude": ["site/assets"]
+   "exclude": ["site/assets", "site/_data"]
 }
