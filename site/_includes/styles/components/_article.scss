@@ -428,6 +428,22 @@
       list-style: circle;
    }
 
+   .past-versions {
+      counter-reset: version;
+   }
+
+   .past-versions li {
+      list-style-type: none;
+      counter-increment: version;
+   }
+
+   .past-versions li::before {
+      content: 'v' counter(version) ':';
+      display: inline-block;
+      text-align: right;
+      margin-right: ms(-4);
+   }
+
    p {
       max-width: var(--max-width);
    }

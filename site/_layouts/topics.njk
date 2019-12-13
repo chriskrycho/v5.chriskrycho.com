@@ -13,7 +13,7 @@
 {%- block main -%}
 <section class='content-block'>
 
-{{item.header(type='page', title=styled_title, subtitle=subtitle)}}
+{{item.header(type='archive', title=styled_title, subtitle=subtitle)}}
 
 <article class='article-content for-callout'>
    <div class='callout'>
@@ -21,13 +21,13 @@
          I may also have written on this on earlier versions of my website:
       </p>
       {%- set tagSlug = tag | slug -%}
-      <ul>
-         <li>v1: 2006–2011 (link coming soon!)</li>
-         <li>(v2 did not have a blog)</li>
-         <li>v3: 2012–2013 (link coming soon!)</li>
+      <ol class='past-versions'>
+         <li>2006–2011 (link coming soon!)</li>
+         <li>did not have a blog!</li>
+         <li>2012–2013 (link coming soon!)</li>
          {# <li><a href='https://2012-2013.chriskrycho.com'>v3: 2012–2013</a></li> #}
-         <li><a href='https://v4.chriskrycho.com/{{tagSlug}}'>v4: 2014–2019</a></li>
-      </ul>
+         <li><a href='https://v4.chriskrycho.com/{{tagSlug}}'>2014–2019</a></li>
+      </ol>
    </div>
 </article>
 
