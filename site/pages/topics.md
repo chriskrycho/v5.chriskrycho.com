@@ -3,6 +3,8 @@ pagination:
   data: collections
   size: 1
   alias: tag
+  filter:
+    - all
 permalink: /topics/{{ tag | slug }}/index.html
 layout: topics.njk
 subtitle: >
