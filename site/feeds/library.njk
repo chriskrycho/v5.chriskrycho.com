@@ -1,0 +1,12 @@
+---
+permalink: /library/feed.xml
+eleventyExcludeFromCollections: true
+---
+
+{%- import 'components/atom.njk' as atom -%}
+
+{%- extends 'feed.njk' -%}
+
+{%- block entries -%}
+   {{atom.entries(collections.library)}}
+{%- endblock -%}
