@@ -22,3 +22,12 @@
 .push-single {
    margin-left: var(--single-margin);
 }
+
+blockquote,
+aside,
+.note,
+.assumed-audience,
+.callout {
+   --double-margin: 0.2em;
+   --single-margin: 0.075em;
+}
