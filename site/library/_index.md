@@ -1,6 +1,6 @@
 ---
 title: Library
 subtitle: The books, essays, and articles I’ve been reading.
-permalink: /library/index.html
+permalink: /library/
 layout: archives.njk
 ---
