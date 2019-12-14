@@ -328,11 +328,10 @@
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(1)});
-         weight: 600;
+         weight: 300;
       }
 
-      margin-bottom: ms(-5);
-      // padding-bottom: ms(-5);
+      margin-bottom: ms(-3);
 
       .section-link {
          color: var(--h4-fg);
@@ -350,7 +349,7 @@
          weight: 600;
       }
 
-      margin-bottom: ms(-7);
+      margin-bottom: ms(-5);
 
       .section-link {
          color: var(--h5-fg);
@@ -368,9 +367,10 @@
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(0)});
          style: italic;
+         weight: 400;
       }
 
-      margin-bottom: ms(-7);
+      margin-bottom: ms(-5);
 
       .section-link {
          color: var(--h6-fg);
