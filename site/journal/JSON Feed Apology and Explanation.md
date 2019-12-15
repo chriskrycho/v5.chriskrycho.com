@@ -55,7 +55,7 @@ import { URL } from 'url'
 import { logErr, toString } from './utils'
 
 const absoluteUrl = (path: string, baseUrl: string): string =>
-    Result.tryOrElse(logErr, () => new URL(path, baseUrl))
+  Result.tryOrElse(logErr, () => new URL(path, baseUrl))
     .map(toString)
     .unwrapOr(path)
 ```
