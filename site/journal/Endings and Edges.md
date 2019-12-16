@@ -10,7 +10,7 @@ tags:
 audience: other writers and thinkers-aloud with long-running public projects, or fans and followers of the same.
 summary: Reflections prompted by Michael Sacasas’ wrapping up a decade of blogging. Ending projects on the internet is harder—but no less good when done well.
 date: 2019-12-13T19:20
-updated: 2019-12-15T19:35
+updated: 2019-12-15T19:41
 
 ---
 
@@ -20,7 +20,7 @@ Over the past few weeks, though, my sadness abated. I remain a *little* sad not 
 
 A book needs to have an ending. Even if the ending is not the text *concluded* so much as merely *stopped*, the physicality of the thing forces a shape to it. Some books sprawl. Some demand inventive work of binding. But all, in the end, have the *edge* that is their *end*. Not so with a blog. It goes on, potentially endless.[^my-posts]
 
-When a thing is done, though, it’s *done*. Recognizing as much is an act of particular maturity. I dare say that Sacasas was able to recognize it in part *because* he had spent a decade learning deeply and reflecting carefully on technology and ethics. He learned, it seems, to sense the edge of a thing even when it is invisible. Fittingly, then, he has collected the best of his blog [here][ebook]. (You can get it for free if you choose, but certainly worth paying for; I recommend it strongly if you have any interest at all in technology and ethics.)
+When a thing is done, though, it’s *done*. Recognizing as much is an act of particular maturity. I dare say that Sacasas was able to recognize it in part *because* he had spent a decade learning deeply and reflecting carefully on technology and ethics. He learned, it seems, to sense the edge of a thing even when it is invisible. Fittingly, then, he has collected the best of his blog [as an ebook][ebook]. (You can get it for free if you choose, but certainly worth paying for; I recommend it strongly if you have any interest at all in technology and ethics.)
 
 What is more: the end of one project does not mean the end of *all* projects. Sacasas continues to write, and on many of the same themes, but now in [his newsletter, “The Convivial Society”][tcs]. This new project is distinct in style and structure and method from his blog. You wouldn’t be wrong to think of it like a sequel—and the best sequels inherit what is good from an earlier work, while charting territory of their own. It is *good* that The Frailest Thing has ended and The Convivial Society goes on.
 
