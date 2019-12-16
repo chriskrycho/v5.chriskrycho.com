@@ -10,12 +10,13 @@ tags:
 audience: other writers and thinkers-aloud with long-running public projects, or fans and followers of the same.
 summary: Reflections prompted by Michael Sacasas’ wrapping up a decade of blogging. Ending projects on the internet is harder—but no less good when done well.
 date: 2019-12-13T19:20
+updated: 2019-12-15T19:35
 
 ---
 
 Over the past few years, I’ve [linked to][v4] and [otherwise referred to][ws] Michael Sacasas’ blog fairly often. His public thinking-aloud on matters of technology has been one of my major influences in the same space. As such, I was a bit sad when he [announced][dead] a few weeks ago that he was bringing his blog [The Frailest Thing][tft] to an end.
 
-Over the past few weeks, though, my sadness abated. I remain a *little* sad not to have his blog as an ongoing thing in the world. But I sympathize with him—and as endings go, I like this one. When I wrapped up New Rustacean, I noted that there’s a goodness to ending a thing when it’s done, and not just letting it run on because it *has* been running. Publishing on the internet can make this feel far more difficult: no [edges][edges] inhere in the publication itself.
+Over the past few weeks, though, my sadness abated. I remain a *little* sad not to have his blog as an ongoing thing in the world. But I sympathize with him—and as endings go, I like this one. When I [wrapped](https://newrustacean.com/show_notes/meta/_3/index.html) up [New Rustacean](https://newrustacean.com/), I [noted](https://v4.chriskrycho.com/2019/finishing-things-on-the-internet.html) that there’s a goodness to ending a thing when it’s done, and not just letting it run on because it *has* been running. Publishing on the internet can make this feel far more difficult: no [edges][edges] inhere in the publication itself.
 
 A book needs to have an ending. Even if the ending is not the text *concluded* so much as merely *stopped*, the physicality of the thing forces a shape to it. Some books sprawl. Some demand inventive work of binding. But all, in the end, have the *edge* that is their *end*. Not so with a blog. It goes on, potentially endless.[^my-posts]
 
