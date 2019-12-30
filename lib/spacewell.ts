@@ -9,7 +9,7 @@ const EN_DASH = '&ndash;'
  */
 export function emDashes(content: string): string {
    return content.replace(
-      /(—|&mdash;|&#8212;|&x2014;)/g,
+      /(—|&mdash;|&#8212;|&#x2014;)/g,
       `${THIN_SP}${EM_DASH}${THIN_SP}`,
    )
 }
@@ -25,7 +25,7 @@ export function enDashes(content: string): string {
 
    // Do numbers first. Include a variety of ways digits might be constructed,
    // including e.g. Bible verses, other punctuation, etc.
-   const numPatt = /([\d:.⅒⅑⅛⅜⅝⅞⅐⅙⅚⅕⅖⅗⅘¼¾⅓⅔½]+) ?(–|&ndash;|&8211;|&x2013;) ?([\d:.⅒⅑⅛⅜⅝⅞⅐⅙⅚⅕⅖⅗⅘¼¾⅓⅔½]+)/g
+   const numPatt = /([\d:.⅒⅑⅛⅜⅝⅞⅐⅙⅚⅕⅖⅗⅘¼¾⅓⅔½]+) ?(–|&ndash;|&8211;|&#x2013;) ?([\d:.⅒⅑⅛⅜⅝⅞⅐⅙⅚⅕⅖⅗⅘¼¾⅓⅔½]+)/g
    const wordPatt = /(\w+) ?(–|&ndash;|&8211;|&x2013;) ?(\w+)/g
    const replacement = `${OPEN}$1${THIN_SP}${EN_DASH}${THIN_SP}$3${CLOSE}`
 
