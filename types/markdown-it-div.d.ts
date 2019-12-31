@@ -21,8 +21,10 @@ declare namespace markdownItContainer {
       ): void
    }
 
-   function div_plugin(md: MarkdownIt, opts: ContainerOpts): void
+   // eslint-disable-next-line @typescript-eslint/camelcase
+   function div_plugin(md: MarkdownIt, opts?: ContainerOpts): void
 }
 
-declare var MarkdownItDiv: typeof markdownItContainer.div_plugin
+// eslint-disable-next-line @typescript-eslint/camelcase
+declare const MarkdownItDiv: typeof markdownItContainer.div_plugin
 export = MarkdownItDiv
