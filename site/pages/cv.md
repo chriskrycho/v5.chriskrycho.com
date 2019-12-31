@@ -27,7 +27,7 @@ In helping hire people over the last few years, I’ve seen a lot of résumés. 
 
 ## About Me
 
-I am a senior software engineer focused on web UI, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
+I am an experienced software engineer focused on web UI, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
 
 *[UI]: user interface
 
