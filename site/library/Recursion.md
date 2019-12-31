@@ -5,7 +5,7 @@ audience: readers of sci-fi or thrillers or both—especially if you have an int
 book:
   title: Recursion
   author: Blake Crouch
-  cover: TODO
+  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/recursion.jpg
   year: 2019
   rating: Recommended
   review: >
