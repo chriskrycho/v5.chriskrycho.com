@@ -1,14 +1,23 @@
 ---
 title: A Decadal Kind of Change
-subtitle: Rethinking this site and my own callings as the 2010s give way to the 2020s.
+subtitle: Rethinking this site—and my own vocations—as the 2010s give way to the 2020s.
 audience: others reflecting on the decade change, and especially other Christians thinking about their callings.
 summary: >
-    Prompted by the turning of the decade, I rededicate this space to being about more than just tech and thinking and writing. Never less than those—but also, and equally importantly, to the task of public theology.
+    Prompted by the turning of the decade, I am recommitting this space to being about more than just tech and thinking and writing. Never less than those—but also, and equally importantly, to the task of public theology.
+tags:
+  - public theology
+  - Christianity
+  - vocation
+  - writing 
+  - blogging
+  - teaching
+  - evangelicalism
+  - change
 date: 2020-01-01T16:00
 
 ---
 
-The decade behind me was a decade of starting, of foundations. [^decades] I graduated college and got married in mid-2009. The 2010s, then, map pretty close to perfectly to my first decade fully into the world of adulthood.[^adulthood] Throughout those years, I became a father, worked 5 different jobs, started and finished an M. Div., and lived in 3 different states. I began my marriage, my career, my family, and my vocation.
+The decade behind me was a decade of starting, of foundations.[^decades] I graduated college and got married in mid-2009. The 2010s map pretty close to perfectly to my first decade fully into the world of adulthood. Throughout those years, I became a father, worked 5 different jobs, started and finished an M. Div., and lived in 3 different states. I began my marriage, my career, my family, and my vocation.
 
 In the decade ahead, I’m ready to build on the foundations I set.
 
@@ -69,6 +78,5 @@ To all of you reading, I encourage you again: take the time to think about this 
     The whole thing is well worth your time.
 
 [fpt]:  https://politicaltheology.com/a-response-to-reconsidering-public-theology/
-
 
 [^family]: More central still in my life are my role as husband and father, but the shape of goals and aims in that space is and must be very different.
