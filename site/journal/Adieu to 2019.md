@@ -19,7 +19,7 @@ audience: mostly my future self!—but you’re welcome to read along and see my
 summary: >
     2019 was a year of rest and recovery, for which I’m profoundly grateful. Here’s how it went down—from podcasting and writing to career changes and health and fitness.
 date: 2019-12-31T23:00
-updated: 2019-12-31T23:05
+updated: 2020-01-01T09:23
 
 ---
 
@@ -158,7 +158,7 @@ As planned at the end of last year, I ran another half marathon this year—two,
 
 I also hoped at the start of the year to lose ten pounds; in fact I managed to drop five. Halfway is not terrible. My weight is not something I’m especially concerned about: I’m at a healthy spot. However, it’s been clear to me for a long time that I do need to be careful about it. Weight tends to come on easily and go off with great difficulty in my family. Having kept myself in the broad range I aim for is a win, and as long as I continue to do so going forward I’ll be content. I’d still like to knock off those remaining five pounds… but more on that in the section on 2020 below!
 
-Late this year, I also made an important adjustment I’ve stuck to so far: [I stopped setting an alarm](https://v4.chriskrycho.com/2019/no-more-alarms.html). Though it initially surprised me early on, I have found that I still get up pretty early this way! As I write this, for example, just after 6am on December 31st, I’ve been awake since 5:20, and I have already done my morning push-up routine and eaten breakfast and read my Bible. I went to bed at 10pm last night, so it’s not as if I’m going to be especially early. It’s just that I only need 7–7½ hours of sleep when I’m well. I very much enjoy this rhythm, and I also really enjoy that I basically *always* feel well-rested.
+Late this year, I also made an important adjustment I’ve stuck to so far: [I stopped setting an alarm](https://v4.chriskrycho.com/2019/no-more-alarms.html). Though it initially surprised me early on, I have found that I still get up pretty early this way! As I write this, for example, just after 6am on December 31st, I’ve been awake since 5:20, and I have already done my morning push-up routine and eaten breakfast and read my Bible. I went to bed at 10pm last night, so it’s not as if I’m going to sleep especially early. It’s just that I only need 7–7½ hours of sleep when I’m well. I very much enjoy this rhythm, and I also really enjoy that I basically *always* feel well-rested.
 
 That consistent feeling of well-rested-ness got an extra boost by way of my [cutting out caffeine](https://v5.chriskrycho.com/journal/decaffeinating/) at the end of November. A month in, I’m never going back. It’s really quite delightful to be able to move through life *without* that particular chemical dependence, even as I’m still able to enjoy the goodness of coffee and espresso on a semi-regular basis. As with alcohol (although in a far less dangerous way), the thing is far better without *dependence*—when it can simply be enjoyed as a good gift of God. 
 
@@ -172,7 +172,9 @@ My health-oriented goals for the year ahead are relatively tame:
 
 - I’ll lose those next five pounds in the first quarter of the year, and stay at that healthy and best-performing weight throughout the rest of the year. My current weight is *just fine*, so if this doesn’t happen, it won’t be the end of the world. I perform best across the board—especially for racing!—with those few more pounds off, though, so I’d *like* to get there, and on this time frame.
 
-- I’ll keep sleeping exactly as much as I need—no alarm. I’ll keep off the caffeine. Between the two, I should be at a sustainable
+- I’ll keep sleeping exactly as much as I need—no alarm. I’ll keep off the caffeine. Between the two, I should be at a sustainable level in terms of rest and alertness.[^wind-farm]
+
+[^wind-farm]: I originally accidentally left off the end of this sentence, everything after “sustainable”; the reader who caught it said he was choosing to read it “I should be at a sustainable wind farm”. I laughed out loud.
 
 ## Work
 
