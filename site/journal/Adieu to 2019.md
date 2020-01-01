@@ -19,7 +19,7 @@ audience: mostly my future self!—but you’re welcome to read along and see my
 summary: >
     2019 was a year of rest and recovery, for which I’m profoundly grateful. Here’s how it went down—from podcasting and writing to career changes and health and fitness.
 date: 2019-12-31T23:00
-updated: 2019-12-31T23:04
+updated: 2019-12-31T23:05
 
 ---
 
@@ -236,20 +236,20 @@ Over the past few years, I’ve started thinking more and more about bigger pict
 
 Those kinds of considerations mean I have more to write, but at a scope beyond a single year. Today marks the turn of a decade, and in God’s good providence that happens to line up with my doing some serious evaluation of what I want to be doing in the year ahead! I’m therefore wrapping up *this* post here, and I’ll be back tomorrow with some thoughts on the decade past and the decade ahead.
 
-[^1]:	Whether this habit will go on next year, only time will tell. Keep your eyes open for an essay on the subject of broadcasting these kinds of things publicly, an extended meditation on some of the ideas in [this year’s final issue](https://buttondown.email/chriskrycho/archive/shall-we-all-keep-publishing-across-the-sundering/ "Shall we all keep publishing? (Across the Sundering Seas #32)") of [Across The Sundering Seas](https://buttondown.email/chriskrycho).
+[^1]: Whether this habit will go on next year, only time will tell. Keep your eyes open for an essay on the subject of broadcasting these kinds of things publicly, an extended meditation on some of the ideas in [this year’s final issue](https://buttondown.email/chriskrycho/archive/shall-we-all-keep-publishing-across-the-sundering/ "Shall we all keep publishing? (Across the Sundering Seas #32)") of [Across The Sundering Seas](https://buttondown.email/chriskrycho).
 
-[^2]:	I wrote last year:
+[^2]: I wrote last year:
 
-	\> Once I’m through that list, I’ll have covered the entirety of the language and quite a few of the most important crates in the ecosystem. But there are always new things happening, so I’ll have some interesting decisions to make about where to take the show.
+    > Once I’m through that list, I’ll have covered the entirety of the language and quite a few of the most important crates in the ecosystem. But there are always new things happening, so I’ll have some interesting decisions to make about where to take the show.
 
-	What I knew at the time was that “interesting decisions” almost certainly meant “the exact timing of wrapping things up,” though I reserved the final decision until a later point in the year.
+    What I knew at the time was that “interesting decisions” almost certainly meant “the exact timing of wrapping things up,” though I reserved the final decision until a later point in the year.
 
-[^3]:	I wrote [a year ago](https://v4.chriskrycho.com/2018/some-closing-thoughts.html):
+[^3]: I wrote [a year ago](https://v4.chriskrycho.com/2018/some-closing-thoughts.html):
 
-	\> [One] of my goals for the year was to publish a few longer-form essays, possibly even getting paid for them. That certainly did not happen; I did not manage to publish even a single essay at Mere Orthodoxy.
+    > [One] of my goals for the year was to publish a few longer-form essays, possibly even getting paid for them. That certainly did not happen; I did not manage to publish even a single essay at Mere Orthodoxy.
 
-	Sounds… familiar.
+    Sounds… familiar.
 
-[^4]:	I also wanted to make sure that my team at Olo heard from me and not from a random blog post!
+[^4]: I also wanted to make sure that my team at Olo heard from me and not from a random blog post!
 
-[^5]:	Read: *hopefully*, the TypeScript/Ember.js story will get a *lot* better this year. But those pieces have to fall into place, so we’ll see.
+[^5]: Read: *hopefully*, the TypeScript/Ember.js story will get a *lot* better this year. But those pieces have to fall into place, so we’ll see.
