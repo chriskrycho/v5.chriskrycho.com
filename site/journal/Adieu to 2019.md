@@ -19,7 +19,7 @@ audience: mostly my future self!—but you’re welcome to read along and see my
 summary: >
     2019 was a year of rest and recovery, for which I’m profoundly grateful. Here’s how it went down—from podcasting and writing to career changes and health and fitness.
 date: 2019-12-31T23:00
-updated: 2020-01-01T09:23
+updated: 2020-01-01T09:26
 
 ---
 
@@ -234,7 +234,7 @@ My big “resolution” for 2020, then, is to do these harder things. Doing the 
 
 ## Looking Forward
 
-Over the past few years, I’ve started thinking more and more about bigger picture aims—things that stretch out beyond a single year. I suspect this is a pretty common pattern for people coming into their thirties: the rush of the first decade of adulthood behind, it’s easier to grasp the brevity of life, and it’s also easier to have a sense of what we’re good at and enjoy. I’m lso blessed to be a quarter of the way through my thirties and a decade into marriage in a healthy and stable place emotionally, physically, and relationally, and that makes it *possible* to go after some bigger plans.
+Over the past few years, I’ve started thinking more and more about bigger picture aims—things that stretch out beyond a single year. I suspect this is a pretty common pattern for people coming into their thirties: the rush of the first decade of adulthood behind, it’s easier to grasp the brevity of life, and it’s also easier to have a sense of what we’re good at and enjoy. I’m also blessed to be a quarter of the way through my thirties and a decade into marriage in a healthy and stable place emotionally, physically, and relationally, and that makes it *possible* to go after some bigger plans.
 
 Those kinds of considerations mean I have more to write, but at a scope beyond a single year. Today marks the turn of a decade, and in God’s good providence that happens to line up with my doing some serious evaluation of what I want to be doing in the year ahead! I’m therefore wrapping up *this* post here, and I’ll be back tomorrow with some thoughts on the decade past and the decade ahead.
 
