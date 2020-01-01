@@ -11,13 +11,13 @@ book:
   review: >
     Blake Crouch’s <cite>Recursion</cite> was the first thriller I’ve read in a long time—and it didn’t let me down. Its interest in identity and memory made it more than just a thriller, and I’m glad I read it.
 tags:
-  - book reviews
+  - reading
   - science fiction
   - identity
   - memory
   - Blake Crouch
 date: 2019-12-31T08:45
-updated: 2019-12-31T08:45
+updated: 2019-12-31T20:55
 
 ---
 

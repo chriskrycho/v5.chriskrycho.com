@@ -11,12 +11,13 @@ book:
   review: >
     Crouch’s 2016 thriller is one of the best presentations of the goodness of the quiet beauty of a loving family over professional and financial success I’ve seen in quite some time. While also being gripping and creepy—quite a hat trick.
 tags:
-  - book reviews
+  - reading
   - science fiction
   - identity
   - memory
   - Blake Crouch
 date: 2019-12-31T16:00
+updated: 2019-12-31T20:55
 
 ---
 
