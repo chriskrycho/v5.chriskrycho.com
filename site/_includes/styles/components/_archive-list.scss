@@ -81,14 +81,24 @@
       grid-area: entries;
    }
 
-   .item {
+   .day {
       display: grid;
-      grid-template: 
-         "day title   "
-         " .  subtitle" auto / 1em auto;
+      grid-template: "day entries" auto / 1em auto;
       grid-gap: 0 1rem;
       gap: 0 1rem;
-      // max-width: 36rem;
+      margin: 0 0 ms(1);
+      width: 100%;
+   }
+
+   .day-title {
+      grid-area: day;
+   }
+
+   .day-items {
+      grid-area: entries;
+   }
+
+   .item {
       margin: 0 0 ms(1);
       width: 100%;
    }
@@ -98,17 +108,12 @@
    }
 
    .item-title {
-      grid-area: title;
       font: {
          family: var(--sans-subhead);
          size: calc(var(--sans-adjust) * #{ms(0)});
          weight: 400;
       }
       margin-bottom: ms(-8);
-   }
-
-   .item-date {
-      grid-area: day;
    }
 
    .item-permalink {
@@ -127,7 +132,6 @@
    }
 
    .item-subtitle {
-      grid-area: subtitle;
       line-height: 1.1;
       font-size: ms(-1);
       font-style: italic;
@@ -155,7 +159,7 @@
          width: 3rem;
       }
 
-      .item {
+      .day {
          grid-gap: 0 0.5rem;
          gap: 0 0.5rem;
       }   
