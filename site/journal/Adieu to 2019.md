@@ -19,6 +19,7 @@ audience: mostly my future self!—but you’re welcome to read along and see my
 summary: >
     2019 was a year of rest and recovery, for which I’m profoundly grateful. Here’s how it went down—from podcasting and writing to career changes and health and fitness.
 date: 2019-12-31T23:00
+updated: 2019-12-31T23:04
 
 ---
 
@@ -189,7 +190,7 @@ I started at LinkedIn at the end of January. I knew this was likely in the cards
 - Olo: ~100 employees
 - LinkedIn: ~10,000 employees
 
-Every size has some of the same issues, and some of its own. So far, though, LinkedIn is a great balance: big enough to have resources to throw at hard problems, but not so large it’s unwieldy. (Of course
+Every size has some of the same issues, and some of its own. So far, though, LinkedIn is a great balance: big enough to have resources to throw at hard problems, but not so large it’s unwieldy. (Of course any company can be more or less functional or dysfunctional at a given size—and trust me when I say my experience bears that out!—but I’m enjoying the size of LinkedIn given its current reasonably good health.)
 
 This year, my focus was on two major things: recovering from burnout, and getting my feet under me in the new role. It was a smashing success on both fronts. I’m profoundly grateful that I got to land in a small project with high impact but low stress right up front: helping get [Volta](https://volta.sh) to a point where it was ready to use internally. The fact that my first project was an open source tool written [Rust](https://rust-lang.org) which will end up being used by pretty much every front-end developer at LinkedIn over time was amazing: it was both technically energizing and professionally satisfying.
 
