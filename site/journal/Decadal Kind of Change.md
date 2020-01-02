@@ -5,6 +5,7 @@ audience: others reflecting on the decade change, and especially other Christian
 summary: >
     Prompted by the turning of the decade, I am recommitting this space to being about more than just tech and thinking and writing. Never less than those—but also, and equally importantly, to the task of public theology.
 tags:
+  - theology
   - public theology
   - Christianity
   - vocation
@@ -14,7 +15,7 @@ tags:
   - evangelicalism
   - change
 date: 2020-01-01T16:00
-updated: 2020-01-02T09:30
+updated: 2020-01-02T13:20
 
 ---
 
