@@ -14,7 +14,7 @@ tags:
   - evangelicalism
   - change
 date: 2020-01-01T16:00
-uodated: 2020-01-02T09:25
+updated: 2020-01-02T09:30
 
 ---
 
