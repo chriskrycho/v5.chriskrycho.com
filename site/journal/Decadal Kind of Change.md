@@ -14,6 +14,7 @@ tags:
   - evangelicalism
   - change
 date: 2020-01-01T16:00
+uodated: 2020-01-02T09:25
 
 ---
 
@@ -43,7 +44,7 @@ I [wrote yesterday][atss-32] in the final 2019 issue of [Across the Sundering Se
 
 It is that responsibility which I feel, and it weighs heavily on me. I know what I want my public theological work both on this site specifically and when working in public generally to be: a better voice, helping people think in a more genuinely Christ-like way.
 
-The TypeScript posts aren’t going anywhere. Nor will the reflections on note-taking. That kind of writing will always has its place on this site. But it will be joined in the years ahead on this site by my attempst to help people think more carefully, more clearly, and yes, more Christianly about all sorts of things: technology, sex, politics, art, community, family, you name it.
+The TypeScript posts aren’t going anywhere; nor will the reflections on note-taking. That kind of writing will always have its place on this site. But it will be joined in the years ahead on this site by my attempts to help people think more carefully, more clearly, and especially more *Christianly* about all sorts of things: technology, sex, politics, art, community, family, you name it.
 
 I am not an expert in all these things and I don’t have a hope of becoming one. I do, however, have a talent for taking complex or difficult subjects and explaining them in ways that connect with people. If I don’t use that ability and put it to work for the people of God, I am letting the ignorant and foolish voices carry the day. I cannot by myself change these dynamics, of course, but I am also not responsible to do so. I *am* responsible to use my gifts to the best of my abilities and to use what influence I have in the spheres I inhabit.
 
