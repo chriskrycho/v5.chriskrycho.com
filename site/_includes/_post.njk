@@ -7,7 +7,7 @@
 
 {% block before_content -%}
    {% if audience -%}
-      <i class='assumed-audience'>
+      <i class='qualifiers'>
          <b><a href='https://www.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
          {{audience | inlineMd | safe}}
       </i>

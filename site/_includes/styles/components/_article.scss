@@ -55,7 +55,7 @@
 
    aside,
    .note,
-   .assumed-audience,
+   .qualifiers,
    .callout {
       font: {
          family: var(--sans);
@@ -91,7 +91,7 @@
       }
    }
 
-   .assumed-audience {
+   .qualifiers {
       @include fancy-block(var(--aside-bg), var(--aside-fg));
       @include extra-vertical();
       --top-border: var(--aside-border);
@@ -478,7 +478,7 @@
    blockquote,
    aside,
    .note,
-   .assumed-audience,
+   .qualifiers,
    .callout {
       > {
          p,
@@ -568,7 +568,7 @@
          blockquote,
          pre,
          aside,
-         .assumed-audience,
+         .qualifiers,
          .note,
          .callout {
             max-width: var(--fancy-width);
@@ -581,7 +581,7 @@
             blockquote,
             aside,
             .note,
-            .assumed-audience,
+            .qualifiers,
             .callout {
                max-width: calc(100% - var(--full-side-padding));
             }
@@ -597,7 +597,7 @@
       .content-block {
          --fancy-width: calc(var(--max-width) + 2.5rem);
 
-         .assumed-audience {
+         .qualifiers {
             padding-left: ms(0);
          }
 
