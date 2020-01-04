@@ -88,6 +88,10 @@
       gap: 0 1rem;
       margin: 0 0 ms(1);
       width: 100%;
+
+      &:last-child {
+         margin: 0;
+      }
    }
 
    .day-title {
