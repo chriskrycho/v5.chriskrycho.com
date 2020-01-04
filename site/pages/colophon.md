@@ -10,11 +10,13 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
 - <b>typeset:</b> my own implementation of a plugin for [typeset], heavily inspired by [eleventy-plugin-typeset].
 
 - <b>[markdown-it] plugins:</b>
+    - [abbreviations](https://github.com/markdown-it/markdown-it-abbr)
     - [anchor](https://github.com/valeriangalliat/markdown-it-anchor)
     - [definition list](https://github.com/markdown-it/markdown-it-deflist)
+    - [div](https://github.com/kickscondor/markdown-it-div)
     - [footnote](https://github.com/markdown-it/markdown-it-footnote)
-    - [superscript](https://github.com/markdown-it/markdown-it-sup)
     - [implicit-figures](https://github.com/arve0/markdown-it-implicit-figures)
+    - [superscript](https://github.com/markdown-it/markdown-it-sup)
 
 - <b>spacewell:</b> a little tool I built a few years ago to insert hair spaces around em dashes and thin spaces with non-breaking spans around number-separating en dashes; the source is colocated with the rest of the site.
 
@@ -65,6 +67,6 @@ While working on this design, I took more-or-less-direct inspiration in a variet
 
 ## Copyright and License
 
-All content is {% copyright build.date %}. Software components are MIT-licensed. For the full license text, see [LICENSE.md]
+All content is {% copyright build.date, 'content' %}. All custom software components are {% copyright build.date, 'implementation' %}.
 
 [LICENSE.md]: https://github.com/chriskrycho/v5.chriskrycho.com/blob/master/LICENSE.md
