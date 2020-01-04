@@ -9,7 +9,6 @@ import sup from 'markdown-it-sup'
 import Core from 'markdown-it/lib/parser_core'
 import Token from 'markdown-it/lib/token'
 import div from 'markdown-it-div'
-import tableOfContents from 'markdown-it-table-of-contents'
 import { env } from 'process'
 import { Result } from 'true-myth'
 import slugify from 'uslug'
@@ -93,10 +92,6 @@ const md = markdownIt({
       permalinkSymbol: '',
       renderPermalink,
       slugify,
-   })
-   .use(tableOfContents, {
-      includeLevel: [1, 2, 3, 4, 5, 6],
-      containerHeaderHtml: '<h2>Contents</h2>',
    })
    .use(abbr)
    .use(div)

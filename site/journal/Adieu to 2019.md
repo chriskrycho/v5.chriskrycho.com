@@ -45,7 +45,27 @@ You can find my past years’ write-ups here:
 
 If you’d like to skip to a specific section of this year’s write-up, have at it!
 
-[[toc]]
+- [Overview](#overview)
+- [Podcasting](#podcasting)
+    - [New Rustacean](#new-rustacean)
+    - [Winning Slowly](#winning-slowly)
+    - [Mass Affection](#mass-affection)
+- [Reading](#reading)
+    - [2019](#2019)
+    - [2020](#2020)
+- [Writing](#writing)
+    - [2019](#2019-1)
+    - [2020](#2020-1)
+- [Health](#health)
+    - [2019](#2019-2)
+    - [2020](#2020-2)
+- [Work](#work)
+    - [LinkedIn](#linkedin)
+        - [2019](#2019-3)
+        - [2020](#2020-3)
+    - [Side project: <b><i>re</i>write</b>](#side-project-bireiwriteb)
+- [Why These Things are Hard](#why-these-things-are-hard)
+- [Looking Forward](#looking-forward)
 
 ## Overview
 
