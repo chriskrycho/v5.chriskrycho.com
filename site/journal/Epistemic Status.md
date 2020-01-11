@@ -13,7 +13,7 @@ date: 2020-01-10T21:35
 updated: 2020-01-10T21:40
 qualifiers:
     audience: people who care about thinking well and communicating clearly.
-    epistemic: extremely confident in the value of static epistemic statuses.
+    epistemic: extremely confident.
 
 ---
 
