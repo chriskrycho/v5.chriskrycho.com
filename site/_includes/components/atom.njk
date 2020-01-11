@@ -30,6 +30,9 @@
    {%- endset %}
    <summary type="html">{{summary}}</summary>
    <content type="html">
+      {%- if item.data.subtitle -%}
+         &lt;i&gt;{{item.data.subtitle | inlineMd}}&lt;/i&gt;
+      {%- endif -%}
       {%- if item.data.qualifiers.audience -%}
          &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{item.data.qualifiers.audience}}&lt;/p&gt;
       {%- endif -%}

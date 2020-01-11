@@ -8,6 +8,7 @@ import { canParseDate } from './date-time'
 import isoDate from './iso-date'
 import siteTitle from './site-title'
 import toCollection from './to-collection'
+import markdown from './markdown'
 
 const { Just, just, nothing } = Maybe
 
@@ -70,6 +71,11 @@ function describe(book: Book): string {
 }
 
 const contentHtmlFor = (item: Item): string => {
+   const subtitle =
+      typeof item.data?.subtitle === 'string'
+         ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
+         : ''
+
    const audience =
       typeof item.data?.qualifiers?.audience === 'string'
          ? `<p><b>Assumed audience:</b> ${item.data.qualifiers.audience}</p>`
@@ -83,7 +89,7 @@ const contentHtmlFor = (item: Item): string => {
    const book = item.data?.book
    const bookInfo = isBook(book) ? describe(book) : ''
 
-   return audience + epistemicStatus + bookInfo + item.templateContent
+   return subtitle + audience + epistemicStatus + bookInfo + item.templateContent
 }
 
 const itemTitle = (item: Item): string | undefined => {
