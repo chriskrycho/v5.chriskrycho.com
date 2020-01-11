@@ -27,6 +27,10 @@
          style: italic;
       }
       color: var(--h2-fg);
+
+      em {
+         font-style: normal;
+      }
    }
 
    &.archive,

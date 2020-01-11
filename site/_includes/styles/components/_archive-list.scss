@@ -140,6 +140,10 @@
       font-size: ms(-1);
       font-style: italic;
       color: var(--h2-fg);
+
+      em {
+         font-style: normal;
+      }
    }
 }
 
