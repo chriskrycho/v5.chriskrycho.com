@@ -168,7 +168,7 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 
 - [**Winning Slowly**][ws] (January 2014–present): cohosted with [Stephen Carradini][stephen], a show about taking the long view on technology, religion, ethics and art. Stephen describes it (accurately) as a show focused on tech, but from the angles of religion, ethics, and art. I describe it (also accurately) as our excuse to talk about whatever we want, since "technology, religion, ethics and art" pretty much touches on all of human existence. For a good sample of the way I approach **software and ethics**, check out [6.06: A Kind of Blindness,][ws-6.06] on smart cities, "big data", and the meaninglessness of mere information.
 
-- [**New Rustacean**][nr] (September 2015–May 2019): a show about the **Rust** programming language and the people who use it—dedicated primarily to *teaching* people Rust. Initially a way of helping myself stay motivated to keep up with learning the language, New Rustacean is now one of the most popular resources for people learning Rust and has inspired a few other teaching-programming-languages podcasts.
+- [**New Rustacean**][nr] (September 2015–May 2019): a show about the **Rust** programming language—dedicated primarily to *teaching* people Rust. Initially a way of helping myself stay motivated to keep up with learning the language, New Rustacean became one of the most popular resources for people learning Rust and inspired a few other teaching-programming-languages podcasts.
 
 [ws]: https://winningslowly.org
 [stephen]: https://stephencarradini.com
