@@ -10,8 +10,9 @@ tags:
 - software design
 - blogging
 - JSON Feed
-audience: >
-    people who care about the details of web publishing.
+qualifiers:
+    audience: >
+        people who care about the details of web publishing.
 
 ---
 

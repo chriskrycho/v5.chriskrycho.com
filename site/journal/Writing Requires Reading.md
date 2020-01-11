@@ -2,7 +2,8 @@
 title: Writing Requires Reading
 subtitle: …as my November-writing adventures make clear!
 date: 2019-11-18T07:00:00
-audience: people following along with me as I try to write every day, or who are interested in writing generally
+qualifiers:
+    audience: people following along with me as I try to write every day, or who are interested in writing generally
 tags:
 - writing
 - reading

@@ -6,11 +6,21 @@
 {% endblock header %}
 
 {% block before_content -%}
-   {% if audience -%}
-      <i class='qualifiers'>
+   {% if qualifiers -%}
+   <div class='qualifiers'>
+      {% if qualifiers.audience -%}
+      <p>
          <b><a href='https://www.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
-         {{audience | inlineMd | safe}}
-      </i>
+         {{qualifiers.audience | inlineMd | safe}}
+      </p>
+      {%- endif %}
+      {% if qualifiers.epistemic %}
+      <p>
+         <b>Epistemic Status:</b>
+         {{qualifiers.epistemic | inlineMd | safe}}
+      </p>
+      {% endif %}
+   </div>
    {%- endif %}
 {%- endblock %}
 

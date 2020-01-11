@@ -1,7 +1,8 @@
 ---
 title: A Decadal Kind of Change
 subtitle: Rethinking this site—and my own vocations—as the 2010s give way to the 2020s.
-audience: others reflecting on the decade change, and especially other Christians thinking about their callings.
+qualifiers:
+    audience: others reflecting on the decade change, and especially other Christians thinking about their callings.
 summary: >
     Prompted by the turning of the decade, I am recommitting this space to being about more than just tech and thinking and writing. Never less than those—but also, and equally importantly, to the task of public theology.
 tags:

@@ -1,7 +1,8 @@
 ---
 title: Dark Matter
 subtitle: I could not put this book down. Also, it was kind of creepy.
-audience: readers of sci-fi or thrillers or both—especially if you have an interest in identity, memory, and the ways they intersect.
+qualifiers:
+    audience: readers of sci-fi or thrillers or both—especially if you have an interest in identity, memory, and the ways they intersect.
 book:
   title: Dark Matter
   author: Blake Crouch

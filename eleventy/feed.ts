@@ -14,14 +14,8 @@ const { Just, just, nothing } = Maybe
 type BuildInfo = typeof import('../site/_data/build')
 type SiteConfig = typeof import('../site/_data/config')
 
-// Needless, but delightful, type shenaniganry.
-type NonString<T> = T extends string ? never : T
-
-function optionalString(value: string): string
-function optionalString<T>(value: NonString<T>): undefined
-function optionalString(value: unknown): string | undefined {
-   return typeof value === 'string' ? value : undefined
-}
+const optionalString = (value: unknown): string | undefined =>
+   typeof value === 'string' ? value : undefined
 
 interface Book {
    title: string
@@ -32,12 +26,28 @@ interface Book {
    cover?: string
 }
 
+/** Extending the base Eleventy item with my own data */
+declare module '../types/eleventy' {
+   interface Data {
+      title?: string
+      subtitle?: string
+      summary?: string
+      tags?: string[]
+      updated?: string | Date
+      qualifiers?: {
+         audience?: string
+         epistemic?: string
+      }
+      book?: Book
+   }
+}
+
 function isBook(maybeBook: unknown): maybeBook is Book {
-   if (!maybeBook || typeof maybeBook !== 'object') {
+   if (typeof maybeBook !== 'object' || !maybeBook) {
       return false
    }
 
-   let maybe = maybeBook as Dict<unknown>
+   const maybe = maybeBook as Dict<unknown>
 
    return (
       typeof maybe.title === 'string' &&
@@ -52,7 +62,7 @@ function isBook(maybeBook: unknown): maybeBook is Book {
 }
 
 function describe(book: Book): string {
-   let year = book.year ? ` (${book.year})` : ''
+   const year = book.year ? ` (${book.year})` : ''
    return `
       <p><cite>${book.title}</cite>, ${book.author}${year}</p>
       <p><b>${book.rating}:</b> ${book.review}</p>
@@ -61,14 +71,19 @@ function describe(book: Book): string {
 
 const contentHtmlFor = (item: Item): string => {
    const audience =
-      typeof item.data?.audience === 'string'
-         ? `<p><b>Assumed audience:</b> ${item.data.audience}</p>`
+      typeof item.data?.qualifiers?.audience === 'string'
+         ? `<p><b>Assumed audience:</b> ${item.data.qualifiers.audience}</p>`
+         : ''
+
+   const epistemicStatus =
+      typeof item.data?.qualifiers?.epistemic === 'string'
+         ? `<p><b>Epistemic status:</b> ${item.data.qualifiers.epistemic}</p>`
          : ''
 
    const book = item.data?.book
    const bookInfo = isBook(book) ? describe(book) : ''
 
-   return audience + bookInfo + item.templateContent
+   return audience + epistemicStatus + bookInfo + item.templateContent
 }
 
 const itemTitle = (item: Item): string | undefined => {

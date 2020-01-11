@@ -1,7 +1,8 @@
 ---
 title: Some Thoughts on micro.blog
 subtitle: I like the service. But I’m not using it.
-audience: folks who are thinking about social media and blogging and the IndieWeb movement.
+qualifiers:
+    audience: folks who are thinking about social media and blogging and the IndieWeb movement.
 date: 2019-12-01T08:00
 updated: 2019-12-01T19:05
 summary: >

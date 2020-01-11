@@ -10,7 +10,8 @@ tags:
 - web design
 - open-source software
 - TypeScript
-audience: people who care about things like new website designs.
+qualifiers:
+    audience: people who care about things like new website designs.
 summary: >
     Sympolymathesy is the fifth version of chriskrycho.com—and I’m so happy to have it in the world at last!
 

@@ -1,7 +1,8 @@
 ---
 title: Recursion
 subtitle: Blake Crouch’s latest thriller is—delightfully—<em>about</em> something.
-audience: readers of sci-fi or thrillers or both—especially if you have an interest in identity, memory, and the ways they intersect.
+qualifiers:
+    audience: readers of sci-fi or thrillers or both—especially if you have an interest in identity, memory, and the ways they intersect.
 book:
   title: Recursion
   author: Blake Crouch

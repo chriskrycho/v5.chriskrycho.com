@@ -12,8 +12,9 @@ tags:
     - writing
     - health
     - habits
-audience: >
-    people interested in discussions of travel and of maintaining good habits.
+qualifiers:
+    audience: >
+        people interested in discussions of travel and of maintaining good habits.
 
 ---
 

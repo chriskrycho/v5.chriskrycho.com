@@ -1,7 +1,8 @@
 ---
 title: Decaffeinating
 subtitle: How and why I switched to mostly decaf coffee.
-audience: lovers of coffee, tea, and other caffeinated beverages… and good health.
+qualifiers:
+    audience: lovers of coffee, tea, and other caffeinated beverages… and good health.
 tags:
   - coffee
   - health

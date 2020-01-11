@@ -112,10 +112,14 @@ export interface Page {
    date: string | Date
 }
 
+interface Data {
+   [key: string]: unknown
+}
+
 /** An `Item` is just like a `Page`, but with the actual data from render available. */
 interface Item extends Page {
    /** all data for this piece of content (includes any data inherited from layouts) */
-   data?: Dict<unknown>
+   data?: Data
 
    /** the rendered content of this template. This does *not• include layout wrappers */
    templateContent: string

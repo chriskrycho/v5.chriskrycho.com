@@ -1,7 +1,8 @@
 ---
 title: Red Mars
 subtitle: Kim Stanley Robinson’s imagination is provocative in the best ways.
-audience: readers of sci-fi (…or people who aren’t, but who just like to be challenged in their thinking).
+qualifiers:
+    audience: readers of sci-fi (…or people who aren’t, but who just like to be challenged in their thinking).
 book:
     title: Red Mars
     cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg
