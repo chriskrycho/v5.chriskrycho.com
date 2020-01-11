@@ -6,8 +6,7 @@ summary: >
     I am a staff software engineer focused on web UI, typography, functional programming—and ethics. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
 
 ---
-
-In helping hire people over the last few years, I’ve seen a lot of résumés. Even the best of them leave a lot to be desired: they lack context and narrative. So if you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful. I’m not looking at this point—but you’re still welcome to [say hello][email]!
+Even the best résumés leave a lot to be desired: they lack context and narrative.If you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful. I’m not looking at this point—but you’re still welcome to [say hello][email]!
 
 [resume]: https://f001.backblazeb2.com/file/chriskrycho-com/resume.pdf
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
