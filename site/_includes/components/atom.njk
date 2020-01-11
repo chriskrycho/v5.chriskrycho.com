@@ -19,13 +19,16 @@
    <updated>{{item.date | isoDate}}</updated>
    {%- endif %}
    <link href='{{url}}' />
-   {% if item.data.summary -%}
-   <summary type="html">{{item.data.summary}}</summary>
+   {% set summary -%}
+   {%- if item.data.summary -%}
+      {{item.data.summary}}
    {%- elif item.data.book.review -%}
-   <summary type="html">{{item.data.book.review}}</summary>
+      {{item.data.book.review}}
    {%- elif item.data.subtitle -%}
-   <summary type="html">{{item.data.subtitle}}</summary>
-   {%- endif %}
+      {{item.data.subtitle}}
+   {%- endif -%}
+   {%- endset %}
+   <summary type="html">{{summary}}</summary>
    <content type="html">
       {%- if item.data.qualifiers.audience -%}
          &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{item.data.qualifiers.audience}}&lt;/p&gt;
