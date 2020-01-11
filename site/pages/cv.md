@@ -6,12 +6,15 @@ summary: >
     I am a staff software engineer focused on web UI, typography, functional programming—and ethics. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
 
 ---
-Even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful. I’m not looking at this point—but you’re still welcome to [say hello][email]!
+
+Even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful.
+
+(I’m not looking to change jobs at this point—but you’re still welcome to [say hello][email]!)
 
 [resume]: https://f001.backblazeb2.com/file/chriskrycho-com/resume.pdf
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
 
-- [<i>About Me</i>](#about-me)—my philosophy of software development and my (slightly unusual) educational background, featuring a [Master of Divinity](#masters) and a [Bachelor of Science in Physics](#undergrad)
+- [<i>About Me</i>](#about-me)—my philosophy of software development and my slightly unusual educational background, featuring a [Master of Divinity](#masters) and a [Bachelor of Science in Physics](#undergrad)
 
 - [<i>My Work</i>](#my-work)—not just where I’ve worked and the tech I used, but what I brought to the table and the difference I made:
     - [Current: LinkedIn](#current-linkedin)
