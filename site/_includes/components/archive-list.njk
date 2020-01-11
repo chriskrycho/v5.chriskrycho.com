@@ -18,10 +18,10 @@
                   <li class='item'>
                      <h5 class='item-title'>
                         <a href='{{item.url}}' class='item-permalink'>
-                           {{item.data.title | safe}}
+                           {{item.data.title | inlineMd | safe}}
                         </a>
                      </h5>
-                     <p class='item-subtitle'>{{item.data.subtitle | safe}}</h2>
+                     <p class='item-subtitle'>{{item.data.subtitle | inlineMd | safe}}</h2>
                   </li>
                {% endfor -%}
                </ul>
