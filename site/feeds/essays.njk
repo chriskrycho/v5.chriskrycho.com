@@ -9,5 +9,5 @@ eleventyExcludeFromCollections: true
 {%- extends 'feed.njk' -%}
 
 {%- block entries -%}
-   {{atom.entries(collections.essays)}}
+   {{atom.entries(collections.essays, config)}}
 {%- endblock -%}

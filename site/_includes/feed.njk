@@ -23,10 +23,9 @@
    <updated>{{build.date | isoDate}}</updated>
    <generator>Eleventy Atom Plugin by Chris Krycho</generator>
    <icon>https://v5.chriskrycho.com/assets/images/favicon.png</icon>
-   {# TODO: logo #}
+   {#- TODO: logo -#}
    {%- endblock feed_info %}
-
-   {% block entries %}
-      {{atom.entries(collections.all)}}
-   {% endblock entries %}
+   {%- block entries -%}
+      {{atom.entries(collections.all, config)}}
+   {% endblock entries -%}
 </feed>
