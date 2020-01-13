@@ -23,7 +23,7 @@
    {%- if item.data.summary -%}
       {{item.data.summary}}
    {%- elif item.data.book.review -%}
-      {{item.data.book.review}}
+      {{item.data.book.review.rating}}: {{item.data.book.review.summary}}
    {%- elif item.data.subtitle -%}
       {{item.data.subtitle}}
    {%- endif -%}
@@ -43,7 +43,9 @@
          {% set book = item.data.book %}
          &lt;p&gt;
             &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
-            &lt;b&gt;{{book.rating}}:&lt;/b&gt; {{book.review | inlineMd}}
+            {% if book.review -%}
+            &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
+            {%- endif %}
          &lt;/p&gt;
       {% endif %}
       {{item.templateContent}}

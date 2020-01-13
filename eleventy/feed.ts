@@ -22,8 +22,14 @@ interface Book {
    title: string
    author: string
    year?: number | string
-   review: string
-   rating: string
+   review?: {
+      rating:
+         | 'Required'
+         | 'Recommended'
+         | 'Recommended With Qualifications'
+         | 'Not Recommended'
+      summary: string
+   }
    cover?: string
 }
 
@@ -64,10 +70,12 @@ function isBook(maybeBook: unknown): maybeBook is Book {
 
 function describe(book: Book): string {
    const year = book.year ? ` (${book.year})` : ''
-   return `
-      <p><cite>${book.title}</cite>, ${book.author}${year}</p>
-      <p><b>${book.rating}:</b> ${book.review}</p>
-   `
+   const bookInfo = `<p><cite>${book.title}</cite>, ${book.author}${year}</p>`
+   const review = book.review
+      ? `<p><b>${book.review.rating}:</b> ${book.review.summary}</p>`
+      : ''
+
+   return `${bookInfo}\n${review}`
 }
 
 const contentHtmlFor = (item: Item): string => {

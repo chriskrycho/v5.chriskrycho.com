@@ -8,9 +8,10 @@ book:
   author: Blake Crouch
   cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/recursion.jpg
   year: 2019
-  rating: Recommended
-  review: >
-    Blake Crouch’s <cite>Recursion</cite> was the first thriller I’ve read in a long time—and it didn’t let me down. Its interest in identity and memory made it more than just a thriller, and I’m glad I read it.
+  review:
+    rating: Recommended
+    summary: >
+        Blake Crouch’s <cite>Recursion</cite> was the first thriller I’ve read in a long time—and it didn’t let me down. Its interest in identity and memory made it more than just a thriller, and I’m glad I read it.
 tags:
   - reading
   - science fiction
@@ -18,7 +19,7 @@ tags:
   - memory
   - Blake Crouch
 date: 2019-12-31T08:45
-updated: 2019-12-31T20:55
+updated: 2020-01-12T18:20
 
 ---
 

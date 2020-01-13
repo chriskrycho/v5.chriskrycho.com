@@ -32,7 +32,10 @@
 {%- if page.data.summary is defined -%}
    {%- set description = page.data.summary -%}
 {%- elif page.data.book.review is defined -%}
-   {%- set description = page.data.book.review | striptags(true) -%}
+   {%- set reviewSummary = page.data.book.review.summary | striptags(true) -%}
+   {%- set description -%}
+      {{page.data.book.review.rating}}: {{reviewSummary}}
+   {%- endset -%}
 {%- elif page.data.subtitle is defined -%}
    {%- set description = page.data.subtitle -%}
 {%- else -%}

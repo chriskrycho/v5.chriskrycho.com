@@ -8,9 +8,10 @@ book:
     cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg
     author: Kim Stanley Robinson
     year: 1992
-    rating: Recommended
-    review: >
-        <cite>Red Mars</cite> is not a perfect book—but its ambition is astounding, and it made me think hard about things down here on earth (the way the very best sci-fi does).
+    review:
+        rating: Recommended
+        summary: >
+            <cite>Red Mars</cite> is not a perfect book—but its ambition is astounding, and it made me think hard about things down here on earth (the way the very best sci-fi does).
 tags:
     - science fiction
     - ethics
@@ -19,7 +20,7 @@ tags:
     - Kim Stanley Robinson
     - reading
 date: 2019-12-10T23:30
-updated: 2019-12-11T19:40
+updated: 2020-01-12T18:20
 
 ---
 

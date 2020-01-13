@@ -33,10 +33,12 @@
          <cite>{{book.title}}</cite>,
          {{book.author}} ({{book.year}})
       </section>
-      <section class='book-review__summary'>
-         <b>{{book.rating}}</b><br>
-         {{book.review | safe}}
-      </section>
+      {% if book.review %}
+         <section class='book-review__summary'>
+            <b>{{book.review.rating}}</b><br>
+            {{book.review.summary | inlineMd | safe}}
+         </section>         
+      {% endif %}
    </figcaption>
 </figure>
 {% endif %}
