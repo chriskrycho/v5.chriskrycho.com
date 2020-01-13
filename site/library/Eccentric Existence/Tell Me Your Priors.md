@@ -14,15 +14,13 @@ tags:
     - Eccentric Existence
     - reading notes
 date: 2020-01-12T20:55
-updated: 2020-01-13T07:58
+updated: 2020-01-13T08:00
 
 ---
 
 :::note
 I’m starting something new with this post: public reflections and commentary on the things I’m reading. The idea here is to model and encourage a more readerly, more thoughtful, more research-oriented world, to whatever small degree and in whatever small way I can—as well as to expose those of you out there following along to the more interesting things I come across. These kinds of posts are far from the totality of my notes on whatever I’m reading; they’re a carefully-chosen selection of my thoughts and comments that are designed to be *publicly fruitful*. (My notes in general ramble and dither and are just generally not at all worth publishing!) As with my writing in general, I’m under no illusions that I’m going to change the world with this. Perhaps, however, I can make some corner of it a *little* bit better.
 :::
-
----
 
 This afternoon I started reading David H. Kelsey’s <cite>Eccentric Existence: A Theological Anthropology</cite>. I’ve gotten through only the first chapter (in its two parts), and on the whole I’m quite enjoying it. However, having finished his introductory chapters, including an academically-oriented chapter on method, I found myself with a remaining, and quite serious question: <i>what, exactly, are David Kelsey’s theological commitments—if any?</i>
 
