@@ -1,0 +1,10 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "Eccentric Existence: A Theological Anthropology",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/eccentric-existence.jpg",
+      "author": "David H. Kelsey",
+      "year": 2009
+   }
+}
