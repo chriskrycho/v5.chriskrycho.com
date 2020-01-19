@@ -17,7 +17,7 @@ date: 2020-01-18T20:15
 
 ---
 
-I have a plea for all of you who write on the web—whether that’s on a blog, in a newsletter, on Twitter, or anywhere else: if you are going to share text from a book or other offline source, ***please do not share just an image of the text; please share a transcript of the text instead!**
+I have a plea for all of you who write on the web—whether that’s on a blog, in a newsletter, on Twitter, or anywhere else: if you are going to share text from a book or other offline source, ***please do not share just an image of the text; please share a transcript of the text instead!***
 
 ## Why
 
