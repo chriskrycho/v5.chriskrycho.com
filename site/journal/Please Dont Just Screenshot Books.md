@@ -13,6 +13,7 @@ tags:
     - social media
     - Zettelkasten
     - note-taking
+date: 2020-01-18T20:15
 
 ---
 
