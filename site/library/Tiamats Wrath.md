@@ -19,10 +19,11 @@ tags:
     - just war
     - James S. A. Corey
 date: 2020-01-23T21:20
+updated: 2020-01-23T22:30
 
 ---
 
-I reread <cite>Tiamat’s Wrath</cite>—the 8th and penultimate novel in James S. A. Corey’s sci-fi series <cite>The Expanse</cite>—this week, after having reread the first five books while down with the flu over my Christmas vacation. I enjoyed it just as much the second time through as I did the first, and I’m eager to see how the final installment plays out when it arrives sometime this year.
+I reread <cite>Tiamat’s Wrath</cite>—the 8th and penultimate novel in James S. A. Corey’s sci-fi series <cite>The Expanse</cite>—this week, after having reread the first seven books while down with the flu over my Christmas vacation and in the weeks since. I enjoyed it just as much the second time through as I did the first, and I’m eager to see how the final installment plays out when it arrives sometime this year.
 
 (Normally I would be nervous about a final installment in such a long series. Here… well, I’m still a *little* nervous whether the last book will stick the landing, but the authors whose joint pen name is James S. A. Corey have done such a good job that I’m more confident than I would normally be.)
 
@@ -36,7 +37,7 @@ Also: I enjoy these books, but I don’t unambiguously recommend them. There is 
 
 ## What books like this can do
 
-The first, though less interesting, is how the eighth book in a series can do things that no other kind of book really can. Characters can have payoffs at the end of thousands and thousands of pages that even the best single volume can never really match. This is one of the great allures of epic fantasy and sci-fi: it tells stories on scopes—scopes not only of the *world* but of *characters*—that few other genres even reach for. The closest parallels I can think of are popular thriller or mystery series with long-running heroes, but even they aren’t doing *quite* the same thing that epic fantasy or sci-fi are. In particular, they rarely let main characters die, at least in the books outside sci-fi that I’m acquainted with. (Mild spoilers: this book does that!)
+The first of those notes is the way the eighth book in a series can do things that no other kind of book really can. Characters can have payoffs at the end of thousands and thousands of pages that even the best single volume can never really match. This is one of the great allures of epic fantasy and sci-fi: it tells stories on scopes—scopes not only of the *world* but of *characters*—that few other genres even reach for. The closest parallels I can think of are popular thriller or mystery series with long-running heroes, but even they aren’t doing *quite* the same thing that epic fantasy or sci-fi are. In particular, they rarely let main characters die, at least in the books outside sci-fi that I’m acquainted with. (Mild spoilers: this book does that!)
 
 This is part of the appeal of the Marvel movies of the last decade and change, as well as every long-running television series ever (but especially the good ones with an eye to both character and plot development). Watching Iron Man and Captain America over the course of a decade—ridiculous though the ideas were at times—lent an emotional potency to <cite>Endgame</cite> that few other movies of its genre (blockbuster action movies) could hope to muster.
 
@@ -46,9 +47,9 @@ Epic sci-fi and fantasy aren’t necessarily the richest fiction I read.[^tolkie
 
 ## One big idea
 
-I quite appreciate that, while <cite>The Expanse</cite> novels are not in the least <i>message books</i>—they’re just aiming to be, and succeeding at being, really good space opera—they do have a consistent idea that runs through the whole series. Namely: that violence may sometimes be necessary, but that doesn’t make it good or right, and those who are forced to fight by others who leave no other choice should always fight toward reconciliation, not merely victory.
+<cite>The Expanse</cite> novels are not in the least <i>message books</i>—they’re just aiming to be, and succeeding at being, really good space opera. They do, however, have a consistent idea that runs through the whole series. Namely: that violence may sometimes be necessary, but that doesn’t make it good or right, and those who are forced to fight by others who leave no other choice should always fight toward reconciliation, not merely victory.
 
-That this would be such a pervasive theme might seem a bit ironic: the series tells the story of *several* wars, of varying degrees of nastiness. But the authors have been consistent. They have shown a world where war is always a bad thing, not to be taken up lightly or happily, and fought in pursuit of peace. Not peace at the barrel of a gun, but the peace of people no longer enemies with each other.
+That this would be such a pervasive theme might seem a bit ironic: the series tells the story of *several* wars, of varying degrees of nastiness. But the authors have been consistent. They have shown a world where war is always a bad thing, not to be taken up lightly or happily, and fought only in pursuit of peace. Not peace at the barrel of a gun, but the peace of people no longer enemies with each other.
 
 This little exchange, three quarters of the way through <cite>Tiamat’s Wrath</cite>, captures the sentiment clearly and beautifully:
 
