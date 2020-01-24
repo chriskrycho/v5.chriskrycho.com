@@ -1,0 +1,25 @@
+---
+title: Archive
+subtitle: Every single post on the site.
+permalink: /archive/
+eleventyExcludeFromCollections: true
+---
+
+{% extends 'base.njk' %}
+{% import 'components/item.njk' as item %}
+{% import 'components/archive-list.njk' as archive %}
+
+{%- block main -%}
+<section class='content-block'>
+{{item.header(type='archive', title=title, subtitle=subtitle)}}
+
+{%- if collections.all.length -%}
+   {% for entry in collections.all %}
+      {{entry.title}}
+   {% endfor %}
+   {{ archive.list(collections.all | archiveByYears('NEW_FIRST'), idByCollection=true) }}
+{%- else -%}
+   {%- include 'blocks/soon.njk' -%}
+{%- endif -%}
+</div>
+{%- endblock main -%}

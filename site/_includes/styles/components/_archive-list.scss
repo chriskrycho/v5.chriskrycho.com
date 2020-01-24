@@ -118,6 +118,12 @@
          weight: 400;
       }
       margin-bottom: ms(-8);
+
+      &__collection {
+         font-weight: 300;
+         font-size: ms(-1);
+         letter-spacing: 0.5pt;
+      }
    }
 
    .item-permalink {

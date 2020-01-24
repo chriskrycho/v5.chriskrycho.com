@@ -12,5 +12,6 @@ module.exports = [
    { type: 'page', title: 'Curriculum Vitae', path: '/cv/' },
    { type: 'page', title: 'Appearances', path: '/appearances/' },
    { type: 'separator' },
+   { type: 'page', title: 'Archive', path: '/archive/' },
    { type: 'page', title: 'Colophon', path: '/colophon/' },
 ]
