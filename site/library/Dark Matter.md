@@ -7,6 +7,7 @@ book:
   title: Dark Matter
   author: Blake Crouch
   cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/dark-matter.jpg
+  link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matter-Blake-Crouch%2Fbook%2F34241696
   year: 2016
   review:
     rating: Recommended
