@@ -14,7 +14,7 @@ tags:
     - Zettelkasten
     - note-taking
 date: 2020-01-18T20:15
-updated: 2020-01-19T15:15
+updated: 2020-01-25T14:55
 
 ---
 
@@ -36,7 +36,7 @@ On iOS, I’ve been *extremely* happy using [PrizmoGo] to solve this problem. Yo
 
 [PrizmoGo]: https://apps.apple.com/us/app/prizmo-go-text-grabber/id1183367390
 
-If you *must* share an image (maybe it’s from a microfiche catalog and OCR fails?), please look for a way to add “descriptive text” or similar in the tool you’re posting with. Twitter and Facebook have both done this in the past year, and on Instagram you can post the text content in the post associated with the picture. None of these are perfect—and in particular, they’re very limited in the amount of text you can share—but they’re better than nothing\![^social-media]
+If you *must* share an image (maybe it’s from a microfiche catalog and OCR fails?), please look for a way to add “descriptive text” or similar in the tool you’re posting with. Twitter and Facebook have both enabled this in the past year, and on Instagram you can post the text content in the post associated with the picture. None of these are perfect—and in particular, they’re very limited in the amount of text you can share—but they’re better than nothing\![^social-media]
 
 *[OCR]: optical character recognition
 
