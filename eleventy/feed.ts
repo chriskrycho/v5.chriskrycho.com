@@ -83,7 +83,7 @@ function isBook(maybeBook: unknown): maybeBook is Book {
 
 function describe(book: Book): string {
    const linked = (content: string): string =>
-      book.link ? `<a href='${book.link}'>${content}</a>` : content
+      book.link ? `<a href='${book.link}' rel='nofollow'>${content}</a>` : content
 
    const year = book.year ? ` (${book.year})` : ''
 
