@@ -42,7 +42,11 @@
       {% if item.data.book %}
          {% set book = item.data.book %}
          &lt;p&gt;
+            {% if book.link %}
+            &lt;a href="{{book.link}}" rel="nofollow&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
+            {% else %}
             &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
+            {% endif %}
             {% if book.review -%}
             &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
             {%- endif %}
