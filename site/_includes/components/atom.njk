@@ -46,6 +46,9 @@
             {% if book.review -%}
             &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
             {%- endif %}
+            {%- if book.cover -%}
+            &lt;img src="{{book.cover}}" alt="cover art for {{book.title}}" /&gt;
+            {%- endif -%}
          &lt;/p&gt;
       {% endif %}
       {{item.templateContent}}

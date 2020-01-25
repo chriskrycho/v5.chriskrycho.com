@@ -1,5 +1,6 @@
 {% extends 'item.njk' %}
 {% import 'components/item.njk' as item %}
+{% from 'components/book.njk' import review %}
 
 {% block header %}
 {{item.header(type='post', title=title, subtitle=subtitle)}}
@@ -26,21 +27,7 @@
 
 {% block content %}
 {% if book %}
-<figure class='book-review'>
-   <img src='{{book.cover}}' alt='cover for {{book.title}}' class='book-review__cover' />
-   <figcaption class='book-review__details'>
-      <section class='book-review__about'>
-         <cite>{{book.title}}</cite>,
-         {{book.author}} ({{book.year}})
-      </section>
-      {% if book.review %}
-         <section class='book-review__summary'>
-            <b>{{book.review.rating}}</b><br>
-            {{book.review.summary | inlineMd | safe}}
-         </section>         
-      {% endif %}
-   </figcaption>
-</figure>
+{{review(book)}}
 {% endif %}
 {{ super() }}
 {% endblock %}

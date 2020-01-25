@@ -31,6 +31,7 @@ interface Book {
       summary: string
    }
    cover?: string
+   link?: string
 }
 
 /** Extending the base Eleventy item with my own data */
@@ -49,6 +50,20 @@ declare module '../types/eleventy' {
    }
 }
 
+type TypeOf =
+   | 'undefined'
+   | 'object'
+   | 'boolean'
+   | 'number'
+   | 'bigint'
+   | 'string'
+   | 'symbol'
+   | 'function'
+
+function hasType<T extends TypeOf>(type: T, item: unknown): item is T {
+   return typeof item === type
+}
+
 function isBook(maybeBook: unknown): maybeBook is Book {
    if (typeof maybeBook !== 'object' || !maybeBook) {
       return false
@@ -59,18 +74,21 @@ function isBook(maybeBook: unknown): maybeBook is Book {
    return (
       typeof maybe.title === 'string' &&
       typeof maybe.author === 'string' &&
-      typeof maybe.review === 'string' &&
-      typeof maybe.rating === 'string' &&
-      (maybe.year
-         ? typeof maybe.year === 'number' || typeof maybe.year === 'string'
-         : true) &&
-      (maybe.cover ? typeof maybe.cover === 'string' : true)
+      (hasType('number', maybe.year) || hasType('string', maybe.year)) &&
+      hasType('object', maybe.review) &&
+      hasType('string', maybe.cover) &&
+      hasType('string', maybe.link)
    )
 }
 
 function describe(book: Book): string {
+   const linked = (content: string): string =>
+      book.link ? `<a href='${book.link}'>${content}</a>` : content
+
    const year = book.year ? ` (${book.year})` : ''
-   const bookInfo = `<p><cite>${book.title}</cite>, ${book.author}${year}</p>`
+
+   const title = linked(`<cite>${book.title}</cite>`)
+   const bookInfo = `<p>${title}, ${book.author}${year}</p>`
    const review = book.review
       ? `<p><b>${book.review.rating}:</b> ${book.review.summary}</p>`
       : ''
@@ -111,7 +129,7 @@ const itemTitle = (item: Item): string | undefined => {
  */
 const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedItem> =>
    canParseDate(item.date)
-      ? just<FeedItem>({
+      ? just({
            id: absoluteUrl(item.url, config.url),
            author: {
               name: config.author.name,
@@ -126,10 +144,8 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
               typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
                  ? isoDate(item.data.updated)
                  : undefined,
-           image: optionalString(
-              item.data?.image ?? (item.data?.book as undefined | Dict<string>)?.cover,
-           ),
-           external_url: optionalString(item.data?.link),
+           image: optionalString(item.data?.image ?? item.data?.book?.cover),
+           external_url: optionalString(item.data?.link ?? item.data?.book?.link),
            tags: Array.isArray(item.data?.tags) ? item.data?.tags : [],
            banner_image: optionalString(item.data?.splash),
         })

@@ -8,6 +8,7 @@ book:
     title: Tiamat’s Wrath
     author: James S. A. Corey
     cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/tiamats-wrath.jpg
+    link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677%3Fmatches%3D46
     year: 2019
     review:
       rating: Recommended

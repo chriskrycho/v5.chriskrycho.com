@@ -129,7 +129,8 @@
          bottom: ms(3);
       }
 
-      &__cover {
+      &__cover-link {
+         width: 100%;
          max-width: calc(40vh / 2);
          text-align: right;
       }
