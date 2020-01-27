@@ -11,6 +11,8 @@ tags:
     - Eccentric Existence
     - reading notes
 date: 2020-01-26T19:00
+summary: >
+    What exactly do authors (including David H. Kelsey) mean when they call something “problematic”? And why so hesitant to actually explain the problems?
 
 ---
 
