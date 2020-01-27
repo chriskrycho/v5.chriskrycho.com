@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 
 {% extends 'base.njk' %}
 {% import 'components/item.njk' as item %}
-{% import 'components/archive-list.njk' as archive %}
+{% from 'components/archive-list.njk' import list %}
 
 {%- block main -%}
 <section class='content-block'>
@@ -17,7 +17,7 @@ eleventyExcludeFromCollections: true
    {% for entry in collections.all %}
       {{entry.title}}
    {% endfor %}
-   {{ archive.list(collections.all | archiveByYears('NEW_FIRST'), idByCollection=true) }}
+   {{ list(collections.all | archiveByYears('NEW_FIRST'), idByCollection=true) }}
 {%- else -%}
    {%- include 'blocks/soon.njk' -%}
 {%- endif -%}
