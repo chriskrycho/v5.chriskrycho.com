@@ -4,10 +4,9 @@ qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 tags:
-    - hermeneutics
-    - reading
-    - writing
-    - priors
+    - theology
+    - anthropology
+    - quotes
     - David H. Kelsey
     - Eccentric Existence
     - reading notes
