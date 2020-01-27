@@ -6,14 +6,16 @@ summary: >
     What exactly do authors (including David H. Kelsey) mean when they call something “problematic”? And why so hesitant to actually explain the problems?
 qualifiers:
     audience: >
-        Other readers of so much contemporary nonfiction, which makes such heavy use of this… problematic… word.
+        other readers of so much contemporary nonfiction, which makes such heavy use of this… problematic… word.
+    epistemic: >
+        a mix of confused (by the usage) and *very* confident (on what should be done about it).
 tags:
     - rhetoric
     - David H. Kelsey
     - Eccentric Existence
     - reading notes
 date: 2020-01-26T19:00
-updated: 2020-01-26:19:05
+updated: 2020-01-26:19:10
 
 ---
 
