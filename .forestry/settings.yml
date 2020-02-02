@@ -26,14 +26,6 @@ sections:
   exclude: "**/_*"
   templates:
   - post
-- type: heading
-  label: Three Ps
-- type: directory
-  path: site/photography
-  label: Photography
-  create: all
-  match: "**/*.md"
-  exclude: "**/_*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
