@@ -19,7 +19,7 @@ sections:
   match: "**/*.md"
   exclude: "**/_*"
 - type: directory
-  path: library
+  path: site/library
   label: Library
   create: all
   match: "**/*.md"
