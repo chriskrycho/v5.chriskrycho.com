@@ -9,12 +9,9 @@
 }
 
 .site-title {
-   --bar-expanded-width: 3rem;
-
    flex: 1 1 auto;
    align-self: center;
 
-   padding-right: var(--bar-expanded-width);
    font: {
       family: var(--sans-display);
       weight: 400;
@@ -41,7 +38,7 @@
          content: '';
          position: absolute;
          z-index: -1;
-         top: 40%;
+         top: 90%;
          background-color: var(--bar-color);
          height: calc(var(--bar-height) - 2px);
          width: var(--bar-width);
@@ -53,13 +50,17 @@
          }
 
          transition: all var(--transition);
-         left: calc(100% + 0.5em);
+         left: calc(50%);
       }
 
       &:hover,
       &:active {
          --bar-color: var(--title-hover-bar);
-         --bar-width: var(--bar-expanded-width);
+         --bar-width: 98.5%;
+
+         &:after {
+            left: 0.25%;
+         }
       }
    }
 }
@@ -129,17 +130,8 @@
       }
 
       .site-title {
-         --bar-expanded-width: #{ms(5)};
-
          flex: 1 0 100%;
          font-size: calc(var(--sans-adjust) * #{ms(6)});
-
-         a {
-            &:after {
-               top: 47%;
-               left: calc(100% + 9px);
-            }
-         }
       }
    }
 
@@ -159,28 +151,6 @@
 
       .site-subtitle {
          font-size: ms(1);
-      }
-   }
-
-   @media (max-width: $break-1) {
-      .site-title {
-         --bar-expanded-width: 100%;
-         padding: 0;
-
-         a {
-            &:after {
-               top: unset;
-               left: 50%;
-               bottom: calc(var(--bar-height) * 2);
-            }
-
-            &:hover, &:active {
-               &:after {
-                  left: 0;
-               }
-            }
-         }
-
       }
    }
 }
