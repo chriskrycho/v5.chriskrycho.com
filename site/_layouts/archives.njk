@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 
 {%- block main -%}
 <section class='content-block'>
-{{item.header(type='archive', title=title, subtitle=subtitle)}}
+{{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
 {% set c = page.inputPath | toCollection %}
 {%- if collections[c] and collections[c].length -%}

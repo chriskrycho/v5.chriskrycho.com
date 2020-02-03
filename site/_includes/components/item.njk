@@ -1,9 +1,19 @@
-{% macro header(type, title, subtitle) %}
+{% macro header(type, title, subtitle, subscribe) %}
 {% if title %}
 <header class='item-header {{type}}'>
    <h1 class='item-title'>{{title | inlineMd | safe}}</h1>
    {% if subtitle -%}
-      <p class='item-subtitle'>{{subtitle | inlineMd | safe}}</p>
+      <p class='item-subtitle'>
+         {{subtitle | inlineMd | safe}}
+
+         {% if subscribe %}
+            Subscribe via <a href='{{subscribe.atom}}'>Atom</a> or <a href='{{subscribe.json}}'><abbr>JSON</abbr></a> feed
+            {%- if subscribe.email -%}
+            , or <a href='{{subscribe.email}}'>via email</a>
+            {%- endif -%}
+            .
+         {% endif %}
+      </p>
    {%- endif %}
 </header>   
 {% endif %}

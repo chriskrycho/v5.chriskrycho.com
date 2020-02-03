@@ -3,6 +3,11 @@ title: Archive
 subtitle: Every single post on the site.
 permalink: /archive/
 eleventyExcludeFromCollections: true
+subscribe:
+    atom: "/feed.xml"
+    json: "/feed.json"
+    email: "https://buttondown.email/v5.chriskrycho.com"
+
 ---
 
 {% extends 'base.njk' %}
@@ -11,7 +16,7 @@ eleventyExcludeFromCollections: true
 
 {%- block main -%}
 <section class='content-block'>
-{{item.header(type='archive', title=title, subtitle=subtitle)}}
+{{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
 {%- if collections.all.length -%}
    {% for entry in collections.all %}
