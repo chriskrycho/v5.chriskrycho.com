@@ -22,15 +22,24 @@
    <link href="/assets/images/favicon.ico" type="image/ico" rel="icon">
 
    <link rel='alternate' href='/feed.json' type='application/json' title='Sympolymathesy (JSON)'>
+   {%- if subscribe %}
+   <link rel='alternate' href='{{subscribe.json}}' type='application/json' title='{{title}} - Sympolymathesy (JSON)'>
+   {% else %}
    <link rel='alternate' href='/essays/feed.json' type='application/json' title='Essays - Sympolymathesy (JSON)'>
    <link rel='alternate' href='/journal/feed.json' type='application/json' title='Journal - Sympolymathesy (JSON)'>
    <link rel='alternate' href='/library/feed.json' type='application/json' title='Library - Sympolymathesy (JSON)'>
    <link rel='alternate' href='/appearances/feed.json' type='application/json' title='Appearances - Sympolymathesy (JSON)'>
+   {% endif -%}
+
    <link rel='alternate' href='/feed.xml' type='application/atom+xml' title='Sympolymathesy (Atom)'>
+   {%- if subscribe %}
+   <link rel='alternate' href='{{subscribe.atom}}' type='application/atom+xml' title='{{title}} - Sympolymathesy (Atom)'>
+   {% else %}
    <link rel='alternate' href='/essays/feed.xml' type='application/atom+xml' title='Essays - Sympolymathesy (Atom)'>
    <link rel='alternate' href='/journal/feed.xml' type='application/atom+xml' title='Journal - Sympolymathesy (Atom)'>
    <link rel='alternate' href='/library/feed.xml' type='application/atom+xml' title='Library - Sympolymathesy (Atom)'>
    <link rel='alternate' href='/appearances/feed.xml' type='application/atom+xml' title='Appearances - Sympolymathesy (Atom)'>
+   {% endif -%}
 
    {% for link in config.author.links -%}
    <link rel='me' href='{{link}}'>
