@@ -30,6 +30,7 @@
 .content-block {
    --max-width: 32rem;
    font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
+   padding-bottom: ms(2);
 
    aside,
    .note,
