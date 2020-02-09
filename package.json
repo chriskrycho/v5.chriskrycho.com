@@ -30,7 +30,7 @@
       "eslint-plugin-prettier": "^3.1.1",
       "gulp": "^4.0.2",
       "gulp-sass": "^4.0.2",
-      "highlight.js": "9.16.2",
+      "highlight.js": "^9.18.1",
       "luxon": "^1.17.2",
       "markdown-it": "^10.0.0",
       "markdown-it-abbr": "^1.0.4",
