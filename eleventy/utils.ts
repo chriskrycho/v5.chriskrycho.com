@@ -4,7 +4,7 @@ interface ToString {
    toString(): string
 }
 
-export const toString = (a: ToString) => a.toString()
+export const toString = (a: ToString): string => a.toString()
 
 export const logErr = (err: unknown): void => {
    if (env['DEBUG']) {
