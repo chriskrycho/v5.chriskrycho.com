@@ -44,7 +44,7 @@
       "true-myth": "^4.0.0",
       "ts-node": "^8.5.2",
       "typescript": "^3.7.5",
-      "typeset": "0.2.2",
+      "typeset": "0.2.6",
       "uslug": "^1.0.4"
    },
    "eslintConfig": {
