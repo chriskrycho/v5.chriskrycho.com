@@ -9,6 +9,10 @@ qualifiers:
 tags:
     - web design
     - blogging
+    - TypeScript
+    - CSS
+    - SCSS
+    - HTML
 
 ---
 
@@ -58,24 +62,77 @@ I should clarify, before I go any further: this is *not* a stack I would recomme
 ## Outline
 
 - [Costs](#costs)
-- [DNS: Cloudflare](#dns-cloudflare)
+- [Writing](#writing)
+- [Workflow](#workflow)
+    - [Hosting](#hosting)
+    - [Deploying](#deploying)
+    - [CMS](#cms)
 - [Domain registration](#domain-registration)
+- [DNS: Cloudflare](#dns-cloudflare)
 - [Site generator](#site-generator)
 - [Fonts](#fonts)
-- [Hosting](#hosting)
-- [Deploying](#deploying)
-- [CMS](#cms)
-- [Writing](#writing)
 
 ## Costs
 
-My costs are pretty low for this setup. I pay $15/year for the domain. Cloudflare is free for setups like mine. GitHub is free for setups like mine. Netlify is free for setups like mine. The code font, [Hack][hack], is *also* free. (Sensing a theme here?)
+My costs are pretty low for this setup. Cloudflare is free for setups like mine. GitHub is free for setups like mine. Netlify is free for setups like mine. The code font, [Hack][hack], is *also* free. (Sensing a theme here?)
 
-In terms of things I *do* actually pay for, though: I paid a few hundred dollars to perpetually license [Sabon][sabon] (the body text) a few years ago—both for the web and for desktop work. I get [Cronos][cronos] via my $10/month for Adobe’s Lightroom package, which includes Adobe Fonts. (This is the piece here that stings the most in terms of ongoing costs, but Lightroom is *fabulous*, so I’m just rolling with it at this point.)
+In terms of things I *do* actually pay for (or have in the past), though:
+
+- I pay $15/year for the domain at Hover.
+
+- I paid a few hundred dollars to perpetually license [Sabon][sabon] (the body text) a few years ago—both for the web and for desktop work. I get [Cronos][cronos] via my $10/month for Adobe’s Lightroom package, which includes Adobe Fonts. (This is the piece here that stings the most in terms of ongoing costs, but Lightroom is *fabulous*, so I’m just rolling with it at this point.)
 
 [hack]: https://sourcefoundry.org/hack/
 [sabon]: https://www.fonts.com/font/linotype/sabon
 [cronos]: https://fonts.adobe.com/fonts/cronos
+
+## Writing
+
+These days I do my writing in a wild hodgepodge of tools. None of them thrill me, because all of them do *some* things really well… and leave others in a “ugh, not quite there” state. For example, this particular paragraph I’m drafting in [Byword]—my old standby, an app I’ve been using for over half a decade now. It remains a rock-solid, very lightweight and very *fast* editor with just the right level of minimal Markdown support, and I love it for that. If I’m just writing a blog post like this, and I’m on macOS, Byword is still the app I’m most likely to reach for.
+
+However, when I am working on code samples, it leaves a few things to be desired. For that, I turn to [Caret]—a more recent discovery, and one that lacks Byword’s light weight and phenomenal performance, but which is tuned to the writing *programmer*. At this point I’m using the [latest beta][caret-beta] they released… about a year ago. They’ve since [declared][caret-tweet] their intention to build something new and better using some of the same tech that underpins Caret. The *big* downside for Caret is that it’s an [Electron] app, and that means that it just *is* slower and heavier than Byword—inevitably.
+
+Also in the “unfortunately slower than Byword” are two other tools I reach for on both macOS and iOS: [iA Writer] and [Ulysses]. Ulysses in particular I tend to reach for when working on *large projects*. So, for example, when I built out the teaching materials for [the Sunday School class I taught last summer][christology-class], I wrote the majority of it in Ulysses. It’s a much better *project*-focused writing tool than any of the others, though iA Writer has gotten much closer in the last few years. The big differentiator between iA Writer and Ulysses is that, both for good and for ill, Ulysses does more magic. You can build out a project in iA Writer, and the ways it does it works with other tools too… but you do it *manually*. Ulysses’ way of working with Markdown is much more bespoke, but it Just Works.[^just-works]
+
+As mentioned, though, both iA Writer and Ulysses are *slower* (and just feel heavier) than I’d like. As a result, I *also* have dedicated apps I reach for on iOS for one-off posts. While I love the experience of writing in Byword there no less than I do on macOS, I pretty much never use it, for one critical reason: it doesn’t integrate nearly as nicely as some of the other options with the [document provider locations][macstories] introduced and increasingly polished in the last few versions of iOS. Instead, I end up using [1Writer] almost exclusively for one-off posts like this one. It lets me much more quickly open and interact with not only iCloud folders but—and this is the real key—Git locations exposed by [Working Copy]. (For more on this, see the next section!)
+
+Finally, I will admit that I *do* in fact do *some* of my writing in [Visual Studio Code][vs-code]. It’s *really* not a great writing environment, but it has some really nice tools for Markdown editing. In particular, I use [an extension][all-in-one] that automates everything from generating and maintaining a table of contents (like the one above) to table formatting. It also makes for a nice environment for working with code samples.
+
+[Byword]: https://www.bywordapp.com
+[Caret]: https://caret.io
+[caret-beta]: https://github.com/careteditor/releases-beta/releases
+[caret-tweet]: https://twitter.com/careteditor/status/1136198029357264896?s=20
+[Electron]: https://www.electronjs.org
+[iA Writer]: https://ia.net/writer
+[Ulysses]: https://ulysses.app
+[christology-class]: https://v4.chriskrycho.com/2019/christology-god-with-us-and-for-us.html
+[macstories]: https://www.macstories.net/stories/ios-11-the-macstories-review/14/
+[1Writer]: http://1writerapp.com
+[Working Copy]: https://workingcopyapp.com
+[vs-code]: https://code.visualstudio.com
+[all-in-one]: https://github.com/yzhang-gh/vscode-markdown
+
+[^just-works]: One of the goals I have for [rewrite] is for it to *feel* as good to use as Ulysses while being as interoperable as iA Writer for project management, and as fast and lightweight as Byword. This may prove impossible… but it’s a goal.
+
+[rewrite]: https://rewrite.software
+
+## Workflow
+
+My publishing work flow feels relatively straightforward to me at this point, but that’s entirely a function of the fact that I’ve been using a variant on this same approach for over half a decade now, and that it’s a *programmer’s* work flow.
+
+### Hosting
+
+### Deploying
+
+### CMS
+
+I don’t normally *need* a CMS, but I do like to have the option. Historically, there were not great options in terms of an interface for writing and managing content… unless you wanted a setup more like WordPress or Ghost: a server application with a database, and a server to run it on. I have a preference (admittedly a bit strange) for simple text files to be the “source of truth” for the content on my website.[^pdfs-etc] For the last few years, I got by managing everything just via command line tools and building everything on my home machine.
+
+Two things have changed. First: as I noted above, I now deploy everything via Netlify, and I don’t *need* to build it on my local machine. Second, though, the last few years have seen the advent of some fairly nice <abbr>CMS</abbr>es for statically-generated sites like this one! <!-- TODO: keep going! -->
+
+[^pdfs-etc]: I like being able to generate things which *aren’t* web pages from my content sometimes!
+
+## Domain registration
 
 ## DNS: Cloudflare
 
@@ -94,36 +151,6 @@ If you’re curious: yes, I *do* have thoughts on Cloudflare’s approach to dec
 [Stablehost]: https://www.stablehost.com
 [rewrites]: https://v4.chriskrycho.com/2019/my-final-round-of-url-rewrites-ever.html
 
-## Domain registration
-
 ## Site generator
 
 ## Fonts
-
-## Hosting
-
-## Deploying
-
-## CMS
-
-I don’t normally *need* a CMS, but I do like to have the option. Historically, there were not great options in terms of an interface for writing and managing content… unless you wanted a setup more like WordPress or Ghost: a server application with a database, and a server to run it on. I have a preference (admittedly a bit strange) for simple text files to be the “source of truth” for the content on my website.[^pdfs-etc] For the last few years, I got by managing everything just via command line tools and building everything on my home machine.
-
-Two things have changed. First: as I noted above, I now deploy everything via Netlify, and I don’t *need* to build it on my local machine. Second, though, the last few years have seen the advent of some fairly nice CMSes for statically-generated sites like this one! <!-- TODO: keep going! -->
-
-[^pdfs-etc]: I like being able to generate things which *aren’t* web pages from my content sometimes!
-
-## Writing
-
-These days I do my writing in a wild hodgepodge of tools. None of them thrill me, because all of them do *some* things really well… and leave others in a “ugh, not quite there” state. For example, this particular paragraph I’m drafting in [Byword]—my old standby, an app I’ve been using for over half a decade now. It remains a rock-solid, very lightweight and very *fast* editor with just the right level of minimal Markdown support, and I love it for that. If I’m just writing a blog post like this, and I’m on macOS, Byword is still the app I’m most likely to reach for.
-
-However, when I am working on code samples, it leaves a few things to be desired. For that, I turn to [Caret]—a more recent discovery, and one that lacks Byword’s light weight and phenomenal performance, but which is tuned to the writing *programmer*. At this point I’m using the [latest beta][caret-beta] they released… about a year ago. They’ve since [declared][caret-tweet] their intention to build something new and better using some of the same tech that underpins Caret. The *big* downside for Caret is that it’s an [Electron] app, and that means that it just *is* slower and heavier than Byword—inevitably.
-
-Also in the “unfortunately slower than Byword” are two other tools I reach for on both macOS and iOS: [iA Writer] and [Ulysses].
-
-[Byword]: https://www.bywordapp.com
-[Caret]: https://caret.io
-[caret-beta]: https://github.com/careteditor/releases-beta/releases
-[caret-tweet]: https://twitter.com/careteditor/status/1136198029357264896?s=20
-[Electron]: https://www.electronjs.org
-[iA Writer]: https://ia.net/writer
-[Ulysses]: https://ulysses.app
