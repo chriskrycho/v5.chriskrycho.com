@@ -16,6 +16,7 @@ tags:
     - HTTPS
     - blogging
 date: 2020-02-02T19:40
+updated: 2020-02-08T17:20
 
 ---
 
@@ -44,8 +45,18 @@ Once I had made those two changes, everything worked nicely! I hope this ends up
 
 [^xml-rpc-api]: If you’re thinking that it would be really nice if WordPress offered a modern JSON API instead of being stuck with XML-RPC, well… I’m with you.
 
+    :::note
+    A correction from [a reader][jws]! WordPress [*does* have a JSON API][wp-api], and has for almost half a decade now! I have *no idea* why Ulysses is using XML-RPC instead of that API; at first blush [it certainly looks like it could][wp-api-post]. My bad for not checking this and just assuming the problem was on WordPress’ end rather than Ulysses’.
+    :::
+
 *[XML-RPC]: XML (“extensible markup language”) remote procedure call
 *[API]: application programming interface
 *[HTTPS]: HyperText Transfer Protocol Secure
+*[HTTP]: HyperText Transfer Protocol
 *[IP]: Internet Protocol
 *[JSON]: JavaScript Object Notation
+
+[wp-api]: https://developer.wordpress.org/rest-api/
+[wp-api-post]: https://developer.wordpress.org/rest-api/reference/posts/
+[jws]: https://jeremywsherman.com
+[creating]: https://developer.wordpress.org/rest-api/reference/posts/#create-a-post
