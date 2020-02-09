@@ -41,7 +41,7 @@
       "markdown-it-implicit-figures": "^0.9.0",
       "markdown-it-sup": "^1.0.0",
       "prettier": "^1.19.1",
-      "true-myth": "^3.0.0",
+      "true-myth": "^4.0.0",
       "ts-node": "^8.5.2",
       "typescript": "^3.7.5",
       "typeset": "0.2.2",

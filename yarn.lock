@@ -5635,10 +5635,10 @@ trim-newlines@^1.0.0:
   dependencies:
     glob "^7.1.2"
 
-"true-myth@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/true-myth/-/true-myth-3.0.0.tgz#94e67a3bf270c2e09370dcab5a201b385750c92e"
-  integrity sha512-igEdH4YnEEpTsSZshp4MspGDooM4mOHWYUKyavmaUrhRd4oqWaUnbVgMLJc/Z/bz3s/UgYWAMHoTsG3FMTJWBg==
+"true-myth@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/true-myth/-/true-myth-4.0.0.tgz#3cb4c469d2dea438076c1715049e2c9769db5a0f"
+  integrity sha512-b9Uis/rn4wQr2gffDTB1VwOGVVCbjS4OQBcJwahhd4Y7uZr8xrtyDVzLQxrrRS3ITX7PPc5xbIDQkup6c6tJRw==
 
 ts-node@^8.5.2:
   version "8.5.2"
