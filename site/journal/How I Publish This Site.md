@@ -104,7 +104,7 @@ However, when I am working on code samples, it leaves a few things to be desired
 
 Also in the “unfortunately slower than Byword” are two other tools I reach for on both macOS and iOS: [iA Writer] and [Ulysses]. Ulysses in particular I tend to reach for when working on *large projects*. So, for example, when I built out the teaching materials for [the Sunday School class I taught last summer][christology-class], I wrote the majority of it in Ulysses. It’s a much better *project*-focused writing tool than any of the others, though iA Writer has gotten much closer in the last few years. The big differentiator between iA Writer and Ulysses is that, both for good and for ill, Ulysses does more magic. You can build out a project in iA Writer, and the ways it does it works with other tools too… but you do it *manually*. Ulysses’ way of working with Markdown is much more bespoke, but it Just Works.[^just-works]
 
-As mentioned, though, both iA Writer and Ulysses are *slower* (and just feel heavier) than I’d like. As a result, I *also* have dedicated apps I reach for on iOS for one-off posts. While I love the experience of writing in Byword there no less than I do on macOS, I pretty much never use it, for one critical reason: it doesn’t integrate nearly as nicely as some of the other options with the [document provider locations][macstories] introduced and increasingly polished in the last few versions of iOS. Instead, I end up using [1Writer] almost exclusively for one-off posts like this one. It lets me much more quickly open and interact with not only iCloud folders but—and this is the real key—Git locations exposed by [Working Copy]. (For more on this, see the next section!)
+As mentioned, though, both iA Writer and Ulysses are *slower* (and just feel heavier) than I’d like. As a result, I *also* have dedicated apps I reach for on iOS for one-off posts. While I love the experience of writing in Byword there no less than I do on macOS, I pretty much never use it, for one critical reason: it doesn’t integrate nearly as nicely as some of the other options with the [document provider locations][macstories] introduced and increasingly polished in the last few versions of iOS. Instead, I end up using [1Writer] almost exclusively for one-off posts like this one. It lets me much more quickly open and interact with not only iCloud folders but—and this is the real key—Git locations exposed by [Working Copy]. (For more on this, see the [<b>Workflow</b>](#workflow) section below!)
 
 Finally, I will admit that I *do* in fact do *some* of my writing in [Visual Studio Code][vs-code]. It’s *really* not a great writing environment, but it has some really nice tools for Markdown editing. In particular, I use [an extension][all-in-one] that automates everything from generating and maintaining a table of contents (like the one above) to table formatting. It also makes for a nice environment for working with code samples.
 
@@ -142,10 +142,44 @@ My publishing work flow feels relatively straightforward to me at this point, bu
 
 When I write all that Markdown material, it goes in one of two places, depending on how far along in the process I am. If it’s a big post or essay that I don’t intend to publish for a *long* time yet, I just keep it in an iCloud Drive folder which has a bunch of work-in-progress material like that. That makes it easy to work on from any of those writing tools I mentioned above. Once I’m getting closer to publishing, I move it into the [Git] repository where the entire site lives. I have copies of that on every machine I use, as well as [on GitHub][gh].
 
+<aside>
+
 I use GitHub as a convenient tool for coordination, but (and this is important to me!) it is *not* a single point of failure. If it goes away tomorrow, I’ll be fine. All of the content lives somewhere else, too. I have multiple backups of those copies—in iCloud, in Time Machine backups, and in [Backblaze]. This is another advantage to just using simple text files: backups are *super* easy. If I were hosting this in Ghost or WordPress or another CMS like that, I would need to make regular backups of those databases and set up automated exports for them. Doing it the way I do, I get backup in quintuplicate with *zero* extra effort on my part compared to what I do to back up my data in general.
+
+</aside>
+
+I usually create a Git <i>branch</i> for new posts before I publish them, so that I can take of some of the Netlify features described in the next section. On a Mac, I use mostly the command line and occasionally the [Fork] Git UI for interacting with the repository. On iOS, I use [Working Copy] to interact with the repository. It exposes the repository as a location which I can open from other apps which support document provider locations:
+
+<figure>
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/how-i-publish/document-picker.jpeg" style="max-width: 416px" />
+<figcaption>Opening a Working Copy location from 1Writer</figcaption>
+</figure>
+
+Then I can work with it directly in any app which has mounted the folder. For example, viewing this very post in iA Writer:
+
+<figure>
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/how-i-publish/ia-writer-view.jpeg" style="max-width: 416px" />
+<figcaption>Viewing a Working Copy-supplied item in iA Writer</figcaption>
+</figure>
+
+When I’m done, I can just commit that file to the repository on whatever branch I’m working in and push it up to GitHub, and it will trigger the publication workflow that I built with Netlify (described in the next section).
+
+<figure>
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/how-i-publish/commit.jpeg" style="max-width: 416px" />
+<figcaption>Committing a change in Working Copy</figcaption>
+</figure>
+
+I had used a similar approach in the past for managing the content and design of the site, but it was never a *full* workflow because I couldn’t use it to *publish* the site. For that, I needed to switch up how I published the site. So: Netlify!
+
+<aside>
+
+If you want a *truly* deep dive on this approach with iOS, see Federico Viticci’s [writeup at MacStories][macstories]. This is where I originally learned this workflow was even possible!
+
+</aside>
 
 [Git]: https://git-scm.com
 [Backblaze]: https://www.backblaze.com
+[Fork]: https://fork.dev
 
 ### How the content gets to you
 
