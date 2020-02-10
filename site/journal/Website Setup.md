@@ -126,13 +126,26 @@ Equally important to me at this point though: writing in Markdown means I am wri
 
 [rewrite]: https://rewrite.software
 
+*[UTF]: unicode text format
+
 ## Workflow
 
 My publishing work flow feels relatively straightforward to me at this point, but that’s entirely a function of the fact that I’ve been using a variant on this same approach for over half a decade now, and that it’s a *programmer’s* work flow.
 
-### Hosting
+### Where the content lives
 
-### Deploying
+When I write all that Markdown material, it goes in one of two places, depending on how far along in the process I am. If it’s a big post or essay that I don’t intend to publish for a *long* time yet, I just keep it in an iCloud Drive folder which has a bunch of work-in-progress material like that. That makes it easy to work on from any of those writing tools I mentioned above. Once I’m getting closer to publishing, I move it into the [Git] repository where the entire site lives. I have copies of that on every machine I use, as well as [on GitHub][gh].
+
+I use GitHub as a convenient tool for coordination, but (and this is important to me!) it is *not* a single point of failure. If it goes away tomorrow, I’ll be fine. All of the content lives somewhere else, too. I have multiple backups of those copies—in iCloud, in Time Machine backups, and in [Backblaze]. This is another advantage to just using simple text files: backups are *super* easy. If I were hosting this in Ghost or WordPress or another CMS like that, I would need to make regular backups of those databases and set up automated exports for them. Doing it the way I do, I get backup in quintuplicate with *zero* extra effort on my part compared to what I do to back up my data in general.
+
+[Git]: https://git-scm.com
+[Backblaze]: https://www.backblaze.com
+
+### How the content gets to you
+
+I use [Netlify] to actually host and deploy the site. Netlify is a developer-focused tool, which makes it *super* easy to take a Git repository and turn it into a deployed website. Handily, the way it works means it’s trivial to support a lot of static website publishing tools, including the one I use (see my discussion [below] on 11ty).
+
+[below]: #site-generator
 
 ### CMS
 
