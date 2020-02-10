@@ -2,7 +2,7 @@
 title: Website Setup
 subtitle: Explaining how I run this site—everything.
 summary: Explaining how I run this site—everything.
-date: 2020-02-09T13:10
+date: 2020-02-09T21:00
 qualifiers:
     audience: >
         People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to the TypeScript and templates and <abbr>CSS</abbr>!
@@ -128,9 +128,37 @@ My publishing work flow feels relatively straightforward to me at this point, bu
 
 I don’t normally *need* a CMS, but I do like to have the option. Historically, there were not great options in terms of an interface for writing and managing content… unless you wanted a setup more like WordPress or Ghost: a server application with a database, and a server to run it on. I have a preference (admittedly a bit strange) for simple text files to be the “source of truth” for the content on my website.[^pdfs-etc] For the last few years, I got by managing everything just via command line tools and building everything on my home machine.
 
-Two things have changed. First: as I noted above, I now deploy everything via Netlify, and I don’t *need* to build it on my local machine. Second, though, the last few years have seen the advent of some fairly nice <abbr>CMS</abbr>es for statically-generated sites like this one! <!-- TODO: keep going! -->
+Two things have changed. First: as I noted above, I now deploy everything via Netlify, and I don’t *need* to build it on my local machine. Second, though, the last few years have seen the advent of some decent <abbr>CMS</abbr>es for statically-generated sites like this one! The two best options I found at this point are [Forestry] and [Netlify CMS]. Each has its upsides and its downsides; in the end, for these purposes, I reach for Forestry if I *really* need it… but mostly just don’t reach for either.
+
+Forestry has far and away the better UI of the two. In fact, it has such a reasonable UI that [my friend Stephen][sc] said of it:
+
+> Wow. I am impressed with this CMS.
+> 
+> It ... it makes sense. It's laid out like ... normal people would lay it out. I shouldn't be so shocked, but lo, I'm shocked.
+
+He’s not wrong. Most CMS user interfaces are *not good*. (The best I can say for [WordPress] is that I’ve gotten used to it. [Ghost] is pretty good, but unfortunately doesn’t work for the exact workflow I described above.) That goes double for viewing them on mobile devices, and Forestry’s mobile view is actually quite god! The experience of writing in Forestry is also good, even on iOS, which is *very* unusual for web text editors—even more unusual than just working there at all. Unfortunately, though, it doesn’t support working with Git *branches*, only working with the single “master” branch of the repository. This makes it a non-starter for drafting totally new work at this point, as (at least for now) committing to `master` *publishes the post*!
+
+Netlify CMS handles that particular problem well via its [Editorial Workflow]! However, where Forestry’s CMS UI is one of the *best* of its sort, Netlify CMS is… not. For one thing, it simply does not even try when it comes to mobile devices—not for displaying and certainly not for editing. Given that this is the context where I’m *most* apt to want a CMS, this makes it a non-starter on *that* end.
+
+The other reason I was particularly interested in Netlify CMS is that its Editorial Workflow supports [Open Authoring], and when I was initially doing my research, I *thought* this would allow me to accept corrections from *any* user. Unfortunately, as I dug into the docs, I found my initial reading to have been wrong. In fact, it just means that—
+
+> you can use Netlify CMS to accept contributions from GitHub users without giving them access to your repository.
+
+This is fine so far as it goes, but if the users *already* have to be GitHub users, well… then the GitHub UI gets the job done well *enough* and doesn’t involve keeping another dependency up to date. There is a workaround using their Git Gateway workflow, but while you can restrict what kind of mischief users can get up to, it still looked like an invitation for would-be makers-of-mayhem to make for a very annoying day.[^obnoxious] As such I just ended up making the links for editing a post take users straight to GitHub. It’s not perfect, but it’s good enough.
+
+The net of all of this is that I had Forestry enabled for a while but eventually removed it. My Git-based workflow works well *enough* from any device, and works better than any CMS option I tried, that it wasn’t worth the hassle (however small). If you know of other good headless CMS systems which can just slot into this kind of Git-based workflow, I’d actually love to hear about them! I may or may not end up reaching for them with *this* site, but I run other sites in relatively similar ways, and it would be nice for *those*.
+
+[WordPress]: http://wordpress.org
+[Ghost]: https://ghost.org
+[sc]: https://stephencarradini.com
+[Editorial Workflow]: https://www.netlifycms.org/docs/configuration-options/#publish-mode
+[Open Authoring]: https://www.netlifycms.org/docs/open-authoring/
 
 [^pdfs-etc]: I like being able to generate things which *aren’t* web pages from my content sometimes!
+
+[^obnoxious]: Internet users can be obnoxious. When one of my posts hit the top of Hacker News a few months ago, I had people “signing up” for [rewrite] updates with email addresses—I kid you not—like `dont-be-arrogant@rewrite.software` and `dont-advertise-your-own-software@chriskrycho.com`. Dumb? Very. The internet is *full* of dumb.
+
+*[UI]: user interface
 
 ## Domain registration
 
