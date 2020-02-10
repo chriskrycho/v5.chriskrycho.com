@@ -63,9 +63,10 @@ I should clarify, before I go any further: this is *not* a stack I would recomme
 
 - [Costs](#costs)
 - [Writing](#writing)
+    - [Why Markdown?](#why-markdown)
 - [Workflow](#workflow)
-    - [Hosting](#hosting)
-    - [Deploying](#deploying)
+    - [Where the content lives](#where-the-content-lives)
+    - [How the content gets to you](#how-the-content-gets-to-you)
     - [CMS](#cms)
 - [Domain registration](#domain-registration)
 - [DNS: Cloudflare](#dns-cloudflare)
@@ -143,9 +144,20 @@ I use GitHub as a convenient tool for coordination, but (and this is important t
 
 ### How the content gets to you
 
-I use [Netlify] to actually host and deploy the site. Netlify is a developer-focused tool, which makes it *super* easy to take a Git repository and turn it into a deployed website. Handily, the way it works means it’s trivial to support a lot of static website publishing tools, including the one I use (see my discussion [below] on 11ty).
+I use [Netlify] to actually host and deploy the site. Netlify is a developer-focused tool, which makes it *super* easy to take a Git repository which defines how to build a website with some basic tools, and turn it into a deployed website.
+
+In the past, I have used [GitHub Pages][ghp] to publish various websites. I have also done plain-old static file hosting on a server I own, deployed via SFTP. These options are fine so far as they go; in some cases they’re actually great choices. However, for my purposes, any kind of purely static file hosting approach meant that I *had* to have access to a laptop or desktop or server machine of my own to actually *build* the site before I published it. Netlify solves that problem by supporting a *build* step before deploying the content. For me, that means running my 11ty build step (on which see [below] for more details).
+
+Netlify is also just exceedingly pleasant and easy to use—the setup for my site was a matter of pointing and clicking a few buttons to tell it what GitHub repository to use, and filling in one text field to tell it how to build my site. In fact, if I weren’t *particular* about separating my DNS from my hosting/deployment setup (as discussed below), I could do *that* on Netlify as well, and that is *also* an incredibly simple setup process.
+
+One of the Netlify features I particularly love—and which I make heavy use of for *most* posts for this site, but especially for longer or more involved ones—is its [deploy previews]. Each deploy preview is a specific URL that is not indexed by search engines, but which is available pretty much permanently (as long as Netlify itself is around). I can hand that URL to someone else to read the post before it’s live in the world and they can give feedback on the thing *exactly* as it will appear. This is handy for content, of course, but it was even handier during the design process for the site, when I could set up two options with different approaches to a particular design question, each with its own URL, and share them for others to give feedback.
 
 [below]: #site-generator
+[ghp]: https://pages.github.com
+[deploy previews]: https://docs.netlify.com/site-deploys/overview/#branches-and-deploys
+
+*[SFTP]: secure file transfer protocol
+*[URL]: universal resource locator
 
 ### CMS
 
