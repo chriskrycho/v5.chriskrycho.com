@@ -1,37 +1,42 @@
 ---
-title: Website Setup
+title: How I Publish This Site
 subtitle: Explaining how I run this site—everything.
 summary: Explaining how I run this site—everything.
 date: 2020-02-09T21:00
 qualifiers:
     audience: >
-        People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to the TypeScript and templates and <abbr>CSS</abbr>!
+        People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to how I use Markdown and Git!
 tags:
-    - web design
     - blogging
-    - TypeScript
-    - CSS
-    - SCSS
-    - HTML
+    - writing
+    - Markdown
+    - websites
+    - domain
+    - DNS
+    - Netlify
+    - Cloudflare
+    - Hover
+    - own your turf
+    - IndieWeb
 
 ---
 
 On seeing this site relaunch back in November, my friend [John Shelton](https://sites.google.com/site/iamjohnshelton/home) asked if I had anywhere I’d listed out the whole of my setup for hosting this site. The answer is: I hadn’t, but as of *now* I have!
 
-First up, an overview of the end-to-end stack, then a quick discussion of my costs for the site. (Also, keep your eyes open: I’m working on a post for [Mere Orthodoxy] where I walk through why I think this actually *matters*.)
+If you want the *super* short version, this is it (with the topics covered in this post marked with a <b>\*</b>):
 
-[Mere Orthodoxy]: https://mereorthodoxy.com
-
-* The domain name is registered at [Hover][Hover].
-* The DNS runs through [Cloudflare.com][Cloudflare].
-* The site is generated with  [11ty][11ty], with—
+- <b>\*</b> The domain name is registered at [Hover][Hover].
+- <b>\*</b> The DNS runs through [Cloudflare.com][Cloudflare].
+- The site is generated with  [11ty][11ty], with—
     * a mix of [Nunjucks], JSON, and TypeScript for the templating
     * a *very* light use of [SCSS] to generate the CSS
     * a bunch of custom filters and plugins, also written in TypeScript
-* The fonts are licensed from  [Fonts.com](http://fonts.com/) (purchased and self-hosted) and  [fonts.adobe.com](http://fonts.adobe.com/) (hosted).
-* The content—written entirely in [Markdown]—lives in Git repositories which I maintain on copies of on all my machines as well as on [GitHub.com][gh].
-* The site is deployed via [Netlify.com][netlify].
-* I actually *write* using a(n ever-changing) mix of text editors, currently primarily [1Writer] on iOS and [Byword] and [Caret] on macOS.
+- The fonts are licensed from  [Fonts.com](http://fonts.com/) (purchased and self-hosted) and  [fonts.adobe.com](http://fonts.adobe.com/) (hosted).
+- <b>\*</b> The content—written entirely in [Markdown]—lives in Git repositories which I maintain on copies of on all my machines as well as on [GitHub.com][gh].
+- <b>\*</b> The site is deployed via [Netlify.com][netlify].
+- <b>\*</b> I actually *write* using a(n ever-changing) mix of text editors, currently primarily [1Writer] on iOS and [Byword] and [Caret] on macOS.
+
+If you want the longer version, read on. In this post, I will trace out the details of how I get this site to you. In a follow-on post I will hopefully write as a follow-up sometime this year, I’ll dig into the technical details of how the site is put together. (*Hopefully*, I say, because I started *this* post three months ago!)
 
 I should clarify, before I go any further: this is *not* a stack I would recommend to anyone else who’s not a total nerd, though this same basic *kind* of stack is workable with a much lower degree of effort than I put in. You need to be willing to do a *small* amount of semi-technical work; you *don’t* have to build an entire site from scratch like I did. The support for normal CMS interfaces to this kind of setup has grown enormously in the past few years, and it can actually be a really good, very lightweight experience.[^cms]
 
@@ -70,8 +75,8 @@ I should clarify, before I go any further: this is *not* a stack I would recomme
     - [CMS](#cms)
 - [Domain registration](#domain-registration)
 - [DNS: Cloudflare](#dns-cloudflare)
-- [Site generator](#site-generator)
-- [Fonts](#fonts)
+- [Summary](#summary)
+
 
 ## Costs
 
@@ -197,9 +202,13 @@ The net of all of this is that I had Forestry enabled for a while but eventually
 
 ## Domain registration
 
+I buy *all* my domains at [Hover].[^not-hover] I first tried Hover after a podcast ad half a decade ago, and it worked out so well that in that span I have steadily moved *everything* there, and I have never regretted it. I don’t actually have a lot to say beyond that: Hover is easy to use to register a new domain, they have great customer service (when you need it, which has only happened to me once and because of a problem on a *different* registrar), and they even have a *nice* website!
+
+[^not-hover]: This is *strictly* not true: I have a single domain registered at another registrar. That was, in retrospect, a mistake… for a variety of reasons. I won’t be repeating it. :insert grimacing emoji here:
+
 ## DNS: Cloudflare
 
-I just switched all of my DNS name servers to [Cloudflare] earlier this year. I had a longstanding goal of having my registration, my name servers, and my actual hosting and deployment in separate places for a few years now. I don’t remember where I first ran into the idea of keeping those separate, but it stuck—forcefully, by dint of experience.
+I switched all of my DNS name servers to [Cloudflare] earlier this year. I had a longstanding goal of having my registration, my name servers, and my actual hosting and deployment in separate places for a few years now. I don’t remember where I first ran into the idea of keeping those separate, but it stuck—forcefully, by dint of experience.
 
 At one point I was managing all three—registration, name servers, and hosting—through an old-school shared hosting provider ([Stablehost], still a pretty solid option in that space!)… and migrating *out* of that provider was incredibly painful. (It’s actually not 100% done! The hard parts are all done now, though, which is a relief.)
 
@@ -214,6 +223,15 @@ If you’re curious: yes, I *do* have thoughts on Cloudflare’s approach to dec
 [Stablehost]: https://www.stablehost.com
 [rewrites]: https://v4.chriskrycho.com/2019/my-final-round-of-url-rewrites-ever.html
 
-## Site generator
+## Summary
 
-## Fonts
+When you put all those pieces together, what you have is:
+
+- Domain registered at Hover, configured with its nameservers to point to Cloudflare
+- Cloudflare managing the DNS, pointing the URL `v5.chriskrycho.com` to the corresponding Netlify setup
+- Netlify publishing the site as defined—both its content and its design—in a Git repository, which is hosted on GitHub
+- Content all written in Markdown, with a variety of tools across macOS and iOS and iPadOS
+
+In a planned future post (which I have not even started writing yet, so no promises as to when it will appear), I will try to dig into the details of *how* I build the site—the design, the HTML, the custom implementation details, the fonts, you name it. If you’re curious in the meantime, the implementation is [all publicly available][gh]—and you’re [welcome to crib from it][license]!
+
+[license]: https://v5.chriskrycho.com/colophon/#copyright-and-license
