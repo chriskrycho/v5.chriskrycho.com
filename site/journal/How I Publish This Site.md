@@ -162,7 +162,7 @@ This is handy for content, of course, but it was even handier during the design 
 [below]: #site-generator
 [ghp]: https://pages.github.com
 [deploy previews]: https://docs.netlify.com/site-deploys/overview/#branches-and-deploys
-[preview-this]: https://deploy-preview-41--v5-chriskrycho-com.netlify.com
+[preview-this]: https://deploy-preview-41--v5-chriskrycho-com.netlify.com/journal/how-i-publish-this-site/
 
 *[SFTP]: secure file transfer protocol
 *[URL]: universal resource locator
