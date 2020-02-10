@@ -155,11 +155,14 @@ In the past, I have used [GitHub Pages][ghp] to publish various websites. I have
 
 Netlify is also just exceedingly pleasant and easy to use—the setup for my site was a matter of pointing and clicking a few buttons to tell it what GitHub repository to use, and filling in one text field to tell it how to build my site. In fact, if I weren’t *particular* about separating my DNS from my hosting/deployment setup (as discussed below), I could do *that* on Netlify as well, and that is *also* an incredibly simple setup process.
 
-One of the Netlify features I particularly love—and which I make heavy use of for *most* posts for this site, but especially for longer or more involved ones—is its [deploy previews]. Each deploy preview is a specific URL that is not indexed by search engines, but which is available pretty much permanently (as long as Netlify itself is around). I can hand that URL to someone else to read the post before it’s live in the world and they can give feedback on the thing *exactly* as it will appear. This is handy for content, of course, but it was even handier during the design process for the site, when I could set up two options with different approaches to a particular design question, each with its own URL, and share them for others to give feedback.
+One of the Netlify features I particularly love—and which I make heavy use of for *most* posts for this site, but especially for longer or more involved ones—is its [deploy previews]. Each deploy preview is a specific URL that is not indexed by search engines, but which is available pretty much permanently (as long as Netlify itself is around). I can hand that URL to someone else to read the post before it’s live in the world and they can give feedback on the thing *exactly* as it will appear. For example, the preview for *this* post was [here][preview-this].
+
+This is handy for content, of course, but it was even handier during the design process for the site, when I could set up two options with different approaches to a particular design question, each with its own URL, and share them for others to give feedback.
 
 [below]: #site-generator
 [ghp]: https://pages.github.com
 [deploy previews]: https://docs.netlify.com/site-deploys/overview/#branches-and-deploys
+[preview-this]: https://deploy-preview-41--v5-chriskrycho-com.netlify.com
 
 *[SFTP]: secure file transfer protocol
 *[URL]: universal resource locator
