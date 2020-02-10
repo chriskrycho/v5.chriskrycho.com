@@ -82,6 +82,10 @@ In terms of things I *do* actually pay for (or have in the past), though:
 
 - I paid a few hundred dollars to perpetually license [Sabon][sabon] (the body text) a few years ago—both for the web and for desktop work. I get [Cronos][cronos] via my $10/month for Adobe’s Lightroom package, which includes Adobe Fonts. (This is the piece here that stings the most in terms of ongoing costs, but Lightroom is *fabulous*, so I’m just rolling with it at this point.)
 
+- As will become clear in the *next* section, I have spent a… *non-trivial*… amount of money on writing applications over the last decade.
+
+In general, I’m not opposed to paying for good services, but if there is a good service with a freemium model and I fit comfortable in the free tier, I’m happy to take advantage of it.
+
 [hack]: https://sourcefoundry.org/hack/
 [sabon]: https://www.fonts.com/font/linotype/sabon
 [cronos]: https://fonts.adobe.com/fonts/cronos
