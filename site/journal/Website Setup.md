@@ -102,6 +102,12 @@ As mentioned, though, both iA Writer and Ulysses are *slower* (and just feel hea
 
 Finally, I will admit that I *do* in fact do *some* of my writing in [Visual Studio Code][vs-code]. It’s *really* not a great writing environment, but it has some really nice tools for Markdown editing. In particular, I use [an extension][all-in-one] that automates everything from generating and maintaining a table of contents (like the one above) to table formatting. It also makes for a nice environment for working with code samples.
 
+### Why Markdown?
+
+I have been writing *everything* in Markdown since 2012. Every blog post, every paper I wrote for seminary, every essay I have published elsewhere—even if it ended up in a Word document or published on a WordPress site, I *drafted* it in Markdown, in one of these tools. I chose Markdown a long time ago because it fits so well with the way I write. It gets out of my way by dint of its simplicity and its complete *lack* of formatting at the time of authoring. That makes the writing process much better for me, and always has. The fact that at the end I can generate *any* kind of document I need from the same source—HTML, Word, PDF, LaTeX, you name it—is all the better.
+
+Equally important to me at this point though: writing in Markdown means I am writing in a plain text document. I can write it in any text editor anywhere which handles UTF-8—and while UTF-8 isn’t *perfectly* portable as far as document formats go, it is literally the closest thing to it which exists—right down to and including the fact that it can and does handle any language I can throw at it. (καιρε, שלמ, buenos días!)
+
 [Byword]: https://www.bywordapp.com
 [Caret]: https://caret.io
 [caret-beta]: https://github.com/careteditor/releases-beta/releases
