@@ -3,7 +3,7 @@ title: How I Publish This Site
 subtitle: Explaining how I run this site—everything.
 summary: Explaining how I run this site—everything.
 date: 2020-02-09T21:00
-updated: 2020-02-10T08:30
+updated: 2020-02-10T09:20
 qualifiers:
     audience: >
         People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to how I use Markdown and Git!
@@ -133,7 +133,7 @@ Equally important to me at this point though: writing in Markdown means I am wri
 
 [rewrite]: https://rewrite.software
 
-*[UTF]: unicode text format
+*[UTF]: unicode transformation format
 
 ## Workflow
 
