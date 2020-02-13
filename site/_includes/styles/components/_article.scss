@@ -245,7 +245,6 @@
             transition: all var(--transition);
             display: inline-block;
             width: 1rem;
-            height: 2px;
             position: absolute;
             left: 0;
             bottom: -0.5em;
@@ -260,6 +259,22 @@
                background-color: var(--link);
             }
          }
+      }
+   }
+
+   h1,
+   h2,
+   h3 {
+      .section-link .__marker {
+         height: 2px;
+      }
+   }
+
+   h4,
+   h5,
+   h6 {
+      .section-link .__marker {
+         height: 1.5px;
       }
    }
 
@@ -285,7 +300,7 @@
          color: var(--h1-fg);
 
          .__marker {
-            width: 2em;
+            width: 3rem;
             left: calc(50% - 1em);
          }
 
@@ -302,14 +317,24 @@
       font: {
          family: var(--sans);
          size: ms(1);
-         weight: 600;
+         weight: 400;
       }
       text-transform: uppercase;
+      text-align: center;
       letter-spacing: 1px;
       margin: ms(2) 0 1em;
 
       .section-link {
          color: var(--h2-fg);
+
+         .__marker {
+            width: 1.5rem;
+            left: calc(50% - 0.75em);
+         }
+
+         &:hover .__marker {
+            left: 0;
+         }
       }
    }
 
@@ -317,7 +342,7 @@
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(1)});
-         weight: 600;
+         weight: 400;
       }
       margin: ms(-3) 0 ms(-1);
 
@@ -369,7 +394,7 @@
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(0)});
          style: italic;
-         weight: 400;
+         weight: 300;
       }
 
       margin-bottom: ms(-5);
@@ -395,6 +420,7 @@
    ol {
       width: 100%;
       max-width: 32rem;
+      min-width: 32rem;
       padding-left: ms(2);
       margin-bottom: ms(0);
    }
@@ -429,6 +455,22 @@
    ol {
       list-style: decimal;
       font-feature-settings: 'onum' 0;
+   }
+
+   .outline ol {
+      list-style: upper-roman;
+
+      ol {
+         list-style: decimal;
+
+         ol {
+            list-style: lower-alpha;
+
+            ol {
+               list-style: lower-roman;
+            }
+         }
+      }
    }
 
    ul {

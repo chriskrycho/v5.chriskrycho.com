@@ -78,7 +78,6 @@ I should clarify, before I go any further: this is *not* a stack I would recomme
 - [DNS: Cloudflare](#dns-cloudflare)
 - [Summary](#summary)
 
-
 ## Costs
 
 My costs are pretty low for this setup. Cloudflare is free for setups like mine. GitHub is free for setups like mine. Netlify is free for setups like mine. The code font, [Hack][hack], is *also* free. (Sensing a theme here?)
