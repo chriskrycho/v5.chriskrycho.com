@@ -84,7 +84,7 @@ There is no way to eliminate all of those complexities in a general way. Remembe
 
 ## 1. Identifying principles
 
-There are seven principles which, combined, allow us to  the complexity of forms and 
+There are eight principles which, combined, allow us to deal with the complexity of forms:
 
 :::alphabetical-list
 
@@ -95,6 +95,7 @@ There are seven principles which, combined, allow us to  the complexity of forms
 5. Forms may be composed of sub-forms
 6. Validity is tri-state: <i>unvalidated</i>, <i>invalid</i>, or <i>valid</i>
 7. Form models are owned by whatever validates them
+8. Form and persistence models relate via pure functions
 
 :::
 
@@ -132,7 +133,7 @@ In the next principle, we will see how this translation happens. Here, we simply
 
 [^anti-corruption]: In Domain-Driven Design terms, this is the <i>anti-corruption layer</i>, because [user interfaces are API boundaries](https://v4.chriskrycho.com/2019/user-interfaces-are-api-boundaries.html).
 
-### h. Translate between form and persistence models with pure functions
+### h. Form and persistence models relate via pure functions
 
 <!--
 4. Accordingly, the form model to be mutated is always either:
@@ -142,7 +143,7 @@ In the next principle, we will see how this translation happens. Here, we simply
 
 ## 2. Translating principles into primitives
 
-With these principles in hand
+Principles are well and good, but we must turn them into appropriate programming primitives. While forms *as forms* are too varied to represent accurately with a single abstraction, the commonalities represented by those principles mean we *can* represent their component structure.
 
 ## 3. Composing primitives into abstractions
 
