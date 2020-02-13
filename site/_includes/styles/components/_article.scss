@@ -282,7 +282,7 @@
       font: {
          family: var(--sans);
          size: ms(3);
-         weight: 600;
+         weight: 300;
       }
 
       margin: ms(0) 0;
@@ -471,6 +471,10 @@
             }
          }
       }
+   }
+
+   .alphabetical-list ol {
+      list-style: lower-alpha;
    }
 
    ul {
