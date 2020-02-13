@@ -19,4 +19,19 @@ In my work on [rewrite], I needed to build a master-detail view for the web. It 
 
 [rewrite]: https://rewrite.software
 
-## 
+## What is a master-detail view?
+
+A master-detail view is a fairly standard UI pattern: a list of items make up the “master” view, and when you select it (by tapping, clicking, or keyboard action), the detail view appears. This is how *lots* of apps work, including email clients like [Spark]—
+
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/master-detail/spark.png" alt="a master-detail view in Spark" style="max-width: var(--max-width)" />
+
+—or notes apps like [Bear]—
+
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/master-detail/bear.png" alt="a master-detail view in Bear" style="max-width: var(--max-width)" />
+
+—or many, many other apps.
+
+[Spark]: https://sparkmailapp.com
+[Bear]: https://bear.app
+
+*[UI]: user interface
