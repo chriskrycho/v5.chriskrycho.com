@@ -239,6 +239,7 @@
          text-align: left;
          transition: color var(--transition);
          position: relative;
+         padding-bottom: 0.5em;
 
          .__marker {
             background-color: currentColor;
@@ -247,7 +248,7 @@
             width: 1rem;
             position: absolute;
             left: 0;
-            bottom: -0.5em;
+            bottom: 0;
          }
 
          &:hover,
