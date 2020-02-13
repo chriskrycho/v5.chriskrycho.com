@@ -29,6 +29,8 @@ References:
 
 There is a truism among web developers: *forms are hard*. This is a surprising truism given how common forms are, and how simple they seem at first blush. But bound up in forms are some of the more challenging and complex problems in human-computer interaction. In this post, I will do my best to explain just why it is that forms are so difficult, and propose a means of taming them—not by hiding their complexity, but by embracing it.
 
+:::outline
+
 1. Inescapable Complexity
     1. Forms are stateful
         1. Field state
@@ -43,6 +45,8 @@ There is a truism among web developers: *forms are hard*. This is a surprising t
     1. Principles for forms
     2. Choosing appropriate primitives
     3. Composing the primitives
+
+:::
 
 # I: Inescapable Complexity
 
