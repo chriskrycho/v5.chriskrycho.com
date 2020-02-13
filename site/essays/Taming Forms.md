@@ -48,6 +48,8 @@ There is a truism among web developers: *forms are hard*. This is a surprising t
     2. [Translating principles into primitives](#2-translating-principles-into-primitives)
     3. [Composing the primitives](#3-composing-primitives-into-abstractions)
 
+3. [Conclusion](#iii-conclusion)
+
 :::
 
 # I: Inescapable Complexity
@@ -148,3 +150,7 @@ Principles are well and good, but we must turn them into appropriate programming
 ## 3. Composing primitives into abstractions
 
 The final step is composing these primitives into abstractions that are appropriate—for a given form, maybe even for an entire app or family of apps. The key is remembering that these abstractions only generalize so far.
+
+# III. Conclusion
+
+Forms *are* hard! There’s no way around it. However, the problems they represent are tractable—if, and only if, we face that complexity head on.
