@@ -93,24 +93,33 @@ There is no way to eliminate all of those complexities in a general way. Remembe
 	- a new instance of a default for the form model (e.g. the empty form, or a form with preselected/prefilled options)
 	- a copy of previously-persisted state, mapped to a form model (in what should be a pure function)
 5. Persisting a form model is, like creating a form model, a pure function that simply maps back to the target model type in the persistence layer.
-6. The form model is owned (and stored) at whatever level is required for top-level validation – i.e. presumably the layer/component responsible for persisting the data (and therefore also possibly preventing submission/persistence of the data until it is valid).
-7. The validity of a field is not just *invalid* or *valid* but also includes an *unvalidated* state, because forms *begin* unvalidated.
+6. The validity of a field is not just *invalid* or *valid* but also includes an *unvalidated* state, because forms *begin* unvalidated.
 
 :::
 
-### a. Forms have their own data model
+### a. Forms have their own data models
 
-### b. Form fields are individually valid
+### b. Form models are local and transient
 
-### c. Form validity is the composition of its fields’ validities
+### c. Form fields are individually valid
 
-### d. Forms may be composed of sub-forms
+### d. Form validity is the composition of its fields’ validities
 
-### c. Form models are local and transient
+### e. Forms may be composed of sub-forms
 
-### d. Form models and persistence
+### f. Validity is tri-state: <i>unvalidated</i>, <i>invalid</i>, or <i>valid</i>
 
-### e. Form models are owned by whatever validates them
+### g. Form models are owned by whatever validates them
+
+Each form model is owned at whatever level is required for its top-level validation. In a component-based architecture, this would be the component responsible for translating the form model into the domain model for the application.[^anti-corruption]
+
+In the next principle, we will see how this translation happens. Here, we simply need to identify *where* the form model should be defined, where the translation from domain or persistence model to form model happens. This layer matters because it is the layer where we take the untrusted data from the outside world—here, from a user—and turn it into data that is safe to persist into our application.
+
+“Persisting” the data into the rest of our application might mean saving it to a database, or it might just mean that we keep it in memory to perform further operations on it, including using 
+
+[^anti-corruption]: In Domain-Driven Design terms, this is the <i>anti-corruption layer</i>, because [user interfaces are API boundaries](https://v4.chriskrycho.com/2019/user-interfaces-are-api-boundaries.html).
+
+### h. Translate between form and persistence models with pure functions
 
 ## 2. Translating principles into primitives
 
