@@ -31,20 +31,22 @@ There is a truism among web developers: *forms are hard*. This is a surprising t
 
 :::outline
 
-1. Inescapable Complexity
-    1. Forms are stateful
-        1. Field state
-        2. Form state
-        3. Multipart form state
-    2. Forms are UIs
-        1. Domain model mismatches
-        2. Serialization format mismatches
-	3. Forms are unique
+<!-- no toc -->
 
-2. Embracing the Complexity
-    1. Principles for forms
-    2. Choosing appropriate primitives
-    3. Composing the primitives
+1. [Inescapable Complexity](#i-inescapable-complexity)
+    1. [Forms are stateful](#1-forms-are-stateful)
+        1. [Field state](#a-field-state)
+        2. [Form state](#b-form-state)
+        3. [Multipart form state](#c-multipart-form-state)
+    2. [Forms are user interfaces](#2-forms-are-user-interfaces)
+        1. [Domain model mismatches](#a-domain-model-mismatches)
+        2. [Serialization format mismatches](#b-serialization-format-mismatches)
+	3. [Forms are unique](#3-forms-are-unique)
+
+2. [Embracing the Complexity](#ii-embracing-the-complexity)
+    1. [Identifying principles](#1-identifying-principles)
+    2. [Translating principles into primitives](#2-translating-principles-into-primitives)
+    3. [Composing the primitives](#3-composing-primitives-into-abstractions)
 
 :::
 
@@ -62,7 +64,7 @@ Not only is every single field in a form stateful; the *entirety* of the form is
 
 ### c. Multipart form state
 
-## 2. Forms are UIs
+## 2. Forms are user interfaces
 
 A form is a *user interface*. That obvious statement makes it easy to skip over one of the fundamental challenges with forms: designed *well*, they optimize for the user, not for the programmer.
 
@@ -74,8 +76,46 @@ A form is a *user interface*. That obvious statement makes it easy to skip over 
 
 # II: Embracing the Complexity
 
-There is no way to eliminate all of those complexities in a general way. Remember: every form is not just stateful but *differently* stateful! There is no one-size-fits-all or even one-size-fits most solution. Insteadn
+There is no way to eliminate all of those complexities in a general way. Remember: every form is not just stateful but *differently* stateful! There is no one-size-fits-all or even one-size-fits most solution. Instead, we must:
 
-## 1. Principles for forms
-## 2. Choosing appropriate primitives
-## 3. Composing the primitives
+1. *Identify principles* that allow us to deal appropriately with the complexity of forms.
+2. *Translate* those principles into *appropriate primitives* which can handle any form.
+3. *Compose primitives* into useful abstractions.
+
+## 1. Identifying principles
+
+:::alphabetical-list
+
+1. Every form has its own model, where the model is a data structure representing each form field’s type, current value, validation rules, and current validity. The form validity is the composition of the validity of all its fields using the validations.
+2. If an input changes something about the rest of the form, that means there is more than one form in play, i.e. that there are sub-forms within the form (even if there is only one `<form>`).
+3. Form models are local and freely mutated – because form state is inherently ephemeral unless and until it is “committed” and then persisted in some way.
+4. Accordingly, the form model to be mutated is always either:
+	- a new instance of a default for the form model (e.g. the empty form, or a form with preselected/prefilled options)
+	- a copy of previously-persisted state, mapped to a form model (in what should be a pure function)
+5. Persisting a form model is, like creating a form model, a pure function that simply maps back to the target model type in the persistence layer.
+6. The form model is owned (and stored) at whatever level is required for top-level validation – i.e. presumably the layer/component responsible for persisting the data (and therefore also possibly preventing submission/persistence of the data until it is valid).
+7. The validity of a field is not just *invalid* or *valid* but also includes an *unvalidated* state, because forms *begin* unvalidated.
+
+:::
+
+### a. Forms have their own data model
+
+### b. Form fields are individually valid
+
+### c. Form validity is the composition of its fields’ validities
+
+### d. Forms may be composed of sub-forms
+
+### c. Form models are local and transient
+
+### d. Form models and persistence
+
+### e. Form models are owned by whatever validates them
+
+## 2. Translating principles into primitives
+
+With these principles in hand
+
+## 3. Composing primitives into abstractions
+
+The final step is composing these primitives into abstractions that are appropriate—for a given form, maybe even for an entire app or family of apps. The key is remembering that these abstractions only generalize so far.
