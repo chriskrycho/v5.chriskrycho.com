@@ -5,11 +5,12 @@ subtitle: >
 date: 2019-11-17T15:30:00
 updated: 2019-11-18T06:37:00
 tags:
-- writing
-- blogging
-- web design
-- open-source software
-- TypeScript
+    - writing
+    - blogging
+    - web design
+    - open-source software
+    - TypeScript
+    - site meta
 qualifiers:
     audience: people who care about things like new website designs.
 summary: >
