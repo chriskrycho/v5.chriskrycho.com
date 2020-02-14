@@ -5,11 +5,12 @@ subtitle: >
 date: 2019-11-28T23:15
 updated: 2019-12-15T09:35
 tags:
-- TypeScript
-- JavaScript
-- software design
-- blogging
-- JSON Feed
+    - TypeScript
+    - JavaScript
+    - software design
+    - blogging
+    - JSON Feed
+    - site meta
 qualifiers:
     audience: >
         people who care about the details of web publishing.

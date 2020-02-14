@@ -10,6 +10,7 @@ tags:
     - blogging
     - Atom feed
     - Nunjucks
+    - site meta
 summary: >
     While fixing another issue with my Atom feed, I discovered that I was rendering bad item IDs. It’s fixed now; sorry it happened.
 
