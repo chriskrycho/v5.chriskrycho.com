@@ -3,21 +3,12 @@ title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
 eleventyExcludeFromCollections: true
-date: 2020-02-13T21:35
+date: 2020-02-13T21:45
 ---
 
-Last updated on {% localeDate page.date, 'MMMM d, yyyy' %}.
+I try to keep this page fairly current; I last updated it on {% localeDate page.date, 'MMMM d, yyyy' %}. In the “Completed” section and for previous years, entries appear in the order I finished the books.
 
-- [Current (2020)](#current-2020)
-    - [Planned](#planned)
-    - [Started](#started)
-    - [Completed](#completed)
-        - [Fiction](#fiction)
-        - [Non-fiction](#non-fiction)
-- [Previous](#previous)
-    - [2019](#2019)
-        - [Fiction](#fiction-1)
-        - [Non-Fiction](#non-fiction-1)
+Previous years only include books I read since 2019, because I simply do not have a good log prior to that!
 
 ## Current (2020)
 
@@ -25,6 +16,9 @@ Last updated on {% localeDate page.date, 'MMMM d, yyyy' %}.
 
 - <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil
 - <cite>Jurassic Park</cite>, Michael Crichton
+- <cite>Dark Matters: On the Surveillance of Blackness</cite>, Simone Browne
+- <cite>A Time to Keep</cite>, Ephraim Radner
+- <cite>Created in God’s Image</cite>, Anthony Hoekema
 
 ### Started
 
@@ -34,8 +28,6 @@ Last updated on {% localeDate page.date, 'MMMM d, yyyy' %}.
 - <cite>The Postmodern Condition</cite>, Jean-François Lyotard
 
 ### Completed
-
-Entries appear in the order I finished them!
 
 #### Fiction
 
@@ -50,8 +42,6 @@ Entries appear in the order I finished them!
 - <cite>Phaedrus</cite>, Plato—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/)
 
 ## Previous
-
-(Entries only since I started this version of my website.)
 
 ### 2019
 
