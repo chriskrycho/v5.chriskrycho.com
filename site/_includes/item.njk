@@ -7,7 +7,12 @@
    <link rel='canonical' href='{{canonical}}' />
 {% endif %}
 {% set current_page = collections.all | current(page) %}
-{{ social.meta(current_page, config) }}
+{% if current_page %}
+   {{ social.meta(current_page, config) }}
+{% else %}
+   {# Fallback for items excluded from collections #}
+   {{ social.meta(page, config) }}
+{% endif %}
 {%- endblock extra_links %}
 
 

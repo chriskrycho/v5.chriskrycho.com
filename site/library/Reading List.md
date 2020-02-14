@@ -12,10 +12,13 @@ I try to keep this page fairly current; I last updated it on {% localeDate page.
 - Previous years only include books I read since 2019, because I simply do not have a good log prior to that!
 - Books are marked “(new)” if this was the first time I read them, or “(reread)” otherwise.
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
+- Links on the books themselves are affiliate links to Alibris!
 
 ## Current (2020)
 
 ### Planned
+
+These are books I am *actively* planning to read—not just volumes I’m vaguely interested in, but texts I am committed to reading for some reason.
 
 #### Fiction
 
@@ -31,6 +34,8 @@ I try to keep this page fairly current; I last updated it on {% localeDate page.
 
 ### Started
 
+These are books I have actually begun reading. (You will see items move from [<b>Planned</b>](#planned) down here if you watch this page!)
+
 #### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
@@ -42,6 +47,8 @@ I try to keep this page fairly current; I last updated it on {% localeDate page.
 - <cite>The Postmodern Condition</cite>, Jean-François Lyotard (new)
 
 ### Completed
+
+Yeah, this is just what you’d expect. At the end of each year, this <b>Completed</b> heading will just turn into the section for the whole year!
 
 #### Fiction
 
