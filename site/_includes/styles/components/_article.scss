@@ -343,8 +343,10 @@
       font: {
          family: var(--sans);
          size: calc(var(--sans-adjust) * #{ms(1)});
-         weight: 400;
+         weight: 300;
       }
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
       margin: ms(-3) 0 ms(-1);
 
       .section-link {
@@ -359,7 +361,7 @@
          weight: 300;
       }
 
-      margin-bottom: ms(-3);
+      margin: ms(-3) 0;
 
       .section-link {
          color: var(--h4-fg);
