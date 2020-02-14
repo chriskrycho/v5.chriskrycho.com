@@ -363,10 +363,7 @@
 
       .section-link {
          color: var(--h4-fg);
-
-         .__marker {
-            bottom: -#{ms(-8)};
-         }
+         padding-bottom: ms(-8);
       }
    }
 
@@ -383,10 +380,7 @@
          color: var(--h5-fg);
          text-decoration: underline;
          text-decoration-color: transparent;
-
-         .__marker {
-            bottom: -#{ms(-9)};
-         }
+         padding-bottom: ms(-9);
       }
    }
 
@@ -404,10 +398,7 @@
          color: var(--h6-fg);
          text-decoration: underline;
          text-decoration-color: transparent;
-
-         .__marker {
-            bottom: -#{ms(-9)};
-         }
+         padding-bottom: ms(-9);
       }
    }
 
