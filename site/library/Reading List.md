@@ -3,7 +3,7 @@ title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
 eleventyExcludeFromCollections: true
-date: 2020-02-13T11:35
+date: 2020-02-13T18:35
 # permalink: "/{{page.fileSlug | slug}}/index.html"
 ---
 
@@ -11,7 +11,6 @@ This page covers my {% localeDate page.date, 'yyyy' %} reading list—because it
 
 ## Planned
 
-- <cite>The Postmodern Condition</cite>, Jean-François Lyotard
 - <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil
 - <cite>Jurassic Park</cite>, Michael Crichton
 
@@ -20,6 +19,7 @@ This page covers my {% localeDate page.date, 'yyyy' %} reading list—because it
 - <cite>Eccentric Existence: A Theological Anthropology</cite>, David H. Kelsey—[all posts on the book](/topics/eccentric-existence/)
 - <cite>Green Mars</cite>, Kim Stanley Robinson
 - <cite>The Printing Press as an Agent of Change</cite>, Elizabeth Eisenstein
+- <cite>The Postmodern Condition</cite>, Jean-François Lyotard
 
 ## Completed
 
