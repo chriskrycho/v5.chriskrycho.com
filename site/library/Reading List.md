@@ -9,7 +9,7 @@ date: 2020-02-13T21:45
 I try to keep this page fairly current; I last updated it on {% localeDate page.date, 'MMMM d, yyyy' %}. A few notes on the way this is organized and presented:
 
 - In the “Completed” section and for previous years, entries appear in the order I finished the books.
-- Previous years only include books I read since 2019, because I simply do not have a good log prior to that!
+- Previous years only include books from years where I actually know what I read!
 - Books are marked “(new)” if this was the first time I read them, or “(reread)” otherwise.
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
 - Links on the books themselves are affiliate links to Alibris!
@@ -92,3 +92,13 @@ Yeah, this is just what you’d expect. At the end of each year, this <b>Complet
 - <cite>Retrieving Eternal Generation</cite>, edited by Fred Sanders and Scott R. Swain (new)—[review](https://v4.chriskrycho.com/2019/review-retrieving-eternal-generation.html)
 - <cite>What is An Evangelical</cite>, Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
 - <cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>, Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
+
+### 2018
+
+#### Fiction
+
+- <cite>Agent of Change</cite>, Sharon Lee and Steve Miller (new)—[review](https://v4.chriskrycho.com/2018/agent-of-change.html)
+- <cite>The Calculating Stars</cite>, Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/the-calculating-stars.html)
+- <cite>The Fated Sky</cite>, Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/review-the-fated-sky.html)
+- <cite>Ringworld</cite>, Larry Niven (new)—[review](https://v4.chriskrycho.com/2018/ringworld-review.html)
+- <cite>The Fifth Season</cite>, N. K. Jemison (new)
