@@ -52,6 +52,11 @@
 
    --figure-fg: var(--gray-2);
 
+   --kbd-fg: var(--gray-1);
+   --kbd-bg: var(--gray-5);
+   --kbd-border: var(--gray-4);
+   --kbd-shadow: var(--gray-3);
+
    @include a11y-light();
 }
 
@@ -99,6 +104,11 @@
    --code-fg: var(--gray-6);
 
    --figure-fg: var(--gray-4);
+
+   --kbd-fg: var(--gray-5);
+   --kbd-bg: var(--gray-1);
+   --kbd-border: var(--gray-4);
+   --kbd-shadow: var(--gray-3);
 
    @include tomorrow-night-bright();
 

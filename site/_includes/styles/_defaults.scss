@@ -93,3 +93,17 @@ p {
       display:  block;
    }
 }
+
+kbd {
+   color: var(--kbd-fg);
+   background-color: var(--kbd-bg);
+   border: 1px solid var(--kbd-border);
+   border-radius: 3px;
+   box-shadow: 1px 1px 0 var(--kbd-shadow);
+   display: inline-block;
+   font-family: System, -apple-system, Avenir, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   line-height: 1.4;
+   margin: 0 0.1em;
+   padding: 0.1em 0.6em;
+ }
