@@ -2,6 +2,7 @@
 title: Scripting Affiliate Links in Alfred
 subtitle: Perhaps weirdly, I haven’t done much of this before!
 date: 2020-02-15T21:50
+updated: 2020-02-15T22:02
 tags:
     - Alfred
     - scripting
@@ -36,6 +37,7 @@ I don’t know if I’ll ever be one of those people who spends a *lot* of time 
 
 …now to get back to drafting the rest of the newsletter that sent me down this rabbit hole in the first place.
 
+[atss]: https://buttondown.email/chriskrycho/archive/revision-is-a-permanent-state-of-affairs-across/
 [Alfred]: https://www.alfredapp.com
 [workflow]: https://cdn.chriskrycho.com/file/chriskrycho-com/workflows/Alibris%20Affiliate%20Link%20builder.alfredworkflow
 [XKCD #1319]: https://www.xkcd.com/1319/
