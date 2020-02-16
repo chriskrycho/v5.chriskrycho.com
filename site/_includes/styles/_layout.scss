@@ -7,12 +7,16 @@ body {
    background-color: var(--root-bg);
 }
 
+main {
+   --padding: #{ms(-8)};
+   margin: var(--padding);
+   width: calc(100% - 2 * var(--padding));
+}
+
 @media screen {
    @media (min-width: $resize) {
       main {
          --padding: #{ms(-1)};
-         margin: var(--padding) var(--padding) 0;
-         width: calc(100% - 2 * var(--padding));
       }
    }
 
@@ -29,11 +33,11 @@ body {
                top: var(--padding);
                left: var(--padding);
                bottom: var(--padding);
-            };
+            }
             width: 100%;
             max-width: calc(75vw - var(--padding));
          }
-   
+
          nav {
             width: 100%;
             max-width: 25vw;
