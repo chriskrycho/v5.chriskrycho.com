@@ -317,8 +317,8 @@
    h2 {
       font: {
          family: var(--sans);
-         size: ms(1);
-         weight: 400;
+         size: calc(var(--sans-adjust) * #{ms(2)});
+         weight: 300;
       }
       text-transform: uppercase;
       text-align: center;
