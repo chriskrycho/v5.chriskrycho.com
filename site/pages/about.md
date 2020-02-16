@@ -35,7 +35,28 @@ After following Christ, my family is far and away the most important part of my 
 
 ## By trade: a software engineer
 
+Since graduating college, I have been working more or less full-time in the software industry—starting out writing avionics software and then hazards and risk mitigation software for the energy industry, whiel picking up web development on the side and eventually transitioning into web development full time. You can see my [C.V.](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
+
+### LinkedIn
+
+I’m currently a Staff Software Engineer at LinkedIn, working on front-end infrastructure for what most people think of when you say LinkedIn: the app you sign into, send messages and read updates on, etc. I’m currently getting us up to date on the latest version of our core dependency: [Ember.js]. I also regularly work closely with a number of the Ember core team members on design of upcoming features, and since 2017 (well before I joined LinkedIn) I have been one of several people driving forward [TypeScript] adoption in the Ember community.
+
+[Ember.js]: https://emberjs.com/
+[TypeScript]: https://www.typescriptlang.org
+
+### Side projects
+
+I am also working on a long-term side project, under the working title [rewrite]. The goal is to build a best-in class <i>research-oriented writing environment</i>—with native and web user interfaces: macOS and iOS and web first, someday hopefully also Windows. See [the website][rewrite] for details and a newsletter for updates along the way!
+
+[rewrite]: https://rewrite.software
+
 ## By hobby
+
+### A writer
+
+### A podcaster
+
+### An occasional composer
 
 ## By vocation
 
