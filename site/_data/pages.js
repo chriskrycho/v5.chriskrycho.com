@@ -1,6 +1,7 @@
 module.exports = [
    { type: 'page', title: 'Home', path: '/' },
    { type: 'separator' },
+   { type: 'page', title: 'Notes', path: '/note/' },
    { type: 'page', title: 'Journal', path: '/journal/' },
    { type: 'page', title: 'Essays', path: '/essays/' },
    { type: 'page', title: 'Library', path: '/library/' },

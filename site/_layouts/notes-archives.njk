@@ -1,0 +1,20 @@
+---
+eleventyExcludeFromCollections: true
+---
+
+{% extends 'base.njk' %}
+{% import 'components/item.njk' as item %}
+{% import 'components/archive-list.njk' as archive %}
+
+{%- block main -%}
+<section class='content-block'>
+{{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
+
+{% set c = page.inputPath | toCollection %}
+{%- if collections[c] and collections[c].length -%}
+   {{ archive.list(collections[c] | archiveByYears('NEW_FIRST')) }}
+{%- else -%}
+   {%- include 'blocks/soon.njk' -%}
+{%- endif -%}
+</div>
+{%- endblock main -%}
