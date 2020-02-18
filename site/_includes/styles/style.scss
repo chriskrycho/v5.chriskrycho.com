@@ -16,7 +16,8 @@
    --mono: Hack, Menlo, Consolas, monospace;
    --fs-base: 16px;
    --sans-adjust: 1.05;
-   --line-height: 1.375;
+   --min-line-height: 1.375;
+   --line-height: var(--min-line-height);
 
    // -- Colors -- //
    --gray-0: hsl(222, 10%, 15%);

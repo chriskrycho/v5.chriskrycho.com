@@ -11,6 +11,7 @@ import * as PageLinks from './page-links'
 import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
 import siteTitle from './site-title'
+import excludingCollection from './excluding-collection'
 import toCollection from './to-collection'
 
 /**
@@ -54,6 +55,7 @@ function config(config: Config): UserConfig {
    config.addFilter('editLink', PageLinks.edit)
    config.addFilter('historyLink', PageLinks.history)
    config.addFilter('sourceLink', PageLinks.source)
+   config.addFilter('excludingCollection', excludingCollection)
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)
@@ -66,7 +68,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal')
    addCollectionFromDir(config, 'essays')
    addCollectionFromDir(config, 'library')
-   addCollectionFromDir(config, 'photography')
+   addCollectionFromDir(config, 'notes')
 
    config.setLibrary('md', markdown)
 

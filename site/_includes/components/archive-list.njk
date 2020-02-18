@@ -40,3 +40,55 @@
 {% endfor -%}
 </ul>
 {% endmacro %}
+
+{% macro listInline(collection, idByCollection=false) %}
+<ul class='archive-list'>
+{%- for year in collection %}
+<li class='year'>
+   <div class='year-info'>
+      <h2 class='year-title date'>{{year.name}}</h2>
+   </div>
+   <ul class='year-items'>
+   {%- for month in year.months %}
+      <li class='month'>
+         <h3 class='month-title date'>{{month.name}}</h3>
+         <ul class='month-items'>
+         {%- for day in month.days %}
+            <li class='day'>
+               <h4 class='day-title date'>{{day.name}}</h4>
+               <ul class='day-items'>
+               {%- for item in day.items %}
+                  <li class='item'>
+                     {%- if item.data.title %}
+                     <h5 class='item-title'>
+                        <a href='{{item.url}}' class='item-permalink'>
+                           {{-item.data.title | inlineMd | safe-}}
+                        </a>
+                        {% if idByCollection %}
+                           <span class='item-title__collection'>—{{item.inputPath | toCollection | upper}}</span>
+                        {% endif %}
+                     </h5>
+                     {% endif -%}
+                     {% if item.data.subtitle -%}
+                     <p class='item-subtitle'>{{item.data.subtitle | inlineMd | safe}}</h2>
+                     {%- endif %}
+                     <section class='item-content'>
+                        {% if not item.data.title %}
+                        <a href='{{item.url}}' class='item-permalink item-permalink__inline' alt='permalink'>⚓︎</a>
+                        {% endif %}
+                        {{item.templateContent | safe}}
+                     </section>
+                  </li>
+               {% endfor -%}
+               </ul>
+            </li>
+         {% endfor -%}
+         </ul>
+      </li>
+   {%- endfor -%}
+   </ul>
+</li>
+{% endfor -%}
+</ul>
+{% endmacro %}
+

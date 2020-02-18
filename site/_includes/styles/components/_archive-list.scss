@@ -139,6 +139,19 @@
          -moz-text-decoration-color: var(--hover-underline);
          text-decoration-color: var(--hover-underline);
       }
+
+      // NOT the permanent solution, but good enough to get this live
+      &__inline {
+         float: left;
+         margin-right: 0.5em;
+      }
+   }
+
+   .item-content {
+      margin-top: -0.2em;
+      font-size: ms(-1);
+      line-height: var(--min-line-height);
+      max-width: 32em;
    }
 
    .item-subtitle {

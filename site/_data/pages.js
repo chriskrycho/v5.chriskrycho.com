@@ -1,10 +1,10 @@
 module.exports = [
    { type: 'page', title: 'Home', path: '/' },
    { type: 'separator' },
-   { type: 'page', title: 'Notes', path: '/note/' },
    { type: 'page', title: 'Journal', path: '/journal/' },
    { type: 'page', title: 'Essays', path: '/essays/' },
    { type: 'page', title: 'Library', path: '/library/' },
+   { type: 'page', title: 'Notes', path: '/notes/' },
    { type: 'separator' },
    { type: 'page', title: 'Projects', path: '/projects/' },
    { type: 'page', title: 'Newsletter', path: 'https://buttondown.email/chriskrycho' },

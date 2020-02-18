@@ -116,7 +116,7 @@ const intoYear = (byEntries: SortByEntries, order: Order) => ([, [name, monthMap
 
    @param items The collection to produce an archive for
  */
-export default function sortedArchive(items: Item[], order = Order.NewFirst): Archive {
+export default function archiveByYear(items: Item[], order = Order.NewFirst): Archive {
    const byOrder = sortBy(order)
 
    return [...items.reduce(toYearMap, new Map()).entries()]
