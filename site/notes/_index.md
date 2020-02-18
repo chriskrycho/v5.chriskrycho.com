@@ -1,7 +1,7 @@
 ---
 title: Notes
 subtitle: >
-    Quick thoughts, less than a paragraph—microblogging done old-school.
+    Microblogging done old-school.
 permalink: /notes/
 layout: notes-archives.njk
 subscribe:
