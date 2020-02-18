@@ -18,11 +18,11 @@
                   <li class='item'>
                      <h5 class='item-title'>
                         <a href='{{item.url}}' class='item-permalink' title='item permalink'>
-                        {%- if item.data.title %}
+                        {%- if item.data.title -%}
                            {{-item.data.title | inlineMd | safe-}}
                         {%- else -%}
                            ⚓︎
-                        {% endif -%}
+                        {%- endif -%}
                         </a>
                         {% if idByCollection %}
                            <span class='item-title__collection'>—{{item.inputPath | toCollection | upper}}</span>

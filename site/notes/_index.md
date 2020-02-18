@@ -1,7 +1,7 @@
 ---
 title: Notes
 subtitle: >
-    Microblogging done old-school.
+    Microblogging—done old-school.
 permalink: /notes/
 layout: archives.njk
 subscribe:
