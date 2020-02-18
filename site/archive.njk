@@ -22,13 +22,7 @@ subscribe:
    {% for entry in collections.all %}
       {{entry.title}}
    {% endfor %}
-   {{ list(
-      collections.all
-         | excludingCollection('notes')
-         | archiveByYears('NEW_FIRST')
-      , idByCollection=true
-      )
-   }}
+   {{ list(collections.all | archiveByYears('NEW_FIRST'), idByCollection=true)}}
 {%- else -%}
    {%- include 'blocks/soon.njk' -%}
 {%- endif -%}

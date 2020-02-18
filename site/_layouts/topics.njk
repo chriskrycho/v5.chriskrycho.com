@@ -31,7 +31,7 @@
    </div>
 </article>
 
-{%- set tagCollection = collections[tag] | excludingCollection('notes') -%}
+{%- set tagCollection = collections[tag] -%}
 {%- if tagCollection and tagCollection.length -%}
    {{ archive.list(tagCollection | archiveByYears('OLD_FIRST')) }}
 {%- else -%}
