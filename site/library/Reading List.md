@@ -14,42 +14,38 @@ I try to keep this page fairly current; I last updated it on {% localeDate page.
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
 - Links on the books themselves are affiliate links to Alibris!
 
-## Current (2020)
-
-### Planned
+## Planned
 
 These are books I am *actively* planning to read—not just volumes I’m vaguely interested in, but texts I am committed to reading for some reason.
 
-#### Fiction
+### Fiction
 
 - <cite>Jurassic Park</cite>, Michael Crichton (new)
 - <cite>Blue Mars</cite>, Kim Stanley Robinson (new)
 
-#### Non-fiction
+### Non-fiction
 
 - <cite>Dark Matters: On the Surveillance of Blackness</cite>, Simone Browne (new)
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
 
-### Started
+## Started
 
 These are books I have actually begun reading. (You will see items move from [<b>Planned</b>](#planned) down here if you watch this page!)
 
-#### Fiction
+### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
 
-#### Non-fiction
+### Non-fiction
 
 - <cite>Eccentric Existence: A Theological Anthropology</cite>, David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
 - <cite>The Printing Press as an Agent of Change</cite>, Elizabeth Eisenstein (new)
 - <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)
 
-### Completed
+## 2020
 
-Yeah, this is just what you’d expect. At the end of each year, this <b>Completed</b> heading will just turn into the section for the whole year!
-
-#### Fiction
+### Fiction
 
 - <cite>Babylon’s Ashes</cite>, James S. A. Corey (reread)
 - <cite>Persepolis Rising</cite>, James S. A. Corey (reread)
@@ -57,16 +53,14 @@ Yeah, this is just what you’d expect. At the end of each year, this <b>Complet
 - <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
 
-#### Non-fiction
+### Non-fiction
 
 - <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/) and [8.03](https://winningslowly.org/8.03/)
 - <cite>The Postmodern Condition</cite>, Jean-François Lyotard (new)
 
-## Previous
+## 2019
 
-### 2019
-
-#### Fiction
+### Fiction
 
 - <cite>The Lord of the Rings</cite>, J.R.R. Tolkien (reread)
 - <cite>Shades of Milk and Honey</cite>, Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2019/review-shades-of-milk-and-honey.html)
@@ -86,16 +80,16 @@ Yeah, this is just what you’d expect. At the end of each year, this <b>Complet
 	- <cite>Cibola Burn</cite>
 	- <cite>Nemesis Games</cite>
 
-#### Non-Fiction
+### Non-Fiction
 
 - <cite>All That’s Good</cite>, Hannah Anderson (new)—[review](https://v4.chriskrycho.com/2019/review-all-thats-good.html)
 - <cite>Retrieving Eternal Generation</cite>, edited by Fred Sanders and Scott R. Swain (new)—[review](https://v4.chriskrycho.com/2019/review-retrieving-eternal-generation.html)
 - <cite>What is An Evangelical</cite>, Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
 - <cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>, Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
 
-### 2018
+## 2018
 
-#### Fiction
+### Fiction
 
 - <cite>Agent of Change</cite>, Sharon Lee and Steve Miller (new)—[review](https://v4.chriskrycho.com/2018/agent-of-change.html)
 - <cite>The Calculating Stars</cite>, Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/the-calculating-stars.html)
