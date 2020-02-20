@@ -3,7 +3,7 @@ title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
 eleventyExcludeFromCollections: true
-date: 2020-02-13T21:45
+date: 2020-02-20T08:35
 ---
 
 I try to keep this page fairly current; I last updated it on {% localeDate page.date, 'MMMM d, yyyy' %}. A few notes on the way this is organized and presented:
@@ -27,7 +27,6 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 #### Non-fiction
 
-- <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)
 - <cite>Dark Matters: On the Surveillance of Blackness</cite>, Simone Browne (new)
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
@@ -44,7 +43,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Eccentric Existence: A Theological Anthropology</cite>, David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
 - <cite>The Printing Press as an Agent of Change</cite>, Elizabeth Eisenstein (new)
-- <cite>The Postmodern Condition</cite>, Jean-François Lyotard (new)
+- <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)
 
 ### Completed
 
@@ -60,7 +59,8 @@ Yeah, this is just what you’d expect. At the end of each year, this <b>Complet
 
 #### Non-fiction
 
-- <cite>Phaedrus</cite>, Plato—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/)
+- <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/) and [8.03](https://winningslowly.org/8.03/)
+- <cite>The Postmodern Condition</cite>, Jean-François Lyotard (new)
 
 ## Previous
 
