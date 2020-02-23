@@ -1,6 +1,5 @@
 /* eslint @typescript-eslint/camelcase: off */
 
-import { Maybe } from 'true-myth'
 import { Dict, EleventyClass, Item } from '../types/eleventy'
 import Feed, { FeedItem } from '../types/json-feed'
 import absoluteUrl from './absolute-url'
@@ -10,11 +9,10 @@ import siteTitle from './site-title'
 import toCollection from './to-collection'
 import markdown from './markdown'
 
-const { Just, just, nothing } = Maybe
-
 type BuildInfo = typeof import('../site/_data/build')
 type SiteConfig = typeof import('../site/_data/config')
 
+/** Defensive function in case handed bad data */
 const optionalString = (value: unknown): string | undefined =>
    typeof value === 'string' ? value : undefined
 
@@ -46,7 +44,11 @@ declare module '../types/eleventy' {
          audience?: string
          epistemic?: string
       }
+      image?: string
+      link?: string
+      splash?: string
       book?: Book
+      standalonePage?: boolean
    }
 }
 
@@ -127,9 +129,9 @@ const itemTitle = (item: Item): string | undefined => {
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
-const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedItem> =>
-   canParseDate(item.date)
-      ? just({
+const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | null =>
+   canParseDate(item.date) && item.data?.standalonePage !== true
+      ? {
            id: absoluteUrl(item.url, config.url),
            author: {
               name: config.author.name,
@@ -147,9 +149,12 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): Maybe<FeedIt
            image: optionalString(item.data?.image ?? item.data?.book?.cover),
            external_url: optionalString(item.data?.link ?? item.data?.book?.link),
            tags: Array.isArray(item.data?.tags) ? item.data?.tags : [],
-           banner_image: optionalString(item.data?.splash),
-        })
-      : nothing()
+           banner_image:
+              optionalString(item.data?.splash) ??
+              optionalString(item.data?.book?.cover) ??
+              optionalString(item.data?.image),
+        }
+      : null
 
 /**
    Generate a JSON Feed compliant object for a given set of items.
@@ -169,8 +174,8 @@ const jsonFeed = (
    description: config.description,
    items: items
       .map(toFeedItemGivenConfig(config))
-      .filter(Maybe.isJust)
-      .map(Just.unwrap),
+      .filter(<T>(item: T | null): item is T => !!item)
+      .reverse(),
 })
 
 interface EleventyData {
@@ -184,13 +189,15 @@ interface EleventyData {
    permalink?: string
 }
 
+type ClassData = ReturnType<NonNullable<EleventyClass['data']>>
+
 export class JSONFeed implements EleventyClass {
    declare collection?: string
    declare title?: string
 
-   data(): ReturnType<NonNullable<EleventyClass['data']>> {
+   data(): ClassData {
       return {
-         eleventyExcludeFromCollections: true,
+         standalonePage: true,
          permalink: (/* _: EleventyData */): string =>
             this.collection ? `/${this.collection}/feed.json` : '/feed.json',
       }
@@ -200,7 +207,7 @@ export class JSONFeed implements EleventyClass {
       const collection = this.collection ?? 'all'
       const title = this.title ?? config.title.normal
       return JSON.stringify(
-         jsonFeed((collections[collection] ?? []).reverse(), config, page.url, title),
+         jsonFeed(collections[collection] ?? [], config, page.url, title),
       )
    }
 }

@@ -50,6 +50,7 @@ interface BrowserSyncConfig {
            routes?: Dict<string>
         }
 
+   /* eslint-disable @typescript-eslint/no-explicit-any */
    proxy?:
       | string
       | boolean
@@ -61,6 +62,7 @@ interface BrowserSyncConfig {
            proxyReq?: any
            proxyRes?: any
         }
+   /* eslint-enable @typescript-eslint/no-explicit-any */
 }
 
 type Empty = { isEmpty: true; empty: string } | { isEmpty: false }
@@ -113,7 +115,9 @@ export interface Page {
 }
 
 interface Data {
-   [key: string]: unknown
+   collections: {
+      [key: string]: Item[] | undefined
+   }
 }
 
 /** An `Item` is just like a `Page`, but with the actual data from render available. */

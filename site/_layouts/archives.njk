@@ -1,10 +1,15 @@
 ---
-eleventyExcludeFromCollections: true
+standalonePage: true
 ---
 
 {% extends 'base.njk' %}
 {% import 'components/item.njk' as item %}
 {% import 'components/archive-list.njk' as archive %}
+{% from 'components/social.njk' import meta %}
+
+{%- block extra_links %}
+{{ meta(collections.all | current(page), config) }}
+{%- endblock extra_links %}
 
 {%- block main -%}
 <section class='content-block'>

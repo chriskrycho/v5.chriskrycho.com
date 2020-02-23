@@ -1,6 +1,7 @@
 {%- macro entries(items, config) -%}
 {# invalid without date #}
-{%- for item in items | withValidDate -%}
+{%- if items is not undefined and items.length > 0 -%} 
+{%- for item in items | withValidDate | reverse -%}
 <entry>
    {#- Invalid to send an item without title or description -#}
    {% set url = item.url | absoluteUrl(config.url) -%}
@@ -64,4 +65,5 @@
    {% endfor %}
 </entry>
 {%- endfor %}
+{%- endif -%}
 {%- endmacro -%}

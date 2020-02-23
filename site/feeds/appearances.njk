@@ -9,6 +9,5 @@ eleventyExcludeFromCollections: true
 {%- extends 'feed.njk' -%}
 
 {%- block entries -%}
-   {# TODO: uncomment when adding first appearance #}
-   {# {{atom.entries(collections.appearances, config)}} #}
+   {{atom.entries(collections.appearances, config)}}
 {%- endblock -%}

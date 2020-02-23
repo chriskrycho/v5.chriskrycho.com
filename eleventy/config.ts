@@ -14,6 +14,8 @@ import siteTitle from './site-title'
 import excludingCollection from './excluding-collection'
 import toCollection from './to-collection'
 
+import './feed' // for extension of types -- TODO: move those types elsewhere!
+
 /**
    Use a path to create a collection from all items contained within it.
 
@@ -56,6 +58,9 @@ function config(config: Config): UserConfig {
    config.addFilter('historyLink', PageLinks.history)
    config.addFilter('sourceLink', PageLinks.source)
    config.addFilter('excludingCollection', excludingCollection)
+   config.addFilter('concat', (a: Item[] | undefined, b: Item[] | undefined) => {
+      return (a ?? []).concat(b ?? [])
+   })
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)
@@ -65,6 +70,9 @@ function config(config: Config): UserConfig {
    config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
 
+   config.addCollection('pages', collection =>
+      collection.getAll().filter(item => item.data?.standalonePage),
+   )
    addCollectionFromDir(config, 'journal')
    addCollectionFromDir(config, 'essays')
    addCollectionFromDir(config, 'library')

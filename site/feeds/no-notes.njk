@@ -1,0 +1,16 @@
+---
+title: Appearances
+permalink: /feed-without-notes.xml
+eleventyExcludeFromCollections: true
+standalonePage: true
+---
+
+{%- import 'components/atom.njk' as atom -%}
+
+{%- extends 'feed.njk' -%}
+
+{%- block entries -%}
+   {% set excluded = collections.pages | concat(collections.notes) %}
+   {% set items = collections.all | excludingCollection(excluded) %}
+   {{atom.entries(items, config)}}
+{%- endblock -%}

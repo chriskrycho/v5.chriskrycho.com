@@ -1,8 +1,8 @@
 ---
 title: Archive
 subtitle: Every single post on the site.
+standalonePage: true
 permalink: /archive/
-eleventyExcludeFromCollections: true
 subscribe:
     atom: "/feed.xml"
     json: "/feed.json"
@@ -18,11 +18,12 @@ subscribe:
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
-{%- if collections.all.length -%}
-   {% for entry in collections.all %}
+{% set items = collections.all | excludingCollection(collections.pages) %}
+{%- if items.length -%}
+   {% for entry in items %}
       {{entry.title}}
    {% endfor %}
-   {{ list(collections.all | archiveByYears('NEW_FIRST'), idByCollection=true)}}
+   {{ list(items | archiveByYears('NEW_FIRST'), idByCollection=true)}}
 {%- else -%}
    {%- include 'blocks/soon.njk' -%}
 {%- endif -%}

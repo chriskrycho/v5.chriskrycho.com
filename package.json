@@ -75,6 +75,7 @@
    },
    "scripts": {
       "build": "yarn gulp all & yarn eleventy",
-      "serve": "yarn gulp watch & yarn eleventy --serve"
+      "serve": "yarn gulp watch & yarn eleventy --serve",
+      "clean": "rm -rf public"
    }
 }

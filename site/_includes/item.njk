@@ -1,20 +1,13 @@
 {%- extends 'base.njk' -%}
 
-{% import 'components/social.njk' as social %}
+{% from 'components/social.njk' import meta %}
 
 {%- block extra_links %}
 {% if canonical %}
    <link rel='canonical' href='{{canonical}}' />
 {% endif %}
-{% set current_page = collections.all | current(page) %}
-{% if current_page %}
-   {{ social.meta(current_page, config) }}
-{% else %}
-   {# Fallback for items excluded from collections #}
-   {{ social.meta(page, config) }}
-{% endif %}
+{{ meta(collections.all | current(page), config) }}
 {%- endblock extra_links %}
-
 
 {%- block main -%}
 <article class='content-block post'>

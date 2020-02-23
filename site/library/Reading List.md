@@ -2,8 +2,8 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-eleventyExcludeFromCollections: true
 date: 2020-02-20T08:35
+standalonePage: true
 ---
 
 I try to keep this page fairly current; I last updated it on {% localeDate page.date, 'MMMM d, yyyy' %}. A few notes on the way this is organized and presented:

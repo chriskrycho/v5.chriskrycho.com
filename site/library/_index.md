@@ -7,5 +7,5 @@ layout: archives.njk
 subscribe:
     atom: "/library/feed.xml"
     json: "/library/feed.json"
-
+standalonePage: true
 ---

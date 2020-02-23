@@ -26,6 +26,7 @@
    {#- TODO: logo -#}
    {%- endblock feed_info %}
    {%- block entries -%}
-      {{atom.entries(collections.all, config)}}
+      {% set items = collections.all | excludingCollection(collections.pages) %}
+      {{atom.entries(items, config)}}
    {% endblock entries -%}
 </feed>

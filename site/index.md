@@ -1,7 +1,7 @@
 ---
 title: Sympolymathesy
 layout: index.njk
-eleventyExcludeFromCollections: true
+standalonePage: true
 ---
 
 Hello!
