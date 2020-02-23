@@ -198,6 +198,7 @@ export class JSONFeed implements EleventyClass {
    data(): ClassData {
       return {
          standalonePage: true,
+         excludeFromEleventyCollections: true,
          permalink: (/* _: EleventyData */): string =>
             this.collection ? `/${this.collection}/feed.json` : '/feed.json',
       }

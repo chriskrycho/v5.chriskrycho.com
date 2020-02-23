@@ -17,7 +17,12 @@ standalonePage: true
 
 {% set c = page.inputPath | toCollection %}
 {%- if collections[c] and collections[c].length -%}
-   {{ archive.list(collections[c] | archiveByYears('NEW_FIRST')) }}
+   {%-
+      set items = collections[c]
+         | excludingCollection(collections.pages)
+         | archiveByYears('NEW_FIRST')
+   -%}
+   {{ archive.list(items)}}
 {%- else -%}
    {%- include 'blocks/soon.njk' -%}
 {%- endif -%}
