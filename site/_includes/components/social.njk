@@ -1,4 +1,4 @@
-{%- macro meta(page, config) -%}
+{%- macro meta(page, config, titleOverride) -%}
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@chriskrycho" />
 <meta name="twitter:creator" content="@chriskrycho" />
@@ -26,8 +26,13 @@
 <meta property="og:url" content="{{url}}" />
 <meta name="article:author" content="{{config.url}}" />
 
-<meta property="og:title" content="{{page.data.title | siteTitle(config)}}" />
-<meta name="twitter:title" content="{{page.data.title | siteTitle(config)}}" />
+{%- if titleOverride -%}
+   {%- set title = titleOverride | siteTitle(config) -%}
+{%- else -%}
+   {%- set title = page.data.title | siteTitle(config) -%}
+{%- endif -%}
+<meta property="og:title" content="{{title}}" />
+<meta name="twitter:title" content="{{title}}" />
 
 {%- if page.data.summary is defined -%}
    {%- set description = page.data.summary -%}

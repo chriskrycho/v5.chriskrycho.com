@@ -1,14 +1,19 @@
+{% extends 'base.njk' %}
+{% import 'components/item.njk' as item %}
+{% import 'components/archive-list.njk' as archive %}
+{% from 'components/social.njk' import meta %}
+
 {%- set title -%}
    topic: {{tag}}
 {%- endset -%}
 
+{%- block extra_links %}
+{{ meta(collections.all | current(page), config, title) }}
+{%- endblock extra_links %}
+
 {%- set styled_title -%}
    <span class='tag-label'>topic:</span> <span class='tag-name'>{{tag}}</span>
 {%- endset -%}
-
-{% extends 'base.njk' %}
-{% import 'components/item.njk' as item %}
-{% import 'components/archive-list.njk' as archive %}
 
 {%- block main -%}
 <section class='content-block'>
