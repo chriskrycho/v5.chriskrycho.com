@@ -46,9 +46,11 @@
 {%- else -%}
    {%- set description = config.description -%}
 {%- endif %}
-<meta name="description" content="{{description}}" />
-<meta property="og:description" content="{{description}}" />
-<meta name="twitter:description" content="{{description}}" />
+
+{% set renderedDescription = description | inlineMd | safe | striptags(true) %}
+<meta name="description" content="{{renderedDescription}}" />
+<meta property="og:description" content="{{renderedDescription}}" />
+<meta name="twitter:description" content="{{renderedDescription}}" />
 
 <meta property="og:type" content="article" />
 
