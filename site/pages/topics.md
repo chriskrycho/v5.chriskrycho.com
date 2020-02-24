@@ -1,6 +1,7 @@
 ---
 pagination:
   data: collections
+  addAllPagesToCollections: true
   size: 1
   alias: tag
   filter:

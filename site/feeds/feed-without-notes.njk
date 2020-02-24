@@ -1,8 +1,8 @@
 ---
-title: Appearances
+title: Feed Without Notes
 permalink: /feed-without-notes.xml
-eleventyExcludeFromCollections: true
 standalonePage: true
+eleventyExcludeFromCollections: true
 ---
 
 {%- import 'components/atom.njk' as atom -%}
@@ -10,7 +10,6 @@ standalonePage: true
 {%- extends 'feed.njk' -%}
 
 {%- block entries -%}
-   {% set excluded = collections.pages | concat(collections.notes) %}
-   {% set items = collections.all | excludingCollection(excluded) %}
+   {% set items = collections.all | excludingCollection(collections.notes) | excludingStandalonePages %}
    {{atom.entries(items, config)}}
 {%- endblock -%}

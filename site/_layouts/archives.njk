@@ -19,7 +19,7 @@ standalonePage: true
 {%- if collections[c] -%}
    {%-
       set items = collections[c]
-         | excludingCollection(collections.pages)
+         | excludingStandalonePages
          | archiveByYears('NEW_FIRST')
    -%}
    {%- if items.length -%}

@@ -18,7 +18,7 @@ subscribe:
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
-{% set items = collections.all | excludingCollection(collections.pages) %}
+{% set items = collections.all | excludingStandalonePages %}
 {%- if items.length -%}
    {% for entry in items %}
       {{entry.title}}

@@ -1,3 +1,4 @@
 {
-   "standalonePage": true
+   "standalonePage": true,
+   "eleventyExcludeFromCollections": true
 }
