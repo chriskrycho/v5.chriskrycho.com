@@ -1,5 +1,5 @@
 ---
-title: The Triune Creator's Relating to Creation
+title: The Triune Creator’s Relating to Creation
 date: 2020-03-03T22:30:00-0700
 qualifiers:
     audience: >
