@@ -2,8 +2,9 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-02-20T08:35
+date: 2020-03-08T21:15
 standalonePage: true
+
 ---
 
 I try to keep this page fairly current; I last updated it on {% localeDate page.date, 'MMMM d, yyyy' %}. A few notes on the way this is organized and presented:
@@ -56,7 +57,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/) and [8.03](https://winningslowly.org/8.03/)
-- <cite>The Postmodern Condition</cite>, Jean-François Lyotard (new)
+- <cite>The Postmodern Condition</cite>, Jean-François Lyotard (new)—discussed on Winning Slowly [8.04](https://winningslowly.org/8.04/)
 
 ## 2019
 
