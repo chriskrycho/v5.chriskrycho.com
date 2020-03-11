@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-03-08T21:15
+date: 2020-03-10T22:20
 standalonePage: true
 
 ---
@@ -42,7 +42,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Eccentric Existence: A Theological Anthropology</cite>, David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
 - <cite>The Printing Press as an Agent of Change</cite>, Elizabeth Eisenstein (new)
-- <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)
 
 ## 2020
 
@@ -53,6 +52,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Tiamat’s Wrath</cite>, James S. A. Corey (reread)
 - <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
+- <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)[^kurzweil]
+
+[^kurzweil]: This is where it is for a reason. Don’t @ me.
 
 ### Non-fiction
 
