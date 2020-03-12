@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-03-10T22:20
+date: 2020-03-12T09:35
 standalonePage: true
 
 ---
