@@ -21,7 +21,6 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 ### Fiction
 
-- <cite>Jurassic Park</cite>, Michael Crichton (new)
 - <cite>Blue Mars</cite>, Kim Stanley Robinson (new)
 
 ### Non-fiction
@@ -37,6 +36,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
+- <cite>Jurassic Park</cite>, Michael Crichton (new)
 
 ### Non-fiction
 
