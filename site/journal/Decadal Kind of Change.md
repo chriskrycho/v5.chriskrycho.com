@@ -16,7 +16,7 @@ tags:
   - evangelicalism
   - change
 date: 2020-01-01T16:00
-updated: 2020-01-02T13:20
+updated: 2020-03-12T09:50
 
 ---
 
@@ -36,7 +36,7 @@ My website, and my public person in general, have been heavy on technical concer
 
 That has changed over the last few months. The first hint of the shift came during my preparation for teaching a class at church on Christology. I felt my passion for theological thinking come alive again. The experience of teaching the class was the second shift. Though I came out of each Sunday exhausted, I came out exhilarated too. I had the sense: *I was made for this.* I absolutely love teaching, and I’m good at it.
 
-The final piece came in the past few weeks. A few very public conversations about the relationship between white evangelicals and President Trump crystallized for me how profoundly *untaught* and *mistaught* many of my fellow evangelicals have been. We have come to a time when prominent Christian leaders can say absurd things—like the idea that any and all criticism of this president is demonic—and those men still be taken seriously. (This claim, to be clear, would be absurd for *any leader*. None of us is above criticism!) But this should not be a surprise. People are hungry for truth, and the voices speaking at a popular level in an authoritative way for the last several decades have been the sort to lead the churhc into just this sort of folly. The majority of the voices speaking to the white evangelical public have ranged from well-intended-but-ignorant to power-hungry fools.
+The final piece came in the past few weeks. A few very public conversations about the relationship between white evangelicals and President Trump crystallized for me how profoundly *untaught* and *mistaught* many of my fellow evangelicals have been. We have come to a time when prominent Christian leaders can say absurd things—like the idea that any and all criticism of this president is demonic—and those men still be taken seriously. (This claim, to be clear, would be absurd for *any leader*. None of us is above criticism!) But this should not be a surprise. People are hungry for truth, and the voices speaking at a popular level in an authoritative way for the last several decades have been the sort to lead the church into just this sort of folly. The majority of the voices speaking to the white evangelical public have ranged from well-intended-but-ignorant to power-hungry fools.
 
 I [wrote yesterday][atss-32] in the final 2019 issue of [Across the Sundering Seas][atss]:
 
