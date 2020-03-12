@@ -3,7 +3,7 @@ title: How I Publish This Site
 subtitle: Explaining how I run this site—everything.
 summary: Explaining how I run this site—everything.
 date: 2020-02-09T21:00
-updated: 2020-02-10T09:20
+updated: 2020-03-12T09:45
 qualifiers:
     audience: >
         People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to how I use Markdown and Git!
@@ -213,7 +213,7 @@ Forestry has far and away the better UI of the two. In fact, it has such a reaso
 > 
 > It ... it makes sense. It's laid out like ... normal people would lay it out. I shouldn't be so shocked, but lo, I'm shocked.
 
-He’s not wrong. Most CMS user interfaces are *not good*. (The best I can say for [WordPress] is that I’ve gotten used to it. [Ghost] is pretty good, but unfortunately doesn’t work for the exact workflow I described above.) That goes double for viewing them on mobile devices, and Forestry’s mobile view is actually quite god! The experience of writing in Forestry is also good, even on iOS, which is *very* unusual for web text editors—even more unusual than just working there at all. Unfortunately, though, it doesn’t support working with Git *branches*, only working with the single “master” branch of the repository. This makes it a non-starter for drafting totally new work at this point, as (at least for now) committing to `master` *publishes the post*!
+He’s not wrong. Most CMS user interfaces are *not good*. (The best I can say for [WordPress] is that I’ve gotten used to it. [Ghost] is pretty good, but unfortunately doesn’t work for the exact workflow I described above.) That goes double for viewing them on mobile devices, and Forestry’s mobile view is actually quite good! The experience of writing in Forestry is also good, even on iOS, which is *very* unusual for web text editors—even more unusual than just working there at all. Unfortunately, though, it doesn’t support working with Git *branches*, only working with the single “master” branch of the repository. This makes it a non-starter for drafting totally new work at this point, as (at least for now) committing to `master` *publishes the post*!
 
 Netlify CMS handles that particular problem well via its [Editorial Workflow]! However, where Forestry’s CMS UI is one of the *best* of its sort, Netlify CMS is… not. For one thing, it simply does not even try when it comes to mobile devices—not for displaying and certainly not for editing. Given that this is the context where I’m *most* apt to want a CMS, this makes it a non-starter on *that* end.
 
