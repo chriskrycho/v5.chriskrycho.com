@@ -26,10 +26,10 @@
 {%- endblock %}
 
 {% block content %}
-{% if book %}
-{{review(book)}}
-{% endif %}
-{{ super() }}
+{%- if book -%}
+   {{- review(book) -}}
+{%- endif -%}
+   {{- super() -}}
 {% endblock %}
 
 {% block after_content %}
