@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-03-15T13:45
+date: 2020-03-15T21:30
 standalonePage: true
 
 ---
@@ -52,7 +52,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
 - <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)[^kurzweil]
-- <cite>Jurassic Park</cite>, Michael Crichton (new)
+- [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](https://v5.chriskrycho.com/library/jurassic-park/)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
