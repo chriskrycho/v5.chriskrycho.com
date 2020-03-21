@@ -36,7 +36,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
-- <cite>The Lost World</cite>, Michael Crichton (new)
 
 ### Non-fiction
 
@@ -54,6 +53,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
 - <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)[^kurzweil]
 - [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](https://v5.chriskrycho.com/library/jurassic-park/)
+- <cite>The Lost World</cite>, Michael Crichton (new)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
