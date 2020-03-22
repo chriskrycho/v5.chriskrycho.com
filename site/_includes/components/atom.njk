@@ -44,7 +44,7 @@
          {% set book = item.data.book %}
          &lt;p&gt;
             {% if book.link %}
-            &lt;a href="{{book.link}}" rel="nofollow&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
+            &lt;a href="{{book.link}}" rel="nofollow"&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
             {% else %}
             &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
             {% endif %}
