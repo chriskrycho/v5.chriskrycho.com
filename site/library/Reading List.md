@@ -95,8 +95,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- <cite>Agent of Change</cite>, Sharon Lee and Steve Miller (new)—[review](https://v4.chriskrycho.com/2018/agent-of-change.html)
-- <cite>The Calculating Stars</cite>, Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/the-calculating-stars.html)
-- <cite>The Fated Sky</cite>, Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/review-the-fated-sky.html)
-- <cite>Ringworld</cite>, Larry Niven (new)—[review](https://v4.chriskrycho.com/2018/ringworld-review.html)
-- <cite>The Fifth Season</cite>, N. K. Jemison (new)
+- [<cite>Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAgent-of-Change-Sharon-Lee%2Fbook%2F23072866), Sharon Lee and Steve Miller (new)—[review](https://v4.chriskrycho.com/2018/agent-of-change.html)
+- [<cite>The Calculating Stars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Calculating-Stars-A-Lady-Astronaut-Novel-Mary-Robinette-Kowal%2Fbook%2F39801025), Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/the-calculating-stars.html)
+- [<cite>The Fated Sky</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Fated-Sky-A-Lady-Astronaut-Novel-Mary-Robinette-Kowal%2Fbook%2F40036198), Mary Robinette Kowal (new)—[review](https://v4.chriskrycho.com/2018/review-the-fated-sky.html)
+- [<cite>Ringworld</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRingworld-Larry-Niven%2Fbook%2F5764809), Larry Niven (new)—[review](https://v4.chriskrycho.com/2018/ringworld-review.html)
+- [<cite>The Fifth Season</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Fifth-Season-N-K-Jemisin%2Fbook%2F31475116), N. K. Jemison (new)
+- [<cite>The Obelisk Gate</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Obelisk-Gate-N-K-Jemisin%2Fbook%2F34307835), N. K. Jemison (new)
+- [<cite>The Stone Sky</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Stone-Sky-N-K-Jemisin%2Fbook%2F38128431), N. K. Jemison (new)
