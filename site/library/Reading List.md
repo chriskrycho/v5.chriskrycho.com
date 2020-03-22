@@ -52,8 +52,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
 - <cite>The Age of Spiritual Machines</cite>, Ray Kurzweil (new)[^kurzweil]
-- [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](https://v5.chriskrycho.com/library/jurassic-park/)
-- <cite>The Lost World</cite>, Michael Crichton (new)
+- [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](/library/jurassic-park/)
+- [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316%3Fmatches%3D1048), Michael Crichton (new)—[review](/library/the-lost-world/)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
@@ -74,9 +74,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 	- <cite>Sleeping Giants</cite>
 	- <cite>Waking Gods</cite>
 	- <cite>Only Human</cite>
-- <cite>Red Mars</cite>, Kim Stanley Robinson (new)—[review](https://v5.chriskrycho.com/library/red-mars/)
-- <cite>Recursion</cite>, Blake Crouch (new)—[review](https://v5.chriskrycho.com/library/recursion/)
-- <cite>Dark Matter</cite>, Blake Crouch (new)—[review](https://v5.chriskrycho.com/library/dark-matter/)
+- <cite>Red Mars</cite>, Kim Stanley Robinson (new)—[review](/library/red-mars/)
+- <cite>Recursion</cite>, Blake Crouch (new)—[review](/library/recursion/)
+- <cite>Dark Matter</cite>, Blake Crouch (new)—[review](/library/dark-matter/)
 - The Expanse, James S.A. Corey (reread):
 	- <cite>Leviathan Wakes</cite>
 	- <cite>Caliban’s War</cite>
