@@ -86,10 +86,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Non-Fiction
 
-- <cite>All That’s Good</cite>, Hannah Anderson (new)—[review](https://v4.chriskrycho.com/2019/review-all-thats-good.html)
-- <cite>Retrieving Eternal Generation</cite>, edited by Fred Sanders and Scott R. Swain (new)—[review](https://v4.chriskrycho.com/2019/review-retrieving-eternal-generation.html)
-- <cite>What is An Evangelical</cite>, Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
-- <cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>, Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
+- [<cite>All That’s Good: Recovering the Lost Art of Discernment</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAll-Thats-Good-Recovering-the-Lost-Art-of-Discernment-Hannah-Anderson%2Fbook%2F40621499), Hannah Anderson (new)—[review](https://v4.chriskrycho.com/2019/review-all-thats-good.html)
+- [<cite>Retrieving Eternal Generation</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRetrieving-Eternal-Generation-Zondervan%2Fbook%2F38506657), edited by Fred Sanders and Scott R. Swain (new)—[review](https://v4.chriskrycho.com/2019/review-retrieving-eternal-generation.html)
+- [<cite>What is An Evangelical</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWho-Is-an-Evangelical-The-History-of-a-Movement-in-Crisis-Thomas-S-Kidd%2Fbook%2F43567758), Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
+- [<cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FIn-Search-of-the-Common-Good-Christian-Fidelity-in-a-Fractured-World-Jake-Meador%2Fbook%2F42719272), Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
 
 ## 2018
 
