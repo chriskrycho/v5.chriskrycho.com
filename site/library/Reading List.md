@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-03-21T20:40
+date: 2020-03-22T09:00
 standalonePage: true
 
 ---
@@ -60,7 +60,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/) and [8.03](https://winningslowly.org/8.03/)
-- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171%3Fmatches%3D58), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04](https://winningslowly.org/8.04/)
+- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171%3Fmatches%3D58), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04](https://winningslowly.org/8.04/) and [8.05](https://winningslowly.org/8.05/)
 
 ## 2019
 
