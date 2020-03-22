@@ -13,6 +13,8 @@ tags:
     - sacraments
     - fellowship
     - eschatology
+summary: >
+    Many of us are unable to gather together or take communion because of government mandates during the coronavirus crisis. Whatever our theologies of the Lord’s Supper, this is a great loss—but one that can shape our hearts in the right direction.
 
 ---
 
