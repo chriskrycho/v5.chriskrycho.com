@@ -1,7 +1,7 @@
 /* eslint @typescript-eslint/camelcase: off */
 
 import { Dict, EleventyClass, Item } from '../types/eleventy'
-import Feed, { FeedItem } from '../types/json-feed'
+import JsonFeed, { FeedItem } from '../types/json-feed'
 import absoluteUrl from './absolute-url'
 import { canParseDate } from './date-time'
 import isoDate from './iso-date'
@@ -166,7 +166,7 @@ const jsonFeed = (
    config: SiteConfig,
    permalink: string,
    title: string,
-): Feed => ({
+): JsonFeed => ({
    version: 'https://jsonfeed.org/version/1',
    title: siteTitle(title, config),
    home_page_url: config.url,

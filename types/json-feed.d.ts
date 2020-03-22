@@ -1,4 +1,4 @@
-export interface Feed {
+export interface JsonFeed {
    /**
       The URL of the version of the format the feed uses. This should appear at the very
       top, though we recognize that not all JSON generators allow for ordering.
@@ -277,4 +277,4 @@ export interface Hub {
    [key: string]: unknown
 }
 
-export default Feed
+export default JsonFeed
