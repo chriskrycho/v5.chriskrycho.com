@@ -77,5 +77,9 @@
       "build": "yarn gulp all & yarn eleventy",
       "serve": "yarn gulp watch & yarn eleventy --serve",
       "clean": "rm -rf public"
+   },
+   "resolutions": {
+      "minimist": "1.2.5",
+      "acorn": "7.1.1"
    }
 }
