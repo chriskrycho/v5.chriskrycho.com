@@ -24,9 +24,10 @@
                            ⚓︎
                         {%- endif -%}
                         </a>
-                        {% if idByCollection %}
-                           <span class='item-title__collection'>—{{item.inputPath | toCollection | upper}}</span>
-                        {% endif %}
+                        {%- if idByCollection %}
+                           {%- set collection = item.inputPath | toCollection -%}
+                           <span class='item-title__collection'>—<a href="/{{collection}}/">{{collection | upper}}</a></span>
+                        {% endif -%}
                      </h5>
                      {% if item.data.subtitle -%}
                      <p class='item-subtitle'>{{item.data.subtitle | inlineMd | safe}}</h2>
