@@ -38,7 +38,7 @@
 
 {%- set tagCollection = collections[tag] -%}
 {%- if tagCollection and tagCollection.length -%}
-   {{ archive.list(tagCollection | archiveByYears('OLD_FIRST')) }}
+   {{ archive.list(tagCollection | archiveByYears('OLD_FIRST'), idByCollection=true) }}
 {%- else -%}
    {%- include 'blocks/wip.njk' -%}
 {%- endif -%}
