@@ -39,8 +39,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Non-fiction
 
-- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539%3Fmatches%3D26), David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
-- [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362%3Fmatches%3D27), Elizabeth Eisenstein (new)
+- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
+- [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)
 - <cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>, Ashley Hales (new)
 
 ## 2020
@@ -52,16 +52,16 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Tiamat’s Wrath</cite>, James S. A. Corey (reread)
 - <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
-- [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799%3Fmatches%3D147), Ray Kurzweil (new)[^kurzweil]
+- [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
 - [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](/library/jurassic-park/)
-- [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316%3Fmatches%3D1048), Michael Crichton (new)—[review](/library/the-lost-world/)
+- [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)—[review](/library/the-lost-world/)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
 ### Non-fiction
 
 - <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/) and [8.03](https://winningslowly.org/8.03/)
-- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171%3Fmatches%3D58), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04](https://winningslowly.org/8.04/) and [8.05](https://winningslowly.org/8.05/)
+- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04](https://winningslowly.org/8.04/) and [8.05](https://winningslowly.org/8.05/)
 
 ## 2019
 
