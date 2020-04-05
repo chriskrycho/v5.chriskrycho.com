@@ -1,5 +1,5 @@
 ---
-title: On “Saint”
+title: On “Saints”
 subtitle: Should we prepend the term to “Paul” or “Augustine”?
 tags:
     - theology
@@ -9,6 +9,7 @@ qualifiers:
     epistemic: Reasonably comfortable, but wouldn’t pick a fight over this.
     audience: Other Protestants. (Non-Christians likely don’t care; Catholics and Eastern Orthodox are apt to disagree because of different priors!)
 date: 2020-04-05T12:10
+updated: 2020-04-05T12:15
 summary: >
     I generally opt not to because of its unhelpful associations with Catholic (and Eastern Orthodox) views on saints, and because I take it to be out of step with the actual biblical use of the language of “saints.”
 ---
