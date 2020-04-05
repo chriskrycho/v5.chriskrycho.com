@@ -494,6 +494,20 @@
       max-width: var(--max-width);
    }
 
+   dl {
+      max-width: var(--max-width);
+   }
+
+   dt {
+      font-style: italic;
+      margin-bottom: 1em;
+   }
+
+   dd {
+      margin-left: 1em;
+      margin-bottom: 1em;
+   }
+
    img {
       width: 100%;
       margin-bottom: 1rem;
