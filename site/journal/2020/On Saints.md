@@ -11,7 +11,7 @@ qualifiers:
 date: 2020-04-05T12:10
 updated: 2020-04-05T12:15
 summary: >
-    I generally opt not to because of its unhelpful associations with Catholic (and Eastern Orthodox) views on saints, and because I take it to be out of step with the actual biblical use of the language of “saints.”
+    Should we prepend the term to “Paul” or “Augustine”? I generally opt not to because of its unhelpful associations with Catholic (and Eastern Orthodox) views on saints, and because I take it to be out of step with the actual biblical use of the language of “saints.”
 ---
 
 :::note
