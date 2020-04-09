@@ -12,7 +12,9 @@ tags:
 
 ---
 
-Superscripts and subcripts should not affect the vertical rhythm of the text. As a prime example common in blogs and similar websites: the superscript style used for footnotes should not make lines with footnotes taller than lines *without* footnotes.
+Superscripts and subcripts should not affect the vertical rhythm of the text. That is, they should not affect its [<i>leading</i>][leading]. As a prime example common in blogs and similar websites: the superscript style used for footnotes should not make lines with footnotes taller than lines *without* footnotes.
+
+[leading]: https://en.wikipedia.org/wiki/Leading
 
 Here’s an exaggerated example of an *incorrect* layout—notice how the line with the superscript “1” is *much* taller than the surrounding lines:
 
