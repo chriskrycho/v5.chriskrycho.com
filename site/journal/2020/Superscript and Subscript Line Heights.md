@@ -2,6 +2,7 @@
 title: Superscript and Subscript Line Heights
 subtitle: A tip for better typography.
 date: 2020-04-08T20:15
+updated: 2020-04-08T21:55
 summary: >
     Superscripts and subscripts should not affect the vertical rhythm of the text.
 qualifiers:
@@ -21,7 +22,7 @@ Superscripts and subcripts should not affect the vertical rhythm of the text. Th
 
 Two comments before I dive into the rest of the piece:
 
-- Folks reading along in RSS, you may want to [click through]({{post.url}}): it’s possible these examples will not display correctly in your reader!
+- Folks reading along in RSS, you may want to [click through](https://v5.chriskrycho.com/journal/superscript-and-subscript-line-heights/): it’s possible these examples will not display correctly in your reader!
 - Everything I say here about how text should *look* applies equally to native apps or to print, but the mechanics will be wildly different than they are on the web.
 
 :::
