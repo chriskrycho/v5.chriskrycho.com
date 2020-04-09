@@ -56,8 +56,7 @@
 
    aside,
    .note,
-   .qualifiers,
-   .callout {
+   .qualifiers {
       font: {
          family: var(--sans);
          weight: 300;
@@ -70,6 +69,13 @@
       }
 
       border-top: 2px solid var(--top-border);
+   }
+
+   .callout {
+      margin: {
+         left: -3px;
+         bottom: ms(0);
+      }
    }
 
    aside {
@@ -197,7 +203,7 @@
          family: var(--sans);
          weight: bold;
          size: ms(-2);
-         feature-settings: 'onum' 0;
+         variant-numeric: lining-nums;
       }
 
       &.footnote-ref a {
@@ -447,7 +453,7 @@
 
    ol {
       list-style: decimal;
-      font-feature-settings: 'onum' 0;
+      font-variant-numeric: lining-nums;
    }
 
    .outline ol {
