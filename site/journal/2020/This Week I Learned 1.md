@@ -1,5 +1,6 @@
 ---
-title: This Week I Learned #1
+title: >
+    This Week I Learned #1
 date: 2020-04-24T21:15:00
 updated: 2020-04-25T07:35:00
 summary: Summaries and links to a number of articles I read this week.
