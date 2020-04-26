@@ -14,6 +14,7 @@ tags:
     - things I learned
     - historical theology
     - academia
+    - This Week I Learned
 
 ---
 
