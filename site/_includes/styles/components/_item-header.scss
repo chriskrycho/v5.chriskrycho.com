@@ -41,13 +41,4 @@
          letter-spacing: 1px;
       }
    }
-
-   &.archive {
-      @media screen and (max-width: $reflow) {
-         padding: {
-            left: 1rem;
-            right: 1rem;
-         }
-      }
-   }
 }
