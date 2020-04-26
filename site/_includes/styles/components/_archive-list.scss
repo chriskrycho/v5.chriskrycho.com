@@ -179,7 +179,7 @@
 @media screen and (max-width: $break-2) {
    .archive-list {
       .year-info {
-         grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 30rem) minmax(5rem, 1fr);
+         grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(4rem, 1fr);
       }
 
       .month {
@@ -189,7 +189,7 @@
       }
 
       .month-title {
-         width: 3rem;
+         width: 2rem;
       }
 
       .day {
