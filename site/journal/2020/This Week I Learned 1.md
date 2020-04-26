@@ -2,7 +2,7 @@
 title: >
     This Week I Learned #1
 date: 2020-04-24T21:15:00
-updated: 2020-04-25T16:05:00
+updated: 2020-04-26T08:25:00
 summary: Summaries and links to a number of articles I read this week.
 tags:
     - fuzz testing
@@ -42,3 +42,5 @@ Starting this week, I’m trying something new—taking a page out of [Reda Leme
 [sanders]: http://scriptoriumdaily.com/why-its-hard-to-trace-trajectories-and-continuities-muller/
 
 [^remote]: Remote is *absolutely* worth that tradeoff to me. I should write more on that at some future date. But it would be a lie to call it anything *but* a tradeoff.
+
+*[HT]: hat tip—the idea of a tip-of-the-hat to someone who helped you in some way.
