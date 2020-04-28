@@ -55,7 +55,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
 - [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](/library/jurassic-park/)
 - [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)—[review](/library/the-lost-world/)
-- [<cite>Sourdough</cite>](), Robin Sloan (new)
+- [<cite>Sourdough</cite>](https://www.robinsloan.com/books/sourdough/), Robin Sloan (new)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
