@@ -1,8 +1,8 @@
 ---
 title: >
     This Week I Learned #1
-date: 2020-04-24T21:15:00
-updated: 2020-04-26T08:25:00
+date: 2020-04-24T21:15:00-0600
+updated: 2020-04-26T08:25:00-0600
 summary: Summaries and links to a number of articles I read this week.
 tags:
     - fuzz testing

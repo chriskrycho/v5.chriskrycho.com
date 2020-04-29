@@ -1,7 +1,7 @@
 ---
 title: Writing Requires Reading
 subtitle: …as my November-writing adventures make clear!
-date: 2019-11-18T07:00:00
+date: 2019-11-18T07:00:00-0700
 qualifiers:
     audience: people following along with me as I try to write every day, or who are interested in writing generally
 tags:
