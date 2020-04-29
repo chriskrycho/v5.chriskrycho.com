@@ -8,10 +8,12 @@ const maybeDateTime = (parse: Parse, input: string): Maybe<DateTime> => {
    return parsed.isValid ? Maybe.just(parsed) : Maybe.nothing()
 }
 
+const TZ = { zone: 'America/Denver' }
+
 // Same parsing rules as 11ty itself uses: ISO or SQL, nothing else.
 export const toDateTime = (input: string): DateTime => {
-   return maybeDateTime(DateTime.fromISO, input)
-      .or(maybeDateTime(DateTime.fromSQL, input))
+   return maybeDateTime(s => DateTime.fromISO(s, TZ), input)
+      .or(maybeDateTime(s => DateTime.fromSQL(s, TZ), input))
       .unwrapOrElse(() => {
          throw new Error(`Could not parse date: ${input}`)
       })
