@@ -19,9 +19,9 @@
                      <h5 class='item-title'>
                         <a href='{{item.url}}' class='item-permalink' title='item permalink'>
                         {%- if item.data.title -%}
-                           {{-item.data.title | inlineMd | safe-}}
+                           <span class='item-title__text'>{{-item.data.title | inlineMd | safe-}}</span>
                         {%- else -%}
-                           ⚓︎
+                           <span class='date item-title__date'>{% localeDate item.date, 'HH:mm' %}</span> ⚓︎
                         {%- endif -%}
                         </a>
                         {%- if idByCollection %}
