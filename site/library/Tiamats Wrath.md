@@ -19,8 +19,8 @@ tags:
     - science fiction
     - just war
     - James S. A. Corey
-date: 2020-01-23T21:20
-updated: 2020-01-23T22:30
+date: 2020-01-23T21:20:00-0600
+updated: 2020-01-23T22:30:00-0600
 
 ---
 

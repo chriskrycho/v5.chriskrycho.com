@@ -1,6 +1,6 @@
 ---
 title: All places tell stories
-date: 2020-03-29T20:50
+date: 2020-03-29T20:50:00-0600
 qualifiers:
     audience: >
         People thinking about cities and suburbs—especially but certainly not only other orthodoxy Christians.

@@ -1,8 +1,8 @@
 ---
 title: Adding a Reading List Page
 subtitle: A central place to see what I’ve read and what I’ve said about it!
-date: 2020-02-13T22:00
-updated: 2020-02-22T09:30
+date: 2020-02-13T22:00:00-0600
+updated: 2020-02-22T09:30:00-0600
 summary: >
     I’ve just added a new Reading List page to my site, where I’ll log everything I read and link to my interactions with those texts!
 qualifiers:

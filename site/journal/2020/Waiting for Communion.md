@@ -1,7 +1,7 @@
 ---
 title: Waiting for Communion
 subtitle: A coronavirus reminder of our place in the time between the times.
-date: 2020-03-22T08:35
+date: 2020-03-22T08:35:00-0600
 qualifiers:
     audience: >
         Other theologically-orthodox Christians, especially (but not only) those in traditions which link the sacraments to the gathered church.

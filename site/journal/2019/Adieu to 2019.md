@@ -19,8 +19,8 @@ qualifiers:
     audience: mostly my future self!—but you’re welcome to read along and see my thoughts on how 2019 went for me and what I hope 2020 will look like.
 summary: >
     2019 was a year of rest and recovery, for which I’m profoundly grateful. Here’s how it went down—from podcasting and writing to career changes and health and fitness.
-date: 2019-12-31T23:00
-updated: 2020-01-03T12:05
+date: 2019-12-31T23:00:00-0600
+updated: 2020-01-03T12:05:00-0600
 
 ---
 

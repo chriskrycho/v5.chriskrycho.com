@@ -5,7 +5,7 @@ subtitle: >
 qualifiers:
     audience: >
         people who are annoyed that all my feed items just showed up in their readers again. I’m *really* sorry, everyone.
-date: 2020-01-11T09:35
+date: 2020-01-11T09:35:00-0600
 tags:
     - blogging
     - Atom feed

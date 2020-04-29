@@ -28,6 +28,8 @@ const YEAR_FORMAT = 'yyyy'
 const MONTH_FORMAT = 'MMM'
 const DAY_FORMAT = 'dd'
 
+export const TZ_OPTIONS: Intl.DateTimeFormatOptions = { timeZoneName: 'America/Denver' }
+
 type DayMap = Map<number, Item[]>
 type MonthMap = Map<number, [string, DayMap]>
 type YearMap = Map<number, [string, MonthMap]>
@@ -47,7 +49,7 @@ const dateTimeFromItem = ({ date }: Item): DateTime =>
 
 const daysFromDayMap = (dayMap: DayMap, byEntries: SortByEntries, order: Order): Day[] =>
    [...dayMap.entries()].sort(byEntries).map(([, items]) => ({
-      name: dateTimeFromItem(items[0]).toFormat(DAY_FORMAT),
+      name: dateTimeFromItem(items[0]).toFormat(DAY_FORMAT, TZ_OPTIONS),
       items: items.slice().sort(byDate(order)),
    }))
 
@@ -66,7 +68,10 @@ const dayMapFromItem = (item: Item, dateTime: DateTime): DayMap =>
 
 const monthMapFromItem = (item: Item, dateTime: DateTime): MonthMap =>
    new Map([
-      [dateTime.month, [dateTime.toFormat(MONTH_FORMAT), dayMapFromItem(item, dateTime)]],
+      [
+         dateTime.month,
+         [dateTime.toFormat(MONTH_FORMAT, TZ_OPTIONS), dayMapFromItem(item, dateTime)],
+      ],
    ])
 
 function toYearMap(yearMap: YearMap, item: Item): YearMap {
@@ -85,13 +90,13 @@ function toYearMap(yearMap: YearMap, item: Item): YearMap {
          }
       } else {
          existingMonthMap[1].set(month, [
-            itemDateTime.toFormat(MONTH_FORMAT),
+            itemDateTime.toFormat(MONTH_FORMAT, TZ_OPTIONS),
             dayMapFromItem(item, itemDateTime),
          ])
       }
    } else {
       yearMap.set(year, [
-         itemDateTime.toFormat(YEAR_FORMAT),
+         itemDateTime.toFormat(YEAR_FORMAT, TZ_OPTIONS),
          monthMapFromItem(item, itemDateTime),
       ])
    }

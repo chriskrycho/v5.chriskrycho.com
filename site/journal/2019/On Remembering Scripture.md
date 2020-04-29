@@ -1,8 +1,8 @@
 ---
 title: On Remembering Scripture
 subtitle: Time to stop leaning so hard on search.
-date: 2019-12-04T13:10
-updated: 2019-12-09T20:34
+date: 2019-12-04T13:10:00-0600
+updated: 2019-12-09T20:34:00-0600
 tags:
 - technology
 - Bible

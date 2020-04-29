@@ -2,8 +2,8 @@
 title: …but Running is Sunlight
 subtitle: >
     (Why yes, that is a riff on Superman.)
-date: 2019-11-27T21:00
-updated: 2019-12-09T20:33
+date: 2019-11-27T21:00:00-0600
+updated: 2019-12-09T20:33:00-0600
 tags:
     - fitness
     - travel

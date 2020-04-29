@@ -15,8 +15,8 @@ tags:
   - teaching
   - evangelicalism
   - change
-date: 2020-01-01T16:00
-updated: 2020-03-12T09:50
+date: 2020-01-01T16:00:00-0600
+updated: 2020-03-12T09:50:00-0600
 
 ---
 

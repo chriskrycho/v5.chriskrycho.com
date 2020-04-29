@@ -5,8 +5,8 @@ subtitle: Not quite as spectacular as the first entry… but still a lot of fun.
 qualifiers:
     audience: >
         Readers of sci-fi or thrillers or both—including folks who have read this before (it deserves a good re-read!).
-date: 2020-03-21T20:30
-updated: 2020-03-22T08:00
+date: 2020-03-21T20:30:00-0600
+updated: 2020-03-22T08:00:00-0600
 book:
   title: The Lost World
   author: Michael Crichton

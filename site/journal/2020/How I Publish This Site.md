@@ -2,8 +2,8 @@
 title: How I Publish This Site
 subtitle: Explaining how I run this site—everything.
 summary: Explaining how I run this site—everything.
-date: 2020-02-09T21:00
-updated: 2020-03-12T09:45
+date: 2020-02-09T21:00:00-0600
+updated: 2020-03-12T09:45:00-0600
 qualifiers:
     audience: >
         People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to how I use Markdown and Git!

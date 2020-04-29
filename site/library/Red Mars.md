@@ -20,8 +20,8 @@ tags:
     - terraforming
     - Kim Stanley Robinson
     - reading
-date: 2019-12-10T23:30
-updated: 2020-01-12T18:20
+date: 2019-12-10T23:30:00-0600
+updated: 2020-01-12T18:20:00-0600
 
 ---
 

@@ -3,7 +3,7 @@ title: Writing Implements
 subtitle: Sheer delight—by way of writing in a Pano Totebook with a Uniball Signo RT1 0.38mm.
 qualifiers:
     audience: users of notebooks and pens and people who care about the aesthetics of writing.
-date: 2019-12-19T08:40
+date: 2019-12-19T08:40:00-0600
 tags:
   - writing
   - aesthetics

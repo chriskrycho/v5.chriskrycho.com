@@ -2,8 +2,8 @@
 title: A JSON Feed Apology and Explanation
 subtitle: >
     All my best efforts and this is still where we end up!
-date: 2019-11-28T23:15
-updated: 2019-12-15T09:35
+date: 2019-11-28T23:15:00-0600
+updated: 2019-12-15T09:35:00-0600
 tags:
     - TypeScript
     - JavaScript

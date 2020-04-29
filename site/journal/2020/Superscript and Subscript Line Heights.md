@@ -1,8 +1,8 @@
 ---
 title: Superscript and Subscript Line Heights
 subtitle: A tip for better typography.
-date: 2020-04-08T20:15
-updated: 2020-04-08T21:55
+date: 2020-04-08T20:15:00-0600
+updated: 2020-04-08T21:55:00-0600
 summary: >
     Superscripts and subscripts should not affect the vertical rhythm of the text.
 qualifiers:

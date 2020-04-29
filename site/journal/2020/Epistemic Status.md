@@ -9,8 +9,8 @@ tags:
 - blogging
 - epistemology
 - rationalism
-date: 2020-01-10T21:35
-updated: 2020-01-10T21:40
+date: 2020-01-10T21:35:00-0600
+updated: 2020-01-10T21:40:00-0600
 qualifiers:
     audience: people who care about thinking well and communicating clearly.
     epistemic: extremely confident.

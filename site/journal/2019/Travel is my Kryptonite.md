@@ -2,8 +2,8 @@
 title: Travel is my Kryptonite
 subtitle: >
     It ruins all my normal habits and rhythms and tanks my productivity.
-date: 2019-11-26T20:42
-updated: 2019-12-09T20:33
+date: 2019-11-26T20:42:00-0600
+updated: 2019-12-09T20:33:00-0600
 tags:
     - productivity
     - writing

@@ -19,8 +19,8 @@ tags:
   - identity
   - memory
   - Blake Crouch
-date: 2019-12-31T16:00
-updated: 2020-01-12T18:20
+date: 2019-12-31T16:00:00-0600
+updated: 2020-01-12T18:20:00-0600
 
 ---
 

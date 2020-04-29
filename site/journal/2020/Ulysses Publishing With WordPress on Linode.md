@@ -15,8 +15,8 @@ tags:
     - SSL
     - HTTPS
     - blogging
-date: 2020-02-02T19:40
-updated: 2020-02-08T17:20
+date: 2020-02-02T19:40:00-0600
+updated: 2020-02-08T17:20:00-0600
 
 ---
 

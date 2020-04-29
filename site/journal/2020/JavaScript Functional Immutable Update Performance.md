@@ -1,7 +1,7 @@
 ---
 title: JavaScript Functional Immutable Update Performance
 subtitle: What are the performance implications of “immutable functional updates”?
-date: 2020-04-09T12:00
+date: 2020-04-09T12:00:00-0600
 tags:
     - JavaScript
     - functional programming

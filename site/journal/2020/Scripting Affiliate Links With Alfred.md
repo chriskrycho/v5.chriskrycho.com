@@ -1,8 +1,8 @@
 ---
 title: Scripting Affiliate Links in Alfred
 subtitle: Perhaps weirdly, I haven’t done much of this before!
-date: 2020-02-15T21:50
-updated: 2020-02-15T22:02
+date: 2020-02-15T21:50:00-0600
+updated: 2020-02-15T22:02:00-0600
 tags:
     - Alfred
     - scripting
