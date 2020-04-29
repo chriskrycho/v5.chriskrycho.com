@@ -44,8 +44,7 @@ const byDate = (order: Order) => (a: Item, b: Item): number => {
    }
 }
 
-const dateTimeFromItem = ({ date }: Item): DateTime =>
-   typeof date === 'string' ? DateTime.fromSQL(date) : DateTime.fromJSDate(date)
+const dateTimeFromItem = ({ date }: Item): DateTime => fromDateOrString(date)
 
 const daysFromDayMap = (dayMap: DayMap, byEntries: SortByEntries, order: Order): Day[] =>
    [...dayMap.entries()].sort(byEntries).map(([, items]) => ({
