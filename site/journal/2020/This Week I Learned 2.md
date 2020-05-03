@@ -5,6 +5,13 @@ tags:
     - health care
     - web development
     - type theory
+    - academia
+    - AI
+    - politics
+    - history
+    - gnosticism
+    - attention
+
 qualifiers:
     audience: >
         People who like reading and learning, on any of a wide array of subjects! (There’s probably *something* on this list for you!)
