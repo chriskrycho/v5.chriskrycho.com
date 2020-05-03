@@ -9,8 +9,11 @@ tags:
     - AI
     - politics
     - history
+    - historical theology
     - gnosticism
     - attention
+    - things I learned
+    - This Week I Learned
 
 qualifiers:
     audience: >
