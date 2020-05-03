@@ -3,6 +3,7 @@ title: find, grep, xargs, and newlines and null
 subtitle: >
     Turns out `tr` is your friend for this kind of thing.
 date: 2020-05-03T13:00:00-0600
+updated: 2020-05-03T13:10:30-0600
 summary: >
     If you want to find files, filter them on file name, and pipe the result into some other Unix command, use tr to substitute the null character for newlines.
 tags:
@@ -34,7 +35,7 @@ I sometimes want to use find subset of files matching a pattern, further filter 
 $ <find files> | <filter files> | <count the words in each>
 ```
 
-My first instinct (and probably yours if you’re reading this!) is to use `find`[^fd] to get the first set of files, do the further filtering with `grep`,[^rg] and finally use `xargs` to pipe the results into `wc -w`.[^cw]
+My first instinct (and possibly yours if you’re reading this via a web search!) is to use `find`[^fd] to get the first set of files, do the further filtering with `grep`,[^rg] and finally use `xargs` to pipe the results into `wc -w`.[^cw]
 
 The first problem is that `wc`, like most Unix commands, assumes that its arguments are space-delimited. If you hand any standard Unix utility a bunch of files where any of them have spaces in their names, you’ll see reports that various files don’t exist—where the “file” named is just one part of an actual file name.
 
