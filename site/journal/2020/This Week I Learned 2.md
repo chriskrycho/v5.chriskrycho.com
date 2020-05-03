@@ -28,7 +28,7 @@ qualifiers:
 
 - <i>Health insurance.</i> [Scott Alexander/Slate Star Codex][4] on how catastrophically bad our approach to health care really is, with a frankly soul-crushing list of ways that our health care system fails people. This is *just people Scott Alexander has directly encountered*, and every one of these is a nightmare.
 
-	> Any other system would fix these problems. A public system like Medicare For All would fix them. A communal system like the Amish have would fix them. A free market system like our grandparents had would fix them. The [prepaid doctor cooperatives][5] Reason talks about would fix them. A half-assed compromise like Joe Biden’s Medicare For All Who Want It would fix them. But here we are, stuck with a system that somehow manages to fail everybody for different reasons.
+    > Any other system would fix these problems. A public system like Medicare For All would fix them. A communal system like the Amish have would fix them. A free market system like our grandparents had would fix them. The [prepaid doctor cooperatives][5] Reason talks about would fix them. A half-assed compromise like Joe Biden’s Medicare For All Who Want It would fix them. But here we are, stuck with a system that somehow manages to fail everybody for different reasons.
 
 - <i>AI</i>: an [interesting result][6] in <cite>Proceedings of the National Academy of Sciences</cite> showing formal mathematical limits on what certain techniques used in current machine learning/AI approaches can actually accomplish. There’s the *real* takeaway here: this is an important limitation of current approaches, because some of the modeling techniques inherently *cannot* encode sufficiently rich information to correctly represent complex kinds of networks (such as social networks). And then there’s the hot take version of the takeaway: “AI is permanently limited and is broken!” Ignore that one. At least one really interesting question that comes out of this i: <i>why do these work so well given they can’t actually encode the relevant information?</i>—because they do! HT: Alan Jacobs.
 
@@ -40,15 +40,15 @@ qualifiers:
 
 - <i>Type theory</i>. Jonathan Goodwin [surveys][10] the development of type theory. He starts with Hilbert’s Program and the various developments in mathematics and formal logic of the early 20th century, then moves forward through the connections that formed between those disciplines and computing in the 1930s and 1940s, then follows the threads through the present day (with appropriate humility about the last couple decades). A lot of this was review to me, but the ways Goodwin connected the dots between the items was helpful.
 
-\*[AI]: artificial intelligence
-\*[HT]: hat tip
+*[AI]: artificial intelligence
+*[HT]: hat tip
 
-[1]:	http://www.viridiandesign.org/notes/1-25/Note%2000002.txt
-[2]:	https://ethanmarcotte.com/wrote/gardened/ "Gardened."
-[4]:	https://slatestarcodex.com/2020/04/24/employer-provided-health-insurance-delenda-est/ "Employer Provided Health Insurance Delenda Est"
-[5]:	https://reason.com/2020/04/05/how-doctors-broke-health-care/
-[6]:	https://scitechdaily.com/widely-used-ai-machine-learning-methods-dont-work-as-claimed/ "Widely Used AI Machine Learning Methods Don’t Work as Claimed"
-[7]:	https://nymag.com/intelligencer/2020/04/metoo-is-more-important-than-joe-biden.html "https://nymag.com/intelligencer/2020/04/metoo-is-more-important-than-joe-biden.html"
-[8]:	https://www.dissentmagazine.org/article/leaving-conservatism-behind-blue-collar-republican-progressive "Leaving Conservatism Behind: How I renounced the God-and-guns conservatism of my blue-collar roots and embraced class politics."
-[9]:	https://churchlifejournal.nd.edu/articles/the-historiography-of-gnosticism-and-the-demands-of-theory/ "Historiography and the Demands of Theory: Did Gnosticism Exist?"
-[10]:	http://pling.jondgoodwin.com/post/rise-of-type-theory/
+[1]: http://www.viridiandesign.org/notes/1-25/Note%2000002.txt
+[2]: https://ethanmarcotte.com/wrote/gardened/ “Gardened.”
+[4]: https://slatestarcodex.com/2020/04/24/employer-provided-health-insurance-delenda-est/ “Employer Provided Health Insurance Delenda Est”
+[5]: https://reason.com/2020/04/05/how-doctors-broke-health-care/
+[6]: https://scitechdaily.com/widely-used-ai-machine-learning-methods-dont-work-as-claimed/ “Widely Used AI Machine Learning Methods Don’t Work as Claimed”
+[7]: https://nymag.com/intelligencer/2020/04/metoo-is-more-important-than-joe-biden.html “https://nymag.com/intelligencer/2020/04/metoo-is-more-important-than-joe-biden.html”
+[8]: https://www.dissentmagazine.org/article/leaving-conservatism-behind-blue-collar-republican-progressive “Leaving Conservatism Behind: How I renounced the God-and-guns conservatism of my blue-collar roots and embraced class politics.”
+[9]: https://churchlifejournal.nd.edu/articles/the-historiography-of-gnosticism-and-the-demands-of-theory/ “Historiography and the Demands of Theory: Did Gnosticism Exist?”
+[10]: http://pling.jondgoodwin.com/post/rise-of-type-theory/
