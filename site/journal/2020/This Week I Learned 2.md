@@ -1,6 +1,7 @@
 ---
 title: "This Week I Learned #2"
 date: 2020-05-02T21:10:00-0600
+updated: 2020-05-03T13:10:00-0600
 tags:
     - health care
     - web development
@@ -11,6 +12,8 @@ tags:
     - history
     - gnosticism
     - attention
+    - things I learned
+    - This Week I Learned
 
 qualifiers:
     audience: >
