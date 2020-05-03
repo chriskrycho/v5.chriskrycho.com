@@ -3,7 +3,7 @@ title: find, grep, xargs, and newlines and null
 subtitle: >
     Turns out `tr` is your friend for this kind of thing.
 date: 2020-05-03T13:00:00-0600
-updated: 2020-05-03T13:10:30-0600
+updated: 2020-05-03T13:14:30-0600
 summary: >
     If you want to find files, filter them on file name, and pipe the result into some other Unix command, use tr to substitute the null character for newlines.
 tags:
@@ -45,7 +45,7 @@ Normally, I solve this kind of thing using `xargs -0`, which uses the null `\0` 
 
 The problem was that there were no `\0` characters in the stream going into `wc`, but I was invoking it as `xargs -0 wc -c`, so it was trying to treat the list of *all* the matching files as a *single argument*… which, at over 12,000 characters long, far exceeded the operating system’s limits for file paths (on *any* file system in common use today).
 
-After thinking about this for a few, I realized I needed to treat `grep` output as a plain text stream, rather than a list of files. Then the question was how to substitute the null character `\0` for each of the newlines `\n` in that stream. My first thought was to use `sed`, but `sed` works on *lines*, using `\n` as its separator, so you have to do shenanigans to get it to work. Much easier is to use `tr`, a utility I had never heard of before today, which is used to <i>translate characters</i>. The man page’s description:
+After thinking about this for a few, I realized I needed to treat `grep` output as a plain text stream, rather than a list of files. Then the question was how to substitute the null character `\0` for each of the newlines `\n` in that stream. My first thought was to use `sed`, but `sed` works on *lines*, using `\n` as its separator, so you have to do shenanigans to get it to work. Much easier is to use `tr`, a utility I had never heard of before today, which is used to <i>translate characters</i>. (Credit to [this Stack Overflow question](https://stackoverflow.com/questions/1251999/how-can-i-replace-a-newline-n-using-sed) for teaching me *both* of these things!) The `tr` man page’s description:
 
 > The <b>tr</b> utility copies the standard input to the standard output with substitution or deletion of selected characters.
 
