@@ -11,7 +11,7 @@ Even the best résumés leave a lot to be desired: they lack context and narrati
 
 (I’m not looking to change jobs at this point—but you’re still welcome to [say hello][email]!)
 
-[resume]: https://f001.backblazeb2.com/file/chriskrycho-com/resume.pdf
+[resume]: https://cdn.chriskrycho.com/file/chriskrycho-com/resume.pdf
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
 
 - [<i>About Me</i>](#about-me)—my philosophy of software development and my slightly unusual educational background, featuring a [Master of Divinity](#masters) and a [Bachelor of Science in Physics](#undergrad)
@@ -39,7 +39,7 @@ Building things the *right way* means I am not interested in slapdash product de
 
 ### Education
 
-<a name=masters></a>I earned a **Master of Divinity** with honors from **Southeastern Baptist Theological Seminary** in **May 2017**, after 4½ years simultaneously pursuing the degree and working as a software developer. I am not a pastor by vocation, but I care deeply about the ethical, social and, yes, spiritual implications of the software I build.
+<a name=masters></a>I earned a **Master of Divinity** with honors from **Southeastern Baptist Theological Seminary** in **May 2017**, after 4½ years simultaneously pursuing the degree and working as a software developer. I am not a pastor by profession, but I care deeply about the ethical, social and, yes, spiritual implications of the software I build.
 
 <a name=undergrad></a>I graduated *magna cum laude* with a **Bachelor of Science in Physics** from **The University of Oklahoma** in **May 2009**, having been a regular departmental award winner. My senior thesis, a project in computational neurophysics (in Fortran 90!), led me into programming—but I admit I still miss doing physics and math on a regular basis.
 
@@ -187,8 +187,9 @@ In March 2017, I began working on the CLI tooling and the type definitions for t
 
 #### True Myth
 
-In the **fall of 2017**, I developed [True Myth][tm]: a **TypeScript**-targeted library with `Maybe` and `Result` types. Several existing libraries in the space work excellently but had a number of downsides, including second-class support for TypeScript, runtime overhead, and an API designed to mirror Haskell or Scala rather than idiomatic JavaScript. True Myth was my attempt to fill that gap. It takes advantage of TypeScript to supply an **idiomatic JavaScript API** with **zero runtime overhead** (beyond the inherent cost of the container types themselves).
+In the **fall of 2017**, [a friend][ben] and I developed [True Myth][tm]: a **TypeScript**-targeted library with `Maybe` and `Result` types. Several existing libraries in the space work excellently but had a number of downsides, including second-class support for TypeScript, runtime overhead, and an API designed to mirror Haskell or Scala rather than idiomatic JavaScript. True Myth was my attempt to fill that gap. It takes advantage of TypeScript to supply an **idiomatic JavaScript API** with **zero runtime overhead** (beyond the inherent cost of the container types themselves).
 
+[ben]: https://benmakuh.com
 [tm]: https://github.com/chriskrycho/true-myth
 *[API]: application programming interface
 
