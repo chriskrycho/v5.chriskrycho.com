@@ -18,10 +18,18 @@ qualifiers:
 
 ---
 
+:::note
+
+See [the follow-up](/journal/follow-up-on-command-line-finding-and-filtering/) post, in which I show an easier and faster way of doing this… as long as you have the GNU versions of the utilities, or alternatives like [ripgrep].
+
+:::
+
+[ripgrep]: https://github.com/BurntSushi/ripgrep
+
 <b>Summary:</b> If you want to find files, filter them on file name, and pipe the result into some other Unix command (e.g. `wc` to count words), use `tr` to substitute the null character for newlines:
 
 ```sh
-$ find -name ".md" notes |\
+$ find notes -name ".md" |\
   grep "notes/2020" |\
   tr '\n' '\0' |\
   xargs -0 wc -w
@@ -68,7 +76,7 @@ In sum: today I learned that—
 
 [^fd]: Or the lovely and very fast [Rust-powered alternative, `fd`](https://github.com/sharkdp/fd)—but the exact same set of challenges in the rest of this post apply whichever you’re using.
 
-[^rg]: Here I’m usually using [ripgrep](https://github.com/BurntSushi/ripgrep), which is *also* powered by Rust and is *ridiculous* fast, but again: the same constraints apply.
+[^rg]: Here I’m usually using [ripgrep], which is *also* powered by Rust and is *ridiculous* fast, but again: the same constraints apply.
 
 [^cw]: And here I’m usually using [cw](https://github.com/Freaky/cw), yet another very fast Rust implementation of a utility.
 
