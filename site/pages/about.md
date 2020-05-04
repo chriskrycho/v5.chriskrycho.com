@@ -109,6 +109,6 @@ I find podcasting a great complement to writing. It is available in spaces and p
 
 ### An occasional composer
 
-In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. Since graduating college, I have composed relatively little, but it remains a delight when I get a chance to do it. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, and actually have a few things actively in work (if on the back burner). You can check out a limited sample of my work (which I hope to expand soon, for the curious if nothing else) [on SoundCloud]
+In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. Since graduating college, I have composed relatively little, but it remains a delight when I get a chance to do it. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, and actually have a few things actively in work (if on the back burner). You can check out a limited sample of my work (which I hope to expand soon, for the curious if nothing else) [on SoundCloud].
 
 [on SoundCloud]: https://soundcloud.com/chriskrycho/tracks
