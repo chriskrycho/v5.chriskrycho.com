@@ -80,7 +80,7 @@ Since college, I have written—primarily on various iterations of chriskrycho.c
 [Mere Orthodoxy]: https://mereorthodoxy.com
 [my newsletter]: https://buttondown.email/chriskrycho
 
-- <i>public theology:</i>—writing in line with that vocation of <i>public theologian</i> is the work that I care most about, though it is also the work that is hardest in many ways: it’s where the bar is highest.
+- <i>public theology:</i> writing in line with that vocation of <i>public theologian</i> is the work that I care most about, though it is also the work that is hardest in many ways: it’s where the bar is highest.
 
 - <i>public learning:</i> encouraging a culture of learning by sharing what I’m learning—both so that the things I learn, others gain benefit from, and so that I myself have a good trail to follow in the future!
 
