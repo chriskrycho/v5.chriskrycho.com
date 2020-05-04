@@ -308,7 +308,7 @@
 
          .__marker {
             width: 3rem;
-            left: calc(50% - 1em);
+            left: calc(50% - 1.5rem);
          }
 
          &:hover,
@@ -336,7 +336,7 @@
 
          .__marker {
             width: 1.5rem;
-            left: calc(50% - 0.75em);
+            left: calc(50% - 0.75rem);
          }
 
          &:hover .__marker {
