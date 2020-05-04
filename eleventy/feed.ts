@@ -106,12 +106,16 @@ const contentHtmlFor = (item: Item): string => {
 
    const audience =
       typeof item.data?.qualifiers?.audience === 'string'
-         ? `<p><b>Assumed audience:</b> ${item.data.qualifiers.audience}</p>`
+         ? `<p><b>Assumed audience:</b> ${markdown.renderInline(
+              item.data.qualifiers.audience,
+           )}</p>`
          : ''
 
    const epistemicStatus =
       typeof item.data?.qualifiers?.epistemic === 'string'
-         ? `<p><b>Epistemic status:</b> ${item.data.qualifiers.epistemic}</p>`
+         ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
+              item.data.qualifiers.epistemic,
+           )}</p>`
          : ''
 
    const book = item.data?.book
