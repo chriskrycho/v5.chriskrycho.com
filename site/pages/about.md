@@ -39,7 +39,7 @@ After following Christ, my family is far and away the most important part of my 
 
 [![Krycho family, May 2020](https://cdn.chriskrycho.com/file/chriskrycho-com/images/family-2020-thumb.jpeg)](https://cdn.chriskrycho.com/file/chriskrycho-com/images/family-2020.jpeg)
 
-## By trade: a software engineer
+## By trade
 
 Since graduating college, I have been working more or less full-time in the software industry—starting out writing avionics software and then hazards and risk mitigation software for the energy industry, whiel picking up web development on the side and eventually transitioning into web development full time. You can see my [C.V.](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
 
