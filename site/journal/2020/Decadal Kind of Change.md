@@ -15,8 +15,8 @@ tags:
   - teaching
   - evangelicalism
   - change
-date: 2020-01-01T16:00:00-0600
-updated: 2020-03-12T09:50:00-0600
+date: 2020-01-01T16:00:00-0700
+updated: 2020-05-04T16:40:00-0600
 
 ---
 
@@ -26,7 +26,7 @@ In the decade ahead, I’m ready to build on the foundations I set.
 
 I spent the 2010s and all of my 20s just taking things as they came. I changed jobs when I had had enough of my old job. The last job I took in my 20s, my goal was nothing more than simply to get paid to build web user interfaces in JavaScript. I went to seminary with some hopes and ideas of where we’d end up when I finished, but worked through those years seeing where my interests took me and came out the other side M. Div. in hand and no idea what I wanted to do with it.
 
-That approach was good and fine in its way. I learned a lot about myself—my abilities and passions, my strengths and my weaknesses. I’m not a novice any more. I don’t regret my 20s be years of hard-working-drifting, foundation-laying, start-making. That’s what they needed to be. But it’s not what the decade ahead should be.
+That approach was good and fine in its way. I learned a lot about myself—my abilities and passions, my strengths and my weaknesses. I’m not a novice any more. I don’t regret that my 20’s were years of hard-working-drifting, foundation-laying, start-making. That’s what they needed to be. But it’s not what the decade ahead should be.
 
 At the end of the 2020s, I will be in my early 40s, a third of the way through my adult life, and I hope that I will have *done* some things, made some differences that matter then.
 
