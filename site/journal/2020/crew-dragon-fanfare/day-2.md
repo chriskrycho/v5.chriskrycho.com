@@ -19,6 +19,10 @@ series: >
 
 ---
 
-I also have a few observations on [Dorico] after a day of using it.
+I also have a few observations on [Dorico] after a day of using it. First: it is in general a real delight. Things are designed *very* thoughtfully, and there are a ton of delightful little touches. The keyboard shortcuts just makes sense.[^shortcuts] More than once, I hit a keystroke expecting it to do a particular things—like doing <kbd>⌘</kbd><kbd>2</kbd> to switch to Write mode—and it just did exactly what I expected.
 
 [Dorico]: https://new.steinberg.net/dorico/
+
+[^shortcuts]: Though I realized over the course of the afternoon just how deeply I internalized a few of the [Sibelius] shortcuts: despite not having scored anything with Sibelius in the last 8 years, I kept trying to use its shortcuts for note manipulation!
+
+[Sibelius]: https://en.wikipedia.org/wiki/Sibelius_(scorewriter)
