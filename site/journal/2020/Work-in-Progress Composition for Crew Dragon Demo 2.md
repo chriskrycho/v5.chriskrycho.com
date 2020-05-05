@@ -2,7 +2,7 @@
 title: >
     Work-in-Progress: Composition for Crew Dragon Demo 2
 subtitle: Sharing my work as it happens for this composition.
-date: 2020-05-04T22:00:00-600
+date: 2020-05-04T22:00:00-0600
 summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
 tags:
@@ -30,14 +30,14 @@ At the end of the day, I came away with two related sketches. The first is in th
 The sketch of the fanfare:
 
 <audio
-  src="https://f001.backblazeb2.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
+  src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
   title="Space-ish Fanfare Sketch"
 />
 
 The sketch of the melodic line:
 
 <audio
-  src="https://f001.backblazeb2.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
+  src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
   title="Space-ish Melodic sketch"
 />
 
