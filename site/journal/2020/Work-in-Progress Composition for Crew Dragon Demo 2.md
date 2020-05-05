@@ -4,7 +4,7 @@ title: >
 subtitle: Sharing my work as it happens for this composition.
 date: 2020-05-04T22:00:00-0600
 summary: >
-    I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
+I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
 tags:
     - music
     - composition
@@ -27,19 +27,23 @@ I spent today working at the piano, sketching out a variety of ideas—melodic m
 
 At the end of the day, I came away with two related sketches. The first is in the mode of a fanfare; the second is more oriented toward a running melodic line to be developed. They’re riffing on the same underlying ideas, and I *currently* expect the first to be the opener and the second to be where the piece goes afterward.
 
-The sketch of the fanfare:
+<figure>
+  <audio
+    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
+    title="Space-ish Fanfare Sketch"
+  controls
+  />
+  <figcaption>the sketch of the fanfare</figcaption>
+</figure>
 
-<audio
-  src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
-  title="Space-ish Fanfare Sketch"
-/>
-
-The sketch of the melodic line:
-
-<audio
-  src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
-  title="Space-ish Melodic sketch"
-/>
+<figure>
+  <audio
+    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
+    title="Space-ish Melodic sketch"
+    controls
+  />
+  <figcaption>the sketch of the melodic line</figcaption>
+</figure>
 
 Tomorrow, my plan is to spend an hour or two further fleshing out these ideas—especially in figuring out how I want to support the melodic lines harmonically, and how I might want to develop them—and then transfer them from my notebook into [Dorico]. Once I have them in the app, I’ll start the work of turning these ideas into an actual composition—developing the ideas, orchestrating them, and so on.
 
