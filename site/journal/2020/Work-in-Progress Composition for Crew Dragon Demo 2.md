@@ -4,7 +4,7 @@ title: >
 subtitle: Sharing my work as it happens for this composition.
 date: 2020-05-04T22:00:00-0600
 summary: >
-I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
+    I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
 tags:
     - music
     - composition
