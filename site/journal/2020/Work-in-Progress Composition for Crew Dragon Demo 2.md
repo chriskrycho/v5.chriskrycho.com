@@ -19,6 +19,8 @@ I’m taking a week off, and in order to make this week off a *true* change of p
 
 I decided to write something for the upcoming [Crew Dragon Demo 2 launch][launch]: a historic moment in American space flight, as we return to sending astronauts to space on our own rockets from our own soil. It’s also a nice chance to stretch my muscles in a *specific direction*—rather than just flailing about for a direction to take the music, I have a focus and a sound to aim for: *spaaaaace!*
 
+[launch]: https://blogs.nasa.gov/commercialcrew/tag/demo-2/
+
 I spent today working at the piano, sketching out a variety of ideas—melodic motions, harmonies, variations on the above. It took me a good hour and a half just to knock the dust off: it’s been a good 3½ years since I wrote anything! At that point, I had the *very* first hints of what I think will actually become the guts of the piece, but the specifics—in melodic sequence and in rhythm—were all still frustratingly *wrong*. After almost four hours, I had a few ideas which were getting close—
 
 [![my musical notes mid-afternoon](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/2020-05-04-notebook-thumb.jpeg)]( https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/2020-05-04-notebook-thumb.jpeg)
