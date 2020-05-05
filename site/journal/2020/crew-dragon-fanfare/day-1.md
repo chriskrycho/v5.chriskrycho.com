@@ -1,8 +1,10 @@
 ---
 title: >
-    Work-in-Progress: Composition for Crew Dragon Demo 2
+    Composing a Fanfare for Crew Dragon: Day 1
 subtitle: Sharing my work as it happens for this composition.
+permalink: "journal/work-in-progress-composition-for-crew-dragon-demo-2/"
 date: 2020-05-04T22:00:00-0600
+updated: 2020-05-05T16:55:00-0600
 summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
 tags:
@@ -12,6 +14,9 @@ tags:
 qualifiers:
     audience: >
         Anyone interested in the process of writing composed music.
+series: >
+    title: Composing <cite>Crew Dragon: Fanfare for a New Era of American Spaceflight</cite>
+    part: 1
 
 ---
 
