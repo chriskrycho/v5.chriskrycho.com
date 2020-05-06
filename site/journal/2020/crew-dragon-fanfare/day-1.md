@@ -39,7 +39,7 @@ At the end of the day, I came away with two related sketches. The first is in th
     src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
     title="Space-ish Fanfare Sketch"
   controls
-  />
+  ></audio>
   <figcaption>the sketch of the fanfare</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ At the end of the day, I came away with two related sketches. The first is in th
     src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
     title="Space-ish Melodic sketch"
     controls
-  />
+  ></audio>
   <figcaption>the sketch of the melodic line</figcaption>
 </figure>
 
