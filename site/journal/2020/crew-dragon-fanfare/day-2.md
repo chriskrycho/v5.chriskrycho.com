@@ -6,7 +6,7 @@ permalink: "journal/crew-dragon-fanfare-day-2/"
 date: 2020-05-05T20:45:00-0600
 updated: 2020-05-05T21:30:00-0600
 summary: >
-    I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
+    I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the second day’s work!
 tags:
     - music
     - composition
