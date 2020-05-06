@@ -6,3 +6,8 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 # Redirect misconfigured URLs from when I accidentally had `title | slug`
 # instead of `fileSlug | slug`.
 /journal/relaunch! https://v5.chriskrycho.com/journal/relaunch 301!
+
+# A few URLs I changed on purpose after publication
+/journal/work-in-progress-composition-for-crew-dragon-demo-2/ https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-1/ 301!
+/journal/crew-dragon-fanfare-day-2/ https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-2/ 301!
+

@@ -2,7 +2,7 @@
 title: >
     Composing a Fanfare for Crew Dragon: Day 2
 subtitle: I wrote some good harmonic lines! I started learning a new notation software program!
-permalink: "journal/crew-dragon-fanfare-day-2/"
+feedId: "journal/crew-dragon-fanfare-day-2/"
 date: 2020-05-05T20:45:00-0600
 updated: 2020-05-06T09:23:00-0600
 summary: >
@@ -16,7 +16,6 @@ qualifiers:
     audience: >
         Anyone interested in the process of writing composed music.
 series: >
-    title: Composing <cite>Fanfare for a New Era of American Spaceflight</cite>
     part: 2
 
 ---

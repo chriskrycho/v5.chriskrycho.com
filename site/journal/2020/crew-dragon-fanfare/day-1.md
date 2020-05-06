@@ -2,7 +2,7 @@
 title: >
     Composing a Fanfare for Crew Dragon: Day 1
 subtitle: Sharing my work as it happens for this composition.
-permalink: "journal/work-in-progress-composition-for-crew-dragon-demo-2/"
+feedId: "journal/work-in-progress-composition-for-crew-dragon-demo-2/"
 date: 2020-05-04T22:00:00-0600
 updated: 2020-05-05T16:55:00-0600
 summary: >
@@ -15,7 +15,6 @@ qualifiers:
     audience: >
         Anyone interested in the process of writing composed music.
 series: >
-    title: Composing <cite>Fanfare for a New Era of American Spaceflight</cite>
     part: 1
 
 ---
