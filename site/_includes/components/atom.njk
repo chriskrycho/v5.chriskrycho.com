@@ -4,7 +4,13 @@
 {%- for item in items | withValidDate | reverse -%}
 <entry>
    {#- Invalid to send an item without title or description -#}
-   {% set url = item.url | absoluteUrl(config.url) -%}
+   {% set url -%}
+      {%- if item.data.feedId -%}
+         {{item.data.feedId | absoluteUrl(config.url)}}
+      {%- else -%}
+         {{item.url | absoluteUrl(config.url)}}
+      {%- endif -%}
+   {%- endset -%}
    <id>{{url}}</id>
    <title type="html">
       {%- if item.data.title -%}

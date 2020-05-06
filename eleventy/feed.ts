@@ -49,6 +49,11 @@ declare module '../types/eleventy' {
       splash?: string
       book?: Book
       standalonePage?: boolean
+      /**
+       * Allow overriding the normal feed ID to enable keeping feed entries stable even if
+       * the slug changes.
+       */
+      feedId?: string
    }
 }
 
@@ -136,7 +141,7 @@ const itemTitle = (item: Item): string | undefined => {
 const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | null =>
    canParseDate(item.date) && item.data?.standalonePage !== true
       ? {
-           id: absoluteUrl(item.url, config.url),
+           id: absoluteUrl(item.data?.feedId ?? item.url, config.url),
            author: {
               name: config.author.name,
               url: config.url,
