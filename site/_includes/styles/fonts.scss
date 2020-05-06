@@ -38,16 +38,6 @@
    font-style: italic;
 }
 
-// Sabon small caps
-@font-face {
-   font-family: 'Sabon SMCP';
-   font-display: fallback;
-   src: url('/assets/fonts/d4fbdd07-583f-4c3a-9e76-9be61be670ce.woff2') format('woff2'),
-      url('/assets/fonts/dea58936-f317-46e1-9f94-d76f95f882c3.woff') format('woff');
-   font-weight: 400;
-   font-style: normal;
-}
-
 /*!
  *  Hack typeface https://github.com/source-foundry/Hack
  *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md

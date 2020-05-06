@@ -9,8 +9,7 @@ a {
 }
 
 abbr {
-   font-family: var(--serif-smcp);
-   text-transform: lowercase;
+   font-variant-caps: all-small-caps;
    letter-spacing: 0.2pt;
 }
 
