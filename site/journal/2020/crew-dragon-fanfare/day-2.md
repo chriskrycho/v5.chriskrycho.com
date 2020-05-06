@@ -4,6 +4,7 @@ title: >
 subtitle: I wrote some good harmonic lines! I started learning a new notation software program!
 permalink: "journal/crew-dragon-fanfare-day-2/"
 date: 2020-05-05T20:45:00-0600
+updated: 2020-05-05T21:30:00-0600
 summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the first day’s output!
 tags:
@@ -36,7 +37,7 @@ So what I have to show for the day is this *really* basic start to the orchestra
     title="earliest orchestration"
   controls
   />
-  <figcaption></figcaption>
+  <figcaption>a single trumpet playing the fanfare line</figcaption>
 </figure>
 
 Hopefully—*hopefully*—tomorrow’s entry will have a fully-fleshed out version of this opening fanfare, and some of the transition into the more melodic variation represented by the second sketch in yesterday’s entry!
