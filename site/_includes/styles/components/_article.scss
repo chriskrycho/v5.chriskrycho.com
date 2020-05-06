@@ -182,6 +182,7 @@
    }
 
    figure {
+      width: 100%;
       margin-bottom: 1em;
 
       figcaption {
@@ -193,6 +194,10 @@
          }
          color: var(--figure-fg);
       }
+   }
+
+   audio {
+      width: 100%;
    }
 
    sup {
