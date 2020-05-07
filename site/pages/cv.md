@@ -80,7 +80,7 @@ As a **Senior Software Engineer** (May 2017–January 2019):
 
 - I designed a new technical strategy for white-labeling (including the adoption of **CSS Modules**), enabling the business to support more brands by way of better tooling.
 
-- I pioneered Olo's use of **Requests for Comments (RFCs)**, modeled on the RFC processes from the Rust and Ember communities, as a tool for architecture design and documentation. I began by using RFCs for several important initiatives in my own team. The success of those initiatives validated RFCs' utility when I later introduced them to the broader engineering organization. They are now Olo’s standard tool for documenting architectural changes and a prerequisite for all new internal services.
+- I pioneered Olo's use of **Requests for Comments (<abbr>RFC</abbr>s)**, modeled on the RFC processes from the Rust and Ember communities, as a tool for architecture design and documentation. I began by using <abbr>RFC</abbr>s for several important initiatives in my own team. The success of those initiatives validated <abbr>RFC</abbr>s' utility when I later introduced them to the broader engineering organization. They are now Olo’s standard tool for documenting architectural changes and a prerequisite for all new internal services.
 
 - I finished our app's conversion to a fully strictly-type-checked TypeScript application.
 
