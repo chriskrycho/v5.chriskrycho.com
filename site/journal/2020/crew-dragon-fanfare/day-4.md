@@ -1,8 +1,9 @@
 ---
 title: >
     Composing a Fanfare for Crew Dragon: Day 4 (Part 1)
-subtitle: The first draft of the first section is complete!
-date: 2020-05-07T14:05:00-0600
+subtitle: >
+    I have a version of this piece I could publish! Now to get the rest of it done…
+date: 2020-05-07T14:15:00-0600
 summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, I share the fruits of my morning, which I spent polishing yesterday’s work and tweaking it so it can stand alone.
 tags:
