@@ -3,6 +3,7 @@ title: >
     Composing a Fanfare for Crew Dragon: Day 3
 subtitle: The first draft of the first section is complete!
 date: 2020-05-06T22:45:00-0600
+updated: 2020-05-06T22:55:00-0600
 summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the third day’s work—some actual orchestration!
 tags:
@@ -21,7 +22,7 @@ series: >
 
 It will come as no surprise to anyone who’s known me for any length of time at all that the *engraving* side of producing a score mashes *all* my buttons. It’s typography! It’s music! At its best, it’s a matter of communicating art in an artful way.
 
-During the early days of Dorico’s development, Daniel Spreadbury (the product manager for the app, and before that for Sibelius) did a bunch of deep investigation on engraving. The result was not only important input to Dorico’s approach to scoring and producing music, but also an open font specificaation for musical notation fonts ([SMuFL](https://www.smufl.org), and an exemplary pair of fonts to go with it. His many posts about it (which you can find in the back pages of [Making Notes](https://blog.dorico.com/making-notes/), the Dorico development blog) were actually the things which first persuaded me that Dorico could be something genuinely *great*.
+During the early days of Dorico’s development, Daniel Spreadbury (the product manager for the app, and before that for Sibelius) did a bunch of deep investigation on engraving. The result was not only important input to Dorico’s approach to scoring and producing music, but also an open font specificaation for musical notation fonts ([SMuFL](https://www.smufl.org)), and an exemplary pair of fonts to go with it. His many posts about it (which you can find in the back pages of [Making Notes](https://blog.dorico.com/making-notes/), the Dorico development blog) were actually the things which first persuaded me that Dorico could be something genuinely *great*.
 
 You can see [the score so far as a PDF](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-3.pdf)—which is generated straight out of Dorico, with *very* minimal tweaks from me (basically just to the typeface used for text)!
 
