@@ -11,7 +11,6 @@ tags:
     - music
     - composition
     - work-in-progress
-    - Dorico
 qualifiers:
     audience: >
         Anyone interested in the process of writing composed music.
