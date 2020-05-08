@@ -3,7 +3,7 @@ title: >
     Composing a Fanfare for Crew Dragon: Day 4 (Part 2)
 subtitle: >
     Reworking rhythms to make the next section of this piece connect more clearly to the first.
-date: 2020-05-07T21:30:00-0600
+date: 2020-05-07T21:40:00-0600
 summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, I cover what I got done the rest of this fourth day: (re)sketching the next section!
 tags:
