@@ -1,6 +1,7 @@
 ---
 title: >
     Composing a Fanfare for Crew Dragon: Day 4 (Part 1)
+feedId: journal/crew-dragon-fanfare/day-4/
 subtitle: >
     I have a version of this piece I could publish! Now to get the rest of it done…
 date: 2020-05-07T14:15:00-0600
