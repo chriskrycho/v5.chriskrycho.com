@@ -14,8 +14,7 @@ tags:
 qualifiers:
     audience: >
         Anyone interested in the process of writing composed music.
-series: >
-    title: Composing <cite>Fanfare for a New Era of American Spaceflight</cite>
+series:
     part: 4
 
 ---

@@ -14,7 +14,7 @@ tags:
 qualifiers:
     audience: >
         Anyone interested in the process of writing composed music.
-series: >
+series:
     part: 1
 
 ---
