@@ -11,3 +11,4 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /journal/work-in-progress-composition-for-crew-dragon-demo-2/ https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-1/ 301!
 /journal/crew-dragon-fanfare-day-2/ https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-2/ 301!
 /journal/crew-dragon-fanfare/day-4/ https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-4-part-1/ 301!
+/journal/this-week-i-learned-*/ https://v5.chriskrycho.com/journal/this-week-i-learned/:splat/ 301!
