@@ -34,7 +34,7 @@ export default class Confusing extends Component {
 
 Template (`confusing.hbs`):
 
-```hbs
+```htmlbars
 <button {{on "click"
   (fn (mut this.surprising) (not this.surprising))
 }}>
@@ -57,7 +57,7 @@ export default class Confusing extends Component {
 }
 ```
 
-```hbs
+```htmlbars
 <button {{on "click" this.toggle}}>
   {{this.surprising}}
 </button>
@@ -67,7 +67,7 @@ You can see in [this twiddle][action-behavior]: the value does not change!
 
 I initially suspected this was a quirk with `mut`, which has a *lot* of strange behaviors, so I went back and tried it with [ember-simple-set-helper] instead.[^set] Unfortunately, I can’t share a Twiddle for this, but the implementation looks just like the `mut` version, but a bit nicer in the template:
 
-```hbs
+```htmlbars
 <button {{on "click" (set this.surprising (not this.surprising))}}>
   {{this.surprising}}
 </button>
