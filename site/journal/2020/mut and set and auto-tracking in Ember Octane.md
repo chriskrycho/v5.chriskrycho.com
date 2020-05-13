@@ -95,7 +95,7 @@ export default class Confusing extends Component {
 
 This has no impact on the behavior of the version using `mut` or `set`, but it is robust in the face of refactoring, and if `mut` is ever deprecated or a version of `set` is released that does *not* use the `set` function under the hood, it will keep working correctly.
 
-
+Thoughts, comments, or questions? [Discuss on the forum!][discuss]
 
 [ember-simple-set-helper]: https://github.com/pzuraq/ember-simple-set-helper
 [ember-truth-helpers]: https://github.com/jmurphyau/ember-truth-helpers
@@ -103,6 +103,7 @@ This has no impact on the behavior of the version using `mut` or `set`, but it i
 [action-behavior]: https://ember-twiddle.com/562d6b5d41f58ff49ce2a014667f0e78?openFiles=templates.components.confusing%5C.hbs%2Ctemplates.components.confusing%5C.hbs
 [set]: https://api.emberjs.com/ember/3.18/functions/@ember%2Fobject/set
 [get]: https://api.emberjs.com/ember/3.18/functions/@ember%2Fobject/get
+[discuss]: https://discuss.emberjs.com/t/mut-and-set-and-auto-tracking-in-ember-octane
 
 [^not]: I’m assuming the existence of a `not` helper like the one from [ember-truth-helpers] here. If you don’t have that, here’s the simplest possible implementation:
 
