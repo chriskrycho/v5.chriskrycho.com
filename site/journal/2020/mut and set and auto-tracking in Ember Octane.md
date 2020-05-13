@@ -14,6 +14,7 @@ tags:
 summary: >
     Ember’s `mut` helper, and the `set` helper from ember-simple-set helper, can mask an auto-tracking bug and refactoring hazard. Understand the bug and see how to fix it!
 date: 2020-05-13T10:00:00-0600
+templateEngineOverride: md
 
 ---
 
@@ -33,7 +34,7 @@ export default class Confusing extends Component {
 
 Template (`confusing.hbs`):
 
-```handlebars
+```hbs
 <button {{on "click"
   (fn (mut this.surprising) (not this.surprising))
 }}>
@@ -56,7 +57,7 @@ export default class Confusing extends Component {
 }
 ```
 
-```handlebars
+```hbs
 <button {{on "click" this.toggle}}>
   {{this.surprising}}
 </button>
@@ -66,7 +67,7 @@ You can see in [this twiddle][action-behavior]: the value does not change!
 
 I initially suspected this was a quirk with `mut`, which has a *lot* of strange behaviors, so I went back and tried it with [ember-simple-set-helper] instead.[^set] Unfortunately, I can’t share a Twiddle for this, but the implementation looks just like the `mut` version, but a bit nicer in the template:
 
-```handlebars
+```hbs
 <button {{on "click" (set this.surprising (not this.surprising))}}>
   {{this.surprising}}
 </button>
