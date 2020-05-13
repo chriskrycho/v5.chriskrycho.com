@@ -6,14 +6,16 @@ subtitle: >
 qualifiers:
     audience: >
         Software developers working with Ember Octane.
+summary: >
+    Ember’s `mut` helper, and the `set` helper from ember-simple-set helper, can mask an auto-tracking bug and refactoring hazard. Understand the bug and see how to fix it!
+thanks: >
+    Thanks to Chris Garrett for reviewing a draft of this before publication!
 tags:
     - JavaScript
     - Ember
     - auto-tracking
     - things I learned
-summary: >
-    Ember’s `mut` helper, and the `set` helper from ember-simple-set helper, can mask an auto-tracking bug and refactoring hazard. Understand the bug and see how to fix it!
-date: 2020-05-13T10:00:00-0600
+date: 2020-05-13T12:50:00-0600
 templateEngineOverride: md
 
 ---
