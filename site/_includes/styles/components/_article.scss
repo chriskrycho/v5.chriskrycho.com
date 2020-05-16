@@ -645,11 +645,13 @@
 
          .article-content {
             blockquote,
-            pre,
             aside,
-            .note,
-            .callout {
+            .note {
                padding-left: ms(0);
+            }
+
+            pre, callout {
+               padding-left: 1.3em;
             }
          }
       }
@@ -661,10 +663,6 @@
 
          figure {
             max-width: 90%;
-         }
-
-         pre, callout {
-            padding-left: 1.3em;
          }
       }
    }
