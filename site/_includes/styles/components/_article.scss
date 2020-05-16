@@ -444,7 +444,8 @@
       &:last-child > {
          p,
          ol,
-         ul {
+         ul,
+         dl {
             &:last-child {
                margin-bottom: 0;
             }
