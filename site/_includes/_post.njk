@@ -6,26 +6,24 @@
 {{item.header(type='post', title=title, subtitle=subtitle)}}
 {% endblock header %}
 
-{% block before_content -%}
-   {% if qualifiers -%}
-   <div class='qualifiers'>
-      {% if qualifiers.audience -%}
-      <p>
-         <b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
-         {{qualifiers.audience | inlineMd | safe}}
-      </p>
-      {%- endif %}
-      {% if qualifiers.epistemic %}
-      <p>
-         <b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic Status</a>:</b>
-         {{qualifiers.epistemic | inlineMd | safe}}
-      </p>
-      {% endif %}
-   </div>
-   {%- endif %}
-{%- endblock %}
-
 {% block content %}
+{% if qualifiers -%}
+<div class='qualifiers'>
+   {% if qualifiers.audience -%}
+   <p>
+      <b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
+      {{qualifiers.audience | inlineMd | safe}}
+   </p>
+   {%- endif %}
+   {% if qualifiers.epistemic %}
+   <p>
+      <b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic Status</a>:</b>
+      {{qualifiers.epistemic | inlineMd | safe}}
+   </p>
+   {% endif %}
+</div>
+{%- endif %}
+
 {%- if book -%}
    {{- review(book) -}}
 {%- endif -%}

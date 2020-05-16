@@ -1,8 +1,8 @@
 @mixin fancy-block($bg, $fg) {
    align-self: start;
    padding: {
-      left: 0.5em;
-      right: 0.5em;
+      left: calc(0.5em * var(--sans-adjust));
+      right: calc(0.5em * var(--sans-adjust));
    }
    width: 100%;
    color: $fg;
@@ -559,36 +559,13 @@
       }
    }
 
-   code {
-      font: {
-         family: var(--mono);
-         size: ms(-2);
-      }
-      background: var(--code-bg);
-      padding: ms(-8) ms(-4);
-      color: var(--code-fg);
-   }
-
    pre {
       @include fancy-block(var(--code-bg), var(--code-fg));
       @include extra-vertical();
       @include pull-left();
       border-left-color: var(--code-border);
 
-      background: var(--code-bg);
-      color: var(--code-fg);
       margin-bottom: 1em;
-
-      code {
-         display: block;
-         overflow-x: auto;
-         width: 100%;
-         margin: 0;
-         padding: 0;
-         line-height: ms(2);
-         font-size: ms(-2);
-         -webkit-font-smoothing: antialiased;
-      }
    }
 
    table {
@@ -629,7 +606,7 @@
 @media screen {
    @media (min-width: 32.6667rem) {
       .content-block {
-         --side-padding: #{ms(-1)};
+         --side-padding: calc(#{ms(-1)} * var(--sans-adjust));
          --full-side-padding: calc(2 * var(--side-padding));
          --fancy-width: calc(var(--max-width) + var(--full-side-padding));
 
@@ -664,10 +641,7 @@
    @media (min-width: $resize) {
       .content-block {
          --fancy-width: calc(var(--max-width) + 2.5rem);
-
-         .qualifiers {
-            padding-left: ms(0);
-         }
+         --side-padding: calc(#{ms(0)} * var(--sans-adjust));
 
          .article-content {
             blockquote,
