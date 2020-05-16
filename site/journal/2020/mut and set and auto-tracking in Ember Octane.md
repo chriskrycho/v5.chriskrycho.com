@@ -15,8 +15,10 @@ tags:
     - Ember
     - auto-tracking
     - things I learned
+    - web development
+    - software development
 date: 2020-05-13T12:50:00-0600
-updated: 2020-05-13T15:05:00-0600
+updated: 2020-05-15T21:03:00-0600
 templateEngineOverride: md
 
 ---
