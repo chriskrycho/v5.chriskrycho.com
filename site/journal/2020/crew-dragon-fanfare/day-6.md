@@ -4,7 +4,7 @@ title: >
 subtitle: >
     A surprising amount of progress over the weekend—the muscles are coming back!
 date: 2020-05-24T22:25:00-0600
-updated: 2020-05-24T22:30:00-0600
+updated: 2020-05-25T05:52:00-0600
 summary: >
     Seeing if, this long weekend, I can finish composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. Today, I was borderline depressed, and I barely made progress. But make progress I did.
 tags:
@@ -34,7 +34,7 @@ Without further ado, the piece as I have it today:
     title="thefirst draft of the first half of the second section"
     controls
   ></audio>
-  <figcaption>the first draft of the first half of the second section (<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-6.mp3">read the score</a>)</figcaption>
+  <figcaption>the first draft of the first half of the second section (<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-6.pdf">read the score</a>)</figcaption>
 </figure>
 
 
