@@ -3,6 +3,7 @@ title: Making Illegal States Unrepresentable—In TypeScript
 subtitle: >
     Showing how Scott Wlaschin’s approach in F^♯^ translates to a language with a very different type system.
 date: 2020-05-25T10:40:00-0600
+updated: 2020-05-25T10:52:00-0600
 qualifiers:
     audience:
         Software engineers who are already persuaded of the value of type systems, and are interested in using them more effectively. (I’m not trying to persuade people that type systems are valuable here!)
@@ -87,7 +88,7 @@ class PostalContactInfo {
 }
 ```
 
-Once you have these, things that take a `string` will not accept `Name` or `EmailContactInfo` or `PostalContactInfo`, and things that take a `Name` will not accept an `EmailContactInfo`, and so on. This works specifically because we used a `private` type; if it were public the types would be compatible because they have the same structure. If we *didn’t* do this, and just used strings, we could easily intermix these on accident. (For an alternative approach, see [<b>Appendix: Wrapper Types in TypeScript</b>](#appendix-wrapper-types-in-typescript) below. You can read Wlaschin’s writeup of how to do this in F^♯ [here][wlaschin-background].)
+Once you have these, things that take a `string` will not accept `Name` or `EmailContactInfo` or `PostalContactInfo`, and things that take a `Name` will not accept an `EmailContactInfo`, and so on. This works specifically because we used a `private` type; if it were public the types would be compatible because they have the same structure. If we *didn’t* do this, and just used strings, we could easily intermix these on accident. (For an alternative approach, see [<b>Appendix: “Tagged Unions” in TypeScript</b>](#appendix-tagged-unions-in-typescript) below. You can read Wlaschin’s writeup of how to do this in F^♯ [here][wlaschin-background].)
 
 [wlaschin-background]: https://fsharpforfunandprofit.com/posts/designing-with-types-single-case-dus/
 
