@@ -1,5 +1,5 @@
 title: >
-    Composing a Fanfare for Crew Dragon: Day 7
+    Composing a Fanfare for Crew Dragon: Day 6
 subtitle: >
     A surprising amount of progress over the weekend—the muscles are coming back!
 date: 2020-05-24T22:25:00-0600 
