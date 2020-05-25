@@ -179,7 +179,7 @@ At this point, we have actually written a type that achieves the goal of making 
 
 We’ll start by showing how we construct a `Contact` when we have a name and an email. Remembering that we have the possibility of `EmailContactInfo.create` returning `undefined`, here’s how we’d handle that:
 
-```
+```ts
 class Contact {
   // the existing definition
 
