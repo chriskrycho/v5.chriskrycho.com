@@ -41,7 +41,7 @@ After following Christ, my family is far and away the most important part of my 
 
 ## By trade
 
-Since graduating college, I have been working more or less full-time in the software industry—starting out writing avionics software and then hazards and risk mitigation software for the energy industry, whiel picking up web development on the side and eventually transitioning into web development full time. You can see my [CV](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
+Since graduating college, I have been working more or less full-time in the software industry—starting out writing avionics software and then hazards and risk mitigation software for the energy industry while picking up web development on the side and eventually transitioning into web development full time. You can see my [CV](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
 
 *[CV]: curriculum vitae
 
@@ -107,7 +107,7 @@ Out of that initial experiment (still running!) grew a general interest in podca
 
 - [Mass Affection](https://massaffection.com)—another foray into podcasting with my wife, this time about the video game series <cite>Mass Effect</cite>. We aspire to finish this… eventually. It’s been hard to carve out the time for it the last couple years, but we always enjoy it when we do!
 
-I find podcasting a great complement to writing. It is available in spaces and places where people cannot read (like podcasting), and it’s also a great place to flesh out thoughts I have already put in writing or am trying to figure out how to put in writing.
+I find podcasting a great complement to writing. It is available in spaces and places where people cannot read (like commuting), and it’s also a great place to flesh out thoughts I have already put in writing or am trying to figure out how to put in writing.
 
 ### An occasional composer
 
