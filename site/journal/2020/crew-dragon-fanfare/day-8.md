@@ -2,10 +2,11 @@
 title: >
     Composing a Fanfare for Crew Dragon: Day 8
 subtitle: >
-    Memorial Day and Thursday night progress…
+    SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 date: 2020-05-30T21:50:00-0600
+updated: 2020-05-30T22:00:00-0600
 summary: >
-    I finished a rough draft the day of the launch!
+    SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 tags:
     - music
     - composition
@@ -17,6 +18,7 @@ qualifiers:
         Anyone interested in the process of writing composed music.
 series:
     part: 9
+audio: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-8.mp3
 
 ---
 

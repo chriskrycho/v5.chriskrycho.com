@@ -81,4 +81,12 @@
 {%- else -%}
    {{logo}}
 {%- endif -%}
+
+{%- if page.data.audio -%}
+   <meta property="twitter:player" content="{{url}}">
+   <meta property="twitter:player:stream" content="{{page.data.audio}}">
+   <meta property="twitter:player:stream:content-type" content="audio/mpeg">
+   <meta property="twitter:player:width" content="600">
+   <meta property="twitter:player:height" content="600">
+{%- endif -%}
 {%- endmacro -%}
