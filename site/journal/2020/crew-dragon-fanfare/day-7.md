@@ -1,6 +1,7 @@
 ---
 title: >
     Composing a Fanfare for Crew Dragon: Day 7
+feedId: "journal/crew-dragon-fanfare/days-7-and-8/"
 subtitle: >
     Memorial Day and Thursday night progress…
 date: 2020-05-28T21:55:00-0600
