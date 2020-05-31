@@ -27,7 +27,7 @@ During the early days of the development of [Dorico], Daniel Spreadbury (the pro
 
 You can see [the score so far as a PDF](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-3.pdf)—which is generated straight out of Dorico, with *very* minimal tweaks from me (basically just to the typeface used for text)!
 
-…but those tweaks and my digression into Dorico’s engraving details are together just a long way of saying that while I made a *lot* of progress today, I may also have gotten a bit distracted for half an hour at one point digging into the *engraving* side as well as the *composing* side of the program. That’s okay: the point of this week’s exercise is not *just* to get a piece scored (even if it primarily that), but also to relax.
+…but those tweaks and my digression into Dorico’s engraving details are together just a long way of saying that while I made a *lot* of progress today, I may also have gotten a bit distracted for half an hour at one point digging into the *engraving* side as well as the *composing* side of the program. That’s okay: the point of this week’s exercise is not *just* to get a piece scored (even if it is *primarily* that), but also to relax.
 
 I managed to orchestrate the entire opening fanfare—probably not to its final form, but to something I’m at least reasonably happy with. While my orchestration skills leave [something to be desired](https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-2/), I nonetheless managed to get a *lot* of what I hear in my head onto the page here—and it’s quite different from anything I’ve written in the past!
 
