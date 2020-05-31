@@ -4,7 +4,7 @@ title: >
 subtitle: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 date: 2020-05-30T21:50:00-0600
-updated: 2020-05-30T22:13:00-0600
+updated: 2020-05-30T22:24:00-0600
 summary: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 tags:
@@ -61,7 +61,7 @@ You may have noticed if you looked at [the score][score] (today or previously) t
 
 ### Dorico
 
-Scoring in [Dorico] is great! I’ve made good use of their 30-day trial, and I will definitely be purchasing [Dorico Pro][compare]. I intend to have a full review up in the next week or so, now that I’ve actually worked start to finish on a piece in it. The thing that continues to amuse me most is something that caught my attention within the first day or so of scoring with Dorico: despite not having used [Sibelius] in earnest in over a decade, 
+Scoring in [Dorico] is great! I’ve made good use of their 30-day trial, and I will definitely be purchasing [Dorico Pro][compare]. I intend to have a full review up in the next week or so, now that I’ve actually worked start to finish on a piece in it. The thing that continues to amuse me most is something that caught my attention within the first day or so of scoring with Dorico: despite not having used [Sibelius] in earnest in over a decade, I still reach for its keyboard shortcuts sometimes!
 
 [Dorico]: https://new.steinberg.net/dorico/
 [compare]: https://new.steinberg.net/dorico/compare-editions/
