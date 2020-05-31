@@ -36,8 +36,6 @@ Given the course this week has taken and is taking—a *very* interrupted day to
 
 That being so, I'm still going to spend the rest of the afternoon and tomorrow and some of Saturday working on the *second* part, so you can look forward to seeing and hearing more! And perhaps, Lord willing, I will be able to finish it and even learn enough about the subtleties of virtual instrument articulations to make it sound *good* before the launch in three weeks!
 
-
-
 [day-3]: https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-3/
 [score-4a]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-4a.pdf
 [score-3]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-3.pdf
