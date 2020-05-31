@@ -4,7 +4,7 @@ title: >
 subtitle: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 date: 2020-05-30T21:50:00-0600
-updated: 2020-05-30T22:00:00-0600
+updated: 2020-05-30T22:13:00-0600
 summary: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 tags:
@@ -79,6 +79,7 @@ The next thing I’d really like to figure out is how to handle *playback* with 
 
 *[DAW]: digital audio workstation
 *[HSO]: Halion Symphonic Orchesetra
+*[VST]: Virtual Studio Technology
 *[AU]: Audio Unit
 
 ### Orchestration
