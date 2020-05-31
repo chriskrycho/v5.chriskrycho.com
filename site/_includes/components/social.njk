@@ -83,6 +83,12 @@
 {%- endif -%}
 
 {%- if page.data.audio -%}
+   <meta property="og:audio" content="{{page.data.audio}}" />
+   <meta property="og:audio:title" content="{{title}}" />
+   <meta property="og:audio:artist" content="Chris Krycho" />
+   {# <meta property="og:audio:album" content="Amazing Album" /> #}
+   <meta property="og:audio:type" content="audio/mpeg" />
+
    <meta property="twitter:player" content="{{url}}">
    <meta property="twitter:player:stream" content="{{page.data.audio}}">
    <meta property="twitter:player:stream:content-type" content="audio/mpeg">
