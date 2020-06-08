@@ -11,7 +11,7 @@ qualifiers:
 tags:
     - Elm
     - rewrite
-    - Ember.
+    - Ember
     - TypeScript
     - JavaScript
     - software development
