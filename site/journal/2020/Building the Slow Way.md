@@ -3,6 +3,7 @@ title: Building the Slow Way
 subtitle: >
     Or, *part* of why rewrite is taking a while: I’m in this for the long haul.
 date: 2020-060-07T20:50:00-0600
+updated: 2020-060-07T20:50:00-0600
 qualifiers:
     epistemic: Talking myself through this, to be perfectly honest.
     audience: >
