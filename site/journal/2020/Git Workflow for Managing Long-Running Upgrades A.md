@@ -44,7 +44,7 @@ The key to making this work well is taking advantage of modern distributed versi
 
 ### Setup
 
-First up, I create two clones of the repository. If these are long lived, I’ll often name them both for the name of the project, but with `-alt` tacked onto the end of one of them. For example, if I were working on a project named `new-horizons`[^space], I’d have `new-horizons` and `new-horizons-alt`.[^disk-layout]
+First up, I create two clones of the repository. If these are long lived, I’ll often name them both for the name of the project, but with `-alt` tacked onto the end of one of them. For example, if I were working on a project named `new-horizons`,[^space] I’d have `new-horizons` and `new-horizons-alt`.[^disk-layout]
 
 Once I have both of them cloned, I take advantage of the fact that Git will happily let you have as many “remotes” as you like. A “remote” is just Git’s name for a copy of the repository that is somewhere else than the copy you’re working with. Most of the time, that remote is someplace like GitHub or GitLab or Bitbucket or some internal-to-our-company Git server. It doesn’t *have* to be, though. It can also be another copy on disk!
 
@@ -251,7 +251,7 @@ $ git pull --rebase origin master
 
 Now, my commit graph for `pluto` is once again just `master` with one extra commit, the upgrade, all sitting on top of the changes I made in `A`, `B`, and `C`:
 
-![after rebasing with `A`, `B`, and `C`](TODO).
+![after rebasing with `A`, `B`, and `C`](TODO)
 
 Finally, I clean up the branches I created for the fixes.
 
