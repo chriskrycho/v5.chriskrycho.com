@@ -1,7 +1,7 @@
 ---
-title: A Git Technique for Managing Long-Running Upgrades
+title: A Git Workflow for Managing Long-Running Upgrades
 subtitle: Using some lessons learned in the trenches of large upgrades.
-date: TODO
+date: 2020-06-12T08:00:00-0600
 summary: >
     TODO
 qualifiers:
