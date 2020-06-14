@@ -15,6 +15,10 @@ tags:
 
 ---
 
+## Overview
+
+When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang. In at least some cases, we can accomplish this by making good use of the capabilities of distributed version control systems (<abbr>DVCS</abbr>s) like Git: clones, remotes, cherry-picking, and branches.
+
 ## Motivation
 
 Large software dependency upgrades—whether landing a new version of the dependency, or opting into new behavior by toggling feature flags—often involves making a *lot* of changes across an application. Perhaps there are formally breaking changes; perhaps your app was using private API; perhaps there are just subtle changes in the unspecified behavior of the app which you were incidentally relying on. Whatever the reason, it’s often the case that landing an upgrade against any sufficiently large code base is a long-running task which requires *many* changes to existing code.
@@ -337,9 +341,17 @@ $ git branch --delete fix-a fix-b fix-c
 $ git branch -d fix-a fix-b fix-c
 ```
 
-## Summary
+And that’s it! Then I start again—and repeat until it’s done.
 
-When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang. In at least some cases, we can accomplish this by making good use of the capabilities of distributed version control systems (<abbr>DVCS</abbr>s) like Git: clones, remotes, cherry-picking, and branches.
+## Conclusion
+
+In general, it’s really helpful to avoid getting into the situation where this kind of thing is required in the first place—
+
+- have your test suite run against every canary, beta, and stable release of your dependencies, and file bugs internally or upstream. F
+- figure out how to land even large, sweeping changes behind feature flags
+- land features incrementally instead of needing to do a lot of fixing up and rebasing
+
+—but sometimes this kind of thing is out of your control. (It was out of mine last year!) I hope if you find yourselves in the same spot I found myself last August, you now have a good handle on some of the ways you can manage this kind of large, long-running task effectively!
 
 *[CI]: continuous integration
 *[SHA]: secure hash algorithm
