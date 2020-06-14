@@ -99,9 +99,7 @@ The next step is to actually make progress on the upgrade or other long-running 
 
 Initially, both `new-horizons` and `new-horizons-alt` with the same Git commit graph. It looks like this:
 
-<!-- TODO: need to figure out how to get higher-resolution versions of these. Maybe just using SVG and setting a target height for them? -->
-
-![initial](./git/initial.svg)
+![initial](./git-workflow/initial.svg)
 
 Then I create a new branch named `pluto` on the main clone (`new-horizons`):[^branch-create]
 
@@ -111,15 +109,15 @@ $ git branch --create pluto
 
 The result is identical, except that I now have a working branch:
 
-![with `pluto`](./git/with-pluto.svg)
+![with `pluto`](./git-workflow/with-pluto.svg)
 
 I start by adding the baseline for the large change—upgrading the dependency:
 
-![with upgrade commit on `pluto`](./git/with-upgrade.svg)
+![with upgrade commit on `pluto`](./git-workflow/with-upgrade.svg)
 
 Then I get the test suite running against that change, and identify a failure in the test suite and start working on fixing it.[^test-suite] Once I have a fix done, I commit it on the `pluto` branch in that clone:
 
-![with first fix on `pluto`](./git/with-first-fix.svg)
+![with first fix on `pluto`](./git-workflow/with-first-fix.svg)
 
 Now I need a way to apply that change back to the other copy of the repository, but *without* the upgrade. For this, I use the `git cherry-pick` command, which lets you take a single commit or a range of commit from another part of Git history and apply it to the current state of your repository.
 
@@ -154,7 +152,7 @@ In the `new-horizons-alt` repo—usually in another terminal view that I have op
 
 Now `pluto` in the `new-horizons` clone has the upgrade and a fix in place, while `some-pluto-fix` in the `new-horizons-alt` clone has *just* the fix in place. 
 
-![after cherry-picking](./git/cherry-pick-fix.svg)
+![after cherry-picking](./git-workflow/cherry-pick-fix.svg)
 
 I can run the test suite again in *this* copy of the code and make sure that my change works the way I expect it to *without* the upgrade in place. If it doesn’t, I keep working on it till my implementation *does* work in both the `pluto` and `some-pluto-fix` branches.[^rarely] Then I put it up for review and land it in the `master` branch of the codebase!
 
@@ -180,7 +178,7 @@ Doing the `pull` on `master` in both clones will get it up to date with the fix 
 
 [rebase]: https://git-scm.com/docs/git-rebase
 
-![after pulling and rebasing](./git/after-rebase.svg)
+![after pulling and rebasing](./git-workflow/after-rebase.svg)
 
 Note that the commit representing the upgrade—the tip of `pluto`—now has a new SHA value, because commit hashes don’t just represent the set of the changes included in that commit (i.e. the <i>patch</i>) but also the history to which the patch was applied. If you apply the same patch to two different histories, you’ll always get two different hashes. Even though the SHA values for the fix were different, though, Git can recognize that the *patches* applied were the same, and drop the now-unnecessary commit.
 
@@ -200,10 +198,6 @@ I can then clean up the other branch I created, as it will have been merged auto
 ```sh
 git branch --delete some-pluto-fix
 ```
-
-Here's how things look at this point:
-
-![updated new-horizons-alt](TODO)
 
 [^automatic-merging]: At least, in *most* workflows it will have been merged. The workflow in my current job actually creates new commits for merges in a way that Git cannot understand, so I have to *forcibly* delete those branches:
 
@@ -227,15 +221,15 @@ Instead of landing changes one commit at a time, I will land a series of discret
 
 Here's how that works. Everything *starts* the same as in the previous flow: with the upgrade sitting on top of `master` in the `pluto` branch in `new-horizons`:
 
-![the same starting point](TODO)
+![the same starting point](./git-workflow/with-upgrade.svg)
 
 Now, instead of fixing just *one* bug before switching back over, I fix several in a row—but each in a discrete commit. For convenience, I’ll refer to these as `A`, `B`, and `C`; in reality these would be Git SHA values. Here, the `pluto` branch contains `A`, then `B`, then `C`.
 
-![a series of fixes on `pluto`](TODO)
+![a series of fixes on `pluto`](./git-workflow/with-a-b-c.svg)
 
 Keeping them in discrete commits like this means I can `cherry-pick` them individually into their own branches. Switching back to `new-horizon-alt`, I create `fix-a`, `fix-b`, and `fix-c` branches from `master`, and cherry-pick the corresponding commits onto them: `fix-a` *only* has `A`, `fix-b` *only* has `B`, and `fix-c` *only* has `C`:
 
-![fixes applied to separate branches](TODO)
+![fixes applied to separate branches](./git-workflow/multiple-cherry-picks.svg)
 
 Each of these will merge in its own time, after being reviewed and passing tests on CI. Once the commits are merged, I’ll update to the current `master` on `new-horizons-alt`, just as before:
 
@@ -246,7 +240,7 @@ $ git pull
 
 Now `master` contains all of the changes I made, though not necessarily in the same order they were in the original upgrade branch that I cherry-picked them from—but that’s fine. After all, that’s exactly why they were broken out into discrete commits! The commit graph might end up being the *previous* `HEAD` on `master`, then `C`, then `A`, then `B`—the order will just be whatever order they happened to land it:
 
-![multiple commits on `master`](TODO)
+![multiple commits on `master`](./git-workflow/pulled-onto-master.svg)
 
 At this point, `master` contains all the fixes I made on `pluto` in the `new-horizons` branch. I can now rebase so once again my working copy *only* contains the `upgrade` commit on top of `master`.
 
@@ -256,7 +250,7 @@ $ git pull --rebase origin master
 
 Now, my commit graph for `pluto` is once again just `master` with one extra commit, the upgrade, all sitting on top of the changes I made in `A`, `B`, and `C`:
 
-![after rebasing with `A`, `B`, and `C`](TODO)
+![after rebasing with `A`, `B`, and `C`](./git-workflow/fully-merged.svg)
 
 Finally, I clean up the branches I created for the fixes.
 
