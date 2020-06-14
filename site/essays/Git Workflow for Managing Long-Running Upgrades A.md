@@ -3,7 +3,7 @@ title: A Git Workflow for Managing Long-Running Upgrades
 subtitle: Using some lessons learned in the trenches of large upgrades.
 date: 2020-06-14T12:00:00-0600
 summary: >
-    TODO
+    When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang, by making good use of the capabilities of DVCSs like Git.
 qualifiers:
     audience: >
         Other software developers who have to manage the complexity of long-running upgrade branches.
@@ -14,8 +14,6 @@ tags:
     - productivity
 
 ---
-
-**Summary:** When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang. In at least some cases, we can accomplish this by making good use of the capabilities of distributed version control systems (<abbr>DVCS</abbr>s) like Git: clones, remotes, cherry-picking, and branches.
 
 ## Motivation
 
@@ -99,7 +97,14 @@ The next step is to actually make progress on the upgrade or other long-running 
 
 Initially, both `new-horizons` and `new-horizons-alt` with the same Git commit graph. It looks like this:
 
-![initial](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png">
+    </picture>
+    <figcaption>initial state</figcaption>
+</figure>
 
 Then I create a new branch named `pluto` on the main clone (`new-horizons`):[^branch-create]
 
@@ -109,15 +114,37 @@ $ git branch --create pluto
 
 The result is identical, except that I now have a working branch:
 
-![with `pluto`](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto-light.png">
+    </picture>
+    <figcaption>with <code>pluto</code></figcaption>
+</figure>
 
 I start by adding the baseline for the large change—upgrading the dependency:
 
-![with upgrade commit on `pluto`](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade-light.png">
+    </picture>
+    <figcaption>with upgrade commit on <code>pluto</code></figcaption>
+</figure>
 
 Then I get the test suite running against that change, and identify a failure in the test suite and start working on fixing it.[^test-suite] Once I have a fix done, I commit it on the `pluto` branch in that clone:
 
-![with first fix on `pluto`](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix.svg)
+
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-light.png">
+    </picture>
+    <figcaption>with first fix on <code>pluto</code></figcaption>
+</figure>
 
 Now I need a way to apply that change back to the other copy of the repository, but *without* the upgrade. For this, I use the `git cherry-pick` command, which lets you take a single commit or a range of commit from another part of Git history and apply it to the current state of your repository.
 
@@ -152,7 +179,14 @@ In the `new-horizons-alt` repo—usually in another terminal view that I have op
 
 Now `pluto` in the `new-horizons` clone has the upgrade and a fix in place, while `some-pluto-fix` in the `new-horizons-alt` clone has *just* the fix in place. 
 
-![after cherry-picking](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/cherry-pick-fix.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-cherry-picking-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-cherry-picking-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-cherry-picking-light.png">
+    </picture>
+    <figcaption>after cherry picking</figcaption>
+</figure>
 
 I can run the test suite again in *this* copy of the code and make sure that my change works the way I expect it to *without* the upgrade in place. If it doesn’t, I keep working on it till my implementation *does* work in both the `pluto` and `some-pluto-fix` branches.[^rarely] Then I put it up for review and land it in the `master` branch of the codebase!
 
@@ -178,7 +212,14 @@ Doing the `pull` on `master` in both clones will get it up to date with the fix 
 
 [rebase]: https://git-scm.com/docs/git-rebase
 
-![after pulling and rebasing](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-rebase.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-pulling-and-rebasing-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-pulling-and-rebasing-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-pulling-and-rebasing-light.png">
+    </picture>
+    <figcaption>after pulling and rebasing</figcaption>
+</figure>
 
 Note that the commit representing the upgrade—the tip of `pluto`—now has a new SHA value, because commit hashes don’t just represent the set of the changes included in that commit (i.e. the <i>patch</i>) but also the history to which the patch was applied. If you apply the same patch to two different histories, you’ll always get two different hashes. Even though the SHA values for the fix were different, though, Git can recognize that the *patches* applied were the same, and drop the now-unnecessary commit.
 
@@ -221,15 +262,36 @@ Instead of landing changes one commit at a time, I will land a series of discret
 
 Here's how that works. Everything *starts* the same as in the previous flow: with the upgrade sitting on top of `master` in the `pluto` branch in `new-horizons`:
 
-![the same starting point](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png">
+    </picture>
+    <figcaption>the same initial state</figcaption>
+</figure>
 
 Now, instead of fixing just *one* bug before switching back over, I fix several in a row—but each in a discrete commit. For convenience, I’ll refer to these as `A`, `B`, and `C`; in reality these would be Git SHA values. Here, the `pluto` branch contains `A`, then `B`, then `C`.
 
-![a series of fixes on `pluto`](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-a-b-c.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/series-of-fixes-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/series-of-fixes-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/series-of-fixes-light.png">
+    </picture>
+    <figcaption>a series of fixes on <code>pluto</code></figcaption>
+</figure>
 
 Keeping them in discrete commits like this means I can `cherry-pick` them individually into their own branches. Switching back to `new-horizon-alt`, I create `fix-a`, `fix-b`, and `fix-c` branches from `master`, and cherry-pick the corresponding commits onto them: `fix-a` *only* has `A`, `fix-b` *only* has `B`, and `fix-c` *only* has `C`:
 
-![fixes applied to separate branches](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-cherry-picks.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fixes-separate-branches-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fixes-separate-branches-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fixes-separate-branches-light.png">
+    </picture>
+    <figcaption>fixes applied to separate branches</figcaption>
+</figure>
 
 Each of these will merge in its own time, after being reviewed and passing tests on CI. Once the commits are merged, I’ll update to the current `master` on `new-horizons-alt`, just as before:
 
@@ -240,7 +302,14 @@ $ git pull
 
 Now `master` contains all of the changes I made, though not necessarily in the same order they were in the original upgrade branch that I cherry-picked them from—but that’s fine. After all, that’s exactly why they were broken out into discrete commits! The commit graph might end up being the *previous* `HEAD` on `master`, then `C`, then `A`, then `B`—the order will just be whatever order they happened to land it:
 
-![multiple commits on `master`](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/pulled-onto-master.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-commits-master-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-commits-master-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-commits-master-light.png">
+    </picture>
+    <figcaption>multiple commits on <code>master</code></figcaption>
+</figure>
 
 At this point, `master` contains all the fixes I made on `pluto` in the `new-horizons` branch. I can now rebase so once again my working copy *only* contains the `upgrade` commit on top of `master`.
 
@@ -250,7 +319,14 @@ $ git pull --rebase origin master
 
 Now, my commit graph for `pluto` is once again just `master` with one extra commit, the upgrade, all sitting on top of the changes I made in `A`, `B`, and `C`:
 
-![after rebasing with `A`, `B`, and `C`](https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged.svg)
+<figure>
+    <picture>
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged-light.png">
+    </picture>
+    <figcaption>after rebasing with <code>A</code>, <code>B</code>, and <code>C</code>.</figcaption>
+</figure>
 
 Finally, I clean up the branches I created for the fixes.
 
@@ -262,6 +338,8 @@ $ git branch -d fix-a fix-b fix-c
 ```
 
 ## Summary
+
+When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang. In at least some cases, we can accomplish this by making good use of the capabilities of distributed version control systems (<abbr>DVCS</abbr>s) like Git: clones, remotes, cherry-picking, and branches.
 
 *[CI]: continuous integration
 *[SHA]: secure hash algorithm
