@@ -1,7 +1,7 @@
 ---
 title: A Git Workflow for Managing Long-Running Upgrades
 subtitle: Using some lessons learned in the trenches of large upgrades.
-date: 2020-06-12T08:00:00-0600
+date: 2020-06-14T12:00:00-0600
 summary: >
     TODO
 qualifiers:
@@ -101,9 +101,9 @@ Initially, both `new-horizons` and `new-horizons-alt` with the same Git commit g
 
 <!-- TODO: need to figure out how to get higher-resolution versions of these. Maybe just using SVG and setting a target height for them? -->
 
-![initial](TODO)
+![initial](./git/initial.svg)
 
-Then I create a new branch named `pluto` on the main clone (`new-horizons`):
+Then I create a new branch named `pluto` on the main clone (`new-horizons`):[^branch-create]
 
 ```sh
 $ git branch --create pluto
@@ -111,15 +111,15 @@ $ git branch --create pluto
 
 The result is identical, except that I now have a working branch:
 
-![with `pluto`](TODO)
+![with `pluto`](./git/with-pluto.svg)
 
 I start by adding the baseline for the large change—upgrading the dependency:
 
-![with upgrade commit on `pluto`](TODO)
+![with upgrade commit on `pluto`](./git/with-upgrade.svg)
 
 Then I get the test suite running against that change, and identify a failure in the test suite and start working on fixing it.[^test-suite] Once I have a fix done, I commit it on the `pluto` branch in that clone:
 
-![with first fix on `pluto`](TODO)
+![with first fix on `pluto`](./git/with-first-fix.svg)
 
 Now I need a way to apply that change back to the other copy of the repository, but *without* the upgrade. For this, I use the `git cherry-pick` command, which lets you take a single commit or a range of commit from another part of Git history and apply it to the current state of your repository.
 
@@ -154,7 +154,7 @@ In the `new-horizons-alt` repo—usually in another terminal view that I have op
 
 Now `pluto` in the `new-horizons` clone has the upgrade and a fix in place, while `some-pluto-fix` in the `new-horizons-alt` clone has *just* the fix in place. 
 
-![after cherry-picking](TODO)
+![after cherry-picking](./git/cherry-pick-fix.svg)
 
 I can run the test suite again in *this* copy of the code and make sure that my change works the way I expect it to *without* the upgrade in place. If it doesn’t, I keep working on it till my implementation *does* work in both the `pluto` and `some-pluto-fix` branches.[^rarely] Then I put it up for review and land it in the `master` branch of the codebase!
 
@@ -167,15 +167,32 @@ $ git checkout master
 $ git pull
 ```
 
+In `new-horizons`, it means updating *both* `master` and `pluto`—by pulling the commits into each, with a [rebase][rebase] for `pluto`:
+
+```sh
+$ git checkout master
+$ git pull
+$ git checkout pluto
+$ git pull --rebase origin master
+```
+
+Doing the `pull` on `master` in both clones will get it up to date with the fix I landed now that it has been merged. Doing the `pull --rebase` on `pluto` in the `new-horizons` clone gets it up to date and *re-applies* the upgrade change directly onto the `master` branch as it looks on `origin` after the pull request goes through. Now I have the change I made as part of `master`, and `pluto` sitting on top of it but with *only* the upgrade present, because Git recognizes that the patch corresponding to the fix already exists on master. Here's what we have on the two branches now:
+
+[rebase]: https://git-scm.com/docs/git-rebase
+
+![after pulling and rebasing](./git/after-rebase.svg)
+
+Note that the commit representing the upgrade—the tip of `pluto`—now has a new SHA value, because commit hashes don’t just represent the set of the changes included in that commit (i.e. the <i>patch</i>) but also the history to which the patch was applied. If you apply the same patch to two different histories, you’ll always get two different hashes. Even though the SHA values for the fix were different, though, Git can recognize that the *patches* applied were the same, and drop the now-unnecessary commit.
+
 Depending on the merge strategy used, there’s one additional step to do back in `new-horizons-alt`: clean up the `some-pluto-fix` branch. If the commit was merged in a way that preserved its original hashes—that is, by a *merge* (fast-forward or not), and *not* by cherry-picking or rebasing—then you can just delete the branches, because Git will recognize that they are already part of `master`.
 
-If they were cherry-picked or rebased, though, they will have a new commit hash. Git is smart enough to drop identical patches from a branch, but it is *not* smart enough to recognize identical patches on different branches mean the branches are effectively merged. In that case, I would need to *force* delete them: Git protects us from deleting branches that haven’t been merged by default, since that’s *often* a mistake.
+If it was cherry-picked or rebased, though, it will have a new commit hash. Git is smart enough to drop identical patches from a branch (which is how `pluto` ended up with the right shape above), but it is *not* smart enough to recognize that identical patches on different branches means the branches have been merged. In that case, I would need to *force* delete the branch: Git protects us from deleting branches that haven’t been merged by default, since that’s *often* a mistake.
 
 ```sh
 # the long form
-$ git branch --delete --force fix-a fix-b fix-c
+$ git branch --delete --force some-pluto-fix
 # the short form
-$ git branch -D fix-a fix-b fix-c
+$ git branch -D some-pluto-fix
 ```
 
 I can then clean up the other branch I created, as it will have been merged automatically:[^automatic-merging]
@@ -186,7 +203,7 @@ git branch --delete some-pluto-fix
 
 Here's how things look at this point:
 
-![updated new-horizons-alt](./git/6.png)
+![updated new-horizons-alt](TODO)
 
 [^automatic-merging]: At least, in *most* workflows it will have been merged. The workflow in my current job actually creates new commits for merges in a way that Git cannot understand, so I have to *forcibly* delete those branches:
 
@@ -194,21 +211,9 @@ Here's how things look at this point:
     $ git branch --delete --force some-pluto-fix
     ```
 
-Things are actually even simpler over in `new-horizons` on the `pluto` branch. Using [the `git rebase` command][rebase], I can get myself up to date and *re-apply* the upgrade change directly from the `master` branch as it looks on `origin` after the pull request goes through:
-
-[rebase]: https://git-scm.com/docs/git-rebase
-
-```sh
-$ git pull --rebase origin master
-```
-
-Now I have the change I made as part of `master`, and `pluto` sitting on top of it but with *only* the upgrade present, because Git recognizes that the patch corresponding to the fix already exists on master:
-
-![after pulling and rebasing](TODO)
-
-Note the commit representing the upgrade—the tip of `pluto`—now has a new SHA value, because commit hashes don’t just represent the set of the changes included in that commit (i.e. the <i>patch</i>) but also the history to which the patch was applied. If you apply the same patch to two different histories, you’ll always get two different hashes. Even though the SHA values for the fix were different, though, Git can recognize that the *patches* applied were the same, and drop the now-unnecessary commit.
-
 That’s the whole workflow! From this point forward, I just repeat until the upgrade is done: adding commits that fix bugs onto `pluto` in `new-horizons`, fetching into `new-horizons-alt` and cherry-picking those fixes into their own individual branches, landing them, and rebasing.
+
+[^branch-create]: I'm using the `git branch --create` command introduced in Git 2.23. If using an earlier version of Git, you can use the command `git checkout --branch`, which accomplishes the same thing but was a bit more confusing.
 
 [^test-suite]: This whole strategy hinges entirely on having a useful test suite. If you don't have reasonably good test coverage, good luck making large changes of *any* kind to an app of any size without breaking things.
 
