@@ -190,7 +190,7 @@ class Contact {
     let maybeEmail = EmailContactInfo.create(email);
     if (maybeEmail) {
       let contactName = new Name(name);
-      return new Contact(name, email);
+      return new Contact(contactName, maybeEmail);
     } else {
       return undefined;
     }
@@ -202,7 +202,7 @@ class Contact {
   ): Contact {
     let contactName = new Name(name);
     let postalInfo = new PostalContactInfo(address);
-    return new Contact(contactName
+    return new Contact(contactName, postalInfo);
   }
   
   static fromEmailAndPostal(
@@ -214,7 +214,7 @@ class Contact {
     if (maybeEmail) {
       let contactName = new Name(name);
       let postalInfo = new PostalContactInfo(address);
-      return new Contact(name, [email, postalInfo]);
+      return new Contact(contactName, [email, postalInfo]);
     } else {
       return undefined;
     }

@@ -4,7 +4,7 @@ title: >
 subtitle: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 date: 2020-05-30T21:50:00-0600
-updated: 2020-05-30T22:24:00-0600
+updated: 2020-05-31T05:54:00-0600
 summary: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 tags:
@@ -102,7 +102,7 @@ Even so: working through some exercises would be helpful, I think. Perhaps even 
 
 ### Revising
 
-Finally (for this evening at least): I do expect to revise this a bit over the next few weeks. I will probably listen to it as it stands *way* too many times over the next few days, then give myself some time away from it. Much as with writing *words*, I find it helpful when writing music to do a draft, then get some space and distance, then come back to it. Right in the aftermath of finishing a draft, I am too close to the material and it is easy to be precious about it and attached to it.
+I expect to revise this a bit over the next few weeks. I will probably listen to it as it stands *way* too many times over the next few days, then give myself some time away from it. Much as with writing *words*, I find it helpful when writing music to do a draft, then get some space and distance, then come back to it. Right in the aftermath of finishing a draft, I am too close to the material and it is easy to be precious about it and attached to it.
 
 I don’t *expect* that I’ll make any large structural changes to the piece when I come back to it… but of course, I *would* say that today: I just finished it, and I’m feeling *very* precious about it! A few weeks or a month from now, I might just hear some things that need to work differently.
 
