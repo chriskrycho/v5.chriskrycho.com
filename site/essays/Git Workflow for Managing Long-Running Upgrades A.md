@@ -140,7 +140,6 @@ I start by adding the baseline for the large change—upgrading the dependency:
 
 Then I get the test suite running against that change, and identify a failure in the test suite and start working on fixing it.[^test-suite] Once I have a fix done, I commit it on the `pluto` branch in that clone:
 
-
 <figure>
     <picture>
         <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-light.png" media="(prefers-color-scheme: light)">
@@ -194,8 +193,6 @@ Now `pluto` in the `new-horizons` clone has the upgrade and a fix in place, whil
 
 I can run the test suite again in *this* copy of the code and make sure that my change works the way I expect it to *without* the upgrade in place. If it doesn’t, I keep working on it till my implementation *does* work in both the `pluto` and `some-pluto-fix` branches.[^rarely] Then I put it up for review and land it in the `master` branch of the codebase!
 
-[^rarely]: Rarely, there are times when I hit a thing I can’t fix safely against both `master` and `pluto`. In those cases, I don’t try to cherry-pick it over as described here. I emphasize, though, that this is genuinely *very* rare in most cases.
-
 Once it lands on `master`, I update both repositories. In `new-horizons-alt`, this just means checking out `master` and pulling:
 
 ```sh
@@ -205,6 +202,8 @@ $ git pull
 
 In `new-horizons`, it means updating *both* `master` and `pluto`—by pulling the commits into each, with a [rebase][rebase] for `pluto`:
 
+[rebase]: https://git-scm.com/docs/git-rebase
+
 ```sh
 $ git checkout master
 $ git pull
@@ -212,9 +211,7 @@ $ git checkout pluto
 $ git pull --rebase origin master
 ```
 
-Doing the `pull` on `master` in both clones will get it up to date with the fix I landed now that it has been merged. Doing the `pull --rebase` on `pluto` in the `new-horizons` clone gets it up to date and *re-applies* the upgrade change directly onto the `master` branch as it looks on `origin` after the pull request goes through. Now I have the change I made as part of `master`, and `pluto` sitting on top of it but with *only* the upgrade present, because Git recognizes that the patch corresponding to the fix already exists on master. Here's what we have on the two branches now:
-
-[rebase]: https://git-scm.com/docs/git-rebase
+Doing the `pull` on `master` in both clones will get it up to date with the fix I landed now that it has been merged. Doing the `pull --rebase` on `pluto` in the `new-horizons` clone also gets it up to date—but that’s a more significant change for that branch. In this case, it looks at the difference between `pluto` and how `master` looks on `origin`, and *re-applies* any changes that aren’t present on `pluto`. Since the exact same patch corresponding to the fix previously at the tip of `pluto` is now in the history of `master`, Git drops it from the tip of the `pluto` branch, leaving me with just one commit on `pluto` ahead of `master`: the upgrade.[^origin-master] Here's what we have on the two branches now:
 
 <figure>
     <picture>
@@ -244,17 +241,21 @@ I can then clean up the other branch I created, as it will have been merged auto
 git branch --delete some-pluto-fix
 ```
 
-[^automatic-merging]: At least, in *most* workflows it will have been merged. The workflow in my current job actually creates new commits for merges in a way that Git cannot understand, so I have to *forcibly* delete those branches:
-
-    ```sh
-    $ git branch --delete --force some-pluto-fix
-    ```
-
 That’s the whole workflow! From this point forward, I just repeat until the upgrade is done: adding commits that fix bugs onto `pluto` in `new-horizons`, fetching into `new-horizons-alt` and cherry-picking those fixes into their own individual branches, landing them, and rebasing.
 
 [^branch-create]: I'm using the `git branch --create` command introduced in Git 2.23. If using an earlier version of Git, you can use the command `git checkout --branch`, which accomplishes the same thing but was a bit more confusing.
 
 [^test-suite]: This whole strategy hinges entirely on having a useful test suite. If you don't have reasonably good test coverage, good luck making large changes of *any* kind to an app of any size without breaking things.
+
+[^origin-master]: I could also do `git rebase master`, but I tend to do a `pull --rebase` against the upstream because I work in fast-moving repositories *and* this way I don’t *have* to keep my local `master` up to date. I can if it’s helpful… but *only* if it’s 
+
+[^rarely]: Rarely, there are times when I hit a thing I can’t fix safely against both `master` and `pluto`. In those cases, I don’t try to cherry-pick it over as described here. I emphasize, though, that this is genuinely *very* rare in most cases.
+
+[^automatic-merging]: At least, in *most* workflows it will have been merged. The workflow in my current job actually creates new commits for merges in a way that Git cannot understand, so I have to *forcibly* delete those branches:
+
+    ```sh
+    $ git branch --delete --force some-pluto-fix
+    ```
 
 ### Efficiency
 
