@@ -305,7 +305,7 @@ $ git checkout master
 $ git pull
 ```
 
-Now `master` contains all of the changes I made, though not necessarily in the same order they were in the original upgrade branch that I cherry-picked them from—but that’s fine. After all, that’s exactly why they were broken out into discrete commits! The commit graph might end up being the *previous* `HEAD` on `master`, then `C`, then `A`, then `B`—the order will just be whatever order they happened to land it:
+Now `master` contains all of the changes I made. They’re not necessarily in the same order they were in the original upgrade branch that I cherry-picked them from—but that’s fine. After all, that’s exactly why they were broken out into discrete commits! The commit graph might end up being the *previous* `HEAD` on `master`, then `C`, then `A`, then `B`—the order will just be whatever order they happened to land it:
 
 <figure>
     <picture>
