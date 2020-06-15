@@ -352,7 +352,7 @@ In general, it’s really helpful to avoid getting into the situation where this
 - figure out how to land even large, sweeping changes behind feature flags
 - land features incrementally instead of needing to do a lot of fixing up and rebasing
 
-—but sometimes this kind of thing is out of your control. (It was out of mine last year!) I hope if you find yourselves in the same spot I found myself last August, you now have a good handle on some of the ways you can manage this kind of large, long-running task effectively!
+—but sometimes this kind of thing is out of your control, as it was out of mine last year. I hope if you find yourselves in the same spot I found myself last August, you now have a good handle on some of the ways you can manage this kind of large, long-running task effectively!
 
 *[CI]: continuous integration
 *[SHA]: secure hash algorithm
