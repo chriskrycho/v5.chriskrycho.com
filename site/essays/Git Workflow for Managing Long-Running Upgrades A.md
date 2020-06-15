@@ -15,6 +15,12 @@ tags:
 
 ---
 
+:::note
+
+There has been some interesting discussion about switching away from the use of `master` as the name of the main development branch for projects like this, due to its associations with slavery (from which the terms “master” and “slave,” with all their very wretched history). For good or for ill, `master` is the traditional name, and I’ve left it as that in this discussion. However, you could easily substitute `main` throughout wherever the samples have `master`. I’ve left it this way here largely to make this post as searchable as possible.
+
+:::
+
 ## Overview
 
 When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang. In at least some cases, we can accomplish this by making good use of the capabilities of distributed version control systems (<abbr>DVCS</abbr>s) like Git: clones, remotes, cherry-picking, and branches.
