@@ -1,7 +1,7 @@
 ---
 title: A Git Workflow for Managing Long-Running Upgrades
 subtitle: Using some lessons learned in the trenches of large upgrades.
-date: 2020-06-14T12:00:00-0600
+date: 2020-06-15T12:00:00-0600
 summary: >
     When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang, by making good use of the capabilities of DVCSs like Git.
 qualifiers:
