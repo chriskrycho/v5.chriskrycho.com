@@ -43,7 +43,7 @@
       "prettier": "^1.19.1",
       "true-myth": "^4.0.0",
       "ts-node": "^8.6.2",
-      "typescript": "^3.7.5",
+      "typescript": "^3.9.5",
       "typeset": "0.2.2",
       "uslug": "^1.0.4"
    },
