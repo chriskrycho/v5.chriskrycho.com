@@ -1,5 +1,7 @@
 /* eslint @typescript-eslint/camelcase: off */
 
+import stripTags from 'striptags'
+
 import { Dict, EleventyClass, Item } from '../types/eleventy'
 import JsonFeed, { FeedItem } from '../types/json-feed'
 import absoluteUrl from './absolute-url'
@@ -103,7 +105,7 @@ function describe(book: Book): string {
    return `${bookInfo}\n${review}`
 }
 
-const contentHtmlFor = (item: Item): string => {
+function contentHtmlFor(item: Item): string {
    const subtitle =
       typeof item.data?.subtitle === 'string'
          ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
@@ -129,10 +131,14 @@ const contentHtmlFor = (item: Item): string => {
    return subtitle + audience + epistemicStatus + bookInfo + item.templateContent
 }
 
-const itemTitle = (item: Item): string | undefined => {
+function titleFor(item: Item): string | undefined {
    const sectionMarker = toCollection(item.inputPath)
    const { title } = item.data ?? {}
    return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined
+}
+
+function summaryFor(item: Item): string {
+   return item.data?.summary ?? item.data?.subtitle ?? stripTags(item.templateContent)
 }
 
 /**
@@ -146,11 +152,11 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | n
               name: config.author.name,
               url: config.url,
            },
-           title: itemTitle(item),
+           title: titleFor(item),
            url: absoluteUrl(item.url, config.url),
            date_published: isoDate(item.date),
            content_html: contentHtmlFor(item),
-           summary: optionalString(item.data?.summary ?? item.data?.subtitle),
+           summary: summaryFor(item),
            date_modified:
               typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
                  ? isoDate(item.data.updated)

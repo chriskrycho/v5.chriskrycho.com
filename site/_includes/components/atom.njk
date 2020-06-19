@@ -33,6 +33,8 @@
       {{item.data.book.review.rating}}: {{item.data.book.review.summary}}
    {%- elif item.data.subtitle -%}
       {{item.data.subtitle}}
+   {%- else -%}
+      {{item.templateContent | striptags(true) | truncate(150)}}
    {%- endif -%}
    {%- endset %}
    <summary type="html">{{summary}}</summary>
