@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-06-20T22:42:00-0600
+date: 2020-06-21T10:00:00-0600
 standalonePage: true
 
 ---
@@ -59,7 +59,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]—discussed on Winning Slowly [8.06](https://winningslowly.org/8.06/) and [8.07](https://winningslowly.org/8.07/)
 - [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)—[review](/library/jurassic-park/); discussed on Winning Slowly [8.08](https://winningslowly.org/8.08/) and [8.09](https://winningslowly.org/8.09/)
 - [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)—[review](/library/the-lost-world/)
-- [<cite>Sourdough</cite>](https://www.robinsloan.com/books/sourdough/), Robin Sloan (new)
+- [<cite>Sourdough</cite>](https://www.robinsloan.com/books/sourdough/), Robin Sloan (new)—[review](/library/sourdough/)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
