@@ -127,6 +127,7 @@
 
    .book-review {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       width: 100%;
@@ -140,11 +141,18 @@
          width: 100%;
          max-width: calc(40vh / 2);
          text-align: right;
+         margin: 0 0 0.5em 0;
+         flex: 0 0 100%;
+
+         img {
+            margin: 0;
+         }
       }
 
       &__details {
-         margin-left: 1em;
+         margin: 0.5em 0 0;
          text-align: left;
+         // flex: auto; -- implicit
       }
 
       &__about {
@@ -634,6 +642,20 @@
 
          .article-content h1 {
             max-width: var(--fancy-width);
+         }
+
+         .book-review {
+            flex-wrap: nowrap;
+
+            &__cover-link {
+               flex: 0 0 auto;
+               margin: 0 0.5em 0 0 ;
+            }
+
+            &__details {
+               margin: 0 0 0 0.5em;
+               // flex: auto; -- implicit
+            }
          }
       }
    }
