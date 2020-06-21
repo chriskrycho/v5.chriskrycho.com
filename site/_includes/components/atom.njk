@@ -51,6 +51,9 @@
       {% if item.data.book %}
          {% set book = item.data.book %}
          &lt;p&gt;
+            {%- if book.cover -%}
+            &lt;img src=“{{book.cover}}” alt=“cover art for {{book.title}}” /&gt;
+            {%- endif -%}
             {% if book.link %}
             &lt;a href="{{book.link}}" rel="nofollow"&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
             {% else %}
@@ -59,9 +62,6 @@
             {% if book.review -%}
             &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
             {%- endif %}
-            {%- if book.cover -%}
-            &lt;img src="{{book.cover}}" alt="cover art for {{book.title}}" /&gt;
-            {%- endif -%}
          &lt;/p&gt;
       {% endif %}
       {{item.templateContent}}
