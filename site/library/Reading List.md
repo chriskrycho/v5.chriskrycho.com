@@ -25,7 +25,6 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 ### Non-fiction
 
-- <cite>Dark Matters: On the Surveillance of Blackness</cite>, Simone Browne (new)
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
 
@@ -42,6 +41,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
 - [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)
 - <cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>, Ashley Hales (new)
+- <cite>Dark Matters: On the Surveillance of Blackness</cite>, Simone Browne (new)
 
 ## 2020
 
