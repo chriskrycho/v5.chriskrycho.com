@@ -1,13 +1,15 @@
 ---
 title: Sourdough
 subtitle: Easily the most *delightful* book I’ve read in years.
+date: 2020-06-21T09:30:00-0600
 qualifiers:
-    audience: readers of sci-fi or contemporary fiction or humor or any of the above, but especially students of human nature and recent (COVID?) converts to baking.
+    audience: >
+        Readers of sci-fi or contemporary fiction or humor or any of the above, but especially students of human nature and recent (COVID?) converts to baking.
 book:
   title: Sourdough
-  author: Blake Crouch
+  author: Robin Sloan
   cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/sourdough.jpg
-  link: TODO
+  link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343
   year: 2019
   review:
     rating: Required
@@ -19,7 +21,6 @@ tags:
   - baking
   - Silicon Valley
   - Robin Sloan
-date: 2020-06-21T08:30:00-0600
 
 ---
 
