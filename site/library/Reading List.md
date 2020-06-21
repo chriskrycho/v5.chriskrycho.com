@@ -22,11 +22,15 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 ### Fiction
 
 - <cite>Blue Mars</cite>, Kim Stanley Robinson (new)
+- <cite>Mr. Penumbra’s 24-Hour Bookstore</cite>, Robin Sloan (new)
 
 ### Non-fiction
 
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
+- <cite>The Real World of Technology</cite>, Ursula Franklin (new)
+- <cite>Technopoly</cite>, Neil Postman (new)
+- <cite>Evolution as Religion</cite>, Mary Midgley (new)
 
 ## Started
 
