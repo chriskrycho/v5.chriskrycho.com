@@ -341,7 +341,7 @@
       text-transform: uppercase;
       text-align: center;
       letter-spacing: 1px;
-      margin: ms(2) 0 1em;
+      margin: ms(2) 0 calc(1em + 2px); // account for height of marker
 
       .section-link {
          color: var(--h2-fg);
@@ -365,7 +365,7 @@
       }
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin: ms(-3) 0 ms(-1);
+      margin: ms(-3) 0 calc(#{ms(-1)} + 2px);
 
       .section-link {
          color: var(--h3-fg);
@@ -379,7 +379,7 @@
          weight: 300;
       }
 
-      margin: ms(-4) 0;
+      margin: ms(-4) 0 1.5px;
 
       .section-link {
          color: var(--h4-fg);
@@ -394,7 +394,7 @@
          weight: 600;
       }
 
-      margin-bottom: ms(-5);
+      margin-bottom: calc(#{ms(-5)} + 1.5px);
 
       .section-link {
          color: var(--h5-fg);
@@ -412,7 +412,7 @@
          weight: 300;
       }
 
-      margin-bottom: ms(-5);
+      margin-bottom: calc(#{ms(-5)} + 1.5px);
 
       .section-link {
          color: var(--h6-fg);
