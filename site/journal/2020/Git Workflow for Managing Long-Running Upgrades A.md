@@ -1,7 +1,7 @@
 ---
 title: A Git Workflow for Managing Long-Running Upgrades
 subtitle: Using some lessons learned in the trenches of large upgrades.
-date: 2020-06-15T12:00:00-0600
+date: 2020-07-01T14:10:00-0600
 summary: >
     When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang, by making good use of the capabilities of DVCSs like Git.
 qualifiers:
@@ -17,7 +17,7 @@ tags:
 
 :::note
 
-There has been some interesting discussion about switching away from the use of `master` as the name of the main development branch for projects like this, due to its associations with slavery (from which the terms “master” and “slave,” with all their very wretched history). For good or for ill, `master` is the traditional name, and I’ve left it as that in this discussion. However, you could easily substitute `main` throughout wherever the samples have `master`. I’ve left it this way here largely to make this post as searchable as possible.
+There has been some interesting discussion about switching away from the use of `master` as the name of the main development branch for projects like this, due to its associations with slavery (from which the terms “master” and “slave,” with all their very wretched history). For good or for ill, `master` is the traditional name, and I’ve left it as that in this discussion. However, you easily could—and very possibly *should*!—substitute `main` throughout wherever the samples have `master`. I’ve left it this way here largely to make this post as easy as possible to find via web search.
 
 :::
 
