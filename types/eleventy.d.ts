@@ -95,7 +95,7 @@ export type EngineName =
 export interface Page {
    /** the full path to the source input file (including the path to the input directory) */
    inputPath: string
-   /** 
+   /**
       Mapped from the input file name, useful for permalinks. Read more about
       [`fileSlug`].
 
@@ -314,6 +314,7 @@ export interface Config {
       @param path The file path to copy (may be an individual file or directory.)
     */
    addPassthroughCopy(path: string): void
+   addPassthroughCopy(mapping: { [inputPath: string]: string }): void
 
    /**
      You can namespace parts of your configuration using `eleventyConfig.namespace`. This
@@ -325,7 +326,7 @@ export interface Config {
     */
    namespace(withName: string, context: () => void): void
 
-   setTemplateFormats(to: EngineName[] | string): void
+   setTemplateFormats(to: EngineName[]): void
    setDataDeepMerge(to: boolean): void
    setWatchJavaScriptDependencies(to: boolean): void
    setBrowserSyncConfig(to: BrowserSyncConfig): void
