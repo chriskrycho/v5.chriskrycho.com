@@ -7,7 +7,6 @@ module.exports = [
    { type: 'page', title: 'Notes', path: '/notes/' },
    { type: 'separator' },
    { type: 'page', title: 'Projects', path: '/projects/' },
-   { type: 'page', title: 'Newsletter', path: 'https://buttondown.email/chriskrycho' },
    { type: 'separator' },
    { type: 'page', title: 'About', path: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', path: '/cv/' },
