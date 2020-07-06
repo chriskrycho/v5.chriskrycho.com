@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-07-04T20:13:00-0600
+date: 2020-07-05T21:05:00-0600
 standalonePage: true
 
 ---
@@ -38,7 +38,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
-- <cite>Delta-V</cite>, Daniel Suarez (new)
 
 ### Non-fiction
 
@@ -61,6 +60,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)—[review](/library/the-lost-world/)
 - [<cite>Sourdough</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343), Robin Sloan (new)—[review](/library/sourdough/)
 - <cite>Echoes of Earth</cite>, Sean Williams and Shane Dix (new)
+- <cite>Delta-V</cite>, Daniel Suarez (new)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
