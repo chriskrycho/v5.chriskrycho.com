@@ -68,7 +68,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02](https://winningslowly.org/8.02/) and [8.03](https://winningslowly.org/8.03/)
 - [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04](https://winningslowly.org/8.04/) and [8.05](https://winningslowly.org/8.05/)
-- <cite>Dark Matters: On the Surveillance of Blackness</cite>, Simone Browne (new)
+- [<cite>Dark Matters: On the Surveillance of Blackness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matters-On-the-Surveillance-of-Blackness-Simone-Browne%2Fbook%2F32087130), Simone Browne (new)—discussed on Winning Slowly [8.12](https://winningslowly.org/8.12/)
 
 ## 2019
 
