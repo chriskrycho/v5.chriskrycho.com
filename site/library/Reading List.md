@@ -2,14 +2,14 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-07-05T21:05:00-0600
+date: 2020-07-10T09:18:00-0600
 standalonePage: true
 
 ---
 
 I try to keep this page fairly current; I last updated it on {% localeDate page.date, 'MMMM d, yyyy' %}. A few notes on the way this is organized and presented:
 
-- In the “Completed” section and for previous years, entries appear in the order I finished the books.
+- The section for each year includes all the books I read that year (including the current year), in the order I finished the books.
 - Previous years only include books from years where I actually know what I read!
 - Books are marked “(new)” if this was the first time I read them, or “(reread)” otherwise.
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
@@ -43,8 +43,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
 - [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)—discussed on Winning Slowly [8.10](https://winningslowly.org/8.10/) and [8.11](https://winningslowly.org/8.11/)
-- <cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>, Ashley Hales (new)
-- <cite>The Real World of Technology</cite>, Ursula Franklin (new)
+- [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
+- [<cite>The Real World of Technology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Real-World-of-Technology-Dr-Ursula-M-Franklin-PH-D%2Fbook%2F5575099), Ursula Franklin (new)
+- [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)
 
 ## 2020
 
