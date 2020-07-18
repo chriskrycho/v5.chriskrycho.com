@@ -1,6 +1,7 @@
 ---
 title: Good Theologians
-date: 2020-07-19T07:05:00-0600
+date: 2020-07-18T07:05:00-0600
+updated: 2020-07-18T07:43:00-0600
 summary: >
     John Webster: “Fostering the practice of Christian theology will involve the cultivation of persons with specific habits of mind and soul.…”
 qualifiers:
