@@ -13,7 +13,7 @@ tags:
     - Finding Holy in the Suburbs
     - reading notes
 summary: >
-    ”In what they center and in what they hide, all places tell stories through their geography, architecture, and city planning.”
+    Ashley Hales: ”In what they center and in what they hide, all places tell stories through their geography, architecture, and city planning.”
 
 ---
 
