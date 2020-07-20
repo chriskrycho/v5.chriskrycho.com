@@ -125,13 +125,24 @@
       }
    }
 
+   .quotation {
+      width: 100%;
+      max-width: var(--max-width);
+
+      figcaption {
+         text-align: right;
+      }
+   }
+
    .book-review {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       width: 100%;
-      max-width: calc(var(--max-width) - 2em);
+      max-width: var(--max-width);
+      padding: 1em;
+      background: var(--aside-bg); // TODO: replace
       margin: {
          top: 1em;
          bottom: ms(3);
