@@ -1,9 +1,9 @@
 ---
 title: Christian astonishment
 date: 2020-07-20T06:45:00-0600
-date: 2020-07-20T06:46:00-0600
+date: 2020-07-20T06:47:00-0600
 summary: >
-    John Webster: “Christian astonishment ts the amazed realization that all human life and thought is undertaken in the presence of Easter, for…”
+    John Webster: “Christian astonishment is the amazed realization that all human life and thought is undertaken in the presence of Easter, for…”
 qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
