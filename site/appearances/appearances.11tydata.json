@@ -1,0 +1,4 @@
+{
+   "layout": "post.njk",
+   "permalink": "/appearances/{{page.fileSlug | slug}}/index.html"
+}

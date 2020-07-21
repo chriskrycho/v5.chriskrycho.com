@@ -79,6 +79,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'essays')
    addCollectionFromDir(config, 'library')
    addCollectionFromDir(config, 'notes')
+   addCollectionFromDir(config, 'appearances')
 
    config.setLibrary('md', markdown)
 
