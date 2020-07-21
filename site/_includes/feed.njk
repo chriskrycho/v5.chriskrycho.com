@@ -19,7 +19,7 @@
    <link href='{{config.url}}' />
    <link href='{{page.url | absoluteUrl(config.url)}}' rel='self'/>
    <subtitle>{{config.description}}</subtitle>
-   <rights>{% copyright build.date | striptags %}</rights>
+   <rights>{% copyright build.date | striptags(true) %}</rights>
    <updated>{{build.date | isoDate}}</updated>
    <generator>Eleventy Atom Plugin by Chris Krycho</generator>
    <icon>https://v5.chriskrycho.com/assets/images/favicon.png</icon>
