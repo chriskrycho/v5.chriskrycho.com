@@ -12,13 +12,14 @@
       {%- endif -%}
    {%- endset -%}
    <id>{{url}}</id>
-   <title type="html">
+   {%- set entryTitle -%}
       {%- if item.data.title -%}
-         [{{item.inputPath | toCollection}}] {{item.data.title}}
+         {{item.data.title}}
       {%- else -%}
-         [{{item.inputPath | toCollection}}] {% localeDate item.date, 'yyyy.MM.dd.HHmm' %}
+         {% localeDate item.date, 'yyyy.MM.dd.HHmm' %}
       {%- endif -%}
-   </title>
+   {%- endset -%}
+   <title type="html">[{{item.inputPath | toCollection}}] {{entryTitle}}</title>
    {% if item.data.updated -%}
    <updated>{{item.data.updated | isoDate}}</updated>
    <published>{{item.date | isoDate}}</published>
@@ -52,10 +53,10 @@
          {% set book = item.data.book %}
          &lt;p&gt;
             {%- if book.cover -%}
-            &lt;img src="{{book.cover}}" alt="cover art for {{book.title}}" /&gt;
+            &lt;img src=&quot;{{book.cover}}&quot; alt=&quot;cover art for {{book.title}}&quot; /&gt;
             {%- endif -%}
             {% if book.link %}
-            &lt;a href="{{book.link}}" rel="nofollow"&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
+            &lt;a href=&quot;{{book.link}}&quot; rel=&quot;nofollow&quot;&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
             {% else %}
             &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
             {% endif %}
@@ -65,6 +66,8 @@
          &lt;/p&gt;
       {% endif %}
       {{item.templateContent}}
+      &lt;hr/&gt;
+      &lt;p&gt;&lt;a href=&quot;mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}&quot;&gt;Reply via email!&lt;/a&gt;&lt;/p&gt;
    </content>
    {% include 'blocks/rss-author.njk' %}
    {#- <comments>TODO: Webmention!</comments> #}

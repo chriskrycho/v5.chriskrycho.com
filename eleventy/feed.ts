@@ -10,6 +10,7 @@ import isoDate from './iso-date'
 import siteTitle from './site-title'
 import toCollection from './to-collection'
 import markdown from './markdown'
+import localeDate from './locale-date'
 
 type BuildInfo = typeof import('../site/_data/build')
 type SiteConfig = typeof import('../site/_data/config')
@@ -105,7 +106,11 @@ function describe(book: Book): string {
    return `${bookInfo}\n${review}`
 }
 
-function contentHtmlFor(item: Item): string {
+function entryTitleFor(item: Item): string {
+   return item.data?.title ?? localeDate(item.date, 'yyyy.MM.dd.HHmm')
+}
+
+function contentHtmlFor(item: Item, config: SiteConfig): string {
    const subtitle =
       typeof item.data?.subtitle === 'string'
          ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
@@ -128,7 +133,11 @@ function contentHtmlFor(item: Item): string {
    const book = item.data?.book
    const bookInfo = isBook(book) ? describe(book) : ''
 
-   return subtitle + audience + epistemicStatus + bookInfo + item.templateContent
+   const replySubject = encodeURIComponent(entryTitleFor(item))
+   const replyUrl = `mailto:${config.author.email}?subject=${replySubject}`
+   const reply = `<hr/><p><a href="${replyUrl}">Reply via email!</a></p>`
+
+   return subtitle + audience + epistemicStatus + bookInfo + item.templateContent + reply
 }
 
 function titleFor(item: Item): string | undefined {
@@ -155,7 +164,7 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | n
            title: titleFor(item),
            url: absoluteUrl(item.url, config.url),
            date_published: isoDate(item.date),
-           content_html: contentHtmlFor(item),
+           content_html: contentHtmlFor(item, config),
            summary: summaryFor(item),
            date_modified:
               typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
