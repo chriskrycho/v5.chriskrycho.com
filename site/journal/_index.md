@@ -7,4 +7,5 @@ subscribe:
     atom: "/journal/feed.xml"
     json: "/journal/feed.json"
 standalonePage: true
+
 ---

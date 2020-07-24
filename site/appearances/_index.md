@@ -1,7 +1,11 @@
 ---
 title: Appearances
 subtitle: My speaking, writing, podcasting, and more… <em>elsewhere</em>.
-templateEngineOverride: 'njk'
----
+permalink: /appearances/
+layout: archives.njk
+subscribe:
+    atom: "/appearances/feed.xml"
+    json: "/appearances/feed.json"
+standalonePage: true
 
-{%- include 'blocks/wip.njk' -%}
+---
