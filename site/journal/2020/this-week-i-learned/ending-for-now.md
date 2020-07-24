@@ -2,8 +2,9 @@
 title: On Ending “This Week I Learned”
 subtitle: At least for now, I don’t have time for this particular bit of blogging. And that’s okay.
 date: 2020-07-24T15:20:00-0600
+updated: 2020-07-24T15:21:00-0600
 summary: >
-    TODO
+    Officially stopping (and explaining why I stopped) my “This Week I Learned” entries.
 qualifiers:
     audience: >
         Anyone else who sometimes struggles with where to put their time (especially in the current travails).
