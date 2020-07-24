@@ -1,8 +1,10 @@
 ---
 title: An anti-culture
+subtitle: What theology must be if it is to be healthy and fruitful as a field.
 date: 2020-07-24T11:40:00-0600
+updated: 2020-07-24T11:42:00-0600
 summary: >
-    John Webster: “…the capacity of Christian theology to sustain lively conversations with what lies outside its culture, as well as to engage in serious self-criticism, is dependent upon…”
+    John Webster and Alan Jacobs on what (perhaps especially public) theology must be if it is to be healthy and fruitful as a field.
 qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
@@ -10,6 +12,7 @@ tags:
     - culture
     - reading notes
     - quotes
+    - Alan Jacobs
 
 ---
 
