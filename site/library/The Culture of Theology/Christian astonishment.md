@@ -12,6 +12,8 @@ tags:
     - culture
     - reading notes
     - quotes
+    - John Webster
+    - The Culture of Theology
 
 ---
 
