@@ -13,13 +13,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns='http://www.w3.org/2005/Atom'>
    {% block feed_info -%}
-   <title>{{title | siteTitle(config) | safe}}</title>
+   <title>{{title | siteTitle(config) | striptags(true) | safe}}</title>
    <id>{{config.url}}</id>
    {% include 'blocks/rss-author.njk' %}
    <link href='{{config.url}}' />
    <link href='{{page.url | absoluteUrl(config.url)}}' rel='self'/>
    <subtitle>{{config.description}}</subtitle>
-   <rights>{% copyright build.date %}</rights>
+   {% set rights %}
+      {% copyright build.date %}
+   {% endset %}
+   <rights>{{ rights | striptags(true) }}</rights>
    <updated>{{build.date | isoDate}}</updated>
    <generator>Eleventy Atom Plugin by Chris Krycho</generator>
    <icon>https://v5.chriskrycho.com/assets/images/favicon.png</icon>
