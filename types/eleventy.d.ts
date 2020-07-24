@@ -327,6 +327,20 @@ export interface Config {
    namespace(withName: string, context: () => void): void
 
    setTemplateFormats(to: EngineName[]): void
+
+   /**
+    * Opts in to a full deep merge when combining the Data Cascade. This will use
+    * something like `lodash.mergewith` to combine Arrays and deep merge Objects, rather
+    * than a simple top-level merge using Object.assign. Read more at [Issue #147][147].
+    * This will likely become the default in an upcoming major version.
+    *
+    * [147]: https://github.com/11ty/eleventy/issues/147
+    *
+    * Note that all data stored in the `pagination` variable is exempted from this
+    * behavior (we don’t want `pagination.items` to be merged together).
+    *
+    * @param to `true` to enable deep merge, `false` (the current default) to opt out.
+    */
    setDataDeepMerge(to: boolean): void
    setWatchJavaScriptDependencies(to: boolean): void
    setBrowserSyncConfig(to: BrowserSyncConfig): void
