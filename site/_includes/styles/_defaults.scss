@@ -102,8 +102,11 @@ code {
 pre {
    background: var(--code-bg);
    color: var(--code-fg);
+   border-left: 2px solid var(--code-border);
+   padding-left: calc(1em - 2px);
 
    code {
+      background-color: transparent;
       display: block;
       overflow-x: auto;
       width: 100%;
@@ -112,16 +115,6 @@ pre {
       line-height: ms(2);
       font-size: ms(-2);
       -webkit-font-smoothing: antialiased;
-   }
-}
-
-.optional {
-   display: none;
-}
-
-@media screen and (max-width: 350px) {
-   .optional {
-      display: block;
    }
 }
 
@@ -137,4 +130,13 @@ kbd {
    line-height: 1.4;
    margin: 0 0.1em;
    padding: 0.1em 0.6em;
+}
+
+img {
+   // Means that even with `max-width` set to some arbitrary value, the image will
+   // never overflow its bounds. Makes it basically responsive right out of the gate.
+   width: 100%;
+
+   // Default to middle-aligning images: works correctly "out of the box" for flex.
+   vertical-align: middle;
 }

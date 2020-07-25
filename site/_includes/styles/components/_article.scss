@@ -1,8 +1,8 @@
-@mixin fancy-block($bg, $fg) {
-   align-self: start;
+@mixin fancy-block($bg, $fg, $b-l-w: 0px, $b-r-w: 0px) {
+   max-width: var(--max-width);
    padding: {
-      left: calc(0.5em * var(--sans-adjust));
-      right: calc(0.5em * var(--sans-adjust));
+      left: calc(var(--side-padding) - #{$b-l-w});
+      right: calc(var(--side-padding) - #{$b-r-w});
    }
    width: 100%;
    color: $fg;
@@ -14,21 +14,11 @@
    padding-bottom: $bottom;
 }
 
-@mixin pull-left($border-color: transparent) {
-   --pull-width: 2px;
-   width: calc(100% + 1em + var(--pull-width));
-   border-left: {
-      style: solid;
-      width: var(--pull-width);
-   }
-   margin: {
-      left: calc(-1 * (calc(0.5em + var(--pull-width))));
-      bottom: ms(0);
-   }
-}
-
 .content-block {
    --max-width: 32rem;
+   --side-border-width: 2px;
+   --side-padding: calc(#{ms(-2)} * var(--sans-adjust));
+
    font-feature-settings: 'liga', 'onum', 'pnum', 'kern';
    padding-bottom: ms(2);
 
@@ -48,10 +38,6 @@
          letter-spacing: 2pt;
          color: var(--aside-marker-fg);
       }
-
-      code {
-         background-color: var(--aside-code-bg);
-      }
    }
 
    aside,
@@ -63,19 +49,12 @@
          size: calc(var(--sans-adjust) * #{ms(0)});
       }
 
-      margin: {
-         left: -3px;
-         bottom: ms(0);
-      }
-
+      margin-bottom: ms(0);
       border-top: 2px solid var(--top-border);
    }
 
    .callout {
-      margin: {
-         left: -3px;
-         bottom: ms(0);
-      }
+      margin-bottom: ms(0);
    }
 
    aside {
@@ -138,15 +117,12 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
+      justify-content: stretch;
       width: 100%;
       max-width: var(--max-width);
       padding: 1em;
       background: var(--aside-bg); // TODO: replace
-      margin: {
-         top: 1em;
-         bottom: ms(3);
-      }
+      margin-bottom: ms(3);
 
       &__cover-link {
          max-width: calc(40vh / 2);
@@ -238,9 +214,11 @@
    }
 
    .footnotes {
-      font-family: var(--sans);
-      font-weight: 300;
-      font-size: ms(-1);
+      font: {
+         family: var(--sans);
+         weight: 300;
+         size: calc(var(--sans-adjust) * #{ms(0)});
+      }
       width: 100%;
       max-width: var(--max-width);
    }
@@ -539,21 +517,17 @@
    }
 
    img {
-      width: 100%;
       margin-bottom: 1rem;
    }
 
    blockquote {
-      --border-width: 3px;
-
       font: {
          family: var(--sans);
          weight: 300;
          size: calc(var(--sans-adjust) * #{ms(0)});
       }
-      @include fancy-block(transparent, inherit);
-      @include pull-left();
-      border-left-color: var(--blockquote-border);
+      @include fancy-block(transparent, inherit, var(--side-border-width));
+      border-left: var(--side-border-width) solid var(--blockquote-border);
 
       padding-top: 1.5px;
    }
@@ -578,10 +552,8 @@
    }
 
    pre {
-      @include fancy-block(var(--code-bg), var(--code-fg));
+      @include fancy-block(var(--code-bg), var(--code-fg), var(--side-border-width));
       @include extra-vertical();
-      @include pull-left();
-      border-left-color: var(--code-border);
 
       margin-bottom: 1em;
    }
@@ -625,33 +597,24 @@
    @media (min-width: 32.6667rem) {
       .content-block {
          --side-padding: calc(#{ms(-1)} * var(--sans-adjust));
-         --full-side-padding: calc(2 * var(--side-padding));
-         --fancy-width: calc(var(--max-width) + var(--full-side-padding));
 
-         blockquote,
-         pre,
          aside,
          .qualifiers,
          .note,
          .callout {
-            max-width: var(--fancy-width);
             align-self: center;
             padding: {
                left: var(--side-padding);
                right: var(--side-padding);
             }
-
-            blockquote,
-            aside,
-            .note,
-            .qualifiers,
-            .callout {
-               max-width: calc(100% - var(--full-side-padding));
-            }
          }
 
-         .article-content h1 {
-            max-width: var(--fancy-width);
+         pre,
+         blockquote {
+            padding: {
+               left: calc(var(--side-padding) - var(--side-border-width));
+               right: var(--side-padding);
+            }
          }
 
          .book-review {
@@ -672,20 +635,7 @@
 
    @media (min-width: $resize) {
       .content-block {
-         --fancy-width: calc(var(--max-width) + 2.5rem);
          --side-padding: calc(#{ms(0)} * var(--sans-adjust));
-
-         .article-content {
-            blockquote,
-            aside,
-            .note {
-               padding-left: ms(0);
-            }
-
-            pre, callout {
-               padding-left: 1.3em;
-            }
-         }
       }
    }
 

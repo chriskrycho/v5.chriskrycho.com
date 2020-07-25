@@ -2,12 +2,6 @@
    width: 100%;
    margin: ms(8) auto;
 
-   img {
-      // Means that even with `max-width` set to some arbitrary value, the image will
-      // never overflow its bounds.
-      width: 100%;
-   }
-
    .date {
       font-family: var(--sans);
       font-weight: 300;
