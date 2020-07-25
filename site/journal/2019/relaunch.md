@@ -3,7 +3,7 @@ title: Relaunch!
 subtitle: >
     A new website design and implementation for 2020 and beyond—with a new title to boot!
 date: 2019-11-17T15:30:00-0700
-updated: 2019-11-18T06:37:00-0700
+updated: 2020-07-25T11:14:00-0700
 tags:
     - writing
     - blogging
