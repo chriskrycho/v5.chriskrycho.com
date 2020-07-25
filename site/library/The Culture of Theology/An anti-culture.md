@@ -2,7 +2,7 @@
 title: An anti-culture
 subtitle: What theology must be if it is to be healthy and fruitful as a field.
 date: 2020-07-24T11:40:00-0600
-updated: 2020-07-24T16:11:00-0600
+updated: 2020-07-24T20:30:00-0600
 summary: >
     John Webster and Alan Jacobs on what (perhaps especially public) theology must be if it is to be healthy and fruitful as a field.
 qualifiers:
@@ -33,4 +33,4 @@ It occurred to me in writing that summary that there is a connection to [Alan Ja
 
 The result is a field largely void of anything unique to say. Neither repetition of libertarian or leftist political platforms nor regurgitation of decades-old fads in literary theory exactly recommend this field as a source for insight or wisdom. Perhaps our public theology would gain more of a hearing if it were captive less to human opinion and more to worship of God. 
 
-[^brad]: I’m obliged to [Brad East’s](http://resident-theologian.blogspot.com/) essay [Public Theology in Retreat](https://lareviewofbooks.org/article/public-theology-in-retreat/), which I reread over the last couple days, for reminding me of Jacobs’ essay!
+[^brad]: I’m obliged to [Brad East’s](http://resident-theologian.blogspot.com/) essay [Public Theology in Retreat](https://lareviewofbooks.org/article/public-theology-in-retreat/), which I reread over the last couple evenings, for reminding me of Jacobs’ essay!
