@@ -4,6 +4,7 @@
       left: calc(var(--side-padding) - #{$b-l-w});
       right: calc(var(--side-padding) - #{$b-r-w});
    }
+   margin-bottom: ms(0);
    width: 100%;
    color: $fg;
    background: $bg;
