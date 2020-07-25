@@ -118,7 +118,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: stretch;
+      justify-content: center;
       width: 100%;
       max-width: var(--max-width);
       padding: 1em;
@@ -620,6 +620,7 @@
 
          .book-review {
             flex-wrap: nowrap;
+            justify-content: stretch;
 
             &__cover-link {
                flex: 0 0 auto;
