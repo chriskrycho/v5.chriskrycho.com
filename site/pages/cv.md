@@ -7,11 +7,14 @@ summary: >
 
 ---
 
-Even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a traditional résumé for me, you can snag it [here][resume]—but if you’d like a better idea of whether we might work well together, I think you’ll find the rest of this page a lot more helpful.
+Even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a better idea of how I work, I think you’ll find the rest of this page a lot more helpful.
 
-(I’m not looking to change jobs at this point—but you’re still welcome to [say hello][email]!)
+:::note
 
-[resume]: https://cdn.chriskrycho.com/file/chriskrycho-com/resume.pdf
+I’m not looking to change jobs at this point—but you’re still welcome to [say hello][email]!
+
+:::
+
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
 
 - [<i>About Me</i>](#about-me)—my philosophy of software development and my slightly unusual educational background, featuring a [Master of Divinity](#masters) and a [Bachelor of Science in Physics](#undergrad)
@@ -47,12 +50,18 @@ Building things the *right way* means I am not interested in slapdash product de
 
 ### Current: LinkedIn
 
+*An effective technical leader in a large and complex engineering organization.*
+
 Since **January 2019**, I have been a **Staff Software Engineer** at [LinkedIn], working as an infrastructure engineer on the flagship web application—one of the largest JavaScript applications in the world.
 
-- I helped plan major architectural improvements now being rolled out across the application, and spearheaded the process of updating the app to the current versions of Ember.js.
-- I contributed to the development of [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
+- I am the tech lead for the adoption of [Ember Octane][octane] across the application. I developed and implemented the adoption plan, and as one of a handful of primary technical experts on the subject matter at LinkedIn am responsible to support teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
+- I led efforts to update the app to the current versions of Ember.js, unblocking adoption of Octane.
+- I helped build, and continue to support, [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
+
+At LinkedIn, I have become comfortable leading large efforts that impact hundreds of engineers and millions of users. And more than in any other job I’ve had, it feels like I’m still just getting started.
 
 [LinkedIn]: https://www.linkedin.com/feed/
+[octane]: https://emberjs.com/editions/octane
 [Volta]: https://volta.sh
 
 ### Earlier Work
@@ -67,22 +76,22 @@ From **January 2016 – January 2019**, I was a front-end-focused software engi
 
 As a **Software Engineer** (January 2016–May 2017), I was a productive individual contributor even while working 30-hour weeks as I completed my M. Div.:
 
-- I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of our mobile web UI.
+- I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of the mobile web UI.
 - I introduced JavaScript type systems to the application (landing on **TypeScript** after an initial experiment with Flow)
-- I helped us achieve **full AA [WCAG] accessibility**.
+- I helped the team achieve **full AA [WCAG] accessibility**.
 
 [WCAG]: https://www.w3.org/TR/WCAG21/
 *[WCAG]: Web Content Accessibility Guidelines 
 
 As a **Senior Software Engineer** (May 2017–January 2019):
 
-- I led a team effort to expand our mobile web UI as a **responsive web UI** to reduce our maintenance burden, improve our overall UX, and decrease the cost of launching new features.
+- I led a team effort to expand the mobile web UI into a **responsive web UI** to reduce our maintenance burden, improve overall UX, and decrease the cost of launching new features.
 
 - I designed a new technical strategy for white-labeling (including the adoption of **CSS Modules**), enabling the business to support more brands by way of better tooling.
 
 - I pioneered Olo's use of **Requests for Comments (<abbr>RFC</abbr>s)**, modeled on the RFC processes from the Rust and Ember communities, as a tool for architecture design and documentation. I began by using <abbr>RFC</abbr>s for several important initiatives in my own team. The success of those initiatives validated <abbr>RFC</abbr>s' utility when I later introduced them to the broader engineering organization. They are now Olo’s standard tool for documenting architectural changes and a prerequisite for all new internal services.
 
-- I finished our app's conversion to a fully strictly-type-checked TypeScript application.
+- I finished the app's conversion to a fully strictly-type-checked TypeScript application.
 
 *[CSS]: cascading style sheets
 *[UX]: user experience
@@ -119,7 +128,7 @@ On the other hand, the project was a *product design failure*. The site is beaut
 
 #### Quest Consultants, Inc.
 
-*Collaborating across disciplines effectively and transitioning to remote work.*
+*Collaborating across disciplines; transitioning to remote work.*
 
 From **May 2012–January 2016**, I worked (first as a full-time employee, then remotely as a half-time consultant) for [**Quest Consultants, Inc.**][quest]. During that time:
 
