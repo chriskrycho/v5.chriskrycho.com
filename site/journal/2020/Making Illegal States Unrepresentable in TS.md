@@ -3,7 +3,7 @@ title: Making Illegal States Unrepresentable—In TypeScript
 subtitle: >
     Showing how Scott Wlaschin’s approach in F^♯^ translates to a language with a very different type system.
 date: 2020-05-25T10:40:00-0600
-updated: 2020-07-25T13:35:00-0600
+updated: 2020-07-25T21:20:00-0600
 qualifiers:
     audience:
         Software engineers who are already persuaded of the value of type systems, and are interested in using them more effectively. (I’m not trying to persuade people that type systems are valuable here!)
@@ -91,7 +91,7 @@ Once you have these, things that take a `string` will not accept `Name` or `Emai
 
 [wlaschin-background]: https://fsharpforfunandprofit.com/posts/designing-with-types-single-case-dus/
 
-Wlaschin’s example goes one step further with `EmailContactInfo` and makes it so that you can’t actually create an invalid email—to handle things like `hello@potato`, which is not a valid email address. We can do that in TypeScript with a *private constructor* and a *static helper method*:
+Wlaschin’s example goes one step further with `EmailContactInfo` and makes it so that you can’t actually create an invalid email—to handle things like `hello@potato`, which is not a valid email address. We can do that in TypeScript with a *private constructor* and some *static helper methods*:
 
 ```ts
 class EmailContactInfo {
@@ -109,7 +109,11 @@ class EmailContactInfo {
 }
 ```
 
-(That’s not an *especially* robust validation of emails, but it’s sufficient for the rest of this example.)
+:::note
+
+That’s not an *especially* robust validation of emails, but it’s sufficient for the rest of this example.
+
+:::
 
 ## Making illegal states unrepresentable
 
@@ -121,15 +125,13 @@ Now we’re ready to actually dig into the meat of the example. Wlaschin suggest
 > 
 > The answer seems obvious – make the addresses optional…
 
-In TypeScript, making the two fields optional would look like this:
+In TypeScript, making the two fields optional would look like this (note the `?` after the two optional fields):
 
-```diff
+```ts
 type Contact = {
   name: Name;
-- emailContactInfo: EmailContactInfo;
-+ emailContactInfo?: EmailContactInfo;
-- postalContactInfo: PostalContactInfo;
-+ postalContactInfo?: PostalContactInfo;
+  emailContactInfo?: EmailContactInfo;
+  postalContactInfo?: PostalContactInfo;
 };
 ```
 
