@@ -3,6 +3,7 @@ title: Follow-Up on Command-Line Finding and Filtering
 subtitle: >
     A simpler solution that doesn’t require <code>tr</code>… if you have GNU utils or other alternatives.
 date: 2020-05-04T09:15:00-0600
+updated: 2020-07-26T12:05:00-0600
 summary: >
     You can use a variant flag with GNU grep and ripgrep to filter with null characters.
 tags:
@@ -38,7 +39,7 @@ Huzzah for versions of tools that understand these things and make this simpler 
 
 
 
-[^cw]: `cw` is nice because with especially large sets of data, the fact that you can invoke across threads becomes very handy. If I word-count *all* of my notes with it (currently 667 files and just shy of 150,000 words), using 4 threads instead of 1 (the default, and all you get with `wc`) takes about 6–8 milliseconds off the run time. Not important at *this* scale… but it can be if you’re dealing with very large amounts of data, it might be.
+[^cw]: `cw` is nice because with especially large sets of data, the fact that you can invoke across threads becomes very handy. If I word-count *all* of my notes with it (currently 667 files and just shy of 150,000 words), using 4 threads instead of 1 (the default, and all you get with `wc`) takes about 6–8 milliseconds off the run time. Not important at *this* scale… but if you’re dealing with *very* large amounts of data, it might be.
 
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [fd]: https://github.com/sharkdp/fd
