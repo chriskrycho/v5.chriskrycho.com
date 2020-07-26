@@ -11,7 +11,7 @@ qualifiers:
     audience: other writers and thinkers-aloud with long-running public projects, or fans and followers of the same.
 summary: Reflections prompted by Michael Sacasas’ wrapping up a decade of blogging. Ending projects on the internet is harder—but no less good when done well.
 date: 2019-12-13T19:20:00-0600
-updated: 2019-12-15T19:41:00-0600
+updated: 2020-07-26T12:20:00-0600
 
 ---
 
@@ -25,7 +25,7 @@ When a thing is done, though, it’s *done*. Recognizing as much is an act of pa
 
 What is more: the end of one project does not mean the end of *all* projects. Sacasas continues to write, and on many of the same themes, but now in [his newsletter, “The Convivial Society”][tcs]. This new project is distinct in style and structure and method from his blog. You wouldn’t be wrong to think of it like a sequel—and the best sequels inherit what is good from an earlier work, while charting territory of their own. It is *good* that The Frailest Thing has ended and The Convivial Society goes on.
 
-So it is with all projects. Strange though it is to think it, *this* site will come to an end eventually, one way or another. And even the transitios between the versions of this site have formed edges, demarcations in the history of my public thought. That kind of demarcation makes for a freshness in the novel place—a freshness I feel keenly whenever I begin to write for this new space.
+So it is with all projects. Strange though it is to think it, *this* site will come to an end eventually, one way or another. And even the transitions between the versions of this site have formed edges, demarcations in the history of my public thought. That kind of demarcation makes for a freshness in the novel place—a freshness I feel keenly whenever I begin to write for this new space.
 
 I’m grateful to Sacasas for his example in many ways. This ending is on that list. Here’s to ends of projects and to edges and to new beginnings.
 
