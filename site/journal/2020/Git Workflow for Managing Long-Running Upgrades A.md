@@ -241,12 +241,6 @@ $ git branch --delete --force some-pluto-fix
 $ git branch -D some-pluto-fix
 ```
 
-I can then clean up the other branch I created, as it will have been merged automatically:[^automatic-merging]
-
-```sh
-git branch --delete some-pluto-fix
-```
-
 That’s the whole workflow! From this point forward, I just repeat until the upgrade is done: adding commits that fix bugs onto `pluto` in `new-horizons`, fetching into `new-horizons-alt` and cherry-picking those fixes into their own individual branches, landing them, and rebasing.
 
 [^branch-create]: I'm using the `git branch --create` command introduced in Git 2.23. If using an earlier version of Git, you can use the command `git checkout --branch`, which accomplishes the same thing but was a bit more confusing.
@@ -256,12 +250,6 @@ That’s the whole workflow! From this point forward, I just repeat until the up
 [^origin-master]: I could also do `git rebase master`, but I tend to do a `pull --rebase` against the upstream because I work in fast-moving repositories *and* this way I don’t *have* to keep my local `master` up to date. I can if it’s helpful… but *only* if it’s 
 
 [^rarely]: Rarely, there are times when I hit a thing I can’t fix safely against both `master` and `pluto`. In those cases, I don’t try to cherry-pick it over as described here. I emphasize, though, that this is genuinely *very* rare in most cases.
-
-[^automatic-merging]: At least, in *most* workflows it will have been merged. The workflow in my current job actually creates new commits for merges in a way that Git cannot understand, so I have to *forcibly* delete those branches:
-
-    ```sh
-    $ git branch --delete --force some-pluto-fix
-    ```
 
 ### Efficiency
 
