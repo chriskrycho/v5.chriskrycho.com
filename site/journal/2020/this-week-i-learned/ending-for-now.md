@@ -2,7 +2,7 @@
 title: On Ending “This Week I Learned”
 subtitle: At least for now, I don’t have time for this particular bit of blogging. And that’s okay.
 date: 2020-07-24T15:20:00-0600
-updated: 2020-07-24T15:21:00-0600
+updated: 2020-07-28T07:05:00-0600
 summary: >
     Officially stopping (and explaining why I stopped) my “This Week I Learned” entries.
 qualifiers:
@@ -14,6 +14,7 @@ tags:
     - productivity
     - site meta
     - blogging
+    - writing
     - reading
     - This Week I Learned
 
