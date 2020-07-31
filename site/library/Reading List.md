@@ -29,7 +29,8 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
 - <cite>Technopoly</cite>, Neil Postman (new)
-- <cite>Evolution as Religion</cite>, Mary Midgley (new)
+- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality
+Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky
 
 ## Started
 
@@ -46,6 +47,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
 - [<cite>The Real World of Technology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Real-World-of-Technology-Dr-Ursula-M-Franklin-PH-D%2Fbook%2F5575099), Ursula Franklin (new)
 - [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)
+- [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEvolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley%2Fbook%2F2179950), Mary Midgley (new)
+- [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
 
 ## 2020
 
