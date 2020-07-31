@@ -33,9 +33,9 @@
                      <p class='item-subtitle'>{{item.data.subtitle | inlineMd | safe}}</h2>
                      {%- endif %}
                      {%- if not item.data.title %}
-                     <section class='item-content'>
+                     <article class='item-content article-content'>
                         {{item.templateContent | safe}}
-                     </section>                        
+                     </article>
                      {% endif -%}
                   </li>
                {% endfor -%}

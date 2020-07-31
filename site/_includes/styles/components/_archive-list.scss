@@ -156,7 +156,11 @@
    }
 
    .item-content {
-      margin-top: -0.2em;
+      margin: {
+         top: -0.2em;
+         left: 0;
+         right: 0;
+      }
       font-size: ms(-1);
       line-height: var(--min-line-height);
       max-width: 32em;
@@ -202,6 +206,6 @@
 
       .day {
          gap: 0 0.5rem;
-      }   
+      }
    }
 }
