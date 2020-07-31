@@ -2,7 +2,7 @@
 title: An anti-culture
 subtitle: What theology must be if it is to be healthy and fruitful as a field.
 date: 2020-07-24T11:40:00-0600
-updated: 2020-07-24T20:30:00-0600
+updated: 2020-07-31T15:00:00-0600
 summary: >
     John Webster and Alan Jacobs on what (perhaps especially public) theology must be if it is to be healthy and fruitful as a field.
 qualifiers:
@@ -14,8 +14,6 @@ tags:
     - quotes
     - Alan Jacobs
     - theology
-    - John Webster
-    - The Culture of Theology
 
 ---
 
