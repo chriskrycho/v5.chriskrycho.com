@@ -6,7 +6,7 @@ module.exports = {
       stylized: 'Sym·poly·mathesy',
    },
    subtitle: 'by Chris Krycho',
-   description: 'Reflections and practice: on faith, art, and technology',
+   description: 'learning in public: on theology, software, politics, art…',
    author: {
       name: 'Chris Krycho',
       email: 'hello@chriskrycho.com',
