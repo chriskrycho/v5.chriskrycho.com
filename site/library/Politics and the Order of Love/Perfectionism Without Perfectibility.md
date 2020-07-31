@@ -1,6 +1,7 @@
 ---
 title: Perfectionism Without Perfectibility
 date: 2020-07-31T14:45:00-0600
+updated: 2020-07-31T16:27:00-0600
 tags:
     - politics
     - theology
@@ -12,7 +13,7 @@ tags:
 
 <figure class="quotation">
 
-> Augustinian Christians, according to their own theological lights, should establish political friendships necessary to sustain liberal democracy threatened by entrenched elite interests. They should offer more than their conventional contribution to liberal politics: a demythologized notion of original sin as a basis for anti-utopian foreign and domestic policy. [hey should offer a vision of citizenship open to social transformation by attending to virtue. More philosophically, I argue that an Augustinian ethics of citizenship can be *perfectionist* without trading in sentimentalism, Pelagian notions of achieved *perfectibility*, or elitist conceptions of undemocratic politics.
+> Augustinian Christians, according to their own theological lights, should establish political friendships necessary to sustain liberal democracy threatened by entrenched elite interests. They should offer more than their conventional contribution to liberal politics: a demythologized notion of original sin as a basis for anti-utopian foreign and domestic policy. They should offer a vision of citizenship open to social transformation by attending to virtue. More philosophically, I argue that an Augustinian ethics of citizenship can be *perfectionist* without trading in sentimentalism, Pelagian notions of achieved *perfectibility*, or elitist conceptions of undemocratic politics.
 
 <figcaption>—{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, p. 9</figcaption>
 
