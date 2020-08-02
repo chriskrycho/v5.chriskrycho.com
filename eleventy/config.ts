@@ -1,6 +1,6 @@
-import { Config, Item, UserConfig } from '../types/eleventy'
+import { Config, Item, UserConfig, Collection } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
-import archiveByYear from './archive-by-year'
+import archiveByYear, { byDate, Order } from './archive-by-year'
 import copyright from './copyright'
 import currentPage from './current-page'
 import toDateTime, { canParseDate } from './date-time'
@@ -29,6 +29,25 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
    config.addCollection(name, collections =>
       collections.getAll().filter(collection => collection.inputPath.includes(path)),
    )
+}
+
+const isNotVoid = <A>(a: A | null | undefined): a is A => a != null
+
+const firstInCollectionNamed = (collectionName: string) => (item: Item): boolean =>
+   item.data?.collections[collectionName]?.includes(item) ?? false
+
+function latest(collection: Collection): Item[] {
+   const all = excludingStandalonePages(collection.getAll()).sort(byDate(Order.NewFirst))
+
+   return [
+      all.find(firstInCollectionNamed('essays')),
+      all.find(firstInCollectionNamed('journal')),
+      all.find(firstInCollectionNamed('notes')),
+      all.find(firstInCollectionNamed('library')),
+      all.find(firstInCollectionNamed('appearances')),
+   ]
+      .filter(isNotVoid)
+      .sort(byDate(Order.NewFirst))
 }
 
 function config(config: Config): UserConfig {
@@ -80,6 +99,8 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library')
    addCollectionFromDir(config, 'notes')
    addCollectionFromDir(config, 'appearances')
+
+   config.addCollection('latest', latest)
 
    config.setLibrary('md', markdown)
 

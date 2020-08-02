@@ -1,7 +1,11 @@
 {% macro header(type, title, subtitle, subscribe) %}
 {% if title %}
 <header class='item-header {{type}}'>
+   {% if type == 'index' %}
+   <h2 class='item-title'>{{title | inlineMd | safe}}</h2>
+   {% else %}
    <h1 class='item-title'>{{title | inlineMd | safe}}</h1>
+   {% endif %}
    {% if subtitle -%}
       <p class='item-subtitle'>
          {{subtitle | inlineMd | safe}}
@@ -15,7 +19,7 @@
          {% endif %}
       </p>
    {%- endif %}
-</header>   
+</header>
 {% endif %}
 {% endmacro %}
 

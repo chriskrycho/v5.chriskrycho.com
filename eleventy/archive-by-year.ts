@@ -19,7 +19,7 @@ export interface Day {
 
 type Archive = Year[]
 
-const enum Order {
+export const enum Order {
    OldFirst = 'OLD_FIRST',
    NewFirst = 'NEW_FIRST',
 }
@@ -34,7 +34,7 @@ type DayMap = Map<number, Item[]>
 type MonthMap = Map<number, [string, DayMap]>
 type YearMap = Map<number, [string, MonthMap]>
 
-const byDate = (order: Order) => (a: Item, b: Item): number => {
+export const byDate = (order: Order) => (a: Item, b: Item): number => {
    if (canParseDate(a.date) && canParseDate(b.date)) {
       const aDate = fromDateOrString(a.date).toSeconds()
       const bDate = fromDateOrString(b.date).toSeconds()
