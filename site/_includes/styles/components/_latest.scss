@@ -1,36 +1,28 @@
-.archive-list {
+.latest-list {
    width: 100%;
-   margin: ms(8) auto;
+   margin: ms(1) auto;
 
-   .date {
-      font-family: var(--sans);
-      font-weight: 300;
-      text-transform: uppercase;
-      font-size: ms(-1);
-      font-variant-numeric: lining-nums tabular-nums;
-      line-height: calc(var(--sans-adjust) * 1.1);
-   }
-
-   .year {
-      &:not(:last-child) {
-         margin-bottom: ms(9);
-      }
-   }
-
-   .year-info {
+   .latest-heading {
       width: 100%;
       margin: 0 auto;
       display: grid;
       grid-template:
-         ". year ." auto / minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
+         ". latest ." auto / minmax(6rem, 1fr) minmax(min-content, 32rem) 1fr;
    }
 
-   .year-title {
-      grid-area: year;
+   .latest-title {
+      grid-area: latest;
       display: block;
       font-weight: bold;
       line-height: 1;
       font-size: calc(var(--sans-adjust) * #{ms(0)});
+
+      font-family: var(--sans);
+      text-transform: uppercase;
+      font-size: calc(#{ms(-1)} * var(--sans-adjust));
+      font-variant-numeric: lining-nums tabular-nums;
+      line-height: calc(var(--sans-adjust) * 1.1);
+      color: var(--h2-fg);
 
       &::after {
          --padding: #{ms(-2)};
@@ -44,17 +36,17 @@
       }
    }
 
-   .month {
+   .latest-entry {
       width: 100%;
       margin: {
          left: auto;
          right: auto;
-         bottom: ms(7)
+         bottom: ms(1)
       }
       list-style-type: none;
       display: grid;
       grid-template:
-         "title entries ." auto / 1fr minmax(min-content, 36rem) 1fr;
+         "collection entry ." auto / minmax(5rem, 1fr) minmax(min-content, 32rem) 1fr;
       gap: 0 1rem;
       justify-content: stretch;
       justify-items: stretch;
@@ -64,60 +56,45 @@
       }
    }
 
-   .month-title {
-      grid-area: title;
+   .entry-collection {
+      grid-area: collection;
       justify-self: end;
       text-align: right;
       display: inline-block;
       text-align: right;
       letter-spacing: 1px;
-      margin-bottom: ms(-6);
-      width: 4rem;
-   }
-
-   .month-items {
-      grid-area: entries;
-   }
-
-   .day {
-      display: grid;
-      grid-template: "day entries" auto / 1rem minmax(8em, 1fr);
-      gap: 0 1rem;
-      margin: 0 0 ms(1);
-      width: 100%;
-
-      &:last-child {
-         margin: 0;
+      margin: {
+         top: ms(-1) - ms(-2);
+         bottom: ms(-6);
       }
-   }
-
-   .day-title {
-      grid-area: day;
-   }
-
-   .year-title, .month-title, .day-title {
+      width: 100%;
+      font-family: var(--sans);
+      text-transform: uppercase;
+      font-size: calc(#{ms(-2)} * var(--sans-adjust));
+      font-variant-numeric: lining-nums tabular-nums;
+      line-height: calc(var(--sans-adjust) * 1.1);
       color: var(--h2-fg);
    }
 
-   .day-items {
-      grid-area: entries;
+   .entry-content {
+      grid-area: entry;
+      margin: {
+         left: 0;
+         right: 0;
+      }
+      font-size: ms(-1);
+      line-height: var(--min-line-height);
+      max-width: 32em;
    }
 
-   .item {
-      margin: 0 0 ms(1);
-      width: 100%;
-   }
-
-   .item:last-child {
-      margin-bottom: 0;
-   }
-
-   .item-title {
+   .entry-title {
       font: {
          family: var(--sans-subhead);
          weight: 400;
       }
       margin-bottom: ms(-8);
+      font-size: calc(#{ms(-1)} * var(--sans-adjust));
+      line-height: calc(var(--sans-adjust) * 1.1);
 
       &__text {
          size: calc(var(--sans-adjust) * #{ms(0)});
@@ -134,7 +111,7 @@
       }
    }
 
-   .item-permalink {
+   .entry-permalink {
       font-family: var(--sans);
 
       -moz-text-decoration-color: transparent;
@@ -149,18 +126,7 @@
       }
    }
 
-   .item-content {
-      margin: {
-         top: -0.2em;
-         left: 0;
-         right: 0;
-      }
-      font-size: ms(-1);
-      line-height: var(--min-line-height);
-      max-width: 32em;
-   }
-
-   .item-subtitle {
+   .entry-subtitle {
       line-height: 1.1;
       font-size: ms(-1);
       font-style: italic;
@@ -172,27 +138,19 @@
    }
 }
 
-.for-callout + .archive-list {
-   margin-top: ms(1);
-}
-
 @media screen and (max-width: $break-2) {
    .archive-list {
-      .year-info {
+      .latest-heading {
          grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(4rem, 1fr);
       }
 
-      .month {
+      .latest-entry {
          gap: 0.5rem;
          grid-template-columns: 1fr minmax(min-content, 34rem) 1fr;
       }
 
-      .month-title {
-         width: 2rem;
-      }
-
-      .day {
-         gap: 0 0.5rem;
+      .entry-collection {
+         width: 5rem;
       }
    }
 }

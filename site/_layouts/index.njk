@@ -18,59 +18,49 @@ standalonePage: true
 </article>
 
 <section class='content-block'>
-   {# NOTE: bad reuse of classes and layout, but works for a start point! #}
-   <ul class='archive-list'>
-      <li class='year'>
-         <div class='year-info'>
-            <h2 class='year-title date'>The Latest</h2>
-         </div>
-         <ul class='year-items'>
-            <li class='month'>
-               <h3 class='month-title date'>
-                  <i>in</i>
-               </h3>
-               <ul class='month-items'>
-                  {% for item in collections.latest -%}
-                     <li class='day'>
-                        <h4 class='day-title date'>
-                           {%- set collection = item.inputPath | toCollection -%}
-                           <a href="/{{collection}}/">{{collection | upper}}</a>
-                        </h4>
-                        <ul class='day-items'>
-                           <li class='item'>
-                              <h5 class='item-title'>
-                                 {% set formattedDate %}
-                                 {% localeDate item.date, 'MMMM d, yyyy' %}
-                                 {% endset %}
-                                 <a href='{{item.url}}' class='item-permalink' title='item permalink'>
-                                 {%- if item.data.title -%}
-                                    <span class='item-title__text'>
-                                       {{-item.data.title | inlineMd | safe-}}
-                                    </span>
-                                 {%- else -%}
-                                    <span class='date item-title__date'>{{formattedDate}}</span> ⚓︎
-                                 {%- endif -%}
-                                 </a>
-                                 {%- if item.data.title -%}
-                                 ({{-formattedDate-}})
-                                 {%- endif -%}
-                              </h5>
-                              {% if item.data.subtitle -%}
-                              <p class='item-subtitle'>{{item.data.subtitle | inlineMd | safe}}</h2>
-                              {%- endif %}
-                              {%- if not item.data.title %}
-                              <article class='item-content article-content'>
-                                 {{item.templateContent | safe}}
-                              </article>
-                              {% endif -%}
-                           </li>
-                        </ul>
-                     </li>
-                  {%- endfor %}
-               </ul>
-            </li>
-         </ul>
-      </li>
-   </ul>
+   <div class='latest-list'>
+      <div class='latest-heading'>
+         <h2 class='latest-title heading'>The Latest</h2>
+      </div>
+      <ul class='latest-entries'>
+         {% for item in collections.latest -%}
+         <li class='latest-entry'>
+            <h3 class='entry-collection heading'>
+               {%- set collection = item.inputPath | toCollection -%}
+               <a href="/{{collection}}/">{{collection | upper}}</a>
+            </h3>
+            <article class='entry-content'>
+               <h4 class='entry-title'>
+                  {% set formattedDate -%}
+                     {%- localeDate item.date, 'MMMM d, yyyy' -%}
+                  {%- endset %}
+                  <a href='{{item.url}}' class='entry-permalink' title='item permalink'>
+                  {%- if item.data.title -%}
+                     <span class='entry-title__text'>
+                        {{-item.data.title | inlineMd | safe-}}
+                     </span>
+                  {%- else -%}
+                     <span class='date entry-title__date'>{{formattedDate}}</span> ⚓︎
+                  {%- endif -%}
+                  </a>
+                  {%- if item.data.title %}
+                  ({{-formattedDate-}})
+                  {% endif -%}
+               </h4>
+
+               {% if item.data.subtitle -%}
+               <p class='entry-subtitle'>{{item.data.subtitle | inlineMd | safe}}</p>
+               {%- endif %}
+
+               {%- if not item.data.title %}
+               <section class='entry-content article-content'>
+                  {{item.templateContent | safe}}
+               </section>
+               {% endif -%}
+            </article>
+         </li>
+         {%- endfor %}
+      </ul>
+   </div>
 </section>
 {%- endblock main -%}
