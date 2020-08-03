@@ -12,6 +12,7 @@
    }
 
    .year {
+      position: relative;
       &:not(:last-child) {
          margin-bottom: ms(9);
       }
@@ -23,6 +24,11 @@
       display: grid;
       grid-template:
          ". year ." auto / minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
+      background-color: var(--bg);
+
+      position: sticky;
+      top: 0;
+      padding-top: 0.5em;
    }
 
    .year-title {
@@ -64,6 +70,11 @@
       }
    }
 
+   .month-sticky {
+      position: sticky;
+      top: 3.25em;
+   }
+
    .month-title {
       grid-area: title;
       justify-self: end;
@@ -85,6 +96,7 @@
       gap: 0 1rem;
       margin: 0 0 ms(1);
       width: 100%;
+      position: relative;
 
       &:last-child {
          margin: 0;
@@ -93,6 +105,8 @@
 
    .day-title {
       grid-area: day;
+      position: sticky;
+      top: 0.5em;
    }
 
    .year-title, .month-title, .day-title {

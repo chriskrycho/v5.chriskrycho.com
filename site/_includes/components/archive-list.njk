@@ -2,13 +2,13 @@
 <ul class='archive-list'>
 {%- for year in collection %}
 <li class='year'>
-   <div class='year-info'>
+   <div class='year-info sticky'>
       <h2 class='year-title date'>{{year.name}}</h2>
    </div>
    <ul class='year-items'>
    {%- for month in year.months %}
       <li class='month'>
-         <h3 class='month-title date'>{{month.name}}</h3>
+         <h3 class='month-title date'><span class='month-sticky'>{{month.name}}</span></h3>
          <ul class='month-items'>
          {%- for day in month.days %}
             <li class='day'>
