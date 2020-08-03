@@ -90,6 +90,7 @@ function config(config: Config): UserConfig {
    config.addPassthroughCopy('site/admin')
    config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
+   config.addPassthroughCopy('site/styles')
 
    config.addCollection('pages', collection =>
       collection.getAll().filter(item => item.data?.standalonePage),

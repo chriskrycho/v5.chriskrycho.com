@@ -2,6 +2,7 @@ public
 .DS_Store
 
 site/_includes/styles/*.css
+site/styles/*.css
 
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node

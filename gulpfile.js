@@ -10,7 +10,7 @@ const build = file => () =>
             sourceMap: true,
          }).on('error', sass.logError),
       )
-      .pipe(dest('./site/_includes/styles'))
+      .pipe(dest('./site/styles'))
 
 function style() {
    return build('./site/_includes/styles/style.scss')()
