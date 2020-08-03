@@ -17,6 +17,7 @@
          size: calc(var(--sans-adjust) * #{ms(3)});
       }
       color: var(--h1-fg);
+      position: relative;
    }
 
    .item-subtitle {
@@ -41,4 +42,11 @@
          letter-spacing: 1px;
       }
    }
+}
+
+.item-title-arrow {
+   transform: rotate(150deg);
+   display: inline-block;
+   top: -0.2em;
+   position: relative;
 }

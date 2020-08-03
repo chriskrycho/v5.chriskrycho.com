@@ -17,13 +17,32 @@
                {%- for item in day.items %}
                   <li class='item'>
                      <h5 class='item-title'>
-                        <a href='{{item.url}}' class='item-permalink' title='item permalink'>
+                        {% set url %}
+                           {% if item.data.link %}
+                              {{item.data.link}}
+                           {% else %}
+                              {{item.url}}
+                           {% endif %}
+                        {% endset %}
+                        {% set linkTitle %}
+                           {% if item.data.link %}
+                              direct link to item
+                           {% else %}
+                              item permalink
+                           {% endif %}
+                        {% endset %}
+
+                        <a href='{{url}}' class='item-permalink' title='{{linkTitle}}'>
                         {%- if item.data.title -%}
                            <span class='item-title__text'>{{-item.data.title | inlineMd | safe-}}</span>
+                           {%- if item.data.link %}<span class='item-title-arrow'>↩︎</span>{% endif -%}
                         {%- else -%}
-                           <span class='date item-title__date'>{% localeDate item.date, 'HH:mm' %}</span> ⚓︎
+                           <span class='date item-title__date'>{% localeDate item.date, 'HH:mm' %}</span> ❈
                         {%- endif -%}
                         </a>
+                        {%- if item.data.link -%}
+                           —<a href='{{item.url}}' title='item permalink'>❈</a>
+                        {%- endif -%}
                         {%- if idByCollection %}
                            {%- set collection = item.inputPath | toCollection -%}
                            <span class='item-title__collection'>—<a href="/{{collection}}/">{{collection | upper}}</a></span>

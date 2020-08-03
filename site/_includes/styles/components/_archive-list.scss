@@ -118,6 +118,7 @@
          weight: 400;
       }
       margin-bottom: ms(-8);
+      position: relative;
 
       &__text {
          size: calc(var(--sans-adjust) * #{ms(0)});

@@ -30,19 +30,38 @@ standalonePage: true
                <a href="/{{collection}}/">{{collection | upper}}</a>
             </h3>
             <article class='entry-content'>
+               {% set url %}
+                  {% if item.data.link %}
+                     {{item.data.link}}
+                  {% else %}
+                     {{item.url}}
+                  {% endif %}
+               {% endset %}
+               {% set linkTitle %}
+                  {% if item.data.link %}
+                     direct link to item
+                  {% else %}
+                     item permalink
+                  {% endif %}
+               {% endset %}
+
                <h4 class='entry-title'>
                   {% set formattedDate -%}
                      {%- localeDate item.date, 'MMMM d, yyyy' -%}
                   {%- endset %}
-                  <a href='{{item.url}}' class='entry-permalink' title='item permalink'>
+                  <a href='{{url}}' class='entry-permalink' title='{{linkTitle}}'>
                   {%- if item.data.title -%}
                      <span class='entry-title__text'>
                         {{-item.data.title | inlineMd | safe-}}
                      </span>
+                     {%- if item.data.link %}<span class='item-title-arrow'>↩︎</span>{% endif -%}
                   {%- else -%}
-                     <span class='date entry-title__date'>{{formattedDate}}</span> ⚓︎
+                     <span class='date entry-title__date'>{{formattedDate}}</span> ❈
                   {%- endif -%}
                   </a>
+                  {%- if item.data.link -%}
+                     —<a href='{{item.url}}' title='item permalink'>❈</a>
+                  {%- endif -%}
                   {%- if item.data.title %}
                   ({{-formattedDate-}})
                   {% endif -%}
