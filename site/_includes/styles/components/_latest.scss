@@ -64,7 +64,7 @@
       text-align: right;
       letter-spacing: 1px;
       margin: {
-         top: calc(#{ms(-1) - ms(-2)} / var(--sans-adjust));
+         top: 0.1em; // eyeballed
          bottom: ms(-6);
       }
       width: 100%;
