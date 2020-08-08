@@ -3,11 +3,13 @@ title: the story of modern theology
 summary: >
     John Webster: “…calling into question some modern ideals of responsible intellectual activity may help us to begin work on a task which has so far scarcely been touched, namely telling the story of modern theology from the perspective of the culture of faith.”
 date: 2020-08-08T06:43:00-0600
+updated: 2020-08-08T06:50:00-0600
 tags:
     - thinking
     - culture
     - theology
     - modernism
+    - quotes
 qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
