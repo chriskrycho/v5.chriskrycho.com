@@ -25,7 +25,7 @@ Yesterday’s discussion covered everything you need to know to understand what�
 *[SML]: Standard ML
 *[TS]: TypeScript
 
-### A variation on the theme
+## A variation on the theme
 
 We can make this existing implementation lighter-weight *and* more robustly type-safe by leaning into a set of “fancy” features in TypeScript: const enums,[^1] literal types, tuple types, and union types.
 
@@ -82,13 +82,13 @@ class Veggie {
 
 Let’s break that down, using the differences from our first implementation to explain each of the new concepts we’re covering:
 
-1. Const enums
-2. Tuple types
-3. Literal types
-4. Union types
-5. Putting it together
+1. [Const enums](#const-enums)
+2. [Tuple types](#tuple-types)
+3. [Literal types](#literal-types)
+4. [Union types](#union-types)
+5. [Putting it together](#putting-it-together)
 
-#### 1. Const enums
+### 1. Const enums
 
 A `const enum` declaration works much the same as a normal `enum` declaration in Typescript, but it has one critical difference: normal `enum` declarations have a (surprisingly complicated) compiled output that still exists at runtime, while `const enum`s are compiled out of existence entirely, replaced by the constant value they represent. (By default, that’s a number, though you can give it a string value as well.)
 
@@ -173,15 +173,15 @@ const enum VeggieKind {
 
 The compiled output for *those* is nothing! When we use them later, they’ll just be integers: `0` for `CabbageColor.Red` and `1` for `CabbageColor.Green` and so on.[^3]
 
-#### 2. Tuple types
+### 2. Tuple types
 
-#### 3. Literal types
+### 3. Literal types
 
-#### 4. Union types
+### 4. Union types
 
-#### 5. Putting it together
+### 5. Putting it together
 
-### Something totally different
+## Something totally different
 
 [^1]:	Note: only available when using TS to compile your code! If you’re using Babel to compile and only using TS to type-check, this doesn’t work. Compiling out `const enum` declarations requires having information about more than one file; Babel explicitly only works to transform the syntax of a single file.
 
