@@ -96,9 +96,11 @@ Given this `const enum` declaration and usage—
 
 ```ts
 const enum ConstEnum { A, B }
+
 function useConstEnum(x: ConstEnum) {
   console.log(x);
 }
+
 useConstEnum(ConstEnum.A);
 ```
 
@@ -108,6 +110,7 @@ useConstEnum(ConstEnum.A);
 function useConstEnum(x) {
     console.log(x);
 }
+
 useConstEnum(0 /* A */);
 ```
 
@@ -115,9 +118,11 @@ Here is the exact same code implemented with a plain `enum` instead of a `const 
 
 ```ts
 enum RegularEnum { A, B }
+
 function useRegularEnum(x: RegularEnum) {
   console.log(x);
 }
+
 useRegularEnum(RegularEnum.A);
 ```
 
@@ -129,13 +134,21 @@ var RegularEnum;
     RegularEnum[RegularEnum["A"] = 0] = "A";
     RegularEnum[RegularEnum["B"] = 1] = "B";
 })(RegularEnum || (RegularEnum = {}));
+
 function useRegularEnum(x) {
     console.log(x);
 }
+
 useRegularEnum(RegularEnum.A);
 ```
 
-Notice that there is much more code present at runtime for the plain `enum`. Most obviously, it comes with a declaration of a fancy object type. This is makes it so that you can write `RegularEnum.A` and get out `0` *or* type `RegularEnum[0]` and get out `"A"`.[^2] Second, note that the call `useRegularEnum(RegularEnum.A)` still refers to that fancy object type. Recall that the call looked like this for the `const enum`:
+Notice that there is much more code present at runtime for the plain `enum`. Most obviously, it comes with a declaration of a fancy object type. (This is makes it so that you can write `RegularEnum.A` and get out `0` *or* type `RegularEnum[0]` and get out `"A"`.[^2]) Second, note that the call `useRegularEnum(RegularEnum.A)` still refers to that fancy object type:
+
+```js
+useRegularEnum(RegularEnum.A);
+```
+
+Recall that the compiled call looked like this instead for the `const enum`:
 
 ```js
 useConstEnum(0 /* A */);
