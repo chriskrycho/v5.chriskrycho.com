@@ -1,4 +1,3 @@
-
 ---
 title: >
     Data Constructors, Part 2: Better TypeScript
