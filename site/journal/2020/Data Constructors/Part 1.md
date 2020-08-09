@@ -190,7 +190,7 @@ The private constructor makes it so the only way to create a `Veggie` is using o
 
 This class doesn't actually have any state, or any way to change state! We're using it to capture the constraints of the data structure, and *only* that. I find classes enormously useful for this kind of data modeling, even though I'm not a huge fan of how classes often get used! One neat thing that falls out of this is that there is only ever one instance of `Squash` and one of `Broccoli` anywhere in our system. We can represent having multiple quantities of them by having more than one reference to them in a given array or other data structure, and because the type is stateless, that's totally fine. There will *never* be any bugs from having the same value used in different spots, exactly because it's immutable.
 
-<aside>
+</aside>
 
 Notice that `Veggie.Squash` and `Veggie.Broccoli` are static *values*, and `Veggie.Cabbage` is a static *method*. We can actually bind any of those directly to a value in local scope, though:
 
