@@ -82,11 +82,11 @@ class Veggie {
 
 Let’s break that down, using the differences from our first implementation to explain each of the new concepts we’re covering:
 
-1. [Const enums](#const-enums)
-2. [Tuple types](#tuple-types)
-3. [Literal types](#literal-types)
-4. [Union types](#union-types)
-5. [Putting it together](#putting-it-together)
+1. [Const enums](#1-const-enums)
+2. [Literal types](#2-literal-types)
+3. [Tuple types](#3-tuple-types)
+4. [Union types](#4-union-types)
+5. [Putting it together](#5-putting-it-together)
 
 ### 1. Const enums
 
@@ -114,7 +114,7 @@ function useConstEnum(x) {
 useConstEnum(0 /* A */);
 ```
 
-Here is the exact same code implemented with a plain `enum` instead of a `const enum`:
+Here is the same code implemented with a plain `enum` instead of a `const enum`:
 
 ```ts
 enum RegularEnum { A, B }
@@ -156,7 +156,7 @@ useConstEnum(0 /* A */);
 
 This is how TypeScript gets rid of the runtime object representing a `const enum`—it just substitutes in the concrete values each lookup represents. This means that we can have a *much* lower cost for the enums we’re using for `CabbageColor` and `VeggieKind`. They will ultimately just be integers used inline, which means they will have extremely low memory costs, and using them does not involve an object lookup!
 
-So the initial `*Kind` declarations in the implementation now look like this:
+So the `CabbageColor` and `VeggieKind` declarations in the implementation look like this:
 
 ```ts
 const enum CabbageColor {
@@ -171,13 +171,64 @@ const enum VeggieKind {
 }
 ```
 
-The compiled output for *those* is nothing! When we use them later, they’ll just be integers: `0` for `CabbageColor.Red` and `1` for `CabbageColor.Green` and so on.[^3]
+The compiled output for *those* is nothing at all! When we use them later, they’ll just be compiled into integers: `0` for `CabbageColor.Red` and `1` for `CabbageColor.Green` and so on.[^3]
 
-### 2. Tuple types
+### 2. Literal types
 
-### 3. Literal types
+### 3. Tuple types
+
+TypeScript uses JavaScript arrays to represent *tuples*: structured data similar to objects, but without runtime key/value associations.[^4] JavaScript already uses this pattern in a number of places, including [the `Object.entries` API](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries). The syntax to define a tuple type looks like this:
+
+```ts
+type ThreeTuple = [string, number, boolean];
+```
+
+This is different from the syntax for an array which contains `string`, `number`, and `boolean`:
+
+```ts
+type MixedArrayLiteral = (string | number | boolean)[];
+type MixedArrayGeneric = Array<string | number | boolean>;
+```
+
+When you have a tuple type, the position you index at corresponds to the type in that position in the tuple:
+
+```ts
+let threeTuple: ThreeTuple = ["hi", 12, true];
+
+// These all type check!
+let first: string = threeTuple[0];  // 👍
+let second: number = threeTuple[1]; // 👍
+let third: boolean = threeTuple[2]; // 👍
+
+// These will *not* type-check!
+let firstBad: boolean = threeTuple[0]; // 👎
+let secondBad: string = threeTuple[1]; // 👎
+let thirdBad: number = threeTuple[2];  // 👎
+```
+
+With an array, each of these would have the type `string | number | boolean` and we would have to *check* which it was, using the `typeof` operator.
+
+A tuple has exactly and only the length of the type defined. If we tried to access or set `threeTuple[3]`, it would be a type error—unlike with an array, which has an indefinite length.
+
+We can also combine tuple types with literal types, to specify that only a particular value is allowed:
+
+```ts
+type Hello12 = ["hello", 12];
+
+let allowed: Hello12 = ["hello", 12];  // 👍
+
+let badFirst: Hello12 = ["greetings", 12]; // 👎
+let badSecond: Hello12 = ["hello", 32345]; // 👎
+let badBoth: Hello12 = ["goodbye", 98765]; // 👎
+```
+
+*[API]: application programming interface
 
 ### 4. Union types
+
+The last feature we need to make our better-performing, more type-safe implementation is *union types*.
+
+[^5]
 
 ### 5. Putting it together
 
@@ -188,3 +239,14 @@ The compiled output for *those* is nothing! When we use them later, they’ll ju
 [^2]:	Why this is necessary, I don’t know. I have never found a compelling use case for it!
 
 [^3]:	You might worry about whether this means that you can also substitute `VeggieKind.Broccoli` for `CabbageColor.Red`, since they’d both just have the value `0` at runtime. The answer is *no*: unlike most places in TypeScript, where the ultimate “shape” is the only thing which matters, enums are treated as distinct types based on their *name*. You can see this distinction in practice in [this playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBApmArgWxgeTHGBvGBBAGhgCEYBfAKFElgRRgBUB3EHfI0yigM0TGCgBLcDG4gQACgAeALnSYAlDkq9+QkQCMAhgCdpc5iCXYuYyYYB0eBQG4K2vRjhXbFIA).
+
+[^4]:	I qualify *runtime* key-value associations because TypeScript 4 is introducing the ability to use labels with tuples. As with essentially all TypeScript features—except non-`const` enums!—these have no existence at runtime.
+
+[^5]:	With TypeScript 4.0, we could actually use labeled values for this tuples. The result would be quite expressive while maintaining exactly the semantics we need:
+
+	```TypeScript
+	type VeggieData =
+	  | [kind: Kind.Squash]
+	  | [kind: Kind.Cabbage, color: CabbageColor]
+	  | [kind: Kind.Broccoli]
+	```
