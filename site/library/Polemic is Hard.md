@@ -24,7 +24,7 @@ updated: 2020-08-13T21:34:00-0600
 
 I am both frustrated and bored by Mary Midgley’s <cite>Evolution as a Religion</cite>. Were I not committed to reading it for Winning Slowly[^1] I would put it aside entirely and not return to it.
 
-A curious feature of the book: I agree with Midgley’s specific claims more often than not, and indeed, more often than nearly anything else we’ve read for Winning Slowly this year, I am also more *annoyed* by the book than by anything else we’ve read this year. Why? Because the book is a polemic, and writing a polemic well is hard. Very hard. So hard that I’m actually unable to come up with any purely polemical book I’ve read that I actively liked.[^2]
+A curious feature of the book: I agree with Midgley’s specific claims more often than not (so long as she isn't talking about Christianity—her grasp of the subject is as bad as her interlocutors' grasp of philosophy)—but I am also profoundly *annoyed* by the book.[^correction] Why? Because the book is a polemic, and writing a polemic well is hard. Very hard. So hard that I’m actually unable to come up with any purely polemical book I’ve read that I actively liked.[^2]
 
 Polemic has this primary difficulty about it: it generally has no positive case to state, only a list of grievances lodged against a disliked position, or (more tedious) a disliked person, or (yet more tedious) someone who holds a disliked position, or (most tedious of all) a disliked someone who holds a disliked position. A successful polemic knows what it is about. It gets in, properly disposes of its subject, and moves along. But successful polemics are rare—they seem inevitably to be written by people who are so incensed by the subject of their polemic that they cannot simply have done with the matter.
 
@@ -32,6 +32,8 @@ Thus: Midgley is perfectly justified in the bludgeoning she gives to scientists 
 
 That relentless attack may have felt satisfying to the author, but it turns out to make for an extremely *unsatisfying* book to this reader.
 
-[^1]:	We’ll discuss the book on the upcoming episodes 8.16 and 8.17, in September.
+[^1]: We’ll discuss the book on the upcoming episodes 8.16 and 8.17, in September.
 
-[^2]:	True story: Baptist polemics were a serious part of what led to my becoming a Presbyterian. That’s a true story for another day, though.
+[^correction]: I originally said here that I agreed with this more than most other things we’ve read this year. Then I picked the book back up and realized it wasn’t really true. I agree with much of her *critique* of scientism and evolutionism, but she bludgeons widely. The key point—that even agreement doesn’t make this much bludgeoning palatable—stands.
+
+[^2]: True story: Baptist polemics were a serious part of what led to my becoming a Presbyterian. That’s a true story for another day, though.
