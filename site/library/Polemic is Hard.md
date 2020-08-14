@@ -18,7 +18,7 @@ book:
     link: https://www.alibris.com/Evolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley/book/2179950
     year: 1985, 2002
 date: 2020-08-13T21:30:00-0600
-updated: 2020-08-13T21:46:00-0600
+updated: 2020-08-13T21:58:00-0600
 
 ---
 
@@ -28,7 +28,7 @@ A curious feature of the book: I agree with Midgley’s specific claims more oft
 
 Polemic has this primary difficulty about it: it generally has no positive case to state, only a list of grievances lodged against a disliked position, or (more tedious) a disliked person, or (yet more tedious) someone who holds a disliked position, or (most tedious of all) a disliked someone who holds a disliked position. A successful polemic knows what it is about. It gets in, properly disposes of its subject, and moves along. But successful polemics are rare—they seem inevitably to be written by people who are so incensed by the subject of their polemic that they cannot simply have done with the matter.
 
-Thus: Midgley is perfectly justified in the bludgeoning she gives to scientists who mistake science for an all-encompassing philosophy. That goes especially for those who attribute to evolutionary biology some kind of teleology it not only does not but *cannot* warrant as a bare description of historical biological processes. Scientism is ridiculous nonsense, and anyone who has made any serious effort to understand the basic issues of epistemology and metaphysics involved can see as much. But instead of spending her 160 pages making not only a clear and cogent criticism of the position but also a positive case for some *other* epistemic stance, it seems so far (67 pages in) that Midgley is really only interested in, well, *bludgeoning*.
+Thus: Midgley is perfectly justified in the bludgeoning she gives to scientists who mistake science for an all-encompassing philosophy. That goes especially for those who attribute to evolutionary biology some kind of teleology it not only does not but *cannot* warrant as a bare description of historical biological processes. Scientism is ridiculous nonsense, and anyone who has made any serious effort to understand the basic issues of epistemology and metaphysics involved can see as much. But instead of spending her 191 pages making not only a clear and cogent criticism of the position but also a positive case for some *other* epistemic stance, it seems so far (67 pages in) that Midgley is really only interested in, well, *bludgeoning*.
 
 That relentless attack may have felt satisfying to the author, but it turns out to make for an extremely *unsatisfying* book to this reader.
 
