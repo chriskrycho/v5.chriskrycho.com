@@ -64,7 +64,7 @@
       text-align: right;
       letter-spacing: 1px;
       margin: {
-         top: 0.1em; // eyeballed
+         top: 0.15em; // eyeballed
          bottom: ms(-6);
       }
       width: 100%;
@@ -151,6 +151,7 @@
 
       .entry-collection {
          width: 5rem;
+         margin-top: 0.1em; // eyeballed
       }
    }
 }
