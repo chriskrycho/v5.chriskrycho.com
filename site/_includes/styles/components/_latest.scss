@@ -7,7 +7,7 @@
       margin: 0 auto;
       display: grid;
       grid-template:
-         ". latest ." auto / minmax(6rem, 1fr) minmax(min-content, 32rem) 1fr;
+         ". latest ." auto / minmax(5.5rem, 1fr) minmax(min-content, 32rem) 1fr;
    }
 
    .latest-title {
@@ -47,7 +47,7 @@
       display: grid;
       grid-template:
          "collection entry ." auto / minmax(5rem, 1fr) minmax(min-content, 32rem) 1fr;
-      gap: 0 1rem;
+      gap: 0 0.5rem;
       justify-content: stretch;
       justify-items: stretch;
 
@@ -64,16 +64,24 @@
       text-align: right;
       letter-spacing: 1px;
       margin: {
-         top: 0.15em; // eyeballed
+         top: 0.1rem; // eyeballed
          bottom: ms(-6);
       }
       width: 100%;
       font-family: var(--sans);
       text-transform: uppercase;
-      font-size: calc(#{ms(-2)} * var(--sans-adjust));
+      font-size: calc(#{ms(-3)} * var(--sans-adjust));
       font-variant-numeric: lining-nums tabular-nums;
       line-height: calc(var(--sans-adjust) * 1.1);
       color: var(--h2-fg);
+
+      &::after {
+         content: ':';
+      }
+
+      a {
+         text-decoration-color: transparent;
+      }
    }
 
    .entry-content {
@@ -139,19 +147,14 @@
 }
 
 @media screen and (max-width: $break-2) {
-   .archive-list {
-      .latest-heading {
-         grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(4rem, 1fr);
-      }
-
+   .latest-list {
       .latest-entry {
-         gap: 0.5rem;
          grid-template-columns: 1fr minmax(min-content, 34rem) 1fr;
       }
 
       .entry-collection {
          width: 5rem;
-         margin-top: 0.1em; // eyeballed
+         margin-top: 0.15rem; // eyeballed
       }
    }
 }
