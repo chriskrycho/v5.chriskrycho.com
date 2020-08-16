@@ -80,7 +80,13 @@
       }
 
       a {
+         -moz-text-decoration-color: transparent;
          text-decoration-color: transparent;
+
+         &:hover, &:active {
+            -moz-text-decoration-color: var(--hover-underline);
+            text-decoration-color: var(--hover-underline);
+         }
       }
    }
 
