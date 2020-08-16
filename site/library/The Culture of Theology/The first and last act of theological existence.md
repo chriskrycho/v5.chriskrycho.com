@@ -11,6 +11,7 @@ qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 date: 2020-08-15T21:45:00-0600
+updated: 2020-08-16T12:30:00-0600
 
 ---
 
@@ -18,7 +19,7 @@ date: 2020-08-15T21:45:00-0600
 
 > …it’s crucial at the beginning of exploring what’s involved in the process of cultivating theologians that, in one very important sense, it is an impossibility. We can no more make ourselves or others into theologians than we can raise the dead; indeed, it’s precisely because we cannot raise ourselves from the dead that we cannot make ourselves or others into theologians. The first and last act of theological existence is crying to God: "Be pleased, O God, to deliver me!" (Ps. 70:1). In the intervening space between that first and last act of theological existence, the cultivation of the theologian has its place; but it will only do its task well if it keeps a firm eye on the fact that all the cultivation in the world can never be anything other than an appeal to God for the miracle of mercy.
 
-<figcaption>--{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 132</figcaption>
+<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 132</figcaption>
 
 </figure>
 
