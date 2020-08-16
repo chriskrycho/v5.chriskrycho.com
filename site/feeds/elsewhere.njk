@@ -1,6 +1,6 @@
 ---
-title: Appearances
-permalink: /appearances/feed.xml
+title: Elsewhere
+permalink: /elsewhere/feed.xml
 standalonePage: true
 eleventyExcludeFromCollections: true
 ---
@@ -10,5 +10,5 @@ eleventyExcludeFromCollections: true
 {%- extends 'feed.njk' -%}
 
 {%- block entries -%}
-   {{atom.entries(collections.appearances, config)}}
+   {{atom.entries(collections.elsewhere, config)}}
 {%- endblock -%}

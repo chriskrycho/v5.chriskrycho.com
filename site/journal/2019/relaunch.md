@@ -3,7 +3,7 @@ title: Relaunch!
 subtitle: >
     A new website design and implementation for 2020 and beyond—with a new title to boot!
 date: 2019-11-17T15:30:00-0700
-updated: 2020-07-25T11:14:00-0700
+updated: 2020-08-15T20:38:00-0700
 tags:
     - writing
     - blogging
@@ -72,7 +72,7 @@ The primary mandate for this redesign, then, was to accommodate that variety. I 
 - Information about my podcasting lives at [Podcasts](/podcasts)
 - Photos go under [Photography](/photography)
 - Ongoing projects, series, etc. will be displayed under [Projects](/projects)
-- I have a dedicated page for speaking, being on other podcasts, etc.: [Appearances](/appearances)
+- I have a dedicated page for speaking, being on other podcasts, etc.: [Elsewhere](/elsewhere)
 
 As an orthogonal layer of taxonomy over this, I have *tags*. This means I can still provide ways of sorting through my various subject matter—but overlap is built in. This is an idea I have come to organically by way of my experience with the previous versions of this site, had strongly reinforced by learning about Zettelkasten and reflecting on the design of [rewrite](https://rewrite.software). Even when you *do* have folder-like structures in your projects, you need a way to connect ideas across those. Tags, keywords, topics—call them what you will, you need this tool for structuring the content.
 

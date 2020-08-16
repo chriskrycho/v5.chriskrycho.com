@@ -1,11 +1,11 @@
 ---
-title: Appearances
+title: Elsewhere
 subtitle: My speaking, writing, podcasting, and more… <em>elsewhere</em>.
-permalink: /appearances/
+permalink: /elsewhere/
 layout: archives.njk
 subscribe:
-    atom: "/appearances/feed.xml"
-    json: "/appearances/feed.json"
+    atom: "/elsewhere/feed.xml"
+    json: "/elsewhere/feed.json"
 standalonePage: true
 
 ---

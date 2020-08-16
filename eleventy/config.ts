@@ -44,7 +44,7 @@ function latest(collection: Collection): Item[] {
       all.find(firstInCollectionNamed('journal')),
       all.find(firstInCollectionNamed('notes')),
       all.find(firstInCollectionNamed('library')),
-      all.find(firstInCollectionNamed('appearances')),
+      all.find(firstInCollectionNamed('elsewhere')),
    ]
       .filter(isNotVoid)
       .sort(byDate(Order.NewFirst))
@@ -99,7 +99,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'essays')
    addCollectionFromDir(config, 'library')
    addCollectionFromDir(config, 'notes')
-   addCollectionFromDir(config, 'appearances')
+   addCollectionFromDir(config, 'elsewhere')
 
    config.addCollection('latest', latest)
 
