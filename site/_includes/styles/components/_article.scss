@@ -369,7 +369,7 @@
          weight: 300;
       }
 
-      margin: ms(-4) 0 1.5px;
+      margin: ms(-4) 0 calc(1.5px + #{ms(-4)});
 
       .section-link {
          color: var(--h4-fg);
