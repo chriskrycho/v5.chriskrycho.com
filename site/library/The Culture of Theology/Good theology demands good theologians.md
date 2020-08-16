@@ -13,8 +13,9 @@ tags:
     - holiness
     - reading notes
     - quotes
+    - prayer
 date: 2020-08-16T09:40:00-0600
-updated: 2020-08-16T10:05:00-0600
+updated: 2020-08-16T14:18:00-0600
 
 ---
 

@@ -7,11 +7,12 @@ tags:
     - discipleship
     - quotes
     - reading notes
+    - prayer
 qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 date: 2020-08-15T21:45:00-0600
-updated: 2020-08-16T12:30:00-0600
+updated: 2020-08-16T14:19:00-0600
 
 ---
 
