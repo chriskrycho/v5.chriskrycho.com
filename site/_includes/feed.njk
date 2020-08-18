@@ -9,27 +9,26 @@
 -#}
 
 {%- import 'components/atom.njk' as atom -%}
-
 <?xml version='1.0' encoding='utf-8'?>
 <feed xmlns='http://www.w3.org/2005/Atom'>
-   {% block feed_info -%}
-   <title>{{title | siteTitle(config) | striptags(true) | safe}}</title>
-   <id>{{config.url}}</id>
+   {%- block feed_info -%}
+   <title>{{- title | siteTitle(config) | striptags(true) | safe -}}</title>
+   <id>{{- config.url -}}</id>
    {% include 'blocks/rss-author.njk' %}
-   <link href='{{config.url}}' />
-   <link href='{{page.url | absoluteUrl(config.url)}}' rel='self'/>
-   <subtitle>{{config.description}}</subtitle>
-   {% set rights %}
-      {% copyright build.date %}
-   {% endset %}
-   <rights>{{ rights | striptags(true) }}</rights>
-   <updated>{{build.date | isoDate}}</updated>
+   <link href='{{- config.url -}}' />
+   <link href='{{- page.url | absoluteUrl(config.url) -}}' rel='self'/>
+   <subtitle>{{- config.description -}}</subtitle>
+   {%- set rights -%}
+      {%- copyright build.date -%}
+   {%- endset -%}
+   <rights>{{- rights | striptags(true) -}}</rights>
+   <updated>{{- build.date | isoDate -}}</updated>
    <generator>Eleventy Atom Plugin by Chris Krycho</generator>
    <icon>https://v5.chriskrycho.com/assets/images/favicon.png</icon>
    {#- TODO: logo -#}
    {%- endblock feed_info %}
    {%- block entries -%}
-      {% set items = collections.all | excludingStandalonePages %}
-      {{atom.entries(items, config)}}
-   {% endblock entries -%}
+      {%- set items = collections.all | excludingStandalonePages -%}
+      {{-atom.entries(items, config)-}}
+   {%- endblock entries -%}
 </feed>

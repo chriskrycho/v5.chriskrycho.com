@@ -16,7 +16,7 @@
       {%- if item.data.title -%}
          {{item.data.title}}
       {%- else -%}
-         {% localeDate item.date, 'yyyy.MM.dd.HHmm' %}
+         {% localeDate item.date, 'yyyy.MM.dd.HHmm' -%}
       {%- endif -%}
    {%- endset -%}
    <title type="html">[{{item.inputPath | toCollection}}] {{entryTitle}}</title>
@@ -25,56 +25,57 @@
    <published>{{item.date | isoDate}}</published>
    {%- else -%}
    <updated>{{item.date | isoDate}}</updated>
-   {%- endif %}
+   {%- endif -%}
    <link href='{{url}}' />
-   {% set summary -%}
+   {%- set summary -%}
    {%- if item.data.summary -%}
-      {{item.data.summary}}
+      {{-item.data.summary-}}
    {%- elif item.data.book.review -%}
-      {{item.data.book.review.rating}}: {{item.data.book.review.summary}}
+      {{-item.data.book.review.rating-}}: {{item.data.book.review.summary-}}
    {%- elif item.data.subtitle -%}
-      {{item.data.subtitle}}
+      {{-item.data.subtitle-}}
    {%- else -%}
-      {{item.templateContent | striptags(true) | truncate(150)}}
+      {{-item.templateContent | striptags(true) | truncate(150)-}}
    {%- endif -%}
    {%- endset %}
-   <summary type="html">{{summary}}</summary>
-   <content type="html">
+   <summary type="html">{{- summary -}}</summary>
+   {%- set content -%}
       {%- if item.data.subtitle -%}
-         &lt;i&gt;{{item.data.subtitle | inlineMd}}&lt;/i&gt;
-      {%- endif -%}
-      {%- if item.data.qualifiers.audience -%}
-         &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{item.data.qualifiers.audience | inlineMd}}&lt;/p&gt;
-      {%- endif -%}
-      {%- if item.data.qualifiers.epistemic -%}
-         &lt;p&gt;&lt;b&gt;Epistemic Status:&lt;/b&gt; {{item.data.qualifiers.epistemic | inlineMd}}&lt;/p&gt;
-      {%- endif -%}
-      {% if item.data.book %}
-         {% set book = item.data.book %}
-         &lt;p&gt;
-            {%- if book.cover -%}
-            &lt;img src=&quot;{{book.cover}}&quot; alt=&quot;cover art for {{book.title}}&quot; /&gt;
-            {%- endif -%}
-            {% if book.link %}
-            &lt;a href=&quot;{{book.link}}&quot; rel=&quot;nofollow&quot;&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
-            {% else %}
-            &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
-            {% endif %}
-            {% if book.review -%}
-            &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
-            {%- endif %}
-         &lt;/p&gt;
-      {% endif %}
-      {{item.templateContent}}
-      &lt;hr/&gt;
-      &lt;p&gt;&lt;a href=&quot;mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}&quot;&gt;Reply via email!&lt;/a&gt;&lt;/p&gt;
-   </content>
-   {% include 'blocks/rss-author.njk' %}
-   {#- <comments>TODO: Webmention!</comments> #}
-   {% for tag in item.data.tags %}
+            &lt;i&gt;{{- item.data.subtitle | inlineMd -}}&lt;/i&gt;
+         {%- endif -%}
+         {%- if item.data.qualifiers.audience -%}
+            &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{- item.data.qualifiers.audience | inlineMd -}}&lt;/p&gt;
+         {%- endif -%}
+         {%- if item.data.qualifiers.epistemic -%}
+            &lt;p&gt;&lt;b&gt;Epistemic Status:&lt;/b&gt; {{- item.data.qualifiers.epistemic | inlineMd -}}&lt;/p&gt;
+         {%- endif -%}
+         {%- if item.data.book -%}
+            {%- set book = item.data.book -%}
+            &lt;p&gt;
+               {%- if book.cover -%}
+               &lt;img src=&quot;{{book.cover}}&quot; alt=&quot;cover art for {{book.title}}&quot; /&gt;
+               {%- endif -%}
+               {%- if book.link -%}
+               &lt;a href=&quot;{{book.link}}&quot; rel=&quot;nofollow&quot;&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
+               {%- else -%}
+               &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
+               {%- endif -%}
+               {%- if book.review -%}
+               &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
+               {%- endif -%}
+            &lt;/p&gt;
+         {%- endif -%}
+         {{item.templateContent}}
+         &lt;hr/&gt;
+         &lt;p&gt;&lt;a href=&quot;mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}&quot;&gt;Reply via email!&lt;/a&gt;&lt;/p&gt;
+   {%- endset %}
+   <content type="html">{{- content -}}</content>
+   {%- include 'blocks/rss-author.njk' -%}
+   {#- <comments>TODO: Webmention!</comments> -#}
+   {%- for tag in item.data.tags -%}
    <category term="{{tag}}" />
-   {% endfor %}
+   {%- endfor -%}
 </entry>
-{%- endfor %}
+{%- endfor -%}
 {%- endif -%}
 {%- endmacro -%}
