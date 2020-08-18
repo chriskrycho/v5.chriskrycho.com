@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-17T19:45:00-0600
+updated: 2020-08-17T20:50:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -56,7 +56,7 @@ const USERS_API = 'example.com/users';
 
 export default class SmartComponent extends Component {
   get userData() {
-    const url = new URL(USERS_API);
+    let url = new URL(USERS_API);
     url.searchParams.append('id', this.args.id);
 
     return createPromiseProxy(fetch(url)).then((data) => data.json());
@@ -111,7 +111,7 @@ const USERS_API = 'http://www.example.com/users';
 
 export default class SmartComponent extends Component {
   get userData() {
-    const url = new URL(USERS_API);
+    let url = new URL(USERS_API);
     url.searchParams.append('id', this.args.id);
     
     return load(fetch(url)).then((data) => data.json());
@@ -131,7 +131,7 @@ Invoking it would be identical; the only change is in the corresponding template
 
 The actual changes here are small:
 
-- There’s one extra `.data` intermediate value lookup: `this.userData.value.userName` instead of `this.userData.userName`. (This is the result of *composing* the data instead of *inheriting* it.)
+- There’s one extra `.value` intermediate value lookup: `this.userData.value.userName` instead of `this.userData.userName`. (This is the result of *composing* the data instead of *inheriting* it.)
 - The names of the _state_ values are different: `isLoaded` and `isError` instead of `isFulfilled` and `isRejected`.
 
 And with that, we’ve successfully gotten away from `PromiseProxyMixin` in our app code!
@@ -148,7 +148,7 @@ const USERS_API = 'http://www.example.com/users';
 
 export default class SmartComponent extends Component {
   get userData() {
-    const url = new URL(USERS_API);
+    let url = new URL(USERS_API);
     url.searchParams.append('id', this.args.id);
     
     return fetch(url);
@@ -193,7 +193,7 @@ export default class RenderUser extends Component {
   get content() {
     switch (this.args.userData.state) {
       case 'LOADED': {
-        const user = this.args.userData.value;
+        let user = this.args.userData.value;
         return `${user.name} is ${user.age} years old!`;
       }
       case 'LOADING':
