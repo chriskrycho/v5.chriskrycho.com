@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-18T11:15:00-0600
+updated: 2020-08-18T16:05:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -199,7 +199,7 @@ export default class RenderUser extends Component {
       case 'LOADING':
         return 'Loading...';
       case 'ERROR':
-      default;
+      default:
         return 'Something went wrong. 😱 Please try again!';
     }
   }
