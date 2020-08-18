@@ -206,7 +206,7 @@ export default class RenderUser extends Component {
 }
 ```
 
-Again, we’re taking advantage of `args` being auto-tracked: if we ever got a *different* `AsyncData` passed in as `userData`, we would update to the correct version of that. Likewise, because `state` or `data` properties of the `AsyncData` type are tracked, this getter will recompute any time either of those is updated as well.
+Again, we’re taking advantage of `args` being auto-tracked: if we ever got a *different* `AsyncData` passed in as `userData`, we would update to the correct version of that. Likewise, because the `state` and `data` properties of the `AsyncData` type are tracked, this getter will recompute any time either of those is updated as well.
 
 ## Summary
 
