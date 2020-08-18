@@ -4,6 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
+updated: 2020-08-17T19:45:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -15,6 +16,8 @@ tags:
     - Ember
     - auto-tracking
 templateEngineOverride: md
+thanks: >
+    Thanks to Jeremy Sherman for catching an obnoxious mistake I missed in editing!
 
 ---
 
@@ -43,11 +46,10 @@ export function createPromiseProxy(promise) {
 }
 ```
 
-Then we might use it in a component that looks like this[^jquery]—note the use of `@computed`, which is *required* for this to work correctly:[^dkc]
+Then we might use it in a component that looks like this[^jquery]:[^dkc]
 
 ```js
 import Component from '@glimmer/component';
-import { computed } from '@ember/object';
 import { createPromiseProxy } from 'my-app/utils/object-promise-proxy.js';
 
 const USERS_API = 'example.com/users';
@@ -211,7 +213,5 @@ Again, we’re taking advantage of `args` being auto-tracked: if we ever got a *
 We do have to type `.value` in a couple of places now… but in exchange, we get all the benefits of the old `PromiseProxyMixin` in exchange, and we get to get rid of a `Mixin` *and* a use of Ember’s classic (and very expensive for performance) `ObjectProxy`, which is yet another `Mixin`. What’s more, there’s no magic here. You can implement `load` yourself in plain JavaScript using the Glimmer tracking library, just the same as I did!
 
 
-
-[^dkc]: We could also make the first getter—for the promise proxy object itself—use the `@dependentKeyCompat` decorator—but we would still need `@computed` for the derived state.
 
 [^jquery]: Ember’s API guides for `PromiseProxyMixin` give an example very similar to this, but with less context and more jQuery. I’ve replaced the use of jQuery’s `$.getJSON` with `fetch` and `Body.json()`, and used arrow functions instead of `function` declarations; I’ve also embedded it in an example component to make the ideas a bit clearer.
