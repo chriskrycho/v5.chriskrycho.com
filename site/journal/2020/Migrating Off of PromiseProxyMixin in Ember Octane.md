@@ -86,7 +86,7 @@ The body of the component might look like this:
 {{/if}}
 ```
 
-To migrate away from this, we can use a composition-based approach instead of a mixin/inheritance-based approach. I’m going to use the `load` helper and associated `AsyncData` structure defined [here][load]. I plan to write a post explaining the underlying ideas for that helper in the future. For now, it’s enough to know the following things:
+To migrate away from this, we can use a composition-based approach instead of a mixin/inheritance-based approach. I’m going to use the `load` helper and associated `AsyncData` structure ([defined here][load]). I plan to write a post explaining the underlying ideas for that helper in the future. For now, it’s enough to know the following things:
 
 - The helper can be used with any value, `Promise` or not.
 
