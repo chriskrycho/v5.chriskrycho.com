@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-18T11:10:00-0600
+updated: 2020-08-18T11:12:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -86,7 +86,7 @@ The body of the component might look like this:
 {{/if}}
 ```
 
-To migrate away from this, we can use a composition-based approach instead of a mixin/inheritance-based approach. I’m going to use the `load` helper and associated `AsyncData` structure ([defined here][load]). I plan to write a post explaining the underlying ideas for that helper in the future. For now, it’s enough to know the following things:
+To migrate away from this, we can use a composition-based approach instead of a mixin/inheritance-based approach. I’m going to use a `load` helper and associated `AsyncData` structure ([defined here][load]). I plan to write a post explaining the underlying ideas for that helper in the future. For now, it’s enough to know the following things:
 
 - The helper can be used with any value, `Promise` or not.
 
