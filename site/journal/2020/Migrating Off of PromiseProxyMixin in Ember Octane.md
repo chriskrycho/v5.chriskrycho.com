@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-17T20:50:00-0600
+updated: 2020-08-17T22:40:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -23,7 +23,7 @@ thanks: >
 
 Idiomatic Ember Octane avoids using Ember’s classic `Mixin` and `ObjectProxy` types. However, a very common pattern in many Ember Classic apps and addons was to use Ember’s `PromiseProxyObject` mixin in conjunction with `ObjectProxy` to expose the state of a promise to end users, and to make accessing the resolved data more convenient. Migrating an app from Ember Classic to be *idiomatic* Ember Octane means replacing all of that with something more Octane-friendly.
 
-In this post, we will cover how to rewrite code that uses promise proxy mixing into a lightweight, auto-tracked, Octane-ready, future-friendly solution—and learn to think about asynchronous data in a new way, as well!￼
+In this post, we will cover how to rewrite code that uses promise proxy mixing into a lightweight, auto-tracked, Octane-ready, future-friendly solution—and hint at a new to think about asynchronous data in a new way, as well!￼
 
 - [A direct migration](#a-direct-migration)
 - [Alternative: less JS, more template](#alternative-less-js-more-template)
