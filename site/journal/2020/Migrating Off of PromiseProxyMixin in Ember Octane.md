@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-17T22:40:00-0600
+updated: 2020-08-18T11:10:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
