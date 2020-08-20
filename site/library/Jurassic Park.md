@@ -5,7 +5,7 @@ qualifiers:
     audience: >
         Readers of sci-fi or thrillers or both—including folks who have read this before (it deserves a good re-read!).
 date: 2020-03-15T16:00:00-0600
-updated: 2020-03-15T21:30:00-0600
+updated: 2020-08-20T06:45:01-0600
 book:
   title: Jurassic Park
   author: Michael Crichton
@@ -21,6 +21,7 @@ tags:
     - reading
     - biotech
     - Michael Crichton
+    - book reviews
 
 ---
 
