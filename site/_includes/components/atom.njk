@@ -39,42 +39,52 @@
    {%- endif -%}
    {%- endset %}
    <summary type="html">{{- summary -}}</summary>
-   {%- set content -%}
+   <content type="html"><![CDATA[
       {%- if item.data.subtitle -%}
-            &lt;i&gt;{{- item.data.subtitle | inlineMd -}}&lt;/i&gt;
+      <i>{{- item.data.subtitle | inlineMd | safe -}}</i>
          {%- endif -%}
          {%- if item.data.qualifiers.audience -%}
-            &lt;p&gt;&lt;b&gt;Assumed Audience:&lt;/b&gt; {{- item.data.qualifiers.audience | inlineMd -}}&lt;/p&gt;
+            <p><b>Assumed Audience:</b> {{- item.data.qualifiers.audience | inlineMd | safe -}}</p>
          {%- endif -%}
          {%- if item.data.qualifiers.epistemic -%}
-            &lt;p&gt;&lt;b&gt;Epistemic Status:&lt;/b&gt; {{- item.data.qualifiers.epistemic | inlineMd -}}&lt;/p&gt;
+            <p><b>Epistemic Status:</b> {{- item.data.qualifiers.epistemic | inlineMd | safe -}}</p>
          {%- endif -%}
-         {%- if item.data.book -%}
+         {%- if item.data.book and item.data.book.review -%}
             {%- set book = item.data.book -%}
-            &lt;p&gt;
+            <p>
                {%- if book.cover -%}
-               &lt;img src=&quot;{{book.cover}}&quot; alt=&quot;cover art for {{book.title}}&quot; /&gt;
+               <img src="{{book.cover | safe}}" alt="cover art for {{book.title | safe}}" />
                {%- endif -%}
                {%- if book.link -%}
-               &lt;a href=&quot;{{book.link}}&quot; rel=&quot;nofollow&quot;&gt;&lt;cite&gt;{{book.title}}&lt;/cite&gt;&lt;/a&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;&lt;/a&gt;
+               <a href="{{book.link | safe}}" rel="nofollow"><cite>{{book.title | safe}}</cite></a>, {{book.author | safe}} ({{book.year | safe}})<br/></a>
                {%- else -%}
-               &lt;cite&gt;{{book.title}}&lt;/cite&gt;, {{book.author}} ({{book.year}})&lt;br/&gt;
+               <cite>{{book.title | safe}}</cite>, {{book.author | safe}} ({{book.year | safe}})<br/>
                {%- endif -%}
                {%- if book.review -%}
-               &lt;b&gt;{{book.review.rating}}:&lt;/b&gt; {{book.review.summary | inlineMd}}
+               <b>{{book.review.rating | safe}}:</b> {{book.review.summary | inlineMd | safe -}}
                {%- endif -%}
-            &lt;/p&gt;
+            </p>
          {%- endif -%}
-         {{item.templateContent}}
-         &lt;hr/&gt;
-         &lt;p&gt;&lt;a href=&quot;mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}&quot;&gt;Reply via email!&lt;/a&gt;&lt;/p&gt;
-   {%- endset %}
-   <content type="html">{{- content -}}</content>
+         {{item.templateContent | safe}}
+         <hr/>
+         <p><a href="mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}">Reply via email!</a></p>
+   ]]></content>
    {%- include 'blocks/rss-author.njk' -%}
    {#- <comments>TODO: Webmention!</comments> -#}
    {%- for tag in item.data.tags -%}
    <category term="{{tag}}" />
    {%- endfor -%}
+   {%- set image -%}
+      {%- if item.data.book and item.data.book.cover -%}
+         {{-item.data.book.cover | safe-}}
+      {%- elif item.data.image -%}
+         {{-item.image | safe-}}
+      {%- endif -%}
+   {%- endset -%}
+   {%- if image -%}
+      <link rel='enclosure' href='{{image | safe}}' />
+      <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{image | safe}}" />
+   {%- endif -%}
 </entry>
 {%- endfor -%}
 {%- endif -%}
