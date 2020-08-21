@@ -1,7 +1,7 @@
 ---
 title: God’s self-commitment to creatures
 date: 2020-03-01T19:30:00-0700
-updated: 2020-08-21T14:30:00-0700
+updated: 2020-08-21T14:35:00-0700
 qualifiers:
     audience: >
         Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
@@ -13,7 +13,7 @@ tags:
     - Eccentric Existence
 
 summary: >
-    What God creates in affectionate and just attention, God values. What God values, God is self-committed to sustain and nurture.
+    David H. Kelsey: “What God creates in affectionate and just attention, God values. What God values, God is self-committed to sustain and nurture.”
 
 ---
 
