@@ -11,6 +11,8 @@ tags:
     - reading notes
     - writing
     - reading
+    - Mary Midgley
+    - Evolution as a Religion
 book:
     title: Evolution as a Religion
     author: Mary Midgley
