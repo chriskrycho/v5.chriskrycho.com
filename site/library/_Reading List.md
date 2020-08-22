@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-08-21T19:30:00-0600
+date: 2020-08-22T11:25:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -38,6 +38,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
+- <cite>Orphans of Earth</cite>, Sean Williams and Shane Dix (new)
 
 ### Non-fiction
 
