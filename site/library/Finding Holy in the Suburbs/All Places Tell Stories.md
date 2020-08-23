@@ -19,4 +19,4 @@ summary: >
 
 > In what they center and in what they hide, all places tell stories through their geography, architecture, and city planning.
 
-—{{book.author}}, [<cite>{{book.title}}</cite>]({{book.link}})
+{{book.author}}, [<cite>{{book.title}}</cite>]({{book.link}})
