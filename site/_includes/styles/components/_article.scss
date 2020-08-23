@@ -110,7 +110,15 @@
       max-width: var(--max-width);
 
       figcaption {
-         text-align: right;
+         margin-left: 1.1em;
+         text-align: left;
+         
+         &::before {
+            content: '—';
+            padding-right: 0.1em;
+            margin-left: -1em;
+            width: 1em;
+         }
       }
    }
 
