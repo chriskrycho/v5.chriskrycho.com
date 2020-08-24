@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-08-23T17:25:00-0600
+date: 2020-08-23T23:00:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -38,7 +38,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
-- <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 ### Non-fiction
 
@@ -65,6 +64,7 @@ Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](h
 - [<cite>Echoes of Earth</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEchoes-of-Earth-Sean-Williams%2Fbook%2F1874511%3Fmatches%3D35), Sean Williams and Shane Dix (new)
 - [<cite>Delta-V</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDelta-V-Daniel-Suarez%2Fbook%2F42331977), Daniel Suarez (new)
 - <cite>Orphans of Earth</cite>, Sean Williams and Shane Dix (new)
+- <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
