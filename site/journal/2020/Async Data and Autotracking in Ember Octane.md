@@ -74,7 +74,7 @@ Let’s start building, keeping these core ideas in mind:
 
 ### Make a helper
 
-We’re going to build this as an Ember helper, so that it can be used in templates. The easiest way for us to get started is to use Ember CLI’s generator:
+We’re going to build this as an Ember helper, so that it can be used in templates. The easiest way for us to get started is to use Ember <abbr title="command line interface">CLI</a>’s generator:
 
 ```bash
 ember generate helper load
@@ -495,9 +495,9 @@ Now our template invocation could just look like this:
 ```handlebars
 {{#let (load @somePromise) as |data|}}
   {{#if data.isLoading}}
-    <p>{{data.value}}</p>
-  {{else if data.isLoaded}}
     <p>loading...</p>
+  {{else if data.isLoaded}}
+    <p>{{data.value}}</p>
   {{else if data.isError}}
     <p>Whoops! Something went wrong!</p>
     <p>{{data.error.message}}</p>
