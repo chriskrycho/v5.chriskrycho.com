@@ -21,6 +21,22 @@ templateEngineOverride: md
 
 Last week, [I described](https://v5.chriskrycho.com/journal/migrating-off-of-promiseproxymixin-in-ember-octane/ "Migrating Off of PromiseProxyMixin in Ember Octane") the use of a `load` helper and associated `AsyncData` type to move away from Ember’s `ObjectProxy` and `PromiseProxyMixin`. In this post, I’ll dig into the implementation of `load` and `AsyncData`. When you get to the end of this post, you should not only understand how this particular helper and data type work, but also have a better idea of how to think about both handling asynchronous data in JavaScript in general *and* how to put that to practice in Ember Octane with autotracking specifically.
 
+<!-- omit in toc -->
+## Overview
+
+- [Philosophy](#philosophy)
+    - [1. Async data is just data](#1-async-data-is-just-data)
+    - [2. Handling all data states is important](#2-handling-all-data-states-is-important)
+- [Implementation](#implementation)
+    - [Make a helper](#make-a-helper)
+    - [Modeling the states](#modeling-the-states)
+    - [Updating the state](#updating-the-state)
+        - [Add state change methods to `AsyncData`](#add-state-change-methods-to-asyncdata)
+        - [Connect the `Promise` and `AsyncData` in `load`](#connect-the-promise-and-asyncdata-in-load)
+    - [Return the same `AsyncData`](#return-the-same-asyncdata)
+- [Conclusion](#conclusion)
+- [Appendix: TypeScript](#appendix-typescript)
+
 ## Philosophy
 
 Before we dig into the details of how `load` and `AsyncData` work, it’s worth understanding the philosophy behind them. When some colleagues and I built these helpers, it was with two key ideas in mind—so it’s worth understanding these ideas as we work through the implementation:
