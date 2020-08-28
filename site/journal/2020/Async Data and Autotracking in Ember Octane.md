@@ -794,7 +794,7 @@ We’re using autotracking in our `AsyncData` structure to keep track of the sta
 
 :::note
 
-You’ll note if you look at the source gist for the implementation we’re using currently, there are a few differences and additions to what I described in this post:
+If you look at the source gist for the implementation we’re using currently, you'll see a few differences and additions to what I described in this post:
 
 - We use `@dependentKeyCompat` to interoperate with Ember Classic computed properties, and avoid the debug assertions in the `value` and `error` getters for the same reason.
 
