@@ -491,7 +491,7 @@ Now our template invocation could just look like this:
 
 ```handlebars
 {{#let (load @somePromise) as |data|}}
-  {{#if data.isLoadign}}
+  {{#if data.isLoading}}
     <p>{{data.value}}</p>
   {{else if data.isLoaded}}
     <p>loading...</p>
