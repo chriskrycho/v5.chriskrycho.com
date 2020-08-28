@@ -18,7 +18,7 @@ tags:
 templateEngineOverride: md
 
 date: 2020-08-28T15:15:00-0600
-updated: 2020-08-28T17:33:00-0600
+updated: 2020-08-28T17:37:00-0600
 
 ---
 
@@ -74,7 +74,7 @@ Let’s start building, keeping these core ideas in mind:
 
 ### Make a helper
 
-We’re going to build this as an Ember helper, so that it can be used in templates. The easiest way for us to get started is to use Ember <abbr title="command line interface">CLI</a>’s generator:
+We’re going to build this as an Ember helper, so that it can be used in templates. The easiest way for us to get started is to use Ember <abbr title="command line interface">CLI</abbr>’s generator:
 
 ```bash
 ember generate helper load
