@@ -14,7 +14,7 @@ tags:
   - Ember
   - auto-tracking
 
-date: 2020-08-28T15:30
+date: 2020-08-28T15:15:00-0600
 templateEngineOverride: md
 
 ---
