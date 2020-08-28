@@ -835,6 +835,8 @@ The key things to note here are:
 
 - I have added `// SAFETY: ...` comments for the places where we have to make type casts. TypeScript cannot track the guarantees we’re upholding via our invariants. I *always* write this kind of comment on any type cast I write, so that it’s clear later what has to remain true for the cast to remain safe.[^4]
 
+Here’s what the TS implementation would look like:
+
 ```ts
 declare function helper(fn: Function): unknown;
 declare function assert(desc: string, pred: unknown): asserts pred;
