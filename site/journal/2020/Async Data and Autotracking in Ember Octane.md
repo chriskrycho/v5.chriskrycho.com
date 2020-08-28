@@ -792,6 +792,17 @@ With that, we’ve implemented a solution that captures both philosophical commi
 
 We’re using autotracking in our `AsyncData` structure to keep track of the states and result of the `Promise`’s execution, so consumers of our `load` helper can treat the whole computation as data, including its state and whether the data is available yet or there is a failure. We’ve also associated each `Promise` with its `AsyncData` using a `WeakMap` so if the helper is invoked with the same promise more than once, callers will get back the same `AsyncData`—which minimizes the impact of this on our system’s performance.
 
+:::callout
+
+Feel free to respond with questions or comments on [Ember Discuss](https://discuss.emberjs.com/t/async-data-and-autotracking-in-ember-octane/18177)!
+
+For further reading on autotracking, check out these posts by my friend and colleague Chris Garrett ([@pzuraq](https://www.pzuraq.com)), who knows autotracking better than almost anyone else:
+
+- [How Autotracking Works](https://www.pzuraq.com/how-autotracking-works/)
+- [Autotracking Case Study: TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
+
+:::
+
 :::note
 
 If you look at the source gist for the implementation we’re using currently, you'll see a few differences and additions to what I described in this post:
@@ -801,15 +812,6 @@ If you look at the source gist for the implementation we’re using currently, y
 - We have support for treating `AsyncData` as a “then-able”—that is, for making it possible to use it basically like you would a `Promise`. That is useful, but it’s not actually key to understanding the type and how to use it, so I left it aside in this discussion.
 
 - We also support passing in non-`Promise` data, and turning it into a `Promise` and `AsyncData` which are immediately resolved. In retrospect, I’d really prefer to remove this and have people think about their data more carefully—even just requiring them to explicitly do `load(Promise.resolve(123))` in those cases instead of `load(123)`.
-
-:::
-
-:::callout
-
-For further reading on autotracking, check out these posts by my friend and colleague Chris Garrett ([@pzuraq](https://www.pzuraq.com)), who knows autotracking better than almost anyone else:
-
-- [How Autotracking Works](https://www.pzuraq.com/how-autotracking-works/)
-- [Autotracking Case Study: TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
 
 :::
 
