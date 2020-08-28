@@ -806,7 +806,7 @@ You’ll note if you look at the source gist for the implementation we’re usin
 
 :::callout
 
-For further reading on autotracking, check out these posts by my friend and colleague Chris Garrett (@pzuraq), who knows autotracking better than almost anyone else:
+For further reading on autotracking, check out these posts by my friend and colleague Chris Garrett ([@pzuraq](https://www.pzuraq.com)), who knows autotracking better than almost anyone else:
 
 - [How Autotracking Works](https://www.pzuraq.com/how-autotracking-works/)
 - [Autotracking Case Study: TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
