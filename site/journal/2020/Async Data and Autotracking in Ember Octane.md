@@ -838,9 +838,8 @@ The key things to note here are:
 Here’s what the TS implementation would look like:
 
 ```ts
-declare function helper(fn: Function): unknown;
-declare function assert(desc: string, pred: unknown): asserts pred;
-
+import { helper } from '@ember/component/helper';
+import { assert } from '@ember/debug';
 import { tracked } from '@glimmer/tracking';
 
 type Data<Value> =
@@ -899,18 +898,23 @@ class AsyncData<Value, Err = unknown> {
   }
 }
 
-const MAP: WeakMap<Promise<unknown>, AsyncData<unknown>> = new WeakMap();
+const MAP: WeakMap<Promise<unknown>, AsyncData<unknown>>
+  = new WeakMap();
 
-function load<Value>(somePromise: Promise<Value>): AsyncData<Value> {
+function load<Value>(
+  somePromise: Promise<Value>
+): AsyncData<Value> {
   let existingAsyncData = MAP.get(somePromise);
   if (existingAsyncData) {
-    // SAFETY: this cast only holds because we *know* that we've kept
-    // the `Promise` and the `AsyncData` instances in sync via the
-    // `WeakMap`. If that were not the case, this cast would be `unsafe`.
+    // SAFETY: this cast only holds because we *know* that we've
+    // kept the `Promise` and the `AsyncData` instances in sync
+    // via the `WeakMap`. If that were not the case, this cast
+    // would be `unsafe`.
     return existingAsyncData as unknown as AsyncData<Value>;
   }
 
-  // SAFETY: this only holds because we are working with `Promise<Value>`.
+  // SAFETY: this only holds because we are working with
+  // `Promise<Value>`.
   let asyncData = new AsyncData<Value>();
   MAP.set(somePromise, asyncData);
 
@@ -922,7 +926,9 @@ function load<Value>(somePromise: Promise<Value>): AsyncData<Value> {
   return asyncData;
 }
 
-export default helper(([somePromise]: [Promise<unknown>]) => load(somePromise));
+export default helper(
+  ([somePromise]: [Promise<unknown>]) => load(somePromise)
+);
 ```
 
 
