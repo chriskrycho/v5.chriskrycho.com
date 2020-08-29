@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-18T16:05:00-0600
+updated: 2020-08-29T12:40:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -211,6 +211,12 @@ Again, we’re taking advantage of `args` being auto-tracked: if we ever got a *
 ## Summary
 
 We do have to type `.value` in a couple of places now… but in exchange, we get all the benefits of the old `PromiseProxyMixin` in exchange, and we get to get rid of a `Mixin` *and* a use of Ember’s classic (and very expensive for performance) `ObjectProxy`, which is yet another `Mixin`. What’s more, there’s no magic here. You can implement `load` yourself in plain JavaScript using the Glimmer tracking library, just the same as I did!
+
+:::callout
+
+Feel free to respond with questions or comments [on Ember Discuss](https://discuss.emberjs.com/t/migrating-off-of-promiseproxymixin-in-ember-octane/18138/2). And if you’re curious about how `load` and `AsyncData` work, check out [the follow-up post](https://v5.chriskrycho.com/journal/async-data-and-autotracking-in-ember-octane/)!
+
+:::
 
 
 
