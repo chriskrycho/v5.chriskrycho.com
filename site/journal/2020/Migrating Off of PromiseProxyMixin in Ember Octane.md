@@ -142,7 +142,6 @@ We could also do more of this template-side, since the `load` tool is both a uti
 
 ```js
 import Component from '@glimmer/component';
-import { load } from 'my-app/helpers/load';
 
 const USERS_API = 'http://www.example.com/users';
 
