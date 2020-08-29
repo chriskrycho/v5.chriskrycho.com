@@ -9,6 +9,7 @@ qualifiers:
     People who want book recommendations from me, and/or people who are thinking about thinking and learning in general.
 
 date: 2020-08-29T21:40:00-0600
+updated: 2020-08-29T21:41:00-0600
 
 tags:
   - reading
@@ -23,7 +24,7 @@ tags:
 
 ---
 
-When teaching or talking on theological matters--from theology proper to sexual ethics and everything in between--I commonly get a variant ont the question: <i>Do you have a book I could read on this?</i> The unfortunate reality is that, a majority of the time, the answer is simply <i>no</i>, for a few reasons.
+When teaching or talking on theological matters--from theology proper to sexual ethics and everything in between--I commonly get a variant on the question: <i>Do you have a book I could read on this?</i> The unfortunate reality is that, a majority of the time, the answer is simply <i>no</i>, for a few reasons.
 
 First, most of the reading I do is not the kind of reading I could hand to most people asking me. Much of it is far too academic. I loved [John Webster's <cite>The Culture of Theology</cite>](https://v5.chriskrycho.com/topics/the-culture-of-theology), for example, but the arguments he makes in the book assume an *enormous* amount of background in theology, criticism, and the nature of the contemporary university. I also read very *broadly*, so that I’m often learning from people I disagree with, sometimes strongly. Those disagreeing reads are sometimes some of the most profitable, but they’re also not the kind of thing I could hand to someone asking a question like this. (Some books are both too academic *and* a point of much disagreement, like [David H. Kelsey’s <cite>Eccentric Existence</cite>](https://v5.chriskrycho.com/topics/eccentric-existence)!) 
 
