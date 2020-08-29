@@ -8,6 +8,9 @@ qualifiers:
   audience:
     Software developers working with Ember Octane.
 
+date: 2020-08-28T15:15:00-0600
+updated: 2020-08-28T17:37:00-0600
+
 tags:
   - JavaScript
   - software development
@@ -16,9 +19,6 @@ tags:
   - auto-tracking
 
 templateEngineOverride: md
-
-date: 2020-08-28T15:15:00-0600
-updated: 2020-08-28T17:37:00-0600
 
 ---
 
