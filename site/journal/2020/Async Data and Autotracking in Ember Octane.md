@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with Ember Octane.
 
 date: 2020-08-28T15:15:00-0600
-updated: 2020-08-28T17:37:00-0600
+updated: 2020-08-29T09:45:00-0600
 
 tags:
   - JavaScript
@@ -67,10 +67,22 @@ This idea is far from original to me or my colleagues. I learned it from a serie
 
 ## Implementation
 
-Let’s start building, keeping these core ideas in mind:
+Let’s start building, keeping these core ideas in mind.
 
 1. *Async data is just data*
 2. *Handling all data states is important*
+
+As we're implementing, then—
+
+- We need to *model* the three states of the data: *loading*, *loaded*, and *error*.
+- We need to *update* the state of the data when the promise resolves or rejects.
+- If users call `load` with the same `Promise`, we should always return the same `AsyncData`.
+
+That's a lot! If we take it step by step, though, it won't seem so bad, so we'll tackle the implementation in phases:
+
+1. Make a helper
+2. Model the states
+3. Update the state
 
 ### Make a helper
 
@@ -142,10 +154,6 @@ This would blow up if we tried to actually use the helper in a template, though!
 ```
 
 Now we need to think about what we want to return.
-
-- We need to *model* the three states of the data: *loading*, *loaded*, and *error*
-- We need to *update* the state of the data when the promise resolves or rejects
-- If users call `load` with the same `Promise`, we should always return the same `AsyncData`.
 
 ### Modeling the states
 
@@ -280,7 +288,6 @@ This also lets us do a bit of runtime validation if we like: we can enforce that
 + import { assert } from '@ember/debug';
 
   class AsyncData {
-    /** @type {'LOADING' | 'LOADED' | 'ERROR'} */
     /**
       @type {'LOADING' | 'LOADED' | 'ERROR'}
       @private
@@ -338,7 +345,6 @@ First things first, we need to make the state reactive so that it will work in t
 + import { tracked } from '@glimmer/tracking';
 
   class AsyncData {
-    /** @type {'LOADING' | 'LOADED' | 'ERROR'} */
     /**
       @type {'LOADING' | 'LOADED' | 'ERROR'}
       @private
@@ -435,39 +441,7 @@ Using `eq` here to match the state with strings is a little cumbersome. It would
   import { tracked } from '@glimmer/tracking';
 
   class AsyncData {
-    /**
-      @type {'LOADING' | 'LOADED' | 'ERROR'}
-      @private
-     */
-    @tracked _state = 'LOADING';
- 
-    /** @private */
-    @tracked _value;
- 
-    /** @private */
-    @tracked _error;
- 
-    get state() {
-      return this._state;
-    }
- 
-    get value() {
-      assert(
-        `You can only access 'value' when 'state' is 'LOADED', but it is ${this.state}`,
-        this.state === 'LOADED'
-      );
- 
-      return this._value;
-    }
- 
-    get error() {
-      assert(
-        `You can only access 'error' when 'state' is 'ERROR', but it is ${this.state}`,
-        this.state === 'ERROR'
-      );
- 
-      return this._error;
-    }
+    // SNIP: internal state and other getters are unchanged...
 +
 +   get isLoading() {
 +     return this.state === 'LOADING';
@@ -520,51 +494,7 @@ We’ll start by adding two methods to `AsyncData`: one for when the promise *re
   import { tracked } from '@glimmer/tracking';
 
   class AsyncData {
-    /**
-      @type {'LOADING' | 'LOADED' | 'ERROR'}
-      @private
-     */
-    @tracked _state = 'LOADING';
- 
-    /** @private */
-    @tracked _value;
- 
-    /** @private */
-    @tracked _error;
- 
-    get state() {
-      return this._state;
-    }
- 
-    get value() {
-      assert(
-        `You can only access 'value' when 'state' is 'LOADED', but it is ${this.state}`,
-        this.state === 'LOADED'
-      );
- 
-      return this._value;
-    }
- 
-    get error() {
-      assert(
-        `You can only access 'error' when 'state' is 'ERROR', but it is ${this.state}`,
-        this.state === 'ERROR'
-      );
- 
-      return this._error;
-    }
-
-    get isLoading() {
-      return this.state === 'LOADING';
-    }
-
-    get isLoaded() {
-      return this.state === 'LOADED';
-    }
-
-    get isError() {
-      return this.state === 'ERROR';
-    }
+    // SNIP: internal state and getters are unchanged...
 +
 +   resolveWith(value) {
 +     this._state = 'LOADED';
@@ -601,61 +531,7 @@ We now return to the `load` function implementation. When the promise *resolves*
   import { tracked } from '@glimmer/tracking';
 
   class AsyncData {
-    /**
-      @type {'LOADING' | 'LOADED' | 'ERROR'}
-      @private
-     */
-    @tracked _state = 'LOADING';
- 
-    /** @private */
-    @tracked _value;
- 
-    /** @private */
-    @tracked _error;
- 
-    get state() {
-      return this._state;
-    }
- 
-    get value() {
-      assert(
-        `You can only access 'value' when 'state' is 'LOADED', but it is ${this.state}`,
-        this.state === 'LOADED'
-      );
- 
-      return this._value;
-    }
- 
-    get error() {
-      assert(
-        `You can only access 'error' when 'state' is 'ERROR', but it is ${this.state}`,
-        this.state === 'ERROR'
-      );
- 
-      return this._error;
-    }
-
-    get isLoading() {
-      return this.state === 'LOADING';
-    }
-
-    get isLoaded() {
-      return this.state === 'LOADED';
-    }
-
-    get isError() {
-      return this.state === 'ERROR';
-    }
-
-    resolveWith(value) {
-      this._state = 'LOADED';
-      this._value = value;
-    }
-
-    rejectWith(error) {
-      this._state = 'ERROR';
-      this._error = error;
-    }
+    // SNIP: class body is unchanged...
   }
 
   export function load(somePromise) {
@@ -690,61 +566,7 @@ To use a `WeakMap` to link each `Promise` to an `AsyncData`, we will create a `W
   import { tracked } from '@glimmer/tracking';
 
   class AsyncData {
-    /**
-      @type {'LOADING' | 'LOADED' | 'ERROR'}
-      @private
-     */
-    @tracked _state = 'LOADING';
- 
-    /** @private */
-    @tracked _value;
- 
-    /** @private */
-    @tracked _error;
- 
-    get state() {
-      return this._state;
-    }
- 
-    get value() {
-      assert(
-        `You can only access 'value' when 'state' is 'LOADED', but it is ${this.state}`,
-        this.state === 'LOADED'
-      );
- 
-      return this._value;
-    }
- 
-    get error() {
-      assert(
-        `You can only access 'error' when 'state' is 'ERROR', but it is ${this.state}`,
-        this.state === 'ERROR'
-      );
- 
-      return this._error;
-    }
-
-    get isLoading() {
-      return this.state === 'LOADING';
-    }
-
-    get isLoaded() {
-      return this.state === 'LOADED';
-    }
-
-    get isError() {
-      return this.state === 'ERROR';
-    }
-
-    resolveWith(value) {
-      this._state = 'LOADED';
-      this._value = value;
-    }
-
-    rejectWith(error) {
-      this._state = 'ERROR';
-      this._error = error;
-    }
+    // SNIP: class body is unchanged...
   }
 
 + const MAP = new WeakMap();
@@ -793,7 +615,101 @@ With that, we’ve implemented a solution that captures both philosophical commi
 1. *Async data is just data*
 2. *Handling all data states is important*
 
-We’re using autotracking in our `AsyncData` structure to keep track of the states and result of the `Promise`’s execution, so consumers of our `load` helper can treat the whole computation as data, including its state and whether the data is available yet or there is a failure. We’ve also associated each `Promise` with its `AsyncData` using a `WeakMap` so if the helper is invoked with the same promise more than once, callers will get back the same `AsyncData`—which minimizes the impact of this on our system’s performance.
+To implement those ideas:
+
+- We created a `load` function we can use both in JS and as a helper in Glimmer templates.
+- We modeled the states reactively with `@tracked` properties on an `AsyncData` class.
+- We updated the state by wiring up the `Promise` transitions to methods on `AsyncData`.
+- We also made sure that we always have exactly and only one `AsyncData` per promise, using a `WeakMap` to connect each `Promise` to an `AsyncData`.
+
+Here’s what it looks like with all of the pieces put together:[^actual-impl]
+
+```js
+import { helper } from "@ember/component/helper";
+import { assert } from "@ember/debug";
+import { tracked } from "@glimmer/tracking";
+
+class AsyncData {
+  /**
+    @type {'LOADING' | 'LOADED' | 'ERROR'}
+    @private
+   */
+  @tracked _state = "LOADING";
+
+  /** @private */
+  @tracked _value;
+
+  /** @private */
+  @tracked _error;
+
+  get state() {
+    return this._state;
+  }
+
+  get value() {
+    assert(
+      `You can only access 'value' when 'state' is 'LOADED', but it is ${this.state}`,
+      this.state === "LOADED"
+    );
+
+    return this._value;
+  }
+
+  get error() {
+    assert(
+      `You can only access 'error' when 'state' is 'ERROR', but it is ${this.state}`,
+      this.state === "ERROR"
+    );
+
+    return this._error;
+  }
+
+  get isLoading() {
+    return this.state === "LOADING";
+  }
+
+  get isLoaded() {
+    return this.state === "LOADED";
+  }
+
+  get isError() {
+    return this.state === "ERROR";
+  }
+
+  resolveWith(value) {
+    this._state = "LOADED";
+    this._value = value;
+  }
+
+  rejectWith(error) {
+    this._state = "ERROR";
+    this._error = error;
+  }
+}
+
+const MAP = new WeakMap();
+
+export function load(somePromise) {
+  let existingAsyncData = MAP.get(somePromise);
+  if (existingAsyncData) {
+    return existingAsyncData;
+  }
+
+  let asyncData = new AsyncData();
+  MAP.set(somePromise, asyncData);
+
+  somePromise.then(
+    (value) => asyncData.resolveWith(value),
+    (error) => asyncData.rejectWith(error)
+  );
+
+  return asyncData;
+}
+
+export default helper(([promise]) => load(promise));
+```
+
+Hopefully you now have a better idea of how we can combine custom data structures built with JS classes, autotracking-powered reactivity, and modern JS features like `WeakMap` to build robust solutions for even tricky problems like asynchronous data flow!
 
 :::callout
 
@@ -803,18 +719,6 @@ For further reading on autotracking, check out these posts by my friend and coll
 
 - [How Autotracking Works](https://www.pzuraq.com/how-autotracking-works/)
 - [Autotracking Case Study: TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
-
-:::
-
-:::note
-
-If you look at the source gist for the implementation we’re using currently, you'll see a few differences and additions to what I described in this post:
-
-- We use `@dependentKeyCompat` to interoperate with Ember Classic computed properties, and avoid the debug assertions in the `value` and `error` getters for the same reason.
-
-- We have support for treating `AsyncData` as a “then-able”—that is, for making it possible to use it basically like you would a `Promise`. That is useful, but it’s not actually key to understanding the type and how to use it, so I left it aside in this discussion.
-
-- We also support passing in non-`Promise` data, and turning it into a `Promise` and `AsyncData` which are immediately resolved. In retrospect, I’d really prefer to remove this and have people think about their data more carefully—even just requiring them to explicitly do `load(Promise.resolve(123))` in those cases instead of `load(123)`.
 
 :::
 
@@ -940,14 +844,32 @@ export default helper(
 *[JS]: JavaScript
 *[API]: application programming interface
 
-[^1]: I would actually seriously consider reworking this in terms of a tracked `WeakMap` implementation for use with TypeScript to make these guarantees that much more reliable!
 
-[^2]: We could actually implement true privacy ourselves, using the same technique that Babel and TypeScript use—a `WeakMap` associating each instance and a POJO containing its private fields—but it doesn’t *really* matter for our purposes, and might not be compatible with a future version of the decorators spec anyway.
+[^1]:
+
+    I would actually seriously consider reworking this in terms of a tracked `WeakMap` implementation for use with TypeScript to make these guarantees that much more reliable!
+
+[^2]:
+
+    We could actually implement true privacy ourselves, using the same technique that Babel and TypeScript use—a `WeakMap` associating each instance and a POJO containing its private fields—but it doesn’t *really* matter for our purposes, and might not be compatible with a future version of the decorators spec anyway.
 
     *[POJO]: plain old JavaScript object
 
-[^3]: If you reference [the gist I published](https://gist.github.com/chriskrycho/306a82990dd82203073272e055df5cd1) for `load` and `AsyncData`, you’ll notice that these `assert`s are *not* present. This is a matter of backwards compatibility with pre-Octane code. We’ll be working with autotracking in the next section, and therefore *could* use plain getters to access the state and update correctly.
+[^3]:
+
+    If you reference [the gist I published](https://gist.github.com/chriskrycho/306a82990dd82203073272e055df5cd1) for `load` and `AsyncData`, you’ll notice that these `assert`s are *not* present. This is a matter of backwards compatibility with pre-Octane code. We’ll be working with autotracking in the next section, and therefore *could* use plain getters to access the state and update correctly.
 
     However, *if* you refer to these getters with `@computed` or any of the computed property macros, using the `@dependentKeyCompat` decorator, this will cause problems, because classic computed properties actually invoke the getters for their dependent keys, and so will invoke these even when users don’t intend to.
+
+[^actual-impl]:
+
+    If you look at the source gist for the implementation we’re using currently, you'll see a few differences and additions to what I described in this post:
+
+    - We use `@dependentKeyCompat` to interoperate with Ember Classic computed properties, and avoid the debug assertions in the `value` and `error` getters for the same reason.
+
+    - We have support for treating `AsyncData` as a “then-able”—that is, for making it possible to use it basically like you would a `Promise`. That is useful, but it’s not actually key to understanding the type and how to use it, so I left it aside in this discussion.
+
+    - We also support passing in non-`Promise` data, and turning it into a `Promise` and `AsyncData` which are immediately resolved. In retrospect, I’d really prefer to remove this and have people think about their data more carefully—even just requiring them to explicitly do `load(Promise.resolve(123))` in those cases instead of `load(123)`.
+
 
 [^4]: This is an idea I stole from Rust, where most of the community idiomatically uses the same kind of comments anywhere that Rust’s `unsafe` keyword appears in code.
