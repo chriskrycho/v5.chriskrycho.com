@@ -37,7 +37,7 @@
             {%- elif item.data.subtitle -%}
                {{-item.data.subtitle-}}
             {%- else -%}
-               {{-item.templateContent | striptags(true) | truncate(150)-}}
+               {{-item.templateContent | striptags(true)-}}
             {%- endif -%}
             {%- endset %}
             <summary type="html">{{- summary -}}</summary>
