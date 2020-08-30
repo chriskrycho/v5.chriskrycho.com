@@ -237,6 +237,7 @@ type ClassData = ReturnType<NonNullable<EleventyClass['data']>>
 export class JSONFeed implements EleventyClass {
    declare collection?: string
    declare title?: string
+   declare permalink?: string
 
    includeReplyViaEmail = true
 
@@ -244,8 +245,13 @@ export class JSONFeed implements EleventyClass {
       return {
          standalonePage: true,
          excludeFromEleventyCollections: true,
-         permalink: (/* _: EleventyData */): string =>
-            this.collection ? `/${this.collection}/feed.json` : '/feed.json',
+         permalink: (/* _: EleventyData */): string => {
+            const resolved =
+               this.permalink ??
+               (this.collection ? `/${this.collection}/feed.json` : '/feed.json')
+            console.log(this.permalink, this.collection, resolved)
+            return resolved
+         },
       }
    }
 
