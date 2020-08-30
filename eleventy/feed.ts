@@ -110,7 +110,11 @@ function entryTitleFor(item: Item): string {
    return item.data?.title ?? localeDate(item.date, 'yyyy.MM.dd.HHmm')
 }
 
-function contentHtmlFor(item: Item, config: SiteConfig): string {
+function contentHtmlFor(
+   item: Item,
+   config: SiteConfig,
+   includeReplyViaEmail: boolean,
+): string {
    const subtitle =
       typeof item.data?.subtitle === 'string'
          ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
@@ -133,9 +137,13 @@ function contentHtmlFor(item: Item, config: SiteConfig): string {
    const book = item.data?.book
    const bookInfo = isBook(book) ? describe(book) : ''
 
-   const replySubject = encodeURIComponent(entryTitleFor(item))
-   const replyUrl = `mailto:${config.author.email}?subject=${replySubject}`
-   const reply = `<hr/><p><a href="${replyUrl}">Reply via email!</a></p>`
+   const reply = includeReplyViaEmail
+      ? ((): string => {
+           const replySubject = encodeURIComponent(entryTitleFor(item))
+           const replyUrl = `mailto:${config.author.email}?subject=${replySubject}`
+           return `<hr/><p><a href="${replyUrl}">Reply via email!</a></p>`
+        })()
+      : ''
 
    return subtitle + audience + epistemicStatus + bookInfo + item.templateContent + reply
 }
@@ -153,7 +161,9 @@ function summaryFor(item: Item): string {
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
-const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | null =>
+const toFeedItemGivenConfig = (config: SiteConfig, includeReplyViaEmail: boolean) => (
+   item: Item,
+): FeedItem | null =>
    canParseDate(item.date) && item.data?.standalonePage !== true
       ? {
            id: absoluteUrl(item.data?.feedId ?? item.url, config.url),
@@ -164,7 +174,7 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | n
            title: titleFor(item),
            url: absoluteUrl(item.url, config.url),
            date_published: isoDate(item.date),
-           content_html: contentHtmlFor(item, config),
+           content_html: contentHtmlFor(item, config, includeReplyViaEmail),
            summary: summaryFor(item),
            date_modified:
               typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
@@ -180,24 +190,33 @@ const toFeedItemGivenConfig = (config: SiteConfig) => (item: Item): FeedItem | n
         }
       : null
 
+type JSONFeedConfig = {
+   items: Item[]
+   config: SiteConfig
+   permalink: string
+   title: string
+   includeReplyViaEmail: boolean
+}
+
 /**
    Generate a JSON Feed compliant object for a given set of items.
 
    @param items The collection of items from 11ty
  */
-const jsonFeed = (
-   items: Item[],
-   config: SiteConfig,
-   permalink: string,
-   title: string,
-): JsonFeed => ({
+const jsonFeed = ({
+   items,
+   config,
+   permalink,
+   title,
+   includeReplyViaEmail,
+}: JSONFeedConfig): JsonFeed => ({
    version: 'https://jsonfeed.org/version/1',
    title: siteTitle(title, config),
    home_page_url: config.url,
    feed_url: absoluteUrl(permalink, config.url),
    description: config.description,
    items: items
-      .map(toFeedItemGivenConfig(config))
+      .map(toFeedItemGivenConfig(config, includeReplyViaEmail))
       .filter(<T>(item: T | null): item is T => !!item)
       .reverse(),
 })
@@ -219,6 +238,8 @@ export class JSONFeed implements EleventyClass {
    declare collection?: string
    declare title?: string
 
+   includeReplyViaEmail = true
+
    data(): ClassData {
       return {
          standalonePage: true,
@@ -232,7 +253,13 @@ export class JSONFeed implements EleventyClass {
       const collection = this.collection ?? 'all'
       const title = this.title ?? config.title.normal
       return JSON.stringify(
-         jsonFeed(collections[collection] ?? [], config, page.url, title),
+         jsonFeed({
+            items: collections[collection] ?? [],
+            config,
+            permalink: page.url,
+            title,
+            includeReplyViaEmail: this.includeReplyViaEmail,
+         }),
       )
    }
 }
