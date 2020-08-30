@@ -9,7 +9,7 @@ qualifiers:
     People who want book recommendations from me, and/or people who are thinking about thinking and learning in general.
 
 date: 2020-08-29T17:40:00-0600
-updated: 2020-08-29T18:12:00-0600
+updated: 2020-08-29T20:35:00-0600
 
 tags:
   - reading
@@ -38,7 +38,7 @@ On balance, I have a great deal of sympathy for the people writing popular books
 
 (All of this is that much truer of most popular *article*-writing, *especially* short-form articles!)
 
-**Finally,** while I could work around that problem by offering *qualified* recommendations, this is simply an enormous time commitment. For one thing, it means reading popular-level books simply and only for the sake of having recommendations to offer to people. For another, though, it means reading them closely and carefully enough that I could offer recommendations with the appropriate caveats: "Skip chapter 4; they really go off the rails." Were I a full-time pastor, I would commit to doing exactly this--*at least* one book every single month. But I’m not. I am perpetually behind on the other reading I have to do, and adding popular books from which I myself would profit little is simply more of a time commitment than I’m willing to commit to at this point.
+**Finally,** while I could work around that problem by offering *qualified* recommendations, this is simply an enormous time commitment. For one thing, it means reading popular-level books simply and only for the sake of having recommendations to offer to people. For another, though, it means reading them closely and carefully enough that I could offer recommendations with the appropriate caveats: "Skip chapter 4; they really go off the rails." Were I a full-time pastor, I would commit to doing exactly this—*at least* one book every single month. But I’m not. I am perpetually behind on the other reading I have to do, and adding popular books from which I myself would profit little is simply more of a time commitment than I’m willing to commit to at this point.
 
 ---
 
