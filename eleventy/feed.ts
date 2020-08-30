@@ -246,11 +246,10 @@ export class JSONFeed implements EleventyClass {
          standalonePage: true,
          excludeFromEleventyCollections: true,
          permalink: (/* _: EleventyData */): string => {
-            const resolved =
+            return (
                this.permalink ??
                (this.collection ? `/${this.collection}/feed.json` : '/feed.json')
-            console.log(this.permalink, this.collection, resolved)
-            return resolved
+            )
          },
       }
    }
