@@ -2,19 +2,22 @@
 title: Waiting for Communion
 subtitle: A coronavirus reminder of our place in the time between the times.
 date: 2020-03-22T08:35:00-0600
+updated: 2020-08-30T18:12:00-0600
 qualifiers:
     audience: >
         Other theologically-orthodox Christians, especially (but not only) those in traditions which link the sacraments to the gathered church.
     epistemic: >
         Humbly confident in the application… if a bit less persuaded by the Westminster system’s official view on the subject.
+summary: >
+    Many of us are unable to gather together or take communion because of government mandates during the coronavirus crisis. Whatever our theologies of the Lord’s Supper, this is a great loss--but one that can shape our hearts in the right direction.
+
 tags:
     - theology
     - communion
     - sacraments
     - fellowship
     - eschatology
-summary: >
-    Many of us are unable to gather together or take communion because of government mandates during the coronavirus crisis. Whatever our theologies of the Lord’s Supper, this is a great loss—but one that can shape our hearts in the right direction.
+    - church
 
 ---
 

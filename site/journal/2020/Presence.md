@@ -2,7 +2,7 @@
 title: Presence
 subtitle: A few notes on God-with-us in his Word and at his Table.
 date: 2020-07-15T20:30:00-0600
-updated: 2020-07-20T08:24:00-0600
+updated: 2020-08-30T18:13:00-0600
 summary: >
     Reading John Webster, taking communion again in poor conditions, and reflecting on what it means to encounter the living God.
 qualifiers:
@@ -18,6 +18,7 @@ tags:
     - music
     - John Webster
     - The Culture of Theology
+    - church
 
 ---
 
