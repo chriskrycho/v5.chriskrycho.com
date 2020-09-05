@@ -22,7 +22,9 @@ tags:
 series:
     name: Data Constructors
     part: 1
+
 date: 2020-09-05T15:45:00-0600
+updated: 2020-09-05T15:55:00-0600
 
 ---
 
@@ -62,8 +64,8 @@ data CabbageColor = Red | Green
 Using a basic custom type like this is pretty much like you’d expect:
 
 ```grain
-colorOne = Red    -- type is CabbageColor
-colorTwo = Green  -- type is *also* CabbageColor
+colorOne = Red     // type is CabbageColor
+colorTwo = Green   // type is *also* CabbageColor
 ```
 
 We could write a type annotation on that to make it extra explicit, even though we don’t *need* to:
@@ -87,10 +89,10 @@ The second type, `Cabbage`, includes a `CabbageColor`. This is *not* something y
 Creating an instance of `Veggie` looks like this:
 
 ```grain
-let squash = Squash                -- type is Veggie
-let redCabbage = Cabbage(Red)      -- type is Veggie
-let greenCabbage = Cabbage(Green)  -- type is Veggie
-let broccoli = Broccoli            -- type is Veggie
+let squash = Squash                 // type is Veggie
+let redCabbage = Cabbage(Red)       // type is Veggie
+let greenCabbage = Cabbage(Green)   // type is Veggie
+let broccoli = Broccoli             // type is Veggie
 ```
 
 Each of these is a `Veggie`. We could prove it by spelling out the types rather than letting the compiler infer them for us, like this:
@@ -110,9 +112,9 @@ But what *exactly* is happening when we write `let squash = Squash` or, perhaps 
 That second point means we could also write this:
 
 ```grain
-let color = Red                  -- type is `CabbageColor`
-let cabbage = Cabbage            -- type is `CabbageColor -> Veggie`
-let redCabbage = cabbage(color)  -- type is `Veggie`
+let color = Red                   // type is `CabbageColor`
+let cabbage = Cabbage             // type is `CabbageColor -> Veggie`
+let redCabbage = cabbage(color)   // type is `Veggie`
 ```
 
 For some of you, this might already make sense—but it’s still neat to see how you might reimplement it in another more commonly-used language. For others, this might still be hurting your head, and *that’s okay*. It took me quite a while for this all to make sense to me when I first encountered it! If your head is spinning a bit right now, that’s normal. Take a break and go enjoy some fresh air, drink some water, and let your brain relax for a few minutes. Or the rest of the day. Come back after that and read the next section, and things will probably click into place.
@@ -329,9 +331,9 @@ Again, the difference is simply the *type* each one has: `squash` and `broccoli`
 This same thing is true back in the ML languages, just with a different syntax:
 
 ```Grain
-squash = Squash     -- Veggie
-broccoli = Broccoli -- Veggie
-cabbage = Cabbage   -- CabbageColor -> Veggie
+squash = Squash      // Veggie
+broccoli = Broccoli  // Veggie
+cabbage = Cabbage    // CabbageColor -> Veggie
 ```
 
 The difference here is that, since this is the *normal* way of constructing these types in languages like Elm, you don’t need to use the scoped class for it. You can imagine that it’s as if we had used capital names for those letters in our bindings and exported them all from a module:
