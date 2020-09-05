@@ -19,6 +19,8 @@ tags:
     - functional programming
     - programming languages
     - type theory
+    - software development
+
 series:
     name: Data Constructors
     part: 1
