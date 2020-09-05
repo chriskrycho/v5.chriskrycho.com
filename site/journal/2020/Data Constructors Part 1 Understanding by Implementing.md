@@ -24,7 +24,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-05T15:57:00-0600
+updated: 2020-09-05T16:23:00-0600
 
 ---
 
@@ -353,6 +353,7 @@ let redCabbage = Cabbage(Red);
 ```
 
 That’s exactly the same thing we’d see in Grain or any other ML-style language—just with TypeScript syntax instead!  
+
 Summarizing so far:
 
 1. All of these variants are *values*. This is why we can bind them, export them, etc.
@@ -576,7 +577,7 @@ let description = describe(redCabbage)
 
 Our TypeScript code is definitely longer, because we had to *create* the ability to do what Grain does at the language level. However, doing so means we can actually see what Grain is doing quite clearly. In particular, the original syntax `Cabbage(Red)` confuses a lot of people who aren’t familiar with the syntax of languages like Grain. Having implemented it in TypeScript, though, we can see that `Cabbage` is just a function which takes an argument, `CabbageColor`, and returns a `Veggie`.
 
-In fact, if we wanted to, we could make it possible to write *exactly* the same thing in TypeScript to construct a `Veggie` as we do in Grain, by creating standalone versions of the “data constructors” for `Veggie` and `CabbageColor`:
+In fact, as we saw above, we can make it possible to write *exactly* the same thing in TypeScript to construct a `Veggie` as we do in Grain, by creating standalone versions of the “data constructors” for `Veggie` and `CabbageColor`:
 
 ```ts
 const { Red, Green } = CabbageColor;
