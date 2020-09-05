@@ -24,7 +24,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-05T15:55:00-0600
+updated: 2020-09-05T15:57:00-0600
 
 ---
 
@@ -751,28 +751,28 @@ In this case, there’s no particular value to adding that functionality, since 
 *[SML]: Standard ML
 *[TS]: TypeScript
 
-[^1]:	Note that pretty much everything I say here goes, with minor differences in details, for Swift’s and Rust’s `enum` types as well!
+[^1]: Note that pretty much everything I say here goes, with minor differences in details, for Swift’s and Rust’s `enum` types as well!
 
-[^2]:	I’m using Haskell syntax highlighting for these samples, because there isn’t (yet) a syntax definition for Grain in Highlight.js, which I use (server-side!) to do the syntax highlighting for code samples on this sight. Haskell isn’t perfect, but it’s pretty decent for the specific code samples in this post. (I could also have used TypeScript! It’s very nearly close enough!) This means I’m also making one small syntactical change: using `--` instead of `#` to mark comments.
+[^2]: I’m using Haskell syntax highlighting for these samples, because there isn’t (yet) a syntax definition for Grain in Highlight.js, which I use (server-side!) to do the syntax highlighting for code samples on this sight. Haskell isn’t perfect, but it’s pretty decent for the specific code samples in this post. (I could also have used TypeScript! It’s very nearly close enough!) This means I’m also making one small syntactical change: using `--` instead of `#` to mark comments.
 
-[^3]:	You may notice that I don’t have a `default` case here. That’s on purpose. Because I specify the return type of the function as `string`, TypeScript will actually tell me if I don’t cover all the cases in the switch statement. TypeScript is smart enough to know that if we *don’t* cover all the cases, it *won’t* return a string.
+[^3]: You may notice that I don’t have a `default` case here. That’s on purpose. Because I specify the return type of the function as `string`, TypeScript will actually tell me if I don’t cover all the cases in the switch statement. TypeScript is smart enough to know that if we *don’t* cover all the cases, it *won’t* return a string.
 
-	This comes for free in languages like Grain, in *all* contexts where you’re “matching” on a given item.
+    This comes for free in languages like Grain, in *all* contexts where you’re “matching” on a given item.
 
-[^4]:	You can use classes for all sorts of things, and not all of them have to do with inheritance! In this case, it’s just going to be a convenient tool for building up the data structure (and one that will be familiar to developers from *many* languages). As a bonus, you could implement an actual language similar to the way I will build up this type in the rest of this post.
+[^4]: You can use classes for all sorts of things, and not all of them have to do with inheritance! In this case, it’s just going to be a convenient tool for building up the data structure (and one that will be familiar to developers from *many* languages). As a bonus, you could implement an actual language similar to the way I will build up this type in the rest of this post.
 
-[^5]:	TODO: fix the syntax highlighting here!
+[^5]: Here I’m using the normal JavaScript version of the `constructor` syntax, but for scenarios like this TypeScript provides a convenient shorthand:
 
-	Here I’m using the normal JavaScript version of the `constructor` syntax, but for scenarios like this TypeScript provides a convenient shorthand:
+    ```ts
+    class Veggie {
+      constructor(readonly kind: VeggieKind) {}
+    }
+    ```
 
-	```class Veggie {`
-	```  constructor(readonly kind: VeggieKind) {}`
-	```}`
+    If I were building this data type myself, that’s the declaration I would actually use!
 
-	If I were building this data type myself, that’s the declaration I would actually use!
+[^6]: Note: I’m taking a tiny liberty here with the Grain sample code and acting as if `+` does string concatenation. It… doesn’t yet. But that’s just because Grain is extremely young; at *some* point it’ll have something which does this and nicely!
 
-[^6]:	Note: I’m taking a tiny liberty here with the Grain sample code and acting as if `+` does string concatenation. It… doesn’t yet. But that’s just because Grain is extremely young; at *some* point it’ll have something which does this and nicely!
+[^7]: Keen-eyed readers who know TypeScript well will likely see a way we could make this *much* safer using union types. I chose to leave that aside in *this* post for the sake of relative brevity; I’ll return to it in tomorrow’s post showing two ways I would do this in idiomatic TypeScript.
 
-[^7]:	Keen-eyed readers who know TypeScript well will likely see a way we could make this *much* safer using union types. I chose to leave that aside in *this* post for the sake of relative brevity; I’ll return to it in tomorrow’s post showing two ways I would do this in idiomatic TypeScript.
-
-[^8]:	I admit, that might make me a little weird to some of you. That’s okay! I kind of enjoy being a little weird.
+[^8]: I admit, that might make me a little weird to some of you. That’s okay! I kind of enjoy being a little weird.
