@@ -42,7 +42,7 @@ data Veggie =
 let redCabbage = Cabbage(Red)
 ```
 
-<i>—what does it mean, and how can we understand it in terms of things we can do in languages like Java, C^♯^, and TypeScript?</i>[^2]
+<i>—what does it mean, and how can we understand it in terms of things we can do in languages like Java, C^♯^, and TypeScript?</i>
 
 Even to people with quite a bit of experience in a variety of programming languages, the syntax here is different enough from *all* the C-related languages most working developers use that it can be hard to wrap your head around. In fact, one of the smartest developers I know got stuck on trying to make sense of this syntax recently. So in this post, I’m going to explain it using TypeScript, in the same terms that made it make sense to that developer. If you’re familiar with any modern language with classes, this will likely make sense to you!
 
@@ -753,8 +753,6 @@ In this case, there’s no particular value to adding that functionality, since 
 *[TS]: TypeScript
 
 [^1]: Note that pretty much everything I say here goes, with minor differences in details, for Swift’s and Rust’s `enum` types as well!
-
-[^2]: I’m using Haskell syntax highlighting for these samples, because there isn’t (yet) a syntax definition for Grain in Highlight.js, which I use (server-side!) to do the syntax highlighting for code samples on this sight. Haskell isn’t perfect, but it’s pretty decent for the specific code samples in this post. (I could also have used TypeScript! It’s very nearly close enough!) This means I’m also making one small syntactical change: using `--` instead of `#` to mark comments.
 
 [^3]: You may notice that I don’t have a `default` case here. That’s on purpose. Because I specify the return type of the function as `string`, TypeScript will actually tell me if I don’t cover all the cases in the switch statement. TypeScript is smart enough to know that if we *don’t* cover all the cases, it *won’t* return a string.
 
