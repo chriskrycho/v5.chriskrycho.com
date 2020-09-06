@@ -26,7 +26,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-05T16:23:00-0600
+updated: 2020-09-05T20:21:00-0600
 
 ---
 
@@ -49,7 +49,7 @@ Even to people with quite a bit of experience in a variety of programming langua
 We’re going to take this in two steps:
 
 1. [What the Syntax Means](#what-the-syntax-means)
-2. [Understanding—by Implementing](#understanding-by-implementing)
+2. [Understanding—by Implementing](#understandingby-implementing)
 
 If you get through the first section and still feel a bit confused, that’s okay—in fact, it’s almost the point. Take a breather, go get a drink and take a walk or something, and then come back and read the second section!
 
@@ -120,8 +120,6 @@ let redCabbage = cabbage(color)   // type is `Veggie`
 ```
 
 For some of you, this might already make sense—but it’s still neat to see how you might reimplement it in another more commonly-used language. For others, this might still be hurting your head, and *that’s okay*. It took me quite a while for this all to make sense to me when I first encountered it! If your head is spinning a bit right now, that’s normal. Take a break and go enjoy some fresh air, drink some water, and let your brain relax for a few minutes. Or the rest of the day. Come back after that and read the next section, and things will probably click into place.
-
-:::
 
 ## Understanding—by Implementing
 
