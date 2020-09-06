@@ -32,7 +32,7 @@ updated: 2020-09-05T20:24:00-0600
 
 Today’s topic: <i>What is a “data constructor” in languages like [Elm](https://elm-lang.org), [Haskell](https://www.haskell.org), [F^♯^](https://fsharp.org), [OCaml](https://ocaml.org)/[ReasonML](https://reasonml.github.io), [Grain](https://grain-lang.org), etc.?[^1] When you see syntax like this (taken from [the Grain docs](https://grain-lang.org/docs/guide/data_types))—</i>
 
-```Grain
+```grain
 data CabbageColor = Red | Green
 data Veggie =
   | Squash
@@ -330,7 +330,7 @@ Again, the difference is simply the *type* each one has: `squash` and `broccoli`
 
 This same thing is true back in the ML languages, just with a different syntax:
 
-```Grain
+```grain
 squash = Squash      // Veggie
 broccoli = Broccoli  // Veggie
 cabbage = Cabbage    // CabbageColor -> Veggie
@@ -363,7 +363,7 @@ The only real difference in what we’ve done in TypeScript and what we’d see 
 
 There *is* another difference, though, and it’s related to a downside in the code we’ve written. We can no longer use a `switch` statement to check this, because it’s too complicated a type for JavaScript’s very limited `switch` capability. All the SML-related languages I mentioned at the top have a feature called *pattern-matching* which supports working with these richer types:[^6]
 
-```Grain
+```grain
 let describeColor = (color) => match (color) {
   | Red => "red"
   | Green => "green"
@@ -553,7 +553,7 @@ let description = describe(redCabbage);
 
 And here’s the original Grain code again:
 
-```Grain
+```grain
 data CabbageColor = Red | Green
 data Veggie =
   | Squash
