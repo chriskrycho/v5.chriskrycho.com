@@ -7,7 +7,7 @@ summary: >
     Demystifying and explaining the idea of “data constructors”—from languages like Elm, Grain, Haskell, F#, OCaml, ReasonML, etc.—by implementing an example in TypeScript.
 qualifiers:
     audience: >
-        Software developers who already know a typed language with classes, such as Java, C#, or TypeScript, and who want to understand what’s happening in “type constructors”.
+        Software developers who already know a typed language with classes, such as Java, C#, or TypeScript, and who want to understand what’s happening in “data constructors” in typed functional programming languages like Haskell, Elm, ReasonML, etc.
 tags:
     - TypeScript
     - Elm
@@ -26,7 +26,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-05T20:24:00-0600
+updated: 2020-09-05T20:32:00-0600
 
 ---
 
