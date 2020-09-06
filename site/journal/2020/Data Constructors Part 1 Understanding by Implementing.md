@@ -10,7 +10,7 @@ qualifiers:
         Software developers who already know a typed language with classes, such as Java, C#, or TypeScript, and who want to understand what’s happening in “data constructors” in typed functional programming languages like Haskell, Elm, ReasonML, etc.
 
 thanks:
-    Michael Ciccotti let me know about a rendering issue in the first version of this post I published. [Oscar Spencer](https://github.com/ospencer) caught a mistake in some Grain sample code and suggested adding some extra details on pattern matching to a footnote. (As always, all mistakes are my own!)
+    [Chris Freeman](https://github.com/cafreeman) first flagged up the need for this writeup, and bore with my initial halting attempts to explain it. Michael Ciccotti let me know about a rendering issue in the first version of this post I published. [Oscar Spencer](https://github.com/ospencer) caught a mistake in some Grain sample code and suggested adding some extra details on pattern matching to a footnote. (As always, all mistakes are my own!)
 
 tags:
     - TypeScript
@@ -30,7 +30,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-06T11:00:00-0600
+updated: 2020-09-06T11:02:00-0600
 
 ---
 
