@@ -8,6 +8,10 @@ summary: >
 qualifiers:
     audience: >
         Software developers who already know a typed language with classes, such as Java, C#, or TypeScript, and who want to understand what’s happening in “data constructors” in typed functional programming languages like Haskell, Elm, ReasonML, etc.
+
+thanks:
+    Michael Ciccotti let me know about a rendering issue in the first version of this post I published. [Oscar Spencer](https://github.com/ospencer) caught a mistake in some Grain sample code and suggested adding some extra details on pattern matching to a footnote. (As always, all mistakes are my own!)
+
 tags:
     - TypeScript
     - Elm
@@ -361,7 +365,7 @@ Summarizing so far:
 
 The only real difference in what we’ve done in TypeScript and what we’d see in that original example from Grain is that Grain has built-in language support for these things because they’re the default instead of something we’re building on top of other language constructs.
 
-There *is* another difference, though, and it’s related to a downside in the code we’ve written. We can no longer use a `switch` statement to check this, because it’s too complicated a type for JavaScript’s very limited `switch` capability. All the SML-related languages I mentioned at the top have a feature called *pattern-matching* which supports working with these richer types:[^6]
+There *is* another difference, though, and it’s related to a downside in the code we’ve written. We can no longer use a `switch` statement to check this, because it’s too complicated a type for JavaScript’s very limited `switch` capability. All the SML-related languages I mentioned at the top have a feature called *pattern-matching* which supports working with these richer types:[^matching]
 
 ```grain
 let describeColor = (color) => match (color) {
@@ -770,7 +774,22 @@ In this case, there’s no particular value to adding that functionality, since 
 
     If I were building this data type myself, that’s the declaration I would actually use!
 
-[^6]: Note: I’m taking a tiny liberty here with the Grain sample code and acting as if `+` does string concatenation. It… doesn’t yet. But that’s just because Grain is extremely young; at *some* point it’ll have something which does this and nicely!
+[^matching]: Two things to note about the example of pattern-matching here:
+
+    1.  I’m taking a tiny liberty here with the Grain sample code and acting as if `+` does string concatenation. It… doesn’t yet. But that’s just because Grain is extremely young; at *some* point it’ll have something which does this and nicely!
+
+    2.  Pattern matching functionality is even deeper and richer than I'm showing here. Matching can deal with *nested* types, too. In this case, I wouldn't actually (necessarily) break out `describe` and `describeColor` this way. Instead, I might just use a richer `match` expression:
+
+        ```grain
+        let describe = (veggie) => match (veggie) {
+          | Squash => "It's a squash"
+          | Cabbage(Red) => "It's a red cabbage"
+          | Cabbage(Green) => "It's a green cabbage"
+          | Broccoli => "It's broccoli"
+        }
+        ```
+        
+        If the type were further nested, we could further drill down in manually like this, “destructuring” the types as deeply as we need. This makes it *much* more powerful than a `switch` statement from JS/TS/Java/C^♯^  etc.
 
 [^7]: Keen-eyed readers who know TypeScript well will likely see a way we could make this *much* safer using union types. I chose to leave that aside in *this* post for the sake of relative brevity; I’ll return to it in tomorrow’s post showing two ways I would do this in idiomatic TypeScript.
 
