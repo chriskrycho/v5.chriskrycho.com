@@ -26,7 +26,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-05T20:21:00-0600
+updated: 2020-09-05T20:24:00-0600
 
 ---
 
@@ -81,9 +81,9 @@ Unlike enums in C-based languages, though, these types have a superpower: they c
 
 ```grain
 data Veggie =
-    | Squash
-    | Cabbage(CabbageColor)
-    | Broccoli
+  | Squash
+  | Cabbage(CabbageColor)
+  | Broccoli
 ```
 
 The second type, `Cabbage`, includes a `CabbageColor`. This is *not* something you can do with a traditional enum in C, Java, C^♯^, or TypeScript. (This is *also* the point we’re going to spend the rest of the post on!)
