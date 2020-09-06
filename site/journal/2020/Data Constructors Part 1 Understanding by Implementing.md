@@ -66,15 +66,15 @@ data CabbageColor = Red | Green
 Using a basic custom type like this is pretty much like you’d expect:
 
 ```grain
-colorOne = Red     // type is CabbageColor
-colorTwo = Green   // type is *also* CabbageColor
+let colorOne = Red     // type is CabbageColor
+let colorTwo = Green   // type is *also* CabbageColor
 ```
 
 We could write a type annotation on that to make it extra explicit, even though we don’t *need* to:
 
 ```grain
-colorOne: CabbageColor = Red
-colorTwo: CabbageColor = Green
+let colorOne: CabbageColor = Red
+let colorTwo: CabbageColor = Green
 ```
 
 Unlike enums in C-based languages, though, these types have a superpower: they can hold data. We can see this in the second type defined in the opening example:
