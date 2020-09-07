@@ -20,6 +20,7 @@ tags:
   - web development
   - reactivity
   - autotracking
+  - video
 
 ---
 
