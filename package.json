@@ -66,7 +66,18 @@
       "parserOptions": {
          "ecmaVersion": 2019,
          "sourceType": "module"
-      }
+      },
+      "overrides": [
+         {
+            "files": [
+               "gulpfile.js"
+            ],
+            "rules": {
+               "@typescript-eslint/no-var-requires": "off",
+               "@typescript-eslint/explicit-function-return-type": "off"
+            }
+         }
+      ]
    },
    "prettier": {
       "singleQuote": true,
@@ -75,8 +86,11 @@
       "trailingComma": "all"
    },
    "scripts": {
-      "build": "yarn gulp all & yarn eleventy",
-      "serve": "yarn gulp watch & yarn eleventy --serve",
+      "build:styles": "yarn gulp all",
+      "build:site": "yarn eleventy",
+      "build": "yarn build:styles && yarn build:site",
+      "watch:styles": "yarn gulp watch",
+      "serve": "yarn eleventy --quiet --serve",
       "clean": "rm -rf public"
    },
    "resolutions": {
