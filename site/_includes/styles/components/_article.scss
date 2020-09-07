@@ -459,6 +459,10 @@
       &::before {
          content: '—/ Aside /—';
       }
+
+      pre, code {
+         background: var(--bg);
+      }
    }
 
    .callout {
