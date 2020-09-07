@@ -30,7 +30,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-06T18:20:00-0600
+updated: 2020-09-07T16:02:00-0600
 
 ---
 
@@ -660,7 +660,7 @@ import { map } from 'lodash/map';
 let descriptions = map(veggies, toDescription);
 ```
 
-Now, because I’ve gotten used to this way of doing things, I really enjoy being able to just work with functions like this in general. In fact, I like it *so* much that I’d really prefer that if I’m *only* using a given `.match` invocation one place, I could just use `Veggie.match` directly instead of having to do `(veggie) => veggie.match({ ... })`.[^8]
+Now, because I’ve gotten used to this way of doing things, I really enjoy being able to just work with functions like this in general. In fact, I like it *so* much that I’d really prefer that if I’m *only* using a given `.match` invocation one place, I could just use `Veggie.match` directly instead of having to do `(veggie) => veggie.match({ ... })`.[^weird]
 
 In other words, what if instead of this—
 
@@ -791,4 +791,8 @@ In this case, there’s no particular value to adding that functionality, since 
         
         If the type were further nested, we could further drill down in manually like this, “destructuring” the types as deeply as we need. This makes it *much* more powerful than a `switch` statement from JS/TS/Java/C^♯^  etc.
 
-[^8]: I admit, that might make me a little weird to some of you. That’s okay! I kind of enjoy being a little weird.
+[^weird]: I admit, that might make me a little weird to some of you. That’s okay! I kind of enjoy being a little weird.
+
+
+
+*[JS]: JavaScript
