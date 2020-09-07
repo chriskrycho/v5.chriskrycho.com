@@ -30,7 +30,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-06T11:02:00-0600
+updated: 2020-09-06T18:20:00-0600
 
 ---
 
@@ -150,7 +150,7 @@ That’s it for that particular type. To get an instance of the type, we just do
 let color = CabbageColor.Red;
 ```
 
-As we’d expect, `red` is of type `CabbageColor`; we could easily have specified it (but don’t need to because of type inference in TypeScript, the same as in Grain):
+As we’d expect, `color` is of type `CabbageColor`; we could easily have specified it (but don’t need to because of type inference in TypeScript, the same as in Grain):
 
 ```ts
 let color: CabbageColor = CabbageColor.Red;
@@ -183,7 +183,7 @@ const CabbageColor = Object.freeze({
 });
 ```
 
-That won’t get us the  without a *bunch* of extra type machinery, though—I covered the relevant details in two posts back when it was introduced ([1](https://v4.chriskrycho.com/2016/keyof-and-mapped-types-in-typescript-21.html "keyof and mapped types in TypeScript 2.1"), [2](https://v4.chriskrycho.com/2017/typescript-keyof-follow-up.html "TypeScript keyof Follow-Up"))—so we’re better just using the built-in `enum` type. TypeScript’s own `const enum` types would be one good solution to both of these problems (albeit with their own tradeoffs); I’ll show those in detail in the next post. 
+That won’t get us the same benefits as an `enum` without a *bunch* of extra type machinery, though—I covered the relevant details in two posts back when it was introduced ([1](https://v4.chriskrycho.com/2016/keyof-and-mapped-types-in-typescript-21.html "keyof and mapped types in TypeScript 2.1"), [2](https://v4.chriskrycho.com/2017/typescript-keyof-follow-up.html "TypeScript keyof Follow-Up"))—so we’re better just using the built-in `enum` type. TypeScript’s own `const enum` types would be one good solution to both of these problems (albeit with their own tradeoffs); I’ll show those in detail in the next post. 
 
 </aside>
 
