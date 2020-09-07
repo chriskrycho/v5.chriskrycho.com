@@ -97,10 +97,11 @@
    dl,
    pre,
    aside,
-   .note,
    .callout,
+   .footnotes,
+   .note,
    .qualifiers,
-   .footnotes {
+   .quotation {
       margin: {
          left: auto;
          right: auto;
@@ -497,15 +498,10 @@
       max-width: var(--max-width);
 
       figcaption {
-         margin-left: 1.1em;
+         width: 100%;
          text-align: left;
-
-         &::before {
-            content: '—';
-            padding-right: 0.1em;
-            margin-left: -1em;
-            width: 1em;
-         }
+         text-indent: hanging -1.3em;
+         padding-left: 1.1em;
       }
    }
 

@@ -21,7 +21,7 @@ tags:
 
 > …the capacity of Christian theology to sustain lively conversations with what lies outside its culture, as well as to engage in serious self-criticism, is dependent upon its grasp of its own proper object: the gift of the presence of God in Jesus Christ through the power of the Holy Spirit. Because that object is what (who) it is—the living God among us with sheerly intrusive force—the culture of Christian faith and theology is at the same time an anti-culture. It is the site of a struggle against the domestic idolatry of Christendom, against the creation and establishment and defense of settled representations of God. And if this is so, then the cultivation of Christian culture, far from isolating theology from subversion through critique, is in fact the essential precondition for a theological practice characterized above all by repentance.
 
-<figcaption>{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, p. 47</figcaption>
+<figcaption>—{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, p. 47</figcaption>
 
 </figure>
 

@@ -21,6 +21,6 @@ summary: >
 
 > How shall we characterize the triune Creator’s active relating to creation? As a free relating that in attentive delight constitutes creatures in being, each and all--as a delighting in each and all, a delighting in which God commits Godself to creation and its well-being in orderly proximate contexts. This is the ultimate context into which we are born: God's hospitable generosity, creatively relating, to us, free of creatures in creating and attentively delighting in them in their otherness to God, self-committed to that which is created.
 
-<figcaption>{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 175</figcaption>
+<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 175</figcaption>
 
 </figure>

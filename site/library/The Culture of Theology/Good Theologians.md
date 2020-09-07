@@ -20,7 +20,7 @@ tags:
 
 > \[Fostering] the practice of Christian theology will involve the cultivation of persons with specific habits of mind and soul. It will involve “culture” in the sense of *formation*. To put the matter in its simplest and yet most challenging form: being a Christian theologian involves the struggle to become a certain kind of person, one shaped by the culture of Christian faith. But once again, this is not some sort of unproblematic, passive socialization into a world of already achieved meanings and roles. It is above all a matter of interrogation by the gospel, out of which the theologian seeks to make his or her own certain dispositions and habits, filling them out in disciplined speech and action. Such seeking is painful; as a form of conversion it involves the strange mixture of resistance and love which is near the heart of real dealings with the God who slays us in order to make us alive. Good theological practice depends on good theologians; and good theologians are—among other things—those formed by graces which are the troubling, eschatological gifts of the Holy Spirit.
 
-<figcaption>{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, pp. 45–46</figcaption>
+<figcaption>—{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, pp. 45–46</figcaption>
 
 </figure>
 

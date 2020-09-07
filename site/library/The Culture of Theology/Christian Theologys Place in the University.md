@@ -11,6 +11,6 @@ tags: [education, theology, university]
 
 > Clearly, there is no principled answer to the question of Christian theology’s place in the university; everything hangs on what you mean by “Christian theology,” “university,” and, of course, “in.”
 
-<figcaption>{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, pp. 45–46</figcaption>
+<figcaption>—{{book.author}}, <a href='{{book.link}}'><cite>{{book.title}}</cite></a>, pp. 45–46</figcaption>
 
 </figure>

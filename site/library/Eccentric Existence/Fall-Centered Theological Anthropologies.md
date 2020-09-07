@@ -23,6 +23,6 @@ updated: 2020-08-22T20:54:00-0600
 > 
 > That is not to say that these claims about other ways in which God relates to humankind, and their anthropological implications, are necessarily denied or ignored. It is to say that they are assigned the logical status of background beliefs. It must be acknowledged within this structure for theological anthropology that the central Christian claim that God relates to human beings to reconcile them when they are estranged assumes the validity of the logically prior claims that the God who relates to reconcile is also the God who relates to create human beings and relates to draw them to eschatological consummation. Nonetheless, according to this structure for theological anthropology, what Christian theology is chiefly about is the articulation of the central claim that God relates to reconcile and save fallen and sinful human beings. The systematic consequence for anthropology is that the anthropological implications of other ways in which the triune God relates to human beings are themselves assigned the logical status of background beliefs. They are marginalized.
 
-<figcaption>{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 114</figcaption>
+<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 114</figcaption>
 
 </figure>
