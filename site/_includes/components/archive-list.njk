@@ -12,7 +12,7 @@
          <ul class='month-items'>
          {%- for day in month.days %}
             <li class='day'>
-               <h4 class='day-title date'>{{day.name}}</h4>
+               <h4 class='day-title date'><span class='day-sticky'>{{day.name}}</span></h4>
                <ul class='day-items'>
                {%- for item in day.items %}
                   <li class='item'>

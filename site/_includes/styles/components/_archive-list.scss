@@ -82,7 +82,6 @@
       display: inline-block;
       text-align: right;
       letter-spacing: 1px;
-      margin-bottom: ms(-6);
       width: 4rem;
    }
 
@@ -105,8 +104,11 @@
 
    .day-title {
       grid-area: day;
+   }
+
+   .day-sticky {
       position: sticky;
-      top: 0.5em;
+      top: 3.2em;
    }
 
    .year-title, .month-title, .day-title {
