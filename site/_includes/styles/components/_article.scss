@@ -571,8 +571,8 @@
    .note,
    .qualifiers,
    .footnotes {
-      --double-margin: --double-margin-sans;
-      --single-margin: --single-margin-sans;
+      --double-margin: var(--double-margin-sans);
+      --single-margin: var(--single-margin-sans);
    }
 
    pre {
