@@ -34,7 +34,7 @@ updated: 2020-09-06T18:20:00-0600
 
 ---
 
-Today’s topic: <i>What is a “data constructor” in languages like [Elm](https://elm-lang.org), [Haskell](https://www.haskell.org), [F^♯^](https://fsharp.org), [OCaml](https://ocaml.org)/[ReasonML](https://reasonml.github.io), [Grain](https://grain-lang.org), etc.?[^1] When you see syntax like this (taken from [the Grain docs](https://grain-lang.org/docs/guide/data_types))—</i>
+Today’s topic: <i>What is a “data constructor” in languages like [Elm](https://elm-lang.org), [Haskell](https://www.haskell.org), [F^♯^](https://fsharp.org), [OCaml](https://ocaml.org)/[ReasonML](https://reasonml.github.io), [Grain](https://grain-lang.org), etc.?[^swift-and-rust-too] When you see syntax like this (taken from [the Grain docs](https://grain-lang.org/docs/guide/data_types))—</i>
 
 ```grain
 data CabbageColor = Red | Green
@@ -156,7 +156,7 @@ As we’d expect, `color` is of type `CabbageColor`; we could easily have specif
 let color: CabbageColor = CabbageColor.Red;
 ```
 
-We can now use the normal `switch` statement semantics with this:[^3]
+We can now use the normal `switch` statement semantics with this:[^default-case]
 
 ```ts
 function describe(color: CabbageColor): string {
@@ -189,14 +189,14 @@ That won’t get us the same benefits as an `enum` without a *bunch* of extra ty
 
 We can’t do exactly this for the `Veggie` type, though: it would be fine for `Squash` and `Broccoli`, but `Cabbage` needs a `CabbageColor` to create it! That’s okay, though: we can still create a type that behaves the same way as the `Veggie` type does.
 
-Let’s start with an empty `class` definition:[^4]
+Let’s start with an empty `class` definition:[^classes]
 
 ```ts
 class Veggie {
 }
 ```
 
-The first thing we’ll want to do is define the kind of veggie this represents. We can do that with another `enum` for the `kind` (and notice that the `kind` here is marked as `readonly` because the `kind` of a `Veggie` is fixed: squash cannot turn into cabbage, etc.):[^5]
+The first thing we’ll want to do is define the kind of veggie this represents. We can do that with another `enum` for the `kind` (and notice that the `kind` here is marked as `readonly` because the `kind` of a `Veggie` is fixed: squash cannot turn into cabbage, etc.):[^constructor-shorthand]
 
 ```ts
 enum VeggieKind {
@@ -486,7 +486,7 @@ veggies
 // It's a green cabbage 
 ```
 
-Here’s the final version of our class, showing how we can implement the original code from Grain in TS:[^7]
+Here’s the final version of our class, showing how we can implement the original code from Grain in TS:
 
 ```ts
 enum CabbageColor {
@@ -756,15 +756,15 @@ In this case, there’s no particular value to adding that functionality, since 
 *[SML]: Standard ML
 *[TS]: TypeScript
 
-[^1]: Note that pretty much everything I say here goes, with minor differences in details, for Swift’s and Rust’s `enum` types as well!
+[^swift-and-rust-too]: Note that pretty much everything I say here goes, with minor differences in details, for Swift’s and Rust’s `enum` types as well!
 
-[^3]: You may notice that I don’t have a `default` case here. That’s on purpose. Because I specify the return type of the function as `string`, TypeScript will actually tell me if I don’t cover all the cases in the switch statement. TypeScript is smart enough to know that if we *don’t* cover all the cases, it *won’t* return a string.
+[^default-case]: You may notice that I don’t have a `default` case here. That’s on purpose. Because I specify the return type of the function as `string`, TypeScript will actually tell me if I don’t cover all the cases in the switch statement. TypeScript is smart enough to know that if we *don’t* cover all the cases, it *won’t* return a string.
 
     This comes for free in languages like Grain, in *all* contexts where you’re “matching” on a given item.
 
-[^4]: You can use classes for all sorts of things, and not all of them have to do with inheritance! In this case, it’s just going to be a convenient tool for building up the data structure (and one that will be familiar to developers from *many* languages). As a bonus, you could implement an actual language similar to the way I will build up this type in the rest of this post.
+[^classes]: You can use classes for all sorts of things, and not all of them have to do with inheritance! In this case, it’s just going to be a convenient tool for building up the data structure (and one that will be familiar to developers from *many* languages). As a bonus, you could implement an actual language similar to the way I will build up this type in the rest of this post.
 
-[^5]: Here I’m using the normal JavaScript version of the `constructor` syntax, but for scenarios like this TypeScript provides a convenient shorthand:
+[^constructor-shorthand]: Here I’m using the normal JavaScript version of the `constructor` syntax, but for scenarios like this TypeScript provides a convenient shorthand:
 
     ```ts
     class Veggie {
@@ -790,7 +790,5 @@ In this case, there’s no particular value to adding that functionality, since 
         ```
         
         If the type were further nested, we could further drill down in manually like this, “destructuring” the types as deeply as we need. This makes it *much* more powerful than a `switch` statement from JS/TS/Java/C^♯^  etc.
-
-[^7]: Keen-eyed readers who know TypeScript well will likely see a way we could make this *much* safer using union types. I chose to leave that aside in *this* post for the sake of relative brevity; I’ll return to it in tomorrow’s post showing two ways I would do this in idiomatic TypeScript.
 
 [^8]: I admit, that might make me a little weird to some of you. That’s okay! I kind of enjoy being a little weird.
