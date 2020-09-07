@@ -37,6 +37,7 @@ Perhaps my favorite part of web design, and also the part with which I spend the
 | Code      | [Hack], designed by Chris Simpkins in 2015 as an extension of the Deja Vu/Bitstream Vera lineage. Licensed in parts under the <abbr title="Massachusetts Instititue of Technology">MIT</abbr> License, the public domain, and Bitstream Vera License (see details [here][hack-license]). |
 
 [Sabon]: https://www.myfonts.com/fonts/linotype/sabon/
+[Fonts.com]: https://www.fonts.com
 [Adobe Fonts]: https://fonts.adobe.com
 [Cronos]: https://www.myfonts.com/fonts/adobe/cronos/
 [Hack]: https://sourcefoundry.org/hack/
