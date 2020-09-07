@@ -566,6 +566,15 @@
       }
    }
 
+   blockquote,
+   aside,
+   .note,
+   .qualifiers,
+   .footnotes {
+      --double-margin: --double-margin-sans;
+      --single-margin: --single-margin-sans;
+   }
+
    pre {
       @include fancy-block(var(--code-bg), var(--code-fg), var(--side-border-width));
       @include extra-vertical();
