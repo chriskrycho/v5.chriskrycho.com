@@ -15,11 +15,11 @@ I keep this page fairly current; it was last updated on {% localeDate page.date,
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
 - Links on the books themselves are affiliate links to Alibris!
 
----
+## Quick Links
 
 - [Planned](#planned)
 - [Started](#started)
-- [2020](#2020]
+- [2020](#2020)
 - [2019](#2019)
 - [2018](#2018)
 
