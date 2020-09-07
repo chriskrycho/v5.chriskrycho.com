@@ -22,11 +22,7 @@ standalonePage: true
          | excludingStandalonePages
          | archiveByYears('NEW_FIRST')
    -%}
-   {%- if items.length -%}
-      {{ archive.list(items) }}
-   {%- else -%}
-      {%- include 'blocks/soon.njk' -%}
-   {%- endif -%}
+   {{ archive.list(items) }}
 {%- endif -%}
 </section>
 {%- endblock main -%}
