@@ -3,8 +3,12 @@
    --line-height: 1.55;
 }
 
+html {
+   background: white;
+}
+
 .site-nav {
-   display: hidden;
+   display: none;
 }
 
 main {
