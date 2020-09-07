@@ -109,7 +109,7 @@ Out of that initial experiment (still running!) grew a general interest in podca
 
 I find podcasting a great complement to writing. It is available in spaces and places where people cannot read (like commuting), and it’s also a great place to flesh out thoughts I have already put in writing or am trying to figure out how to put in writing.
 
-### An occasional composer
+### A composer
 
 In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. Since graduating college, I have composed relatively little, but it remains a delight when I get a chance to do it. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, and actually have a few things actively in work (if on the back burner). You can check out a limited sample of my work (which I hope to expand soon, for the curious if nothing else) [on SoundCloud].
 
