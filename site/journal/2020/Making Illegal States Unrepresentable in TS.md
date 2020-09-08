@@ -3,7 +3,7 @@ title: Making Illegal States Unrepresentable—In TypeScript
 subtitle: >
     Showing how Scott Wlaschin’s approach in F^♯^ translates to a language with a very different type system.
 date: 2020-05-25T10:40:00-0600
-updated: 2020-09-07T21:01:00-0600
+updated: 2020-09-07T21:18:00-0600
 qualifiers:
     audience:
         Software engineers who are already persuaded of the value of type systems, and are interested in using them more effectively. (I’m not trying to persuade people that type systems are valuable here!)
@@ -405,7 +405,7 @@ Here, it might also make sense to create a custom tagged type for the `EmailAndP
 
 ```ts
 class EmailAndPostal {
-  readonly type = 'EmailAndPostal' as const;
+  readonly type = 'EmailAndPostal';
   
   constructor(
     public readonly data: [EmailContactInfo, PostalContactInfo]
