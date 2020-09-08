@@ -3,7 +3,7 @@ title: Making Illegal States Unrepresentable—In TypeScript
 subtitle: >
     Showing how Scott Wlaschin’s approach in F^♯^ translates to a language with a very different type system.
 date: 2020-05-25T10:40:00-0600
-updated: 2020-07-25T21:20:00-0600
+updated: 2020-09-07T20:56:00-0600
 qualifiers:
     audience:
         Software engineers who are already persuaded of the value of type systems, and are interested in using them more effectively. (I’m not trying to persuade people that type systems are valuable here!)
@@ -11,6 +11,12 @@ qualifiers:
         I’ve done this a *lot* over the last few years; I can’t imagine working without it anymore.
 thanks: >
     Thanks to [Scott Wlaschin](https://fsharpforfunandprofit.com/) for giving permission to reuse his materials this way!
+tags:
+  - TypeScript
+  - software development
+  - type theory
+  - F♯
+  - functional programming
 
 ---
 
@@ -369,13 +375,13 @@ Two notes on this example:
 
 ```ts
 class Name {
-  readonly type = 'Name' as const;
+  readonly type = 'Name';
 
   constructor(public readonly name: string) {}
 }
 
 class EmailContactInfo {
-  readonly type = 'EmailContactInfo' as const;
+  readonly type = 'EmailContactInfo';
 
   private constructor(public readonly email: Email) {}
 
@@ -389,7 +395,7 @@ class EmailContactInfo {
 }
 
 class PostalContactInfo {
-  readonly type = 'PostalContactInfo' as const;
+  readonly type = 'PostalContactInfo';
 
   constructor(public readonly address: string) {}
 }
