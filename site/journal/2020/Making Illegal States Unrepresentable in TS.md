@@ -3,7 +3,7 @@ title: Making Illegal States Unrepresentable—In TypeScript
 subtitle: >
     Showing how Scott Wlaschin’s approach in F^♯^ translates to a language with a very different type system.
 date: 2020-05-25T10:40:00-0600
-updated: 2020-09-07T20:56:00-0600
+updated: 2020-09-07T21:01:00-0600
 qualifiers:
     audience:
         Software engineers who are already persuaded of the value of type systems, and are interested in using them more effectively. (I’m not trying to persuade people that type systems are valuable here!)
@@ -15,7 +15,7 @@ tags:
   - TypeScript
   - software development
   - type theory
-  - F♯
+  - F#
   - functional programming
 
 ---
