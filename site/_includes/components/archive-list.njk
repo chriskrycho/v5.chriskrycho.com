@@ -17,20 +17,20 @@
                {%- for item in day.items %}
                   <li class='item'>
                      <h5 class='item-title'>
-                        {% set url %}
-                           {% if item.data.link %}
+                        {% set url -%}
+                           {%- if item.data.link -%}
                               {{item.data.link}}
-                           {% else %}
+                           {%- else -%}
                               {{item.url}}
-                           {% endif %}
-                        {% endset %}
-                        {% set linkTitle %}
-                           {% if item.data.link %}
+                           {%- endif -%}
+                        {%- endset %}
+                        {% set linkTitle -%}
+                           {%- if item.data.link -%}
                               direct link to item
-                           {% else %}
+                           {%- else -%}
                               item permalink
-                           {% endif %}
-                        {% endset %}
+                           {%- endif -%}
+                        {%- endset %}
 
                         <a href='{{url}}' class='item-permalink' title='{{linkTitle}}'>
                         {%- if item.data.title -%}
