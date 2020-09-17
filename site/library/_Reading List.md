@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-09-07T08:40:00-0600
+date: 2020-09-16T22:30:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -65,7 +65,7 @@ Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](h
 - [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04] and [8.05]
 - [<cite>Dark Matters: On the Surveillance of Blackness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matters-On-the-Surveillance-of-Blackness-Simone-Browne%2Fbook%2F32087130), Simone Browne (new)—discussed on Winning Slowly [8.12] and [8.13]
 - [<cite>The Real World of Technology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Real-World-of-Technology-Dr-Ursula-M-Franklin-PH-D%2Fbook%2F5575099), Ursula Franklin (new)—discussed on Winning Slowly [8.14] and [8.15]
-- [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEvolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley%2Fbook%2F2179950), Mary Midgley (new)—discussed on Winning Slowly episodes [8.16] and 8.17 (upcoming as of the latest update to this page); see also [posts on the book](https://v5.chriskrycho.com/topics/evolution-as-a-religion)
+- [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEvolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley%2Fbook%2F2179950), Mary Midgley (new)—discussed on Winning Slowly episodes [8.16] and [8.17]; see also [posts on the book](https://v5.chriskrycho.com/topics/evolution-as-a-religion)
 - [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)—[all posts on the book](/topics/the-culture-of-theology/)
 
 ### Fiction
@@ -102,6 +102,7 @@ Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](h
 [8.14]: https://winningslowly.org/8.14
 [8.15]: https://winningslowly.org/8.15
 [8.16]: https://winningslowly.org/8.16
+[8.17]: https://winningslowly.org/8.17
 
 ## 2019
 
