@@ -7,6 +7,7 @@ qualifiers:
   audience: >
     ‘Little-o’ orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
 date: 2020-09-19T17:55:00-0600
+updated: 2020-09-19T17:58:00-0600
 tags:  
   - theology
   - Augustine
@@ -19,7 +20,7 @@ tags:
 
 ---
 
-<figure>
+<figure class="quotation">
 
 > A Christian understanding of love and justice takes its inspiration from a vision of God in Christ—a God of both love and justice. Reconciling God's love and God's justice, of course, is one of the most difficult exercises in systematic theology. It stands with the problem of reconciling the humanity and divinity of Jesus Christ as one of the great issues in theology. Both efforts typically generate massive debate, lead to schisms in the church, and can trade upon pernicious caricatures of Christianity’s relation to Judaism. Learning how to say both claims at the same time without denying the other—God is just and God is love—God is human and God is divine—is part of what Christian theology is all about. Theologians craft grammatical rules to regulate how to affirm these claims. Building on this claim, I think a helpful analogy for thinking about love and justice might borrow from the conceptual grammar of Chalcedonian Christology.
 > 
