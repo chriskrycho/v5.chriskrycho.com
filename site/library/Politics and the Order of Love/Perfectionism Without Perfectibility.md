@@ -1,5 +1,8 @@
 ---
 title: Perfectionism Without Perfectibility
+qualifiers:
+  audience: >
+    ‘Little-o’ orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
 date: 2020-07-31T14:45:00-0600
 updated: 2020-08-22T20:54:01-0600
 tags:
