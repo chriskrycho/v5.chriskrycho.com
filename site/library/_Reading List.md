@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-09-19T14:22:00-0600
+date: 2020-09-19T14:33:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -46,12 +46,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Non-fiction
 
-- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)—[all posts on the book](/topics/eccentric-existence/)
-- [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)—discussed on Winning Slowly [8.10] and [8.11]
+- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)
+    - [all posts on the book](/topics/eccentric-existence/)
+- [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)
+    - discussed on Winning Slowly [8.10] and [8.11]
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
-- [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)—[all posts on the book](/topics/politics-and-the-order-of-love/)
-- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality
-Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky
+- [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
+    - [all posts on the book](/topics/politics-and-the-order-of-love/)
+- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky
 
 ### Fiction
 
@@ -62,11 +64,15 @@ Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](h
 ### Non-fiction
 
 - <cite>Phaedrus</cite>, Plato (new)—discussed on Winning Slowly [8.02] and [8.03]
-- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171), Jean-François Lyotard (new)—discussed on Winning Slowly [8.04] and [8.05]
-- [<cite>Dark Matters: On the Surveillance of Blackness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matters-On-the-Surveillance-of-Blackness-Simone-Browne%2Fbook%2F32087130), Simone Browne (new)—discussed on Winning Slowly [8.12] and [8.13]
-- [<cite>The Real World of Technology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Real-World-of-Technology-Dr-Ursula-M-Franklin-PH-D%2Fbook%2F5575099), Ursula Franklin (new)—discussed on Winning Slowly [8.14] and [8.15]
+- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171), Jean-François Lyotard (new)
+    - discussed on Winning Slowly [8.04] and [8.05]
+- [<cite>Dark Matters: On the Surveillance of Blackness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matters-On-the-Surveillance-of-Blackness-Simone-Browne%2Fbook%2F32087130), Simone Browne (new)
+    - discussed on Winning Slowly [8.12] and [8.13]
+- [<cite>The Real World of Technology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Real-World-of-Technology-Dr-Ursula-M-Franklin-PH-D%2Fbook%2F5575099), Ursula Franklin (new)
+    - discussed on Winning Slowly [8.14] and [8.15]
 - [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEvolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley%2Fbook%2F2179950), Mary Midgley (new)—discussed on Winning Slowly episodes [8.16] and [8.17]; see also [posts on the book](https://v5.chriskrycho.com/topics/evolution-as-a-religion)
-- [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)—[all posts on the book](/topics/the-culture-of-theology/)
+- [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)
+    - [all posts on the book](/topics/the-culture-of-theology/)
 - [<cite>Shape Up</cite>](https://basecamp.com/shapeup), Ryan Singer (new)
 
 ### Fiction
@@ -76,10 +82,15 @@ Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](h
 - <cite>Tiamat’s Wrath</cite>, James S. A. Corey (reread)
 - <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
 - <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
-- [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]--discussed on Winning Slowly [8.06] and [8.07]
-- [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)--[review](/library/jurassic-park/); discussed on Winning Slowly [8.08] and [8.09]
-- [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)--[review](/library/the-lost-world/)
-- [<cite>Sourdough</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343), Robin Sloan (new)--[review](/library/sourdough/)
+- [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
+    - discussed on Winning Slowly [8.06] and [8.07]
+- [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)
+    - [review](/library/jurassic-park/)
+    - discussed on Winning Slowly [8.08] and [8.09]
+- [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)
+    - [review](/library/the-lost-world/)
+- [<cite>Sourdough</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343), Robin Sloan (new)
+    - [review](/library/sourdough/)
 - [<cite>Echoes of Earth</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEchoes-of-Earth-Sean-Williams%2Fbook%2F1874511%3Fmatches%3D35), Sean Williams and Shane Dix (new)
 - [<cite>Delta-V</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDelta-V-Daniel-Suarez%2Fbook%2F42331977), Daniel Suarez (new)
 - <cite>Orphans of Earth</cite>, Sean Williams and Shane Dix (new)
