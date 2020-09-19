@@ -421,7 +421,7 @@ If you’d like to see some of the details of how these pieces are implemented, 
 
 [^closures-classes]: It’s also worth seeing how closures are the [dual](https://en.wikipedia.org/wiki/Duality_(mathematics)) of classes! These two have *the same semantics* as far as an end user is concerned:
 
-    ```js`
+    ```js
     class PersonA {
       #age;
       #name;
@@ -462,7 +462,7 @@ If you’d like to see some of the details of how these pieces are implemented, 
         },
       };
     }
-    ````
+    ```
 
 [^reactive-contexts]: Today, the only reactive context Ember has is its template layer, where values you render or pass as arguments to components, modifiers, or helpers are all *reactive*. [Soon](https://emberjs.github.io/rfcs/0626-invoke-helper.html), though, we will also have reactive functions available in JavaScript contexts, which will make the reactivity system fully general!
 
