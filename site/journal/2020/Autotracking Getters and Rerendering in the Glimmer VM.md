@@ -23,7 +23,7 @@ templateEngineOverride: md
 
 ---
 
-One of Ember Octane’s (and Glimmer.js’) key features is *autotracking*, a lightweight reactivity system which allows you to cod this, and have it *Just Work™*:
+One of Ember Octane’s (and Glimmer.js’) key features is *autotracking*, a lightweight reactivity system which allows you to write code like this, and have it *Just Work™*:
 
 ```js
 import Component from '@glimmer/component';
