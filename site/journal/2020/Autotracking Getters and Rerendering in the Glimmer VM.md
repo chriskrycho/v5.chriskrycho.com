@@ -405,9 +405,12 @@ Hopefully this has give you a good idea how autotracking works in general, and s
 
 :::callout
 
-If you’d like to see some of the details of how these pieces are implemented, check out [the video](https://www.youtube.com/watch?v=BjKERSRpPeI&amp;feature=youtu.be) of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett](https://www.pzuraq.com) ([@pzuraq](https://github.com/pzuraq/)). You can discuss this [on Ember Discuss](TODO), [Hacker News](TODO), or [lobste.rs](TODO)! Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the idea of “incremental computation.” For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
+If you’d like to see some of the details of how these pieces are implemented, check out [the video](https://www.youtube.com/watch?v=BjKERSRpPeI&amp;feature=youtu.be) of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)). You can discuss this [on Ember Discuss](TODO), [Hacker News](TODO), or [lobste.rs](TODO)! Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the idea of “incremental computation.” For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
 
 :::
+
+[cg]: https://www.pzuraq.com
+[invoke-helper]: https://emberjs.github.io/rfcs/0626-invoke-helper.html
 
 *[API]: application programming interface
 
@@ -444,31 +447,31 @@ If you’d like to see some of the details of how these pieces are implemented, 
       }
     }
 
-    function makePersonB(name, age) {
-      let name = name;
-      let age = age;
+    function PersonB(name, age) {
+      let _name = name;
+      let _age = age;
 
       return {
         get description() {
-          return `${name} is ${age} years old!`;
+          return `${_name} is ${_age} years old!`;
         },
 
         haveABirthday() {
-          age += 1;
+          _age += 1;
         },
 
         changeNameTo(newName) {
-          name = newName;
+          _name = newName;
         },
       };
     }
     ```
 
-[^reactive-contexts]: Today, the only reactive context Ember has is its template layer, where values you render or pass as arguments to components, modifiers, or helpers are all *reactive*. [Soon](https://emberjs.github.io/rfcs/0626-invoke-helper.html), though, we will also have reactive functions available in JavaScript contexts, which will make the reactivity system fully general!
+[^reactive-contexts]: Today, the only reactive context Ember has is its template layer, where values you render or pass as arguments to components, modifiers, or helpers are all *reactive*. [Soon][invoke-helper], though, we will also have reactive functions available in JavaScript contexts, which will make the reactivity system fully general!
 
-[^5]: For a walkthrough of the *actual* implementation, see the [Tracking in the Glimmer VM](https://www.youtube.com/watch?v=BjKERSRpPeI&amp;feature=youtu.be) video that Chris Garrett and I recorded as he helped me fill in some of my gaps in understanding around all of this.
+[^5]: For a walkthrough of the *actual* implementation, see the [Tracking in the Glimmer VM](https://www.youtube.com/watch?v=BjKERSRpPeI&amp;feature=youtu.be) video that [Chris Garrett][cg] and I recorded as he helped me fill in some of my gaps in understanding around all of this.
 
-[^6]: or when using a “reactive function” via the upcoming `invokeHelper` functionality
+[^6]: or when using a “reactive function” via [the upcoming `invokeHelper` functionality][invoke-helper]
 
 [^7]: There are some details about how it checks the tree and makes sure that it manages its internally state correctly, but it really is [using `Math.max`](https://github.com/glimmerjs/glimmer-vm/blob/e8e2fc6f39a60baac2b72c1a19aea9585b162c47/packages/%40glimmer/validator/lib/validators.ts#L130:L172)!
 
