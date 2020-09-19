@@ -19,6 +19,8 @@ tags:
   - web development
   - reactivity
 
+templateEngineOverride: md
+
 ---
 
 One of Ember Octane’s (and Glimmer.js’) key features is *autotracking*, a lightweight reactivity system which allows you to cod this, and have it *Just Work™*:
