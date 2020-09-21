@@ -96,9 +96,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo(value) {
-    this.myName = value;
-  }
+  updateNameTo = (value) => this.myName = value;
 }
 ```
 
@@ -135,9 +133,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo(value) {
-    this.myName = value;
-  }
+  updateNameTo = (value) => this.myName = value;
 }
 
 let personInfo = new PersonInfo();
@@ -164,9 +160,7 @@ export default class PersonInfo {
     this.showError = this.remaining < 0;
   }
 
-  updateNameTo(value) {
-    this.myName = value;
-  }
+  updateNameTo = (value) => this.myName = value;
 }
 
 let personInfo = new PersonInfo("Chris");
@@ -194,9 +188,7 @@ export default class PersonInfo {
     this.showError = () => this.remaining < 0;
   }
 
-  updateNameTo(value) {
-    this.myName = value;
-  }
+  updateNameTo = (value) => this.myName = value;
 }
 
 let personInfo = new PersonInfo("Chris");
@@ -210,7 +202,7 @@ console.log(personInfo.nameLength); // 12
 
 [^closures-classes]: It’s also worth seeing how closures are the [dual](https://en.wikipedia.org/wiki/Duality_(mathematics)) of classes! These two have *the same semantics* as far as an end user is concerned:
 
-But calling `personInfo.nameLength()` like this looks awfully familiar: it’s just like the class method version we might have used before we had native getters. The only real difference between them is that this version lives on the *instance* while a class method lives on the *prototype*—so we get to pay for this function for every `PersonInfo` we create, instead of just once with the class itself.
+But calling `personInfo.nameLength()` like this looks awfully familiar: it’s the same as the class method version we might have used before we had native getters! We’re back to where we started, in other words.
 
 The values a function uses are only evaluated when the function is invoked, whether the function in question is a standalone function, a class method, or a getter. If we have a *chain* of getters (or methods or functions), none of them will be reinvoked until the one at the end of the chain is. We won’t evaluate any of the values they reference until we access a getter which uses them. As a result, any time we evaluate a getter, we’ll always get an up-to-date version of all the values involved. We can add some logging to the getters in `PersonInfo` to see how this behaves:
 
@@ -239,9 +231,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo(value) {
-    this.myName = value;
-  }
+  updateNameTo = (value) => this.myName = value;
 }
 ```
 
@@ -315,12 +305,10 @@ Decorating a property with `@tracked` sets up a getter and a setter for a tracke
 ```js
 import { tracked } from '@glimmer/tracking';
 
-class Person {
-  @tracked age;
+const MAX_LENGTH = 10;
 
-  constructor(age) {
-    this.age = age;
-  }
+class PersonInfo {
+  @tracked name = '';
 }
 ```
 
@@ -330,22 +318,20 @@ class Person {
 // THESE IMPORTS ARE NOT REAL
 import { markAsUsed, markAsChanged } from '@glimmer/...';
 
+const MAX_LENGTH = 10;
+
 class Person {
   // THIS IMPLEMENTATION IS NOT THE REAL ONE EITHER
-  #age;
+  #name;
 
-  get age() {
-    markAsUsed(this, 'age');
-    return this.#age;
+  get name() {
+    markAsUsed(this, 'name');
+    return this.#name;
   }
 
-  set age(newValue) {
-    markAsChanged(this, 'age');
-    this.#age = newValue;
-  }
-
-  constructor(age) {
-    this.age = age;
+  set name(newValue) {
+    markAsChanged(this, 'name');
+    this.#name = newValue;
   }
 }
 ```
@@ -356,71 +342,74 @@ This is *not* the actual implementation—for one thing, you can’t use a decor
     In the actual implementation, `@tracked` is actually implemented using a closure in another module, which uses functions named `consumeTag` and `dirtyTagFor`. The “tags” referenced in the functions’ names are lightweight objects which store the global clock value for a given piece of tracked data. For a walkthrough of the implementation, see the [Tracking in the Glimmer VM][walkthrough-video] video that [Chris Garrett][cg] and I recorded as he helped me fill in some of my gaps in understanding around all of this.
 
 ```js
-let me = new Person(33); // -> `markAsChanged(me, 'age')`
-console.log(me.age);     // -> `markAsUsed(me, 'age')`
+let person = new PersonInfo();
+console.log(person.name);  // -> `markAsUsed(person, 'name')`
 ```
 
-Critically, the exact same thing is true if we use getters which *refer* to the tracked property. If we add a getter named `isOld`, which computes its value by referring to `this.age`, using that getter *also* causes `markAsUsed` to get run:
+Critically, the exact same thing is true if we use getters which *refer* to the tracked property. When we add the `nameLength` getter, which computes its value by referring to `this.name`, using that getter *also* causes `markAsUsed` to get run:
 
 ```js
 import { tracked } from '@glimmer/tracking';
 
 class Person {
-  @tracked age;
+  @tracked name = '';
 
-  constructor(age) {
-    this.age = age;
-  }
-
-  get isOld() {
-    return this.age > 90;
+  get nameLength() {
+    return this.name.length;
   }
 }
 
-let me = new Person(33);
-console.log(`I am ${me.isOld ? "old" : "not yet old"}`);
+let person = new Person();
+console.log(person.nameLength);
 ```
 
-First, `@tracked` turns `isOld` into a getter/setter pair, just as we saw above. Second, `isOld` gets the value of `age`. The getter for `age` first runs `markAsUsed(this, 'age')`, then returns the actual value stored in `#age`. This would remain true no matter how many getters we chained together: by the end, they would all end up using `age`, which would call `markAsUsed(this, 'age')`.
+First, `@tracked` turns `name` into a getter/setter pair, just as we saw above. Second, `nameLength` gets the value of `name`. The getter for `name` first runs `markAsUsed(this, 'name')`, then returns the actual value stored in `#name`. This would remain true no matter how many getters we chained together: by the end, they would all end up using `name`, which would call `markAsUsed(this, 'name')`.
 
 ```js
 import { tracked } from '@glimmer/tracking';
 
 class Person {
-  @tracked age;
+  @tracked name = '';
 
-  constructor(age) {
-    this.age = age;
+  get nameLength() {
+    return this.name.length;
   }
 
-  get isOld() {
-    return this.age > 90;
+  get remaining() {
+    return this.nameLength - MAX_LENGTH;
   }
 
-  get description() {
-    const desc = this.isOld
-      ? "is ancient!"
-      : "is just a whippersnapper... for now";
-
-    return `This person ${desc}`;
+  get showError() {
+    return this.remaining < 0;
   }
+
+  updateNameTo = (value) => this.myName = value;
 }
 
-let person = new Person(33);
+let person = new Person();
 
-// Person.description ->
-//   Person.isOld ->
-//     Person.age *getter* ->
-//       markAsUsed(this, 'age')
-console.log(person.description);
+// Person.showError ->
+//   Person.remaining ->
+//     Person.nameLength ->
+//       Person.name *getter* ->
+//         markAsUsed(this, 'name')
+//         this.#name
+console.log(person.showError);
 ```
 
-Similarly, changing the value of `age` would invoke `markAsChanged` via the setter installed by `@tracked`:
+Similarly, changing the value of `name` would invoke `markAsChanged` via the setter installed by `@tracked`:
 
 ```js
-// Person.age *setter* ->
-//   markAsChanged(this, 'age')
-person.age = 42;
+// Person.name *setter* ->
+//   markAsChanged(this, 'name')
+//   this.#name
+person.name = "Chris";
+
+// Person.updateNameTo ->
+//   Person.name *setter* ->
+//     markAsChanged(this, 'name')
+//     this.#name
+person.updateNameTo("Chris Krycho");
 ```
 
 Exactly the same things happen if we render values or trigger changes from a Glimmer component’s template:
@@ -429,33 +418,39 @@ Exactly the same things happen if we render values or trigger changes from a Gli
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 
-export default class Person extends Component {
-  @tracked age = 13;
+const MAX_LENGTH = 10;
 
-  get isOld() {
-    return this.age > 90;
+export default class PersonInfo extends Component {
+  @tracked name = '';
+
+  get nameLength() {
+    return this.name.length;
   }
 
-  get description() {
-    return this.isOld
-      ? "positively ancient"
-      : "just a whippersnapper... for now";
+  get remaining() {
+    return this.nameLength - MAX_LENGTH;
   }
-  
-  haveABirthday = () => this.age++;
+
+  get showError() {
+    return this.remaining < 0;
+  }
+
+  updateNameTo = ({ target: { value } }) => this.myName = value;
 }
 ```
 
-```hbs
-{{!-- person.hbs --}}
-<p>At {{this.age}} years old, you’re {{this.description}}.</p>
-
-<button {{on "click" this.haveABirthday}}>Get older!</button>
+```handlebars
+<div>
+  <input {{on "input" this.updateName}} value={{this.myName}} />
+  <p class='{{if this.showError "error"}}'>
+    ({{this.nameLength}} remaining)
+  </p>
+</div>
 ```
 
-Using `this.age` in the template directly evaluates `age`, which is the getter set up by `@tracked` and therefore calls `markAsUsed(this, 'age')`. Likewise, using `this.description` in the template evaluates `description`, which evaluates `isOld`, which evaluates `age`, which again calls `markAsUsed(this, 'age')`. Calling `markAsUsed` tells the autotracking runtime that `this.age` is used to compute `age` and `description` in the `Person` component’s template.
+Using `this.name` in the template directly evaluates `name`, which is the getter set up by `@tracked` and therefore calls `markAsUsed(this, 'name')`. Likewise, using `this.showError` and `this.nameLength` in the template evaluates those getters, which ultimately evaluate `name`, which again calls `markAsUsed(this, 'name')`. Calling `markAsUsed` tells the autotracking runtime that `this.name` is used to compute `name`, `nameLength` and `showError` in the `PersonInfo` component’s template.
 
-Likewise, when we trigger `haveABirthday` by clicking the button, it invokes the setter for `age` installed by `@tracked`, and the setter calls `markAsUsed(this, 'age')`. Calling `markAsUsed` increments the global clock value, stores the updated clock value as the new clock value for `this.age`, and schedules a re-render.
+Likewise, when we trigger `updateName` by typing into the input, it invokes the setter for `name` installed by `@tracked`, and the setter calls `markAsChanged(this, 'name')`. Calling `markAsChanged` increments the global clock value, stores the updated clock value as the new clock value for `this.name`, and schedules a re-render.
 
 We can start to see how the system works as a whole. Reading a `@tracked` property while evaluating a value in the template informs the Glimmer VM that it was used in computing that template value. Changing a `@tracked` property bumps the global and property clock values and schedules a new render. This leads us to idea (3): using the global clock values to know when to recompute values in templates.
 
