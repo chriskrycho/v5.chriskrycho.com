@@ -2,7 +2,7 @@
 title: >
   Autotracking: Cutting-Edge CS Powering Beautiful DX
 subtitle: >
-  A modern JavaScript reactivity system powered by Lamport clocks and incremental computation and depth-first searches: *oh my*!
+  A modern JavaScript reactivity system powered by Lamport clocks and incremental computation and depth-first searches: *oh my!*
 summary: >
   One of Ember Octane’s and Glimmer.js’ key features is autotracking: a lightweight reactivity system—powered by Lamport clocks, incremental computation, and depth-first-searches—which lets you write “normal” JavaScript or TypeScript and have everything Just Work™.
 qualifiers:
