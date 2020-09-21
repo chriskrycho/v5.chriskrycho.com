@@ -62,7 +62,7 @@ export default class PersonInfo extends Component {
 </div>
 ```
 
-There are a handful of interesting features to note about this code’s approach to reactivity. We decorate *one* piece of state, `name`, with `@tracked`, and the rest of the state updates automatically. The `showError` and `remaining` properties don’t even refer to `name` directly, but when you type into the `<input>`, their values both update “automatically.” All of this with a particularly light touch:
+There are a handful of interesting features to note about this code’s approach to reactivity. We decorate *one* piece of state, `name`, with `@tracked`, and the rest of the state updates automatically—including the `showError` and `remaining` properties don’t even refer to `name` directly. All of this with a particularly light touch:
 
 - There is no need to mark dependent keys on the getters (as in classic Ember components) and no need for a `computed` hash (as in Vue 2) for derived state: these are plain JavaScript getters.
 - There is no need for a dedicated utility like `setState` like in React’s class-based components or `set` from Ember Classic; this code just uses standard JavaScript assignment to update the value of `myName`.
