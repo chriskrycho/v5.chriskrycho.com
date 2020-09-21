@@ -1,6 +1,6 @@
 ---
 title: >
-  Autotracking: Cutting-Edge CS Powering Beautiful DX
+  Autotracking: Elegant DX Via Cutting-Edge CS
 subtitle: >
   A modern JavaScript reactivity system powered by Lamport clocks and incremental computation and depth-first searches: *oh my!*
 summary: >
