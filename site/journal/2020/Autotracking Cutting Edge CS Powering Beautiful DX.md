@@ -343,7 +343,7 @@ The autotracking runtime implements exactly these three ideas: (1) a global cloc
 
 [^reactive-contexts]: Today, the only reactive context Ember has is its template layer, where values you render or pass as arguments to components, modifiers, or helpers are all *reactive*. [Soon][invoke-helper], though, we will also have reactive functions available in JavaScript contexts, which will make the reactivity system fully general!
 
-### (2) Connecting tracked state to the global clock
+### (2) Connecting tracked state
 
 Decorating a property with `@tracked` sets up a getter and a setter for a tracked property, and both connect to the global clock. When you write this—
 
@@ -499,7 +499,7 @@ Triggering `updateName` by typing into the input invokes the setter for `name` i
 
 With these pieces in place, we can start to see how the system works as a whole. Reading a `@tracked` property while evaluating a value in the template informs the Glimmer VM that it was used in computing that template value. Changing a `@tracked` property bumps the global and property clock values and schedules a new render. This leads us to idea (3): using the global clock values to know when to recompute values in templates.
 
-### (3) Knowing when to recompute values in templates
+### (3) Knowing when to recompute
 
 When rendering templates,[^reactive-again] the runtime sets up what is called a *tracking frame* for each new “computation” in the UI—uses of `{{#each}}`; component, helper, or modifier invocations; etc. A tracking frame is basically just a list of all the tracked properties that called `markAsUsed` while computing any particular value in the template. Each tracking frame corresponds to an element of the UI (components, helpers, modifiers, etc.). Evaluating the entire UI the first time it is rendered produces a tree of tracking frames which corresponds exactly to the tree of UI components. Critically, though, a tracking frame doesn’t store the *values* of the tracked properties referenced during its computation. Instead, the frame stores only a reference to each property along with the property’s current and previous global clock values.
 
