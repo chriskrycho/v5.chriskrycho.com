@@ -528,7 +528,7 @@ Hopefully this has give you a good idea how autotracking works in general, and s
 
 If you’d like to see some of the details of how these pieces are implemented, check out [the video][walkthrough-video] of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)).
 
-Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the idea of “incremental computation.” For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
+Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the specific theory of “incremental computation” underpinning autotracking. For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
 
 You can discuss this [on Ember Discuss](TODO), [Hacker News](TODO), or [lobste.rs](TODO).
 
