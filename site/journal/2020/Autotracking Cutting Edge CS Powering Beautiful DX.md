@@ -457,7 +457,7 @@ person.name = "Chris";
 person.updateNameTo("Chris Krycho");
 ```
 
-Exactly the same things happen if we render values or trigger changes from a Glimmer component’s template:
+Exactly the same things happen if we render values or trigger changes from a Glimmer component’s template—as in the code example from the introduction:
 
 ```js
 import Component from '@glimmer/component';
