@@ -495,9 +495,9 @@ export default class PersonInfo extends Component {
 
 Using `this.name` in the template directly evaluates `name`, which is the getter set up by `@tracked` and therefore calls `markAsUsed(this, 'name')`. Likewise, using `this.showError` and `this.nameLength` in the template evaluates those getters, which ultimately evaluate `name`, which again calls `markAsUsed(this, 'name')`. Calling `markAsUsed` tells the autotracking runtime that `this.name` is used to compute `name`, `nameLength` and `showError` in the `PersonInfo` component’s template.
 
-Likewise, when we trigger `updateName` by typing into the input, it invokes the setter for `name` installed by `@tracked`, and the setter calls `markAsChanged(this, 'name')`. Calling `markAsChanged` increments the global clock value, stores the updated clock value as the new clock value for `this.name`, and schedules a re-render.
+Triggering `updateName` by typing into the input invokes the setter for `name` installed by `@tracked`, and the setter calls `markAsChanged(this, 'name')`. Calling `markAsChanged` increments the global clock value, stores the updated clock value as the new clock value for `this.name`, and schedules a re-render.
 
-We can start to see how the system works as a whole. Reading a `@tracked` property while evaluating a value in the template informs the Glimmer VM that it was used in computing that template value. Changing a `@tracked` property bumps the global and property clock values and schedules a new render. This leads us to idea (3): using the global clock values to know when to recompute values in templates.
+With these pieces in place, we can start to see how the system works as a whole. Reading a `@tracked` property while evaluating a value in the template informs the Glimmer VM that it was used in computing that template value. Changing a `@tracked` property bumps the global and property clock values and schedules a new render. This leads us to idea (3): using the global clock values to know when to recompute values in templates.
 
 ### (3) Knowing when to recompute values in templates
 
