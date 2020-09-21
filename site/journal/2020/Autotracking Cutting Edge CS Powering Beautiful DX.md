@@ -70,6 +70,8 @@ There are a handful of interesting features to note about this code’s approach
 
 This can look like magic when you first encounter it—especially the way undecorated getters update on demand. In fact, though, it’s *Just JavaScript™*, built on the combination of standard JavaScript patterns with a mix of computer science ideas ranging from tried-and-true ideas from decades ago to cutting-edge research. In the rest of this post, we’ll see how it works!
 
+[^vue-2wb]: Vue does not *require* two-way binding, but does make it *easy*.
+
 ## How getters work
 
 First, let’s make sure we have a clear handle on how getters work in JavaScript in general. Once you understand this, seeing how autotracking works will be much easier. (If you already have a good understanding of the semantics and behavior of getters vs. assignment, feel free to [skip to the next section](#autotracking)!) We’ll start by looking at the exact same class we started with, but with all of the Glimmer and DOM details removed, and a constructor added:
@@ -198,10 +200,6 @@ personInfo.updateNameTo("Chris Krycho");
 console.log(personInfo.nameLength); // 12
 ```
 
-[^hooks]: This is actually a critical part of how React Hooks work under the hood.
-
-[^closures-classes]: It’s also worth seeing how closures are the [dual](https://en.wikipedia.org/wiki/Duality_(mathematics)) of classes! These two have *the same semantics* as far as an end user is concerned:
-
 But calling `personInfo.nameLength()` like this looks awfully familiar: it’s the same as the class method version we might have used before we had native getters! We’re back to where we started, in other words.
 
 The values a function uses are only evaluated when the function is invoked, whether the function in question is a standalone function, a class method, or a getter. If we have a *chain* of getters (or methods or functions), none of them will be reinvoked until the one at the end of the chain is. We won’t evaluate any of the values they reference until we access a getter which uses them. As a result, any time we evaluate a getter, we’ll always get an up-to-date version of all the values involved. We can add some logging to the getters in `PersonInfo` to see how this behaves:
@@ -275,6 +273,53 @@ true
 ```
 
 In this example, the JavaScript I’ve written evaluates the values directly when logging them. When we use a value in a template in Ember or Glimmer apps, the template engine (the Glimmer VM) evaluates those values. The VM uses a lightweight reactivity system called *autotracking* to track which items in the UI need to be updated in any render. The next step, then, is understanding autotracking!
+
+[^hooks]: This is actually a critical part of how React Hooks work under the hood.
+
+[^closures-classes]: It’s also worth seeing how closures are the [dual](https://en.wikipedia.org/wiki/Duality_(mathematics)) of classes! These two have *the same semantics* as far as an end user is concerned:
+
+    ```js
+    class PersonA {
+      #age;
+      #name;
+
+      constructor(name, age) {
+        this.#age = age;
+        this.#name = name;
+      }
+
+      get description() {
+        return `${this.#name} is ${this.#age} years old!`;
+      }
+
+      haveABirthday() {
+        this.#age += 1;
+      }
+
+      changeNameTo(newName) {
+        this.#name = newName;
+      }
+    }
+
+    function PersonB(name, age) {
+      let _name = name;
+      let _age = age;
+
+      return {
+        get description() {
+          return `${_name} is ${_age} years old!`;
+        },
+
+        haveABirthday() {
+          _age += 1;
+        },
+
+        changeNameTo(newName) {
+          _name = newName;
+        },
+      };
+    }
+    ```
 
 ## Autotracking
 
@@ -497,47 +542,3 @@ If you’d like to see some of the details of how these pieces are implemented, 
 
 *[DOM]: document object model
 
-[^vue-2wb]: Vue does not *require* two-way binding, but does make it *easy*.
-
-    ```js
-    class PersonA {
-      #age;
-      #name;
-
-      constructor(name, age) {
-        this.#age = age;
-        this.#name = name;
-      }
-
-      get description() {
-        return `${this.#name} is ${this.#age} years old!`;
-      }
-
-      haveABirthday() {
-        this.#age += 1;
-      }
-
-      changeNameTo(newName) {
-        this.#name = newName;
-      }
-    }
-
-    function PersonB(name, age) {
-      let _name = name;
-      let _age = age;
-
-      return {
-        get description() {
-          return `${_name} is ${_age} years old!`;
-        },
-
-        haveABirthday() {
-          _age += 1;
-        },
-
-        changeNameTo(newName) {
-          _name = newName;
-        },
-      };
-    }
-    ```
