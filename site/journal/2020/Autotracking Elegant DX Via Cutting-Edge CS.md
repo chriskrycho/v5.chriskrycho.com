@@ -350,8 +350,6 @@ Decorating a property with `@tracked` sets up a getter and a setter for a tracke
 ```js
 import { tracked } from '@glimmer/tracking';
 
-const MAX_LENGTH = 10;
-
 class PersonInfo {
   @tracked name = '';
 }
@@ -362,8 +360,6 @@ class PersonInfo {
 ```js
 // THESE IMPORTS ARE NOT REAL
 import { markAsUsed, markAsChanged } from '@glimmer/...';
-
-const MAX_LENGTH = 10;
 
 class Person {
   // THIS IMPLEMENTATION IS NOT THE REAL ONE EITHER
