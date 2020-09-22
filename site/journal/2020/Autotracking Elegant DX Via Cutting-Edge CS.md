@@ -527,7 +527,12 @@ Hopefully this has give you a good idea how autotracking works in general, and s
 
 :::callout
 
-If you’d like to see some of the details of how these pieces are implemented, check out [the video][walkthrough-video] of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)).
+If you’d like to see some of the details of how these pieces are implemented, check out [the video][walkthrough-video] of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)). Chris also gave a [great talk on autotracking](https://www.youtube.com/watch?v=HDBSU2HCLbU) at EmberConf 2020, and wrote up a series of blog posts diving into the subject as well:
+
+1. [What is Reactivity?](https://www.pzuraq.com/what-is-reactivity/)
+2. [What Makes a Good Reactive System?](https://www.pzuraq.com/what-makes-a-good-reactive-system/)
+3. [How Autotracking Works](https://www.pzuraq.com/how-autotracking-works/)—the most direct complement to *this* post
+4. [Autotracking Case Study - TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
 
 Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the specific theory of “incremental computation” underpinning autotracking. For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
 
