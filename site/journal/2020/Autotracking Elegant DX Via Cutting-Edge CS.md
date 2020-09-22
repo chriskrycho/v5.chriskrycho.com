@@ -4,7 +4,7 @@ title: >
 subtitle: >
   A modern JavaScript reactivity system powered by Lamport clocks and incremental computation and depth-first searches: *oh my!*
 summary: >
-  One of Ember Octane’s and Glimmer.js’ key features is autotracking: a lightweight reactivity system—powered by Lamport clocks, incremental computation, and depth-first-searches—which lets you write “normal” JavaScript or TypeScript and have everything Just Work™.
+  One of the key features of Ember Octane is autotracking: a lightweight reactivity system powered by Lamport clocks, incremental computation, and depth-first-searches—which lets you write “normal” JavaScript or TypeScript and have everything Just Work™.
 qualifiers:
   audience:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
@@ -27,7 +27,7 @@ templateEngineOverride: md
 
 ---
 
-One of the key feature of [Ember Octane][octane] is *autotracking*, a lightweight reactivity system which allows you to write code like this, and have it *Just Work™*:
+One of the key features of [Ember Octane][octane] is *autotracking*, a lightweight reactivity system powered by Lamport clocks, incremental computation, and depth-first-searches—which allows you to write code like this, and have it *Just Work™*:
 
 [octane]: https://emberjs.com
 
@@ -71,7 +71,7 @@ There are a handful of interesting features to note about this code’s approach
 - There is no need for a dedicated utility like `setState` like in React’s class-based components or `set` from Ember Classic; this code just uses standard JavaScript assignment to update the value of `myName`.
 - This does not use two-way binding like *really old* Ember did or current day Angular or Vue do[^vue-2wb]—updates are explicit, but brief.
 
-This can look like magic when you first encounter it—especially the way undecorated getters update on demand. In fact, though, it’s *Just JavaScript™*, built on the combination of standard JavaScript patterns with a mix of computer science ideas ranging from tried-and-true ideas from decades ago to cutting-edge research. In the rest of this post, we’ll see how it works.
+This can look like magic when you first encounter it—especially the way undecorated getters update on demand. In fact, though, it’s *Just JavaScript™*, built on standard JavaScript patterns and a mix of computer science ideas ranging from tried-and-true ideas from decades ago to cutting-edge research. In the rest of this post, we’ll see how it works.
 
 [^vue-2wb]: Vue does not *require* two-way binding, but does make it *easy*.
 
