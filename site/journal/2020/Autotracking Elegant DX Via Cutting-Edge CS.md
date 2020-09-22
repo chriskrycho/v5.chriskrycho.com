@@ -532,6 +532,8 @@ Hopefully this has give you a good idea how autotracking works in general, and s
 
 :::callout
 
+You can discuss this [Hacker News](https://news.ycombinator.com/item?id=24560106), [lobste.rs](https://lobste.rs/s/amklz3/autotracking_elegant_dx_via_cutting_edge), or [Ember Discuss](https://discuss.emberjs.com/t/autotracking-elegant-dx-via-cutting-edge-cs/18231).
+
 If you’d like to see some of the details of how these pieces are implemented, check out [the video][walkthrough-video] of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)). Chris also gave a [great talk on autotracking](https://www.youtube.com/watch?v=HDBSU2HCLbU) at EmberConf 2020, and wrote up a series of blog posts on the subject:
 
 1. [What is Reactivity?](https://www.pzuraq.com/what-is-reactivity/)
@@ -540,8 +542,6 @@ If you’d like to see some of the details of how these pieces are implemented, 
 4. [Autotracking Case Study - TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
 
 Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the specific theory of “incremental computation” underpinning autotracking. For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
-
-You can discuss this [on Ember Discuss](https://discuss.emberjs.com/t/autotracking-elegant-dx-via-cutting-edge-cs/18231), [Hacker News](https://news.ycombinator.com/item?id=24560106), or [lobste.rs](https://lobste.rs/s/amklz3/autotracking_elegant_dx_via_cutting_edge).
 
 :::
 
