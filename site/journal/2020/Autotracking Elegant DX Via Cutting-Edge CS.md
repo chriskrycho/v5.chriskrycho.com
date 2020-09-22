@@ -62,7 +62,7 @@ export default class PersonInfo extends Component {
 </div>
 ```
 
-There are a handful of interesting features to note about this code’s approach to reactivity. We decorate *one* piece of state, `name`, with `@tracked`, and the rest of the state updates automatically—including the `showError` and `remaining` properties don’t even refer to `name` directly. All of this with a particularly light touch:
+There are a handful of interesting features to note about this code’s approach to reactivity. We decorate *one* piece of state, `name`, with `@tracked`, and the rest of the state updates automatically—including the `showError` and `remaining` properties, which don’t even refer to `name` directly. All of this with a particularly light touch:
 
 - There is no need to mark dependent keys on the getters (as in classic Ember components) and no need for a `computed` hash (as in Vue 2) for derived state: these are plain JavaScript getters.
 - There is no need for a dedicated utility like `setState` like in React’s class-based components or `set` from Ember Classic; this code just uses standard JavaScript assignment to update the value of `myName`.
@@ -74,7 +74,7 @@ This can look like magic when you first encounter it—especially the way undeco
 
 ## How getters work
 
-First, let’s make sure we have a clear handle on how getters work in JavaScript in general. Once you understand this, seeing how autotracking works will be much easier. (If you already have a good understanding of the semantics and behavior of getters vs. assignment, feel free to [skip to the next section](#autotracking).) We’ll start by looking at the exact same class we started with, but with all of the Glimmer and DOM details removed, and a constructor added:
+First, let’s make sure we have a clear handle on how getters work in JavaScript in general. Once you understand this, seeing how autotracking works will be much easier. (If you already have a good understanding of the semantics and behavior of getters vs. assignment, feel free to [skip to the next section](#autotracking).) We’ll start by looking at the exact same class we started with, but with all of the Glimmer and DOM details removed, a constructor added, and continuing to use the same function style for `updateNameTo`:[^updateNameTo-style]
 
 ```js
 const MAX_LENGTH = 10;
@@ -273,6 +273,8 @@ true
 ```
 
 In this example, the JavaScript I’ve written evaluates the values directly when logging them. When we use a value in a template in Ember or Glimmer apps, the template engine (the Glimmer VM) evaluates those values. The VM uses a lightweight reactivity system called *autotracking* to track which items in the UI need to be updated in any render. The next step, then, is understanding autotracking.
+
+[^updateNameTo-style]: We could switch to a class method here, but we’d just have to switch back later when we come back to the component code again. For Ember users reading this: yes, you *can* use this approach, although it’s currently idiomatic to use `@action`. 
 
 [^hooks]: This is actually a critical part of how React Hooks work under the hood.
 
