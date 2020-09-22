@@ -285,24 +285,24 @@ In this example, the JavaScript I’ve written evaluates the values directly whe
 
     ```js
     class PersonA {
-      #age;
-      #name;
+      _age;
+      _name;
 
       constructor(name, age) {
-        this.#age = age;
-        this.#name = name;
+        this._age = age;
+        this._name = name;
       }
 
       get description() {
-        return `${this.#name} is ${this.#age} years old!`;
+        return `${this._name} is ${this._age} years old!`;
       }
 
       haveABirthday() {
-        this.#age += 1;
+        this._age += 1;
       }
 
       changeNameTo(newName) {
-        this.#name = newName;
+        this._name = newName;
       }
     }
 
@@ -368,16 +368,16 @@ import { markAsUsed, markAsChanged } from '@glimmer/...';
 
 class Person {
   // THIS IMPLEMENTATION IS NOT THE REAL ONE EITHER
-  #name;
+  _name;
 
   get name() {
     markAsUsed(this, 'name');
-    return this.#name;
+    return this._name;
   }
 
   set name(newValue) {
     markAsChanged(this, 'name');
-    this.#name = newValue;
+    this._name = newValue;
   }
 }
 ```
@@ -409,7 +409,7 @@ let person = new Person();
 console.log(person.nameLength);
 ```
 
-First, `@tracked` turns `name` into a getter/setter pair, just as we saw above. Second, `nameLength` gets the value of `name`. The getter for `name` first runs `markAsUsed(this, 'name')`, then returns the actual value stored in `#name`. This would remain true no matter how many getters we chained together: by the end, they would all end up using `name`, which would call `markAsUsed(this, 'name')`.
+First, `@tracked` turns `name` into a getter/setter pair, just as we saw above. Second, `nameLength` gets the value of `name`. The getter for `name` first runs `markAsUsed(this, 'name')`, then returns the actual value stored in `_name`. This would remain true no matter how many getters we chained together: by the end, they would all end up using `name`, which would call `markAsUsed(this, 'name')`.
 
 ```js
 import { tracked } from '@glimmer/tracking';
@@ -439,7 +439,7 @@ let person = new Person();
 //     Person.nameLength ->
 //       Person.name *getter* ->
 //         markAsUsed(this, 'name')
-//         this.#name
+//         this._name
 console.log(person.showError);
 ```
 
@@ -448,13 +448,13 @@ Similarly, changing the value of `name` would invoke `markAsChanged` via the set
 ```js
 // Person.name *setter* ->
 //   markAsChanged(this, 'name')
-//   this.#name
+//   this._name
 person.name = "Chris";
 
 // Person.updateNameTo ->
 //   Person.name *setter* ->
 //     markAsChanged(this, 'name')
-//     this.#name
+//     this._name
 person.updateNameTo("Chris Krycho");
 ```
 
