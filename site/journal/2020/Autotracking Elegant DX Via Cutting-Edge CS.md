@@ -541,7 +541,7 @@ If you’d like to see some of the details of how these pieces are implemented, 
 
 Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the specific theory of “incremental computation” underpinning autotracking. For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
 
-You can discuss this [on Ember Discuss](TODO), [Hacker News](TODO), or [lobste.rs](TODO).
+You can discuss this [on Ember Discuss](https://discuss.emberjs.com/t/autotracking-elegant-dx-via-cutting-edge-cs/18231), [Hacker News](https://news.ycombinator.com/item?id=24560106), or [lobste.rs](https://lobste.rs/s/amklz3/autotracking_elegant_dx_via_cutting_edge).
 
 :::
 
