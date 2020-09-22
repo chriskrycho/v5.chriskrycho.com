@@ -68,7 +68,9 @@ export default class PersonInfo extends Component {
 There are a handful of interesting features to note about this code’s approach to reactivity. We decorate *one* piece of state, `name`, with `@tracked`, and the rest of the state updates automatically—including the `showError` and `remaining` properties, which don’t even refer to `name` directly. All of this with a particularly light touch:
 
 - There is no need to mark dependent keys on the getters (as in classic Ember components) and no need for a `computed` hash (as in Vue 2) for derived state: these are plain JavaScript getters.
+
 - There is no need for a dedicated utility like `setState` like in React’s class-based components or `set` from Ember Classic; this code just uses standard JavaScript assignment to update the value of `myName`.
+
 - This does not use two-way binding like *really old* Ember did or current day Angular or Vue do[^vue-2wb]—updates are explicit, but brief.
 
 This can look like magic when you first encounter it—especially the way undecorated getters update on demand. In fact, though, it’s *Just JavaScript™*, built on standard JavaScript patterns and a mix of computer science ideas ranging from tried-and-true ideas from decades ago to cutting-edge research. In the rest of this post, we’ll see how it works.
@@ -519,8 +521,11 @@ As we saw above, changes enter the system by setting tracked properties. Recall 
 There are a handful of really delightful consequences of this system:
 
 - Re-renders are about as cheap as they possibly can be: all the state computations are simple integer math.
+
 - Intermediate, “derived” state gets computed on demand when the state it depends on changes—but with normal JavaScript semantics, without extra developer-facing boilerplate or end-user impact on performance.
+
 - It’s trivial to layer your own caching or memoization on top of these semantics if you need them, but you only pay for what you need.
+
 - All the “smarts” lives at the very edge of the system, in root state marked with `@tracked` and leaf values computed in reactive contexts like templates.
 
 Hopefully this has give you a good idea how autotracking works in general, and specifically how it simultaneously enables most of our code to be “just JavaScript” *and* gives us a very low-cost reactivity.
