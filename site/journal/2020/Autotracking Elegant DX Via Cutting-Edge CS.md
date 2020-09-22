@@ -45,7 +45,7 @@ export default class PersonInfo extends Component {
   }
 
   get remaining() {
-    return this.nameLength - MAX_LENGTH;
+    return MAX_LENGTH - this.nameLength;
   }
 
   get showError() {
@@ -94,7 +94,7 @@ export default class PersonInfo {
   }
 
   get remaining() {
-    return this.nameLength - MAX_LENGTH;
+    return MAX_LENGTH - this.nameLength;
   }
 
   get showError() {
@@ -131,7 +131,7 @@ export default class PersonInfo {
   }
 
   remaining() {
-    return this.nameLength - MAX_LENGTH;
+    return MAX_LENGTH - this.nameLength;
   }
 
   showError() {
@@ -161,7 +161,7 @@ export default class PersonInfo {
   constructor(name) {
     this.name = name;
     this.nameLength = name.length;
-    this.remaining = this.nameLength - MAX_LENGTH;
+    this.remaining = MAX_LENGTH - this.nameLength;
     this.showError = this.remaining < 0;
   }
 
@@ -189,7 +189,7 @@ export default class PersonInfo {
   constructor(name) {
     this.name = name;
     this.nameLength = () => this.name.length;
-    this.remaining = () => this.nameLength - MAX_LENGTH;
+    this.remaining = () => MAX_LENGTH - this.nameLength;
     this.showError = () => this.remaining < 0;
   }
 
@@ -217,17 +217,17 @@ export default class PersonInfo {
     this.name = name;
   }
 
-  nameLength() {
+  get nameLength() {
     console.log("evaluating `nameLength`");
     return this.name.length;
   }
 
-  remaining() {
+  get remaining() {
     console.log("evaluating `remaining`");
-    return this.nameLength - MAX_LENGTH;
+    return MAX_LENGTH - this.nameLength;
   }
 
-  showError() {
+  get showError() {
     console.log("evaluating `showError`");
     return this.remaining < 0;
   }
@@ -255,23 +255,23 @@ console.log(personInfo.showError);
 —the console output would read:
 
 ```
-" --- 1 --- "
-evaluating `nameLength`
-evaluating `remaining`
+ --- 1 --- 
 evaluating `showError`
+evaluating `remaining`
+evaluating `nameLength`
 false
 
-" --- 2 --- "
+ --- 2 --- 
 evaluating `nameLength`
 5
 
-" --- 3 --- "
-evaluating `nameLength`
+ --- 3 --- 
 evaluating `remaining`
+evaluating `nameLength`
 -2
-evaluating `nameLength`
-evaluating `remaining`
 evaluating `showError`
+evaluating `remaining`
+evaluating `nameLength`
 true
 ```
 
@@ -422,7 +422,7 @@ class Person {
   }
 
   get remaining() {
-    return this.nameLength - MAX_LENGTH;
+    return MAX_LENGTH - this.nameLength;
   }
 
   get showError() {
@@ -474,7 +474,7 @@ export default class PersonInfo extends Component {
   }
 
   get remaining() {
-    return this.nameLength - MAX_LENGTH;
+    return MAX_LENGTH - this.nameLength;
   }
 
   get showError() {
