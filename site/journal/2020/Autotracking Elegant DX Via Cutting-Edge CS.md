@@ -9,7 +9,10 @@ qualifiers:
   audience:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
-date: 2020-09-21T17:00:00-0600
+date: 2020-09-22T09:00:00-0600
+
+thanks: >
+  [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
 
 tags:
   - Ember
