@@ -527,7 +527,7 @@ Hopefully this has give you a good idea how autotracking works in general, and s
 
 :::callout
 
-If you’d like to see some of the details of how these pieces are implemented, check out [the video][walkthrough-video] of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)). Chris also gave a [great talk on autotracking](https://www.youtube.com/watch?v=HDBSU2HCLbU) at EmberConf 2020, and wrote up a series of blog posts diving into the subject as well:
+If you’d like to see some of the details of how these pieces are implemented, check out [the video][walkthrough-video] of my conversation with Ember core team member and Glimmer VM contributor [Chris Garrett][cg] ([@pzuraq](https://github.com/pzuraq/)). Chris also gave a [great talk on autotracking](https://www.youtube.com/watch?v=HDBSU2HCLbU) at EmberConf 2020, and wrote up a series of blog posts on the subject:
 
 1. [What is Reactivity?](https://www.pzuraq.com/what-is-reactivity/)
 2. [What Makes a Good Reactive System?](https://www.pzuraq.com/what-makes-a-good-reactive-system/)
