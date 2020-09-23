@@ -200,10 +200,10 @@ export default class PersonInfo {
 }
 
 let personInfo = new PersonInfo("Chris");
-console.log(personInfo.nameLength); // 5
+console.log(personInfo.nameLength()); // 5
 
 personInfo.updateName("Chris Krycho");
-console.log(personInfo.nameLength); // 12
+console.log(personInfo.nameLength()); // 12
 ```
 
 But calling `personInfo.nameLength()` like this looks awfully familiar: it’s the same as the class method version we might have used before we had native getters. We’re back to where we started, in other words.
