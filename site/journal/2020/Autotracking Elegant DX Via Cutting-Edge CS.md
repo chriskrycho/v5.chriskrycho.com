@@ -10,7 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-09-22T19:47:00-0600
+updated: 2020-09-22T19:49:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
@@ -53,7 +53,7 @@ export default class PersonInfo extends Component {
     return this.remaining < 0;
   }
 
-  updateNameTo = ({ target: { value } }) => this.name = value;
+  updateName = ({ target: { value } }) => this.name = value;
 }
 ```
 
@@ -80,7 +80,7 @@ This can look like magic when you first encounter it—especially the way undeco
 
 ## How getters work
 
-First, let’s make sure we have a clear handle on how getters work in JavaScript in general. Once you understand this, seeing how autotracking works will be much easier. (If you already have a good understanding of the semantics and behavior of getters vs. assignment, feel free to [skip to the next section](#autotracking).) We’ll start by looking at the exact same class we started with, but with all of the Glimmer and DOM details removed, a constructor added, and continuing to use the same function style for `updateNameTo`:[^updateNameTo-style]
+First, let’s make sure we have a clear handle on how getters work in JavaScript in general. Once you understand this, seeing how autotracking works will be much easier. (If you already have a good understanding of the semantics and behavior of getters vs. assignment, feel free to [skip to the next section](#autotracking).) We’ll start by looking at the exact same class we started with, but with all of the Glimmer and DOM details removed, a constructor added, and continuing to use the same function style for `updateName`:[^updateName-style]
 
 ```js
 const MAX_LENGTH = 10;
@@ -104,7 +104,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.name = value;
+  updateName = (value) => this.name = value;
 }
 ```
 
@@ -141,7 +141,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.name = value;
+  updateName = (value) => this.name = value;
 }
 
 let personInfo = new PersonInfo();
@@ -168,13 +168,13 @@ export default class PersonInfo {
     this.showError = this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.name = value;
+  updateName = (value) => this.name = value;
 }
 
 let personInfo = new PersonInfo("Chris");
 console.log(personInfo.nameLength); // 5
 
-personInfo.updateNameTo("Chris Krycho");
+personInfo.updateName("Chris Krycho");
 console.log(personInfo.nameLength); // still 5 😭
 ```
 
@@ -196,13 +196,13 @@ export default class PersonInfo {
     this.showError = () => this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.name = value;
+  updateName = (value) => this.name = value;
 }
 
 let personInfo = new PersonInfo("Chris");
 console.log(personInfo.nameLength); // 5
 
-personInfo.updateNameTo("Chris Krycho");
+personInfo.updateName("Chris Krycho");
 console.log(personInfo.nameLength); // 12
 ```
 
@@ -235,7 +235,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.name = value;
+  updateName = (value) => this.name = value;
 }
 ```
 
@@ -250,7 +250,7 @@ console.log("\n --- 2 --- ");
 console.log(personInfo.nameLength);
 
 console.log("\n --- 3 --- ");
-personInfo.updateNameTo("Chris Krycho");
+personInfo.updateName("Chris Krycho");
 console.log(personInfo.remaining);
 console.log(personInfo.showError);
 ```
@@ -280,7 +280,7 @@ true
 
 In this example, the JavaScript I’ve written evaluates the values directly when logging them. When we use a value in a template in Ember or Glimmer apps, the template engine (the Glimmer VM) evaluates those values. The VM uses a lightweight reactivity system called *autotracking* to track which items in the UI need to be updated in any render. The next step, then, is understanding autotracking.
 
-[^updateNameTo-style]: We could switch to a class method here, but we’d just have to switch back later when we come back to the component code again. For Ember users reading this: yes, you *can* use this approach, although it’s currently idiomatic to use `@action`. 
+[^updateName-style]: We could switch to a class method here, but we’d just have to switch back later when we come back to the component code again. For Ember users reading this: yes, you *can* use this approach, although it’s currently idiomatic to use `@action`. 
 
 [^hooks]: This is actually a critical part of how React Hooks work under the hood.
 
@@ -432,7 +432,7 @@ class Person {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.name = value;
+  updateName = (value) => this.name = value;
 }
 
 let person = new Person();
@@ -454,11 +454,11 @@ Similarly, changing the value of `name` would invoke `markAsChanged` via the set
 //   this._name
 person.name = "Chris";
 
-// Person.updateNameTo ->
+// Person.updateName ->
 //   Person.name *setter* ->
 //     markAsChanged(this, 'name')
 //     this._name
-person.updateNameTo("Chris Krycho");
+person.updateName("Chris Krycho");
 ```
 
 Exactly the same things happen if we render values or trigger changes from a Glimmer component’s template—as in the code example from the introduction:
@@ -484,7 +484,7 @@ export default class PersonInfo extends Component {
     return this.remaining < 0;
   }
 
-  updateNameTo = ({ target: { value } }) => this.name = value;
+  updateName = ({ target: { value } }) => this.name = value;
 }
 ```
 
