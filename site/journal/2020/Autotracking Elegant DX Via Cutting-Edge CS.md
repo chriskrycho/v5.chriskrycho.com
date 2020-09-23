@@ -10,6 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
+updated: 2020-09-22T19:47:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
@@ -52,13 +53,13 @@ export default class PersonInfo extends Component {
     return this.remaining < 0;
   }
 
-  updateNameTo = ({ target: { value } }) => this.myName = value;
+  updateNameTo = ({ target: { value } }) => this.name = value;
 }
 ```
 
 ```handlebars
 <div>
-  <input {{on "input" this.updateName}} value={{this.myName}} />
+  <input {{on "input" this.updateName}} value={{this.name}} />
   <p class={{if this.showError "error"}}>
     ({{this.nameLength}} remaining)
   </p>
@@ -69,7 +70,7 @@ There are a handful of interesting features to note about this code’s approach
 
 - There is no need to mark dependent keys on the getters (as in classic Ember components) and no need for a `computed` hash (as in Vue 2) for derived state: these are plain JavaScript getters.
 
-- There is no need for a dedicated utility like `setState` like in React’s class-based components or `set` from Ember Classic; this code just uses standard JavaScript assignment to update the value of `myName`.
+- There is no need for a dedicated utility like `setState` like in React’s class-based components or `set` from Ember Classic; this code just uses standard JavaScript assignment to update the value of `name`.
 
 - This does not use two-way binding like *really old* Ember did or current day Angular or Vue do[^vue-2wb]—updates are explicit, but brief.
 
@@ -103,7 +104,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.myName = value;
+  updateNameTo = (value) => this.name = value;
 }
 ```
 
@@ -140,7 +141,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.myName = value;
+  updateNameTo = (value) => this.name = value;
 }
 
 let personInfo = new PersonInfo();
@@ -167,7 +168,7 @@ export default class PersonInfo {
     this.showError = this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.myName = value;
+  updateNameTo = (value) => this.name = value;
 }
 
 let personInfo = new PersonInfo("Chris");
@@ -195,7 +196,7 @@ export default class PersonInfo {
     this.showError = () => this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.myName = value;
+  updateNameTo = (value) => this.name = value;
 }
 
 let personInfo = new PersonInfo("Chris");
@@ -234,7 +235,7 @@ export default class PersonInfo {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.myName = value;
+  updateNameTo = (value) => this.name = value;
 }
 ```
 
@@ -431,7 +432,7 @@ class Person {
     return this.remaining < 0;
   }
 
-  updateNameTo = (value) => this.myName = value;
+  updateNameTo = (value) => this.name = value;
 }
 
 let person = new Person();
@@ -483,13 +484,13 @@ export default class PersonInfo extends Component {
     return this.remaining < 0;
   }
 
-  updateNameTo = ({ target: { value } }) => this.myName = value;
+  updateNameTo = ({ target: { value } }) => this.name = value;
 }
 ```
 
 ```handlebars
 <div>
-  <input {{on "input" this.updateName}} value={{this.myName}} />
+  <input {{on "input" this.updateName}} value={{this.name}} />
   <p class={{if this.showError "error"}}>
     ({{this.nameLength}} remaining)
   </p>
