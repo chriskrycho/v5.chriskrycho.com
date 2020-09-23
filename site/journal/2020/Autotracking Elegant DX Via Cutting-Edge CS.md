@@ -337,7 +337,7 @@ Autotracking is a lightweight reactivity system, composed of three ideas:[^mobx-
 
 2. “Track” each piece of data in your system that you care about reacting to. Whenever any tracked data changes, increment the global clock (1) and associate the updated global clock value with the data that just changed.
 
-3. Whenever you compute a value for a template,[^reactive-contexts] note any tracked values used in for the computation, storing their global clock values. Combined with (2), these can be used to know when to *re*-compute template values.
+3. Whenever you compute a value for a template,[^reactive-contexts] note any tracked values used in the computation, storing their global clock values. Combined with (2), these can be used to know when to *re*-compute template values.
 
 The autotracking runtime implements exactly these three ideas: (1) a global clock (2) which is connected to tracked state (3) to know when to recompute the values in templates. The global clock is extremely simple: it really is [just an integer][revision-impl]. The more interesting bits are the *other* ideas: (2) connecting tracked state to the global clock, and (3) using that connection to know when to recompute values in templates.
 
