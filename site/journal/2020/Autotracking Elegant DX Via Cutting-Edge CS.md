@@ -61,7 +61,7 @@ export default class PersonInfo extends Component {
 <div>
   <input {{on "input" this.updateName}} value={{this.name}} />
   <p class={{if this.showError "error"}}>
-    ({{this.nameLength}} remaining)
+    ({{this.remaining}} remaining)
   </p>
 </div>
 ```
@@ -492,7 +492,7 @@ export default class PersonInfo extends Component {
 <div>
   <input {{on "input" this.updateName}} value={{this.name}} />
   <p class={{if this.showError "error"}}>
-    ({{this.nameLength}} remaining)
+    ({{this.remaining}} remaining)
   </p>
 </div>
 ```
