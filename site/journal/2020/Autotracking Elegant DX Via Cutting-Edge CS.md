@@ -10,7 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-09-22T21:00:00-0600
+updated: 2020-09-23T08:30:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
@@ -509,7 +509,7 @@ When rendering templates,[^reactive-again] the runtime sets up what is called a 
 
 In a normal JavaScript invocation, there is no active tracking frame, so calling `markAsUsed` is a no-op. When rendering, a tracking frame *does* exist, and it ends up populated with the clock values for all the tracked properties used while calculating that value. When a given tracking frame “closes”, as at the close of a component invocation, it computes its *own* clock value. A tracking frame’s clock value is the maximum clock value of any of the properties marked as used in that frame. Since clock values are integers, this maximum clock value can be computed very simply: by using `Math.max`.[^math-max]
 
-As we saw above, changes enter the system by setting tracked properties. Recall that invoking `markAsUsed` bumps both the overall global clock value and the clock value for that property, and schedules a new render.[^coalescing] When the Glimmer VM re-renders, it can traverse the tree in a [depth-first search](https://medium.com/basecs/demystifying-depth-first-search-a7c14cccf056), comparing each frame’s current and cached clock values. If the clock value for a given frame hasn’t changed, nothing below it in the UI tree has changed, either—so we know we don’t need to re-render it. Checking whether that clock value has changed is literally just an integer equality check. At the nodes which *have* changed, the VM computes the new value and updates the DOM with the result.
+As we saw above, changes enter the system by setting tracked properties. Recall that invoking `markAsChanged` bumps both the overall global clock value and the clock value for that property, and schedules a new render.[^coalescing] When the Glimmer VM re-renders, it can traverse the tree in a [depth-first search](https://medium.com/basecs/demystifying-depth-first-search-a7c14cccf056), comparing each frame’s current and cached clock values. If the clock value for a given frame hasn’t changed, nothing below it in the UI tree has changed, either—so we know we don’t need to re-render it. Checking whether that clock value has changed is literally just an integer equality check. At the nodes which *have* changed, the VM computes the new value and updates the DOM with the result.
 
 [^math-max]: There are some details about how it checks the tree and makes sure that it manages its internally state correctly, but it really is [using `Math.max`](https://github.com/glimmerjs/glimmer-vm/blob/e8e2fc6f39a60baac2b72c1a19aea9585b162c47/packages/%40glimmer/validator/lib/validators.ts#L130:L172).
 
