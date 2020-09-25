@@ -10,7 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-09-23T08:30:00-0600
+updated: 2020-09-24T19:40:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
@@ -178,7 +178,7 @@ personInfo.updateName("Chris Krycho");
 console.log(personInfo.nameLength); // still 5 😭
 ```
 
-Doing this “eagerly” means that we computed the values of `name`, `nameLength`, and `remaining` when we assigned each of the derived properties, `nameLength`, `remaining`, and `showError`. We did *not* create a function which references those properties, which we could use to evaluate their values at a later time. To do that in the constructor, we could define `nameLength`, `remaining`, and `showError` as arrow functions, taking advantage of the fact that closures get a reference to the values they use from their enclosing scope:[^hooks][^closures-classes]
+Doing this “eagerly” means that we computed the values of `name`, `nameLength`, and `remaining` when we assigned each of the derived properties, `nameLength`, `remaining`, and `showError`. We did *not* create a function which references those properties, which we could use to evaluate their values at a later time. To do that in the constructor, we could define `nameLength`, `remaining`, and `showError` as arrow functions, taking advantage of the fact that closures get a reference to the values they use from their enclosing scope:[^closures-classes]
 
 ```js
 const MAX_LENGTH = 10;
@@ -282,8 +282,6 @@ In this example, the JavaScript I’ve written evaluates the values directly whe
 
 [^updateName-style]: We could switch to a class method here, but we’d just have to switch back later when we come back to the component code again. For Ember users reading this: yes, you *can* use this approach, although it’s currently idiomatic to use `@action`. 
 
-[^hooks]: This is actually a critical part of how React Hooks work under the hood.
-
 [^closures-classes]: It’s also worth seeing how closures are the [dual](https://en.wikipedia.org/wiki/Duality_(mathematics)) of classes. These two have *the same semantics* as far as an end user is concerned:
 
     ```js
@@ -328,6 +326,10 @@ In this example, the JavaScript I’ve written evaluates the values directly whe
       };
     }
     ```
+    
+    Bonus: this is actually a critical part of how [React Hooks][hooks] work under the hood.
+
+[hooks]: https://reactjs.org/docs/hooks-intro.html
 
 ## Autotracking
 
