@@ -10,7 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-09-24T19:40:00-0600
+updated: 2020-09-25T19:20:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
@@ -499,7 +499,7 @@ export default class PersonInfo extends Component {
 </div>
 ```
 
-Using `this.name` in the template directly evaluates `name`, which is the getter set up by `@tracked` and therefore calls `markAsUsed(this, 'name')`. Likewise, using `this.showError` and `this.nameLength` in the template evaluates those getters, which ultimately evaluate `name`, which again calls `markAsUsed(this, 'name')`. Calling `markAsUsed` tells the autotracking runtime that `this.name` is used to compute `name`, `nameLength` and `showError` in the `PersonInfo` component’s template.
+Using `this.name` in the template directly evaluates `name`, which is the getter set up by `@tracked` and therefore calls `markAsUsed(this, 'name')`. Likewise, using `this.showError` and `this.nameLength` in the template evaluates those getters, which ultimately evaluate `name`, which again calls `markAsUsed(this, 'name')`. Calling `markAsUsed` tells the autotracking runtime that `this.name` is used to compute `name`, `remaining` and `showError` in the `PersonInfo` component’s template.
 
 Triggering `updateName` by typing into the input invokes the setter for `name` installed by `@tracked`, and the setter calls `markAsChanged(this, 'name')`. Calling `markAsChanged` increments the global clock value, stores the updated clock value as the new clock value for `this.name`, and schedules a re-render.
 
