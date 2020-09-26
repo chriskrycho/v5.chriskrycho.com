@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-08-29T12:40:00-0600
+updated: 2020-09-26T10:50:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -46,7 +46,7 @@ export function createPromiseProxy(promise) {
 }
 ```
 
-Then we might use it in a component that looks like this[^jquery]:[^dkc]
+Then we might use it in a component that looks like this:[^jquery]
 
 ```js
 import Component from '@glimmer/component';
