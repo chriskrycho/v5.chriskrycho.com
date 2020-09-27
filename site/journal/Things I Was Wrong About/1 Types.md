@@ -9,6 +9,7 @@ qualifiers:
   audience: >
     People who care about *actually* learning (in this case, software developers in particular). Also, my wife, who really enjoys hearing me say, “I was wrong.” 😂
 date: 2020-09-26T14:00:00-0600
+updated: 2020-09-26T22:20:00-0600
 series:
   part: 1
 tags:
@@ -25,7 +26,7 @@ If you talked to me about types in programming languages six or seven years ago,
 
 In 2015, all of that changed. I read [<cite>Maybe Haskell</cite>](https://gumroad.com/l/maybe-haskell/) on a plane that spring, and I encountered [Rust](https://www.rust-lang.org) about two months later, and all of a sudden I had a *very* different outlook on types. It’s not an exaggeration to say that the entire trajectory of my professional career shifted in that two-month span. Since then, I’ve run [a podcast about Rust](https://newrustacean.com) which included no few discussions about type theory, helped bootstrap an [entire sub-community](https://ember-cli-typescript.com) for *another* [typed programming language](https://www.typescriptlang.org) (which is now part of my day job), and written a hilarious amount about types and how they can help.
 
-I understand *why* I thought that types were worthless from 2012–2014. In fact, for the specific languages I had used up to that , I continue to think that the types *don’t* really pay for themselves. But I have substantially changed my tune about type systems more generally. *Some* type systems can make a substantial difference in the kinds of programs you can write, and the degree of value you get out of them is much higher relative to the effort you put in to get that value.
+I understand *why* I thought that types were worthless from 2012–2014. In fact, for the specific languages I had used up to that point, I continue to think that the types *don’t* really pay for themselves. But I have substantially changed my tune about type systems more generally. *Some* type systems can make a substantial difference in the kinds of programs you can write, and the degree of value you get out of them is much higher relative to the effort you put in to get that value.
 
 The key differentiators between the type systems I *didn’t* value and those I *now do*—and therefore the key differentiator for me between the idea that all type systems were worthless and my current view that a *good* type system is worth its weight in gold—were:
 
