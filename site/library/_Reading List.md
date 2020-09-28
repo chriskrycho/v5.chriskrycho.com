@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-09-28T15:00:00-0600
+date: 2020-09-28T15:40:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -91,6 +91,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
     - [all posts on the book](/topics/politics-and-the-order-of-love/)
+    - [review](/library/politics-and-the-order-of-love/)
 
 ### Fiction
 
