@@ -511,6 +511,10 @@
    }
 
    .book-review {
+      margin : {
+         left: auto;
+         right: auto;
+      }
       display: flex;
       flex-wrap: wrap;
       align-items: center;
