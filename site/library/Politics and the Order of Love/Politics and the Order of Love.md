@@ -5,9 +5,10 @@ book:
   review:
     rating: Recommended
     summary: >
-      Gregory successfully carves out space for Augustinian liberalism—but I (still!)   a book building on the ground Gregory cleared.
+      Gregory successfully carves out space for Augustinian liberalism—but I (still!) eagerly await a book building on the ground Gregory cleared.
 
 date: 2020-09-28T15:35:00-0600
+updated: 2020-09-28T15:41:00-0600
 
 tags:
   - politics
