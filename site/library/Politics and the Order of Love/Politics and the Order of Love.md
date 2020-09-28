@@ -8,7 +8,7 @@ book:
       Gregory successfully carves out space for Augustinian liberalism—but I (still!) eagerly await a book building on the ground Gregory cleared.
 
 date: 2020-09-28T15:35:00-0600
-updated: 2020-09-28T17:40:00-0600
+updated: 2020-09-28T17:48:00-0600
 
 tags:
   - politics
@@ -47,6 +47,6 @@ That final sentence says it all: Gregory’s goal was to *expand the Augustinian
 
 The result is a book which I expect accomplished its aim. Gregory’s argument addresses the strongest counter-arguments head-on, and draws on a remarkable breadth and depth of resources from a surprising variety of sources to make his point. He cites contemporary feminists, just war theorists, Christian social ethicists, political philosophers both friendly and hostile, and of course Augustine himself with equal facility. But Gregory was so committed to addressing every possible interlocutor that the book  at times it seemed to be nothing *but* citation.
 
-Only in the introduction, the conclusion, and the introductions and conclusions of chapters does Gregory himself step forward in argument. On the one hand, this is a perfectly reasonable move when attempting to shift an entire field of discourse with one’s Ph.D. thesis—which is just what Gregory set out to do with the materials from which <cite>Politics and the Order of Love</cite> was built. On the other hand, those too-brief introductory and concluding materials are by far the best parts of the book both for readability and for interest in the broader political concerns to which Gregory alludes.
+Only in the introduction, the conclusion, and the introductions and conclusions of chapters does Gregory himself step forward in argument. On the one hand, this is a perfectly reasonable move when attempting to shift an entire field of discourse with one’s Ph.D. thesis—which is just what Gregory set out to do with the materials from which <cite>Politics & the Order of Love</cite> was built. On the other hand, those too-brief introductory and concluding materials are by far the best parts of the book both for readability and for interest in the broader political concerns to which Gregory alludes.
 
-The result was a good book, but one which is far more a (re)evaluation of Augustine and Augustinianism than it is a work of political theology. Students of Augustine with an interest in politics should certainly read <cite>Politics and the Order of Love</cite>. Students of politics with less than a very deep interest in Augustine would be better served reading the introduction, chapter 1, and the introduction and conclusion of the other chapters. That’s no skin off Gregory’s back: he makes his project clear from the introduction, and I’m grateful that this ground-clearing work exists. But I eagerly await a book building on the ground Gregory cleared.
+The result was a good book, but one which is far more a (re)evaluation of Augustine and Augustinianism than it is a work of political theology. Students of Augustine with an interest in politics should certainly read <cite>Politics & the Order of Love</cite>. Students of politics with less than a very deep interest in Augustine would be better served reading the introduction, chapter 1, and the introduction and conclusion of the other chapters. That’s no skin off Gregory’s back: he makes his project clear from the introduction, and I’m grateful that this ground-clearing work exists. But I eagerly await a book building on the ground Gregory cleared.
