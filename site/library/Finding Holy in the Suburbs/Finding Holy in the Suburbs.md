@@ -7,7 +7,7 @@ qualifiers:
     People thinking about cities and suburbs—especially but certainly not only other orthodoxy Christians.
 book:
   review:
-    rating: Recommended:
+    rating: Recommended
     summary: >
       Hales’ book would be a good read for small groups or church plant core teams in suburban contexts. But while its theology is good and its suggestions right, they are sometimes a *little* too comfortable.
 
