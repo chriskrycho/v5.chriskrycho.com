@@ -8,7 +8,7 @@ book:
       Gregory successfully carves out space for Augustinian liberalism—but I (still!) eagerly await a book building on the ground Gregory cleared.
 
 date: 2020-09-28T15:35:00-0600
-updated: 2020-09-28T15:50:00-0600
+updated: 2020-09-28T17:40:00-0600
 
 tags:
   - politics
@@ -37,7 +37,7 @@ And likewise in the conclusion:
 
 <figure class="quotation">
 
-> My reconstruction of a particular aspect of Augustinian theology has focused on the sensibilities and the virtues that should characterize an ethic of democratic citizenship. I have not offered a *solution* to the multifaceted debates about modern liberalism. I hope to have given some language that might liberate Augustinianism from the caricatures of our big intellectual histories—the sorts of histories that Augustine himself promoted At the same time, I tried to provide vocabularies that might relieve the conceptual power of some unhelpful dichotomies, i.e., love vs. justice, realism vs. idealism, egotism vs. altruism, and transcendence (God) vs. immanence (neighbor). These dualisms can have heuristic value, but they also get in the way of thinking seriously about both Augustinianism and liberalism. In short, I have tried to make good on my stated effort to expand the Augustinian imagination for liberal democracy and the liberal democratic imagination for Augustinianism. 
+> My reconstruction of a particular aspect of Augustinian theology has focused on the sensibilities and the virtues that should characterize an ethic of democratic citizenship. I have not offered a *solution* to the multifaceted debates about modern liberalism. I hope to have given some language that might liberate Augustinianism from the caricatures of our big intellectual histories—the sorts of histories that Augustine himself promoted. At the same time, I tried to provide vocabularies that might relieve the conceptual power of some unhelpful dichotomies, i.e., love vs. justice, realism vs. idealism, egotism vs. altruism, and transcendence (God) vs. immanence (neighbor). These dualisms can have heuristic value, but they also get in the way of thinking seriously about both Augustinianism and liberalism. In short, I have tried to make good on my stated effort to expand the Augustinian imagination for liberal democracy and the liberal democratic imagination for Augustinianism. 
 
 <figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>Politics & the Order of Love</cite></a>, p. 366</figcaption>
 
