@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-09-20T18:30:00-0600
+date: 2020-09-28T15:00:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -55,9 +55,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
 
-- [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
-    - [all posts on the book](/topics/politics-and-the-order-of-love/)
-
 - [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate
 
 - [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky
@@ -91,6 +88,9 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [all posts on the book](/topics/the-culture-of-theology/)
 
 - [<cite>Shape Up</cite>](https://basecamp.com/shapeup), Ryan Singer (new)
+
+- [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
+    - [all posts on the book](/topics/politics-and-the-order-of-love/)
 
 ### Fiction
 
