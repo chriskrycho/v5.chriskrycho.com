@@ -7,7 +7,7 @@ qualifiers:
   audience: >
     ‘Little-o’ orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
 date: 2020-09-19T17:55:00-0600
-updated: 2020-09-19T17:58:00-0600
+updated: 2020-09-28T13:45:00-0600
 tags:  
   - theology
   - Augustine
@@ -16,7 +16,7 @@ tags:
   - justice
   - politics
   - quotes
-  - reading ntoes
+  - reading notes
 
 ---
 
