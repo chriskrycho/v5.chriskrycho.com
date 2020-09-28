@@ -10,10 +10,10 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-09-25T19:20:00-0600
+updated: 2020-09-28T08:40:00-0600
 
 thanks: >
-  [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. (All mistakes are mine, not his!)
+  [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. [James C. Davis](https://github.com/jamescdavis) and [Nick Morgan](https://github.com/morganick) helped me fix some typos. (All mistakes are mine!)
 
 tags:
   - Ember
@@ -513,7 +513,7 @@ In a normal JavaScript invocation, there is no active tracking frame, so calling
 
 As we saw above, changes enter the system by setting tracked properties. Recall that invoking `markAsChanged` bumps both the overall global clock value and the clock value for that property, and schedules a new render.[^coalescing] When the Glimmer VM re-renders, it can traverse the tree in a [depth-first search](https://medium.com/basecs/demystifying-depth-first-search-a7c14cccf056), comparing each frame’s current and cached clock values. If the clock value for a given frame hasn’t changed, nothing below it in the UI tree has changed, either—so we know we don’t need to re-render it. Checking whether that clock value has changed is literally just an integer equality check. At the nodes which *have* changed, the VM computes the new value and updates the DOM with the result.
 
-[^math-max]: There are some details about how it checks the tree and makes sure that it manages its internally state correctly, but it really is [using `Math.max`](https://github.com/glimmerjs/glimmer-vm/blob/e8e2fc6f39a60baac2b72c1a19aea9585b162c47/packages/%40glimmer/validator/lib/validators.ts#L130:L172).
+[^math-max]: There are some details about how it checks the tree and makes sure that it manages its internal state correctly, but it really is [using `Math.max`](https://github.com/glimmerjs/glimmer-vm/blob/e8e2fc6f39a60baac2b72c1a19aea9585b162c47/packages/%40glimmer/validator/lib/validators.ts#L130:L172).
 
 [^reactive-again]: or when using a “reactive function” via [the upcoming `invokeHelper` functionality][invoke-helper]
 

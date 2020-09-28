@@ -9,12 +9,14 @@ qualifiers:
   audience: >
     People who care about *actually* learning (in this case, software developers in particular). Also, my wife, who really enjoys hearing me say, “I was wrong.” 😂
 date: 2020-09-26T14:00:00-0600
-updated: 2020-09-27T09:05:00-0600
+updated: 2020-09-28T08:35:00-0600
 series:
   part: 1
 tags:
   - software development
   - humility
+thanks: >
+  Nick Morgan let me know about a typo. A number of readers and commenters on [Hacker News](https://news.ycombinator.com/item?id=24604943) and [lobste.rs](https://lobste.rs/s/v1nxkm/things_i_was_wrong_about_types) provided a variety of insightful responses.
 
 ---
 
@@ -32,7 +34,7 @@ The key differentiators between the type systems I didn’t value and those I no
 
 - **Type inference:** because having to write out every type, however obvious, is an incredible waste of time. `Person me = new Person();` is ridiculous. `let me = new Person();` may seem like a small improvement, but spread over the body of an entire program and generalized to all sorts of contexts means that type annotations become a tool you employ *because they’re useful*—for communicating to others, or for constraining the program in particular ways—rather than merely because the compiler yells at you about something it should know perfectly well.
 
-- **Sum/tagged union types:** because a great many of the problems we solve in software come down to well-defined options: *A* or *B* or *C*, and with discrete options for what data goes with each of *A* and *B* and *C*. Lots of problems also *don’t* fit into that space, but enough do that missing a tool to express it feels painful. In fact, I had been reaching for my own ways of building “sum types” in C and Python for years before finally discovering that the idea already existed and the tools around it were great… in other languages. The fact that languages with first-class support for sum types also come with exhaustiveness checking for those was the icing on the cake. It meant that I could finally tell the computer what I meant, and have it check me—and it also mean that if I changed my mind later, I could tell the computer *that* and have it tell me every place I needed to update my assumptions.
+- **Sum/tagged union types:** because a great many of the problems we solve in software come down to well-defined options: *A* or *B* or *C*, and with discrete options for what data goes with each of *A* and *B* and *C*. Lots of problems also *don’t* fit into that space, but enough do that missing a tool to express it feels painful. In fact, I had been reaching for my own ways of building “sum types” in C and Python for years before finally discovering that the idea already existed and the tools around it were great… in other languages. The fact that languages with first-class support for sum types also come with exhaustiveness checking for those was the icing on the cake. It meant that I could finally tell the computer what I meant, and have it check me—and it also meant that if I changed my mind later, I could tell the computer *that* and have it tell me every place I needed to update my assumptions.
 
 - **Soundness:** I was sick to death of `null` and `NullPointerException` and `undefined is not a function` and `TypeError: object of type 'NoneType' has no len()`. But at least in untyped languages, I had only myself to blame for these errors. Getting them in a language with types was utterly infuriating: why couldn’t the compiler tell me that I had missed a case where something could be `null`? And this problem was general: the compiler simply couldn’t tell me whether my program actually followed the rules I wanted it to follow, no matter how much work I put into the types. Soundness changed all of that. It didn’t mean I was free from logic bugs. (Nothing can do that in the general case!) It did mean that a program which type-checked wouldn’t blow up *in ways the type-checker said it shouldn’t*, though.
 
