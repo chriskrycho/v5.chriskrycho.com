@@ -52,12 +52,6 @@ I’m currently a Staff Software Engineer at LinkedIn, working on front-end infr
 [Ember Octane]: https://emberjs.com/editions/octane/
 [TypeScript]: https://www.typescriptlang.org
 
-### Side projects
-
-I am also working on a long-term side project, under the working title [rewrite]. The goal is to build a best-in class <i>research-oriented writing environment</i>—with native and web user interfaces: macOS and iOS and web first, someday hopefully also Windows. See [the website][rewrite] for details and a newsletter for updates along the way!
-
-[rewrite]: https://rewrite.software
-
 ## By vocation
 
 I have increasingly come to see much of my *calling* in life as that of the <i>public theologian</i>. Doing public theology means (at least) two things:
