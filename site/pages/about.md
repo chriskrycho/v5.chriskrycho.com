@@ -69,7 +69,7 @@ These two modes are complements—not competitors. Done well, each benefits the 
 
 ### A writer
 
-Since college, I have written—primarily on various iterations of chriskrycho.com, but also occasionally at [Mere Orthodoxy], and since January 2018 also in [my newsletter]. I increasingly conceive of my public writing along two axes:
+Since college, I have written—a *lot*—primarily on various iterations of chriskrycho.com, but also occasionally at [Mere Orthodoxy], and between January 2018 and June 2020 also in [my newsletter]. I increasingly conceive of my public writing along two axes:
 
 [Mere Orthodoxy]: https://mereorthodoxy.com
 [my newsletter]: https://buttondown.email/chriskrycho
