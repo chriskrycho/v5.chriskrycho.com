@@ -56,7 +56,7 @@ I’m currently a Staff Software Engineer at LinkedIn, working on front-end infr
 
 I have increasingly come to see much of my *calling* in life as that of the <i>public theologian</i>. Doing public theology means (at least) two things:
 
-- doing theological work *for* the church *in public*
+- doing theological work *for* the church *in* public
 - doing theological work *from* the church *for* the public
 
 When I am doing theological work *for* the church *in public*, I aim for the good of the church. It is not merely for intellectual interest; when it is, I’m off the rails. The point of this kind of public theology is to equip other Christians to think well: God and his work in our world, and of our right response to his work.
