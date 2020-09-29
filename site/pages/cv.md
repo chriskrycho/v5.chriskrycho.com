@@ -52,9 +52,9 @@ Building things the *right way* means I am not interested in slapdash product de
 
 *An effective technical leader in a large and complex engineering organization.*
 
-Since **January 2019**, I have been a **Staff Software Engineer** at [LinkedIn], working as an infrastructure engineer on the flagship web application—one of the largest JavaScript applications in the world.
+Since **January 2019**, I have been a **Staff Software Engineer** at [LinkedIn], working as an infrastructure engineer on the flagship web application.
 
-- I am the tech lead for the adoption of [Ember Octane][octane] across the application. I developed and implemented the adoption plan, and as one of a handful of primary technical experts on the subject matter at LinkedIn am responsible to support teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
+- I am the tech lead for the adoption of [Ember Octane][octane] across the application. Additionally, as one of a handful of primary technical experts on Octane—at LinkedIn or anywhere else—I support many other teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
 - I led efforts to update the app to the current versions of Ember.js, unblocking adoption of Octane.
 - I helped build, and continue to support, [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
 
