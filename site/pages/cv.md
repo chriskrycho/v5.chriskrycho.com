@@ -192,11 +192,11 @@ As we began actively adopting TypeScript in our Ember.js app [at Olo](#current),
 
 *[CLI]: command line interface
 
-In March 2017, I began working on the CLI tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Over the rest of 2017 and 2018, I have taught and written extensively on using TypeScript effectively with Ember. Our small team’s efforts have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
+In March 2017, I began working on the CLI tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Since, I have taught and written extensively on using TypeScript effectively both with Ember and in general. The efforts of the small open source team I founded have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
 
 #### True Myth
 
-In the **fall of 2017**, [a friend][ben] and I developed [True Myth][tm]: a **TypeScript**-targeted library with `Maybe` and `Result` types. Several existing libraries in the space work excellently but had a number of downsides, including second-class support for TypeScript, runtime overhead, and an API designed to mirror Haskell or Scala rather than idiomatic JavaScript. True Myth was my attempt to fill that gap. It takes advantage of TypeScript to supply an **idiomatic JavaScript API** with **zero runtime overhead** (beyond the inherent cost of the container types themselves).
+In the **fall of 2017**, [a friend][ben] and I developed [True Myth][tm]: a **TypeScript**-targeted library with `Maybe` and `Result` types. Several existing libraries in the space work excellently but had a number of downsides, including second-class support for TypeScript, runtime overhead, and an API designed to mirror Haskell or Scala rather than idiomatic JavaScript. True Myth was our attempt to fill that gap. It takes advantage of TypeScript to supply an **idiomatic JavaScript API** with **zero runtime overhead** (beyond the inherent cost of the container types themselves).
 
 [ben]: https://benmakuh.com
 [tm]: https://github.com/chriskrycho/true-myth
