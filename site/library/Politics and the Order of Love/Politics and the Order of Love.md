@@ -8,7 +8,7 @@ book:
       Gregory successfully carves out space for Augustinian liberalism—but I (still!) eagerly await a book building on the ground Gregory cleared.
 
 date: 2020-09-28T15:35:00-0600
-updated: 2020-09-28T18:00:00-0600
+updated: 2020-09-28T18:42:00-0600
 
 tags:
   - politics
@@ -45,7 +45,7 @@ And likewise in the conclusion:
 
 That final sentence says it all: Gregory’s goal was to *expand the Augustinian imagination for liberal democracy and the liberal democratic imagination for Augustinianism*—not, as I hoped when I first picked up the book, to actually do the work of imagining. Put another way: Gregory set out to about move [the Overton Window](https://en.wikipedia.org/wiki/Overton_window) for discussions of liberalism, Augustinianism, and love in the context of political theology—not to provide a constructive political-theological account of liberalism.
 
-The result is a book which I expect accomplished its aim. Gregory’s argument addresses the strongest counter-arguments head-on, and draws on a remarkable breadth and depth of resources from a surprising variety of sources to make his point. He cites contemporary feminists, just war theorists, Christian social ethicists, political philosophers both friendly and hostile, and of course Augustine himself with equal facility. But Gregory was so committed to addressing every possible interlocutor that the book  at times it seemed to be nothing *but* citation.
+The result is a book which I expect accomplished its aim. Gregory’s argument addresses the strongest counter-arguments head-on, and draws on a remarkable variety of sources to make his point. He cites contemporary feminists, just war theorists, Christian social ethicists, political philosophers both friendly and hostile, and of course Augustine himself with equal facility. But Gregory was so committed to addressing every possible interlocutor that the book  at times it seemed to be nothing *but* citation.
 
 Only in the introduction, the conclusion, and the introductions and conclusions of chapters does Gregory himself step forward in argument. On the one hand, this is a perfectly reasonable move when attempting to shift an entire field of discourse with one’s Ph.D. thesis—which is just what Gregory set out to do with the materials from which <cite>Politics & the Order of Love</cite> was built. On the other hand, those too-brief introductory and concluding materials are by far the best parts of the book both for readability and for interest in the broader political concerns to which Gregory alludes.
 
