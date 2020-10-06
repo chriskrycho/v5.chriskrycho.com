@@ -7,7 +7,7 @@ qualifiers:
   audience: >
     Software developers working with Ember Octane.
 date: 2020-10-06T10:55:00-0600
-updated: 2020-10-06T11:10:00-0600
+updated: 2020-10-06T17:31:00-0600
 tags:
   - JavaScript
   - Ember
@@ -42,7 +42,7 @@ export default Component.extend({
 })
 ```
 
-This is because of how classic classes worked: the values passed into the POJO were set on the [prototype] for the class, and so were shared between all instances of the class. That meant that when you passed an array literal as part of the POJO, like `someData: []`, that same array would be shared between *all* instances of the component. This is *almost never* what you want, so developers learned (and Ember's official lint rule set enforced!) that any reference types like objects or arrays be set in `init`.
+This is because of how classic classes worked: the values passed into the POJO were set on the [prototype] for the class, and so were shared between all instances of the class. That meant that when you passed an array literal as part of the POJO, like `someData: []`, that same array would be shared between *all* instances of the component. This is *almost never* what you want, so developers learned (and [Ember's official lint rule set][lint] enforced!) that any reference types like objects or arrays be set in `init`.
 
 When working with native classes, though, class fields are *not* set on the prototype, but on the instance. That means that you can just define values directly as class fields, because this—
 
@@ -77,7 +77,7 @@ export default class MyComponent extends Component {
 
 :::note
 
-Here I’ve switch to the `@glimmer/component` base class to use `constructor` instead of `init`, but the idea is the same!
+Here I’ve switched to the `@glimmer/component` base class to use `constructor` instead of `init`, but the idea is the same!
 
 :::
 
@@ -97,6 +97,7 @@ Just one of the many niceties that come from upgrading to Ember Octane!
 
 [ember]: https://emberjs.com
 [prototype]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
+[lint]: https://github.com/ember-cli/eslint-plugin-ember
 [defineProperty]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 
 *[POJO]: plain old JavaScript object
