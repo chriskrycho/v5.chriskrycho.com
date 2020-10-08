@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-09-28T16:40:00-0600
+date: 2020-10-07T21:45:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -59,9 +59,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd
 
+- <cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>, Zeynep Tüfeçki (new)
+
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
+
+- <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
 ## 2020
 
@@ -128,7 +132,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 - <cite>Contact</cite>, Carl Sagan (new)
-    - to be discussed on Winning SLowly episodes 8.18 and 8.19 (forthcoming)
+    - to be discussed on Winning Slowly episodes [8.18] and 8.19 (forthcoming)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
@@ -148,6 +152,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 [8.15]: https://winningslowly.org/8.15
 [8.16]: https://winningslowly.org/8.16
 [8.17]: https://winningslowly.org/8.17
+[8.18]: https://winningslowly.org/8.18
 
 ## 2019
 
