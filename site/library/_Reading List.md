@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-10-07T21:45:00-0600
+date: 2020-10-09T00:20:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -64,8 +64,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - <cite>Green Mars</cite>, Kim Stanley Robinson (new)
-
-- <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
 ## 2020
 
@@ -133,6 +131,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Contact</cite>, Carl Sagan (new)
     - to be discussed on Winning Slowly episodes [8.18] and 8.19 (forthcoming)
+
+- <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
