@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am or plan to be reading!
 layout: page.njk
-date: 2020-10-09T00:20:00-0600
+date: 2020-10-11T09:15:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -53,13 +53,15 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)
     - discussed on Winning Slowly [8.10] and [8.11]
 
-- [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate
+- [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
 
-- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky
+- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky (new)
 
-- [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd
+- [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
 
 - <cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>, Zeynep Tüfeçki (new)
+
+- <cite>Confronted by Grace: Meditations of a Theologian</cite>, John Webster (new)
 
 ### Fiction
 
@@ -134,8 +136,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
-[^kurzweil]: This is where it is for a reason. Don’t @ me.
-
 [8.02]: https://winningslowly.org/8.02
 [8.03]: https://winningslowly.org/8.03
 [8.04]: https://winningslowly.org/8.04
@@ -153,6 +153,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 [8.16]: https://winningslowly.org/8.16
 [8.17]: https://winningslowly.org/8.17
 [8.18]: https://winningslowly.org/8.18
+
+[^kurzweil]: This is where it is for a reason. Don’t @ me.
 
 ## 2019
 
