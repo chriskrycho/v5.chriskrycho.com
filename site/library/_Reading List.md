@@ -1,8 +1,8 @@
 ---
 title: Reading List
-subtitle: The books I am or plan to be reading!
+subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-10-11T09:15:00-0600
+date: 2020-10-11T09:22:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -48,7 +48,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)
-    - [all posts on the book](/topics/eccentric-existence/)
+    - [posts on the book](/topics/eccentric-existence/)
 
 - [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)
     - discussed on Winning Slowly [8.10] and [8.11]
@@ -84,15 +84,16 @@ These are books I have actually begun reading. (You will see items move from [<b
     - discussed on Winning Slowly [8.14] and [8.15]
 
 - [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEvolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley%2Fbook%2F2179950), Mary Midgley (new)
-    - discussed on Winning Slowly episodes [8.16] and [8.17]; see also [posts on the book](https://v5.chriskrycho.com/topics/evolution-as-a-religion)
+    - discussed on Winning Slowly episodes [8.16] and [8.17]
+    - [posts on the book](https://v5.chriskrycho.com/topics/evolution-as-a-religion)
 
 - [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)
-    - [all posts on the book](/topics/the-culture-of-theology/)
+    - [posts on the book](/topics/the-culture-of-theology/)
 
 - [<cite>Shape Up</cite>](https://basecamp.com/shapeup), Ryan Singer (new)
 
 - [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
-    - [all posts on the book](/topics/politics-and-the-order-of-love/)
+    - [posts on the book](/topics/politics-and-the-order-of-love/)
     - [review](/library/politics-and-the-order-of-love/)
 
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
