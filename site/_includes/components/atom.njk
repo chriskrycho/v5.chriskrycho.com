@@ -19,8 +19,7 @@
                {% localeDate item.date, 'yyyy.MM.dd.HHmm' -%}
             {%- endif -%}
             {%- endset -%}
-            <title type="html">[{{item.inputPath | toCollection}}]
-               {{entryTitle}}</title>
+            <title type="html">[{{item.inputPath | toCollection}}] {{entryTitle}}</title>
             {% if item.data.updated -%}
                <updated>{{item.data.updated | isoDate}}</updated>
                <published>{{item.date | isoDate}}</published>
