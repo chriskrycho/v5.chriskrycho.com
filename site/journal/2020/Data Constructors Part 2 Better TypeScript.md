@@ -216,7 +216,7 @@ function onlySquash(squash: VeggieKind.Squash) {
 
 onlySquash(VeggieKind.Squash);   // Okay!
 onlySquash(VeggieKind.Cabbage);  // Not okay!
-onlySquash(VeggieKind.Broccoli); // Okay!
+onlySquash(VeggieKind.Broccoli); // Not okay!
 ```
 
 ### 3. Union types
