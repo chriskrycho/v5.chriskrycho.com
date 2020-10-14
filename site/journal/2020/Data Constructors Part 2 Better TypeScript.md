@@ -7,15 +7,19 @@ summary: >
     Building more idiomatic and better-performing versions of ML-style data constructos in TypeScript.
 qualifiers:
     audience: >
-        Software developers who already know TypeScript, and want to dig a little deeper. And *preferably* developers who have read the [yesterday’s post](/journal/what-is-a-data-constructor/)!
+        Software developers who already know TypeScript, and want to dig a little deeper. And *preferably* developers who have read the [the previous post](/journal/what-is-a-data-constructor/)!
 tags:
     - functional programming
     - programming languages
     - TypeScript
+    - type theory
+    - Grain
+
 series:
     name: Data Constructors
     part: 2
 date: 2020-10-13T21:35:00-0600
+updated: 2020-10-13T21:38:00-0600
 
 ---
 
