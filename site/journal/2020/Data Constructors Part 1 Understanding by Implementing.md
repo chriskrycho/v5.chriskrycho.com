@@ -30,7 +30,7 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-09-07T16:02:00-0600
+updated: 2020-10-14T08:15:00-0600
 
 ---
 
@@ -752,6 +752,14 @@ assertDeepEqual(descsFromLong, descsFromShort);
 ```
 
 In this case, there’s no particular value to adding that functionality, since it’s just the same as calling `veggie.match` instead of `Veggie.match` with the second argument. It *is* useful to understand the pattern, though, and the first variant where we *don’t* require the argument lets us create our `toDescription` function much more directly. Functions have become a thing we work with like any other value. While this takes some getting used to, it’s also an incredibly powerful tool to have in your toolbox!
+
+:::callout
+
+Enjoyed this? Check out [Part 2](/journal/data-constructors-part-2-better-typescript/), which covers how to reimplement this using more advanced features of TypeScript’s type system, resulting in more type safety *and* improved performance.
+
+:::
+
+
 
 *[SML]: Standard ML
 *[TS]: TypeScript
