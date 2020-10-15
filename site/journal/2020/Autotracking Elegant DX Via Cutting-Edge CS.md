@@ -134,7 +134,7 @@ export default class PersonInfo {
   }
 
   remaining() {
-    return MAX_LENGTH - this.nameLength;
+    return MAX_LENGTH - this.nameLength();
   }
 
   showError() {
