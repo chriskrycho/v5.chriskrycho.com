@@ -4,7 +4,7 @@ title: >
 subtitle: >
     A deep dive on more idiomatic TypeScript implementations of ML-style data constructors.
 summary: >
-    Building more idiomatic and better-performing versions of ML-style data constructos in TypeScript.
+    Building more idiomatic and better-performing versions of ML-style data constructors in TypeScript.
 qualifiers:
     audience: >
         Software developers who already know TypeScript, and want to dig a little deeper. And *preferably* developers who have read the [the previous post](/journal/data-constructors-part-1-understanding-by-implementing/)!
@@ -22,12 +22,13 @@ tags:
 series:
     name: Data Constructors
     part: 2
+
 date: 2020-10-13T21:35:00-0600
-updated: 2020-10-13T21:45:00-0600
+updated: 2020-10-15T21:15:00-0600
 
 ---
 
-In the [first post](https://v5.chriskrycho.com/journal/data-constructors-part-1-understanding-by-implementing/) in this two-part series, I showed how you can use fairly standard TypeScript (or Java or C^♯^) to implement the idea of "data constructors" from the Standard ML (SML). That post covered everything you need to know to understand what they are and how they work. However, I intentionally used a minimal subset of TypeScript’s features to make it as approachable as possible for readers who aren’t TS experts, or who are coming from other languages like Java or C^♯^. TypeScript provides tools we can use to implement the same idea more robustly *and* with better performance, though. In this post, I’ll explore two of those--with the hope that you come out with a better idea of how to do interesting things with some advanced elements of TypeScript’s type system!
+In the [first post](https://v5.chriskrycho.com/journal/data-constructors-part-1-understanding-by-implementing/) in this two-part series, I showed how you can use fairly standard TypeScript (or Java or C^♯^) to implement the idea of "data constructors" from the Standard ML (SML). That post covered everything you need to know to understand what they are and how they work. However, I intentionally used a minimal subset of TypeScript’s features to make it as approachable as possible for readers who aren’t TS experts, or who are coming from other languages like Java or C^♯^. TypeScript provides tools we can use to implement the same idea more robustly *and* with better performance, though. In this post, I’ll explore two of those—with the hope that you come out with a better idea of how to do interesting things with some advanced elements of TypeScript’s type system!
 
 *[SML]: Standard ML
 *[TS]: TypeScript
@@ -85,11 +86,11 @@ class Veggie {
 }
 ```
 
-First, we have an `enum` for both `CabbageColor` and for `VeggieKind`. Second, we define a class with public constructors in the form of static methods or values, whose job it is to uphold the constraints that our `Veggie` have the right shape--for example, avoiding ending up with `kind: VeggieKind.Broccoli` *and* `color: CabbageColor.Red` instead of `color: undefined`. Finally, we have a `match` function which lets us "pattern-match" on the type we have.
+First, we have an `enum` for both `CabbageColor` and for `VeggieKind`. Second, we define a class with public constructors in the form of static methods or values, whose job it is to uphold the constraints that our `Veggie` have the right shape—for example, avoiding ending up with `kind: VeggieKind.Broccoli` *and* `color: CabbageColor.Red` instead of `color: undefined`. Finally, we have a `match` function which lets us "pattern-match" on the type we have.
 
 There are a number of type safety issues with this implementation. First off, the *only* thing which guarantees we do the right thing with our `Squash`, `Cabbage`, and `Broccoli` constructors is… that we’ve checked it very carefully (and maybe written some tests). This function has to use the `!` non-null assertion operator because the class as written cannot guarantee that `color` is always defined when `kind` is `VeggieKind.Cabbage`. *We* can see that, but we can’t *prove* it, for the same reason that we have to rely on the correct behavior of our static constructors to keep things correct in the first place.
 
-This approach has some performance issues as well. These are small in the grand scheme of things, but if we were building a *lot* of custom types like this, they might add up. First off, each `enum` here creates a fairly complicated object. Second, we need a class field for each value we could *ever* care about on the type. If we end up with something more complicated than just dealing with a single `CabbageColor` property--say, if we needed to store *multiple* other properties--this could end up adding up to a lot of extra "slots" on the class, which cost memory whether in use or not, and it could end up making it harder for the JavaScript VM’s just-in-time (JIT) compiler to optimize the class overall because of the inconsistent shapes (a problem sometimes called "megamorphism").
+This approach has some performance issues as well. These are small in the grand scheme of things, but if we were building a *lot* of custom types like this, they might add up. First off, each `enum` here creates a fairly complicated object. Second, we need a class field for each value we could *ever* care about on the type. If we end up with something more complicated than just dealing with a single `CabbageColor` property—say, if we needed to store *multiple* other properties--this could end up adding up to a lot of extra "slots" on the class, which cost memory whether in use or not, and it could end up making it harder for the JavaScript VM’s just-in-time (JIT) compiler to optimize the class overall because of the inconsistent shapes (a problem sometimes called "megamorphism").
 
 So let’s see how to fix these!
 
