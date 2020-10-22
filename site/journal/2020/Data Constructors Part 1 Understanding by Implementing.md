@@ -30,11 +30,11 @@ series:
     part: 1
 
 date: 2020-09-05T15:45:00-0600
-updated: 2020-10-14T08:15:00-0600
+updated: 2020-10-21T20:05:00-0600
 
 ---
 
-Today’s topic: <i>What is a “data constructor” in languages like [Elm](https://elm-lang.org), [Haskell](https://www.haskell.org), [F^♯^](https://fsharp.org), [OCaml](https://ocaml.org)/[ReasonML](https://reasonml.github.io), [Grain](https://grain-lang.org), etc.?[^swift-and-rust-too] When you see syntax like this (taken from [the Grain docs](https://grain-lang.org/docs/guide/data_types))—</i>
+Today’s topic: <i>What is a “data constructor” in languages like [Elm](https://elm-lang.org), [Haskell](https://www.haskell.org), [F^♯^](https://fsharp.org), [OCaml](https://ocaml.org)/[ReasonML](https://reasonml.github.io), [Grain](https://grain-lang.org), etc.?[^swift-and-rust-too] When you see syntax like this (taken from [the Grain docs](https://grain-lang.org/docs/guide/data_types)[^grain-update])—</i>
 
 ```grain
 data CabbageColor = Red | Green
@@ -56,6 +56,21 @@ We’re going to take this in two steps:
 2. [Understanding—by Implementing](#understandingby-implementing)
 
 If you get through the first section and still feel a bit confused, that’s okay—in fact, it’s almost the point. Take a breather, go get a drink and take a walk or something, and then come back and read the second section!
+
+[^grain-update]: Since I wrote this, Grain has made a change to their syntax which makes this *much* more familiar-looking to developers used to C-like languages. This sample would now look like this:
+
+    ```grain
+    enum CabbageColor { Red, Green }
+    enum Veggie {
+        Squash,
+        Cabbage(CabbageColor),
+        Broccoli
+    }
+
+    let redCabbage = Cabbage(Red)
+    ```
+
+    I have chosen to leave the text of the post as is apart from this footnote because I think it's helpful in exposing people to ML-ish syntaxes… *and* it would be an enormous amount of work to rewrite the whole thing at this stage!
 
 ## What the Syntax Means
 
