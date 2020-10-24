@@ -9,6 +9,7 @@ qualifiers:
     Software developers working with (or interested in) TypeScript, particularly those who are shipping libraries for other developers to use.
 
 date: 2020-10-24T15:45:00-0600
+updated: 2020-10-24T16:03:00-0600
 
 tags:
   - software development
@@ -210,6 +211,15 @@ For this reason, you should generally do this kind of data checking at the edge 
 One option is to leverage some compilation (or “transpilation”) smarts to provide these checks during development but *not* in production builds. Babel allows you to turn given functions into noops, making them not-quite-free but *extremely cheap*. For example, Ember CLI supplies a Babel plugin that turns Ember’s `assert` function (which is typed nearly identically to the `assert` I defined above) into no-ops. You can combine this with any bundler that can do dead-code elimination to remove all the unused helpers as well!
 
 The downside to this approach is that production errors will have worse error messages and be harder to debug. The upside is that you will ship much less code and pay much lower runtime costs in production. To make code relying on this kind of `assert`-stripping work *well*, end users need to combine it with good end-to-end test coverage of any given feature, UI component, etc. But that is true regardless: types and tests eliminate different classes of bugs, and are best used in conjunction!
+
+:::callout
+
+Thoughts and comments? [Email me](mailto:hello@chriskrycho.com?subject=Writing Robust TypeScript Libraries) or comment on [HN] or [Lobste.rs].
+
+:::
+
+[HN]: https://news.ycombinator.com/item?id=24882225
+[Lobste.rs]: https://lobste.rs/s/j696bv/writing_robust_typescript_libraries
 
 *[JS]: JavaScript
 *[TS]: TypeScript
