@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with (or interested in) TypeScript, particularly those who are shipping libraries for other developers to use.
 
 date: 2020-10-24T15:45:00-0600
-updated: 2020-10-24T16:03:00-0600
+updated: 2020-10-24T16:13:00-0600
 
 tags:
   - software development
@@ -214,7 +214,7 @@ The downside to this approach is that production errors will have worse error me
 
 :::callout
 
-Thoughts and comments? [Email me](mailto:hello@chriskrycho.com?subject=Writing Robust TypeScript Libraries) or comment on [HN] or [Lobste.rs].
+Thoughts and comments? [Email me](mailto:hello@chriskrycho.com?subject=Writing%20Robust%20TypeScript%20Libraries) or comment on [HN] or [Lobste.rs].
 
 :::
 
