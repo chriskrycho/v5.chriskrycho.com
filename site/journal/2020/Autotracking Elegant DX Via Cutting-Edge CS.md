@@ -10,7 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-09-28T08:40:00-0600
+updated: 2020-10-25T11:43:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. [James C. Davis](https://github.com/jamescdavis) and [Nick Morgan](https://github.com/morganick) helped me fix some typos. (All mistakes are mine!)
@@ -308,20 +308,20 @@ In this example, the JavaScript I’ve written evaluates the values directly whe
     }
 
     function PersonB(name, age) {
-      let #name = name;
-      let #age = age;
+      let _name = name;
+      let _age = age;
 
       return {
         get description() {
-          return `${#name} is ${#age} years old!`;
+          return `${_name} is ${_age} years old!`;
         },
 
         haveABirthday() {
-          #age += 1;
+          _age += 1;
         },
 
         changeNameTo(newName) {
-          #name = newName;
+          _name = newName;
         },
       };
     }
