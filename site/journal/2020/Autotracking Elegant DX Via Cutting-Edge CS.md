@@ -286,42 +286,42 @@ In this example, the JavaScript I’ve written evaluates the values directly whe
 
     ```js
     class PersonA {
-      _age;
-      _name;
+      #age;
+      #name;
 
       constructor(name, age) {
-        this._age = age;
-        this._name = name;
+        this.#age = age;
+        this.#name = name;
       }
 
       get description() {
-        return `${this._name} is ${this._age} years old!`;
+        return `${this.#name} is ${this.#age} years old!`;
       }
 
       haveABirthday() {
-        this._age += 1;
+        this.#age += 1;
       }
 
       changeNameTo(newName) {
-        this._name = newName;
+        this.#name = newName;
       }
     }
 
     function PersonB(name, age) {
-      let _name = name;
-      let _age = age;
+      let #name = name;
+      let #age = age;
 
       return {
         get description() {
-          return `${_name} is ${_age} years old!`;
+          return `${#name} is ${#age} years old!`;
         },
 
         haveABirthday() {
-          _age += 1;
+          #age += 1;
         },
 
         changeNameTo(newName) {
-          _name = newName;
+          #name = newName;
         },
       };
     }
@@ -373,16 +373,16 @@ import { markAsUsed, markAsChanged } from '@glimmer/...';
 
 class Person {
   // THIS IMPLEMENTATION IS NOT THE REAL ONE EITHER
-  _name;
+  #name;
 
   get name() {
     markAsUsed(this, 'name');
-    return this._name;
+    return this.#name;
   }
 
   set name(newValue) {
     markAsChanged(this, 'name');
-    this._name = newValue;
+    this.#name = newValue;
   }
 }
 ```
@@ -414,7 +414,7 @@ let person = new Person();
 console.log(person.nameLength);
 ```
 
-First, `@tracked` turns `name` into a getter/setter pair, just as we saw above. Second, `nameLength` gets the value of `name`. The getter for `name` first runs `markAsUsed(this, 'name')`, then returns the actual value stored in `_name`. This would remain true no matter how many getters we chained together: by the end, they would all end up using `name`, which would call `markAsUsed(this, 'name')`.
+First, `@tracked` turns `name` into a getter/setter pair, just as we saw above. Second, `nameLength` gets the value of `name`. The getter for `name` first runs `markAsUsed(this, 'name')`, then returns the actual value stored in `#name`. This would remain true no matter how many getters we chained together: by the end, they would all end up using `name`, which would call `markAsUsed(this, 'name')`.
 
 ```js
 import { tracked } from '@glimmer/tracking';
@@ -444,7 +444,7 @@ let person = new Person();
 //     Person.nameLength ->
 //       Person.name *getter* ->
 //         markAsUsed(this, 'name')
-//         this._name
+//         this.#name
 console.log(person.showError);
 ```
 
@@ -453,13 +453,13 @@ Similarly, changing the value of `name` would invoke `markAsChanged` via the set
 ```js
 // Person.name *setter* ->
 //   markAsChanged(this, 'name')
-//   this._name
+//   this.#name
 person.name = "Chris";
 
 // Person.updateName ->
 //   Person.name *setter* ->
 //     markAsChanged(this, 'name')
-//     this._name
+//     this.#name
 person.updateName("Chris Krycho");
 ```
 
