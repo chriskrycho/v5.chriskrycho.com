@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with (or interested in) TypeScript, particularly those who are shipping libraries for other developers to use.
 
 date: 2020-10-24T15:45:00-0600
-updated: 2020-10-24T16:13:00-0600
+updated: 2020-10-24T21:42:00-0600
 
 tags:
   - software development
@@ -34,7 +34,7 @@ interface Person {
 
 function describe(person: Person): string {
   let name = person.name ?? 'someone';
-  return `${name} is ${person.age} years old!';
+  return `${name} is ${person.age} years old!`;
 }
 ```
 
@@ -109,7 +109,7 @@ First, we’ll author our code as if we were actually going to get truly unknown
 ```ts
 function describe(person: unknown): string {
   let name = person.name ?? 'someone';
-  return `${name} is ${person.age} years old`';
+  return `${name} is ${person.age} years old`;
 }
 ```
 
