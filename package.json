@@ -11,7 +11,7 @@
       "yarn": "1.22.10"
    },
    "devDependencies": {
-      "@11ty/eleventy": "^0.10.0",
+      "@11ty/eleventy": "^0.11.1",
       "@types/cheerio": "^0.22.22",
       "@types/highlight.js": "^9.12.4",
       "@types/luxon": "^1.25.0",
