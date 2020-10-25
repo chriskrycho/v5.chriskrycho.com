@@ -6,7 +6,7 @@
 
 import MarkdownIt = require('markdown-it')
 import Renderer = require('markdown-it/lib/renderer')
-import Token = require('markdown-it/lib/token')
+import Token from 'markdown-it/lib/token'
 
 declare namespace markdownItContainer {
    interface ContainerOpts {

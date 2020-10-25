@@ -73,7 +73,7 @@ const md = markdownIt({
    html: true,
    highlight: (str, lang) =>
       lang && getLanguage(lang)
-         ? highlight(lang, str).unwrapOrElse(e => {
+         ? highlight(lang, str).unwrapOrElse((e) => {
               logErr(e)
               return str
            })
@@ -96,7 +96,6 @@ const md = markdownIt({
    .use(abbr)
    .use(div)
 
-// eslint-disable-next-line @typescript-eslint/camelcase
 md.renderer.rules.footnote_caption = (tokens, idx): string => {
    let n = Number(tokens[idx].meta.id + 1).toString()
 

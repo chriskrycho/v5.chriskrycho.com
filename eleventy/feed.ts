@@ -1,5 +1,3 @@
-/* eslint @typescript-eslint/camelcase: off */
-
 import stripTags from 'striptags'
 
 import { Dict, EleventyClass, Item } from '../types/eleventy'

@@ -26,8 +26,8 @@ import './feed' // for extension of types -- TODO: move those types elsewhere!
                  slugified version of the path, e.g. `foo/bar` -> `foo-bar`
  */
 function addCollectionFromDir(config: Config, path: string, name: string = path): void {
-   config.addCollection(name, collections =>
-      collections.getAll().filter(collection => collection.inputPath.includes(path)),
+   config.addCollection(name, (collections) =>
+      collections.getAll().filter((collection) => collection.inputPath.includes(path)),
    )
 }
 
@@ -64,14 +64,14 @@ function config(config: Config): UserConfig {
    config.addFilter('inlineMd', markdown.renderInline.bind(markdown))
 
    config.addFilter('toCollection', toCollection)
-   config.addFilter('stringify', obj => JSON.stringify(obj))
+   config.addFilter('stringify', (obj) => JSON.stringify(obj))
    config.addFilter('archiveByYears', archiveByYear)
    config.addFilter('absoluteUrl', absoluteUrl)
    config.addFilter('isoDate', isoDate)
    config.addFilter('toDateTime', toDateTime)
    config.addFilter('siteTitle', siteTitle)
    config.addFilter('withValidDate', (items: Item[]) =>
-      items.filter(item => canParseDate(item.date)),
+      items.filter((item) => canParseDate(item.date)),
    )
    config.addFilter('current', currentPage)
    config.addFilter('editLink', PageLinks.edit)
@@ -92,8 +92,8 @@ function config(config: Config): UserConfig {
    config.addPassthroughCopy('site/robots.txt')
    config.addPassthroughCopy('site/styles')
 
-   config.addCollection('pages', collection =>
-      collection.getAll().filter(item => item.data?.standalonePage),
+   config.addCollection('pages', (collection) =>
+      collection.getAll().filter((item) => item.data?.standalonePage),
    )
    addCollectionFromDir(config, 'journal')
    addCollectionFromDir(config, 'essays')

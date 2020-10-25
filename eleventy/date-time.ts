@@ -12,8 +12,8 @@ const TZ = { zone: 'America/Denver' }
 // Same parsing rules as 11ty itself uses: ISO or SQL, nothing else.
 export const toDateTime = (input: string): DateTime => {
    const dateTime =
-      maybeDateTime(s => DateTime.fromISO(s, TZ), input) ??
-      maybeDateTime(s => DateTime.fromSQL(s, TZ), input)
+      maybeDateTime((s) => DateTime.fromISO(s, TZ), input) ??
+      maybeDateTime((s) => DateTime.fromSQL(s, TZ), input)
    if (!dateTime) throw new Error(`Could not parse date: ${input}`)
    return dateTime
 }
