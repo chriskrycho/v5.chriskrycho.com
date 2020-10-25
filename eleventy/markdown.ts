@@ -65,8 +65,8 @@ function renderPermalink(
 
    const closeTokens = [...marker, new Token('link_close', 'a', -1)]
 
-   state.tokens[idx + 1].children.unshift(...openTokens)
-   state.tokens[idx + 1].children.push(...closeTokens)
+   state.tokens[idx + 1].children?.unshift(...openTokens)
+   state.tokens[idx + 1].children?.push(...closeTokens)
 }
 
 const md = markdownIt({
