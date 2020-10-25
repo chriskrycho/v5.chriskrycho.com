@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with (or interested in) TypeScript, particularly those who are shipping libraries for other developers to use.
 
 date: 2020-10-24T15:45:00-0600
-updated: 2020-10-24T21:42:00-0600
+updated: 2020-10-24T21:50:00-0600
 
 tags:
   - software development
@@ -128,7 +128,10 @@ We also need a way to check if the object as a given key on it. It would be nice
 ```ts
 type Key = string | number | symbol;
 
-function has<K extends Key, T>(key: K, t: T): t is T & Record<K, unknown> {
+function has<K extends Key, T>(
+  key: K,
+  t: T
+): t is T & Record<K, unknown> {
   return key in t;
 }
 ```
