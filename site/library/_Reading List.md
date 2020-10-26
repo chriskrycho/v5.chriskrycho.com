@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-10-11T09:22:00-0600
+date: 2020-10-25T21:32:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -59,8 +59,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
 
-- <cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>, Zeynep Tüfeçki (new)
-
 - <cite>Confronted by Grace: Meditations of a Theologian</cite>, John Webster (new)
 
 ### Fiction
@@ -99,6 +97,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
     - [review](/library/finding-holy-in-the-suburbs/)
 
+- <cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>, Zeynep Tüfeçki (new)
+    - to be discussed on Winning Slowly episoes 8.20 and 8.21
+
 ### Fiction
 
 - <cite>Babylon’s Ashes</cite>, James S. A. Corey (reread)
@@ -133,7 +134,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 - <cite>Contact</cite>, Carl Sagan (new)
-    - to be discussed on Winning Slowly episodes [8.18] and 8.19 (forthcoming)
+    - to be discussed on Winning Slowly episodes [8.18] and [8.19]
 
 - <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
@@ -154,6 +155,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 [8.16]: https://winningslowly.org/8.16
 [8.17]: https://winningslowly.org/8.17
 [8.18]: https://winningslowly.org/8.18
+[8.19]: https://winningslowly.org/8.19
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
