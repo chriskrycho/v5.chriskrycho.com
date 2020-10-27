@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-10-25T21:32:00-0600
+date: 2020-10-26T20:29:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -37,9 +37,7 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 ### Fiction
 
-- <cite>Blue Mars</cite>, Kim Stanley Robinson (new)
-
-- <cite>Mr. Penumbra’s 24-Hour Bookstore</cite>, Robin Sloan (new)
+- [<cite>Blue Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBlue-Mars-Kim-Stanley-Robinson%2Fbook%2F745509), Kim Stanley Robinson (new)
 
 ## Started
 
@@ -59,11 +57,17 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
 
-- <cite>Confronted by Grace: Meditations of a Theologian</cite>, John Webster (new)
+- [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FConfronted-by-Grace-Meditations-of-a-Theologian-Prof-John-Webster%2Fbook%2F31784244), John Webster (new)
+
+- [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
+
+- [<cite>Holiness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780802822154), John Webster (new)
 
 ### Fiction
 
-- <cite>Green Mars</cite>, Kim Stanley Robinson (new)
+- [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
+
+- [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389), Robin Sloan (new)
 
 ## 2020
 
@@ -97,20 +101,20 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
     - [review](/library/finding-holy-in-the-suburbs/)
 
-- <cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>, Zeynep Tüfeçki (new)
+- [<cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780300234176) (also available for free from the author [here](https://www.twitterandteargas.org)), Zeynep Tüfeçki (new)
     - to be discussed on Winning Slowly episoes 8.20 and 8.21
 
 ### Fiction
 
-- <cite>Babylon’s Ashes</cite>, James S. A. Corey (reread)
+- [<cite>Babylon’s Ashes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004), James S. A. Corey (reread)
 
-- <cite>Persepolis Rising</cite>, James S. A. Corey (reread)
+- [<cite>Persepolis Rising</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952), James S. A. Corey (reread)
 
-- <cite>Tiamat’s Wrath</cite>, James S. A. Corey (reread)
+- [<cite>Tiamat’s Wrath</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677), James S. A. Corey (reread)
 
-- <cite>Auberon</cite> (short fiction), James S. A. Corey (new)
+- [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction), James S. A. Corey (new)
 
-- <cite>Gods of Risk</cite> (short fiction), James S. A. Corey (reread)
+- [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction), James S. A. Corey (reread)
 
 - [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
     - discussed on Winning Slowly [8.06] and [8.07]
@@ -181,30 +185,30 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Beowulf</cite> (new)
     - [review](https://v4.chriskrycho.com/2019/beowulf-a-few-thoughts.html)
 
-- <cite>The Martian</cite>, Andy Weir (reread)
+- [<cite>The Martian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Martian-Andy-Weir%2Fbook%2F25356914), Andy Weir (reread)
 
 - The Themis Files, Sylvain Neuvel (new):
-	- <cite>Sleeping Giants</cite>
-	- <cite>Waking Gods</cite>
-	- <cite>Only Human</cite>
+	- [<cite>Sleeping Giants</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSleeping-Giants-Sylvain-Neuvel%2Fbook%2F33538194)
+	- [<cite>Waking Gods</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWaking-Gods-Sylvain-Neuvel%2Fbook%2F43963996)
+	- [<cite>Only Human</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FOnly-Human-Sylvain-Neuvel%2Fbook%2F39561148)
 
     [review](https://v4.chriskrycho.com/2019/review-the-themis-files.html)
 
-- <cite>Red Mars</cite>, Kim Stanley Robinson (new)
+- [<cite>Red Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBlue-Mars-Kim-Stanley-Robinson%2Fbook%2F745509), Kim Stanley Robinson (new)
     - [review](/library/red-mars/)
 
-- <cite>Recursion</cite>, Blake Crouch (new)
+- [<cite>Recursion</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRecursion-Blake-Crouch%2Fbook%2F42580801), Blake Crouch (new)
     - [review](/library/recursion/)
 
-- <cite>Dark Matter</cite>, Blake Crouch (new)
+- [<cite>Dark Matter</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matter-Blake-Crouch%2Fbook%2F34241696), Blake Crouch (new)
     - [review](/library/dark-matter/)
 
 - The Expanse, James S.A. Corey (reread):
-	- <cite>Leviathan Wakes</cite>
-	- <cite>Caliban’s War</cite>
-	- <cite>Abaddon’s Gade</cite>
-	- <cite>Cibola Burn</cite>
-	- <cite>Nemesis Games</cite>
+	- [<cite>Leviathan Wakes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667)
+	- [<cite>Caliban’s War</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCalibans-War-James-S-A-Corey%2Fbook%2F28575716)
+	- [<cite>Abaddon’s Gade</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAbaddons-Gate-James-S-A-Corey%2Fbook%2F24065826)
+	- [<cite>Cibola Burn</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCibola-Burn-James-S-A-Corey%2Fbook%2F26289654)
+	- [<cite>Nemesis Games</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FNemesis-Games-James-S-a-Corey%2Fbook%2F30151014)
 
 ## 2018
 
