@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-10-26T20:29:00-0600
+date: 2020-10-31T15:05:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -138,7 +138,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 - <cite>Contact</cite>, Carl Sagan (new)
-    - to be discussed on Winning Slowly episodes [8.18] and [8.19]
+    - discussed on Winning Slowly episodes [8.18] and [8.19]
 
 - <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
