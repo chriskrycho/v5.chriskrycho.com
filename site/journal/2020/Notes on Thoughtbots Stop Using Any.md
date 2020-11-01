@@ -119,7 +119,7 @@ const fullName = ({ firstName, lastName }: User) => {
 }
 ```
 
-This is a great improvement![^2] However, I feel obliged to note that instead of the or `||` operator in their `any` example, it’s worth reaching for the nullish coalescing `??` operator, which treats `0`, `""`, etc. differently than `undefined` and `null`! Now, the second example is still better code, and we don’t even *need* it in that case, but nullish coalescing is a great tool to have in your toolbox. You can imagine that in the case where the `User` argument here *was* optional—perhaps as part of some other set of arguments, or because you were dealing with untrusted data, that it would still be useful:
+This is a great improvement![^2] However, I feel obliged to note that instead of the or `||` operator in their `any` example, it’s worth reaching for the [nullish coalescing `??` operator][nc], which treats `0`, `""`, etc. differently than `undefined` and `null`! Now, the second example is still better code, and we don’t even *need* it in that case, but nullish coalescing is a great tool to have in your toolbox. You can imagine that in the case where the `User` argument here *was* optional—perhaps as part of some other set of arguments, or because you were dealing with untrusted data, that it would still be useful:
 
 ```ts
 interface User {
@@ -134,9 +134,12 @@ const fullName = (user?: User) => {
 }
 ```
 
-This is contrived, to be sure, but it shows how useful optional chaining and nullish coalescing can be even when you *do* have well-typed code.
+This is contrived, to be sure, but it shows how useful [optional chaining][oc] and nullish coalescing can be even when you *do* have well-typed code.
 
-In sum: that post from Thoughtbot had great recommendations, 
+In sum: that post from Thoughtbot had great recommendations, but with a couple tweaks we can make it even stronger!
+
+[nc]: http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_Coalescing_Operator
+[oc]: http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
 *[RSS]: really simple syndication*
 
