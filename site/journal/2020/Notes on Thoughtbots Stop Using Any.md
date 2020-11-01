@@ -143,7 +143,7 @@ In sum: that post from Thoughtbot had great recommendations,
 [^1]: Shameless plug: I would not throw an error here. Instead, I’d reach for a `Result` type, like the one in [the library a friend and I wrote a couple years ago](https://github.com/true-myth/true-myth "True Myth"). That way I would be able to have type-safe error handling, as well! That would end up looking something like this:
 
     ```ts
-    import { Result } from true-myth; TODO
+    import { Result } from "true-myth";
 
     class ApiError extends Error {
       readonly originalPayload: unknown;
