@@ -8,6 +8,7 @@ qualifiers:
     Developers working with (or just curious about) TypeScript.
 
 date: 2020-10-31T18:42:00-0600
+updated: 2020-10-31T18:46:00-0600
 
 tags:
   - TypeScript
@@ -153,7 +154,7 @@ In sum: that post from Thoughtbot had great recommendations,
     }
 
     const parseApiResponse =
-      (response: unknown): Result\<ParsedType, ApiError\> =\>
+      (response: unknown): Result<ParsedType, ApiError> =>
         isValid(response)
           ? Result.ok(response)
           : Result.err(new ApiError("Invalid response", response));
@@ -169,7 +170,7 @@ In sum: that post from Thoughtbot had great recommendations,
       lastName?: string
     }
 
-    const fullName = ({ firstName, lastName }: User) =\>
+    const fullName = ({ firstName, lastName }: User) =>
       lastName ? `${lastName}, ${firstName}` : firstName;
     ```
 
