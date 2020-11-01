@@ -8,7 +8,7 @@ qualifiers:
     Developers working with (or just curious about) TypeScript.
 
 date: 2020-10-31T18:42:00-0600
-updated: 2020-10-31T19:06:00-0600
+updated: 2020-10-31T19:07:00-0600
 
 tags:
   - TypeScript
@@ -63,7 +63,7 @@ const parseApiResponse = (
 }
 ```
 
-If the response were more detailed than this, and therefore required more validation, we could simply extend the checks in that `if` statement to cover more ground. What’s more, if we want to avoid the extra object allocation, we can do that by reaching for [some utility types](https://v5.chriskrycho.com/journal/writing-robust-typescript-libraries/) which let us be as robust as we like. And we could go further in that case and parse even a response typed as `unknown`:
+If the response were more detailed than this, and therefore required more validation, we could extend the checks in that `if` statement to cover more ground. What’s more, if we want to avoid the extra object allocation, we can do that by reaching for [some utility types](https://v5.chriskrycho.com/journal/writing-robust-typescript-libraries/) which let us be as robust as we like. And we could go further in that case and parse even a response typed as `unknown`:
 
 ```ts
 type ParsedType = {
