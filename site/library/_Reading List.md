@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-11-18T20:55:00-0600
+date: 2020-11-18T21:01:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -106,15 +106,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- [<cite>Babylon’s Ashes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004), James S. A. Corey (reread)
-
-- [<cite>Persepolis Rising</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952), James S. A. Corey (reread)
-
-- [<cite>Tiamat’s Wrath</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677), James S. A. Corey (reread)
-
-- [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction), James S. A. Corey (new)
-
-- [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction), James S. A. Corey (reread)
+- The Expanse (reread, continued from 2019)
+    - [<cite>Babylon’s Ashes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004), James S. A. Corey
+    - [<cite>Persepolis Rising</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952), James S. A. Corey
+    - [<cite>Tiamat’s Wrath</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677), James S. A. Corey
+    - [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction), James S. A. Corey (new)
+    - [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction), James S. A. Corey
 
 - [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
     - discussed on Winning Slowly [8.06] and [8.07]
@@ -142,7 +139,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
-- The Expanse, James S.A. Corey (reread):
+- The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
 	- [<cite>Leviathan Wakes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667)
 
 [8.02]: https://winningslowly.org/8.02
