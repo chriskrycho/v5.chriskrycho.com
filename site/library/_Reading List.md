@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-10-31T15:05:00-0600
+date: 2020-11-18T20:55:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -102,7 +102,7 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [review](/library/finding-holy-in-the-suburbs/)
 
 - [<cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780300234176) (also available for free from the author [here](https://www.twitterandteargas.org)), Zeynep Tüfeçki (new)
-    - to be discussed on Winning Slowly episoes 8.20 and 8.21
+    - discussed on Winning Slowly episoes [8.20] and [8.21]
 
 ### Fiction
 
@@ -142,6 +142,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
+- The Expanse, James S.A. Corey (reread):
+	- [<cite>Leviathan Wakes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667)
+
 [8.02]: https://winningslowly.org/8.02
 [8.03]: https://winningslowly.org/8.03
 [8.04]: https://winningslowly.org/8.04
@@ -160,6 +163,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 [8.17]: https://winningslowly.org/8.17
 [8.18]: https://winningslowly.org/8.18
 [8.19]: https://winningslowly.org/8.19
+[8.20]: https://winningslowly.org/8.20
+[8.21]: https://winningslowly.org/8.21
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
