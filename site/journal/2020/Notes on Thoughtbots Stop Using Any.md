@@ -8,7 +8,7 @@ qualifiers:
     Developers working with (or just curious about) TypeScript.
 
 date: 2020-10-31T18:42:00-0600
-updated: 2020-10-31T19:07:00-0600
+updated: 2020-11-21T17:17:00-0600
 
 tags:
   - TypeScript
@@ -149,10 +149,12 @@ In sum: that post from Thoughtbot had great recommendations, but with a couple t
     import { Result } from "true-myth";
 
     class ApiError extends Error {
-      readonly originalPayload: unknown;
-      constructor(message: string, payload: unknown) {
-        super(message);
-        this.originalPayload = payload;
+      constructor(readonly response: unknown) {
+        super("Invalid response");
+      }
+      
+      static from(response: unknown): ApiError {
+        return new ApiError(response);
       }
     }
 
@@ -160,9 +162,9 @@ In sum: that post from Thoughtbot had great recommendations, but with a couple t
       (response: unknown): Result<ParsedType, ApiError> =>
         isValid(response)
           ? Result.ok(response)
-          : Result.err(new ApiError("Invalid response", response));
+          : Result.err(ApiError.from(response));
     ```
-      
+    
     Now we have a well-typed error, which we can deal with as a value—no need for another `try`/`catch` block, and in fact we know *some* details about the kind of error we have!
 
 [^2]: Now, I would *absolutely* write this as a ternary and a single-expression function body instead:
