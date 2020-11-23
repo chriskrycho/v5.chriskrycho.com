@@ -10,7 +10,7 @@ qualifiers:
     Software engineers interested in reactivity models in general and in web <abbr title="user interface">UI</abbr> and JavaScript in particular.
 
 date: 2020-09-22T15:15:00-0600
-updated: 2020-10-25T11:43:00-0600
+updated: 2020-11-22T21:10:00-0600
 
 thanks: >
   [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) gave helpful feedback on a draft of this post, as well as helping me understand some of these mechanics better in the first place. [James C. Davis](https://github.com/jamescdavis) and [Nick Morgan](https://github.com/morganick) helped me fix some typos. (All mistakes are mine!)
@@ -115,9 +115,7 @@ let personInfo = new PersonInfo("Chris");
 console.log(personInfo.nameLength); // 5
 ```
 
-—what exactly happens?
-
-Effectively, the `nameLength` property (technically an *accessor*) executes as if it were a function. Before JS had native getters, in fact, that’s how we would have written it, and in fact we still *could* write it that way:
+—the `nameLength` property (technically an *accessor*) executes as if it were a function. Before JS had native getters, that’s how we would have written it, and we still *could* write it that way:
 
 ```js
 const MAX_LENGTH = 10;
