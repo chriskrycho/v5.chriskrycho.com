@@ -13,7 +13,6 @@
    "devDependencies": {
       "@11ty/eleventy": "^0.11.1",
       "@types/cheerio": "^0.22.22",
-      "@types/highlight.js": "^9.12.4",
       "@types/luxon": "^1.25.0",
       "@types/markdown-it": "^10.0.2",
       "@types/markdown-it-anchor": "^4.0.4",
@@ -30,7 +29,7 @@
       "eslint-plugin-prettier": "^3.1.4",
       "gulp": "^4.0.2",
       "gulp-sass": "^4.1.0",
-      "highlight.js": "^10.3.1",
+      "highlight.js": "^10.4.0",
       "luxon": "^1.25.0",
       "markdown-it": "^12.0.2",
       "markdown-it-abbr": "^1.0.4",
