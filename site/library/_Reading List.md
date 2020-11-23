@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-11-18T21:01:00-0600
+date: 2020-11-22T19:55:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -68,6 +68,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
 - [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389), Robin Sloan (new)
+
+- The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
+	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
 
 ## 2020
 
@@ -140,7 +143,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Age of Myth</cite>, Michael J. Sullivan (new)
 
 - The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
-	- [<cite>Leviathan Wakes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667)
+	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
+	- [<cite>Caliban’s War</cite>][calibans-war]
 
 [8.02]: https://winningslowly.org/8.02
 [8.03]: https://winningslowly.org/8.03
@@ -206,11 +210,15 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [review](/library/dark-matter/)
 
 - The Expanse, James S.A. Corey (reread):
-	- [<cite>Leviathan Wakes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667)
-	- [<cite>Caliban’s War</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCalibans-War-James-S-A-Corey%2Fbook%2F28575716)
-	- [<cite>Abaddon’s Gade</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAbaddons-Gate-James-S-A-Corey%2Fbook%2F24065826)
+	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
+	- [<cite>Caliban’s War</cite>][calibans-war]
+	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
 	- [<cite>Cibola Burn</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCibola-Burn-James-S-A-Corey%2Fbook%2F26289654)
 	- [<cite>Nemesis Games</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FNemesis-Games-James-S-a-Corey%2Fbook%2F30151014)
+
+[leviathan-wakes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667
+[calibans-war]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCalibans-War-James-S-A-Corey%2Fbook%2F28575716
+[abaddons-gate]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAbaddons-Gate-James-S-A-Corey%2Fbook%2F24065826
 
 ## 2018
 
