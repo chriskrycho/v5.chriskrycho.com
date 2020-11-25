@@ -28,7 +28,7 @@
    {#- TODO: logo -#}
    {%- endblock feed_info %}
    {%- block entries -%}
-      {%- set items = collections.all | excludingStandalonePages -%}
+      {%- set items = collections.live | excludingStandalonePages -%}
       {{-atom.entries(items, config)-}}
    {%- endblock entries -%}
 </feed>
