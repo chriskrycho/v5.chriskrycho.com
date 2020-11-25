@@ -24,6 +24,8 @@ tags:
   - web development
   - reactivity
 
+featured: true
+
 templateEngineOverride: md
 
 ---
