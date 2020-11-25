@@ -3,9 +3,7 @@ standalonePage: true
 ---
 
 {% extends 'base.njk' %}
-{% import 'components/item.njk' as item %}
-{% from 'components/archive-list.njk' import list %}
-{% from 'components/social.njk' import meta %}
+{% from 'components/index-list.njk' import list %}
 
 {%- block main -%}
 <article class='content-block post'>
@@ -17,69 +15,6 @@ standalonePage: true
    {% block after_content %}{% endblock after_content %}
 </article>
 
-<section class='content-block'>
-   <div class='latest-list'>
-      <div class='latest-heading'>
-         <h2 class='latest-title heading'>The Latest</h2>
-      </div>
-      <ul class='latest-entries'>
-         {% for item in collections.latest -%}
-         <li class='latest-entry'>
-            <h3 class='entry-collection heading'>
-               {%- set collection = item.inputPath | toCollection -%}
-               <a href="/{{collection}}/">{{collection}}</a>
-            </h3>
-            <article class='entry-content'>
-               {% set url %}
-                  {% if item.data.link %}
-                     {{item.data.link}}
-                  {% else %}
-                     {{item.url}}
-                  {% endif %}
-               {% endset %}
-               {% set linkTitle %}
-                  {% if item.data.link %}
-                     direct link to item
-                  {% else %}
-                     item permalink
-                  {% endif %}
-               {% endset %}
-
-               <h4 class='entry-title'>
-                  {% set formattedDate -%}
-                     {%- localeDate item.date, 'MMMM d, yyyy' -%}
-                  {%- endset %}
-                  <a href='{{url}}' class='entry-permalink' title='{{linkTitle}}'>
-                  {%- if item.data.title -%}
-                     <span class='entry-title__text'>
-                        {{-item.data.title | inlineMd | safe-}}
-                     </span>
-                     {%- if item.data.link %}<span class='item-title-arrow'>↩︎</span>{% endif -%}
-                  {%- else -%}
-                     <span class='date entry-title__date'>{{formattedDate}}</span> ❈
-                  {%- endif -%}
-                  </a>
-                  {%- if item.data.link -%}
-                     —<a href='{{item.url}}' title='item permalink'>❈</a>
-                  {%- endif -%}
-                  {%- if item.data.title %}
-                  ({{-formattedDate-}})
-                  {% endif -%}
-               </h4>
-
-               {% if item.data.subtitle -%}
-               <p class='entry-subtitle'>{{item.data.subtitle | inlineMd | safe}}</p>
-               {%- endif %}
-
-               {%- if not item.data.title %}
-               <section class='entry-content article-content'>
-                  {{item.templateContent | safe}}
-               </section>
-               {% endif -%}
-            </article>
-         </li>
-         {%- endfor %}
-      </ul>
-   </div>
-</section>
+{{list(collections.latest, "The Latest")}}
+{{list(collections.updated, title="Updated Recently")}}
 {%- endblock main -%}

@@ -35,13 +35,30 @@ type MonthMap = Map<number, [string, DayMap]>
 type YearMap = Map<number, [string, MonthMap]>
 
 export const byDate = (order: Order) => (a: Item, b: Item): number => {
-   if (canParseDate(a.date) && canParseDate(b.date)) {
-      const aDate = fromDateOrString(a.date).toSeconds()
-      const bDate = fromDateOrString(b.date).toSeconds()
-      return order === Order.OldFirst ? aDate - bDate : bDate - aDate
-   } else {
+   // Sort order is meaningless if either doesn't have the relevant comparison key.
+   if (!canParseDate(a.date) || !canParseDate(b.date)) {
       return 0
    }
+
+   const aDate = fromDateOrString(a.date).toSeconds()
+   const bDate = fromDateOrString(b.date).toSeconds()
+   return order === Order.OldFirst ? aDate - bDate : bDate - aDate
+}
+
+export const byUpdated = (order: Order) => (a: Item, b: Item): number => {
+   // Sort order is meaningless if either doesn't have the relevant comparison key.
+   if (!a.data || !b.data) {
+      return 0
+   }
+
+   // Likewise if the value isn't parseable for either.
+   if (!canParseDate(a.data.updated) || !canParseDate(b.data.updated)) {
+      return 0
+   }
+
+   const aUpdated = fromDateOrString(a.data.updated).toSeconds()
+   const bUpdated = fromDateOrString(b.data.updated).toSeconds()
+   return order === Order.OldFirst ? aUpdated - bUpdated : bUpdated - aUpdated
 }
 
 const dateTimeFromItem = ({ date }: Item): DateTime => fromDateOrString(date)

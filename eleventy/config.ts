@@ -1,6 +1,6 @@
 import { Config, Item, UserConfig, Collection } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
-import archiveByYear, { byDate, Order } from './archive-by-year'
+import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year'
 import copyright from './copyright'
 import currentPage from './current-page'
 import toDateTime, { canParseDate } from './date-time'
@@ -48,6 +48,23 @@ function latest(collection: Collection): Item[] {
    ]
       .filter(isNotVoid)
       .sort(byDate(Order.NewFirst))
+}
+
+const excluding = <T>(items: T[]) => (item: T) => !items.includes(item)
+
+function mostRecentlyUpdated(collection: Collection): Item[] {
+   const all = excludingStandalonePages(collection.getAll())
+      .sort(byUpdated(Order.NewFirst))
+      .filter(excluding(latest(collection)))
+
+   return [
+      all.find(firstInCollectionNamed('essays')),
+      all.find(firstInCollectionNamed('journal')),
+      all.find(firstInCollectionNamed('library')),
+      all.find(firstInCollectionNamed('elsewhere')),
+   ]
+      .filter(isNotVoid)
+      .sort(byUpdated(Order.NewFirst))
 }
 
 function config(config: Config): UserConfig {
@@ -102,6 +119,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'elsewhere')
 
    config.addCollection('latest', latest)
+   config.addCollection('updated', mostRecentlyUpdated)
 
    config.setLibrary('md', markdown)
 

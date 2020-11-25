@@ -1,0 +1,69 @@
+{% macro list(collection, title) -%}
+   <section class='content-block'>
+      <div class='latest-list'>
+         <div class='latest-heading'>
+            <h2 class='latest-title heading'>{{title}}</h2>
+         </div>
+         <ul class='latest-entries'>
+            {% for item in collection -%}
+               <li class='latest-entry'>
+                  <h3 class='entry-collection heading'>
+                     {%- set collectionName = item.inputPath | toCollection -%}
+                     <a href="/{{collectionName}}/">{{collectionName}}</a>
+                  </h3>
+                  <article class='entry-content'>
+                     {% set url %}
+                     {% if item.data.link %}
+                        {{item.data.link}}
+                     {% else %}
+                        {{item.url}}
+                     {% endif %}
+                     {% endset %}
+                     {% set linkTitle %}
+                     {% if item.data.link %}
+                        direct link to item
+                     {% else %}
+                        item permalink
+                     {% endif %}
+                     {% endset %}
+
+                     <h4 class='entry-title'>
+                        {% set formattedDate -%}
+                        {%- localeDate item.date, 'MMMM d, yyyy' -%}
+                        {%- endset %}
+                        <a href='{{url}}' class='entry-permalink' title='{{linkTitle}}'>
+                           {%- if item.data.title -%}
+                              <span class='entry-title__text'>
+                                 {{-item.data.title | inlineMd | safe-}}
+                              </span>
+                              {%- if item.data.link %}
+                                 <span class='item-title-arrow'>↩︎</span>{% endif -%}
+                           {%- else -%}
+                              <span class='date entry-title__date'>{{formattedDate}}</span>
+                              ❈
+                           {%- endif -%}
+                        </a>
+                        {%- if item.data.link -%}
+                           —<a href='{{item.url}}' title='item permalink'>❈</a>
+                        {%- endif -%}
+                        {%- if item.data.title %}
+                           ({{-formattedDate-}})
+                        {% endif -%}
+                     </h4>
+
+                     {% if item.data.subtitle -%}
+                        <p class='entry-subtitle'>{{item.data.subtitle | inlineMd | safe}}</p>
+                     {%- endif %}
+
+                     {%- if not item.data.title %}
+                        <section class='entry-content article-content'>
+                           {{item.templateContent | safe}}
+                        </section>
+                     {% endif -%}
+                  </article>
+               </li>
+            {%- endfor %}
+         </ul>
+      </div>
+   </section>
+{%- endmacro %}
