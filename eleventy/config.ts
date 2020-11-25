@@ -1,9 +1,11 @@
+import { DateTime } from 'luxon'
+
 import { Config, Item, UserConfig, Collection } from '../types/eleventy'
 import absoluteUrl from './absolute-url'
 import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year'
 import copyright from './copyright'
 import currentPage from './current-page'
-import toDateTime, { canParseDate } from './date-time'
+import toDateTime, { canParseDate, fromDateOrString } from './date-time'
 import isoDate from './iso-date'
 import localeDate from './locale-date'
 import markdown from './markdown'
@@ -15,6 +17,17 @@ import excludingCollection from './excluding-collection'
 import toCollection from './to-collection'
 
 import './feed' // for extension of types -- TODO: move those types elsewhere!
+
+const BUILD_TIME = new DateTime()
+
+const isLive = (item: Item) =>
+   canParseDate(item.date) &&
+   fromDateOrString(item.date) <= BUILD_TIME &&
+   !item.data?.draft
+
+const isNotVoid = <A>(a: A | null | undefined): a is A => a != null
+
+const livePosts = (collection: Collection) => collection.getAll().filter(isLive)
 
 const excludingStandalonePages = (item: Item): boolean =>
    !(item.data?.standalonePage ?? false)
@@ -31,18 +44,15 @@ const filterStandalonePages = (items: Item[]) => items.filter(excludingStandalon
  */
 function addCollectionFromDir(config: Config, path: string, name: string = path): void {
    config.addCollection(name, (collections) =>
-      collections.getAll().filter((collection) => collection.inputPath.includes(path)),
+      livePosts(collections).filter((item) => item.inputPath.includes(path)),
    )
 }
-
-const isNotVoid = <A>(a: A | null | undefined): a is A => a != null
 
 const firstInCollectionNamed = (collectionName: string) => (item: Item): boolean =>
    item.data?.collections[collectionName]?.includes(item) ?? false
 
 function latest(collection: Collection): Item[] {
-   const all = collection
-      .getAll()
+   const all = livePosts(collection)
       .filter(excludingStandalonePages)
       .sort(byDate(Order.NewFirst))
 
@@ -60,8 +70,7 @@ function latest(collection: Collection): Item[] {
 const hasUpdated = (item: Item) => canParseDate(item.data?.updated)
 
 function mostRecentlyUpdated(collection: Collection): Item[] {
-   const all = collection
-      .getAll()
+   const all = livePosts(collection)
       .filter(excludingStandalonePages)
       .filter(hasUpdated)
       .sort(byUpdated(Order.NewFirst))
@@ -78,8 +87,7 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
 const isFeatured = (item: Item): boolean => item.data?.featured ?? false
 
 const featured = (collection: Collection): Item[] =>
-   collection
-      .getAll()
+   livePosts(collection)
       .filter(excludingStandalonePages)
       .sort(byDate(Order.NewFirst))
       .filter(isFeatured)
