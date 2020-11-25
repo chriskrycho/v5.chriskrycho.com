@@ -50,18 +50,17 @@ function latest(collection: Collection): Item[] {
       .sort(byDate(Order.NewFirst))
 }
 
-const excluding = <T>(items: T[]) => (item: T) => !items.includes(item)
+const hasUpdated = (item: Item) => canParseDate(item.data?.updated)
 
 function mostRecentlyUpdated(collection: Collection): Item[] {
    const all = excludingStandalonePages(collection.getAll())
+      .filter(hasUpdated)
       .sort(byUpdated(Order.NewFirst))
-      .filter(excluding(latest(collection)))
 
    return [
       all.find(firstInCollectionNamed('essays')),
       all.find(firstInCollectionNamed('journal')),
       all.find(firstInCollectionNamed('library')),
-      all.find(firstInCollectionNamed('elsewhere')),
    ]
       .filter(isNotVoid)
       .sort(byUpdated(Order.NewFirst))
