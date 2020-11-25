@@ -8,12 +8,14 @@ book:
       Gregory successfully carves out space for Augustinian liberalism—but I (still!) eagerly await a book building on the ground Gregory cleared.
 
 date: 2020-09-28T15:35:00-0600
-updated: 2020-10-31T16:24:00-0600
+updated: 2020-11-24T20:40:00-0600
 
 tags:
   - politics
   - theology
   - book reviews
+
+featured: true
 
 ---
 
