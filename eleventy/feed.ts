@@ -50,6 +50,7 @@ declare module '../types/eleventy' {
       splash?: string
       book?: Book
       standalonePage?: boolean
+      featured?: boolean
       /**
        * Allow overriding the normal feed ID to enable keeping feed entries stable even if
        * the slug changes.

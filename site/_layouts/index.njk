@@ -15,6 +15,7 @@ standalonePage: true
    {% block after_content %}{% endblock after_content %}
 </article>
 
+{{list(collections.featured, title="Featured")}}
 {{list(collections.latest, "The Latest")}}
 {{list(collections.updated, title="Updated Recently")}}
 {%- endblock main -%}
