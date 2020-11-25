@@ -5,7 +5,7 @@ import absoluteUrl from './absolute-url'
 import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year'
 import copyright from './copyright'
 import currentPage from './current-page'
-import toDateTime, { canParseDate, fromDateOrString } from './date-time'
+import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time'
 import isoDate from './iso-date'
 import localeDate from './locale-date'
 import markdown from './markdown'
@@ -18,16 +18,14 @@ import toCollection from './to-collection'
 
 import './feed' // for extension of types -- TODO: move those types elsewhere!
 
-const BUILD_TIME = new DateTime()
+const BUILD_TIME = DateTime.fromJSDate(new Date(), TZ).toSeconds()
 
 const isLive = (item: Item) =>
    canParseDate(item.date) &&
-   fromDateOrString(item.date) <= BUILD_TIME &&
+   fromDateOrString(item.date).toSeconds() <= BUILD_TIME &&
    !item.data?.draft
 
 const isNotVoid = <A>(a: A | null | undefined): a is A => a != null
-
-const livePosts = (collection: Collection) => collection.getAll().filter(isLive)
 
 const excludingStandalonePages = (item: Item): boolean =>
    !(item.data?.standalonePage ?? false)
@@ -44,7 +42,10 @@ const filterStandalonePages = (items: Item[]) => items.filter(excludingStandalon
  */
 function addCollectionFromDir(config: Config, path: string, name: string = path): void {
    config.addCollection(name, (collections) =>
-      livePosts(collections).filter((item) => item.inputPath.includes(path)),
+      collections
+         .getAll()
+         .filter(isLive)
+         .filter((item) => item.inputPath.includes(path)),
    )
 }
 
@@ -52,7 +53,9 @@ const firstInCollectionNamed = (collectionName: string) => (item: Item): boolean
    item.data?.collections[collectionName]?.includes(item) ?? false
 
 function latest(collection: Collection): Item[] {
-   const all = livePosts(collection)
+   const all = collection
+      .getAll()
+      .filter(isLive)
       .filter(excludingStandalonePages)
       .sort(byDate(Order.NewFirst))
 
@@ -70,7 +73,9 @@ function latest(collection: Collection): Item[] {
 const hasUpdated = (item: Item) => canParseDate(item.data?.updated)
 
 function mostRecentlyUpdated(collection: Collection): Item[] {
-   const all = livePosts(collection)
+   const all = collection
+      .getAll()
+      .filter(isLive)
       .filter(excludingStandalonePages)
       .filter(hasUpdated)
       .sort(byUpdated(Order.NewFirst))
@@ -87,7 +92,9 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
 const isFeatured = (item: Item): boolean => item.data?.featured ?? false
 
 const featured = (collection: Collection): Item[] =>
-   livePosts(collection)
+   collection
+      .getAll()
+      .filter(isLive)
       .filter(excludingStandalonePages)
       .sort(byDate(Order.NewFirst))
       .filter(isFeatured)
@@ -135,6 +142,7 @@ function config(config: Config): UserConfig {
    config.addPassthroughCopy('site/robots.txt')
    config.addPassthroughCopy('site/styles')
 
+   config.addCollection('live', (collection) => collection.getAll().filter(isLive))
    config.addCollection('pages', (collection) =>
       collection.getAll().filter((item) => item.data?.standalonePage),
    )

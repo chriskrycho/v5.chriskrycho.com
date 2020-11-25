@@ -18,7 +18,7 @@ subscribe:
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
-{% set items = collections.all | excludingStandalonePages %}
+{% set items = collections.live | excludingStandalonePages %}
 {{ list(items | archiveByYears('NEW_FIRST'), idByCollection=true)}}
 </section>
 {%- endblock main -%}

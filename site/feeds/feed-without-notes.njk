@@ -10,6 +10,6 @@ eleventyExcludeFromCollections: true
 {%- extends 'feed.njk' -%}
 
 {%- block entries -%}
-   {% set items = collections.all | excludingCollection(collections.notes) | excludingStandalonePages %}
+   {% set items = collections.live | excludingCollection(collections.notes) | excludingStandalonePages %}
    {{atom.entries(items, config)}}
 {%- endblock -%}
