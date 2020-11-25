@@ -12,10 +12,14 @@ import spacewell from './plugin-spacewell'
 import typeset from './plugin-typeset'
 import siteTitle from './site-title'
 import excludingCollection from './excluding-collection'
-import excludingStandalonePages from './excluding-standalone-pages'
 import toCollection from './to-collection'
 
 import './feed' // for extension of types -- TODO: move those types elsewhere!
+
+const excludingStandalonePages = (item: Item): boolean =>
+   !(item.data?.standalonePage ?? false)
+
+const filterStandalonePages = (items: Item[]) => items.filter(excludingStandalonePages)
 
 /**
    Use a path to create a collection from all items contained within it.
@@ -37,7 +41,10 @@ const firstInCollectionNamed = (collectionName: string) => (item: Item): boolean
    item.data?.collections[collectionName]?.includes(item) ?? false
 
 function latest(collection: Collection): Item[] {
-   const all = excludingStandalonePages(collection.getAll()).sort(byDate(Order.NewFirst))
+   const all = collection
+      .getAll()
+      .filter(excludingStandalonePages)
+      .sort(byDate(Order.NewFirst))
 
    return [
       all.find(firstInCollectionNamed('essays')),
@@ -53,7 +60,9 @@ function latest(collection: Collection): Item[] {
 const hasUpdated = (item: Item) => canParseDate(item.data?.updated)
 
 function mostRecentlyUpdated(collection: Collection): Item[] {
-   const all = excludingStandalonePages(collection.getAll())
+   const all = collection
+      .getAll()
+      .filter(excludingStandalonePages)
       .filter(hasUpdated)
       .sort(byUpdated(Order.NewFirst))
 
@@ -65,6 +74,16 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
       .filter(isNotVoid)
       .sort(byUpdated(Order.NewFirst))
 }
+
+const isFeatured = (item: Item): boolean => item.data?.featured ?? false
+
+const featured = (collection: Collection): Item[] =>
+   collection
+      .getAll()
+      .filter(excludingStandalonePages)
+      .sort(byDate(Order.NewFirst))
+      .filter(isFeatured)
+      .sort(byDate(Order.NewFirst))
 
 function config(config: Config): UserConfig {
    config.addPlugin(
@@ -94,7 +113,7 @@ function config(config: Config): UserConfig {
    config.addFilter('historyLink', PageLinks.history)
    config.addFilter('sourceLink', PageLinks.source)
    config.addFilter('excludingCollection', excludingCollection)
-   config.addFilter('excludingStandalonePages', excludingStandalonePages)
+   config.addFilter('excludingStandalonePages', filterStandalonePages)
    config.addFilter('concat', (a: Item[] | undefined, b: Item[] | undefined) => {
       return (a ?? []).concat(b ?? [])
    })
@@ -119,6 +138,7 @@ function config(config: Config): UserConfig {
 
    config.addCollection('latest', latest)
    config.addCollection('updated', mostRecentlyUpdated)
+   config.addCollection('featured', featured)
 
    config.setLibrary('md', markdown)
 
