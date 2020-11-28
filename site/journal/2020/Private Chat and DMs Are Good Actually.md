@@ -41,7 +41,7 @@ The net is that even *very* high private-to-public ratios in Slack teams should 
 
 :::callout
 
-Thoughts? You can <a href='mailto:hello@chriskrycho.com?subject="{{title}}"'>email me</a> or discuss this [Hacker News](TODO) or [lobste.rs](TODO).
+Thoughts? You can <a href='mailto:hello@chriskrycho.com?subject={{title}}'>email me</a> or discuss this [Hacker News](TODO) or [lobste.rs](TODO).
 
 :::
 
