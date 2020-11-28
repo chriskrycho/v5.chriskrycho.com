@@ -4,6 +4,7 @@ subtitle: Robin Sloan’s debut novel was just astonishing.
 summary: >
   Robin Sloan’s debut novel was just astonishing. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves.
 date: 2020-11-28T16:30:00-0700
+updated: 2020-11-28T16:38:00-0700
 qualifiers:
   audience:
     Lovers of books in all their glory.
@@ -26,7 +27,7 @@ It’s taken me a while to get around to reading Robin Sloan’s <cite>{{book.ti
 
 I have been a lover of books since I learned to read. I have loved them for what they do, and for the delight of their physicality. Jaimie often teases me that I should get a shirt with the text “I would rather be reading a book” to wear to social events, and she’s not wrong. <cite>{{book.title}}</cite> is a love letter to books—to their physical glories as well as the things they contain. And as I said in [a comment][note] mid-book: Sloan has the marvelous talent of taking things we have learned to treat as mundane, and infusing them with enough mystery, magic, or both that we feel the wonder of them again. He gave my already-deep love for books a fresh spark.
 
-As with <cite>Sourdough</cite>, Sloan gives a knowing look at the hubris of Silicon Valley, but it is not a look of disdain or scorn. Rather, it is a bit bemused, offered with a friendly wink: “You’re on to something, but you might have missed a thing over here as well.” Google and its sometimes ridiculous ambitions is woven right into the fabric of the tale, and its limits gently prodded, but there’s affection there too. The programming language [Ruby] shows up early and Sloan lavishes it with nearly as much affection as he otherwise reserves for books and breadmaking.
+As with <cite>Sourdough</cite>, Sloan gives a knowing look at the hubris of Silicon Valley, but it is not a look of disdain or scorn. Rather, it is a bit bemused, offered with a friendly wink: “You’re on to something, but you might have missed a thing over here as well.” Google and its sometimes ridiculous ambitions is woven right into the fabric of the tale, and its limits gently prodded, but there’s affection there too. The programming language [Ruby] shows up early and Sloan lavishes it with nearly as much affection as he otherwise reserves for books and breadmaking. The net is just the right kind of book for our age: one that sees the internet and the companies built on it neither as demonic destroyers nor as benevolent saviors, but a quirky mix of good and foolish ambition at the turn of an age—with one eye to how the turn of a previous age went, and another on how easily we hallow that previous age’s limits as well as its victories, to our own ill.
 
 I could ramble on for a long time here. (I expect I’ll do exactly that in the forthcoming episode of Winning Slowly!) But for now I’ll simply say: you could do worse—much worse—here at the end of this very strange Year of Our Lord 2020 than to pick up <cite>{{book.title}}</cite> and give it a read. It’ll make you laugh for certain; it’ll give you a much-needed jolt of joy. And if you happen to be like me in one particular way (I dare not spoil it) you’ll spend the entire last fifty pages of the book grinning ear to ear.
 
