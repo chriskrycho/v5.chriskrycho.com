@@ -19,7 +19,11 @@ tags:
 
 ---
 
-<i class=background>The topic of public and private chat came up in a group of technical leaders I’m a part of, and I wrote up a note on why I don’t believe that private chats and <abbr title="direct messages">DM</abbr>s are unhealthy—to the contrary. The following is an expanded and edited version of those comments.</i>
+:::note
+
+The topic of public and private chat came up in a group of technical leaders I’m a part of, and I wrote up a note on why I don’t believe that private chats and <abbr title="direct messages">DM</abbr>s are unhealthy—to the contrary. The following is an expanded and edited version of those comments.
+
+:::
 
 It’s common in some circles to treat private rooms or DM-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have!
 
@@ -34,6 +38,12 @@ None of those things should be in public rooms in a healthy organization. To the
 Finally, it’s worth remembering that “public” on chat is also very different from “public” in an office. If a group of four or five people are sitting around a table chatting through something in a public area in an office, it’s true that anybody could happen along and join the conversation. But in that scenario you don’t have a permanent log of everything that you said previously for someone to browse through, and you have the ability to modulate the conversation however is appropriate for the newly-joining participants-or-observers. A public conversation around a table is therefore much more like a chat room with no persistent logging—just the opposite of Slack![^history]
 
 The net is that even *very* high private-to-public ratios in Slack teams should be expected as both normal and good. That number doesn’t tell you anything about the health of your organization. If you’re worried about mistrust between teams, dig into why you have that distrust in the first place. Don’t blame it on way folks use chat. More: recognize the inherent value of private and semi-private conversations!
+
+:::callout
+
+Thoughts? You can [email me](mailto:hello@chriskrycho.com?subject={{title}}) or discuss this [Hacker News](TODO) or [lobste.rs](TODO).
+
+:::
 
 *[DM]: direct message
 
