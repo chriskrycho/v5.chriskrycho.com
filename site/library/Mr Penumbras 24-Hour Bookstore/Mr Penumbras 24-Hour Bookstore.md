@@ -2,7 +2,7 @@
 title: Mr. Penumbra’s 24-Hour Bookstore
 subtitle: Robin Sloan’s debut novel was just astonishing.
 summary: >
-  Robin Sloan’s debut novel was just astonishing. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves.
+  Robin Sloan’s debut novel was just astonishing, and it delighted me to no end. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves.
 date: 2020-11-28T16:30:00-0700
 updated: 2020-11-28T16:40:00-0700
 qualifiers:
