@@ -1,4 +1,4 @@
-{% macro list(collection, title) -%}
+{% macro list(collection, title, includeUpdated=false) -%}
    <section class='content-block'>
       <div class='latest-list'>
          <div class='latest-heading'>
@@ -30,7 +30,12 @@
                      <h4 class='entry-title'>
                         {% set formattedDate -%}
                         {%- localeDate item.date, 'MMMM d, yyyy' -%}
-                        {%- endset %}
+                        {%- endset -%}
+                        {%- if includeUpdated -%}
+                        {% set updatedDate -%}
+                        {%- localeDate item.data.updated, 'MMMM d, yyyy' -%}
+                        {%- endset -%}
+                        {%- endif -%}
                         <a href='{{url}}' class='entry-permalink' title='{{linkTitle}}'>
                            {%- if item.data.title -%}
                               <span class='entry-title__text'>
@@ -47,7 +52,7 @@
                            —<a href='{{item.url}}' title='item permalink'>❈</a>
                         {%- endif -%}
                         {%- if item.data.title %}
-                           ({{-formattedDate-}})
+                           ({{-formattedDate-}}{% if updatedDate %}; updated {{updatedDate}}{% endif %})
                         {% endif -%}
                      </h4>
 
