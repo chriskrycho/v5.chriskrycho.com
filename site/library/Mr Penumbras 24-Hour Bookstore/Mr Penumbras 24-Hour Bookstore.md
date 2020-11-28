@@ -4,7 +4,7 @@ subtitle: Robin Sloan’s debut novel was just astonishing.
 summary: >
   Robin Sloan’s debut novel was just astonishing. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves.
 date: 2020-11-28T16:30:00-0700
-updated: 2020-11-28T16:38:00-0700
+updated: 2020-11-28T16:40:00-0700
 qualifiers:
   audience:
     Lovers of books in all their glory.
@@ -12,7 +12,7 @@ book:
   review:
     rating: Required
     summary: >
-      Sloan’s debut novel was just astonishing. It delighted me to no end. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves. But it was not just fun; it was *about* something: books, and friendship, and knowledge, and immortality.
+      Sloan’s debut novel delighted me to no end. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves. But it was not just fun; it was *about* something: books, and friendship, and knowledge, and immortality.
 tags:
   - reading
   - book reviews
