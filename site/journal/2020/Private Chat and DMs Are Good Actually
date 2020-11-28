@@ -1,0 +1,42 @@
+---
+title: Private Chat and DMs Are Good, Actually
+subtitle: >
+  Don’t forget the lessons of physical offices when thinking about chat.
+date: 2020-11-28T15:00:00-0700
+summary: >
+  Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction--but there is no such correlation, and indeed people need private chats for healthy social dynamics.
+qualifiers:
+  audience: >
+    Anyone considering social dynamics in team chat, especially leaders with authority to shape team or company norms--particularly when (as in 2020) forced to switch to chat-heavy communication without deep prior experience.
+  epistemic: >
+    Very confident--based on long experience in professional, open source, personal, and interest-driven community chats. (Yes, I include moderating a massive Star Wars forum in the mid-2000s on that list!)
+
+tags:
+  - Slack
+  - chat
+  - productivity
+  - leadership
+
+---
+
+<i class=background>The topic of public and private chat came up in a group of technical leaders I’m a part of, and I wrote up a note on why I don’t believe that private chats and <abbr title="direct messages"DM</abbr>s are unhealthy--to the contrary. The following is an expanded and edited version of those comments.</i>
+
+It’s common in some circles to treat private rooms or DM-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have!
+
+First, a heavy use of private rooms and <abbr title="direct messages"DM</abbr>s might be a reflection of existing mistrust, but it’s at most a response to mistrust, not a cause. If you ask around, you’ll find that many organizations with widely varying degrees of siloing, trust, collaboration, etc. have very similar ratios of private and public conversation. If two organizations with polar opposite degrees of trust and collaboration have the same ratio of private-to-public conversation--and that’s exactly what came out in the conversation that prompted this post!--then it’s clear that siloing and mistrust can’t be caused by private chat. This data point also suggests that private chat isn’t a reliable signal, either, for the same reason: it lacks any predictive power!
+
+This is exactly what we should expect based on how people interact with each other in general, though. Private chats serve a vital function in keeping the public rooms healthy *regardless* of the healthy trust level of an organization. It’s the same reason that we have meeting rooms small and large in offices: having space to talk freely one on one or as a small group helps everyone do better in the public spaces.
+
+For one, even in the healthiest organization, there are going to be times when you’re frustrated with another person or team. When that happens, the most helpful thing is often to go talk to someone else you trust. That gives you space to blow off steam, to work it through mentally or emotionally so you *can* handle it well publicly.
+
+For another, there are plenty of totally "positive" conversations which benefit from privacy.[^1] Sometimes you need to backchannel someone to help them avoid tripping over a political or personal landmine in a conversation. Sometimes you’re coaching someone through a difficult personal situation, or through their career considerations. Sometimes you’re working on a thorny and having more input from people with less context would just be a distraction (even if just by way of having to give people enough context to contribute meaningfully).
+
+None of those things should be in public rooms--not in an office, and not in Slack! To the contrary, they would be much *less* healthy in a public context. Public rooms are good for public discussions. We must be able to distinguish which discussions *should* be public. Most of us develop a reasonably good sense for what that looks like in an office, because it maps fairly directly to our existing social norms. Many fewer of us have had time to develop the same sense around chat, though, simply because we have used it far less.
+
+Finally, it’s worth remembering that "public" on chat is also very different from "public" in an office. If a group of four or five people are sitting around a table chatting through something in a public area in an office, it’s true that anybody could happen along and join the conversation. But in that scenario you don’t have a permanent log of everything that you said previously for someone to browse through, and you have the ability to modulate the conversation however is appropriate for the newly-joining participants-or-observers. A public conversation around a table is therefore much more like a chat room with no persistent logging--just the opposite of Slack!
+
+The net is that even *very* high private-to-public ratios in Slack teams should be expected as both normal and good. That number doesn’t tell you anything about the health of your organization. If you’re worried about mistrust between teams, dig into why you have that distrust in the first place. Don’t blame it on way folks use chat. More: recognize the inherent value of private and semi-private conversations!
+
+*[DM]: direct message
+
+[^1]:	I scare-quote "positive" here because I think dealing with difficult situations in a healthy way *is* positive--but since it’s often in response to a negative or difficult circumstance, I think the distinction is still useful.
