@@ -12,20 +12,20 @@
                      <a href="/{{collectionName}}/">{{collectionName}}</a>
                   </h3>
                   <article class='entry-content'>
-                     {% set url %}
-                     {% if item.data.link %}
+                     {%- set url -%}
+                     {%- if item.data.link -%}
                         {{item.data.link}}
-                     {% else %}
+                     {%- else -%}
                         {{item.url}}
-                     {% endif %}
-                     {% endset %}
-                     {% set linkTitle %}
-                     {% if item.data.link %}
+                     {%- endif -%}
+                     {%- endset -%}
+                     {%- set linkTitle -%}
+                     {%- if item.data.link -%}
                         direct link to item
-                     {% else %}
+                     {%- else -%}
                         item permalink
-                     {% endif %}
-                     {% endset %}
+                     {%- endif -%}
+                     {%- endset -%}
 
                      <h4 class='entry-title'>
                         {% set formattedDate -%}
