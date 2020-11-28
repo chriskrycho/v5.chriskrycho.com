@@ -3,7 +3,7 @@ title: How I Publish This Site
 subtitle: Explaining how I run this site—everything.
 summary: Explaining how I run this site—everything.
 date: 2020-02-09T21:00:00-0600
-updated: 2020-03-12T09:45:00-0600
+updated: 2020-11-28T11:11:00-0600
 qualifiers:
     audience: >
         People interested in the nerdy details of how to get a website like this up and running. Here I get into everything from getting a domain and setting up <abbr>DNS</abbr> to how I use Markdown and Git!
@@ -90,7 +90,7 @@ In terms of things I *do* actually pay for (or have in the past), though:
 
 - As will become clear in the *next* section, I have spent a… *non-trivial*… amount of money on writing applications over the last decade.
 
-In general, I’m not opposed to paying for good services, but if there is a good service with a freemium model and I fit comfortable in the free tier, I’m happy to take advantage of it.
+In general, I’m not opposed to paying for good services—actually, very much to the contrary!—but if there is a good service with a freemium model and I fit comfortable in the free tier, I’m happy to use it.
 
 [hack]: https://sourcefoundry.org/hack/
 [sabon]: https://www.fonts.com/font/linotype/sabon
