@@ -133,10 +133,15 @@ kbd {
 }
 
 img {
+   // I never uses images inline. (I can override locally if that ever changes.)
+   display: block;
+
    // Means that even with `max-width` set to some arbitrary value, the image will
    // never overflow its bounds. Makes it basically responsive right out of the gate.
    width: 100%;
 
-   // Default to middle-aligning images: works correctly "out of the box" for flex.
-   vertical-align: middle;
+   margin: {
+      left: auto;
+      right: auto;
+   }
 }
