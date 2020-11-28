@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-11-22T19:55:00-0600
+date: 2020-11-28T11:49:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,9 +69,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389), Robin Sloan (new)
 
-- The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
-	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
-
 ## 2020
 
 ### Non-fiction
@@ -129,13 +126,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Sourdough</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343), Robin Sloan (new)
     - [review](/library/sourdough/)
 
-- [<cite>Echoes of Earth</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEchoes-of-Earth-Sean-Williams%2Fbook%2F1874511%3Fmatches%3D35), Sean Williams and Shane Dix (new)
+- <cite>The Orphans Trilogy</cite>, Sean Williams and Shane Dix (new)
+    - [<cite>Echoes of Earth</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEchoes-of-Earth-Sean-Williams%2Fbook%2F1874511%3Fmatches%3D35)
+    - <cite>Orphans of Earth</cite>, Sean Williams and Shane Dix (new)
+    - <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 - [<cite>Delta-V</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDelta-V-Daniel-Suarez%2Fbook%2F42331977), Daniel Suarez (new)
-
-- <cite>Orphans of Earth</cite>, Sean Williams and Shane Dix (new)
-
-- <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
 
 - <cite>Contact</cite>, Carl Sagan (new)
     - discussed on Winning Slowly episodes [8.18] and [8.19]
@@ -145,6 +141,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
 	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
 	- [<cite>Caliban’s War</cite>][calibans-war]
+	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
 
 [8.02]: https://winningslowly.org/8.02
 [8.03]: https://winningslowly.org/8.03
