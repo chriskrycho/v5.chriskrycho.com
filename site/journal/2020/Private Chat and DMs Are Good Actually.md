@@ -4,12 +4,12 @@ subtitle: >
   Don’t forget the lessons of physical offices when thinking about chat.
 date: 2020-11-28T13:25:00-0700
 summary: >
-  Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction--but there is no such correlation, and indeed people need private chats for healthy social dynamics.
+  Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
 qualifiers:
   audience: >
-    Anyone considering social dynamics in team chat, especially leaders with authority to shape team or company norms--particularly when (as in 2020) forced to switch to chat-heavy communication without deep prior experience.
+    Anyone considering social dynamics in team chat, especially leaders with authority to shape team or company norms—particularly when (as in 2020) forced to switch to chat-heavy communication without deep prior experience.
   epistemic: >
-    Very confident--based on long experience in professional, open source, personal, and interest-driven community chats. (Yes, I include moderating a massive Star Wars forum in the mid-2000s on that list!)
+    Very confident—based on long experience in professional, open source, personal, and interest-driven community chats. (Yes, I include moderating a massive Star Wars forum in the mid-2000s on that list!)
 
 tags:
   - Slack
