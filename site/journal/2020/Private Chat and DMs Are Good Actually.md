@@ -69,6 +69,17 @@ Another legitimate problem is people abusing private conversation as a way to do
 
 A final note here: it’s possible to weaponize these dynamics: “Why wasn’t this handled privately?” and “Shouldn’t we be having this conversation in public?” are legitimate questions at times, but I have also seen people use them to manipulate instead. In particular, be wary of individuals who push loudly for decisions to be made in public, but themselves regularly use private channels for decision-making. That move is just abusing the stated norm for their own power and advantage. If you have the institutional clout, confront it directly when you see it happen. If you don’t have the clout to pull that off, try to raise it with someone who does. If it’s a pattern with multiple leaders around you, such that you don’t have anyone to raise it with safely, find another team as quickly as you can.
 
+## On Inertia
+
+The other real reason to encourage people to “default to public” is that private chat has inertia on its side. Even when we *do* recognize the value of a given conversation being public, if a team defaults to private, the conversation is likely to be private. There isn’t a one-size-fits-all solution here, though, for all the reasons that private chat can be good. The best we can do here is have a habit—especially as leaders—of moving conversations to public whenever there is no reason for it to be private.
+
+As a simple, low-friction example: I’m the lead for [a large migration][octane] on [the app I support][linkedin], so people regularly DM me with questions about the migration. I have built a habit of moving those conversations to public forums with a gentle nudge: “Hey, do you mind reposting that question in \<the dedicated Slack room for the migration\>? That way everyone can benefit from our discussion!” What’s more, I try to direct it to the *most* public forum possible. That might be the Slack room for the migration, which I intentionally set up to support *all* teams working on the migration. It might be our internal Q&A board. It might be public Stack Overflow. The key is that to default to the most public channel possible. Leaders’ actions implicitly set norms just as much or more than explicit statements about what people should do.
+
+[octane]: https://emberjs.com/editions/octane/
+[linkedin]: https://www.linkedin.com
+
+Beyond that, I think we simply have to acknowledge that the challenge of getting the right degree of public-vs.-private is an “unsolved problem”—and that it’s a problem which is not amenable to technical solutions. The fundamental challenges are in human nature: both our tendency to manipulate systems to our own good, and our inability to judge these questions perfectly.
+
 ## Conclusion
 
 The legitimate problems that people worry about with private chat are not specific to private chat or indeed to chat at all. The other concerns people have about private chat—especially worries that private chat causes or even is a meaningful signal of organizational mistrust or dysfunction—are  not only unfounded, but in fact misunderstand the deep human need for a whole range of privacy levels, from totally-private one-on-one conversation through semi-public group conversations to totally-public forums.
