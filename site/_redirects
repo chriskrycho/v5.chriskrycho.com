@@ -14,3 +14,4 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /journal/crew-dragon-fanfare/days-7-and-8/ https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-7/ 301!
 /journal/this-week-i-learned-*/ https://v5.chriskrycho.com/journal/this-week-i-learned/:splat/ 301!
 /appearances/* https://v5.chriskrycho.com/elsewhere/:splat 301!
+/library/2020-11-28-1146/ https://v5.chriskrycho.com/notes/2020-11-28-1146/
