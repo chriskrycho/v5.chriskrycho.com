@@ -26,7 +26,7 @@ The topic of public and private chat came up in a group of technical leaders Iâ€
 
 :::
 
-## Private Chat and Mistrust
+## On Mistrust
 
 Itâ€™s common in some circles to treat private rooms or DM-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have!
 
