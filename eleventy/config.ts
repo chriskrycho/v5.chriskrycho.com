@@ -132,6 +132,7 @@ function config(config: Config): UserConfig {
    config.addFilter('concat', (a: Item[] | undefined, b: Item[] | undefined) => {
       return (a ?? []).concat(b ?? [])
    })
+   config.addFilter('localeDate', localeDate)
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)
