@@ -8,8 +8,6 @@ summary: >
 qualifiers:
   audience: >
     Anyone considering social dynamics in team chat, especially leaders with authority to shape team norms—particularly in 2020.
-  epistemic: >
-    Very confident—based on long experience in professional, open source, personal, and interest-driven community chats.
 thanks: >
   [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), and [Stephen Carradini](https://stephencarradini.com) read and provided feedback on drafts of this material, and it is substantially better for their input.
 featured: true
