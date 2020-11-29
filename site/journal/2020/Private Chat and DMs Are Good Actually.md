@@ -11,7 +11,7 @@ qualifiers:
   epistemic: >
     Very confident—based on long experience in professional, open source, personal, and interest-driven community chats. (Yes, I include moderating a massive Star Wars forum in the mid-2000s on that list!)
 thanks: >
-  [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), and [Will Larson](https://lethain.com) read and provided feedback on drafts of this material, and it is substantially better for their input!
+  [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), and [Stephen Carradini](https://stephencarradini.com) read and provided feedback on drafts of this material, and it is substantially better for their input!
 featured: true
 tags:
   - leadership
