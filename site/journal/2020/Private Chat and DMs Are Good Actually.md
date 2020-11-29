@@ -23,6 +23,8 @@ It’s common in some circles to treat private rooms or DM-heavy Slack teams as 
 
 *[DM]: direct message
 
+## On Privacy
+
 First, a heavy use of private rooms and <abbr title="direct messages">DM</abbr>s *might* be a reflection of existing mistrust, but *only* a reflection, not a cause. If you ask around, you’ll find that many organizations with widely varying degrees of siloing, trust, collaboration, etc. have very similar ratios of private and public conversation.[^ratios] If two organizations with polar opposite degrees of trust and collaboration have the same ratio of private-to-public conversation, then siloing and mistrust can’t be caused by private chat. Second, this also means that the ratio of private to public chat isn’t even a reliable signal of whether an organization is healthy or not: it lacks any predictive power.
 
 [^ratios]: That’s exactly what came out in the conversation that prompted this post, in fact.
