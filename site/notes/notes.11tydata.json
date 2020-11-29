@@ -1,4 +1,4 @@
 {
    "layout": "note.njk",
-   "permalink": "/notes/{{page.fileSlug | slug}}/index.html"
+   "permalink": "/notes/{{ page.date | localeDate('yyyy-MM-dd-HHmm') }}/"
 }
