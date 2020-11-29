@@ -31,11 +31,17 @@ The topic of public and private chat came up in a group of technical leaders I�
 
 It’s common in some circles to treat private rooms or DM-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have!
 
+*[DM]: direct message
+
 First, a heavy use of private rooms and <abbr title="direct messages">DM</abbr>s *might* be a reflection of existing mistrust, but *only* a reflection, not a cause. If you ask around, you’ll find that many organizations with widely varying degrees of siloing, trust, collaboration, etc. have very similar ratios of private and public conversation. (That’s exactly what came out in the conversation that prompted this post, in fact!) If two organizations with polar opposite degrees of trust and collaboration have the same ratio of private-to-public conversation, then siloing and mistrust can’t be caused by private chat. Second, this also means that the ratio of private to public chat isn’t even a reliable signal of whether an organization is healthy or not: it lacks any predictive power!
 
 This is exactly what we should expect based on how people interact with each other in the analog world. We have meeting rooms small and large in offices because having space to talk freely one on one or as a small group helps everyone do better in the public spaces. For one thing, even in the healthiest organization, there are going to be times when you’re frustrated with another person or team. When that happens, the most helpful thing is often to go talk to someone else you trust. That gives you space to blow off steam, to work it through mentally or emotionally so you *can* handle it well publicly.
 
 For another, there are plenty of totally “positive” conversations which benefit from privacy.[^positive] Sometimes you need to backchannel someone to help them avoid tripping over a political or personal landmine in a conversation. Sometimes you’re coaching someone through a difficult personal situation, or through their career considerations. Sometimes you’re working on a thorny problem and having more input from people with less context would just be a distraction (even if just by way of having to give people enough context to contribute meaningfully). Sometimes you’re processing with your most trusted colleagues about large changes to a company policy which affect you. Sometimes you’re responding privately to a public question about an HR policy based on your own experience. Sometimes you’re just hanging out with your team, talking about your weekend. Sometimes you’re just shooting the breeze with a friend!
+
+*[HR]: human resources
+
+[^positive]: I scare-quote “positive” here because I think dealing with difficult situations in a healthy way *is* positive—but since it’s often in response to a negative or difficult circumstance, I think the distinction is still useful.
 
 The list of things which should *not* be in public rooms in a healthy organization is long! Public rooms are good for public discussions… but we must be able to distinguish which discussions *should* be public! Most of us develop a reasonably good sense for what that looks like in an office, because it maps fairly directly to our existing social norms. Many fewer of us have had time to develop the same sense around chat, simply because we have used it far less. But in the same way as meeting rooms in an office, private chats serve a vital function in keeping public chat healthy—independent of the healthy trust level of an organization.
 
@@ -51,8 +57,13 @@ What matters is not that you have a record of every word spoken in a meeting but
 
 Accordingly, I recommend away from making significant decisions over chat at all. In place of _ad hoc_ conversations for important decisions—chat or otherwise!—use a clear decision-making framework (e.g. [RAPID][RAPID], [RACI][RACI], etc.) and use good meeting minutes for synchronous conversations (whether via video or chat or in person) and comment history for asynchronous decision-making (e.g. via <abbr title="request for comments">RFC</abbr>s). The resulting decisions will clearer and the document trail behind them will be both far more accessible and useful over time.[^process]
 
+*[RAPID]: recommend, approve, perform, input, decide
+*[RACI]: responsible, accountable, consulted, informed
+
 [RAPID]: https://www.bridgespan.org/bridgespan/Images/articles/rapid/RAPIDDecisionMaking.pdf
 [RACI]: https://racichart.org/the-raci-model/
+
+[^process]: That does *not* mean you need a heavy process here. Sometimes all you need is a 15-minute sync or a 1-day RFC cycle. Again: the key is the trustworthiness and openness of the process. Make it as lightweight as you possibly can!
 
 Another legitimate problem is people abusing private conversation as a way to do an end-around on the official channels. This is not specific to chat, either, though: people use private meetings as a way of getting around formal decision-making approaches in the office, too. Again, the key is that the reasons for decisions are clearly articulated and open to feedback from all relevant parties. If a decision suddenly changes and there isn’t a clearly-visible reason why, there is an organizational problem… but one that would have existed regardless of whether chat was involved at all.
 
@@ -69,13 +80,3 @@ The net is that even *very* high private-to-public ratios in Slack teams should 
 Thoughts? You can <a href='mailto:hello@chriskrycho.com?subject={{title}}'>email me</a> or discuss this [Hacker News](TODO) or [lobste.rs](TODO).
 
 :::
-
-
-*[DM]: direct message
-*[HR]: human resources
-*[RAPID]: recommend, approve, perform, input, decide
-*[RACI]: responsible, accountable, consulted, informed
-
-[^positive]: I scare-quote “positive” here because I think dealing with difficult situations in a healthy way *is* positive—but since it’s often in response to a negative or difficult circumstance, I think the distinction is still useful.
-
-[^process]: That does *not* mean you need a heavy process here. Sometimes all you need is a 15-minute sync or a 1-day RFC cycle. Again: the key is the trustworthiness and openness of the process. Make it as lightweight as you possibly can!
