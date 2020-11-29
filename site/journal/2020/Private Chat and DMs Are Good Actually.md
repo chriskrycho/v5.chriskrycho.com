@@ -43,11 +43,11 @@ The list of things which should *not* be in public rooms in a healthy organizati
 
 “Public” on chat is also very different from “public” in an office. If a group of four or five people are sitting around a table in a public area in an office, it’s true that anybody could happen along and join the conversation. There is no log of the conversation for someone to browse through, though, and the people at the table can modulate the conversation however is appropriate for the newcomer. A public conversation around a table is therefore much more like a chat room with no persistent logging—just the opposite of Slack.
 
+Now, this doesn’t mean that there aren’t dangers around private chat. It simply means that the issues aren’t fundamentally matters of organizational trust, or the goodness or badness of private chat in a general sense. Rather, they come down to *decision-making* and *inertia*.
+
 ## On Decision-Making
 
-Now, this doesn’t mean that there aren’t dangers around private chat. It simply means that the issues aren’t fundamentally matters of organizational trust, or the goodness or badness of private chat in a general sense. Rather, the issues are around *decision-making*—and, as with the other scenarios discussed above, the dynamics are much the same as with in-office interactions.
-
-For example, people particularly worry about whether the chat history is available to others later for context around decisions: in a private chat, the answer is *no*, whereas in a public chat, the answer is at least in principle *yes*. If you’re reliant on a chat archive to let you know whether the decision was made well, though, you’ve discovered a problem with your decision-making process in general.
+While there are real challenges for teams around decision-making, these challenges are much the same with chat as with in-office interactions. For example, people particularly worry about whether the chat history is available to others later for context around decisions: in a private chat, the answer is *no*, whereas in a public chat, the answer is at least in principle *yes*. If you’re reliant on a chat archive to let you know whether the decision was made well, though, you’ve discovered a problem with your decision-making process in general.
 
 What matters is not that you have a record of every word spoken in a meeting but that the decision-making process is transparent enough that people can trust it, and open enough that if something got missed it can be flagged and reevaluated. Public chat doesn’t solve this very well, though. For one thing, public chat in a room which key people aren’t in can be nearly as much a problem as private chat. For another, a chat log is a *terrible* way to understand a decision, just as a video recording of a meeting around a table would be.
 
