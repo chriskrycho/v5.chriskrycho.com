@@ -7,7 +7,7 @@ summary: >
   Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
 qualifiers:
   audience: >
-    Anyone considering social dynamics in team chat, especially leaders with authority to shape team norms—particularly in 2020.
+    Anyone considering social dynamics in team chat, but especially leaders with authority to shape team norms.
 thanks: >
   Thanks to [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), and [Stephen Carradini](https://stephencarradini.com) for taking the time to read, comment on, and discuss earlier drafts of this material.
 featured: true
