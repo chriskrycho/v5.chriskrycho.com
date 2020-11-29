@@ -2,7 +2,7 @@
 title: Private Chat and DMs Are Good, Actually
 subtitle: >
   Don’t forget the lessons of physical offices when thinking about chat.
-date: 2020-11-28T13:25:00-0700
+date: 2020-11-29T08:00:00-0700
 summary: >
   Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
 qualifiers:
@@ -12,11 +12,12 @@ qualifiers:
     Very confident—based on long experience in professional, open source, personal, and interest-driven community chats. (Yes, I include moderating a massive Star Wars forum in the mid-2000s on that list!)
 thanks: >
   [Mike Hostetler](https://mike.hostetlerhome.com) and [Will Larson](https://lethain.com) provided feedback on drafts of this material, and it is substantially better for their input!
+featured: true
 tags:
-  - Slack
-  - chat
   - leadership
   - decision-making
+  - chat
+  - Slack
 
 ---
 
@@ -34,7 +35,7 @@ First, a heavy use of private rooms and <abbr title="direct messages">DM</abbr>s
 
 This is exactly what we should expect based on how people interact with each other in the analog world. We have meeting rooms small and large in offices because having space to talk freely one on one or as a small group helps everyone do better in the public spaces. For one thing, even in the healthiest organization, there are going to be times when you’re frustrated with another person or team. When that happens, the most helpful thing is often to go talk to someone else you trust. That gives you space to blow off steam, to work it through mentally or emotionally so you *can* handle it well publicly.
 
-For another, there are plenty of totally “positive” conversations which benefit from privacy.[^positive] Sometimes you need to backchannel someone to help them avoid tripping over a political or personal landmine in a conversation. Sometimes you’re coaching someone through a difficult personal situation, or through their career considerations. Sometimes you’re working on a thorny problem and having more input from people with less context would just be a distraction (even if just by way of having to give people enough context to contribute meaningfully). Sometimes you’re processing with your most trusted colleagues about large changes to a company policy which affect you. Sometimes you’re responding privately to a public question about an HR policy based on your own experience. Sometimes you’re just shooting the breeze with a friend!
+For another, there are plenty of totally “positive” conversations which benefit from privacy.[^positive] Sometimes you need to backchannel someone to help them avoid tripping over a political or personal landmine in a conversation. Sometimes you’re coaching someone through a difficult personal situation, or through their career considerations. Sometimes you’re working on a thorny problem and having more input from people with less context would just be a distraction (even if just by way of having to give people enough context to contribute meaningfully). Sometimes you’re processing with your most trusted colleagues about large changes to a company policy which affect you. Sometimes you’re responding privately to a public question about an HR policy based on your own experience. Sometimes you’re just hanging out with your team, talking about your weekend. Sometimes you’re just shooting the breeze with a friend!
 
 The list of things which should *not* be in public rooms in a healthy organization is long! Public rooms are good for public discussions… but we must be able to distinguish which discussions *should* be public! Most of us develop a reasonably good sense for what that looks like in an office, because it maps fairly directly to our existing social norms. Many fewer of us have had time to develop the same sense around chat, simply because we have used it far less. But in the same way as meeting rooms in an office, private chats serve a vital function in keeping public chat healthy—independent of the healthy trust level of an organization.
 
