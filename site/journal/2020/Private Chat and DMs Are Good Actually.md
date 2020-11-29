@@ -26,7 +26,7 @@ The topic of public and private chat came up in a group of technical leaders I�
 
 :::
 
-## Does Private Chat Cause Dysfunction?
+## Private Chat and Mistrust
 
 It’s common in some circles to treat private rooms or DM-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have!
 
@@ -46,7 +46,7 @@ Now, this doesn’t mean that there aren’t dangers around private chat. It sim
 
 For example, people particularly worry about whether the chat history is available to others later for context around decisions: in a private chat, the answer is *no*, whereas in a public chat, the answer is at least in principle *yes*. If you’re reliant on a chat archive to let you know whether the decision was made well, though, you’ve discovered a problem with your decision-making process in general, not with chat specifically!
 
-What matters is not that you have a record of every word spoken in a meeting but that the decision-making process is transparent enough that people can trust it, and open enough that if something got missed in the decision-making it can be flagged up later and reevaluated. Both of these are easier if you don’t involve chat *at all* in the formal decision-making process: public but in a room you aren’t in or aware of can be nearly as much a problem as private chat. A commitment to keeping good meeting minutes, using a decision-making framework (e.g. [RAPID](https://www.bridgespan.org/bridgespan/Images/articles/rapid/RAPIDDecisionMaking.pdf), [RACI](https://racichart.org/the-raci-model/), etc.), and avoiding chat for important decisions are much more helpful here than policies about private vs. public chat.
+What matters is not that you have a record of every word spoken in a meeting but that the decision-making process is transparent enough that people can trust it, and open enough that if something got missed it can be flagged and reevaluated. Both of these are easier if you don’t involve chat *at all* in the formal decision-making process: public but in a room you aren’t in or aware of can be nearly as much a problem as private chat. A commitment to keeping good meeting minutes, using a decision-making framework (e.g. [RAPID](https://www.bridgespan.org/bridgespan/Images/articles/rapid/RAPIDDecisionMaking.pdf), [RACI](https://racichart.org/the-raci-model/), etc.), and avoiding chat for important decisions are much more helpful here than policies about private vs. public chat.
 
 Accordingly, I recommend away from making significant decisions over chat at all. A chat log is a *terrible* way to understand a decision, just as a video recording of a talk around a table would be—whether the chat was public or private and whether the conference room door was open or locked. By contrast, meeting minutes for synchronous conversations (whether via video or chat or in person) and comment history for asynchronous decision-making (e.g. via <abbr title="request for comments">RFC</abbr>s) are far more accessible and far more useful.
 
