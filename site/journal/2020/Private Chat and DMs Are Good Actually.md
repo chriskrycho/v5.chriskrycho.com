@@ -61,8 +61,6 @@ Accordingly, I recommend away from making significant decisions over chat at all
 
 Another legitimate problem is people abusing private conversation as a way to do an end-around on the official channels. This is not specific to chat, either, though: people use private meetings as a way of getting around formal decision-making approaches in the office, too. Again, the key is that the reasons for decisions are clearly articulated and open to feedback from all relevant parties. If a decision suddenly changes and there isn’t a clearly-visible reason why, there is an organizational problem… but one that would have existed regardless of whether chat was involved at all.
 
-A final note here: it’s possible to weaponize these dynamics: “Why wasn’t this handled privately?” and “Shouldn’t we be having this conversation in public?” are legitimate questions at times, but I have also seen people use them to manipulate instead. In particular, be wary of individuals who push loudly for decisions to be made in public, but themselves regularly use private channels for decision-making. That move is just abusing the stated norm for their own power and advantage. If you have the institutional clout, confront it directly when you see it happen. If you don’t have the clout to pull that off, try to raise it with someone who does. If it’s a pattern with multiple leaders around you, such that you don’t have anyone to raise it with safely, find another team as quickly as you can.
-
 ## On Inertia
 
 The other real reason to encourage people to “default to public” is that private chat has inertia on its side. If a team defaults to private, even conversations which would benefit from being public are likely to end up remaining private. There isn’t a one-size-fits-all solution here, though, for all the reasons that private chat can be good. The best we can do here is have a habit—especially as leaders—of moving conversations to public whenever there is no reason for it to be private.
@@ -73,6 +71,8 @@ For example: I’m the lead for [a large migration][octane] on [the app I suppor
 [linkedin]: https://www.linkedin.com
 
 Beyond that, I think we simply have to acknowledge that the challenge of getting the right degree of public-vs.-private is an “unsolved problem”—and that it’s a problem which is not amenable to technical solutions. The fundamental challenges are in human nature: both our tendency to manipulate systems to our own good, and our inability to judge these questions perfectly.
+
+Finally, watch out for people weaponizing these dynamics: “Why wasn’t this handled privately?” and “Shouldn’t we be having this conversation in public?” are legitimate questions at times, but I have also seen people use them to manipulate instead. In particular, be wary of individuals who push loudly for decisions to be made in public, but themselves regularly use private channels for decision-making. That move is just abusing the stated norm for their own power and advantage. If you have the institutional clout, confront it directly when you see it happen. If you don’t have the clout to pull that off, try to raise it with someone who does. If it’s a pattern with multiple leaders around you, such that you don’t have anyone to raise it with safely, find another team as quickly as you can.
 
 ## Conclusion
 
