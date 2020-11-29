@@ -15,8 +15,8 @@ thanks: >
 tags:
   - Slack
   - chat
-  - productivity
   - leadership
+  - decision-making
 
 ---
 
