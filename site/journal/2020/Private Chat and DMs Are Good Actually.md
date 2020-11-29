@@ -78,7 +78,7 @@ Beyond that, I think we simply have to acknowledge that the challenge of getting
 
 The legitimate problems that people worry about with private chat are not specific to private chat or indeed to chat at all. The other concerns people have about private chat—especially worries that private chat causes or even is a meaningful signal of organizational mistrust or dysfunction—are  not only unfounded, but in fact misunderstand the deep human need for a whole range of privacy levels, from totally-private one-on-one conversation through semi-public group conversations to totally-public forums.
 
-The net is that even *very* high private-to-public ratios in Slack teams should be expected as both normal and good. That number doesn’t tell you anything about the health of your organization. If you’re worried about mistrust between teams, dig into why you have that distrust in the first place. If you’re worried about decision-making, fix your organization’s decision-making process! Don’t blame it on way folks use chat. More: recognize the inherent value of private and semi-private conversations!
+If you’re worried about mistrust between teams, dig into why you have that distrust in the first place. If you’re worried about decision-making, fix your organization’s decision-making process. Build good norms which allow room for the the whole range of private to public conversations. But don’t let people weaponize those norms, and don’t use chat statistics as a measure of organizational health.
 
 :::callout
 
