@@ -232,7 +232,9 @@ export interface Config {
 
    addCollection(
       name: string,
-      builder: (collection: Collection) => Page[] | object | Promise<object>,
+      builder: (
+         collection: Collection,
+      ) => Page[] | Record<string, unknown> | Promise<Record<string, unknown>>,
    ): void
 
    addFilter(name: string, filter: AnyFunction): string | void
@@ -263,7 +265,10 @@ export interface Config {
 
    addJavaScriptFunction(name: string, fn: AnyFunction<string>): void
 
-   addLiquidFilter(name: string, filter: <A>(...args: A[]) => unknown): object
+   addLiquidFilter(
+      name: string,
+      filter: <A>(...args: A[]) => unknown,
+   ): Record<string, unknown>
 
    addNunjucksFilter(name: string, filter: <A>(...args: A[]) => unknown): void
 
@@ -289,7 +294,7 @@ export interface Config {
       ) => void,
    ): void
 
-   addHandlebarsHelper(name: string, helper: AnyFunction<string>): object
+   addHandlebarsHelper(name: string, helper: AnyFunction<string>): Record<string, unknown>
 
    /**
       Plugins are custom code that Eleventy can import into a project from an external
