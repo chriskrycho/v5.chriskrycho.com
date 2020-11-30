@@ -9,7 +9,7 @@ qualifiers:
   audience: >
     Anyone considering social dynamics in team chat, but especially leaders with authority to shape team norms.
 thanks: >
-  Thanks to [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), and [Stephen Carradini](https://stephencarradini.com) for taking the time to read, comment on, and discuss earlier drafts of this material.
+  Thanks to [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), [Stephen Carradini](https://stephencarradini.com), and [Jeremy Sherman](https://jeremywsherman.com) for taking the time to read, comment on, and discuss earlier drafts of this material.
 featured: true
 tags:
   - leadership
