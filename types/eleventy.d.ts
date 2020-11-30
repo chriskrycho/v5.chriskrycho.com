@@ -140,11 +140,11 @@ export interface Collection {
 
       [warning]: https://www.11ty.io/docs/collections/#array-reverse
     */
-   getAllSorted(): Page[]
+   getAllSorted(): Item[]
 
-   getFilteredByTag(tagName: string): Page[]
+   getFilteredByTag(tagName: string): Item[]
 
-   getFilteredByGlob(glob: string | string[]): Page[]
+   getFilteredByGlob(glob: string | string[]): Item[]
 }
 
 interface Renderer {
