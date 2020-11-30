@@ -143,7 +143,7 @@ function config(config: Config): UserConfig {
    config.addPassthroughCopy('site/robots.txt')
    config.addPassthroughCopy('site/styles')
 
-   config.addCollection('live', (collection) => collection.getAll().filter(isLive))
+   config.addCollection('live', (collection) => collection.getAllSorted().filter(isLive))
    config.addCollection('pages', (collection) =>
       collection.getAll().filter((item) => item.data?.standalonePage),
    )
