@@ -1,7 +1,7 @@
 name: Scheduled Build
 on:
   schedule:
-    - cron: '0 15 * * *'  # UTC -> 8:05 MDT/9:05 MST
+    - cron: '0 15 * * *'  # UTC -> 8:00 MDT/9:00 MST
 jobs:
   build:
     runs-on: ubuntu-latest
