@@ -83,6 +83,6 @@ If you’re worried about mistrust between teams, dig into why you have that dis
 
 :::callout
 
-Thoughts? You can <a href='mailto:hello@chriskrycho.com?subject={{title}}'>email me</a> or discuss this [Hacker News](https://news.ycombinator.com/item?id=25255535).
+Thoughts? You can <a href='mailto:hello@chriskrycho.com?subject={{title}}'>email me</a> or discuss this on [Hacker News](https://news.ycombinator.com/item?id=25255535).
 
 :::
