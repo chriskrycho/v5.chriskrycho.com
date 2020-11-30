@@ -4,12 +4,12 @@ subtitle: Robin Sloan’s debut novel was just astonishing.
 summary: >
   Robin Sloan’s debut novel was just astonishing, and it delighted me to no end. This book could not have been aimed more directly at me if Robin Sloan had sat down and interviewed me about my tastes and interests and loves.
 date: 2020-11-28T16:30:00-0700
-updated: 2020-11-28T16:40:00-0700
+updated: 2020-11-30T12:15:00-0700
 qualifiers:
   audience:
     Lovers of books in all their glory.
 book:
-  title: Mr. Penumbra’s 24-Hour Bookstore"
+  title: Mr. Penumbra’s 24-Hour Bookstore
   cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/mr-penumbras-24-hour-bookstore.jpg
   author: Robin Sloan
   year: 2012
