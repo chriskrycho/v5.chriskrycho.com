@@ -255,7 +255,7 @@ export class JSONFeed implements EleventyClass {
    }
 
    render({ collections, config, page }: EleventyData): string {
-      const collection = this.collection ?? 'all'
+      const collection = this.collection ?? 'live'
       const title = this.title ?? config.title.normal
       return JSON.stringify(
          jsonFeed({
