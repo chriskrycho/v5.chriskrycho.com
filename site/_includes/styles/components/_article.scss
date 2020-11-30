@@ -16,7 +16,7 @@
 }
 
 .content-block {
-   --max-width: 32rem;
+   --max-width: 34rem;
    --side-border-width: 2px;
    --side-padding: calc(#{ms(-2)} * var(--sans-adjust));
 
@@ -460,7 +460,8 @@
          content: '—/ Aside /—';
       }
 
-      pre, code {
+      pre,
+      code {
          background: var(--bg);
       }
    }
