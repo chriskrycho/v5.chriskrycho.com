@@ -133,6 +133,7 @@ function config(config: Config): UserConfig {
       return (a ?? []).concat(b ?? [])
    })
    config.addFilter('localeDate', localeDate)
+   config.addFilter('isLive', (items: Item[]) => items.filter(isLive))
 
    config.addShortcode('localeDate', localeDate)
    config.addShortcode('copyright', copyright)

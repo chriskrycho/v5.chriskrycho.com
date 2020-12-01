@@ -36,7 +36,7 @@
    </div>
 </article>
 
-{%- set tagCollection = collections[tag] -%}
+{%- set tagCollection = collections[tag] | isLive -%}
 {%- if tagCollection and tagCollection.length -%}
    {{ archive.list(tagCollection | archiveByYears('OLD_FIRST'), idByCollection=true) }}
 {%- else -%}
