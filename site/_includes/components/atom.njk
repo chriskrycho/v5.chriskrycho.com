@@ -67,11 +67,11 @@
                            {%- endif -%}
                         </p>
                      {%- endif -%}
-                     {{item.templateContent | safe}}
+                     {{-item.templateContent | safe-}}
                      <hr/>
-                     {% if includeReplyViaEmail -%}
+                     {%- if includeReplyViaEmail -%}
                         <p><a href="mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}">Reply via email!</a></p>
-                     {% endif -%}
+                     {%- endif -%}
                ]]>
             </content>
             {%- include 'blocks/rss-author.njk' -%}
