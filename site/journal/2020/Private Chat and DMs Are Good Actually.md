@@ -3,7 +3,7 @@ title: Private Chat and DMs Are Good, Actually
 subtitle: >
   Don’t forget the lessons of physical offices when thinking about chat.
 date: 2020-11-30T08:00:00-0700
-updated: 2020-11-30T09:30:00-0700
+updated: 2020-11-30T17:15:00-0700
 summary: >
   Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
 qualifiers:
@@ -50,7 +50,7 @@ While there are real challenges for teams around decision-making, these challeng
 
 What matters is not that you have a record of every word spoken in a meeting but that the decision-making process is transparent enough that people can trust it, and open enough that if something got missed it can be flagged and reevaluated. Public chat doesn’t solve this very well, though. For one thing, public chat in a room which key people aren’t in can be nearly as much a problem as private chat. For another, a chat log is a *terrible* way to understand a decision, just as a video recording of a meeting around a table would be.
 
-Accordingly, I recommend away from making significant decisions over chat at all. In place of _ad hoc_ conversations for important decisions—chat or otherwise—use a clear decision-making framework (including clarifying the parties involved via [RAPID][RAPID], [RACI][RACI], etc.) and use good meeting minutes for synchronous conversations (whether via video or chat or in person) and comment history for asynchronous decision-making (e.g. via <abbr title="request for comments">RFC</abbr>s). The resulting decisions will clearer and the document trail behind them will be both far more accessible and useful over time.[^process]
+Accordingly, I recommend away from making significant decisions over chat at all. In place of _ad hoc_ conversations for important decisions—chat or otherwise—use a clear decision-making framework (including clarifying the parties involved via [RAPID][RAPID], [RACI][RACI], etc.) and use good meeting minutes for synchronous conversations (whether via video or chat or in person) and comment history for asynchronous decision-making (e.g. via <abbr title="request for comments">RFC</abbr>s). The resulting decisions will clearer and the document trail behind them will be far more accessible and useful over time.[^process]
 
 *[RAPID]: recommend, approve, perform, input, decide
 *[RACI]: responsible, accountable, consulted, informed
