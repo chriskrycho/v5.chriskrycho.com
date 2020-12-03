@@ -1,7 +1,7 @@
 ---
 title: reason is a field of God’s sanctifying work
 date: 2020-12-02T08:00:00-0700
-updated: 2020-12-02T18:55:00-0700
+updated: 2020-12-02T21:09:00-0700
 summary: >
   John Webster: “Reason, too—along with conscience, the will and the affections—must be reconciled to the holy God…”
 tags:
@@ -25,7 +25,7 @@ These claims by Webster on reason are, on the one hand, so thoroughly within the
 
 <figure class='quotation'>
 
-> Christian theology, however, must beg to differ \[with any claim that natural reason does not need to be made holy]. It must beg to differ because the confession of the gospel by which theology governs its life requires it to say that humankind in its entirety, including reason, is enclosed within the history of sin and reconciliation. The history of sin and its overcoming by the grace of God concerns the remaking of humankind as.a whole, not simply of what we identify restrictively as its ‘spiritual’ aspect. And so reason, no less than anything else, stands under the divine requirement that it be holy to the Lord its God. 
+> Christian theology, however, must beg to differ \[with any claim that natural reason does not need to be made holy]. It must beg to differ because the confession of the gospel by which theology governs its life requires it to say that humankind in its entirety, including reason, is enclosed within the history of sin and reconciliation. The history of sin and its overcoming by the grace of God concerns the remaking of humankind as a whole, not simply of what we identify restrictively as its ‘spiritual’ aspect. And so reason, no less than anything else, stands under the divine requirement that it be holy to the Lord its God. 
 
 <figcaption>—<i>ibid.</i>, p. 11</figcaption>
 </figure>
