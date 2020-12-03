@@ -1,6 +1,7 @@
 ---
 title: reason is a field of God’s sanctifying work
 date: 2020-12-02T08:00:00-0700
+updated: 2020-12-02T18:55:00-0700
 summary: >
   John Webster: “Reason, too—along with conscience, the will and the affections—must be reconciled to the holy God…”
 qualifiers:
@@ -11,6 +12,8 @@ tags:
   - quotes
   - thinking
   - rationalism
+  - quotes
+  - reading notes
 
 ---
 
