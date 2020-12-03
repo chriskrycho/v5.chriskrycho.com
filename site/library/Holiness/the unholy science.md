@@ -3,9 +3,6 @@ title: the unholy science?
 date: 2020-11-30T18:45:00-0700
 summary: >
   John Webster: “Dogmatics is often caricatured as the unholy science that reduces the practices of piety to lifeless propositions. But far from it…”
-qualifiers:
-  audience: >
-    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 tags:
   - ecclesiology
   - quotes

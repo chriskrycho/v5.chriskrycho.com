@@ -4,9 +4,6 @@ date: 2020-12-02T08:00:00-0700
 updated: 2020-12-02T18:55:00-0700
 summary: >
   John Webster: “Reason, too—along with conscience, the will and the affections—must be reconciled to the holy God…”
-qualifiers:
-  audience: >
-    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 tags:
   - sanctification
   - quotes

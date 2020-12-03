@@ -4,9 +4,6 @@ date: 2020-12-01T08:00:00-0700
 updated: 2020-12-02T08:28:00-0700
 summary: >
   John Webster: “…theological thinking about holiness is itself an exercise of holiness. Theology is an aspect of the sanctificaton of reason…”
-qualifiers:
-  audience: >
-    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 tags:
   - sanctification
   - quotes
