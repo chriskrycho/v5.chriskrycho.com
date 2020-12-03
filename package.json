@@ -89,7 +89,7 @@
       "build:site": "yarn eleventy",
       "build": "yarn build:styles && yarn build:site",
       "watch:styles": "yarn gulp watch",
-      "serve": "yarn eleventy --quiet --serve",
+      "serve": "env DEV=true yarn eleventy --quiet --serve",
       "clean": "rm -rf public"
    }
 }

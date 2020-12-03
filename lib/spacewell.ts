@@ -1,3 +1,5 @@
+import { logErr } from '../eleventy/utils'
+
 const THIN_SP = '&thinsp;'
 // const HAIR_SP = '&hairsp;'
 const EM_DASH = '&mdash;'
@@ -41,7 +43,7 @@ export function initials(content: string): string {
    //     sentences. Basically, I *think* it should just be anytime
    //     that the period follows a capital letter, but there may be
    //     the occasional exception.
-   console.error('`spacewell#initials()` not yet implemented.')
+   logErr('`spacewell#initials()` not yet implemented.')
    return content
 }
 
@@ -72,7 +74,7 @@ export default function spacewell(
 ): string | ((content: string) => string) {
    function op(c: string): string {
       return (Object.keys(options) as Array<keyof Options>)
-         .filter(key => Boolean(options[key]))
+         .filter((key) => Boolean(options[key]))
          .reduce((transformed, cfgKey) => FUNCTIONS[cfgKey](transformed), c)
    }
 
