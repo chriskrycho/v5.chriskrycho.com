@@ -10,6 +10,7 @@ qualifiers:
 tags:
   - sanctification
   - quotes
+  - thinking
 
 ---
 
