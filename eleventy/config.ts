@@ -1,3 +1,5 @@
+import { env } from 'process'
+
 import { DateTime } from 'luxon'
 
 import { Config, Item, UserConfig, Collection } from '../types/eleventy'
@@ -20,9 +22,14 @@ import './feed' // for extension of types -- TODO: move those types elsewhere!
 
 const BUILD_TIME = DateTime.fromJSDate(new Date(), TZ).toSeconds()
 
+// Hack around the fact that in dev I want this to work on *every run*, but in prod builds
+// I just want one time for the whole run.
+const buildTime = () =>
+   env.DEV ? DateTime.fromJSDate(new Date(), TZ).toSeconds() : BUILD_TIME
+
 const isLive = (item: Item) =>
    canParseDate(item.date) &&
-   fromDateOrString(item.date).toSeconds() <= BUILD_TIME &&
+   fromDateOrString(item.date).toSeconds() <= buildTime() &&
    !item.data?.draft
 
 const isNotVoid = <A>(a: A | null | undefined): a is A => a != null
