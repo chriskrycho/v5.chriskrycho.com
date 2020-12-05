@@ -3,7 +3,7 @@ title: Private Chat and DMs Are Good, Actually
 subtitle: >
   Don’t forget the lessons of physical offices when thinking about chat.
 date: 2020-11-30T08:00:00-0700
-updated: 2020-12-05T14:25:00-0700
+updated: 2020-12-05T14:30:00-0700
 summary: >
   Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
 qualifiers:
@@ -12,6 +12,8 @@ qualifiers:
 thanks: >
   Thanks to [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), [Stephen Carradini](https://stephencarradini.com), and [Jeremy Sherman](https://jeremywsherman.com) for taking the time to read, comment on, and discuss earlier drafts of this material.
 featured: true
+thanks: >
+  Credit to [Austin Distel](https://unsplash.com/@austindistel) for [the illustrative photo](https://unsplash.com/photos/fEedoypsW_U).
 image: https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80
 tags:
   - leadership
