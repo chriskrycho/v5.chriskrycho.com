@@ -56,8 +56,8 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
    )
 }
 
-const firstInCollectionNamed = (collectionName: string) => (item: Item): boolean =>
-   item.data?.collections[collectionName]?.includes(item) ?? false
+const inCollectionNamed = (name: string) => (item: Item): boolean =>
+   item.data?.collections[name]?.includes(item) ?? false
 
 function latest(collection: Collection): Item[] {
    const all = collection
@@ -67,11 +67,11 @@ function latest(collection: Collection): Item[] {
       .sort(byDate(Order.NewFirst))
 
    return [
-      all.find(firstInCollectionNamed('essays')),
-      all.find(firstInCollectionNamed('journal')),
-      all.find(firstInCollectionNamed('notes')),
-      all.find(firstInCollectionNamed('library')),
-      all.find(firstInCollectionNamed('elsewhere')),
+      all.find(inCollectionNamed('essays')),
+      all.find(inCollectionNamed('journal')),
+      all.find(inCollectionNamed('notes')),
+      all.find(inCollectionNamed('library')),
+      all.find(inCollectionNamed('elsewhere')),
    ]
       .filter(isNotVoid)
       .sort(byDate(Order.NewFirst))
@@ -88,9 +88,9 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
       .sort(byUpdated(Order.NewFirst))
 
    return [
-      all.find(firstInCollectionNamed('essays')),
-      all.find(firstInCollectionNamed('journal')),
-      all.find(firstInCollectionNamed('library')),
+      all.find(inCollectionNamed('essays')),
+      all.find(inCollectionNamed('journal')),
+      all.find(inCollectionNamed('library')),
    ]
       .filter(isNotVoid)
       .sort(byUpdated(Order.NewFirst))
