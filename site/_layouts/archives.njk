@@ -7,9 +7,9 @@ standalonePage: true
 {% import 'components/archive-list.njk' as archive %}
 {% from 'components/social.njk' import meta %}
 
-{%- block extra_links %}
+{%- block meta %}
 {{ meta(collections.live | current(page), config) }}
-{%- endblock extra_links %}
+{%- endblock meta %}
 
 {%- block main -%}
 <section class='content-block'>

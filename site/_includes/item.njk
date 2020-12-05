@@ -6,8 +6,12 @@
 {% if canonical %}
    <link rel='canonical' href='{{canonical}}' />
 {% endif %}
-{{ meta(collections.live | current(page), config) }}
 {%- endblock extra_links %}
+
+{% block meta %}
+{{ meta(collections.live | current(page), config) }}
+{% endblock meta%}
+
 
 {%- block main -%}
 <article class='content-block post'>
