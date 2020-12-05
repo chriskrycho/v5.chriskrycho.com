@@ -7,9 +7,9 @@
    topic: {{tag}}
 {%- endset -%}
 
-{%- block extra_links %}
+{%- block meta %}
 {{ meta(collections.live | current(page), config, title) }}
-{%- endblock extra_links %}
+{%- endblock meta %}
 
 {%- set styled_title -%}
    <span class='tag-label'>topic:</span> <span class='tag-name'>{{tag}}</span>
