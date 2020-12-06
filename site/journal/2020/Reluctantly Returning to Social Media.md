@@ -3,7 +3,7 @@ title: Reluctantly Returning to Social Media
 subtitle: >
   I have to be on social media professionally… but I don't have to *live* there.
 date: 2020-12-05T11:15:00-0700
-updated: 2020-12-05T14:40:00-0700
+updated: 2020-12-05T21:25:00-0700
 summary: >
   I have to be on social media professionally… but I don't have to *live* there. So I’ve devised an approach that I hope will get me some of those benefits without destroying my soul.
 qualifiers:
@@ -18,7 +18,7 @@ tags:
 
 ---
 
-For a year and a half, I have been happily, blissfully [off of social media](https://v4.chriskrycho.com/2019/breaking-up-with-social-media.html "Breaking Up With Social Media"). I feel today what I felt then. However, I’m increasingly working on projects both for my day job and for my general professional development which would benefit from more interaction with the public at large. It is extremely unfortunate, in my view, that there is no easy mechanism for social interactivity via the indie web, and that the critical mass of software developers in particular is on Twitter in particular. But that’s what reality is.
+For a year and a half, I have been happily, blissfully [off of social media](https://v4.chriskrycho.com/2019/breaking-up-with-social-media.html "Breaking Up With Social Media"). I feel today what I felt then. However, I’m increasingly working on projects both for my day job and for my general professional development which would benefit from more interaction with the public at large. It is extremely unfortunate, in my view, that there is no easy mechanism for social interactivity via the indie web, and that the critical mass of software developers in particular is on Twitter in particular. But that’s reality.
 
 So I am left considering how I can employ social media in general and Twitter in particular… while minimizing its injurious effects on my soul.
 
