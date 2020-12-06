@@ -1,7 +1,7 @@
 {%- macro entries(items, config, includeReplyViaEmail = true) -%}
    {# invalid without date #}
    {%- if items is not undefined and items.length > 0 -%}
-      {%- for item in items | withValidDate | reverse -%}
+      {%- for item in items | withValidDate -%}
          <entry>
             {#- Invalid to send an item without title or description -#}
             {% set url -%}
@@ -20,12 +20,15 @@
             {%- endif -%}
             {%- endset -%}
             <title type="html">[{{item.inputPath | toCollection}}] {{entryTitle}}</title>
-            {% if item.data.updated -%}
-               <updated>{{item.data.updated | isoDate}}</updated>
-               <published>{{item.date | isoDate}}</published>
-            {%- else -%}
-               <updated>{{item.date | isoDate}}</updated>
-            {%- endif -%}
+            {%- set updated -%}
+               {% if item.data.updated -%}
+               {{item.data.updated | isoDate}}
+               {%- else -%}
+                  {{item.date | isoDate}}
+               {%- endif -%}
+            {%- endset -%}
+            <published>{{item.date | isoDate}}</published>
+            <updated>{{updated}}</updated>
             <link href='{{url}}'/>
             {%- set summary -%}
             {%- if item.data.summary -%}

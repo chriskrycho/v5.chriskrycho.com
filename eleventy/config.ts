@@ -53,7 +53,8 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
          .getAll()
          .filter((item) => item.inputPath.includes(path))
          .filter(isLive)
-         .filter(excludingStandalonePages),
+         .filter(excludingStandalonePages)
+         .sort(byDate(Order.NewFirst)),
    )
 }
 
