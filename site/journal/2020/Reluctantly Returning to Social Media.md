@@ -3,13 +3,13 @@ title: Reluctantly Returning to Social Media
 subtitle: >
   I have to be on social media professionally… but I don't have to *live* there.
 date: 2020-12-05T11:15:00-0700
-updated: 2020-12-05T21:25:00-0700
+updated: 2020-12-06T12:35:00-0700
 summary: >
   I have to be on social media professionally… but I don't have to *live* there. So I’ve devised an approach that I hope will get me some of those benefits without destroying my soul.
 qualifiers:
   audience: >
     Others thinking about social media and professional presence.
-image: https://images.unsplash.com/photo-1592578629295-73a151d69c96?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=40
+image: https://images.unsplash.com/photo-1592578629295-73a151d69c96?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=600&q=100
 thanks: >
   Credit to [Ravi Sharma](https://unsplash.com/@ravinepz) for [the social image](https://unsplash.com/photos/RnW1taVZqm8?w=640).
 tags:
