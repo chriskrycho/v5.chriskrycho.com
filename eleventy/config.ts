@@ -51,8 +51,9 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
    config.addCollection(name, (collections) =>
       collections
          .getAll()
+         .filter((item) => item.inputPath.includes(path))
          .filter(isLive)
-         .filter((item) => item.inputPath.includes(path)),
+         .filter(excludingStandalonePages),
    )
 }
 
