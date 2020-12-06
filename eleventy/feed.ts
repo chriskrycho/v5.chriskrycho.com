@@ -9,6 +9,7 @@ import siteTitle from './site-title'
 import toCollection from './to-collection'
 import markdown from './markdown'
 import localeDate from './locale-date'
+import { DateTime } from 'luxon'
 
 type BuildInfo = typeof import('../site/_data/build')
 type SiteConfig = typeof import('../site/_data/config')
@@ -40,6 +41,7 @@ declare module '../types/eleventy' {
       subtitle?: string
       summary?: string
       tags?: string[]
+      date?: string | Date
       updated?: string | Date
       qualifiers?: {
          audience?: string
@@ -173,10 +175,12 @@ const toFeedItemGivenConfig = (config: SiteConfig, includeReplyViaEmail: boolean
            },
            title: titleFor(item),
            url: absoluteUrl(item.url, config.url),
-           date_published: isoDate(item.date),
+           date_published: isoDate(item.data?.date ?? item.date),
            content_html: contentHtmlFor(item, config, includeReplyViaEmail),
            summary: summaryFor(item),
            date_modified:
+              // can't use canParseDate b/c TS doesn't track that `updated` is usable in
+              // that scenario b/c it still thinks `data?.` is optional. :sigh:
               typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
                  ? isoDate(item.data.updated)
                  : undefined,
@@ -218,7 +222,12 @@ const jsonFeed = ({
    items: items
       .map(toFeedItemGivenConfig(config, includeReplyViaEmail))
       .filter(<T>(item: T | null): item is T => !!item)
-      .reverse(),
+      .sort(
+         ({ date_published: a }, { date_published: b }) =>
+            // we want newest first
+            DateTime.fromISO(b as string).toMillis() -
+            DateTime.fromISO(a as string).toMillis(),
+      ),
 })
 
 interface EleventyData {
