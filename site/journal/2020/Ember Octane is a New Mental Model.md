@@ -4,8 +4,10 @@ subtitle: >
   …not a 1:1 translation from Ember Classic—but that’s often a big win!
 summary: >
   Don’t expect a 1:1 translation from Ember Classic to Ember Octane. Do expect that things might get better because there is no 1:1 translation.
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-octane.png
 
 date: 2020-12-07T10:15:00-0700
+updated: 2020-12-07T10:30:00-0700
 
 qualifiers:
   audience: >
@@ -14,6 +16,7 @@ qualifiers:
 tags:
   - Ember
   - JavaScript
+  - mental models
 
 ---
 
