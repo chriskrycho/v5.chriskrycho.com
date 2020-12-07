@@ -7,11 +7,13 @@ summary: >
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-octane.png
 
 date: 2020-12-07T10:15:00-0700
-updated: 2020-12-07T11:55:00-0700
+updated: 2020-12-07T13:20:00-0700
 
 qualifiers:
   audience: >
     Software developers working with Ember Octane; also anyone interested in software design tradeoffs and large migrations in general.
+
+templateEngineOverride: md
 
 tags:
   - Ember
