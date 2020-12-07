@@ -7,7 +7,7 @@ summary: >
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-octane.png
 
 date: 2020-12-07T10:15:00-0700
-updated: 2020-12-07T10:30:00-0700
+updated: 2020-12-07T11:55:00-0700
 
 qualifiers:
   audience: >
@@ -45,10 +45,12 @@ The single most common example of this kind of rewrite for us is figuring out ho
 
 This process is both harder and slower than just trying to translate directly from Ember Classic into Ember Octane syntactically, to be sure! It has also paid off handsomely, though.
 
-All of this to say: it’s very common to find your existing APIs and solutions to a problem aren’t Octane-friendly. One response is to say this is a problem with Octane. Depending on your views on software design, that might be fair! Another, though, is to say that it’s possible the abstraction would benefit from being reworked substantially. This is my POV, and again: every single place we’ve hit like this in our app has been *improved* by the rewrite—often massively so.
+All of this to say: it’s very common to find your existing <abbr title="application programming interface">API</abbr>s and solutions to a problem aren’t Octane-friendly. One response is to say this is a problem with Octane. Depending on your views on software design, that might be fair! Another, though, is to say that it’s possible the abstraction would benefit from being reworked substantially. This is my POV, and again: every single place we’ve hit like this in our app has been *improved* by the rewrite—often massively so.
 
 That doesn’t mean Octane is perfect. For one, there are still gaps: this RFC addresses one, and the work to get resources and effects addresses another. For another, observable-based systems (like Ember Classic) and incremental computation systems (like Ember Octane) simply have different tradeoffs and affordances—and you might prefer the former! But the fact that a pattern that worked in Classic doesn’t work in Octane doesn’t mean that Octane is *wrong* or even that it is *missing* something. It does mean that it makes fundamentally different tradeoffs in the design space than Classic did.
 
 Me, I prefer the Octane flavor of the tradeoffs, and when you hit spots like this I encourage you to rethink the design. You may find yourself in a place that surprises you with how much cleaner and more maintainable it is! You may also occasionally find a spot where the tradeoffs are a little worse (hasn’t happened to me yet, but I’m sure it’s possible). But either way, the fundamental design is the way it is—and breaking the core abstraction would be much worse.
 
 *[RFC]: request for comments
+*[POV]: point of view
+*[API]: application programming interface
