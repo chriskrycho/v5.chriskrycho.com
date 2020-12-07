@@ -85,11 +85,11 @@
       "trailingComma": "all"
    },
    "scripts": {
-      "build:styles": "yarn gulp all",
-      "build:site": "yarn eleventy",
-      "build": "yarn build:styles && yarn build:site",
-      "watch:styles": "yarn gulp watch",
-      "serve": "env DEV=true yarn eleventy --quiet --serve",
+      "build:styles": "gulp all",
+      "build:site": "eleventy",
+      "build": "build:styles && build:site",
+      "watch:styles": "gulp watch",
+      "serve": "env DEV=true eleventy --quiet --serve",
       "clean": "rm -rf public"
    }
 }
