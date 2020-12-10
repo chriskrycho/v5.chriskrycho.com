@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with (or interested in) TypeScript, particularly those who are shipping libraries for other developers to use.
 
 date: 2020-10-24T15:45:00-0600
-updated: 2020-10-24T21:50:00-0600
+updated: 2020-12-09T19:15:00-0600
 
 tags:
   - software development
@@ -136,7 +136,7 @@ function has<K extends Key, T>(
 }
 ```
 
-Now we can combine those into a [type guard](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) to check whether a given object is a person:
+We can combine those into a [type guard](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) to check whether a given object is a person:
 
 ```ts
 function isPerson(value: unknown): value is Person {
@@ -148,7 +148,7 @@ function isPerson(value: unknown): value is Person {
 }
 ```
 
-Now we can assemble all of these into a simple check at the top of our function, and throw a useful error if it isn’t valid. (You can see this working in [this playground](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgArQM4HsTIN4BQyxycA5hAFzIgCuAtgEbQDcRJIc9EA-NRmCigybAL4ECYAJ4AHFAGkIU5AF5kAoSDLIAPjQbMou9VKZYANmwIxaIBGGA5kwDAHlGAKwj2AFPThSzO4e1LYA1iBYAO4gAJTU-oEQwc4YyABK3lhQACYAPIpSADTI4ZExAHz47MRQEGC0ULjSclgwyIlBnqoqagDkWJ7eYH3IAGRjHQFdHsgAhL365pYE4ta29o64ABZwGAXIEAAekCA5aYUlACoVPmFK1PIlAG5w5rRUyFfxyK-vKC4vuMMllcgUSmVoiAqoQSMg6g0msh7spQL83h8xBIbHYHE4XOgoNgQD4-h9QiAIlCfmSAWlCcTqnCEY1cD4anDUsFhqSMRBYuMxhy4bsMD4+uQIH0XnyBRNkC0IG10f8AHSSnr9OhMaCjCbCkg+UXizjcaUqj4CngK2RK9q01WmlC9foaYSjaiCS0c2JY9a4rbIHIQDAIITMHxyIk4ClUmIC2EkYDtHxzAmYHCRjNxBMG4hgbZQaI0CBRZAAUSgRag4oABsHQ+GILX4RAAI60YB1NJSLC0BVYZAyPZpODIWsMnC1vqxDlrOHmeo0LjOofZx0r5A8a19bDcHBStjM+qs8cAEjwTtEqWQF6jxPVFGvUggcCJyAsOVrWKAA).)
+Next, we can assemble all of these into a simple check at the top of our function, and throw a useful error if it isn’t valid. (You can see this working in [this playground](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgArQM4HsTIN4BQyxycA5hAFzIgCuAtgEbQDcRJIc9EA-NRmCigybAL4ECYAJ4AHFAGkIU5AF5kAoSDLIAPjQbMou9VKZYANmwIxaIBGGA5kwDAHlGAKwj2AFPThSzO4e1LYA1iBYAO4gAJTU-oEQwc4YyABK3lhQACYAPIpSADTI4ZExAHz47MRQEGC0ULjSclgwyIlBnqoqagDkWJ7eYH3IAGRjHQFdHsgAhL365pYE4ta29o64ABZwGAXIEAAekCA5aYUlACoVPmFK1PIlAG5w5rRUyFfxyK-vKC4vuMMllcgUSmVoiAqoQSMg6g0msh7spQL83h8xBIbHYHE4XOgoNgQD4-h9QiAIlCfmSAWlCcTqnCEY1cD4anDUsFhqSMRBYuMxhy4bsMD4+uQIH0XnyBRNkC0IG10f8AHSSnr9OhMaCjCbCkg+UXizjcaUqj4CngK2RK9q01WmlC9foaYSjaiCS0c2JY9a4rbIHIQDAIITMHxyIk4ClUmIC2EkYDtHxzAmYHCRjNxBMG4hgbZQaI0CBRZAAUSgRag4oABsHQ+GILX4RAAI60YB1NJSLC0BVYZAyPZpODIWsMnC1vqxDlrOHmeo0LjOofZx0r5A8a19bDcHBStjM+qs8cAEjwTtEqWQF6jxPVFGvUggcCJyAsOVrWKAA).)
 
 ```ts
 function describe(person: unknown): string {
@@ -189,7 +189,7 @@ function assert(
 }
 ```
 
-Now our function gets even simpler:
+With the assertion function in place, our `describe` function gets even simpler:
 
 ```ts
 function describe(person: Person): string {
