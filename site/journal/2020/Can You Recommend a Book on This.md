@@ -9,7 +9,7 @@ qualifiers:
     People who want book recommendations from me, and/or people who are thinking about thinking and learning in general.
 
 date: 2020-08-29T17:40:00-0600
-updated: 2020-08-29T20:35:00-0600
+updated: 2020-12-09T18:51:00-0600
 
 tags:
   - reading
@@ -28,7 +28,7 @@ When teaching or talking on theological matters—from theology proper to sexual
 
 **First,** most of the reading I do is not the kind of reading I could hand to most people asking me. Much of it is far too academic. I loved [John Webster's <cite>The Culture of Theology</cite>](https://v5.chriskrycho.com/topics/the-culture-of-theology), for example, but the arguments he makes in the book assume an *enormous* amount of background in theology, criticism, and the nature of the contemporary university. I also read very *broadly*, so that I’m often learning from people I disagree with, sometimes strongly. Those disagreeing reads are sometimes some of the most profitable, but they’re also not the kind of thing I could hand to someone asking a question like this. (Some books are both too academic *and* a point of much disagreement, like [David H. Kelsey’s <cite>Eccentric Existence</cite>](https://v5.chriskrycho.com/topics/eccentric-existence)!) 
 
-**Second,** the way I learn is very rarely (though not quite never) by reading a book that provides a concrete set of answers in a way that I could then pass on to others. Instead, I tend to read very broadly—"omnivorously," my friend [Stephen](https://stephencarradini.com) once put it—and synthesize my views from that very broad array of inputs. This means that very often, some of the critical sources for how I came to my view on any given subject might seem only tangentially related if I handed the to you!
+**Second,** the way I learn is very rarely (though not quite never) by reading a book that provides a concrete set of answers in a way that I could then pass on to others. Instead, I tend to read very broadly—"omnivorously," my friend [Stephen](https://stephencarradini.com) once put it—and synthesize my views from that very broad array of inputs. This means that very often, some of the critical sources for how I came to my view on any given subject might seem only tangentially related if I handed them to you!
 
 **Third,** the sad reality is that the vast majority of the popular-level books I encounter on the subjects people ask me about—usually related to theology—are simply not very good. This is partly because an enormous amount of theological writing in *general* is not very good. It is also partly because popular writing is particularly, pervasively, and perniciously subject to forces that push it toward the uselessly provocative on the one hand or toward insipid pablum on the other. If you want a mediocre devotional book which repeatedly verges on heresy while offering up platitudes to make you feel better, I can hand you dozens. If you want a devotion which works through the orthodox doctrine of the Incarnation and rightly applies it to the Christian life (to *your* life!), well, as far as I can tell it doesn’t exist. At *best*, most popular treatments of theological subjects tend to be unhelpfully reductionist: not just offering approachable answers, but failing to convey key truths. At worst, they end up "simplifying" to the point of deep error.
 
