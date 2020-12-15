@@ -3,6 +3,16 @@ title: Colophon
 subtitle: Or, how this site is made.
 ---
 
+## Privacy
+
+I currently use [Fathom] for lightweight analytics on the site. I picked them because they don’t track you.
+
+[Fathom]: https://usefathom.com
+
+I also use [Adobe Fonts] for one of the typefaces on the site (see [below](#typography)), and Adobe tracks font usage. If you find a type-face that has some of the same character as Cronos Pro, [shoot me an email][cronos-email]. I will seriously consider replacing it if I find something I like equally well; I *loathe* Adobe’s approach to font licensing *and* to privacy.
+
+[cronos-email]: mailto:hello@chriskrycho.com?subject=Cronos%20Pro%20alternative
+
 ## Implementation
 
 I built this version of the site with [Eleventy]. You can find the entirety of the implementation (and indeed the entire *history* of the implementation) [on GitHub][repo]. I'm using it with the following plugins:
