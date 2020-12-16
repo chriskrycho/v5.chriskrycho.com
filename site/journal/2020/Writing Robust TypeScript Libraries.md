@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with (or interested in) TypeScript, particularly those who are shipping libraries for other developers to use.
 
 date: 2020-10-24T15:45:00-0600
-updated: 2020-12-09T19:15:00-0600
+updated: 2020-12-16T08:15:00-0600
 
 tags:
   - software development
@@ -19,6 +19,12 @@ tags:
   - TypeScript
 
 ---
+
+:::callout
+
+The folks at InfoQ China translated this article into Chinese, you can read that translation [here](https://www.infoq.cn/article/LCkmyl8xdQA8W4BkHlHI)!
+
+:::
 
 When authoring a library in TypeScript, you often do not know how that library will ultimately be consumed. Even if you [warn](https://github.com/true-myth/true-myth#design-philosophy "True Myth: Design Philosophy") would-be users that you intend it *only* for TypeScript consumers, you are very likely to end up with JavaScript users at some point—either because they use it despite your warning or because they end up consuming it as a [transitive dependency](https://en.wikipedia.org/wiki/Transitive_dependency). This has an important consequence: you must design the library to be consumed by developers working in either language![^1]
 
