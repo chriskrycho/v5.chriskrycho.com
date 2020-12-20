@@ -44,8 +44,14 @@
       {%- endset -%}
    {%- elif page.data.subtitle is defined -%}
       {%- set description = page.data.subtitle -%}
-   {%- elif page.templateContent is defined -%}
-      {%- set description = item.templateContent | striptags(true) | truncate(160) -%}
+   {%- elif page.templateContent is defined and page.templateContent.length > 0 -%}
+      {%- set description -%}
+      {%- if page.templateContent.length > 160 -%}
+         {{ page.templateContent | striptags(true) | truncate(158) }}…
+      {%- else -%}
+         {{ page.templateContent | striptags(true) }}
+      {%- endif -%}
+      {%- endset -%}
    {%- else -%}
       {%- set description = config.description -%}
    {%- endif %}
