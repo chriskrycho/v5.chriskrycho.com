@@ -46,10 +46,11 @@
       {%- set description = page.data.subtitle -%}
    {%- elif page.templateContent is defined and page.templateContent.length > 0 -%}
       {%- set description -%}
-      {%- if page.templateContent.length > 160 -%}
-         {{ page.templateContent | striptags(true) | truncate(158) }}…
+      {%- set justContent = page.templateContent | striptags(true) -%}
+      {%- if justContent.length > 160 -%}
+         {{ justContent | truncate(158) }}…
       {%- else -%}
-         {{ page.templateContent | striptags(true) }}
+         {{ justContent }}
       {%- endif -%}
       {%- endset -%}
    {%- else -%}
