@@ -23,7 +23,6 @@ I built this version of the site with [Eleventy]. You can find the entirety of t
     - [abbreviations](https://github.com/markdown-it/markdown-it-abbr)
     - [anchor](https://github.com/valeriangalliat/markdown-it-anchor)
     - [definition list](https://github.com/markdown-it/markdown-it-deflist)
-    - [div](https://github.com/kickscondor/markdown-it-div)
     - [footnote](https://github.com/markdown-it/markdown-it-footnote)
     - [implicit-figures](https://github.com/arve0/markdown-it-implicit-figures)
     - [superscript](https://github.com/markdown-it/markdown-it-sup)

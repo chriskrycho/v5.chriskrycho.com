@@ -100,11 +100,11 @@ export default class Confusing extends Component {
 
 This has no impact on the behavior of the version using `mut` or `set`, but it is robust in the face of refactoring, and if `mut` is ever deprecated or a version of `set` is released that does *not* use the `set` function under the hood, it will keep working correctly.
 
-:::callout
+<div class="callout">
 
 Thoughts, comments, or questions? [Discuss on the forum!][discuss]
 
-:::
+</div>
 
 [ember-simple-set-helper]: https://github.com/pzuraq/ember-simple-set-helper
 [ember-truth-helpers]: https://github.com/jmurphyau/ember-truth-helpers

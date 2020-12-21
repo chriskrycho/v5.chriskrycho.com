@@ -18,11 +18,11 @@ qualifiers:
 
 ---
 
-:::note
+<div class="note">
 
 See [the follow-up](/journal/follow-up-on-command-line-finding-and-filtering/) post, in which I show an easier and faster way of doing this… as long as you have the GNU versions of the utilities, or alternatives like [ripgrep].
 
-:::
+</div>
 
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 

@@ -8,7 +8,6 @@ import implicitFigures from 'markdown-it-implicit-figures'
 import sup from 'markdown-it-sup'
 import Core from 'markdown-it/lib/parser_core'
 import Token from 'markdown-it/lib/token'
-import div from 'markdown-it-div'
 import { env } from 'process'
 import { Result } from 'true-myth'
 import slugify from 'uslug'
@@ -94,7 +93,6 @@ const md = markdownIt({
       slugify,
    })
    .use(abbr)
-   .use(div)
 
 md.renderer.rules.footnote_caption = (tokens, idx): string => {
    let n = Number(tokens[idx].meta.id + 1).toString()

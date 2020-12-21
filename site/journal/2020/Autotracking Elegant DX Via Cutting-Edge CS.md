@@ -533,7 +533,7 @@ There are a handful of really delightful consequences of this system:
 
 Hopefully this has give you a good idea how autotracking works in general, and specifically how it simultaneously enables most of our code to be “just JavaScript” *and* gives us a very low-cost reactivity.
 
-:::callout
+<div class="callout">
 
 You can discuss this [Hacker News](https://news.ycombinator.com/item?id=24560106), [lobste.rs](https://lobste.rs/s/amklz3/autotracking_elegant_dx_via_cutting_edge), or [Ember Discuss](https://discuss.emberjs.com/t/autotracking-elegant-dx-via-cutting-edge-cs/18231).
 
@@ -546,7 +546,7 @@ If you’d like to see some of the details of how these pieces are implemented, 
 
 Readers interested in the underpinnings of autotracking may want to take a look at [Adapton](http://adapton.org), the original research implementation of the specific theory of “incremental computation” underpinning autotracking. For another “real-world” implementation of the same ideas, check out [salsa](https://salsa-rs.github.io/salsa/): a [Rust](https://www.rust-lang.org) implementation of incremental computation which powers the [rust-analyzer](https://rust-analyzer.github.io) language server.
 
-:::
+</div>
 
 [walkthrough-video]: https://www.youtube.com/watch?v=BjKERSRpPeI&amp;feature=youtu.be
 [cg]: https://www.pzuraq.com

@@ -84,8 +84,8 @@ The legitimate problems that people worry about with private chat are not specif
 
 If you’re worried about mistrust between teams, dig into why you have that distrust in the first place. If you’re worried about decision-making, fix your organization’s decision-making process. Build good norms which allow room for the the whole range of private to public conversations. But don’t let people weaponize those norms, and don’t use chat statistics as a measure of organizational health.
 
-:::callout
+<div class="callout">
 
 Thoughts? You can <a href='mailto:hello@chriskrycho.com?subject={{title}}'>email me</a> or discuss this on [Hacker News](https://news.ycombinator.com/item?id=25255535).
 
-:::
+</div>

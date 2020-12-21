@@ -64,11 +64,11 @@ export default class SmartComponent extends Component {
 }
 ```
 
-:::note
+<div class="note">
 
 Here we’re relying on the fact that `args` are auto-tracked: this getter consumes `this.args.id`, so it’ll rerun any time the component is invoked with a new `id`. In a classic Ember component, you might see `@computed('id')` to update whenever the `id` argument updated.
 
-:::
+</div>
 
 We would invoke the component something like this (presumably with a more dynamic source of the ID):
 
@@ -211,11 +211,11 @@ Again, we’re taking advantage of `args` being auto-tracked: if we ever got a *
 
 We do have to type `.value` in a couple of places now… but in exchange, we get all the benefits of the old `PromiseProxyMixin` in exchange, and we get to get rid of a `Mixin` *and* a use of Ember’s classic (and very expensive for performance) `ObjectProxy`, which is yet another `Mixin`. What’s more, there’s no magic here. You can implement `load` yourself in plain JavaScript using the Glimmer tracking library, just the same as I did!
 
-:::callout
+<div class="callout">
 
 Feel free to respond with questions or comments [on Ember Discuss](https://discuss.emberjs.com/t/migrating-off-of-promiseproxymixin-in-ember-octane/18138/2). And if you’re curious about how `load` and `AsyncData` work, check out [the follow-up post](https://v5.chriskrycho.com/journal/async-data-and-autotracking-in-ember-octane/)!
 
-:::
+</div>
 
 
 
