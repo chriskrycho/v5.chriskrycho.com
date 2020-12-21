@@ -18,32 +18,32 @@ Superscripts and subcripts should not affect the vertical rhythm of the text. Th
 
 [leading]: https://en.wikipedia.org/wiki/Leading
 
-:::note
+<div class="note">
 
 Two comments before I dive into the rest of the piece:
 
 - Folks reading along in RSS, you may want to [click through](https://v5.chriskrycho.com/journal/superscript-and-subscript-line-heights/): it’s possible these examples will not display correctly in your reader!
 - Everything I say here about how text should *look* applies equally to native apps or to print, but the mechanics will be wildly different than they are on the web.
 
-:::
+</div>
 
 Here’s an example of how the default browser rendering will handle superscripts (it has the same effect for subscripts, but since superscripts are much more common, I’m focusing on those):
 
-:::callout
+<div class="callout">
 
 This is just some running text which includes a superscript. It doesn’t say anything meaningful, it is just designed to run long enough that in every layout,<sup style="line-height: var(--line-height) !important; font-family: var(--serif) !important; font-size: smaller !important; font-weight: 300;">1</sup> the superscript appears in the middle of the running text, so that the way that the offset is visible is clear.
 
-:::
+</div>
 
 Notice that the line with the superscript is pushed down and away from the preceding line—not *dramatically*, but *noticeably*.
 
 Now, here’s the same layout, using a *corrected* style (with no other tweaks to the font):
 
-:::callout
+<div class="callout">
 
 This is just some running text which includes a superscript. It doesn’t say anything meaningful, it is just designed to run long enough that in every layout,<sup style="line-height:0 !important; font-family: var(--serif) !important; font-size: smaller !important; font-weight: 300;">1</sup> the superscript appears in the middle of the running text, so that the way that the offset is visible is clear.
 
-:::
+</div>
 
 This still doesn’t quite look *right*—the superscript nearly crashes into the line above it—but the lines are all the same height now, which is an important first step. You can accomplish this consistently (no matter what else is happening in your styles) by setting the [`line-height` property][lh] to `0` in your [CSS] declarations for `sub` and `sup`, so that they don’t have any effect on the layout of each line:
 
@@ -79,11 +79,11 @@ sup {
 
 And here’s the resulting effect:
 
-:::callout
+<div class="callout">
 
 This is just some running text which includes a superscript. It doesn’t say anything meaningful, it is just designed to run long enough that in every layout,<sup>1</sup> the superscript appears in the middle of the running text, so that the way that the offset is visible is clear.
 
-:::
+</div>
 
 Much improved!
 

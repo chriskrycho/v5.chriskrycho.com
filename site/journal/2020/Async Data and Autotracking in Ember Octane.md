@@ -59,11 +59,11 @@ Fundamentally, an asynchronous data loading operation can be in at least three s
 
 It’s important particularly—though not only!—in dealing with user interfaces that we account for *all* of these scenarios. If we don’t, we might end up assuming that our data is always in a loaded state, and fail to show anything meaningful while it’s loading, or if there’s an error. At *best* this makes for a poor user experience. At worst, the result can be outright buggy! So this implementation exposes (and encourages you to think in terms of!) those states: `loading`, `loaded`, and `error`.[^1]
 
-:::note
+<div class="note">
 
 This idea is far from original to me or my colleagues. I learned it from a series of talks and blog posts around the idea of “making illegal states impossible,” an idea which has a lot of traction in the typed functional programming community.
 
-:::
+</div>
 
 ## Implementation
 
@@ -711,7 +711,7 @@ export default helper(([promise]) => load(promise));
 
 Hopefully you now have a better idea of how we can combine custom data structures built with JS classes, autotracking-powered reactivity, and modern JS features like `WeakMap` to build robust solutions for even tricky problems like asynchronous data flow!
 
-:::callout
+<div class="callout">
 
 Feel free to respond with questions or comments on [Ember Discuss](https://discuss.emberjs.com/t/async-data-and-autotracking-in-ember-octane/18177)!
 
@@ -720,17 +720,17 @@ For further reading on autotracking, check out these posts by my friend and coll
 - [How Autotracking Works](https://www.pzuraq.com/how-autotracking-works/)
 - [Autotracking Case Study: TrackedMap](https://www.pzuraq.com/autotracking-case-study-trackedmap/)
 
-:::
+</div>
 
 ## Appendix: TypeScript
 
 As long-time readers of this blog (and many folks in the Ember community) know, I’m a huge advocate of TypeScript. I’m particularly a fan of using types to guarantee that our data is *always* in a valid state. In the implementation of `AsyncData` as we have it, we *do* always have data in a valid state—but that’s just because we’ve been careful, and our end users can pretty easily interact with `AsyncData` in unsafe ways. What might it look like to make it so that we can never *construct* invalid data, and so that our end users need to interact more safely with the data?
 
-:::note
+<div class="note">
 
 For this example, I am *assuming* rather than *explaining* the TypeScript features in use.
 
-:::
+</div>
 
 One key challenge and constraint is that the `AsyncData` type has to work in *two* programming languages: JavaScript (or TypeScript) and Glimmer templates. The TypeScript features I would normally reach for here simply don’t work all that well in Glimmer templates. So take what follows with that in mind: trying to make this more robust will mean that it will be *slightly* harder to use in templates—and any concessions we make to the template ergonomics will *necessarily* make our implementation less type-safe. That means that the *most useful* ways to use this implementation will be a little different on the TS side than on the Glimmer template side.
 

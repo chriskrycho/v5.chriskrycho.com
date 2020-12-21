@@ -20,11 +20,11 @@ tags:
 
 ---
 
-:::callout
+<div class="callout">
 
 The folks at InfoQ China translated this article into Chinese, you can read that translation [here](https://www.infoq.cn/article/LCkmyl8xdQA8W4BkHlHI)!
 
-:::
+</div>
 
 When authoring a library in TypeScript, you often do not know how that library will ultimately be consumed. Even if you [warn](https://github.com/true-myth/true-myth#design-philosophy "True Myth: Design Philosophy") would-be users that you intend it *only* for TypeScript consumers, you are very likely to end up with JavaScript users at some point—either because they use it despite your warning or because they end up consuming it as a [transitive dependency](https://en.wikipedia.org/wiki/Transitive_dependency). This has an important consequence: you must design the library to be consumed by developers working in either language![^1]
 
@@ -221,11 +221,11 @@ One option is to leverage some compilation (or “transpilation”) smarts to pr
 
 The downside to this approach is that production errors will have worse error messages and be harder to debug. The upside is that you will ship much less code and pay much lower runtime costs in production. To make code relying on this kind of `assert`-stripping work *well*, end users need to combine it with good end-to-end test coverage of any given feature, UI component, etc. But that is true regardless: types and tests eliminate different classes of bugs, and are best used in conjunction!
 
-:::callout
+<div class="callout">
 
 Thoughts and comments? [Email me](mailto:hello@chriskrycho.com?subject=Writing%20Robust%20TypeScript%20Libraries) or comment on [HN] or [Lobste.rs].
 
-:::
+</div>
 
 [HN]: https://news.ycombinator.com/item?id=24882225
 [Lobste.rs]: https://lobste.rs/s/j696bv/writing_robust_typescript_libraries

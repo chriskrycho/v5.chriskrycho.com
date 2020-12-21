@@ -26,11 +26,11 @@ One thing I *really* wish I knew more about is using getting the full range out 
 
 That’s for another time, though. For now, I’ve contented myself with just making *some* progress on this next section. I had, frankly, a pretty bad day personally today—but I refuse to let that be the final note (no pun intended) for this project, and hammered away at getting some of the ideas I was working with last night and today into Dorico. It’s nothing great, but it’s *something*, and I'll take that.
 
-:::note
+<div class="note">
 
 I wrote the next two paragraphs… and then ended up making more progress. Read these for context, because the point of this whole series is that it’s capturing how works-in-progress work—and then jump down past the break to see what happened later in the day!
 
-:::
+</div>
 
 I would put up the day's materials, but there really isn't almost anything to share. I'm hoping that I'll be able to spend some more time on this tomorrow, and if so I will post what I get to then. Today, it would just be another couple staves of notes in my staff paper notebook, and a few more notes in the score: not enough to really elaborate, or so it feels.
 
