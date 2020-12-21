@@ -10,7 +10,7 @@ qualifiers:
     Software developers working with Ember Octane; also anyone interested in more deeply understanding JavaScript.
 
 thanks: >
-  A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq))pointed me to the actual Glimmer implementation of the concepts discussed in this post.
+  A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) pointed me to the actual Glimmer implementation of the concepts discussed in this post.
 
 tags:
   - software development
@@ -51,7 +51,7 @@ This is already a pretty small surface area, but we can trim it down to get rid 
     - The `owner` is passed to the constructor make things like service injections possible: **an Ember-specific feature**.
     - The `willDestroy` hook, `isDestroying`, and `isDestroyed` are all lifecycle hooks managed by Ember.
 
-- **Non-Ember-specific:**the `args` are passed to the constructor so that `args` can be available as `this.args` on component instances. This is the piece we care about!
+- **Non-Ember-specific:** the `args` are passed to the constructor so that `args` can be available as `this.args` on component instances. This is the piece we care about!
 
 Once we remove all of the Ember-specific pieces, here’s what we’re left with:
 
