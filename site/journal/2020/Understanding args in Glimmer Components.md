@@ -95,8 +95,8 @@ Let’s imagine that we have some bucket of root state representing a user, with
 ```js
 class Root extends Component {
   user = {
-    name = 'Chris Krycho';
-    age = 33;
+    name: 'Chris Krycho';
+    age: 33;
   };
 
   haveABirthday() {
