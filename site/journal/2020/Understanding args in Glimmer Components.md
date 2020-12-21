@@ -88,7 +88,7 @@ class Component {
 }
 ```
 
-With that in place, only the `Component` base class can actually change the value of `args`: private class fields are not accessible from child classes. [^1] This is all we need to see what patterns do and don’t work with `args` in Glimmer components!
+With that in place, only the `Component` base class can change the value of `args`: private class fields are not accessible from child classes. This is all we need to see what patterns do and don’t work with `args` in Glimmer components!
 
 Let’s imagine that we have some bucket of root state representing a user, with a first name, a last name, and an age. In a real app, this might correspond to data that comes from a [`Route` model hook](https://guides.emberjs.com/v3.22.0/routing/specifying-a-routes-model/), or which is stored on a service, or some other means. For our purposes, though, a simple class with some properties and methods to update them will do:
 
@@ -173,7 +173,7 @@ Assigning to an instance property in the `constructor` for `Profile` evaluates t
 
 This brings us to the key takeaway for working with `args` in these components:
 
-<i>You should *never* assign from a property on `args` to a local class field in a Glimmer component—because changes to the parent will never be reflected in the component![^2] Not because of anything special about Glimmer components or autotracking, but just because of how JavaScript works!</i>
+<i>You should *never* assign from a property on `args` to a local class field in a Glimmer component—because changes to the parent will never be reflected in the component![^local-copy] Not because of anything special about Glimmer components or autotracking, but just because of how JavaScript works!</i>
 
 So far so good—but in a real Glimmer Component, we don’t pass in the args blob directly ourselves. Instead, we usually pass named argument values, like `@name={{this.user.name}}`. What’s more, we don’t necessarily pass reference types. We might pass in strings, numbers, etc. too—just as with `name`. So how does this still work?
 
@@ -304,6 +304,4 @@ In [the real implementation](https://github.com/glimmerjs/glimmer-vm/blob/819f19
 
 (still need to write this part 😬 but wanted early eyes on this 😂)
 
-[^1]: The top-level properties on `args` are also immutable in Glimmer components. We could implement that the same way Glimmer components do, using a `Proxy`, but that’s extraneous for the purpose of this post.
-
-[^2]: There are times when you want to create a local copy of an argument and let it diverge locally until updated by the parent, but we have [dedicated tools](https://github.com/pzuraq/tracked-toolbox/blob/master/addon/index.js "the tracked-toolbox library") to manage those situations.
+[^local-copy]: There are times when you want to create a local copy of an argument and let it diverge locally until updated by the parent, but we have [dedicated tools](https://github.com/pzuraq/tracked-toolbox/blob/master/addon/index.js "the tracked-toolbox library") to manage those situations.
