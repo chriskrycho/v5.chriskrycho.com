@@ -7,7 +7,7 @@ summary: >
 image:
 qualifiers:
   audience: >
-    Software developers working with Ember Octane; also folks with a decent amount of JavaScript knowledge who are interested in deeper understanding of some modern concepts.
+    Software developers working with Ember Octane; also developers with a decent amount of JavaScript knowledge interested in deepening their understanding of modern JavaScript.
 
 thanks: >
   A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) pointed me to the actual Glimmer implementation of the concepts discussed in this post.
@@ -73,7 +73,7 @@ class Component {
 }
 ```
 
-However, you may remember that the `args` object is read-only on a component: you can’t do `this.args = { neato: 'yeah!' }`. We can make it a read-only property by hiding the actual storage as a [private class field](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields) and expose only a getter to access it:
+However, the `args` object on a Glimmer component is read-only: you can’t do `this.args = { evil: 'yeah!' }`. We can make it a read-only property by hiding the actual storage as a [private class field](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields) and expose only a getter to access it:
 
 ```ts
 class Component {
@@ -90,7 +90,7 @@ class Component {
 
 With that in place, only the `Component` base class can change the value of `args`: private class fields are not accessible from child classes. This is all we need to see what patterns do and don’t work with `args` in Glimmer components!
 
-Let’s imagine that we have some bucket of root state representing a user, with a first name, a last name, and an age. In a real app, this might correspond to data that comes from a [`Route` model hook](https://guides.emberjs.com/v3.22.0/routing/specifying-a-routes-model/), or which is stored on a service, or some other means. For our purposes, though, a simple class with some properties and methods to update them will do:
+Let’s imagine that we have some bucket of root state representing a user, with a name and an age. In a real app, this might correspond to data that comes from a [`Route` model hook](https://guides.emberjs.com/v3.22.0/routing/specifying-a-routes-model/), or which is stored on a service, or some other means. For our purposes, though, a simple class with some properties and methods to update them will do:
 
 ```js
 class Root extends Component {
@@ -123,7 +123,7 @@ class Profile extends Component {
 }
 ```
 
-Now we can create an instance of the `Root` and an instance of `Profile`, and pass the `user` in directly as the value for `args`. (There is a subtlety here in how this works in real Glimmer components when passing plain values rather than objects, which I’m simplifying for understanding here. I cover that in Part II below!)
+Now we can create an instance of the `Root` and an instance of `Profile`, and pass the `user` in directly as the value for `args`. (There is a subtlety here in how this works in real Glimmer components when passing plain values rather than objects, which I cover in Part II below.)
 
 ```js
 let root = new Root();
@@ -141,7 +141,7 @@ console.log(profile.description);
 // -> "C. D. Krycho Krycho is 34 years old"
 ```
 
-But the “automatically” here isn’t anything special. It’s just normal JavaScript semantics: we passed in a reference to an object, so when we change the properties on that object and then invoke a getter which depends on those values, we get an updated value. While there are some differences in the specific details of the implementation (as I cover below in Part II), this is fundamentally how `args` works in Glimmer components. And notice: there’s no `@tracked` in site, no template layer involved, and in fact nothing about Ember or Glimmer in sight. It is, as they say, *just JavaScript*™.
+But the “automatically” here is just normal JavaScript semantics: we passed in a reference to an object, so when we change the properties on that object and then invoke a getter which depends on those values, we get an updated value. While there are some differences in the specific details of the implementation (as I cover below in Part II), this is fundamentally how `args` works in Glimmer components. And notice: there’s no `@tracked` in sight, no template layer involved, and in fact nothing about Ember or Glimmer in sight. It is, as they say, *just JavaScript*™.
 
 This also means that we can see why certain things *won’t* work. I often see people write code like this both when writing new Glimmer components from scratch and when migrating from Ember components:
 
