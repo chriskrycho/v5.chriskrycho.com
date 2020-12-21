@@ -22,7 +22,7 @@ templateEngineOverride: md
 
 ---
 
-One of the most consistent confusions I see as I support the LinkedIn.com migration to [Ember Octane](https://emberjs.com/editions/octane/) is how to think about `args` in Glimmer components. In particular, I consistently see people struggling with how to understand *updates* to `args` what they can and cannot do with them. In this post, I hope to make it much clearer by working through an example implementation of a slightly simpler version of the `Component` API, with no autotracking in sight. By the end of the post, you should have a clear handle on what will and won’t work in the body of a Glimmer component—and, more importantly, *why*.
+One of the most consistent confusions I see as I support the LinkedIn.com migration to [Ember Octane](https://emberjs.com/editions/octane/) is how to think about `args` in Glimmer components. In particular, I consistently see people struggling with how to understand *updates* to `args` what they can and cannot do with them. In this post, I hope to make it much clearer by working through an example of how `args` are passed from component to component, but in plain JavaScript: using a slightly simplified version of the `Component` API with no autotracking in sight. By the end of the post, you should have a clear handle on what will and won’t work in the body of a Glimmer component—and, more importantly, *why*.
 
 *[API]: application programming interface
 
@@ -185,8 +185,8 @@ The answer is that the template layer wires this up for us—but in a way that, 
 
 ```handlebars
 <Profile
-  @name={{this.name}}
-  @age={{this.age}}
+  @name={{this.user.name}}
+  @age={{this.user.age}}
 />
 ```
 
@@ -307,3 +307,4 @@ In [the real implementation](https://github.com/glimmerjs/glimmer-vm/blob/819f19
 (still need to write this part 😬 but wanted early eyes on this 😂)
 
 [^local-copy]: There are times when you want to create a local copy of an argument and let it diverge locally until updated by the parent, but we have [dedicated tools](https://github.com/pzuraq/tracked-toolbox/blob/master/addon/index.js "the tracked-toolbox library") to manage those situations.
+
