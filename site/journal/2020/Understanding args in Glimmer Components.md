@@ -18,6 +18,8 @@ tags:
   - JavaScript
   - mental models
 
+templateEngineOverride: md
+
 ---
 
 One of the most consistent confusions I see as I support the LinkedIn.com migration to [Ember Octane](https://emberjs.com/editions/octane/) is how to think about `args` in Glimmer components. In particular, I consistently see people struggling with how to understand *updates* to `args` what they can and cannot do with them. In this post, I hope to make it much clearer by working through an example implementation of a slightly simpler version of the `Component` API, with no autotracking in sight. By the end of the post, you should have a clear handle on what will and won’t work in the body of a Glimmer component—and, more importantly, *why*.
@@ -150,7 +152,7 @@ class Profile extends Component {
   constructor(args) {
     super(args);
     this.description =
-      `${this.fullName} is ${this.args.age} years old`;
+      `${this.args.name} is ${this.args.age} years old`;
   }
 }
 ```
@@ -169,7 +171,7 @@ console.log(profile.description);
 // -> "Chris Krycho is 33 years old"
 ```
 
-Assigning to an instance property in the `constructor` for `Profile` evaluates the values passed in. Where `get fullName() { ... }` would always be re-executed when invoked as `profile.fullName`, the class field version just has a static value. Changes to `root.user` cannot possibly affect the values of `profile.fullName` or `profile.description` in this approach.
+Why not? Because assigning to an instance property in the `constructor` for `Profile` simply evaluates the values passed in and saves the result as a field, no different than writing `this.description = "hello"`. A getter, like `get description() { ... }` is re-executed when invoked as `profile.description`. A class field just has whatever value is has. Accordingly, changes to `root.user` cannot affect the value of `profile.description` in this approach.
 
 This brings us to the key takeaway for working with `args` in these components:
 
