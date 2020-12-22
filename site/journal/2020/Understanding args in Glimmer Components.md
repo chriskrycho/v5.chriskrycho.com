@@ -202,10 +202,10 @@ let args = {
 root.haveABirthday();
 console.log(args.age()); // 34!
 root.changeNameTo("C. D. Krycho");
-console.log(args.name()); // "Christopher"
+console.log(args.name()); // "C. D. Krycho"
 ```
 
-Unfortunately, as you can see from the example, you have to call `args.age()` as a function to make this work. To work around this, the template layer actually creates a proxy which intercepts requests for properties and executed the think if there is one:
+Unfortunately, as you can see from the example, you have to call `args.age()` as a function to make this work. To work around this, the template layer actually creates a proxy which intercepts requests for properties and executed the thunk if there is one:
 
 ```js
 class ArgsHandler {
@@ -307,4 +307,3 @@ In [the real implementation](https://github.com/glimmerjs/glimmer-vm/blob/819f19
 (still need to write this part 😬 but wanted early eyes on this 😂)
 
 [^local-copy]: There are times when you want to create a local copy of an argument and let it diverge locally until updated by the parent, but we have [dedicated tools](https://github.com/pzuraq/tracked-toolbox/blob/master/addon/index.js "the tracked-toolbox library") to manage those situations.
-
