@@ -10,7 +10,7 @@ qualifiers:
     Software developers working with Ember Octane; also developers with a decent amount of JavaScript knowledge interested in deepening their understanding of modern JavaScript.
 
 thanks: >
-  A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) pointed me to the actual Glimmer implementation of the concepts discussed in this post.
+  A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) pointed me to the actual Glimmer implementation of the concepts discussed in this post, and he and [Ilya Radchenko](https://ilyaradchenko.com) reviewed its contents.
 
 tags:
   - software development
