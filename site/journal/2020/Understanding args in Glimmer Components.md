@@ -6,7 +6,6 @@ updated: 2020-12-22T21:12:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
-image:
 qualifiers:
   audience: >
     Software developers working with Ember Octane; also developers with a decent amount of JavaScript knowledge interested in deepening their understanding of modern JavaScript.
