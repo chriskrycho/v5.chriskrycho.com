@@ -2,7 +2,7 @@
 title: Understanding `args` in Glimmer Components
 subtitle: Clearing up a common confusion with a worked example.
 date: 2020-12-22T19:05:00-0700
-updated: 2020-12-22T19:55:00-0700
+updated: 2020-12-22T20:28:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
@@ -305,9 +305,9 @@ In [the real implementation](https://github.com/glimmerjs/glimmer-vm/blob/819f19
 
 ## Conclusion
 
-The examples I’ve worked through here not only represent the right idea of how Glimmer component arguments work, they actually *are* how a Glimmer component works if you strip away all the reactivity and did just a single pass—say, in a server-side rendering approach with the same JavaScript <abbr>API</abbr>s. (That’s not just an interesting example: it’s how server-side rendering with Glimmer components *actually* works: a single pass to render everything, with no need to trigger updates!)
+The examples I’ve worked through here not only represent the right idea of how Glimmer component arguments work, they actually *are* how a Glimmer component works if you strip away all the reactivity and do just a single pass—say, in a server-side rendering approach with the same JavaScript <abbr>API</abbr>s. (That’s not just an interesting example: it’s how server-side rendering with Glimmer components *actually* works: a single pass to render everything, with no need to trigger updates!)
 
-Autotracking, then, is just a thin layer on top of the JavaScript you would write *anyway*—a layer that connects your normal JavaScript to the template layer and runtime so it knows when it needs to re-execute your normal JavaScript. The thinness of the reactivity layer, and the way it lets the rest of your code always just be normal JavaScript semantics, is one of my favorite things about Ember Octane.
+Autotracking, then, is just a thin layer on top of the JavaScript you would write *anyway*. All the autotracking layer does is connect your normal JavaScript to the template layer and runtime, so that Ember knows when it needs to re-execute your otherwise-normal JavaScript. The thinness of the reactivity layer, and the way it lets the rest of your code always just be normal JavaScript semantics, is one of my favorite things about Ember Octane.
 
 <div class="callout">
 
