@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-11-28T17:22:00-0600
+date: 2020-12-23T08:16:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -67,8 +67,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
-
-- <cite>Rhythm of War</cite>, Brandon Sanderson (new)
 
 ## 2020
 
@@ -146,8 +144,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389), Robin Sloan (new)
     - [review](/library/mr-penumbras-24-hour-bookstore/)
-    - to be discussed on an upcoming episode or two of Winning Slowly
+    - discussed on [Winning Slowly 8.22][8.22]
 
+- [<cite>Rhythm of War</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2FRhythm-of-War-Brandon-Sanderson%2Fbook%2F47893962), Brandon Sanderson (new)
 
 [8.02]: https://winningslowly.org/8.02
 [8.03]: https://winningslowly.org/8.03
@@ -169,6 +168,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 [8.19]: https://winningslowly.org/8.19
 [8.20]: https://winningslowly.org/8.20
 [8.21]: https://winningslowly.org/8.21
+[8.22]: https://winningslowly.org/8.22
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
