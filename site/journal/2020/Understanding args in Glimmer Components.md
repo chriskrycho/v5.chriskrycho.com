@@ -2,7 +2,7 @@
 title: Understanding `args` in Glimmer Components
 subtitle: Clearing up a common confusion with a worked example.
 date: 2020-12-22T19:05:00-0700
-updated: 2020-12-22T19:24:00-0700
+updated: 2020-12-22T19:55:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
@@ -172,7 +172,7 @@ console.log(profile.description);
 // -> "Chris Krycho is 33 years old"
 ```
 
-Why not? Because assigning to an instance property in the `constructor` for `Profile` simply evaluates the values passed in and saves the result as a field, no different than writing `this.description = "hello"`. A getter, like `get description() { ... }` is re-executed when invoked as `profile.description`. A class field just has whatever value is has. Accordingly, changes to `root.user` cannot affect the value of `profile.description` in this approach.
+Why not? Because assigning to an instance property in the `constructor` for `Profile` simply evaluates the values passed in and saves the result as a field, no different than writing `this.description = "hello"`. A getter, like `get description() { ... }`, is re-executed when invoked as `profile.description`. A class field just has whatever value is has. Accordingly, changes to `root.user` cannot affect the value of `profile.description` in this approach.
 
 This brings us to the key takeaway for working with `args` in these components:
 
@@ -191,7 +191,7 @@ The answer is that the template layer wires this up for us—but in a way that, 
 />
 ```
 
-…the template layer creates the args object with *references* to the `user.name` and `user.age` properties. Specifically, it creates a *thunk*: an anonymous function which can be called later to get the value. That’s something you can do yourself in JavaScript:
+…the template layer creates the args object with *references* to the `user.name` and `user.age` properties. Specifically, it creates a *thunk*: an anonymous function which can be called later to get the value at the time you invoke it. That’s something you can do yourself in JavaScript:
 
 ```js
 let root = new Root();
@@ -206,7 +206,7 @@ root.changeNameTo("C. D. Krycho");
 console.log(args.name()); // "C. D. Krycho"
 ```
 
-Unfortunately, as you can see from the example, you have to call `args.age()` as a function to make this work. To work around this, the template layer actually creates a proxy which intercepts requests for properties and executed the thunk if there is one:
+Unfortunately, as you can see from the example, you have to call `args.age()` as a function to make this work. To work around this, the template layer actually creates a [Proxy](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) which intercepts requests for properties and evaluates the corresponding thunk if there is one:
 
 ```js
 class ArgsHandler {
@@ -307,18 +307,16 @@ In [the real implementation](https://github.com/glimmerjs/glimmer-vm/blob/819f19
 
 The examples I’ve worked through here not only represent the right idea of how Glimmer component arguments work, they actually *are* how a Glimmer component works if you strip away all the reactivity and did just a single pass—say, in a server-side rendering approach with the same JavaScript <abbr>API</abbr>s. (That’s not just an interesting example: it’s how server-side rendering with Glimmer components *actually* works: a single pass to render everything, with no need to trigger updates!)
 
-Autotracking, then, is just a thin layer on top of the JavaScript you would write *anyway*—a layer that connects your normal JavaScript to the template layer and runtime so it knows when it needs to re-execute your normal JavaScript.
+Autotracking, then, is just a thin layer on top of the JavaScript you would write *anyway*—a layer that connects your normal JavaScript to the template layer and runtime so it knows when it needs to re-execute your normal JavaScript. The thinness of the reactivity layer, and the way it lets the rest of your code always just be normal JavaScript semantics, is one of my favorite things about Ember Octane.
 
-<!--
 <div class="callout">
 
 Thoughts, comments, or questions? Discuss on [Hacker News][hn], [lobste.rs][l], or [the Ember forum][discuss]!
 
-[hn]: TODO
-[l]: TODO
-[discuss]: TODO
+[hn]: https://news.ycombinator.com/item?id=25513679
+[l]: https://lobste.rs/s/iiagob/understanding_args_glimmer_components
+[discuss]: https://discuss.emberjs.com/t/understanding-args-in-glimmer-components/18444/2
 
 </div>
--->
 
 [^local-copy]: There are times when you want to create a local copy of an argument and let it diverge locally until updated by the parent, but we have [dedicated tools](https://github.com/pzuraq/tracked-toolbox/blob/master/addon/index.js "the tracked-toolbox library") to manage those situations.
