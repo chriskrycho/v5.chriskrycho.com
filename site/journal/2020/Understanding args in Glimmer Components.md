@@ -1,8 +1,8 @@
 ---
 title: Understanding `args` in Glimmer Components
 subtitle: Clearing up a common confusion with a worked example.
-date: 2020-12-22T21:05:00-0700
-updated: 2020-12-22T21:12:00-0700
+date: 2020-12-22T19:05:00-0700
+updated: 2020-12-22T19:24:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
