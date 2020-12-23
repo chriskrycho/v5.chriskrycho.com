@@ -302,8 +302,22 @@ You don’t have to take my word for it, either: you can copy [this gist][gist] 
 
 In [the real implementation](https://github.com/glimmerjs/glimmer-vm/blob/819f196a6821bf5ba728f1ad87086741bd80fb94/packages/%40glimmer/manager/lib/util/args-proxy.ts), there is a good deal more happening, because these all integrate with the autotracking system, as I described in [Autotracking: Elegant DX via Cutting-Edge CS](https://v5.chriskrycho.com/journal/autotracking-elegant-dx-via-cutting-edge-cs/). For example, the *refs* from the template layer’s `capturedArgs` all notify the reactivity system when they’re used, just like `@tracked` properties on a backing class do. But all of the additional things happening there are implementation details about the template layer wires these pieces together and knows when to update—not the fundamentals of how the system works.
 
-## Summary
+## Conclusion
 
-(still need to write this part 😬 but wanted early eyes on this 😂)
+The examples I’ve worked through here not only represent the right idea of how Glimmer component arguments work, they actually *are* how a Glimmer component works if you strip away all the reactivity and did just a single pass—say, in a server-side rendering approach with the same JavaScript <abbr>API</abbr>s. (That’s not just an interesting example: it’s how server-side rendering with Glimmer components *actually* works: a single pass to render everything, with no need to trigger updates!)
+
+Autotracking, then, is just a thin layer on top of the JavaScript you would write *anyway*—a layer that connects your normal JavaScript to the template layer and runtime so it knows when it needs to re-execute your normal JavaScript.
+
+<!--
+<div class="callout">
+
+Thoughts, comments, or questions? Discuss on [Hacker News][hn], [lobste.rs][l], or [the Ember forum][discuss]!
+
+[hn]: TODO
+[l]: TODO
+[discuss]: TODO
+
+</div>
+-->
 
 [^local-copy]: There are times when you want to create a local copy of an argument and let it diverge locally until updated by the parent, but we have [dedicated tools](https://github.com/pzuraq/tracked-toolbox/blob/master/addon/index.js "the tracked-toolbox library") to manage those situations.
