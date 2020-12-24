@@ -2,7 +2,7 @@
 title: Understanding `args` in Glimmer Components
 subtitle: Clearing up a common confusion with a worked example.
 date: 2020-12-22T19:05:00-0700
-updated: 2020-12-22T20:28:00-0700
+updated: 2020-12-23T18:45:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
@@ -11,7 +11,7 @@ qualifiers:
     Software developers working with Ember Octane; also developers with a decent amount of JavaScript knowledge interested in deepening their understanding of modern JavaScript.
 
 thanks: >
-  A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) pointed me to the actual Glimmer implementation of the concepts discussed in this post, and he and [Ilya Radchenko](https://ilyaradchenko.com) reviewed its contents.
+  A conversation with [Nathaniel Furniss](https://www.linkedin.com/in/nlfurniss/) helped me see the value of stripping out all the autotracking and Ember/Glimmer-isms for explaining this concept. [Chris Garrett](https://pzuraq.com) ([@pzuraq](https://github.com/pzuraq)) pointed me to the actual Glimmer implementation of the concepts discussed in this post, and he, [Ilya Radchenko](https://ilyaradchenko.com), and [Thao Bach](https://www.linkedin.com/in/thaobach/) reviewed its contents.
 
 tags:
   - software development
@@ -102,7 +102,7 @@ class Root extends Component {
     age: 33;
   };
 
-  haveABirthday() {
+  increaseAge() {
     this.user.age++;
   }
 
@@ -138,7 +138,7 @@ console.log(profile.description);
 Now if we change the values of the properties on `root` by calling its methods, when we ask for `description` again it will “automatically” have the right value:
 
 ```js
-root.haveABirthday();
+root.increaseAge();
 root.changeNameTo("C. D. Krycho");
 console.log(profile.description);
 // -> "C. D. Krycho Krycho is 34 years old"
@@ -152,9 +152,17 @@ This also means that we can see why certain things *won’t* work. I often see p
 class Profile extends Component {
   constructor(args) {
     super(args);
+
+    // just set the property -- won't update because it's just setting
+    // a property to a value
     this.description =
       `${this.args.name} is ${this.args.age} years old`;
   }
+
+  // original implementation, which actually worked
+  // get description() {
+  //   return `${this.args.name} is ${this.args.age} years old`;
+  // }
 }
 ```
 
@@ -166,7 +174,7 @@ let profile = new Profile(root.user);
 console.log(profile.description);
 // -> "Chris Krycho is 33 years old"
 
-root.haveABirthday();
+root.increaseAge();
 root.changeNameTo("C. D. Krycho");
 console.log(profile.description);
 // -> "Chris Krycho is 33 years old"
@@ -200,7 +208,7 @@ let args = {
   age: () => root.age,
 };
 
-root.haveABirthday();
+root.increaseAge();
 console.log(args.age()); // 34!
 root.changeNameTo("C. D. Krycho");
 console.log(args.name()); // "C. D. Krycho"
@@ -240,7 +248,7 @@ let args = argsProxyFor({
   age: () => root.user.age,
 });
 
-root.haveABirthday();
+root.increaseAge();
 console.log(args.age); // 34
 root.changeNameTo("C. D. Krycho");
 console.log(args.name); // "C. D. Krycho"
@@ -292,7 +300,7 @@ let args = argsProxyFor({
 let profile = new Profile(args);
 console.log(profile.description); // "Chris Krycho is 33"
 
-root.haveABirthday();
+root.increaseAge();
 root.changeNameTo('C. D. Krycho');
 console.log(profile.description); // "C. D. Krycho is 34"
 ```
