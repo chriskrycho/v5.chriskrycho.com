@@ -2,7 +2,7 @@
 title: Understanding `args` in Glimmer Components
 subtitle: Clearing up a common confusion with a worked example.
 date: 2020-12-22T19:05:00-0700
-updated: 2020-12-23T18:45:00-0700
+updated: 2020-12-23T17:13:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
@@ -180,7 +180,7 @@ console.log(profile.description);
 // -> "Chris Krycho is 33 years old"
 ```
 
-Why not? Because assigning to an instance property in the `constructor` for `Profile` simply evaluates the values passed in and saves the result as a field, no different than writing `this.description = "hello"`. A getter, like `get description() { ... }`, is re-executed when invoked as `profile.description`. A class field just has whatever value is has. Accordingly, changes to `root.user` cannot affect the value of `profile.description` in this approach.
+Why not? Because assigning to an instance property in the `constructor` for `Profile` simply evaluates the values passed in and saves the result as a field, no different than writing `this.description = "hello"`. A getter, like `get description() { ... }`, is re-executed when invoked as `profile.description`. A class field just has whatever value it has. Accordingly, changes to `root.user` cannot affect the value of `profile.description` in this approach.
 
 This brings us to the key takeaway for working with `args` in these components:
 
@@ -204,8 +204,8 @@ The answer is that the template layer wires this up for us—but in a way that, 
 ```js
 let root = new Root();
 let args = {
-  name: () => root.name,
-  age: () => root.age,
+  name: () => root.user.name,
+  age: () => root.user.age,
 };
 
 root.increaseAge();
