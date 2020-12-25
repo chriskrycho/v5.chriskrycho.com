@@ -2,7 +2,7 @@
 title: Understanding `args` in Glimmer Components
 subtitle: Clearing up a common confusion with a worked example.
 date: 2020-12-22T19:05:00-0700
-updated: 2020-12-23T17:13:00-0700
+updated: 2020-12-24T18:03:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/args.png
 summary: >
   Many developer assume this is more magic going on with Glimmer components’ arguments than there really is. Let’s see how they actually work!
@@ -23,7 +23,7 @@ templateEngineOverride: md
 
 ---
 
-One of the most consistent confusions I see as I support the LinkedIn.com migration to [Ember Octane](https://emberjs.com/editions/octane/) is how to think about `args` in Glimmer components. In particular, I consistently see people struggling with how to understand *updates* to `args` what they can and cannot do with them. In this post, I hope to make it much clearer by working through an example of how `args` are passed from component to component, but in plain JavaScript: using a slightly simplified version of the `Component` API with no autotracking in sight. By the end of the post, you should have a clear handle on what will and won’t work in the body of a Glimmer component—and, more importantly, *why*.
+One of the most consistent confusions I see as I support the LinkedIn.com migration to [Ember Octane](https://emberjs.com/editions/octane/) is how to think about `args` in Glimmer components. In particular, I consistently see people struggling with how to understand *updates* to `args`—and what they can and cannot do with them. In this post, I hope to make it much clearer by working through an example of how `args` are passed from component to component, but in plain JavaScript: using a slightly simplified version of the `Component` API with no autotracking in sight. By the end of the post, you should have a clear handle on what will and won’t work in the body of a Glimmer component—and, more importantly, *why*.
 
 *[API]: application programming interface
 
