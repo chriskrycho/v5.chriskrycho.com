@@ -104,11 +104,11 @@ pre {
    color: var(--code-fg);
    border-left: 2px solid var(--code-border);
    padding-left: calc(1em - 2px);
+   overflow-x: auto;
 
    code {
       background-color: transparent;
       display: block;
-      overflow-x: auto;
       width: 100%;
       margin: 0;
       padding: 0;
