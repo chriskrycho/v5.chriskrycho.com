@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2020-12-23T08:16:00-0600
+date: 2020-12-27T13:25:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -147,6 +147,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     - discussed on [Winning Slowly 8.22][8.22]
 
 - [<cite>Rhythm of War</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2FRhythm-of-War-Brandon-Sanderson%2Fbook%2F47893962), Brandon Sanderson (new)
+
+- <cite>Mistborn: Secret History</cite>, Brandon Sanderson (reread)
 
 [8.02]: https://winningslowly.org/8.02
 [8.03]: https://winningslowly.org/8.03
