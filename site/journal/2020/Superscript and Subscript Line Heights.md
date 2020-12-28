@@ -2,11 +2,12 @@
 title: Superscript and Subscript Line Heights
 subtitle: A tip for better typography.
 date: 2020-04-08T20:15:00-0600
-updated: 2020-04-08T21:55:00-0600
+updated: 2020-12-28T11:00:00-0600
 summary: >
     Superscripts and subscripts should not affect the vertical rhythm of the text.
 qualifiers:
     audience: People who want their websites, apps, etc. to look right.
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/superscript%20horror%20show.png
 tags:
     - typography
     - design
