@@ -8,12 +8,19 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    export_format: ''
+    required: true
+  default: now
 - type: datetime
   name: updated
   label: updated
 - type: textarea
   name: summary
   label: summary
+  config:
+    max: 160
+  default: ''
 - type: list
   name: tags
   label: tags
