@@ -23,7 +23,7 @@
       margin: 0 auto;
       display: grid;
       grid-template:
-         ". year ." auto / minmax(7rem, 1fr) minmax(min-content, 34rem) minmax(7rem, 1fr);
+         ". year ." auto / minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
       background-color: var(--bg);
 
       position: sticky;
@@ -202,7 +202,7 @@
 
       .month {
          gap: 0.5rem;
-         grid-template-columns: 1fr minmax(min-content, 34rem) 1fr;
+         grid-template-columns: 1fr minmax(min-content, 32rem) 1fr;
       }
 
       .month-title {
