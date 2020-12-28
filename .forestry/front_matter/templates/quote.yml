@@ -24,3 +24,7 @@ fields:
 - type: list
   name: tags
   label: tags
+  config:
+    use_select: false
+    source:
+      type: simple
