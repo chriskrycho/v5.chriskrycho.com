@@ -3,7 +3,37 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: site/journal
+  label: Journal
+  create: all
+  match: "**/*"
+- type: directory
+  path: site/library
+  label: Library
+  create: all
+  match: "**/*"
+- type: directory
+  path: site/essays
+  label: Essays
+  create: all
+  match: "**/*"
+- type: directory
+  path: site/notes
+  label: Notes
+  create: all
+  match: "**/*"
+- type: directory
+  path: site/elsewhere
+  label: Elsewhere
+  create: all
+  match: "**/*"
+- type: directory
+  path: site/pages
+  label: Pages
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
