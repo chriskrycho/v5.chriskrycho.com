@@ -1,0 +1,37 @@
+---
+label: Book Review
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: field_group
+  name: qualifiers
+  label: qualifiers
+  fields:
+  - type: textarea
+    name: audience
+    label: audience
+- type: field_group
+  name: book
+  label: book
+  fields:
+  - type: field_group
+    name: review
+    label: review
+    fields:
+    - type: text
+      name: rating
+      label: rating
+    - type: textarea
+      name: summary
+      label: summary
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
