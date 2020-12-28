@@ -89,6 +89,7 @@
       "build": "npm run build:styles && npm run build:site -- --quiet",
       "watch:styles": "gulp watch",
       "serve": "env DEV=true eleventy --quiet --serve",
+      "serve:forestry": "DEV=true eleventy --quiet --serve",
       "clean": "rm -rf public"
    }
 }
