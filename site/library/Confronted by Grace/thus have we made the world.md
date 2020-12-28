@@ -1,8 +1,13 @@
 ---
 title: thus… have we made the world
 date: 2020-12-28T07:30:00-0700
+updated: 2020-12-28T09:15:00-0700
 summary: >
   John Webster: “Jesus’ passion… [is] the hour of the world’s judgment, because it is the hour when God lets the world have its own way.…”
+
+tags:
+  - quotes
+  - holiness
 
 ---
 
