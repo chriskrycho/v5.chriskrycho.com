@@ -3,10 +3,15 @@ title: Humans of Open Source
 subtitle: >
     Chatting with Sean Chen about open source, Christian humanism, and working in public.
 date: 2020-08-03T10:00:00-0600
-updated: 2020-08-13T15:32:00-0600
-link: https://pod.co/humans-of-open-source/hoos-chriskrycho
-tags: [open-source software, theology, humanism, podcasting]
+updated: 2020-12-29T14:15:00-0600
+link: https://anchor.fm/humans-of-open-source/episodes/Chris-Krycho-on-Life-Post-New-Rustacean-emh815
 featured: true
+tags: 
+  - open-source software
+  - theology 
+  - humanism
+  - podcasting
+
 ---
 
 I had the great pleasure of being [the inaugural guest]({{link}}) on Sean Chen’s new podcast, [Humans of Open Source][podcast]. We chatted about all sorts of things around open source software:
