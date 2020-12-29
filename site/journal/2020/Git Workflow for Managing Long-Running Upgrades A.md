@@ -2,6 +2,7 @@
 title: A Git Workflow for Managing Long-Running Upgrades
 subtitle: Using some lessons learned in the trenches of large upgrades.
 date: 2020-07-01T14:10:00-0600
+updated: 2020-12-29T09:05:00-0600
 summary: >
     When working with long-running projects (like difficult dependency upgrades), it’s helpful to land as many changes as possible on the main development branch instead of landing them all at once in a big bang, by making good use of the capabilities of DVCSs like Git.
 qualifiers:
@@ -14,12 +15,6 @@ tags:
     - productivity
 
 ---
-
-<div class="note">
-
-There has been some interesting discussion about switching away from the use of `master` as the name of the main development branch for projects like this, due to its associations with slavery (from which the terms “master” and “slave,” with all their very wretched history). For good or for ill, `master` is the traditional name, and I’ve left it as that in this discussion. However, you easily could—and very possibly *should*!—substitute `main` throughout wherever the samples have `master`. I’ve left it this way here largely to make this post as easy as possible to find via web search.
-
-</div>
 
 ## Overview
 
@@ -347,6 +342,16 @@ In general, it’s really helpful to avoid getting into the situation where this
 - land features incrementally instead of needing to do a lot of fixing up and rebasing
 
 —but sometimes this kind of thing is out of your control, as it was out of mine last year. I hope if you find yourselves in the same spot I found myself last August, you now have a good handle on some of the ways you can manage this kind of large, long-running task effectively!
+
+<div class="note">
+    
+Two addenda:
+
+1.  Since writing this, I learned about [git worktrees](https://spin.atomicobject.com/2016/06/26/parallelize-development-git-worktrees/). I haven’t yet had a chance to try them out in this workflow, but they’re tailored for exactly this sort of thing, and the *next* time I’m doing this work, I’ll try them out and see if they’re an improvement on the multiple-branches approach I used here.
+
+2.  There has been some interesting discussion about switching away from the use of `master` as the name of the main development branch for projects like this, due to its associations with slavery (from which the terms “master” and “slave,” with all their very wretched history). For good or for ill, `master` is the traditional name, and I’ve left it as that in this discussion. However, you easily could—and very possibly *should*!—substitute `main` throughout wherever the samples have `master`. I’ve left it this way here largely to make this post as easy as possible to find via web search.
+
+</div>
 
 *[CI]: continuous integration
 *[SHA]: secure hash algorithm
