@@ -15,7 +15,7 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /journal/this-week-i-learned-*/ /journal/this-week-i-learned/:splat/ 301!
 /appearances/* /elsewhere/:splat 301!
 /library/2020-11-28-1146/ /notes/2020-11-28-1146/ 301!
-/journal/private-chat-and-dms-are-good-actually/ /essays/private-chat-and-dms-are-good-actually/
+/journal/private-chat-and-dms-are-good-actually/ /essays/private-chat-and-dms-are-good-actually/ 301!
 
 # ...including notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
@@ -83,3 +83,6 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /notes/2112/ /notes/2020-03-25-2112/ 301!
 /notes/2126/ /notes/2020-03-30-2126/ 301!
 /notes/2146/ /notes/2020-08-04T21:46/ 301!
+
+# and topics I merged
+/topics/logic-pro-x /topics/logic-pro/ 301!
