@@ -27,6 +27,7 @@ main {
 
       @media (min-height: 600px) {
          main {
+            transition: 0.7s margin ease-out, 0.7s max-width ease-out;
             --padding: #{ms(-1)};
 
             margin: {
@@ -46,6 +47,18 @@ main {
             top: 0;
             right: 0;
             bottom: 0;
+         }
+
+         .reading-mode {
+            main {
+               transition: 0.7s margin ease-out, 0.7s max-width ease-out;
+               --padding: 0.25em;
+               max-width: calc(100vw - 0.5em - 2px);
+            }
+
+            nav {
+               right: -25vw;
+            }
          }
       }
    }
