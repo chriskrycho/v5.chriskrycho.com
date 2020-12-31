@@ -8,6 +8,7 @@ qualifiers:
     People who like reading year-in-review summaries. (I think that’s mostly just me, a few years in the future!)
 
 date: 2020-12-31T11:05:00-0700
+updated: 2020-12-31T11:26:00-0700
 
 tags:
   - annual reflections
@@ -24,7 +25,7 @@ tags:
   - habits
 
 ---
-This year was no one’s idea of fun, I think, and it certainly looked nothing like I hoped it might when I [kicked things off back in January](https://v5.chriskrycho.com/journal/decadal-kind-of-change/ "A Decadal Kind of Change"). It was a good year for me and for our in many ways nonetheless, despite the hardships we faced (and granting that our hardships have been mild compared to what many have faced). So, here at the end of the year, some reflections on 2020. Feel free to skip around  to whatever is interesting to you!
+This year was no one’s idea of fun, I think, and it certainly looked nothing like I hoped it might when I [kicked things off back in January](https://v5.chriskrycho.com/journal/decadal-kind-of-change/ "A Decadal Kind of Change"). It was a good year for me and for our family in many ways nonetheless, despite the hardships we faced (and granting that our hardships have been mild compared to what many have faced). So, here at the end of the year, some reflections on 2020. Feel free to skip around  to whatever is interesting to you!
 
 - [Reading](#reading)
 - [Writing](#writing)
@@ -52,7 +53,7 @@ Thanks to our decision to make Winning Slowly [Season 8](https://winningslowly.o
 
 While I very much enjoyed many of [the other books I read this year](https://v5.chriskrycho.com/library/reading-list/#2020), these ones most changed my mind, most helped me think more clearly, or were just plain joyful—and *just plain joyful* was in short supply in 2020.
 
-For nonfiction, <cite>The Culture of Theology</cite> easily takes top place for me. The book was a wonderful introduction to John Webster; I later ended up picking up half a dozen more volumes by him and am finding those equally encouraging and challenging (as [my Library page](https://v5.chriskrycho.com/library/) no doubt indicates). On any year *except* the year I discovered John Webster, Zeynep Tüfekçi’s <cite>Twitter and Tear Gs</cite> would have been the unquestioned winner, as an astounding book which manages to pull the hat trick of being good journalism, good academic writing, and good policy/agenda-setting.
+For nonfiction, <cite>The Culture of Theology</cite> easily takes top place for me. The book was a wonderful introduction to John Webster; I later ended up picking up half a dozen more volumes by him and am finding those equally encouraging and challenging (as [my Library page](https://v5.chriskrycho.com/library/) no doubt indicates). On any year *except* the year I discovered John Webster, Zeynep Tüfekçi’s <cite>Twitter and Tear Gas</cite> would have been the unquestioned winner, as an astounding book which manages to pull the hat trick of being good journalism, good academic writing, and good policy/agenda-setting.
 
 For fiction, Robin Sloan is just the best: both <cite>Sourdough</cite> and <cite>Mr. Penumbra’s 24-Hour Bookstore</cite> were beautiful, joyful, exuberant books. I would have enjoyed them *any* year, but especially in 2020, they were a breath of fresh air. <cite>Jurassic Park</cite> was a much more *interesting* book than I expected going in: I had read Crichton before and while I had always enjoyed his work, it’s fair to say that he was at his very best across the board in <cite>Jurassic Park</cite>. It’s a good thriller, but more importantly it’s a great argument about science and technology. Finally, <cite>Delta-V</cite> was the best new “popcorn” fiction I read—a lovely near-future romp which gently poked at the current crop of up-and-coming space barons.
 
