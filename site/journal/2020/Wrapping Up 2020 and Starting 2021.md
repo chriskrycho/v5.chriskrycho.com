@@ -8,7 +8,10 @@ qualifiers:
     People who like reading year-in-review summaries. (I think that’s mostly just me, a few years in the future!)
 
 date: 2020-12-31T11:05:00-0700
-updated: 2020-12-31T11:26:00-0700
+updated: 2020-12-31T11:39:00-0700
+image: https://images.unsplash.com/photo-1591174425156-fd472f354be4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80
+thanks: >
+  Credit to [@rohankrishnann](https://unsplash.com/@rohankrishnann) for the social media cover image!
 
 tags:
   - annual reflections
