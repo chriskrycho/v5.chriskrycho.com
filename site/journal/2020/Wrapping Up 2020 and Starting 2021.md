@@ -26,11 +26,14 @@ tags:
 ---
 This year was no one’s idea of fun, I think, and it certainly looked nothing like I hoped it might when I [kicked things off back in January](https://v5.chriskrycho.com/journal/decadal-kind-of-change/ "A Decadal Kind of Change"). It was a good year for me and for our in many ways nonetheless, despite the hardships we faced (and granting that our hardships have been mild compared to what many have faced). So, here at the end of the year, some reflections on 2020. Feel free to skip around  to whatever is interesting to you!
 
-- Reading
-- Writing
-- Podcasting
-- Health & Fitness
-- Work
+- [Reading](#reading)
+- [Writing](#writing)
+- [Podcasting](#podcasting)
+- [Health & Fitness](#health--fitness)
+- [Work](#work)
+    - [LinkedIn](#linkedin)
+    - [<b><i>re</i>write</b>](#bireiwriteb)
+- [Looking Forward](#looking-forward)
 
 ## Reading
 
