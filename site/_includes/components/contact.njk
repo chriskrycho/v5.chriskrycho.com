@@ -1,0 +1,15 @@
+{#
+   This is formatted the way it is to prevent it from being processed as a Markdown code
+   block once rendered into a template!
+#}
+{% macro contact(form, requestDescription) %}
+<form class='contact-form' name='{{form}}' action='/{{form}}/success/' data-netlify="true">
+   <label for='name'>Your name</label>
+   <input name='name' type='text'/>
+   <label for='email'>Your email address</label>
+   <input name='email' type='email'/>
+   <label for='description'>{{requestDescription}}</label>
+   <textarea name='description'></textarea>
+   <button class='contact-form__submit' type='submit'>Send</button>
+</form>
+{% endmacro %}

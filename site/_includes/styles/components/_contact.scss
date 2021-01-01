@@ -1,0 +1,55 @@
+.contact-form {
+   max-width: var(--max-width);
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+   column-gap: 1em;
+   row-gap: 0.5em;
+
+   font-family: var(--sans);
+   font-weight: 300;
+
+   label {
+      grid-column: span 1;
+   }
+
+   input,
+   textarea {
+      grid-column: span 2;
+      border: 1px solid var(--main-border);
+      color: var(--fg);
+      background: var(--bg);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 16px; // no zoom on mobile!
+      padding: 0.25em;
+      line-height: var(--line-height);
+
+      &:focus {
+         border-color: var(--blue-3);
+         outline: none;
+      }
+   }
+
+   &__submit {
+      grid-column: span 2;
+      border: 1px solid var(--main-border);
+      background: var(--kbd-bg);
+      color: var(--kdb-fg);
+      box-shadow: 1px 1px 0 var(--kbd-shadow);
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: bold;
+      line-height: var(--line-height);
+   }
+}
+
+@media screen and (min-width: 360px) {
+   .contact-form {
+      &__submit {
+         grid-column: span 2 / -1;
+      }
+   }
+}
