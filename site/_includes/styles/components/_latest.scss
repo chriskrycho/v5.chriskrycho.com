@@ -6,8 +6,7 @@
       width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template:
-         ". latest ." auto / minmax(5.5rem, 1fr) minmax(min-content, 32rem) 1fr;
+      grid-template: '. latest .' auto / minmax(5.5rem, 1fr) minmax(min-content, 32rem) 1fr;
    }
 
    .latest-title {
@@ -15,7 +14,7 @@
       display: block;
       font-weight: bold;
       line-height: 1;
-      font-size: calc(var(--sans-adjust) * #{ms(0)});
+      font-size: calc(var(--sans-adjust) * 1rem);
 
       font-family: var(--sans);
       text-transform: uppercase;
@@ -41,12 +40,14 @@
       margin: {
          left: auto;
          right: auto;
-         bottom: ms(1)
+         bottom: ms(1);
       }
       list-style-type: none;
       display: grid;
-      grid-template:
-         "collection entry ." auto / minmax(5rem, 1fr) minmax(min-content, 32rem) 1fr;
+      grid-template: 'collection entry .' auto / minmax(5rem, 1fr) minmax(
+            min-content,
+            32rem
+         ) 1fr;
       gap: 0 0.5rem;
       justify-content: stretch;
       justify-items: stretch;
@@ -83,7 +84,8 @@
          -moz-text-decoration-color: transparent;
          text-decoration-color: transparent;
 
-         &:hover, &:active {
+         &:hover,
+         &:active {
             -moz-text-decoration-color: var(--hover-underline);
             text-decoration-color: var(--hover-underline);
          }
@@ -111,7 +113,7 @@
       line-height: calc(var(--sans-adjust) * 1.1);
 
       &__text {
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
       }
 
       &__date {

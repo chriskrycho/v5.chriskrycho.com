@@ -22,8 +22,10 @@
       width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template:
-         ". year ." auto / minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
+      grid-template: '. year .' auto / minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(
+            7rem,
+            1fr
+         );
       background-color: var(--bg);
 
       position: sticky;
@@ -37,7 +39,7 @@
       display: block;
       font-weight: bold;
       line-height: 1;
-      font-size: calc(var(--sans-adjust) * #{ms(0)});
+      font-size: calc(var(--sans-adjust) * 1rem);
 
       &::after {
          --padding: #{ms(-2)};
@@ -56,12 +58,11 @@
       margin: {
          left: auto;
          right: auto;
-         bottom: ms(7)
+         bottom: ms(7);
       }
       list-style-type: none;
       display: grid;
-      grid-template:
-         "title entries ." auto / 1fr minmax(min-content, 36rem) 1fr;
+      grid-template: 'title entries .' auto / 1fr minmax(min-content, 36rem) 1fr;
       gap: 0 1rem;
       justify-content: stretch;
       justify-items: stretch;
@@ -92,7 +93,7 @@
 
    .day {
       display: grid;
-      grid-template: "day entries" auto / 1rem minmax(8em, 1fr);
+      grid-template: 'day entries' auto / 1rem minmax(8em, 1fr);
       gap: 0 1rem;
       margin: 0 0 ms(1);
       width: 100%;
@@ -112,7 +113,9 @@
       top: 3.2em;
    }
 
-   .year-title, .month-title, .day-title {
+   .year-title,
+   .month-title,
+   .day-title {
       color: var(--h2-fg);
    }
 
@@ -138,7 +141,7 @@
       position: relative;
 
       &__text {
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
       }
 
       &__date {
@@ -197,7 +200,10 @@
 @media screen and (max-width: $break-2) {
    .archive-list {
       .year-info {
-         grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(4rem, 1fr);
+         grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(
+               4rem,
+               1fr
+            );
       }
 
       .month {

@@ -59,7 +59,7 @@
          margin: auto;
          font: {
             family: var(--sans);
-            size: calc(var(--sans-adjust) * #{ms(0)});
+            size: calc(var(--sans-adjust) * 1rem);
          }
          color: var(--figure-fg);
       }
@@ -265,7 +265,7 @@
    h5 {
       font: {
          family: var(--sans);
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
          weight: 600;
       }
 
@@ -283,7 +283,7 @@
    h6 {
       font: {
          family: var(--sans);
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
          style: italic;
          weight: 300;
       }
@@ -412,7 +412,7 @@
       font: {
          family: var(--sans);
          weight: 300;
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
       }
       @include fancy-block(transparent, inherit, var(--side-border-width));
       border-left: var(--side-border-width) solid var(--blockquote-border);
@@ -444,7 +444,7 @@
       font: {
          family: var(--sans);
          weight: 300;
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
       }
 
       margin-bottom: ms(0);
@@ -464,7 +464,7 @@
          content: '—/ Aside /—';
       }
 
-      pre,
+      pre:not(.poetry),
       code {
          background: var(--bg);
       }
@@ -588,7 +588,7 @@
       --single-margin: var(--single-margin-sans);
    }
 
-   pre {
+   pre:not(.poetry) {
       @include fancy-block(var(--code-bg), var(--code-fg), var(--side-border-width));
       @include extra-vertical();
 
@@ -633,7 +633,7 @@
       font: {
          family: var(--sans);
          weight: 300;
-         size: calc(var(--sans-adjust) * #{ms(0)});
+         size: calc(var(--sans-adjust) * 1rem);
       }
       width: 100%;
       max-width: var(--max-width);
@@ -665,7 +665,7 @@
             }
          }
 
-         pre,
+         pre:not(.poetry),
          blockquote {
             padding: {
                left: calc(var(--side-padding) - var(--side-border-width));
