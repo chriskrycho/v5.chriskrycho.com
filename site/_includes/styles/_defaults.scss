@@ -99,7 +99,7 @@ code {
    color: var(--code-fg);
 }
 
-pre {
+pre:not(.poetry) {
    background: var(--code-bg);
    color: var(--code-fg);
    border-left: 2px solid var(--code-border);
