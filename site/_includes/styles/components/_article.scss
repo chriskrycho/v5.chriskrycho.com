@@ -50,9 +50,13 @@
    figure {
       width: 100%;
       margin: {
-         bottom: 1em;
          left: auto;
          right: auto;
+      }
+
+      padding: {
+         top: 1em;
+         bottom: 1em;
       }
 
       &.content-bleed {
@@ -705,7 +709,8 @@
          padding-bottom: ms(3);
 
          figure {
-            max-width: min(calc(1.5 * var(--max-width)), 90%);
+            // uses values from the modular scale.
+            max-width: min(calc(1.778 * var(--max-width)), 79%);
          }
       }
    }
