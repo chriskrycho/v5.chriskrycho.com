@@ -14,7 +14,7 @@ const build = (file) => () =>
             })
             .on('error', sass.logError),
       )
-      .pipe(dest('./site/styles'))
+      .pipe(dest('./site/_styles'))
 
 function style() {
    return build('./site/_includes/styles/style.scss')()
