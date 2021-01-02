@@ -2,13 +2,17 @@ const { src, dest, parallel, series, watch } = require('gulp')
 const sass = require('gulp-sass')
 const del = require('del')
 
-const build = file => () =>
+sass.compiler = require('sass')
+
+const build = (file) => () =>
    src(file)
       .pipe(
-         sass({
-            outputStyle: 'compressed',
-            sourceMap: true,
-         }).on('error', sass.logError),
+         sass
+            .sync({
+               outputStyle: 'compressed',
+               sourceMap: true,
+            })
+            .on('error', sass.logError),
       )
       .pipe(dest('./site/styles'))
 
