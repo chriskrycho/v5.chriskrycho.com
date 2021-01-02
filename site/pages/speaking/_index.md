@@ -1,6 +1,7 @@
 ---
 title: Speaking
 subtitle: I’d love to appear on your podcast or speak at your conference!
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/speaking.jpg
 permalink: /speaking/
 ---
 
