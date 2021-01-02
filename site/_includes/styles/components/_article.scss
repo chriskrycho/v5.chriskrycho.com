@@ -707,7 +707,9 @@
    @media (min-width: $reflow) {
       .content-block {
          padding-bottom: ms(3);
+      }
 
+      .article-content {
          // Use values from the modular scale to set the max width for images. Cap figures
          // and standalone images at that, while still having images *within* figures grow
          // to the full size of the figure.
@@ -723,6 +725,13 @@
             img {
                max-width: 100%;
             }
+         }
+      }
+
+      .archive-list,
+      .latest-list {
+         .article-content {
+            --img-max-width: 100%;
          }
       }
    }
