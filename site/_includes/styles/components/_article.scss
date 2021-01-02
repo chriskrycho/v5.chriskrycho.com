@@ -708,9 +708,21 @@
       .content-block {
          padding-bottom: ms(3);
 
+         // Use values from the modular scale to set the max width for images. Cap figures
+         // and standalone images at that, while still having images *within* figures grow
+         // to the full size of the figure.
+         --img-max-width: min(calc(1.778 * var(--max-width)), 79%);
+
+         img {
+            max-width: var(--img-max-width);
+         }
+
          figure {
-            // uses values from the modular scale.
-            max-width: min(calc(1.778 * var(--max-width)), 79%);
+            max-width: var(--img-max-width);
+
+            img {
+               max-width: 100%;
+            }
          }
       }
    }
