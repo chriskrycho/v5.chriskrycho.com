@@ -148,10 +148,11 @@ function config(config: Config): UserConfig {
    config.addShortcode('copyright', copyright)
 
    config.addPassthroughCopy('site/_redirects')
-   config.addPassthroughCopy('site/admin')
-   config.addPassthroughCopy('site/assets')
    config.addPassthroughCopy('site/robots.txt')
-   config.addPassthroughCopy('site/styles')
+   config.addPassthroughCopy({
+      'site/_assets': 'assets',
+      'site/_styles': 'styles',
+   })
 
    config.addCollection('live', (collection) => collection.getAllSorted().filter(isLive))
    config.addCollection('pages', (collection) =>
