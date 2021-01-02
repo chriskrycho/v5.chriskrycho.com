@@ -9,9 +9,9 @@
 {%- endblock extra_links %}
 
 {% block meta %}
-{{ meta(collections.live | current(page), config) }}
+{# Hack to work around the fact that 11ty doesn't hand you useful data at `page` #}
+{{ meta(collections.all | current(page), config) }}
 {% endblock meta%}
-
 
 {%- block main -%}
 <article class='content-block post'>
