@@ -12,6 +12,8 @@
    },
    "devDependencies": {
       "@11ty/eleventy": "^0.12.1",
+      "@rollup/plugin-node-resolve": "^13.0.4",
+      "@rollup/plugin-typescript": "^8.2.5",
       "@types/cheerio": "^0.22.30",
       "@types/gulp-dart-sass": "^1.0.1",
       "@types/luxon": "^1.27.1",
@@ -28,6 +30,7 @@
       "eslint": "7.30.0",
       "eslint-config-prettier": "^8.3.0",
       "eslint-plugin-prettier": "^3.4.0",
+      "eslint-plugin-svelte3": "^3.2.0",
       "gulp": "^4.0.2",
       "gulp-dart-sass": "^1.0.2",
       "highlight.js": "^11.0.1",
@@ -41,8 +44,14 @@
       "markdown-it-implicit-figures": "^0.10.0",
       "markdown-it-sup": "^1.0.0",
       "prettier": "^2.3.2",
+      "prettier-plugin-svelte": "^1.4.2",
+      "rollup": "^2.35.1",
+      "rollup-plugin-svelte": "^7.0.0",
+      "rollup-plugin-terser": "^7.0.2",
       "sass": "1.35.2",
       "striptags": "^3.2.0",
+      "svelte-check": "^1.1.24",
+      "svelte-preprocess": "^4.6.1",
       "true-myth": "^4.1.1",
       "ts-node": "^10.1.0",
       "typescript": "4.4.0-beta",
@@ -52,7 +61,8 @@
    "eslintConfig": {
       "parser": "@typescript-eslint/parser",
       "plugins": [
-         "@typescript-eslint"
+         "@typescript-eslint",
+         "svelte3"
       ],
       "extends": [
          "eslint:recommended",
@@ -70,25 +80,46 @@
       "overrides": [
          {
             "files": [
-               "gulpfile.js"
+               "gulpfile.js",
+               "svelte.config.js",
+               "rollup.config.js"
             ],
             "rules": {
                "@typescript-eslint/no-var-requires": "off",
                "@typescript-eslint/explicit-function-return-type": "off"
             }
+         },
+         {
+            "files": [
+               "scripts/*.js"
+            ],
+            "env": {
+               "node": false,
+               "browser": true
+            }
+         },
+         {
+            "files": [
+               "*.svelte"
+            ],
+            "processor": "svelte3/svelte3"
          }
       ]
    },
    "prettier": {
       "singleQuote": true,
       "printWidth": 90,
-      "trailingComma": "all"
+      "trailingComma": "all",
+      "svelteSortOrder": "styles-scripts-markup",
+      "svelteBracketNewLine": true,
+      "svelteAllowShorthand": true,
+      "svelteIndentScriptAndStyle": true
    },
    "scripts": {
       "build:styles": "gulp all",
       "build:site": "eleventy",
-      "build": "npm run build:styles && npm run build:site -- --quiet",
-      "watch:site": "env DEV=true eleventy --quiet --watch",
+      "build:scripts": "tsc --project scripts/tsconfig.json",
+      "build": "npm run build:scripts && npm run build:styles && npm run build:site -- --quiet",
       "watch:styles": "gulp watch",
       "watch": "npm run watch:site && npm run watch:styles",
       "serve": "env DEV=true eleventy --quiet --serve",

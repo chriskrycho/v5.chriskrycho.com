@@ -1,6 +1,8 @@
 public
 .DS_Store
 
+site/assets/js/theme.js
+site/_assets/js/theme.js
 site/_includes/styles/*.css
 site/_includes/_styles/*.css
 site/styles/*.css
