@@ -46,17 +46,21 @@
       margin-right: auto;
    }
 
+   // default to full-bleed
    figure {
       width: 100%;
-      margin {
+      margin: {
          bottom: 1em;
          left: auto;
          right: auto;
       }
 
+      &.content-bleed {
+         max-width: var(--max-width);
+      }
+
       figcaption {
          text-align: center;
-         margin: auto;
          font: {
             family: var(--sans);
             size: calc(var(--sans-adjust) * 1rem);
@@ -701,7 +705,7 @@
          padding-bottom: ms(3);
 
          figure {
-            max-width: 90%;
+            max-width: min(calc(1.5 * var(--max-width)), 90%);
          }
       }
    }
