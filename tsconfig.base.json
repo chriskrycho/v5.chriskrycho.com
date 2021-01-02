@@ -1,0 +1,37 @@
+{
+   "compilerOptions": {
+      /* Basic Options */
+      "target": "es2019",
+      "module": "commonjs",
+      "lib": ["es2019"] /* Specify library files to be included in the compilation. */,
+      "checkJs": true /* Report errors in .js files. */,
+      "allowJs": true,
+
+      /* Strict Type-Checking Options */
+      "strict": true /* Enable all strict type-checking options. */,
+
+      /* Additional Checks */
+      "noUnusedLocals": true /* Report errors on unused locals. */,
+      "noUnusedParameters": true /* Report errors on unused parameters. */,
+      "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+      "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+
+      /* Module Resolution Options */
+      "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+      "paths": {
+         "*": ["types/*"]
+      } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
+      // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+      "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+      // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
+
+      /* Source Map Options */
+      // "sourceRoot": "",                      /* Specify the location where debugger should locate TypeScript files instead of source locations. */
+      // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
+      // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
+      // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+
+      /* Experimental Options */
+      "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
+   }
+}

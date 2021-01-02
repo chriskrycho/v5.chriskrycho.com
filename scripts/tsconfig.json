@@ -1,0 +1,13 @@
+{
+   "extends": "../tsconfig.base.json",
+   "compilerOptions": {
+      "removeComments": true,
+      "lib": ["dom", "es2019"],
+      "noEmit": false,
+      "inlineSources": true,
+      "sourceMap": true,
+      "baseUrl": "scripts"
+   },
+   "files": ["preferences.ts"],
+   "include": ["scripts"]
+}

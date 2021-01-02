@@ -1,8 +1,8 @@
 ---
 title: Color Schemes!
 subtitle: >
-    A few notes on pairing <code>prefers-color-scheme</code> and user configurability.
-date: 2019-12-07T11:45
+    A few notes on pairing `prefers-color-scheme` and user configurability.
+date: 2020-12-30T12:00
 tags:
 - JavaScript
 - TypeScript
@@ -11,11 +11,9 @@ tags:
 
 ---
 
-When redesigning this site, I knew I wanted to take advantage of macOS' and Windows' recent ability to support dark mode in the website (with the new CSS media query [`prefers-color-scheme`]). However, I also knew that I wanted to make things user-configurable. As same time I publish this post, I have also added a tiny bit of JavaScript to the site that lets users override their operating system default to view the site in its light or dark theme as they please.
+When redesigning this site, I knew I wanted to take advantage of macOS' and Windows' recently-added ability to support dark mode in the website (with the new <abbr title="cascading style sheets">CSS</abbr> media query [`prefers-color-scheme`]). However, I also knew that I wanted to make it user-configurable. It took me over a year, but at last—at the same time as same time I publish this post—I have also added a tiny bit of JavaScript to the site that lets users override their operating system default to view the site in its light or dark theme as they please.
 
-[`prefers-color-scheme`]: TODO
-
-*[CSS]: cascading style sheets
+[`prefers-color-scheme`]: http://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 
 As is my habit when I deal with a question of how to implement something like this, I built out a table to capture how this should work:
 
@@ -31,15 +29,13 @@ As is my habit when I deal with a question of how to implement something like th
 | dark                   | light               | light  |
 | dark                   | dark                | dark   |
 
-This isn't complicated, <i>per se</i>… but it it *does* require some thought to make sure it works just right and that the CSS and JS interact correctly.
+This isn't complicated, <i>per se</i>… but it it *does* require some thought to make sure it works just right and that the <abbr>CSS</abbr> and <abbr title="JavaScript">JS</abbr> interact correctly.
 
-*[JS]: JavaScript
+## <abbr>CSS</abbr>
 
-## CSS
+On the <abbr>CSS</abbr> side of things, it was important that there be *one* definition of what the light and dark color schemes are, and then that the `prefers-color-scheme` and a <abbr>CSS</abbr> class both use that same definition. That way, I don't have to try to keep multiple definitions in sync.
 
-On the CSS side of things, it was important that there be *one* definition of what the light and dark color schemes are, and then that the `prefers-color-scheme` and a CSS class both use that same definition. That way, I don't have to try to keep multiple definitions in sync.
-
-To make this work, I combined the power of [CSS Custom Properties] and an [SCSS] mixin. The custom properties define the set of colors in play throughout the site: foreground, background, borders, link colors, etc. The mixin then applies those custom properties to the style selectors. As a simplified example:
+To make this work, I combined the power of [<abbr>CSS</abbr> Custom Properties][custom-properties] and an [<abbr title="sassy CSS">SCSS</abbr>][SCSS] mixin. The custom properties define the set of colors in play throughout the site: foreground, background, borders, link colors, etc. The mixin then applies those custom properties to the style selectors. As a simplified example:
 
 ```scss
 @mixin light {
@@ -66,19 +62,15 @@ Then for the slightly tricky bit—applying these to the appropriate selectors. 
 }
 ```
 
-[CSS Custom Properties]: TODO
-[SCSS]: TODO
-
-*[SCSS]: TODO
+[custom-properties]: http://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+[SCSS]: https://sass-lang.com
 
 ## JavaScript
 
-Because I did the hard work of pushing all the complexity into the CSS, the JS ends up being very simple. It only really has two responsibilities:
+Because I did the hard work of pushing all the complexity into the <abbr>CSS</abbr>, the <abbr>JS</abbr> ends up being very simple. It only really has two responsibilities:
 
-1. setting or clearing the `.light` or `.dark` classes when the user interacts with the UI element
+1. setting or clearing the `.light` or `.dark` classes when the user interacts with the <abbr title="user interface">UI</abbr> element
 2. if the user has specified an override, storing that decision somewhere to look it up when the site loads
-
-*[UI]: user interface
 
 ### Responding to the user setting
 
