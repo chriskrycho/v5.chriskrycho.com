@@ -8,7 +8,7 @@ qualifiers:
     People who like reading year-in-review summaries. (I think that’s mostly just me, a few years in the future!)
 
 date: 2020-12-31T11:05:00-0700
-updated: 2021-01-01T10:36:00-0700
+updated: 2021-01-03T11:37:00-0700
 image: https://images.unsplash.com/photo-1591174425156-fd472f354be4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80
 thanks: >
   Credit to [@rohankrishnann](https://unsplash.com/@rohankrishnann) for the social media cover image!
@@ -110,7 +110,7 @@ Finally, I wrote a *lot* of posts focused on helping other [Ember](https://ember
 
 This year went almost perfectly for [Winning Slowly](https://winningslowly.org). We read 11 books and [discussed all of them](https://winningslowly.org/season-8.html) on air. The last two episodes came out two weeks later than they should have but otherwise we not only published all the episodes we had planned but did so *on schedule*. It was the best we’ve ever done. Now I’m exhausted and we’re going to take a long break. But I’m proud of the work we’ve done here. While I don’t know exactly when Winning Slowly will return, I do have high confidence Stephen and I will be back at some point.
 
-I also appeared on [the opening episode](https://anchor.fm/humans-of-open-source/episodes/Chris-Krycho-on-Life-Post-New-Rustacean-emh815) of Sean Chen’s podcast [<cite>Humans of Open Source</cite>](https://anchor.fm/humans-of-open-source), which was a delight. I am actively looking to appear on others’ podcasts in the year ahead—on subjects both technical and theological. I’ve gotten a number of speaking requests late this year and I’m interested in making speaking a more regular part of my public presence going forward, so I’ll be putting up a **Speaking** page shortly. Between now and when my that page goes up, feel free to just [reach out via email](mailto:hello@chriskrycho.com?subject=Speaking) if you’re interested in having me on—I’m well set-up for both audio and video now!
+I also appeared on [the opening episode](https://anchor.fm/humans-of-open-source/episodes/Chris-Krycho-on-Life-Post-New-Rustacean-emh815) of Sean Chen’s podcast [<cite>Humans of Open Source</cite>](https://anchor.fm/humans-of-open-source), which was a delight. I am actively looking to appear on others’ podcasts in the year ahead—on subjects both technical and theological. I’ve gotten a number of speaking requests late this year and I’m interested in making speaking a more regular part of my public presence going forward, so I’ve added up a **Speaking** page; feel free to get in touch via that page if you’re interested in having me speak—I’m well set-up for both audio and video now!
 
 ## Health & Fitness
 
