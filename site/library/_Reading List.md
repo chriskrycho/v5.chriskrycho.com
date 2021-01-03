@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-01-02T16:55:00-0600
+date: 2021-01-03T13:32:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -68,11 +68,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
-- <cite>The Hobbit</cite>, J.R.R. Tolkien (reread… with my daughter!)
 
 ## 2021
 
-Inbound!
+- <cite>The Hobbit</cite>, J.R.R. Tolkien (reread… with my daughter!)
 
 ## 2020
 
