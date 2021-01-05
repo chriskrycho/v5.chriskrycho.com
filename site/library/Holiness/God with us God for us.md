@@ -2,7 +2,7 @@
 title: God with us, God for us
 date: 2021-01-05T07:45:00-0700
 summary: >
-  John Webster: “”
+  John Webster on trinitarian holiness as God with us and for us: electing, securing, rescuing, befriending, burden-bearing, redeeming, reconciling, perfecting, sanctifying.
 tags:
   - mercy
   - holiness
