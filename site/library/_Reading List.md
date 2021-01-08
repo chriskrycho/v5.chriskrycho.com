@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-01-07T21:17:00-0700
+date: 2021-01-07T21:20:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -66,14 +66,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
+- <cite>The Lord of the Rings: The Fellowship of the Ring</cite>, J.R.R. Tolkien (reread… with my daughter!)
+
 ## 2021
 
 - <cite>The Hobbit</cite>, J.R.R. Tolkien (reread… with my daughter!)
 
 - [<cite>Holiness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780802822154), John Webster (new)
     - [posts on the book](/topics/holiness-book/)
-
-- <cite>The Lord of the Rings: The Fellowship of the Ring</cite>, J.R.R. Tolkien (reread… with my daughter!)
 
 
 ## 2020
