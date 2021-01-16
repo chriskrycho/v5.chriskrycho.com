@@ -1,6 +1,6 @@
-import JSONFeed from '../../eleventy/feed'
+import JSONFeed from '../../eleventy/feed';
 
 module.exports = class JournalFeed extends JSONFeed {
-   collection = 'journal'
-   title = 'Journal'
-}
+   collection = 'journal';
+   title = 'Journal';
+};

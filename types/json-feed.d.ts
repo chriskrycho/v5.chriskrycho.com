@@ -3,13 +3,13 @@ export interface JsonFeed {
       The URL of the version of the format the feed uses. This should appear at the very
       top, though we recognize that not all JSON generators allow for ordering.
     */
-   version: 'https://jsonfeed.org/version/1'
+   version: 'https://jsonfeed.org/version/1';
 
    /**
       The name of the feed, which will often correspond to the name of the website (blog,
       for instance), though not necessarily
     */
-   title: string
+   title: string;
 
    /**
       (optional but strongly recommended) The URL of the resource that the feed describes.
@@ -18,26 +18,26 @@ export interface JsonFeed {
       required. But it may not make sense in the case of a file created on a desktop
       computer, when that file is not shared or is shared only privately.
     */
-   home_page_url?: string
+   home_page_url?: string;
 
    /**
       (optional but strongly recommended) The URL of the feed, and serves as the unique
       identifier for the feed. As with `home_page_url`, this should be considered required
       for feeds on the public web.
     */
-   feed_url?: string
+   feed_url?: string;
 
    /**
       Provides more detail, beyond the `title`, on what the feed is about. A feed reader
       may display this text.
     */
-   description?: string
+   description?: string;
 
    /**
       Description of the purpose of the feed. This is for the use of people looking at
       the raw JSON, and should be ignored by feed readers.
     */
-   user_comment?: string
+   user_comment?: string;
 
    /**
       The URL of a feed that provides the next n items, where n is determined by the
@@ -46,7 +46,7 @@ export interface JsonFeed {
       be the same as `feed_url`, and it must not be the same as a previous `next_url`
       (to avoid infinite loops).
     */
-   next_url?: string
+   next_url?: string;
 
    /**
      The URL of an image for the feed suitable to be used in a timeline, much the way an
@@ -54,7 +54,7 @@ export interface JsonFeed {
      so that it can be scaled-down and so that it can look good on retina displays. It
      should use transparency where appropriate, since it may be rendered on a non-white background.
     */
-   icon?: string
+   icon?: string;
 
    /**
       The URL of an image for the feed suitable to be used in a source list. It should be
@@ -62,13 +62,13 @@ export interface JsonFeed {
       on retina displays). As with `icon`, this image should use transparency where
       appropriate, since it may be rendered on a non-white background.
     */
-   favicon?: string
+   favicon?: string;
 
    /**
       Specifies the feed author. The author object has several members. These are all
       optional ― but if you provide an author object, then at least one is required.
     */
-   author?: Author
+   author?: Author;
 
    /** 
       Says whether or not the feed is finished ― that is, whether or not it will ever
@@ -76,7 +76,7 @@ export interface JsonFeed {
       could expire. If the value is true, then it’s expired. Any other value, or the
       absence of expired, means the feed may continue to update.
     */
-   expired?: boolean
+   expired?: boolean;
 
    /**
       Describes endpoints that can be used to subscribe to real-time notifications from
@@ -85,10 +85,10 @@ export interface JsonFeed {
 
       [“Subscribing to Real-time Notifications”]: https://jsonfeed.org/version/1#subscribing-to-real-time-notifications
     */
-   hubs?: Hub[]
+   hubs?: Hub[];
 
    /** The items in the feed. */
-   items: FeedItem[]
+   items: FeedItem[];
 }
 
 export interface FeedItem {
@@ -99,25 +99,25 @@ export interface FeedItem {
       coerce it to a string. Ideally, the `id` is the full URL of the resource described by
       the item, since URLs make great unique identifiers.
     */
-   id: string
+   id: string;
 
    /**
       The URL of the resource described by the item. It’s the permalink. This may be the
       same as the id ― but should be present regardless.
     */
-   url?: string
+   url?: string;
 
    /**
       The URL of a page elsewhere. This is especially useful for linkblogs. If `url` links
       to where you’re talking about a thing, then `external_url` links to the thing you’re
       talking about.
     */
-   external_url?: string
+   external_url?: string;
 
    /**
       Plain text. Microblog items in particular may omit titles.
     */
-   title?: string
+   title?: string;
 
    /**
       The plain text of the item.
@@ -127,7 +127,7 @@ export interface FeedItem {
       whichever makes sense for your resource. (It doesn’t even have to be the same for
       each item in a feed.)
     */
-   content_text?: string
+   content_text?: string;
 
    /**
       The HTML of the item. Important: the only place HTML is allowed in this format is in
@@ -138,14 +138,14 @@ export interface FeedItem {
       whichever makes sense for your resource. (It doesn’t even have to be the same for
       each item in a feed.)
     */
-   content_html?: string
+   content_html?: string;
 
    /**
       A plain text sentence or two describing the item. This might be presented in a
       timeline, for instance, where a detail view would display all of `content_html` or
       `content_text`.
     */
-   summary?: string
+   summary?: string;
 
    /**
       The URL of the main image for the item. This image may also appear in the
@@ -153,7 +153,7 @@ export interface FeedItem {
       featured image. Feed readers may use the image as a preview (probably resized as a
       thumbnail and placed in a timeline).
     */
-   image?: string
+   image?: string;
 
    /**
       The URL of an image to use as a banner. Some blogging systems (such as [Medium])
@@ -164,48 +164,48 @@ export interface FeedItem {
 
       [Medium]: https://medium.com/
     */
-   banner_image?: string
+   banner_image?: string;
 
    /**
       Specifies the date in [RFC 3339] format. (Example: `2010-02-07T14:04:00-05:00`.)
 
       [RFC 3339]: https://www.ietf.org/rfc/rfc3339.txt
     */
-   date_published?: string
+   date_published?: string;
 
    /**
       Specifies the modification date in [RFC 3339] format.
 
       [RFC 3339]: https://www.ietf.org/rfc/rfc3339.txt
     */
-   date_modified?: string
+   date_modified?: string;
 
    /**
       The same structure as the top-level `author`. If not specified in an item, then the
       top-level `author`, if present, is the author of the item.
     */
-   author?: Author
+   author?: Author;
 
    /**
       Any plain text values you want. Tags tend to be just one word, but they may be
       anything. Note: they are not the equivalent of Twitter hashtags. Some blogging
       systems and other feed formats call these categories.
     */
-   tags?: string[]
+   tags?: string[];
 
    /**
       An individual item may have one or more attachments. List related resources.
       Podcasts, for instance, would include an attachment that’s an audio or video file.
     */
-   attachments?: Attachment[]
+   attachments?: Attachment[];
 }
 
 export interface Attachment {
    /** Specifies the location of the attachment. */
-   url: string
+   url: string;
 
    /** Specifies the type of the attachment, such as “audio/mpeg.” */
-   mime_type: string
+   mime_type: string;
 
    /**
       A name for the attachment. Important: if there are multiple attachments, and two or
@@ -213,17 +213,17 @@ export interface Attachment {
       as alternate representations of the same thing. In this way a podcaster, for
       instance, might provide an audio recording in different formats.
     */
-   title?: string
+   title?: string;
 
    /**
       Specifies how large the file is.
     */
-   size_in_bytes?: number
+   size_in_bytes?: number;
 
    /**
       Specifies how long it takes to listen to or watch, when played at normal speed
     */
-   duration_in_seconds?: number
+   duration_in_seconds?: number;
 }
 
 /**
@@ -237,7 +237,7 @@ export interface Attachment {
  */
 export interface Author {
    /** The author’s name */
-   name?: string
+   name?: string;
 
    /**
       The URL of a site owned by the author. It could be a blog, micro-blog, Twitter
@@ -245,14 +245,14 @@ export interface Author {
       but that’s not required. The URL could be a mailto: link, though we suspect that
       will be rare.
     */
-   url?: string
+   url?: string;
 
    /**
       The URL for an image for the author. As with icon, it should be square and
       relatively large ― such as 512 x 512 ― and should use transparency where
       appropriate, since it may be rendered on a non-white background.
     */
-   avatar?: string
+   avatar?: string;
 }
 
 /**
@@ -272,9 +272,9 @@ export interface Author {
          the JSON Feed website
  */
 export interface Hub {
-   type: string
-   topic: string
-   [key: string]: unknown
+   type: string;
+   topic: string;
+   [key: string]: unknown;
 }
 
-export default JsonFeed
+export default JsonFeed;

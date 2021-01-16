@@ -1,64 +1,64 @@
-import stripTags from 'striptags'
+import stripTags from 'striptags';
 
-import { Dict, EleventyClass, Item } from '../types/eleventy'
-import JsonFeed, { FeedItem } from '../types/json-feed'
-import absoluteUrl from './absolute-url'
-import { canParseDate } from './date-time'
-import isoDate from './iso-date'
-import siteTitle from './site-title'
-import toCollection from './to-collection'
-import markdown from './markdown'
-import localeDate from './locale-date'
-import { DateTime } from 'luxon'
+import { Dict, EleventyClass, Item } from '../types/eleventy';
+import JsonFeed, { FeedItem } from '../types/json-feed';
+import absoluteUrl from './absolute-url';
+import { canParseDate } from './date-time';
+import isoDate from './iso-date';
+import siteTitle from './site-title';
+import toCollection from './to-collection';
+import markdown from './markdown';
+import localeDate from './locale-date';
+import { DateTime } from 'luxon';
 
-type BuildInfo = typeof import('../site/_data/build')
-type SiteConfig = typeof import('../site/_data/config')
+type BuildInfo = typeof import('../site/_data/build');
+type SiteConfig = typeof import('../site/_data/config');
 
 /** Defensive function in case handed bad data */
 const optionalString = (value: unknown): string | undefined =>
-   typeof value === 'string' ? value : undefined
+   typeof value === 'string' ? value : undefined;
 
 interface Book {
-   title: string
-   author: string
-   year?: number | string
+   title: string;
+   author: string;
+   year?: number | string;
    review?: {
       rating:
          | 'Required'
          | 'Recommended'
          | 'Recommended With Qualifications'
-         | 'Not Recommended'
-      summary: string
-   }
-   cover?: string
-   link?: string
+         | 'Not Recommended';
+      summary: string;
+   };
+   cover?: string;
+   link?: string;
 }
 
 /** Extending the base Eleventy item with my own data */
 declare module '../types/eleventy' {
    interface Data {
-      title?: string
-      subtitle?: string
-      summary?: string
-      tags?: string[]
-      date?: string | Date
-      updated?: string | Date
+      title?: string;
+      subtitle?: string;
+      summary?: string;
+      tags?: string[];
+      date?: string | Date;
+      updated?: string | Date;
       qualifiers?: {
-         audience?: string
-         epistemic?: string
-      }
-      image?: string
-      link?: string
-      splash?: string
-      book?: Book
-      standalonePage?: boolean
-      featured?: boolean
-      draft?: boolean
+         audience?: string;
+         epistemic?: string;
+      };
+      image?: string;
+      link?: string;
+      splash?: string;
+      book?: Book;
+      standalonePage?: boolean;
+      featured?: boolean;
+      draft?: boolean;
       /**
        * Allow overriding the normal feed ID to enable keeping feed entries stable even if
        * the slug changes.
        */
-      feedId?: string
+      feedId?: string;
    }
 }
 
@@ -70,18 +70,18 @@ type TypeOf =
    | 'bigint'
    | 'string'
    | 'symbol'
-   | 'function'
+   | 'function';
 
 function hasType<T extends TypeOf>(type: T, item: unknown): item is T {
-   return typeof item === type
+   return typeof item === type;
 }
 
 function isBook(maybeBook: unknown): maybeBook is Book {
    if (typeof maybeBook !== 'object' || !maybeBook) {
-      return false
+      return false;
    }
 
-   const maybe = maybeBook as Dict<unknown>
+   const maybe = maybeBook as Dict<unknown>;
 
    return (
       typeof maybe.title === 'string' &&
@@ -90,26 +90,26 @@ function isBook(maybeBook: unknown): maybeBook is Book {
       hasType('object', maybe.review) &&
       hasType('string', maybe.cover) &&
       hasType('string', maybe.link)
-   )
+   );
 }
 
 function describe(book: Book): string {
    const linked = (content: string): string =>
-      book.link ? `<a href='${book.link}' rel='nofollow'>${content}</a>` : content
+      book.link ? `<a href='${book.link}' rel='nofollow'>${content}</a>` : content;
 
-   const year = book.year ? ` (${book.year})` : ''
+   const year = book.year ? ` (${book.year})` : '';
 
-   const title = linked(`<cite>${book.title}</cite>`)
-   const bookInfo = `<p>${title}, ${book.author}${year}</p>`
+   const title = linked(`<cite>${book.title}</cite>`);
+   const bookInfo = `<p>${title}, ${book.author}${year}</p>`;
    const review = book.review
       ? `<p><b>${book.review.rating}:</b> ${book.review.summary}</p>`
-      : ''
+      : '';
 
-   return `${bookInfo}\n${review}`
+   return `${bookInfo}\n${review}`;
 }
 
 function entryTitleFor(item: Item): string {
-   return item.data?.title ?? localeDate(item.date, 'yyyy.MM.dd.HHmm')
+   return item.data?.title ?? localeDate(item.date, 'yyyy.MM.dd.HHmm');
 }
 
 function contentHtmlFor(
@@ -120,44 +120,44 @@ function contentHtmlFor(
    const subtitle =
       typeof item.data?.subtitle === 'string'
          ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
-         : ''
+         : '';
 
    const audience =
       typeof item.data?.qualifiers?.audience === 'string'
          ? `<p><b>Assumed audience:</b> ${markdown.renderInline(
               item.data.qualifiers.audience,
            )}</p>`
-         : ''
+         : '';
 
    const epistemicStatus =
       typeof item.data?.qualifiers?.epistemic === 'string'
          ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
               item.data.qualifiers.epistemic,
            )}</p>`
-         : ''
+         : '';
 
-   const book = item.data?.book
-   const bookInfo = isBook(book) ? describe(book) : ''
+   const book = item.data?.book;
+   const bookInfo = isBook(book) ? describe(book) : '';
 
    const reply = includeReplyViaEmail
       ? ((): string => {
-           const replySubject = encodeURIComponent(entryTitleFor(item))
-           const replyUrl = `mailto:${config.author.email}?subject=${replySubject}`
-           return `<hr/><p><a href="${replyUrl}">Reply via email!</a></p>`
+           const replySubject = encodeURIComponent(entryTitleFor(item));
+           const replyUrl = `mailto:${config.author.email}?subject=${replySubject}`;
+           return `<hr/><p><a href="${replyUrl}">Reply via email!</a></p>`;
         })()
-      : ''
+      : '';
 
-   return subtitle + audience + epistemicStatus + bookInfo + item.templateContent + reply
+   return subtitle + audience + epistemicStatus + bookInfo + item.templateContent + reply;
 }
 
 function titleFor(item: Item): string | undefined {
-   const sectionMarker = toCollection(item.inputPath)
-   const { title } = item.data ?? {}
-   return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined
+   const sectionMarker = toCollection(item.inputPath);
+   const { title } = item.data ?? {};
+   return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined;
 }
 
 function summaryFor(item: Item): string {
-   return item.data?.summary ?? item.data?.subtitle ?? stripTags(item.templateContent)
+   return item.data?.summary ?? item.data?.subtitle ?? stripTags(item.templateContent);
 }
 
 /**
@@ -192,15 +192,15 @@ const toFeedItemGivenConfig = (config: SiteConfig, includeReplyViaEmail: boolean
               optionalString(item.data?.book?.cover) ??
               optionalString(item.data?.image),
         }
-      : null
+      : null;
 
 type JSONFeedConfig = {
-   items: Item[]
-   config: SiteConfig
-   permalink: string
-   title: string
-   includeReplyViaEmail: boolean
-}
+   items: Item[];
+   config: SiteConfig;
+   permalink: string;
+   title: string;
+   includeReplyViaEmail: boolean;
+};
 
 /**
    Generate a JSON Feed compliant object for a given set of items.
@@ -228,27 +228,27 @@ const jsonFeed = ({
             DateTime.fromISO(b as string).toMillis() -
             DateTime.fromISO(a as string).toMillis(),
       ),
-})
+});
 
 interface EleventyData {
    collections: {
-      all: Item[]
-      [key: string]: Item[] | undefined
-   }
-   config: SiteConfig
-   page: Item
-   pages: BuildInfo[]
-   permalink?: string
+      all: Item[];
+      [key: string]: Item[] | undefined;
+   };
+   config: SiteConfig;
+   page: Item;
+   pages: BuildInfo[];
+   permalink?: string;
 }
 
-type ClassData = ReturnType<NonNullable<EleventyClass['data']>>
+type ClassData = ReturnType<NonNullable<EleventyClass['data']>>;
 
 export class JSONFeed implements EleventyClass {
-   declare collection?: string
-   declare title?: string
-   declare permalink?: string
+   declare collection?: string;
+   declare title?: string;
+   declare permalink?: string;
 
-   includeReplyViaEmail = true
+   includeReplyViaEmail = true;
 
    data(): ClassData {
       return {
@@ -258,14 +258,14 @@ export class JSONFeed implements EleventyClass {
             return (
                this.permalink ??
                (this.collection ? `/${this.collection}/feed.json` : '/feed.json')
-            )
+            );
          },
-      }
+      };
    }
 
    render({ collections, config, page }: EleventyData): string {
-      const collection = this.collection ?? 'live'
-      const title = this.title ?? config.title.normal
+      const collection = this.collection ?? 'live';
+      const title = this.title ?? config.title.normal;
       return JSON.stringify(
          jsonFeed({
             items: collections[collection] ?? [],
@@ -274,8 +274,8 @@ export class JSONFeed implements EleventyClass {
             title,
             includeReplyViaEmail: this.includeReplyViaEmail,
          }),
-      )
+      );
    }
 }
 
-export default JSONFeed
+export default JSONFeed;
