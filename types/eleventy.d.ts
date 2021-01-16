@@ -1,12 +1,12 @@
-type ServeStaticOptions = import('serve-static').ServeStaticOptions
+type ServeStaticOptions = import('serve-static').ServeStaticOptions;
 
 // ---- Utility types
 interface Dict<T = unknown> {
-   [key: string]: T | undefined
+   [key: string]: T | undefined;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type AnyFunction<T = any> = (...args: any[]) => T
+type AnyFunction<T = any> = (...args: any[]) => T;
 
 // ---- Eleventy types
 interface BrowserSyncConfig {
@@ -14,69 +14,69 @@ interface BrowserSyncConfig {
    ui?:
       | false
       | {
-           port: number
+           port: number;
            weinre?: {
-              port: number
-           }
-        }
+              port: number;
+           };
+        };
 
    files?:
       | string
       | Array<
            | string
            | {
-                match?: string[]
-                fn?: (event: unknown, file: string) => unknown
+                match?: string[];
+                fn?: (event: unknown, file: string) => unknown;
              }
         >
-      | false
+      | false;
 
-   watchEvents?: string[]
-   watch?: boolean
-   ignore?: string[]
-   single?: boolean
+   watchEvents?: string[];
+   watch?: boolean;
+   ignore?: string[];
+   single?: boolean;
    watchOptions?: {
-      ignoreInitial?: boolean
-      ignored?: boolean
-   }
+      ignoreInitial?: boolean;
+      ignored?: boolean;
+   };
    server?:
       | boolean
       | string
       | string[]
       | {
-           baseDir?: string
-           directory?: boolean
-           serveStaticOptions?: ServeStaticOptions
-           routes?: Dict<string>
-        }
+           baseDir?: string;
+           directory?: boolean;
+           serveStaticOptions?: ServeStaticOptions;
+           routes?: Dict<string>;
+        };
 
    /* eslint-disable @typescript-eslint/no-explicit-any */
    proxy?:
       | string
       | boolean
       | {
-           target?: string
-           ws?: boolean
-           middleware?: any
-           reqHeaders?: string[]
-           proxyReq?: any
-           proxyRes?: any
-        }
+           target?: string;
+           ws?: boolean;
+           middleware?: any;
+           reqHeaders?: string[];
+           proxyReq?: any;
+           proxyRes?: any;
+        };
    /* eslint-enable @typescript-eslint/no-explicit-any */
 }
 
-type Empty = { isEmpty: true; empty: string } | { isEmpty: false }
+type Empty = { isEmpty: true; empty: string } | { isEmpty: false };
 
 type GrayMatter = {
-   content: string
-   excerpt?: string
-   orig: Buffer
-   language: string
-   matter: string
-   stringify(): string
-} & Empty
+   content: string;
+   excerpt?: string;
+   orig: Buffer;
+   language: string;
+   matter: string;
+   stringify(): string;
+} & Empty;
 
-export type Engine = (input: string) => GrayMatter
+export type Engine = (input: string) => GrayMatter;
 
 export type EngineName =
    | 'html'
@@ -90,47 +90,47 @@ export type EngineName =
    | 'ejs'
    | 'haml'
    | 'pug'
-   | 'jstl'
+   | 'jstl';
 
 export interface Page {
    /** the full path to the source input file (including the path to the input directory) */
-   inputPath: string
+   inputPath: string;
    /**
       Mapped from the input file name, useful for permalinks. Read more about
       [`fileSlug`].
 
       [`fileSlug`]: https://www.11ty.io/docs/data/#fileslug
      */
-   fileSlug: string
+   fileSlug: string;
    /** the full path to the output file to be written for this content */
-   outputPath: string
+   outputPath: string;
    /** url used to link to this piece of content. */
-   url: string
+   url: string;
    /**
       the resolved date used for sorting. Read more about [Content Dates].
 
       [Content Dates]: https://www.11ty.io/docs/dates/
      */
-   date: string | Date
+   date: string | Date;
 }
 
 interface Data {
    collections: {
-      [key: string]: Item[] | undefined
-   }
+      [key: string]: Item[] | undefined;
+   };
 }
 
 /** An `Item` is just like a `Page`, but with the actual data from render available. */
 interface Item extends Page {
    /** all data for this piece of content (includes any data inherited from layouts) */
-   data?: Data
+   data?: Data;
 
    /** the rendered content of this template. This does *not• include layout wrappers */
-   templateContent: string
+   templateContent: string;
 }
 
 export interface Collection {
-   getAll(): Item[]
+   getAll(): Item[];
 
    /**
       Note that while Array `.reverse()` mutates the array in-place, all Eleventy
@@ -140,37 +140,37 @@ export interface Collection {
 
       [warning]: https://www.11ty.io/docs/collections/#array-reverse
     */
-   getAllSorted(): Item[]
+   getAllSorted(): Item[];
 
-   getFilteredByTag(tagName: string): Item[]
+   getFilteredByTag(tagName: string): Item[];
 
-   getFilteredByGlob(glob: string | string[]): Item[]
+   getFilteredByGlob(glob: string | string[]): Item[];
 }
 
 interface Renderer {
-   render(input: string): string
+   render(input: string): string;
 }
 
-type Raw<T = unknown> = string | Buffer | Promise<T>
+type Raw<T = unknown> = string | Buffer | Promise<T>;
 
 export interface EleventyClass {
    data?: () => {
-      excludeFromEleventyCollections?: boolean
-      standalonePage?: boolean
-      permalink?: (...args: unknown[]) => Raw
-      [key: string]: unknown
-   }
+      excludeFromEleventyCollections?: boolean;
+      standalonePage?: boolean;
+      permalink?: (...args: unknown[]) => Raw;
+      [key: string]: unknown;
+   };
 
-   render(...args: unknown[]): Raw
+   render(...args: unknown[]): Raw;
 }
 
 export interface Config {
    dir?: {
       /** Controls the top level directory/file/glob that we’ll use to look for templates. */
-      input?: string
+      input?: string;
 
       /** Controls the directory inside which the finished templates will be written to. */
-      output?: string
+      output?: string;
 
       /**
         The includes directory is meant for [Eleventy layouts], include files, extends
@@ -181,7 +181,7 @@ export interface Config {
 
         **Note:** This value is relative to your input directory.
        */
-      includes?: string
+      includes?: string;
 
       /**
         This configuration option is optional but useful if you want your [Eleventy
@@ -202,10 +202,10 @@ export interface Config {
 
         **Note:** This value is relative to your input directory.
        */
-      layouts?: string
+      layouts?: string;
 
-      data?: string
-   }
+      data?: string;
+   };
 
    /**
      The `data.dir` global data files run through this template engine before transforming
@@ -213,10 +213,10 @@ export interface Config {
 
      [Global Data Files]: https://www.11ty.io/docs/data-global/
     */
-   dataTemplateEngine?: EngineName | false
-   markdownTemplateEngine?: EngineName | false
-   htmlTemplateEngine?: EngineName | false
-   templateFormats?: EngineName[]
+   dataTemplateEngine?: EngineName | false;
+   markdownTemplateEngine?: EngineName | false;
+   htmlTemplateEngine?: EngineName | false;
+   templateFormats?: EngineName[];
 
    /**
       If your site lives in a different subdirectory (particularly useful with GitHub
@@ -225,24 +225,24 @@ export interface Config {
       structure. Leading or trailing slashes are all normalized away, so don’t worry about
       it.
     */
-   pathPrefix?: string
-   passthroughFileCopy?: boolean
-   htmlOutputSuffx?: string
-   jsDataFileSuffix?: string
+   pathPrefix?: string;
+   passthroughFileCopy?: boolean;
+   htmlOutputSuffx?: string;
+   jsDataFileSuffix?: string;
 
    addCollection(
       name: string,
       builder: (
          collection: Collection,
       ) => Page[] | Record<string, unknown> | Promise<Record<string, unknown>>,
-   ): void
+   ): void;
 
-   addFilter(name: string, filter: AnyFunction): string | void
+   addFilter(name: string, filter: AnyFunction): string | void;
 
    addTransform(
       name: string,
       transform: (content: string, outputPath: string) => string | Promise<string>,
-   ): string
+   ): string;
 
    addLinter(
       name: string,
@@ -251,31 +251,31 @@ export interface Config {
          inputPath: string,
          outputPath: string,
       ) => void | Promise<void>,
-   ): void
+   ): void;
 
-   addShortcode(name: string, shortcode: AnyFunction<string>): string
-   addLiquidShortcode(name: string, shortcode: AnyFunction<string>): void
-   addNunjucksShortcode(name: string, shortcode: AnyFunction<string>): void
-   addHandlebarsShortcode(name: string, shortcode: AnyFunction<string>): void
-   addJavascriptShortcode(name: string, shortcode: AnyFunction<string>): void
+   addShortcode(name: string, shortcode: AnyFunction<string>): string;
+   addLiquidShortcode(name: string, shortcode: AnyFunction<string>): void;
+   addNunjucksShortcode(name: string, shortcode: AnyFunction<string>): void;
+   addHandlebarsShortcode(name: string, shortcode: AnyFunction<string>): void;
+   addJavascriptShortcode(name: string, shortcode: AnyFunction<string>): void;
    addPairedShortcode(
       name: string,
       shortcode: <A>(content: string, ...args: A[]) => string,
-   ): void
+   ): void;
 
-   addJavaScriptFunction(name: string, fn: AnyFunction<string>): void
+   addJavaScriptFunction(name: string, fn: AnyFunction<string>): void;
 
    addLiquidFilter(
       name: string,
       filter: <A>(...args: A[]) => unknown,
-   ): Record<string, unknown>
+   ): Record<string, unknown>;
 
-   addNunjucksFilter(name: string, filter: <A>(...args: A[]) => unknown): void
+   addNunjucksFilter(name: string, filter: <A>(...args: A[]) => unknown): void;
 
    addNunjucksAsyncFilter(
       name: string,
       filter: <T>(value: T, callback: <E, R>(err: E | null, res: R) => unknown) => void,
-   ): void
+   ): void;
    addNunjucksAsyncFilter(
       name: string,
       filter: <T, U>(
@@ -283,7 +283,7 @@ export interface Config {
          value2: U,
          callback: <E, R>(err: E | null, res: R) => unknown,
       ) => void,
-   ): void
+   ): void;
    addNunjucksAsyncFilter(
       name: string,
       filter: <T, U, V>(
@@ -292,9 +292,12 @@ export interface Config {
          value3: V,
          callback: <E, R>(err: E | null, res: R) => unknown,
       ) => void,
-   ): void
+   ): void;
 
-   addHandlebarsHelper(name: string, helper: AnyFunction<string>): Record<string, unknown>
+   addHandlebarsHelper(
+      name: string,
+      helper: AnyFunction<string>,
+   ): Record<string, unknown>;
 
    /**
       Plugins are custom code that Eleventy can import into a project from an external
@@ -306,7 +309,7 @@ export interface Config {
          plugin’s documentation (e.g. the [eleventy-plugin-syntaxhighlight README](https://github.com/11ty/eleventy-plugin-syntaxhighlight/blob/master/README.md))
          to learn what options are available to you.
     */
-   addPlugin<F extends AnyFunction>(fn: F, config?: Parameters<F>[0]): void
+   addPlugin<F extends AnyFunction>(fn: F, config?: Parameters<F>[0]): void;
 
    /**
       Searching the entire directory structure for files to copy based on file extensions
@@ -318,8 +321,8 @@ export interface Config {
 
       @param path The file path to copy (may be an individual file or directory.)
     */
-   addPassthroughCopy(path: string): void
-   addPassthroughCopy(mapping: { [inputPath: string]: string }): void
+   addPassthroughCopy(path: string): void;
+   addPassthroughCopy(mapping: { [inputPath: string]: string }): void;
 
    /**
      You can namespace parts of your configuration using `eleventyConfig.namespace`. This
@@ -329,9 +332,9 @@ export interface Config {
      @param withName The string prefix to apply to the items.
      @param context A callback in which to add your namespaced items.
     */
-   namespace(withName: string, context: () => void): void
+   namespace(withName: string, context: () => void): void;
 
-   setTemplateFormats(to: EngineName[]): void
+   setTemplateFormats(to: EngineName[]): void;
 
    /**
     * Opts in to a full deep merge when combining the Data Cascade. This will use
@@ -346,22 +349,22 @@ export interface Config {
     *
     * @param to `true` to enable deep merge, `false` (the current default) to opt out.
     */
-   setDataDeepMerge(to: boolean): void
-   setWatchJavaScriptDependencies(to: boolean): void
-   setBrowserSyncConfig(to: BrowserSyncConfig): void
+   setDataDeepMerge(to: boolean): void;
+   setWatchJavaScriptDependencies(to: boolean): void;
+   setBrowserSyncConfig(to: BrowserSyncConfig): void;
    setFrontMatterParsingOptions(to: {
-      excerpt?: boolean
-      excerpt_separator?: string
-      excerpt_alias?: string
-      engines?: Dict<Engine>
-   }): void
-   setLibrary(to: EngineName, using: Renderer): void
+      excerpt?: boolean;
+      excerpt_separator?: string;
+      excerpt_alias?: string;
+      engines?: Dict<Engine>;
+   }): void;
+   setLibrary(to: EngineName, using: Renderer): void;
 }
 
 type NonMethodNames<T> = {
-   [K in keyof T]: T[K] extends AnyFunction ? never : K
-}[keyof T]
+   [K in keyof T]: T[K] extends AnyFunction ? never : K;
+}[keyof T];
 
-type F = NonMethodNames<Config>
+type F = NonMethodNames<Config>;
 
-export type UserConfig = Pick<Config, NonNullable<NonMethodNames<Config>>>
+export type UserConfig = Pick<Config, NonNullable<NonMethodNames<Config>>>;

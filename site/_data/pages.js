@@ -12,4 +12,4 @@ module.exports = [
    { type: 'page', title: 'Speaking', path: '/speaking/' },
    { type: 'separator' },
    { type: 'page', title: 'Colophon', path: '/colophon/' },
-]
+];

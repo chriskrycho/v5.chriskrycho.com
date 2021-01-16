@@ -4,8 +4,8 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-import MarkdownIt = require('markdown-it')
+import MarkdownIt = require('markdown-it');
 
 declare module 'markdown-it-abbr' {
-   export default function abbr(md: MarkdownIt): void
+   export default function abbr(md: MarkdownIt): void;
 }

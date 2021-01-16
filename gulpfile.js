@@ -1,8 +1,8 @@
-const { src, dest, parallel, series, watch } = require('gulp')
-const sass = require('gulp-sass')
-const del = require('del')
+const { src, dest, parallel, series, watch } = require('gulp');
+const sass = require('gulp-sass');
+const del = require('del');
 
-sass.compiler = require('sass')
+sass.compiler = require('sass');
 
 const build = (file) => () =>
    src(file)
@@ -14,18 +14,18 @@ const build = (file) => () =>
             })
             .on('error', sass.logError),
       )
-      .pipe(dest('./site/_styles'))
+      .pipe(dest('./site/_styles'));
 
 function style() {
-   return build('./site/_includes/styles/style.scss')()
+   return build('./site/_includes/styles/style.scss')();
 }
 
 function print() {
-   return build('./site/_includes/styles/print.scss')()
+   return build('./site/_includes/styles/print.scss')();
 }
 
 function fonts() {
-   return build('./site/_includes/styles/fonts.scss')()
+   return build('./site/_includes/styles/fonts.scss')();
 }
 
 function clean() {
@@ -33,19 +33,19 @@ function clean() {
       './site/_includes/styles/style.css',
       './site/_includes/styles/fonts.css',
       './site/_includes/styles/print.css',
-   ])
+   ]);
 }
 
-const all = parallel(style, fonts, print)
+const all = parallel(style, fonts, print);
 
 function watchStyles() {
-   watch('./site/_includes/styles/**/*.scss', all)
+   watch('./site/_includes/styles/**/*.scss', all);
 }
 
-exports.clean = clean
-exports.style = style
-exports.fonts = fonts
-exports.print = print
-exports.watch = watchStyles
-exports.all = all
-exports.default = series(clean, all)
+exports.clean = clean;
+exports.style = style;
+exports.fonts = fonts;
+exports.print = print;
+exports.watch = watchStyles;
+exports.all = all;
+exports.default = series(clean, all);

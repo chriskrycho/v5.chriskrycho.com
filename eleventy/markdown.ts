@@ -1,21 +1,21 @@
-import { getLanguage, highlight as _highlight } from 'highlight.js'
-import markdownIt from 'markdown-it'
-import abbr from 'markdown-it-abbr'
-import anchor, { AnchorOptions } from 'markdown-it-anchor'
-import defList from 'markdown-it-deflist'
-import footnotes from 'markdown-it-footnote'
-import implicitFigures from 'markdown-it-implicit-figures'
-import sup from 'markdown-it-sup'
-import Core from 'markdown-it/lib/parser_core'
-import Token from 'markdown-it/lib/token'
-import { env } from 'process'
-import { Result } from 'true-myth'
-import slugify from 'uslug'
+import { getLanguage, highlight as _highlight } from 'highlight.js';
+import markdownIt from 'markdown-it';
+import abbr from 'markdown-it-abbr';
+import anchor, { AnchorOptions } from 'markdown-it-anchor';
+import defList from 'markdown-it-deflist';
+import footnotes from 'markdown-it-footnote';
+import implicitFigures from 'markdown-it-implicit-figures';
+import sup from 'markdown-it-sup';
+import Core from 'markdown-it/lib/parser_core';
+import Token from 'markdown-it/lib/token';
+import { env } from 'process';
+import { Result } from 'true-myth';
+import slugify from 'uslug';
 
 type HighlightError = {
-   short: string
-   long: string
-}
+   short: string;
+   long: string;
+};
 
 function highlight(
    languageName: string,
@@ -27,11 +27,11 @@ function highlight(
          long: `error highlighting '${languageName}' with highlight.js\ncontent:\n${content}\n`,
       },
       () => _highlight(languageName, content).value,
-   )
+   );
 }
 
 function logErr(err: HighlightError): void {
-   console.error(env['DEBUG'] ? err.long : err.short)
+   console.error(env['DEBUG'] ? err.long : err.short);
 }
 
 /**
@@ -51,7 +51,7 @@ function renderPermalink(
          content: opts.permalinkSymbol,
       }),
       new Token('span_close', 'span', -1),
-   ]
+   ];
 
    const openTokens = [
       Object.assign(new Token('link_open', 'a', 1), {
@@ -60,12 +60,12 @@ function renderPermalink(
             ['href', opts.permalinkHref?.(slug)],
          ],
       }),
-   ]
+   ];
 
-   const closeTokens = [...marker, new Token('link_close', 'a', -1)]
+   const closeTokens = [...marker, new Token('link_close', 'a', -1)];
 
-   state.tokens[idx + 1].children?.unshift(...openTokens)
-   state.tokens[idx + 1].children?.push(...closeTokens)
+   state.tokens[idx + 1].children?.unshift(...openTokens);
+   state.tokens[idx + 1].children?.push(...closeTokens);
 }
 
 const md = markdownIt({
@@ -73,8 +73,8 @@ const md = markdownIt({
    highlight: (str, lang) =>
       lang && getLanguage(lang)
          ? highlight(lang, str).unwrapOrElse((e) => {
-              logErr(e)
-              return str
+              logErr(e);
+              return str;
            })
          : str,
 })
@@ -92,16 +92,16 @@ const md = markdownIt({
       renderPermalink,
       slugify,
    })
-   .use(abbr)
+   .use(abbr);
 
 md.renderer.rules.footnote_caption = (tokens, idx): string => {
-   let n = Number(tokens[idx].meta.id + 1).toString()
+   let n = Number(tokens[idx].meta.id + 1).toString();
 
    if (tokens[idx].meta.subId > 0) {
-      n += ':' + tokens[idx].meta.subId
+      n += ':' + tokens[idx].meta.subId;
    }
 
-   return n
-}
+   return n;
+};
 
-export default md
+export default md;

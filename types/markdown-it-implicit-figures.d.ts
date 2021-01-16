@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-import MarkdownIt = require('markdown-it')
+import MarkdownIt = require('markdown-it');
 
 declare module 'markdown-it-implicit-figures' {
    export interface Options {
@@ -13,7 +13,7 @@ declare module 'markdown-it-implicit-figures' {
          `<figure data-type="image">`. This can be useful for applying special styling for
          different kind of figures.
        */
-      dataType?: boolean
+      dataType?: boolean;
 
       /**
          Set `figcaption` to `true` to put the alternative text in a
@@ -26,7 +26,7 @@ declare module 'markdown-it-implicit-figures' {
          </figure>
          ```
        */
-      figcaption?: boolean
+      figcaption?: boolean;
 
       /**
          Set `tabindex` to `true` to add a `tabindex` property to each figure, beginning
@@ -34,7 +34,7 @@ declare module 'markdown-it-implicit-figures' {
          with [this css-trick](https://css-tricks.com/expanding-images-html5/), which
          expands figures upon mouse-over.
        */
-      tabindex?: boolean
+      tabindex?: boolean;
 
       /**
          Put a link around the image if there is none yet. For example:
@@ -43,7 +43,7 @@ declare module 'markdown-it-implicit-figures' {
          <a href="img.png"><img src="img.png"></a>
          ```
        */
-      link?: boolean
+      link?: boolean;
    }
 
    /**
@@ -70,5 +70,5 @@ declare module 'markdown-it-implicit-figures' {
       <figure><a href="page.html"><img src="fig.png" alt=""></a></figure>
       ```
     */
-   export default function implicitFigures(md: MarkdownIt, options?: Options): void
+   export default function implicitFigures(md: MarkdownIt, options?: Options): void;
 }

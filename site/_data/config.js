@@ -24,4 +24,4 @@ module.exports = {
          'https://stackoverflow.com/users/564181/chris-krycho',
       ],
    },
-}
+};

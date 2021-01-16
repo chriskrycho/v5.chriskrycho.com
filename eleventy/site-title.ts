@@ -1,18 +1,18 @@
-import SiteConfig from '../site/_data/config'
-type SiteConfig = typeof SiteConfig
+import SiteConfig from '../site/_data/config';
+type SiteConfig = typeof SiteConfig;
 
-const SEP = ' — '
+const SEP = ' — ';
 
 const baseTitle = (siteName: string, authorName: string): string =>
-   `${siteName}, by ${authorName}`
+   `${siteName}, by ${authorName}`;
 
-const extended = (base: string, itemTitle: string): string => `${itemTitle}${SEP}${base}`
+const extended = (base: string, itemTitle: string): string => `${itemTitle}${SEP}${base}`;
 
 export const siteTitle = (pageTitle: string | undefined, config: SiteConfig): string => {
-   const base = baseTitle(config.title.normal, config.author.name)
+   const base = baseTitle(config.title.normal, config.author.name);
    return pageTitle && pageTitle !== config.title.normal
       ? extended(base, pageTitle)
-      : base
-}
+      : base;
+};
 
-export default siteTitle
+export default siteTitle;
