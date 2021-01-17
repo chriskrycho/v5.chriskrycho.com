@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-01-16T14:40:00-0700
+date: 2021-01-16T21:07:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -62,13 +62,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
 
+- [<cite>Jesus and John Wayne</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9781631495731), Kristin Kobes Du Mez (new)
+
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
 - <cite>The Lord of the Rings: The Fellowship of the Ring</cite>, J.R.R. Tolkien (reread… with my daughter!)
-
-- [<cite>Jesus and John Wayne</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9781631495731), Kristin Kobes Du Mez (new)
 
 
 ## 2021
