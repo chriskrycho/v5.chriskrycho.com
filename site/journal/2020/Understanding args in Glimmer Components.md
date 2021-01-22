@@ -239,7 +239,7 @@ function argsProxyFor(capturedArgs) {
 }
 ```
 
-The `capturedArgs` here is what we saw above when the template layer captures the args: the “thunks” to lazily get the values on demand. Here I’ve called this a `ref`, short for *reference*, because that’s what a thunk is: a lazy reference to a value. (That’s how Glimmer refers to them, too!) Now we have a way to take our set of “thunks”/refs and turn it into an an object which *behaves* like they a regular object—but which has reference semantics for value types like strings just the same as for object types.
+The `capturedArgs` here is what we saw above when the template layer captures the args: the “thunks” to lazily get the values on demand. Here I’ve called this a `ref`, short for *reference*, because that’s what a thunk is: a lazy reference to a value. (That’s how Glimmer refers to them, too!) Now we have a way to take our set of “thunks”/refs and turn it into an an object which *behaves* like a regular object—but which has reference semantics for value types like strings just the same as for object types.
 
 ```js
 let root = new Root();
