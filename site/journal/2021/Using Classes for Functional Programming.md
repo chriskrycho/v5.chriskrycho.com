@@ -6,7 +6,8 @@ qualifiers:
   audience: >
     People interested in functional programming—perhaps *especially* people tempted to a kind of zealotry on the subject (as I was a few years ago!).
 date: 2021-01-22T21:07:00-0700
-updated: 2021-01-22T21:13:00-0700
+updated: 2021-01-22T21:17:00-0700
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/just.png
 tags:
   - functional programming
   - TypeScript
