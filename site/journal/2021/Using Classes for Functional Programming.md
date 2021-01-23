@@ -2,7 +2,11 @@
 title: Using Classes for Functional Programming
 subtitle: >
   We tend to think classes are inherently for object-oriented programming, but they are much more flexible than that in JavaScript and TypeScript (and other languages too).
+qualifiers:
+  audience: >
+    People interested in functional programming—perhaps *especially* people tempted to a kind of zealotry on the subject (as I was a few years ago!).
 date: 2021-01-22T21:07:00-0700
+updated: 2021-01-22T21:13:00-0700
 tags:
   - functional programming
   - TypeScript
