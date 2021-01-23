@@ -6,7 +6,7 @@ date: 2021-01-22T21:07:00-0700
 tags:
   - functional programming
   - TypeScript
-  - Javascript
+  - JavaScript
   - programming languages
   - sum types
 
