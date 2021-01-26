@@ -2,6 +2,7 @@
 title: A path away from Kant?
 subtitle: Koyzis’ provocative thesis on authority and liberty.
 date: 2021-01-25T21:38:00-0700
+updated: 2021-01-25T21:46:00-0700
 summary: >
   David T. Koyzis proposes to reframe the debate on liberalism—by turning as remedy to, of all things, personal/individual authority as the image of God. It’s… promising!
 tags:
@@ -38,7 +39,7 @@ Every prior critical treatment of liberalism I’ve read has had this fundamenta
 
 > Finally, of course, it should be noted that the unique place of the individual and her personal authority over the conduct of her own life does not stand over against this pluriformity [of other legitimate authorities] but must instead be seen as very much a part of it. In a highly differentiated society personal authority will have come into its own more than in a less differentiated one, along with the various distortions that accompany any legitimate development in human history. Such distortions, we would argue, are not reasons for repealing this personal authority and re-enclosing her within a less differentiated communal structure. The fact that Joanna may have chosen to marry a physically attractive man who nevertheless lacks personal integrity is not an argument for reinstituting parentally-arranged marriages. That consumers keep the pornography business going is no ground for abolishing the market. A monistic “tribalism” is no answer to the abuses of the various pluriform loci of authority. Rather each abuse must be addressed on its own terms and in ways appropriate to the type of authority at issue. 
 
-<figcaption>—*ibid.*, pp. 15–16</figcaption>
+<figcaption>—<i>ibid.</i>, pp. 15–16</figcaption>
 </figure>
 
 That is: though liberalism has mistaken the grounds for its expansion of individual human liberties, it was in many cases not wrong to expand those liberties—in Koyzis’ terms, to differentiate many different kinds of authorities, including those of the individual herself.
