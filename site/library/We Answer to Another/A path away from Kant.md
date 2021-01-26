@@ -2,7 +2,7 @@
 title: A path away from Kant?
 subtitle: Koyzis’ provocative thesis on authority and liberty.
 date: 2021-01-25T21:38:00-0700
-updated: 2021-01-25T21:46:00-0700
+updated: 2021-01-26T05:29:00-0700
 summary: >
   David T. Koyzis proposes to reframe the debate on liberalism—by turning as remedy to, of all things, personal/individual authority as the image of God. It’s… promising!
 tags:
