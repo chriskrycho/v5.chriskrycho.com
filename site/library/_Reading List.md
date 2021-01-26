@@ -66,21 +66,21 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
-- <cite>The Lord of the Rings: The Fellowship of the Ring</cite>, J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>](https://bookshop.org/a/21126/9780618260584), J.R.R. Tolkien (reread… with my daughter!)
 
 
 ## 2021
 
 ### Nonfiction
 
-- [<cite>Holiness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780802822154), John Webster (new)
+- [<cite>Holiness</cite>](https://bookshop.org/a/21126/9780802822154), John Webster (new)
     - [posts on the book](/topics/holiness-book/)
 
-- [<cite>Jesus and John Wayne</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9781631495731), Kristin Kobes Du Mez (new)
+- [<cite>Jesus and John Wayne</cite>](https://bookshop.org/a/21126/9781631495731), Kristin Kobes Du Mez (new)
 
 ### Fiction
 
-- <cite>The Hobbit</cite>, J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Hobbit</cite>](https://bookshop.org/a/21126/9780395873465), J.R.R. Tolkien (reread… with my daughter!)
 
 
 ## 2020
