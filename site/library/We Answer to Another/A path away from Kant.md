@@ -2,7 +2,7 @@
 title: A path away from Kant?
 subtitle: Koyzis’ provocative thesis on authority and liberty.
 date: 2021-01-25T21:38:00-0700
-updated: 2021-01-26T05:29:00-0700
+updated: 2021-01-26T07:02:00-0700
 summary: >
   David T. Koyzis proposes to reframe the debate on liberalism—by turning as remedy to, of all things, personal/individual authority as the image of God. It’s… promising!
 tags:
@@ -31,7 +31,7 @@ When I first read this, it had the force of a mental triple take:
 2. *Wait, what? That can’t be right, can it?*
 3. Huh. I think… that is absolutely correct.
 
-It’s early pages yet, but the idea is striking: that we’ve been getting it wrong with liberalism, but quite sprcifically: that the key mistake of liberalism is to ground all our ideals in *liberty as such* rather than to see individual liberties as a proper response to the *authority* of a human person *qua human person*: that abridgements of liberties are abridgements not because liberty is itself the supreme ideal but because it is violating another’s rightful authority over her own person (an authority that itself stands under the authority of God the creator).
+It’s early pages yet, but the idea is striking: not simply that we’ve been getting it wrong with liberalism, but quite specifically: that the key mistake of liberalism is to ground all our ideals in *liberty as such* rather than to see individual liberties as a proper response to the *authority* of a human person *qua human person*: that abridgements of liberties are abridgements not because liberty is itself the supreme ideal but because it is violating another’s rightful authority over her own person (an authority that itself stands under the authority of God the creator).
 
 Every prior critical treatment of liberalism I’ve read has had a fundamental failure: it had no answer for why we should see individual liberties as goods worth preserving. Koyzis, it seems, does:
 
