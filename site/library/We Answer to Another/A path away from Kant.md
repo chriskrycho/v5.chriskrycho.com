@@ -31,9 +31,9 @@ When I first read this, it had the force of a mental triple take:
 2. *Wait, what? That can’t be right, can it?*
 3. Huh. I think… that is absolutely correct.
 
-It’s early pages yet, but the idea is striking: that we’ve been doing it wrong—that the key mistake of liberalism, to ground all our ideals in *liberty as such*, rather than to see individual liberties as a proper response to the *authority* of a human person *qua human person*: that abridgements of liberties are abridgements not because liberty is itself the supreme ideal but because it is violating another’s rightful authority over her own person (an authority that itself stands under the authority of God the creator).
+It’s early pages yet, but the idea is striking: that we’ve been getting it wrong with liberalism, but quite sprcifically: that the key mistake of liberalism is to ground all our ideals in *liberty as such* rather than to see individual liberties as a proper response to the *authority* of a human person *qua human person*: that abridgements of liberties are abridgements not because liberty is itself the supreme ideal but because it is violating another’s rightful authority over her own person (an authority that itself stands under the authority of God the creator).
 
-Every prior critical treatment of liberalism I’ve read has had this fundamental failure: it had no answer for why we should see individual liberties as goods worth preserving. Koyzis, it seems, does:
+Every prior critical treatment of liberalism I’ve read has had a fundamental failure: it had no answer for why we should see individual liberties as goods worth preserving. Koyzis, it seems, does:
 
 <figure class='quotation'>
 
