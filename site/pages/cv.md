@@ -26,7 +26,7 @@ I’m not looking to change jobs at this point—but you’re still welcome to [
 - [<i>My Projects</i>](#my-projects)—including podcasts I produce, talks I've given, and open-source software I’ve developed or contributed to:
     - [Podcasts](#podcasts)
     - [Open Source Software](#open-source-software)
-    - [Talks](#talks)
+    - [Talks](#speaking)
 
 ---
 
@@ -208,7 +208,7 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
 [tm-docs]: https://true-myth.js.org/
 [tm-C#]: https://github.com/true-myth/true-myth-csharp "True Myth C♯"
 
-### Talks
+### Speaking
 
 - <b>Don’t Go Bankrupt: Managing Technical Costs</b> (All Things Open, October 2019)
 
