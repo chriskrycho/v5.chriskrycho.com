@@ -47,10 +47,16 @@ A sample of my talks, podcast appearances, and workshops:
 
 - <b>Rust and WebAssembly</b>, Denver/Boulder Rust Meetup, May 2018
 
-- <b>[Becoming a Contributor][rbr2017]</b>, Rust Belt Rust 2017, October 2017
+- [<b>Chris Krycho: TypeScript and Ember js - Why and How?</b>][atx-ts], EmberATX, April 2018
+
+- [<b>Becoming a Contributor</b>][rbr2017], Rust Belt Rust 2017, October 2017
+
+- [<b>Chris Krycho / An Unintentional Journey</b>, Remote Works Podcast][rw], February 2017
 
 - <b>[*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015]</b>, BibleTech 2015, May 2015—the first talk I ever gave, and not a bad one!
 
 [corecursive]: https://corecursive.com/034-chris-krycho-typescript/
+[atx-ts]: https://www.youtube.com/watch?v=fFzxbBrvytU
 [rbr2017]: https://youtube.com/watch?v=Abu2BNixXak
+[rw]: https://remote.works/episode/5
 [bibletech2015]: https://m.youtube.com/watch?v=cDAh35IwJsE
