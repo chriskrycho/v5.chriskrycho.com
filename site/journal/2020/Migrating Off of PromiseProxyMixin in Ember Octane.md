@@ -4,7 +4,7 @@ title: >
 subtitle: >
     An important refactor for getting rid of mixins *and* proxies.
 date: 2020-08-17T17:15:00-0600
-updated: 2020-09-26T10:50:00-0600
+updated: 2021-02-07T09:29:00-0600
 qualifiers:
     audience: Software developers working with Ember Octane.
 summary: >
@@ -14,7 +14,7 @@ tags:
     - software development
     - web development
     - Ember
-    - auto-tracking
+    - autotracking
 templateEngineOverride: md
 thanks: >
     Thanks to Jeremy Sherman for catching an obnoxious mistake I missed in editing!
@@ -171,7 +171,7 @@ The template would use the `load` helper with the resulting promise in the templ
 
 ## Alternative: less template, more JS
 
-Because the `load` utility and its `AsyncData` type use auto-tracking, we can freely do things with the resulting data type in our JavaScript, too. For example, if we wanted to pull *all* the logic into a new component which just accepts an `AsyncData` for the user profile, we could do that. Assume we had our original `load`-using component version, which has `this.userData` as an `AsyncData`. We could pass it to another component like so:
+Because the `load` utility and its `AsyncData` type use autotracking, we can freely do things with the resulting data type in our JavaScript, too. For example, if we wanted to pull *all* the logic into a new component which just accepts an `AsyncData` for the user profile, we could do that. Assume we had our original `load`-using component version, which has `this.userData` as an `AsyncData`. We could pass it to another component like so:
 
 ```hbs
 <RenderUser @userData={{this.userData}} />
