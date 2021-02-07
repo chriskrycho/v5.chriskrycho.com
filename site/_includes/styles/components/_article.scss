@@ -420,7 +420,6 @@
       font: {
          family: var(--sans);
          weight: 300;
-         size: calc(var(--sans-adjust) * 1rem);
       }
       @include fancy-block(transparent, inherit, var(--side-border-width));
       border-left: var(--side-border-width) solid var(--blockquote-border);
