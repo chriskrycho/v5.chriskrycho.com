@@ -1,24 +1,26 @@
 ---
 title: >
-    `mut` (and `set`) and auto-tracking in Ember Octane
+    `mut` (and `set`) and autotracking in Ember Octane
+permalink: /journal/mut-and-set-and-auto-tracking-in-ember-octane/
+feedId: journal/mut-and-set-and-auto-tracking-in-ember-octane/
 subtitle: >
     Understanding a surprising behavior—and fixing a refactoring hazard.
 qualifiers:
     audience: >
         Software developers working with Ember Octane.
 summary: >
-    Ember’s `mut` helper, and the `set` helper from ember-simple-set helper, can mask an auto-tracking bug and refactoring hazard. Understand the bug and see how to fix it!
+    Ember’s `mut` helper, and the `set` helper from ember-simple-set helper, can mask an autotracking bug and refactoring hazard. Understand the bug and see how to fix it!
 thanks: >
     Thanks to [Chris Garrett (@pzuraq)](https://www.pzuraq.com) for reviewing a draft of this before publication!
 tags:
     - JavaScript
     - Ember
-    - auto-tracking
+    - autotracking
     - things I learned
     - web development
     - software development
 date: 2020-05-13T12:50:00-0600
-updated: 2020-05-15T21:03:00-0600
+updated: 2021-02-07T09:28:00-0600
 templateEngineOverride: md
 
 ---
