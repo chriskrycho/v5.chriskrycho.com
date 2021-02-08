@@ -3,11 +3,14 @@ title: Scarcities
 subtitle: >
   In which what was *supposed* to be a quick, Robin Sloan- and Craig Mod-inspired, note on attention and cryptothings… somehow morphed into the dream of a research program for something much, much different.
 qualifiers:
-  audience:
+  audience: >
     People interested in the internet, the way it works, and possibilities of better futures for technology.
+  epistemic: >
+    The idea-bubbling, thinking-out-loud phase.
 summary: >
   In which what was *supposed* to be a quick, Robin Sloan- and Craig Mod-inspired, note on attention and cryptothings… somehow morphed into the dream of a research program for something much, much different.
 date: 2021-02-07T09:50:00-0700
+updated: 2021-02-07T18:03:00-0700
 featured: true
 tags:
   - attention
