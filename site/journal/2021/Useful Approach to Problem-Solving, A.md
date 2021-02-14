@@ -10,6 +10,7 @@ qualifiers:
   epistemic: >
     This seems to work well for me. I have no idea how well it works in *general*, but I know it *does* work for people who *aren’t* me, so… try it?
 date: 2021-02-13T17:10:00-0700
+updated: 2021-02-13T19:35:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/problem-solving-notebook.jpg
 tags:
   - thinking
@@ -43,4 +44,21 @@ Yesterday, the process took something like two hours start to finish and involve
 
 This isn’t magic. It is an extremely helpful way of going at things, though—so much so that it can sometimes *feel* like magic!
 
-Bonus: a variant on this same process often works wonders for problem-solving in groups, whether that’s around a whiteboard or through an <abbr title="request for comments">RFC</abbr> process: *Do the hard work of getting everyone on the same page about the actual problem and its constraints (often the longest and hardest part). Give it some time. Try to write down a solution. If you fail to find a solution, make sure you capture the “failure” as additional constraints on the problem. Repeat until solved.*
+---
+
+**Bonus:** a variant on this same process often works wonders for problem-solving in groups, whether that’s around a whiteboard or through an <abbr title="request for comments">RFC</abbr> process: *Do the hard work of getting everyone on the same page about the actual problem and its constraints (often the longest and hardest part). Give it some time. Try to write down a solution. If you fail to find a solution, make sure you capture the “failure” as additional constraints on the problem. Repeat until solved.*
+
+---
+
+**Addenda** (in the form of a couple notes based on feedback after sharing it):
+
+- One reader asked:
+
+    > Do you have any tricks for  insuring that the problem is actually "loaded" into your subconscious?
+
+    This is a great question, and the key here for *me* is step 1. The act of writing things down is what firmly plants the problem in my subconscious with the right shape and kicks off the process of figuring it out.
+
+- Another reader [commented][li] that he has done similar, but somewhat informally. I feel I should note that I have *also* been doing this informally. At no point do I think, “Ah, now I should do step (2)!” Rather, I realized that I *do* in fact go through this exact same process all the time, and so I made it explicit so I could share it with others.
+
+[li]: https://www.linkedin.com/feed/update/urn:li:activity:6766513207768178688?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6766513207768178688%2C6766517229895897088%29
+
