@@ -10,6 +10,7 @@ qualifiers:
   epistemic: >
     This seems to work well for me. I have no idea how well it works in *general*, but I know it *does* work for people who *aren’t* me, so… try it?
 date: 2021-02-13T17:10:00-0700
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/problem-solving-notebook.jpg
 tags:
   - thinking
   - learning
