@@ -14,7 +14,7 @@
       display: block;
       font-weight: bold;
       line-height: 1;
-      font-size: calc(var(--sans-adjust) * 1rem);
+      font-size: var(--sans-adjust-rem);
 
       font-family: var(--sans);
       text-transform: uppercase;
@@ -44,10 +44,9 @@
       }
       list-style-type: none;
       display: grid;
-      grid-template: 'collection entry .' auto / minmax(5rem, 1fr) minmax(
-            min-content,
-            32rem
-         ) 1fr;
+      grid-template:
+         'collection entry .' auto / minmax(5rem, 1fr) minmax(min-content, 32rem)
+         1fr;
       gap: 0 0.5rem;
       justify-content: stretch;
       justify-items: stretch;
@@ -113,7 +112,7 @@
       line-height: calc(var(--sans-adjust) * 1.1);
 
       &__text {
-         size: calc(var(--sans-adjust) * 1rem);
+         size: var(--sans-adjust-rem);
       }
 
       &__date {

@@ -67,7 +67,7 @@
          text-align: center;
          font: {
             family: var(--sans);
-            size: calc(var(--sans-adjust) * 1rem);
+            size: var(--sans-adjust-rem);
          }
          color: var(--figure-fg);
       }
@@ -273,7 +273,7 @@
    h5 {
       font: {
          family: var(--sans);
-         size: calc(var(--sans-adjust) * 1rem);
+         size: var(--sans-adjust-rem);
          weight: 600;
       }
 
@@ -291,7 +291,7 @@
    h6 {
       font: {
          family: var(--sans);
-         size: calc(var(--sans-adjust) * 1rem);
+         size: var(--sans-adjust-rem);
          style: italic;
          weight: 300;
       }
@@ -420,6 +420,7 @@
       font: {
          family: var(--sans);
          weight: 300;
+         size: var(--sans-adjust-rem);
       }
       @include fancy-block(transparent, inherit, var(--side-border-width));
       border-left: var(--side-border-width) solid var(--blockquote-border);
@@ -451,7 +452,7 @@
       font: {
          family: var(--sans);
          weight: 300;
-         size: calc(var(--sans-adjust) * 1rem);
+         size: var(--sans-adjust-rem);
       }
 
       margin-bottom: ms(0);
@@ -640,7 +641,7 @@
       font: {
          family: var(--sans);
          weight: 300;
-         size: calc(var(--sans-adjust) * 1rem);
+         size: var(--sans-adjust-rem);
       }
       width: 100%;
       max-width: var(--max-width);
