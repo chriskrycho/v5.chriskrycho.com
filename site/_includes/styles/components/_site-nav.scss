@@ -14,7 +14,7 @@
 
    font: {
       family: var(--sans-subhead);
-      size: calc(var(--sans-adjust) *#{ms(0)});
+      size: var(--sans-adjust-rem);
       weight: var(--nav-fg-weight);
    }
 

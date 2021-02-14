@@ -39,7 +39,7 @@
       display: block;
       font-weight: bold;
       line-height: 1;
-      font-size: calc(var(--sans-adjust) * 1rem);
+      font-size: var(--sans-adjust-rem);
 
       &::after {
          --padding: #{ms(-2)};
@@ -141,7 +141,7 @@
       position: relative;
 
       &__text {
-         size: calc(var(--sans-adjust) * 1rem);
+         size: var(--sans-adjust-rem);
       }
 
       &__date {
