@@ -39,6 +39,8 @@ For podcasts or panel discussions, please give me at least of a month of notice 
 
 A sample of my talks, podcast appearances, and workshops:
 
+- <b>Keep It Local: Or: (part of) what “reasoning about your code” really means</b>, EmberConf, March 2021
+
 - <b>Don’t Go Bankrupt: Managing Technical Costs</b>, All Things Open, October 2019
 
 - [<b>Using TypeScript Like a Pro with Chris Krycho</b>, CoRecursive Podcast][corecursive], July 2019

@@ -5,7 +5,6 @@ subtitle: >
 date: 2020-08-03T10:00:00-0600
 updated: 2020-12-29T14:15:00-0600
 link: https://anchor.fm/humans-of-open-source/episodes/Chris-Krycho-on-Life-Post-New-Rustacean-emh815
-featured: true
 tags: 
   - open-source software
   - theology 
