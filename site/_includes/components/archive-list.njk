@@ -35,9 +35,18 @@
                         <a href='{{url}}' class='item-permalink' title='{{linkTitle}}'>
                         {%- if item.data.title -%}
                            <span class='item-title__text'>{{-item.data.title | inlineMd | safe-}}</span>
-                           {%- if item.data.link %}<span class='item-title-arrow'>↩︎</span>{% endif -%}
+                           {%- if item.data.link -%}
+                              <span class='item-title-arrow'>↩︎</span>
+                           {%- endif -%}
                         {%- else -%}
-                           <span class='date item-title__date'>{% localeDate item.date, 'HH:mm' %}</span> ❈
+                           <span class='date item-title__date'>
+                              {%- localeDate item.date, 'HH:mm' -%}
+                           </span>
+                           {%- if item.data.link -%}
+                              <span class='item-title-arrow'>↩︎</span>
+                           {%- else -%}
+                              ❈
+                           {%- endif -%}
                         {%- endif -%}
                         </a>
                         {%- if item.data.link -%}

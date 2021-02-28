@@ -31,28 +31,39 @@
                         {% set formattedDate -%}
                         {%- localeDate item.date, 'MMMM d, yyyy' -%}
                         {%- endset -%}
-                        {%- if includeUpdated -%}
-                        {% set updatedDate -%}
-                        {%- localeDate item.data.updated, 'MMMM d, yyyy' -%}
-                        {%- endset -%}
-                        {%- endif -%}
+
                         <a href='{{url}}' class='entry-permalink' title='{{linkTitle}}'>
                            {%- if item.data.title -%}
                               <span class='entry-title__text'>
                                  {{-item.data.title | inlineMd | safe-}}
                               </span>
-                              {%- if item.data.link %}
-                                 <span class='item-title-arrow'>↩︎</span>{% endif -%}
+                              {%- if item.data.link -%}
+                                 <span class='item-title-arrow'>↩︎</span>
+                              {%- endif -%}
                            {%- else -%}
                               <span class='date entry-title__date'>{{formattedDate}}</span>
-                              ❈
+                              {%- if item.data.link -%}
+                                 <span class='item-title-arrow'>↩︎</span>
+                              {%- else -%}
+                                 ❈
+                              {%- endif -%}
                            {%- endif -%}
                         </a>
                         {%- if item.data.link -%}
                            —<a href='{{item.url}}' title='item permalink'>❈</a>
                         {%- endif -%}
                         {%- if item.data.title %}
-                           ({{-formattedDate-}}{% if updatedDate %}; updated {{updatedDate}}{% endif %})
+                           ({{-formattedDate-}}
+
+                           {%- if includeUpdated -%}
+                              {% set updatedDate -%}
+                              {%- localeDate item.data.updated, 'MMMM d, yyyy' -%}
+                              {%- endset -%}
+
+                              {% if updatedDate %}; updated
+                                 {{updatedDate}}
+                              {% endif %})
+                           {%- endif -%}
                         {% endif -%}
                      </h4>
 
