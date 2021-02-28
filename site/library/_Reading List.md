@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-01-25T21:30:00-0700
+date: 2021-02-28T11:15:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -66,8 +66,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
-- [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>](https://bookshop.org/a/21126/9780618260584), J.R.R. Tolkien (reread… with my daughter!)
-
+- [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
 ## 2021
 
@@ -82,6 +81,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Hobbit</cite>](https://bookshop.org/a/21126/9780395873465), J.R.R. Tolkien (reread… with my daughter!)
 
+- [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+
+- The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
+	- [<cite>Cibola Burn</cite>][cibola-burn]
+	- [<cite>Nemesis Games</cite>][nemesis-games]
 
 ## 2020
 
@@ -203,7 +207,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- <cite>The Lord of the Rings</cite>, J.R.R. Tolkien (reread)
+- [<cite>The Lord of the Rings</cite>][lotr], J.R.R. Tolkien (reread)
 
 - <cite>Shades of Milk and Honey</cite>, Mary Robinette Kowal (new)
     - [review](https://v4.chriskrycho.com/2019/review-shades-of-milk-and-honey.html)
@@ -233,12 +237,15 @@ These are books I have actually begun reading. (You will see items move from [<b
 	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
 	- [<cite>Caliban’s War</cite>][calibans-war]
 	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
-	- [<cite>Cibola Burn</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCibola-Burn-James-S-A-Corey%2Fbook%2F26289654)
-	- [<cite>Nemesis Games</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FNemesis-Games-James-S-a-Corey%2Fbook%2F30151014)
+	- [<cite>Cibola Burn</cite>][cibola-burn]
+	- [<cite>Nemesis Games</cite>][nemesis-games]
 
+[lotr]: https://bookshop.org/a/21126/9780618260584
 [leviathan-wakes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667
 [calibans-war]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCalibans-War-James-S-A-Corey%2Fbook%2F28575716
 [abaddons-gate]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAbaddons-Gate-James-S-A-Corey%2Fbook%2F24065826
+[cibola-burn]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCibola-Burn-James-S-A-Corey%2Fbook%2F26289654
+[nemesis-games]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FNemesis-Games-James-S-a-Corey%2Fbook%2F30151014
 
 ## 2018
 
