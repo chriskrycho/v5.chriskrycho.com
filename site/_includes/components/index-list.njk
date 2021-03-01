@@ -53,7 +53,8 @@
                            —<a href='{{item.url}}' title='item permalink'>❈</a>
                         {%- endif -%}
                         {%- if item.data.title %}
-                           ({{-formattedDate-}}
+                           (
+                           {{-formattedDate-}}
 
                            {%- if includeUpdated -%}
                               {% set updatedDate -%}
@@ -62,8 +63,9 @@
 
                               {% if updatedDate %}; updated
                                  {{updatedDate}}
-                              {% endif %})
+                              {% endif %}
                            {%- endif -%}
+                           )
                         {% endif -%}
                      </h4>
 
