@@ -61,6 +61,11 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
 const inCollectionNamed = (name: string) => (item: Item): boolean =>
    item.data?.collections[name]?.includes(item) ?? false;
 
+type Not = <A extends unknown[]>(
+   pred: (...args: A) => boolean,
+) => (...args: A) => boolean;
+const not: Not = (fn) => (...args) => !fn(...args);
+
 function latest(collection: Collection): Item[] {
    const all = collection
       .getAll()
@@ -163,6 +168,13 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
+
+   config.addCollection('nonNotes', (collection) =>
+      collection
+         .getAllSorted()
+         .filter(isLive)
+         .filter(not(inCollectionNamed('notes'))),
+   );
 
    config.addCollection('latest', latest);
    config.addCollection('updated', mostRecentlyUpdated);

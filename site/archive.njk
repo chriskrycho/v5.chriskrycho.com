@@ -1,11 +1,11 @@
 ---
 title: Archive
-subtitle: Every single post on the site.
+subtitle: Every single post on the site (except for [notes](/notes/)).
 standalonePage: true
 permalink: /archive/
 subscribe:
-    atom: "/feed.xml"
-    json: "/feed.json"
+    atom: "/feed-without-notes.xml"
+    json: "/feed-without-notes.json"
     email: "https://buttondown.email/v5.chriskrycho.com"
 
 ---
@@ -18,7 +18,7 @@ subscribe:
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
-{% set items = collections.live | excludingStandalonePages %}
+{% set items = collections.live | excludingCollection(collections.notes) | excludingStandalonePages %}
 {{ list(items | archiveByYears('NEW_FIRST'), idByCollection=true)}}
 </section>
 {%- endblock main -%}
