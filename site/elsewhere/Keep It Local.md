@@ -4,6 +4,14 @@ subtitle: >
   My EmberConf 2021 talk: on “reasoning about your code.”
 summary: >
   What do Steve McConnell’s variable scoping guidelines in Code Complete 2, pure functional programming, the data ownership system in Rust, classical object-oriented programming, the actor model in Erlang, and autotracking in Glimmer all have in common? Every one of them is aiming at the same key ingredient of robust, reliable software: the ability to “reason about your code.” But what does that actually mean?
+qualifiers:
+  audience: >
+    Anyone interested in the theory and craft of software development.
+  epistemic: >
+    There are few things in software development I’m *extremely* confident about. This is one of them.
+thanks: >
+  This material is the fruit of many productive conversations with both [Ben Makuh](https://benmakuh.com) and [Chris Garrett](https://www.pzuraq.com) over the past several years, crystallized by the excellent questions the Flagship Web engineers at LinkedIn have asked me over the last year; and [Jaimie Krycho](https://jaimiekrycho.com) and [Yehuda Katz](https://yehudakatz.com) gave invaluable feedback on drafts and dry runs!
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/talks/keep-it-local-emberconf21.jpg
 date: 2021-03-30T15:00:00-0600
 tags:
   - talks
@@ -11,11 +19,22 @@ tags:
   - Rust
   - functional programming
   - JavaScript
+  - TypeScript
   - software development
   - thinking
   - mental models
 
 ---
+
+<div class=callout>
+
+I’m delighted to present my EmberConf 2021 talk! Of any talk I have ever given, I am happiest with this one.
+
+You may also find [the slides](https://slides.com/chriskrycho/keep-it-local-emberconf21) interesting. I have chosen *not* to embed them directly alongside the text for this talk, because the overlap between the content of the slides and the things I say is *very* high.
+
+Once the recording is up (next week) I will add that here as well!
+
+</div>
 
 ## Introduction
 
