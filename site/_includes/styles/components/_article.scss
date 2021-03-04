@@ -71,6 +71,13 @@
          }
          color: var(--figure-fg);
       }
+
+      iframe {
+         max-width: var(--max-width);
+         max-height: calc(var(--max-width) * 0.5625);
+         display: block;
+         margin: auto;
+      }
    }
 
    audio {
