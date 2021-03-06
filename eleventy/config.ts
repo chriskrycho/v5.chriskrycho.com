@@ -20,6 +20,13 @@ import toCollection from './to-collection';
 
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 
+type Not = <A extends unknown[]>(
+   pred: (...args: A) => boolean,
+) => (...args: A) => boolean;
+const not: Not = (fn) => (...args) => !fn(...args);
+
+const filter = <T>(pred: (t: T) => boolean) => (values: T[]) => values.filter(pred);
+
 const BUILD_TIME = DateTime.fromJSDate(new Date(), TZ).toSeconds();
 
 // Hack around the fact that in dev I want this to work on *every run*, but in prod builds
@@ -34,10 +41,8 @@ const isLive = (item: Item) =>
 
 const isNotVoid = <A>(a: A | null | undefined): a is A => a != null;
 
-const excludingStandalonePages = (item: Item): boolean =>
-   !(item.data?.standalonePage ?? false);
-
-const filterStandalonePages = (items: Item[]) => items.filter(excludingStandalonePages);
+const isStandalonePage = (item: Item) => item.data?.standalonePage ?? false;
+const excludingStandalonePages = not(isStandalonePage);
 
 /**
    Use a path to create a collection from all items contained within it.
@@ -60,11 +65,6 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
 
 const inCollectionNamed = (name: string) => (item: Item): boolean =>
    item.data?.collections[name]?.includes(item) ?? false;
-
-type Not = <A extends unknown[]>(
-   pred: (...args: A) => boolean,
-) => (...args: A) => boolean;
-const not: Not = (fn) => (...args) => !fn(...args);
 
 function latest(collection: Collection): Item[] {
    const all = collection
@@ -142,7 +142,7 @@ function config(config: Config): UserConfig {
    config.addFilter('historyLink', PageLinks.history);
    config.addFilter('sourceLink', PageLinks.source);
    config.addFilter('excludingCollection', excludingCollection);
-   config.addFilter('excludingStandalonePages', filterStandalonePages);
+   config.addFilter('excludingStandalonePages', filter(excludingStandalonePages));
    config.addFilter('concat', (a: Item[] | undefined, b: Item[] | undefined) => {
       return (a ?? []).concat(b ?? []);
    });
