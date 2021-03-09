@@ -2,7 +2,7 @@
 title: Naming and Framing
 subtitle: Or, why did <cite>Accelerate</cite> matter for DevOps?
 date: 2021-03-08T21:30:00-0600
-qualifiers: >
+qualifiers:
   audience: >
     People interested in software engineering effectiveness, developer productivity, and the like.
   epistemic: >
