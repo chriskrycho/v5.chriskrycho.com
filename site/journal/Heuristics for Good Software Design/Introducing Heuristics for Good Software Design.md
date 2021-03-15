@@ -15,6 +15,9 @@ series:
   title: Heuristics for Good Software Design
   part: 0
 date: 2021-03-13T22:45:00-0700
+permalink: journal/heuristics-for-good-software-design/introduction/
+feedId: journal/heuristics-for-good-software-design/introducing-heuristics-for-good-software-design/
+
 
 ---
 
