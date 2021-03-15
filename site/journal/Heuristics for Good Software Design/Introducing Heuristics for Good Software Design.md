@@ -17,7 +17,9 @@ series:
 date: 2021-03-13T22:45:00-0700
 permalink: journal/heuristics-for-good-software-design/introduction/
 feedId: journal/heuristics-for-good-software-design/introducing-heuristics-for-good-software-design/
-
+image: https://images.unsplash.com/photo-1553526777-5ffa3b3248d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80
+thanks: >
+  Thanks to [Robert Horvick (@bubbafat)](https://unsplash.com/@bubbafat) for [the illustrative social media image](https://unsplash.com/photos/1R4uPYipCFM).
 
 ---
 

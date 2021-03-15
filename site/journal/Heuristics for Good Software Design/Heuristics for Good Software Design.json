@@ -2,9 +2,10 @@
    "layout": "post.njk",
    "permalink": "/journal/heuristics-for-good-software-design/{{page.fileSlug | slug}}/index.html",
    "series": {
-      "title": "Heuristics for Good Software Design"
+      "title": "Heuristics for Good Software Design",
+      "link": "/journal/heuristics-for-good-software-design/"
    },
-   "tags": ["learning"],
+   "tags": ["learning", "mental models", "software development"],
    "qualifiers": {
       "epistemic": "A stable intuition—but, as an intuition, always subject to future revision."
    }
