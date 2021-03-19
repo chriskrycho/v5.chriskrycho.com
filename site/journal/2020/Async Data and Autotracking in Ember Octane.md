@@ -9,7 +9,7 @@ qualifiers:
     Software developers working with Ember Octane.
 
 date: 2020-08-28T15:15:00-0600
-updated: 2021-02-07T09:30:00-0600
+updated: 2021-03-19T09:45:00-0600
 
 tags:
   - JavaScript
@@ -23,6 +23,12 @@ templateEngineOverride: md
 ---
 
 Last week, [I described](https://v5.chriskrycho.com/journal/migrating-off-of-promiseproxymixin-in-ember-octane/ "Migrating Off of PromiseProxyMixin in Ember Octane") the use of a `load` helper and associated `AsyncData` type to move away from Ember’s `ObjectProxy` and `PromiseProxyMixin`. In this post, I’ll dig into the implementation of `load` and `AsyncData`. When you get to the end of this post, you should not only understand how this particular helper and data type work, but also have a better idea of how to think about both handling asynchronous data in JavaScript in general *and* how to put that to practice in Ember Octane with autotracking specifically.
+
+<div class=callout>
+
+You can find an open source implementation of these ideas [here](https://gothub.com/chriskrycho/ember-async-data/)!
+
+</div>
 
 <!-- omit in toc -->
 ## Overview
