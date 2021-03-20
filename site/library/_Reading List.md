@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-02-28T11:15:00-0700
+date: 2021-03-20T17:55:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -61,6 +61,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FConfronted-by-Grace-Meditations-of-a-Theologian-Prof-John-Webster%2Fbook%2F31784244), John Webster (new)
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
+
+- [<cite>Word and Church</cite>](https://bookshop.org/a/21126/9780567658906), John Webster (new)
+    - [posts on the book](/topics/word-and-church/)
 
 ### Fiction
 

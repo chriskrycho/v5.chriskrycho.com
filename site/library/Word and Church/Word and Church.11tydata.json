@@ -1,0 +1,15 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/word-and-church/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "Word and Church: Essays in Christian Dogmatics",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/word-and-church.jpg",
+      "author": "John Webster",
+      "year": "2016 (2001, 2006)",
+      "link": "https://bookshop.org/a/21126/9780567658906"
+   },
+   "tags": ["John Webster", "theology", "Word and Church"],
+   "qualifiers": {
+      "audience": "Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think."
+   }
+}
