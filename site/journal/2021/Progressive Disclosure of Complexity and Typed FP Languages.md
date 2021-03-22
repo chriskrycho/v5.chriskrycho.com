@@ -221,7 +221,7 @@ Now, there are three things I want to note about this comparison:
 
 1. Elm actually does a very good job of minimizing unnecessary complexity, and *does* progressively disclose that complexity, if not quite as well as Glimmer does. (PureScript… not so much!)
 
-2. Both Elm and PureScript give you something Glimmer’s reactivity system *doesn’t* (for all that I quite like it, and even when you layer in TypeScript): a robustness that actually delivers top-to-bottom program robustness and control over mutability. As I said above, you’re making a trade, and the trade is real.
+2. Both Elm and PureScript give you something Glimmer’s reactivity system *doesn’t* (for all that I quite like it, and even when you layer in TypeScript): a soundly-typed algebra (meaning: it composes!) that actually delivers top-to-bottom program robustness and control over mutability. As I said above, you’re making a trade, and the trade is real.
 
 3. Perhaps most importantly, building on that second point: it’s totally reasonable to offer as a rejoinder that real programs don’t look like this—and that over-optimizing for the very simplest thing you can do doesn’t make any sense. That goes double in the context of languages and frameworks designed to scale up and support hundreds of thousands or even millions of lines of code robustly!
 
