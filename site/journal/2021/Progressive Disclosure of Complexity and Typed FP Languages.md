@@ -138,7 +138,7 @@ class Counter extends Component {
 }
 ```
 
-Notice that both Elm and Glimmer are *much* simpler than PureScript. But the *simplest* a program can get is even simpler than this: it’s just static HTML. Here’s how that looks in Glimmer:
+Notice that both Elm and Glimmer are *much* simpler than PureScript. But the simplest a program can get is even simpler than this: it’s just static HTML. Here’s how that looks in Glimmer:
 
 ```js
 import { hbs } from '@glimmerx/component';
@@ -187,7 +187,7 @@ But notice that we can still get away with not including the equivalent of Elm�
 
 Meanwhile, PureScript massively outweighs both—even for the *simplest possible example*:[^cheating]
 
-- [^cheating]: I’m not cheating here! This is, [and I quote](https://github.com/JordanMartinez/purescript-cookbook/tree/master/recipes/HelloHalogenHooks):
+[^cheating]: I’m not cheating here! This is, [and I quote](https://github.com/JordanMartinez/purescript-cookbook/tree/master/recipes/HelloHalogenHooks):
 
     > A Halogen port of the ["HTML - Hello" Elm Example](https://elm-lang.org/examples/hello).
 
