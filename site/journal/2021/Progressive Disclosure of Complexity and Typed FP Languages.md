@@ -4,7 +4,7 @@ subtitle: >
   Or, one part of why to some extent Elm, and to a significant degree PureScript Halogen, can be quite difficult for users to get their heads around at first.
 qualifiers:
   audience: >
-    People interested in software design (especially <abbr title='application programming interface'>API</abbr> design) and in helping other people learn and adopt functional programming.
+    People with some familiarity with typed functional programming languages, who are interested in software design (especially <abbr title='application programming interface'>API</abbr> design) and in helping other people learn and adopt functional programming.
   epistemic: >
     *Very* exploratory: I basically just copied this out of my notes verbatim and then fixed up the examples and some of the sentences. It’s “thinking out loud” in hopes the internet will sharpen my thinking.
 date: 2021-03-21T19:40:00-0600
