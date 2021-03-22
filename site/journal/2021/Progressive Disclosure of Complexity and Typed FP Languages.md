@@ -138,7 +138,7 @@ class Counter extends Component {
 }
 ```
 
-Notice that both Elm and Glimmer are *much* simpler than PureScript. But the simplest a program can get is even simpler than this: it’s just static HTML. Here’s how that looks in Glimmer:
+Notice that both Elm and Glimmer are *much* simpler than PureScript. But the simplest a program can get is even simpler than this: it’s just static <abbr title='hyper-text markup language'>HTML</abbr>. Here’s how that looks in Glimmer:
 
 ```js
 import { hbs } from '@glimmerx/component';
@@ -162,13 +162,11 @@ import Browser
 import Html exposing (div, text)
 
 main =
-  Browser.sandbox { init = (), update = update, view = view }
-
-update _ model =
-  model
-
-view _ =
-  div [] [ text "This is some HTML!" ]
+  Browser.sandbox
+    { init = ()
+    , update = \_ model -> model
+    , view = \_ -> div [] [ text "This is some HTML!" ]
+    }
 ```
 
 This is *mostly* equivalent to using a `Component` class even though you don’t need it in Glimmer:
