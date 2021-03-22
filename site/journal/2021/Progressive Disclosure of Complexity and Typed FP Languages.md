@@ -231,3 +231,12 @@ I deeply care about this because I strongly believe that functional programming 
 [^magic]: The fact that it isn’t a silver bullet doesn’t mean that it doesn’t help. Structured programming wasn’t a silver bullet either, but it helped enormously!
 
 And so I wonder: what would it look like to design future APIs in languages like Elm or especially PureScript… in a way that only *progressively* exposes that complexity as you actually need it? Could we lower the bar to entry with languages like these, make them more accessible, by having “progressive disclosure of complexity” as a key value proposition for the <abbr>API</abbr> design? Could we thereby make languages like these more accessible to more developers, and thereby improve adoption and hopefully thereby make a dent on the state of the industry as a whole? I think the answer is *yes*—though I also think it’s a hard problem, and better minds than mine have been working at it for a long time.
+
+<div class="callout">
+
+Thoughts and comments? [Email me](mailto:hello@chriskrycho.com?subject=Progressive%20Disclosure%20of%20Complexity%20and%20Typed%20FP%20Languages) or comment on [HN] or [Lobste.rs].
+
+</div>
+
+[HN]: https://news.ycombinator.com/item?id=26536038
+[Lobste.rs]: https://lobste.rs/s/lxf7h9/progressive_disclosure_complexity
