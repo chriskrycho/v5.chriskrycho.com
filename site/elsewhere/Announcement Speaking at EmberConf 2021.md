@@ -5,7 +5,7 @@ subtitle: >
   In which I’ll be speaking for 30 minutes at a JS conference… and will spend only about 5 of those minutes on JS.
 summary: >
   In which I’ll be speaking for 30 minutes at a JS conference… and will spend only about 5 of those minutes on JS.
-date: 2021-02-13T10:00:00
+date: 2021-02-13T10:00:00-0700
 tags:
   - software development
   - conference talks
