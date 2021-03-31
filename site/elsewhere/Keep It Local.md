@@ -309,7 +309,7 @@ Thank you!
 
 Thoughts, comments, or questions? Discuss on [Hacker News][hn] or [lobste.rs][l], or [send me an email](mailto:hello@chriskrycho.com?subject=Keep%20It%20Local)!
 
-[hn]: https://news.ycombinator.com/item?id=25513679
-[l]: https://lobste.rs/s/iiagob/understanding_args_glimmer_components
+[hn]: https://news.ycombinator.com/item?id=26651020
+[l]: https://lobste.rs/s/df9dzp/keep_it_local_part_what_reasoning_about
 
 </div>
