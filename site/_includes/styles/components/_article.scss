@@ -523,6 +523,22 @@
       }
    }
 
+   .embed {
+      &__wrapper {
+         overflow: hidden;
+         padding-top: 56.25%;
+         position: relative;
+      }
+
+      &__content {
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+   }
+
    .book-review {
       margin : {
          left: auto;
