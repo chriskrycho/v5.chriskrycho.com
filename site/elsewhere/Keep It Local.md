@@ -304,3 +304,12 @@ There’s no silver bullet here (or anywhere else); this is not the only good id
 Keep it local!
 
 Thank you!
+
+<div class="callout">
+
+Thoughts, comments, or questions? Discuss on [Hacker News][hn] or [lobste.rs][l], or [send me an email](mailto:hello@chriskrycho.com?subject=Keep%20It%20Local)!
+
+[hn]: https://news.ycombinator.com/item?id=25513679
+[l]: https://lobste.rs/s/iiagob/understanding_args_glimmer_components
+
+</div>
