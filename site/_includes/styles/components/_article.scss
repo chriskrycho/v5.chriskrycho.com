@@ -71,13 +71,6 @@
          }
          color: var(--figure-fg);
       }
-
-      iframe {
-         max-width: var(--max-width);
-         max-height: calc(var(--max-width) * 0.5625);
-         display: block;
-         margin: auto;
-      }
    }
 
    audio {
@@ -535,6 +528,9 @@
          overflow: hidden;
          padding-top: 56.25%;
          position: relative;
+         height: 90%;
+         width: 90%;
+         margin: auto;
       }
 
       &__content {
