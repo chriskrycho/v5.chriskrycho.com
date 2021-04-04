@@ -672,6 +672,10 @@
       text-decoration: none;
       transition: all var(--transition);
    }
+
+   .feed-only {
+      display: none;
+   }
 }
 
 @media screen {
