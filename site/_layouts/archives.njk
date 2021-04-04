@@ -15,6 +15,12 @@ standalonePage: true
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
+{%- if content -%}
+<div class='article-content'>
+   {% block content -%}{{content | safe}}{%- endblock content %}
+</div>
+{%- endif -%}
+
 {%- set c = page.inputPath | toCollection -%}
 {%- if collections[c] -%}
    {%-

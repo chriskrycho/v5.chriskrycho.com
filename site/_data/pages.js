@@ -6,6 +6,7 @@ module.exports = [
    { type: 'page', title: 'Library', path: '/library/' },
    { type: 'page', title: 'Notes', path: '/notes/' },
    { type: 'page', title: 'Elsewhere', path: '/elsewhere/' },
+   { type: 'page', title: 'Photos', path: '/photos/' },
    { type: 'separator' },
    { type: 'page', title: 'About', path: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', path: '/cv/' },

@@ -168,6 +168,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
+   addCollectionFromDir(config, 'photos');
 
    config.addCollection('nonNotes', (collection) =>
       collection

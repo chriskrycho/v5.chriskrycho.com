@@ -1,7 +1,7 @@
 ---
-title: Photography
+title: Photos
 subtitle: Glimpses of the world as I see it.
-permalink: /photography/
+permalink: /photos/
 layout: archives.njk
 standalonePage: true
 ---
