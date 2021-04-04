@@ -28,6 +28,6 @@ tags:
 >
 > The Resurrection of Jesus Christ reveals, it completes this proclamation of victory. We must not transmute the Resurrection into a spiritual event. We must listen to it and let it tell us the story how there was an empty grave, that new life beyond death did become visible. 'This [man snatched from death] is My beloved Son, in whom I am well pleased.' What was announced at the Baptism in Jordan now becomes an event and manifest. To those who know this, the break between the old world and the new is proclaimed. They have still a tiny stretch to run, till it becomes visible that God in Jesus Christ has accomplished all for them.
 
-<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, p. 122</figcaption>
+<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, pp. 122–123</figcaption>
 
 </figure>
