@@ -79,6 +79,7 @@ function latest(collection: Collection): Item[] {
       all.find(inCollectionNamed('notes')),
       all.find(inCollectionNamed('library')),
       all.find(inCollectionNamed('elsewhere')),
+      all.find(inCollectionNamed('photos')),
    ]
       .filter(isNotVoid)
       .sort(byDate(Order.NewFirst));
