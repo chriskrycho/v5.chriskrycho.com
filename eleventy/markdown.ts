@@ -17,16 +17,13 @@ type HighlightError = {
    long: string;
 };
 
-function highlight(
-   languageName: string,
-   content: string,
-): Result<string, HighlightError> {
+function highlight(language: string, content: string): Result<string, HighlightError> {
    return Result.tryOr(
       {
-         short: `error highlighting '${languageName}' with highlight.js`,
-         long: `error highlighting '${languageName}' with highlight.js\ncontent:\n${content}\n`,
+         short: `error highlighting '${language}' with highlight.js`,
+         long: `error highlighting '${language}' with highlight.js\ncontent:\n${content}\n`,
       },
-      () => _highlight(languageName, content).value,
+      () => _highlight(content, { language }).value,
    );
 }
 
