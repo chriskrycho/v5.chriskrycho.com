@@ -8,7 +8,7 @@ updated: 2021-04-06T13:00-0600
 
 ---
 
-I walked into [Slow Burn Coffee][sbc] and the loveliness of the space stopped me still. The space is full of light, many colors balanced against each other just so, with an impeccable aesthetic consistency: from [the roaster][roaster] to [the bookshelf][bookshelf] hidden away just behind me in this shot to even [the water closet][water-closet]. This place is *lovely*.
+I walked into [Slow Burn Coffee][sbc] and the beauty of the space stopped me still. The shop is full of light, many colors balanced against each other just so, with an impeccable aesthetic consistency: from [the roaster][roaster] to [the bookshelf][bookshelf] hidden away just behind me in this shot to even [the water closet][water-closet]. This place is *lovely*.
 
 [sbc]: https://www.slowburncoffee.com
 [roaster]: https://unsplash.com/photos/cUyXxE9ixiw
