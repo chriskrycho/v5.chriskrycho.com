@@ -78,8 +78,8 @@ function latest(collection: Collection): Item[] {
       all.find(inCollectionNamed('journal')),
       all.find(inCollectionNamed('notes')),
       all.find(inCollectionNamed('library')),
-      all.find(inCollectionNamed('elsewhere')),
       all.find(inCollectionNamed('photos')),
+      all.find(inCollectionNamed('elsewhere')),
    ]
       .filter(isNotVoid)
       .sort(byDate(Order.NewFirst));
@@ -99,6 +99,8 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
       all.find(inCollectionNamed('essays')),
       all.find(inCollectionNamed('journal')),
       all.find(inCollectionNamed('library')),
+      all.find(inCollectionNamed('photos')),
+      all.find(inCollectionNamed('elsewhere')),
    ]
       .filter(isNotVoid)
       .sort(byUpdated(Order.NewFirst));
