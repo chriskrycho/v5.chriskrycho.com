@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-03-20T17:55:00-0700
+date: 2021-04-05T21:07:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,6 +79,9 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [posts on the book](/topics/holiness-book/)
 
 - [<cite>Jesus and John Wayne</cite>](https://bookshop.org/a/21126/9781631495731), Kristin Kobes Du Mez (new)
+
+- [<cite>Dogmatics in Outline</cite>](https://bookshop.org/a/21126/9780061300561), Karl Barth (new)
+    - [posts on the book](/topics/dogmatics-in-outline/)
 
 ### Fiction
 
