@@ -6,6 +6,8 @@ tags:
   - quotes
   - hermeneutics
   - Bible
+  - Karl Barth
+  - Dietrich Bonhoeffer
 
 ---
 <figure class='quotation'>
