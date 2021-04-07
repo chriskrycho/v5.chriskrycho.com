@@ -3,7 +3,8 @@ title: Motel Guest’s Only
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 1: An overflow lot in Las Vegas, New Mexico
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210403-thumb.jpg
-date: 2021-04-04T21:21-0600
+date: 2021-04-03T21:21-0600
+updated: 2021-04-06T19:33-0600
 
 ---
 
@@ -14,3 +15,9 @@ This warning—on a sign at a motel in Las Vegas, New Mexico—must have made a 
 [(see it full size on Unsplash)][unsplash]]({{image}})][unsplash]
 
 [unsplash]: https://unsplash.com/photos/adcdPs5axb0
+
+<div class='note'>
+
+I have backdated this post to the day I took it, mostly so that things look reasonable on [the series page](/photos/new-mexico-vacation/)!
+
+</div>
