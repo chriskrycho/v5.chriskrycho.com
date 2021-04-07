@@ -39,7 +39,7 @@ You may also find [the slides](https://slides.com/chriskrycho/keep-it-local-embe
 
 </div>
 
-<figcaption><a href="https://www.youtube.com/embed/Mt7v-VbFjxk">Keep It Local</figcaption>
+<figcaption><a href="https://www.youtube.com/watch?v=Mt7v-VbFjxk">Keep It Local</figcaption>
 
 </figure>
 
