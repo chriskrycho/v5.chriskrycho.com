@@ -1,0 +1,14 @@
+---
+title: Photos
+permalink: /photos/feed.xml
+standalonePage: true
+eleventyExcludeFromCollections: true
+---
+
+{%- import 'components/atom.njk' as atom -%}
+
+{%- extends 'feed.njk' -%}
+
+{%- block entries -%}
+   {{atom.entries(collections.photos, config)}}
+{%- endblock -%}
