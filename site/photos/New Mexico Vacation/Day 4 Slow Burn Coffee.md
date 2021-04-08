@@ -21,7 +21,7 @@ I walked into [Slow Burn Coffee][sbc] and the beauty of the space stopped me sti
 
 [unsplash]: https://unsplash.com/photos/9xz8TsW4Zr8
 
-<div class='note'>
+<div class='callout'>
 
 I ended up swapping from [the original][orig] image I posted here to this one—after going back and forth mentally for a long while! Both of them are good, but they have different characters, and I ultimately preferred this one.
 

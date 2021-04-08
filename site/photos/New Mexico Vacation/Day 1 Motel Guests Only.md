@@ -16,8 +16,8 @@ This warning—on a sign at a motel in Las Vegas, New Mexico—must have made a 
 
 [unsplash]: https://unsplash.com/photos/adcdPs5axb0
 
-<div class='note'>
+<div class='callout'>
 
-I have backdated this post to the day I took it, mostly so that things look reasonable on [the series page](/photos/new-mexico-vacation/)!
+Note that I have backdated this post to the day I took it, mostly so that things look reasonable on [the series page](/photos/new-mexico-vacation/)!
 
 </div>
