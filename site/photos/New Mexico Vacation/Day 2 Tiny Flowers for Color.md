@@ -3,7 +3,7 @@ title: Tiny Flowers for Color
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 2: a tiny flower on a little table outside a coffee shop.
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210404-thumb.jpg
-date: 2021-04-04T21:22-0600
+date: 2021-04-04T21:22:00-0600
 
 ---
 

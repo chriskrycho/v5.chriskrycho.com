@@ -3,8 +3,8 @@ title: Slow Burn Coffee
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 4: the loveliest space I have yet seen in the city.
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210406-thumb.jpg
-date: 2021-04-06T11:10-0600
-updated: 2021-04-06T13:00-0600
+date: 2021-04-06T11:10:00-0600
+updated: 2021-04-06T13:00:00-0600
 
 ---
 
