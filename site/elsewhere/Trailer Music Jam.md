@@ -2,7 +2,7 @@
 title: Trailer Music Jam
 subtitle: The fruit of riffing on an idea at a coffee shop all afternoon.
 link: https://soundcloud.com/chriskrycho/trailer-music-jam
-image: https://unsplash.com/photos/-CTAQCf8rUk
+image: https://images.unsplash.com/photo-1532011450101-0d3bbf647054
 date: 2021-04-07T20:40:00-0600
 thanks: >
   The cover art is [from Hendrik Cornelissen on Unsplash](https://unsplash.com/photos/-CTAQCf8rUk)! 
