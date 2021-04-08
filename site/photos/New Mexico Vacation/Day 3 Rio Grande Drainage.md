@@ -3,7 +3,7 @@ title: Rio Grande Drainage
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 3: drainage water running into the Rio Grande, spotted on my run
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210405.jpg
-date: 2021-04-05T20:55-0600
+date: 2021-04-05T20:55:00-0600
 
 ---
 
