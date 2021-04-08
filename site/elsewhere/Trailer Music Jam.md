@@ -4,6 +4,7 @@ subtitle: The fruit of riffing on an idea at a coffee shop all afternoon.
 link: https://soundcloud.com/chriskrycho/trailer-music-jam
 image: https://images.unsplash.com/photo-1532011450101-0d3bbf647054
 date: 2021-04-07T20:40:00-0600
+updated: 2021-04-08T17:10:00-0600
 thanks: >
   The cover art is [from Hendrik Cornelissen on Unsplash](https://unsplash.com/photos/-CTAQCf8rUk)! 
 tags:
@@ -47,9 +48,12 @@ Instrumentation:
 - [Spitfire Percussion][percussion]: Rototoms and Trash Can
 - [Spitfire Aperture Orchestra][aperture]: Raptor Titan Long
 
+If you’d like to mess around with it, you’re welcome to [download the Logic project][project] and do as you like. (As with most of my work, it’s available as Creative Commons Attribution-ShareAlike license, which means you can even make money off of whatever you do with the work… as long as you let others remix *your* use of my work as well.)
+
 [piano-v2]: https://www.arturia.com/products/analog-classics/piano-v/overview
 [analog-lab-v]: https://www.arturia.com/products/analog-classics/analoglab-v/overview
 [bbcso]: https://www.spitfireaudio.com/shop/a-z/bbc-symphony-orchestra-core/
 [strings]: https://www.spitfireaudio.com/shop/a-z/spitfire-solo-strings/
 [percussion]: https://www.spitfireaudio.com/shop/a-z/spitfire-percussion/
 [aperture]: https://www.youtube.com/watch?v=gQkKS8MF-Vs
+[project]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/Trailer%20Music%20Jam.logicx.zip
