@@ -48,7 +48,7 @@ Instrumentation:
 - [Spitfire Percussion][percussion]: Rototoms and Trash Can
 - [Spitfire Aperture Orchestra][aperture]: Raptor Titan Long
 
-If you’d like to mess around with it, you’re welcome to [download the Logic project][project] and do as you like. (As with most of my work, it’s available as Creative Commons Attribution-ShareAlike license, which means you can even make money off of whatever you do with the work… as long as you let others remix *your* use of my work as well.)
+If you’d like to mess around with it, you’re welcome to [download the Logic project][project] and do as you like. (As with most of my work, it’s available under a Creative Commons Attribution-ShareAlike license, which means you can even make money off of whatever you do with the work… as long as you let others remix *your* use of my work as well.)
 
 [piano-v2]: https://www.arturia.com/products/analog-classics/piano-v/overview
 [analog-lab-v]: https://www.arturia.com/products/analog-classics/analoglab-v/overview
