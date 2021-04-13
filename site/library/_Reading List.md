@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-04-05T21:07:00-0700
+date: 2021-04-12T18:21:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -62,9 +62,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
 
-- [<cite>Word and Church</cite>](https://bookshop.org/a/21126/9780567658906), John Webster (new)
-    - [posts on the book](/topics/word-and-church/)
-
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
@@ -82,6 +79,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Dogmatics in Outline</cite>](https://bookshop.org/a/21126/9780061300561), Karl Barth (new)
     - [posts on the book](/topics/dogmatics-in-outline/)
+
+- [<cite>Word and Church</cite>](https://bookshop.org/a/21126/9780567658906), John Webster (new)
+    - [posts on the book](/topics/word-and-church/)
 
 ### Fiction
 
