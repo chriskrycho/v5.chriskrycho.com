@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-04-12T18:21:00-0700
+date: 2021-04-12T18:31:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -13,7 +13,7 @@ I keep this page fairly current; it was last updated on {% localeDate page.date,
 - The section for each year includes all the books I read that year (including the current year), in the order I finished the books.
 - Books are marked “(new)” if this was the first time I read them, or “(reread)” otherwise.
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
-- Links on the books themselves are affiliate links to Alibris!
+- Links on the books themselves are affiliate links to Alibris or Bookshop.org!
 
 Quick links:
 
@@ -61,6 +61,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FConfronted-by-Grace-Meditations-of-a-Theologian-Prof-John-Webster%2Fbook%2F31784244), John Webster (new)
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
+
+- [<cite>Icons of Christ: A Biblical and Systematic Theology for Women’s Ordination</cite>](https://bookshop.org/a/21126/9781481313193), William G. Witt (new)
+
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume 1: God and the Works of God</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2FGod-Without-Measure-Working-Papers-in-Christian-Theology-Volume-1-God-and-the-Works-of-God-Prof-John-Webster%2Fbook%2F39308727), John Webster (new)
 
 ### Fiction
 
