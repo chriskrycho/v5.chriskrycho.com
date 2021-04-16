@@ -24,6 +24,8 @@ tags:
   - software development
   - thinking
   - mental models
+  - Ember
+  - autotracking
 
 ---
 
