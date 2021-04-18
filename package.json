@@ -27,7 +27,7 @@
       "cheerio": "^1.0.0-rc.6",
       "del": "^6.0.0",
       "eslint": "7.24.0",
-      "eslint-config-prettier": "^6.15.0",
+      "eslint-config-prettier": "^8.2.0",
       "eslint-plugin-prettier": "^3.4.0",
       "gulp": "^4.0.2",
       "gulp-sass": "^4.1.0",
@@ -58,8 +58,7 @@
          "eslint:recommended",
          "plugin:@typescript-eslint/eslint-recommended",
          "plugin:@typescript-eslint/recommended",
-         "prettier",
-         "prettier/@typescript-eslint"
+         "prettier"
       ],
       "env": {
          "node": true
