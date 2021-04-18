@@ -4,7 +4,7 @@ subtitle: >
   A series of posts in which I explain how I think about effective software design.
 qualifiers:
   audience: >
-    For the series: practitioners of software development interested in better their craft. For this particular post: also people interested in thinking, learning, intuitions, heuristics, and mental models.
+    For the series: practitioners of software development interested in bettering their craft. For this particular post: also people interested in thinking, learning, intuitions, heuristics, and mental models.
   epistemic: null  # explicitly opt out of the series-level default status
 tags:
   - software development
