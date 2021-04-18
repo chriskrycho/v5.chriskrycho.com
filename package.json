@@ -24,7 +24,7 @@
       "@types/uslug": "^1.0.0",
       "@typescript-eslint/eslint-plugin": "^4.22.0",
       "@typescript-eslint/parser": "^4.22.0",
-      "cheerio": "^1.0.0-rc.3",
+      "cheerio": "^1.0.0-rc.6",
       "del": "^6.0.0",
       "eslint": "7.24.0",
       "eslint-config-prettier": "^6.15.0",
