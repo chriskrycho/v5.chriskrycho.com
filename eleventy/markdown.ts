@@ -54,7 +54,7 @@ function renderPermalink(
       Object.assign(new Token('link_open', 'a', 1), {
          attrs: [
             ['class', opts.permalinkClass],
-            ['href', opts.permalinkHref?.(slug)],
+            ['href', opts.permalinkHref?.(slug, state)],
          ],
       }),
    ];
