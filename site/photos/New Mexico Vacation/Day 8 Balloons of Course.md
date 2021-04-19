@@ -2,7 +2,7 @@
 title: Balloons, of Course
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 8: seen on the way out of Albuquerque.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210410-thumb.jpg
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210410.jpg
 date: 2021-04-10T20:00:00-0600
 
 ---
