@@ -1,4 +1,4 @@
 {
    "layout": "post.njk",
-   "permalink": "/photos/new-mexico-vacation/{{page.fileSlug | slug}}/index.html"
+   "permalink": "/photos/new-mexico-vacation/{{page.fileSlug | slug}}/"
 }
