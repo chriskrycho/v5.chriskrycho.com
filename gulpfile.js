@@ -1,5 +1,5 @@
 const { src, dest, parallel, series, watch } = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const del = require('del');
 
 sass.compiler = require('sass');
