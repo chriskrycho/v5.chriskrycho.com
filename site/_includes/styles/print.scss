@@ -1,6 +1,9 @@
 :root {
    --fs-base: 11pt;
-   --line-height: 1.55;
+}
+
+@page {
+   margin: 1.25in 1.75in;
 }
 
 html {
@@ -26,7 +29,8 @@ main {
          text-decoration: none;
       }
 
-      a[href*='//']::after {
+      a[href*='//']::after
+      {
          color: var(--link) !important;
          -webkit-text-decoration-color: var(--underline) !important;
          -moz-text-decoration-color: var(--underline) !important;
@@ -56,7 +60,7 @@ main {
       .note,
       .qualifiers {
          border-top: none !important;
-         --side-padding: 4em;
+         --side-padding: 1em;
       }
 
       code {
