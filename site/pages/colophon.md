@@ -9,6 +9,8 @@ I also use [Adobe Fonts] for one of the typefaces on the site (see [below](#typo
 
 [cronos-email]: mailto:hello@chriskrycho.com?subject=Cronos%20Pro%20alternative
 
+Otherwise, there is zero tracking—of any sort—on this site.
+
 ## Implementation
 
 I built this version of the site with [Eleventy]. You can find the entirety of the implementation (and indeed the entire *history* of the implementation) [on GitHub][repo]. I'm using it with the following plugins:
