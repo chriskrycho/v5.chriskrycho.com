@@ -1,4 +1,4 @@
-import { getLanguage, highlight as _highlight } from 'highlight.js';
+import hljs from 'highlight.js';
 import markdownIt from 'markdown-it';
 import abbr from 'markdown-it-abbr';
 import anchor, { AnchorOptions } from 'markdown-it-anchor';
@@ -11,6 +11,9 @@ import Token from 'markdown-it/lib/token';
 import { env } from 'process';
 import { Result } from 'true-myth';
 import slugify from 'uslug';
+import { setup } from 'highlightjs-glimmer';
+
+setup(hljs);
 
 type HighlightError = {
    short: string;
@@ -23,7 +26,7 @@ function highlight(language: string, content: string): Result<string, HighlightE
          short: `error highlighting '${language}' with highlight.js`,
          long: `error highlighting '${language}' with highlight.js\ncontent:\n${content}\n`,
       },
-      () => _highlight(content, { language }).value,
+      () => hljs.highlight(content, { language }).value,
    );
 }
 
@@ -68,7 +71,7 @@ function renderPermalink(
 const md = markdownIt({
    html: true,
    highlight: (str, lang) =>
-      lang && getLanguage(lang)
+      lang && hljs.getLanguage(lang)
          ? highlight(lang, str).unwrapOrElse((e) => {
               logErr(e);
               return str;
