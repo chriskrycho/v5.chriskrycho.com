@@ -11,6 +11,9 @@ import Token from 'markdown-it/lib/token';
 import { env } from 'process';
 import { Result } from 'true-myth';
 import slugify from 'uslug';
+import { setup } from 'highlightjs-glimmer';
+
+setup(hljs);
 
 type HighlightError = {
    short: string;
