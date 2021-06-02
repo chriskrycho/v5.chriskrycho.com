@@ -26,7 +26,7 @@ tags:
 
 In time-hallowed blogger fashion, in the ancient paths of the elder days of internet writing—
 
-The last time I posted a Journal entry here was February 7, nearly 4 months ago! I have felt the need to write the last few evenings, though, and so this evening: I am. Nothing too fancy, just some notes and updates on how things are going 5 months into 2021.
+The last time I posted a Journal entry here was March 21, nearly 3 months ago! I have felt the need to write the last few evenings, though, and so this evening: I am. Nothing too fancy, just some notes and updates on how things are going 5 months into 2021.
 
 ---
 
