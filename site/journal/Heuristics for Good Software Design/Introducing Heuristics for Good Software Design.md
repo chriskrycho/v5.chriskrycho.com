@@ -7,10 +7,7 @@ qualifiers:
     For the series: practitioners of software development interested in bettering their craft. For this particular post: also people interested in thinking, learning, intuitions, heuristics, and mental models.
   epistemic: null  # explicitly opt out of the series-level default status
 tags:
-  - software development
-  - mental models
   - thinking
-  - learning
 series:
   title: Heuristics for Good Software Design
   part: 0
