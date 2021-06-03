@@ -6,7 +6,6 @@ summary: >
 tags:
   - thinking
   - sanctification
-  - theology
 
 ---
 

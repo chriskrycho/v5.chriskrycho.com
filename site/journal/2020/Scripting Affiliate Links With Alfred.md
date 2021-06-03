@@ -8,7 +8,6 @@ tags:
     - scripting
     - writing
     - programming
-    - scripting
     - automation
 summary: >
     I built an Alfred workflow to generate Alibris affiliate links tonight. It's convenient, and I learned a bit because this is new to me!

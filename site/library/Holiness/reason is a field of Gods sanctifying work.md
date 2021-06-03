@@ -9,7 +9,6 @@ tags:
   - quotes
   - thinking
   - rationalism
-  - quotes
   - reading notes
 
 ---
