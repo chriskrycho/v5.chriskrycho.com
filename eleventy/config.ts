@@ -23,9 +23,15 @@ import './feed'; // for extension of types -- TODO: move those types elsewhere!
 type Not = <A extends unknown[]>(
    pred: (...args: A) => boolean,
 ) => (...args: A) => boolean;
-const not: Not = (fn) => (...args) => !fn(...args);
+const not: Not =
+   (fn) =>
+   (...args) =>
+      !fn(...args);
 
-const filter = <T>(pred: (t: T) => boolean) => (values: T[]) => values.filter(pred);
+const filter =
+   <T>(pred: (t: T) => boolean) =>
+   (values: T[]) =>
+      values.filter(pred);
 
 const BUILD_TIME = DateTime.fromJSDate(new Date(), TZ).toSeconds();
 
@@ -63,8 +69,10 @@ function addCollectionFromDir(config: Config, path: string, name: string = path)
    );
 }
 
-const inCollectionNamed = (name: string) => (item: Item): boolean =>
-   item.data?.collections[name]?.includes(item) ?? false;
+const inCollectionNamed =
+   (name: string) =>
+   (item: Item): boolean =>
+      item.data?.collections[name]?.includes(item) ?? false;
 
 function latest(collection: Collection): Item[] {
    const all = collection
@@ -113,7 +121,6 @@ const featured = (collection: Collection): Item[] =>
       .getAll()
       .filter(isLive)
       .filter(excludingStandalonePages)
-      .sort(byDate(Order.NewFirst))
       .filter(isFeatured)
       .sort(byDate(Order.NewFirst));
 
@@ -151,6 +158,7 @@ function config(config: Config): UserConfig {
    });
    config.addFilter('localeDate', localeDate);
    config.addFilter('isLive', (items: Item[]) => items.filter(isLive));
+   config.addFilter('take', (items: Item[], count: number) => items.slice(0, count));
 
    config.addShortcode('localeDate', localeDate);
    config.addShortcode('copyright', copyright);
@@ -162,7 +170,9 @@ function config(config: Config): UserConfig {
       'site/_styles': 'styles',
    });
 
-   config.addCollection('live', (collection) => collection.getAllSorted().filter(isLive));
+   config.addCollection('live', (collection) =>
+      collection.getAll().filter(isLive).sort(byDate(Order.NewFirst)),
+   );
    config.addCollection('pages', (collection) =>
       collection.getAll().filter((item) => item.data?.standalonePage),
    );
@@ -175,9 +185,10 @@ function config(config: Config): UserConfig {
 
    config.addCollection('nonNotes', (collection) =>
       collection
-         .getAllSorted()
+         .getAll()
          .filter(isLive)
-         .filter(not(inCollectionNamed('notes'))),
+         .filter(not(inCollectionNamed('notes')))
+         .sort(byDate(Order.NewFirst)),
    );
 
    config.addCollection('latest', latest);

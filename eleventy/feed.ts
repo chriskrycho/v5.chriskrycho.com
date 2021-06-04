@@ -227,7 +227,8 @@ const jsonFeed = ({
             // we want newest first
             DateTime.fromISO(b as string).toMillis() -
             DateTime.fromISO(a as string).toMillis(),
-      ),
+      )
+      .slice(0, 25),
 });
 
 interface EleventyData {
