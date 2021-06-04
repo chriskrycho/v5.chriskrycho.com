@@ -1,7 +1,7 @@
 {%- macro entries(items, config, includeReplyViaEmail = true) -%}
    {# invalid without date #}
    {%- if items is not undefined and items.length > 0 -%}
-      {%- for item in items | withValidDate -%}
+      {%- for item in items | withValidDate | take(25) -%}
          <entry>
             {#- Invalid to send an item without title or description -#}
             {% set url -%}
