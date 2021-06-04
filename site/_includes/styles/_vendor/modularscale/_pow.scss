@@ -2,6 +2,7 @@
 // Compass and other libs implement this more extensively.
 // In order to keep this simple, use those when they are avalible.
 // Issue for pow() support in Sass: https://github.com/sass/sass/issues/684
+@use "sass:math";
 
 @function ms-pow($b,$e) {
 
@@ -32,7 +33,7 @@
   }
   @if $e < 0 {
     @for $i from $e through 0 {
-      $ms-return: $ms-return / $b;
+      $ms-return: math.div($ms-return, $b);
     }
   }
   @return $ms-return;
