@@ -59,6 +59,8 @@ declare module '../types/eleventy' {
        * the slug changes.
        */
       feedId?: string;
+      /** Markdown-enabled thanks to people who contributed to the thing. */
+      thanks?: string;
    }
 }
 
@@ -139,6 +141,10 @@ function contentHtmlFor(
    const book = item.data?.book;
    const bookInfo = isBook(book) ? describe(book) : '';
 
+   const thanks = item.data?.thanks
+      ? `<hr/><p><strong>Thanks:</strong> ${markdown.renderInline(item.data.thanks)}</p>`
+      : '';
+
    const reply = includeReplyViaEmail
       ? ((): string => {
            const replySubject = encodeURIComponent(entryTitleFor(item));
@@ -147,7 +153,15 @@ function contentHtmlFor(
         })()
       : '';
 
-   return subtitle + audience + epistemicStatus + bookInfo + item.templateContent + reply;
+   return (
+      subtitle +
+      audience +
+      epistemicStatus +
+      bookInfo +
+      item.templateContent +
+      thanks +
+      reply
+   );
 }
 
 function titleFor(item: Item): string | undefined {
@@ -163,36 +177,37 @@ function summaryFor(item: Item): string {
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
-const toFeedItemGivenConfig = (config: SiteConfig, includeReplyViaEmail: boolean) => (
-   item: Item,
-): FeedItem | null =>
-   canParseDate(item.date) && item.data?.standalonePage !== true
-      ? {
-           id: absoluteUrl(item.data?.feedId ?? item.url, config.url),
-           author: {
-              name: config.author.name,
-              url: config.url,
-           },
-           title: titleFor(item),
-           url: absoluteUrl(item.url, config.url),
-           date_published: isoDate(item.data?.date ?? item.date),
-           content_html: contentHtmlFor(item, config, includeReplyViaEmail),
-           summary: summaryFor(item),
-           date_modified:
-              // can't use canParseDate b/c TS doesn't track that `updated` is usable in
-              // that scenario b/c it still thinks `data?.` is optional. :sigh:
-              typeof item.data?.updated === 'string' || item.data?.updated instanceof Date
-                 ? isoDate(item.data.updated)
-                 : undefined,
-           image: optionalString(item.data?.image ?? item.data?.book?.cover),
-           external_url: optionalString(item.data?.link ?? item.data?.book?.link),
-           tags: Array.isArray(item.data?.tags) ? item.data?.tags : [],
-           banner_image:
-              optionalString(item.data?.splash) ??
-              optionalString(item.data?.book?.cover) ??
-              optionalString(item.data?.image),
-        }
-      : null;
+const toFeedItemGivenConfig =
+   (config: SiteConfig, includeReplyViaEmail: boolean) =>
+   (item: Item): FeedItem | null =>
+      canParseDate(item.date) && item.data?.standalonePage !== true
+         ? {
+              id: absoluteUrl(item.data?.feedId ?? item.url, config.url),
+              author: {
+                 name: config.author.name,
+                 url: config.url,
+              },
+              title: titleFor(item),
+              url: absoluteUrl(item.url, config.url),
+              date_published: isoDate(item.data?.date ?? item.date),
+              content_html: contentHtmlFor(item, config, includeReplyViaEmail),
+              summary: summaryFor(item),
+              date_modified:
+                 // can't use canParseDate b/c TS doesn't track that `updated` is usable in
+                 // that scenario b/c it still thinks `data?.` is optional. :sigh:
+                 typeof item.data?.updated === 'string' ||
+                 item.data?.updated instanceof Date
+                    ? isoDate(item.data.updated)
+                    : undefined,
+              image: optionalString(item.data?.image ?? item.data?.book?.cover),
+              external_url: optionalString(item.data?.link ?? item.data?.book?.link),
+              tags: Array.isArray(item.data?.tags) ? item.data?.tags : [],
+              banner_image:
+                 optionalString(item.data?.splash) ??
+                 optionalString(item.data?.book?.cover) ??
+                 optionalString(item.data?.image),
+           }
+         : null;
 
 type JSONFeedConfig = {
    items: Item[];

@@ -71,6 +71,10 @@
                         </p>
                      {%- endif -%}
                      {{-item.templateContent | safe-}}
+                     {%- if item.data.thanks -%}
+                     <hr/>
+                     <p><strong>Thanks:</strong> {{item.data.thanks | inlineMd | safe}}</p>
+                     {%- endif -%}
                      <hr/>
                      {%- if includeReplyViaEmail -%}
                         <p><a href="mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}">Reply via email!</a></p>
