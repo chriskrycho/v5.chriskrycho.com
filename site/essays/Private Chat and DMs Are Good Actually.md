@@ -1,32 +1,31 @@
 ---
-title: Private Chat and DMs Are Good, Actually
+title: >
+    Private Chat and <abbr title="direct messages">DM</abbr>s Are Good, Actually
 subtitle: >
-  Don’t forget the lessons of physical offices when thinking about chat.
+    Don’t forget the lessons of physical offices when thinking about chat.
 date: 2020-11-30T08:00:00-0700
 updated: 2020-12-27T22:21:00-0700
 summary: >
-  Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
+    Some leaders are tempted to treat private chat as a signal or even a cause of team dysfunction—but there is no such correlation, and indeed people need private chats for healthy social dynamics.
 qualifiers:
-  audience: >
-    Anyone considering social dynamics in team chat, but especially leaders with authority to shape team norms.
+    audience: >
+        Anyone considering social dynamics in team chat, but especially leaders with authority to shape team norms.
 thanks: >
-  Thanks to [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), [Stephen Carradini](https://stephencarradini.com), and [Jeremy Sherman](https://jeremywsherman.com) for taking the time to read, comment on, and discuss earlier drafts of this material.
+    Thanks to [Keita Kobayashi](https://keita.blog), [Mike Hostetler](https://mike.hostetlerhome.com), [Will Larson](https://lethain.com), [Stephen Carradini](https://stephencarradini.com), and [Jeremy Sherman](https://jeremywsherman.com) for taking the time to read, comment on, and discuss earlier drafts of this material.
 
-  Credit to [Austin Distel](https://unsplash.com/@austindistel) for [the illustrative photo](https://unsplash.com/photos/fEedoypsW_U).
+    Credit to [Austin Distel](https://unsplash.com/@austindistel) for [the illustrative photo](https://unsplash.com/photos/fEedoypsW_U).
 featured: true
 image: https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80
 feedId: journal/private-chat-and-dms-are-good-actually/
 tags:
-  - leadership
-  - decision-making
-  - chat
-  - Slack
+    - leadership
+    - decision-making
+    - chat
+    - Slack
 
 ---
 
-It’s common in some circles to treat private rooms or DM-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have.
-
-*[DM]: direct message
+It’s common in some circles to treat private rooms or <abbr title="direct messages">DM</abbr>-heavy Slack teams as a sign and more importantly a *cause* of dysfunction, particularly in terms of team trust. In particular, folks are sometimes tempted to use the metrics Slack provides to measure the health of their organizations: a high value of the private-to-public messages ratio is seen as a fairly direct measure of mistrust. The corresponding assumption is that it also *causes* teams to silo from each other and mistrust each other in the first place. I disagree firmly with both parts of this, and always have.
 
 ## On Privacy
 
@@ -36,9 +35,7 @@ First, a heavy use of private rooms and <abbr title="direct messages">DM</abbr>s
 
 This is exactly what we should expect based on how people interact with each other in the analog world. Our offices have meeting rooms because having spaces for private conversation helps everyone do better in the public spaces. For one thing, even in the healthiest organization, there are going to be times when you’re frustrated with another person or team. When that happens, the most helpful thing is often to go talk to someone else you trust. That gives you space to blow off steam, to work it through mentally or emotionally so you *can* handle it well publicly.
 
-For another, there are plenty of totally “positive” conversations which benefit from privacy.[^positive] Sometimes you need to help someone avoid tripping over a political or personal landmine in a conversation. Sometimes you’re coaching someone through a difficult personal situation, or through their career considerations. Sometimes you’re working on a thorny problem, where having more input from people with less context would just be a distraction (even if just by way of having to give people enough context to contribute meaningfully). Sometimes you’re processing with your closest colleagues about changes to a company policy which affect you. Sometimes you’re responding privately to a public question about an HR policy based on your own experience. Sometimes you’re just hanging out with your team, talking about your weekend.
-
-*[HR]: human resources
+For another, there are plenty of totally “positive” conversations which benefit from privacy.[^positive] Sometimes you need to help someone avoid tripping over a political or personal landmine in a conversation. Sometimes you’re coaching someone through a difficult personal situation, or through their career considerations. Sometimes you’re working on a thorny problem, where having more input from people with less context would just be a distraction (even if just by way of having to give people enough context to contribute meaningfully). Sometimes you’re processing with your closest colleagues about changes to a company policy which affect you. Sometimes you’re responding privately to a public question about an <abbr title="human resources">HR</abbr> policy based on your own experience. Sometimes you’re just hanging out with your team, talking about your weekend.
 
 [^positive]: I scare-quote “positive” here because I think dealing with difficult situations in a healthy way *is* positive—but since it’s often in response to a negative or difficult circumstance, I think the distinction is still useful.
 
@@ -54,15 +51,12 @@ While there are real challenges for teams around decision-making, these challeng
 
 What matters is not that you have a record of every word spoken in a meeting but that the decision-making process is transparent enough that people can trust it, and open enough that if something got missed it can be flagged and reevaluated. Public chat doesn’t solve this very well, though. For one thing, public chat in a room which key people aren’t in can be nearly as much a problem as private chat. For another, a chat log is a *terrible* way to understand a decision, just as a video recording of a meeting around a table would be.
 
-Accordingly, I recommend away from making significant decisions over chat at all. In place of _ad hoc_ conversations for important decisions—chat or otherwise—use a clear decision-making framework (including clarifying the parties involved via [RAPID][RAPID], [RACI][RACI], etc.) and use good meeting minutes for synchronous conversations (whether via video or chat or in person) and comment history for asynchronous decision-making (e.g. via <abbr title="request for comments">RFC</abbr>s). The resulting decisions will clearer and the document trail behind them will be far more accessible and useful over time.[^process]
-
-*[RAPID]: recommend, approve, perform, input, decide
-*[RACI]: responsible, accountable, consulted, informed
+Accordingly, I recommend away from making significant decisions over chat at all. In place of _ad hoc_ conversations for important decisions—chat or otherwise—use a clear decision-making framework (including clarifying the parties involved via [<abbr title="recommend, approve, perform, input, decide">RAPID</abbr>][RAPID], [<abbr title="responsible, accountable, consulted, informed">RACI</abbr>][RACI], etc.) and use good meeting minutes for synchronous conversations (whether via video or chat or in person) and comment history for asynchronous decision-making (e.g. via <abbr title="request for comments">RFC</abbr>s). The resulting decisions will clearer and the document trail behind them will be far more accessible and useful over time.[^process]
 
 [RAPID]: https://www.bridgespan.org/bridgespan/Images/articles/rapid/RAPIDDecisionMaking.pdf
 [RACI]: https://racichart.org/the-raci-model/
 
-[^process]: That does *not* mean you need a heavy process here. Sometimes all you need is a 15-minute sync or a 1-day RFC cycle. Again: the key is the trustworthiness and openness of the process. Make it as lightweight as you possibly can!
+[^process]: That does *not* mean you need a heavy process here. Sometimes all you need is a 15-minute sync or a 1-day <abbr title="request for comments">RFC</abbr> cycle. Again: the key is the trustworthiness and openness of the process. Make it as lightweight as you possibly can!
 
 Another legitimate problem is people abusing private conversation as a way to do an end-around on the official channels. This is not specific to chat, either, though: people use private meetings as a way of getting around formal decision-making approaches in the office, too. Again, the key is that the reasons for decisions are clearly articulated and open to feedback from all relevant parties. If a decision suddenly changes and there isn’t a clearly-visible reason why, there is an organizational problem… but one that would have existed regardless of whether chat was involved at all.
 
@@ -70,7 +64,7 @@ Another legitimate problem is people abusing private conversation as a way to do
 
 The other real reason to encourage people to “default to public” is that private chat has inertia on its side. If a team defaults to private, even conversations which would benefit from being public are likely to end up remaining private. There isn’t a one-size-fits-all solution here, though, for all the reasons that private chat can be good. The best we can do here is have a habit—especially as leaders—of moving conversations to public whenever there is no reason for it to be private.
 
-For example: I’m the lead for [a large migration][octane] on [the app I support][linkedin], so people regularly DM me with questions about the migration. I have built a habit of moving those conversations to public forums with a gentle nudge: “Hey, do you mind reposting that question in \<the dedicated Slack room for the migration\>? That way everyone can benefit from our discussion!” What’s more, I try to direct it to the *most* public forum possible. That might be the Slack room for the migration, which I intentionally set up to support *all* teams working on the migration. It might be our internal Q&A board. It might be public Stack Overflow. The key is that to default to the most public channel possible. Leaders’ actions implicitly set norms just as much or more than explicit statements about what people should do.
+For example: I’m the lead for [a large migration][octane] on [the app I support][linkedin], so people regularly <abbr title="direct message">DM</abbr> me with questions about the migration. I have built a habit of moving those conversations to public forums with a gentle nudge: “Hey, do you mind reposting that question in \<the dedicated Slack room for the migration\>? That way everyone can benefit from our discussion!” What’s more, I try to direct it to the *most* public forum possible. That might be the Slack room for the migration, which I intentionally set up to support *all* teams working on the migration. It might be our internal <abbr title="question and answer">Q&A</abbr> board. It might be public Stack Overflow. The key is that to default to the most public channel possible. Leaders’ actions implicitly set norms just as much or more than explicit statements about what people should do.
 
 [octane]: https://emberjs.com/editions/octane/
 [linkedin]: https://www.linkedin.com
