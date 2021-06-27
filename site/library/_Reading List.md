@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-04-12T18:31:00-0700
+date: 2021-06-26T21:30:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -66,6 +66,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>God Without Measure: Working Papers in Christian Theology: Volume 1: God and the Works of God</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2FGod-Without-Measure-Working-Papers-in-Christian-Theology-Volume-1-God-and-the-Works-of-God-Prof-John-Webster%2Fbook%2F39308727), John Webster (new)
 
+- [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+
+- <cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>, Nicole Forsgren, Jez Humble, and Gene Kim (new)
+
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
@@ -96,6 +100,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
 	- [<cite>Cibola Burn</cite>][cibola-burn]
 	- [<cite>Nemesis Games</cite>][nemesis-games]
+
+- [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+
+- <cite>Project Hail Mary</cite>, Andy Weir (new)
 
 ## 2020
 
