@@ -27,9 +27,9 @@
    <meta name="article:author" content="{{config.url}}"/>
 
    {%- if titleOverride -%}
-      {%- set title = titleOverride | siteTitle(config) -%}
+      {%- set title = titleOverride | siteTitle(config) | striptags(true) | safe -%}
    {%- else -%}
-      {%- set title = page.data.title | siteTitle(config) -%}
+      {%- set title = page.data.title | siteTitle(config) | striptags(true) | safe -%}
    {%- endif -%}
    <meta property="og:title" content="{{title}}"/>
    <meta name="twitter:title" content="{{title}}"/>
