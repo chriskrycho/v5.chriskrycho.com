@@ -11,7 +11,7 @@ tags:
 
 Over and over again throughout his oeuvre, Webster reminds his readers that God’s will and rule is not the will and rule of a despot who must impose his will upon would otherwise be in some kind of better freedom, but rather: the very ground of all other being and reality, the faithful pursuit of those who are running headlong into ruin and destruction so that they may be saved from their own deluded self-destruction. Thus:
 
-<figure>
+<figure class='quotation'>
 
 > Further, the divine purpose is not the imposition of an alien will, but that by virtue of which creatures come to have life and to flourish. This is because God's will is inseparable from his goodness and wisdom, and so is the gift of life.
 
