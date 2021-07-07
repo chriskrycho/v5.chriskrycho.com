@@ -4,3 +4,7 @@ updates:
     directory: '/'
     schedule:
       interval: daily
+    open-pull-requests-limit: 100
+    commit-message:
+      prefix: '[skip netlify]'
+      include: scope
