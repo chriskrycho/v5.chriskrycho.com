@@ -182,6 +182,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
    addCollectionFromDir(config, 'photos');
+   addCollectionFromDir(config, 'photos/new-mexico-vacation');
 
    config.addCollection('nonNotes', (collection) =>
       collection
