@@ -1,7 +1,5 @@
 ---
 title: Dinosaur National Monument, 2021
-subtitle: >
-    A series of photos taken July 9–11, 2021, on a short family vacation to Dinosaur National Monument on the Colorado–Utah border.
 permalink: /photos/dinosaur-national-monument/
 layout: archives.njk
 standalonePage: true
