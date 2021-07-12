@@ -131,14 +131,16 @@
       max-width: var(--max-width);
       text-align: left;
 
-      .section-link {
+      // comes from markdown-it-anchor
+      .header-anchor {
          text-decoration: none;
          text-align: left;
          transition: color var(--transition);
          position: relative;
          padding-bottom: 0.5em;
 
-         .__marker {
+         &::after {
+            content: '';
             background-color: currentColor;
             transition: all var(--transition);
             display: inline-block;
@@ -152,7 +154,7 @@
          &:active {
             color: currentColor;
 
-            .__marker {
+            &::after {
                width: 100%;
                background-color: var(--link);
             }
@@ -163,7 +165,7 @@
    h1,
    h2,
    h3 {
-      .section-link .__marker {
+      .header-anchor::after {
          height: 2px;
       }
    }
@@ -171,7 +173,7 @@
    h4,
    h5,
    h6 {
-      .section-link .__marker {
+      .header-anchor::after {
          height: 1.5px;
       }
    }
@@ -195,17 +197,17 @@
       max-width: var(--max-width);
       text-align: center;
 
-      .section-link {
+      .header-anchor {
          color: var(--h1-fg);
 
-         .__marker {
+         &::after {
             width: 3rem;
             left: calc(50% - 1.5rem);
          }
 
          &:hover,
          &:active {
-            .__marker {
+            &::after {
                left: 0;
             }
          }
@@ -224,15 +226,15 @@
       margin-top: ms(4);
       margin-bottom: calc(1em + 2px); // account for height of marker
 
-      .section-link {
+      .header-anchor {
          color: var(--h2-fg);
 
-         .__marker {
+         &::after {
             width: 1.5rem;
             left: calc(50% - 0.75rem);
          }
 
-         &:hover .__marker {
+         &:hover::after {
             left: 0;
          }
       }
@@ -249,7 +251,7 @@
       margin-top: ms(1);
       margin-bottom: calc(#{ms(-1)} + 2px);
 
-      .section-link {
+      .header-anchor {
          color: var(--h3-fg);
       }
    }
@@ -264,7 +266,7 @@
       margin-top: ms(0);
       margin-bottom: calc(1.5px + #{ms(-4)});
 
-      .section-link {
+      .header-anchor {
          color: var(--h4-fg);
          padding-bottom: ms(-8);
       }
@@ -280,7 +282,7 @@
       margin-top: ms(0);
       margin-bottom: calc(#{ms(-5)} + 1.5px);
 
-      .section-link {
+      .header-anchor {
          color: var(--h5-fg);
          text-decoration: underline;
          text-decoration-color: transparent;
@@ -299,7 +301,7 @@
       margin-top: ms(0);
       margin-bottom: calc(#{ms(-5)} + 1.5px);
 
-      .section-link {
+      .header-anchor {
          color: var(--h6-fg);
          text-decoration: underline;
          text-decoration-color: transparent;
