@@ -1,5 +1,6 @@
 ---
 title: ‘Life… finds a way.’
+feedId: "/photos/life-finds-a-way/"
 date: 2021-07-12T11:51:25-0600
 subtitle: >
     A lonely little plant my wife spotted—from our [family trip to Dinosaur National Monument](https://v5.chriskrycho.com/photos/dinosaur-national-monument/).

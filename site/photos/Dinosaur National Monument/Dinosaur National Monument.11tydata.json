@@ -1,0 +1,4 @@
+{
+   "layout": "post.njk",
+   "permalink": "/photos/dinosaur-national-monument/{{page.fileSlug | slug}}/"
+}
