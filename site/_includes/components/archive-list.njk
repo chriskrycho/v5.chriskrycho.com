@@ -53,7 +53,7 @@
                            —<a href='{{item.url}}' title='item permalink'>❈</a>
                         {%- endif -%}
                         {%- if idByCollection %}
-                           {%- set collection = item.inputPath | toCollection -%}
+                           {%- set collection = item.inputPath | toRootCollection -%}
                            <span class='item-title__collection'>—<a href="/{{collection}}/">{{collection | upper}}</a></span>
                         {% endif -%}
                      </h5>

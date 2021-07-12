@@ -16,7 +16,13 @@ import spacewell from './plugin-spacewell';
 import typeset from './plugin-typeset';
 import siteTitle from './site-title';
 import excludingCollection from './excluding-collection';
-import toCollection from './to-collection';
+import {
+   toCollection,
+   collectionName,
+   toCollectionName,
+   toCollectionUrl,
+   toRootCollection,
+} from './collection';
 
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 
@@ -55,11 +61,9 @@ const excludingStandalonePages = not(isStandalonePage);
 
    @param config The eleventy config
    @param path   The path to filter as a collection
-   @param name   An optional override name. If not supplied, the name will be a
-                 slugified version of the path, e.g. `foo/bar` -> `foo-bar`
  */
-function addCollectionFromDir(config: Config, path: string, name: string = path): void {
-   config.addCollection(name, (collections) =>
+function addCollectionFromDir(config: Config, path: string): void {
+   config.addCollection(collectionName({ from: path }), (collections) =>
       collections
          .getAll()
          .filter((item) => item.inputPath.includes(path))
@@ -138,6 +142,9 @@ function config(config: Config): UserConfig {
    config.addFilter('inlineMd', markdown.renderInline.bind(markdown));
 
    config.addFilter('toCollection', toCollection);
+   config.addFilter('toCollectionUrl', toCollectionUrl);
+   config.addFilter('toCollectionName', toCollectionName);
+   config.addFilter('toRootCollection', toRootCollection);
    config.addFilter('stringify', (obj) => JSON.stringify(obj));
    config.addFilter('archiveByYears', archiveByYear);
    config.addFilter('absoluteUrl', absoluteUrl);
@@ -182,8 +189,8 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
    addCollectionFromDir(config, 'photos');
-   addCollectionFromDir(config, 'photos/new-mexico-vacation');
-   addCollectionFromDir(config, 'photos/dinosaur-national-monument');
+   addCollectionFromDir(config, 'photos/New Mexico Vacation');
+   addCollectionFromDir(config, 'photos/Dinosaur National Monument');
 
    config.addCollection('nonNotes', (collection) =>
       collection

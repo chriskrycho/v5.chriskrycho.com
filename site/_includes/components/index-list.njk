@@ -8,7 +8,7 @@
             {% for item in collection -%}
                <li class='latest-entry'>
                   <h3 class='entry-collection heading'>
-                     {%- set collectionName = item.inputPath | toCollection -%}
+                     {%- set collectionName = item.inputPath | toRootCollection -%}
                      <a href="/{{collectionName}}/">{{collectionName}}</a>
                   </h3>
                   <article class='entry-content'>
