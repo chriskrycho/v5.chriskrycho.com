@@ -1,13 +1,11 @@
 import hljs from 'highlight.js';
 import markdownIt from 'markdown-it';
 import abbr from 'markdown-it-abbr';
-import anchor, { AnchorOptions } from 'markdown-it-anchor';
+import anchor from 'markdown-it-anchor';
 import defList from 'markdown-it-deflist';
 import footnotes from 'markdown-it-footnote';
 import implicitFigures from 'markdown-it-implicit-figures';
 import sup from 'markdown-it-sup';
-import Core from 'markdown-it/lib/parser_core';
-import Token from 'markdown-it/lib/token';
 import { env } from 'process';
 import { Result } from 'true-myth';
 import slugify from 'uslug';
@@ -34,40 +32,6 @@ function logErr(err: HighlightError): void {
    console.error(env['DEBUG'] ? err.long : err.short);
 }
 
-/**
-   Garbage, but does the job for the moment.
- */
-function renderPermalink(
-   slug: string,
-   opts: AnchorOptions,
-   state: Core & { tokens: Token[] },
-   idx: number,
-): void {
-   const marker = [
-      Object.assign(new Token('span_open', 'span', 1), {
-         attrs: [['class', '__marker']],
-      }),
-      Object.assign(new Token('html_block', '', 0), {
-         content: opts.permalinkSymbol,
-      }),
-      new Token('span_close', 'span', -1),
-   ];
-
-   const openTokens = [
-      Object.assign(new Token('link_open', 'a', 1), {
-         attrs: [
-            ['class', opts.permalinkClass],
-            ['href', opts.permalinkHref?.(slug, state)],
-         ],
-      }),
-   ];
-
-   const closeTokens = [...marker, new Token('link_close', 'a', -1)];
-
-   state.tokens[idx + 1].children?.unshift(...openTokens);
-   state.tokens[idx + 1].children?.push(...closeTokens);
-}
-
 const md = markdownIt({
    html: true,
    highlight: (str, lang) =>
@@ -85,11 +49,8 @@ const md = markdownIt({
       figcaption: true,
    })
    .use(anchor, {
-      permalink: true,
       level: 1,
-      permalinkClass: 'section-link',
-      permalinkSymbol: '',
-      renderPermalink,
+      permalink: anchor.permalink.headerLink(),
       slugify,
    })
    .use(abbr);
