@@ -175,7 +175,7 @@ function titleFor({
    const { title } = item.data ?? {};
 
    const isPhoto = item.data?.collections['photos'];
-   const photoTitleAllowed = !isPhoto || photoItemTitles === 'on';
+   const photoTitleAllowed = !(isPhoto && photoItemTitles === 'off');
    const showTitle = sectionMarker && title && photoTitleAllowed;
    return showTitle ? `[${sectionMarker}] ${title}` : undefined;
 }
