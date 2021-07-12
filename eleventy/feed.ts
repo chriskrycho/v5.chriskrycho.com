@@ -174,7 +174,10 @@ function titleFor({
    const sectionMarker = toRootCollection(item.inputPath);
    const { title } = item.data ?? {};
 
-   const isPhoto = item.data?.collections['photos'];
+   const isPhoto =
+      item.data?.collections['photos']?.some(
+         ({ inputPath }) => item.inputPath === inputPath,
+      ) ?? false;
    const photoTitleAllowed = !(isPhoto && photoItemTitles === 'off');
    const showTitle = sectionMarker && title && photoTitleAllowed;
    return showTitle ? `[${sectionMarker}] ${title}` : undefined;
@@ -256,7 +259,7 @@ const jsonFeed = ({
    description: config.description,
    items: items
       .map(toFeedItemGivenConfig({ config, includeReplyViaEmail, photoItemTitles }))
-      .filter(<T>(item: T | null): item is T => !!item)
+      .filter(<T>(item: T | null): item is T => item !== null)
       .sort(
          ({ date_published: a }, { date_published: b }) =>
             // we want newest first
