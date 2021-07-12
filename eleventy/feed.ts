@@ -6,7 +6,7 @@ import absoluteUrl from './absolute-url';
 import { canParseDate } from './date-time';
 import isoDate from './iso-date';
 import siteTitle from './site-title';
-import toCollection from './to-collection';
+import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
 import { DateTime } from 'luxon';
@@ -165,7 +165,7 @@ function contentHtmlFor(
 }
 
 function titleFor(item: Item): string | undefined {
-   const sectionMarker = toCollection(item.inputPath);
+   const sectionMarker = toRootCollection(item.inputPath);
    const { title } = item.data ?? {};
    return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined;
 }

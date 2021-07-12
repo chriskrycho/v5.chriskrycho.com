@@ -46,8 +46,7 @@
    <span class='section-label'>Posted:</span>
    <span class='section-content'>
       This entry was {% if updated is defined -%} originally {%- endif %} published in
-      {% set collection = inputPath | toCollection %}
-      <a href='/{{collection}}/'>{{collection | title}}</a>
+      <a href='/{{inputPath | toCollectionUrl}}/'>{{inputPath | toCollectionName | title}}</a>
       on <span class='dt-published'>{% localeDate date, dateFormat %}</span>
       {%- if updated is defined -%}
       , and last updated on {% localeDate updated, dateFormat %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
