@@ -1,7 +1,8 @@
 ---
+title: ‘Life… finds a way.’
 date: 2021-07-12T11:51:25-0600
 subtitle: >
-    ‘Life… finds a way.’ —from our [family trip to Dinosaur National Monument](https://v5.chriskrycho.com/photos/dinosaur-national-monument/).
+    A lonely little plant my wife spotted—from our [family trip to Dinosaur National Monument](https://v5.chriskrycho.com/photos/dinosaur-national-monument/).
 tags:
     - photography
 image: https://images.unsplash.com/photo-1626111687796-5a63e9858630?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=100
