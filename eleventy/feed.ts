@@ -164,10 +164,20 @@ function contentHtmlFor(
    );
 }
 
-function titleFor(item: Item): string | undefined {
+function titleFor({
+   item,
+   photoItemTitles,
+}: {
+   item: Item;
+   photoItemTitles: 'on' | 'off';
+}): string | undefined {
    const sectionMarker = toRootCollection(item.inputPath);
    const { title } = item.data ?? {};
-   return sectionMarker && title ? `[${sectionMarker}] ${title}` : undefined;
+
+   const isPhoto = item.data?.collections['photos'];
+   const photoTitleAllowed = !isPhoto || photoItemTitles === 'on';
+   const showTitle = sectionMarker && title && photoTitleAllowed;
+   return showTitle ? `[${sectionMarker}] ${title}` : undefined;
 }
 
 function summaryFor(item: Item): string {
@@ -178,7 +188,15 @@ function summaryFor(item: Item): string {
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
 const toFeedItemGivenConfig =
-   (config: SiteConfig, includeReplyViaEmail: boolean) =>
+   ({
+      config,
+      includeReplyViaEmail,
+      photoItemTitles,
+   }: {
+      config: SiteConfig;
+      includeReplyViaEmail: boolean;
+      photoItemTitles: 'on' | 'off';
+   }) =>
    (item: Item): FeedItem | null =>
       canParseDate(item.date) && item.data?.standalonePage !== true
          ? {
@@ -187,7 +205,7 @@ const toFeedItemGivenConfig =
                  name: config.author.name,
                  url: config.url,
               },
-              title: titleFor(item),
+              title: titleFor({ item, photoItemTitles }),
               url: absoluteUrl(item.url, config.url),
               date_published: isoDate(item.data?.date ?? item.date),
               content_html: contentHtmlFor(item, config, includeReplyViaEmail),
@@ -215,6 +233,7 @@ type JSONFeedConfig = {
    permalink: string;
    title: string;
    includeReplyViaEmail: boolean;
+   photoItemTitles: 'on' | 'off';
 };
 
 /**
@@ -228,6 +247,7 @@ const jsonFeed = ({
    permalink,
    title,
    includeReplyViaEmail,
+   photoItemTitles,
 }: JSONFeedConfig): JsonFeed => ({
    version: 'https://jsonfeed.org/version/1',
    title: siteTitle(title, config),
@@ -235,7 +255,7 @@ const jsonFeed = ({
    feed_url: absoluteUrl(permalink, config.url),
    description: config.description,
    items: items
-      .map(toFeedItemGivenConfig(config, includeReplyViaEmail))
+      .map(toFeedItemGivenConfig({ config, includeReplyViaEmail, photoItemTitles }))
       .filter(<T>(item: T | null): item is T => !!item)
       .sort(
          ({ date_published: a }, { date_published: b }) =>
@@ -264,6 +284,8 @@ export class JSONFeed implements EleventyClass {
    declare title?: string;
    declare permalink?: string;
 
+   photoItemTitles: 'on' | 'off' = 'on';
+
    includeReplyViaEmail = true;
 
    data(): ClassData {
@@ -289,6 +311,7 @@ export class JSONFeed implements EleventyClass {
             permalink: page.url,
             title,
             includeReplyViaEmail: this.includeReplyViaEmail,
+            photoItemTitles: this.photoItemTitles,
          }),
       );
    }

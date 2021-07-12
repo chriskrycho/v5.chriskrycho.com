@@ -19,6 +19,9 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /journal/private-chat-and-dms-are-good-actually/ /essays/private-chat-and-dms-are-good-actually/ 301!
 /journal/heuristics-for-good-software-design/introducing-heuristics-for-good-software-design/ /journal/heuristics-for-good-software-design/introduction/ 301!
 /photos/life-finds-a-way/ /photos/dinosaur-national-monument/life-finds-a-way/ 301!
+/feed-without-notes.json /feeds/without-notes.json 301!
+/feed-without-notes.xml /feeds/without-notes.xml 301!
+/feed-without-reply.json /feeds/without-reply.json 301!
 
 # ...including notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
