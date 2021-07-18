@@ -8,7 +8,7 @@ export const collectionName = ({ from: pathString }: { from: string }): string =
    pathString.split(path.sep).filter(excluded).join('__');
 
 /** Get the collection corresponding to a given path slug */
-const toCollection = (slug: string): string =>
+export const toCollection = (slug: string): string =>
    collectionName({ from: path.dirname(slug.trim()) });
 
 export const toCollectionUrl = (

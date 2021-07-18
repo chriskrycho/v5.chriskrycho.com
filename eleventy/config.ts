@@ -17,6 +17,7 @@ import typeset from './plugin-typeset';
 import siteTitle from './site-title';
 import excludingCollection from './excluding-collection';
 import {
+   toCollection,
    collectionName,
    toCollectionName,
    toCollectionUrl,
@@ -140,6 +141,7 @@ function config(config: Config): UserConfig {
    config.addFilter('md', markdown.render.bind(markdown));
    config.addFilter('inlineMd', markdown.renderInline.bind(markdown));
 
+   config.addFilter('toCollection', toCollection);
    config.addFilter('toCollectionUrl', toCollectionUrl);
    config.addFilter('toCollectionName', toCollectionName);
    config.addFilter('toRootCollection', toRootCollection);
@@ -182,6 +184,7 @@ function config(config: Config): UserConfig {
       collection.getAll().filter((item) => item.data?.standalonePage),
    );
    addCollectionFromDir(config, 'journal');
+   addCollectionFromDir(config, 'journal/Fanfare for a New Era of American Spaceflight');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'library/God Without Measure');
