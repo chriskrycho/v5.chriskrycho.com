@@ -21,7 +21,7 @@ standalonePage: true
 </div>
 {%- endif -%}
 
-{%- set c = page.inputPath | toCollectionName(data.isGhostCollection) -%}
+{%- set c = page.inputPath | toCollection(data.isGhostCollection) -%}
 {%- if collections[c] -%}
    {%-
       set items = collections[c]
