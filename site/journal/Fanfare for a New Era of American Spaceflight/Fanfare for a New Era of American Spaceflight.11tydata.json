@@ -1,6 +1,6 @@
 {
    "layout": "post.njk",
-   "permalink": "/journal/crew-dragon-fanfare/{{page.fileSlug | slug}}/index.html",
+   "permalink": "/journal/fanfare-for-a-new-era-of-american-spaceflight/{{page.fileSlug | slug}}/",
    "series": {
       "title": "Composing <cite>Fanfare for a New Era of American Spaceflight</cite>"
    }
