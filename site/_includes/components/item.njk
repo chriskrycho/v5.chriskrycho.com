@@ -33,7 +33,7 @@
 {% endif %}
 {% endmacro %}
 
-{% macro meta(title, date, tags, updated, inputPath, thanks) %}
+{% macro meta(title, date, tags, updated, inputPath, thanks, isGhostCollection) %}
 {%- set dateFormat = 'MMMM d, yyyy' %}
 <footer class='post-meta'>
    {% if thanks is defined %}
@@ -46,7 +46,7 @@
    <span class='section-label'>Posted:</span>
    <span class='section-content'>
       This entry was {% if updated is defined -%} originally {%- endif %} published in
-      <a href='/{{inputPath | toCollectionUrl}}/'>{{inputPath | toCollectionName | title}}</a>
+      <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
       on <span class='dt-published'>{% localeDate date, dateFormat %}</span>
       {%- if updated is defined -%}
       , and last updated on {% localeDate updated, dateFormat %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)

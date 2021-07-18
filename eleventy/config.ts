@@ -17,7 +17,6 @@ import typeset from './plugin-typeset';
 import siteTitle from './site-title';
 import excludingCollection from './excluding-collection';
 import {
-   toCollection,
    collectionName,
    toCollectionName,
    toCollectionUrl,
@@ -141,7 +140,6 @@ function config(config: Config): UserConfig {
    config.addFilter('md', markdown.render.bind(markdown));
    config.addFilter('inlineMd', markdown.renderInline.bind(markdown));
 
-   config.addFilter('toCollection', toCollection);
    config.addFilter('toCollectionUrl', toCollectionUrl);
    config.addFilter('toCollectionName', toCollectionName);
    config.addFilter('toRootCollection', toRootCollection);
