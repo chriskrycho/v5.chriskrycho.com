@@ -186,6 +186,9 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
+   addCollectionFromDir(config, 'library/God Without Measure');
+   addCollectionFromDir(config, 'library/God Without Measure/Volume I');
+   addCollectionFromDir(config, 'library/God Without Measure/Volume II');
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
    addCollectionFromDir(config, 'photos');
