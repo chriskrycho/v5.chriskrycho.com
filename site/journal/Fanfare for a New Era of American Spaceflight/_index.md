@@ -12,6 +12,6 @@ In May 2020, I took a week off of work and composed a fanfare celebrating the th
 
 <div class='callout'>
 
-See [here](/elsewhere/fanfare-for-a-new-era-of-amercan-spaceflight) for my notes on publishing the fanfare to every music service imaginable.
+See [here](/elsewhere/fanfare-for-a-new-era-of-american-spaceflight/) for my notes on publishing the fanfare to every music service imaginable.
 
 </div>
