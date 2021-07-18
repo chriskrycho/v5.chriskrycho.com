@@ -8,6 +8,7 @@ tags:
   - dogmatics
   - quotes
   - reading notes
+feedId: /library/god-without-measure/volume-1/exposition-precedes-disputation/
 
 ---
 

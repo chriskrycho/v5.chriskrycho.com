@@ -1,6 +1,6 @@
 {
    "layout": "post.njk",
-   "permalink": "/library/god-without-measure/volume-1/{{page.fileSlug | slug}}/",
+   "permalink": "/library/god-without-measure/volume-i/{{page.fileSlug | slug}}/",
    "book": {
       "title": "God Without Measure: Working Papers in Christian Theology – Volume I: God and the Works of God",
       "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/god-without-measure-v-ii.jpg",

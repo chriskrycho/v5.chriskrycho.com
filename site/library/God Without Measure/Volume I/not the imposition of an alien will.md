@@ -6,6 +6,7 @@ summary: >
 tags:
   - quotes
   - reading notes
+feedId: /library/god-without-measure/volume-1/not-the-imposition-of-an-alien-will/
 
 ---
 
