@@ -23,7 +23,7 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /feed-without-notes.xml /feeds/without-notes.xml 301!
 /feed-without-reply.json /feeds/without-reply.json 301!
 /library/god-without-measure/volume-1/* /library/god-without-measure/volume-i/:splat 301!
-/journal/crew-dragon-fanfare/* /library/fanfare-for-a-new-era-of-american-spaceflight/:splat 301!
+/journal/crew-dragon-fanfare/* /journal/fanfare-for-a-new-era-of-american-spaceflight/:splat 301!
 
 # ...including notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
