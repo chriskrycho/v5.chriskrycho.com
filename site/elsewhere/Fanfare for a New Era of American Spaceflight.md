@@ -11,6 +11,7 @@ tags:
     - Dorico
 featured: true
 date: 2021-07-18T14:20:00-0600
+updated: 2021-07-20T10:24:00-0600
 
 ---
 
@@ -24,7 +25,7 @@ As I suggested I might in [the final post][last] in my [series][fanfare-here] on
 
 The result is something I am *content* with. I am, of course, painfully aware of every. single. thing. wrong with that recording, and I have a list of things I would (will!) do differently for similar works in the future. But: it is good *enough* to put out into the world, and to allow others to enjoy. I am, all those qualifications notwithstanding, pretty proud of this!
 
-So: [give it a listen on your music service of choice!]({{link}})
+So: [give it a listen on your music service of choice!]({{link}}) Also [Bandcamp](https://chriskrycho.bandcamp.com/track/fanfare-for-a-new-era-of-american-spaceflight)!
 
 [last]: https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-8/
 [Dorico]: https://new.steinberg.net/dorico/
