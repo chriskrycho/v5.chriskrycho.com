@@ -10,6 +10,7 @@ import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
 import { DateTime } from 'luxon';
+import { Result } from 'true-myth';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
@@ -18,10 +19,9 @@ type SiteConfig = typeof import('../site/_data/config');
 const optionalString = (value: unknown): string | undefined =>
    typeof value === 'string' ? value : undefined;
 
-interface Book {
-   title: string;
-   author: string;
-   year?: number | string;
+type Author = { author: string } | { authors: string[] };
+
+type Review = {
    review?: {
       rating:
          | 'Required'
@@ -30,9 +30,15 @@ interface Book {
          | 'Not Recommended';
       summary: string;
    };
-   cover?: string;
-   link?: string;
-}
+};
+
+type Book = Review &
+   Author & {
+      title: string;
+      year?: number | string;
+      cover?: string;
+      link?: string;
+   };
 
 /** Extending the base Eleventy item with my own data */
 declare module '../types/eleventy' {
@@ -87,13 +93,33 @@ function isBook(maybeBook: unknown): maybeBook is Book {
 
    return (
       typeof maybe.title === 'string' &&
-      typeof maybe.author === 'string' &&
+      (typeof maybe.author === 'string' || Array.isArray(maybe.authors)) &&
       (hasType('number', maybe.year) || hasType('string', maybe.year)) &&
       hasType('object', maybe.review) &&
       hasType('string', maybe.cover) &&
       hasType('string', maybe.link)
    );
 }
+
+const joinAuthors = (authors: string[]): Result<string, string> => {
+   switch (authors.length) {
+      case 0:
+         return Result.err('specified `authors` but passed no values!');
+      case 1:
+         return Result.ok(authors[0]);
+      case 2:
+         return Result.ok(`${authors[0]} and ${authors[1]}`);
+      default:
+         return Result.ok(
+            `${authors.slice(0, authors.length - 1).join(', ')}, and ${
+               authors[authors.length - 1]
+            }`,
+         );
+   }
+};
+
+const authorString = (book: Book): Result<string, string> =>
+   'authors' in book ? joinAuthors(book.authors) : Result.ok(book.author);
 
 function describe(book: Book): string {
    const linked = (content: string): string =>
@@ -102,7 +128,14 @@ function describe(book: Book): string {
    const year = book.year ? ` (${book.year})` : '';
 
    const title = linked(`<cite>${book.title}</cite>`);
-   const bookInfo = `<p>${title}, ${book.author}${year}</p>`;
+   const author = authorString(book).match({
+      Ok: (a) => a,
+      Err: (r) => {
+         throw new Error(`Error describing ${book.title}: ${r}`);
+      },
+   });
+
+   const bookInfo = `<p>${title}, ${author}${year}</p>`;
    const review = book.review
       ? `<p><b>${book.review.rating}:</b> ${book.review.summary}</p>`
       : '';
