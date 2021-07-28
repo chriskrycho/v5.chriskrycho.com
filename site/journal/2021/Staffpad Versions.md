@@ -2,7 +2,7 @@
 title: Staffpad Versions
 subtitle: >
     Making it *easy* to keep track of your composing history in [Staffpad](https://www.staffpad.net).
-date: 2021-07-28T16:45
+date: 2021-07-28T16:45:00-0600
 tags:
     - music
     - composition
