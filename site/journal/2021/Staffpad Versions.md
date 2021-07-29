@@ -1,18 +1,18 @@
 ---
-title: Staffpad Versions
+title: StaffPad Versions
 subtitle: >
-    Making it *easy* to keep track of your composing history in [Staffpad](https://www.staffpad.net).
+    Making it *easy* to keep track of your composing history in [StaffPad](https://www.staffpad.net).
 date: 2021-07-28T16:45:00-0600
 tags:
     - music
     - composition
-    - Staffpad
+    - StaffPad
 
 ---
 
-I have been doing a *bunch* of composing over the mini-sabbatical I have taken this July, mostly working in [Staffpad][s]. One of the things I care *deeply* about in projects like this is being able to keep track of previous versions of my work, in case I change my mind about something or simply want to be able to compare two different approaches.[^always]
+I have been doing a *bunch* of composing over the mini-sabbatical I have taken this July, mostly working in [StaffPad][s]. One of the things I care *deeply* about in projects like this is being able to keep track of previous versions of my work, in case I change my mind about something or simply want to be able to compare two different approaches.[^always]
 
-Staffpad makes that pretty easy, thankfully: its built-in [versions][versions] functionality does exactly what I need. However, to make it *most* useful, I have found it helpful to use in a very specific way—which I am now sharing here in hopes that it will be useful to you as well!
+StaffPad makes that pretty easy, thankfully: its built-in [versions][versions] functionality does exactly what I need. However, to make it *most* useful, I have found it helpful to use in a very specific way—which I am now sharing here in hopes that it will be useful to you as well!
 
 [s]: https://www.staffpad.net
 [vcs]: https://en.wikipedia.org/wiki/Version_control
