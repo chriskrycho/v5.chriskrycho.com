@@ -213,7 +213,7 @@ function titleFor({
       ) ?? false;
    const photoTitleAllowed = !(isPhoto && photoItemTitles === 'off');
    const showTitle = sectionMarker && title && photoTitleAllowed;
-   return showTitle ? `[${sectionMarker}] ${title}` : undefined;
+   return showTitle ? `[${sectionMarker}] ${stripTags(title)}` : undefined;
 }
 
 function summaryFor(item: Item): string {
