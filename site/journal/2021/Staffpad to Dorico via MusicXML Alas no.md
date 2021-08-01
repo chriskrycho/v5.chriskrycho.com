@@ -12,6 +12,10 @@ tags:
     - music
     - composition
 
+qualifiers:
+    audience: >
+        People who care about music composition and notation software.
+
 ---
 
 Over the course of the mini-sabbatical I have been on throughout July, I have spent a bunch of time composing in [StaffPad][s]. However, while I find StaffPad to be a pretty great piece of software for quickly entering ideas as I think of them, I really prefer [Dorico][d] as a source of truth for my scores. Dorico’s notion of what music is and how music works is [much better][note], and the documents it generates as output are much better as well.
@@ -35,7 +39,7 @@ Unfortunately, as every software developer who has ever worked with interchange 
 
 [forum]: https://forums.steinberg.net/t/manually-merge-instruments-after-musicxml-import/730002/2
 
-In the meantime, I have one big tip for getting your own Music<abbr title="eXtensible Markup Language">XML</abbr> transfers to work as well as possible: **Match up instrument names between your programs *exactly*.** My first experiments here mostly foundered on exactly that point. In later passes, I got *much* better results because I made sure the names of the instruments in StaffPad and Dorico were identical. For example: always “Horn” in both rather than “French Horn” in one and “Horn (F)” in the other. A big qualification to that: Percussion is unlikely to work well, as far as I can tell. Mapping “Violins I” to “Violins I” is fairly straightforward. Not so with percussion: percussion notation which is much more diverse even than the wide range of options which exist for other (Western) instruments. Accordingly, every program has its own custom way of handling percussion, and the interaction between StaffPad’s and Dorico’s ideas about how percussion ensembles work was catastrophically bad.
+In the meantime, I have one big tip for getting your own Music<abbr title="eXtensible Markup Language">XML</abbr> transfers to work as well as possible: **Match up instrument names between your programs *exactly*.** My first experiments here mostly foundered on exactly that point. In later passes, I got *much* better results because I made sure the names of the instruments in StaffPad and Dorico were identical. For example: always “Horn” in both rather than “French Horn” in one and “Horn (F)” in the other. A big qualification to that: Percussion is unlikely to work well, as far as I can tell. Mapping “Violins I” to “Violins I” is fairly straightforward. Not so with percussion: percussion notation is much more diverse even than the wide range of options which exist for other (Western) instruments. Accordingly, every program has its own custom way of handling percussion, and the interaction between StaffPad’s and Dorico’s ideas about how percussion ensembles work was catastrophically bad.
 
 Maybe someday in the future the dream of clean handoffs will come. As a software developer myself, I rather doubt it. But maybe someday.
 
