@@ -14,12 +14,12 @@
             <id>{{url}}</id>
             {%- set entryTitle -%}
             {%- if item.data.title -%}
-               {{item.data.title}}
+               {{item.data.title | striptags}}
             {%- else -%}
                {% localeDate item.date, 'yyyy.MM.dd.HHmm' -%}
             {%- endif -%}
             {%- endset -%}
-            <title type="html">[{{item.inputPath | toRootCollection}}] {{entryTitle | striptags(true)}}</title>
+            <title type="html">[{{item.inputPath | toRootCollection}}] {{entryTitle}}</title>
             {%- set updated -%}
                {% if item.data.updated -%}
                {{item.data.updated | isoDate}}
