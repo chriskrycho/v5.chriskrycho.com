@@ -1,5 +1,5 @@
 ---
-title: MusicXML and Percussion Redux
+title: MusicXML and Percussion Notation
 subtitle: >
     Digging into How Dorico and StaffPad represent percussion differently.
 date: 2021-08-07T21:05:00-0600
