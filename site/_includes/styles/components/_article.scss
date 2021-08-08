@@ -110,6 +110,7 @@
    pre,
    aside,
    table,
+   details,
    .callout,
    .footnotes,
    .note,
@@ -626,6 +627,10 @@
 
    table {
       max-width: var(--max-width);
+      margin: {
+         top: 1em;
+         bottom: 1em;
+      }
 
       thead {
          font-family: var(--sans);
@@ -677,6 +682,11 @@
 
    .feed-only {
       display: none;
+   }
+
+   details {
+      max-width: var(--max-width);
+      margin: 1em 0;
    }
 }
 
