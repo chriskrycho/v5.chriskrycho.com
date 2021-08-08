@@ -15,13 +15,13 @@ qualifiers:
 
 ---
 
-Last weekend I [noted](https://v5.chriskrycho.com/journal/staffpad-to-dorico-via-musicxml-alas-no/) that I had hit a number of frustrations in trying to jump back and forth between [StaffPad][s] and [Dorico][d], because the Music<abbr title="eXtensible Markup Language">XML</abbr> handoff between the two was frustrating particularly around percussion—and, spoilers, my orchestral writing makes pretty thorough use of percussion![^perc] While I’m still somewhat up in the air where I’ll ultimately land on one or the other as a primary tool—[recent news from Dorico][sn] having made that a yet more interesting consideration![^unlimited-parts]—but in the meantime I figured it would be interesting to dig into how and why the two differ.
+Last weekend I [noted](https://v5.chriskrycho.com/journal/staffpad-to-dorico-via-musicxml-alas-no/) that I had hit a number of frustrations in trying to jump back and forth between [StaffPad][s] and [Dorico][d], because the Music<abbr title="eXtensible Markup Language">XML</abbr> handoff between the two was frustrating particularly around percussion—and, spoilers, my orchestral writing makes pretty thorough use of percussion![^perc] While I’m still somewhat up in the air where I’ll ultimately land on one or the other as a primary tool—[recent news from Dorico][sn] having made that a yet more interesting consideration![^unlimited-parts]—in the meantime I figured it would be interesting to dig into how and why the two differ.
 
 [s]: https://www.staffpad.net
 [d]: https://new.steinberg.net/dorico/
 [sn]: https://www.scoringnotes.com/podcast/the-history-and-future-of-dorico-for-ipad/
 
-For this post, I’m going to dig into the major ways the applications differ in how they represent a single percussion instrument: Wood Blocks. I picked Wood Blocks because they’re a bit move involved than something like a bass drum or snare drum:
+For this post, I’m going to dig into the major ways the applications differ in how they represent a single percussion instrument: wood blocks. I picked wood blocks because they’re a bit move involved than something like a bass drum or snare drum:
 
 - They are categorized as unpitched percussion, because they do not have *definite* pitches, but they do have *distinct* pitches across the blocks.
 
@@ -29,17 +29,17 @@ For this post, I’m going to dig into the major ways the applications differ in
 
     - StaffPad uses by a traditional 5-line staff:
 
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of Wood Blocks">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of wood blocks">
 
     - Dorico uses a line-per-block percussion-style staff:
 
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of Wood Blocks">
+        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of wood blocks">
 
 - They are not a collection of *totally different* percussion instruments all grouped together as in a drum kit staff, but the blocks do also have distinct elements to strike in a way that differs from e.g. a piano or a glockenspiel.
 
 <aside>
 
-While the Dorico version is more in line with standard idiom, the StaffPad version isn’t *wrong* exactly: I have seen Wood Blocks notated exactly that way in published music out in the world. There is a theme here, though: what StaffPad does for things like this is usually *fine*, but what Dorico does is usually more close to “correct” insofar as such a thing exists in music notation.
+While the Dorico version is more in line with standard idiom, the StaffPad version isn’t exactly *wrong*: I have seen wood blocks notated exactly that way in published music out in the world. There is a theme here, though: what StaffPad does for things like this is usually fine, but what Dorico does is usually more close to “correct” insofar as such a thing exists in music notation.
 
 </aside>
 
@@ -47,21 +47,21 @@ This set of differences means that looking at wood blocks will show us most of w
 
 ## Presentation
 
-First, notice again the two different visual representations of the instrument:
+First, notice again the two different visual representations of the instrument.
 
 StaffPad:
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of Wood Blocks">
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of wood blocks">
 
 Dorico:
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of Wood Blocks">
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of wood blocks">
 
 This gives us our first hint of how the two programs *model* the instruments differently: StaffPad is treating this as an unpitched instrument in some ways (notice the two-thick-bars start of the staff), but using a pitched-instrument-style staff to represent it. Dorico is doing something totally different, with a single line per block—as if it is representing each wood block as a distinct instrument, but grouped together into a single visual representation. As it turns out, that visual difference (apparent here as it is not necessarily in other, simpler percussion instruments we might have looked at) is *exactly* what is going on under the hood.
 
 What’s more, I have actually cheated a bit here to make these appear more similar than they normally would. By default, Dorico actually presents these with the individual blocks named:
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20default%20view.png" alt="Dorico view of Wood Blocks">
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20default%20view.png" alt="Dorico view of wood blocks">
 
 I went out of my way to create a [Group][perc-group] to get the notation as close as possible to StaffPad’s to highlight the difference in presentation of the musical staves, but with the default instrument naming in view it becomes that much more clear: Dorico thinks of each block as a distinct item on unpitched lines, whereas StaffPad thinks of them as a single instrument with unpitched blocks mapped to pitched stave lines, and they present them accordingly.
 
@@ -73,7 +73,7 @@ So how does that translate into the Music<abbr>XML</abbr> each program generates
 
 There are a couple points of interest here. One is how the instruments themselves are defined. Both programs follow the Music<abbr>XML</abbr> spec here, but they represent the instrument quite differently—albeit in a rather unsurprising way, given what we saw above!
 
-Here’s how StaffPad defines the Wood Blocks instrument:
+Here’s how StaffPad defines the wood blocks instrument:
 
 ```xml
 <part-list>
@@ -88,7 +88,7 @@ Here’s how StaffPad defines the Wood Blocks instrument:
 </part-list>
 ```
 
-And here’s how Dorico defines the Wood Blocks instrument:[^wb-def]
+And here’s how Dorico defines the wood blocks instrument:[^wb-def]
 
 ```xml
 <part-list>
@@ -115,9 +115,9 @@ And here’s how Dorico defines the Wood Blocks instrument:[^wb-def]
 
 The key things to notice here:
 
-- StaffPad and Dorico both treat this instrument as a single `score-part`, and in fact it happens to have a matching part <abbr title="identifier">ID</abbr>
+- StaffPad and Dorico both treat this instrument as a single `score-part`, and in fact it happens to have a matching part <abbr title="identifier">ID</abbr> (because they are both the first/only instrument in the score).
 
-- In StaffPad, the Wood Blocks are represented as a *single* `score-instrument` within that top-level `score-part`. In Dorico, each wood block is a separate `score-instrument` and `instrument-name` within the `score-part`.
+- In StaffPad, the wood blocks are represented as a *single* `score-instrument` within that top-level `score-part`. In Dorico, each wood block is a separate `score-instrument` and `instrument-name` within the `score-part`.
 
 The result is what I found last week: The different *lines* from percussion instruments from StaffPad ended up mapped into multiple different *instruments* in Dorico.
 
@@ -227,16 +227,9 @@ Now Dorico:
 </note>
 ```
 
-This time Dorico has far more information, but this is because it is encoding the wood blocks as genuinely unpitched and representing them as separate instruments, as we saw in the `part-list`. StaffPad is representing that first note as a pitched note: a “G4”. Dorico is representing it as an unpitched note which apperas in a particular display note-and-octave of “E4”. In this case, while StaffPad’s representation is not unknow of in published music, Dorico’s is definitely the more correct representation. You can also see that as a result of the choice to represent the blocks as individual instruments, Dorico needs to specify the `instrument` with an `id` attribute, and to specify the `staff` number on which the note is set. Those latter bits come “for free” for StaffPad because of its choice to use a pitched representation of the note, but at the cost of a representation which has technically-incorrect semantics.
+This time Dorico has far more information, but this is because it is encoding the wood blocks as genuinely unpitched and representing them as separate instruments, as we saw in the `part-list`. StaffPad is representing that first note as a pitched note: a “G4”. Dorico is representing it as an unpitched note which is *displayed* as “E4”. In this case, while StaffPad’s representation is not unknown in published music, Dorico’s is definitely the more correct representation. You can also see that as a result of the choice to represent the blocks as individual instruments, Dorico needs to specify the `instrument` with an `id` attribute, and to specify the `staff` number on which the note is set. Those latter bits come “for free” for StaffPad because of its choice to use a pitched representation of the note, but at the cost of a representation which has technically-incorrect semantics.
 
 It’s worth pausing here to note that a program could choose an alternative to Dorico’s representation which would *also* be correct. For example, you could use the `line-detail` element for the different lines within the stave, and take the same approach with `unpitched` notes and a `display-step` and `display-octave` as Dorico does. (The point is not that Dorico does it correctly—though I think it does—so much as that StaffPad does it slightly *incorrectly*.) But even so: the format is flexible enough that interop would be hard regardless. It is not obvious to me that Dorico’s import would work any better at all if StaffPad switched to the encoding I described here. This is just a hard problem!
-
----
-
-If you're curious and want to dig in further yourself, I‘ve uploaded both of the Music<abbr>XML</abbr> files used in this discussion; feel free to take a look:
-
-- [StaffPad](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Staffpad.xml)
-- [Dorico](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Dorico.xml)
 
 ## So what?
 
@@ -246,21 +239,28 @@ For another, I started digging into this to see how hard it would be to write a 
 
 While I don’t *know* that I’ll do that, I now have a pretty good sense of what it would take. It would be some non-trivial amount of work, to be sure; but depending on what my ongoing workflow looks like, it might end up being worth it to me. If it does and I build that tool, I will of course share it here as well as in various forums for the software programs in question. (No promises, though, for real!)
 
+---
+
+If you're curious and want to dig in further yourself, I‘ve uploaded both of the Music<abbr>XML</abbr> files used in this discussion; feel free to take a look:
+
+- [StaffPad](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Staffpad.xml)
+- [Dorico](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Dorico.xml)
 
 
 
-[^perc]: A thing most readers likely don’t know: once upon a time back in high school, I played percussion in the wind ensemble. I enjoyed it and I learned a lot!
+
+[^perc]: A thing even most of my long-time readers likely don’t know: once upon a time back in high school, I played percussion in the wind ensemble. I enjoyed it and learned a lot.
 
 [^wb-def]: Folks knowledgeable about Dorico may be interested to know that this is true regardless of whether the wood blocks are in a [group][perc-group] in a percussion kit.
 
 [^unlimited-parts]: [POWAHHHRR, UNLIMITED POWAAHHHHRRRR](https://images.squarespace-cdn.com/content/v1/5d65a3557e0ce00001fb2cd2/1580388942894-NLS5T1Z0ENBQBSAVV8RP/ke17ZwdGBToddI8pDm48kAdUfSdWV-R2c6ODuBXyhENZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVEJBYk2YUaEMOiZW4Uj6Av3ljYXtqyeeJQ1qwVcgOPKezqWIIaSPh2v08GbKqpiV54/Gif+3.gif&f=1&nofb=1)—err, sorry, I meant unlimited *parts* on Dorico for iPad.
 
-[^first]: You might also notice the difference in how `<divisions>`, `<key>`, and `<time>` are handled. This is interesting, and I *strongly suspect* it points to other deep-seated differences in how the two programs conceptualize/model music, but doesn’t matter for our purposes today.
+[^first]: There are also differences in how `<divisions>`, `<key>`, and `<time>` are handled. This is interesting, and I *strongly suspect* it points to other deep-seated differences in how the two programs conceptualize/model music, but doesn’t matter for our purposes today.
 
-[^why-xml-output]: This is almost certainly not a case of consciously choosing on some per-instrument basis what to do. Rather: the programs specify how to export the <abbr>XML</abbr> for a given bucket of data, and then it goes automatically. So, most likely, StaffPad has a representation of transpotioin for *every* instrument, even if it’s defaulted, as here, to *nothing-interesting, move along*; while Dorico likely doesn’t have it for the instruments like this at all. The <abbr>XML</abbr> export just reflects that internal representation.
+[^why-xml-output]: This is almost certainly not a case of consciously choosing on some per-instrument basis what to do. Rather: the programs specify how to export the <abbr>XML</abbr> for a given bucket of data, and then it goes automatically. So, most likely, StaffPad has a representation of transposition for *every* instrument, even if it’s defaulted, as here, to *nothing-interesting, move along*; while Dorico likely doesn’t have it for the instruments like this at all. The <abbr>XML</abbr> export just reflects that internal representation.
 
 [^hard]: I have a vested interest in that, even if I don’t (currently?) work in music notation software.
 
-[^mash]: Turns out that working with the <abbr title="Open Scripture Information Standard">OSIS</abbr> representation of the <abbr title="King James Version">KJV</abbr> Bible back when I built [HolyBible.com][hbc] the better part of a decade taught me a *lot*.
+[^mash]: Turns out that working with the <abbr title="Open Scripture Information Standard">OSIS</abbr> representation of the <abbr title="King James Version">KJV</abbr> Bible back when I built [HolyBible.com][hbc] the better part of a decade taught me a *lot* of useful things.
 
 [hbc]: https://www.holybible.com/gen.1.1
