@@ -7,16 +7,16 @@
 
 :root {
    // -- Typography -- //
-   --serif: Sabon, Palatino, Book Antiqua, serif;
+   --serif: Calluna, Palatino, Book Antiqua, serif;
    --greek: Palatino, Book Antiqua, serif;
-   --serif-smcp: Sabon SMCP, Palatino, Book Antiqua, serif;
-   --sans: cronos-pro, Avenir Next, Avenir, sans-serif;
-   --sans-subhead: cronos-pro-subhead, Avenir Next, Avenir, sans-serif;
-   --sans-display: cronos-pro-display, Avenir Next, Avenir, sans-serif;
+   --serif-smcp: Calluna;
+   --sans: Calluna Sans;
+   --sans-subhead: Calluna Sans;
+   --sans-display: Calluna Sans;
    --mono: Hack, Menlo, Consolas, monospace;
    --fs-base: 16px;
-   --sans-adjust: 1.05;
-   --sans-adjust-rem: 1.05rem;
+   --sans-adjust: 1;
+   --sans-adjust-rem: 1rem;
    --min-line-height: 1.375;
    --line-height: var(--min-line-height);
 
