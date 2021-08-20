@@ -1,5 +1,5 @@
 {
-   "extends": "../tsconfig.base.json",
+   "extends": "@tsconfig/svelte/tsconfig.json",
    "compilerOptions": {
       "removeComments": true,
       "lib": ["dom", "es2019"],
@@ -8,6 +8,5 @@
       "sourceMap": true,
       "baseUrl": "scripts"
    },
-   "files": ["preferences.ts"],
-   "include": ["scripts"]
+   "include": ["./*"]
 }

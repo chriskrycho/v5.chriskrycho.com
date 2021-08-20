@@ -1,7 +1,7 @@
 {
    "extends": "./tsconfig.base.json",
    "compilerOptions": {
-      "module": "commonjs",
+      // "module": "commonjs",
       "noEmit": true /* Do not emit outputs. (BECAUSE WE'RE USING TS-NODE!) */
    },
    "include": ["site/**/*.11ty.js", "lib", "eleventy", "types", ".eleventy.ts"],

@@ -2,7 +2,6 @@
    "compilerOptions": {
       /* Basic Options */
       "target": "es2019",
-      "module": "commonjs",
       "lib": ["es2019"] /* Specify library files to be included in the compilation. */,
       "checkJs": true /* Report errors in .js files. */,
       "allowJs": true,
