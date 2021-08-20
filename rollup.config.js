@@ -1,11 +1,10 @@
-import svelte from 'rollup-plugin-svelte'
-import typescript from '@rollup/plugin-typescript'
-import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
+import svelte from 'rollup-plugin-svelte';
+import typescript from '@rollup/plugin-typescript';
+import resolve from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
+import autoPreprocess from 'svelte-preprocess';
 
-const svelteConfig = require('./svelte.config')
-
-const production = !process.env.ROLLUP_WATCH
+const production = !process.env.ROLLUP_WATCH;
 
 export default {
    input: './scripts/main.js',
@@ -19,9 +18,22 @@ export default {
       // teach rollup how to handle typescript imports
       typescript({
          tsconfig: './scripts/tsconfig.json',
+         sourceMap: true,
       }),
-      svelte(svelteConfig),
+      svelte({
+         preprocess: autoPreprocess({
+            sourceMap: true,
+            defaults: {
+               script: 'typescript',
+            },
+            typescript: '',
+         }),
+         compilerOptions: {
+            sourcemap: true,
+            dev: !production,
+         },
+      }),
       resolve({ browser: true }),
       production && terser(),
    ],
-}
+};
