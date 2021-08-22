@@ -20,6 +20,6 @@ tags:
 
 > This God—the great one, the one beyond compare, the God of creation and providence—is our God. He is the rock of our salvation. He is not mere cause or force, not simply infinite power. He is God with us and for us and so. astonishing as it must seem-our God. And so, "let us worship and bow down; let us kneel before the Lord, our Maker!" ([Psalm] 95:6).
 
-<figcaption>—<a href="{{book.link}}"><i>ibid.</i>, p. 107</figcaption>
+<figcaption>—<a href="{{book.link}}"><i>ibid.</i></a>, p. 107</figcaption>
 
 </figure>
