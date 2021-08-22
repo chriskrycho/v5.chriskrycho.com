@@ -187,6 +187,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal/Fanfare for a New Era of American Spaceflight');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
+   addCollectionFromDir(config, 'library/Confronted by Grace');
    addCollectionFromDir(config, 'library/God Without Measure');
    addCollectionFromDir(config, 'library/God Without Measure/Volume I');
    addCollectionFromDir(config, 'library/God Without Measure/Volume II');
