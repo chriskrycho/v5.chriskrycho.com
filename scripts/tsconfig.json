@@ -1,6 +1,7 @@
 {
    "extends": "@tsconfig/svelte/tsconfig.json",
    "compilerOptions": {
+      "strict": true,
       "removeComments": true,
       "lib": ["dom", "es2019"],
       "noEmit": false,
