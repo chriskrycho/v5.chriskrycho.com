@@ -12,12 +12,13 @@ tags:
     - technology
     - ethics
 date: 2021-08-27T16:10:00-0600
+updated: 2021-08-27T18:57:00-0600
 summary: >
     In the early days of the web, PageRank seemed like magic: a clean win. But maybe it wasn’t. What kind of world did we lose when we walked away from curation?
 
 ---
 
-In the early days of the web, [Page Rank][pr] seemed like magic: a clean win. What were the downsides? Open up Google, type in a query, and just like that you would see an *automatically* crowdsourced set of results, based on how much other people linked to them. As more than a few people have noted recently, though,[^example] results (on Google in particular but also search engines in general) have degraded. Gamification of results started early and has only accelerated in the last decade. What if—and I know this is crazy, but stay with me—lists of links built by hand were actually better? Not in spite of, but precisely because of their inability to scale, and therefore to be *gamed* at scale?
+In the early days of the web, [Page Rank][pr] seemed like magic: a clean win. What were the downsides? Open up Google, type in a query, and just like that you would see an *automatically* crowdsourced[^anac] set of results, based on how much other people linked to them. As more than a few people have noted recently, though,[^example] results (on Google in particular but also search engines in general) have degraded. Gamification of results started early and has only accelerated in the last decade. What if—and I know this is crazy, but stay with me—lists of links built by hand were actually better? Not in spite of, but precisely because of their inability to scale, and therefore to be *gamed* at scale?
 
 [pr]: https://en.wikipedia.org/wiki/PageRank
 
@@ -45,9 +46,32 @@ The world’s information! All of it! And if that were not enough: to make it no
 
 I wonder.
 
+---
 
+**Update, evening of 2021/08/27:** a couple interesting bits from some colleagues after I shared this [on LinkedIn][li]:
+
+[li]: https://www.linkedin.com/posts/chriskrycho_what-if--was-a-mistakesympolymathesy-activity-6837146261519499264-2p9x
+
+- [Caitlin O’Connor][co] pointed out that [PageRank][pr] itself is fully general mathematically—it’s just *eigenvectors* after all![^eigenvectors]—so it’s the Google implementation (and decades-long elaboration) that’s particularly interesting here.
+
+- [Adam Hobson][ah] reminded me of [Mahalo][m], which was an actual take at re-instantiating this alt-history back in the last 2000’s, and also shared [Benedict Evans’][be] 2016 dictum (from [Lists are the New Search][lists]):
+
+    > All curation grows until it requires search. All search grows until it requires curation.
+
+[co]: https://www.linkedin.com/in/caitlinoconnor723/detail/contact-info/
+[ah]: https://adamhobson.com
+[m]: https://en.wikipedia.org/wiki/Mahalo.com
+[be]: https://www.ben-evans.com/
+[lists]: https://www.ben-evans.com/benedictevans/2016/1/31/lists-are-the-new-search
+
+
+[^anac]: This usage is, of course, something of an anachronism: the internet-age neologism “crowdsourcing” [was coined in 2005][coinage].
+
+[coinage]: https://www.nytimes.com/2009/02/08/magazine/08wwln-safire-t.html
 
 [^example]: See, for example, [this tweet thread][quality]—with a ThreadReader unroll [here][tr], though who knows for how long. Another provocation for another day: imagine if we, uhh, *blogged*?
 
 [quality]: https://twitter.com/williamrblack/status/1429962733055881218
 [tr]: https://threadreaderapp.com/thread/1429962733055881218.html
+
+[^eigenvectors]: …which, like me, you might not remember from your linear algebra or physics. In an amusing bit of happenstance, I just re-taught myself what eigenvectors and eigenvalues were two nights ago, though!
