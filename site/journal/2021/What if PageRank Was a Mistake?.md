@@ -12,7 +12,7 @@ tags:
     - technology
     - ethics
 date: 2021-08-27T16:10:00-0600
-updated: 2021-08-27T18:57:00-0600
+updated: 2021-08-28T17:35:00-0600
 summary: >
     In the early days of the web, PageRank seemed like magic: a clean win. But maybe it wasn’t. What kind of world did we lose when we walked away from curation?
 
@@ -63,6 +63,18 @@ I wonder.
 [m]: https://en.wikipedia.org/wiki/Mahalo.com
 [be]: https://www.ben-evans.com/
 [lists]: https://www.ben-evans.com/benedictevans/2016/1/31/lists-are-the-new-search
+
+---
+
+**Update, evening of 2021/08/28:** [Robin Sloan][rs] suggested to me a connection with librarians, whose dispositions and discipline might have made something *very* different of a curated web. Not for nothing so many sci-fi stories of libraries. (I [still think][ws] libraries are an under-appreciated, nearly-miraculous experiment!).
+
+On which note: for the *current-day, real-world* intersection of librarians at their best and the internet, see [Dan Cohen][dc] and his [_Humane Ingenuity_][hi], which is one of my favorite newsletters: not least for its own careful work of curation!
+
+[rs]: https://www.robinsloan.com
+[ws]: https://winningslowly.org/5.07/
+[dc]: https://dancohen.org
+[hi]: https://dancohen.org/newsletter/
+
 
 
 [^anac]: This usage is, of course, something of an anachronism: the internet-age neologism “crowdsourcing” [was coined in 2005][coinage].
