@@ -48,7 +48,7 @@ class Contact {
 };
 ```
 
-<div class="note">
+<section class="note" aria-label="note">
 
 For scenarios like this where the `constructor` does nothing but set up some properties with values passed in, TypeScript provides a constructor-only shorthand which looks like this:
 
@@ -73,7 +73,8 @@ class Contact {
   ) {}
 }
 ```
-</div>
+
+</section>
 
 ## Background
 
@@ -115,11 +116,11 @@ class EmailContactInfo {
 }
 ```
 
-<div class="note">
+<section class="note" aria-label="note">
 
 That’s not an *especially* robust validation of emails, but it’s sufficient for the rest of this example.
 
-</div>
+</section>
 
 ## Making illegal states unrepresentable
 
@@ -264,11 +265,11 @@ Having made this change, we’re now in a position to see what it looks like to 
 
 We can add a method to the `Contact` type which does this correctly.
 
-<div class="note">
+<section class="note" aria-label="note">
 
 There are two ways we could make this method work: it could change the item it’s working with, or it could return a new copy of the item instead. In this example, I’m treating classes not as bundles of self-contained mutable state, but as lightweight records, so I’m going to return a fresh copy. Maybe [someday][proposal-record-tuple] JavaScript will actually get native records (and tuples)!
 
-</div>
+</section>
 
 [proposal-record-tuple]: https://github.com/tc39/proposal-record-tuple
 

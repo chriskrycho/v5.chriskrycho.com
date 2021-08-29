@@ -75,11 +75,11 @@ export default class MyComponent extends Component {
 }
 ```
 
-<div class="note">
+<section class="note" aria-label="note">
 
 Here I’ve switched to the `@glimmer/component` base class to use `constructor` instead of `init`, but the idea is the same!
 
-</div>
+</section>
 
 For day-to-day purposes, [that `Object.defineProperty` call][defineProperty] is basically the same as just doing the assignment in the constructor.[^differences] The net of this is that you can leave behind your long-standing habits of doing assignment in the `constructor` where you’re just setting up a default value for a class field. The *only* time you should prefer to do things in the `constructor` is when it depends on the other state of the class—in other words, when it references `this` in some way. If it *doesn't* refer to `this`, though, even things like instantiating utility classes can just happen in class field assignment:
 

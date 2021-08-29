@@ -19,14 +19,14 @@ Superscripts and subcripts should not affect the vertical rhythm of the text. Th
 
 [leading]: https://en.wikipedia.org/wiki/Leading
 
-<div class="note">
+<section class="note" aria-label="note">
 
 Two comments before I dive into the rest of the piece:
 
 - Folks reading along in RSS, you may want to [click through](https://v5.chriskrycho.com/journal/superscript-and-subscript-line-heights/): it’s possible these examples will not display correctly in your reader!
 - Everything I say here about how text should *look* applies equally to native apps or to print, but the mechanics will be wildly different than they are on the web.
 
-</div>
+</section>
 
 Here’s an example of how the default browser rendering will handle superscripts (it has the same effect for subscripts, but since superscripts are much more common, I’m focusing on those):
 
