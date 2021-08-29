@@ -66,7 +66,7 @@ I wonder.
 
 ---
 
-**Update, evening of 2021/08/28:** [Robin Sloan][rs] suggested to me a connection with librarians, whose dispositions and discipline might have made something *very* different of a curated web. Not for nothing so many sci-fi stories of libraries. (I [still think][ws] libraries are an under-appreciated, nearly-miraculous experiment!).
+**Update, evening of 2021/08/28:** [Robin Sloan][rs] suggested to me a connection with librarians, whose dispositions and discipline might have made something *very* different of a curated web. Not for nothing so many sci-fi stories of libraries. (I [still think][ws] public libraries are an under-appreciated, nearly-miraculous experiment!).
 
 On which note: for the *current-day, real-world* intersection of librarians at their best and the internet, see [Dan Cohen][dc] and his [_Humane Ingenuity_][hi], which is one of my favorite newsletters: not least for its own careful work of curation!
 
