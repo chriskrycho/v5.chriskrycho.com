@@ -39,8 +39,6 @@
 {%- set tagCollection = collections[tag] | isLive -%}
 {%- if tagCollection and tagCollection.length -%}
    {{ archive.list(tagCollection | excludingStandalonePages | archiveByYears('OLD_FIRST'), idByCollection=true) }}
-{%- else -%}
-   {%- include 'blocks/wip.njk' -%}
 {%- endif -%}
 </div>
 {%- endblock main -%}

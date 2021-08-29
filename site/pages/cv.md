@@ -9,11 +9,11 @@ summary: >
 
 Even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a better idea of how I work, I think you’ll find the rest of this page a lot more helpful.
 
-<div class="note">
+<section class="note" aria-label="note">
 
 I’m not looking to change jobs at this point—but you’re still welcome to [say hello][email]!
 
-</div>
+</section>
 
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
 

@@ -45,8 +45,10 @@ Once I had made those two changes, everything worked nicely! I hope this ends up
 
 [^xml-rpc-api]: If you’re thinking that it would be really nice if WordPress offered a modern JSON API instead of being stuck with XML-RPC, well… I’m with you.
 
-    <div class="note">
+    <section class="note" aria-label="note">
+
     A correction from [a reader][jws]! WordPress [*does* have a JSON API][wp-api], and has for almost half a decade now! I have *no idea* why Ulysses is using XML-RPC instead of that API; at first blush [it certainly looks like it could][wp-api-post]. My bad for not checking this and just assuming the problem was on WordPress’ end rather than Ulysses’.
+
     </div>
 
 *[XML-RPC]: XML (“extensible markup language”) remote procedure call

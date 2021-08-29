@@ -22,11 +22,11 @@ tags:
 
 ---
 
-<div class="note">
+<section class="note" aria-label="note">
 
 Over the weekend I wrote up the following on [an Ember RFC discussion](https://github.com/emberjs/rfcs/pull/669#issuecomment-739320902). Since it’s intentionally *not* specific to that RFC, I’m republishing it here for the broader Ember community to see, with only the slightest tweak to the intro to give more context. (It might be a bit less polished than usual, as a result!)
 
-</div>
+</section>
 
 For what it’s worth, as the Octane migration lead for LinkedIn.com, I see these kinds of issues—existing designs that just don’t translate directly from Classic to Octane—all the time as folks migrate from Ember Classic patterns—and precisely *because* of that experience, I strongly agree with [@pzuraq] and others on the framework team that we don’t want to provide primitives which let you “go around” the autotracking system’s design and primitives. Accordingly, and without digging into that specific example, I’d like to offer a general comment here in hopes that it’ll be useful more generally for the community thinking around migrating to Octane.
 
