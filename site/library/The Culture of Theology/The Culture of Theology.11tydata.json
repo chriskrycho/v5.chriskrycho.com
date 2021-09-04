@@ -1,6 +1,6 @@
 {
    "layout": "post.njk",
-   "permalink": "/library/{{page.fileSlug | slug}}/index.html",
+   "permalink": "/library/the-culture-of-theology/{{page.fileSlug | slug}}/index.html",
    "book": {
       "title": "The Culture of Theology",
       "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/the-culture-of-theology.jpg",
