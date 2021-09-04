@@ -25,7 +25,18 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /library/god-without-measure/volume-1/* /library/god-without-measure/volume-i/:splat 301!
 /journal/crew-dragon-fanfare/* /journal/fanfare-for-a-new-era-of-american-spaceflight/:splat 301!
 
-# ...including notes redirects for bad slug generation
+# ...including after I made library collections work correctly
+/library/good-theology-demands-good-theologians/ /library/the-culture-of-theology/good-theology-demands-good-theologians/ 301!
+/library/the-first-and-last-act-of-theological-existence/ /library/the-culture-of-theology/the-first-and-last-act-of-theological-existence/ 301!
+/library/theological-self-criticism/ /library/the-culture-of-theology/theological-self-criticism/ 301!
+/library/the-story-of-modern-theology/ /library/the-culture-of-theology/the-story-of-modern-theology/ 301!
+/library/christian-theologys-place-in-the-university/ /library/the-culture-of-theology/christian-theologys-place-in-the-university/ 301!
+/library/the-real-aim-of-utopias/ /library/the-culture-of-theology/the-real-aim-of-utopias/ 301!
+/library/an-anti-culture/ /library/the-culture-of-theology/an-anti-culture/ 301!
+/library/christian-astonishment/ /library/the-culture-of-theology/christian-astonishment/ 301!
+/library/good-theologians/ /library/the-culture-of-theology/good-theologians/ 301!
+
+# ...and notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
 /notes/0640/ /notes/2020-07-17-0640/ 301!
 /notes/0712/ /notes/2020-07-18-0712/ 301!
