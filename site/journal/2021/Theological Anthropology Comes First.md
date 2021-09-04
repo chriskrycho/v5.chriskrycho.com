@@ -9,6 +9,7 @@ tags:
   - theology
   - anthropology
   - technology
+  - from my notes
 qualifiers:
   epistemic: >
     solidifying.
