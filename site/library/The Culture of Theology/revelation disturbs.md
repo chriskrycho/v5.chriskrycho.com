@@ -1,6 +1,6 @@
 ---
 title: >
-    “…revelation *disturbs*”
+    …revelation *disturbs*
 subtitle: ‘It is “an interruption which addresses us.”’
 summary: >
     John Webster: “Revelation cleaves us apart; as God’s eschatological word and work, as the presence of the divine glory…”
@@ -8,6 +8,7 @@ date: 2021-09-05T07:45:00-0600
 tags:
     - revelation
     - theology
+    - quotes
 
 ---
 
