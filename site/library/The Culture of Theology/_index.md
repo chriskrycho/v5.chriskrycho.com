@@ -6,5 +6,6 @@ subtitle: >
 permalink: /library/the-culture-of-theology/
 layout: archives.njk
 standalonePage: true
+order: OLD_FIRST
 
 ---

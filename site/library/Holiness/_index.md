@@ -6,5 +6,6 @@ subtitle: >
 permalink: /library/holiness/
 layout: archives.njk
 standalonePage: true
+order: OLD_FIRST
 
 ---
