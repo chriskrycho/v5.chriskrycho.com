@@ -15,18 +15,22 @@ standalonePage: true
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
+<p><code>isGhostCollection</code>: <code>{{isGhostCollection}}</code></p>
+<p><code>order</code>: <code>{{order}}</code></p>
+
 {%- if content -%}
 <div class='article-content'>
    {% block content -%}{{content | safe}}{%- endblock content %}
 </div>
 {%- endif -%}
 
-{%- set c = page.inputPath | toCollection(data.isGhostCollection) -%}
+{%- set c = page.inputPath | toCollection(isGhostCollection) -%}
+{%- set order = order if order else 'NEW_FIRST' -%}
 {%- if collections[c] -%}
    {%-
       set items = collections[c]
          | excludingStandalonePages
-         | archiveByYears('NEW_FIRST')
+         | archiveByYears(order)
    -%}
    {{ archive.list(items) }}
 {%- endif -%}
