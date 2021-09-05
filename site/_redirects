@@ -36,6 +36,11 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /library/christian-astonishment/ /library/the-culture-of-theology/christian-astonishment/ 301!
 /library/good-theologians/ /library/the-culture-of-theology/good-theologians/ 301!
 
+/library/perfectionism-without-perfectibility/ /library/politics-and-the-order-of-love/perfectionism-without-perfectibility/ 301!
+/library/the-mixed-moral-qualities-of-any-age/ /library/politics-and-the-order-of-love/the-mixed-moral-qualities-of-any-age/ 301!
+/library/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/ /library/politics-and-the-order-of-love/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/ 301!
+/library/a-chalcedonian-conceptual-grammar-for-love-and-justice/ /library/politics-and-the-order-of-love/a-chalcedonian-conceptual-grammar-for-love-and-justice/ 301!
+
 # ...and notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
 /notes/0640/ /notes/2020-07-17-0640/ 301!
