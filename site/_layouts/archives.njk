@@ -15,9 +15,6 @@ standalonePage: true
 <section class='content-block'>
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
-<p><code>isGhostCollection</code>: <code>{{isGhostCollection}}</code></p>
-<p><code>order</code>: <code>{{order}}</code></p>
-
 {%- if content -%}
 <div class='article-content'>
    {% block content -%}{{content | safe}}{%- endblock content %}
