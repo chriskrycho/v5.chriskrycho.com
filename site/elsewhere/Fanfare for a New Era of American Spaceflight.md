@@ -2,7 +2,7 @@
 title: >
     Fanfare for a New Era of American Spaceflight
 subtitle: >
-    You can now search for my name in Spotify, Apple Music, etc.: and you will find there orchestra music!
+    You can now search for my name in Spotify, Apple Music, etc., and you will find there: *orchestra music!*
 link: https://songwhip.com/chriskrycho/fanfare-for-a-new-era-of-american-spaceflight
 tags:
     - music
