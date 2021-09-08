@@ -87,7 +87,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>, Nicole Forsgren, Jez Humble, and Gene Kim (new)
 
-- [<cite>God Without Measure: Working Papers in Christian Theology: Volume 1: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume I: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
     - [posts on the book](/library/god-without-measure/volume-i/)
 
 ### Fiction
