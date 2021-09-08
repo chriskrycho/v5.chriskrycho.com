@@ -18,7 +18,7 @@ Discovering, and slowly working through, John Webster’s <i>oeuvre</i> remains 
 
 I’ve read enough Webster at this point to know his recurring motifs, but I haven’t tired of them. They are *very good* motifs! At this point I’m enjoying seeing (and sometimes differing with!) his changing trajectory over time: in the beginning of his career, he was more Barthian; in the end of his career, much more a Reformed Scholastic, including a lot of _ressourcement_ from the Fathers and Thomas Aquinas. Indeed, there are a few essays in here where he was clearly going through a phase of infatuation with Thomas—dropping references to the <cite>Summa Theologiae</cite> as if it were holy writ.
 
-As academically-oriented and intellectually-dense as these essays are, this is not the kind of book I’d hand to… anyone I know outside the [Mere O][mo] crowd except *maybe* one guy I know at church who’s a former abbr title="Presbyterian Church in America">PCA</abbr> pastor. 😂 But the essays are beautiful and good, and they were good for my soul. I expect I will return to them regularly in the decades ahead.
+As academically-oriented and intellectually-dense as these essays are, this is not the kind of book I’d hand to… anyone I know outside the [Mere O][mo] crowd except *maybe* one guy I know at church who’s a former <abbr title="Presbyterian Church in America">PCA</abbr> pastor. 😂 But the essays are beautiful and good, and they were good for my soul. I expect I will return to them regularly in the decades ahead.
 
 [mo]: https://mereorthodoxy.com
 
