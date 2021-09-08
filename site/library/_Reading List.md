@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-06-26T21:30:00-0700
+date: 2021-09-07T20:15:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -64,17 +64,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Icons of Christ: A Biblical and Systematic Theology for Women’s Ordination</cite>](https://bookshop.org/a/21126/9781481313193), William G. Witt (new)
 
-- [<cite>God Without Measure: Working Papers in Christian Theology: Volume 1: God and the Works of God</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2FGod-Without-Measure-Working-Papers-in-Christian-Theology-Volume-1-God-and-the-Works-of-God-Prof-John-Webster%2Fbook%2F39308727), John Webster (new)
-
-- [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
-
-- <cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>, Nicole Forsgren, Jez Humble, and Gene Kim (new)
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume II: Virtue and Intellect</cite>](https://www.alibris.com/search/books/isbn/9780567686046), John Webster (new)
 
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
-
-- [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
 ## 2021
 
@@ -91,6 +85,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Word and Church</cite>](https://bookshop.org/a/21126/9780567658906), John Webster (new)
     - [posts on the book](/topics/word-and-church/)
 
+- <cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>, Nicole Forsgren, Jez Humble, and Gene Kim (new)
+
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume 1: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
+    - [posts on the book](/library/god-without-measure/volume-i/)
+
 ### Fiction
 
 - [<cite>The Hobbit</cite>](https://bookshop.org/a/21126/9780395873465), J.R.R. Tolkien (reread… with my daughter!)
@@ -104,6 +103,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
 - <cite>Project Hail Mary</cite>, Andy Weir (new)
+
+- [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
 ## 2020
 
