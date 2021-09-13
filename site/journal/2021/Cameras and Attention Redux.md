@@ -19,9 +19,10 @@ qualifiers:
 
 <section class="note" aria-label="note">
 
-I wrote this to a friend after reading [one of][granola] the many bits of commentary I’ve seen over the last few years which was sharply critical of taking photos of our experiences—of family, in nature, etc. As I put it to that friend, none of what follows is really an argument against the insights in the original post (I agreed with much of what Gracy Olmstead had to say in [that piece][granola]!) or those like it so much as it is a “yes, and…” expansion on them.
+I wrote this to a friend after reading [one of][granola] the many bits of commentary I’ve seen over the last few years which was (lightly and thoughtfully!) critical of taking photos of our experiences—of family, in nature, etc.—and which in turn prompted [comments][c] which were much *more* strongly against it in at least their own personal practice. As I put it to that friend, none of what follows is really an argument against the insights in the original post (I agreed with much of what Gracy Olmstead had to say in [that piece][granola]!) or those like it so much as it is a “yes, and…” expansion on them.
 
 [granola]: https://granola.substack.com/p/the-wonders-beyond-your-head
+[c]: https://granola.substack.com/p/comments-and-notes-re-the-wonders
 
 </section>
 
