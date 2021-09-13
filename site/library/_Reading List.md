@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-09-07T20:15:00-0700
+date: 2021-09-12T18:20:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -34,8 +34,6 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
 
-- <cite>Technopoly</cite>, Neil Postman (new)
-
 ### Fiction
 
 - [<cite>Blue Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBlue-Mars-Kim-Stanley-Robinson%2Fbook%2F745509), Kim Stanley Robinson (new)
@@ -66,9 +64,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>God Without Measure: Working Papers in Christian Theology: Volume II: Virtue and Intellect</cite>](https://www.alibris.com/search/books/isbn/9780567686046), John Webster (new)
 
+- [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
+
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
+
+- [<cite>The Eye of the World</cite>](https://bookshop.org/a/21126/9781250251466), Robert Jordan (reread)
 
 ## 2021
 
