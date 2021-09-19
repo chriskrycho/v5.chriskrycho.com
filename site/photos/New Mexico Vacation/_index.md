@@ -4,6 +4,7 @@ subtitle: A series of photos taken April 3–10, 2021, on a week-long getaway to
 permalink: /photos/new-mexico-vacation/
 layout: archives.njk
 standalonePage: true
+order: OLD_FIRST
 
 ---
 
