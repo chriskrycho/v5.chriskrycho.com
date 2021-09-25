@@ -22,7 +22,7 @@ Back in July, knowing we were going to be spending some time traveling as a fami
 [a7c]: https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7c/specifications
 [100-400]: https://electronics.sony.com/imaging/lenses/full-frame-e-mount/p/sel100400gm
 [tc]: https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc
-[a7riv]: 
+[a7riv]: https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7rm4-b
 
 I didn’t end up using the telephoto lens nearly as much as I expected to: I could get plenty close for a [35mm][35] or even a [20mm][20] lens to be useful and effective. I *did* end up using the α7C extensively, though, as did my wife… and 9- and 7-year-old daughters!
 
