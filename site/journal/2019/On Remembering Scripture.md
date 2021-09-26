@@ -23,8 +23,6 @@ So, going forward, I am making a point to actually learn, and remember, the loca
 
 [^outsourcing]: There is an interesting point to trace out in more detail here, around the difference between computing-as-replacement of human abilities and computing-as-extension of human abilities. Got essays or books on the topic? [Please send them my way!](mailto:hello@chriskrycho.com?subject=computing-as-replacement)
 
-[^licensure]: The PCA’s tests for licensure and ordination include a fairly rigorous Bible knowledge exam. This is part of what got me thinking about this.
+[^licensure]: The <abbr title="Presbyterian Church in America">PCA</abbr>’s tests for licensure and ordination include a fairly rigorous Bible knowledge exam. This is part of what got me thinking about this.
 
 [^first-two]: The first two, last night: 1 Corinthians 6:19–20 and Matthew 22:29–30.
-
-*[PCA]: Presbyterian Church in America
