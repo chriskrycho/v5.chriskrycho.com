@@ -54,9 +54,9 @@ Since **January 2019**, I have worked as an infrastructure engineer at [LinkedIn
 
 Since **September 2021**, I have been a **Senior Staff Software Engineer**, helping lead all front-end web development efforts on the app and influencing broader efforts across the app and broader LinkedIn ecosystem, including especially our ongoing adoption of TypeScript.
 
-From **January 2019–September 2021**, I was a **Staff Software Engineer**. In that time:
+From **January 2019–September 2021**, as a **Staff Software Engineer**:
 
-- I developed a business case for TypeScript adoption which was key to the start kf 
+- I developed a business case for TypeScript adoption which was key to the company's choice to fully support TypeScript for our JavaScript projects.
 - I was the tech lead for the adoption of [Ember Octane][octane] across the application. Additionally, as one of a handful of primary technical experts on Octane—at LinkedIn or anywhere else—I support many other teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
 - I led efforts to update the app to the current versions of Ember.js, unblocking adoption of Octane.
 - I helped build, and continue to support, [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
