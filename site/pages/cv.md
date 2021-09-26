@@ -1,9 +1,9 @@
 ---
 title: Curriculum Vitae
 subtitle: >
-    A Senior Staff Software Engineer at LinkedIn focused on enabling web <abbr>UI</abbr>, developers to build more reliable products faster.
+    A Senior Staff Software Engineer at LinkedIn focused on enabling web <abbr>UI</abbr> developers to build more reliable products—faster.
 summary: >
-    I am a Senior Staff Software Engineer at LinkedIn focused on enabling web UI developers to build more reliable products faster. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
+    I am a Senior Staff Software Engineer at LinkedIn focused on enabling web UI developers to build more reliable products—faster. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
 
 ---
 
@@ -32,9 +32,7 @@ I’m not looking to change jobs at this point—but you’re still welcome to [
 
 ## About Me
 
-I am an experienced software engineer focused on web UI, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
-
-*[UI]: user interface
+I am an experienced software engineer focused on web <abbr title="user interface">UI</abbr>, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
 
 Building the *right things* means I am not interested in startups whose vision consists of either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings. **Ethics is foundational for good software engineering.**
 
@@ -81,16 +79,13 @@ From **January 2016 – January 2019**, I was a front-end-focused software engi
 
 As a **Software Engineer** (January 2016–May 2017), I was a productive individual contributor even while working 30-hour weeks as I completed my M. Div.:
 
-- I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of the mobile web UI.
+- I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of the mobile web <abbr>UI</abbr>.
 - I introduced JavaScript type systems to the application (landing on **TypeScript** after an initial experiment with Flow)
-- I helped the team achieve **full AA [WCAG] accessibility**.
-
-[WCAG]: https://www.w3.org/TR/WCAG21/
-*[WCAG]: Web Content Accessibility Guidelines 
+- I helped the team achieve **full AA [<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>][WCAG] accessibility**.
 
 As a **Senior Software Engineer** (May 2017–January 2019):
 
-- I led a team effort to expand the mobile web UI into a **responsive web UI** to reduce our maintenance burden, improve overall UX, and decrease the cost of launching new features.
+- I led a team effort to expand the mobile web <abbr>UI</abbr> into a **responsive web <abbr>UI</abbr>** to reduce our maintenance burden, improve overall UX, and decrease the cost of launching new features.
 
 - I designed a new technical strategy for white-labeling (including the adoption of **CSS Modules**), enabling the business to support more brands by way of better tooling.
 
@@ -162,15 +157,11 @@ Over those three years I acquired a good dose of humility and basic knowledge of
 
 *Teaching myself web development.*
 
-**Beginning in January 2010**, I taught myself web programming, beginning with PHP and jQuery and the LAMP stack. Having a good working knowledge of HTML and CSS from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom CMS for the Oklahoma Board of Medical Licensure.
+**Beginning in January 2010**, I taught myself web programming, beginning with PHP and jQuery and the LAMP stack. Having a good working knowledge of <abbr title="hypertext markup language">HTML</abbr> and <abbr title="cascading style sheets">CSS</abbr> from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom <abbr title="content management system">CMS</abbr> for the Oklahoma Board of Medical Licensure.
 
 [innova]: https://innovacomputing.com
 
-*[LAMP]: Linux, Apache, MySQL, and PHP
-*[HTML]: hypertext markup language
-*[CMS]: content management system
-
-My goal throughout was not merely to make some extra money, nice though that was. Rather, I aimed to transition from the world of C and Fortran where I began my career to working full time in UI-focused web development. (Mission accomplished.)
+My goal throughout was not merely to make some extra money, nice though that was. Rather, I aimed to transition from the world of C and Fortran where I began my career to working full time in <abbr>UI</abbr>-focused web development. (Mission accomplished.)
 
 ## My Projects
 
