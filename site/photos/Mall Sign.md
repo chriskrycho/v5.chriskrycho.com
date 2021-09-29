@@ -5,7 +5,7 @@ image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/mall-sign-th
 
 ---
 
-The back way out of the local mall… just had this chair sitting there under the exit sigh. ([Glass][glass], [full size][full])
+The back way out of the local mall… just had this chair sitting there under the exit sign. ([Glass][glass], [full size][full])
 
 [glass]: https://glass.photo/chriskrycho/71L9kRVv3uPDILbVCoRcfA
 [full]: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/mall-sign.jpg
