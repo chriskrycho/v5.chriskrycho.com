@@ -4,7 +4,7 @@ summary: >
     Reading for world-building is a skill.... All had it once: it is how children read, every book, poster, adn headline a stream of unknown terms, far too many to ask about them all, but the child retains them, trusting that they will connect to something someday.
 tags:
    - Ada Palmer
-   - J.R. Tolkien
+   - J.R.R. Tolkien
    - quotes
    - reading notes
 
