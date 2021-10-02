@@ -1,0 +1,5 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/the-book-of-the-new-sun/{{page.fileSlug | slug}}/index.html",
+   "tags": ["Gene Wolfe", "science fiction", "fantasy"]
+}

@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-09-12T18:20:00-0700
+date: 2021-10-02T14:20:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -70,7 +70,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
-- [<cite>The Eye of the World</cite>](https://bookshop.org/a/21126/9781250251466), Robert Jordan (reread)
+- [<cite>Shadow & Claw: The First Half of The Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250781253), Gene Wolfe (new)
 
 ## 2021
 
@@ -107,6 +107,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Project Hail Mary</cite>, Andy Weir (new)
 
 - [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+
+- [<cite>The Eye of the World</cite>](https://bookshop.org/a/21126/9781250251466), Robert Jordan (reread)
 
 ## 2020
 
