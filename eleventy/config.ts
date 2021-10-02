@@ -192,8 +192,10 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library/God Without Measure');
    addCollectionFromDir(config, 'library/God Without Measure/Volume I');
    addCollectionFromDir(config, 'library/God Without Measure/Volume II');
-   addCollectionFromDir(config, 'library/The Culture of Theology');
    addCollectionFromDir(config, 'library/Politics and the Order of Love');
+   addCollectionFromDir(config, 'library/The Culture of Theology');
+   addCollectionFromDir(config, 'library/The Book of the New Sun');
+   addCollectionFromDir(config, 'library/The Book of the New Sun/Shadow and Claw');
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
    addCollectionFromDir(config, 'photos');
