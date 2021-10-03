@@ -522,7 +522,10 @@
          width: 100%;
          text-align: left;
          text-indent: hanging 1.3em;
-         padding-left: 1.1em;
+         padding: {
+            left: 1.1em;
+            right: 1.1em;
+         }
       }
    }
 
