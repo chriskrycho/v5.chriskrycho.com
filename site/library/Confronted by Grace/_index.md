@@ -6,5 +6,6 @@ subtitle: >
 permalink: /library/confronted-by-grace/
 layout: archives.njk
 standalonePage: true
+order: OLD_FIRST
 
 ---
