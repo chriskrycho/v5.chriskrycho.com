@@ -41,6 +41,12 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /library/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/ /library/politics-and-the-order-of-love/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/ 301!
 /library/a-chalcedonian-conceptual-grammar-for-love-and-justice/ /library/politics-and-the-order-of-love/a-chalcedonian-conceptual-grammar-for-love-and-justice/ 301!
 
+/library/fall-centered-theological-anthropologies/ /library/eccentric-existence/fall-centered-theological-anthropologies/ 301!
+/library/gods-self-commitment-to-creatures/ /library/eccentric-existence/gods-self-commitment-to-creatures/ 301!
+/library/problematic/ /library/eccentric-existence/problematic/ 301!
+/library/tell-me-your-priors/ /library/eccentric-existence/tell-me-your-priors/ 301!
+/library/the-triune-creators-relating-to-creation/ /library/eccentric-existence/the-triune-creators-relating-to-creation/ 301!
+
 # ...and notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
 /notes/0640/ /notes/2020-07-17-0640/ 301!
