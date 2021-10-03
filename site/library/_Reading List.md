@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-10-02T14:20:00-0600
+date: 2021-10-03T12:35:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -24,9 +24,11 @@ Quick links:
 - [2019](#2019)
 - [2018](#2018)
 
+
 ## Planned
 
 These are books I am *actively* planning to read—not just volumes I’m vaguely interested in, but texts I am committed to reading for some reason.
+
 
 ### Non-fiction
 
@@ -34,13 +36,16 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
 
+
 ### Fiction
 
 - [<cite>Blue Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBlue-Mars-Kim-Stanley-Robinson%2Fbook%2F745509), Kim Stanley Robinson (new)
 
+
 ## Started
 
 These are books I have actually begun reading. (You will see items move from [<b>Planned</b>](#planned) down here if you watch this page!)
+
 
 ### Non-fiction
 
@@ -66,13 +71,18 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
 
+
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
+- [<cite>Persepolis Rising</cite>][persepolis-rising], James S. A. Corey (reread)
+
 - [<cite>Shadow & Claw: The First Half of The Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250781253), Gene Wolfe (new)
 
+
 ## 2021
+
 
 ### Nonfiction
 
@@ -92,6 +102,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>God Without Measure: Working Papers in Christian Theology: Volume I: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
     - [posts on the book](/library/god-without-measure/volume-i/)
 
+
 ### Fiction
 
 - [<cite>The Hobbit</cite>](https://bookshop.org/a/21126/9780395873465), J.R.R. Tolkien (reread… with my daughter!)
@@ -101,6 +112,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
 	- [<cite>Cibola Burn</cite>][cibola-burn]
 	- [<cite>Nemesis Games</cite>][nemesis-games]
+    - [<cite>Babylon’s Ashes</cite>][babylons-ashes], James S. A. Corey
 
 - [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
@@ -110,7 +122,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Eye of the World</cite>](https://bookshop.org/a/21126/9781250251466), Robert Jordan (reread)
 
+[babylons-ashes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004
+[persepolis-rising]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952
+
+
 ## 2020
+
 
 ### Non-fiction
 
@@ -145,11 +162,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780300234176) (also available for free from the author [here](https://www.twitterandteargas.org)), Zeynep Tüfeçki (new)
     - discussed on Winning Slowly episoes [8.20] and [8.21]
 
+
 ### Fiction
 
 - The Expanse (reread, continued from 2019)
-    - [<cite>Babylon’s Ashes</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004), James S. A. Corey
-    - [<cite>Persepolis Rising</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952), James S. A. Corey
+    - [<cite>Babylon’s Ashes</cite>][babylons-ashes], James S. A. Corey
+    - [<cite>Persepolis Rising</cite>][persepolis-rising], James S. A. Corey
     - [<cite>Tiamat’s Wrath</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677), James S. A. Corey
     - [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction), James S. A. Corey (new)
     - [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction), James S. A. Corey
@@ -216,7 +234,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
+
 ## 2019
+
 
 ### Non-Fiction
 
@@ -227,6 +247,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>What is An Evangelical</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWho-Is-an-Evangelical-The-History-of-a-Movement-in-Crisis-Thomas-S-Kidd%2Fbook%2F43567758), Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
 
 - [<cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FIn-Search-of-the-Common-Good-Christian-Fidelity-in-a-Fractured-World-Jake-Meador%2Fbook%2F42719272), Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
+
 
 ### Fiction
 
@@ -270,7 +291,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 [cibola-burn]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCibola-Burn-James-S-A-Corey%2Fbook%2F26289654
 [nemesis-games]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FNemesis-Games-James-S-a-Corey%2Fbook%2F30151014
 
+
 ## 2018
+
 
 ### Fiction
 
