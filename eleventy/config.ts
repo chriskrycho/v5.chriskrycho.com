@@ -185,7 +185,7 @@ function config(config: Config): UserConfig {
    );
    addCollectionFromDir(config, 'journal');
    addCollectionFromDir(config, 'journal/Fanfare for a New Era of American Spaceflight');
-   addCollectionFromDir(config, 'journal/2021/Ember Template Imports');
+   addCollectionFromDir(config, 'journal/Ember Template Imports');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'library/Confronted by Grace');
