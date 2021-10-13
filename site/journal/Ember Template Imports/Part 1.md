@@ -216,7 +216,7 @@ Now we can assemble all of these together with a parent component, `GenerateAvat
       @tracked name = "";
 
       get previewUrl() {
-        return `http://www.example.com/avatars/${name}`;
+        return `http://www.example.com/avatars/${this.name}`;
       }
 
       updateName = (newName) => {
