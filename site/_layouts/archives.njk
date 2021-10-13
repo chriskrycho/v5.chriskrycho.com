@@ -8,7 +8,7 @@ standalonePage: true
 {% from 'components/social.njk' import meta %}
 
 {%- block meta %}
-{{ meta(collections.live | current(page), config) }}
+{{ meta(collections.all | current(page), config) }}
 {%- endblock meta %}
 
 {%- block main -%}

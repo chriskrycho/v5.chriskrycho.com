@@ -1,8 +1,11 @@
 ---
 title: >
-  Ember Template Imports
+    Ember Template Imports
 subtitle: >
-  My argument for `<template>`: a series in 5 parts.
+    My argument for `<template>`: a series in 5 parts.
+summary: >
+    The Ember/Glimmer community is experimenting with designs for single-file-components. This series is a deep dive and extended argument for the `<template>` design over alternatives.
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports-demo.png
 permalink: /journal/ember-template-imports/
 layout: archives.njk
 standalonePage: true
