@@ -622,7 +622,7 @@
    }
 
    pre:not(.poetry) {
-      @include fancy-block(var(--code-bg), var(--code-fg), var(--side-border-width));
+      @include fancy-block(var(--code-bg), var(--code-fg), #{ms(-4)});
       @include extra-vertical();
 
       margin-bottom: 1em;
@@ -714,8 +714,8 @@
          pre:not(.poetry),
          blockquote {
             padding: {
-               left: calc(var(--side-padding) - var(--side-border-width));
-               right: var(--side-padding);
+               left: calc(#{ms(-4)} - var(--side-border-width));
+               right: #{ms(-4)};
             }
          }
 
