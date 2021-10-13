@@ -26,7 +26,7 @@ It’s important to say before I jump in: these are *my opinions*. They’re *no
 
 The planned five posts in this series:
 
-- An introduction, summarizing the various options on the table
+- [An introduction, summarizing the various options on the table](./part-1/)
 
 - Three discussions of specific tradeoffs:
     - Teaching and understanding
