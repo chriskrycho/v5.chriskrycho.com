@@ -353,7 +353,7 @@ A `<template>` tag contains the template content, which will be *compiled* to an
 
 `greeting.js`:
 
-```
+```js
 <template>
   <p>
     Hello{{#if @name}}, {{@name}}{{/if}}!
@@ -836,7 +836,15 @@ Unlike in the `<template>` and `hbs` scenarios, you cannot define multiple compo
 
 ## Imports-only
 
-The final option under consideration is a very small extension of today’s baseline, which adds support for “front-matter” to templates, to allow them to specify imports explicitly. In this case, things work *exactly* as they do today, but all non-keyword functionality must be explicitly imported, including other components invoked within the component. For example, to 
+The final option under consideration is a very small extension of today’s baseline, which adds support for “front-matter” to templates, to allow them to specify imports explicitly. In this case, things work *exactly* as they do today, but all non-keyword functionality must be explicitly imported, including other components invoked within the component. For example, to define a template-only component which uses the `{{on}}` modifier, you would do this:
+
+```hbs
+---
+import { on } from '@glimmer/modifier';
+---
+
+<div {{on "mousenter" @isHovered}}></div>
+```
 
 
 ### Template-only
