@@ -175,6 +175,8 @@ This example introduces a stateful, class-backed component which uses a bound fu
     </form>
     ```
 
+[^3]: Pro tip: don’t do this. There are better ways of handling accessibility, as described in [this CSS Tricks post](https://css-tricks.com/making-disabled-buttons-more-inclusive/); I implemented the approach described there in [this addon](https://github.com/chriskrycho/a11y-disabled-modifier).
+
 
 ### Using helpers and modifiers
 
@@ -279,7 +281,7 @@ Now we can assemble all of these together with a parent component, `GenerateAvat
     }
     ```
 
-- `set-username.hbs`: the form itself, which is using `eq` to disable the button if there is no name set[^3]
+- `set-username.hbs`:
 
     ```hbs
     <form {{on "submit" this.saveName}}>
@@ -480,6 +482,8 @@ export default class GenerateAvatar extends Component {
   </template>
 }
 ```
+
+[^4]: And even if there *is*, if we think about them as related: `Greeting` could be a named export, for example.
 
 
 ## Tagged template literals with `hbs`
@@ -1019,9 +1023,3 @@ As with the rest of this section, this represents a fairly minimal change over t
 ## Looking forward
 
 Hopefully this gives you a good sense of the overall *feel* of the moves currently under consideration in design the space. You may have some opinions already about which of these you like best—certainly I did when I first started thinking about this. Even so, I hope you’ll also consider the tradeoffs here with an open mind as I present them in the weeks ahead!
-
-
-
-[^3]: Pro tip: don’t do this. There are better ways of handling accessibility, as described in [this CSS Tricks post](https://css-tricks.com/making-disabled-buttons-more-inclusive/); I implemented the approach described there in [this addon](https://github.com/chriskrycho/a11y-disabled-modifier).
-
-[^4]: And even if there *is*, if we think about them as related: `Greeting` could be a named export, for example.
