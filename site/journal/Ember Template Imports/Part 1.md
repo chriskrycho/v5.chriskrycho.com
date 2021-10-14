@@ -319,7 +319,7 @@ A `<template>` tag contains the template content, which will be *compiled* to an
         ```js
         export const Greet = <template>Hello!</template>
 
-        const Conditional = hbs`{{#if @val}}, {{@val}}`;
+        const Conditional = hbs`{{#if @val}}, {{@val}}{{/if}}`;
 
         const Farewell = <template>
           Goodbye<Conditional @val={{@user}} />!
@@ -499,10 +499,12 @@ The rules are very similar to those for the `<template>` proposal:
 
 1. The result of an `hbs` invocation in module scope (not in a class body) is a template-only component, bound to a name in a module. It can be a default export or a named export or not exported at all:
 
-    - A `<template>` may be assigned to a binding in the JavaScript module:
+    - An `hbs` invocation may be assigned to a binding in the JavaScript module:
 
         ```js
-        const Greet = <template>Hello!</template>
+        import { hbs } from '@glimmer/component';
+        
+        const Greet = hbs`Hello!`;
         ```
 
     - These bindings may be exported or not, just as any other in a JavaScript module:    
@@ -922,7 +924,7 @@ export default modifier((el, _ , { with: newUrl }) => {
 
 ### All features
 
-As with the rest of this section, this represents a fairly minimal change over the *status quo*. The only differences is the requirement to explicitly import the 
+As with the rest of this section, this represents a fairly minimal change over the *status quo*. The only difference is the requirement for templates to explicitly define their imports.
 
 - `generate-avatar.js`:
 
