@@ -21,11 +21,11 @@ While each of these has its own upsides and downsides, I believe `<template>` is
 
 In this first post, I will introduce each of the options and give a high-level overview of what I take the tradeoffs in the design space to be. In the following posts, I will cover **Teaching and Understanding**, **Scaling**, and **Testing**. In a final post, I will summarize the tradeoffs once more.
 
-<div class='note'>  
+<section class="note" aria-label="note">
 
 It’s important to say before I jump in: these are *my opinions*. They’re *not* official LinkedIn positions, and in fact I have a number of colleagues who disagree with me about some of these things! I’m writing this series to persuade any and all members of the Ember community, including other people at LinkedIn.
 
-</div>
+</section>
 
 ---
 
