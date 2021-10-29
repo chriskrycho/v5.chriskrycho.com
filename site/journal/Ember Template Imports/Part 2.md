@@ -12,8 +12,6 @@ templateEngineOverride: md
 
 In this second part of my [series on Ember Template Imports](https://v5.chriskrycho.com/journal/ember-template-imports/), I am tackling the subject of **Teaching and Understanding**. The [first part](https://v5.chriskrycho.com/journal/ember-template-imports/part-1/ "Part 1: Introducing the series and walking through the formats.") introduced the series and the options on the table. In future posts, I will look at each option in terms of **Scaling** and in terms of **Testing**, before wrapping up with a conclusion.
 
----
-
 As a reminder, the four formats under discussion are:
 
 - `<template>` tags with a custom file extension (currently `.gjs` and `.gts`)
