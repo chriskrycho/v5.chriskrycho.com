@@ -629,16 +629,41 @@
    }
 
    table {
-      max-width: var(--max-width);
+      border-collapse: collapse;
       margin: {
          top: 1em;
          bottom: 1em;
       }
 
-      thead {
+      th {
          font-family: var(--sans);
-         text-transform: uppercase;
-         letter-spacing: 1px;
+         font-weight: 600;
+         padding: 0 ms(-4);
+      }
+
+      tr:nth-child(even) {
+         background-color: var(--aside-bg);
+         color: var(--aside-fg);
+      }
+
+      thead {
+         border-bottom: 2px solid var(--blockquote-border);
+      }
+
+      thead th {
+         font-size: ms(1);
+         font-weight: 300;
+         background-color: var(--note-bg);
+         color: var(--note-fg);
+      }
+
+      th[scope='col'] {
+         font-style: italic;
+      }
+
+      th[scope='col'],
+      th[scope='row'] {
+         border-right: 2px solid var(--blockquote-border);
       }
 
       td,
@@ -650,10 +675,6 @@
          &:last-child {
             text-align: left;
          }
-      }
-
-      th {
-         padding: 0 ms(-4);
       }
 
       td {
