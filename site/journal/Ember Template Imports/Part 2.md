@@ -662,7 +662,7 @@ Unfortunately, this example doesn’t work in Glimmer or Ember apps; in fact, it
 ```plain
 path/to/app/app/components/breakfast.js: placeholders inside a tagged template string are not supported
   4 |
-  5 | const Breakfast = hbs`<div>${somethingInScope}</div>`;
+  5 | const Breakfast = hbs`&lt;div&gt;${somethingInScope}&lt;/div&gt;`;
   6 |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
 
