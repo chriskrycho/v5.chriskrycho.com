@@ -19,14 +19,7 @@ As a reminder, the four formats under discussion are:
 - something like Svelte’s and Vue’s <abbr>SFC</abbr> format
 - an imports-only extension of the current format
 
-I will also be assuming the [Definitions](https://v5.chriskrycho.com/journal/ember-template-imports/part-1/#definitions) and using the same examples as in the introductory post in the series:
-
-- a template-only `Greeting` component
-- a stateful component for setting a user’s name
-- a component which uses built-in helpers and modifiers
-- a component which assembles all of these pieces
-
-However, unlike in the first post, where I simply aimed to get all the options on the table clearly, I will *not* be repeating the same examples with each different format. Instead, this post is structured as an *argument* in favor of my preferred format: `<template>` tags.
+I will also be assuming the [Definitions](https://v5.chriskrycho.com/journal/ember-template-imports/part-1/#definitions). However, unlike in the first post, where I simply aimed to get all the options on the table clearly, I will *not* be repeating the same examples with each different format. Instead, this post is structured as an *argument* in favor of my preferred format: `<template>` tags.
 
 ---
 
