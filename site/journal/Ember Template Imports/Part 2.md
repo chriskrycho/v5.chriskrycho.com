@@ -759,19 +759,19 @@ This post has covered a *lot* of ground, so I’m going to wrap up with an overv
       <td>Good</td>
       <td>Bad</td>
       <td>Very good</td>
-      <td>Okay</td>
+      <td>Good</td>
     </tr>
     <tr>
       <th scope="row">JavaScript semantics</th>
       <td>Good</td>
-      <td>Bad</td>
+      <td>Good</td>
       <td>Good</td>
       <td>Very bad</td>
     </tr>
     <tr>
       <th scope="row">Scope semantics</th>
       <td>Very good</td>
-      <td>Very bad</td>
+      <td>Bad</td>
       <td>Okay</td>
       <td>Good</td>
     </tr>
