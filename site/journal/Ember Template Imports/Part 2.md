@@ -404,7 +404,7 @@ Next up, we can introduce dynamic behavior into this component, with our `isBirt
 
 This Just Works™, exactly the way we would expect—very much *unlike* in our imports-only flow. And again, it has the basic semantics we would expect from a `<script>` tag. The same is true for both our <abbr>JS</abbr> formats: we can just introduce a function in local scope, and it’s available to use. So, with `<template>`:
 
-```
+```js
 import Greeting from './greeting.js';
 import WeatherSummary from './weather-summary.js';
 
