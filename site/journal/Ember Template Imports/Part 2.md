@@ -793,7 +793,11 @@ I’ll add in conclusion here: this summary isn’t just my justification for my
 
 ---
 
-Next time: the impact on **Scaling**, both for individual codebases and for ecosystem tooling! In the meantime, I welcome your feedback: via email, on Ember Discuss, in `#st-template-imports` on Ember Discord, or even (though I’ll be slowest to respond there) on Twitter or Micro.blog.
+Next time: the impact on **Scaling**, both for individual codebases and for ecosystem tooling! In the meantime, I welcome your feedback: via email, [on Ember Discuss][discuss], [in `#st-template-imports` on Ember Discord][discord], or even (though I’ll be slowest to respond there) on Twitter or Micro.blog.
+
+[discuss]: https://discuss.emberjs.com/t/template-imports-part-2/19221
+[discord]: https://discord.com/channels/480462759797063690/518154533143183377/903776252106801242
+
 
 
 [^1]: and possible future features like [Resources and Effects](https://www.pzuraq.com/introducing-use/ "Introducing @use")
