@@ -23,7 +23,7 @@ While each of these has its own upsides and downsides, I believe `<template>` is
 
 <div class='note'>  
 
-It’s important to say before I jump in: these are *my opinions*. They’re *not* official LinkedIn positions, and in fact I have a number of colleagues who disagree with me about some of these things! I’m writing this series to persuade any and all members of the Ember community, including other people at LinkedIn.
+It’s important to say before I jump in: these are *my* opinions. They’re *not* official LinkedIn positions, and in fact I have a number of colleagues who disagree with me about some of these things! I’m writing this series to persuade any and all members of the Ember community, including other people at LinkedIn.
 
 </div>
 
@@ -32,7 +32,7 @@ The planned five posts in this series:
 - [An introduction, summarizing the various options on the table](./part-1/)
 
 - Three discussions of specific tradeoffs:
-    - Teaching and understanding
+    - [Teaching and understanding](./part-2/)
     - Scaling codebases
     - Testing
 
