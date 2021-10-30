@@ -44,13 +44,13 @@ I will also be assuming the [Definitions](https://v5.chriskrycho.com/journal/emb
 
 One of the most important aspects of a decision about the design of a language or an <abbr title="application programming interface">API</abbr> is how it impacts developers’ ability to learn it and to develop a correct mental model for it. The design of template imports sits right at the boundary between programming language and <abbr>API</abbr> design, because it is a way of expressing the relationship between two programming languages: JavaScript and the Glimmer templating language.
 
-It’s worth remembering, too, that the relationship between host language and some sort of templating language is a fundamental decision in the design space for application programming of all sorts which render <abbr title="HyperText Markup Language">HTML</abbr>. This is not a concern only of client-side-rendered applications or <abbr title="single page application">SPA</abbr>s: it applies equally to Rails and <abbr title="Embedded RuBy">ERB</abbr> or to <abbr>PHP</abbr> or to C<sup>♯</sup> apps with Razor templates.
+It’s worth remembering, too, that the relationship between host language and some sort of templating language is a fundamental decision in the design space for application programming of all sorts which render <abbr title="HyperText Markup Language">HTML</abbr>. This is not a concern only of client-side-rendered applications or <abbr title="single page application">SPA</abbr>s: it applies equally to Rails and <abbr title="Embedded RuBy">ERB</abbr> or to <abbr title="PHP: Hypertext Processor">PHP</abbr> or to C<sup>♯</sup> apps with Razor templates.
 
 ### On motivation
 
 Historically, Glimmer templates have been *almost* completely separated from JavaScript, with very specific and explicit bridges: component backing classes, helpers, and modifiers. That narrow boundary has helped Ember keep a strong “separation of concerns” between <abbr>HTML</abbr> and <abbr title="JavaScript">JS</abbr>, and this has been a real win—both for being able to optimize the rendering layer and for being able to statically analyze and therefore *lint* the rendering layer.
 
-At the same time, every Glimmer template have had implicit access to *every single* component, helper, or modifier throughout an app and its addons, which has made it difficult to perform many *other* kinds of optimizations and analyses. Full dead code elimination, for example, has been effectively intractable; and features like go-to-definition or refactoring have been *much* harder to support than they would . Supporting developer discoverability—whether has been significantly 
+At the same time, every Glimmer template have had implicit access to *every single* component, helper, or modifier throughout an app and its addons, which has made it difficult to perform many *other* kinds of optimizations and analyses. Full dead code elimination, for example, has been effectively intractable; and features like go-to-definition or refactoring have been *much* harder to support than they would be with imports. Supporting developer discoverability—via docs, autocomplete, etc.—has likewise been challenging.
 
 Adopting strict mode inherently solves this second problem: it requires that components, helpers, and modifiers[^1] be imported and available in lexical scope—specifically, with *JavaScript*’s lexical scoping rules.
 
@@ -80,7 +80,7 @@ In both cases, it’s generally preferable to minimize the number of concepts in
 At the same time, we have to hold that principle in tension with another constraint: trying to uphold the [principle of least surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment).
 
 principle of least surprise
-: So far as possible, a design should behave in the way that users will generally *expect* it to behave.
+: So far as possible, a design should behave in the way that users will generally *expect* it to behave. An interface which matches other interfaces should not behave wildly differently from them.
 
 That is: if there are existing (especially if there are well-established) reasons for a user to expect a given <abbr>API</abbr> to have certain semantics or meaning, our design should usually follow that. This makes it easier to learn and to remember, and it also helps prevent mistakes even for experienced developers: because they don’t have to remember “Oh, right, it’s different for this case!”
 
@@ -334,7 +334,9 @@ Once we introduce imports, the dynamics start to change. We’ll start once agai
 </div>
 ```
 
-So far, this seems quite reasonable. The scoping rules aren’t *quite* the same as in normal JavaScript and <abbr>HTML</abbr>, but that’s really only because regular <abbr>HTML</abbr> doesn’t have any notion of components. The import rules *are* the same (except that we would technically need to write `<script type="module">` rather than simply `<script>`). Once again, <abbr>SFC</abbr>s look pretty good!
+So far, this seems quite reasonable. The scoping rules aren’t *quite* the same as in normal JavaScript and <abbr>HTML</abbr>, but that’s really only because regular <abbr>HTML</abbr> doesn’t have any notion of components. The import rules *are* the same (except that we would technically need to write `<script type="module">` rather than simply `<script>`). Once again, <abbr>SFC</abbr>s look pretty good![^imports]
+
+[^imports]: There are *tooling* issues here—today this will show the imports as unused—but I will turn to those next time.
 
 Turning next to `<template>` tags and tagged template literals, we see that they share tradeoffs with each other. This makes sense: they’re both basically a special kind of JavaScript. First up, with `<template>`:
 
@@ -365,7 +367,7 @@ export default hbs`
 `;
 ```
 
-There is one significant point in favor of `hbs` here: since this file is “just” JavaScript, the imports all match what you would see on disk (or, in the case of TypeScript, the same thing you would see for any other <abbr title="TypeScript">TS</abbr> file). With the <abbr>SFC</abbr> and `<template>` tag formats, we would presumably have different on-disk authoring extensions (perhaps `.gbs` for <abbr>SFC</abbr>s and `.gjs` for `<template>`).
+There is one significant point in favor of `hbs` here: since this file is “just” JavaScript, the imports all match what you would see on disk (or, in the case of TypeScript, the same thing you would see for any other <abbr title="TypeScript">TS</abbr> file). (This actually poses its own issues for tooling, but I will take up that issue in the next post.) With the <abbr>SFC</abbr> and `<template>` tag formats, we would presumably have different on-disk authoring extensions (perhaps `.gbs` for <abbr>SFC</abbr>s and `.gjs` for `<template>`).
 
 #### Dynamic functionality
 
@@ -604,9 +606,9 @@ function isBirthday(dateOfBirth) {
 import { hbs } from '@glimmer/component';
 import WeatherSummary from './weather-summary.js';
 
-const Greeting = <template>
+const Greeting = hbs`
   <p>Hello, {{@name}}!</p>
-</template>;
+`;
 
 function isBirthday(dateOfBirth) {
   const now = new Date();
@@ -632,7 +634,7 @@ export default hbs`
 - having the template be the root primitive, with JavaScript added in via `<script>` tag
 - having, as a corollary, special-cased the the default export from the `<script>` tag to become the `this` for class-backed components
 
-Both of these mean that a given <abbr>SFC</abbr> can always and only define exactly one component—even if there are perfectly good reasons to define multiple components in a single file. The result is that, not unlike JavaScript functionality in the imports-only design, <abbr>SFC</abbr>s are somewhat arbitrarily hobbled here.
+Both of these mean that a given <abbr>SFC</abbr> can always and only define exactly one component—even if there are perfectly good reasons to define multiple components in a single file. As a result, <abbr>SFC</abbr>s are somewhat arbitrarily hobbled here, not unlike JavaScript functionality more generally in the imports-only design.
 
 ### Scope semantics
 
@@ -724,6 +726,7 @@ As with `hbs`, this is a kind of “uncanny valley” problem. Our proposed use 
 ```js
 const ComponentWithActualTemplate = <template>
   <template id="actual-template">
+    {{! some other content to fill in... }}
   </template>
 </template>
 ```
