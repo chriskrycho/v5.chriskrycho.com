@@ -162,7 +162,7 @@ import { gt, lt } from '@glimmer/helper';
 </p>
 ```
 
-Then we would end up with this very weird usage:
+Then we would end up with this surprising usage:
 
 ```handlebars
 ---
