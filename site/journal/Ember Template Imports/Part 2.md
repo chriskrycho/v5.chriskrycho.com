@@ -99,7 +99,7 @@ In the discussion which follows, I’m using `.js` in every import, and I’ll b
 
 ### Imports-only
 
-Let’s start with a quick evaluation of the imports-only/“front matter” design, as the odd one out. Out of the box, this has incredibly low overhead. Our simplest possible `<Greeting>` component is “just <abbr>HTML</abbr>:
+Let’s start with a quick evaluation of the imports-only/“front matter” design, as the odd one out. Out of the box, this has incredibly low overhead. Our simplest possible `<Greeting>` component is “just <abbr>HTML</abbr>”:
 
 ```handlebars
 <p>Hello, {{@name}}!</p>
