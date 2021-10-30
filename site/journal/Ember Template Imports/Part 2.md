@@ -573,7 +573,7 @@ We could make other named exports work, but (as I will cover in more detail in t
 
 #### Pulling components into a single file
 
-As we come to the final part of our worked example, this problem gets *much worse*. When we go to build up the `UserOverview` component, both `<template>` and `hbs` allow us to make our choices about where each component should live, while the <abbr>SFC</abbr> design does not. For example, if the `Greeting` component isn’t used anywhere else, and we really only want to extract it for simplicity of working with as a concrete thing of its own (just like we do all the time with functions and classes in <abbr>JS</abbr>), we can do that with `<template`—
+As we come to the final part of our worked example, this problem gets *much worse*. When we go to build up the `UserOverview` component, both `<template>` and `hbs` allow us to make our choices about where each component should live, while the <abbr>SFC</abbr> design does not. For example, if the `Greeting` component isn’t used anywhere else, and we really only want to extract it for simplicity of working with as a concrete thing of its own (just like we do all the time with functions and classes in <abbr>JS</abbr>), we can do that with `<template>`—
 
 ```js
 import WeatherSummary from './weather-summary.js';
