@@ -6,6 +6,7 @@ subtitle: >
 series:
     part: 2
 date: 2021-10-29T16:35:00-0600
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-2-table.png
 templateEngineOverride: md
 
 ---

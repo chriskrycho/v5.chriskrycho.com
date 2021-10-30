@@ -4,7 +4,7 @@ title: >
 subtitle: >
     Introducing the series and walking through the formats.
 date: 2021-10-12T21:05:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports-demo.png
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/demo.png
 series:
   part: 1
 
