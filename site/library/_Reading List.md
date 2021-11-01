@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-10-03T12:35:00-0600
+date: 2021-10-31T19:45:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -76,8 +76,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
-- [<cite>Persepolis Rising</cite>][persepolis-rising], James S. A. Corey (reread)
-
 - [<cite>Shadow & Claw: The First Half of The Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250781253), Gene Wolfe (new)
 
 
@@ -112,7 +110,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
 	- [<cite>Cibola Burn</cite>][cibola-burn]
 	- [<cite>Nemesis Games</cite>][nemesis-games]
-    - [<cite>Babylon’s Ashes</cite>][babylons-ashes], James S. A. Corey
+    - [<cite>Babylon’s Ashes</cite>][babylons-ashes]
+    - [<cite>Persepolis Rising</cite>][persepolis-rising]
+    - [<cite>Tiamat’s Wrath</cite>][tiamats-wrath]
 
 - [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
@@ -124,6 +124,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 [babylons-ashes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004
 [persepolis-rising]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952
+[tiamats-wrath]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677
 
 
 ## 2020
@@ -165,12 +166,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- The Expanse (reread, continued from 2019)
-    - [<cite>Babylon’s Ashes</cite>][babylons-ashes], James S. A. Corey
-    - [<cite>Persepolis Rising</cite>][persepolis-rising], James S. A. Corey
-    - [<cite>Tiamat’s Wrath</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677), James S. A. Corey
-    - [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction), James S. A. Corey (new)
-    - [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction), James S. A. Corey
+- The Expanse (reread, continued from 2019), James S. A. Corey
+    - [<cite>Babylon’s Ashes</cite>][babylons-ashes]
+    - [<cite>Persepolis Rising</cite>][persepolis-rising]
+    - [<cite>Tiamat’s Wrath</cite>][tiamats-wrath]
+    - [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction) (new)
+    - [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction)
 
 - [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
     - discussed on Winning Slowly [8.06] and [8.07]
