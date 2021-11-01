@@ -1,6 +1,6 @@
 ---
 title: Anki and Spaced Repetition
-subtitle: Notes on working with a new system, 5½ months
+subtitle: Notes on working with a new system, 5½ months along.
 date: 2021-10-31T19:05:00-0600
 qualifiers:
   audience: >
