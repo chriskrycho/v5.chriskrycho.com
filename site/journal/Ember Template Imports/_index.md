@@ -11,7 +11,6 @@ layout: archives.njk
 standalonePage: true
 date: 2021-11-12T21:00:00-0600
 order: OLD_FIRST
-featured: true
 
 ---
 
