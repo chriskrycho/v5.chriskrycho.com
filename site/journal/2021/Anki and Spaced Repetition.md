@@ -11,6 +11,7 @@ tags:
   - learning
   - memory
   - Anki
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/reviews-over-time.png
 
 ---
 
