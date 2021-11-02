@@ -633,7 +633,7 @@ export default hbs`
 —but *not* with an <abbr>SFC</abbr>. This is the fallout of two design constraints:
 
 - having the template be the root primitive, with JavaScript added in via `<script>` tag
-- having, as a corollary, special-cased the the default export from the `<script>` tag to become the `this` for class-backed components
+- having, as a corollary, special-cased the default export from the `<script>` tag to become the `this` for class-backed components
 
 Both of these mean that a given <abbr>SFC</abbr> can always and only define exactly one component—even if there are perfectly good reasons to define multiple components in a single file. As a result, <abbr>SFC</abbr>s are somewhat arbitrarily hobbled here, not unlike JavaScript functionality more generally in the imports-only design.
 
