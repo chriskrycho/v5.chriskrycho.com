@@ -7,8 +7,8 @@
    "author": "Chris Krycho <hello@chriskrycho.com>",
    "license": "MIT",
    "volta": {
-      "node": "16.9.1",
-      "npm": "7.23.0"
+      "node": "16.13.0",
+      "npm": "8.1.2"
    },
    "devDependencies": {
       "@11ty/eleventy": "^0.12.1",
