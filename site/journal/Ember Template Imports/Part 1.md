@@ -170,7 +170,7 @@ This example introduces a stateful, class-backed component which uses a bound fu
         {{on "input" this.updateName}}
       />
 
-      <button type='submit' disabled={{eq this.value.length 0}}>
+      <button type='submit' disabled={{eq this.name.length 0}}>
         Generate
       </button>
     </form>
