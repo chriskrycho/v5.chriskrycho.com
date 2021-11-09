@@ -96,6 +96,8 @@
    margin-left: auto;
    margin-right: auto;
 
+   overflow-x: scroll;
+
    h1,
    h2,
    h3,
@@ -630,6 +632,7 @@
 
    table {
       border-collapse: collapse;
+
       margin: {
          top: 1em;
          bottom: 1em;
@@ -659,9 +662,18 @@
 
       th[scope='col'] {
          font-style: italic;
+         background-color: var(--note-bg);
+         color: var(--note-fg);
       }
 
-      th[scope='col'],
+      tbody {
+         border-bottom: 1px solid var(--blockquote-border);
+      }
+
+      thead + tbody {
+         border-top: none;
+      }
+
       th[scope='row'] {
          border-right: 2px solid var(--blockquote-border);
       }
