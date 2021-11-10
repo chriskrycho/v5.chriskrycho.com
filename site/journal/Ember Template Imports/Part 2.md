@@ -740,45 +740,47 @@ Net, though, I don’t think the overlap with `<template>` is intractable. This 
 
 This post has covered a *lot* of ground, so I’m going to wrap up with an overview table which summarizes my take on it. (I’m trying very hard to be fair to each of the options available here, so feel free to let me know if you think I’m unfairly categorizing the tradeoffs!)
 
-<table>
-  <thead>
-    <th scope='col'>Consideration</th>
-    <th><code>&lt;template&gt;</code></th>
-    <th>Template literals</th>
-    <th><abbr>SFC</abbr>s</th>
-    <th>Imports-only</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Progressive Disclosure</th>
-      <td>Good</td>
-      <td>Bad</td>
-      <td>Very good</td>
-      <td>Good</td>
-    </tr>
-    <tr>
-      <th scope="row">JavaScript semantics</th>
-      <td>Good</td>
-      <td>Good</td>
-      <td>Good</td>
-      <td>Very bad</td>
-    </tr>
-    <tr>
-      <th scope="row">Scope semantics</th>
-      <td>Very good</td>
-      <td>Bad</td>
-      <td>Okay</td>
-      <td>Good</td>
-    </tr>
-    <tr>
-      <th scope="row">Semantic mismatch</th>
-      <td>Yes/<abbr>HTML</abbr>/tractable</td>
-      <td>Yes/<abbr>JS</abbr>/intractable</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
+<div class='table-container'>
+  <table>
+    <thead>
+      <th scope='col'>Consideration</th>
+      <th><code>&lt;template&gt;</code></th>
+      <th>Template literals</th>
+      <th><abbr>SFC</abbr>s</th>
+      <th>Imports-only</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Progressive Disclosure</th>
+        <td>Good</td>
+        <td>Bad</td>
+        <td>Very good</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <th scope="row">JavaScript semantics</th>
+        <td>Good</td>
+        <td>Good</td>
+        <td>Good</td>
+        <td>Very bad</td>
+      </tr>
+      <tr>
+        <th scope="row">Scope semantics</th>
+        <td>Very good</td>
+        <td>Bad</td>
+        <td>Okay</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <th scope="row">Semantic mismatch</th>
+        <td>Yes/<abbr>HTML</abbr>/tractable</td>
+        <td>Yes/<abbr>JS</abbr>/intractable</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 Looking at the whole picture like this, I would go so far as to say that for a single component with no backing class (and leaving aside considerations about testing we’ll get to later in the series, especially around testing), the <abbr>SFC</abbr> approach is the best design choice. It starts with plain <abbr>HTML</abbr>, and then adds dynamicism via a `<script>` tag—just like the code we would write if we were targeting the browser with no compile step, even including the scoping rules.
 

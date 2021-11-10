@@ -96,8 +96,6 @@
    margin-left: auto;
    margin-right: auto;
 
-   overflow-x: scroll;
-
    h1,
    h2,
    h3,
@@ -628,6 +626,12 @@
       @include extra-vertical();
 
       margin-bottom: 1em;
+   }
+
+   .table-container {
+      display: block;
+      width: 100%;
+      overflow: scroll;
    }
 
    table {
