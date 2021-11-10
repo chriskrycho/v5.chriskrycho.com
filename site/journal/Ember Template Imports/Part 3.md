@@ -71,7 +71,7 @@ There already exists a *basic* degree of support for all of these formats in ter
 
 - Both`hbs` and `<template>` have at least some degree of syntax highlighting support via various editor extensions, e.g. [vscode-glimmer][vscode-glimmer] for VS Code, which also adds support for treating `.gjs` and `.gts` as aliases for the <abbr title="JavaScript">JS</abbr> and <abbr title="TypeScript">TS</abbr> syntaxes respectively.
 
-    (Notably, however, for reasons I will cover below, just aliasing to <abbr>JS</abbr> and <abbr>TS</abbr> is actually *not* a great move for `.gjs` and `.gts` files, for reason I discuss below under [Language server tooling](#language-server-tooling). If you try this today, you will see red squiggles *everywhere* in VS Code and possibly other editors.)
+    (Notably, however, for reasons I will cover below, just aliasing to <abbr>JS</abbr> and <abbr>TS</abbr> is actually *not* a great move for `.gjs` and `.gts` files, for reason I discuss below under [Lint tooling](#lint-tooling). If you try this today, you will see red squiggles *everywhere* in VS Code and possibly other editors.)
 
 In sum, as far as the most basic editor integration goes, these are all basically a wash.
 
