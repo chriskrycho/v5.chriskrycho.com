@@ -124,15 +124,15 @@ export default class WeatherSummary extends Component {
 
   static template = hbs`
     <button
-	  type='button'
-	  {{on "click" this.getCurrentTemp}}
-	>
-	  Check the weather
-	</button>
+      type='button'
+      {{on "click" this.getCurrentTemp}}
+    >
+      Check the weather
+    </button>
 
-	{{#if (isSet this.currentTemp)}}
+    {{#if (isSet this.currentTemp)}}
       <p>The current temperature is {{this.currentTemp}}</p>
-	{{/if}}
+    {{/if}}
   `;
 }
 ```
