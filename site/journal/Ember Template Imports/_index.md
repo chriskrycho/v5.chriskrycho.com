@@ -19,13 +19,13 @@ The Ember and Glimmer community is currently experimenting with designs for comp
 [eti]: https://github.com/ember-template-imports/ember-template-imports
 [strict]: https://emberjs.github.io/rfcs/0496-handlebars-strict-mode.html
 
-While each of these has its own upsides and downsides, I believe `<template>` is far and away the best choice, because of its wins for teaching and understanding, scaling, and testing. In this series, I will do my best to present an even-handed analysis that shows how and why I came to that conclusion over the last few years of thinking about it.
-
 <div class='note'>  
 
 It’s important to say before I jump in: these are *my* opinions. They’re *not* official LinkedIn positions, and in fact I have a number of colleagues who disagree with me about some of these things! I’m writing this series to persuade any and all members of the Ember community, including other people at LinkedIn.
 
 </div>
+
+While each of these has its own upsides and downsides, I believe `<template>` is far and away the best choice, because of its wins for teaching and understanding, scaling, and testing. In this series, I will do my best to present an even-handed analysis that shows how and why I came to that conclusion over the last few years of thinking about it.
 
 The planned five posts in this series:
 
@@ -33,7 +33,7 @@ The planned five posts in this series:
 
 - Three discussions of specific tradeoffs:
     - [Teaching and understanding](./part-2/)
-    - Scaling codebases
+    - [Tooling](./part-3/)
     - Testing
 
 - A summary post laying out all the tradeoffs together
