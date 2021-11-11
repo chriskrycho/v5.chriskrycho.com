@@ -5,8 +5,8 @@ subtitle: >
     Keeping, and improving on, one of Ember’s fundamental commitments—and biggest strengths: its integrated testing.
 series:
   part: 4
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-4-test.png
 date: 2021-11-11T15:27:00-0700
-
 tags:
   - testing
 
