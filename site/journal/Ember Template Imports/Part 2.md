@@ -11,7 +11,7 @@ templateEngineOverride: md
 
 ---
 
-In this second part of my [series on Ember Template Imports](https://v5.chriskrycho.com/journal/ember-template-imports/), I am tackling the subject of **Teaching and Understanding**. The [first part](https://v5.chriskrycho.com/journal/ember-template-imports/part-1/ "Part 1: Introducing the series and walking through the formats.") introduced the series and the options on the table. In future posts, I will look at each option in terms of **Scaling** and in terms of **Testing**, before wrapping up with a conclusion.
+In this second part of my [series on Ember Template Imports](https://v5.chriskrycho.com/journal/ember-template-imports/), I am tackling the subject of **Teaching and Understanding**. The [first part](https://v5.chriskrycho.com/journal/ember-template-imports/part-1/ "Part 1: Introducing the series and walking through the formats.") introduced the series and the options on the table. In future posts, I will look at each option in terms of **Tooling** and in terms of **Testing**, before wrapping up with a conclusion.
 
 As a reminder, the four formats under discussion are:
 
@@ -790,7 +790,7 @@ I’ll add in conclusion here: this summary isn’t just my justification for my
 
 ---
 
-Next time: the impact on **Scaling**, both for individual codebases and for ecosystem tooling! In the meantime, I welcome your feedback: via email, [on Ember Discuss][discuss], [in `#st-template-imports` on Ember Discord][discord], or even (though I’ll be slowest to respond there) on Twitter or Micro.blog.
+Next time: the impact on **Tooling**, both for individual codebases and for ecosystem tooling! In the meantime, I welcome your feedback: via email, [on Ember Discuss][discuss], [in `#st-template-imports` on Ember Discord][discord], or even (though I’ll be slowest to respond there) on Twitter or Micro.blog.
 
 [discuss]: https://discuss.emberjs.com/t/template-imports-part-2/19221
 [discord]: https://discord.com/channels/480462759797063690/518154533143183377/903776252106801242
