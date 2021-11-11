@@ -158,6 +158,7 @@ The story is similar for existing formatter tooling with Prettier: *none* of the
 
 In sum, as with the lint tooling, we actually need to implement custom language support to make *any* of these work correctly. However, it’s worth acknowledging that the template literals and <abbr>SFC</abbr> proposals are halfway there, whereas (in very different ways) the `<template>` and imports-only proposals are much worse off.
 
+
 ## Language server tooling
 
 Finally, we come to language server tooling and integration. Most of the JavaScript ecosystem uses the TypeScript Language Server to support features like documentation-on-hover, go-to-definition, and refactoring. That includes React, since <abbr>TS</abbr> has built-in support for <abbr>JSX</abbr>; Vue, Angular, and Svelte via custom language server integrations; and Ember/Glimmer, via the various experimental <abbr title="Ember Language Server">ELS</abbr> implementations and [Glint][glint] (which it itself used by some of the other language servers). With any of the proposed formats, we would need to create a language server which understood the format and could connect it to the <abbr title="TypeScript Language Server">TS LS</abbr>.
