@@ -229,7 +229,7 @@ As for the differences between `hbs` and `<template>` here: there really aren’
 
 Thus, as with the **Tooling** discussion in Part 3, `hbs` has a slight edge over any other proposal simply in terms of existing usage. However, beyond that, both `<template>` and `hbs` both are *far* better than imports-only or <abbr>SFC</abbr>s in this case. For those keeping score, that makes my current evaluation:
 
-- **Teaching:** `<template>` the winner across the board, followed by <abbr>SFC</abbr>s, then imports-only, then `hbs`
+- **Teaching and understanding:** `<template>` the winner across the board, followed by <abbr>SFC</abbr>s, then imports-only, then `hbs`
 - **Tooling:** `hbs` only *slightly* better than the other options
 - **Testing:** `hbs` slightly better than `<template>` because it has effectively no migration cost; but both far better than either the <abbr>SFC</abbr> or imports-only proposals
 

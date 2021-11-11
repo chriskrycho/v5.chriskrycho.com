@@ -19,7 +19,7 @@ The Ember and Glimmer community is currently experimenting with designs for comp
 
 While each of these has its own upsides and downsides, I believe `<template>` is far and away the best choice, because of its wins for teaching and understanding, scaling, and testing. In this series, I will do my best to present an even-handed analysis that shows how and why I came to that conclusion over the last few years of thinking about it.
 
-In this first post, I will introduce each of the options and give a high-level overview of what I take the tradeoffs in the design space to be. In the following posts, I will cover **Teaching and Understanding**, **Scaling**, and **Testing**. In a final post, I will summarize the tradeoffs once more.
+In this first post, I will introduce each of the options and give a high-level overview of what I take the tradeoffs in the design space to be. In the following posts, I will cover **Teaching and Understanding**, **Tooling**, and **Testing**. In a final post, I will summarize the tradeoffs once more.
 
 <section class="note" aria-label="note">
 

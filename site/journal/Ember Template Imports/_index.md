@@ -34,6 +34,6 @@ The planned five posts in this series:
 - Three discussions of specific tradeoffs:
     - [Teaching and understanding](./part-2/)
     - [Tooling](./part-3/)
-    - Testing
+    - [Testing](./part-4/)
 
 - A summary post laying out all the tradeoffs together
