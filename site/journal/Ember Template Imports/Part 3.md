@@ -54,7 +54,7 @@ React also has a custom syntax extension, but has had support for it built nativ
 [etl]: https://github.com/ember-template-lint/ember-template-lint
 [prettier]: https://prettier.io
 [els]: https://github.com/suchitadoshi1987/ember-language-server
-[Glint]: https://typed-ember/glint
+[Glint]: https://github.com/typed-ember/glint
 
 [^categories]: I provide *examples* here in terms of things like ESLint and Prettier, but it’s important to recognize that these are *categorical* costs. If we choose at some point to switch our linting over to something like [RSLint][rslint] for the sake of its speed, we would have to pay any costs associated with a given format there as well.
 
