@@ -115,7 +115,8 @@
    .footnotes,
    .note,
    .qualifiers,
-   .quotation {
+   .quotation,
+   .updates {
       margin: {
          left: auto;
          right: auto;
@@ -451,7 +452,8 @@
 
    aside,
    .note,
-   .qualifiers {
+   .qualifiers,
+   .updates {
       font: {
          family: var(--sans);
          weight: 300;
@@ -495,6 +497,17 @@
       @include fancy-block(var(--aside-bg), var(--aside-fg));
       @include extra-vertical();
       --top-border: var(--aside-border);
+
+      display: block;
+
+      b {
+         font-weight: 600;
+      }
+   }
+
+   .updates {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
 
       display: block;
 
@@ -600,7 +613,8 @@
    aside,
    .note,
    .qualifiers,
-   .callout {
+   .callout,
+   .updates {
       > {
          p,
          ul,
@@ -616,6 +630,7 @@
    aside,
    .note,
    .qualifiers,
+   .updates,
    .footnotes {
       --double-margin: var(--double-margin-sans);
       --single-margin: var(--single-margin-sans);
@@ -747,7 +762,8 @@
          aside,
          .qualifiers,
          .note,
-         .callout {
+         .callout,
+         .updates {
             align-self: center;
             padding: {
                left: var(--side-padding);
