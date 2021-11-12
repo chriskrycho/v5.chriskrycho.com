@@ -54,6 +54,17 @@
                      {%- if item.data.qualifiers.epistemic -%}
                         <p><b>Epistemic Status:</b> {{ item.data.qualifiers.epistemic | inlineMd | safe -}}</p>
                      {%- endif -%}
+                     {%- if updates -%}
+                     <ul>
+                        {%- for update in updates -%}
+                        <li>
+                           <b>{% localeDate update.at, 'yyyy/MM/dd HH:mm' %}:</b>
+                           {{update.changes | inlineMd | safe}}
+                        </li>
+                        {%- endfor -%}
+                     </ul>
+                     {%- endif -%}
+
                      {%- if item.data.book and item.data.book.review -%}
                         {%- set book = item.data.book -%}
                         <p>
