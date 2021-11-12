@@ -7,6 +7,11 @@ series:
   part: 3
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-3-table.png
 date: 2021-11-09T16:50:00-0700
+updated: 2021-11-12T15:20:00-0700
+updates:
+  - at: 2021-11-12T15:35:00-0700
+    changes: >
+      Added [a section](#server-side) on server-side use of `hbs`.
 templateEngineOverride: md
 
 ---
@@ -32,6 +37,16 @@ Recall from those posts that there are four basic formats under discussion:
 In those previous posts, I said Part 3 was going to be about **Scaling**. However, I think it’s more useful to talk about **Tooling** here. As I have kept working on this series, I’m not actually persuaded that there are particularly meaningful differences between these approaches for scaling codebases which aren’t subsumed in the other topics—especially teaching and testing. So: tooling it is!
 
 </section>
+
+- [Overview](#overview)
+- [Syntax](#syntax)
+- [Lint tooling](#lint-tooling)
+- [Formatter tooling](#formatter-tooling)
+- [Language server tooling](#language-server-tooling)
+- [Server-side](#server-side)
+- [Summary](#summary)
+
+## Overview
 
 There are (at least) four broad categories to consider in evaluating the impact of these formats in terms of tooling:[^categories]
 
@@ -173,6 +188,20 @@ Net, the `hbs` implementation has a very small edge on language server implement
 [glimmer-x]: https://github.com/glimmerjs/glimmer-experimental
 
 
+## Server-side
+
+One common reason a few people have suggested we ought to prefer `hbs` is that they think it makes it easier to support running Glimmer templates in server-side environments—that is, that it would make it viable to use `hbs` as an actual import which works without needing any compilation step.
+
+Unfortunately, while that sounds appealing, it isn’t actually true, at least today! The problem is the mismatch in semantics discussed in [Part 2][p2]. While you could get away with that no-compilation model for template-only components with no backing class, it simply doesn’t work correctly when you switch to a component with a backing class. The problem is the mismatch between a `static` class field and the semantics we actually assign to component templates. If you want the `this` value to work correctly, you *have* to introduce some degree of processing. At a minimum, we would need to rewrite the internals of `getComponentTemplate` to go look up that static field—not an impossible hurdle, by any means, but a real and significant change to the current design. (As to whether it’s otherwise well-motivated, I refer you to the rest of the series!)
+
+Moreover, I’ll go further here and say that I don’t think there’s any particular value to being able to run a Glimmer component without any build step. Having a build pipeline is *extremely* normal for both client- and server-side code—and it can even be done fairly transparently and on demand for server-side code, e.g. with [`@babel/node`][babel-node] or [`ts-node`][ts-node]. If someone wants to run Glimmer component code natively in a Node runtime, they can precompile it using our standard build tools *or* they can simply use `@babel/node` to integrate the transform automatically.
+
+[babel-node]: https://babeljs.io/docs/en/babel-node
+[ts-node]: https://typestrong.org/ts-node/
+
+Net, I take this to be something of a non-issue for the design choice here, as it requires *some* non-zero degree of extra work compared to today’s baseline regardless and there are straightforward options for this regardless of the design chosen.
+
+
 ## Summary
 
 In this particular comparison, the template literals proposal clearly comes out with a *small* edge. In most categories, it’s the same or slightly better than the other options, as we can see in this table:
@@ -266,7 +295,18 @@ In this particular comparison, the template literals proposal clearly comes out 
         <td>small</td>
       </tr>
     </tbody>
+    <tbody>
+      <tr>
+        <th scope='row'>Server-side requires compilation</th>
+        <td>yes</td>
+        <td>yes</td>
+        <td>yes</td>
+        <td>yes</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
-These differences are very small, though. Accordingly, I still believe `<template>` is the best choice—because the small deltas here are fairly straightforward to tackle, and because I think the issues around **Teaching** described in Part 2 and around **Testing** as I will describe in Part 4 *profoundly* outweigh these small tooling differences.
+These differences are very small, though. Accordingly, I still believe `<template>` is the best choice—because the small deltas here are fairly straightforward to tackle, and because I think the issues around **Teaching** described in [Part 2][p2] and around **Testing** as I will describe in [Part 4][p4] *profoundly* outweigh these small tooling differences.
+
+[p4]: https://v5.chriskrycho.com/journal/ember-template-imports/part-4/
