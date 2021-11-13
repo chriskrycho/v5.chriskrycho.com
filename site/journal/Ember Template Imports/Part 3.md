@@ -208,7 +208,7 @@ Unfortunately, while that sounds appealing, it isn’t actually true, at least t
     `;
     ```
 
-    …it *does not work*. `Greeting` isn’t “in scope” for the `Summary` component! While we could work around this by introducing some other invocation form for `hbs` where it also takes the scope as an argument, that makes the ergonomics *much* worse—close, in fact, to the original `precompileTemplate` invocation that *is* the compile target.
+    …it *does not work without a transform*. `Greeting` isn’t “in scope” for the `Summary` component! While we could work around this by introducing some other invocation form for `hbs` where it also takes the scope as an argument, that makes the ergonomics *much* worse—close, in fact, to the original `precompileTemplate` invocation that *is* the compile target.
 
 2. Additionally, remember that the scoping semantics are *also* wrong when you switch to a component with a backing class, because of the mismatch between a `static` class field and the semantics of component templates. If you want the `this` value to work correctly, you *have* to introduce some degree of processing. At a minimum, we would need to rewrite the internals of `getComponentTemplate` to go look up that static field—not an impossible hurdle, by any means, but a real and significant change to the current design. (As to whether it’s otherwise well-motivated, I refer you to the rest of the series!)
 
