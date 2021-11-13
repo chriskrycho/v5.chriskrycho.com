@@ -7,11 +7,14 @@ series:
   part: 3
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-3-table.png
 date: 2021-11-09T16:50:00-0700
-updated: 2021-11-12T15:20:00-0700
+updated: 2021-11-13T10:30:00-0700
 updates:
   - at: 2021-11-12T15:35:00-0700
     changes: >
       Added [a section](#server-side) on server-side use of `hbs`.
+  - at: 2021-11-13T10:30:00-0700
+    changes: >
+      Updated [that same new section](#server-side) to reflect a *serious* miss on my part—how scoping completely fails there.
 templateEngineOverride: md
 
 ---
@@ -192,7 +195,22 @@ Net, the `hbs` implementation has a very small edge on language server implement
 
 One common reason a few people have suggested we ought to prefer `hbs` is that they think it makes it easier to support running Glimmer templates in server-side environments—that is, that it would make it viable to use `hbs` as an actual import which works without needing any compilation step.
 
-Unfortunately, while that sounds appealing, it isn’t actually true, at least today! The problem is the mismatch in semantics discussed in [Part 2][p2]. While you could get away with that no-compilation model for template-only components with no backing class, it simply doesn’t work correctly when you switch to a component with a backing class. The problem is the mismatch between a `static` class field and the semantics we actually assign to component templates. If you want the `this` value to work correctly, you *have* to introduce some degree of processing. At a minimum, we would need to rewrite the internals of `getComponentTemplate` to go look up that static field—not an impossible hurdle, by any means, but a real and significant change to the current design. (As to whether it’s otherwise well-motivated, I refer you to the rest of the series!)
+Unfortunately, while that sounds appealing, it isn’t actually true, at least today! The problem is the mismatch in semantics discussed in [Part 2][p2]:
+
+1. The scoping semantics are wrong, because `hbs` literals aren’t actually string literals.[^thanks] Remember: if you write this code…
+
+    ```hbs
+    const Greeting = hbs`<p>Hello, {{@name}}!</p>`
+
+    const Summary = hbs`
+      <Greeting @name={{user.name}}>
+      {{! ... }}
+    `;
+    ```
+
+    …it *does not work*. `Greeting` isn’t “in scope” for the `Summary` component! While we could work around this by introducing some other invocation form for `hbs` where it also takes the scope as an argument, that makes the ergonomics *much* worse—close, in fact, to the original `precompileTemplate` invocation that *is* the compile target.
+
+2. Additionally, remember that the scoping semantics are *also* wrong when you switch to a component with a backing class, because of the mismatch between a `static` class field and the semantics of component templates. If you want the `this` value to work correctly, you *have* to introduce some degree of processing. At a minimum, we would need to rewrite the internals of `getComponentTemplate` to go look up that static field—not an impossible hurdle, by any means, but a real and significant change to the current design. (As to whether it’s otherwise well-motivated, I refer you to the rest of the series!)
 
 Moreover, I’ll go further here and say that I don’t think there’s any particular value to being able to run a Glimmer component without any build step. Having a build pipeline is *extremely* normal for both client- and server-side code—and it can even be done fairly transparently and on demand for server-side code, e.g. with [`@babel/node`][babel-node] or [`ts-node`][ts-node]. If someone wants to run Glimmer component code natively in a Node runtime, they can precompile it using our standard build tools *or* they can simply use `@babel/node` to integrate the transform automatically.
 
@@ -200,6 +218,8 @@ Moreover, I’ll go further here and say that I don’t think there’s any part
 [ts-node]: https://typestrong.org/ts-node/
 
 Net, I take this to be something of a non-issue for the design choice here, as it requires *some* non-zero degree of extra work compared to today’s baseline regardless and there are straightforward options for this regardless of the design chosen.
+
+[^thanks]: [Dan Freeman](https://dfreeman.io) pointed this out on the Ember Discord in response to the update where I added this section. I knew this, and in my <abbr>COVID</abbr>-recovery-induced mental haze, I totally forgot it. Thanks, Dan!
 
 
 ## Summary
