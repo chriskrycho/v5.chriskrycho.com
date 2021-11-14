@@ -325,6 +325,10 @@
       margin-bottom: ms(0);
    }
 
+   ol {
+      font-feature-settings: 'lnum';
+   }
+
    .table-of-contents {
       width: 100%;
       max-width: var(--max-width);
