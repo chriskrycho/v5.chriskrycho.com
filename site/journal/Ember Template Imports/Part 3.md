@@ -7,7 +7,7 @@ series:
   part: 3
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-3-table.png
 date: 2021-11-09T16:50:00-0700
-updated: 2021-11-13T10:30:00-0700
+updated: 2021-11-14T15:45:00-0700
 updates:
   - at: 2021-11-12T15:35:00-0700
     changes: >
@@ -15,6 +15,9 @@ updates:
   - at: 2021-11-13T10:30:00-0700
     changes: >
       Updated [that same new section](#server-side) to reflect a *serious* miss on my part—how scoping completely fails there.
+  - at: 2021-11-14T15:45:00-0700
+    changes: >
+      Extended the discussion around language servers to include comments on interop with the existing TypeScript Language Service.
 templateEngineOverride: md
 
 ---
@@ -51,12 +54,13 @@ In those previous posts, I said Part 3 was going to be about **Scaling**. Howeve
 
 ## Overview
 
-There are (at least) four broad categories to consider in evaluating the impact of these formats in terms of tooling:[^categories]
+There are (at least) five broad categories to consider in evaluating the impact of these formats in terms of tooling:[^categories]
 
 - basic editor integration, e.g. syntax highlighting, code folding, etc.
 - lint tooling, e.g. [ESLint][eslint] and [ember-template-lint][etl] support
 - formatter support, e.g. [Prettier][prettier] integration
-- language server tooling, including [<abbr title="ember language server">ELS</abbr>][els] and [Glint][glint]
+- language server tooling, including [<abbr title="ember language server">ELS</abbr>][els] and [Glint][glint], and interactions with existing TypeScript support
+- running the components in a server-side context like [Fastboot][fastboot]
 
 (Notice that TypeScript support cuts across several of these in various ways, but is most pronounced in the final point.)
 
@@ -64,7 +68,7 @@ Spoilers for this post: there aren’t actually any *great* outcomes here, my pr
 
 <aside>
 
-React also has a custom syntax extension, but has had support for it built natively into the single two highest impact tools for web developers over the last half decade: the TypeScript Language Server and Visual Studio Code. I strongly suspect *all* the non-React tool maintainers wish that system were pluggable! For the sake of this particular post, I take the _status quo_ as a given, though. It hasn’t changed in the last half decade, and I don’t expect it to any time soon.
+React also has a custom syntax extension, but has had support for it built natively into the single two highest impact tools for web developers over the last half decade: the TypeScript Language Service and Visual Studio Code. I strongly suspect *all* the non-React tool maintainers wish that system were pluggable! For the sake of this particular post, I take the _status quo_ as a given, though. It hasn’t changed in the last half decade, and I don’t expect it to any time soon.
 
 </aside>
 
@@ -73,6 +77,7 @@ React also has a custom syntax extension, but has had support for it built nativ
 [prettier]: https://prettier.io
 [els]: https://github.com/suchitadoshi1987/ember-language-server
 [Glint]: https://github.com/typed-ember/glint
+[fastboot]: https://github.com/ember-fastboot/ember-cli-fastboot
 
 [^categories]: I provide *examples* here in terms of things like ESLint and Prettier, but it’s important to recognize that these are *categorical* costs. If we choose at some point to switch our linting over to something like [RSLint][rslint] for the sake of its speed, we would have to pay any costs associated with a given format there as well.
 
@@ -157,7 +162,7 @@ export default class WeatherSummary extends Component {
 
 We’d see exactly the same warnings about unused code in an <abbr>SFC</abbr> format, and for the same basic reasons: we have to inform the JavaScript and template linters about values in the *other* language.
 
-Now, all of the options other than the imports-only format work more or less correctly for all of the parts of any given module which *aren’t* related to templates. (The imports-only format simply doesn’t connect the two layers at all at present, so there are no false positives… but I don’t think we can call that a win.) Perhaps surprisingly, `<template>` actually *appears* to do slightly better than the others in terms of recognizing that we are actually using values in module scope—but this is because it’s attempting to parse `<template>` and the contents of it as <abbr title="JavaScript XML">JSX</abbr>. This means that editors which use the TypeScript Language Server (including for their JavaScript support) get *very* confused and report syntax errors everywhere, because Glimmer templates and <abbr>JSX</abbr> aren't compatible.
+Now, all of the options other than the imports-only format work more or less correctly for all of the parts of any given module which *aren’t* related to templates. (The imports-only format simply doesn’t connect the two layers at all at present, so there are no false positives… but I don’t think we can call that a win.) Perhaps surprisingly, `<template>` actually *appears* to do slightly better than the others in terms of recognizing that we are actually using values in module scope—but this is because it’s attempting to parse `<template>` and the contents of it as <abbr title="JavaScript XML">JSX</abbr>. This means that editors which use the TypeScript Language Service (including for their JavaScript support) get *very* confused and report syntax errors everywhere, because Glimmer templates and <abbr>JSX</abbr> aren't compatible.
 
 The net here is that we have to implement a custom parsing layer for *any* of these formats to have usable linting integration.
 
@@ -179,16 +184,33 @@ In sum, as with the lint tooling, we actually need to implement custom language 
 
 ## Language server tooling
 
-Finally, we come to language server tooling and integration. Most of the JavaScript ecosystem uses the TypeScript Language Server to support features like documentation-on-hover, go-to-definition, and refactoring. That includes React, since <abbr>TS</abbr> has built-in support for <abbr>JSX</abbr>; Vue, Angular, and Svelte via custom language server integrations; and Ember/Glimmer, via the various experimental <abbr title="Ember Language Server">ELS</abbr> implementations and [Glint][glint] (which it itself used by some of the other language servers). With any of the proposed formats, we would need to create a language server which understood the format and could connect it to the <abbr title="TypeScript Language Server">TS LS</abbr>.
+Finally, we come to language server tooling and integration. Most of the JavaScript ecosystem uses the TypeScript Language Service to support features like documentation-on-hover, go-to-definition, and refactoring. That includes React, since <abbr>TS</abbr> has built-in support for <abbr>JSX</abbr>; Vue, Angular, and Svelte via custom language server integrations; and Ember/Glimmer, via the various experimental <abbr title="Ember Language Server">ELS</abbr> implementations and [Glint][glint] (which it itself used by some of the other language servers). With any of the proposed formats, we would need to create a language server which understood the format and could connect it to the <abbr title="TypeScript Language Service">TS LS</abbr>.
 
 Per Dan Freeman and James Davis, who built and maintain Glint, there is very little difference in effort in supporting `hbs` vs. `<template>`, and because these all compile to the same primitives, even <abbr>SFC</abbr>s are tractable. The main challenge there is handling the same custom scoping semantics with the default export as I described as odd in Part 2. However, that is the same basic issue as supporting Glimmer components in Ember apps *today*: something Glint and the experimental <abbr>ELS</abbr>s already do.
 
 Notably, Glint also supports [GlimmerX][glimmer-x], which uses the same syntax as the template literals proposal. This means that we get the integration “for free” (really, for Dan’s and James’ hard work in 2019–2020). To get the same support for `<template>`, we would need to update the implementation of the Babel transform for `<template>` to provide some data about the original string, so that we can map invocations, error messages, and so on. We would have to build something similar for <abbr>SFC</abbr>s (albeit from scratch, since no implementation exists whatsoever yet for them).
 
-Net, the `hbs` implementation has a very small edge on language server implementation because it already exists in support of GlimmerX—but we should not take this as a particularly important constraint.
+However, there’s a problem here that’s easy to miss: because we’re [giving new semantics to template literal strings][p2], we have to override existing TypeScript’s existing understanding of what <abbr>JS</abbr> and <abbr>TS</abbr> files mean. In all cases, this is *work*.
+
+- For the case of the `<template>` and <abbr>SFC</abbr> proposals, this is somewhat tractable and there are a variety of ways to approach it: the custom language integration means we can potentially leave “normal” <abbr>TS</abbr> files alone and just *add* information to TypeScript via something like Glint. Doing it that way requires doing a build pass to provide the info, though. The alternative is to disable the <abbr>TS LS</abbr> in favor of something like Glint.
+
+- In the case of imports-only, we *have* to disable the <abbr>TS LS</abbr>, because we have to stitch the script and template files together to create the correct context. Otherwise, the backing classes will always and unavoidably report that there is no usage of anything which is only used in templates.
+
+- For the template literals proposal, it might initially seem like we could just integrate with the <abbr>TS LS</abbr> plugin tooling. After all, the docs [say][ts-docs] that one of the intended uses for plugins is:
+
+    > Enable new errors or completions in string literals for a custom templating language
+
+    Unfortunately, they also specify that one of the things language plugins cannot do is:
+    
+    > Customize the type system to change what is or isn't an error when running `tsc`
+    
+    The net of this is that we can *add* errors in a standard <abbr>TS LS</abbr> plugin, but we cannot *remove* them. We’re stuck with all those warnings about unused values! What’s more, “plugins aren't loaded during normal commandline typechecking or emitting.” This is why Glint works the way it does today: as a custom language server and <abbr title="command line interface">CLI</abbr>). To get consistent behavior between our build/<abbr title="continuous integration">CI</abbr> environments and our editors, we still need to run everything through a custom pipeline. That would leave us with the downside of having two separate paths for type-checking vs. editor support… or with the alternative of disabling existing TypeScript support for those files.
+
+Net, the `hbs` implementation initially appears to have a very small edge on language server implementation, because it already exists in support of GlimmerX—but we should not take this as a particularly important constraint: it’s basically just slight variations on the same underlying sets of tradeoffs. (Once again, everyone who isn’t using <abbr>JSX</abbr> *really* wishes that the syntax extensions part of <abbr>TS</abbr> were pluggable. Alas.)
 
 [glint]: https://github.com/typed-ember/glint
 [glimmer-x]: https://github.com/glimmerjs/glimmer-experimental
+[ts-docs]: https://github.com/microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin
 
 
 ## Server-side
