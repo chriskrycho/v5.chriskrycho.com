@@ -17,7 +17,7 @@ updates:
       Updated [that same new section](#server-side) to reflect a *serious* miss on my part—how scoping completely fails there.
   - at: 2021-11-14T15:45:00-0700
     changes: >
-      Extended the discussion around language servers to include comments on interop with the existing TypeScript Language Service.
+      Extended [the discussion around language servers](#language-server-tooling) to include comments on interop with the existing TypeScript Language Service.
 templateEngineOverride: md
 
 ---
