@@ -7,7 +7,7 @@ series:
   part: 3
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-3-table.png
 date: 2021-11-09T16:50:00-0700
-updated: 2021-11-14T15:45:00-0700
+updated: 2021-11-15T07:00:00-0700
 updates:
   - at: 2021-11-12T15:35:00-0700
     changes: >
@@ -18,6 +18,9 @@ updates:
   - at: 2021-11-14T15:45:00-0700
     changes: >
       Extended [the discussion around language servers](#language-server-tooling) to include comments on interop with the existing TypeScript Language Service.
+  - at: 2021-11-15T07:00:00-0700
+    changes: >
+      Further updated the language servers section to include notes on Vue/Svelte-style blanket imports.
 templateEngineOverride: md
 
 ---
@@ -192,7 +195,18 @@ Notably, Glint also supports [GlimmerX][glimmer-x], which uses the same syntax a
 
 However, there’s a problem here that’s easy to miss: because we’re [giving new semantics to template literal strings][p2], we have to override existing TypeScript’s existing understanding of what <abbr>JS</abbr> and <abbr>TS</abbr> files mean. In all cases, this is *work*.
 
-- For the case of the `<template>` and <abbr>SFC</abbr> proposals, this is somewhat tractable and there are a variety of ways to approach it: the custom language integration means we can potentially leave “normal” <abbr>TS</abbr> files alone and just *add* information to TypeScript via something like Glint. Doing it that way requires doing a build pass to provide the info, though. The alternative is to disable the <abbr>TS LS</abbr> in favor of something like Glint.
+- For the `<template>` proposal, this is somewhat tractable and there are a variety of ways to approach it: the custom language integration means we can potentially leave “normal” <abbr>TS</abbr> files alone and just *add* information to TypeScript via something like Glint. Doing it that way requires doing a build pass to provide the info, though. The alternative is to disable the <abbr>TS LS</abbr> in favor of something like Glint.
+
+- For <abbr>SFC</abbr>s, the story is  very similar to that with `<template>`, though with a qualification: we could do similar to what Vue’s Vetur language server does and provide a blanket type definition for TypeScript, roughly like this:
+
+    ```ts
+    import Component from '@glimmer/component';
+    declare module '*.glimmer' {
+        export default class extends Component {}
+    }
+    ```
+
+    That would make the TypeScript side type-check—though not particularly *helpfully*—so a tool like Glint would then do its own pass over those as well. You will end up with multiple layers of feedback in your editor—one from TSServer and one from Glint—but that may be fine (and if we went that direction, we could provide a language server plugin to make that experience nicer). All of these proposals require Glint running over top of `tsc`/TSServer; the difference here is taht it means that you don’t have to disable the original TSServer to make your editor work.
 
 - In the case of imports-only, we *have* to disable the <abbr>TS LS</abbr>, because we have to stitch the script and template files together to create the correct context. Otherwise, the backing classes will always and unavoidably report that there is no usage of anything which is only used in templates.
 
