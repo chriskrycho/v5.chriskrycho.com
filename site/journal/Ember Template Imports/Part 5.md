@@ -127,7 +127,7 @@ const Style = <style>
   }
 </style>
 
-export const isChristmas = date =>
+const isChristmas = date =>
   date.getMonth() === 11 &&
   date.getDate() === 25;
 
