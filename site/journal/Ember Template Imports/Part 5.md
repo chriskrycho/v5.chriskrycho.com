@@ -1,6 +1,6 @@
 ---
 title: >
-  Ember.js Template Imports, Part 5
+  Ember.js Template Imports: Part 5
 subtitle: >
   What about styles? (A bonus post!)
 summary: >
@@ -170,7 +170,7 @@ This is quite nice! But again, the key point is that *this does not need to be b
       {{/if}}
       `,
       {
-        scope: { Style, isChristmas, today },
+        scope: { Style, isChristmas, now },
       }
     );
 
