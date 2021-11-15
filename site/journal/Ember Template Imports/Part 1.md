@@ -1,6 +1,6 @@
 ---
 title: >
-    Ember.js Template Imports, Part 1
+    Ember.js Template Imports: Part 1
 subtitle: >
     Introducing the series and walking through the formats.
 date: 2021-10-12T21:05:00-0600
