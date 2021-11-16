@@ -1,4 +1,4 @@
-# Part 2
+# Part 2 – Teaching and Understanding
 
 *Which template imports design has the biggest set of wins for teaching and understanding components?*
 
@@ -17,7 +17,7 @@ I will also be assuming the [Definitions](https://v5.chriskrycho.com/journal/emb
 
 One of the most important aspects of a decision about the design of a language or an <abbr title="application programming interface">API</abbr> is how it impacts developers’ ability to learn it and to develop a correct mental model for it. The design of template imports sits right at the boundary between programming language and <abbr>API</abbr> design, because it is a way of expressing the relationship between two programming languages: JavaScript and the Glimmer templating language.
 
-It’s worth remembering, too, that the relationship between host language and some sort of templating language is a fundamental decision in the design space for application programming of all sorts which render <abbr title="HyperText Markup Language">HTML</abbr>. This is not a concern only of client-side-rendered applications or <abbr title="single page application">SPA</abbr>s: it applies equally to Rails and <abbr title="Embedded RuBy">ERB</abbr> or to <abbr title="PHP: Hypertext Processor">PHP</abbr> or to C<sup>♯</sup> apps with Razor templates.
+It’s worth remembering, too, that the relationship between host language and some sort of templating language is a fundamental decision in the design space for application programming of all sorts which render <abbr title="HyperText Markup Language">HTML</abbr>. This is not a concern only of client-side-rendered applications or <abbr title="single page application">SPA</abbr>s: it applies equally to Rails and <abbr title="Embedded RuBy">ERB</abbr> or to <abbr title="PHP: Hypertext Processor">PHP</abbr> or to C<sup>#</sup> apps with Razor templates.
 
 ### On motivation
 
@@ -712,47 +712,45 @@ Net, though, I don’t think the overlap with `<template>` is intractable. This 
 
 This post has covered a *lot* of ground, so I’m going to wrap up with an overview table which summarizes my take on it. (I’m trying very hard to be fair to each of the options available here, so feel free to let me know if you think I’m unfairly categorizing the tradeoffs!)
 
-<div class='table-container'>
-  <table>
-    <thead>
-      <th scope='col'>Consideration</th>
-      <th><code>&lt;template&gt;</code></th>
-      <th>Template literals</th>
-      <th><abbr>SFC</abbr>s</th>
-      <th>Imports-only</th>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Progressive Disclosure</th>
-        <td>Good</td>
-        <td>Bad</td>
-        <td>Very good</td>
-        <td>Good</td>
-      </tr>
-      <tr>
-        <th scope="row">JavaScript semantics</th>
-        <td>Good</td>
-        <td>Good</td>
-        <td>Good</td>
-        <td>Very bad</td>
-      </tr>
-      <tr>
-        <th scope="row">Scope semantics</th>
-        <td>Very good</td>
-        <td>Bad</td>
-        <td>Okay</td>
-        <td>Good</td>
-      </tr>
-      <tr>
-        <th scope="row">Semantic mismatch</th>
-        <td>Yes/<abbr>HTML</abbr>/tractable</td>
-        <td>Yes/<abbr>JS</abbr>/intractable</td>
-        <td>No</td>
-        <td>No</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table>
+  <thead>
+    <th scope='col'>Consideration</th>
+    <th><code>&lt;template&gt;</code></th>
+    <th>Template literals</th>
+    <th><abbr>SFC</abbr>s</th>
+    <th>Imports-only</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Progressive Disclosure</th>
+      <td>Good</td>
+      <td>Bad</td>
+      <td>Very good</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th scope="row">JavaScript semantics</th>
+      <td>Good</td>
+      <td>Good</td>
+      <td>Good</td>
+      <td>Very bad</td>
+    </tr>
+    <tr>
+      <th scope="row">Scope semantics</th>
+      <td>Very good</td>
+      <td>Bad</td>
+      <td>Okay</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th scope="row">Semantic mismatch</th>
+      <td>Yes/<abbr>HTML</abbr>/tractable</td>
+      <td>Yes/<abbr>JS</abbr>/intractable</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
 
 Looking at the whole picture like this, I would go so far as to say that for a single component with no backing class (and leaving aside considerations about testing we’ll get to later in the series, especially around testing), the <abbr>SFC</abbr> approach is the best design choice. It starts with plain <abbr>HTML</abbr>, and then adds dynamicism via a `<script>` tag—just like the code we would write if we were targeting the browser with no compile step, even including the scoping rules.
 
@@ -774,4 +772,6 @@ Next up: the impact on **Tooling**, both for individual codebases and for ecosys
 [^tooling-ahead]: This is a key point we will also return to in our discussion of tooling impact in the next post, and it’s one reason why I’m unpersuaded that the template literal string syntax makes the story better for running without compilation.
 
 [^template-wat]: I didn’t even know `<template>` existed until it came up in early discussions with pzuraq and the Typed Ember team as we played with different designs and experimented with it in the Glint alpha period!
+
+\pagebreak
 

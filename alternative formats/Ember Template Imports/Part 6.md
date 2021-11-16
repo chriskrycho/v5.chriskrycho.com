@@ -34,144 +34,142 @@ That gets at something important, though: in order to make a decision, we simply
 
 With that in mind, let’s review the conclusions I drew in each of the earlier parts of the series—once again in tabular form:
 
-<div class='table-container'>
-  <table>
-    <thead>
-      <th scope='col'>Consideration</th>
-      <th><code>&lt;template&gt;</code></th>
-      <th>Template literals</th>
-      <th><abbr>SFC</abbr>s</th>
-      <th>Imports-only</th>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Progressive Disclosure</th>
-        <td>Good</td>
-        <td>Bad</td>
-        <td>Very good</td>
-        <td>Good</td>
-      </tr>
-      <tr>
-        <th scope="row">JavaScript semantics</th>
-        <td>Good</td>
-        <td>Good</td>
-        <td>Good</td>
-        <td>Very bad</td>
-      </tr>
-      <tr>
-        <th scope="row">Scope semantics</th>
-        <td>Very good</td>
-        <td>Bad</td>
-        <td>Okay</td>
-        <td>Good</td>
-      </tr>
-      <tr>
-        <th scope="row">Semantic mismatch</th>
-        <td>Yes/<abbr>HTML</abbr>/tractable</td>
-        <td>Yes/<abbr>JS</abbr>/intractable</td>
-        <td>No</td>
-        <td>No</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='col' colspan='5'>Syntax</th>
-      </tr>
-      <tr>
-        <th scope='row'><abbr>JS</abbr></th>
-        <td>working</td>
-        <td>working</td>
-        <td>working</td>
-        <td>not working</td>
-      </tr>
-      <tr>
-        <th scope='row'>templates</th>
-        <td>working</td>
-        <td>working</td>
-        <td>working</td>
-        <td>working</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='col' colspan='5'>Linting</th>
-      </tr>
-      <tr>
-        <th scope='row'><abbr>JS</abbr></th>
-        <td>partial</td>
-        <td>partial</td>
-        <td>partial</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <th scope='row'>templates</th>
-        <td>no</td>
-        <td>no</td>
-        <td>no</td>
-        <td>yes</td>
-      </tr>
-      <tr>
-        <th scope='row'>needs custom parser</th>
-        <td>yes</td>
-        <td>yes</td>
-        <td>yes</td>
-        <td>yes</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='col' colspan='5'>Formatting</th>
-      </tr>
-      <tr>
-        <th scope='row'><abbr>JS</abbr></th>
-        <td>no</td>
-        <td>partial</td>
-        <td>partial</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <th scope='row'>templates</th>
-        <td>no</td>
-        <td>partial</td>
-        <td>partial</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <th scope='row'>needs custom parser</th>
-        <td>yes</td>
-        <td>yes</td>
-        <td>yes</td>
-        <td>yes</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='row'><abbr>LS</abbr> effort</th>
-        <td>small</td>
-        <td>none</td>
-        <td>medium</td>
-        <td>small</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='row'>Server-side requires compilation</th>
-        <td colspan='4'>yes for all formats, including <code>hbs</code></td>
-      </tr>
-    </tbody>
-    <tbody>
-      <th scope='row'>shared syntax for tests</th>
-      <td>yes</td>
-      <td>yes</td>
+<table>
+  <thead>
+    <th scope='col'>Consideration</th>
+    <th><code>&lt;template&gt;</code></th>
+    <th>Template literals</th>
+    <th><abbr>SFC</abbr>s</th>
+    <th>Imports-only</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Progressive Disclosure</th>
+      <td>Good</td>
+      <td>Bad</td>
+      <td>Very good</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th scope="row">JavaScript semantics</th>
+      <td>Good</td>
+      <td>Good</td>
+      <td>Good</td>
+      <td>Very bad</td>
+    </tr>
+    <tr>
+      <th scope="row">Scope semantics</th>
+      <td>Very good</td>
+      <td>Bad</td>
+      <td>Okay</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <th scope="row">Semantic mismatch</th>
+      <td>Yes/<abbr>HTML</abbr>/tractable</td>
+      <td>Yes/<abbr>JS</abbr>/intractable</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='col' colspan='5'>Syntax</th>
+    </tr>
+    <tr>
+      <th scope='row'><abbr>JS</abbr></th>
+      <td>working</td>
+      <td>working</td>
+      <td>working</td>
+      <td>not working</td>
+    </tr>
+    <tr>
+      <th scope='row'>templates</th>
+      <td>working</td>
+      <td>working</td>
+      <td>working</td>
+      <td>working</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='col' colspan='5'>Linting</th>
+    </tr>
+    <tr>
+      <th scope='row'><abbr>JS</abbr></th>
+      <td>partial</td>
+      <td>partial</td>
+      <td>partial</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope='row'>templates</th>
       <td>no</td>
       <td>no</td>
-    </tbody>
-    <tbody>
-	    <th scope='row'>Styling</th>
-	    <td colspan='4'>Everything “just works” for all formats</td>
-    </tbody>
-  </table>
-</div>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th scope='row'>needs custom parser</th>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='col' colspan='5'>Formatting</th>
+    </tr>
+    <tr>
+      <th scope='row'><abbr>JS</abbr></th>
+      <td>no</td>
+      <td>partial</td>
+      <td>partial</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope='row'>templates</th>
+      <td>no</td>
+      <td>partial</td>
+      <td>partial</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope='row'>needs custom parser</th>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='row'><abbr>LS</abbr> effort</th>
+      <td>small</td>
+      <td>none</td>
+      <td>medium</td>
+      <td>small</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='row'>Server-side requires compilation</th>
+      <td colspan='4'>yes for all formats, including <code>hbs</code></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <th scope='row'>shared syntax for tests</th>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+  </tbody>
+  <tbody>
+    <th scope='row'>Styling</th>
+    <td colspan='4'>Everything “just works” for all formats</td>
+  </tbody>
+</table>
 
 When you put all the pieces together like this, I think it’s fairly obvious why I ultimately concluded that `<template>` is the best choice. In every overarching category except for formatting, it is either comparable to the other choices or substantially better. It’s not perfect. It’s more work in a few spots than the alternatives, and in some other cases it’s just kind of *the same* as the alternatives. But it does come out the best overall.
 
@@ -189,3 +187,6 @@ As ever, I’m happy to discuss this—and the series as a whole!—[on the Embe
 [discord]: https://discord.com/channels/480462759797063690/518154533143183377/
 
 </div>
+
+\pagebreak
+
