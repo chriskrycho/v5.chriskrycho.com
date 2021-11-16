@@ -26,3 +26,8 @@ It’s important to say before I jump in: these are *my* opinions. They’re *no
 </div>
 
 While each of these has its own upsides and downsides, I believe `<template>` is far and away the best choice, because of its wins for teaching and understanding, scaling, and testing. In this series, I will do my best to present an even-handed analysis that shows how and why I came to that conclusion over the last few years of thinking about it.
+
+In addition to the <abbr title="HyperText Markup Language">HTML</abbr> presentation here on my website, you can read this series offline:
+
+- [<abbr title="electronic publication">EPUB</abbr>](https://cdn.chriskrycho.com/file/chriskrycho-com/resources/Ember%20Template%20Imports.epub)
+- [<abbr title="portable document format">PDF</abbr>](https://cdn.chriskrycho.com/file/chriskrycho-com/resources/Ember%20Template%20Imports.pdf)
