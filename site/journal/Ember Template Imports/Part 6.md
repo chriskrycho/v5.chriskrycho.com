@@ -6,6 +6,7 @@ subtitle: >
 series:
   part: 6
 date: 2021-11-15T17:45:00-0700
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-6-table.png
 tags:
   - teaching
   - learning
