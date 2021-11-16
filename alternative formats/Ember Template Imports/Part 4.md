@@ -1,4 +1,4 @@
-# Part 4
+# Part 4 – Testing
 
 *Keeping, and improving on, one of Ember’s fundamental commitments—and biggest strengths: its integrated testing.*
 
@@ -222,4 +222,6 @@ Thus, as with the **Tooling** discussion in Part 3, `hbs` has a slight edge over
 - **Testing:** `hbs` slightly better than `<template>` because it has effectively no migration cost; but both far better than either the <abbr>SFC</abbr> or imports-only proposals
 
 The net, as I’ll cover in a bit more detail in the conclusion, is that even though `hbs` comes out slightly ahead in the tooling and testing categories, I think `<template>` remains the clear winner overall.
+
+\pagebreak
 

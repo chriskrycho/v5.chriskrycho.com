@@ -6,6 +6,14 @@ subtitle: >
 author: Chris Krycho
 summary: >
     The Ember/Glimmer community is experimenting with designs for single-file-components. This series is a deep dive and extended argument for the `<template>` design over alternatives.
+urlcolor: blue
+mainfont: Sabon LT Std Roman
+mainfontoptions:
+- BoldFont=Sabon LT Std Bold
+- ItalicFont=Sabon LT Std Italic
+- BoldItalicFont=Sabon LT Std Bold Italic
+sansfont: Cronos Pro
+monofont: Hack
 
 ---
 
@@ -23,4 +31,6 @@ It’s important to say before I jump in: these are *my* opinions. They’re *no
 </div>
 
 While each of these has its own upsides and downsides, I believe `<template>` is far and away the best choice, because of its wins for teaching and understanding, scaling, and testing. In this series, I will do my best to present an even-handed analysis that shows how and why I came to that conclusion over the last few years of thinking about it.
+
+\pagebreak
 

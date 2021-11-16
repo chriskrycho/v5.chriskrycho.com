@@ -1,4 +1,4 @@
-# Part 5
+# Part 5 – Styling
 
 *Styling and presentation are fundamental aspects of authoring user interfaces. So how does CSS work with the various Ember template imports proposals?*
 
@@ -160,4 +160,6 @@ This is quite nice! But again, the key point is that *this does not need to be b
     ```
     
     Then you can check that it applies the correct class in the inspector.
+
+\pagebreak
 

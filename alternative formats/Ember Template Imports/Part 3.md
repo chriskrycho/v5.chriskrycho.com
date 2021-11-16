@@ -1,4 +1,4 @@
-# Part 3
+# Part 3 – Tooling
 
 *Evaluating the tradeoffs of template language designs for *tooling*.*
 
@@ -231,108 +231,108 @@ Net, I take this to be something of a non-issue for the design choice here, as i
 
 In this particular comparison, the template literals proposal clearly comes out with a *small* edge. In most categories, it’s the same or slightly better than the other options, as we can see in this table:
 
-<div class='table-container'>
-  <table>
-    <thead>
-      <th scope='col'>Consideration</th>
-      <th><code>&lt;template&gt;</code></th>
-      <th>Template literals</th>
-      <th><abbr>SFC</abbr>s</th>
-      <th>Imports-only</th>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope='col' colspan='5'>Syntax</th>
-      </tr>
-      <tr>
-        <th scope='row'><abbr>JS</abbr></th>
-        <td>working</td>
-        <td>working</td>
-        <td>working</td>
-        <td>not working</td>
-      </tr>
-      <tr>
-        <th scope='row'>templates</th>
-        <td>working</td>
-        <td>working</td>
-        <td>working</td>
-        <td>working</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='col' colspan='5'>Linting</th>
-      </tr>
-      <tr>
-        <th scope='row'><abbr>JS</abbr></th>
-        <td>partial</td>
-        <td>partial</td>
-        <td>partial</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <th scope='row'>templates</th>
-        <td>no</td>
-        <td>no</td>
-        <td>no</td>
-        <td>yes</td>
-      </tr>
-      <tr>
-        <th scope='row'>needs custom parser</th>
-        <td><strong>yes</strong></td>
-        <td><strong>yes</strong></td>
-        <td><strong>yes</strong></td>
-        <td><strong>yes</strong></td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='col' colspan='5'>Formatting</th>
-      </tr>
-      <tr>
-        <th scope='row'><abbr>JS</abbr></th>
-        <td>no</td>
-        <td>partial</td>
-        <td>partial</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <th scope='row'>templates</th>
-        <td>no</td>
-        <td>partial</td>
-        <td>partial</td>
-        <td>no</td>
-      </tr>
-      <tr>
-        <th scope='row'>needs custom parser</th>
-        <td><strong>yes</strong></td>
-        <td><strong>yes</strong></td>
-        <td><strong>yes</strong></td>
-        <td><strong>yes</strong></td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='row'><abbr>LS</abbr> effort</th>
-        <td>small</td>
-        <td>none</td>
-        <td>medium</td>
-        <td>small</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <th scope='row'>Server-side requires compilation</th>
-        <td>yes</td>
-        <td>yes</td>
-        <td>yes</td>
-        <td>yes</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table>
+  <thead>
+    <th scope='col'>Consideration</th>
+    <th><code>&lt;template&gt;</code></th>
+    <th>Template literals</th>
+    <th><abbr>SFC</abbr>s</th>
+    <th>Imports-only</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope='col' colspan='5'>Syntax</th>
+    </tr>
+    <tr>
+      <th scope='row'><abbr>JS</abbr></th>
+      <td>working</td>
+      <td>working</td>
+      <td>working</td>
+      <td>not working</td>
+    </tr>
+    <tr>
+      <th scope='row'>templates</th>
+      <td>working</td>
+      <td>working</td>
+      <td>working</td>
+      <td>working</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='col' colspan='5'>Linting</th>
+    </tr>
+    <tr>
+      <th scope='row'><abbr>JS</abbr></th>
+      <td>partial</td>
+      <td>partial</td>
+      <td>partial</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope='row'>templates</th>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <th scope='row'>needs custom parser</th>
+      <td><strong>yes</strong></td>
+      <td><strong>yes</strong></td>
+      <td><strong>yes</strong></td>
+      <td><strong>yes</strong></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='col' colspan='5'>Formatting</th>
+    </tr>
+    <tr>
+      <th scope='row'><abbr>JS</abbr></th>
+      <td>no</td>
+      <td>partial</td>
+      <td>partial</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope='row'>templates</th>
+      <td>no</td>
+      <td>partial</td>
+      <td>partial</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <th scope='row'>needs custom parser</th>
+      <td><strong>yes</strong></td>
+      <td><strong>yes</strong></td>
+      <td><strong>yes</strong></td>
+      <td><strong>yes</strong></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='row'><abbr>LS</abbr> effort</th>
+      <td>small</td>
+      <td>none</td>
+      <td>medium</td>
+      <td>small</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th scope='row'>Server-side requires compilation</th>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
 
 These differences are very small, though. Accordingly, I still believe `<template>` is the best choice—because the small deltas here are fairly straightforward to tackle, and because I think the issues around **Teaching** described in [Part 2][p2] and around **Testing** as I will describe in [Part 4][p4] *profoundly* outweigh these small tooling differences.
 
 [p4]: https://v5.chriskrycho.com/journal/ember-template-imports/part-4/
+
+\pagebreak
 
