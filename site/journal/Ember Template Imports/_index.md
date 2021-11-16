@@ -26,14 +26,3 @@ It’s important to say before I jump in: these are *my* opinions. They’re *no
 </div>
 
 While each of these has its own upsides and downsides, I believe `<template>` is far and away the best choice, because of its wins for teaching and understanding, scaling, and testing. In this series, I will do my best to present an even-handed analysis that shows how and why I came to that conclusion over the last few years of thinking about it.
-
-The planned five posts in this series:
-
-- [An introduction, summarizing the various options on the table](./part-1/)
-
-- Three discussions of specific tradeoffs:
-    - [Teaching and understanding](./part-2/)
-    - [Tooling](./part-3/)
-    - [Testing](./part-4/)
-
-- A summary post laying out all the tradeoffs together
