@@ -8,6 +8,7 @@ qualifiers:
   epistemic: >
     Way out of my depth on the formal type theory, but with *lots* of experience and well-formed opinions on the industrial applications of SemVer. So: very mixed.
 date: 2021-11-18T21:43:00-0700
+feedId: library/reading-papers/functional-programming-language-with-versions/
 tags:
   - Rust
   - TypeScript

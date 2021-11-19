@@ -2,7 +2,7 @@
 title: Reading Papers in Public
 subtitle: >
   Because nothing helps me learn like writing, and it might as well help you, too!
-permalink: /library/reading-papers/
+permalink: /library/reading-papers-in-public/
 layout: archives.njk
 standalonePage: true
 order: OLD_FIRST
