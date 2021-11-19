@@ -198,6 +198,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library/The Culture of Theology');
    addCollectionFromDir(config, 'library/The Book of the New Sun');
    addCollectionFromDir(config, 'library/The Book of the New Sun/Shadow and Claw');
+   addCollectionFromDir(config, 'library/Reading Papers in Public');
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
    addCollectionFromDir(config, 'photos');
