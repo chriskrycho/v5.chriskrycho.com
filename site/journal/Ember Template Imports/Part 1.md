@@ -1033,4 +1033,4 @@ As with the rest of this section, this represents a fairly minimal change over t
 
 ## Looking forward
 
-Hopefully this gives you a good sense of the overall *feel* of the moves currently under consideration in design the space. You may have some opinions already about which of these you like best—certainly I did when I first started thinking about this. Even so, I hope you’ll also consider the tradeoffs here with an open mind as I present them in the weeks ahead!
+Hopefully this gives you a good sense of the overall *feel* of the moves currently under consideration in design the space. You may have some opinions already about which of these you like best—certainly I did when I first started thinking about this. Even so, I hope you’ll also consider the tradeoffs here with an open mind as I present them! You can start by reading [**Part 2**](https://v5.chriskrycho.com/journal/ember-template-imports/part-2/).

@@ -138,7 +138,7 @@ const isChristmas = date =>
 </template>
 ```
 
-This is quite nice! But again, the key point is that *this does not need to be built into the framework*: there is no fundamental coupling between the way we generate our styles and the rendering or state management layers. The upside to the template imports design is that any and all such solutions “just work.” It may even be that in the future, we as a community find one that we particularly prefer and therefore write an <abbr title="request for comments">RFC</abbr> to ship out-of-the-box support for it. But it simply isn’t a constraint in any way for the design of template imports.
+This is quite nice! But again, the key point is that *this does not need to be built into the framework*: there is no fundamental coupling between the way we generate our styles and the rendering or state management layers. The upside to the template imports design is that any and all such solutions “just work.” It may even be that in the future, we as a community find one that we particularly prefer and therefore write an <abbr title="request for comments">RFC</abbr> to ship out-of-the-box support for it. But it simply isn’t a constraint in any way for the design of template imports. Next up: [the conclusion of the series](https://v5.chriskrycho.com/journal/ember-template-imports/part-6/), with a summary analysis of the tradeoffs!
 
 [^just-work]: If you’d like to prove this to yourself, create a new app on Ember 3.28.4+, and make a component JavaScript file with this body and render it:
 

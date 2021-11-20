@@ -233,4 +233,4 @@ Thus, as with the **Tooling** discussion in Part 3, `hbs` has a slight edge over
 - **Tooling:** `hbs` only *slightly* better than the other options
 - **Testing:** `hbs` slightly better than `<template>` because it has effectively no migration cost; but both far better than either the <abbr>SFC</abbr> or imports-only proposals
 
-The net, as I’ll cover in a bit more detail in the final post in the series, is that even though `hbs` comes out slightly ahead in the tooling and testing categories, I think `<template>` remains the clear winner overall.
+The net, as I cover in a bit more detail in [the final post in the series](https://v5.chriskrycho.com/journal/ember-template-imports/part-6/) (after [a bonus entry on styling](https://v5.chriskrycho.com/journal/ember-template-imports/part-5)), is that even though `hbs` comes out slightly ahead in the tooling and testing categories, I think `<template>` remains the clear winner overall.
