@@ -790,7 +790,7 @@ I’ll add in conclusion here: this summary isn’t just my justification for my
 
 ---
 
-Next time: the impact on **Tooling**, both for individual codebases and for ecosystem tooling! In the meantime, I welcome your feedback: via email, [on Ember Discuss][discuss], [in `#st-template-imports` on Ember Discord][discord], or even (though I’ll be slowest to respond there) on Twitter or Micro.blog.
+[Next up: the impact on **Tooling**](https://v5.chriskrycho.com/journal/ember-template-imports/part-3/), both for individual codebases and for ecosystem tooling! In the meantime, I welcome your feedback: via email, [on Ember Discuss][discuss], [in `#st-template-imports` on Ember Discord][discord], or even (though I’ll be slowest to respond there) on Twitter or Micro.blog.
 
 [discuss]: https://discuss.emberjs.com/t/template-imports-part-2/19221
 [discord]: https://discord.com/channels/480462759797063690/518154533143183377/903776252106801242
