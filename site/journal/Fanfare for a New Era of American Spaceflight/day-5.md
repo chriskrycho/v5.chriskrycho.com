@@ -9,7 +9,7 @@ summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. Today, I was borderline depressed, and I barely made progress. But make progress I did.
 tags:
     - music
-    - composition
+    - composing
     - work-in-progress
     - Dorico
 qualifiers:

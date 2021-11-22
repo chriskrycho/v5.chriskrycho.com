@@ -120,3 +120,4 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /topics/auto-tracking /topics/autotracking/ 301!
 /topics/ember.js /topics/ember/ 301!
 /topics/programming-language /topics/programming-languages/ 301!
+/topics/composition /topics/composing 301!

@@ -9,7 +9,7 @@ summary: >
     SpaceX launched today, and I am launching the rough draft of “Fanfare for a New Era of American Spaceflight” to honor it!
 tags:
     - music
-    - composition
+    - composing
     - work-in-progress
     - Dorico
     - space flight
