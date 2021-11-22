@@ -9,7 +9,7 @@ thanks: >
   The cover art is [from Hendrik Cornelissen on Unsplash](https://unsplash.com/photos/-CTAQCf8rUk)! 
 tags:
   - music
-  - composition
+  - composing
   - Logic Pro
 
 ---

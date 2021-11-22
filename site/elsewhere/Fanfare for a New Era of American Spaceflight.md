@@ -6,7 +6,7 @@ subtitle: >
 link: https://songwhip.com/chriskrycho/fanfare-for-a-new-era-of-american-spaceflight
 tags:
     - music
-    - composition
+    - composing
     - Logic Pro
     - Dorico
 featured: true

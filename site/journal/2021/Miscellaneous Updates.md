@@ -10,7 +10,7 @@ tags:
   - site meta
   - writing
   - music
-  - composition
+  - composing
   - learning
   - reading
   - Anki

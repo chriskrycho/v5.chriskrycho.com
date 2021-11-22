@@ -9,7 +9,7 @@ summary: >
     Another few hours worth of progress (and gratitude for the flight getting stormed out)!
 tags:
     - music
-    - composition
+    - composing
     - work-in-progress
     - Dorico
 qualifiers:

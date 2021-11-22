@@ -9,7 +9,7 @@ summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, I share the fruits of my morning, which I spent polishing yesterday’s work and tweaking it so it can stand alone.
 tags:
     - music
-    - composition
+    - composing
     - work-in-progress
 qualifiers:
     audience: >
