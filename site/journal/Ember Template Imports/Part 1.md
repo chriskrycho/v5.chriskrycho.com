@@ -228,7 +228,7 @@ Now we can assemble all of these together with a parent component, `GenerateAvat
 - `generate-avatar.hbs`:
 
     ```hbs
-    <Greet @name={{this.name}} />
+    <Greeting @name={{this.name}} />
     <SetUsername
       @name={{this.name}}
       @onSaveName={{this.updateName}}
@@ -311,13 +311,13 @@ A `<template>` tag contains the template content, which will be *compiled* to an
     - A `<template>` may be assigned to a binding in the JavaScript module:
 
         ```js
-        const Greet = <template>Hello!</template>
+        const Greeting = <template>Hello!</template>
         ```
 
     - These bindings may be exported or not, just as any other in a JavaScript module:
 
         ```js
-        export const Greet = <template>Hello!</template>
+        export const Greeting = <template>Hello!</template>
 
         const Conditional = hbs`{{#if @val}}, {{@val}}{{/if}}`;
 
@@ -468,7 +468,7 @@ export default class GenerateAvatar extends Component {
   };
 
   <template>
-    <Greet @name={{this.name}} />
+    <Greeting @name={{this.name}} />
     <SetUsername
       @name={{this.name}}
       @onSaveName={{this.updateName}}
@@ -504,7 +504,7 @@ The rules are very similar to those for the `<template>` proposal:
         ```js
         import { hbs } from '@glimmer/component';
         
-        const Greet = hbs`Hello!`;
+        const Greeting = hbs`Hello!`;
         ```
 
     - These bindings may be exported or not, just as any other in a JavaScript module:    
@@ -512,7 +512,7 @@ The rules are very similar to those for the `<template>` proposal:
         ```js
         import { hbs } from '@glimmer/component';
 
-        export const Greet = hbs`Hello!`;
+        export const Greeting = hbs`Hello!`;
 
         const Conditional = hbs`{{#if @val}}, {{@val}}`;
 
@@ -669,7 +669,7 @@ export default class GenerateAvatar extends Component {
   };
 
   static template = hbs`
-    <Greet @name={{this.name}} />
+    <Greeting @name={{this.name}} />
     <SetUsername
       @name={{this.name}}
       @onSaveName={{this.updateName}}
@@ -800,7 +800,7 @@ Unlike in the `<template>` and `hbs` scenarios, you cannot define multiple compo
       import { modifier } from '@glimmer/modifier';
       import { gt } from 'ember-truth-helpers';
 
-      import Greet from './greet';
+      import Greeting from './greeting';
       import SetUsername from './set-username';
 
       const replaceLocation = modifier(
@@ -822,7 +822,7 @@ Unlike in the `<template>` and `hbs` scenarios, you cannot define multiple compo
       }
     </script>
 
-    <Greet @name={{this.name}} />
+    <Greeting @name={{this.name}} />
     <SetUsername
       @name={{this.name}}
       @onSaveName={{this.updateName}}
@@ -949,12 +949,12 @@ As with the rest of this section, this represents a fairly minimal change over t
     ```hbs
     ---
     import { gt } from 'ember-truth-helpers';
-    import Greet from './greet';
+    import Greeting from './greeting';
     import SetUsername from './set-username';
     import replaceLocation from '../modifiers/replace-location';
     ---
 
-    <Greet @name={{this.name}} />
+    <Greeting @name={{this.name}} />
     <SetUsername
       @name={{this.name}}
       @onSaveName={{this.updateName}}
