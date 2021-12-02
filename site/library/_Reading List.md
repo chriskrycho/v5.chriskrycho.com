@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-10-31T19:45:00-0600
+date: 2021-12-02T08:32:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -76,8 +76,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
-- [<cite>Shadow & Claw: The First Half of The Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250781253), Gene Wolfe (new)
-
+- [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
 ## 2021
 
@@ -107,12 +106,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
-- The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
-	- [<cite>Cibola Burn</cite>][cibola-burn]
-	- [<cite>Nemesis Games</cite>][nemesis-games]
-    - [<cite>Babylon’s Ashes</cite>][babylons-ashes]
-    - [<cite>Persepolis Rising</cite>][persepolis-rising]
-    - [<cite>Tiamat’s Wrath</cite>][tiamats-wrath]
+- The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/), in prep for reading the *excellent* conclusion):
+	- [<cite>Cibola Burn</cite>][cibola-burn] (reread)
+	- [<cite>Nemesis Games</cite>][nemesis-games] (reread)
+    - [<cite>Babylon’s Ashes</cite>][babylons-ashes] (reread)
+    - [<cite>Persepolis Rising</cite>][persepolis-rising] (reread)
+    - [<cite>Tiamat’s Wrath</cite>][tiamats-wrath] (reread)
+    - [<cite>Leviathan Falls</cite>][leviathan-falls], James S. A. Corey (new)
 
 - [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
@@ -122,9 +122,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Eye of the World</cite>](https://bookshop.org/a/21126/9781250251466), Robert Jordan (reread)
 
+- [<cite>Shadow & Claw: The First Half of The Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250781253), Gene Wolfe (new)
+
+
 [babylons-ashes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004
 [persepolis-rising]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952
 [tiamats-wrath]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677
+[leviathan-falls]: https://bookshop.org/a/21126/9780316332910
 
 
 ## 2020
