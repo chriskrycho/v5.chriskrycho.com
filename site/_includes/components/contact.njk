@@ -2,14 +2,46 @@
    This is formatted the way it is to prevent it from being processed as a Markdown code
    block once rendered into a template!
 #}
-{% macro contact(form, requestDescription) %}
-<form class='contact-form' name='{{form}}' action='/{{form}}/success/' data-netlify="true">
+{% macro speaking() %}
+<form class='contact-form' name='speaking' action='/speaking/success/' data-netlify="true">
    <label for='name'>Your name</label>
    <input name='name' type='text'/>
    <label for='email'>Your email address</label>
    <input name='email' type='email'/>
-   <label for='description'>{{requestDescription}}</label>
+   <label for='diversity'>What steps, if any, are you taking to have a diverse slate of speakers?</label>
+   <textarea name='diversity'></textarea>
+   <label for='description'>Speaking Request</label>
    <textarea name='description'></textarea>
+   <section>
+      <p>Will you cover the cost of travel (for on-site conferences)?:
+      <div>
+         <label for='travel-yes'>Yes</label>
+         <input type='radio' name='travel' id='travel-yes' value='yes'/>
+      </div>
+      <div>
+         <label for='travel-no'>No</label>
+         <input type='radio' name='travel' id='travel-no' value='no'/>
+      </div>
+      <div>
+         <label for='travel-remote'>N/A (remote)</label>
+         <input type='radio' name='travel' id='travel-remote' value='remote'/>
+      </div>
+   </section>
+   <section>
+      <p>Do you provide a speaker honorarium:
+      <div>
+         <label for='honorarium-yes'>Yes</label>
+         <input type='radio' name='honorarium' id='honorarium-yes' value='yes'/>
+      </div>
+      <div>
+         <label for='honorarium-no'>No</label>
+         <input type='radio' name='honorarium' id='honorarium-no' value='no'/>
+      </div>
+      <div>
+         <label for='honorarium-value'>If yes, how much?</label>
+         <input type='text' name='honorarium-value'/>
+      </div>
+   </section>
    <button class='contact-form__submit' type='submit'>Send</button>
 </form>
 {% endmacro %}
