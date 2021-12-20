@@ -5,6 +5,7 @@ summary: >
   John Webster: “the knowledge of sorrow which revelation affords is pilgrim knowledge
 tags:
   - quotes
+date: 2021-12-20T11:30:00-0700
 
 ---
 
