@@ -23,7 +23,7 @@ First, consider with me how much *courage* is a virtue we hear a great deal abou
 
 </figure>
 
-How little the “courage” called for by so many pundits and would-be leaders has little—indeed, nothing at all—to do with courage as Webster describes it here! Indeed, much of what has gone under the heading of “courage” in recent years would be better described as *fear*, motivating as it has the *abandonment* of the other virtues.
+How little the “courage” called for by so many pundits has to do with courage as Webster describes it here! Indeed, much of what has gone under the heading of “courage” in recent years would be better described as *fear*, motivating as it has the *abandonment* of the other virtues.
 
 It is not enough to see that there is evil in the world: there has *always* been evil in the world. It is not even enough to discern rightly the threat that a specific evil poses: though that task is also rather more fraught than many a pundit might wish you to think. It is equally necessary to judge rightly how to respond, and that requires “instruction and illumination, the renovation of our loves, and the moderation and ordering of our passions.” Or, as the Apostle Paul has it: [to be renewed in the spirit of our minds.][romans]
 
