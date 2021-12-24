@@ -251,7 +251,7 @@ This was a tiring year, but a rewarding one, professionally. A year ago, I was p
 
 In September, I was promoted to Senior Staff Software Engineer. That promotion validated the work I have done since coming to LinkedIn—from building tools to mentoring other engineers, and from leading large efforts to motivating major technical investments. While the intrinsic satisfaction of the work has been high, the promotion was really encouraging as affirmation of the impact I have had through those efforts.
 
-I felt it all the more keenly because this is only the second time in my career I’ve been promoted, and the first time it was something I was actively working toward. The first time I was promoted, from Software Engineer to Senior Software Engineer back at Olo, was functionally more of a re-leveling, and it wasn’t even on my radar. Accomplishing my goal of making Senior Staff less than three years after being hired in at Staff (itself a promotion-by-job-change) was profoundly satisfying.[^career-trajectory]
+I felt it all the more keenly because this is only the second time in my career I’ve been promoted, and the first time I was promoted, from Software Engineer to Senior Software Engineer back at Olo, was functionally more of a re-leveling; it wasn’t even on my radar. This time, by contrast, I was actively pursuing the promotion. Thus, being promoted less than three years after being hired in at Staff (itself a promotion-by-job-change!) was profoundly satisfying.[^career-trajectory]
 
 [^career-trajectory]: At some point I will write up some notes on my career trajectory to date. I think it might be illuminating for many of you reading along, not least in the space of things I just didn’t know at various points along the way.
 
