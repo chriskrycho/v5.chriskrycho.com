@@ -2,7 +2,7 @@
 title: >
   2021 End-of-Year Thoughts
 subtitle: >
-  Another year behind, another reflection on what happened (and what didn’t!) in the last circuit of the sun.
+  Another year behind, another reflection on what happened (and what didn’t!) in this latest circuit of the sun.
 qualifiers:
   audience: >
     People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)
