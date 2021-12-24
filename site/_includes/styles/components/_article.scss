@@ -95,6 +95,11 @@
 .article-content {
    margin-left: auto;
    margin-right: auto;
+   overflow-wrap: break-word;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+   -ms-hyphens: auto;
 
    h1,
    h2,
