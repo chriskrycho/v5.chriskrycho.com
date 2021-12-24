@@ -233,7 +233,7 @@ I listed my goals for this area in [the 2020 end-of-year post][2020-eoy]:
 > 
 > - ride at least 500 miles—this is the real stretch goal for me: it will require me to *actually* put some miles on this year. I only managed about 200 miles this year, so I’ll need to make more consistent cross-training time
 
-The score is… mixed. I am very close on the first one, and whether I complete it will depend almost entirely on how quickly I get over the head cold I am fighting as I write these words. I hit my push-ups goal by mid-year, but ended up falling off that train in the fall and never really got back onto it.
+The score is… mixed. I am very close on the first one, and whether I complete it will depend almost entirely on how quickly I get over the head cold I am fighting as I write these words. I hit my push-ups goal by mid-year, but ended up falling off that train in the fall and never really got back onto it. As for riding: ha! I only managed about 100 miles on my bike this year. Maybe next year.
 
 I also ran the [Colfax Half Marathon][colfax] again—on a new course this year—and [turned in my third-fastest half marathon time ever][colfax-results]. Adjusting for altitude, it may well have been my best performance to date: running at a mile above sea level is just a *bit* harder than running *at* sea level! This wasn’t on my list of goals because, when I wrote them, we still had no idea whether the race would even happen.
 
