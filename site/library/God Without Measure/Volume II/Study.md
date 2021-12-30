@@ -18,7 +18,7 @@ A good word for all who would learn and study:
 
 > Study is the *contemplative* element of the university. Study is ‘close mental application to something’; it is not necessarily close mental application to something *new*. Study is not coterminous with research, which has to do with the acquisition of new knowledge. Study may be the application of intelligence to the absorption of what has been known, that is, to the inhabitation of tradition. Study of this kind is far from passive conformity; it is a ‘performance’ of tradition, neither wholly spontaneous and original nor wholly devoid of appropriation. Such study forms the powers of understanding and judgement which in turn serve discovery of the new.
 
-<figcaption>—“The Dignity of Creatures”, in <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, {{book.author}}, p. 163 (quoting Aquinas, _Summa Theologiae_, IIaIIae.166.1 resp.)</figcaption>
+<figcaption>—“The Dignity of Creatures”, in <a href="{{book.link}}"><cite>{{book.title}}</cite></a>, {{book.author}}, p. 163 (quoting Aquinas, <cite>Summa Theologiae</cite>, IIaIIae.166.1 resp.)</figcaption>
 
 </figure>
 
