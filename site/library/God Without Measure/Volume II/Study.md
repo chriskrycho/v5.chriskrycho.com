@@ -22,4 +22,4 @@ A good word for all who would learn and study:
 
 </figure>
 
-This is not just true of theology, but of all kinds of study. I was thinking just last night how important it is for *software developers* to learn the history of our field, to read essays and papers from the past. In every field, it is that immersion in the past—in what we as a people have already learned—that “forms the powers of undersetanding and judgement which in turn serve discovery of the new.”
+This is not just true of theology, but of all kinds of study. I was thinking just last night how important it is for *software developers* to learn the history of our field, to read essays and papers from the past. In every field, it is that immersion in the past—in what we as a people have already learned—that “forms the powers of understanding and judgement which in turn serve discovery of the new.”
