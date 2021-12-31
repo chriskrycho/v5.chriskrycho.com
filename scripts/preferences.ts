@@ -1,23 +1,15 @@
-import { assert, selectorFor } from './utils';
-
-const ROOT_EL = document.querySelector(selectorFor('root'));
-assert(ROOT_EL instanceof HTMLElement, 'missing root element');
-
-const PREFERENCES_EL = document.querySelector(selectorFor('preferences'));
-assert(PREFERENCES_EL instanceof HTMLElement, 'missing preferences mount element');
-PREFERENCES_EL.classList.remove('no-js-hidden');
-
 export interface Preferences {
    theme: Theme;
    readingMode: boolean;
 }
 
-export enum Theme {
+export const enum Theme {
    System = 'system',
    Light = 'light',
    Dark = 'dark',
 }
 
+// Intentionally throw away type checking here.
 const THEME_VALUES: string[] = [Theme.System, Theme.Light, Theme.Dark];
 
 export const isTheme = (s: string): s is Theme => THEME_VALUES.includes(s);
@@ -28,18 +20,18 @@ export const isTheme = (s: string): s is Theme => THEME_VALUES.includes(s);
    @param root The `html` element
    @param newTheme The new theme to set on that `html` element.
  */
-const updateThemeClass = (newTheme: Theme): void => {
-   THEME_VALUES.forEach((className) => ROOT_EL.classList.remove(className));
-   if (newTheme !== Theme.System) ROOT_EL.classList.add(newTheme);
+const updateThemeClass = (newTheme: Theme, element: HTMLElement): void => {
+   THEME_VALUES.forEach((className) => element.classList.remove(className));
+   if (newTheme !== Theme.System) element.classList.add(newTheme);
 };
 
-const updateReadingModeClass = (inReadingMode: boolean): void => {
+function updateReadingModeClass(inReadingMode: boolean, element: HTMLElement): void {
    if (inReadingMode) {
-      ROOT_EL.classList.add('reading-mode');
+      element.classList.add('reading-mode');
    } else {
-      ROOT_EL.classList.remove('reading-mode');
+      element.classList.remove('reading-mode');
    }
-};
+}
 
 const enum LocalStorage {
    Theme = 'sympolymathesy:theme',
@@ -48,17 +40,23 @@ const enum LocalStorage {
 
 // If the user chooses to follow the OS, simply delete the key from local storage: there
 // is no need to *store* "use the OS".
-const saveThemePreference = (theme: Theme): void =>
-   theme !== Theme.System
-      ? localStorage.setItem(LocalStorage.Theme, theme)
-      : localStorage.removeItem(LocalStorage.Theme);
+function saveThemePreference(theme: Theme): void {
+   if (theme !== Theme.System) {
+      localStorage.setItem(LocalStorage.Theme, theme);
+   } else {
+      localStorage.removeItem(LocalStorage.Theme);
+   }
+}
 
-const saveReadingModePreference = (inReadingMode: boolean): void =>
-   inReadingMode
-      ? localStorage.setItem(LocalStorage.ReadingMode, 'true')
-      : localStorage.removeItem(LocalStorage.ReadingMode);
+function saveReadingModePreference(inReadingMode: boolean): void {
+   if (inReadingMode) {
+      localStorage.setItem(LocalStorage.ReadingMode, 'true');
+   } else {
+      localStorage.removeItem(LocalStorage.ReadingMode);
+   }
+}
 
-export const loadPreferences = (): Preferences => {
+export function loadPreferences(): Preferences {
    const themeFromStorage = localStorage.getItem(LocalStorage.Theme);
    const theme =
       themeFromStorage && isTheme(themeFromStorage) ? themeFromStorage : Theme.System;
@@ -66,14 +64,14 @@ export const loadPreferences = (): Preferences => {
    const readingMode = localStorage.getItem(LocalStorage.ReadingMode) === 'true';
 
    return { theme, readingMode };
-};
+}
 
-export const persistTheme = (newTheme: Theme): void => {
-   updateThemeClass(newTheme);
+export function persistTheme(newTheme: Theme, onElement: HTMLElement) {
+   updateThemeClass(newTheme, onElement);
    saveThemePreference(newTheme);
-};
+}
 
-export const persistReadingMode = (inReadingMode: boolean): void => {
-   updateReadingModeClass(inReadingMode);
+export function persistReadingMode(inReadingMode: boolean, onElement: HTMLElement) {
+   updateReadingModeClass(inReadingMode, onElement);
    saveReadingModePreference(inReadingMode);
-};
+}

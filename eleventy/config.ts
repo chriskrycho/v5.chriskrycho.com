@@ -123,6 +123,9 @@ const featured = (collection: Collection): Item[] =>
       .sort(byDate(Order.NewFirst));
 
 function config(config: Config): UserConfig {
+   config.addWatchTarget('scripts');
+   config.addWatchTarget('site/_styles');
+
    config.addPlugin(
       typeset({
          only: '.content-block',
