@@ -8,7 +8,7 @@ standalonePage: true
 {% from 'components/social.njk' import meta %}
 
 {%- block meta %}
-{{ meta(collections.live | current(page), config) }}
+{{ meta(collections.all | current(page), config) }}
 {%- endblock meta %}
 
 {%- block main -%}
@@ -21,12 +21,13 @@ standalonePage: true
 </div>
 {%- endif -%}
 
-{%- set c = page.inputPath | toCollection(data.isGhostCollection) -%}
+{%- set c = page.inputPath | toCollection(isGhostCollection) -%}
+{%- set order = order if order else 'NEW_FIRST' -%}
 {%- if collections[c] -%}
    {%-
       set items = collections[c]
          | excludingStandalonePages
-         | archiveByYears('NEW_FIRST')
+         | archiveByYears(order)
    -%}
    {{ archive.list(items) }}
 {%- endif -%}

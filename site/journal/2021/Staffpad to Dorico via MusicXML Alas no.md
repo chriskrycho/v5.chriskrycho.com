@@ -10,7 +10,7 @@ tags:
     - Dorico
     - MusicXML
     - music
-    - composition
+    - composing
 
 qualifiers:
     audience: >

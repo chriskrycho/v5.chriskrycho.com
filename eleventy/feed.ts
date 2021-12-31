@@ -53,6 +53,7 @@ declare module '../types/eleventy' {
          audience?: string;
          epistemic?: string;
       };
+      updates?: Array<{ at: string; changes: string }>;
       image?: string;
       link?: string;
       splash?: string;
@@ -171,6 +172,17 @@ function contentHtmlFor(
            )}</p>`
          : '';
 
+   const updates = item.data?.updates
+      ? `<p><b>Updates:</br></p><ul>
+            ${item.data.updates
+               .map(
+                  ({ at, changes }) =>
+                     `<li><b>${localeDate(at, 'yyyy/MM/dd HH:mm')}:</b> ${markdown.renderInline(changes)}</li>`,
+               )
+               .join('\n')}
+        </ul>`
+      : '';
+
    const book = item.data?.book;
    const bookInfo = isBook(book) ? describe(book) : '';
 
@@ -191,6 +203,7 @@ function contentHtmlFor(
       audience +
       epistemicStatus +
       bookInfo +
+      updates +
       item.templateContent +
       thanks +
       reply

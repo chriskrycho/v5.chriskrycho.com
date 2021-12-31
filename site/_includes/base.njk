@@ -56,7 +56,11 @@
 
       <link rel='preload' as='script' type='application/javascript' href='/assets/js/main.js'>
 
-      {% block meta %}{{ social.meta(page, config) }}{% endblock meta%}
+      <meta name="author" content="Chris Krycho" />
+
+      {% block meta %}
+         {{ social.meta(page, config) }}
+      {% endblock meta%}
    </head>
    <body>
       <main>

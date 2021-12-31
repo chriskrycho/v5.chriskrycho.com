@@ -9,7 +9,7 @@ summary: >
     Seeing if, this long weekend, I can finish composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. I made really good progress today!
 tags:
     - music
-    - composition
+    - composing
     - work-in-progress
     - Dorico
 qualifiers:

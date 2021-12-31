@@ -18,13 +18,14 @@ qualifiers:
 
 ---
 
-<div class="note">
+<section class="note" aria-label="note">
 
 See [the follow-up](/journal/follow-up-on-command-line-finding-and-filtering/) post, in which I show an easier and faster way of doing this… as long as you have the GNU versions of the utilities, or alternatives like [ripgrep].
 
-</div>
-
 [ripgrep]: https://github.com/BurntSushi/ripgrep
+
+</section>
+
 
 <b>Summary:</b> If you want to find files, filter them on file name, and pipe the result into some other Unix command (e.g. `wc` to count words), use `tr` to substitute the null character for newlines:
 

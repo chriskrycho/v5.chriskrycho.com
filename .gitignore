@@ -102,3 +102,7 @@ typings/
 .dynamodb/
 
 # End of https://www.gitignore.io/api/node
+
+# Build outputs
+*.pdf
+*.epub

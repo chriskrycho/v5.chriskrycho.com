@@ -1,0 +1,5 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/reading-papers-in-public/{{page.fileSlug | slug}}/index.html",
+   "tags": ["reading notes"]
+}

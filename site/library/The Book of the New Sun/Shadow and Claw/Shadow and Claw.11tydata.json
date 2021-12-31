@@ -1,0 +1,12 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/the-book-of-the-new-sun/shadow-and-claw/{{page.fileSlug | slug}}/",
+   "book": {
+      "title": "Shadow & Claw: The First Half of The Book of the New Sun",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/shadow-and-claw.jpg",
+      "author": "Gene Wolfe",
+      "year": "2021 (1980)",
+      "link": "https://bookshop.org/a/21126/9781250781253"
+   },
+   "tags": ["Shadow & Claw"]
+}
