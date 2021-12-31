@@ -1,13 +1,11 @@
 {
-   "extends": "@tsconfig/svelte/tsconfig.json",
+   "extends": "../tsconfig.base.json",
    "compilerOptions": {
-      "strict": true,
       "removeComments": true,
       "lib": ["dom", "es2019"],
       "noEmit": false,
-      "inlineSources": false,
-      "sourceMap": true,
-      "baseUrl": "scripts"
+      "inlineSources": true,
+      "sourceMap": true
    },
    "include": ["./*"]
 }

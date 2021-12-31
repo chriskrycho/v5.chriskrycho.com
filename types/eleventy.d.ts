@@ -230,6 +230,16 @@ export interface Config {
    htmlOutputSuffx?: string;
    jsDataFileSuffix?: string;
 
+   /**
+     The `addWatchTarget` config method allows you to manually add a file or directory for
+     Eleventy to watch. When the file or the files in this directory change Eleventy will
+     trigger a build. This is useful if Eleventy is not directly aware of any external
+     file dependencies.
+
+     @param path the directory to watch, relative to the config.
+    */
+   addWatchTarget(path: string): void;
+
    addCollection(
       name: string,
       builder: (
@@ -322,7 +332,7 @@ export interface Config {
       @param path The file path to copy (may be an individual file or directory.)
     */
    addPassthroughCopy(path: string): void;
-   addPassthroughCopy(mapping: { [inputPath: string]: string }): void;
+   addPassthroughCopy(mapping: Record<string, string>): void;
 
    /**
      You can namespace parts of your configuration using `eleventyConfig.namespace`. This

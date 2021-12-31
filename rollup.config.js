@@ -1,13 +1,12 @@
-import svelte from 'rollup-plugin-svelte';
 import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
-import autoPreprocess from 'svelte-preprocess';
+import strip from '@rollup/plugin-strip';
 
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-   input: './scripts/main.js',
+   input: 'scripts/main.ts',
    output: {
       sourcemap: true,
       format: 'iife',
@@ -20,17 +19,17 @@ export default {
          tsconfig: './scripts/tsconfig.json',
          sourceMap: true,
       }),
-      svelte({
-         preprocess: autoPreprocess({
-            sourceMap: true,
-            typescript: '',
-         }),
-         compilerOptions: {
-            sourcemap: true,
-            dev: !production,
-         },
-      }),
       resolve({ browser: true }),
-      production && terser(),
+      production &&
+         strip({
+            include: ['**/*.js', '**/*.ts'],
+            functions: ['assert', 'unreachable'],
+         }),
+      production &&
+         terser({
+            compress: {
+               unsafe: true,
+            },
+         }),
    ],
 };

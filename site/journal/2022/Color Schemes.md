@@ -2,7 +2,7 @@
 title: Color Schemes!
 subtitle: >
     A few notes on pairing `prefers-color-scheme` and user configurability.
-date: 2020-12-30T12:00
+date: 2022-01-01T12:00:00-0700
 tags:
 - JavaScript
 - TypeScript
@@ -11,7 +11,7 @@ tags:
 
 ---
 
-When redesigning this site, I knew I wanted to take advantage of macOS' and Windows' recently-added ability to support dark mode in the website (with the new <abbr title="cascading style sheets">CSS</abbr> media query [`prefers-color-scheme`]). However, I also knew that I wanted to make it user-configurable. It took me over a year, but at last—at the same time as same time I publish this post—I have also added a tiny bit of JavaScript to the site that lets users override their operating system default to view the site in its light or dark theme as they please.
+When redesigning this site, I knew I wanted to take advantage of macOS’ and Windows’ then-recently-added ability to support dark mode in the website (with the new <abbr title="cascading style sheets">CSS</abbr> media query [`prefers-color-scheme`]). However, I also knew that I wanted to make it user-configurable. It took me a couple of years to actually get around to it, but at last—at the same time as same time I publish this post—I have also added a tiny bit of JavaScript to the site that lets users override their operating system default to view the site in its light or dark theme as they please.
 
 [`prefers-color-scheme`]: http://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 

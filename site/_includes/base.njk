@@ -1,5 +1,6 @@
 {% import 'components/nav.njk' as nav %}
 {% import 'components/social.njk' as social %}
+{% from 'components/preferences.njk' import Preferences %}
 
 <!DOCTYPE html>
 <html data-sympolymathesy='root'>
@@ -93,7 +94,7 @@
          </ul>
       </nav>
 
-      <div data-sympolymathesy='preferences' class='preferences no-js-hidden'></div>
+      {{ Preferences() }}
       <script src='/assets/js/main.js'></script>
    </body>
 </html>
