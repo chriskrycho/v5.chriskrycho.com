@@ -64,11 +64,11 @@ export default class SmartComponent extends Component {
 }
 ```
 
-<div class="note">
+<section class="note" aria-label="note">
 
 Here we’re relying on the fact that `args` are auto-tracked: this getter consumes `this.args.id`, so it’ll rerun any time the component is invoked with a new `id`. In a classic Ember component, you might see `@computed('id')` to update whenever the `id` argument updated.
 
-</div>
+</section>
 
 We would invoke the component something like this (presumably with a more dynamic source of the ID):
 

@@ -6,5 +6,6 @@ subtitle: >
 permalink: /library/god-without-measure/volume-ii/
 layout: archives.njk
 standalonePage: true
+order: OLD_FIRST
 
 ---

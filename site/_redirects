@@ -24,8 +24,31 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /feed-without-reply.json /feeds/without-reply.json 301!
 /library/god-without-measure/volume-1/* /library/god-without-measure/volume-i/:splat 301!
 /journal/crew-dragon-fanfare/* /journal/fanfare-for-a-new-era-of-american-spaceflight/:splat 301!
+/library/reading-papers/* /library/reading-papers-in-public/:splat 301!
 
-# ...including notes redirects for bad slug generation
+# ...including after I made library collections work correctly
+/library/good-theology-demands-good-theologians/ /library/the-culture-of-theology/good-theology-demands-good-theologians/ 301!
+/library/the-first-and-last-act-of-theological-existence/ /library/the-culture-of-theology/the-first-and-last-act-of-theological-existence/ 301!
+/library/theological-self-criticism/ /library/the-culture-of-theology/theological-self-criticism/ 301!
+/library/the-story-of-modern-theology/ /library/the-culture-of-theology/the-story-of-modern-theology/ 301!
+/library/christian-theologys-place-in-the-university/ /library/the-culture-of-theology/christian-theologys-place-in-the-university/ 301!
+/library/the-real-aim-of-utopias/ /library/the-culture-of-theology/the-real-aim-of-utopias/ 301!
+/library/an-anti-culture/ /library/the-culture-of-theology/an-anti-culture/ 301!
+/library/christian-astonishment/ /library/the-culture-of-theology/christian-astonishment/ 301!
+/library/good-theologians/ /library/the-culture-of-theology/good-theologians/ 301!
+
+/library/perfectionism-without-perfectibility/ /library/politics-and-the-order-of-love/perfectionism-without-perfectibility/ 301!
+/library/the-mixed-moral-qualities-of-any-age/ /library/politics-and-the-order-of-love/the-mixed-moral-qualities-of-any-age/ 301!
+/library/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/ /library/politics-and-the-order-of-love/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/ 301!
+/library/a-chalcedonian-conceptual-grammar-for-love-and-justice/ /library/politics-and-the-order-of-love/a-chalcedonian-conceptual-grammar-for-love-and-justice/ 301!
+
+/library/fall-centered-theological-anthropologies/ /library/eccentric-existence/fall-centered-theological-anthropologies/ 301!
+/library/gods-self-commitment-to-creatures/ /library/eccentric-existence/gods-self-commitment-to-creatures/ 301!
+/library/problematic/ /library/eccentric-existence/problematic/ 301!
+/library/tell-me-your-priors/ /library/eccentric-existence/tell-me-your-priors/ 301!
+/library/the-triune-creators-relating-to-creation/ /library/eccentric-existence/the-triune-creators-relating-to-creation/ 301!
+
+# ...and notes redirects for bad slug generation
 /notes/0634/ /notes/2020-04-29-0634/ 301!
 /notes/0640/ /notes/2020-07-17-0640/ 301!
 /notes/0712/ /notes/2020-07-18-0712/ 301!
@@ -97,3 +120,4 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /topics/auto-tracking /topics/autotracking/ 301!
 /topics/ember.js /topics/ember/ 301!
 /topics/programming-language /topics/programming-languages/ 301!
+/topics/composition /topics/composing 301!

@@ -9,6 +9,7 @@ tags:
     - Q & A
     - site meta
     - blogging
+    - from my outbox
 
 qualifiers:
     audience: >

@@ -343,7 +343,7 @@ In general, it’s really helpful to avoid getting into the situation where this
 
 —but sometimes this kind of thing is out of your control, as it was out of mine last year. I hope if you find yourselves in the same spot I found myself last August, you now have a good handle on some of the ways you can manage this kind of large, long-running task effectively!
 
-<div class="note">
+<section class="note" aria-label="note">
     
 Two addenda:
 
@@ -351,7 +351,7 @@ Two addenda:
 
 2.  There has been some interesting discussion about switching away from the use of `master` as the name of the main development branch for projects like this, due to its associations with slavery (from which the terms “master” and “slave,” with all their very wretched history). For good or for ill, `master` is the traditional name, and I’ve left it as that in this discussion. However, you easily could—and very possibly *should*!—substitute `main` throughout wherever the samples have `master`. I’ve left it this way here largely to make this post as easy as possible to find via web search.
 
-</div>
+</section>
 
 *[CI]: continuous integration
 *[SHA]: secure hash algorithm

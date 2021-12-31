@@ -8,7 +8,7 @@ summary: >
     I’m taking a week off… and spending it composing a piece in honor of the upcoming SpaceX crewed test flight—a historic moment. In this post, the third day’s work—some actual orchestration!
 tags:
     - music
-    - composition
+    - composing
     - work-in-progress
     - Dorico
 qualifiers:

@@ -95,6 +95,11 @@
 .article-content {
    margin-left: auto;
    margin-right: auto;
+   overflow-wrap: break-word;
+   hyphens: auto;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+   -ms-hyphens: auto;
 
    h1,
    h2,
@@ -115,7 +120,8 @@
    .footnotes,
    .note,
    .qualifiers,
-   .quotation {
+   .quotation,
+   .updates {
       margin: {
          left: auto;
          right: auto;
@@ -324,6 +330,10 @@
       margin-bottom: ms(0);
    }
 
+   ol {
+      font-feature-settings: 'lnum';
+   }
+
    .table-of-contents {
       width: 100%;
       max-width: var(--max-width);
@@ -451,7 +461,8 @@
 
    aside,
    .note,
-   .qualifiers {
+   .qualifiers,
+   .updates {
       font: {
          family: var(--sans);
          weight: 300;
@@ -503,6 +514,17 @@
       }
    }
 
+   .updates {
+      @include fancy-block(var(--aside-bg), var(--aside-fg));
+      @include extra-vertical();
+
+      display: block;
+
+      b {
+         font-weight: 600;
+      }
+   }
+
    .note {
       @include fancy-block(var(--note-bg), var(--note-fg));
       @include extra-vertical();
@@ -521,8 +543,11 @@
       figcaption {
          width: 100%;
          text-align: left;
-         text-indent: hanging -1.3em;
-         padding-left: 1.1em;
+         text-indent: hanging 1.3em;
+         padding: {
+            left: 1.1em;
+            right: 1.1em;
+         }
       }
    }
 
@@ -597,7 +622,8 @@
    aside,
    .note,
    .qualifiers,
-   .callout {
+   .callout,
+   .updates {
       > {
          p,
          ul,
@@ -613,6 +639,7 @@
    aside,
    .note,
    .qualifiers,
+   .updates,
    .footnotes {
       --double-margin: var(--double-margin-sans);
       --single-margin: var(--single-margin-sans);
@@ -625,17 +652,62 @@
       margin-bottom: 1em;
    }
 
+   .table-container {
+      display: block;
+      width: 100%;
+      overflow: scroll;
+   }
+
    table {
-      max-width: var(--max-width);
+      border-collapse: collapse;
+
       margin: {
          top: 1em;
          bottom: 1em;
       }
 
-      thead {
+      th {
          font-family: var(--sans);
-         text-transform: uppercase;
-         letter-spacing: 1px;
+         font-weight: 600;
+         padding: 0 ms(-4);
+      }
+
+      tr:nth-child(even) {
+         background-color: var(--aside-bg);
+         color: var(--aside-fg);
+      }
+
+      thead {
+         border-bottom: 2px solid var(--blockquote-border);
+      }
+
+      thead th {
+         font-size: ms(1);
+         font-weight: 300;
+         background-color: var(--note-bg);
+         color: var(--note-fg);
+      }
+
+      th[scope='col'] {
+         font-style: italic;
+         background-color: var(--note-bg);
+         color: var(--note-fg);
+      }
+
+      tbody {
+         border-top: 1px solid var(--blockquote-border);
+      }
+
+      tbody th[scope='col'] {
+         border-bottom: 1px solid var(--blockquote-border);
+      }
+
+      thead + tbody {
+         border-top: none;
+      }
+
+      th[scope='row'] {
+         border-right: 2px solid var(--blockquote-border);
       }
 
       td,
@@ -647,10 +719,6 @@
          &:last-child {
             text-align: left;
          }
-      }
-
-      th {
-         padding: 0 ms(-4);
       }
 
       td {
@@ -686,7 +754,10 @@
 
    details {
       max-width: var(--max-width);
-      margin: 1em 0;
+      margin: {
+         top: 1em;
+         bottom: 1em;
+      }
    }
 }
 
@@ -700,7 +771,8 @@
          aside,
          .qualifiers,
          .note,
-         .callout {
+         .callout,
+         .updates {
             align-self: center;
             padding: {
                left: var(--side-padding);

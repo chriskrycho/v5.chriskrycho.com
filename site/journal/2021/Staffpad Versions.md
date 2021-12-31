@@ -5,7 +5,7 @@ subtitle: >
 date: 2021-07-28T16:45:00-0600
 tags:
     - music
-    - composition
+    - composing
     - StaffPad
 
 ---

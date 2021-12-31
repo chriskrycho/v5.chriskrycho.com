@@ -3,6 +3,7 @@ title: Dinosaur National Monument, 2021
 permalink: /photos/dinosaur-national-monument/
 layout: archives.njk
 standalonePage: true
+order: OLD_FIRST
 
 ---
 
