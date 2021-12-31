@@ -1,5 +1,5 @@
 <script lang="ts">
-   import { stringIsTheme, Theme } from './preferences';
+   import { isTheme, Theme } from './preferences';
    import { assert } from './utils';
 
    const themes = [Theme.System, Theme.Light, Theme.Dark] as const;
@@ -10,16 +10,13 @@
       dark: 'dark',
    };
 
-   let selectTheme = (event: Event) => {
-      assert(event.target instanceof HTMLInputElement, 'badly configured theme chooser');
-      assert(stringIsTheme(event.target.value), 'badly configured theme component');
-
-      onSelectTheme(event.target.value);
+   let selectTheme: svelte.JSX.FormEventHandler<HTMLInputElement> = (event) => {
+      assert(isTheme(event.currentTarget.value), 'badly configured theme component');
+      onSelectTheme(event.currentTarget.value);
    };
 
    export let selectedTheme: Theme = Theme.System;
    export let onSelectTheme: (newTheme: Theme) => void;
-
 </script>
 
 <fieldset>

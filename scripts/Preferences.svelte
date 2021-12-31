@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
    import ColorScheme from './ColorScheme.svelte';
    import Adjust from './Icons/Adjust.svelte';
    import Close from './Icons/Close.svelte';
@@ -27,7 +27,6 @@
       persistReadingMode(newValue);
       readingMode = newValue;
    };
-
 </script>
 
 {#if !showPreferences}

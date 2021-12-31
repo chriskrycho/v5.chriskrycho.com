@@ -1,13 +1,8 @@
-<script lang="typescript">
-   import { assert } from './utils'
+<script lang="ts">
+   import { assert } from './utils';
 
-   function setReadingMode(event: Event) {
-      assert(event.target instanceof HTMLInputElement, 'badly configured reading mode')
-      onSetReadingMode(event.target.checked)
-   }
-
-   export let onSetReadingMode: (newValue: boolean) => void
-   export let inReadingMode: boolean
+   export let onSetReadingMode: (newValue: boolean) => void;
+   export let inReadingMode: boolean;
 </script>
 
 <fieldset>
@@ -17,6 +12,6 @@
       name="reading-mode"
       id="reading-mode"
       checked={inReadingMode}
-      on:change={setReadingMode}
+      on:change={(event) => onSetReadingMode(event.currentTarget.checked)}
    />
 </fieldset>

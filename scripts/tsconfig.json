@@ -5,7 +5,7 @@
       "removeComments": true,
       "lib": ["dom", "es2019"],
       "noEmit": false,
-      "inlineSources": true,
+      "inlineSources": false,
       "sourceMap": true,
       "baseUrl": "scripts"
    },

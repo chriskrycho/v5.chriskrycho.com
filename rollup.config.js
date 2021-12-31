@@ -12,7 +12,7 @@ export default {
       sourcemap: true,
       format: 'iife',
       name: 'app',
-      file: './site/assets/js/main.js',
+      file: './site/_assets/js/main.js',
    },
    plugins: [
       // teach rollup how to handle typescript imports
@@ -23,9 +23,6 @@ export default {
       svelte({
          preprocess: autoPreprocess({
             sourceMap: true,
-            defaults: {
-               script: 'typescript',
-            },
             typescript: '',
          }),
          compilerOptions: {

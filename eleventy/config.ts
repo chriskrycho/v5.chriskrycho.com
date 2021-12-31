@@ -26,18 +26,12 @@ import {
 
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 
-type Not = <A extends unknown[]>(
-   pred: (...args: A) => boolean,
-) => (...args: A) => boolean;
-const not: Not =
-   (fn) =>
-   (...args) =>
-      !fn(...args);
+type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
+// prettier-ignore
+const not: Not = (fn) => (...args) => !fn(...args);
 
-const filter =
-   <T>(pred: (t: T) => boolean) =>
-   (values: T[]) =>
-      values.filter(pred);
+type Filter = <T>(pred: (t: T) => boolean) => (values: T[]) => T[];
+const filter: Filter = (pred) => (values) => values.filter(pred);
 
 const BUILD_TIME = DateTime.fromJSDate(new Date(), TZ).toSeconds();
 
@@ -235,5 +229,5 @@ function config(config: Config): UserConfig {
    };
 }
 
-// Needs to be this way so that the import resolves as expected in `.eleventy.js`.
+// Needs to be this way so that the import resolves as expected in `.eleventy`.
 module.exports = config;

@@ -1,12 +1,18 @@
 .preferences {
    font: var(--sans);
-   position: absolute;
+   position: fixed;
    top: 1em;
    right: 1em;
+
+   background: var(--bg);
+   color: var(--fg);
 }
 
 .preferences-button {
-   position: absolute;
-   top: 0;
-   right: 0;
+   position: fixed;
+   top: 1em;
+   right: 1em;
+   background: var(--bg);
+   color: var(--fg);
+   border: none;
 }
