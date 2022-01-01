@@ -17,10 +17,10 @@ export default function getElements() {
    const Close = $('close');
    assert(Close instanceof HTMLButtonElement, 'misconfigured adjust element');
 
-   const ColorSchemes = $$('theme') as HTMLInputElement[];
+   const ColorSchemes = $$('theme') as NodeListOf<HTMLInputElement>;
    assert(
       ColorSchemes.length === 3 &&
-         ColorSchemes.every(
+         Array.from(ColorSchemes).every(
             (scheme) => scheme instanceof HTMLInputElement && scheme.type === 'radio',
          ),
       'misconfigured color schemes',

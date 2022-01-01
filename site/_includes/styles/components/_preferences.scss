@@ -1,14 +1,20 @@
 .preferences {
    font: var(--sans);
    position: fixed;
-   top: var(--main-padding);
-   right: var(--main-padding);
+
+   // +1px to account for main border
+   top: calc(var(--main-padding) + 1px);
+   right: calc(var(--main-padding) + 1px);
 
    background: var(--bg);
    color: var(--fg);
-   border: var(--aside-border);
+   border: 1px solid transparent;
 
    z-index: 2;
+
+   &__open {
+      border-color: var(--blockquote-border);
+   }
 }
 
 .preferences-button {
@@ -52,6 +58,10 @@
 
       legend {
          flex: 0 100%;
+
+         &::after {
+            content: '';
+         }
       }
 
       label {
@@ -64,6 +74,12 @@
          margin: {
             left: 0;
             right: 0;
+         }
+      }
+
+      &.preferences-form__reading-mode {
+         @media screen and (max-width: $reflow) {
+            display: none;
          }
       }
    }

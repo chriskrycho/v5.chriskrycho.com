@@ -10,5 +10,4 @@ export function unreachable(value: never): never {
 
 const selectorFor = (item: string): string => `[data-sympolymathesy="${item}"]`;
 export const $ = (item: string) => document.querySelector(selectorFor(item));
-export const $$ = (item: string) =>
-   Array.from(document.querySelectorAll(selectorFor(item)));
+export const $$ = (item: string) => document.querySelectorAll(selectorFor(item));

@@ -1,11 +1,5 @@
 import { assert, unreachable } from './utils.js';
-import {
-   loadPreferences,
-   persistReadingMode,
-   persistTheme,
-   Theme,
-   isTheme,
-} from './preferences.js';
+import * as Preferences from './preferences.js';
 import getElements from './elements.js';
 
 const enum State {
@@ -14,13 +8,18 @@ const enum State {
 }
 
 function main() {
-   const { Root, Panel, Show, Close, ColorSchemes, ReadingMode } = getElements();
+   const { Root, Container, Panel, Show, Close, ColorSchemes, ReadingMode } =
+      getElements();
 
    // At initialization, make sure the initial values are set correctly.
-   let { theme = Theme.System, readingMode = false } = loadPreferences();
-   persistTheme(theme, Root);
-   persistReadingMode(readingMode, Root);
-   ColorSchemes.find((el) => el.id === theme)!.checked = true;
+   let { theme = Preferences.Theme.System, readingMode = false } = Preferences.load();
+   Preferences.persistTheme(theme, Root);
+   Preferences.persistReadingMode(readingMode, Root);
+   ColorSchemes.forEach((el) => {
+      if (el.id === theme) {
+         el.checked = true;
+      }
+   });
    ReadingMode.checked = readingMode;
 
    function setPanelTo(state: State) {
@@ -28,35 +27,46 @@ function main() {
          case State.Show:
             Show.classList.add('hidden');
             Panel.classList.remove('hidden');
+            Container.classList.add('preferences__open');
             break;
          case State.Hide:
             Panel.classList.add('hidden');
             Show.classList.remove('hidden');
+            Container.classList.remove('preferences__open');
             break;
          default:
             unreachable(state);
       }
    }
 
-   Show.addEventListener('click', () => {
+   document.addEventListener('click', ({ target }) => {
+      // Cast is safe-ish?
+      if (!Panel.contains(target as Node)) {
+         setPanelTo(State.Hide);
+      }
+   });
+
+   Show.addEventListener('click', (event) => {
+      event.stopPropagation();
       setPanelTo(State.Show);
    });
 
-   Close.addEventListener('click', () => {
+   Close.addEventListener('click', (event) => {
+      event.stopPropagation();
       setPanelTo(State.Hide);
    });
 
-   // Use `this.value` and `this.checked` because they're guaranteed to be the right type.
-   // `event.target` and `event.currentTarget` are *not*: they are `EventTarget | null`.
    ColorSchemes.forEach((colorSchemeEl) => {
-      colorSchemeEl.addEventListener('change', function () {
-         assert(isTheme(this.value), 'misconfigured color scheme value');
-         persistTheme(this.value, Root);
+      colorSchemeEl.addEventListener('change', ({ target }) => {
+         assert(target instanceof HTMLInputElement, 'misconfigured color scheme input');
+         assert(Preferences.isTheme(target.value), 'misconfigured color scheme value');
+         Preferences.persistTheme(target.value, Root);
       });
    });
 
-   ReadingMode.addEventListener('change', function () {
-      persistReadingMode(this.checked, Root);
+   ReadingMode.addEventListener('change', ({ target }) => {
+      assert(target instanceof HTMLInputElement, 'misconfigured reading theme input');
+      Preferences.persistReadingMode(target.checked, Root);
    });
 }
 
