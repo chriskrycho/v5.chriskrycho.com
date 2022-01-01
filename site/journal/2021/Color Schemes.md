@@ -144,7 +144,7 @@ As noted above, I implemented all of this using only “vanilla” JavaScript. W
 
 (You can check out the entire implementation [here][ts]. I chose to make it *slightly* more robust than it absolutely “needed” to be, but the whole thing is well under a kilobyte even so.)
 
-[ts]: https://github.com/chriskrycho/v5.chriskrycho.com/tree/user-configurable-color-scheme/scripts
+[ts]: https://github.com/chriskrycho/v5.chriskrycho.com/tree/0174ded9/scripts
 
 This is the part of the story where, per many of the folks out there, I’m supposed to tell you how vanilla JavaScript is awesome. And in terms of the size of the JavaScript I ship down to support this, doing it with vanilla <abbr>JS</abbr> rather than pulling in a framework was indeed the right move. But… it’s a bit more complicated than “vanilla JS is better.”
 
