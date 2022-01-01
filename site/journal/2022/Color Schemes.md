@@ -127,5 +127,6 @@ This is the part of the story where, per many of the folks out there, I’m supp
 
 I ran an experiment around this time last year in doing this with Svelte. I liked it, and it was a *much* better experience than doing it in vanilla JavaScript. I shipped the non-Svelte version because I measured the result, and Svelte’s *runtime* cost 10× as much as the version written by hand, and for *this specific use case*, that didn’t make any sense.
 
-However, as I currently hope to elaborate on in a future piece, that’s really *only* because I was only authoring a single component here.
+However, as I currently hope to elaborate on in a future piece, that’s really *only* because I was only authoring a single component here. The frameworks provide a *lot* of value in terms of authoring—and, just as importantly, when you scale past about three components built by hand like this, you end up starting to build your own little framework. (Spoilers: I was already ending up doing a lot of that here, and it’s *one UI component*!) The frameworks don’t come for *free*, but I strongly suspect based on this experience that the cost in size is more than amortized across any web page which uses more than a few components—and more than amortized in *bug count* as well.
 
+But more on that in the future!
