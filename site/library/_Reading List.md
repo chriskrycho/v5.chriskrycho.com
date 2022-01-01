@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-12-31T21:27:00-0700
+date: 2021-12-31T22:05:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -67,8 +67,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Icons of Christ: A Biblical and Systematic Theology for Women’s Ordination</cite>](https://bookshop.org/a/21126/9781481313193), William G. Witt (new)
 
-- [<cite>God Without Measure: Working Papers in Christian Theology: Volume II: Virtue and Intellect</cite>](https://www.alibris.com/search/books/isbn/9780567686046), John Webster (new)
-
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
 
 
@@ -100,6 +98,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [posts on the book](/library/god-without-measure/volume-i/)
 
 - [<cite>Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX</cite>](https://bookshop.org/a/21126/9780062979971), Eric Berger (new)
+
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume II: Virtue and Intellect</cite>](https://www.alibris.com/search/books/isbn/9780567686046), John Webster (new)
 
 
 ### Fiction
