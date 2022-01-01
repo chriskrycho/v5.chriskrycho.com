@@ -52,13 +52,13 @@ To make this work, I combined the power of [<abbr>CSS</abbr> Custom Properties][
 
 ```scss
 @mixin light {
-    --bg: #FEFEFE;
-    --fg: #333333;
+   --bg: #FEFEFE;
+   --fg: #333333;
 }
 
 @mixin dark {
-    --bg: #333333;
-    --fg: #FEFEFE;
+   --bg: #333333;
+   --fg: #FEFEFE;
 }
 ```
 
@@ -67,23 +67,67 @@ Then for the slightly tricky bit—applying these to the appropriate selectors. 
 ```scss
 :root,
 .light:root {
-    @include light;
+   @include light;
 }
 
 .dark:root {
-    @include dark;
+   @include dark;
 }
 ```
 
-I actually implemented this all the way back when I launched the site originally, since I needed to for dark mode support (and had hacked out a working, but janky, version of the same feature I pushed today).
+Then I used the same mixin to integrate with <abbr>OS</abbr>-level preferences, using the `@media (prefers-color-scheme: light)` check:
+
+```scss
+@media (prefers-color-scheme: light) {
+   :root {
+      @include light();
+   }
+
+   .dark:root {
+      @include dark();
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+      @include dark();
+   }
+
+   .light:root {
+      @include light();
+   }
+}
+```
+
+The way to think about this is:
+
+- The first `:root` condition handles the case when a reader has not specified a preference *and* their operating system is not indicating anything to the browser, in which case they get the light theme.
+
+- The `.light:root` and `.dark:root` declarations override that for 
+
+- The `:root` declarations within the `prefers-color-scheme` checks make sure the default behavior for a reader whose <abbr>OS</abbr> is explicitly telling the browser to use a light or dark theme.
+
+- Finally, the `.dark:root` within `prefers-color-scheme: light` and the `.light:root` within `prefers-color-scheme: dark` account for the case where the reader has overridden the system-level prefernce for this site.
+
+These couple dozen simple lines of code are genuinely all there is to it; you can check out the current implementation [here][css] to confirm that! If you do, you may notice that I also use this as a way of integrating the style sheets for the syntax highlighting themes used in light and dark mode—which, combined with the choice do my syntax-highlighting as part of the build, means there’s minimal overhead to that for end users as well.
+
+[css]: https://github.com/chriskrycho/v5.chriskrycho.com/blob/cf5ca7f4/site/_includes/styles/_color-scheme.scss#L122-L155
+
+<aside>
+
+I actually implemented this all the way back when I launched the site originally, since I needed to for dark mode support—I had hacked out a working, but janky, version of the same feature I pushed today all the way back in 2019. It has just never made it to the top of my priority list to finish it up until today, when I could do it more or less in the background of taking care of a sick wife and keeping an eye on our kids.
+
+</aside>
 
 
 ## JavaScript
 
-Because I did the hard work of pushing all the complexity into the <abbr>CSS</abbr>, the <abbr>JS</abbr> ends up being fairly simple. It only really has two responsibilities:
+Because I did the hard work of pushing all the complexity into the <abbr>CSS</abbr>, the <abbr>JS</abbr> ends up being fairly simple. It only really has three responsibilities:
 
-1. setting or clearing the `.light` or `.dark` classes when the user interacts with the <abbr title="user interface">UI</abbr> element
-2. if the user has specified an override, storing that decision somewhere to look it up when the site loads
+- setting or clearing the `.light` or `.dark` classes when the user interacts with the <abbr title="user interface">UI</abbr> element
+- if the user has specified an override, storing that decision somewhere to look it up when the site loads
+- checking for that decision when the site loads
+
 
 ### Responding to the user setting
 
