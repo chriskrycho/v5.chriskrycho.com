@@ -1,6 +1,6 @@
-@import "./config";
-@import "./syntax-highlighting/a11y-light";
-@import "./syntax-highlighting/tomorrow-night-bright";
+@import './config';
+@import './syntax-highlighting/a11y-light';
+@import './syntax-highlighting/tomorrow-night-bright';
 
 @mixin light {
    // Colors
@@ -112,13 +112,14 @@
 
    @include tomorrow-night-bright();
 
-   code, pre code {
+   code,
+   pre code {
       -webkit-font-smoothing: antialiased;
       -moz-font-smoothing: grayscale;
    }
 }
 
-// Default to light unless the user explicitly specifies they prefer dark.
+// Default to light unless the user explicitly specifies they prefer dark...
 :root,
 .light:root {
    @include light();
@@ -128,22 +129,24 @@
    @include dark();
 }
 
+// ...noting that setting a value via the OS *is* explicitly specifying a
+// preference.
 @media screen {
    @media (prefers-color-scheme: light) {
       :root {
          @include light();
       }
-   
+
       .dark:root {
          @include dark();
       }
    }
-   
+
    @media (prefers-color-scheme: dark) {
       :root {
          @include dark();
       }
-   
+
       .light:root {
          @include light();
       }

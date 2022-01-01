@@ -6,5 +6,4 @@
 
 import MarkdownIt = require('markdown-it');
 
-declare function sup(md: MarkdownIt): void;
-export = sup;
+export default function sup(md: MarkdownIt): void;

@@ -1,4 +1,6 @@
-import stripTags from 'striptags';
+import striptags from 'striptags';
+import { DateTime } from 'luxon';
+import { Result } from 'true-myth';
 
 import { Dict, EleventyClass, Item } from '../types/eleventy';
 import JsonFeed, { FeedItem } from '../types/json-feed';
@@ -9,8 +11,6 @@ import siteTitle from './site-title';
 import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
-import { DateTime } from 'luxon';
-import { Result } from 'true-myth';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
@@ -177,7 +177,10 @@ function contentHtmlFor(
             ${item.data.updates
                .map(
                   ({ at, changes }) =>
-                     `<li><b>${localeDate(at, 'yyyy/MM/dd HH:mm')}:</b> ${markdown.renderInline(changes)}</li>`,
+                     `<li><b>${localeDate(
+                        at,
+                        'yyyy/MM/dd HH:mm',
+                     )}:</b> ${markdown.renderInline(changes)}</li>`,
                )
                .join('\n')}
         </ul>`
@@ -226,11 +229,11 @@ function titleFor({
       ) ?? false;
    const photoTitleAllowed = !(isPhoto && photoItemTitles === 'off');
    const showTitle = sectionMarker && title && photoTitleAllowed;
-   return showTitle ? `[${sectionMarker}] ${stripTags(title)}` : undefined;
+   return showTitle ? `[${sectionMarker}] ${striptags(title)}` : undefined;
 }
 
 function summaryFor(item: Item): string {
-   return item.data?.summary ?? item.data?.subtitle ?? stripTags(item.templateContent);
+   return item.data?.summary ?? item.data?.subtitle ?? striptags(item.templateContent);
 }
 
 /**
@@ -344,7 +347,7 @@ export class JSONFeed implements EleventyClass {
          permalink: (/* _: EleventyData */): string => {
             return (
                this.permalink ??
-               (this.collection ? `/${this.collection}/feed.json` : '/feed.json')
+               (this.collection ? `/${this.collection}/feedon` : '/feedon')
             );
          },
       };

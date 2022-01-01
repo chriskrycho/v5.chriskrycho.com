@@ -1,0 +1,96 @@
+.preferences {
+   font: var(--sans);
+   position: fixed;
+
+   // +1px to account for main border
+   top: calc(var(--main-padding) + 1px);
+   right: calc(var(--main-padding) + 1px);
+
+   background: var(--bg);
+   color: var(--fg);
+   border: 1px solid transparent;
+
+   z-index: 2;
+
+   &__open {
+      border-color: var(--blockquote-border);
+   }
+}
+
+.preferences-button {
+   background: var(--bg);
+   color: var(--aside-border);
+   border: none;
+   padding: 4px;
+   height: 24px;
+   width: 24px;
+
+   &__open {
+      margin: 4px;
+   }
+
+   &__close {
+      margin: 4px 4px 0 0;
+   }
+}
+
+.preferences-panel {
+   display: flex;
+   flex-direction: column;
+
+   &__button {
+      flex: auto;
+      align-self: flex-end;
+   }
+
+   &__form {
+      flex: auto;
+   }
+}
+
+.preferences-form {
+   fieldset {
+      margin: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-family: var(--sans);
+
+      legend {
+         flex: 0 100%;
+
+         &::after {
+            content: '';
+         }
+      }
+
+      label {
+         flex: 0 80%;
+         padding-left: 1em;
+      }
+
+      input {
+         flex: 0 20%;
+         margin: {
+            left: 0;
+            right: 0;
+         }
+      }
+
+      &.preferences-form__hide-side-nav {
+         @media screen and (max-width: $reflow) {
+            display: none;
+         }
+      }
+   }
+}
+
+.preferences-icon {
+   height: 16px;
+   width: 16px;
+   margin-left: 1px; // visual alignment fun
+}
+
+.hidden {
+   display: none;
+}
