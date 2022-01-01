@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2021-12-02T08:32:00-0700
+date: 2021-12-31T21:27:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -98,6 +98,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>God Without Measure: Working Papers in Christian Theology: Volume I: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
     - [posts on the book](/library/god-without-measure/volume-i/)
+
+- [<cite>Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX</cite>](https://bookshop.org/a/21126/9780062979971), Eric Berger (new)
 
 
 ### Fiction
