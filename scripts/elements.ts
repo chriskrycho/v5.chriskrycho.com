@@ -26,11 +26,11 @@ export default function getElements() {
       'misconfigured color schemes',
    );
 
-   const ReadingMode = $('reading-mode') as HTMLInputElement;
+   const NavMode = $('hide-side-nav') as HTMLInputElement;
    assert(
-      ReadingMode instanceof HTMLInputElement && ReadingMode.type === 'checkbox',
+      NavMode instanceof HTMLInputElement && NavMode.type === 'checkbox',
       'misconfigured reading mode',
    );
 
-   return { Root, Container, Panel, Show, Close, ColorSchemes, ReadingMode };
+   return { Root, Container, Panel, Show, Close, ColorSchemes, NavMode };
 }
