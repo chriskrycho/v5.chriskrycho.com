@@ -29,6 +29,7 @@ export default {
          terser({
             compress: {
                unsafe: true,
+               passes: 2,
             },
          }),
    ],
