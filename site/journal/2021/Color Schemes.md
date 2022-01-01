@@ -12,6 +12,7 @@ tags:
     - TypeScript
     - CSS
     - web design
+    - site meta
 qualifiers:
   audience: >
     Web designers and developers interested in site setting tweaks which respect user preferences.
