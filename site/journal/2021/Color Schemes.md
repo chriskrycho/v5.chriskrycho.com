@@ -3,6 +3,10 @@ title: Reading Settings!
 subtitle: >
     A few notes on pairing `prefers-color-scheme` and user configurability, as well as adding a little reading mode switch.
 date: 2021-12-31T20:35:00-0700
+updated: 2021-12-31T21:05:00-0700
+updates:
+  - at: 2021-12-31T21:05:00-0700
+    changes: Corrected the overhead from Svelte’s runtime.
 tags:
     - JavaScript
     - TypeScript
@@ -190,9 +194,11 @@ As noted above, I implemented all of this using only “vanilla” JavaScript. W
 
 [ts]: https://github.com/chriskrycho/v5.chriskrycho.com/tree/0174ded9/scripts
 
-This is the part of the story where, per many of the folks out there, I’m supposed to tell you how vanilla JavaScript is awesome. And in terms of the size of the JavaScript I ship down to support this, doing it with vanilla <abbr>JS</abbr> rather than pulling in a framework was indeed the right move. But… it’s a bit more complicated than “vanilla JS is better.”
+This is the part of the story where, per many of the folks out there, I’m supposed to tell you how vanilla JavaScript is awesome. And in terms of the size of the JavaScript I ship down to support this, doing it with vanilla <abbr>JS</abbr> rather than pulling in a framework was indeed the right move. But… it’s a bit more complicated than “vanilla <abbr>JS</abbr> is better.”
 
-I ran an experiment around this time last year in doing this with Svelte. I liked it, and enjoyed learning Svelte—and authoring it that way was a *much* better experience than doing it in vanilla JavaScript the way I did today. It involved a lot less code and was a lot less error-prone. I shipped the non-Svelte version because I measured the result, and Svelte’s *runtime* cost 10× as much as the version written by hand, and for *this specific use case*, that didn’t make any sense.
+I ran an experiment around this time last year in doing this with [Svelte][svelte], which is aimed at pretty much exactly this kind of use case. I liked it, and enjoyed learning Svelte—and authoring it that way was a *much* better experience than doing it in vanilla JavaScript the way I did today. It involved a lot less code and was a lot less error-prone. I shipped the non-Svelte version because I measured the result, and Svelte’s runtime cost 4× as much as the version written by hand. For *this specific use case*, that didn’t make sense.
+
+[svelte]: https://svelte.dev
 
 However, as I currently hope to elaborate on in a future piece, that’s really *only* because I was only authoring a single component here. The frameworks provide a *lot* of value in terms of authoring—and, just as importantly, when you scale past about three components built by hand like this, you end up starting to build your own little framework. (Spoilers: I was already ending up doing a lot of that here, and it’s *one UI component*!) The frameworks don’t come for *free*, but I strongly suspect based on this experience that the cost in size is more than amortized across any web page which uses more than a few components—and more than amortized in *bug count* as well.
 
