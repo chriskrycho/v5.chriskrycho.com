@@ -56,7 +56,7 @@ function saveReadingModePreference(inReadingMode: boolean): void {
    }
 }
 
-export function loadPreferences(): Preferences {
+export function load(): Preferences {
    const themeFromStorage = localStorage.getItem(LocalStorage.Theme);
    const theme =
       themeFromStorage && isTheme(themeFromStorage) ? themeFromStorage : Theme.System;

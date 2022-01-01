@@ -1,17 +1,17 @@
 ---
-title: Color Schemes!
+title: Reading Settings!
 subtitle: >
-    A few notes on pairing `prefers-color-scheme` and user configurability.
+    A few notes on pairing `prefers-color-scheme` and user configurability, as well as adding a little reading mode switch.
 date: 2022-01-01T12:00:00-0700
 tags:
-- JavaScript
-- TypeScript
-- CSS
-- web design
+    - JavaScript
+    - TypeScript
+    - CSS
+    - web design
 
 ---
 
-When redesigning this site, I knew I wanted to take advantage of macOS’ and Windows’ then-recently-added ability to support dark mode in the website (with the new <abbr title="cascading style sheets">CSS</abbr> media query [`prefers-color-scheme`]). However, I also knew that I wanted to make it user-configurable. It took me a couple of years to actually get around to it, but at last—at the same time as same time I publish this post—I have also added a tiny bit of JavaScript to the site that lets users override their operating system default to view the site in its light or dark theme as they please.
+When redesigning this site, I knew I wanted to take advantage of macOS’ and Windows’ then-recently-added ability to support dark mode in the website (with the new <abbr title="cascading style sheets">CSS</abbr> media query [`prefers-color-scheme`]). However, I also knew that I wanted to make it user-configurable. It took me a couple of years to actually get around to it, but at last—at the same time as same time I publish this post—I have also added a tiny bit of JavaScript to the site that lets users override their operating system default to view the site in its light or dark theme as they please. Since I was already at it, I also added a “reading mode” view to hide the navigation.
 
 [`prefers-color-scheme`]: http://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 
@@ -67,7 +67,7 @@ Then for the slightly tricky bit—applying these to the appropriate selectors. 
 
 ## JavaScript
 
-Because I did the hard work of pushing all the complexity into the <abbr>CSS</abbr>, the <abbr>JS</abbr> ends up being very simple. It only really has two responsibilities:
+Because I did the hard work of pushing all the complexity into the <abbr>CSS</abbr>, the <abbr>JS</abbr> ends up being fairly simple. It only really has two responsibilities:
 
 1. setting or clearing the `.light` or `.dark` classes when the user interacts with the <abbr title="user interface">UI</abbr> element
 2. if the user has specified an override, storing that decision somewhere to look it up when the site loads
@@ -80,7 +80,7 @@ There are three states the user can specify:
 - dark
 - system
 
-I chose to represent this with a radio toggle, and the JavaScript is fairly simple. (You can check out the entire implementation [here][ts]. I chose to make it *slightly* more robust than it needed to be, but the whole thing is under a kilobyte.)
+I chose to represent this with a radio toggle, and the JavaScript is fairly simple. (You can check out the entire implementation [here][ts]. I chose to make it *slightly* more robust than it absolutely “needed” to be, but the whole thing is under a kilobyte even so.)
 
 [ts]: TODO
 
@@ -94,8 +94,6 @@ There's no need to do anything fancy in terms of making this actually work; I ju
     name='theme'
     id='system'
     value='system'
-    oninput='setTheme'
-    checked
   >
   <label for='light'>light</label>
   <input
@@ -103,7 +101,6 @@ There's no need to do anything fancy in terms of making this actually work; I ju
     name='theme'
     id='light'
     value='light'
-    oninput='setTheme'
   >
   <label for='dark'>dark</label>
   <input
@@ -111,7 +108,6 @@ There's no need to do anything fancy in terms of making this actually work; I ju
     name='theme'
     id='dark'
     value='dark'
-    oninput='setTheme'
   >
 </form>
 ```
@@ -120,10 +116,16 @@ There's no need to do anything fancy in terms of making this actually work; I ju
 
 Modern browsers—anything newer than IE8!—all give us easy access to the `localStorage` API, which is perfect for this kind of thing.[^graceful-degradation]
 
-[progressive enhancement]: TODO
-
 *[IE8]: Internet Explorer 8
 *[API]: application programming interface
 
 [^graceful-degradation]: If the user happens to be in an environment where it *doesn't* exist or work for some reason, it's fine: it just falls back to matching the operating system, with a default of the light mode.
+
+## On vanilla JavaScript
+
+This is the part of the story where, per many of the folks out there, I’m supposed to tell you how vanilla JavaScript is awesome. And in terms of the size of the JavaScript I ship down to support this, doing it with vanilla <abbr>JS</abbr> was the right move. But… it’s a bit more complicated than “vanilla JS is better.”
+
+I ran an experiment around this time last year in doing this with Svelte. I liked it, and it was a *much* better experience than doing it in vanilla JavaScript. I shipped the non-Svelte version because I measured the result, and Svelte’s *runtime* cost 10× as much as the version written by hand, and for *this specific use case*, that didn’t make any sense.
+
+However, as I currently hope to elaborate on in a future piece, that’s really *only* because I was only authoring a single component here.
 
