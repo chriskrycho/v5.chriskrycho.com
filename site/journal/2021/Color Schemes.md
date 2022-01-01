@@ -2,7 +2,7 @@
 title: Reading Settings!
 subtitle: >
     A few notes on pairing `prefers-color-scheme` and user configurability, as well as adding a little reading mode switch.
-date: 2021-12-31T19:50:00-0700
+date: 2021-12-31T20:35:00-0700
 tags:
     - JavaScript
     - TypeScript
