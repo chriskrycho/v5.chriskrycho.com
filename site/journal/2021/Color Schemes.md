@@ -33,7 +33,7 @@ As is my habit when I deal with a question of how to implement something like th
 | ---------------------- | ------------------- | ------ |
 | `none`                 | none                | light  |
 | `none`                 | light               | light  |
-| `none`                 | dark                | light  |
+| `none`                 | dark                | dark   |
 | `light`                | none                | light  |
 | `light`                | light               | light  |
 | `light`                | dark                | dark   |
