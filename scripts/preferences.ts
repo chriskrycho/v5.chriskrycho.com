@@ -1,6 +1,6 @@
 export interface Preferences {
    theme: Theme;
-   readingMode: boolean;
+   hideNav: boolean;
 }
 
 export const enum Theme {
@@ -27,15 +27,15 @@ const updateThemeClass = (newTheme: Theme, element: HTMLElement): void => {
 
 function updateReadingModeClass(inReadingMode: boolean, element: HTMLElement): void {
    if (inReadingMode) {
-      element.classList.add('reading-mode');
+      element.classList.add('hide-side-nav');
    } else {
-      element.classList.remove('reading-mode');
+      element.classList.remove('hide-side-nav');
    }
 }
 
 const enum LocalStorage {
    Theme = 'sympolymathesy:theme',
-   ReadingMode = 'sympolymathesy:reading-mode',
+   NavMode = 'sympolymathesy:hide-side-nav',
 }
 
 // If the user chooses to follow the OS, simply delete the key from local storage: there
@@ -48,11 +48,11 @@ function saveThemePreference(theme: Theme): void {
    }
 }
 
-function saveReadingModePreference(inReadingMode: boolean): void {
-   if (inReadingMode) {
-      localStorage.setItem(LocalStorage.ReadingMode, 'true');
+function saveReadingModePreference(hideNav: boolean): void {
+   if (hideNav) {
+      localStorage.setItem(LocalStorage.NavMode, 'hide');
    } else {
-      localStorage.removeItem(LocalStorage.ReadingMode);
+      localStorage.removeItem(LocalStorage.NavMode);
    }
 }
 
@@ -61,9 +61,9 @@ export function load(): Preferences {
    const theme =
       themeFromStorage && isTheme(themeFromStorage) ? themeFromStorage : Theme.System;
 
-   const readingMode = localStorage.getItem(LocalStorage.ReadingMode) === 'true';
+   const hideNav = localStorage.getItem(LocalStorage.NavMode) === 'hide';
 
-   return { theme, readingMode };
+   return { theme, hideNav };
 }
 
 export function persistTheme(newTheme: Theme, onElement: HTMLElement) {
@@ -71,7 +71,7 @@ export function persistTheme(newTheme: Theme, onElement: HTMLElement) {
    saveThemePreference(newTheme);
 }
 
-export function persistReadingMode(inReadingMode: boolean, onElement: HTMLElement) {
+export function persistNavMode(inReadingMode: boolean, onElement: HTMLElement) {
    updateReadingModeClass(inReadingMode, onElement);
    saveReadingModePreference(inReadingMode);
 }

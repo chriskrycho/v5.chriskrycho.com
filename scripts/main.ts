@@ -8,19 +8,18 @@ const enum State {
 }
 
 function main() {
-   const { Root, Container, Panel, Show, Close, ColorSchemes, ReadingMode } =
-      getElements();
+   const { Root, Container, Panel, Show, Close, ColorSchemes, NavMode } = getElements();
 
    // At initialization, make sure the initial values are set correctly.
-   let { theme = Preferences.Theme.System, readingMode = false } = Preferences.load();
+   let { theme = Preferences.Theme.System, hideNav = false } = Preferences.load();
    Preferences.persistTheme(theme, Root);
-   Preferences.persistReadingMode(readingMode, Root);
+   Preferences.persistNavMode(hideNav, Root);
    ColorSchemes.forEach((el) => {
       if (el.id === theme) {
          el.checked = true;
       }
    });
-   ReadingMode.checked = readingMode;
+   NavMode.checked = hideNav;
 
    function setPanelTo(state: State) {
       switch (state) {
@@ -64,9 +63,9 @@ function main() {
       });
    });
 
-   ReadingMode.addEventListener('change', ({ target }) => {
+   NavMode.addEventListener('change', ({ target }) => {
       assert(target instanceof HTMLInputElement, 'misconfigured reading theme input');
-      Preferences.persistReadingMode(target.checked, Root);
+      Preferences.persistNavMode(target.checked, Root);
    });
 }
 
