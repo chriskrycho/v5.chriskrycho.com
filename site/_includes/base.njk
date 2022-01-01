@@ -1,8 +1,9 @@
 {% import 'components/nav.njk' as nav %}
 {% import 'components/social.njk' as social %}
+{% from 'components/preferences.njk' import Preferences %}
 
 <!DOCTYPE html>
-<html>
+<html data-sympolymathesy='root'>
    <head>
       <meta charset='utf-8'/>
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -28,9 +29,9 @@
          <link rel='alternate' href='/essays/feed.json' type='application/json' title='Essays - Sympolymathesy (JSON)'>
          <link rel='alternate' href='/journal/feed.json' type='application/json' title='Journal - Sympolymathesy (JSON)'>
          <link rel='alternate' href='/library/feed.json' type='application/json' title='Library - Sympolymathesy (JSON)'>
-         <link rel='alternate' href='/photos/feed.json' type='application/json' title='Elsewhere - Sympolymathesy (JSON)'>
-         <link rel='alternate' href='/elsewhere/feed.json' type='application/json' title='Elsewhere - Sympolymathesy (JSON)'>
+         <link rel='alternate' href='/photos/feed.json' type='application/json' title='Photos - Sympolymathesy (JSON)'>
          <link rel='alternate' href='/notes/feed.json' type='application/json' title='Notes - Sympolymathesy (JSON)'>
+         <link rel='alternate' href='/elsewhere/feed.json' type='application/json' title='Elsewhere - Sympolymathesy (JSON)'>
       {% endif -%}
 
       <link rel='alternate' href='/feed.xml' type='application/atom+xml' title='Sympolymathesy (Atom)'>
@@ -40,9 +41,9 @@
          <link rel='alternate' href='/essays/feed.xml' type='application/atom+xml' title='Essays - Sympolymathesy (Atom)'>
          <link rel='alternate' href='/journal/feed.xml' type='application/atom+xml' title='Journal - Sympolymathesy (Atom)'>
          <link rel='alternate' href='/library/feed.xml' type='application/atom+xml' title='Library - Sympolymathesy (Atom)'>
-         <link rel='alternate' href='/photos/feed.xml' type='application/atom+xml' title='Elsewhere - Sympolymathesy (Atom)'>
-         <link rel='alternate' href='/elsewhere/feed.xml' type='application/atom+xml' title='Elsewhere - Sympolymathesy (Atom)'>
+         <link rel='alternate' href='/photos/feed.xml' type='application/atom+xml' title='Photos - Sympolymathesy (Atom)'>
          <link rel='alternate' href='/notes/feed.xml' type='application/atom+xml' title='Notes - Sympolymathesy (Atom)'>
+         <link rel='alternate' href='/elsewhere/feed.xml' type='application/atom+xml' title='Elsewhere - Sympolymathesy (Atom)'>
       {% endif -%}
 
       {% for link in config.author.links -%}
@@ -54,7 +55,9 @@
 
       {% block extra_links %}{% endblock extra_links %}
 
-      <meta name="author" content="Chris Krycho" />
+      <link rel='preload' as='script' type='application/javascript' href='/assets/js/main.js'>
+
+      <meta name="author" content="Chris Krycho"/>
 
       {% block meta %}
          {{ social.meta(page, config) }}
@@ -90,5 +93,8 @@
             {%- endfor -%}
          </ul>
       </nav>
+
+      {{ Preferences() }}
+      <script src='/assets/js/main.js'></script>
    </body>
 </html>

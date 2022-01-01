@@ -812,6 +812,10 @@
    }
 
    @media (min-width: $reflow) {
+      .hide-side-nav .content-block {
+         margin-right: 20%;
+      }
+
       .content-block {
          padding-bottom: ms(3);
       }
