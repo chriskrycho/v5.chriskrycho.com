@@ -3,10 +3,13 @@ title: Reading Settings!
 subtitle: >
     A few notes on pairing `prefers-color-scheme` and user configurability, as well as adding a little reading mode switch.
 date: 2021-12-31T20:35:00-0700
-updated: 2021-12-31T21:05:00-0700
+updated: 2022-01-01T08:26:00-0700
 updates:
   - at: 2021-12-31T21:05:00-0700
     changes: Corrected the overhead from Svelte’s runtime.
+  - at: 2022-01-01T08:26:00-0700
+    changes: >
+      Fixed an error in the table (thanks to [Ben Makuh](https://benmakuh.com) for pointing it out!).
 tags:
     - JavaScript
     - TypeScript
