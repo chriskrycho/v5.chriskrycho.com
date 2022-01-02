@@ -53,7 +53,7 @@ declare module '../types/eleventy' {
          audience?: string;
          epistemic?: string;
       };
-      updates?: Array<{ at: string; changes: string }>;
+      updates?: Array<{ at: string; changes?: string }>;
       image?: string;
       link?: string;
       splash?: string;
@@ -175,13 +175,12 @@ function contentHtmlFor(
    const updates = item.data?.updates
       ? `<p><b>Updates:</br></p><ul>
             ${item.data.updates
-               .map(
-                  ({ at, changes }) =>
-                     `<li><b>${localeDate(
-                        at,
-                        'yyyy/MM/dd HH:mm',
-                     )}:</b> ${markdown.renderInline(changes)}</li>`,
-               )
+               .map(({ at, changes }) => {
+                  let date = localeDate(at, 'yyyy/MM/dd HH:mm');
+                  return changes
+                     ? `<li><b>${date}:</b> ${markdown.renderInline(changes)}</li>`
+                     : `<li><b>${date}</b></li>`;
+               })
                .join('\n')}
         </ul>`
       : '';
