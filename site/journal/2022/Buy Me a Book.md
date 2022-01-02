@@ -2,7 +2,7 @@
 title: Buy Me a Book
 subtitle: >
   Moving from Patreon to [BuyMeACoffee](https://www.buymeacoffee.com/chriskrycho) for folks to support my writing if so inclined.
-date: 2021-01-01T21:55:00-0700
+date: 2022-01-01T21:55:00-0700
 tags:
   - site meta
   - writing
