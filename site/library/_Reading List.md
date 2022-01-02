@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-02T09:35:00-0700
+date: 2022-01-02T11:10:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -75,6 +75,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
+
+
+## 2022
+
+
+### Fiction
 
 - [<cite>The Bayern Agenda: The Galactic Cold War, Book I</cite>](https://bookshop.org/a/21126/9780857668196), Dan Moren (new)
 
