@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-07T06:38:00-0700
+date: 2022-01-07T11:36:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -19,6 +19,7 @@ Quick links:
 
 - [Planned](#planned)
 - [Started](#started)
+- [2022](#2022)
 - [2021](#2021)
 - [2020](#2020)
 - [2019](#2019)
@@ -65,8 +66,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
 
-- [<cite>Icons of Christ: A Biblical and Systematic Theology for Women’s Ordination</cite>](https://bookshop.org/a/21126/9781481313193), William G. Witt (new)
-
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
 
 
@@ -78,6 +77,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 
 ## 2022
+
+
+### Nonfiction
+
+- [<cite>Icons of Christ: A Biblical and Systematic Theology for Women’s Ordination</cite>](https://bookshop.org/a/21126/9781481313193), William G. Witt (new)
 
 
 ### Fiction
