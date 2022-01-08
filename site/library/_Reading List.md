@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-02T11:10:00-0700
+date: 2022-01-07T06:38:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -83,6 +83,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>The Bayern Agenda: The Galactic Cold War, Book I</cite>](https://bookshop.org/a/21126/9780857668196), Dan Moren (new)
+- [<cite>The Aleph Extraction: The Galactic Cold War, Book II</cite>](https://bookshop.org/a/21126/9780857668417), Dan Moren (new)
 
 ## 2021
 
