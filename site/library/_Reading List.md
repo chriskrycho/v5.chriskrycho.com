@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-07T11:36:00-0700
+date: 2022-01-08T15:22:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -67,6 +67,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
 
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
+
+- [<cite>The Soul of a New Machine</cite>](https://bookshop.org/a/21126/9780316491976), Tracy Kidder (new)
+
+- [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
 
 ### Fiction
