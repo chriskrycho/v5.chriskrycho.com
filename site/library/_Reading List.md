@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-08T15:22:00-0700
+date: 2022-01-09T21:25:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -68,8 +68,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
 
-- [<cite>The Soul of a New Machine</cite>](https://bookshop.org/a/21126/9780316491976), Tracy Kidder (new)
-
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
 
@@ -86,6 +84,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Nonfiction
 
 - [<cite>Icons of Christ: A Biblical and Systematic Theology for Women’s Ordination</cite>](https://bookshop.org/a/21126/9781481313193), William G. Witt (new)
+
+- [<cite>The Soul of a New Machine</cite>](https://bookshop.org/a/21126/9780316491976), Tracy Kidder (new)
 
 
 ### Fiction
