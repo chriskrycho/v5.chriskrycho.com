@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-09T21:25:00-0700
+date: 2022-01-12T21:26:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,6 +69,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
 
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
+
+- [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
 
 
 ### Fiction
