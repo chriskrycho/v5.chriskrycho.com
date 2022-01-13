@@ -2,9 +2,12 @@
 title: Don’t Sprint the First Mile of a Half Marathon
 subtitle: On establishing a sustainable pace at the start of a new year.
 date: 2022-01-12T21:24:00-0700
+updated: 2022-01-13T08:25:00-0700
 tags:
   - working effectively
   - running
+  - writing
+  - reading
 
 ---
 
@@ -16,10 +19,6 @@ A week into 2022, I am making steady progress on my goals for the year so far—
 ---
 
 When running a half marathon, it’s important to set a pace on the first mile you can sustain throughout the race. It’s also really *hard* to do that. Come race day, the combination of excitement and pent-up energy from taking it easy during the “taper” leading up to the race makes it easy to go out *waaaaay* too fast on the first mile. I should know. I have managed to avoid doing that… never. (I have gotten close twice, and both were my best-ever races. But even those: I could have done better.) The problem is that a half marathon is a long race: it’s best thought of as two five-mile runs with a (hopefully) fast 5-kilometer push at the end. If you spend too much energy on the first mile, you will pay for it in the latter miles of the run—no matter how good it feels to let loose for that first mile.
-
----
-
-When going through a year in life, it’s important to set a pace for your aims you can sustain throughout the year.[^new-year] It’s also really *hard* to do that. Come January 1, the combination of having concluded some set of tasks in the preceding year with feeling energized and enthusiastic about the possibilities of the year ahead (and perhaps recharged from a short holiday vacation) makes it easy to go out *waaaaay* too fast for the first month. I should know. I have managed to avoid doing that… never (until this year?). The problem is that  a year is a long time! If you spend too much energy in the first month, you ill pay for it in the latter months of the year—no matter how good it feels to let loose in January.
 
 ---
 
@@ -40,6 +39,8 @@ Another thing I am not doing is: pushing myself to read or write for large chunk
 Some days I feel like reading or writing more than that, and I allow myself the little push. But not over much. More, on days like Monday where I needed to sleep in instead, I *do*; and on days like today where I got to my writing (this post!) only in the evening, that’s *fine*.
 
 ---
+
+When going through a year in life, it’s important to set a pace for your aims you can sustain throughout the year.[^new-year] It’s also really *hard* to do that. Come January 1, the combination of having concluded some set of tasks in the preceding year with feeling energized and enthusiastic about the possibilities of the year ahead (and perhaps recharged from a short holiday vacation) makes it easy to go out *waaaaay* too fast for the first month. I should know. I have managed to avoid doing that… never (until this year?). The problem is that  a year is a long time! If you spend too much energy in the first month, you ill pay for it in the latter months of the year—no matter how good it feels to let loose in January.
 
 Don’t sprint the first mile of a half marathon—the first month of a year. Set a pace you can sustain, and you will find yourself able to work far more effectively over the rest of the “course” that is a year.
 
