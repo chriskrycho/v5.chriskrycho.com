@@ -40,7 +40,7 @@ Some days I feel like reading or writing more than that, and I allow myself the 
 
 ---
 
-When going through a year in life, it’s important to set a pace for your aims you can sustain throughout the year.[^new-year] It’s also really *hard* to do that. Come January 1, the combination of having concluded some set of tasks in the preceding year with feeling energized and enthusiastic about the possibilities of the year ahead (and perhaps recharged from a short holiday vacation) makes it easy to go out *waaaaay* too fast for the first month. I should know. I have managed to avoid doing that… never (until this year?). The problem is that  a year is a long time! If you spend too much energy in the first month, you ill pay for it in the latter months of the year—no matter how good it feels to let loose in January.
+When starting a new year,[^new-year] it’s important to set a pace for your aims you can sustain throughout the whole year. It’s also really *hard* to do that. Come January 1, the combination of having concluded some set of tasks in the preceding year with feeling energized and enthusiastic about the possibilities of the year ahead (and perhaps recharged from a short holiday vacation) makes it easy to go out *waaaaay* too fast for the first month. I should know. I have managed to avoid doing that… never (until this year?). The problem is that  a year is a long time! If you spend too much energy in the first month, you ill pay for it in the latter months of the year—no matter how good it feels to let loose in January.
 
 Don’t sprint the first mile of a half marathon—the first month of a year. Set a pace you can sustain, and you will find yourself able to work far more effectively over the rest of the “course” that is a year.
 
