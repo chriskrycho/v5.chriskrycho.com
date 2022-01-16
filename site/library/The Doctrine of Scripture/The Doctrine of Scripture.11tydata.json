@@ -1,0 +1,17 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/the-doctrine-of-scripture/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "The Doctrine of Scripture",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/the-doctrine-of-scripture.jpg",
+      "author": "Brad East",
+      "year": 2021,
+      "link": "https://bookshop.org/a/21126/9781532664991"
+   },
+   "tags": [
+      "Brad East",
+      "The Doctrine of Scripture",
+      "theology",
+      "Bible"
+   ]
+}
