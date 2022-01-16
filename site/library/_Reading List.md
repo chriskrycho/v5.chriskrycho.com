@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-12T21:26:00-0700
+date: 2022-01-16T16:56:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -71,6 +71,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
+
+- [<cite>The Corrosion of Character: The Personal Consequences of Work in the New Capitalism</cite>](https://bookshop.org/a/21126/9780393319873), Richard Sennett (new)
 
 
 ### Fiction
