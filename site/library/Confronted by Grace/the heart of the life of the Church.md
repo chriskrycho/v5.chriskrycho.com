@@ -10,7 +10,7 @@ tags:
 
 ---
 
-<figure>
+<figure class="quotation">
 
 > First, hearing the Word of the gospel demands a certain definiteness on the part of the Christian community. It demands, that is, that the Church be *this* community, the community of Jesus Christ, the community that keeps his Word and does not deny his name. Hearing his Word requires that the Church have a certain clarity of profile, a clear shape. The Christian community will function well when it is much absorbed by listening to its Scripture, seeking the voice of God there, without worrying too much about other voices to which it might attend. There has to be a certain focused intensity in the Church's listening: Here, not there, we are to expect God's address of us, and so here, not there, is where we will wait.
 > 
