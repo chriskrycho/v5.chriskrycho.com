@@ -12,7 +12,7 @@ templateEngineOverride: md
 
 ---
 
-The Ember and Glimmer community is currently experimenting with designs for components being available in the same file as supporting JavaScript—sometimes described as “single-file components” (or <abbr>SFC</abbr>s). There are some working implementations in the [ember-template-imports][eti] repository, and Ember’s community and leadership has already committed to making *some* move in this space [the strict mode templates <abbr title="request for comments">RFC</abbr>][strict].
+The Ember and Glimmer community is currently experimenting with designs for component templates being available in the same file as supporting JavaScript—sometimes described as “single-file components” (or <abbr>SFC</abbr>s). There are some working implementations in the [ember-template-imports][eti] repository, and Ember’s community and leadership has already committed to making *some* move in this space [the strict mode templates <abbr title="request for comments">RFC</abbr>][strict].
 
 [eti]: https://github.com/ember-template-imports/ember-template-imports
 [strict]: https://emberjs.github.io/rfcs/0496-handlebars-strict-mode.html
