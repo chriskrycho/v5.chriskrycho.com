@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-19T08:13:00-0700
+date: 2022-01-19T08:41:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -78,6 +78,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
+
+- <cite>The Great Hunt</cite>, Robert Jordan (reread)
 
 
 ## 2022
