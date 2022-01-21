@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-01-19T08:41:00-0700
+date: 2022-01-21T07:23:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -72,6 +72,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
 
+- [<cite>Out of Office: The Big Problem and Bigger Promise of Working from Home</cite>](https://bookshop.org/a/21126/9780593320099), Charlie Warzel and Anne Helen Petersen
+
 
 ### Fiction
 
@@ -115,7 +117,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Word and Church</cite>](https://bookshop.org/a/21126/9780567658906), John Webster (new)
     - [posts on the book](/topics/word-and-church/)
 
-- <cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>, Nicole Forsgren, Jez Humble, and Gene Kim (new)
+- [<cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>](https://bookshop.org/a/21126/9781942788331), Nicole Forsgren, Jez Humble, and Gene Kim (new)
 
 - [<cite>God Without Measure: Working Papers in Christian Theology: Volume I: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
     - [posts on the book](/library/god-without-measure/volume-i/)
