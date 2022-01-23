@@ -41,7 +41,7 @@ The visuals are one of the things I keep coming back to as I think about the mov
 
 ---
 
-For the score, I have almost nothing good to say. The theme is catchy, in the way of Ramin Djawadi themes, but it has otherwise nothing to commend it: it is just as indescript and generic as nearly every other Marvel movie entry, the culmination of Hans Zimmer’s style having taken over the entire industry. In this regard, it stands in contrast to the rest of the film. Whereas the rest of the film has at least the shadow of a good movie in it, this score is truest to the Marvel formula.
+For the score, I have almost nothing good to say. The theme is catchy, in the way of Ramin Djawadi themes, but it has otherwise nothing to commend it: it is just as nondescript and generic as nearly every other Marvel movie entry, the culmination of Hans Zimmer’s style having taken over the entire industry. In this regard, it stands in contrast to the rest of the film. Whereas the rest of the film has at least the shadow of a good movie in it, this score is truest to the Marvel formula.
 
 Here, in fact, is perhaps the greatest failing of the Marvel film franchise: an utter lack of vision for how their film scores could mark out distinctive identities for each film, each character, with an eye to meshing them effectively at the meetups. With the few exceptions in Silvestri’s work for the Avengers and Captain America, Jackman’s work on Captain America and the Falcon, and a very distinctive set of motifs for Wakanda, the films have stuck to safely generic modern movie scoring tropes, to their great loss.
 
