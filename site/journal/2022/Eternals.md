@@ -9,7 +9,7 @@ qualifiers:
   audience: >
     People who care (at least a little) about our popular culture; and people who either have seen or do not care about being spoiled on <cite>Eternals</cite>, because this post discusses it freely.
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/eternals.jpg
-date: 2022-01-22T21:10:00-0700
+date: 2022-01-22T21:17:00-0700
 
 ---
 
@@ -29,9 +29,9 @@ Honestly, it shouldn’t work at all. It’s not that it is a *good* movie; it i
 
 ---
 
-Big bad Arishem, besides being a demonic figure who claims to justify repeated genocide on the basis of future good, apparently decided for… reasons… that he would make one of the Eternals a permanent child and another of them deaf. Why? The movie does not have time for that question (despite its two hour and forty-five minute runtime). Nor do we have any explanation for why these characters have the assortment of powers that they do, nor for the 
+Big bad Arishem, besides being a demonic figure who claims to justify repeated genocide on the basis of future good, apparently decided for… reasons… that he would make one of the Eternals a permanent child and another of them deaf. Why? The movie does not have time for that question (despite its two hour and forty-five minute runtime). Nor do we have any explanation for why these characters have the assortment of powers that they do, nor for the particular distribution of them per planet (apparently there are lots of these, Cersi’s mid-movie vision notwithstanding), nor for the specific number of them, nor why if there are so many copies of them they have their memories wiped after their missions instead of just being replaced, nor why a being as powerful as Arishem (who can zip them up off the planet at whim) couldn’t just do that with his first creations, nor why or how the absorption of memories and identities into a particular Deviant doesn’t change it in any way… In sum, the characterizations here fall apart at a blush.
 
-And yet: the on-screen presence of both of those characters is *interesting*. Having a deaf woman acting and interacting completely naturally and normally with the rest of the cast was beautiful, and as head-scratch-inducing as Makkari was if I stopped to think about it for half a second, I really enjoyed the character *as a character*—even for as relatively little as we saw of her. 
+And yet: the on-screen presence of both of those characters is *interesting*. Having a deaf woman acting and interacting completely naturally and normally with the rest of the cast was beautiful, and as head-scratch-inducing as Makkari was if I stopped to think about it for half a second, I really enjoyed the character *as a character*—even for as relatively little as we saw of her. I could say much the same for nearly all the characters. Too little development of a lot of interesting potential.
 
 ---
 
