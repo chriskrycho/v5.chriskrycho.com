@@ -21,7 +21,7 @@ const optionalString = (value: unknown): string | undefined =>
 
 type Author = { author: string } | { authors: string[] };
 
-type Review = {
+interface Review {
    review?: {
       rating:
          | 'Required'
@@ -30,15 +30,17 @@ type Review = {
          | 'Not Recommended';
       summary: string;
    };
-};
+}
 
-type Book = Review &
-   Author & {
-      title: string;
-      year?: number | string;
-      cover?: string;
-      link?: string;
-   };
+interface BookMeta {
+   title: string;
+   year?: number | string;
+   cover?: string;
+   link?: string;
+}
+
+// Must be a `type` alias because interfaces cannot extend unions.
+type Book = BookMeta & Author & Review;
 
 /** Extending the base Eleventy item with my own data */
 declare module '../types/eleventy' {
@@ -81,7 +83,7 @@ type TypeOf =
    | 'symbol'
    | 'function';
 
-function hasType<T extends TypeOf>(type: T, item: unknown): item is T {
+function is<T extends TypeOf>(type: T, item: unknown): item is T {
    return typeof item === type;
 }
 
@@ -95,10 +97,10 @@ function isBook(maybeBook: unknown): maybeBook is Book {
    return (
       typeof maybe.title === 'string' &&
       (typeof maybe.author === 'string' || Array.isArray(maybe.authors)) &&
-      (hasType('number', maybe.year) || hasType('string', maybe.year)) &&
-      hasType('object', maybe.review) &&
-      hasType('string', maybe.cover) &&
-      hasType('string', maybe.link)
+      (is('number', maybe.year) || is('string', maybe.year)) &&
+      is('object', maybe.review) &&
+      is('string', maybe.cover) &&
+      is('string', maybe.link)
    );
 }
 
