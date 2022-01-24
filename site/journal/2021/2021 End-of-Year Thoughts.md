@@ -26,7 +26,7 @@ tags:
 
 As is now traditional (see [the *long* list](#previous-years) of previous posts of this variety at the bottom of this post!), my end-of-2021 reflections.
 
-This year, like 2020, was not the year I had hoped for or expected—for many reasons. Most significant among external factors: we didn’t make nearly as much forward progress on dealing with <abbr title="">COVID</abbr>-19 as I had hoped (would that vaccination rates were higher and both infection and fatality rates correspondingly lower!). Beyond that, there were plenty of other things big and small in our lives which simply meant the year went *differently* than I thought it might. In summary: where 2020 was a series of very large disruptions, 2021 was a slog through the ongoing ramifications of 2020. I am—and so is everyone I talk to—*worn down* in a way I can hardly put into words.
+This year, like 2020, was not the year I had hoped for or expected—for many reasons. Most significant among external factors: we didn’t make nearly as much forward progress on dealing with <abbr title="Coronavirus disease">COVID</abbr>-19 as I had hoped (would that vaccination rates were higher and both infection and fatality rates correspondingly lower!). Beyond that, there were plenty of other things big and small in our lives which simply meant the year went *differently* than I thought it might. In summary: where 2020 was a series of very large disruptions, 2021 was a slog through the ongoing ramifications of 2020. I am—and so is everyone I talk to—*worn down* in a way I can hardly put into words.
 
 <aside>
 
