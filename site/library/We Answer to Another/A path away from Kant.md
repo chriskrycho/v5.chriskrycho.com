@@ -29,7 +29,7 @@ When I first read this, it had the force of a mental triple take:
 
 1. Standard reading mode.
 2. *Wait, what? That can’t be right, can it?*
-3. Huh. I think… that is absolutely correct.
+3. Huh. I think… that is absolutely correct.
 
 It’s early pages yet, but the idea is striking: not simply that we’ve been getting it wrong with liberalism, but quite specifically: that the key mistake of liberalism is to ground all our ideals in *liberty as such* rather than to see individual liberties as a proper response to the *authority* of a human person *qua human person*: that abridgements of liberties are abridgements not because liberty is itself the supreme ideal but because it is violating another’s rightful authority over her own person (an authority that itself stands under the authority of God the creator).
 

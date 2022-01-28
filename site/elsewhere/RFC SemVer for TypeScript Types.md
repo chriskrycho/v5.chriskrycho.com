@@ -47,7 +47,7 @@ This is one of the biggest technical efforts of my career to date, and I think i
 
 - It releases new language and compiler versions roughly once a quarter, and every change may be breaking in small or big ways.
 
-Writing a definition of SemVer for TypeScript, which can absorb all of that and help package authors provide stable types for their consumers… was a lot of work! A friend asked me yesterday, “How long did it take you to write this?” Long-time collaborator [James Davis](https://github.com/jamescdavis) (who, along with our *other* long-time collaborator [Dan Freeman](https://github.com/dfreeman), is a huge part of why this is good if it is!), quipped:
+Writing a definition of SemVer for TypeScript, which can absorb all of that and help package authors provide stable types for their consumers… was a lot of work! A friend asked me yesterday, “How long did it take you to write this?” Long-time collaborator [James Davis](https://github.com/jamescdavis) (who, along with our *other* long-time collaborator [Dan Freeman](https://github.com/dfreeman), is a huge part of why this is good if it is!), quipped:
 
 > That's when you ask: "do you mean putting words on the page or figuring out what even needs to be said?"
 

@@ -70,7 +70,7 @@ If you’d like to skip to a specific section of this year’s write-up, have at
 
 ## Overview
 
-2019 was on the whole a restful year, a year of recovery. I desperately needed that after the quite severe burnout I experienced in 2018. I’m grateful I was able to recover well, and to get to a point where I’m looking forward to really digging in and working hard in 2020. That basic theme—of rest and recovery—is the note to which I’m returning throughout as I draft this. 2018 was an incredibly difficult year, and I came to the end of it hopeful… but exhausted. 2019 was nothing like 2018. I come to the end of it not only hopeful but well-rested, feeling myself again in ways I am only beginning to put my finger on just this week. It feels like the sails of my mental-emotional ship are slowly unfurling,  newly-repaired after having been dreadfully torn by the years past. It’s a very, very good feeling.
+2019 was on the whole a restful year, a year of recovery. I desperately needed that after the quite severe burnout I experienced in 2018. I’m grateful I was able to recover well, and to get to a point where I’m looking forward to really digging in and working hard in 2020. That basic theme—of rest and recovery—is the note to which I’m returning throughout as I draft this. 2018 was an incredibly difficult year, and I came to the end of it hopeful… but exhausted. 2019 was nothing like 2018. I come to the end of it not only hopeful but well-rested, feeling myself again in ways I am only beginning to put my finger on just this week. It feels like the sails of my mental-emotional ship are slowly unfurling,  newly-repaired after having been dreadfully torn by the years past. It’s a very, very good feeling.
 
 ## Podcasting
 

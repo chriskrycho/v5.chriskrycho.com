@@ -13,6 +13,6 @@ I was running out of time this morning: a sick kid had very much interrupted the
 
 But I *wanted* to write: because the whole point of that aspirational quiet morning was to have some time for thinking and writing. So I decided that even if I only had five minutes, I would write for those five minutes. And so I did. I made progress on one of the essays I am sloooowly working on: around 250 words. A lot of those words are poorly-chosen and badly-assembled into phrases that are anything but felicitous. (That is: it will need editing.) But I wrote. I made progress. That was the thing, especially on the first day trying to get back in the groove of doing serious thinking and writing every morning.
 
-Consider this your friendly nudge: maybe you don’t feel like you have time to make *real* progress on whatever it is you’re writing. Perhaps you don’t: there are phases in writing which do simply take dedicated time. They’re fewer and further between than they feel, though. Next time you have just five minutes… just write.
+Consider this your friendly nudge: maybe you don’t feel like you have time to make *real* progress on whatever it is you’re writing. Perhaps you don’t: there are phases in writing which do simply take dedicated time. They’re fewer and further between than they feel, though. Next time you have just five minutes… just write.
 
 (This piece, too: just five minutes. I write quickly, yes; but more importantly, I *write*.) 

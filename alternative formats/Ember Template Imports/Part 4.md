@@ -1,4 +1,4 @@
-# Part 4 – Testing
+# Part 4 – Testing
 
 *Keeping, and improving on, one of Ember’s fundamental commitments—and biggest strengths: its integrated testing.*
 
@@ -105,7 +105,7 @@ this.owner.register(
 );
 ```
 
-Once we have either the template literals or `<template>` proposals, this becomes much easier. It’s exactly the same as authoring a component in the first place! This is actually a bonus for our teaching story, which I intentionally skipped over in Part 2 because it’s such a key point of this part. Instead of needing to teach the “special sauce” for testing, authoring a local-only component is identical in app code and test code.
+Once we have either the template literals or `<template>` proposals, this becomes much easier. It’s exactly the same as authoring a component in the first place! This is actually a bonus for our teaching story, which I intentionally skipped over in Part 2 because it’s such a key point of this part. Instead of needing to teach the “special sauce” for testing, authoring a local-only component is identical in app code and test code.
 
 With `<template>`, for example:
 

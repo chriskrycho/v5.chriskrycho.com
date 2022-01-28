@@ -42,7 +42,7 @@ Throughout this discussion, I will use the following terms:
 
 <dl>
 <dt>template-only components</dt>
-<dd>Components which have no backing class and therefore no state of their own. Note that a “template-only” component may still be highly <em>dynamic</em> with the use of helpers, modifiers, and possible future extensions to the framework programming model such as <a href="https://www.pzuraq.com/introducing-use/">Resources and Effects</a>.</dd>
+<dd>Components which have no backing class and therefore no state of their own. Note that a “template-only” component may still be highly <em>dynamic</em> with the use of helpers, modifiers, and possible future extensions to the framework programming model such as <a href="https://www.pzuraq.com/introducing-use/">Resources and Effects</a>.</dd>
 
 <dt>strict mode</dt>
 <dd>The “strict” resolution rules for values in templates defined in <a href="https://emberjs.github.io/rfcs/0496-handlebars-strict-mode.html">Ember RFC #0496</a>.</dd>

@@ -453,7 +453,7 @@ class Veggie {
 
 <section class="note" aria-label="note">
 
-Notice the `// SAFETY: ...` comment I added when using the non-null assertion operator `!` with `this.color`. I borrowed this idea from the Rust community, which marks all uses of `unsafe` with these kinds of comments. I use it *any time* I write a cast in TypeScript, for the sake of whoever is maintaining the code in the future… including future *me*. It’s important to know what might make a cast unsafe! For a way to not need this comment at all by having better safety, you’ll want to read the *next* post.
+Notice the `// SAFETY: ...` comment I added when using the non-null assertion operator `!` with `this.color`. I borrowed this idea from the Rust community, which marks all uses of `unsafe` with these kinds of comments. I use it *any time* I write a cast in TypeScript, for the sake of whoever is maintaining the code in the future… including future *me*. It’s important to know what might make a cast unsafe! For a way to not need this comment at all by having better safety, you’ll want to read the *next* post.
 
 </section>
 
@@ -791,7 +791,7 @@ Enjoyed this? Check out [Part 2](/journal/data-constructors-part-2-better-typesc
 
     ```ts
     class Veggie {
-      constructor(readonly kind: VeggieKind) {}
+      constructor(readonly kind: VeggieKind) {}
     }
     ```
 

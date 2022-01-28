@@ -38,7 +38,7 @@ Before diving into the answers I wrote up, the big and all-important qualifier: 
 
 [^lightning]: 11ty is still *fine*, and it’ll probably never make sense for me to finish [my own static site generator](https://github.com/chriskrycho/lightning-rs), even as a [home-cooked-meal-style app](https://www.robinsloan.com/notes/home-cooked-app/), but *wow* do I ever want to.
 
-Which leads me to **editing software:** I’m just using Lightroom CC—I spend the $10/month on it because it’s *very* good and very easy to use, including on iPad, which is where I actually do most of my editing. iPad Pro + Apple Pencil is a phenomenal editing experience. I *occasionally* do editing on my computer but… mostly just on my iPad. (Note that to make that work you need one with a lot of storage: I have the 512GB model and that does just fine.)
+Which leads me to **editing software:** I’m just using Lightroom CC—I spend the $10/month on it because it’s *very* good and very easy to use, including on iPad, which is where I actually do most of my editing. iPad Pro + Apple Pencil is a phenomenal editing experience. I *occasionally* do editing on my computer but… mostly just on my iPad. (Note that to make that work you need one with a lot of storage: I have the 512GB model and that does just fine.)
 
 **Camera:** my normal camera is the [Sony α7R IV](https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilce7rm4-b). It is a *phenomenal* camera body with two features that are both upsides and downsides:
 

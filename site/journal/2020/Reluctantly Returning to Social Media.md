@@ -20,7 +20,7 @@ tags:
 
 For a year and a half, I have been happily, blissfully [off of social media](https://v4.chriskrycho.com/2019/breaking-up-with-social-media.html "Breaking Up With Social Media"). I feel today what I felt then. However, I’m increasingly working on projects both for my day job and for my general professional development which would benefit from more interaction with the public at large. It is extremely unfortunate, in my view, that there is no easy mechanism for social interactivity via the indie web, and that the critical mass of software developers in particular is on Twitter in particular. But that’s reality.
 
-So I am left considering how I can employ social media in general and Twitter in particular… while minimizing its injurious effects on my soul.
+So I am left considering how I can employ social media in general and Twitter in particular… while minimizing its injurious effects on my soul.
 
 That’s not being overly dramatic. I could feel the effect of even just being *exposed* to much Twitter content via the handful of feeds I had piped into [Feedbin](https://feedbin.com) and that friends would send me via text message. It’s particularly bad for anything about politics, but it’s not great in *any* category. It’s full of anger and hatred and conspiracy theorizing and arguing in bad faith. I don’t even want to *see* any of that, much less be pulled into it.
 

@@ -18,7 +18,7 @@ StaffPad makes that pretty easy, thankfully: its built-in [versions][versions] f
 [vcs]: https://en.wikipedia.org/wiki/Version_control
 [versions]: https://staffpad.zendesk.com/hc/en-us/articles/360005388577-Versions
 
-1. Whenever I want to create a sort of “checkpoint” in my work, I go to the versions panel and create a new version.
+1. Whenever I want to create a sort of “checkpoint” in my work, I go to the versions panel and create a new version.
 
 2. I rename the previous version to the current date, formatted like `2021-07-28`. (I format all my dates this way, and so should you if you’re doing something like this: it makes them trivial to sort in a folder on a computer!)
 

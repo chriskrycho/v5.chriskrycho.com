@@ -73,7 +73,7 @@ At LinkedIn, I have become comfortable leading large efforts that impact hundred
 
 *From individual contributor to a project lead with organization-wide influence.*
 
-From **January 2016 – January 2019**, I was a front-end-focused software engineer at [**Olo**][olo], a scale-up-phase startup which is the leading provider of online ordering for large restaurant brands.
+From **January 2016 – January 2019**, I was a front-end-focused software engineer at [**Olo**][olo], a scale-up-phase startup which is the leading provider of online ordering for large restaurant brands.
 
 [olo]: https://www.olo.com
 
