@@ -55,7 +55,7 @@ Both of those things got done because this is small. But both of them also let m
 
 ### Spiking
 
-True Myth has also been a good place to run small experiments we may or may not ship if they don’t work out. For example, yesterday I [converted the whole thing into a monorepo][spike], with separate projects for `@true-myth/maybe` and `@true-myth/result` and a `true-myth` “façade” package which re-exported both and maintains today’s public <abbr title="application programming interface">API</abbr>. We aren’t shipping that change, because it doesn’t provide any actual value: modern tooling allows us to give end users all the benefits it might provide *without* adding all the additional complexity the monorepo-with-multiple-packages entails (see [here][toolbelt]).
+True Myth has also been a good place to run small experiments we may or may not ship if they don’t work out. For example, yesterday I [converted the whole thing into a monorepo][spike], with separate projects for `@true-myth/maybe` and `@true-myth/result` and a `true-myth` “façade” package which re-exported both and maintains today’s public <abbr title="application programming interface">API</abbr>. We aren’t shipping that change, because it doesn’t provide any actual value: modern tooling allows us to give end users all the benefits it might provide *without* adding all the additional complexity the monorepo-with-multiple-packages entails (see [here][toolbelt]).
 
 [toolbelt]: https://github.com/true-myth/true-myth/pull/246
 

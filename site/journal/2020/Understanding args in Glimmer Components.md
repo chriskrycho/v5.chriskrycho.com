@@ -154,7 +154,7 @@ class Profile extends Component {
     super(args);
 
     // just set the property -- won't update because it's just setting
-    // a property to a value
+    // a property to a value
     this.description =
       `${this.args.name} is ${this.args.age} years old`;
   }

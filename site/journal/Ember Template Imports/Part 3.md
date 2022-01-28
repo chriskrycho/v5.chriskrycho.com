@@ -36,9 +36,9 @@ In this, the third of a planned five-part [series][series] on Ember’s *templat
 
 Recall from those posts that there are four basic formats under discussion:
 
-- `<template>` tags with a custom file extension (currently `.gjs` and `.gts`)
-- template literals using an `hbs` literal
-- something like Svelte’s and Vue’s SFC format
+- `<template>` tags with a custom file extension (currently `.gjs` and `.gts`)
+- template literals using an `hbs` literal
+- something like Svelte’s and Vue’s SFC format
 - an imports-only extension of the current format
 
 <section class="note" aria-label="Note">
@@ -93,7 +93,7 @@ There already exists a *basic* degree of support for all of these formats in ter
 
 - The imports-only format “works” in all editors I have tried, but without any JS-specific formatting for the imports section. It is simply presented as plain text.
 
-- SFCs get syntax highlighting “out of the box” by VS Code if you use a `.hbs` extension, which makes sense: the Handlebars syntax highlighting is an extension of basic <abbr title="HyperText Markup Language">HTML</abbr> highlighting, and VS Code’s <abbr>HTML</abbr> highlighter has built-in support for embedded langauges in `<script>` and `<style>` tags. Other editors—including Vim, Sublime Text, and IntelliJ—generally work similarly here, and for the same reason.
+- SFCs get syntax highlighting “out of the box” by VS Code if you use a `.hbs` extension, which makes sense: the Handlebars syntax highlighting is an extension of basic <abbr title="HyperText Markup Language">HTML</abbr> highlighting, and VS Code’s <abbr>HTML</abbr> highlighter has built-in support for embedded langauges in `<script>` and `<style>` tags. Other editors—including Vim, Sublime Text, and IntelliJ—generally work similarly here, and for the same reason.
 
 - Both`hbs` and `<template>` have at least some degree of syntax highlighting support via various editor extensions, e.g. [vscode-glimmer][vscode-glimmer] for VS Code, which also adds support for treating `.gjs` and `.gts` as aliases for the <abbr title="JavaScript">JS</abbr> and <abbr title="TypeScript">TS</abbr> syntaxes respectively.
 
@@ -165,7 +165,7 @@ export default class WeatherSummary extends Component {
 
 We’d see exactly the same warnings about unused code in an <abbr>SFC</abbr> format, and for the same basic reasons: we have to inform the JavaScript and template linters about values in the *other* language.
 
-Now, all of the options other than the imports-only format work more or less correctly for all of the parts of any given module which *aren’t* related to templates. (The imports-only format simply doesn’t connect the two layers at all at present, so there are no false positives… but I don’t think we can call that a win.) Perhaps surprisingly, `<template>` actually *appears* to do slightly better than the others in terms of recognizing that we are actually using values in module scope—but this is because it’s attempting to parse `<template>` and the contents of it as <abbr title="JavaScript XML">JSX</abbr>. This means that editors which use the TypeScript Language Service (including for their JavaScript support) get *very* confused and report syntax errors everywhere, because Glimmer templates and <abbr>JSX</abbr> aren't compatible.
+Now, all of the options other than the imports-only format work more or less correctly for all of the parts of any given module which *aren’t* related to templates. (The imports-only format simply doesn’t connect the two layers at all at present, so there are no false positives… but I don’t think we can call that a win.) Perhaps surprisingly, `<template>` actually *appears* to do slightly better than the others in terms of recognizing that we are actually using values in module scope—but this is because it’s attempting to parse `<template>` and the contents of it as <abbr title="JavaScript XML">JSX</abbr>. This means that editors which use the TypeScript Language Service (including for their JavaScript support) get *very* confused and report syntax errors everywhere, because Glimmer templates and <abbr>JSX</abbr> aren't compatible.
 
 The net here is that we have to implement a custom parsing layer for *any* of these formats to have usable linting integration.
 

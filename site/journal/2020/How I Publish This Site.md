@@ -98,7 +98,7 @@ In general, I’m not opposed to paying for good services—actually, very much 
 
 ## Writing
 
-These days I do my writing in a wild hodgepodge of tools. None of them thrill me, because all of them do *some* things really well… and leave others in a “ugh, not quite there” state. For example, this particular paragraph I’m drafting in [Byword]—my old standby, an app I’ve been using for over half a decade now. It remains a rock-solid, very lightweight and very *fast* editor with just the right level of minimal Markdown support, and I love it for that. If I’m just writing a blog post like this, and I’m on macOS, Byword is still the app I’m most likely to reach for.
+These days I do my writing in a wild hodgepodge of tools. None of them thrill me, because all of them do *some* things really well… and leave others in a “ugh, not quite there” state. For example, this particular paragraph I’m drafting in [Byword]—my old standby, an app I’ve been using for over half a decade now. It remains a rock-solid, very lightweight and very *fast* editor with just the right level of minimal Markdown support, and I love it for that. If I’m just writing a blog post like this, and I’m on macOS, Byword is still the app I’m most likely to reach for.
 
 However, when I am working on code samples, it leaves a few things to be desired. For that, I turn to [Caret]—a more recent discovery, and one that lacks Byword’s light weight and phenomenal performance, but which is tuned to the writing *programmer*. At this point I’m using the [latest beta][caret-beta] they released… about a year ago. They’ve since [declared][caret-tweet] their intention to build something new and better using some of the same tech that underpins Caret. The *big* downside for Caret is that it’s an [Electron] app, and that means that it just *is* slower and heavier than Byword—inevitably.
 
@@ -128,7 +128,7 @@ Equally important to me at this point though: writing in Markdown means I am wri
 [vs-code]: https://code.visualstudio.com
 [all-in-one]: https://github.com/yzhang-gh/vscode-markdown
 
-[^just-works]: One of the goals I have for [rewrite] is for it to *feel* as good to use as Ulysses while being as interoperable as iA Writer for project management, and as fast and lightweight as Byword. This may prove impossible… but it’s a goal.
+[^just-works]: One of the goals I have for [rewrite] is for it to *feel* as good to use as Ulysses while being as interoperable as iA Writer for project management, and as fast and lightweight as Byword. This may prove impossible… but it’s a goal.
 
 [rewrite]: https://rewrite.software
 

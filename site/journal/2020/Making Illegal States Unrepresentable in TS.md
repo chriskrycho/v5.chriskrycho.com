@@ -257,7 +257,7 @@ If we had similar validation for the postal address—for example, because we we
 
 Having made this change, we’re now in a position to see what it looks like to work with this data when it already exists. Again, the type system helps us out here, to make sure we *continue* to have valid data. As Wlaschin notes:
 
-> Now… we have no choice but to handle all three possible cases:
+> Now… we have no choice but to handle all three possible cases:
 > 
 > - If a contact previously only had an email address, it now has both an email address and a postal address, so return a contact using the EmailAndPost case.
 > - If a contact previously only had a postal address, return a contact using the PostOnly case, replacing the existing address.

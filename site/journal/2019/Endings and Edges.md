@@ -39,6 +39,6 @@ I’m grateful to Sacasas for his example in many ways. This ending is on that l
 
 [^newsletter]: Having spent a fair bit of time writing [a newsletter][atss] of my own this year, I understand why he is happy carrying on the newsletter but ending his blog. For all that the two are similar in many ways, they are different, too. More on this in a future post.
 
-[^my-posts]: If you’re thinking that this blog itself, in its various permutations, is an example of such an endlessness… I’m not going to argue with you.
+[^my-posts]: If you’re thinking that this blog itself, in its various permutations, is an example of such an endlessness… I’m not going to argue with you.
 
 [atss]: https://buttondown.email/chriskrycho

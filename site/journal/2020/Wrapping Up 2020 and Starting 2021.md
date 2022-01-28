@@ -62,7 +62,7 @@ For fiction, Robin Sloan is just the best: both <cite>Sourdough</cite> and <cite
 
 ## Writing
 
-I’m slowly coming to terms with the fact that while I have spent the last half decade proclaiming my desire to write essays… in practice I have not prioritized that desire. This year, I wrote [exactly one essay](https://v5.chriskrycho.com/essays/private-chat-and-dms-are-good-actually/) on this site (and I only realized it *was* an essay in retrospect, as I penned this very sentence), none for <cite>Mere Orthodoxy</cite> or other magazines, and *maybe* two and a half for the newsletter… if I’m being generous in my definition of “essay.” The problem, in short, was the same as it was [a year ago](https://v5.chriskrycho.com/journal/adieu-to-2019/#2020-2):
+I’m slowly coming to terms with the fact that while I have spent the last half decade proclaiming my desire to write essays… in practice I have not prioritized that desire. This year, I wrote [exactly one essay](https://v5.chriskrycho.com/essays/private-chat-and-dms-are-good-actually/) on this site (and I only realized it *was* an essay in retrospect, as I penned this very sentence), none for <cite>Mere Orthodoxy</cite> or other magazines, and *maybe* two and a half for the newsletter… if I’m being generous in my definition of “essay.” The problem, in short, was the same as it was [a year ago](https://v5.chriskrycho.com/journal/adieu-to-2019/#2020-2):
 
 > Setting a vague goal of “write more essays” hasn’t done it; what I need to do is allocate time every month — or better, every week — to work on essays specifically. Then I need to defend that time against the instinct to go do other things instead, whether those other things are tinkering with my website’s design, writing a blog post instead of an essay, or something else entirely.
 
@@ -88,7 +88,7 @@ The majority of my writing this year was on technical subjects, driven partly by
 
 -   [A Git Workflow for Managing Long-Running Upgrades](https://v5.chriskrycho.com/journal/git-workflow-for-managing-long-running-upgrades-a/)—sharing some hard-won lessons from the trenches of four consecutive upgrade efforts I ran on the LinkedIn.com app over August 2019–April 2020.
 
-- Data Constructors—explaining how a particular feature of languages like Elm, OCaml, Haskell, etc. works… in terms that developers with more “traditional” language backgrounds like Java, C^♯^, TypeScript, etc. can understand:
+- Data Constructors—explaining how a particular feature of languages like Elm, OCaml, Haskell, etc. works… in terms that developers with more “traditional” language backgrounds like Java, C^♯^, TypeScript, etc. can understand:
     -   [Part 1: Understanding by Implementing](https://v5.chriskrycho.com/journal/data-constructors-part-1-understanding-by-implementing/)
     -   [Part 2: Better TypeScript](https://v5.chriskrycho.com/journal/data-constructors-part-2-better-typescript/)
 

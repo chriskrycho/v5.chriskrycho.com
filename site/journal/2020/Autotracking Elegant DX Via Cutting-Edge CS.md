@@ -148,7 +148,7 @@ let personInfo = new PersonInfo();
 console.log(personInfo.nameLength());
 ```
 
-Notice the two differences here: `personInfo.nameLength()` instead of `personInfo.nameLength `, and `nameLength() { ... }` instead of `get nameLength() { ... }`. These are effectively the same: both are functions which compute a value.
+Notice the two differences here: `personInfo.nameLength()` instead of `personInfo.nameLength `, and `nameLength() { ... }` instead of `get nameLength() { ... }`. These are effectively the same: both are functions which compute a value.
 
 The other thing to notice here is that method invocations and getter lookups are both “lazy:” they run on demand. Until you actually invoke the method or the getter, there is a reference to a function as part of the class, but there isn’t any value computed by it. This is different from assigning a property directly. For example, if we assigned the values of `nameLength`, `remaining`, and `showError` in the constructor, they would *initially* have the same values as in the lazy version, but it would immediately get out of sync if you *changed* the value of `name` later:
 

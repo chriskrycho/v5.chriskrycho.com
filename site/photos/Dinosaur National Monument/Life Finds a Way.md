@@ -1,5 +1,5 @@
 ---
-title: ‘Life… finds a way.’
+title: ‘Life… finds a way.’
 feedId: "/photos/life-finds-a-way/"
 date: 2021-07-12T11:51:25-0600
 subtitle: >

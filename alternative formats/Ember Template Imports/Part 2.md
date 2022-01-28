@@ -1,4 +1,4 @@
-# Part 2 – Teaching and Understanding
+# Part 2 – Teaching and Understanding
 
 *Which template imports design has the biggest set of wins for teaching and understanding components?*
 

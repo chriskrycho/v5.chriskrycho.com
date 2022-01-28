@@ -47,11 +47,11 @@ tags:
 
 > One of the most interesting things Zora[^1] has published is [here in their FAQ](https://help.zora.co/en/articles/3981328-faqs):
 > 
-> > Instead of creating artificial scarcity by selling copies of digital goods … we propose an alternative: make one original openly accessible to everyone no matter who owns it, and sell that original token over and over again. As your work becomes more popular, people who want to collect it can buy the media — first from you, then from each other. Each time the work is resold, you get a share of the sale price.
+> > Instead of creating artificial scarcity by selling copies of digital goods … we propose an alternative: make one original openly accessible to everyone no matter who owns it, and sell that original token over and over again. As your work becomes more popular, people who want to collect it can buy the media — first from you, then from each other. Each time the work is resold, you get a share of the sale price.
 > 
 > You might detect some resonance there with the “unlocking the commons” model that I’ve used several times, most recently with an e-book novella in 2020. There is a sense of going, at last, with the grain of the internet; letting the bits flow freely, copied and recopied, while their coat check ticket, their daemon, that tight little cryptographic knot, sits serene, accruing value. Maybe.
 
-<figcaption>—Robin Sloan, <a href="https://society.robinsloan.com/archive/art-objects/#"> A coat check ticket, a magic spell</a></figcaption>
+<figcaption>—Robin Sloan, <a href="https://society.robinsloan.com/archive/art-objects/#"> A coat check ticket, a magic spell</a></figcaption>
 
 </figure>
 
@@ -79,7 +79,7 @@ The fundamental truth of the internet is that it *scales*: that the marginal cos
 
 <aside>
 
-Whether this is a healthy way to think about attention or not, and whether the economy produced by treating attention as a commodity, are not the subject of this post… but my own views are [well established][breakup]. I will, once more, commend Alan Jacobs’ [ Attending to Technology: Theses for Disputation][jacobs].
+Whether this is a healthy way to think about attention or not, and whether the economy produced by treating attention as a commodity, are not the subject of this post… but my own views are [well established][breakup]. I will, once more, commend Alan Jacobs’ [ Attending to Technology: Theses for Disputation][jacobs].
 
 </aside>
 

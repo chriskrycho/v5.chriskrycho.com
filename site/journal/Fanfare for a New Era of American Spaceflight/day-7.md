@@ -26,7 +26,7 @@ I sat back down with the score tonight and made some tweaks to what I had done b
 
 [^speed]: I’m sure that people who do this for a living can do it far faster than I can! I also have to say: Dorico makes this work go quicker than Sibelius ever did, but I’m definitely still developing the muscle memory for it!
 
-At this point, it’s getting down to the home stretch. The orchestration in this final section is thickening out just the way I wanted; I’ve managed roughly the amount of thematic variation and development I was hoping for; it’s building to the climax (and I know roughly how that should work). If I work *really* hard tomorrow and Saturday morning in between other things… maybe I’ll finish it by the time they *actually* launch on Saturday.
+At this point, it’s getting down to the home stretch. The orchestration in this final section is thickening out just the way I wanted; I’ve managed roughly the amount of thematic variation and development I was hoping for; it’s building to the climax (and I know roughly how that should work). If I work *really* hard tomorrow and Saturday morning in between other things… maybe I’ll finish it by the time they *actually* launch on Saturday.
 
 Without further ado, here’s what I have as of tonight!
 

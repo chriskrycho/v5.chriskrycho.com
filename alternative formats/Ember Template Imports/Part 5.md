@@ -1,4 +1,4 @@
-# Part 5 – Styling
+# Part 5 – Styling
 
 *Styling and presentation are fundamental aspects of authoring user interfaces. So how does CSS work with the various Ember template imports proposals?*
 

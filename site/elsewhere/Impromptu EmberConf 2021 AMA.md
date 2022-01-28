@@ -1,6 +1,6 @@
 ---
 title: Impromptu EmberConf 2021 AMA
-subtitle: In which my friend David Baker put me on the spot… and it was *great*!
+subtitle: In which my friend David Baker put me on the spot… and it was *great*!
 link: https://www.youtube.com/watch?v=CXv55zFcJdI
 date: 2021-03-29T16:35:00-0600
 tags:
