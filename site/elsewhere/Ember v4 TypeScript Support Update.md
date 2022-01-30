@@ -4,7 +4,7 @@ link: https://blog.emberjs.com/ember-v4-typescript-support-update
 date: 2022-01-25T12:57:11-0700
 tags:
   - TypeScript
-  - Ember.js
+  - Ember
 
 ---
 
