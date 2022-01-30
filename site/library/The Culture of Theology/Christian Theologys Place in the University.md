@@ -3,7 +3,10 @@ title: Christian Theology’s Place in the University
 subtitle: Or, John Webster cracking very wise.
 date: 2020-08-03T13:54:00-0600
 updated: 2020-08-22T20:54:22-0600
-tags: [education, theology, university]
+tags:
+  - education, 
+  - theology
+  - university
 
 ---
 

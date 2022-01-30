@@ -122,3 +122,7 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /topics/programming-language /topics/programming-languages/ 301!
 /topics/composition /topics/composing 301!
 /topics/productivity /topics/working-effectively 301!
+
+# and topics that I turned into collections
+/topics/the-culture-of-theology /library/the-culture-of-theology 301!
+/topics/the-doctrine-of-scripture /library/the-doctrine-of-scripture 301!
