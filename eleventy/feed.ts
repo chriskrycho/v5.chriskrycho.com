@@ -348,7 +348,7 @@ export class JSONFeed implements EleventyClass {
          permalink: (/* _: EleventyData */): string => {
             return (
                this.permalink ??
-               (this.collection ? `/${this.collection}/feedon` : '/feedon')
+               (this.collection ? `/${this.collection}/feed.json` : '/feed.json')
             );
          },
       };
