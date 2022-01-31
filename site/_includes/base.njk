@@ -87,6 +87,8 @@
             {%- for entry in pages -%}
                {%- if entry.type === 'page' -%}
                   {{nav.item(entry, pageUrl=page.url)}}
+               {%- elif entry.type === 'link' -%}
+                  {{nav.link(entry)}}
                {%- elif entry.type === 'separator' -%}
                   <li role='separator'><hr></li>
                {%- endif -%}
