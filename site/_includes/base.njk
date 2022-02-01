@@ -30,7 +30,6 @@
          <link rel='alternate' href='/journal/feed.json' type='application/json' title='Journal - Sympolymathesy (JSON)'>
          <link rel='alternate' href='/library/feed.json' type='application/json' title='Library - Sympolymathesy (JSON)'>
          <link rel='alternate' href='/photos/feed.json' type='application/json' title='Photos - Sympolymathesy (JSON)'>
-         <link rel='alternate' href='/notes/feed.json' type='application/json' title='Notes - Sympolymathesy (JSON)'>
          <link rel='alternate' href='/elsewhere/feed.json' type='application/json' title='Elsewhere - Sympolymathesy (JSON)'>
       {% endif -%}
 
@@ -42,7 +41,6 @@
          <link rel='alternate' href='/journal/feed.xml' type='application/atom+xml' title='Journal - Sympolymathesy (Atom)'>
          <link rel='alternate' href='/library/feed.xml' type='application/atom+xml' title='Library - Sympolymathesy (Atom)'>
          <link rel='alternate' href='/photos/feed.xml' type='application/atom+xml' title='Photos - Sympolymathesy (Atom)'>
-         <link rel='alternate' href='/notes/feed.xml' type='application/atom+xml' title='Notes - Sympolymathesy (Atom)'>
          <link rel='alternate' href='/elsewhere/feed.xml' type='application/atom+xml' title='Elsewhere - Sympolymathesy (Atom)'>
       {% endif -%}
 
@@ -87,6 +85,8 @@
             {%- for entry in pages -%}
                {%- if entry.type === 'page' -%}
                   {{nav.item(entry, pageUrl=page.url)}}
+               {%- elif entry.type === 'link' -%}
+                  {{nav.link(entry)}}
                {%- elif entry.type === 'separator' -%}
                   <li role='separator'><hr></li>
                {%- endif -%}
