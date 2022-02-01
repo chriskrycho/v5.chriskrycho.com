@@ -49,6 +49,7 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /library/the-triune-creators-relating-to-creation/ /library/eccentric-existence/the-triune-creators-relating-to-creation/ 301!
 
 # ...and notes redirects for bad slug generation
+/notes/feed-for-social.* https://v1.notes.chriskrycho.com/feeds/without-reply.:splat 301!
 /notes/* https://v1.notes.chriskrycho.com/:splat 301!
 
 # and topics I merged
