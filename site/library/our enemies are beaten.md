@@ -12,7 +12,6 @@ book:
 date: 2021-04-04T14:46:00-0600
 tags:
   - Karl Barth
-  - Dogmatics in Outline
   - quotes
   - Resurrection
   - Easter

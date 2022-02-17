@@ -10,7 +10,6 @@ tags:
     - creation
     - quotes
     - David H. Kelsey
-    - Eccentric Existence
     - reading notes
 summary: >
     ”How shall we characterize the triune Creator’s active relating to creation?”

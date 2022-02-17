@@ -17,8 +17,6 @@ tags:
   - learning
   - David H. Kelsey
   - John Webster
-  - The Culture of Theology
-  - Eccentric Existence
   - Plato
   - Phaedrus
 
