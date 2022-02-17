@@ -8,7 +8,6 @@ tags:
     - anthropology
     - quotes
     - David H. Kelsey
-    - Eccentric Existence
     - reading notes
 summary: >
     The basic structure of theological anthropologies worked out in that context [of human weakness] is a “God’s grace/humans’ sin” structure.… The systematic consequence… is that the anthropological implications of other ways in which the triune God relates to human beings… are marginalized.

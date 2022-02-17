@@ -12,7 +12,6 @@ tags:
     - writing
     - Markdown
     - websites
-    - domain
     - DNS
     - Netlify
     - Cloudflare

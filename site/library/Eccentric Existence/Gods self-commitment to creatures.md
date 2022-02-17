@@ -10,7 +10,6 @@ tags:
     - anthropology
     - quotes
     - David H. Kelsey
-    - Eccentric Existence
 
 summary: >
     David H. Kelsey: “What God creates in affectionate and just attention, God values. What God values, God is self-committed to sustain and nurture.”
