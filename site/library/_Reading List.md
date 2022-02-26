@@ -72,8 +72,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
 
-- [<cite>Out of Office: The Big Problem and Bigger Promise of Working from Home</cite>](https://bookshop.org/a/21126/9780593320099), Charlie Warzel and Anne Helen Petersen
-
 
 ### Fiction
 
@@ -92,6 +90,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Soul of a New Machine</cite>](https://bookshop.org/a/21126/9780316491976), Tracy Kidder (new)
 
 - [<cite>The Corrosion of Character: The Personal Consequences of Work in the New Capitalism</cite>](https://bookshop.org/a/21126/9780393319873), Richard Sennett (new)
+
+- [<cite>Out of Office: The Big Problem and Bigger Promise of Working from Home</cite>](https://bookshop.org/a/21126/9780593320099), Charlie Warzel and Anne Helen Petersen
 
 
 ### Fiction
