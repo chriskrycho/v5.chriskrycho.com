@@ -100,7 +100,9 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>The Bayern Agenda: The Galactic Cold War, Book I</cite>](https://bookshop.org/a/21126/9780857668196), Dan Moren (new)
     - [<cite>The Aleph Extraction: The Galactic Cold War, Book II</cite>](https://bookshop.org/a/21126/9780857668417), Dan Moren (new)
 
-- [<cite>The Great Hunt</cite>](https://bookshop.org/a/21126/9781250251480), Robert Jordan (reread)
+- <cite>The Wheel of Time</cite>, Robert Jordan (reread)
+    - [<cite>The Great Hunt</cite>](https://bookshop.org/a/21126/9781250251480)
+    - [<cite>The Dragon Reborn</cite>](https://bookshop.org/a/21126/9781250251497)
 
 
 ## 2021
