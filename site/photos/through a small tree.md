@@ -7,7 +7,10 @@ image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/02-26-throug
 
 ---
 
-Looking at the Rocky Mountain Front Range through a small tree on a trail near my house.
+Looking at the Rocky Mountain Front Range through a small tree on a trail near my house. ([Unsplash][u], [Glass][g])
+
+[u]: https://unsplash.com/photos/OpEzIyKeJLc
+[g]: https://glass.photo/chriskrycho/vceNoI9i3QWM1hvJlprc2
 
 <img src='https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/02-26-through-tree-thumb.jpg' alt='in focus, a tree, with out-of-focus mountains visible behind it' />
 
