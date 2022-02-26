@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-02-26T16:11:00-0700
+date: 2022-02-26T16:32:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -91,14 +91,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Corrosion of Character: The Personal Consequences of Work in the New Capitalism</cite>](https://bookshop.org/a/21126/9780393319873), Richard Sennett (new)
 
-- [<cite>Out of Office: The Big Problem and Bigger Promise of Working from Home</cite>](https://bookshop.org/a/21126/9780593320099), Charlie Warzel and Anne Helen Petersen
+- [<cite>Out of Office: The Big Problem and Bigger Promise of Working from Home</cite>](https://bookshop.org/a/21126/9780593320099), Charlie Warzel and Anne Helen Petersen (new)
 
 
 ### Fiction
 
-- <cite>The Galactic Cold War</cite>, Dan Moren
-    - [<cite>The Bayern Agenda: The Galactic Cold War, Book I</cite>](https://bookshop.org/a/21126/9780857668196), Dan Moren (new)
-    - [<cite>The Aleph Extraction: The Galactic Cold War, Book II</cite>](https://bookshop.org/a/21126/9780857668417), Dan Moren (new)
+- <cite>The Galactic Cold War</cite>, Dan Moren (new)
+    - [<cite>The Bayern Agenda: The Galactic Cold War, Book I</cite>](https://bookshop.org/a/21126/9780857668196)
+    - [<cite>The Aleph Extraction: The Galactic Cold War, Book II</cite>](https://bookshop.org/a/21126/9780857668417)
 
 - <cite>The Wheel of Time</cite>, Robert Jordan (reread)
     - [<cite>The Great Hunt</cite>](https://bookshop.org/a/21126/9781250251480)
