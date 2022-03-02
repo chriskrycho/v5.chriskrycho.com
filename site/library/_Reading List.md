@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-02-26T16:32:00-0700
+date: 2022-03-02T09:00:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -71,6 +71,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
+
+- [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
 
 
 ### Fiction
