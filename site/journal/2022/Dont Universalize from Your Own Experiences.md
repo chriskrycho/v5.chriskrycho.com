@@ -4,7 +4,7 @@ subtitle: >
     Snappy writing, careers in software development (and other fields), advice-giving, and 
 qualifiers:
   audience: >
-    People thinking about career decisions, *especially* (though not necessarily only) in software development.
+    People thinking about career decisions, *especially* (though not necessarily only) in software development. And writers thinking about how to give advice.
 date: 2022-03-20T15:45:00-0600
 tags:
   - writing
