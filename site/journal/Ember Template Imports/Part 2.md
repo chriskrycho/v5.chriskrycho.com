@@ -60,7 +60,7 @@ lexical scoping
 
 This is in contrast to dynamic scoping, where the *invocation* of a given function defines what variables it has access to.
 
-This is great! It enables tools like [Glint](https://typed-ember/glint) or [<abbr title="Ember Language Server">ELS</abbr>](https://github.com/suchitadoshi1987/ember-language-server) to work much more easily, and to take advantage of existing tooling which understands JavaScript’s semantics. But precisely *because* this works by requiring *some* values used in templates to be available in lexical scope, it raises the question: *Why shouldn’t templates have access to **other** values in JavaScript lexical scope? Why should this be limited to imports? Wouldn’t it be useful for other things, too?*
+This is great! It enables tools like [Glint](https://github.com/typed-ember/glint) or [<abbr title="Ember Language Server">ELS</abbr>](https://github.com/suchitadoshi1987/ember-language-server) to work much more easily, and to take advantage of existing tooling which understands JavaScript’s semantics. But precisely *because* this works by requiring *some* values used in templates to be available in lexical scope, it raises the question: *Why shouldn’t templates have access to **other** values in JavaScript lexical scope? Why should this be limited to imports? Wouldn’t it be useful for other things, too?*
 
 Each of the `<template>` tags, `hbs` tagged literals, and Svelte/Vue-style <abbr>SFC</abbr> designs answers that templates *should* have access to other kinds of values in scope in some kind of JavaScript context. The imports-only/“front matter” does what the name says: it sticks to imports only.
 
