@@ -747,6 +747,11 @@
       text-decoration: none;
       transition: all var(--transition);
    }
+   
+   .footnote-item:target {
+      outline: 1px dotted;
+      background-color: var(--blue-6);
+   }
 
    .feed-only {
       display: none;
