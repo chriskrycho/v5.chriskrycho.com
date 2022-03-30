@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-03-02T09:00:00-0700
+date: 2022-03-30T08:00:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -58,8 +58,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
 
-- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FScience-and-the-Good-The-Tragic-Quest-for-the-Foundations-of-Morality-James-Davison-Hunter%2Fbook%2F40792894), James Davison Hunter and Paul Nedelisky (new)
-
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
 
 - [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FConfronted-by-Grace-Meditations-of-a-Theologian-Prof-John-Webster%2Fbook%2F31784244), John Webster (new)
@@ -94,6 +92,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Corrosion of Character: The Personal Consequences of Work in the New Capitalism</cite>](https://bookshop.org/a/21126/9780393319873), Richard Sennett (new)
 
 - [<cite>Out of Office: The Big Problem and Bigger Promise of Working from Home</cite>](https://bookshop.org/a/21126/9780593320099), Charlie Warzel and Anne Helen Petersen (new)
+
+- [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://bookshop.org/a/21126/9780300251821), James Davison Hunter and Paul Nedelisky (new)
 
 
 ### Fiction
