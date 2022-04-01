@@ -7,8 +7,7 @@ date: 2019-12-19T08:40:00-0600
 tags:
   - writing
   - aesthetics
-  - pens
-  - notebooks
+  - stationery
   - note-taking
 summary: >
     It will surprise no one to hear that I care a great deal about the experience—the aesthetics—of my writing tools. The combo of a Pano Totebook and a Uniball Signo RT1 0.38mm pen checks off all the boxes for me.
