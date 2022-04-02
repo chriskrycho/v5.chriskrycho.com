@@ -1,0 +1,11 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/science-and-the-good/{{page.fileSlug | slug}}/",
+   "book": {
+      "title": "Science and the Good: The Tragic Quest for the Foundations of Morality",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/science-and-the-good.png",
+      "author": "James Davison Hunter and Paul Nedelisky",
+      "year": "2018",
+      "link": "https://bookshop.org/a/21126/9780300251821"
+   }
+}
