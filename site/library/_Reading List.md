@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-03-30T08:00:00-0700
+date: 2022-04-11T07:36:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -95,6 +95,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://bookshop.org/a/21126/9780300251821), James Davison Hunter and Paul Nedelisky (new)
 
+- [<cite>The Internet is Not What You Think It Is: A History, A Philosophy, a warning</cite>](https://bookshop.org/a/21126/9780691212326), Justin E. H. Smith (new)
+
 
 ### Fiction
 
@@ -105,6 +107,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>The Wheel of Time</cite>, Robert Jordan (reread)
     - [<cite>The Great Hunt</cite>](https://bookshop.org/a/21126/9781250251480)
     - [<cite>The Dragon Reborn</cite>](https://bookshop.org/a/21126/9781250251497)
+
+- <cite>The Hobbit</cite>, J. R. R. Tolkien (reread with my younger daughter)
 
 
 ## 2021
@@ -135,7 +139,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- [<cite>The Hobbit</cite>](https://bookshop.org/a/21126/9780395873465), J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Hobbit</cite>][hobbit], J.R.R. Tolkien (reread… with my daughter!)
 
 - [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
 
@@ -322,6 +326,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 	- [<cite>Cibola Burn</cite>][cibola-burn]
 	- [<cite>Nemesis Games</cite>][nemesis-games]
 
+[hobbit]: https://bookshop.org/a/21126/9780395873465
 [lotr]: https://bookshop.org/a/21126/9780618260584
 [leviathan-wakes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667
 [calibans-war]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCalibans-War-James-S-A-Corey%2Fbook%2F28575716
