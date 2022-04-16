@@ -19,6 +19,7 @@ I enjoy talking about a variety of subjects:
     - open source software
     - programming languages, especially Rust and TypeScript
     - teams and culture
+    - software infrastructure at scale, especially in front-end web contexts
 - technology, tech criticism, and tech ethics
 - Christianity
 - mental health
@@ -26,7 +27,13 @@ I enjoy talking about a variety of subjects:
 
 If those sound interesting to you, I’d love to be on your show or speak at your conference! I have a top-notch recording setup with excellent audio and video equipment, so I can deliver a high-quality experience remotely as well as in person.
 
-For podcasts or panel discussions, please give me at least of a month of notice so I can coordinate it with my family and fit it into my work schedule. For talks, I need at least two months’ notice so I can deliver a quality presentation and (for in-person events) coordinate travel with my family and work.
+## Requirements
+
+**Time:** For podcasts or panel discussions, please give me at least of a month of notice so I can coordinate it with my family and fit it into my work schedule. For talks, I need at least two months’ notice so I can deliver a quality presentation and (for in-person events) coordinate travel with my family and work.
+
+**Honoraria:** I currently do not accept honoraria. Please direct any money allocated to speaker fees to a non-profit or charity instead.
+
+**Diversity:** I will not appear at conferences without reasonably diverse slates of speakers. What that means will differ appropriately by location: the demographics of northern Europe and the demographics of the American South are different. But you should have as close as possible to an even number of men and women speaking, and you should be aiming for your speakers to be representative of your local culture—not just of your programming community. (If a programming community is 99% people who are just like me, that probably isn’t healthy!) If you have doubts about the makeup of your conference, feel free to get in touch to discuss it.
 
 ---
 
