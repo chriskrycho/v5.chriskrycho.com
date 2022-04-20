@@ -7,6 +7,7 @@ tags:
     - TypeScript
     - software development
     - Ember
+    - Semantic Versioning
 link: https://www.semver-ts.org
 qualifiers:
     audience: >
