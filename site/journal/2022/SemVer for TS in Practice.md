@@ -55,6 +55,17 @@ The result is an implementation which is much robust and more useful than what w
 
 The Semantic Versioning for TypeScript Types proposal works for real libraries in the real world. Following the guidance we came up with really does make it possible to insulate users from breaking changes in TypeScript. It’s a good feeling!
 
+<div class="callout">
+
+Thoughts, comments, or questions? Discuss on [LinkedIn][li], [Hacker News][hn], [lobste.rs][l], or [Twitter][t]!
+
+[li]: https://www.linkedin.com/feed/update/urn:li:activity:6923287174180212736/
+[hn]: https://news.ycombinator.com/item?id=31123315
+[l]: https://lobste.rs/s/ljrj0f/semver_for_ts_practice_real_world_example
+[t]: https://twitter.com/chriskrycho/status/1517520606287171584
+
+</div>
+
 
 
 [^ignoring-the-user]: You could make an argument that this is ignoring the design intent of the user who implemented a method like `toString() { return 123 }`. Fair enough. The only type safe option would be to call `JSON.stringify()` on the result of *that*, though: `123` isn’t a valid `string`! If you use True Myth and think we should use `JSON.stringify()` on the result of any `.toString()` implementation, rather than calling it on the original object, we’re open to being persuaded,s o open an issue or discussion!
