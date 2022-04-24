@@ -17,6 +17,10 @@ Last weekend, Jaimie and I watched <cite>Eternals</cite>—one of the most recen
 
 The Eternals are not someone that almost *anyone* would have heard of. They were, as I understand it, a Jack Kirby creation in the 1970s, when Jack Kirby was doing a *lot* of drugs. (I, like most people, have never read any Eternals comics, and they definitely did not appear in the handful of Marvel comics I *did* read back in college.) The movie makes a game effort to mostly ignore the wackier bits of the Kirby parts and to tell an interesting story with these characters, and it succeeds better than it should, given the fundamental silliness and incoherence of the conceit, the impossible scope of the cast (10 main characters!), and the inevitable Marvelized ending.
 
+Honestly, it shouldn’t work at all. It’s not that it is a *good* movie; it isn’t. But I also keep thinking about it.
+
+---
+
 <figure>
 
 ![](https://f001.backblazeb2.com/file/chriskrycho-com/images/eternals.jpg "poster for Eternals")
@@ -24,8 +28,6 @@ The Eternals are not someone that almost *anyone* would have heard of. They were
 <figcaption>Why did they need <em>ten</em> main characters?</figcaption>
 
 </figure>
-
-Honestly, it shouldn’t work at all. It’s not that it is a *good* movie; it isn’t. But I also keep thinking about it.
 
 ---
 
