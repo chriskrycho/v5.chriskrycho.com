@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-04-11T07:36:00-0700
+date: 2022-04-24T12:23:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,6 +79,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
+- <cite>The Hobbit</cite>, J. R. R. Tolkien (reread with my younger daughter)
+
 
 ## 2022
 
@@ -108,7 +110,7 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>The Great Hunt</cite>](https://bookshop.org/a/21126/9781250251480)
     - [<cite>The Dragon Reborn</cite>](https://bookshop.org/a/21126/9781250251497)
 
-- <cite>The Hobbit</cite>, J. R. R. Tolkien (reread with my younger daughter)
+- [<cite>Children of Time</cite>](https://bookshop.org/a/21126/9780316452502), Adrian Tchaikovsky
 
 
 ## 2021
