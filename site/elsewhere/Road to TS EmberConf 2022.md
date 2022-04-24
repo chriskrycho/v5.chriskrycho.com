@@ -23,12 +23,10 @@ A [talk]({{link}}) on, among other things, the research we did at LinkedIn to ta
 
 <div class='embed__wrapper'>
 
-<iframe class='embed__content' src="https://www.youtube.com/embed/link: https://youtu.be/UOw7TydAT_s
-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class='embed__content' src="https://www.youtube.com/embed/UOw7TydAT_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
-<figcaption><a href="https://www.youtube.com/watch?v=link: https://youtu.be/UOw7TydAT_s
-">The Road to TypeScript (EmberConf 2022)</figcaption>
+<figcaption><a href="https://youtu.be/UOw7TydAT_s">The Road to TypeScript (EmberConf 2022)</figcaption>
 
 </figure>
