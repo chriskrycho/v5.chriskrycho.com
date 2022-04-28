@@ -146,7 +146,7 @@ That is because we *asserted* that calling `addAddress` means `me` has an addres
 
 ## Caveats
 
-First, and most important: ***this is unsafe!*** The compiler will not check your work. This is *always* true of assertion functions (as well as type guard functions), but it is worth being explicit about here. We are establishing a norm at LinkedIn that we annotate these kinds of things with `// SAFETY: ...` comments—an idea borrowed from the Rust community’s approach to `unsafe` blocks. (You can see this in the code above.)
+First, and most important: ***this is unsafe!*** The compiler will not check your work. This is *always* true of assertion functions (as well as type guard functions), but it is worth being explicit about here. We are establishing a norm at LinkedIn that we annotate these kinds of things with `// SAFETY: ...` comments—an idea borrowed from the Rust community’s approach to `unsafe` blocks. (You can see this in the code above.) The rule is: if it involves a cast, it needs a good explanation of why that cast is legitimate so that future maintainers can uphold those invariants. And of course, if you can avoid casts in other ways, do so—but at minimum, *isolate* them and comment the heck out of them.
 
 Second, this only helps if the function which `asserts` is part of your ordinary control flow. Type-level mutations like this don’t “stick around” across the life of the object the way the runtime values do. For example, if you have two class methods and one of them uses an assertion function to update `this`, the other method will not know anything about that:
 
