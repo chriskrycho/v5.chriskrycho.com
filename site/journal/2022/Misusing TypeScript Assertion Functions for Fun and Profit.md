@@ -70,8 +70,7 @@ addAddress(me, '1234 Some St., Example City, CO 00000');
 console.log(me.address);
 ```
 
-When we initially convert this to '
-t, the compiler will let us know that the `addAddress` implementation is unsafe.
+When we initially convert this to TypeScript, the compiler will let us know that the `addAddress` implementation is unsafe.
 
 ```ts
 class Person {
