@@ -33,7 +33,7 @@ In this case, if `someCondition` isn’t truthy, the function will throw an erro
 declare function assert(value: unknown, error: string | Error): asserts value;
 ```
 
-That is, it *asserts* that the `value` argument is "true", and won’t return otherwise. Combined with TypeScript’s flow control analysis, this means that knows after calling `assert`, TS knows whether the predicate you passed in is true. You can use this with all sorts of predicates to get more information about the types you’re dealing with:
+That is, it *asserts* that the `value` argument is "true", and won’t return otherwise. Combined with TypeScript’s flow control analysis, after calling `assert`, TS knows whether the predicate you passed in is true. You can use this with all sorts of predicates to get more information about the types you’re dealing with:
 
 ```ts
 function rejectNonStrings(value: unknown) {
