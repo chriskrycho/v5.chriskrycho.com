@@ -33,7 +33,7 @@ In this case, if `someCondition` isn’t truthy, the function will throw an erro
 declare function assert(value: unknown, error: string | Error): asserts value;
 ```
 
-That is, it *asserts* that the `value` argument is "true", and won’t return otherwise. Combined with TypeScrip's flow control analysis, after calling `assert`, TS knows whether the predicate you passed in is true. You can use this with all sorts of predicates to get more information about the types you’re dealing with:
+That is, it *asserts* that the `value` argument is "true", and won’t return otherwise. Combined with TypeScript’s flow control analysis, after calling `assert`, TS knows whether the predicate you passed in is true. You can use this with all sorts of predicates to get more information about the types you’re dealing with:
 
 ```ts
 function rejectNonStrings(value: unknown) {
@@ -70,7 +70,8 @@ addAddress(me, '1234 Some St., Example City, CO 00000');
 console.log(me.address);
 ```
 
-When we initially convert this to TypeScript, the compiler will let us know that the `addAddress` implementation is unsafe.
+When we initially convert this to '
+t, the compiler will let us know that the `addAddress` implementation is unsafe.
 
 ```ts
 class Person {
