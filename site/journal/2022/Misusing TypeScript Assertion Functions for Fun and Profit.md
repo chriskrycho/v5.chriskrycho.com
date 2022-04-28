@@ -232,6 +232,19 @@ console.log(person[0]); // 'a' 🙃
 Net: while this general `extend` pattern is tempting, you shouldn’t do it. It’ll seem nice… right up until you’re trying to figure out why `age` is `never` or any number of other weird results that <abbr>TS</abbr> will blithely ignore!
 
 
+<div class="callout">
+
+Thoughts, comments, or questions? Discuss on [LinkedIn][li], [Hacker News][hn], [lobste.rs][l], or [Twitter][t]!
+
+[li]: https://www.linkedin.com/posts/chriskrycho_misusing-typescript-assertion-functions-for-activity-6925453808487522304-aj9i
+[hn]: https://news.ycombinator.com/item?id=31192998
+[l]: https://lobste.rs/s/pjyjnp/misusing_typescript_assertion
+[t]: https://twitter.com/chriskrycho/status/1519688307482890240
+
+</div>
+
+
+
 [^example]: In our case, this was our web tracking library—not the creepy kind of tracking, but the kind that lets us analyze how features are being used, run A/B tests, etc.—which was written against versions of [Ember](https://emberjs.com) from half a decade ago. It worked by mutating an instance of Ember’s legacy [Component](https://api.emberjs.com/ember/4.3/classes/Component) <abbr>API</abbr> during setup. You inject the service, then during `init()` (Ember Classic’s post-`constructor` initialization hook), call the service’s `setupComponent` method with the component instance as its argument:
 
     ```js
