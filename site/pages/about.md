@@ -25,9 +25,7 @@ Self-biographies are a bit weird. No two ways around it. But they *do* give us a
 
 The single most important fact of my life is that, to quote [Saint Paul](https://www.esv.org/1+Corinthians+6/): I am not my own, but I was bought with a price—and that price was the death of Jesus Christ, God-the-Son, in my place.[^on-1-cor-6]
 
-I am specifically a Christian in the historic Reformed tradition—aiming always to be irenic, catholic, and orthodox. We’re glad members of [Forestgate Presbyterian Church][forestgate] in Northern Colorado Springs, where I serve in various lay leadership roles.
-
-[forestgate]: https://forestgate.org
+I am specifically a Christian in the historic Reformed tradition—aiming always to be irenic, catholic, and orthodox.
 
 [^on-1-cor-6]: Paul was writing specifically about sexual immorality—but the form of his argument is to ground that specific injunction in a very sweeping, indeed a totalizing, claim about the Christian life.
 
