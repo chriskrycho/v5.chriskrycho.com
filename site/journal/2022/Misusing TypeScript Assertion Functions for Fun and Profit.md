@@ -237,7 +237,7 @@ Net: while this general `extend` pattern is tempting, you shouldnâ€™t do it. Itâ
 Thoughts, comments, or questions? Discuss on [LinkedIn][li], [Hacker News][hn], [lobste.rs][l], or [Twitter][t]!
 
 [li]: https://www.linkedin.com/posts/chriskrycho_misusing-typescript-assertion-functions-for-activity-6925453808487522304-aj9i
-[hn]: https://news.ycombinator.com/item?id=31192998
+[hn]: https://news.ycombinator.com/item?id=31255935
 [l]: https://lobste.rs/s/pjyjnp/misusing_typescript_assertion
 [t]: https://twitter.com/chriskrycho/status/1519688307482890240
 
