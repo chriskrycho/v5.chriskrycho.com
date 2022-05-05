@@ -46,17 +46,21 @@ If those sound interesting to you, I’d love to be on your show or speak at you
 
 A sample of my talks, podcast appearances, and workshops:
 
+- [<b>The Road to TypeScript</b>](https://www.youtube.com/watch?v=UOw7TydAT_s), EmberConf, March 2022
+
 - [<b>Keep It Local: Or: (part of) what “reasoning about your code” really means</b>](https://v5.chriskrycho.com/elsewhere/keep-it-local/), EmberConf, March 2021
 
-- <b>Don’t Go Bankrupt: Managing Technical Costs</b>, All Things Open, October 2019
+- <b>Don’t Go Bankrupt: Managing Technical Costs</b>, [All Things Open](http://allthingsopen.net), October 2019
 
 - [<b>Using TypeScript Like a Pro with Chris Krycho</b>, CoRecursive Podcast][corecursive], July 2019
 
-- <b>Supercharging Ember Octane with TypeScript</b>, EmberConf Workshop, March 2019—an invited three-hour workshop building on the success of a similar workshop the year prior
+- [<b>Supercharging Ember Octane with TypeScript</b>](https://2019.emberconf.com/speakers.html#), EmberConf Workshop, March 2019—an invited three-hour workshop afte the previous year’s success
 
 - <b>Rust and WebAssembly</b>, Denver/Boulder Rust Meetup, May 2018
 
 - [<b>Chris Krycho: TypeScript and Ember js - Why and How?</b>][atx-ts], EmberATX, April 2018
+
+- [<b>TypeScript Up Your Ember.js App</b>](https://2018.emberconf.com/speakers.html#chris-krycho), EmberConf Workshop, March 2018
 
 - [<b>Becoming a Contributor</b>][rbr2017], Rust Belt Rust 2017, October 2017
 
