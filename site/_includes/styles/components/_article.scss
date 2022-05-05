@@ -828,6 +828,11 @@
 
          img {
             max-width: var(--img-max-width);
+            // make sure it fits on screen!
+            max-height: 90vh;
+            // and then preserve aspect ratio
+            height: auto;
+            width: auto;
          }
 
          figure {
