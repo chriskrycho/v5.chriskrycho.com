@@ -69,6 +69,8 @@ At LinkedIn, I have become comfortable leading large efforts that impact hundred
 
 ### Earlier Work
 
+*I am the developer and leader I am today because of many experiences **before** today.*
+
 #### Olo
 
 *From individual contributor to a project lead with organization-wide influence.*
@@ -82,6 +84,8 @@ As a **Software Engineer** (January 2016–May 2017), I was a productive individ
 - I led the adoption of a **test-driven development** approach in a greenfield **Ember.js** rewrite of the mobile web <abbr>UI</abbr>.
 - I introduced JavaScript type systems to the application (landing on **TypeScript** after an initial experiment with Flow)
 - I helped the team achieve **full AA [<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>][WCAG] accessibility**.
+
+[WCAG]: https://www.w3.org/WAI/standards-guidelines/wcag/
 
 As a **Senior Software Engineer** (May 2017–January 2019):
 
