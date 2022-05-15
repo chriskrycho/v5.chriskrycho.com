@@ -19,7 +19,7 @@ Self-biographies are a bit weird. No two ways around it. But they *do* give us a
 {% include 'blocks/short-about.njk' %}
 </blockquote>
 
-—well, the order is careful and the word choice precise. The first things on my personal bio—“a follower of Christ, a husband, and a dad”—are where they are because everything else on the list is both less important than those first three and profoundly informed by them.
+—well, the order is careful and the word choice precise. The first things on my personal bio, “a follower of Christ, a husband, and a dad,” are where they are because everything else on the list is both less important than those first three and profoundly informed by them.
 
 ### A follower of Christ
 
@@ -39,13 +39,13 @@ After following Christ, my family is far and away the most important part of my 
 
 ## By trade
 
-Since graduating college, I have been working more or less full-time in the software industry—starting out writing avionics software and then hazards and risk mitigation software for the energy industry while picking up web development on the side and eventually transitioning into web development full time. You can see my [CV](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
+Since graduating college, I have been working more or less full-time in the software industry. I starting out writing avionics software and then hazards and risk mitigation software for the energy industry. After picking up web development on the side, I eventually transitioned into web development full time. You can see my [CV](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
 
 *[CV]: curriculum vitae
 
 ### LinkedIn
 
-I’m currently a Staff Software Engineer at LinkedIn, working on front-end infrastructure for what most people think of when you say LinkedIn: the app you sign into, send messages and read updates on, etc. I’m currently supporting our adoption of [Ember Octane]—a project I’ve been doing prep work for in the app since August 2019. I also regularly work closely with a number of the Ember core team members on design of upcoming features, and since 2017 (well before I joined LinkedIn) I have been one of several people driving forward [TypeScript] adoption in the Ember community.
+I’m currently a Senior Staff Software Engineer at LinkedIn, working on front-end infrastructure for what most people think of when you say LinkedIn: the app you sign into, send messages and read updates on, etc. These days my focus is on the overall technical direction of the app and supporting other engineers working on TypeScript adoption. In 2021 I led our adoption of [Ember Octane]—a project I had been doing prep work for in the app since August 2019. I am also a member of the Ember Framework core team, and since 2017 (well before I joined LinkedIn) I have been one of several people driving forward [TypeScript] adoption in the Ember community—culminating with the creation of the Ember TypeScript core team in 2022.
 
 [Ember Octane]: https://emberjs.com/editions/octane/
 [TypeScript]: https://www.typescriptlang.org
