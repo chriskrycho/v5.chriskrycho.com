@@ -87,7 +87,7 @@ export default class Item extends Component {
   @tracked hasBeenClicked = false;
 
   get trackInteraction() {
-    return this.!this.hasBeenClicked ? TrackInteraction : null;
+    return !this.hasBeenClicked ? TrackInteraction : null;
   }
 
   markAsClicked = () => {
