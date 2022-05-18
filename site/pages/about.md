@@ -39,9 +39,7 @@ After following Christ, my family is far and away the most important part of my 
 
 ## By trade
 
-Since graduating college, I have been working more or less full-time in the software industry. I starting out writing avionics software and then hazards and risk mitigation software for the energy industry. After picking up web development on the side, I eventually transitioned into web development full time. You can see my [CV](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
-
-*[CV]: curriculum vitae
+Since graduating college, I have been working more or less full-time in the software industry. I starting out writing avionics software and then hazards and risk mitigation software for the energy industry. After picking up web development on the side, I eventually transitioned into web development full time. You can see my [<abbr title="curriculum vitae">CV</abbr>](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
 
 ### LinkedIn
 
