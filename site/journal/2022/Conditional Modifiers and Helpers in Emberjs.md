@@ -12,6 +12,7 @@ qualifiers:
 summary: >
   Ember.js 3.25 introduced the `helper` and `modifier` helpers to complement the `component` helper, allowing for conditional application of helpers and modifiers.
 templateEngineOverride: md
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/modifiers.png
 
 ---
 
