@@ -13,10 +13,14 @@ summary: >
   Ember.js 3.27 introduced the `helper` and `modifier` helpers to complement the `component` helper, allowing for conditional application of helpers and modifiers.
 templateEngineOverride: md
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/modifiers.png
-updated: 2022-05-19T09:00:00-0600
+updated: 2022-05-19T09:22:00-0600
 updates:
-  - at: 2022-05-19T09:00:00-0600
-    changes: Corrected the Ember version required for using the feature.
+  - at: 2022-05-19T09:01:00-0600
+    changes: >
+      Corrected the Ember version required for using the feature: it needs to be 3.27, not 3.25.
+  - at: 2022-05-19T09:22:00-0600
+    changes: >
+      Fixed a bug in a code sample and update the text to match the code sample.
 
 ---
 
@@ -157,12 +161,9 @@ Or this:
   type="button"
   {{on "click" @addToCart}}
   {{(modifier
-    (unless
-      this.hasBeenClicked
-      this.trackImpression
-      "click"
-      customizeData=this.customizeClickData
-    )
+    (unless this.hasBeenClicked this.trackImpression)
+    "click"
+    customizeData=this.customizeClickData
   )}}
 >
   Add to Cart
@@ -171,8 +172,8 @@ Or this:
 
 Which you choose depends on the use case:
 
--   the `{{(if ...` version is handy if you just want to pick between having a modifier or not.
--   the `{{(modifier (if ...` version is handy if you want to pick between modifiers to dispatch to with the same args (unusual but not impossible!)
+-   the `{{(unless ...` version is handy if you just want to pick between having a modifier or not.
+-   the `{{(modifier (unless ...` version is handy if you want to pick between modifiers to dispatch to with the same args (unusual but not impossible!)
 -   the getter version is handy for the cases where you have more “interesting” logic to determine what to do
 
 ## The future
