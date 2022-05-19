@@ -10,13 +10,19 @@ qualifiers:
   audience: >
     Ember.js developers—folks familiar with other frameworks may also benefit, but I assume familiarity with Ember throughout.
 summary: >
-  Ember.js 3.25 introduced the `helper` and `modifier` helpers to complement the `component` helper, allowing for conditional application of helpers and modifiers.
+  Ember.js 3.27 introduced the `helper` and `modifier` helpers to complement the `component` helper, allowing for conditional application of helpers and modifiers.
 templateEngineOverride: md
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/modifiers.png
+updated: 2022-05-19T09:00:00-0600
+updates:
+  - at: 2022-05-19T09:00:00-0600
+    changes: Corrected the Ember version required for using the feature.
 
 ---
 
-Ember 3.25 introduced two new template helpers: `modifier` and `helper`. These, like the `component` helper which has been around for years, allow you to work with modifiers and helpers _conditionally_ in your templates. This is particularly helpful for dealing with helpers and modifiers you don't own, where you cannot add conditional behavior to them for some reason, and need to only enable them in specific scenarios.
+[Ember 3.27][3-27] introduced two new template helpers: `modifier` and `helper`. These, like the `component` helper which has been around for years, allow you to work with modifiers and helpers _conditionally_ in your templates. This is particularly helpful for dealing with helpers and modifiers you don't own, where you cannot add conditional behavior to them for some reason, and need to only enable them in specific scenarios.
+
+[3-27]: https://blog.emberjs.com/ember-3-27-released
 
 For the rest of this post, I am going to focus on modifiers, because they are the most interesting use case here, but these same things all apply with appropriate tweaks to helpers.
 
@@ -48,7 +54,7 @@ export default class Item extends Component {
 }
 ```
 
-So far so good, but what if you need to decide *not* to track a click based on some condition? Up until Ember 3.25, you had to extract the condition to a conditional outside the targeted <abbr title="document object model">DOM</abbr> element and apply it:
+So far so good, but what if you need to decide *not* to track a click based on some condition? Up until Ember 3.27, you had to extract the condition to a conditional outside the targeted <abbr title="document object model">DOM</abbr> element and apply it:
 
 ```hbs
 {{#if this.shouldTrack}}
@@ -66,13 +72,13 @@ So far so good, but what if you need to decide *not* to track a click based on s
 {{/if}}
 ```
 
-This is not merely an annoyance, though it is certainly that! For sufficiently complicated templates, this could cause the templates to blow up size-wise. Worse, for some kinds of overlapping conditions, it could become literally impossible to cover all the conditions correctly. This was an obvious gap in the design of modifiers (and helpers!) so in Ember 3.25, Ember introduced the ability to apply a helper or modifier conditionally.
+This is not merely an annoyance, though it is certainly that! For sufficiently complicated templates, this could cause the templates to blow up size-wise. Worse, for some kinds of overlapping conditions, it could become literally impossible to cover all the conditions correctly. This was an obvious gap in the design of modifiers (and helpers!) so in Ember 3.27, Ember introduced the ability to apply a helper or modifier conditionally.
 
 ## How?
 
 To conditionally apply a modifier in a template:
 
-1. You must import the modifier and set it as a property on the backing class on the component. (Ember did not we did not implement support for string-based resolution with `helper` and `modifier`; I will discuss the reasons why and the future direction here below.)
+1. You must import the modifier and set it as a property on the backing class on the component. (Ember did not implement support for string-based resolution with `helper` and `modifier`; I will discuss the reasons why and the future direction here below.)
 
 2. You must then reference that modifier using the `modifier` helper in the template, with a conditional in the template or with a getter to return the modifier or not based on your logic.
 
@@ -242,7 +248,7 @@ function customizeData(someArg) {
 
 To wrap this all up nicely:
 
-- As of Ember 3.25, you can use the new `helper` and `modifier` helpers to apply helpers and modifiers conditionally in Ember templates.
+- As of Ember 3.27, you can use the new `helper` and `modifier` helpers to apply helpers and modifiers conditionally in Ember templates.
 - When doing so, you will need to use the `{{(modifier ...)}}` syntax to immediately invoke the helper and get back the modifier instance it produces.
 - You can use this *today* but passing in the modifier or helper you want using a backing class.
 - You will be able to do this much more elegantly in the future using `<template>` tags and native <abbr>JS</abbr> imports.
