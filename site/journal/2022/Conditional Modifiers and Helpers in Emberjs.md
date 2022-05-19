@@ -21,6 +21,9 @@ updates:
   - at: 2022-05-19T09:22:00-0600
     changes: >
       Fixed a bug in a code sample and update the text to match the code sample.
+  - at: 2022-05-19T12:24:00-0600
+    changes: >
+      Fixed a typo/mismatch between code sample and the text.
 
 ---
 
@@ -118,7 +121,7 @@ Then we can invoke that modifier directly using the `modifier` helper:
   {{on "click" @addToCart}}
   {{on "click" this.markAsClicked}}
   {{(modifier
-    this.trackImpression
+    this.trackInteraction
     "click"
     customizeData=this.customizeClickData
     onSuccess=this.hasBeenTracked
@@ -134,7 +137,7 @@ There are two key things to notice here:
 
      The value *produced* by the `modifier` helper is a modifier, so Ember will run the helper and get out the modifier needed for using it in this position to be valid. Put another way, `modifier` is a higher-order function which *returns* a modifier instance using on the modifier definition you supply it.
 
-2. We pass `this.trackImpression` directly to `modifier`. Just like `component`, `modifier` and `helper` handle `null` and `undefined` by simply ignoring them. That is, when you call `{{(modifier null)}}`, the result is a no-op modifier.
+2. We pass `this.trackInteraction` directly to `modifier`. Just like `component`, `modifier` and `helper` handle `null` and `undefined` by simply ignoring them. That is, when you call `{{(modifier null)}}`, the result is a no-op modifier.
 
 Those two pieces combine such that you can also work with conditionals directly in the template with `modifier` invocations if you so choose. Instead of the getter which produces the modifier or `null`, you could also write your component like this:
 
@@ -146,7 +149,7 @@ Those two pieces combine such that you can also work with conditionals directly 
   {{(unless
     this.hasBeenClicked
     (modifier
-      this.trackImpression "click" customizeData=this.customizeClickData
+      this.trackInteraction "click" customizeData=this.customizeClickData
     )
   )}}
 >
@@ -161,7 +164,7 @@ Or this:
   type="button"
   {{on "click" @addToCart}}
   {{(modifier
-    (unless this.hasBeenClicked this.trackImpression)
+    (unless this.hasBeenClicked this.trackInteraction)
     "click"
     customizeData=this.customizeClickData
   )}}
