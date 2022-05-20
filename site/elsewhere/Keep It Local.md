@@ -36,9 +36,7 @@ You may also find [the slides](https://slides.com/chriskrycho/keep-it-local-embe
 <figure class='embed'>
 
 <div class='embed__wrapper'>
-
 <iframe class='embed__content' src="https://www.youtube.com/embed/Mt7v-VbFjxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 </div>
 
 <figcaption><a href="https://www.youtube.com/watch?v=Mt7v-VbFjxk">Keep It Local</figcaption>
