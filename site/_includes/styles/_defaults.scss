@@ -133,13 +133,17 @@ kbd {
    padding: 0.1em 0.6em;
 }
 
-img {
+img,
+video {
    // I never uses images inline. (I can override locally if that ever changes.)
    display: block;
 
    // Means that even with `max-width` set to some arbitrary value, the image will
    // never overflow its bounds. Makes it basically responsive right out of the gate.
    width: 100%;
+
+   // A reasonable default
+   max-width: 90vw;
 
    margin: {
       left: auto;

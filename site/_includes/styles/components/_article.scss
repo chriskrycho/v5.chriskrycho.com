@@ -826,7 +826,8 @@
          // to the full size of the figure.
          --img-max-width: min(calc(1.778 * var(--max-width)), 79%);
 
-         img {
+         img,
+         video {
             max-width: var(--img-max-width);
             // make sure it fits on screen!
             max-height: 90vh;

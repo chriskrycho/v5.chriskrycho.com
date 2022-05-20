@@ -18,8 +18,8 @@ tags:
 [This]({{link}}) was a super fun and *very* wide-ranging conversation, including lots of discussion of [TypeScript][ts] and [Ember][e] as well as programming and composing. (Also, the whiskey was great.) Thanks to Robbie and Chuck for having me on!
 
 <figure class="embed">
-<iframe frameborder="0" height="200" scrolling="no" src="https://playlist.megaphone.fm?e=PODRYL7620755531&amp;light=true&amp;sharing=false" width="100%"></iframe>
-<figcaption><a href="{{link}}">{{title}}</a></figcaption>
+<video controls src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/wwaw%20preview.mp4"></video>
+<figcaption>—from <a href="{{link}}">{{title}}</a></figcaption>
 </figure>
 
 [ts]: https://www.typescriptlang.org
