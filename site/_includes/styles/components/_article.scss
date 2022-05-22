@@ -195,7 +195,7 @@
       margin-top: ms(4);
       margin-bottom: ms(0);
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.05em;
       background: var(--bg);
       display: flex;
       align-items: center;
@@ -229,7 +229,7 @@
       }
       text-transform: uppercase;
       text-align: center;
-      letter-spacing: 1px;
+      letter-spacing: 0.05em;
       margin-top: ms(4);
       margin-bottom: calc(1em + 2px); // account for height of marker
 
@@ -254,7 +254,7 @@
          weight: 300;
       }
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.05em;
       margin-top: ms(1);
       margin-bottom: calc(#{ms(-1)} + 2px);
 
@@ -454,7 +454,7 @@
             size: calc(var(--sans-adjust) * #{ms(-2)});
          }
          text-transform: uppercase;
-         letter-spacing: 2pt;
+         letter-spacing: 0.12em;
          color: var(--aside-marker-fg);
       }
    }
