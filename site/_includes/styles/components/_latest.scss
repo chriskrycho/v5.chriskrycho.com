@@ -2,6 +2,10 @@
    width: 100%;
    margin: ms(1) auto;
 
+   .heading {
+      letter-spacing: 0.05em;
+   }
+
    .latest-heading {
       width: 100%;
       margin: 0 auto;
@@ -62,7 +66,6 @@
       text-align: right;
       display: inline-block;
       text-align: right;
-      letter-spacing: 1px;
       margin: {
          top: 0.1rem; // eyeballed
          bottom: ms(-6);
@@ -122,7 +125,7 @@
       &__collection {
          font-weight: 300;
          font-size: ms(-1);
-         letter-spacing: 0.5pt;
+         letter-spacing: 0.05em;
       }
    }
 

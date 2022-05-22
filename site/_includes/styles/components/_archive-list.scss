@@ -83,7 +83,7 @@
       text-align: right;
       display: inline-block;
       text-align: right;
-      letter-spacing: 1px;
+      letter-spacing: 0.05em;
       width: 4rem;
    }
 
@@ -151,7 +151,7 @@
       &__collection {
          font-weight: 300;
          font-size: ms(-1);
-         letter-spacing: 0.5pt;
+         letter-spacing: 0.05em;
       }
    }
 

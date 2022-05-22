@@ -21,7 +21,6 @@
    margin-bottom: ms(4);
 }
 
-
 .section-label {
    grid-column: 1 / 2;
    align-self: first baseline;
@@ -33,7 +32,7 @@
    font-weight: bold;
    color: var(--meta-label-color);
    text-transform: uppercase;
-   letter-spacing: 1px;
+   letter-spacing: 0.1em;
 }
 
 .section-content {
