@@ -3,6 +3,7 @@ export interface Preferences {
    hideNav: boolean;
 }
 
+/** Defines the class names for the theme */
 export const enum Theme {
    System = 'system',
    Light = 'light',
@@ -17,8 +18,8 @@ export const isTheme = (s: string): s is Theme => THEME_VALUES.includes(s);
 /**
    Update the style class on the root (`html`) element.
 
-   @param root The `html` element
    @param newTheme The new theme to set on that `html` element.
+   @param element The target element to set the class on.
  */
 const updateThemeClass = (newTheme: Theme, element: HTMLElement): void => {
    THEME_VALUES.forEach((className) => element.classList.remove(className));
