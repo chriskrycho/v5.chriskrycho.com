@@ -1,6 +1,6 @@
 # License
 
-Copyright 2019-2021 Chris Krycho
+Copyright 2019-2022 Chris Krycho
 
 - [Software](#Software)
     - [Human-readable Summary](#Human-readable-Summary)
