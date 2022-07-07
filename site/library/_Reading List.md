@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-05-27T12:54:00-0600
+date: 2022-07-06T21:24:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -100,6 +100,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Science and the Good: The Tragic Quest for the Foundations of Morality</cite>](https://bookshop.org/a/21126/9780300251821), James Davison Hunter and Paul Nedelisky (new)
 
 - [<cite>The Internet is Not What You Think It Is: A History, A Philosophy, a warning</cite>](https://bookshop.org/a/21126/9780691212326), Justin E. H. Smith (new)
+
+- [<cite>The Halo Effect… and the Eight Other Business Delusions That Deceive Managers</cite>](https://bookshop.org/a/21126/9781476784038), Phil Rosenzweig (new)
 
 
 ### Fiction
