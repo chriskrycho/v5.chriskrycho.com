@@ -1,5 +1,6 @@
 ---
-title: Evolving Ember's Major Version Process
+title: >
+  RFC: Evolving Ember's Major Version Process
 link: https://github.com/emberjs/rfcs/pull/830
 date: 2022-07-12T08:55:00-0600
 tags:
