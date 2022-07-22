@@ -35,7 +35,7 @@ When I wrapped up [New Rustacean][nr] in mid-2019, I had covered the vast majori
 
 People struggle with Rust for a number of reasons, including that some of its concepts are deeply novel for anyone outside academia (hello, the borrow checker!)… but one reason is that it is just *so. very. large*. It is, accordingly, totally reasonable for C programmers to feel overwhelmed, and to feel that it isn't really a direct replacement for what they do now. (It wins over a lot of C programmers anyway, but it often takes some time, and that is fair in the same way.)
 
-Zig looks like a lot more like C. It is aiming to be substantially smaller than Rust—not only to start smaller, but to *stay* smaller. It is so far doing that in part by not solving some of the problems Rust solves. It makes you keep more of those in your head. That has some of the same downsides as C making you keep those things in your head did… but C programmers are used to those.
+Zig looks a lot more like C. It is aiming to be substantially smaller than Rust—not only to start smaller, but to *stay* smaller. It is so far doing that in part by not solving some of the problems Rust solves. It makes you keep more of those in your head. That has some of the same downsides as C making you keep those things in your head did… but C programmers are used to those.
 
 <aside>
 
