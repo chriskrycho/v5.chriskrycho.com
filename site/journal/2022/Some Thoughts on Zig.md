@@ -31,7 +31,7 @@ Rust is one attempt to address that problem. It does it by looking at *all* of t
 
 There is a good reason that C++ didn't seem like an actual improvement to a lot of C hackers, so much as a variation which grew language features like weeds. It is huge. For many C developers looking to upgrade their language, Rust looks a lot like a better C++, not a better C. “Sure, Rust's design is (so far) more coherent than C++'s, and its feature set more orthogonal,” a C developer might say. “But Rust is still a very large language, and only growing larger over time.” The C developer would be right.
 
-When I wrapped up [New Rustacean][nr] in mid-2019, I had covered the vast majority of the language as it stood then. I had a very good handle on the language as it stood then, and *even then* it was a large language. It took me over three years to teach through all of it as it stood then—and granted that the schedule wasn't all that regular and that I interspersed a lot of other kinds of material, it also just took a long time to cover all that ground in a reasonably effective way. And Rust has grown substantially since then: it added a whole massive chunk of the language around `async`/`.await`!
+When I wrapped up [New Rustacean][nr] in mid-2019, I had covered the vast majority of the language, and *even then* it was a large language. It took me over three years to teach through all of it as it stood then—and granted that the schedule wasn't all that regular and that I interspersed a lot of other kinds of material, it also just took a long time to cover all that ground in a reasonably effective way. And Rust has grown substantially since then: it added a whole massive chunk of the language around `async`/`.await`!
 
 People struggle with Rust for a number of reasons, including that some of its concepts are deeply novel for anyone outside academia (hello, the borrow checker!)… but one reason is that it is just *so. very. large*. It is, accordingly, totally reasonable for C programmers to feel overwhelmed, and to feel that it isn't really a direct replacement for what they do now. (It wins over a lot of C programmers anyway, but it often takes some time, and that is fair in the same way.)
 
@@ -59,4 +59,4 @@ I think the very real appeal of Zig is indicative of a need in this space, thoug
 
 [^elm]: Honorable mentions here to both F♯ and OCaml; neither is a *huge* language but both are significantly larger than Elm.
 
-[^doubt]: This isn’t hypothetical: I did it learning on the job in my first gig out of college with nothing to build on besides a year of Fortran 90 physic code, a single semester of introductory Java, and a lot of terrible HTML and CSS hackery.
+[^doubt]: This isn’t hypothetical: I did it learning on the job in my first gig out of college with nothing to build on besides a year of Fortran 90 physics code, a single semester of introductory Java, and a lot of terrible <abbr>HTML</> and <abbr>CSS</abbr> hackery.
