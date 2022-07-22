@@ -17,7 +17,7 @@ summary: >
 
 ---
 
-I looked at [Zig](https://ziglang.org) as soon as it started making waves. Of course I did: as a [huge fan][nr] of [Rust](https://www.rust-lang.org), a new programming language in the systems language/“C replacement” space was of immediate interest. Like many people who like Rust, I also immediately bailed on Zig, because a new systems programming which doesn't meaningfully address memory safety[^option] just doesn't interest me. But:
+I looked at [Zig](https://ziglang.org) as soon as it started making waves. Of course I did: as a [huge fan][nr] of [Rust](https://www.rust-lang.org), a new programming language in the systems language/“C replacement” space was of immediate interest. Like many people who like Rust, I also immediately bailed on Zig, because a new systems programming language which doesn't meaningfully address memory safety[^option] just doesn't interest me. But:
 
 [nr]: https://newrustacean.com
 
