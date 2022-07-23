@@ -24,6 +24,9 @@ updates:
   - at: 2022-05-19T12:24:00-0600
     changes: >
       Fixed a typo/mismatch between code sample and the text.
+  - at: 2022-07-23T14:05:00-0600
+    changes: >
+      Corrected an error in the original text about string-based lookup of helpers and modifiers.
 
 ---
 
@@ -83,13 +86,76 @@ This is not merely an annoyance, though it is certainly that! For sufficiently c
 
 ## How?
 
-To conditionally apply a modifier in a template:
+To conditionally apply a modifier in a template, you must reference that modifier using the `modifier` helper in the template, with a conditional in the template or with a getter to return the modifier or not based on your logic.
 
-1. You must import the modifier and set it as a property on the backing class on the component. (Ember did not implement support for string-based resolution with `helper` and `modifier`; I will discuss the reasons why and the future direction here below.)
 
-2. You must then reference that modifier using the `modifier` helper in the template, with a conditional in the template or with a getter to return the modifier or not based on your logic.
+### The basics
 
 Returning to our example from above, we can imagine that we only want to track the *first* time someone clicks the add to cart button for a given item. In that case, we'll introduce some tracked state to indicate whether the item has been clicked, and an action to update it, which we will wire up with another `{{on}}` modifier.
+
+```js
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+
+export default class Item extends Component {
+  @tracked hasBeenClicked = false;
+
+  markAsClicked = () => {
+    this.hasBeenClicked = true;
+  };
+
+  customizeClickData = (trackingData) => {
+    // use backing class state to customize tracking event...
+  };
+}
+```
+
+Just like the `component` helper, the `modifier` and `helper` helpers handle `null` and `undefined` by simply ignoring them. In other words, when you call `{{(modifier null)}}`, the result is a no-op modifier. Thus, we can invoke the `track-interaction` modifier using the `modifier` helper along with the `unless` helper to only fire it when `this.hasBeenClicked` is not yet `true`:
+
+```hbs
+<button
+  type="button"
+  {{on "click" @addToCart}}
+  {{on "click" this.markAsClicked}}
+  {{(modifier
+    (unless this.hasBeenClicked "track-interaction")
+    "click"
+    customizeData=this.customizeClickData
+  )}}
+>
+  Add to Cart
+</button>
+```
+
+Notice that the `modifier` invocation is wrapped in "extra" parentheses: `{{(modifier ...)}}`. *This is not a mistake.* The parentheses here are the syntax for immediately invoking a helper when rendering. We need to do that because `modifier` is a helper, but it is appearing here in the position of a modifier. Ember will throw a build error if you don't include the parentheses, because helpers aren't allowed there! When Ember runs the helper, though, the result is a modifier—exactly what we need to use it here. (Put another way, `modifier` is a higher-order function which *returns* a modifier instance using on the modifier definition you supply it.) Like `component`, 
+
+If it makes more sense in a given context, you can also flip around the order of the conditional:
+
+```hbs
+<button
+  type="button"
+  {{on "click" @addToCart}}
+  {{on "click" this.markAsClicked}}
+  {{(unless
+    this.hasBeenClicked
+    (modifier
+      "track-interaction" "click" customizeData=this.customizeClickData
+    )
+  )}}
+>
+  Add to Cart
+</button>
+```
+
+Which you choose depends on the use case:
+
+-   the `{{(unless ...` version is handy if you just want to pick between having a modifier or not.
+-   the `{{(modifier (unless ...` version is handy if you want to pick between modifiers to dispatch to with the same args (unusual but not impossible!)
+
+
+### By reference instead of by name
+
+As part of the work on Ember's new strict mode templates, Ember 3.25 introduced the ability to invoke modifiers, helpers, and components by *reference*, not just by *name*. This was ultimately needed to unblock [first-class component templates][fcct] and the `<template>` tag—see below under [**The Future**](#the-future)—but it also means that we can use backing classes to accomplish some of the same things today.
 
 ```js
 import Component from '@glimmer/component';
@@ -100,7 +166,7 @@ export default class Item extends Component {
   @tracked hasBeenClicked = false;
 
   get trackInteraction() {
-    return !this.hasBeenClicked ? TrackInteraction : null;
+    return this.hasBeenClicked ? null : TrackInteraction;
   }
 
   markAsClicked = () => {
@@ -113,7 +179,7 @@ export default class Item extends Component {
 }
 ```
 
-Then we can invoke that modifier directly using the `modifier` helper:
+Now we can pass `this.trackInteraction` directly to `modifier` instead of referring to it by name:
 
 ```hbs
 <button
@@ -131,62 +197,14 @@ Then we can invoke that modifier directly using the `modifier` helper:
 </button>
 ```
 
-There are two key things to notice here:
+This approach of using a getter version is especially handy for the cases where you have more “interesting” logic to determine what to do. It also points to the future, where in many cases we won't need a backing class at all.
 
-1. The `modifier` invocation is wrapped in "extra" parentheses: `{{(modifier ...)}}`. This is not a mistake. The parentheses here are the syntax for immediately invoking a helper when rendering. We need to do that because `modifier` is a *helper*, but it is appearing here in the position of a *modifier*. Ember will throw a build error if you don't include the parentheses, because helpers aren't allowed there.
-
-     The value *produced* by the `modifier` helper is a modifier, so Ember will run the helper and get out the modifier needed for using it in this position to be valid. Put another way, `modifier` is a higher-order function which *returns* a modifier instance using on the modifier definition you supply it.
-
-2. We pass `this.trackInteraction` directly to `modifier`. Just like `component`, `modifier` and `helper` handle `null` and `undefined` by simply ignoring them. That is, when you call `{{(modifier null)}}`, the result is a no-op modifier.
-
-Those two pieces combine such that you can also work with conditionals directly in the template with `modifier` invocations if you so choose. Instead of the getter which produces the modifier or `null`, you could also write your component like this:
-
-```hbs
-<button
-  type="button"
-  {{on "click" @addToCart}}
-  {{on "click" this.markAsClicked}}
-  {{(unless
-    this.hasBeenClicked
-    (modifier
-      this.trackInteraction "click" customizeData=this.customizeClickData
-    )
-  )}}
->
-  Add to Cart
-</button>
-```
-
-Or this:
-
-```hbs
-<button
-  type="button"
-  {{on "click" @addToCart}}
-  {{(modifier
-    (unless this.hasBeenClicked this.trackInteraction)
-    "click"
-    customizeData=this.customizeClickData
-  )}}
->
-  Add to Cart
-</button>
-```
-
-Which you choose depends on the use case:
-
--   the `{{(unless ...` version is handy if you just want to pick between having a modifier or not.
--   the `{{(modifier (unless ...` version is handy if you want to pick between modifiers to dispatch to with the same args (unusual but not impossible!)
--   the getter version is handy for the cases where you have more “interesting” logic to determine what to do
 
 ## The future
 
-As mentioned briefly above, Ember has not implemented support for the classic string-based resolver used to look up components, helpers, and modifiers directly. That is, while you can do `{{component "some-component"}}`, you cannot do `{{modifier "some-modifier"}}`. This is because we are in the process of rolling out support for a much nicer and easier-to-use design: [First-Class Component Templates][fcct], i.e. `<template>` tags.
+As mentioned briefly above, we are in the process of rolling out support for a much nicer and easier-to-use design: [First-Class Component Templates][fcct], i.e. `<template>` tags. Among their [many other benefits][series], `<template>` tags make this use case much simpler. We won’t need to do as much of the dance with the backing class—instead, normal <abbr title="JavaScript">JS</abbr> imports will just work:
 
 [fcct]: https://rfcs.emberjs.com/id/0779-first-class-component-templates
-
-`<template>` tags, among their [many other benefits][series], make this use case much simpler. We won’t need to do as much of the dance with the backing class—instead, normal <abbr title="JavaScript">JS</abbr> imports will just work:
-
 [series]: https://v5.chriskrycho.com/journal/ember-template-imports/
 
 ```js
@@ -254,7 +272,7 @@ To wrap this all up nicely:
 
 - As of Ember 3.27, you can use the new `helper` and `modifier` helpers to apply helpers and modifiers conditionally in Ember templates.
 - When doing so, you will need to use the `{{(modifier ...)}}` syntax to immediately invoke the helper and get back the modifier instance it produces.
-- You can use this *today* but passing in the modifier or helper you want using a backing class.
+- You can use this *today* by using the string name or by passing in the modifier or helper you want by reference via a backing class.
 - You will be able to do this much more elegantly in the future using `<template>` tags and native <abbr>JS</abbr> imports.
 
 This solves a number of annoyances which existed in Ember before. Hopefully this helps you take advantage of the new capabilities!
