@@ -6,7 +6,7 @@
       "checkJs": true /* Report errors in .js files. */,
       "allowJs": true,
       "moduleResolution": "node",
-      "module": "node12",
+      "module": "node16",
 
       /* Strict Type-Checking Options */
       "strict": true /* Enable all strict type-checking options. */,
