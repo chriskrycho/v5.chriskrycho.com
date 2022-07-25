@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-07-06T21:24:00-0600
+date: 2022-07-24T20:25:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -115,7 +115,10 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>The Dragon Reborn</cite>](https://bookshop.org/a/21126/9781250251497)
 
 - [<cite>Children of Time</cite>](https://bookshop.org/a/21126/9780316452502), Adrian Tchaikovsky (new)
+
 - [<cite>Children of Ruin</cite>](https://bookshop.org/a/21126/9780316452533), Adrian Tchaikovsky (new)
+
+- [<cite>Battle of the Linguist Mages</cite>](https://bookshop.org/a/21126/9781250767721), Scotto More (new)
 
 
 ## 2021
