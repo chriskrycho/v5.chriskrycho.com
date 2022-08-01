@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-07-24T20:25:00-0600
+date: 2022-07-31T20:13:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -72,6 +72,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
 
+- [<cite>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</cite>](https://bookshop.org/a/21126/9780300246759), James C. Scott (new)
+
 
 ### Fiction
 
@@ -79,7 +81,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
-- <cite>The Hobbit</cite>, J. R. R. Tolkien (reread with my younger daughter)
+- [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
@@ -109,6 +111,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>The Galactic Cold War</cite>, Dan Moren (new)
     - [<cite>The Bayern Agenda: The Galactic Cold War, Book I</cite>](https://bookshop.org/a/21126/9780857668196)
     - [<cite>The Aleph Extraction: The Galactic Cold War, Book II</cite>](https://bookshop.org/a/21126/9780857668417)
+    - [<cite>The Nova Incident: The Galactic Cold War, Book III</cite>](https://bookshop.org/a/21126/9780857669452)
 
 - <cite>The Wheel of Time</cite>, Robert Jordan (reread)
     - [<cite>The Great Hunt</cite>](https://bookshop.org/a/21126/9781250251480)
