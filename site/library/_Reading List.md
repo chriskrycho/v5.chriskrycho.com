@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-07-31T20:16:00-0600
+date: 2022-07-31T20:27:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -53,7 +53,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
 
-- [<cite>The Printing Press as an Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Printing-Press-as-an-Agent-of-Change-Elizabeth-L-Eisenstein%2Fbook%2F5343362), Elizabeth Eisenstein (new)
+- [<cite>The Printing Press as an Agent of Change</cite>](https://bookshop.org/a/21126/9780521299558), Elizabeth Eisenstein (new)
     - discussed on Winning Slowly [8.10] and [8.11]
 
 - [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
