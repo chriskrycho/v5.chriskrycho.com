@@ -9,7 +9,6 @@ tags:
     - composing
     - Logic Pro
     - Dorico
-featured: true
 date: 2021-07-18T14:20:00-0600
 updated: 2021-07-20T10:24:00-0600
 
