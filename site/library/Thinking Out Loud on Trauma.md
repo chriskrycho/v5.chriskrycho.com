@@ -26,7 +26,7 @@ But it’s still really weird.
 
 My friend Matt Loftus wrote [this piece on trauma][matt] late last year, noting among many other things that “trauma” has become the _de facto_ primary descriptor for talking about the hard things people experience in life. And, critically:
 
-> it seems that trauma discourse is being used to reconceive our entire psychological, religious, social, and political milieus in a therapeutic manner—a manner which, of course, can then only be cared for by professionals.
+> …it seems that trauma discourse is being used to reconceive our entire psychological, religious, social, and political milieus in a therapeutic manner—a manner which, of course, can then only be cared for by professionals.
 
 [matt]: https://mereorthodoxy.com/trauma-attachment-and-self-care-what-everyone-should-know/
 
@@ -34,7 +34,7 @@ This is not to say (and Matt very much went out of his way not to say) that trau
 
 > Trauma is something that affects many people a little and a few people a lot, so Christians should understand how trauma can affect people in profound and frustrating ways.
 
-But the discourse launched by <cite>The Body Keeps the Score</cite> certainly lacks that nuance. The book itself, at least from the first 70 pages, is at least somewhat to blame for this: On the one hand, it consistently points to things we would all agree are things we would file under Matt’s “a few people a lot.” On the other hand, it opens by describing how trauma actually affects everyone, how it’s at the root of many of the relational problems we all have, etc. (It’s a popular-level psychology book, in other words: Making stronger and more engaging claims than is perhaps warranted is basically the stock-and-trade of nearly all popular science books, after all.)
+But the discourse launched by <cite>The Body Keeps the Score</cite> certainly lacks that nuance. The book itself, at least from the first 70 pages, is at least somewhat to blame for this: On the one hand, it consistently points to things we would all agree are things we would file under Matt’s “a few people a lot.” On the other hand, it opens by describing how trauma actually affects everyone, how it’s at the root of many of the relational problems we all have, etc. (It’s a popular-level psychology book, in other words: Making stronger and more engaging claims than is perhaps warranted is basically the stock-in-trade of nearly all popular science books, after all.)
 
 Regardless of how much van der Kolk’s own framing is or isn’t careful on this point (and again, I’ve only read the first fifth or so of the book!), the cultural discussion going on around trauma is simply not careful *at all*. Everyone is traumatized, and quite deeply, by things that in the past we might have filed under The Preacher’s comment:[^eccl]
 
