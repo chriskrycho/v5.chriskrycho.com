@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-07-31T20:27:00-0600
+date: 2022-08-06T11:54:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -73,6 +73,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
 
 - [<cite>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</cite>](https://bookshop.org/a/21126/9780300246759), James C. Scott (new)
+
+- [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new) 
 
 
 ### Fiction
