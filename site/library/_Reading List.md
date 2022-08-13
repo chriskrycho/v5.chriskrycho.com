@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-08-07T16:28:00-0600
+date: 2022-08-13T13:58:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -86,6 +86,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
+
+- [<cite>Shards of Earth</cite>, Adrian Tchaikovsky](https://bookshop.org/a/21126/9780316705844) (new)
 
 
 ## 2022
