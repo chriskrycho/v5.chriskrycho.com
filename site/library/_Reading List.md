@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-08-13T13:58:00-0600
+date: 2022-08-13T14:19:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -71,6 +71,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
 
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
+
+- [<cite>The Anglican Way: A Guidebook</cite>](https://bookshop.org/a/21126/9780996049900), Thomas McKenzie (new)
 
 - [<cite>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</cite>](https://bookshop.org/a/21126/9780300246759), James C. Scott (new)
 
