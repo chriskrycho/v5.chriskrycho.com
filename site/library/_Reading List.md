@@ -131,7 +131,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Shards of Honor</cite>](https://bookshop.org/a/21126/9781476781105), Lois McMaster Bujold (new)
 
-- [<cite>Shards of Earth</cite>, Adrian Tchaikovsky](https://bookshop.org/a/21126/9780316705844) (new)
+- [<cite>Shards of Earth</cite>](https://bookshop.org/a/21126/9780316705844), Adrian Tchaikovsky (new)
 
 
 ## 2021
