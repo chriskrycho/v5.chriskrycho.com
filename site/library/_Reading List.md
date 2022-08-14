@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-08-13T14:19:00-0600
+date: 2022-08-13T21:48:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -89,8 +89,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
-- [<cite>Shards of Earth</cite>, Adrian Tchaikovsky](https://bookshop.org/a/21126/9780316705844) (new)
-
 
 ## 2022
 
@@ -132,6 +130,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     No full review for this one, because I’m not going to dignify it with that. It wasn’t worth the time I spent on it. It *could* have been, because the ideas were good, but… it wasn’t. The main character was too much a Mary Sue, a stand-in for young millennials and older Gen Z types who want their video game obsessions to mean something. The very interesting high concept doesn’t get its due as a result, and there’s no interesting characterization to make up for it. Ugh.
 
 - [<cite>Shards of Honor</cite>](https://bookshop.org/a/21126/9781476781105), Lois McMaster Bujold (new)
+
+- [<cite>Shards of Earth</cite>, Adrian Tchaikovsky](https://bookshop.org/a/21126/9780316705844) (new)
 
 
 ## 2021
