@@ -17,7 +17,7 @@ Pro tip for macOS, iOS, and iPadOS users: if you’d like your UI to be massivel
 - macOS: System Preferences[^until] > Accessibility > Display
 - iOS: Settings > Accessibility > Display & Text
 
-— Settings/System Preferences > Accessibility > Display/Display & Text and then enable a few of the options. I did this across my devices and it has made the OSes *dramatically* nicer to my eyes.
+—and then enable a few of the options. I did this across my devices and it has made the OSes *dramatically* nicer to my eyes.
 
 On macOS, I have selected:
 
