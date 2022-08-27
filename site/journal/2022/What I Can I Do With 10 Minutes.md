@@ -6,6 +6,7 @@ subtitle: >
 tags:
     - off the cuff
     - writing
+    - composing
     - working effectively
 
 qualifiers:
