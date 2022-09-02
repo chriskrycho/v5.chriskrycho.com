@@ -16,7 +16,9 @@ qualifiers:
 
 ---
 
-A thing I think is really, *really* easy to overlook when thinking about open source software is just *how* much work it can take. “Move types from the DefinitelyTyped repo to the Ember repo” seems easy, right? “It’s just a simple move operation!” But: it wasn’t, for many reasons.
+A thing I think is really, *really* easy to overlook when thinking about open source software is just *how* much work it can take. “[Move types][pr] from the DefinitelyTyped repo to the Ember repo” seems easy, right? “It’s just a simple move operation!” But: it wasn’t, for many reasons.
+
+[pr]: https://github.com/emberjs/ember.js/pull/20180
 
 For one thing, we *intentionally* didn’t do some of this TypeScript work on the types in DefinitelyTyped to avoid breaking people—we wanted to give people a chance to *opt into* breaking changes, rather than be implicitly *opted in*. That meant that there were a lot of changes!
 
