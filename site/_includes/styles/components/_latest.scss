@@ -10,7 +10,7 @@
       width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template: '. latest .' auto / minmax(5.5rem, 1fr) minmax(min-content, 35rem) 1fr;
+      grid-template: '. latest .' auto / minmax(5.5rem, 1fr) minmax(min-content, 34rem) 1fr;
    }
 
    .latest-title {
@@ -49,7 +49,7 @@
       list-style-type: none;
       display: grid;
       grid-template:
-         'collection entry .' auto / minmax(5rem, 1fr) minmax(min-content, 35rem)
+         'collection entry .' auto / minmax(5rem, 1fr) minmax(min-content, 34rem)
          1fr;
       gap: 0 0.5rem;
       justify-content: stretch;
@@ -159,7 +159,7 @@
 @media screen and (max-width: $break-2) {
    .latest-list {
       .latest-entry {
-         grid-template-columns: 1fr minmax(min-content, 35rem) 1fr;
+         grid-template-columns: 1fr minmax(min-content, 34rem) 1fr;
       }
 
       .entry-collection {
