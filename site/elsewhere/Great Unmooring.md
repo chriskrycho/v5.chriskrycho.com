@@ -7,6 +7,7 @@ date: 2022-09-22T13:55:00-0600
 tags:
   - work
   - theology
+featured: true
 
 ---
 
