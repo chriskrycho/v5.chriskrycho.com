@@ -109,6 +109,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Halo Effect… and the Eight Other Business Delusions That Deceive Managers</cite>](https://bookshop.org/a/21126/9781476784038), Phil Rosenzweig (new)
 
+- [<cite>The Man from the Future: The Visionary Life of John Von Neumann</cite>](https://bookshop.org/a/21126/9781324003991), Ananyo Bhattacharya (new)
+
 
 ### Fiction
 
@@ -312,6 +314,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>What is An Evangelical</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWho-Is-an-Evangelical-The-History-of-a-Movement-in-Crisis-Thomas-S-Kidd%2Fbook%2F43567758), Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
 
 - [<cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FIn-Search-of-the-Common-Good-Christian-Fidelity-in-a-Fractured-World-Jake-Meador%2Fbook%2F42719272), Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
+
+- [<cite>The Year of Our Lord 1943</cite>](https://bookshop.org/a/21126/9780190864651), Alan Jacobs (new)
 
 
 ### Fiction
