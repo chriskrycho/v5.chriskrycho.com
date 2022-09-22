@@ -3,7 +3,6 @@ title: The Road to TypeScript
 subtitle: My EmberConf 2022 talk (with, again, a lot of non-Ember interest).
 date: 2022-04-20T08:05:00-0600
 link: https://youtu.be/UOw7TydAT_s
-featured: true
 tags:
     - talks
     - public speaking
