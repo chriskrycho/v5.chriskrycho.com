@@ -17,13 +17,13 @@ I was thinking this morning on the relationship between shorter-form and longer-
 
 Longer-form writing is often significantly more valuable, for a couple reasons well-highlighted by this exchange on Twitter:
 
-> I tend to get disproportionately more from long blog posts than I do from short posts, because it's often surprising which seemingly minor detail(s) end up resonating with me, and those details seem to end up missing when spread across multiple posts.
->
 > > Despite not looking for short-form writing advice (which is rarely useful), it's become so trendy to tell people to write shorter pieces that I ran across this advice thrice last week.
 > >
 > > As a general, unnuanced, dictum, this strikes me as very bad advice; the opposite of correct.
 > >
 > > – [Dan Luu](https://twitter.com/danluu/status/1437539076324790274)
+>
+> I tend to get disproportionately more from long blog posts than I do from short posts, because it's often surprising which seemingly minor detail(s) end up resonating with me, and those details seem to end up missing when spread across multiple posts.
 >
 > – [Laurence Tratt](https://twitter.com/laurencetratt/status/1437670424070995972)
 
