@@ -1,5 +1,5 @@
 ---
-title: Marco’s Rule (Expanded)
+title: Marco’s Rule of Software Stacks (Expanded)
 subtitle: >
     On being the biggest user of a given technology.
 date: 2022-09-25T09:30:00-0600
@@ -8,10 +8,11 @@ tags:
 qualifiers:
     audience:
         Software developers.
+permalink: /journal/marcos-rule-expanded/
 
 ---
 
-Marco’s Rule says:[^rule]
+Marco’s Rule[^rule] of Software Stacks says:
 
 > Never be the biggest user of a given technology. As the largest user of a technology, you will likely hit bugs, scaling problems, and limitations that other users do not.
 
