@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-08-13T21:48:00-0600
+date: 2022-10-05T22:12:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -135,6 +135,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Shards of Earth</cite>](https://bookshop.org/a/21126/9780316705844), Adrian Tchaikovsky (new)
 
+- [<cite>Age of Swords: Book Two of the Legends of the First Empire</cite>](https://bookshop.org/a/21126/9781101965382), Michael J. Sullivan (new)
+
 
 ## 2021
 
@@ -262,7 +264,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Contact</cite>, Carl Sagan (new)
     - discussed on Winning Slowly episodes [8.18] and [8.19]
 
-- <cite>Age of Myth</cite>, Michael J. Sullivan (new)
+- [<cite>Age of Myth: Book One of the Legends of the First Empire</cite>](https://bookshop.org/a/21126/9781101965351), Michael J. Sullivan (new)
 
 - The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
 	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
