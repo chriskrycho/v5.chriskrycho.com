@@ -23,19 +23,6 @@
    {% endif %}
 </div>
 {%- endif %}
-{%- if updates -%}
-<div class='updates'>
-   <p><b>Updates:</b></p>
-   <ul>
-   {%- for update in updates -%}
-   <li>
-      <b>{% localeDate update.at, 'yyyy/MM/dd HH:mm' %}:</b>
-      {{update.changes | inlineMd | safe}}
-   </li>
-   {%- endfor -%}
-   </ul>
-</div>
-{%- endif -%}
 
 {%- if book.review -%}
    {{- review(book) -}}
@@ -44,5 +31,5 @@
 {% endblock %}
 
 {% block after_content %}
-   {{item.meta(title, page.date, tags, updated, page.inputPath, thanks, isGhostCollection)}}
+   {{item.meta(title, page.date, tags, updated, updates, page.inputPath, thanks, isGhostCollection)}}
 {% endblock %}
