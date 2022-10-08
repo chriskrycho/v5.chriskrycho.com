@@ -33,30 +33,48 @@
 {% endif %}
 {% endmacro %}
 
-{% macro meta(title, date, tags, updated, inputPath, thanks, isGhostCollection) %}
-{%- set dateFormat = 'MMMM d, yyyy' %}
+{% macro meta(title, date, tags, updated, updates, inputPath, thanks, isGhostCollection) %}
+{%- set DATE_FORMAT = 'MMMM d, yyyy' %}
+{%- set TIME_FORMAT = 'HH:mm' %}
 <footer class='post-meta'>
    {% if thanks is defined %}
-   <span class='section-label'>Thanks:</span>
+   <div class='section-label'>Thanks:</div>
    <div class='section-content'>
       {{thanks | inlineMd | safe}}
    </div>
    {% endif %}
 
-   <span class='section-label'>Posted:</span>
-   <span class='section-content'>
-      This entry was {% if updated is defined -%} originally {%- endif %} published in
-      <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
-      on <span class='dt-published'>{% localeDate date, dateFormat %}</span>
-      {%- if updated is defined -%}
-      , and last updated on {% localeDate updated, dateFormat %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+   <div class='section-label'>Posted:</div>
+   <div class='section-content'>
+      <p>
+         This entry was {% if updated is defined -%} originally {%- endif %} published in
+         <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
+         on <span class='dt-published'>{% localeDate date, DATE_FORMAT %}</span>
+         {%- if updated is defined -%}
+         , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+         {%- endif -%}
+         .
+      </p>
+
+      {%- if updates -%}
+      <div class='updates'>
+         <p><b>Major changes:</b></p>
+         <ul>
+         {%- for update in updates -%}
+         <li>
+            <b>{% localeDate update.at, DATE_FORMAT %} at {% localeDate update.at, TIME_FORMAT %}:</b>
+            {{update.changes | inlineMd | safe}}
+         </li>
+         {%- endfor -%}
+         </ul>
+      </div>
       {%- endif -%}
-      .
-      Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a>
-   </span>
+      
+      <p>Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a></p>
+   </div>
 
    {%- if tags.length > 0 %}
-   <span class='section-label'>Topics:</span>
+   <div class='section-label'>Topics:</div>
    <ul class='topics section-content'>
       {%- for tag in tags %}
       <li class='__topic'><a href='/topics/{{tag | slug}}'>{{tag}}</a></li>
@@ -64,19 +82,19 @@
    </ul>
    {%- endif %}
 
-   <span class='section-label'>Respond:</span>
+   <div class='section-label'>Respond:</div>
    <div class='section-content'>
       <p>
          Have a thought to share about this? <a href='mailto:hello@chriskrycho.com?subject={{title}}'>Send me an email!</a> (It’s way better than traditional comments.)
       </p>
    </div>
 
-   <span class='section-label'>About:</span>
+   <div class='section-label'>About:</div>
    <div class='section-content'>
       {% include 'blocks/short-about.njk' %}
    </div>
 
-   <span class='section-label'>Support:</span>
+   <div class='section-label'>Support:</div>
    <div class='section-content'>
       {% include 'blocks/sponsor-me.njk' %}
    </div>

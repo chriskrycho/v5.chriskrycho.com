@@ -46,9 +46,26 @@
    grid-column: 2 / 3;
 }
 
+ul,
+ol {
+   width: 100%;
+   max-width: var(--max-width);
+   padding-left: ms(2);
+   margin-bottom: ms(0);
+}
+
+ol {
+   font-feature-settings: 'lnum';
+}
+
+ul {
+   list-style-type: circle;
+}
+
 .topics {
    list-style: none;
    display: inline;
+   padding-left: 0;
 
    .__topic {
       display: inline;
