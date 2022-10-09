@@ -1,7 +1,7 @@
 ---
 title: Inversion
 date: 2022-10-08T19:50:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion.jpg
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion%20(Thumb).jpg
 
 ---
 
