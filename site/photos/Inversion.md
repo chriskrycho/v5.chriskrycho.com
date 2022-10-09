@@ -8,7 +8,7 @@ image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inve
 <figure>
 <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion%20(Thumb).jpg" alt="a neighborhood, mountains, and clouds reflecting in a lake " />
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion.jpg">full size</a> | <a href='https://glass.photo/chriskrycho/20fi1E2KG4sYraQnIUgUt9'>Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion.jpg">full size</a> | <a href='https://glass.photo/chriskrycho/2AfZHKcnYlpome4totbQrp'>Glass</a></p>
 <table>
     <tr>
         <th scope='row'>Camera</th>
