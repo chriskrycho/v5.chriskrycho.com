@@ -1,5 +1,5 @@
 ---
-title: Inversion
+title: Autumn on the Front Range
 date: 2022-10-09T16:45:00-0600
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Autumn%20on%20the%20Front%20Range%20(Thumb).jpg
 
