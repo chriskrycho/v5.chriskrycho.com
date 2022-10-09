@@ -35,6 +35,22 @@
    ul {
       list-style-type: circle;
    }
+
+   ul.topics {
+      list-style: none;
+      display: inline;
+      padding-left: 0;
+
+      .__topic {
+         display: inline;
+
+         &:not(:last-child) {
+            &:after {
+               content: ',';
+            }
+         }
+      }
+   }
 }
 
 .section-label {
@@ -60,20 +76,4 @@
    display: block;
    align-self: first baseline;
    grid-column: 2 / 3;
-}
-
-.topics {
-   list-style: none;
-   display: inline;
-   padding-left: 0;
-
-   .__topic {
-      display: inline;
-
-      &:not(:last-child) {
-         &:after {
-            content: ',';
-         }
-      }
-   }
 }
