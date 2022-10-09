@@ -19,6 +19,22 @@
    }
 
    margin-bottom: ms(4);
+
+   ul,
+   ol {
+      width: 100%;
+      max-width: var(--max-width);
+      padding-left: ms(2);
+      margin-bottom: ms(0);
+   }
+
+   ol {
+      font-feature-settings: 'lnum';
+   }
+
+   ul {
+      list-style-type: circle;
+   }
 }
 
 .section-label {
@@ -44,22 +60,6 @@
    display: block;
    align-self: first baseline;
    grid-column: 2 / 3;
-}
-
-ul,
-ol {
-   width: 100%;
-   max-width: var(--max-width);
-   padding-left: ms(2);
-   margin-bottom: ms(0);
-}
-
-ol {
-   font-feature-settings: 'lnum';
-}
-
-ul {
-   list-style-type: circle;
 }
 
 .topics {
