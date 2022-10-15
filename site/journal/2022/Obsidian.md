@@ -35,7 +35,7 @@ So, two major points of relevant background knowledge:
 
 Obsidian works *with* that model, rather than against it. And it layers a couple really nice things on top of it:
 
-- Like many apps from the last ~half decade, it makes it trivial to link between notes; you just write [[title of other note]] and boom, there’s a link. (And if you rename the other note from within Obsidian, Obsidian will update all the references to it!) It can also list all the links *from* a given note or all the links *to* a given note.
+- Like many apps from the last ~half decade, it makes it trivial to link between notes; you just write `[[title of other note]]` and boom, there’s a link. (And if you rename the other note from within Obsidian, Obsidian will update all the references to it!) It can also list all the links *from* a given note or all the links *to* a given note.
 
 - It has a really handy “graph” view that visualizes the relationships between your notes. This sounds like a gimmick, but in fact I’ve found it *extremely* useful to trace out connections between thoughts over time, build new ones, and develop ideas. (Think [Zettelkasten](https://v4.chriskrycho.com/2019/what-is-a-zettelkasten.html), but with extra tools.)
 
