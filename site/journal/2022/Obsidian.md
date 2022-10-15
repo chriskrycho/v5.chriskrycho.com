@@ -25,13 +25,13 @@ What follows is my (unedited!) reply.
 
 So, two major points of relevant background knowledge:
 
-- I’ve been doing all of my writing in a “plain-text first” mode for… a decade? More? A long time. Alan Jacobs covers why you might want to do this (among many other things) in his [Tending the Digital Commons](http://ayjay.org/Tending.pdf) essay from 2018; discovering he thought the same way about this I do was a small moment of joy in my life in the mid-2010s. I switched to doing all my *note-taking* in the same mode as my writing early in my time at seminary, because Evernote was increasingly frustrating me.
+1. I’ve been doing all of my writing in a “plain-text first” mode for… a decade? More? A long time. Alan Jacobs covers why you might want to do this (among many other things) in his [Tending the Digital Commons](http://ayjay.org/Tending.pdf) essay from 2018; discovering he thought the same way about this I do was a small moment of joy in my life in the mid-2010s. I switched to doing all my *note-taking* in the same mode as my writing early in my time at seminary, because Evernote was increasingly frustrating me.
 
-- I prefer those plain text files to just live on my computer, and syncing between devices using whatever cloud sync tool I’m currently using (in the past that was Dropbox, these days it’s just iCloud Drive). There are a few reasons for that:
+2. I prefer those plain text files to just live on my computer, and syncing between devices using whatever cloud sync tool I’m currently using (in the past that was Dropbox, these days it’s just iCloud Drive). There are a few reasons for that:
 
-- I’m a working programmer, which means I have a *lot* of tools I can apply to working on plain text, and if they’re just files on disk, they’re immediately available to any tool.
+    - I’m a working programmer, which means I have a *lot* of tools I can apply to working on plain text, and if they’re just files on disk, they’re immediately available to any tool.
 
-- If they’re wrapped up in a specific app, then I’m “locked into” that app, and have to “export” to try to get them into a *different* app if/when I move. I had that problem going from Evernote to literally anything else, and I’m still (very slowly, over the years) cleaning up the mess that made of the notes I took in the 2009–2014 era.
+    - If they’re wrapped up in a specific app, then I’m “locked into” that app, and have to “export” to try to get them into a *different* app if/when I move. I had that problem going from Evernote to literally anything else, and I’m still (very slowly, over the years) cleaning up the mess that made of the notes I took in the 2009–2014 era.
 
 Obsidian works *with* that model, rather than against it. And it layers a couple really nice things on top of it:
 
