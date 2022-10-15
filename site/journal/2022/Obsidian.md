@@ -3,6 +3,7 @@ title: Obsidian
 subtitle: >
   A reply to an acquaintance’s question about what [Obsidian](https://obsidian.md) is doing for me.
 date: 2022-10-15T10:45:00-0600
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian.png
 tags:
   - from my outbox
   - working effectively
