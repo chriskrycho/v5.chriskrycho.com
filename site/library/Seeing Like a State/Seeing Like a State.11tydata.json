@@ -2,14 +2,12 @@
    "layout": "post.njk",
    "permalink": "/library/{{page.fileSlug | slug}}/index.html",
    "book": {
-      "title": "Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed",
+      "title": "Seeing Like a State",
+      "subtitle": "How Certain Schemes to Improve the Human Condition Have Failed",
       "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/seeing-like-a-state.jpg",
       "author": "James C. Scott",
       "year": 2014,
       "link": "https://bookshop.org/a/21126/9780300246759"
    },
-   "tags": ["James C. Scott"],
-   "qualifiers": {
-      "audience": ""
-   }
+   "tags": ["James C. Scott"]
 }
