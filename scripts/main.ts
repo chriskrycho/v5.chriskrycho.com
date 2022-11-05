@@ -39,8 +39,11 @@ function main() {
    }
 
    document.addEventListener('click', ({ target }) => {
-      // Cast is safe-ish?
-      if (!Panel.contains(target as Node)) {
+      assert(
+         target instanceof Node,
+         'What in the world is firing a non-`Node`-target event?',
+      );
+      if (!Panel.contains(target)) {
          setPanelTo(State.Hide);
       }
    });
