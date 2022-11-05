@@ -32,7 +32,7 @@
       "highlight.js": "^11.6.0",
       "highlightjs-glimmer": "^1.4.1",
       "luxon": "^3",
-      "markdown-it": "^12.3.2",
+      "markdown-it": "^13.0.1",
       "markdown-it-abbr": "^1.0.4",
       "markdown-it-anchor": "^8.6.5",
       "markdown-it-deflist": "^2.1.0",
