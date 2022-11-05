@@ -3,7 +3,7 @@
 import { defineConfig } from 'rollup';
 import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import strip from '@rollup/plugin-strip';
 
 const production = !process.env.ROLLUP_WATCH;
