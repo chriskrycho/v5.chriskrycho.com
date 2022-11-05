@@ -1,20 +1,21 @@
 import { $, $$, assert } from './utils.js';
 
+// SAFETY: we immediately check (in debug!) that each cast is correct.
 export default function getElements() {
-   const Root = $('root');
+   const Root = $('root') as HTMLElement;
    assert(Root instanceof HTMLElement, 'misconfigured root element');
 
-   const Container = $('preferences');
+   const Container = $('preferences') as HTMLElement;
    assert(Container instanceof HTMLElement, 'misconfigured preferences element');
    Container.classList.remove('no-js-hidden');
 
-   const Panel = $('panel');
+   const Panel = $('panel') as HTMLElement;
    assert(Panel instanceof HTMLElement, 'misconfigured panel element');
 
-   const Show = $('show');
+   const Show = $('show') as HTMLButtonElement;
    assert(Show instanceof HTMLButtonElement, 'misconfigured adjust element');
 
-   const Close = $('close');
+   const Close = $('close') as HTMLButtonElement;
    assert(Close instanceof HTMLButtonElement, 'misconfigured adjust element');
 
    const ColorSchemes = $$('theme') as NodeListOf<HTMLInputElement>;
