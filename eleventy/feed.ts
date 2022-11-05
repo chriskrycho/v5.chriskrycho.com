@@ -73,20 +73,6 @@ declare module '../types/eleventy' {
    }
 }
 
-type TypeOf =
-   | 'undefined'
-   | 'object'
-   | 'boolean'
-   | 'number'
-   | 'bigint'
-   | 'string'
-   | 'symbol'
-   | 'function';
-
-function is<T extends TypeOf>(type: T, item: unknown): item is T {
-   return typeof item === type;
-}
-
 function isBook(maybeBook: unknown): maybeBook is Book {
    if (typeof maybeBook !== 'object' || !maybeBook) {
       return false;
@@ -97,10 +83,10 @@ function isBook(maybeBook: unknown): maybeBook is Book {
    return (
       typeof maybe.title === 'string' &&
       (typeof maybe.author === 'string' || Array.isArray(maybe.authors)) &&
-      (is('number', maybe.year) || is('string', maybe.year)) &&
-      is('object', maybe.review) &&
-      is('string', maybe.cover) &&
-      is('string', maybe.link)
+      (typeof maybe.year == 'number' || typeof maybe.year === 'string') &&
+      typeof maybe.review === 'object' &&
+      typeof maybe.cover === 'string' &&
+      typeof maybe.link === 'string'
    );
 }
 
