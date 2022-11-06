@@ -39,7 +39,7 @@ I'm working on a bit of orchestration where, briefly, both of the first chair vi
 [d]: https://www.steinberg.net/dorico/
 [dd]: https://steinberg.help/dorico_pro/v4/en/dorico/topics/notation_reference/notation_reference_divisi/notation_reference_divisi_c.html
 
-1. Add a new *divisi* section where you want the solo to start, with **Edit** > **Notations** > **Staff*** > **Change Divisi** (or trigger the [Jump Bar][j] and type “Change Divisi”).
+1. Add a new *divisi* section where you want the solo to start, with **Edit** > **Notations** > **Staff** > **Change Divisi** (or trigger the [Jump Bar][j] and type “Change Divisi”).
 
 2. Click the **Add Solo Division** button.
 
