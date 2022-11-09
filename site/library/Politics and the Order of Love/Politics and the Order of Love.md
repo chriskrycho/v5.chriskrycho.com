@@ -16,7 +16,6 @@ tags:
   - book reviews
 
 permalink: /library/politics-and-the-order-of-love/review/
-featured: true
 
 ---
 
