@@ -8,9 +8,8 @@ tags:
 qualifiers:
     audience: >
         People who are interested in working effectively, particularly with an eye to keeping track of accomplishments, building “brag docs,” etc.
-
 date: 2022-11-08T20:05:00-0700
-
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian-workflow/2022-11-08@2x-dark.png
 templateEngineOverride: md
 
 ---
