@@ -25,7 +25,7 @@ If you’d like this same basic content, but in video form, you can watch [the s
 
 <div class='embed__wrapper'>
 
-<iframe class='embed__content' src="https://youtu.be/ByvJSzY6U1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class='embed__content' src="https://www.youtube.com/embed/ByvJSzY6U1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
