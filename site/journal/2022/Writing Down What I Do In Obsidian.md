@@ -4,15 +4,32 @@ subtitle: An update on my years-long habit, with a new tool.
 tags:
     - working effectively
     - Obsidian
-
 qualifiers:
     audience: >
         People who are interested in working effectively, particularly with an eye to keeping track of accomplishments, building “brag docs,” etc.
 date: 2022-11-08T20:05:00-0700
+updated: 2022-11-09T09:45:00-0700
+updates:
+  - at: 2022-11-09T09:45:00-0700
+    changes: Added a link and embed to the screencast I made.
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian-workflow/2022-11-08@2x-dark.png
 templateEngineOverride: md
 
 ---
+
+<div class="note">
+
+If you’d like this same basic content, but in video form, you can watch [the screencast](https://youtu.be/ByvJSzY6U1w) I made:
+
+<figure class='embed'>
+
+<div class='embed__wrapper'>
+
+<iframe class='embed__content' src="https://youtu.be/ByvJSzY6U1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+</div>
 
 Over the past year or so, I have transitioned my note-taking out of [Bear][b] and into [Obsidian][o]. The piece of my notes system I took longest to transition over, for a variety of reasons, was my habit of writing down what I do (see [here][log-1] and [here][log-2] for previous write-ups). Getting my basic Obsidian config to a point where I was mostly satisfied with the typography meant I was comfortable enough with using it for work tracking.
 
