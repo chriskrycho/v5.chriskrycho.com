@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-10-05T22:12:00-0600
+date: 2022-11-08T20:45:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -85,13 +85,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
-- [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
-
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
+
+- [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
 
 
 ## 2022
-
 
 ### Nonfiction
 
@@ -137,9 +136,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Age of Swords: Book Two of the Legends of the First Empire</cite>](https://bookshop.org/a/21126/9781101965382), Michael J. Sullivan (new)
 
+- [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
+
 
 ## 2021
-
 
 ### Nonfiction
 
@@ -166,9 +166,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- [<cite>The Hobbit</cite>][hobbit], J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Hobbit</cite>][hobbit], J.R.R. Tolkien (reread… with older my daughter!)
 
-- [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>][lotr], J.R.R. Tolkien (reread… with my older daughter!)
 
 - The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/), in prep for reading the *excellent* conclusion):
 	- [<cite>Cibola Burn</cite>][cibola-burn] (reread)
@@ -178,11 +178,11 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>Tiamat’s Wrath</cite>][tiamats-wrath] (reread)
     - [<cite>Leviathan Falls</cite>][leviathan-falls], James S. A. Corey (new)
 
-- [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my older daughter!)
 
 - <cite>Project Hail Mary</cite>, Andy Weir (new)
 
-- [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my daughter!)
+- [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my older daughter!)
 
 - [<cite>The Eye of the World</cite>](https://bookshop.org/a/21126/9781250251466), Robert Jordan (reread)
 
