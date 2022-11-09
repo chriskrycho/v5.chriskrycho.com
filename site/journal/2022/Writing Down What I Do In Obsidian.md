@@ -14,7 +14,7 @@ templateEngineOverride: md
 
 ---
 
-Over the past year or so, I have transitioned my note-taking out of [Bear][b] and into [Obsidian][o]. The piece of my notes system I took longest to transition over, for a variety of reasons, was my habit of writing down what I do (see [here][log-1] and [here][log-2] for previous write-ups). Getting [my basic Obsidian config][config] to a point where I was mostly satisfied with the typography meant I was comfortable enough with using it for work tracking.
+Over the past year or so, I have transitioned my note-taking out of [Bear][b] and into [Obsidian][o]. The piece of my notes system I took longest to transition over, for a variety of reasons, was my habit of writing down what I do (see [here][log-1] and [here][log-2] for previous write-ups). Getting my basic Obsidian config to a point where I was mostly satisfied with the typography meant I was comfortable enough with using it for work tracking.
 
 [b]: https://bear.app
 [o]: https://obsidian.md
