@@ -106,3 +106,12 @@ typings/
 # Build outputs
 *.pdf
 *.epub
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
