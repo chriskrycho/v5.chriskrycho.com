@@ -28,7 +28,9 @@ A friend joked this week of another thing we had been slow in getting to:
 
 That sums it up pretty well! Hobbies and side projects and even entertainment all increasingly goes by the wayside as one’s responsibilities increase. That is not a bad thing _per se_, but it requires a real, sometimes large, change in expectations. Things I could perhaps have done in six months now take two or three years. Things I could have aimed to do in a year or two of side project work before children I now have to acknowledge may not even be attainable at all.
 
-Sometimes I look at the output of other people on the internet and am astonished all the do. Then I remember that being a single person with no children and no particular outside responsibilities is a very different thing than being a married person with children and quite a few outside responsibilities. It is not reasonable for me to expect myself to be as generative as I once was, in three ways.
+Sometimes I look at the output of other people on the internet and am astonished at all they manage to do. Then I remember that being a single person with no children and no particular outside responsibilities is a very different thing than being a married person with children and quite a few outside responsibilities.[^at-me] It is not reasonable for me to expect myself to be as generative as I once was, in three ways.
+
+[^at-me]: Others no doubt once looked at me the same, and some may still!
 
 First, I simply have less time, of course. Second, and subtler, the time I do have is much less contiguous, which means activities which require sustained focus are harder to accomplish. Third, I am also more tired by the time I get to that time, having spent more mental and emotional energy on other things.
 
