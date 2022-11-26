@@ -8,7 +8,8 @@
    "license": "MIT",
    "volta": {
       "node": "16.17.0",
-      "yarn": "3.3.0"
+      "yarn": "3.3.0",
+      "npm": "9.1.2"
    },
    "devDependencies": {
       "@11ty/eleventy": "^1.0.2",
