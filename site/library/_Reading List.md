@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-11-08T20:45:00-0700
+date: 2022-12-04T09:54:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -74,9 +74,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Anglican Way: A Guidebook</cite>](https://bookshop.org/a/21126/9780996049900), Thomas McKenzie (new)
 
-- [<cite>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</cite>](https://bookshop.org/a/21126/9780300246759), James C. Scott (new)
+- [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
 
-- [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new) 
+- [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason
 
 
 ### Fiction
@@ -86,8 +86,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
-
-- [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
 
 
 ## 2022
@@ -109,6 +107,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Halo Effect… and the Eight Other Business Delusions That Deceive Managers</cite>](https://bookshop.org/a/21126/9781476784038), Phil Rosenzweig (new)
 
 - [<cite>The Man from the Future: The Visionary Life of John Von Neumann</cite>](https://bookshop.org/a/21126/9781324003991), Ananyo Bhattacharya (new)
+
+- [<cite>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</cite>](https://bookshop.org/a/21126/9780300246759), James C. Scott (new)
 
 
 ### Fiction
