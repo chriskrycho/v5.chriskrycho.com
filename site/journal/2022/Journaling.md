@@ -8,6 +8,8 @@ tags:
   - writing
   - learning
   - note-taking
+summary: >
+  I’m trying something out this week: making journaling a part of my daily routine.
 
 ---
 
@@ -50,7 +52,7 @@ alias: <today's date>
 ![[Work/Tracking/<today's date>]]
 ```
 
-That handy little [Obsidian embed][embed] correctly reifies the relationship between this day-level journal for *everything* I want to write down in a notes system and the *work log*, which is quite literally just a subset of it. There is another subset, which is the deeply personal or emotional. I do *not* expect to put that in here; I find paper and pen to be a far more helpful medium for that kind of journaling. (At some point in the future, I might try to make that a more daily habit as well. One habit at a time, though!)
+That handy little [Obsidian embed][embed] correctly reifies the relationship between this day-level journal for *everything* I want to write down in a notes system and the *work log*, which is quite literally just a subset of it.[^subset] Having a dedicated section for *Notes* is a handy prompt: rare *should* be the day when I don't have anything to put there. Even just a quick note on an interesting blog post I read would be *very* valuable to my future self: I read a *lot*, and I often want to go back and find a thing I read in the past, and it has been a perennial struggle to find those kinds of things.
 
 [embed]: https://help.obsidian.md/How+to/Link+to+blocks
 
@@ -63,3 +65,5 @@ Why yes, I *did* inspire myself to publish this with [my last post][cook].
 [cook]: https://v5.chriskrycho.com/journal/john-cook-and-brief-notes/
 
 </aside>
+
+[^subset]: There is another subset, which is the deeply personal or emotional. I do *not* expect to put that in here; I find paper and pen to be a far more helpful medium for that kind of journaling. At some point in the future, I might try to make that a more daily habit as well. One habit at a time, though!
