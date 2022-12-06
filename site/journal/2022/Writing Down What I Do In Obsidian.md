@@ -3,6 +3,8 @@ title: Writing Down What I Do—In Obsidian
 subtitle: An update on my years-long habit, with a new tool.
 tags:
     - working effectively
+    - learning
+    - note-taking
     - Obsidian
 qualifiers:
     audience: >
