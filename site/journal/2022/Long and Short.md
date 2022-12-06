@@ -49,7 +49,7 @@ At the same time, I have been deeply appreciating [Matt Rickard’s blogging][mr
 [luu]: https://danluu.com
 [wayne]: https://www.hillelwayne.com
 
-That means that I learn about *many* more things from Rickard than I do from Luu or Wayne; but I learn much more about *each* thing from Luu or Wayne.
+That means that I learn about many *more things* from Rickard than I do from Luu or Wayne; but I learn much more about *each thing* from Luu or Wayne.
 
 One takeaway I have: the vast majority of my writing on this site over the past couple years has been in the longer-form mode, save the occasional short book review. Mixing it up to include the throwing-off-knowledge mode pieces *and* the longer-form deeper dives seems good. I have a *lot* of things which *could* be essays (and maybe someday will), but which could also benefit people by being in the world in the meantime. Here’s to trying to publish more like that in the months ahead.
 
