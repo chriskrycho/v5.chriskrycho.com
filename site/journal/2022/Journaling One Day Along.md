@@ -10,8 +10,9 @@ tags:
   - note-taking
 summary: >
   I’m trying something out this week: making journaling a part of my daily routine.
-qualifiers: >
-  Other folks interested in thinking about learning, note-taking, and working effectively (in the ways that *I* work effectively, at least).
+qualifiers:
+  audience: >
+    Other folks interested in thinking about learning, note-taking, and working effectively (in the ways that *I* work effectively, at least).
 
 ---
 
