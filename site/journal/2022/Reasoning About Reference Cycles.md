@@ -14,6 +14,9 @@ updates:
   - at: 2022-12-09T21:39:00-0700
     changes: >
       Elaborated on how real-world leaks from reference cycles are often *much* harder to see than the example code might suggest, and fixed some typos.
+qualifiers:
+  audience: >
+    Software developers who want (or at least are willing!) to understand a bit more about how Rust’s making ownership explicit can genuinely change what is possible to understand about a piece of software.
 
 ---
 
