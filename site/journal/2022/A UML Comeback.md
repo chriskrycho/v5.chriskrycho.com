@@ -9,13 +9,11 @@ qualifiers:
   epistemic: >
     Hypothesis-generation.
   audience: >
-    Other software developers who might have an interest—historical or otherwise—in the value of *diagrams* for communicating. Specifically, people who have read these two posts:
+    Other software developers who might have an interest—historical or otherwise—in the value of *diagrams* for communicating. Specifically, people who have read these two posts (this post will make sense without those, but it will make a lot *more* sense with them, so please go read them):
 
     - [Why <abbr>UML</abbr> Really Died](https://buttondown.email/hillelwayne/archive/why-uml-really-died/), Hillel Wayne
 
     - [<abbr>UML</abbr>: My Part in Its Downfall](https://tratt.net/laurie/blog/2022/uml_my_part_in_its_downfall.html), Laurence Tratt
-
-    This post will make sense without those, but it will make a lot *more* sense with them, so please go read them.
 
 ---
 
