@@ -8,7 +8,12 @@ tags:
   - software development
   - JavaScript
 summary: >
-
+  Rust makes it possible to reason explicitly about reference cycles… by forbidding them, and making ownership explicit. That has a cost, but I miss the capability often in other languages.
+updated: 2022-12-09T21:39:00-0700
+updates:
+  - at: 2022-12-09T21:39:00-0700
+    changes: >
+      Elaborated on how real-world leaks from reference cycles are often *much* harder to see than the example code might suggest, and fixed some typos.
 
 ---
 
@@ -77,18 +82,28 @@ fn main() {
 
 Rust… will simply reject this outright.[^why] The cycles that could (and all too often *do*) result in memory leaks in the JavaScript code are not even possible in Rust.
 
-On the one hand, that might seem annoying. This is, for good reason, the canonical example of a thing that is impossible to write in safe Rust without some tricky bits of indirection. ([For example.][example], and of course [the canonical writeup][too-many].) Unlike in the JavaScript example—or a Java or C++ example you could write just as easily—where the ownership and lifetimes of these items are totally implicit, Rust tracks them with as *types*, checked by the compiler, and the compiler rejects this cycle where two items own each other.
-
-The cycle is fine right up until you want to *mutate* one of them. Shared mutable state == bugs. Sometimes “just” logical bugs; but sometimes serious memory safety bugs, especially data races. Thus, on the other hand, this “annoyance” about Rust is actually preventing really, really serious issues. Of the sort that cost me months hunting them down in far gnarlier JavaScript code in late 2021–early 2022.
+On the one hand, that might seem annoying. This is, for good reason, the canonical example of a thing that is impossible to write in safe Rust without some tricky bits of indirection. ([For example][example], and of course [the canonical writeup][too-many].) Unlike in the JavaScript example—or a Java or C++ example you could write just as easily—where the ownership and lifetimes of these items are totally implicit, Rust tracks them with as *types*, checked by the compiler, and the compiler rejects this cycle where two items own each other.
 
 [example]: https://rcoh.me/posts/rust-linked-list-basically-impossible/
 [too-many]: https://rust-unofficial.github.io/too-many-lists/
+
+The cycle is fine right up until you want to *mutate* one of them. Shared mutable state == bugs. Sometimes “just” logical bugs; but sometimes serious memory safety bugs, especially data races. Thus, on the other hand, this “annoyance” about Rust is actually preventing really, really serious issues. Issues of the sort that cost me months hunting them down—in far gnarlier JavaScript code in late 2021–early 2022.
+
+<aside>
+
+A thing which is often missed, because it is easy to miss, in discussing these things: the problem is the “far gnarlier” bit of that last sentence.
+
+It is easy to see the cycle in the doubly-linked list code snippet above. It is not easy to figure out how to guarantee your fix to it is *correct*, but at least you can easily see it. But many, perhaps even *most*, of the real-world places that reference cycles and the memory leaks they produce show up are hardly this obvious. Fixing “the bug” I refer to here ultimately meant fixing *multiple* different bugs, and the last one involved four of the most senior JavaScript engineers at LinkedIn mob-debugging the leak for hours on end, after one of us finally managed to isolate it after months of narrowing it down. I do not have words to express how awfully difficult the process of finding and fixing that last leak was.
+
+And I say “last leak”, but: we *know* there is at least one more, which we *cannot* find, and which we have only patched our way around. 
+
+</aside>
 
 Again, lifetimes and ownership are present in basically every mainstream programming language, but because they’re implicit, it’s hard to *learn* to reason about them. Rust *makes* you reason about them, the same way jQuery *made* you learn higher-order functions.
 
 But, to return to the start of the post, it also gives you an incredibly useful *capability*. All your opportunities for memory cycles are: (1) explicit in the code and/or (2) checked by the compiler. In JavaScript or Java or any other mainstream garbage-collected language, if you want to reason about the memory semantics of a given piece of code, the answer is roughly: “Good luck, have fun manually tracing through this code and looking at heap dumps and memory profiles.” The same goes for C or C++ (yes, even modern C++ with smart pointers) or even Zig or Odin.
 
-On balance, I think it makes a lot of sense to jus tuse garbage collection for many, perhaps even a majority, of use cases in programming. Particularly for “application” code. But when you *really* need to care about things like memory cycles and the possibility of memory leaks, Rust’s explicitness sure is nice.
+On balance, I think it makes a lot of sense to just use garbage collection for many, perhaps even a majority, of use cases in programming. Particularly for “application” code. But when you *really* need to care about things like reference cycles and the possibility of memory leaks, Rust’s explicitness is not just a nice-to-have: it is literally the only mainstream language which makes it *possible* to reason about them explicitly in the code.
 
 
 
