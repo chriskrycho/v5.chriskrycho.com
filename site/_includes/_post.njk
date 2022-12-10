@@ -12,13 +12,13 @@
    {% if qualifiers.audience -%}
    <p>
       <b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed Audience</a>:</b>
-      {{qualifiers.audience | md | safe}}
+      {{qualifiers.audience | inlineMd | safe}}
    </p>
    {%- endif %}
    {% if qualifiers.epistemic %}
    <p>
       <b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic Status</a>:</b>
-      {{qualifiers.epistemic | md | safe}}
+      {{qualifiers.epistemic | inlineMd | safe}}
    </p>
    {% endif %}
 </div>

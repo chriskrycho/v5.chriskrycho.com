@@ -12,9 +12,7 @@ summary: >
 
 qualifiers:
   audience: >
-    - Other parents, ~~slogging~~ working through new phases of life.
-
-    - People who aren’t parents but should understand how parenting affects life.
+    Other parents, ~~slogging~~ working through new phases of life; and people who aren’t parents but should understand how parenting affects life.
 
 ---
 
