@@ -22,15 +22,15 @@ However, I am not a huge fan of data services which run through Chinese data ser
 
 I decided after only a little consideration that I would prefer to get documents onto the device as easily as possible using a relatively standard “cloud service” flow, even if Supernote Cloud wasn’t option. I have had a Dropbox account for a *very* long time, and have no interest in trying out *other* cloud drive services. But I also don’t love Dropbox and uninstalled it from my system many years ago: I consistently found it to be a very poor and untrustworthy citizen of my file system.
 
-The web upload UI for Dropbox is, of course, *fine* for this purpose. But I don’t love it. I really just want to be able to take a downloaded <abbr>PDF</abbr>—say, a <abbr title="computer science">CS</abbr> paper I’m reading—and just upload it to Dropbox *without* opening the web UI, just as conveniently as if I *did* have Dropbox installed.
+The web upload UI for Dropbox is, of course, *fine* for this purpose. But I don’t love it. I really just want to be able to take a downloaded <abbr>PDF</abbr>—say, a <abbr title="computer science">CS</abbr> paper I’m reading—and just upload it to Dropbox *without* opening the web <abbr title="user interface">UI</abbr>, just as conveniently as if I *did* have Dropbox installed.
 
-I haven’t quite gotten it to be *that* easy, but I got really, really close: it turns out [Panic](https://panic.com)’s fantastic app [Transmit](https://panic.com/transmit/) has a Dropbox API integration, because *of course it does*. (It also supports <abbr title="secure file transfer protocol">SFTP</abbr>, S3, Backblaze, Google Drive, OneDrive, and plenty of others. It does *everything.*) Transmit *also* has a handy little feature called [Droplets](https://help.panic.com/transmit/transmit5/servers/#creating-droplets):
+I haven’t quite gotten it to be *that* easy, but I got really, really close: it turns out [Panic](https://panic.com)’s fantastic app [Transmit](https://panic.com/transmit/) has a Dropbox <abbr title="application programming interface">API</abbr> integration, because *of course it does*. (It also supports <abbr title="secure file transfer protocol">SFTP</abbr>, S3, Backblaze, Google Drive, OneDrive, and plenty of others. It does *everything.*) Transmit *also* has a handy little feature called [Droplets](https://help.panic.com/transmit/transmit5/servers/#creating-droplets):
 
 > A droplet is a small application icon onto which you can drop files and folders. The droplet then opens Transmit and automatically uploads the dropped items to the location configured in the droplet.
 >
 > Droplets are a convenient way for non-technical users to upload files to a pre-set location.
 
-Well, I’m a fairly technical user, but this also has something *else* going for it: considerable convenience! I created a Droplet targeting the Dropbox folder I made for unread items on my Supernote, so now all I have to do is drop a PDF onto the Droplet “application” I created and the document goes straight to that folder. The next time I sync my Supernote, the document is there.
+Well, I’m a fairly technical user, but this also has something *else* going for it: considerable convenience! I created a Droplet targeting the Dropbox folder I made for unread items on my Supernote, so now all I have to do is drop a <abbr>PDF</abbr> onto the Droplet “application” I created and the document goes straight to that folder. The next time I sync my Supernote, the document is there.
 
 Hope this is helpful to the 7 of you out there with a similar workflow and similar compunctions about various cloud services![^aa]
 
