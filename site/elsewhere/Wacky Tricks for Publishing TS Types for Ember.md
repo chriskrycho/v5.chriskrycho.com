@@ -9,6 +9,9 @@ summary: >
   Courtesy of the split between Ember's npm package name (`ember-source`) and the packages it presents as its API (`@ember/*`), we have to get up to some wild shenanigans to make its native TypeScript support work.
 link: https://youtu.be/VuF3GY-Ho-s
 date: 2022-12-16T09:35:00-0700
+qualifiers:
+  audience: >
+    Software developers interested in TypeScript and corner cases; this discusses Ember in detail but the ideas here are more general.
 
 ---
 
