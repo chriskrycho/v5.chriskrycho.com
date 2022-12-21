@@ -90,7 +90,7 @@ class BadTimes extends Component {
 }
 ```
 
-Then the `_a` and `_b` [private class fields](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields) will each be a `Promise`. Since we use `@cached`, there will only ever be a single instance of each promise for any given `@id` argument, but we will automatically build a new one if `@id` changes. By wrapping each of those in a `TrackedAsyncData`, we can get an auto-tracked view into the state of the `Promise`s.
+The `_a` and `_b` getters will each return a `Promise`. Since we use `@cached`, there will only ever be a single instance of each promise for any given `@id` argument, but we will automatically build a new one if `@id` changes. By wrapping each of those in a `TrackedAsyncData`, we can get an auto-tracked view into the state of the `Promise`s.
 
 Two bonus notes:
 
