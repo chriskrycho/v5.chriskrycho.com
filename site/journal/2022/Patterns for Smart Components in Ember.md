@@ -116,8 +116,8 @@ Two bonus notes:
     }
     ```
     ```hbs
-    <p>{{if this.state.isResolved this.state.a.value '...'}}</p>
-    <p>{{if this.state.isResolved this.state.b.value '...'}}</p>
+    <p>{{if this.data.isResolved this.data.a.value '...'}}</p>
+    <p>{{if this.data.isResolved this.data.b.value '...'}}</p>
     ```
 
 2. This *exact* same pattern works across most modern web frameworks—especially Vue, React, and Svelte. Instead of treating data loading as an ‘effect’, we can treat it as ‘data’.
