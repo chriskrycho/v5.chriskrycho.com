@@ -4,12 +4,13 @@ date: 2022-12-22T19:46:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%20(thumb).jpg
 ---
 
+Trying to catch a hint of the feeling of the end of the coldest day I’ve ever seen on the Colorado Front Range.
+
 <figure>
 
 <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%20(thumb).jpg">
 
 <figcaption>
-<p>Trying to catch a hint of the feeling of the end of the coldest day I’ve ever seen on the Colorado Front Range.</p>
 <p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/2mmw5kMMBkYboFtRJoLWGN">Glass</a></p>
 </figcaption>
 
