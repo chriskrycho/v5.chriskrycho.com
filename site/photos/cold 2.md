@@ -1,6 +1,6 @@
 ---
-title: cold 2
-date: 2022-12-22T20:17:00-0700
+title: cold (2)
+date: 2022-12-22T20:22:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%202%20(thumb).jpg
 ---
 
