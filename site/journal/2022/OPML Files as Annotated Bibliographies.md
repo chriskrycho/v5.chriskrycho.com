@@ -1,5 +1,6 @@
 ---
-title: OPML Files as… Annotated Bibliographies?
+title: >
+  <abbr title="outline processor markup language">OPML</abbr> Files as… Annotated Bibliographies?
 subtitle: >
   What if feed readers let you you make these old <abbr>XML</abbr> files into blog rolls, too?
 qualifiers:
