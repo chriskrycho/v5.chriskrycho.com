@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-12-04T09:54:00-0700
+date: 2022-12-27T13:43:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -109,6 +109,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Man from the Future: The Visionary Life of John Von Neumann</cite>](https://bookshop.org/a/21126/9781324003991), Ananyo Bhattacharya (new)
 
 - [<cite>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</cite>](https://bookshop.org/a/21126/9780300246759), James C. Scott (new)
+
+- [<cite>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</cite>](https://bookshop.org/a/21126/9780735211292), James Clear (new)
 
 
 ### Fiction
