@@ -561,8 +561,8 @@
       width: 100%;
       max-width: var(--max-width);
 
-      ::before,
-      ::after {
+      &::before,
+      &::after {
          content: none;
       }
 
