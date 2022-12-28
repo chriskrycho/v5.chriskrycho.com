@@ -18,8 +18,8 @@ The same photo as [the previous one](https://v5.chriskrycho.com/photos/cold/), b
 </figcaption>
 
 <table>
-<tr><th scope="row">Camera</th><td><span class="smcp">Leica Q2</span></td></tr>
-<tr><th scope="row">Lens</th><td><span class="smcp">Summilux 1:1.7/28 <span class="smcp">ASPH</span>.</span></td></tr>
+<tr><th scope="row">Camera</th><td>Leica Q2</td></tr>
+<tr><th scope="row">Lens</th><td>Summilux 1:1.7/28 <span class="smcp">ASPH</span>.</td></tr>
 <tr><th scope="row">Settings</th><td>𝑓/5.6, 1/125 s, <span class="smcp">ISO</span> 200</td></tr>
 </table>
 

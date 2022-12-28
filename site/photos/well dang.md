@@ -1,4 +1,5 @@
 ---
+title: well, dang
 date: 2022-12-27T20:30:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
 tags:

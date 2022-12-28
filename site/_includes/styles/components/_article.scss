@@ -54,6 +54,27 @@
          right: auto;
       }
 
+      &::before,
+      &::after {
+         border-top: 2px solid var(--blockquote-border);
+         display: block;
+         height: 0px;
+         margin-left: auto;
+         margin-right: auto;
+         content: '';
+         width: 12rem;
+      }
+
+      &::before {
+         margin-bottom: 1em;
+         padding-bottom: 1em;
+      }
+
+      &::after {
+         margin-top: 1em;
+         margin-bottom: 1em;
+      }
+
       padding: {
          top: 1em;
          bottom: 1em;
@@ -540,6 +561,11 @@
       width: 100%;
       max-width: var(--max-width);
 
+      ::before,
+      ::after {
+         content: none;
+      }
+
       figcaption {
          width: 100%;
          text-align: left;
@@ -694,20 +720,12 @@
          color: var(--note-fg);
       }
 
-      tbody {
-         border-top: 1px solid var(--blockquote-border);
-      }
-
       tbody th[scope='col'] {
          border-bottom: 1px solid var(--blockquote-border);
       }
 
-      thead + tbody {
-         border-top: none;
-      }
-
       th[scope='row'] {
-         border-right: 2px solid var(--blockquote-border);
+         border-right: 1px solid var(--blockquote-border);
       }
 
       td,
