@@ -3,6 +3,10 @@ title: Cloud tops
 subtitle: Outbound from Denver to NYC. Loved the view as we came up out of the clouds.
 date: 2022-10-16T16:13:00-0400
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/Cloud%20tops%20(thumb).jpg
+tags:
+  - Sony α7R IV
+  - Sony FE 35mm
+
 ---
 
 <figure>

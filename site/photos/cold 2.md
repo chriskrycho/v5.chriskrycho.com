@@ -2,6 +2,9 @@
 title: cold (2)
 date: 2022-12-22T20:22:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%202%20(thumb).jpg
+tags:
+  - Leica Q2
+
 ---
 
 The same photo as [the previous one](https://v5.chriskrycho.com/photos/cold/), but this time my first ever experiment in color grading. I think this worked better than the <abbr title="black and white">B&W</abbr>?
@@ -15,8 +18,8 @@ The same photo as [the previous one](https://v5.chriskrycho.com/photos/cold/), b
 </figcaption>
 
 <table>
-<tr><th scope="row">Camera</th><td><span class="smcp">LEICA CAMERA AG LEICA Q2</span></td></tr>
-<tr><th scope="row">Lens</th><td><span class="smcp">SUMMILUX 1:1.7/28 ASPH.</span></td></tr>
+<tr><th scope="row">Camera</th><td><span class="smcp">Leica Q2</span></td></tr>
+<tr><th scope="row">Lens</th><td><span class="smcp">Summilux 1:1.7/28 <span class="smcp">ASPH</span>.</span></td></tr>
 <tr><th scope="row">Settings</th><td>𝑓/5.6, 1/125 s, <span class="smcp">ISO</span> 200</td></tr>
 </table>
 
