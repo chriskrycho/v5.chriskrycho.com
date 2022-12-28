@@ -53,6 +53,7 @@ declare module '../types/eleventy' {
       updated?: string | Date;
       qualifiers?: {
          audience?: string;
+         context?: string;
          epistemic?: string;
       };
       updates?: Array<{ at: string; changes?: string }>;
@@ -153,6 +154,13 @@ function contentHtmlFor(
            )}</p>`
          : '';
 
+   const context =
+      typeof item.data?.qualifiers?.context === 'string'
+         ? `<p><b>A bit of context:</b> ${markdown.renderInline(
+              item.data.qualifiers.context,
+           )}</p>`
+         : '';
+
    const epistemicStatus =
       typeof item.data?.qualifiers?.epistemic === 'string'
          ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
@@ -191,6 +199,7 @@ function contentHtmlFor(
    return (
       subtitle +
       audience +
+      context +
       epistemicStatus +
       bookInfo +
       updates +

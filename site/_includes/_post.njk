@@ -15,6 +15,12 @@
       {{qualifiers.audience | inlineMd | safe}}
    </p>
    {%- endif %}
+   {% if qualifiers.context -%}
+   <p>
+      <b>A bit of context:</b>
+      {{qualifiers.context | inlineMd | safe}}
+   </p>
+   {%- endif %}
    {% if qualifiers.epistemic %}
    <p>
       <b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic Status</a>:</b>
