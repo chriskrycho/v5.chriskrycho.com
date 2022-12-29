@@ -95,4 +95,4 @@ One thing I note about this list: it is very much a list of 20th and 21st books.
 
 One other thing: you’ll notice if you count the listed books that the current plan takes me well past 22 books. That’s *good*. However, you’ll also note that if you exclude the <sup>‡</sup> entries, that list is a fair bit shorter, and if you include the <sup>†</sup> all the more so.
 
-In any case, if I manage to read all of these, I will be very happy—and my [plan for daily reading](https://v5.chriskrycho.com/notes/2022-01-01-1819/) *should* make it happen as long as I stick with it. So: here we go, 2022!
+In any case, if I manage to read all of these, I will be very happy—and my [plan for daily reading](https://v1.notes.chriskrycho.com/2022/01/01-1819/) *should* make it happen as long as I stick with it. So: here we go, 2022!
