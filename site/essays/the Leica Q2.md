@@ -147,7 +147,7 @@ A dream camera: Sony’s auto-focus tech married to Leica’s sense of style and
 
 It would be impossibly expensive, of course. Sony hardware isn’t cheap in the first place, and Leica makes Sony look like a bargain.
 
-It also isn’t clear how such a thing would happen. Rare is the company that has the trifecta of great software chops (menus and operating systems), great firmware chops (auto-focus and friends), and great hardware chops (lens and sensor performance). Not just rare: surpassingly rare. I cannot think of any company with all three. Sony has mediocre software, great firmware, and good hardware. Leica has good software, mediocre firmware, and great hardware. It isn’t *impossible* to imagine Leica closing the gap on auto-focus and the like, but it isn’t in the company’s very traditional wheelhouse. Likewise, one can imagine Sony getting its act together on its menus, and doubling down on its lens-craft, but the return on investment doesn’t seem like it would be *that* high for the company, even in the medium term.
+It also isn’t clear how such a thing would happen. Rare is the company that has the trifecta of great software chops (menus and operating systems), great firmware chops (auto-focus and friends), and great hardware chops (lens and sensor performance). Not just rare: surpassingly rare. I cannot think of any company with all three. Sony has mediocre software, great firmware, and good hardware. Leica has good software, mediocre firmware, and great hardware. It is not impossible to imagine Leica closing the gap on auto-focus and the like, but close: those capabilities simply are not in the company’s very traditional wheelhouse. Likewise, one can imagine Sony getting its act together on its menus, and doubling down on its lens-craft, but the return on investment doesn’t seem like it would be *that* high for the company, even in the medium term, and so the question would simply be: *Why?*
 
 So: a dream camera that is fated, I think, to remain a dream. It’s too bad, because a camera with Q2 (or M10/M11) sensibilities and style married to Sony’s auto-focus system would be an unbelievably compelling piece of hardware.
 
@@ -155,13 +155,13 @@ So: a dream camera that is fated, I think, to remain a dream. It’s too bad, be
 
 In closing, now, a hard right turn—riffing on two notes from Mod and some thoughts I have had bouncing around my head for a while.
 
-1. Here’s Mod writing on the M10 (in [the same piece][mod-m10] quoted above):
+Here’s Mod writing on the M10 (in [the same piece][mod-m10] quoted above):
 
-    > In the end, though, it’s an affront to all that is good in the world that Leica makes you wait in line for months to plop down such a large sum of cash for a camera body. But you have to think of the company as it is: A fairly tiny artisanal maker of highly precise yet capricious image tools; William Gibsonian to the max. Framing it as such makes the tax they exact a little less difficult to swallow. Thankfully, the machine delivers the goods, feels great in hand, and is more fun to shoot with than an iPhone.
+> In the end, though, it’s an affront to all that is good in the world that Leica makes you wait in line for months to plop down such a large sum of cash for a camera body. But you have to think of the company as it is: A fairly tiny artisanal maker of highly precise yet capricious image tools; William Gibsonian to the max. Framing it as such makes the tax they exact a little less difficult to swallow. Thankfully, the machine delivers the goods, feels great in hand, and is more fun to shoot with than an iPhone.
 
-2. Here he is [again][mod-m11], this time on the [M11][m11]:
+Here he is [again][mod-m11], this time on the [M11][m11]:
 
-    > Leica Ms are still the simplest, smallest, most optically performant full-frame cameras on the market. That’s a crazy trio: Simplest, smallest, most optically performant. Of course that’s not going to be cheap. And to boot, they’re assembled by well-paid humans in Germany. Also rare. I am happy to pay to support that.
+> Leica Ms are still the simplest, smallest, most optically performant full-frame cameras on the market. That’s a crazy trio: Simplest, smallest, most optically performant. Of course that’s not going to be cheap. And to boot, they’re assembled by well-paid humans in Germany. Also rare. I am happy to pay to support that.
 
 [mod-m11]: https://craigmod.com/roden/072/
 [m11]: https://leica-camera.com/en-US/photography/cameras/m/m11-black
