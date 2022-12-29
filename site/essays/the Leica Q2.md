@@ -7,6 +7,8 @@ qualifiers:
     People who care about photography specifically or the technologies and tools we use more generally—this essay touches on both.
   context: >
     I’ve been having some problems with my Sony α7R IV’s sensor for the last month or so. (it’s intermittently dropping out all but the red or green channels on the sensor, which makes for not great photos), so I [rented](https://share.lensrentals.com/x/dnfiPy) \[disclosure: mutual discount link] a [Leica Q2](https://leica-camera.com/en-US/photography/cameras/q/q2-black) to have camera coverage for the immediate and extended family Christmases. (I take [my role](https://v5.chriskrycho.com/journal/cameras-and-attention-redux/) as family photographer seriously!)
+thanks: >
+  Craig Mod’s [essay on the Leica Q](https://craigmod.com/essays/leica_q/) is—obviously—a massive influence on this essay. I have long been, and remain, grateful for Mod’s work!
 tags:
   - photography
   - Leica Q2
