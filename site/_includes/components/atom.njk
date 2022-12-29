@@ -51,6 +51,9 @@
                      {%- if item.data.qualifiers.audience -%}
                         <p><b>Assumed Audience:</b> {{ item.data.qualifiers.audience | inlineMd | safe -}}</p>
                      {%- endif -%}
+                     {%- if item.data.qualifiers.context -%}
+                        <p><b>A bit of context:</b> {{ item.data.qualifiers.context | inlineMd | safe -}}</p>
+                     {%- endif -%}
                      {%- if item.data.qualifiers.epistemic -%}
                         <p><b>Epistemic Status:</b> {{ item.data.qualifiers.epistemic | inlineMd | safe -}}</p>
                      {%- endif -%}
