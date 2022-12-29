@@ -147,9 +147,9 @@ A dream camera: Sony’s auto-focus tech married to Leica’s sense of style and
 
 It would be impossibly expensive, of course. Sony hardware isn’t cheap in the first place, and Leica makes Sony look like a bargain.
 
-It also isn’t clear how such a thing would happen. Rare is the company that has the trifecta of great software chops (menus and operating systems), great firmware chops (auto-focus and friends), and great hardware chops (lens and sensor performance). Not just rare: surpassingly rare. I cannot think of any company with all three. Sony has mediocre software, great firmware, and good hardware. Leica has good software, mediocre firmware, and great hardware. It isn’t *impossible* to imagine Leica closing the gap on auto-focus and the like, but it just isn’t in the company’s very traditional wheelhouse. Likewise, one can imagine Sony getting its act together on its menus, and doubling down on its lens-craft, but the return on investment doesn’t seem like it would be *that* high for the company, even in the medium term.
+It also isn’t clear how such a thing would happen. Rare is the company that has the trifecta of great software chops (menus and operating systems), great firmware chops (auto-focus and friends), and great hardware chops (lens and sensor performance). Not just rare: surpassingly rare. I cannot think of any company with all three. Sony has mediocre software, great firmware, and good hardware. Leica has good software, mediocre firmware, and great hardware. It isn’t *impossible* to imagine Leica closing the gap on auto-focus and the like, but it isn’t in the company’s very traditional wheelhouse. Likewise, one can imagine Sony getting its act together on its menus, and doubling down on its lens-craft, but the return on investment doesn’t seem like it would be *that* high for the company, even in the medium term.
 
-So: a dream camera that is fated, I think, to remain a dream. It’s too bad, because I can a camera with Q2 (or M10/M11) sensibilities and style, married to Sony’s auto-focus system would be an unbelievably compelling piece of hardware.
+So: a dream camera that is fated, I think, to remain a dream. It’s too bad, because a camera with Q2 (or M10/M11) sensibilities and style married to Sony’s auto-focus system would be an unbelievably compelling piece of hardware.
 
 ---
 
