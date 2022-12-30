@@ -25,6 +25,7 @@ import {
 } from './collection';
 
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
+import striptags from 'striptags';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
@@ -163,6 +164,11 @@ function config(config: Config): UserConfig {
    config.addFilter('localeDate', localeDate);
    config.addFilter('isLive', (items: Item[]) => items.filter(isLive));
    config.addFilter('take', (items: Item[], count: number) => items.slice(0, count));
+
+   config.addFilter('excerpt', (content: string) => {
+      let safe = striptags(content);
+      return safe.slice(0, safe.lastIndexOf(' ', 200)) + '…';
+   });
 
    config.addShortcode('localeDate', localeDate);
    config.addShortcode('copyright', copyright);
