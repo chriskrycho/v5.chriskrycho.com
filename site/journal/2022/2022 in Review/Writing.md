@@ -7,6 +7,8 @@ tags:
 series:
   part: 3
 date: 2022-12-29T22:08:00-0700
+summary: >
+  I wrote a surprising amount this year—and, to my lasting delight, was published in print for the first time.
 updated: 2022-12-29T22:23:00-0700
 updates:
   - at: 2022-12-29T22:23:00-0700
