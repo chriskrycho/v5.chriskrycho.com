@@ -51,11 +51,7 @@ declare module '../types/eleventy' {
       tags?: string[];
       date?: string | Date;
       updated?: string | Date;
-      qualifiers?: {
-         audience?: string;
-         context?: string;
-         epistemic?: string;
-      };
+      qualifiers?: Qualifiers;
       updates?: Array<{ at: string; changes?: string }>;
       image?: string;
       link?: string;
@@ -72,6 +68,12 @@ declare module '../types/eleventy' {
       /** Markdown-enabled thanks to people who contributed to the thing. */
       thanks?: string;
    }
+}
+
+interface Qualifiers {
+   audience?: string;
+   context?: string;
+   epistemic?: string;
 }
 
 function isBook(maybeBook: unknown): maybeBook is Book {
@@ -137,6 +139,30 @@ function entryTitleFor(item: Item): string {
    return item.data?.title ?? localeDate(item.date, 'yyyy.MM.dd.HHmm');
 }
 
+function htmlForQualifiers(qualifiers?: Qualifiers) {
+   if (!qualifiers) return '';
+
+   const audience =
+      typeof qualifiers?.audience === 'string'
+         ? `<p><b>Assumed audience:</b> ${markdown.renderInline(qualifiers.audience)}</p>`
+         : '';
+
+   const context =
+      typeof qualifiers?.context === 'string'
+         ? `<p><b>A bit of context:</b> ${markdown.renderInline(qualifiers.context)}</p>`
+         : '';
+
+   const epistemicStatus =
+      typeof qualifiers?.epistemic === 'string'
+         ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
+              qualifiers.epistemic,
+           )}</p>`
+         : '';
+
+   const divider = '<hr/>';
+   return audience + context + epistemicStatus + divider;
+}
+
 function contentHtmlFor(
    item: Item,
    config: SiteConfig,
@@ -147,26 +173,7 @@ function contentHtmlFor(
          ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
          : '';
 
-   const audience =
-      typeof item.data?.qualifiers?.audience === 'string'
-         ? `<p><b>Assumed audience:</b> ${markdown.renderInline(
-              item.data.qualifiers.audience,
-           )}</p>`
-         : '';
-
-   const context =
-      typeof item.data?.qualifiers?.context === 'string'
-         ? `<p><b>A bit of context:</b> ${markdown.renderInline(
-              item.data.qualifiers.context,
-           )}</p>`
-         : '';
-
-   const epistemicStatus =
-      typeof item.data?.qualifiers?.epistemic === 'string'
-         ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
-              item.data.qualifiers.epistemic,
-           )}</p>`
-         : '';
+   const qualifiers = htmlForQualifiers(item.data?.qualifiers);
 
    const updates = item.data?.updates
       ? `<p><b>Updates:</br></p><ul>
@@ -197,15 +204,7 @@ function contentHtmlFor(
       : '';
 
    return (
-      subtitle +
-      audience +
-      context +
-      epistemicStatus +
-      bookInfo +
-      updates +
-      item.templateContent +
-      thanks +
-      reply
+      subtitle + qualifiers + bookInfo + updates + item.templateContent + thanks + reply
    );
 }
 
