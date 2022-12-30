@@ -1,17 +1,17 @@
 ---
 title: >
-  2022 in Review: Miscellanies
+  2022 in Review: The Rest of life
 series:
-  part: 5
+  part: TODO
+summary: >
+  TODO
 tags:
   - fitness
   - health
-  - career
   - writing
   - music
-  - photography
   - productivity
   - self-discipline
   - habits
-status: draft
+draft: true
 ---
