@@ -176,7 +176,7 @@ function contentHtmlFor(
    const qualifiers = htmlForQualifiers(item.data?.qualifiers);
 
    const updates = item.data?.updates
-      ? `<p><b>Updates:</br></p><ul>
+      ? `<p><b>Updates:</b></p><ul>
             ${item.data.updates
                .map(({ at, changes }) => {
                   let date = localeDate(at, 'yyyy/MM/dd HH:mm');
