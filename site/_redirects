@@ -63,3 +63,7 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 # and topics that I turned into collections
 /topics/the-culture-of-theology /library/the-culture-of-theology 301!
 /topics/the-doctrine-of-scripture /library/the-doctrine-of-scripture 301!
+
+# and then some things I just plain moved
+/photos/disney-world-2022-camera-gear/ /journal/disney-world-2022-camera-gear/ 301!
+/photos/disney-world-2022-camera-gear/* /journal/disney-world-2022-camera-gear/:splat 301!
