@@ -9,6 +9,7 @@ qualifiers:
 tags:
   - photography
   - Tamron
+  - travel
 summary: >
   This zoom lens is versatile and interesting and almost too heavy to carry around… but only almost. Pricey? Yes. Worth it? Also yes.
 

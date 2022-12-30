@@ -9,6 +9,7 @@ qualifiers:
 tags:
   - photography
   - Sony Alpha
+  - travel
 summary: >
   Sony’s 55mm lens is one of the oldest primes in its full-frame line-up, and it misses a few features from more recent primes… but it’s still an excellent piece of glass.
 

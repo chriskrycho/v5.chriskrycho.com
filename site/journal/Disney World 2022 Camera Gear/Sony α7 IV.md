@@ -9,6 +9,7 @@ qualifiers:
 tags:
   - photography
   - Sony Alpha
+  - travel
 summary: >
   The α7 IV is a great all-around body, and I miss a few of its features when going back to my α7R IV. I highly recommend it… but I’m keeping my α7R IV.
 
