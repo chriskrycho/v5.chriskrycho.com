@@ -5,6 +5,9 @@ subtitle: >
 tags:
   - TypeScript
   - Ember
+  - video
+  - open-source software
+  - web development
 summary: >
   Courtesy of the split between Ember's npm package name (`ember-source`) and the packages it presents as its API (`@ember/*`), we have to get up to some wild shenanigans to make its native TypeScript support work.
 link: https://youtu.be/VuF3GY-Ho-s

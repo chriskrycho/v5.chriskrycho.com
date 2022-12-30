@@ -2,6 +2,8 @@
 title: Two Speaking Updates
 subtitle: News about TypeVille and EmberConf!
 date: 2022-03-07T15:33:00-0700
+tags:
+  - public speaking
 summary: >
   I am speaking at EmberConf about TypeScript, and TypeVille was (correctly!) canceled.
 
