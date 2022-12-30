@@ -1,12 +1,16 @@
 ---
 title: >
-  2022 in Review: Writing  
+  2022 in Review: Writing
 tags:
   - writing
   - blogging
-date: 2022-12-29T22:08:00-0700
 series:
   part: 3
+date: 2022-12-29T22:08:00-0700
+updated: 2022-12-29T22:23:00-0700
+updates:
+  - at: 2022-12-29T22:23:00-0700
+    changes: Added a bonus note about writing so. very. much. in December.
 ---
 
 Right up front, the things I’m most proud of/think hold up best/most want you to read if you haven’t—many of which I mention elsewhere in rest of the post, but this way they’re all in one place:
@@ -62,6 +66,13 @@ Last but not least, I also published a lot of words for open source: another fou
 [0876]: https://github.com/emberjs/rfcs/pull/876
 
 Net, this year actually ended up being similar to, but a little bit better than, last year. I wrote about the same number of words total (on the order of 65,000). I wrote more non-work words on this site. I wrote an actual essay on this site, an actual sermon for a real church, and an actual book review for a real magazine. And what extremely limited stats I get from CloudFlare tells me a fair number of folks out there *read* what I wrote. I’m grateful!
+
+---
+
+A bonus note—I got curious after publishing this, especially when thinking on how this year has gone. Perhaps unsurprisingly, fully a third of the writing I have done on this site this year has happened *in this month alone*. That makes sense: the things that made this year hard kicked off in earnest in March, I had spent January and February working on that essay for <cite>Mere O</cite>, and we finally had a real reprieve at last in… that’s right, December. No surprise, then, that this is when I managed such a huge chunk of the year’s writing!
+
+
+
 
 [^meta]: So: inclusive of the first two entries in this series, this in-progress entry, and the just-started drafts of later entries in the series as well as everything else published on the site; the count is a function of how much I write *in this paragraph and footnote*.
 
