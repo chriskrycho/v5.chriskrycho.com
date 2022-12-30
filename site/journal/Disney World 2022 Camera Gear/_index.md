@@ -1,7 +1,7 @@
 ---
 title: Disney World 2022 Camera Gear
 subtitle: Evaluating a camera body and two very different lenses on a family trip to Disney World in summer 2022.
-permalink: /photos/disney-world-2022-camera-gear/
+permalink: /journal/disney-world-2022-camera-gear/
 standalonePage: true
 layout: archives.njk
 order: OLD_FIRST
