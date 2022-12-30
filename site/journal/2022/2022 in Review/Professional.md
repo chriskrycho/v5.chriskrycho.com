@@ -8,6 +8,8 @@ tags:
   - self-discipline
   - habits
 series:
-  part: 4
-status: draft
+  part: TODO
+summary: >
+  TODO
+draft: true
 ---
