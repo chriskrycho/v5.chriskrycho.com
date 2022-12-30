@@ -12,6 +12,7 @@ tags:
   - travel
 summary: >
   Sony’s 55mm lens is one of the oldest primes in its full-frame line-up, and it misses a few features from more recent primes… but it’s still an excellent piece of glass.
+permalink: /journal/disney-world-2022-camera-gear/sony-sonnar-t-fe-55mm-f18-za/
 
 ---
 
@@ -30,7 +31,7 @@ Posts in [this little series][series]:
 [camera]: https://www.bhphotovideo.com/c/product/1667800-REG/sony_ilce_7m4_b_alpha_a7_iv_mirrorless.html?sts=hist-pi&pim=Y
 [tamron-lens]: https://www.bhphotovideo.com/c/product/1658158-REG/tamron_a058_35_150mm_f_f_2_2_8_di_iii.html
 [sony-lens]: https://www.bhphotovideo.com/c/search?Ntt=sony%20sonnar%20t%20fe%2055mm%20f%2F1.8%20za%20lens&N=0&InitialSearch=yes&sts=hist-ps
-[series]: https://v5.chriskrycho.com/photos/disney-world-2022-camera-gear/
+[series]: https://v5.chriskrycho.com/journal/disney-world-2022-camera-gear/
 [camera-post]: https://v5.chriskrycho.com/journal/disney-world-2022-camera-gear/sony-α7-iv/
 [tamron-post]: https://v5.chriskrycho.com/journal/disney-world-2022-camera-gear/tamron-35-150mm-f2-28-di-iii-vxd/
 [sony-55mm-post]: https://v5.chriskrycho.com/journal/disney-world-2022-camera-gear/sony-sonnar-t-fe-55mm-f18-za/

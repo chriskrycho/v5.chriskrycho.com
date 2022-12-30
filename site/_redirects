@@ -66,4 +66,6 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 
 # and then some things I just plain moved
 /photos/disney-world-2022-camera-gear/ /journal/disney-world-2022-camera-gear/ 301!
-/photos/disney-world-2022-camera-gear/* /journal/disney-world-2022-camera-gear/:splat 301!
+/photos/sony-sonnar-t-fe-55mm-f18-za/ /journal/disney-world-2022-camera-gear/sony-sonnar-t-fe-55mm-f18-za/ 301!
+/photos/sony-a7-iv/ /journal/disney-world-2022-camera-gear/sony-a7-iv/ 301!
+/photos/tamron-35-150mm-f2-28-di-iii-vxd/ /journal/disney-world-2022-camera-gear/tamron-35-150mm-f2-28-di-iii-vxd/ 301!
