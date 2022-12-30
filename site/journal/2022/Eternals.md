@@ -19,17 +19,7 @@ The Eternals are not someone that almost *anyone* would have heard of. They were
 
 Honestly, it shouldn’t work at all. It’s not that it is a *good* movie; it isn’t. But I also keep thinking about it.
 
----
-
-<figure>
-
-![](https://f001.backblazeb2.com/file/chriskrycho-com/images/eternals.jpg "poster for Eternals")
-
-<figcaption>Why did they need <em>ten</em> main characters?</figcaption>
-
-</figure>
-
----
+![Why did they need *ten* main characters?](https://f001.backblazeb2.com/file/chriskrycho-com/images/eternals.jpg "poster for Eternals")
 
 Big bad Arishem, besides being a demonic figure who claims to justify repeated genocide on the basis of future good, apparently decided for… reasons… that he would make one of the Eternals a permanent child and another of them deaf. Why? The movie does not have time for that question (despite its two hour and forty-five minute runtime). Nor do we have any explanation for why these characters have the assortment of powers that they do, nor for the particular distribution of them per planet (apparently there are lots of these, Cersi’s mid-movie vision notwithstanding), nor for the specific number of them, nor why if there are so many copies of them they have their memories wiped after their missions instead of just being replaced, nor why a being as powerful as Arishem (who can zip them up off the planet at whim) couldn’t just do that with his first creations, nor why or how the absorption of memories and identities into a particular Deviant doesn’t change it in any way… In sum, the characterizations here fall apart at a blush.
 
