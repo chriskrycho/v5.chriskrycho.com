@@ -189,6 +189,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal');
    addCollectionFromDir(config, 'journal/Fanfare for a New Era of American Spaceflight');
    addCollectionFromDir(config, 'journal/Ember Template Imports');
+   addCollectionFromDir(config, 'journal/Disney World 2022 Camera Gear');
    addCollectionFromDir(config, 'journal/2022 in Review');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
@@ -211,7 +212,6 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'photos');
    addCollectionFromDir(config, 'photos/New Mexico Vacation');
    addCollectionFromDir(config, 'photos/Dinosaur National Monument');
-   addCollectionFromDir(config, 'photos/Disney World 2022 Camera Gear');
 
    config.addCollection('nonNotes', (collection) =>
       collection
