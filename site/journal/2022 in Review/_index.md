@@ -1,9 +1,10 @@
 ---
-title: >
-  2022 in Review: Overview and Introduction
-date: 2022-12-29T14:41:00-0700
-series:
-  part: 1
+title: 2022 in Review
+subtitle: Just how this year went, for good and for ill.
+layout: archives.njk
+standalonePage: true
+order: OLD_FIRST
+permalink: /journal/2022-in-review/
 ---
 
 2022 was not the year I expected, and therefore not—at all—the year I hoped for. I would not go so far as to call it a *bad* year, but it was a horrendously difficult year, and those difficulties meant that nothing I planned for this year went much like I hoped.
