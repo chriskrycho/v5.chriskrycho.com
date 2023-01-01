@@ -5,7 +5,7 @@ tags:
   - reading
 date: 2022-12-29T15:34:00-0700
 series:
-  part: 2
+  part: 1
 summary: >
   I did manage to hit my goal of 22 books read in 2022—barely. I did not come close to reading everything I wanted, though!
 
