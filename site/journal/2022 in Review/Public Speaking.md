@@ -2,7 +2,7 @@
 title: >
   2022 in Review: Public Speaking
 series:
-  part: 4
+  part: 3
 summary: >
   This year I spoke at one conference, had another talk canceled because of the Russian invasion of Ukraine (!), appeared on two podcasts, and started using YouTube.
 tags:
