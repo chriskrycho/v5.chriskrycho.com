@@ -40,6 +40,8 @@ I intend to work actively to find a new balance on that front in the year ahead,
 
 That last note is suggestive of the other reason the year felt odd: while we made a *little* bit of progress on things in that space of “developers’ ability to develop quality software quickly”, basically all of the work we were doing felt like catch-up work—both in terms of getting LinkedIn’s web stack caught up with capabilities its mobile stacks have had for a while with types, and in terms of getting LinkedIn’s web stack at least in the ball park of where other front end stacks have been for a while. Catching up is good, and I have found ways to turn that catching-up into things that I do hope will continue to move the ecosystem more broadly—the [Semantic Versioning for TypeScript Types][semver] spec I built is a good example here, though it could use a continued push to make it more broadly adopted and useful—but it is generally hard to advance the field *from behind*.
 
+[semver]: https://www.semver-ts.org
+
 Returning for a moment to the theme of feeling split attention: that feeling prompted me in August to pick back up and double down on my old habit of proactively planning and tracking my efforts in my notes system. I wrote and YouTube’d about the mechanical aspects of that (see [Writing Down What I Do – In Obsidian][wdwid]). Here, I will note that while that kind of work tracking and logging may not be useful for necessary for others (certainly there were a fair number of comments on the Hacker News discussion of that article to that effect!) but it remains incredibly helpful for *me* in working effectively.
 
 [wdwid]: https://v5.chriskrycho.com/journal/writing-down-what-i-do-in-obsidian/
