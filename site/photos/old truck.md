@@ -1,4 +1,5 @@
 ---
+title: old truck
 date: 2023-01-01T16:27:00-0700
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/04-04%20truck%20(thumb).jpg
 ---
