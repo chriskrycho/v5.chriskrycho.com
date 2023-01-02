@@ -7,7 +7,7 @@ module.exports = [
    { type: 'page', title: 'Photos', path: '/photos/' },
    { type: 'page', title: 'Elsewhere', path: '/elsewhere/' },
    { type: 'separator' },
-   { type: 'link', title: 'Iterative', url: 'https://v1.notes.chriskrycho.com' },
+   { type: 'link', title: 'iterative/atomic', url: 'https://v1.microblog.chriskrycho.com' },
    { type: 'separator' },
    { type: 'page', title: 'About', path: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', path: '/cv/' },
