@@ -57,7 +57,7 @@ Many of my favorite photos do not get posted anywhere public, of course, because
 
 </aside>
 
-The main downside this year was that my camera started having sensor issues at Thanksgiving—dropping out to only the red or only the green pixels. The main highlight of this year was the couple fun rentals I did: [some gear for our Disney World trip] and [of the Leica Q2 last week][q2]… because of the aforementioned sensor issues. I’m hoping the repairs don’t cost me an arm and a leg, because I *really* love having my good camera handy, and really miss it when it’s not present.
+The main downside this year was that my camera started having sensor issues at Thanksgiving—dropping out to only the red or only the green pixels. The main highlight of this year was the couple fun rentals I did: [some gear for our Disney World trip][disney] and [of the Leica Q2 last week][q2]… because of the aforementioned sensor issues. I’m hoping the repairs don’t cost me an arm and a leg, because I *really* love having my good camera handy, and really miss it when it’s not present.
 
 [disney]: https://v5.chriskrycho.com/journal/disney-world-2022-camera-gear/
 [q2]: https://v5.chriskrycho.com/essays/the-leica-q2/
