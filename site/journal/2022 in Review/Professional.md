@@ -48,7 +48,7 @@ Returning for a moment to the theme of feeling split attention: that feeling pro
 
 There are, I think, three reasons for that:
 
-1. It helps me stay focused. There are an almost infinite number of things I *could* do at LinkedIn, but there are some things I *must* do, and other things I *want* to (and am free to!) do… and if I let that infinitely long list distract me, I will not get to what I *mis* or *want* to do.
+1. It helps me stay focused. There are an almost infinite number of things I *could* do at LinkedIn, but there are some things I *must* do, and other things I *want* to (and am free to!) do… and if I let that infinitely long list distract me, I will not get to what I *must* or *want* to do.
 
 2. It helps me feel the sustained progress I am making. Precisely because I am pulled in many different directions, taking those 5 minutes a day at the end of the day to note what I did, and again at the end of the larger time-scales I track on, makes it much easier for me to realize that I actually did manage to do many of the things I set out to do: and that is really encouraging when in the thick of it.
 
