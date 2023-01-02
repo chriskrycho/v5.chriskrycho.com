@@ -72,7 +72,7 @@ Long-story short, this year was in the terrible-against-my-baseline bucket:
 - I wanted to, but did not, lose five pounds.
 - I wanted to, but did not, ride my bicycle more regularly (it literally never came down from where it is hanging this year).
 
-Net: I did not run *any* race this year, and in fact ran only about half the miles I ran
+Net: I did not run *any* race this year, and in fact ran only about half the miles I ran in 2021.
 
 I will count it as something of a win, given the background challenges, that I managed not to *gain* weight this year, and that I managed to keep up some degree of running. Both of those came down to self-discipline: leaning on long-standing habits I have built up in years past. That said, I can see that it would be easy to let those continue to slide without reinvesting in those same habits and norms.
 
@@ -98,7 +98,7 @@ I also have not figured out how to write or talk about this except with close fr
 
 [ht]: https://www.holytrinityanglican.church
 
-We have made more, and better, friends in this church than in any church I have ever attended. Our souls are nourished by the Word and sacraments every week. The liturgy is good for our souls, and our daughters *love* it so far. The community has been especially kind to us and has walked through us (despite being brand new!) through all the difficulties this year has entailed. And despite its novelty to our family, being Anglican has felt strangely… easy.
+We have made more, and better, friends in this church than in any church I have ever attended. Our souls are nourished by the Word and sacraments every week. The liturgy is good for our souls, and our daughters *love* it so far. The community has been especially kind to us and has walked with us (despite being brand new!) through all the difficulties this year has entailed. And despite its novelty to our family, being Anglican has felt strangely… easy.
 
 (This is where folks who know the drill here joke about this being extremely predictable for me in particular but for nerdy college-educated people like my family in general. You’re not wrong, but if you had told me a decade ago I would be *extremely* happy to be an Anglican I would have been *extremely* confused.)
 
