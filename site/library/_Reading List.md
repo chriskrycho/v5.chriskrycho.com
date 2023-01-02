@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2022-12-27T13:43:00-0700
+date: 2023-01-02T10:05:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -86,6 +86,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
+
+
+## 2023
+
+### Fiction
+
+- [<cite>Elder Race</cite>](https://bookshop.org/a/21126/9781250768728), Adrian Tchaikovsky (new)
 
 
 ## 2022
