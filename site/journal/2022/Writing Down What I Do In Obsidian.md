@@ -19,8 +19,6 @@ templateEngineOverride: md
 
 ---
 
-<div class="note">
-
 If you’d like this same basic content, but in video form, you can watch [the screencast](https://youtu.be/ByvJSzY6U1w) I made:
 
 <figure class='embed'>
@@ -31,7 +29,7 @@ If you’d like this same basic content, but in video form, you can watch [the s
 
 </div>
 
-</div>
+</figure>
 
 Over the past year or so, I have transitioned my note-taking out of [Bear][b] and into [Obsidian][o]. The piece of my notes system I took longest to transition over, for a variety of reasons, was my habit of writing down what I do (see [here][log-1] and [here][log-2] for previous write-ups). Getting my basic Obsidian config to a point where I was mostly satisfied with the typography meant I was comfortable enough with using it for work tracking.
 
