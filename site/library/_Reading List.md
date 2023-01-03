@@ -79,6 +79,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason
 
+- [<cite>Human Compatible: Artificial Intelligence and the Problem of Control</cite>](https://bookshop.org/a/21126/9780525558637), Stuart Russell
+
 
 ### Fiction
 
