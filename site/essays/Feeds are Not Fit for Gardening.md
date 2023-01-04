@@ -2,6 +2,9 @@
 title: Feeds are Not Fit for Gardening
 subtitle: >
   —at least, in their current instantiations with <abbr>RSS</abbr>, Atom, <abbr>JSON</abbr> Feed, etc.
+qualifiers:
+  audience: >
+    Tinkerers, spec-writers, protocol-builders, gardeners: people willing to walk down [new avenues](https://www.robinsloan.com/lab/new-avenues/) in 2023—people, that is, who are up for revisiting some of the assumptions which have governed the web for the past few decades.
 draft: true
 ---
 
