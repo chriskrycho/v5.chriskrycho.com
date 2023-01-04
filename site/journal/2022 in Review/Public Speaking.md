@@ -1,6 +1,8 @@
 ---
 title: >
   2022 in Review: Public Speaking
+subtitle: >
+  One conference talk, a couple podcasts, and—unexpectedly—a bit of YouTube-ing.
 series:
   part: 3
 summary: >

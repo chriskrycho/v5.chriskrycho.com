@@ -1,6 +1,8 @@
 ---
 title: >
   2022 in Review: Professional
+subtitle: >
+  My fourth year at LinkedIn: odd, and challenging—with some failures!—but not *bad*.
 tags:
   - career
   - LinkedIn

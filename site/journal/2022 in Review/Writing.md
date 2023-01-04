@@ -1,6 +1,8 @@
 ---
 title: >
   2022 in Review: Writing
+subtitle: >
+  Getting published in print, and a year to at least match last year for my normal blogging and open source work!
 tags:
   - writing
   - blogging

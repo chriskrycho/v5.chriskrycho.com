@@ -1,6 +1,8 @@
 ---
 title: >
   2022 in Review: Reading
+subtitle: >
+  I read a lot less than I wanted, but I still made my goal of 22 books in the year. I’ll take it!
 tags:
   - reading
 date: 2022-12-29T15:34:00-0700

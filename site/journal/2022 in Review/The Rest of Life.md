@@ -1,6 +1,8 @@
 ---
 title: >
   2022 in Review: The Rest of life
+subtitle: >
+  Less than I wanted of music, running, etc.; but some good things on the financial and spiritual fronts.
 series:
   part: 5
 summary: >
