@@ -5,10 +5,14 @@ subtitle: >
 qualifiers:
   audience: >
     Tinkerers, spec-writers, protocol-builders, gardeners: people willing to walk down [new avenues](https://www.robinsloan.com/lab/new-avenues/) in 2023—people, that is, who are up for revisiting some of the assumptions which have governed the web for the past few decades.
+  context: >
+    Reading Maggie Appleton’s essay [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) and Mike Caufield’s talk–essay [The Garden and the Stream: A Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).
 draft: true
 ---
 
-Reading Maggie Appleton’s essay [A Brief History & Ethos of the Digital Garden][garden] and Mike Caufield’s talk–essay [The Garden and the Stream: A Technopastoral][and-stream] brought back to the top of my mind a thought I’ve had bouncing around for a while, most of all since starting to think about [Obsidian Publish][op] and similar:
+==TODO: write an introduction!==
+
+A thought I’ve had bouncing around for a while, most of all since starting to think about [Obsidian Publish][op] and similar:
 
 <div class=callout>
 
@@ -16,7 +20,7 @@ Reading Maggie Appleton’s essay [A Brief History & Ethos of the Digital Garden
 
 </div>
 
-Here’s what I mean by that: <abbr title="really simple syndication">RSS</abbr>, Atom, and [<abbr title="JavaScript Object notation">JSON</abbr> Feed][json-feed] all notionally include the idea of being able to mark items as having been updated, but in practice that ability is little-used and therefore largely irrelevant. That in turn means that the existing feed specifications serve reasonably well to publish *new items* but very poorly to notify subscribers about changes to *existing items*. They are therefore very poorly suited for “gardens” in the sense described by Appleton, Caufield, and others.
+Here’s what I mean by that: <abbr title="really simple syndication">RSS</abbr>, Atom, and [<abbr title="JavaScript Object notation">JSON</abbr> Feed][json-feed] all notionally include the idea of being able to mark items as having been updated, but in practice that ability is little-used, deeply hobbled, and therefore largely irrelevant. That in turn means that the existing feed specifications serve reasonably well to publish *new items* but very poorly to notify subscribers about changes to *existing items*. They are therefore very poorly suited for “gardens” in the sense described by Appleton, Caufield, and others.
 
 [op]: https://obsidian.md/publish
 [garden]: https://maggieappleton.com/garden-history
