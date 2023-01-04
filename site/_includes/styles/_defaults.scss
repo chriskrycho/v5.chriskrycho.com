@@ -157,11 +157,9 @@ video {
 }
 
 mark {
-   display: inline-block;
    background-color: var(--note-bg);
    color: var(--note-fg);
-   padding: 0.1em;
-   margin: -0.1em;
+   padding: 0.1em 0.2em;
 }
 
 ::selection {
