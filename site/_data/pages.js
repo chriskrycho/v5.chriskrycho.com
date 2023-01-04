@@ -8,7 +8,7 @@ module.exports = [
    { type: 'page', title: 'Elsewhere', path: '/elsewhere/' },
    { type: 'separator' },
    { type: 'link', title: 'atomic', url: 'https://v1.microblog.chriskrycho.com' },
-]   { type: 'separator' },
+   { type: 'separator' },
    { type: 'page', title: 'About', path: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', path: '/cv/' },
    { type: 'page', title: 'Speaking', path: '/speaking/' },
