@@ -1,22 +1,23 @@
-@mixin slash() {
+@mixin slash($h: 110%, $bt: -51%, $at: -41%) {
    --slash-offset: calc(50% - 2px);
 
-   &:before, &:after {
-      content: "";
+   &:before,
+   &:after {
+      content: '';
       border-left: 1px solid var(--divider);
-      height: 110%;
+      height: $h;
       transform: translateY(-2px) rotate(15deg);
       position: absolute;
       display: block;
    }
 
    &:before {
-      top: -51%;
+      top: $bt;
       right: var(--slash-offset);
    }
 
    &:after {
-      top: -41%;
+      top: $at;
       left: var(--slash-offset);
    }
 }
