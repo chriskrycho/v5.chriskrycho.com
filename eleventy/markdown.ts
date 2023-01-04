@@ -4,6 +4,7 @@ import abbr from 'markdown-it-abbr';
 import anchor from 'markdown-it-anchor';
 import defList from 'markdown-it-deflist';
 import footnotes from 'markdown-it-footnote';
+import mark from 'markdown-it-mark';
 import implicitFigures from 'markdown-it-implicit-figures';
 import sup from 'markdown-it-sup';
 import { env } from 'process';
@@ -53,7 +54,8 @@ const md = markdownIt({
       permalink: anchor.permalink.headerLink(),
       slugify,
    })
-   .use(abbr);
+   .use(abbr)
+   .use(mark);
 
 md.renderer.rules.footnote_caption = (tokens, idx): string => {
    let n = Number(tokens[idx].meta.id + 1).toString();
