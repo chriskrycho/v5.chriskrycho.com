@@ -33,7 +33,12 @@ hr {
    position: relative;
    overflow: visible;
 
-   @include slash();
+   @include slash(200%, -101%, -91%);
+
+   &.footnotes-sep {
+      width: calc(var(--hr-width) * 5);
+      margin-top: 3.5rem;
+   }
 }
 
 em {

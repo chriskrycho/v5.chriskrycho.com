@@ -65,4 +65,15 @@ md.renderer.rules.footnote_caption = (tokens, idx): string => {
    return n;
 };
 
+md.renderer.rules.footnote_block_open = (_tokens, _idx, options): string => {
+   return (
+      (options.xhtmlOut
+         ? '<hr class="footnotes-sep" />\n'
+         : '<hr class="footnotes-sep">\n') +
+      '<section class="footnotes">\n' +
+      "<h2 id='footnotes'><a class='header-anchor' href='#footnotes'>Notes</a></h2>" +
+      '<ol class="footnotes-list">\n'
+   );
+};
+
 export default md;
