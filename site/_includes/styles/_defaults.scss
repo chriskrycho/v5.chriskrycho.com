@@ -33,7 +33,7 @@ hr {
    position: relative;
    overflow: visible;
 
-   @include slash(200%, -101%, -91%);
+   @include slash(160%, -61%, -51%);
 
    &.footnotes-sep {
       width: calc(var(--hr-width) * 5);
