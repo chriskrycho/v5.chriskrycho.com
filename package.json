@@ -68,5 +68,8 @@
       "serve": "env DEV=true eleventy --quiet --serve",
       "serve:forestry": "DEV=true eleventy --quiet --serve",
       "clean": "rm -rf public"
+   },
+   "dependencies": {
+      "markdown-it-mark": "^3.0.1"
    }
 }

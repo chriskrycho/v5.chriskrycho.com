@@ -155,3 +155,16 @@ video {
       right: auto;
    }
 }
+
+mark {
+   display: inline-block;
+   background-color: var(--note-bg);
+   color: var(--note-fg);
+   padding: 0.1em;
+   margin: -0.1em;
+}
+
+::selection {
+   color: var(--selection-fg);
+   background-color: var(--selection-bg);
+}
