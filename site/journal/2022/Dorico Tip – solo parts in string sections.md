@@ -25,19 +25,19 @@ I'm working on a bit of orchestration where, briefly, both of the first chair vi
 > 
 > Two or more solo players together are marked *2 soli*, *3 soli*, etc., or *2 players*, *3 players*, etc.
 > 
-> ![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/music%20notation/Behind%20Bars%20p.%20429.png "image from Behind Bars p. 429")
+> <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/music%20notation/Behind%20Bars%20p.%20429.png" alt="image from Behind Bars p. 429" />
 > 
 > …
 > 
 > Tutti ('all') indicates that the whole section should play together after one or more players has been silent:
 > 
-> ![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/music%20notation/Behind%20Bars%20p.%20430a.png "image from Behind Bars p. 430")
+> <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/music%20notation/Behind%20Bars%20p.%20430a.png" alt="image from Behind Bars p. 430" />
 > 
 > *Unis.* indicates that the whole section should play together after a division of either equal lines or *soli* + *gli altri* (see next example).
 > 
 > Where one or more players has been silent and the rest of the section divided, a return to a single line requires a tutti as well as a *unis.* instruction:
 > 
-> ![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/music%20notation/Behind%20Bars%20p.%20430b.png "image from Behind Bars p. 430")
+> <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/music%20notation/Behind%20Bars%20p.%20430b.png" alt="image from Behind Bars p. 430" />
 
 [Dorico][d] does this easily enough, but it wasn't obvious to me how to do it—the excellent and extensive Dorico [documentation][dd] has enough info to figure it out, but it doesn’t cover this specific example. (Covering every possible variation would be an impossible burden!) The key is to use its *divisi* feature and introduce *only* a solo instrument for the new divisi.
 
