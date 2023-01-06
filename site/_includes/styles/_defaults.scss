@@ -103,6 +103,11 @@ code {
    background: var(--code-bg);
    padding: ms(-12) ms(-4);
    color: var(--code-fg);
+
+   hyphens: none !important;
+   -webkit-hyphens: none !important;
+   -moz-hyphens: none !important;
+   -ms-hyphens: none !important;
 }
 
 pre:not(.poetry) {
