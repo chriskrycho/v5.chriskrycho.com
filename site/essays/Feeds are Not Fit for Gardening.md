@@ -7,6 +7,8 @@ qualifiers:
     Tinkerers, spec-writers, protocol-builders, gardeners: people willing to walk down [new avenues](https://www.robinsloan.com/lab/new-avenues/) in 2023—people, that is, who are up for revisiting some of the assumptions which have governed the web for the past few decades.
   context: >
     Reading Maggie Appleton’s essay [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) and Mike Caufield’s talk–essay [The Garden and the Stream: A Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).
+thanks: >
+  Essays and blog posts over the years by [Alan Jacobs](http://ayjay.org), [Robin Sloan](https://www.robinsloan.com), and [Maggie Appleton](https://maggieappleton.com) provided many of the specific ingredients in [this particular stew](http://2012-2013.chriskrycho.com/art/and-the-stew-tastes-good/), and you can think of this as a response to (perhaps an entry in?) Robin’s call for [New Avenues in 2023](https://www.robinsloan.com/lab/new-avenues/) in particular. I am indebted to many others whose own writing is no doubt part of the mix as well. The current generation of feed tools, though criticized as unfit for one particular purpose here, have done a great deal to move the open web ecosystem forward, so credit especially to [Dave Winer](http://scripting.com) for <abbr>RSS</abbr>, the unruly group behind Atom, and [Manton Reece](https://www.manton.org) and [Brent Simmons](https://inessential.com) for <abbr>JSON</abbr> Feed. [Stephen Carradini](https://stephencarradini.com) provided helpful feedback on early drafts.
 draft: true
 ---
 
@@ -23,8 +25,6 @@ A thought I’ve had bouncing around for a while, most of all since starting to 
 Here’s what I mean by that: <abbr title="really simple syndication">RSS</abbr>, Atom, and [<abbr title="JavaScript Object notation">JSON</abbr> Feed][json-feed] all notionally include the idea of being able to mark items as having been updated, but in practice that ability is little-used, deeply hobbled, and therefore largely irrelevant. That in turn means that the existing feed specifications serve reasonably well to publish *new items* but very poorly to notify subscribers about changes to *existing items*. They are therefore very poorly suited for “gardens” in the sense described by Appleton, Caufield, and others.
 
 [op]: https://obsidian.md/publish
-[garden]: https://maggieappleton.com/garden-history
-[and-stream]: https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/
 [json-feed]: https://jsonfeed.org
 
 
@@ -37,11 +37,17 @@ First, not all feed readers make active use of that information even when it is 
 [feedbin]: https://feedbin.com
 [nnw]: https://netnewswire.com
 
-Second, many publishing systems do not use updates meaningfully anyway. Well behaved feed generators *can* update old items, including an "updated at" time stamp, but they don’t have to, and not all do. That concomitantly decreases the value of implementing support for handling updates. This reinforces the tendency for feed reader applications to ignore updates.
+This has a significant downside even for stream-type content. News publishers and blog authors alike regularly make meaningful edits to their content. Many a news story bears the stamp of changes—sometimes changes critical to key points in the story!—after publishing:
+
+> A previous version of this article said… It has been corrected to say… We apologize for the error.
+
+Unless you happen to come back to the article, though, it is unlikely you will see that—and all the more so if you read it via a feed, because such changes are often not surfaced *at all*, still less highlighted.
+
+Second, many publishing systems do not use updates meaningfully anyway. Well behaved feed generators *can* update old items, including an "updated at" time stamp, but they do not have to, and not all do. (This is another reason that you are unlikely to see corrections appear in your news reader.) That concomitantly decreases the value of implementing support for handling updates. This reinforces the tendency for feed reader applications to ignore updates.
 
 Third, the existing feed specifications all handle updates differently. <abbr>RSS</abbr> has a single `pubDate` value and Atom a single `updated` value, the idea in both cases apparently being that the distinction between when an item was first published and when it was most recently updated doesn't matter (The specs don’t say *why*, though, so that’s just my hypothesizing.) <abbr>JSON</abbr> Feed sensibly supplies both `date_published` and `date_modified`.
 
-That means that a feed reader service or application like Feedbin or NetNewsWire needs to be a lot smarter, though. It cannot rely on having <abbr>JSON</abbr> Feed items (still by far the minority), nor on those items correctly using `date_modified` (since both `date_published` and `date_modified` are optional). Net, the reader service has to keep track of previous versions itself using some kind of caching mechanism.
+That means that a feed reader service or application like Feedbin or NetNewsWire needs to be a lot smarter, though. It cannot rely on publishers updating `pubDate` in <abbr>RSS</abbr> or `updated` in Atom; nor on having <abbr>JSON</abbr> Feed items, since they are still by far the minority; nor on those items correctly using `date_modified`, since both `date_published` and `date_modified` are optional. Net, the reader service has to keep track of previous versions itself using some kind of caching mechanism.
 
 This further increases the cost of implementing handling for updates for feed readers, which again decreases the likelihood they will do so.
 
@@ -81,7 +87,13 @@ No surprise, [the <abbr>JSON</abbr> Feed spec][json-feed] has a similar blurb:
 
 > Think of a blog or microblog, Twitter or Facebook timeline, set of commits to a repository, or even a server log. These are all lists, and each could be described by a feed.
 
-Notice that these are all—more or less explicitly—temporal streams. This focus is perfectly reasonable; it was not a failing of the specifications’ authors but rather a success. Feeds do the job they were designed for, and do it well. But that job was syndication of streams, not invitations to come see how a garden has changed and grown.
+Notice that these are all—more or less explicitly—designed for temporal streams. This focus is perfectly reasonable; it was not a failing of the specifications’ authors but rather a success. Feeds do the job they were designed for, and do it well. But that job was syndication of streams, not invitations to come see how a garden has changed and grown.
+
+This is one reason that even many blogs whose authors explicitly think of them as [gardens][ayjay] are effectively write-only. Each entry is atomic—not (only) in the [Zettelkasten][z] sense that they represent just
+a single discrete idea, but also in the sense that they represent only a single point in time. That temporal atomicity can make a stream-style site useful for tracing the development of an author’s thought, if one is so inclined. (More on that below.) It necessarily means, though, that individual atoms are not *sprouts*, growing into more fully-formed versions of the thought themselves.
+
+[ayjay]: https://blog.ayjay.org/the-blog-garden/
+[z]: https://zettelkasten.de
 
 [^truncate]: A few years ago, I had to [start truncating][sha] the feeds from my own sites just to make them work with [micro.blog][mb], which has an unofficial 1<abbr title="megabyte">MB</abbr> limit on the size of the feeds it would consume.
 
@@ -89,19 +101,45 @@ Notice that these are all—more or less explicitly—temporal streams. This foc
 [mb]: https://micro.blog
 
 
+## A New Kind of Feed
+
+As useful as these kinds of hacks might be, though, the fact that we have to hack them in this way in the first place is suggestive. What would a protocol for updates which treats “gardens” as a top priority look like?
+
+==TODO: actually sketch out these changes!==
+
+Note that these changes are *not* the same as the set of changes which would make updates more useful for stream-like content, but they have some overlap. ==TODO: what overlap?==
+
+Should we even call this new thing a “feed”? Perhaps not.
+
+==TODO: keep going!==
+
+
 ## Hacks
 
-- publishing an item which represents links to the most recent set of updates, with author/publisher control over what goes into it
-  - Obsidian Publish could potentially do this; there may be plugins which *do*?
+Even assuming that the vision I outlined is appealing, it will take time for these ideas to percolate, time for specs to be written and implemented, time for readers to add better support. What might we do in the meantime? How can we hack better support in *now*, using the existing infrastructure? Some ideas:
+
+***Publish items which are just a collection of links to recently updated items in the garden.*** This approach has a number of things going for it. First, and most important, it is easy to “bolt onto” the existing feed ecosystem. Feed readers do not need to change anything. Publishing tools only need to add the ability to identify changed items and generate a list. For a traditional <abbr title="content management system">CMS</abbr> with dynamic content, this is just a matter of noticing that an item already exists in the database and flagging it as a change accordingly. Notes-publishing tools like [Obsidian Publish][op] could integrate the same capability along similar lines.
+
+The problem is slightly more complex for tooling built on static site generators ([Jekyll][j], [Hugo][h], [Zola][z], [Pelican][p], [11ty][11] etc.), in that they tend to be single-shot build systems—at most with a build cache, and require no particular versioning or deployment strategy. In practice, however, static site generators are very often used with version control systems. Scripting the generation of new “updates” sections is therefore possible, if not necessarily straightforward; the fact that it is a bit more fiddly is simply par for the course for static site generators.
+
+[j]: https://github.com/jekyll/jekyll
+[h]: https://gohugo.io
+[z]: https://www.getzola.org
+[p]: https://getpelican.com
+[11]: https://www.11ty.dev
+
+Some degree of interactivity here would be helpful. Authors should be able to opt individual posts in or out of that list of updates, to avoid the “it was just a typo fix” updates. They should also be able to summarize the changes, or to customize how much of the content surrounding the change is included—even if there are good defaults—so that the published updates can be presented in a way that is most helpful to readers.
+
+==TODO: more ideas==
+
 - splitting up the feeds:
   - “garden” entries
     - hack the size by making the body primarily a pointer back to the content, with an explanation of *why* (“this is garden” content), along with a summary of the most recent changes, allowing more items before hitting size limits
-    -
+    - build publishing infrastructure which allows you to easily incorporate information about which changes you want to highlight.
+      - make it smart enough to not flag typos by default
+      - make it a default to show an interface when making changes which lets the author/publisher easily flag yes/no/yes/yes/no for what gets emitted as a "change"?
+      - provide the ability to summarize changes
   - “stream” entries
     - always full text
     - minimal or no expectation of updates
     - it’s okay for them to “fall out” of the update window
-
-## A New Kind of Feed
-
-Should we even call this new thing a “feed”? Perhaps not.
