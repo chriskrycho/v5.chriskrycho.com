@@ -22,7 +22,7 @@ tags:
 
 ---
 
-I just got back from a long(ish) run and caught up on tracking my food intake for the day and once again got annoyed by how mediocre [MyFitnessPal][mfp] is for the task for athletes in particular.[^mediocre] Most importantly: its design vocabulary starts and stops with losing weight. It can be bent into supporting for people who want to maintain their current weight, or who need to gain weight, but as a key example of its design vocabulary's limitations: it will not offer congratulations on anything but being “under your goal.” For athletes, the fit is even worse.
+I just got back from a long(ish) run and caught up on tracking my food intake for the day and once again got annoyed by how mediocre [MyFitnessPal][mfp] is for the task for athletes in particular.[^mediocre] Most importantly: its design vocabulary starts and stops with losing weight. (It can be bent into supporting for people who want to maintain their current weight, or who need to gain weight, but as a key example of its design vocabulary's limitations: it will not offer congratulations on anything but being “under your goal.”) For athletes, the fit is even worse.
 
 [mfp]: https://www.myfitnesspal.com
 
