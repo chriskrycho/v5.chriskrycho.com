@@ -26,6 +26,7 @@ import {
 
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 import striptags from 'striptags';
+import niceList from './nice-list';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
@@ -164,6 +165,7 @@ function config(config: Config): UserConfig {
    config.addFilter('localeDate', localeDate);
    config.addFilter('isLive', (items: Item[]) => items.filter(isLive));
    config.addFilter('take', (items: Item[], count: number) => items.slice(0, count));
+   config.addFilter('niceList', (s: string[]) => niceList(s).unwrapOr(''));
 
    config.addFilter('excerpt', (content: string) => {
       let safe = striptags(content);

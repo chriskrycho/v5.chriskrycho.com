@@ -11,6 +11,7 @@ import siteTitle from './site-title';
 import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
+import niceList from './nice-list';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
@@ -74,6 +75,7 @@ interface Qualifiers {
    audience?: string;
    context?: string;
    epistemic?: string;
+   discusses?: string[];
 }
 
 function isBook(maybeBook: unknown): maybeBook is Book {
@@ -143,24 +145,28 @@ function htmlForQualifiers(qualifiers?: Qualifiers) {
    if (!qualifiers) return '';
 
    const audience =
-      typeof qualifiers?.audience === 'string'
+      typeof qualifiers.audience === 'string'
          ? `<p><b>Assumed audience:</b> ${markdown.renderInline(qualifiers.audience)}</p>`
          : '';
 
    const context =
-      typeof qualifiers?.context === 'string'
+      typeof qualifiers.context === 'string'
          ? `<p><b>A bit of context:</b> ${markdown.renderInline(qualifiers.context)}</p>`
          : '';
 
    const epistemicStatus =
-      typeof qualifiers?.epistemic === 'string'
+      typeof qualifiers.epistemic === 'string'
          ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
               qualifiers.epistemic,
            )}</p>`
          : '';
 
+   let contentNotice = niceList(qualifiers.discusses)
+      .map((s) => `<p><b>Heads up:</b> this post directly discusses ${s}.</p>`)
+      .unwrapOr('');
+
    const divider = '<hr/>';
-   return audience + context + epistemicStatus + divider;
+   return audience + context + epistemicStatus + contentNotice + divider;
 }
 
 function contentHtmlFor(
@@ -326,7 +332,7 @@ interface EleventyData {
 
 type ClassData = ReturnType<NonNullable<EleventyClass['data']>>;
 
-export class JSONFeed implements EleventyClass {
+export default class JSONFeed implements EleventyClass {
    declare collection?: string;
    declare title?: string;
    declare permalink?: string;
@@ -363,5 +369,3 @@ export class JSONFeed implements EleventyClass {
       );
    }
 }
-
-export default JSONFeed;

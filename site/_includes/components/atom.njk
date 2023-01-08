@@ -57,6 +57,9 @@
                   {%- if item.data.qualifiers.epistemic -%}
                      <p><b>Epistemic Status:</b> {{ item.data.qualifiers.epistemic | inlineMd | safe -}}</p>
                   {%- endif -%}
+                  {%- if item.data.qualifiers.discusses -%}
+                     <p><b>Heads up:</b> this post directly discusses {{item.data.qualifiers.discusses | niceList | inlineMd | safe}}.</p>
+                  {%- endif -%}
                   {%- if updates -%}
                   <ul>
                      {%- for update in updates -%}
