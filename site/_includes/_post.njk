@@ -27,6 +27,12 @@
       {{qualifiers.epistemic | inlineMd | safe}}
    </p>
    {% endif %}
+   {% if qualifiers.discusses %}
+   <p>
+      <b>Heads up:</b>
+      This post directly discusses {{qualifiers.discusses | niceList | inlineMd | safe}}.
+   </p>
+   {% endif %}
 </div>
 {%- endif %}
 
