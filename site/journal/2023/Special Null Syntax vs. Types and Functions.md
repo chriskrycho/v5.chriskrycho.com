@@ -3,6 +3,8 @@ title: Special Null Syntax vs. Types and Functions
 subtitle: >
   Why does `Maybe.map` feel better than `??` and friends to me? A sketch.
 qualifiers:
+  audience: >
+    Software developers, especially those with any interest in types, programming languages, and the intersection of the two.
   epistemic: >
     Basically thinking out loud about a thing I observed this weekend. I think I affirm the thing I took out of this experience.
 date: 2023-01-08T19:29:00-0700
