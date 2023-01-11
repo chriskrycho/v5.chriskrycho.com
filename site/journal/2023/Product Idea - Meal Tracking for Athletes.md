@@ -10,7 +10,7 @@ updated: 2023-01-11T08:55:00-0700
 updates:
   - at: 2023-01-11T08:55:00-0700
     changes: >
-      Added reader feedback about [Chronometer](https://cronometer.com).
+      Added reader feedback about [Cronometer](https://cronometer.com).
 permalink: /journal/meal-tracking-for-athletes/
 qualifiers:
   audience: >
@@ -49,7 +49,7 @@ I would absolutely pay money for this feature. I have no idea how many other peo
 
 <div class=callout>
 
-A reader (who noted their feedback wasn’t an ad, just an enthusiastic recommendation) suggested checking out [Chronometer](https://cronometer.com):
+A reader (who noted their feedback wasn’t an ad, just an enthusiastic recommendation) suggested checking out [Cronometer](https://cronometer.com):
 
 > I’m also interested in meal tracking that isn’t strictly focused on losing weight. I’ve found the app Cronometer to be a HUGE improvement of my fitness pal. Although it doesn’t quite hit all the points in your post. 
 > 
