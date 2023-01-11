@@ -58,11 +58,11 @@
 
       {%- if updates -%}
       <div class='updates'>
-         <p><b>Major changes:</b></p>
+         <p><i>Meaningful changes since publication:</i></p>
          <ul>
          {%- for update in updates -%}
          <li>
-            <b>{% localeDate update.at, DATE_FORMAT %} at {% localeDate update.at, TIME_FORMAT %}:</b>
+            <i>{% localeDate update.at, DATE_FORMAT %}:</i>
             {{update.changes | inlineMd | safe}}
          </li>
          {%- endfor -%}
