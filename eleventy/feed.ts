@@ -12,7 +12,6 @@ import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
 import niceList from './nice-list';
-import { it } from 'node:test';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
