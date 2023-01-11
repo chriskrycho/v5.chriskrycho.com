@@ -28,8 +28,6 @@ Combined with the first note, this means that the default behavior when using th
 - Click into the paper.
 - See how the model got all of the info surfaced at both the summary level and its detailed analysis *in the text of the paper*.
 
----
-
 The papers it serves up are not necessarily all directly related to the question—if you do a query where the corpus does not have the info it needs, the <abbr>UI</abbr> surfaces papers which are indirectly related and then explicitly states:
 
 > However, these papers do not explicitly address the question “...”.
