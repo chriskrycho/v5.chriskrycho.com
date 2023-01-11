@@ -6,6 +6,11 @@ subtitle: >
 summary: >
   It would be really great if meal tracking apps had a broader design vocabulary—one which supports what even serious amateur athletes (still less pros!) actually need… because not every day is the same!
 date: 2023-01-08T16:23:00-0700
+updated: 2023-01-11T08:55:00-0700
+updates:
+  - at: 2023-01-11T08:55:00-0700
+    changes: >
+      Added reader feedback about [Chronometer](https://cronometer.com).
 permalink: /journal/meal-tracking-for-athletes/
 qualifiers:
   audience: >
@@ -41,6 +46,20 @@ As is often the case when making a tool more capability of being shaped to its u
 </aside>
 
 I would absolutely pay money for this feature. I have no idea how many other people would, of course—“There are dozens of us!” might be the extent of it—but I would guess that a *lot* of other serious amateur athletes would appreciate it, and actual pro athletes even more so.
+
+<div class=callout>
+
+A reader (who noted their feedback wasn’t an ad, just an enthusiastic recommendation) suggested checking out [Chronometer](https://cronometer.com):
+
+> I’m also interested in meal tracking that isn’t strictly focused on losing weight. I’ve found the app Cronometer to be a HUGE improvement of my fitness pal. Although it doesn’t quite hit all the points in your post. 
+> 
+> It is more configurable than my fitness pal, you can base your calories off of other sources (strava included), although not quite in the fine tuned way you described in your post. You can also just set a number of calories, or have it guess based on height/weight/age etc. You can also set custom macro goals for each day of the week. Macronutrient goals aren’t necessarily tied to calories, they can be set in grams too.
+> 
+> The customizability is nice, but personally the main reason I like Cronometer is that it shows a *ton* of information about your nutrient intake. At least for me, this takes a lot of the emphasis off of the weight and calories, and makes it more about living healthy.
+
+I have just started playing with it, so I cannot say whether I will stick with it, but it may be worth checking out!
+
+</div>
 
 
 
