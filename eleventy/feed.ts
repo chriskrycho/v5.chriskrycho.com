@@ -12,6 +12,7 @@ import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
 import niceList from './nice-list';
+import { it } from 'node:test';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
@@ -43,6 +44,11 @@ interface BookMeta {
 // Must be a `type` alias because interfaces cannot extend unions.
 type Book = BookMeta & Author & Review;
 
+interface Update {
+   at: string | Date;
+   changes: string;
+}
+
 /** Extending the base Eleventy item with my own data */
 declare module '../types/eleventy' {
    interface Data {
@@ -52,8 +58,8 @@ declare module '../types/eleventy' {
       tags?: string[];
       date?: string | Date;
       updated?: string | Date;
+      updates?: Array<Update>;
       qualifiers?: Qualifiers;
-      updates?: Array<{ at: string; changes?: string }>;
       image?: string;
       link?: string;
       splash?: string;
@@ -181,18 +187,17 @@ function contentHtmlFor(
 
    const qualifiers = htmlForQualifiers(item.data?.qualifiers);
 
-   const updates = item.data?.updates
-      ? `<p><b>Updates:</b></p><ul>
+   const updates =
+      item.data?.updates && item.data.updates.length > 0
+         ? `<p><i>Meaningful changes since publication:</i></p><ul>
             ${item.data.updates
                .map(({ at, changes }) => {
-                  let date = localeDate(at, 'yyyy/MM/dd HH:mm');
-                  return changes
-                     ? `<li><b>${date}:</b> ${markdown.renderInline(changes)}</li>`
-                     : `<li><b>${date}</b></li>`;
+                  let date = localeDate(at, 'MMMM d, yyyy');
+                  return `<li><i>${date}:</i> ${markdown.renderInline(changes)}</li>`;
                })
                .join('\n')}
         </ul>`
-      : '';
+         : '';
 
    const book = item.data?.book;
    const bookInfo = isBook(book) ? describe(book) : '';

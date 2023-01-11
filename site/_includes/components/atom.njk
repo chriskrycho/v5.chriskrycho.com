@@ -61,10 +61,11 @@
                      <p><b>Heads up:</b> this post directly discusses {{item.data.qualifiers.discusses | niceList | inlineMd | safe}}.</p>
                   {%- endif -%}
                   {%- if updates -%}
+                  <p><i>Meaningful changes since publication:</i></p>
                   <ul>
                      {%- for update in updates -%}
                      <li>
-                        <b>{% localeDate update.at, 'yyyy/MM/dd HH:mm' %}:</b>
+                        <i>{% localeDate update.at, 'MMMM d, yyyy' %}:</i>
                         {{update.changes | inlineMd | safe}}
                      </li>
                      {%- endfor -%}
