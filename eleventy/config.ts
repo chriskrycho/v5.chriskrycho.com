@@ -27,7 +27,7 @@ import {
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 import striptags from 'striptags';
 import niceList from './nice-list';
-import note from './note';
+import { callout, note } from './notes';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
@@ -184,6 +184,7 @@ function config(config: Config): UserConfig {
    config.addShortcode('copyright', copyright);
 
    config.addPairedShortcode('note', note);
+   config.addPairedShortcode('callout', callout);
 
    config.addPassthroughCopy('site/_redirects');
    config.addPassthroughCopy('site/robots.txt');
