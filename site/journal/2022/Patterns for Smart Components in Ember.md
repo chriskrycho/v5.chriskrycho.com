@@ -16,11 +16,11 @@ templateEngineOverride: md
 
 ---
 
-<div class=note>
+<section class='note' aria-label='note' aria-role='note'>
 
 I’m experimenting with just publishing things I write up for work with only a minimum of extra context and editing so they live *somewhere* outside our work Slack account and have a chance of being useful to others. Expect these to be extra off-the-cuff!
 
-</div>
+</seciton>
 
 There is a lot of legacy Ember Classic code out there which used “smart” components for data loading. In many cases, that initialization ran in an old `init` hook, or sometimes a `didReceiveAttrs` or similar hook. In all cases, this model is incompatible with the Ember Octane programming model (and with any strict “data down, actions up” or one-way data flow paradigm).
 

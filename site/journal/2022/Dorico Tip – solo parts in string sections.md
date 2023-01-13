@@ -44,11 +44,11 @@ I'm working on a bit of orchestration where, briefly, both of the first chair vi
 [d]: https://www.steinberg.net/dorico/
 [dd]: https://steinberg.help/dorico_pro/v4/en/dorico/topics/notation_reference/notation_reference_divisi/notation_reference_divisi_c.html
 
-<div class='note'>
+<section class='note' aria-label='note' aria-role='note'>
 
 It is important to make sure **View** > **Signposts** > **Divisi** is selected before starting this process. In my experience, it is not possible to do the rest of this sequence successfully otherwise!
 
-</div>
+</section>
 
 1. Add a new *divisi* section where you want the solo to start, with **Edit** > **Notations** > **Staff** > **Change Divisi** (or trigger the [Jump Bar][j] and type “Change Divisi”).
 

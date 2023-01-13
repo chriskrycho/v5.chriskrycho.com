@@ -24,7 +24,7 @@ I’m running the same race again in May. Coming out of the strong finish in Oct
 
 I mapped out my rough plan for the season while on an easy aerobic run earlier, and figured I’d share it here, as being of potential interest for other runners out there.
 
-<section class="note" aria-label="Note">
+<section class='note' aria-label='note' aria-role='note'>
 
 This is a *serious-but-amateur* training plan for a half marathon. If you’ve never run a half marathon before, I highly recommend finding a different plan. You can train up to a half reasonably well in 3 months, with a much lower work load than this. The point of *this* plan is for me to perform well enough to get another top-50 finish. It is *hard*. By the end of the season, I will be running \~45 miles/week, with about a third of that being hard speed and tempo work.
 

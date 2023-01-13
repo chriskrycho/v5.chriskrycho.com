@@ -343,7 +343,7 @@ In general, it’s really helpful to avoid getting into the situation where this
 
 —but sometimes this kind of thing is out of your control, as it was out of mine last year. I hope if you find yourselves in the same spot I found myself last August, you now have a good handle on some of the ways you can manage this kind of large, long-running task effectively!
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
     
 Two addenda:
 

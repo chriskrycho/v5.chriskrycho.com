@@ -65,7 +65,7 @@ Fundamentally, an asynchronous data loading operation can be in at least three s
 
 It’s important particularly—though not only!—in dealing with user interfaces that we account for *all* of these scenarios. If we don’t, we might end up assuming that our data is always in a loaded state, and fail to show anything meaningful while it’s loading, or if there’s an error. At *best* this makes for a poor user experience. At worst, the result can be outright buggy! So this implementation exposes (and encourages you to think in terms of!) those states: `loading`, `loaded`, and `error`.[^1]
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 This idea is far from original to me or my colleagues. I learned it from a series of talks and blog posts around the idea of “making illegal states impossible,” an idea which has a lot of traction in the typed functional programming community.
 
@@ -732,7 +732,7 @@ For further reading on autotracking, check out these posts by my friend and coll
 
 As long-time readers of this blog (and many folks in the Ember community) know, I’m a huge advocate of TypeScript. I’m particularly a fan of using types to guarantee that our data is *always* in a valid state. In the implementation of `AsyncData` as we have it, we *do* always have data in a valid state—but that’s just because we’ve been careful, and our end users can pretty easily interact with `AsyncData` in unsafe ways. What might it look like to make it so that we can never *construct* invalid data, and so that our end users need to interact more safely with the data?
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 For this example, I am *assuming* rather than *explaining* the TypeScript features in use.
 

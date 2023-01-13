@@ -18,7 +18,7 @@ Recall from those posts that there are four basic formats under discussion:
 - something like Svelte’s and Vue’s SFC format
 - an imports-only extension of the current format
 
-<section class="note" aria-label="Note">
+<section class='note' aria-label='note' aria-role='note'>  
 
 In those previous posts, I said Part 3 was going to be about **Scaling**. However, I think it’s more useful to talk about **Tooling** here. As I have kept working on this series, I’m not actually persuaded that there are particularly meaningful differences between these approaches for scaling codebases which aren’t subsumed in the other topics—especially teaching and testing. So: tooling it is!
 

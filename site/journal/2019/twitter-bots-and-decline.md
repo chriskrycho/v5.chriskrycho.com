@@ -33,7 +33,7 @@ I think we do ourselves and our neighbors a very great disservice when we speak 
 
 What is more, though: I do not think those attendant ills, real and serious though they are, represent the full extent of the outcome of Twitter bots. Neither do I think that Twitter bots have created, undirected, out of the air, the malaise so many people feel. Insofar as some of these problems are “only perception,” that remains a real problem; but more than that, the bots are amplifying pre-existing problems, at the behest of their makers. We owe it to each other to say this clearly and truthfully—to hold accountable those who make and employ these technologies, and to counter their effects.
 
-<div class=note>
+<section class='note' aria-label='note' aria-role='note'>  
 
 Stephen has since responded with a very thoughtful piece: [On Twitter Bots and the Presence of Disinformation][response]. This paragraph in particular gets quite clearly at both what I aimed to get at on the episode and what I gestured at a bit above:
 
@@ -41,7 +41,7 @@ Stephen has since responded with a very thoughtful piece: [On Twitter Bots and t
 
 I commend [the whole post][response] to you.
 
-</div>
+</section>
 
 [Winning Slowly 7.13]: https://www.winningslowly.org/7.13/
 [Stephen]: https://stephencarradini.com

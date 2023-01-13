@@ -144,7 +144,7 @@ For some of you, this might already make sense—but it’s still neat to see ho
 
 People with backgrounds in languages like Java, C^♯^, or TypeScript often find it hard to translate the syntax we’ve just walked through into concepts they know. That’s totally fair: it’s pretty different, and it’s not *just* new syntax, it’s also new language features tied to that syntax. In this section, we’ll see how we could implement the exact same semantics in a language that’s more familiar, and hopefully that will help make sense of things.
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 I’m using TypeScript here because it’s the language in this family I’m most familiar with, but I’m going to keep it to a minimal subset of TypeScript that is extremely close to what you might see in Java or C^♯^. I’ll be using footnotes here to talk about some details around TypeScript itself, where Typescript can let us more directly approximate the things happening in languages like Grain, Elm, etc. However, those are footnotes for a reason: you don’t *need* to read or understand them to get the point of the rest of this post!
 
@@ -262,7 +262,7 @@ let badSquash = new Veggie(VeggieKind.Squash, CabbageColor.Green);
 
 We can solve this problem *and* get ourselves to something that looks a lot more like the syntax we’re aiming for in one fell swoop: by making our constructor `private` and providing other ways to create a `Veggie` which are guaranteed to be safe.
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 This is the part where people who are already familiar TypeScript with have to wait for the next post. There are ways we can make this *much* more type-safe. That's not the point of *this* post, though! Here, we’re intentionally sticking to a “lowest common denominator” implementation to get at how we can do this in *any* class-based language.
 
@@ -451,7 +451,7 @@ class Veggie {
 
 *All* we’ve done here is require the caller to pass us an object with names which match the names of the `VeggieKind` variants. The values on that object are either values of the desired resulting type `T` in the case of `Squash` and `Broccoli`, or a function which takes a `CabbageColor` and returns that same resulting type of `T`. Within the body of the `match` method, we return whichever one corresponds to `this.kind`.
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 Notice the `// SAFETY: ...` comment I added when using the non-null assertion operator `!` with `this.color`. I borrowed this idea from the Rust community, which marks all uses of `unsafe` with these kinds of comments. I use it *any time* I write a cast in TypeScript, for the sake of whoever is maintaining the code in the future… including future *me*. It’s important to know what might make a cast unsafe! For a way to not need this comment at all by having better safety, you’ll want to read the *next* post.
 

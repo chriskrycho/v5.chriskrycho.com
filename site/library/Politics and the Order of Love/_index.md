@@ -8,7 +8,7 @@ order: OLD_FIRST
 
 ---
 
-<section class="note" arial-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 [Cool <abbr title="universal resource identifier">URI</abbr>s don’t change][uris], but in this case I *did* (sadly) have to relocate one file to make this collection work. The review of the book now lives [here][review], and I’ve changed how I approach these things so it won’t happen in the future!
 

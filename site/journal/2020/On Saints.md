@@ -15,7 +15,7 @@ summary: >
 
 ---
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 With this post I’m starting something new: whenever someone asks me a question—in email, in Slack, etc.—which I think might be interesting to readers, I’ll make a point to share it here as well; you’ll find them all under the [Q & A topic][Q&A]. I may of course tweak the content from my response to that person—elaborating on a point that requires more context, eliding personal details, etc. Enjoy!
 

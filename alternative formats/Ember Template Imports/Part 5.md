@@ -26,7 +26,7 @@ Fundamentally, there are two basic approaches available for styling in the moder
 
 ***All of these work perfectly well with any of the template imports proposals.*** This is the reason I originally left this aside, and it’s also the reason this is the shortest of the posts. The templating layer is a fundamental part of a front-end framework: it is *the* thing a front-end framework *must* do. By contrast, a framework can be styling-method-agnostic. Frameworks certainly can provide first-class primitives for it—as Vue and Svelte do—but it is not a necessary constraint for the integration of *state change* with *<abbr title="document object model">DOM</abbr> updates*, unlike templating.
 
-<section class='note' aria-label="Note">
+<section class='note' aria-label='note' aria-role='note'>
 
 This is by no means to diminish the importance of styling, which I take to be an under-appreciated element of truly great web applications. It is rather to make clear and explicit what constraints it does and doesn’t face compared to templates.
 
