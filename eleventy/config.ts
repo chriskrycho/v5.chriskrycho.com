@@ -125,6 +125,13 @@ const featured = (collection: Collection): Item[] =>
       .filter(isFeatured)
       .sort(byDate(Order.NewFirst));
 
+const drafts = (collection: Collection): Item[] =>
+   collection
+      .getAll()
+      .filter((item) => item.data?.draft === true)
+      .filter(excludingStandalonePages)
+      .sort(byDate(Order.NewFirst));
+
 function config(config: Config): UserConfig {
    config.addWatchTarget('scripts');
    config.addWatchTarget('site/_styles');
@@ -229,6 +236,7 @@ function config(config: Config): UserConfig {
    config.addCollection('latest', latest);
    config.addCollection('updated', mostRecentlyUpdated);
    config.addCollection('featured', featured);
+   config.addCollection('drafts', drafts);
 
    config.setLibrary('md', markdown);
 
