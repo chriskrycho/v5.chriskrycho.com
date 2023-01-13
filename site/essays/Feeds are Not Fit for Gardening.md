@@ -8,7 +8,7 @@ qualifiers:
   context: >
     Reading Maggie Appleton’s essay [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) and Mike Caufield’s talk–essay [The Garden and the Stream: A Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).
 thanks: >
-  Essays and blog posts over the years by [Alan Jacobs](http://ayjay.org), [Robin Sloan](https://www.robinsloan.com), and [Maggie Appleton](https://maggieappleton.com) provided many of the specific ingredients in [this particular stew](http://2012-2013.chriskrycho.com/art/and-the-stew-tastes-good/), and you can think of this as a response to (perhaps an entry in?) Robin’s call for [New Avenues in 2023](https://www.robinsloan.com/lab/new-avenues/) in particular. I am indebted to many others whose own writing is no doubt part of the mix as well. The current generation of feed tools, though criticized as unfit for one particular purpose here, have done a great deal to move the open web ecosystem forward, so credit especially to [Dave Winer](http://scripting.com) for <abbr>RSS</abbr>, the unruly group behind Atom, and [Manton Reece](https://www.manton.org) and [Brent Simmons](https://inessential.com) for <abbr>JSON</abbr> Feed. [Stephen Carradini](https://stephencarradini.com) provided helpful feedback on early drafts.
+  Essays and blog posts over the years by [Alan Jacobs](http://ayjay.org), [Robin Sloan](https://www.robinsloan.com), and [Maggie Appleton](https://maggieappleton.com) provided many of the specific ingredients in [this particular stew](http://v3.chriskrycho.com/art/and-the-stew-tastes-good/), and you can think of this as a response to (perhaps an entry in?) Robin’s call for [New Avenues in 2023](https://www.robinsloan.com/lab/new-avenues/) in particular. I am indebted to many others whose own writing is no doubt part of the mix as well. The current generation of feed tools, though criticized as unfit for one particular purpose here, have done a great deal to move the open web ecosystem forward, so credit especially to [Dave Winer](http://scripting.com) for <abbr>RSS</abbr>, the unruly group behind Atom, and [Manton Reece](https://www.manton.org) and [Brent Simmons](https://inessential.com) for <abbr>JSON</abbr> Feed. [Stephen Carradini](https://stephencarradini.com) provided helpful feedback on early drafts.
 draft: true
 ---
 
@@ -67,6 +67,14 @@ Finally, many consumers of feeds—a feed reader, a podcast app, [IndieWeb][iw] 
 
 [iw]: https://indieweb.org
 
+<aside>
+
+This problem is exacerbated by tensions around the portion of each item included in the feed. A feed is most useful to readers when each entry contains the full content. Providing excerpts dramatically reduces the size. For some kinds of publishers, providing excerpts can also have a secondary benefit: it prompts users to click through to the publication’s own site, which is often important for the publication’s ability to make money on “traditional” ad-supported models. This tension has provoked a small battle between reader services and publishing sites—a microcosm of the greater fight across the web ecosystem—where reader services often attempt to pull the full content of a linked item even when the feed itself includes only a summary, and publications make it more or less difficult to retrieve that content programmatically. Alternative funding models like subscriptions allow alternative solutions to these problems, including pay-walled feeds with full content.
+
+Even for publishers who are not trying to make money off their writing, there are reasons to want a user to click through. That might be as simple as care for the presentation of a given work, ranging to full-on per-entry art direction. Consider, for example: this paragraph is part of an *aside*, and is presented in a way designed to call attention to its distinctive relationship to the rest of the text. Many readers do not render `<aside>` at all! That goes even further for my "note" blocks, which are set off as visually distinct (with affordances for screen readers and other accessibility tools) in their own way on my site; all of that is lost entirely in feed readers. Those considerations also might go further into things feed readers not only do not but *cannot* do. Some of the best of what digital media offer over print comes in the form of embedded illustrations or animations which take advantage of the ability to run *programs* as part of a document. Consider for example [Bartoz Ciechanowski](https://ciechanow.ski)’s essays, which make extensive use of some of the most advanced capabilities of modern web browsers. Well-behaved reader apps do not *and should not* run arbitrary JavaScript, though.
+
+</aside>
+
 In sum, then, the current feed ecosystem—specifications and implementations alike—thus has only the barest support for “updates”. They feel bolted on, an afterthought. There is poor support for generating them, reading them, and even—perhaps most fundamentally—for transmitting them.
 
 This systemic gap falls out—mostly implicitly—from the design of the specifications. <abbr>RSS</abbr> and <abbr>JSON</abbr> Feed both make their update fields optional, while Atom requires each `<entry>` to have an `<update>` value; but *all* of them implicitly assume a temporal stream, and reading their specs makes this obvious.
@@ -95,7 +103,7 @@ a single discrete idea, but also in the sense that they represent only a single 
 [ayjay]: https://blog.ayjay.org/the-blog-garden/
 [z]: https://zettelkasten.de
 
-[^truncate]: A few years ago, I had to [start truncating][sha] the feeds from my own sites just to make them work with [micro.blog][mb], which has an unofficial 1<abbr title="megabyte">MB</abbr> limit on the size of the feeds it would consume.
+[^truncate]: A few years ago, I had to [start truncating][sha] the feeds from my own sites just to make them work with [micro.blog][mb], which has an unofficial 1<abbr title="megabyte">MB</abbr> limit on the size of the feeds it would consume. notably, this is *only* for the current (`v5`) version of the site, which launched in November 2019. You can imagine how much larger the feed would be if it included the earlier iterations of the site.
 
 [sha]: https://github.com/chriskrycho/v5.chriskrycho.com/commit/50f7423d
 [mb]: https://micro.blog
@@ -118,6 +126,8 @@ Should we even call this new thing a “feed”? Perhaps not.
 
 Even assuming that the vision I outlined is appealing, it will take time for these ideas to percolate, time for specs to be written and implemented, time for readers to add better support. What might we do in the meantime? How can we hack better support in *now*, using the existing infrastructure? Some ideas:
 
+### Links to updates
+
 ***Publish items which are just a collection of links to recently updated items in the garden.*** This approach has a number of things going for it. First, and most important, it is easy to “bolt onto” the existing feed ecosystem. Feed readers do not need to change anything. Publishing tools only need to add the ability to identify changed items and generate a list. For a traditional <abbr title="content management system">CMS</abbr> with dynamic content, this is just a matter of noticing that an item already exists in the database and flagging it as a change accordingly. Notes-publishing tools like [Obsidian Publish][op] could integrate the same capability along similar lines.
 
 The problem is slightly more complex for tooling built on static site generators ([Jekyll][j], [Hugo][h], [Zola][z], [Pelican][p], [11ty][11] etc.), in that they tend to be single-shot build systems—at most with a build cache, and require no particular versioning or deployment strategy. In practice, however, static site generators are very often used with version control systems. Scripting the generation of new “updates” sections is therefore possible, if not necessarily straightforward; the fact that it is a bit more fiddly is simply par for the course for static site generators.
@@ -129,6 +139,22 @@ The problem is slightly more complex for tooling built on static site generators
 [11]: https://www.11ty.dev
 
 Some degree of interactivity here would be helpful. Authors should be able to opt individual posts in or out of that list of updates, to avoid the “it was just a typo fix” updates. They should also be able to summarize the changes, or to customize how much of the content surrounding the change is included—even if there are good defaults—so that the published updates can be presented in a way that is most helpful to readers.
+
+### Split the feeds
+
+Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. “Garden” entries might be shaped quite differently. ==TODO: how==
+
+Making this split would, for good and for ill, intensify the existing tendency to treat stream entries as one-and-done.
+
+This approach could also work in tandem with the "Links to updates" approach suggested above. We will have to take it as a given, at least initially, that most readers will not make use of the information about any given item’s having been updated. Accordingly, it might make sense to keep all item garden items in the list for the rare reader app which does support that, and *also* to publish a.
+
+<div class=callout>
+
+**Hypothesis:** In this model, having *many* recent updates in the feed may not make sense. Instead, the feed could—potentially—publish only a single “recent updates” entry at a time (always with a unique <abbr title="identifier">ID</abbr>), replacing it whenever updates are published. This would also help with keeping the summary small.
+
+</div>
+
+Supporting this would also ==TODO: infra 'graph==
 
 ==TODO: more ideas==
 
