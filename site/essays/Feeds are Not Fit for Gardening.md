@@ -109,19 +109,6 @@ a single discrete idea, but also in the sense that they represent only a single 
 [mb]: https://micro.blog
 
 
-## A New Kind of Feed
-
-As useful as these kinds of hacks might be, though, the fact that we have to hack them in this way in the first place is suggestive. What would a protocol for updates which treats “gardens” as a top priority look like?
-
-==TODO: actually sketch out these changes!==
-
-Note that these changes are *not* the same as the set of changes which would make updates more useful for stream-like content, but they have some overlap. ==TODO: what overlap?==
-
-Should we even call this new thing a “feed”? Perhaps not.
-
-==TODO: keep going!==
-
-
 ## Hacks
 
 Even assuming that the vision I outlined is appealing, it will take time for these ideas to percolate, time for specs to be written and implemented, time for readers to add better support. What might we do in the meantime? How can we hack better support in *now*, using the existing infrastructure? Some ideas:
@@ -142,7 +129,13 @@ Some degree of interactivity here would be helpful. Authors should be able to op
 
 ### Split the feeds
 
-Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. They could continue to be full text or not as makes sense for the publication in question. Garden entries might be shaped quite differently; in particular, they would default to including only a summary of and any recent changes to each item. A garden feed would thus primarily serve as an up-to-date list of ideas “growing” in the garden. (Here, the incentive to either click through or actively ask for the full text would be a necessary workaround for the limitations of existing feed reader apps.) Embracing this split should allow the garden feed to include *all* the entries, for most kinds of sites: no matter how large any individual part of the garden grew, the reference to it in the feed would be a few kilobytes at most—more comparable to the
+Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. They could continue to be full text—or not, as makes sense for any particular publication.
+
+Garden entries might be shaped quite differently, and there are any number of different approaches one could take. Here are two:
+
+#### Embrace the summary
+
+A garden’s feed could include only a summary of, and any recent changes to, each item. A garden feed would thus primarily serve as an up-to-date list of ideas “growing” in the garden. (Here, the incentive to either click through or actively ask for the full text would be a necessary workaround for the limitations of existing feed reader apps.) Embracing this split should allow the garden feed to include *all* the entries, for most kinds of sites: no matter how large any individual part of the garden grew, the reference to it in the feed would be a few kilobytes at most, allowing for a feed with hundreds of items in it while still fitting under the common 1<abbr>MB</abbr> limit.
 
 Making this split would, for good and for ill, intensify the existing tendency to treat stream entries as one-and-done.
 
@@ -154,30 +147,55 @@ This approach could also work in tandem with the "Links to updates" approach sug
 
 </section>
 
-Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*.
+Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*. Here is one potential flow:
 
-<aside>
+- On first publishing a new item to the garden, show a user interface asking for a summary. This could be distinct from the summary used for <abbr>SEO</abbr> purposes, or it could be used for both.
 
-I initially thought this would mean being smart enough to avoid showing trivial typo fixes, but as I was drafting this section I realized that does not always work: What about typos which substantially change the meaning of a sentence? For example, ==TODO==
+- On updating an existing item from the garden, present the changes and a prompt to summarize them. The presentation could be as minimal as the result of running `diff` on the two text sources, or it could be an elegant presentation of how it looks when rendered on the site, as makes sense for the software in question. (WordPress and Pelican should probably do different things here!) The prompt should also allow the author to decide that this change does not need to be treated as an "update" at all: correcting “nto” to “not” is very different from adding an entirely new section to an essay.
 
-> A
+    <aside>
 
-==TODO==
+    I initially thought this would mean being smart enough to avoid showing trivial typo fixes, but as I was drafting this section I realized that does not always work: What about typos which substantially change the meaning of a sentence? For example, consider these two sentences:
 
-> B
+    > The change is set to cost the state half a billion dollars a year.
 
-</aside>
+    <!-- new quote -->
+
+    > The change is set to cost the state half a million dollars a year.
+
+    These two are a one-letter typo—but the difference in meaning is *huge*.[^indebted] While you can imagine a system smart enough to handle automatically ignoring total misspellings like “nto”, it would necessarily be limited to those.
+
+    </aside>
+
+- Under the hood, update the
 
 
+[^indebted]: Thanks to [Stephen Carradini][sc] for this example.
 
-==TODO: more ideas==
+[sc]: https://stephencarradini.com
 
-- splitting up the feeds:
-    - build publishing infrastructure which allows you to easily incorporate information about which changes you want to highlight.
-      - make it smart enough to not flag typos by default
-      - make it a default to show an interface when making changes which lets the author/publisher easily flag yes/no/yes/yes/no for what gets emitted as a "change"?
-      - provide the ability to summarize changes
-  - “stream” entries
-    - always full text
-    - minimal or no expectation of updates
-    - it’s okay for them to “fall out” of the update window
+
+#### Embrace the updates
+
+Garden feeds might instead choose to publish update summaries and the full content of each item, including changes made to it over time. Instead of just embracing the current ecosystem limitations, this approach pushes on them with the
+
+- ==TODO: distinguishing whether items should be updated (typos vs. not again) → does it update the item or not?==
+- generating update lists
+
+
+### Batches of updates
+
+Depending on how often a user publishes updates to a garden, they might want to be able to batch up their changes to publish a set of them all together. ==TODO==
+
+
+## A New Kind of Feed
+
+As useful as these kinds of hacks might be, though, the fact that we have to hack them in this way in the first place is suggestive. What would a protocol for updates which treats “gardens” as a top priority look like?
+
+==TODO: actually sketch out these changes!==
+
+Note that these changes are *not* the same as the set of changes which would make updates more useful for stream-like content, but they have some overlap. ==TODO: what overlap?==
+
+Should we even call this new thing a “feed”? Perhaps not.
+
+==TODO: keep going!==
