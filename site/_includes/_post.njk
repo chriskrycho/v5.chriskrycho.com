@@ -7,6 +7,18 @@
 {% endblock header %}
 
 {% block content %}
+{% if draft %}
+<section class='note' aria-label='note' aria-role='note'>
+   <p>
+      <strong><em>This item is a work in progress.</em></strong> It is subject to change
+      radically at any time—up to and including being deleted entirely if I change my mind
+      about it! Because it is a draft, it is not included in the site’s feeds; if you want
+      to watch its progress, you will need to do that very old thing and bookmark this
+      page and return to it over time until it is published.
+   </p>
+</section>
+{% endif %}
+
 {% if qualifiers -%}
 <div class='qualifiers'>
    {% if qualifiers.audience -%}

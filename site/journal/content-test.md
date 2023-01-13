@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 thanks: >
     Thanks to Ben Makuh and Katie King for being two genuinely awesome friends.
     I genuinely have no idea what my life would be like without them!
+draft: true
 
 ---
 
