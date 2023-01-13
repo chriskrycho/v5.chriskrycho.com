@@ -69,7 +69,7 @@ Finally, many consumers of feeds—a feed reader, a podcast app, [IndieWeb][iw] 
 
 <aside>
 
-This problem is exacerbated by tensions around the portion of each item included in the feed. A feed is most useful to readers when each entry contains the full content. Providing excerpts dramatically reduces the size. For some kinds of publishers, providing excerpts can also have a secondary benefit: it prompts users to click through to the publication’s own site, which is often important for the publication’s ability to make money on “traditional” ad-supported models. This tension has provoked a small battle between reader services and publishing sites—a microcosm of the greater fight across the web ecosystem—where reader services often attempt to pull the full content of a linked item even when the feed itself includes only a summary, and publications make it more or less difficult to retrieve that content programmatically. Alternative funding models like subscriptions allow alternative solutions to these problems, including pay-walled feeds with full content.
+This problem is exacerbated by tensions around the portion of each item included in the feed. A feed is most useful to readers when each entry contains the full content, because they do not have to leave the reader app to read the article. At the same time, providing excerpts dramatically reduces the size, which again is potentially important for reducing the bandwidth costs to both publisher and consumer of the feed. For some kinds of publishers, providing excerpts can also have a secondary benefit: it prompts users to click through to the publication’s own site, which is often important for the publication’s ability to make money on “traditional” ad-supported models. This tension has provoked a small battle between reader services and publishing sites—a microcosm of the greater fight across the web ecosystem—where reader services often attempt to pull the full content of a linked item even when the feed itself includes only a summary, and publications make it more or less difficult to retrieve that content programmatically. Alternative funding models like subscriptions allow alternative solutions to these problems, including pay-walled feeds with full content.
 
 Even for publishers who are not trying to make money off their writing, there are reasons to want a user to click through. That might be as simple as care for the presentation of a given work, ranging to full-on per-entry art direction. Consider, for example: this paragraph is part of an *aside*, and is presented in a way designed to call attention to its distinctive relationship to the rest of the text. Many readers do not render `<aside>` at all! That goes even further for my "note" blocks, which are set off as visually distinct (with affordances for screen readers and other accessibility tools) in their own way on my site; all of that is lost entirely in feed readers. Those considerations also might go further into things feed readers not only do not but *cannot* do. Some of the best of what digital media offer over print comes in the form of embedded illustrations or animations which take advantage of the ability to run *programs* as part of a document. Consider for example [Bartoz Ciechanowski](https://ciechanow.ski)’s essays, which make extensive use of some of the most advanced capabilities of modern web browsers. Well-behaved reader apps do not *and should not* run arbitrary JavaScript, though.
 
@@ -142,25 +142,37 @@ Some degree of interactivity here would be helpful. Authors should be able to op
 
 ### Split the feeds
 
-Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. “Garden” entries might be shaped quite differently. ==TODO: how==
+Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. They could continue to be full text or not as makes sense for the publication in question. Garden entries might be shaped quite differently; in particular, they would default to including only a summary of and any recent changes to each item. A garden feed would thus primarily serve as an up-to-date list of ideas “growing” in the garden. (Here, the incentive to either click through or actively ask for the full text would be a necessary workaround for the limitations of existing feed reader apps.) Embracing this split should allow the garden feed to include *all* the entries, for most kinds of sites: no matter how large any individual part of the garden grew, the reference to it in the feed would be a few kilobytes at most—more comparable to the
 
 Making this split would, for good and for ill, intensify the existing tendency to treat stream entries as one-and-done.
 
-This approach could also work in tandem with the "Links to updates" approach suggested above. We will have to take it as a given, at least initially, that most readers will not make use of the information about any given item’s having been updated. Accordingly, it might make sense to keep all item garden items in the list for the rare reader app which does support that, and *also* to publish a.
+This approach could also work in tandem with the "Links to updates" approach suggested above. Indeed, it would likely be necessary: We will have to take it as a given, at least initially, that most readers will not make use of the information about any given item’s having been updated. Accordingly, it might make sense to keep all item garden items in the list, for the sake of the rare reader apps which do support rendering updates, and *also* to publish update entries.
 
-<div class=callout>
+<section class=callout aria-role=note>
 
 **Hypothesis:** In this model, having *many* recent updates in the feed may not make sense. Instead, the feed could—potentially—publish only a single “recent updates” entry at a time (always with a unique <abbr title="identifier">ID</abbr>), replacing it whenever updates are published. This would also help with keeping the summary small.
 
-</div>
+</section>
 
-Supporting this would also ==TODO: infra 'graph==
+Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*.
+
+<aside>
+
+I initially thought this would mean being smart enough to avoid showing trivial typo fixes, but as I was drafting this section I realized that does not always work: What about typos which substantially change the meaning of a sentence? For example, ==TODO==
+
+> A
+
+==TODO==
+
+> B
+
+</aside>
+
+
 
 ==TODO: more ideas==
 
 - splitting up the feeds:
-  - “garden” entries
-    - hack the size by making the body primarily a pointer back to the content, with an explanation of *why* (“this is garden” content), along with a summary of the most recent changes, allowing more items before hitting size limits
     - build publishing infrastructure which allows you to easily incorporate information about which changes you want to highlight.
       - make it smart enough to not flag typos by default
       - make it a default to show an interface when making changes which lets the author/publisher easily flag yes/no/yes/yes/no for what gets emitted as a "change"?
