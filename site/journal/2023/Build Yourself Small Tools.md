@@ -1,5 +1,5 @@
 ---
-title: Build Small Tools
+title: Build Yourself Small Tools
 qualifiers:
   audience: >
     Other people who are comfortable writing (even very small!) scripts and programs.
@@ -7,7 +7,7 @@ tags:
   - software development
   - working effectively
   - Rust
-date: 2023-01-013T10:44:00-0700
+date: 2023-01-13T10:50:00-0700
 summary: >
   I increasingly choose to build my own little tools rather than trying to fit myself into the workflows other people design. It has a slightly higher up-front cost, but it lets me make my computing environment my own.
 
