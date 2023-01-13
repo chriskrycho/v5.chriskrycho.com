@@ -83,11 +83,11 @@ I will count it as something of a win, given the background challenges, that I m
 
 I haven’t talked a lot about finances publicly in the past, because I haven’t really been sure *how* to do so in a way that does not seem boastful or risk making others feel bad, but I *want* to start doing so in a measured and hopefully helpful way in the future. I was able to have a couple good conversations with other folks in tech in particular because of my role as a well-compensated senior engineer, and I think it’s valuable for a host of reasons to talk about finances in a Christian way—especially in the context of helping others think about their own finances, opportunities and challenges presented by financial “success” of whatever degree, and so on.
 
-<section class='note' aria-label='note' aria-role='note'>
+{% note %}
 
 I am not currently at a point where I want to broadcast my finances here—that is just deeply fraught in a host of ways—but I am very glad to have *very* frank conversations about compensation and how we think about money and how we are trying to manage a modicum of wealth in a God-honoring way; feel free to get in touch.
 
-</section>
+{% endnote %}
 
 The big thing for us this year was that we paid off our house, exactly four years after we bought it, courtesy of the aforementioned excellent compensation from LinkedIn. I continue to find that astonishing. I do not take it for granted for one second, and I do not necessarily expect the market for software engineers to stay this hot long-term or even medium-term. Indeed, my expectation of *some* sort of shift around software compensation is one reason we prioritized paying it off so quickly.
 
