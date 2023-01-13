@@ -16,3 +16,5 @@ I have just added a new feature to this site: it now includes an *In Progress* s
 [g]: https://blog.ayjay.org/the-blog-garden/
 
 By definition, these kinds of works-in-progress are *just* works in progress. You should expect them to change, sometimes very substantially, from the time they first appear on the site. They will continue *not* to appear in the feeds for the site (though, as the essay suggests, I have ideas on how to handle that!) until I deem them ready to be “published”—that is, when they are no longer drafts but things I am *committing* to… though not necessarily things I will commit *not to change*!
+
+This also does not, of course, commit me to publishing *all* such drafts this way, nor to publishing any draft at any given stage of publishing. It just gives me a tool for working in public when I think that is the right move!
