@@ -89,7 +89,7 @@ That is: if there are existing (especially if there are well-established) reason
 
 So: which of the template import designs is the best move for us in terms of teaching and learning, especially when keeping in mind the idea of progressive disclosure of complexity and the principle of least astonishment?
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 In the discussion which follows, I’m using `.js` in every import, and I’ll be going back to update part 1 in the post to do this as well. This might be surprising, but there’s a reason for it: this matches the <abbr title="ECMAScript">ES</abbr> Modules spec as implemented in Node 12+, and is therefore what ecosystem tooling (including the TypeScript Language Server) expects. We may choose as a community to layer on custom tooling to reinterpret other extensions to resolve and therefore be less surprising! However, that carries some risks as well as additional implementation effort, and this also serves to highlight some of the tradeoffs in this space nicely.
 

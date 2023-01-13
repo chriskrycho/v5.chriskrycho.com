@@ -75,7 +75,7 @@ export default class MyComponent extends Component {
 }
 ```
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 Here I’ve switched to the `@glimmer/component` base class to use `constructor` instead of `init`, but the idea is the same!
 

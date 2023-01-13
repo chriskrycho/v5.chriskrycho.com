@@ -22,7 +22,7 @@ tags:
 
 ---
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 Over the weekend I wrote up the following on [an Ember RFC discussion](https://github.com/emberjs/rfcs/pull/669#issuecomment-739320902). Since it’s intentionally *not* specific to that RFC, I’m republishing it here for the broader Ember community to see, with only the slightest tweak to the intro to give more context. (It might be a bit less polished than usual, as a result!)
 

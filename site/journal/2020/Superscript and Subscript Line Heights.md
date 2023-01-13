@@ -19,7 +19,7 @@ Superscripts and subcripts should not affect the vertical rhythm of the text. Th
 
 [leading]: https://en.wikipedia.org/wiki/Leading
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 Two comments before I dive into the rest of the piece:
 

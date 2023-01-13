@@ -31,7 +31,7 @@ I reread <cite>Tiamat’s Wrath</cite>—the 8th and penultimate novel in James 
 
 On this read-through, a couple things caught my attention—little notes about the way the world is built and the story told that I hadn’t noticed on previous reads.
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 Minor spoilers for the series up through <cite>Tiamat’s Wrath</cite> follow, inevitably. Don’t read this if you want to read the series and don’t want to be spoiled.
 

@@ -420,7 +420,7 @@ This has a few critical differences from what we defined in the first post:
 
 *[JS]: JavaScript
 
-<section class="note" aria-label="note">
+<section class='note' aria-label='note' aria-role='note'>
 
 It’s important to understand what types do *not* (and cannot!) buy us here as well as what they *do* buy us. They’ve helped us guarantee that we always have a valid shape to our data. But if we wire up our static constructors incorrectly, we will still end up with broken code. Nothing about our types here stops us from writing this horribly broken implementation, after all:
 
