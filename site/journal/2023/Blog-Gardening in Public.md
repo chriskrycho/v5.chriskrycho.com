@@ -10,7 +10,7 @@ summary: >
 
 ---
 
-I have just added a new feature to this site: it now includes an *In Progress* section on the home page, which links to posts and essays which I am publishing whiel theya re still drafts. The first of these is [an essay][f] I am slowly building upabout feeds (<abbr title="Really Simple Syndication">RSS</abbr>, Atom, <abbr title="JavaScript object notation">JSON</abbr> Feed, etc.) and their poor fit for [blog-gardens][g]. It was, in fact, the act of writing this particular essay which prompted me to make this change: it is a way of putting my money where my mouth is.
+I have just added a new feature to this site: it now includes an *In Progress* section on the home page, which links to posts and essays which I am publishing while they are still drafts. The first of these is [an essay][f] I am slowly building up about feeds (<abbr title="Really Simple Syndication">RSS</abbr>, Atom, <abbr title="JavaScript object notation">JSON</abbr> Feed, etc.) and their poor fit for [blog-gardens][g]. It was, in fact, the act of writing this particular essay which prompted me to make this change: it is a way of putting my money where my mouth is.
 
 [f]: https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/
 [g]: https://blog.ayjay.org/the-blog-garden/
