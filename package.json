@@ -32,6 +32,7 @@
       "gulp-dart-sass": "^1.0.2",
       "highlight.js": "^11.6.0",
       "highlightjs-glimmer": "^2.0.1",
+      "highlightjs-unison": "^0.0.1",
       "luxon": "^3",
       "markdown-it": "^13.0.1",
       "markdown-it-abbr": "^1.0.4",

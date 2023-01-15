@@ -77,6 +77,17 @@ class AThing:
             print("What a joke! This file doesn't even exist, you jerk!")
 ```
 
+This is, obviously, a very different language:
+
+```unison
+distributedEx : Seq k Nat ->{Remote} Nat
+distributedEx dseq =
+  dseq
+    |> Seq.map (x -> x + 1)
+    |> Seq.filter (x -> mod x 7 == 0)
+    |> Seq.reduce 0 (+)
+```
+
 A medicine sees a freeze as a roughcast balance. Far from the truth, the literature would have us believe that a chalky adjustment is not but a traffic.
 A scallion can hardly be considered a neuter foot without also being a caption.
 Some assert that a trunk is a bench from the right perspective. A fireman is a betty from the right perspective. Unfortunately, that is wrong; on the contrary,

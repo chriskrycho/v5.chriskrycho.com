@@ -11,8 +11,12 @@ import { env } from 'process';
 import { Result } from 'true-myth';
 import slugify from 'uslug';
 import { setup } from 'highlightjs-glimmer';
+// @ts-expect-error -- no types yet
+import unison from 'highlightjs-unison';
 
 setup(hljs);
+
+hljs.registerLanguage('unison', unison);
 
 type HighlightError = {
    short: string;
