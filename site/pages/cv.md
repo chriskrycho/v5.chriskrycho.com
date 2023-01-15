@@ -32,17 +32,19 @@ I’m not looking to change jobs at this point—but you’re still welcome to [
 
 ## About Me
 
-I am an experienced software engineer focused on web <abbr title="user interface">UI</abbr>, typography, functional programming—and ethics. Besides my varied full-stack web development experience, I bring to the table half a decade of experience in systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
+I am senior software engineering leader, lately focused on programming language adoption, web framework development, and developer productivity and experience. Other long-running professional interests include <abbr title="user interface">UI</abbr>, typography, functional programming, and ethical software development.
 
-Building the *right things* means I am not interested in startups whose vision consists of either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings. **Ethics is foundational for good software engineering.**
+Besides my developer experience engineering experience, I have a long history with full-stack web development as well as half a decade of systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
 
-Building things the *right way* means I am not interested in slapdash product development and rushed delivery on the one hand, or infinite delays in pursuit of a perfect implementation on the other. Instead, I want both to get a piece of software live and also to improve it continuously after launch. **Shipping is a feature—and so is excellence.**
+Building the *right things* means I am not interested in startups whose vision consists of either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings.
+
+Building things the *right way* means I am not interested in slapdash product development and rushed delivery. Software development as a business field consistently underinvests in product quality and maintainability. It is the responsibility of engineers to raise that bar.
 
 ### Education
 
 <a name=masters></a>I earned a **Master of Divinity** with honors from **Southeastern Baptist Theological Seminary** in **May 2017**, after 4½ years simultaneously pursuing the degree and working as a software developer. I am not a pastor by profession, but I care deeply about the ethical, social and, yes, spiritual implications of the software I build.
 
-<a name=undergrad></a>I graduated *magna cum laude* with a **Bachelor of Science in Physics** from **The University of Oklahoma** in **May 2009**, having been a regular departmental award winner. My senior thesis, a project in computational neurophysics (in Fortran 90!), led me into programming—but I admit I still miss doing physics and math on a regular basis.
+<a name=undergrad></a>I graduated *magna cum laude* with a **Bachelor of Science in Physics** from **The University of Oklahoma** in **May 2009**, having been a regular departmental award winner. My senior thesis, a project in computational neurophysics (in Fortran 90!), led me into programming—but/and I still miss doing physics and math on a regular basis.
 
 ## My Work
 
@@ -52,7 +54,11 @@ Building things the *right way* means I am not interested in slapdash product de
 
 Since **January 2019**, I have worked as an infrastructure engineer at [LinkedIn], focused on developer productivity and application performance for LinkedIn's flagship web app.
 
-Since **September 2021**, I have been a **Senior Staff Software Engineer**, helping lead all front-end web development efforts on the app and influencing broader efforts across the app and broader LinkedIn ecosystem, including especially our ongoing adoption of TypeScript.
+Since **September 2021**, as a **Senior Staff Software Engineer**:
+
+- I lead all front-end web development efforts on the flagship web app, setting the strategy and architectural direction
+- I am the primary subject matter expert for LinkedIn’s TypeScript adoption and migration strategies.
+- I work closely with both product teams and other infrastructure teams, and in that role I am one of the primary drivers for web development across the LinkedIn ecosystem.
 
 From **January 2019–September 2021**, as a **Staff Software Engineer**:
 
@@ -60,8 +66,6 @@ From **January 2019–September 2021**, as a **Staff Software Engineer**:
 - I was the tech lead for the adoption of [Ember Octane][octane] across the application. Additionally, as one of a handful of primary technical experts on Octane—at LinkedIn or anywhere else—I support many other teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
 - I led efforts to update the app to the current versions of Ember.js, unblocking adoption of Octane.
 - I helped build, and continue to support, [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
-
-At LinkedIn, I have become comfortable leading large efforts that impact hundreds of engineers and millions of users. And more than in any other job I’ve had, it feels like I’m still just getting started.
 
 [LinkedIn]: https://www.linkedin.com/feed/
 [octane]: https://emberjs.com/editions/octane
@@ -175,7 +179,7 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 
 ### Podcasts
 
-- [**Winning Slowly**][ws] (January 2014–November 2021): cohosted with [Stephen Carradini][stephen], a show about taking the long view on technology, religion, ethics and art. Stephen describes it (accurately) as a show focused on tech, but from the angles of religion, ethics, and art. I describe it (also accurately) as our excuse to talk about whatever we want, since "technology, religion, ethics and art" pretty much touches on all of human existence. For a good sample of the way I approach **software and ethics**, check out [6.06: A Kind of Blindness,][ws-6.06] on smart cities, "big data", and the meaninglessness of mere information.
+- [**Winning Slowly**][ws] (January 2014–November 2021): cohosted with [Stephen Carradini][stephen], a show about taking the long view on technology, religion, ethics and art. Stephen described it (accurately) as a show focused on tech, but from the angles of religion, ethics, and art. I described it (also accurately) as our excuse to talk about whatever we want, since "technology, religion, ethics and art" pretty much touches on all of human existence. For a good sample of the way I approach **software and ethics**, check out [6.06: A Kind of Blindness,][ws-6.06] on smart cities, "big data", and the meaninglessness of mere information.
 
 - [**New Rustacean**][nr] (September 2015–May 2019): a show about the **Rust** programming language—dedicated primarily to *teaching* people Rust. Initially a way of helping myself stay motivated to keep up with learning the language, New Rustacean became one of the most popular resources for people learning Rust and inspired a few other teaching-programming-languages podcasts.
 
@@ -188,11 +192,11 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 
 #### TypeScript and Ember.js
 
-As we began actively adopting TypeScript in our Ember.js app [at Olo](#current), we very soon ran into the limitations of the existing support. Integration with Ember’s CLI tooling was limited; the type definitions were a mix of incomplete, unhelpful, and outright wrong; there was little information about how to use TypeScript *effectively* with Ember; and, worst of all, no one was actively contributing to fill these gaps—much less leading.
+I am presently a member of the Ember.js Framework and Typed Ember core teams, the latter of which I founded in 2017. The efforts of the Typed Ember Core team ultimately led to the adoption of TypeScript as an officially supported language for Ember, including the development of a [Semantic Versioning for TypeScript Types spec](https://www.semver-ts.org), a [best-in-class language server](https://github.com/typed-ember/glint), and the only attempted gradual migration path from [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) to natively-published types.
 
-*[CLI]: command line interface
+#### Volta
 
-In March 2017, I began working on the CLI tooling and the type definitions for the Ember ecosystem. Once I began leading the effort, several others began contributing actively; in early 2018 we formed a small team working on shepherding Ember and TypeScript integration forward. Since, I have taught and written extensively on using TypeScript effectively both with Ember and in general. The efforts of the small open source team I founded have made TypeScript both viable and increasingly mainstream as a choice for Ember apps and addons.
+As part of my work at LinkedIn, I helped develop and continue to maintain [Volta][Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
 
 #### True Myth
 
@@ -202,7 +206,7 @@ In the **fall of 2017**, [a friend][ben] and I developed [True Myth][tm]: a **Ty
 [tm]: https://github.com/chriskrycho/true-myth
 *[API]: application programming interface
 
-True Myth is largely [complete][stable-libraries], with a full set of features and [extensive documentation][tm-docs]. I continue to maintain and expand the library with additional helpers and tooling as TypeScript has supported more capabilities. I have also supported [early efforts to translate the library to C^♯^][tm-C#].
+True Myth is largely [complete][stable-libraries], with a full set of features and [extensive documentation][tm-docs], though we continue to maintain and expand the library with additional helpers and tooling as TypeScript has supported more capabilities.
 
 [stable-libraries]: https://v4.chriskrycho.com/2018/stable-libraries.html
 [tm-docs]: https://true-myth.js.org/
@@ -210,54 +214,74 @@ True Myth is largely [complete][stable-libraries], with a full set of features a
 
 ### Speaking
 
-- <b>Don’t Go Bankrupt: Managing Technical Costs</b> (All Things Open, October 2019)
-
-- <b>[Supercharging Ember Octane with TypeScript][ember-ts-workshop-2019]</b> (EmberConf Workshop, March 2019):
-
-    > <b>Abstract:</b> You’ve heard about the benefits of TypeScript. But what is it? How hard is it to get started? How can you use it with Ember? What does it have to do with Ember Octane? This training will give you the tools you need to start using TypeScript effectively in your Ember app or addon—and show you how it can supercharge your developer experience with Ember Octane.
-
-    The workshop was not recorded, but the teaching materials are all available online:
-
-    - [slides][ember-ts-workshop-slides-2019] for the introduction to TypeScript and overview of using it in Ember
-    - [sample code repository][ember-ts-workshop-repo-2019], where each commit is a discrete step in the process of the conversion
-
-- <b>CSS Modules lightning talk</b> (Denver Ember.js Meetup, December 2018)
-
-- <b>Rust and WebAssembly</b> (Denver/Boulder Rust Meetup, May 2018)
-
-- <b>[TypeScript and Ember.js: Why And How][ember-atx]</b> (Ember <abbr title="Austin, Texas">ATX</abbr> Meetup, April 2018):
-
-    > <b>Abstract:</b> A three-part look at Ember.js and TypeScript today: What are the benefits to me as an Ember developer for using TypeScript? What are the tradeoffs if I adopt TypeScript? Where are things going from here?
-
-    (I also delivered a slightly shorter version of this same material at the Denver Ember.js Meetup in June 2018.)
-
-- <b>[TypeScript Up Your Ember.js App][ember-ts-workshop-2018]</b> (EmberConf Workshop, March 2018):
-
-    > <b>Abstract:</b> an introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js TODO MVC app from JavaScript to TypeScript.
-
-    The workshop was not recorded, but the teaching materials are all available online:
-
-    - [slides][ember-ts-workshop-slides-2018] and [script][ember-ts-workshop-script-2018] for the introduction to TypeScript and overview of using it in Ember
-    - [sample code repository][ember-ts-workshop-repo-2018], where each commit is a discrete step in the process of the conversion
-
-- <b>[Becoming a Contributor][rbr2017]</b> (Rust Belt Rust 2017, October 2017):
-
-    > <b>Abstract:</b> So, you’re new to the Rust community. (Or any community, really!) And you want to help, but, well, you’re new. So how exactly do you start contributing? What kinds of contributions are valuable? We’ll talk about everything from asking questions to writing documentation, from pitching in on forums and chat to writing blog posts, and from starting your own projects to contributing to other open-source projects.
-
-- <b>[*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015]</b> (BibleTech 2015, May 2015):
-
-    > <b>Abstract:</b> The Bible has always been a challenging text to display, whether copied by hand or printed on a Gutenberg press, and the task has only grown more complicated in the era of digital text. The challenges are not insurmountable, though. We have the tools to solve them: the principles of good typography, especially careful page design and the deliberate choice and skillful use of appropriate typefaces (fonts). When we apply those principles to the Scriptures—whether in an app or on the web—we can provide people with digital Bibles that are both readable and beautiful.
+The Road to TypeScript
+: EmberConf, March 2022 – [video](https://www.youtube.com/watch?v=UOw7TydAT_s)
 
 
-[ember-atx]: https://youtube.com/watch?v=fFzxbBrvytU
-[ember-ts-workshop-2019]: https://2019.emberconf.com/speakers.html#chris-krycho "EmberConf Workshop: 'Supercharging Ember Octane with TypeScript'"
-[ember-ts-workshop-slides-2019]: https://github.com/chriskrycho/emberconf-2019-slides
-[ember-ts-workshop-repo-2019]: https://github.com/chriskrycho/emberconf-2019
-[ember-ts-workshop-2018]: https://2018.emberconf.com/schedule.html#d-typescript-up-your-ember-js-app "EmberConf Workshop: 'TypeScript Up Your Ember.js App'"
-[ember-ts-workshop-slides-2018]: https://github.com/chriskrycho/emberconf-2018-slides/
-[ember-ts-workshop-script-2018]: https://github.com/chriskrycho/emberconf-2018-slides/blob/master/talk.md
-[ember-ts-workshop-repo-2018]: https://github.com/chriskrycho/emberconf-2018
-[rbr2017]: https://youtube.com/watch?v=Abu2BNixXak
-[bibletech2015]: https://m.youtube.com/watch?v=cDAh35IwJsE
+Keep It Local: Or (part of) what “reasoning about your code” really means
+: EmberConf 2021, March 2021 – [video](https://www.youtube.com/watch?v=Mt7v-VbFjxk) | [script](https://v5.chriskrycho.com/elsewhere/keep-it-local/)
 
-*[MVC]: model-view-controller
+
+Don’t Go Bankrupt: Managing Technical Costs
+: All Things Open, October 2019
+
+
+Supercharging Ember Octane with TypeScript
+: EmberConf Workshop, March 2019
+
+: <b>Abstract:</b>
+
+    > You’ve heard about the benefits of TypeScript. But what is it? How hard is it to get started? How can you use it with Ember? What does it have to do with Ember Octane? This training will give you the tools you need to start using TypeScript effectively in your Ember app or addon—and show you how it can supercharge your developer experience with Ember Octane.
+
+: Materials: although the workshop was not recorded, the teaching materials are all available online:
+
+    - [slides](https://github.com/chriskrycho/emberconf-2019-slides) for the introduction to TypeScript and overview of using it in Ember
+    - [sample code repository](https://github.com/chriskrycho/emberconf-2019), where each commit is a discrete step in the process of the conversion
+
+
+CSS Modules lightning talk
+: Denver Ember.js Meetup, December 2018
+
+
+Rust and WebAssembly
+: Denver/Boulder Rust Meetup, May 2018
+
+
+TypeScript and Ember.js: Why And How
+
+: Ember <abbr title="Austin, Texas">ATX</abbr> Meetup, April 2018 – [video](https://youtube.com/watch?v=fFzxbBrvytU)
+
+    I also delivered a slightly shorter version of this same material at the Denver Ember.js Meetup in June 2018.)
+
+: <b>Abstract:</b>
+    > A three-part look at Ember.js and TypeScript today: What are the benefits to me as an Ember developer for using TypeScript? What are the tradeoffs if I adopt TypeScript? Where are things going from here?
+
+
+TypeScript Up Your Ember.js App
+
+: EmberConf Workshop, March 2018
+
+: <b>Abstract:</b>
+
+    > An introduction to TypeScript and how to use it with Ember.js, with a worked example of converting part of the Ember.js <span class='smcp'>TODO</span> <abbr title="model-view-controller">MVC</abbr> app from JavaScript to TypeScript.
+
+: The workshop was not recorded, but the teaching materials are all available online:
+
+    - [slides](https://github.com/chriskrycho/emberconf-2018-slides/) and [script](https://github.com/chriskrycho/emberconf-2018-slides/blob/master/talk.md) for the introduction to TypeScript and overview of using it in Ember
+    - [sample code repository](https://github.com/chriskrycho/emberconf-2018), where each commit is a discrete step in the process of the conversion
+
+
+Becoming a Contributor
+: Rust Belt Rust 2017, October 2017 – [video](https://youtube.com/watch?v=Abu2BNixXak)
+
+: <b>Abstract:</b>
+
+    > So, you’re new to the Rust community. (Or any community, really!) And you want to help, but, well, you’re new. So how exactly do you start contributing? What kinds of contributions are valuable? We’ll talk about everything from asking questions to writing documentation, from pitching in on forums and chat to writing blog posts, and from starting your own projects to contributing to other open-source projects.
+
+
+*Tolle Lege!* Designing Readable Bibles With Digital Typography
+: BibleTech 2015, May 2015 – [video](https://m.youtube.com/watch?v=cDAh35IwJsE)
+
+: <b>Abstract:</b>
+
+    > The Bible has always been a challenging text to display, whether copied by hand or printed on a Gutenberg press, and the task has only grown more complicated in the era of digital text. The challenges are not insurmountable, though. We have the tools to solve them: the principles of good typography, especially careful page design and the deliberate choice and skillful use of appropriate typefaces (fonts). When we apply those principles to the Scriptures—whether in an app or on the web—we can provide people with digital Bibles that are both readable and beautiful.
