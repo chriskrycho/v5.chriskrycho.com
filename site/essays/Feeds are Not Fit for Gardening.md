@@ -214,7 +214,7 @@ There will nonetheless also be a lot of commonalities with traditional feeds. Af
 
 You can find [here][grdn-spec] the current state of the protocol, as I am thinking of it so far (with basically *zero* formality).
 
-[grdn-spec](https://github.com/chriskrycho/grdn/blob/main/SPEC.md)
+[grdn-spec]: https://github.com/chriskrycho/grdn/blob/main/SPEC.md
 
 {% note type='Hypothesis' %}
 
