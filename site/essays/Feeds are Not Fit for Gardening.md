@@ -151,11 +151,11 @@ Making this split would, for good and for ill, intensify the existing tendency t
 
 This approach could also work in tandem with the "Links to updates" approach suggested above. Indeed, it would likely be necessary: We will have to take it as a given, at least initially, that most readers will not make use of the information about any given item’s having been updated. Accordingly, it might make sense to keep all item garden items in the list, for the sake of the rare reader apps which do support rendering updates, and *also* to publish update entries.
 
-{% hypothesis %}
+{% note type='Hypothesis' %}
 
 In this model, having *many* recent updates in the feed may not make sense. Instead, the feed could—potentially—publish only a single “recent updates” entry at a time (always with a unique <abbr title="identifier">ID</abbr>), replacing it whenever updates are published. This would also help with keeping the summary small.
 
-{% endhypothesis %}
+{% endnote %}
 
 Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*. Here is one potential flow:
 
@@ -216,11 +216,11 @@ You can find [here][grdn-spec] the current state of the protocol, as I am thinki
 
 [grdn-spec](https://github.com/chriskrycho/grdn/blob/main/SPEC.md)
 
-{% hypothesis %}
+{% note type='Hypothesis' %}
 
 At this point, I think this should be entirely transport-mechanism agnostic. I expect it mostly to be supplied as <abbr>JSON</abbr> and/or <abbr>XML</abbr>, the same as the existing feed protocols, at least initially, but as a matter of convenience rather than as a mandate. If you wanted to publish it with [Protobuf](https://protobuf.dev) or [BSON](https://bsonspec.org) instead, I suspect (many!) fewer clients would consume it, but I don't see any reason this protocol should define anything other than the structure of the data.
 
-{% endhypothesis %}
+{% endnote %}
 
 Some of the biggest open questions to me at the moment:
 

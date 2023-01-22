@@ -268,10 +268,7 @@ export interface Config {
    addNunjucksShortcode(name: string, shortcode: AnyFunction<string>): void;
    addHandlebarsShortcode(name: string, shortcode: AnyFunction<string>): void;
    addJavascriptShortcode(name: string, shortcode: AnyFunction<string>): void;
-   addPairedShortcode(
-      name: string,
-      shortcode: <A>(content: string, ...args: A[]) => string,
-   ): void;
+   addPairedShortcode(name: string, shortcode: AnyFunction<string>): void;
 
    addJavaScriptFunction(name: string, fn: AnyFunction<string>): void;
 
