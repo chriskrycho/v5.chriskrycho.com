@@ -10,6 +10,13 @@ qualifiers:
 thanks: >
   Essays and blog posts over the years by [Alan Jacobs](http://ayjay.org), [Robin Sloan](https://www.robinsloan.com), and [Maggie Appleton](https://maggieappleton.com) provided many of the specific ingredients in [this particular stew](http://v3.chriskrycho.com/art/and-the-stew-tastes-good/), and you can think of this as a response to (perhaps an entry in?) Robin’s call for [New Avenues in 2023](https://www.robinsloan.com/lab/new-avenues/) in particular. I am indebted to many others whose own writing is no doubt part of the mix as well. The current generation of feed tools, though criticized as unfit for one particular purpose here, have done a great deal to move the open web ecosystem forward, so credit especially to [Dave Winer](http://scripting.com) for <abbr>RSS</abbr>, the unruly group behind Atom, and [Manton Reece](https://www.manton.org) and [Brent Simmons](https://inessential.com) for <abbr>JSON</abbr> Feed. [Stephen Carradini](https://stephencarradini.com) provided helpful feedback on early drafts.
 draft: true
+date: 2023-01-13T12:15:00-0700
+updated: 2023-01-21T22:42:00-0700
+updates:
+  - at: 2023-01-21T22:42:00-0700
+    changes: >
+      Added a first sketch of the new garden-oriented feed-like protocol.
+
 ---
 
 ==TODO: write an introduction!==
@@ -141,11 +148,11 @@ Making this split would, for good and for ill, intensify the existing tendency t
 
 This approach could also work in tandem with the "Links to updates" approach suggested above. Indeed, it would likely be necessary: We will have to take it as a given, at least initially, that most readers will not make use of the information about any given item’s having been updated. Accordingly, it might make sense to keep all item garden items in the list, for the sake of the rare reader apps which do support rendering updates, and *also* to publish update entries.
 
-<section class=callout aria-role=note>
+{% hypothesis %}
 
-**Hypothesis:** In this model, having *many* recent updates in the feed may not make sense. Instead, the feed could—potentially—publish only a single “recent updates” entry at a time (always with a unique <abbr title="identifier">ID</abbr>), replacing it whenever updates are published. This would also help with keeping the summary small.
+In this model, having *many* recent updates in the feed may not make sense. Instead, the feed could—potentially—publish only a single “recent updates” entry at a time (always with a unique <abbr title="identifier">ID</abbr>), replacing it whenever updates are published. This would also help with keeping the summary small.
 
-</section>
+{% endhypothesis %}
 
 Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*. Here is one potential flow:
 
@@ -196,6 +203,89 @@ As useful as these kinds of hacks might be, though, the fact that we have to hac
 
 Note that these changes are *not* the same as the set of changes which would make updates more useful for stream-like content, but they have some overlap. ==TODO: what overlap?==
 
-Should we even call this new thing a “feed”? Perhaps not.
+Should we even call this new thing a “feed”? Perhaps not. Right now, I am going with a "Garden", and for the sake of nominal uniqueness (and maybe a bit of nostalgia), the implementations will be `grdn`.
 
 ==TODO: keep going!==
+
+There will nonetheless also be a lot of commonalities with traditional feeds. After all, even with a garden, the point here is to provide a mechanism for readers to be notified of changes.
+
+Here is a first sketch of the protocol, as I am thinking of it so far (with basically *zero* formality):
+
+- A `Garden` is the top-level item in a garden feed. It has three required fields:
+    - `title`: a string, naming the garden itself. Required: users need to be able to identify any given garden easily.
+
+    - `link`: a `URL` which represents the home of the garden on the web.
+
+    - `self`: a `URL` which represents a location to find the garden feed itself
+
+    - `last_updated`: a required `DateTime` indicating the last time the garden was updated
+
+    - `items`: an array of the items belonging to the garden
+
+- A `DateTime` is an ISO8601-compatible date or date-time string.
+
+- A `URL` is any valid <abbr>URL</abbr> per the [<abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> <abbr>URL</abbr> Living Standard](https://url.spec.whatwg.org)
+
+- An `Item` is a unique entry within the garden. `Item`s must be stable over time.
+    - `title`: a string, naming the item. Unlike JSON Feed, this is required: garden entries are not microblog posts.
+
+    - `link`: TODO
+
+    - `id`: TODO
+
+    - `summary`: TODO
+
+    - `created`: a required `DateTime` indicating when the `Item` was created
+
+    - `updates`: an array of `Update`s, listing all the meaningful changes to the item since its creation
+
+- An `Update` represents a *meaningful* update to the content of the item. Typo fixes may or may not count: did it change the *meaning* someone would get from the content? Then it should be included. Was it something trivial like correcting "pepole" to "people"? Then it should be excluded. It consists of:
+    - `time`: a required `DateTime` indicating when the change was published
+
+    - `change`: a `Change` which clients can use to present the nature of the update to the end user
+
+- A `Change` is ==TODO==
+
+==TODO: describe the rest of it==
+
+{% hypothesis %}
+
+At this point, I think this should be entirely transport-mechanism agnostic. I expect it mostly to be supplied as <abbr>JSON</abbr> and/or <abbr>XML</abbr>, the same as the existing feed protocols, at least initially, but as a matter of convenience rather than as a mandate. If you wanted to publish it with [Protobuf](https://protobuf.dev) or [BSON](https://bsonspec.org) instead, I suspect (many!) fewer clients would consume it, but I don't see any reason this protocol should define anything other than the structure of the data.
+
+{% endhypothesis %}
+
+Serialized to JSON, a Garden might look like this:
+
+```json
+{
+  "title": "Chris Krycho's blog-garden-zettel-thingy",
+  "link": "https://garden.chriskrycho.com",
+  "last_updated": "2023-01-15",
+  "items": [
+    {
+      "title": "Garden Feeds: An Introduction",
+      "created": "2023-01-13T12:15:00-0700",
+      "id": "85f97ad4-d802-4b2c-8e08-c8052ff85023",
+      "link": "https://garden.chriskrycho.com/garden-feeds",
+      "updates": [
+        {
+          "time": "2023-01-21T17:34:00-0700",
+          "change": {
+            "summary": "Added a first sketch of the new garden-oriented feed-like protocol.",
+            "patch": "@@ -198,4 +198,9 @@ Note that these changes are *not* the same as the set of changes which would mak\n \n Should we even call this new thing a “feed”? Perhaps not.\n \n-==TODO: keep going!==\n No newline at end of file\n+==TODO: keep going!==\n+\n+There will nonetheless also be a lot of commonalities with traditional feeds. After all, even with a garden, the point here is to provide a mechanism for readers to be notified of changes.\n+\n+Here is a first sketch of the protocol, as I am thinking of it so far (with basically *zero* formality):\n+\n\n"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+As of January 21, 2023, there are *very* basic Rust and TypeScript implementations of this available on [npm][npm] and [crates.io][crate].[^langs] The packages don't do much yet: just parse and provide type definitions for this rough first draft. It's a start, though!
+
+[npm]: https://www.npmjs.com/package/grdn
+[crate]: https://crates.io/crates/grdn
+
+==TODO: elaborate, finish, etc.==
+
+[^langs]: I picked those two languages because they are my go-to languages at this point: I work all day every day in <abbr>TS</abbr> and Rust remains my favorite
