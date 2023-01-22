@@ -61,9 +61,7 @@
                               {%- localeDate item.data.updated, 'MMMM d, yyyy' -%}
                               {%- endset -%}
 
-                              {% if updatedDate %}; updated
-                                 {{updatedDate}}
-                              {% endif %}
+                              {% if updatedDate %}; updated {{updatedDate}}{% endif %}
                            {%- endif -%}
                            )
                         {% endif -%}

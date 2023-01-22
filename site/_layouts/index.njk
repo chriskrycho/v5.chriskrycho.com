@@ -18,7 +18,7 @@ standalonePage: true
 {{list(collections.featured, title="Featured")}}
 {{list(collections.latest, "The Latest")}}
 {% if collections.drafts and collections.drafts.length > 0 %}
-   {{list(collections.drafts, title="In Progress")}}
+   {{list(collections.drafts, title="In Progress", includeUpdated=true)}}
 {% endif %}
 {{list(collections.updated, title="Updated Recently", includeUpdated=true)}}
 {%- endblock main -%}
