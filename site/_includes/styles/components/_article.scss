@@ -552,7 +552,7 @@
       --top-border: var(--note-accent);
 
       &::before {
-         content: '—/ Note /—';
+         content: '—/ ' attr(aria-label) ' /—';
          color: var(--note-accent);
       }
    }
