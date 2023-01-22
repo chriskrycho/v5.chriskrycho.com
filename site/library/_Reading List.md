@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-01-03T07:58:00-0700
+date: 2023-01-22T10:57:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,8 +79,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason
 
-- [<cite>Human Compatible: Artificial Intelligence and the Problem of Control</cite>](https://bookshop.org/a/21126/9780525558637), Stuart Russell
-
 
 ### Fiction
 
@@ -92,6 +90,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 
 ## 2023
+
+### Nonfiction
+
+- [<cite>Human Compatible: Artificial Intelligence and the Problem of Control</cite>](https://bookshop.org/a/21126/9780525558637), Stuart Russell
 
 ### Fiction
 
