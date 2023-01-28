@@ -88,6 +88,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
+- [<cite>Tomorrow, and Tomorrow, and Tomorrow</cite>](https://bookshop.org/a/21126/9780593321201), Gabrielle Zevin (new)
+
 
 ## 2023
 
@@ -98,7 +100,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>Elder Race</cite>](https://bookshop.org/a/21126/9781250768728), Adrian Tchaikovsky (new)
-- [<cite>Tomorrow, and Tomorrow, and Tomorrow</cite>](https://bookshop.org/a/21126/9780593321201), Gabrielle Zevin (new)
 
 
 ## 2022
