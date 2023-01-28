@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-01-22T10:57:00-0700
+date: 2023-01-28T16:35:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -98,6 +98,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>Elder Race</cite>](https://bookshop.org/a/21126/9781250768728), Adrian Tchaikovsky (new)
+- [<cite>Tomorrow, and Tomorrow, and Tomorrow</cite>](https://bookshop.org/a/21126/9780593321201), Gabrielle Zevin (new)
 
 
 ## 2022
