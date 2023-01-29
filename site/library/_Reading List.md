@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-01-29T12:30:00-0700
+date: 2023-01-29T15:34:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -75,7 +75,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
 
-- [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason
+- [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason (new)
+
+- [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
 
 ### Fiction
