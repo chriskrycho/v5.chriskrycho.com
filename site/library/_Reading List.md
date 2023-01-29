@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-01-28T20:53:00-0700
+date: 2023-01-29T12:30:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -73,8 +73,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
 
-- [<cite>The Anglican Way: A Guidebook</cite>](https://bookshop.org/a/21126/9780996049900), Thomas McKenzie (new)
-
 - [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
 
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason
@@ -94,6 +92,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Nonfiction
 
 - [<cite>Human Compatible: Artificial Intelligence and the Problem of Control</cite>](https://bookshop.org/a/21126/9780525558637), Stuart Russell
+
+- [<cite>The Anglican Way: A Guidebook</cite>](https://bookshop.org/a/21126/9780996049900), Thomas McKenzie (new)
+
 
 ### Fiction
 
