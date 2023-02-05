@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-01-29T15:34:00-0700
+date: 2023-02-05T08:32:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -104,6 +104,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Tomorrow, and Tomorrow, and Tomorrow</cite>](https://bookshop.org/a/21126/9780593321201), Gabrielle Zevin (new)
 
+- [<cite>Children of Memory</cite>](https://bookshop.org/a/21126/9780316466400), Adrian Tchaikovsky (new)
 
 ## 2022
 
