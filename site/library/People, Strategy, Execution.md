@@ -19,7 +19,7 @@ qualifiers:
 
 ---
 
-Of the past few years, I have read a number of the by-now-standard “adopt this set of practices and your business will be *awesome*” books about business practices, especially in technology—most notably the much-cited <cite>Accelerate</cite>. Last year, I read a book that put paid dto a lot of the nonsense that I took those books to be peddling:[^nonsense] Phil Rozenweig’s, <cite>The Halo Effect</cite>. What follows are some of the most incisive and salient quotes from the book.
+Of the past few years, I have read a number of the by-now-standard “adopt this set of practices and your business will be *awesome*” books about business practices, especially in technology—most notably the much-cited <cite>Accelerate</cite>. Last year, I read a book that put paid dto a lot of the nonsense that I took those books to be peddling:[^nonsense] Phil Rozenweig’s <cite>The Halo Effect</cite>. What follows are some of the most incisive and salient quotes from the book.
 
 ---
 
