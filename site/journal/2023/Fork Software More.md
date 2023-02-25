@@ -5,6 +5,9 @@ date: 2023-02-25T10:35:00-0700
 tags:
   - open-source software
 image: https://f001.backblazeb2.com/file/chriskrycho-com/images/Write%20Music%20updated%20example%20paragraph.png
+qualifiers:
+  audience: >
+    Users and authors of open-source software: tinkerers.
 
 ---
 
