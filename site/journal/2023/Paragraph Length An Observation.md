@@ -2,7 +2,7 @@
 title: >
   ❡ Length: An Observation
 subtitle: >
-  Blog posts, like essays (published online or in magazines) tend (I think!) to differ from books in their
+  Blog posts, like essays (published online or in magazines) tend (I think!) to differ from books in just how long they let their paragraphs run.
 date: 2023-03-18T09:34:00-0600
 tags:
   - writing
