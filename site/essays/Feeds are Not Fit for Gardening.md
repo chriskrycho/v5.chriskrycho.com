@@ -19,6 +19,9 @@ updates:
   - at: 2023-01-22T09:22:00-0700
     changes: >
       Extracted the protocol description to the [grdn](https://github.com/chriskrycho/grdn) repository.
+  - at: 2023-03-29T09:39:00-0700
+    changes: >
+      Finished drafting the section [Hacks: Split the Feed: Embrace the Summary](https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/#embrace-the-summary), with a proposal for how a <abbr>CMS</abbr> might handle one possible flow for updates while using the “hacks” mode proposed for retrofitting garden-type changes into a traditional feed.
 
 ---
 
@@ -127,19 +130,19 @@ Even assuming that the vision I outlined is appealing, it will take time for the
 
 ***Publish items which are just a collection of links to recently updated items in the garden.*** This approach has a number of things going for it. First, and most important, it is easy to “bolt onto” the existing feed ecosystem. Feed readers do not need to change anything. Publishing tools only need to add the ability to identify changed items and generate a list. For a traditional <abbr title="content management system">CMS</abbr> with dynamic content, this is just a matter of noticing that an item already exists in the database and flagging it as a change accordingly. Notes-publishing tools like [Obsidian Publish][op] could integrate the same capability along similar lines.
 
-The problem is slightly more complex for tooling built on static site generators ([Jekyll][j], [Hugo][h], [Zola][z], [Pelican][p], [11ty][11] etc.), in that they tend to be single-shot build systems—at most with a build cache, and require no particular versioning or deployment strategy. In practice, however, static site generators are very often used with version control systems. Scripting the generation of new “updates” sections is therefore possible, if not necessarily straightforward; the fact that it is a bit more fiddly is simply par for the course for static site generators.
+The problem is slightly more complex for tooling built on static site generators ([Jekyll][j], [Hugo][h], [Zola][z], [Pelican][p], [11ty][11ty] etc.), in that they tend to be single-shot build systems—at most with a build cache, and require no particular versioning or deployment strategy. In practice, however, static site generators are very often used with version control systems. Scripting the generation of new “updates” sections is therefore possible, if not necessarily straightforward; the fact that it is a bit more fiddly is simply par for the course for static site generators.
 
 [j]: https://github.com/jekyll/jekyll
 [h]: https://gohugo.io
 [z]: https://www.getzola.org
 [p]: https://getpelican.com
-[11]: https://www.11ty.dev
+[11ty]: https://www.11ty.dev
 
 Some degree of interactivity here would be helpful. Authors should be able to opt individual posts in or out of that list of updates, to avoid the “it was just a typo fix” updates. They should also be able to summarize the changes, or to customize how much of the content surrounding the change is included—even if there are good defaults—so that the published updates can be presented in a way that is most helpful to readers.
 
 ### Split the feeds
 
-Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. They could continue to be full text—or not, as makes sense for any particular publication.
+Another useful move might be to split up a site’s feeds between “garden” and “stream” content. Stream entries might continue to be a simple queue of items, with some relatively low limit on the number of entries in the feed and the expectation that readers will be unlikely to be notified about changes after the fact. They could continue to be full text—or not, as makes sense for any particular publication. They *should* continue to use existing feed specifications!
 
 Garden entries might be shaped quite differently, and there are any number of different approaches one could take. Here are two:
 
@@ -157,27 +160,60 @@ In this model, having *many* recent updates in the feed may not make sense. Inst
 
 {% endnote %}
 
-Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*. Here is one potential flow:
+Supporting this split would also require new publishing infrastructure and tools. The challenge is not in splitting out garden content vs. stream content into different feeds: many existing <abbr>CMS</abbr>s already handle this correctly, and could be extended to support different rendering patterns for different kinds of feeds. (I could build this for this site’s feeds in 15 minutes or so, for example.) No, the work to be done is in enabling authors and publishers to describe their updates—*easily*.
 
-- On first publishing a new item to the garden, show a user interface asking for a summary. This could be distinct from the summary used for <abbr>SEO</abbr> purposes, or it could be used for both.
+Here is one potential flow:
 
-- On updating an existing item from the garden, present the changes and a prompt to summarize them. The presentation could be as minimal as the result of running `diff` on the two text sources, or it could be an elegant presentation of how it looks when rendered on the site, as makes sense for the software in question. (WordPress and Pelican should probably do different things here!) The prompt should also allow the author to decide that this change does not need to be treated as an "update" at all: correcting “nto” to “not” is very different from adding an entirely new section to an essay.
+{% note %}
 
-    <aside>
+I describe this flow in terms of a traditional database-backed <abbr>CMS</abbr> rather than a static site generator because doing this with a static site generator, while possible, is substantially more difficult!
 
-    I initially thought this would mean being smart enough to avoid showing trivial typo fixes, but as I was drafting this section I realized that does not always work: What about typos which substantially change the meaning of a sentence? For example, consider these two sentences:
+{% endnote %}
 
-    > The change is set to cost the state half a billion dollars a year.
+On first publishing a new item to the garden, show a user interface asking for a summary. This could be distinct from the summary used for <abbr>SEO</abbr> purposes, or it could be used for both.
 
-    <!-- new quote -->
+Under the hood, update the schema (database or otherwise) to keep track of a few additional pieces of information:
 
-    > The change is set to cost the state half a million dollars a year.
+- When the last “update” item was published. (For a newly-“planted” garden this would be “never”.)
+- For each item in the garden, track three facts about its most recent update, if any: the summary of the changes, the time the update was made, and whether the *update* has been published.
 
-    These two are a one-letter typo—but the difference in meaning is *huge*.[^indebted] While you can imagine a system smart enough to handle automatically ignoring total misspellings like “nto”, it would necessarily be limited to those.
+On updating an existing item from the garden, present the changes and a prompt to summarize them. The presentation could be as minimal as the result of running `diff` on the two text sources, or it could be an elegant presentation of how it looks when rendered on the site, as makes sense for the software in question. (WordPress and Pelican should probably do different things here!) The prompt should also allow the author to decide that this change does not need to be treated as an "update" at all: correcting “nto” to “not” is very different from adding an entirely new section to an essay.
 
-    </aside>
+<aside>
 
-- Under the hood, update the
+I initially thought this would mean that “good” software in this space should be smart enough to avoid showing trivial typo fixes. While drafting this section, though, I realized that does not always work: What about typos which substantially change the meaning of a sentence? Consider:
+
+> The change is set to cost the state half a billion dollars a year.
+
+<!-- new quote -->
+
+> The change is set to cost the state half a million dollars a year.
+
+These two are a one-letter typo—but the difference in meaning is *huge*.[^indebted] While you can imagine a system smart enough to handle automatically ignoring total misspellings like “nto”, it would necessarily be limited to those.
+
+</aside>
+
+In the case where the author indicates that there is no update, the item itself might be marked as “last modified” for bookkeeping purposes, and a <abbr>CMS</abbr> might even use that for the `modified` field in an Atom feed, but the next “update” entry should not include it.
+
+When there are updates which have not yet been published, and the author publishes *other* items, prompt to see if they want to publish the updates as well. Alternatively and/or complementarily, maintain a view of “unpublished updates” which the user can choose to include in a new update post. Once an item update has been published, mark it as having been published so that it is no longer included in future updates.
+
+Here’s a hypothetical JSON Feed entry for an update like this (here I’m skipping the overall feed data; this would live in the `items` list):
+
+```json
+{
+  "id": "",
+  "author": {
+    "name": "Chris Krycho",
+    "url": "https://v5.chriskrycho.com/"
+  },
+  "title": "Updates: March 29, 2023",
+  "date_published": "2023-03-29T09:39:00.000-0600",
+  "content_html": "<ul><li><a href=\"https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/\">Feeds are Not Fit for Gardening</a>: Finished drafting the section <a href=\"https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/#embrace-the-summary\">Hacks: Split the Feed: Embrace the Summary</a>, with a proposal for how a <abbr>CMS</abbr> might handle one possible flow for updates while using the “hacks” mode proposed for retrofitting garden-type changes into a traditional feed.</li></ul>",
+}
+```
+
+You could of course format this any number of ways, and include other useful information in it, like the *previous* time it had been updated. But at a minimum this makes it possible for a classic feed format to present garden-style updates with a minimum of additional infrastructure.
+
 
 
 [^indebted]: Thanks to [Stephen Carradini][sc] for this example.
