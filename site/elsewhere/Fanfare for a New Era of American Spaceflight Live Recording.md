@@ -35,7 +35,7 @@ You can also *watch* a recording of the orchestra doing the recording:
 
 </div>
 
-<figcaption><a href="https://www.youtube.com/embed/_-VpDJgEIFQ">Fanfare for a New Era of American Spaceflight</a>, performed by the Budapest Scoring Orchestra, conducted by György Gulyás Nagy</figcaption>
+<figcaption><a href="https://www.youtube.com/embed/_-VpDJgEIFQ">Fanfare for a New Era of American Spaceflight</a><br>Performed by the Budapest Scoring Orchestra<br>Conducted by György Gulyás Nagy</figcaption>
 
 </figure>
 
