@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-03-28T07:14:00-0700
+date: 2023-04-07T21:17:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -111,6 +111,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>Memory, Sorrow, and Thorn</cite>, Tad Williams (new)
     - [<cite>The Dragonbone Chair</cite>](https://bookshop.org/a/21126/9780756402976)
     - [<cite>The Stone of Farewell</cite>](https://bookshop.org/a/21126/9780886774806)
+    - [<cite>To Green Angel Tower</cite>](https://bookshop.org/a/21126/9780756402983)
 
 
 ## 2022
