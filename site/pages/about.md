@@ -82,12 +82,12 @@ Since 2010, I have been a long-distance runner. A bout of mono left me incredibl
 
 ### A podcaster
 
-In January 2014, my long-time friend [Stephen Carradini] and I launched [Winning Slowly]—a podcast about tech, religion, ethics, and art. He calls it a tech podcast with other angles; I call it our excuse to talk about literally every part of human existence. We’re both right. And you wouldn’t be wrong to see it as another spot where I consciously practice <i>public theology</i>.
+In January 2014, my long-time friend [Stephen Carradini] and I launched [Winning Slowly]—a podcast about tech, religion, ethics, and art. He called it a tech podcast with other angles; I called it our excuse to talk about literally every part of human existence. We were both right. And you wouldn’t be wrong to see it as another spot where I consciously practiced <i>public theology</i>.
 
 [Stephen Carradini]: https://stephencarradini.com
 [Winning Slowly]: https://winningslowly.org
 
-Out of that initial experiment (still running!) grew a general interest in podcasting as a medium, and a variety of podcasts I’ve hosted over the years:
+Out of that initial experiment grew a general interest in podcasting as a medium, and a variety of podcasts I’ve hosted over the years:
 
 - [New Rustacean](https://newrustacean.com)—my 3½-year-long podcast about the Rust programming language, in which I tried something that as far as I know no one else had done before: teaching a programming language through a podcast.
 
@@ -97,10 +97,10 @@ Out of that initial experiment (still running!) grew a general interest in podca
 
 - [Mass Affection](https://massaffection.com)—another foray into podcasting with my wife, this time about the video game series <cite>Mass Effect</cite>. We aspire to finish this… eventually. It’s been hard to carve out the time for it the last couple years, but we always enjoy it when we do!
 
-I find podcasting a great complement to writing. It is available in spaces and places where people cannot read (like commuting), and it’s also a great place to flesh out thoughts I have already put in writing or am trying to figure out how to put in writing.
+I find podcasting a great complement to writing. It is available in spaces and places where people cannot read (like commuting), and it’s also a great place to flesh out thoughts I have already put in writing or am trying to figure out how to put in writing. While I am not currently producing any podcasts, I will not rule out the possibility of doing so again in the future—and I am happy to be a guest on *other* podcasts!
 
 ### A composer
 
-In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. Since graduating college, I have composed relatively little, but it remains a delight when I get a chance to do it. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, and actually have a few things actively in work (if on the back burner). You can check out a limited sample of my work (which I hope to expand soon, for the curious if nothing else) [on SoundCloud].
+In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. Since graduating college, I have composed relatively little, but it remains a delight when I get a chance to do it. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, and actually have a few things actively in work (if on the back burner). You can check out a limited sample of my work (which I hope to expand soon, for the curious if nothing else) [on SoundCloud], as well as [the 'music' tag on this site](/topics/music/).
 
 [on SoundCloud]: https://soundcloud.com/chriskrycho/tracks
