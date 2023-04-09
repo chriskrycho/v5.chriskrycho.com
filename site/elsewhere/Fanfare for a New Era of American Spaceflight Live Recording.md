@@ -61,9 +61,12 @@ After a bit of investigation, I found the [Budapest Scoring Orchestra][bso]. Tho
 
 The way this works—the reason it can be viable for me to hire an orchestra to play my music, when that means hiring dozens of musicians, videographers, and audio and video editors—is that orchestras like the Budapest Scoring Orchestra hire the musicians for a whole day, and then sell chunks of that time. I only hired them for a single 30-minute session. Others used the rest of the day.
 
-I spent some prep time last summer doing a further revision of the score—making some small revisions to the melodic and harmonic choices in key spots, to a few instrumentation and orchestration choices, and *especially* to the presentation of the score. (I spent a lot of time with the [Scoring Notes][sn] guides to score and part preparation!) The result was something that was much stronger than my previous pass even in mock-ups. I have never really done this kind of revision work before on a piece of music, but it really paid off. You can see the final score as actually performed by the orchestra [here][pdf].
+I spent some prep time last summer doing a further revision of the score—making some small revisions to the melodic and harmonic choices in key spots, to a few instrumentation and orchestration choices, and *especially* to the presentation of the score. (I spent a lot of time with the [Scoring Notes][sn] guides to score and part preparation ([1][sn1], [2][sn2], [3][sn3]!) The result was something that was much stronger than my previous pass even in mock-ups. I have never really done this kind of revision work before on a piece of music, but it really paid off. You can see the final score as actually performed by the orchestra [here][pdf].
 
 [sn]: https://www.scoringnotes.com
+[sn1]: https://www.scoringnotes.com/tips/score-preparation-production-notes/
+[sn2]: https://www.scoringnotes.com/podcast/partying-with-parts-part-1/
+[sn3]: https://www.scoringnotes.com/podcast/partying-with-parts-part-2/
 [pdf]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/00%20%E2%80%93%20Full%20score%20%E2%80%93%20Fanfare%20for%20a%20New%20Era%20of%20American%20Spaceflight%20%E2%80%93%202022-07-14.pdf
 
 Of course, I did not fly to Budapest for a single 30-minute block. *That* would have been prohibitively expensive. One of the delightful opportunities afforded by the era of high-speed internet everywhere is that this sort of thing can be managed digitally. I would of course prefer to be in the room. Given a choice between no recording at all and doing it via a video conference call, though, the video conference call wins, hands down.
