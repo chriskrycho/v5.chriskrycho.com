@@ -15,6 +15,7 @@ qualifiers:
   audience: >
     Fans of contemporary classical music, or people interested in how modern orchestra music gets recorded.
 image: https://distrokid.com/promocards/image/?view=XnuLytvFoT3buyCivjPS38fXlpoA69BSF8H%2Fyz63AwSkp9U%3D&template=page
+featured: true
 
 ---
 
