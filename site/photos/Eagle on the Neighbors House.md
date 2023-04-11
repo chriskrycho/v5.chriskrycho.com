@@ -1,6 +1,6 @@
 ---
 title: Eagle on the Neighbors’ House
-date: 2023-04-11T08:25:00-0700
+date: 2023-04-11T08:38:00-0600
 summary: >
   A mated pair of bald eagles live in our neighborhood, and one came and hung out on our next door neighbors’ house for a few minutes this morning. 🤩 🇺🇸 🦅 
 
