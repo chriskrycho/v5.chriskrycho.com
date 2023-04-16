@@ -10,7 +10,7 @@ tags:
     - Logic Pro
     - Dorico
     - Budapest Scoring Orchestra
-date: 2023-03-31T15:55:00-0700
+date: 2023-03-31T15:55:00-0600
 qualifiers:
   audience: >
     Fans of contemporary classical music, or people interested in how modern orchestra music gets recorded.
