@@ -8,11 +8,11 @@ A lovely (subtle) sunset last autumn. I dropped out the shadows here a *lot*: in
 
 <figure>
 
-<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset.jpg"><img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset%20(preview).jpg" alt="A sunset over Colorado mountains and lake" /></a>
+<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset%20(preview).jpg" alt="A sunset over Colorado mountains and lake" />
 
 <figcaption>
 
-See it: [full size](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset.jp) | [on Glass](https://glass.photo/chriskrycho/26tBVvnM1cJy3A2fMqu4Sz)
+[full size](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset.jp) | [on Glass](https://glass.photo/chriskrycho/26tBVvnM1cJy3A2fMqu4Sz)
 
 <table>
 <tr><th scope="row">Camera</th><td>Sony α7R IV</td></tr>
