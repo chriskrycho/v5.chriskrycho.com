@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-04-07T21:17:00-0700
+date: 2023-04-16T20:28:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,8 +69,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
-- [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
-
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
 
 - [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
@@ -98,6 +96,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Anglican Way: A Guidebook</cite>](https://bookshop.org/a/21126/9780996049900), Thomas McKenzie (new)
 
 - [<cite>Shifting the impossible to the inevitable: A Private <abbr>ARPA</abbr> user manual</cite>](https://benjaminreinhardt.com/parpa), Ben Reinhardt (new)—filing this here because… well, at 80,000 words, I think it’s appropriate? Even if it is a book that is densely hyperlinked and otherwise built for internet reading rather than codex reading, it is still a book in scope and ambition.
+
+- [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
 
 
 ### Fiction
