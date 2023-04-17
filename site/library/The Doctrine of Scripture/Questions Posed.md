@@ -42,4 +42,4 @@ These same points seem to me to be directly at issue in the Protestant reception
 
 So on the one hand, we have the Rule of Faith, in which the Tradition guides us in rightly reading Scripture, the good deposit guarded by the Spirit-filled people of God. And on the other, we have the very Spirit-breathed word of God which we know—by its own testimony of the very Word of God Himself!—does often chasten the traditions of men, does finally norm all norms.
 
-Where then *sola Scriptura* and the Tradition both? Who can say. My sense is that we must find a way to do right by both of these right claims, for both are right. (You can feel free to insert a joke about my being a good Anglican here.)
+Where then *sola Scriptura* and the Tradition both? Who can say. My sense is that we must find a way to do right by both of these right claims, for both are right. (You can feel free to insert a joke about my having very quickly become a good Anglican here.)
