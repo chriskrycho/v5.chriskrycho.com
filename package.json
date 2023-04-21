@@ -63,7 +63,7 @@
       "watch:site": "eleventy --serve",
       "watch:scripts": "rollup --config rollup.config.js --watch",
       "watch": "npm run watch:site && npm run watch:styles",
-      "serve": "env DEV=true eleventy --quiet --serve",
+      "serve": "env DEV=true eleventy --quiet --serve --incremental",
       "serve:forestry": "DEV=true eleventy --quiet --serve",
       "clean": "rm -rf public"
    },
