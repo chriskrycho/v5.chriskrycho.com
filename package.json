@@ -28,7 +28,7 @@
       "del": "^6.0.0",
       "gulp": "^4.0.2",
       "gulp-dart-sass": "^1.0.2",
-      "highlight.js": "^11.6.0",
+      "highlight.js": "^11.7.0",
       "highlightjs-glimmer": "^2.0.1",
       "luxon": "^3",
       "markdown-it": "^13.0.1",
