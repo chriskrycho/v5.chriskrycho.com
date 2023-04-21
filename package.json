@@ -8,9 +8,9 @@
    "license": "MIT",
    "volta": {
       "node": "16.17.0",
-      "yarn": "3.5.0",
-      "npm": "9.1.2"
+      "yarn": "3.5.0"
    },
+   "packageManager": "yarn@3.5.0",
    "devDependencies": {
       "@11ty/eleventy": "^2.0.1",
       "@rollup/plugin-node-resolve": "^15.0.2",
