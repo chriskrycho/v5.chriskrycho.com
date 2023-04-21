@@ -12,8 +12,8 @@ import isoDate from './iso-date';
 import localeDate from './locale-date';
 import markdown from './markdown';
 import * as PageLinks from './page-links';
-import spacewell from './plugin-spacewell';
-import typeset from './plugin-typeset';
+import spacewell from '../lib/spacewell';
+import typeset, { Options } from 'typeset';
 import siteTitle from './site-title';
 import excludingCollection from './excluding-collection';
 import {
@@ -132,21 +132,23 @@ const drafts = (collection: Collection): Item[] =>
       .filter(excludingStandalonePages)
       .sort(byDate(Order.NewFirst));
 
+const typesetOptions: Options = {
+   disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
+};
+const wellSpaced = spacewell({ emDashes: true, enDashes: true });
+
+const renderMarkdown = (content: string): string =>
+   typeset(markdown.render(wellSpaced(content)), typesetOptions);
+
+const renderInlineMarkdown = (content: string): string =>
+   typeset(markdown.renderInline(wellSpaced(content)), typesetOptions);
+
 function config(config: Config): UserConfig {
    config.addWatchTarget('scripts');
    config.addWatchTarget('site/_styles');
 
-   config.addPlugin(
-      typeset({
-         only: '.content-block',
-         disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
-      }),
-   );
-
-   config.addPlugin(spacewell({ emDashes: true, enDashes: true }));
-
-   config.addFilter('md', markdown.render.bind(markdown));
-   config.addFilter('inlineMd', markdown.renderInline.bind(markdown));
+   config.addFilter('md', renderMarkdown);
+   config.addFilter('inlineMd', renderInlineMarkdown);
 
    config.addFilter('toCollection', toCollection);
    config.addFilter('toCollectionUrl', toCollectionUrl);
@@ -239,7 +241,7 @@ function config(config: Config): UserConfig {
    config.addCollection('featured', featured);
    config.addCollection('drafts', drafts);
 
-   config.setLibrary('md', markdown);
+   config.setLibrary('md', { render: renderMarkdown });
 
    config.setDataDeepMerge(true);
 
