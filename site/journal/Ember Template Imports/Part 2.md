@@ -651,7 +651,7 @@ const BREAKFAST = 'Waffles are yummy';
 const Breakfast = hbs`<p>${BREAKFAST}</p>`;
 ```
 
-Unfortunately, this example doesn’t work in Glimmer or Ember apps; in fact, it is a build error! You will something like this:
+Unfortunately, this example doesn’t work in Glimmer or Ember apps; in fact, it is a build error! You will see something like this:
 
 ```plain
 path/to/app/app/components/breakfast.js: placeholders inside a tagged template string are not supported
