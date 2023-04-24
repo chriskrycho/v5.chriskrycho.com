@@ -4,7 +4,7 @@ subtitle: >
   Programming languages and other technologies, and *feel*.
 
 tags:
-  - Programming languages
+  - programming languages
   - photography
   - software development
   - Leica
