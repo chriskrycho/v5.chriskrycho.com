@@ -56,7 +56,7 @@
                            (
                            {{-formattedDate-}}
 
-                           {%- if includeUpdated -%}
+                           {%- if includeUpdated and item.data.updated -%}
                               {% set updatedDate -%}
                               {%- localeDate item.data.updated, 'MMMM d, yyyy' -%}
                               {%- endset -%}
