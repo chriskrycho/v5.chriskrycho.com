@@ -151,7 +151,9 @@ function htmlForQualifiers(qualifiers?: Qualifiers) {
 
    const audience =
       typeof qualifiers.audience === 'string'
-         ? `<p><b>Assumed audience:</b> ${markdown.renderInline(qualifiers.audience)}</p>`
+         ? `<p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> ${markdown.renderInline(
+              qualifiers.audience,
+           )}</p>`
          : '';
 
    const context =
