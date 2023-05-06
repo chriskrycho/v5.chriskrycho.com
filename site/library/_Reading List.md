@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-04-16T20:28:00-0600
+date: 2023-05-06T08:37:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -51,7 +51,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Non-fiction
 
-- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEccentric-Existence-A-Theological-Anthropology-David-H-Kelsey%2Fbook%2F11456539), David H. Kelsey (new)
+- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
 
 - [<cite>The Printing Press as an Agent of Change</cite>](https://bookshop.org/a/21126/9780521299558), Elizabeth Eisenstein (new)
@@ -61,9 +61,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
 
-- [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FConfronted-by-Grace-Meditations-of-a-Theologian-Prof-John-Webster%2Fbook%2F31784244), John Webster (new)
+- [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://bookshop.org/a/21126/9781577996279), John Webster (new)
 
-- [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWe-Answer-to-Another-Authority-Office-and-the-Image-of-God-David-T-Koyzis%2Fbook%2F29060743), David T. Koyzis (new)
+- [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://bookshop.org/a/21126/9781625640451), David T. Koyzis (new)
 
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
 
@@ -76,6 +76,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason (new)
 
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
+
+- [<cite>Quit: The Power of Knowing When to Walk Away</cite>](https://bookshop.org/a/21126/9780593422991), Annie Duke (new)
 
 
 ### Fiction
