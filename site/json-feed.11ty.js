@@ -1,3 +1,3 @@
-import JSONFeed from '../eleventy/feed'
+import JSONFeed from '../eleventy/feed';
 
-module.exports = JSONFeed
+module.exports = JSONFeed;
