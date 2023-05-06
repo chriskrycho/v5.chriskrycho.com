@@ -49,7 +49,7 @@
                      <i>{{- item.data.subtitle | inlineMd | safe -}}</i>
                   {%- endif -%}
                   {%- if item.data.qualifiers.audience -%}
-                     <p><b>Assumed audience:</b> {{ item.data.qualifiers.audience | inlineMd | safe -}}</p>
+                     <p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> {{ item.data.qualifiers.audience | inlineMd | safe -}}</p>
                   {%- endif -%}
                   {%- if item.data.qualifiers.context -%}
                      <p><b>A bit of context:</b> {{ item.data.qualifiers.context | inlineMd | safe -}}</p>
