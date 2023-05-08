@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-06T08:37:00-0600
+date: 2023-05-08T14:46:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -77,8 +77,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
-- [<cite>Quit: The Power of Knowing When to Walk Away</cite>](https://bookshop.org/a/21126/9780593422991), Annie Duke (new)
-
 
 ### Fiction
 
@@ -97,9 +95,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Anglican Way: A Guidebook</cite>](https://bookshop.org/a/21126/9780996049900), Thomas McKenzie (new)
 
-- [<cite>Shifting the impossible to the inevitable: A Private <abbr>ARPA</abbr> user manual</cite>](https://benjaminreinhardt.com/parpa), Ben Reinhardt (new)—filing this here because… well, at 80,000 words, I think it’s appropriate? Even if it is a book that is densely hyperlinked and otherwise built for internet reading rather than codex reading, it is still a book in scope and ambition.
+- [<cite>Shifting the impossible to the inevitable: A Private <abbr>ARPA</abbr> user manual</cite>](https://benjaminreinhardt.com/parpa), Ben Reinhardt (new)—filing this here because… well, at 80,000 words, I think it’s appropriate? Even if it is a book that is densely hyperlinked and otherwise built for internet reading rather than codex reading, it is still a book in scope and ambition.
 
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
+
+- [<cite>Quit: The Power of Knowing When to Walk Away</cite>](https://bookshop.org/a/21126/9780593422991), Annie Duke (new)
 
 
 ### Fiction
@@ -201,8 +201,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Lord of the Rings: The Fellowship of the Ring</cite>][lotr], J.R.R. Tolkien (reread… with my older daughter!)
 
 - The Expanse, James S.A. Corey (new reread, [continued from 2020](https://v5.chriskrycho.com/notes/2020-11-05-1943/), in prep for reading the *excellent* conclusion):
-	- [<cite>Cibola Burn</cite>][cibola-burn] (reread)
-	- [<cite>Nemesis Games</cite>][nemesis-games] (reread)
+    - [<cite>Cibola Burn</cite>][cibola-burn] (reread)
+    - [<cite>Nemesis Games</cite>][nemesis-games] (reread)
     - [<cite>Babylon’s Ashes</cite>][babylons-ashes] (reread)
     - [<cite>Persepolis Rising</cite>][persepolis-rising] (reread)
     - [<cite>Tiamat’s Wrath</cite>][tiamats-wrath] (reread)
@@ -297,9 +297,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Age of Myth: Book One of the Legends of the First Empire</cite>](https://bookshop.org/a/21126/9781101965351), Michael J. Sullivan (new)
 
 - The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
-	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
-	- [<cite>Caliban’s War</cite>][calibans-war]
-	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
+    - [<cite>Leviathan Wakes</cite>][leviathan-wakes]
+    - [<cite>Caliban’s War</cite>][calibans-war]
+    - [<cite>Abaddon’s Gade</cite>][abaddons-gate]
 
 - [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389), Robin Sloan (new)
     - [review](/library/mr-penumbras-24-hour-bookstore/)
@@ -363,9 +363,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Martian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Martian-Andy-Weir%2Fbook%2F25356914), Andy Weir (reread)
 
 - The Themis Files, Sylvain Neuvel (new):
-	- [<cite>Sleeping Giants</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSleeping-Giants-Sylvain-Neuvel%2Fbook%2F33538194)
-	- [<cite>Waking Gods</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWaking-Gods-Sylvain-Neuvel%2Fbook%2F43963996)
-	- [<cite>Only Human</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FOnly-Human-Sylvain-Neuvel%2Fbook%2F39561148)
+    - [<cite>Sleeping Giants</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSleeping-Giants-Sylvain-Neuvel%2Fbook%2F33538194)
+    - [<cite>Waking Gods</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWaking-Gods-Sylvain-Neuvel%2Fbook%2F43963996)
+    - [<cite>Only Human</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FOnly-Human-Sylvain-Neuvel%2Fbook%2F39561148)
 
     [review](https://v4.chriskrycho.com/2019/review-the-themis-files.html)
 
@@ -379,11 +379,11 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [review](/library/dark-matter/)
 
 - The Expanse, James S.A. Corey (reread):
-	- [<cite>Leviathan Wakes</cite>][leviathan-wakes]
-	- [<cite>Caliban’s War</cite>][calibans-war]
-	- [<cite>Abaddon’s Gade</cite>][abaddons-gate]
-	- [<cite>Cibola Burn</cite>][cibola-burn]
-	- [<cite>Nemesis Games</cite>][nemesis-games]
+    - [<cite>Leviathan Wakes</cite>][leviathan-wakes]
+    - [<cite>Caliban’s War</cite>][calibans-war]
+    - [<cite>Abaddon’s Gade</cite>][abaddons-gate]
+    - [<cite>Cibola Burn</cite>][cibola-burn]
+    - [<cite>Nemesis Games</cite>][nemesis-games]
 
 [hobbit]: https://bookshop.org/a/21126/9780395873465
 [lotr]: https://bookshop.org/a/21126/9780618260584
