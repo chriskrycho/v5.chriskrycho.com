@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-08T14:46:00-0600
+date: 2023-05-09T20:40:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -76,6 +76,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason (new)
 
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
+
+- [<cite>On Pace: Discover How to Run Every Race at Your Real Limit</cite>](https://bookshop.org/a/21126/9798985398007), Matt Fitzgerald (new)
+
+- [<cite>80/20 Running: Run Stronger and Race Faster by Training Slower</cite>](https://bookshop.org/a/21126/9780451470881), Matt Fitzgerald (new)
 
 
 ### Fiction
