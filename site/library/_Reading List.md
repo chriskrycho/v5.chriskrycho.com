@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-09T20:40:00-0600
+date: 2023-05-12T18:20:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,8 +79,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>On Pace: Discover How to Run Every Race at Your Real Limit</cite>](https://bookshop.org/a/21126/9798985398007), Matt Fitzgerald (new)
 
-- [<cite>80/20 Running: Run Stronger and Race Faster by Training Slower</cite>](https://bookshop.org/a/21126/9780451470881), Matt Fitzgerald (new)
-
 
 ### Fiction
 
@@ -104,6 +102,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Doctrine of Scripture</cite>](https://bookshop.org/a/21126/9781532664991), Brad East (new)
 
 - [<cite>Quit: The Power of Knowing When to Walk Away</cite>](https://bookshop.org/a/21126/9780593422991), Annie Duke (new)
+
+- [<cite>80/20 Running: Run Stronger and Race Faster by Training Slower</cite>](https://bookshop.org/a/21126/9780451470881), Matt Fitzgerald (new)
 
 
 ### Fiction
