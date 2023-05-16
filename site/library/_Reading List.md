@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-16T13:19:00-0600
+date: 2023-05-16T13:20:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -120,6 +120,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>The Dragonbone Chair</cite>](https://bookshop.org/a/21126/9780756402976)
     - [<cite>The Stone of Farewell</cite>](https://bookshop.org/a/21126/9780886774806)
     - [<cite>To Green Angel Tower</cite>](https://bookshop.org/a/21126/9780756402983)
+
+- [<cite>Leviathan Wakes</cite>][leviathan-wakes], James S. A. Corey (reread)
 
 
 ## 2022
