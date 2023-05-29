@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-28T07:55:00-0600
+date: 2023-05-29T17:15:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,8 +79,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Thinking in Systems: A Primer</cite>](https://bookshop.org/a/21126/9781603580557), Donella Meadows (new)
 
-- [<cite>How Bad Do You Want It?: Mastering the Psychology of Mind Over Muscle</cite>](https://bookshop.org/a/21126/9781937715410), Matt Fitzgerald (new)
-
 
 ### Fiction
 
@@ -110,6 +108,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>80/20 Running: Run Stronger and Race Faster by Training Slower</cite>](https://bookshop.org/a/21126/9780451470881), Matt Fitzgerald (new)
 
 - [<cite>On Pace: Discover How to Run Every Race at Your Real Limit</cite>](https://bookshop.org/a/21126/9798985398007), Matt Fitzgerald (new)
+
+- [<cite>How Bad Do You Want It?: Mastering the Psychology of Mind Over Muscle</cite>](https://bookshop.org/a/21126/9781937715410), Matt Fitzgerald (new)
 
 
 ### Fiction
