@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-29T18:44:00-0600
+date: 2023-05-29T19:32:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -90,8 +90,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
-- [<cite>Leviathan Wakes</cite>][leviathan-wakes], James S. A. Corey (reread)
-
 
 ## 2023
 
@@ -126,6 +124,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>The Dragonbone Chair</cite>](https://bookshop.org/a/21126/9780756402976)
     - [<cite>The Stone of Farewell</cite>](https://bookshop.org/a/21126/9780886774806)
     - [<cite>To Green Angel Tower</cite>](https://bookshop.org/a/21126/9780756402983)
+
+- [<cite>Leviathan Wakes</cite>][leviathan-wakes], James S. A. Corey (reread)
 
 
 ## 2022
