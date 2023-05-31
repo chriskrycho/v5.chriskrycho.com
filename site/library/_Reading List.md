@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-29T20:46:00-0600
+date: 2023-05-30T21:42:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -75,8 +75,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
-- [<cite>Thinking in Systems: A Primer</cite>](https://bookshop.org/a/21126/9781603580557), Donella Meadows (new)
-
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
 
 
@@ -110,7 +108,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>How Bad Do You Want It?: Mastering the Psychology of Mind Over Muscle</cite>](https://bookshop.org/a/21126/9781937715410), Matt Fitzgerald (new)
 
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason (new)
-  
+
+- [<cite>Thinking in Systems: A Primer</cite>](https://bookshop.org/a/21126/9781603580557), Donella Meadows (new)
+
 
 ### Fiction
 
