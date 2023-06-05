@@ -206,7 +206,7 @@ However, there’s a problem here that’s easy to miss: because we’re [giving
     }
     ```
 
-    That would make the TypeScript side type-check—though not particularly *helpfully*—so a tool like Glint would then do its own pass over those as well. You will end up with multiple layers of feedback in your editor—one from TSServer and one from Glint—but that may be fine (and if we went that direction, we could provide a language server plugin to make that experience nicer). All of these proposals require Glint running over top of `tsc`/TSServer; the difference here is taht it means that you don’t have to disable the original TSServer to make your editor work.
+    That would make the TypeScript side type-check—though not particularly *helpfully*—so a tool like Glint would then do its own pass over those as well. You will end up with multiple layers of feedback in your editor—one from TSServer and one from Glint—but that may be fine (and if we went that direction, we could provide a language server plugin to make that experience nicer). All of these proposals require Glint running over top of `tsc`/TSServer; the difference here is that it means that you don’t have to disable the original TSServer to make your editor work.
 
 - In the case of imports-only, we *have* to disable the <abbr>TS LS</abbr>, because we have to stitch the script and template files together to create the correct context. Otherwise, the backing classes will always and unavoidably report that there is no usage of anything which is only used in templates.
 
