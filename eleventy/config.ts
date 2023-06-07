@@ -2,7 +2,7 @@ import { env } from 'process';
 
 import { DateTime } from 'luxon';
 
-import { Config, Item, UserConfig, Collection } from '../types/eleventy';
+import { Config, Item, UserConfig, Collection, Data } from '../types/eleventy';
 import absoluteUrl from './absolute-url';
 import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year';
 import copyright from './copyright';
@@ -24,10 +24,13 @@ import {
    toRootCollection,
 } from './collection';
 
+import yaml from 'js-yaml';
+
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 import striptags from 'striptags';
 import niceList from './nice-list';
 import { callout, note } from './notes';
+import { preparseYaml } from './preparse';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
@@ -244,6 +247,19 @@ function config(config: Config): UserConfig {
    config.setLibrary('md', { render: renderMarkdown });
 
    config.setDataDeepMerge(true);
+
+   config.setFrontMatterParsingOptions({
+      engines: {
+         yaml: (s) => {
+            let contents = yaml.load(s);
+            if (typeof contents !== 'object') {
+               throw new Error(`bad YAML data:\n${JSON.stringify(contents)}`);
+            }
+            // SAFETY: effectively all the keys are optional. 🤪
+            return preparseYaml(contents as Data);
+         },
+      },
+   });
 
    return {
       dir: {
