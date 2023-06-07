@@ -34,7 +34,7 @@
 
                         <a href='{{url}}' class='item-permalink' title='{{linkTitle}}'>
                         {%- if item.data.title -%}
-                           <span class='item-title__text'>{{-item.data.title | inlineMd | safe-}}</span>
+                           <span class='item-title__text'>{{-item.data.title | safe-}}</span>
                            {%- if item.data.link -%}
                               <span class='item-title-arrow'>↩︎</span>
                            {%- endif -%}
@@ -58,7 +58,7 @@
                         {% endif -%}
                      </h5>
                      {% if item.data.subtitle -%}
-                     <p class='item-subtitle'>{{item.data.subtitle | inlineMd | safe}}</p>
+                     <p class='item-subtitle'>{{item.data.subtitle | safe}}</p>
                      {%- endif %}
                      {%- if not item.data.title %}
                      <article class='item-content article-content'>

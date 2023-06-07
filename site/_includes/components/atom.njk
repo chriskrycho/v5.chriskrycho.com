@@ -46,19 +46,19 @@
             <content type="html">
                <![CDATA[
                   {%- if item.data.subtitle -%}
-                     <i>{{- item.data.subtitle | inlineMd | safe -}}</i>
+                     <i>{{- item.data.subtitle | safe -}}</i>
                   {%- endif -%}
                   {%- if item.data.qualifiers.audience -%}
-                     <p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> {{ item.data.qualifiers.audience | inlineMd | safe -}}</p>
+                     <p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> {{ item.data.qualifiers.audience | safe -}}</p>
                   {%- endif -%}
                   {%- if item.data.qualifiers.context -%}
-                     <p><b>A bit of context:</b> {{ item.data.qualifiers.context | inlineMd | safe -}}</p>
+                     <p><b>A bit of context:</b> {{ item.data.qualifiers.context | safe -}}</p>
                   {%- endif -%}
                   {%- if item.data.qualifiers.epistemic -%}
-                     <p><b>Epistemic status:</b> {{ item.data.qualifiers.epistemic | inlineMd | safe -}}</p>
+                     <p><b>Epistemic status:</b> {{ item.data.qualifiers.epistemic | safe -}}</p>
                   {%- endif -%}
                   {%- if item.data.qualifiers.discusses -%}
-                     <p><b>Heads up:</b> this post directly discusses {{item.data.qualifiers.discusses | niceList | inlineMd | safe}}.</p>
+                     <p><b>Heads up:</b> this post directly discusses {{item.data.qualifiers.discusses | niceList | safe}}.</p>
                   {%- endif -%}
                   {%- if updates -%}
                   <p><i>Meaningful changes since publication:</i></p>
@@ -66,7 +66,7 @@
                      {%- for update in updates -%}
                      <li>
                         <i>{% localeDate update.at, 'MMMM d, yyyy' %}:</i>
-                        {{update.changes | inlineMd | safe}}
+                        {{update.changes | safe}}
                      </li>
                      {%- endfor -%}
                   </ul>
@@ -89,14 +89,14 @@
                         <cite>{{book.title | safe}}</cite>, {{book.author | safe}} ({{book.year | safe}})<br/>
                         {%- endif -%}
                         {%- if book.review -%}
-                        <b>{{book.review.rating | safe}}:</b> {{book.review.summary | inlineMd | safe -}}
+                        <b>{{book.review.rating | safe}}:</b> {{book.review.summary | safe -}}
                         {%- endif -%}
                      </p>
                   {%- endif -%}
                   {{-item.templateContent | safe-}}
                   {%- if item.data.thanks -%}
                   <hr/>
-                  <p><strong>Thanks:</strong> {{item.data.thanks | inlineMd | safe}}</p>
+                  <p><strong>Thanks:</strong> {{item.data.thanks | safe}}</p>
                   {%- endif -%}
                   <hr/>
                   {%- if includeReplyViaEmail -%}

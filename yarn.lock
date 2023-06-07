@@ -462,6 +462,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/js-yaml@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "@types/js-yaml@npm:4.0.5"
+  checksum: 7dcac8c50fec31643cc9d6444b5503239a861414cdfaa7ae9a38bc22597c4d850c4b8cec3d82d73b3fbca408348ce223b0408d598b32e094470dfffc6d486b4d
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.8":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
@@ -4157,6 +4164,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "js-yaml@npm:4.1.0"
+  dependencies:
+    argparse: ^2.0.1
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: c7830dfd456c3ef2c6e355cc5a92e6700ceafa1d14bba54497b34a99f0376cecbb3e9ac14d3e5849b426d5a5140709a66237a8c991c675431271c4ce5504151a
+  languageName: node
+  linkType: hard
+
 "jshint@npm:^2.13.5":
   version: 2.13.6
   resolution: "jshint@npm:2.13.6"
@@ -7290,6 +7308,7 @@ __metadata:
     "@rollup/plugin-terser": ^0.4.1
     "@rollup/plugin-typescript": ^11.1.0
     "@types/gulp-dart-sass": ^1.0.1
+    "@types/js-yaml": ^4.0.5
     "@types/luxon": ^3
     "@types/markdown-it": ^12.2.3
     "@types/markdown-it-container": ^2.0.4
@@ -7302,6 +7321,7 @@ __metadata:
     gulp-dart-sass: ^1.0.2
     highlight.js: ^11.7.0
     highlightjs-glimmer: ^2.0.1
+    js-yaml: ^4.1.0
     luxon: ^3
     markdown-it: ^13.0.1
     markdown-it-abbr: ^1.0.4

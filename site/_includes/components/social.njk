@@ -57,7 +57,7 @@
       {%- set description = config.description -%}
    {%- endif %}
 
-   {% set renderedDescription = description | inlineMd | safe | striptags(true) %}
+   {% set renderedDescription = description | safe | striptags(true) %}
    <meta name="description" content="{{renderedDescription}}"/>
    <meta property="og:description" content="{{renderedDescription}}"/>
    <meta name="twitter:description" content="{{renderedDescription}}"/>

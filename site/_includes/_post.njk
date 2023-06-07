@@ -24,25 +24,25 @@
    {% if qualifiers.audience -%}
    <p>
       <b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed audience</a>:</b>
-      {{qualifiers.audience | inlineMd | safe}}
+      {{qualifiers.audience | safe}}
    </p>
    {%- endif %}
    {% if qualifiers.context -%}
    <p>
       <b>A bit of context:</b>
-      {{qualifiers.context | inlineMd | safe}}
+      {{qualifiers.context | safe}}
    </p>
    {%- endif %}
    {% if qualifiers.epistemic %}
    <p>
       <b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic status</a>:</b>
-      {{qualifiers.epistemic | inlineMd | safe}}
+      {{qualifiers.epistemic | safe}}
    </p>
    {% endif %}
    {% if qualifiers.discusses %}
    <p>
       <b>Heads up:</b>
-      This post directly discusses {{qualifiers.discusses | niceList | inlineMd | safe}}.
+      This post directly discusses {{qualifiers.discusses | niceList | safe}}.
    </p>
    {% endif %}
 </div>

@@ -1,7 +1,7 @@
 {% macro header(type, title, subtitle, subscribe, link) %}
 {% if title %}
 <header class='item-header {{type}}'>
-   {% set formattedTitle = title | inlineMd | safe %}
+   {% set formattedTitle = title | safe %}
    {%- if link %}<a href='{{link}}'>{% endif -%}
    {% if type == 'index' %}
    <h2 class='item-title'>
@@ -17,7 +17,7 @@
    {%- if link %}</a>{% endif -%}
    {% if subtitle -%}
       <p class='item-subtitle'>
-         {{subtitle | inlineMd | safe}}
+         {{subtitle | safe}}
 
          {% if subscribe %}
             Subscribe via <a href='{{subscribe.atom}}'>Atom</a> or <a href='{{subscribe.json}}'><abbr>JSON</abbr></a> feed
@@ -40,7 +40,7 @@
    {% if thanks is defined %}
    <div class='section-label'>Thanks:</div>
    <div class='section-content'>
-      {{thanks | inlineMd | safe}}
+      {{thanks | safe}}
    </div>
    {% endif %}
 
@@ -63,7 +63,7 @@
          {%- for update in updates -%}
          <li>
             <i>{% localeDate update.at, DATE_FORMAT %}:</i>
-            {{update.changes | inlineMd | safe}}
+            {{update.changes | safe}}
          </li>
          {%- endfor -%}
          </ul>

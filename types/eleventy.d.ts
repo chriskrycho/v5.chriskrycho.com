@@ -67,16 +67,9 @@ interface BrowserSyncConfig {
 
 type Empty = { isEmpty: true; empty: string } | { isEmpty: false };
 
-type GrayMatter = {
-   content: string;
-   excerpt?: string;
-   orig: Buffer;
-   language: string;
-   matter: string;
-   stringify(): string;
-} & Empty;
+import type { GrayMatterFile, GrayMatterOption } from 'gray-matter';
 
-export type Engine = (input: string) => GrayMatter;
+export type Engine = (input: string) => GrayMatterFile<string>;
 
 export type EngineName =
    | 'html'
@@ -359,12 +352,9 @@ export interface Config {
    setDataDeepMerge(to: boolean): void;
    setWatchJavaScriptDependencies(to: boolean): void;
    setBrowserSyncConfig(to: BrowserSyncConfig): void;
-   setFrontMatterParsingOptions(to: {
-      excerpt?: boolean;
-      excerpt_separator?: string;
-      excerpt_alias?: string;
-      engines?: Dict<Engine>;
-   }): void;
+   setFrontMatterParsingOptions<O extends GrayMatterOption<string, O>>(
+      to: GrayMatterOption<string, O>,
+   ): void;
    setLibrary(to: EngineName, using: Renderer): void;
 }
 
