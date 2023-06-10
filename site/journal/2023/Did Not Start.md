@@ -12,7 +12,7 @@ qualifiers:
 
 ---
 
-These days, many of my friends know me as a runner. I am, as [my Strava profile][strava] has it, a *serious amateur half-marathoner*. *Amateur*, because there is no world where I would be fast enough to be a professional; but *serious* because I really do take my training seriously. These days, I take it as more or less a given that I will finish any given road race half marathon under 1:30:00—which involves running faster than 7-minute miles for 13.11 miles. My [most recent race][colfax-2023], I ran 6:45/mile on average, for example, finishing in 1:28:36. While *very* far from competitive,[^competitive] it is also a number that most people I talk to find fairly striking, and one I am proud of.
+These days, many of my friends know me as a runner. I am, as [my Strava profile][strava] has it, a *serious amateur half-marathoner*. *Amateur*, because there is no world where I would be fast enough to be a professional; but *serious* because I really do take my training seriously, and give it a substantial amount of my time. These days, I take it as more or less a given that I will finish any given road race half marathon under 1:30:00—which involves running faster than 7-minute miles for 13.11 miles. My [most recent race][colfax-2023], I ran 6:45/mile on average, for example, finishing in 1:28:36. While *very* far from competitive,[^competitive] it is also a number that most people I talk to find fairly striking, and one I am proud of.
 
 [strava]: https://www.strava.com/athletes/1079509
 [colfax-2023]: https://www.strava.com/activities/9113314893
@@ -35,7 +35,7 @@ Or even: start when they should not.
 
 I have never had to log a <abbr title="did not finish">DNF</abbr>. I have an even rougher entry for two separate races in my own personal history, though: <abbr title="did not start">DNS</abbr>—“did not start”. Twice, I have come down quite ill a day or two before the race, and judged it wiser to sleep than to run a race. The first of those was the very first half marathon I ever signed up to run: the 2011 Oklahoma City Half Marathon. The day before the race, I was so sick I could not make it two miles; I had to stop and walk home. I hoped when I went to bed that night that it would clear up, but when I awoke the morning of the race, I was no better. I sighed, turned off my alarm, and went back to sleep.
 
-Sometime that week, I picked another race to run: the [2011 Dallas White Rock][dwr] half marathon. When the sickness had cleared up enough, I started running again. Seven months later, I successfully completed my first half marathon, at a very respectable pace, and 
+Sometime that week, I picked another race to run: the [2011 Dallas White Rock][dwr] half marathon. When the sickness had cleared up enough, I started running again. Seven months later, I completed my first half marathon, at a very respectable pace. Despite the cold and drenching rain (no one who ran that day will forget it!) it was a huge success for me.
 
 [dwr]: https://www.strava.com/activities/224636543/overview
 
