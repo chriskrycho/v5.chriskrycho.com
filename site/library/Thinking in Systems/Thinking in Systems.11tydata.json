@@ -1,0 +1,13 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/thinking-in-systems/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "Thinking in Systems",
+      "cover": "https://images-us.bookshop.org/ingram/9781603580557.jpg",
+      "author": "Donella Meadows",
+      "editor": "Diana Wright",
+      "year": 2008,
+      "link": "https://bookshop.org/a/21126/9781603580557"
+   },
+   "tags": ["Donella Meadows", "thinking"]
+}
