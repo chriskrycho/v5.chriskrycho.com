@@ -3,6 +3,12 @@ title: Is GitHub Copilot Any Good?
 subtitle: >
   Betteridge’s Law applies, but the details of why I think so might still interest you.
 date: 2023-06-10T21:16:00-0600
+updated: 2023-06-10T21:16:00-0600
+updates:
+  - at: 2023-04-23T18:00:00-0600
+    changes: Initial draft. (This is my rough guess of the time.) 
+  - at: 2023-06-10T21:16:00-0600
+    changes: Finished drafting this and published it.
 summary: >
   Generative AI has a lot of hype right now, and GitHub Copilot has been hailed as revolutionary. Is it actually any good? (Betteridge’s Law applies, but the details might still interest you.)
 qualifiers:
