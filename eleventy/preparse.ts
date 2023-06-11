@@ -21,7 +21,7 @@ export function preparseYaml(data: Data): Data {
          );
 
       if (data.qualifiers.epistemic)
-         data.qualifiers.context = markdown.renderInline(data.qualifiers.epistemic);
+         data.qualifiers.epistemic = markdown.renderInline(data.qualifiers.epistemic);
    }
 
    if (data.updates) {
