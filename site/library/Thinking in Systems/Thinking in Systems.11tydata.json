@@ -3,7 +3,7 @@
    "permalink": "/library/thinking-in-systems/{{page.fileSlug | slug}}/index.html",
    "book": {
       "title": "Thinking in Systems",
-      "cover": "https://images-us.bookshop.org/ingram/9781603580557.jpg",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/thinking-in-systems.jpg",
       "author": "Donella Meadows",
       "editor": "Diana Wright",
       "year": 2008,
