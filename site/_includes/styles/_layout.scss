@@ -42,7 +42,8 @@ main {
                bottom: var(--padding);
             }
             width: 100%;
-            max-width: calc(75vw - var(--padding));
+            // `100vw - 100%` accounts for scroll bars. A legitimate old-style CSS trick!
+            max-width: calc(75vw - var(--padding) - (100vw - 100%));
          }
 
          nav {
