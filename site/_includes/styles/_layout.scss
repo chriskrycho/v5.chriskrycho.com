@@ -60,7 +60,7 @@ main {
          .hide-side-nav {
             main {
                --padding: 0.25em;
-               max-width: calc(100vw - 0.5em - 2px);
+               max-width: calc(100vw - 0.5em - 2px - (100vw - 100%));
             }
 
             nav {
