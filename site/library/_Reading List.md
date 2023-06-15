@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-05-30T21:42:00-0600
+date: 2023-06-14T19:51:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -76,6 +76,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
+
+- [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
+
+- [<cite>Holy Scripture: A Dogmatic Sketch</cite>](https://bookshop.org/a/21126/9780521538466), John Webster (new)
 
 
 ### Fiction
