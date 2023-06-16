@@ -559,7 +559,7 @@
 
    .quotation {
       width: 100%;
-      max-width: var(--max-width);
+      max-width: calc(var(--max-width) + 2 * var(--side-padding));
 
       &::before,
       &::after {
