@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-06-14T19:51:00-0600
+date: 2023-06-15T19:36:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -80,6 +80,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
 
 - [<cite>Holy Scripture: A Dogmatic Sketch</cite>](https://bookshop.org/a/21126/9780521538466), John Webster (new)
+
+- [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
 
 ### Fiction
