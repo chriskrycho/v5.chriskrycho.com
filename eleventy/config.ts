@@ -214,6 +214,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library/Confronted by Grace');
    addCollectionFromDir(config, 'library/Eccentric Existence');
    addCollectionFromDir(config, 'library/Holiness');
+   addCollectionFromDir(config, 'library/Holy Scripture');
    addCollectionFromDir(config, 'library/God Without Measure');
    addCollectionFromDir(config, 'library/God Without Measure/Volume I');
    addCollectionFromDir(config, 'library/God Without Measure/Volume II');
