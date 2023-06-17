@@ -2,7 +2,7 @@
    "layout": "post.njk",
    "permalink": "/library/holy-scripture/{{page.fileSlug | slug}}/index.html",
    "book": {
-      "title": "Holiness",
+      "title": "Holy Scripture: A Dogmatic Sketch",
       "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/holy-scripture.jpg",
       "author": "John Webster",
       "year": 2003,
