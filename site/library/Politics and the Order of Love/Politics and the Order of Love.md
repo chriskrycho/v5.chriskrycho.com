@@ -25,25 +25,13 @@ Alas, the book left me a bit frustrated. There was much to appreciate in it, and
 
 I think it’s fair to characterize <cite>Politics & the Order of Love</cite> as a productive entry into a discussion of Augustine and his politics and whether or how they might prove useful for [*ressourcement*](https://en.wikipedia.org/wiki/Nouvelle_th%C3%A9ologie)—rather than as a constructive proposal about the actual concrete shape or content of an Augustinian liberalism. That is: Gregory wants to rescue Augustine from his critics: not wholly, but to a sufficient degree that he might be a fruitful resource for the development of liberalism. As the subtitle of the book suggests, Gregory takes Augustinian thought to be helpful for the development of liberal citizens. That is: an Augustinian (and more generally a *publicly Christian*) citizen can be a good citizen of a liberal order because, not in spite of, her Augustinian Christianity. In particular, he wants to open space for distinctively Augustinian ideas of *love* in political theology and political philosophy.
 
-Thus, in his first chapter, Gregory writes:
-
-<figure class="quotation">
+Thus, in his first chapter, Gregory writes (p. 56):
 
 > I am not interested, however, in the nature of political authority. My interests are in its condition. Politics does not have to be “natural” for it to warrant moral status within Christian experience; and we need not anachronistically turn Augustine into a radical political reformer in order to rehabilitate an Augustinian ethic of democratic citizenship.
 
-<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>Politics & the Order of Love</cite></a>, p. 56</figcaption>
-
-</figure>
-
-And likewise in the conclusion:
-
-<figure class="quotation">
+And likewise in the conclusion (p. 366):
 
 > My reconstruction of a particular aspect of Augustinian theology has focused on the sensibilities and the virtues that should characterize an ethic of democratic citizenship. I have not offered a *solution* to the multifaceted debates about modern liberalism. I hope to have given some language that might liberate Augustinianism from the caricatures of our big intellectual histories—the sorts of histories that Augustine himself promoted. At the same time, I tried to provide vocabularies that might relieve the conceptual power of some unhelpful dichotomies, i.e., love vs. justice, realism vs. idealism, egotism vs. altruism, and transcendence (God) vs. immanence (neighbor). These dualisms can have heuristic value, but they also get in the way of thinking seriously about both Augustinianism and liberalism. In short, I have tried to make good on my stated effort to expand the Augustinian imagination for liberal democracy and the liberal democratic imagination for Augustinianism. 
-
-<figcaption>—{{book.author}}, <a href="{{book.link}}"><cite>Politics & the Order of Love</cite></a>, p. 366</figcaption>
-
-</figure>
 
 That final sentence says it all: Gregory’s goal was to “expand the Augustinian imagination for liberal democracy and the liberal democratic imagination for Augustinianism”—not, as I hoped when I first picked up the book, to actually do the work of imagining. Put another way: Gregory set out to about move [the Overton Window](https://en.wikipedia.org/wiki/Overton_window) for discussions of liberalism, Augustinianism, and love in the context of political theology—not to provide a constructive political-theological account of liberalism.
 
