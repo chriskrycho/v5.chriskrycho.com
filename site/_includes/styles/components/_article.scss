@@ -54,7 +54,7 @@
          right: auto;
       }
 
-      &:not(.book-review) {
+      &:not(.book-review, .quotation) {
          &::before,
          &::after {
             border-top: 2px solid var(--blockquote-border);
