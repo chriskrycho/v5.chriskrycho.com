@@ -30,11 +30,11 @@ Interested in working with me? Feel free to [say hello][email]!
 
 I am senior software engineering leader, lately focused on programming language adoption, web framework development, and developer productivity and experience. Other long-running professional interests include <abbr title="user interface">UI</abbr>, typography, functional programming, and ethical software development.
 
-Besides my developer experience engineering experience, I have a long history with full-stack web development as well as half a decade of systems-level programming (including avionics software and computational physics models), an [undergraduate degree in physics](#undergrad), a [master’s degree in theology](#masters), and a passion for building the *right things* in the *right way*.
+Prior to my recent focus on developer experience engineering, I have a long history with full-stack web development, spent a half decade doing systems-level programming (including avionics software and computational physics models), and earned an [undergraduate degree in physics](#undergrad) and a [master’s degree in theology](#masters). That combo has led me to care—very deeply—about building the *right things* in the *right way*.
 
 Building the *right things* means I am not interested in startups whose vision consists of either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings.
 
-Building things the *right way* means I am not interested in slapdash product development and rushed delivery. Software development as a business field consistently underinvests in product quality and maintainability. It is the responsibility of engineers to raise that bar.
+Building things the *right way* means I am not interested in slapdash product development and rushed delivery. Software development as a field consistently underinvests in product quality and maintainability. It is the responsibility of engineers to raise that bar.
 
 ### Education
 
