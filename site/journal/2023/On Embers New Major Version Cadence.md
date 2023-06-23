@@ -11,6 +11,7 @@ updates:
 tags:
   - software development
   - open-source software
+  - Ember
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-versions.png
 summary: >
   Ember 5.0 just came out, and we used it as a chance to change how we do major versions. But the reasons are not Ember-specific at all—and I hope the thinking behind this change will be useful to other projects!
