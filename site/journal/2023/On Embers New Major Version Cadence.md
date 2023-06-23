@@ -23,9 +23,9 @@ Why? Well, the exact same reason people rush in features when you have big bang 
 
 For maintainers:
 
-• If a deprecation does not make one major version, you know you are not paying for that indefinitely.
-• For the same reason, there is no reason to delay a major. Just target the next one.
-• You can target later major versions and know when they are coming, too.
+- If a deprecation does not make one major version, you know you are not paying for that indefinitely.
+- For the same reason, there is no reason to delay a major. Just target the next one.
+- You can target later major versions and know when they are coming, too.
 
 To elaborate a bit on that last bullet: while Ember is now on the 5.x train, nothing says a deprecation has to target 6.0 (~November 2024). It could target 7.0 (~May 2026) or even 8.0 (~November 2027)! That can tell people, “Start migrating away now, finish by ___.”
 
