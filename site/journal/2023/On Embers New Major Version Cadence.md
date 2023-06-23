@@ -8,7 +8,7 @@ tags:
   - open-source software
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-versions.png
 summary: >
-  Ember 5.0 just came out, and
+  Ember 5.0 just came out, and we used it as a chance to change how we do major versions. But the reasons are not Ember-specific at all—and I hope the thinking behind this change will be useful to other projects!
 qualifiers:
   audience: >
     Not Ember-specific! If you are interested in thinking about evolving libraries, frameworks, and ecosystems, this is relevant to you. It does assume basic background knowledge of [Semantic Versioning](https://semver.org/).
