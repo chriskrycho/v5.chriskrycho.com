@@ -9,6 +9,9 @@ tags:
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-versions.png
 summary: >
   Ember 5.0 just came out, and
+qualifiers:
+  audience: >
+    Not Ember-specific! If you are interested in thinking about evolving libraries, frameworks, and ecosystems, this is relevant to you. It does assume basic background knowledge of [Semantic Versioning](https://semver.org/).
 
 ---
 
