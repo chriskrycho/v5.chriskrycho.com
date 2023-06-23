@@ -38,7 +38,7 @@ This change addresses both of those head-on. First, teams can *know* to plan for
 
 Net, the goal is to use releasing more often and more predictably to smooth out the bumpiness and make maintenance of apps and libraries less burdensome, so developers can focus on making great software to serve their users.
 
-Want even more details? The [RFC](https://rfcs.emberjs.com/id/0830-evolving-embers-major-version-process) has them! Prior art we drew on explicitly includes Angular, TypeScript, and Node, all of which release their major versions on regular cadences. (Side-eye at TS major versions, though. 😂)
+Want even more details? The [<abbr title="request for comments">RFC</abbr>](https://rfcs.emberjs.com/id/0830-evolving-embers-major-version-process) has them! Prior art we drew on explicitly includes Angular, TypeScript, and Node, all of which release their major versions on regular cadences. (Side-eye at TS major versions, though. 😂)
 
 ---
 
