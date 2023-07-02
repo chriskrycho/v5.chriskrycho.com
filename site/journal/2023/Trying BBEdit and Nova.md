@@ -10,7 +10,7 @@ tags:
   - tools
 summary: >
   I am going to take some of my vacation time to try out some genuinely Mac-native text editors and see if either can truly replace VS Code as my daily driver. Because these things matter to me.
-date: 2023-07-01T18:25:00-0700
+date: 2023-07-01T18:25:00-0600
 
 ---
 
@@ -22,7 +22,7 @@ The frustration is born of a thousand paper cuts rather than any one big thing. 
 
 - **Typography.** Use the native system fonts. Period. That does not mean *no* elements can have customized typography, but major design elements should use the standard type faces from the system. Similarly, they should default to using the standard control sizes from the operating system.
 
-- **Controls.** Use native buttons, checkboxes, toggles, etc.
+- **Controls.** Use native buttons, checkboxes, toggles, etc. No 
 
 - **The behavior of windows.** New windows should open offset from the current window: down-and-to-the-left. (It took something like five years for VS Code to fix this!) They should support [document proxy icons][dpi], and those proxy icons should be well-behaved according to standard system behaviors. They should have usable title bars.
 
