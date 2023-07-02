@@ -14,7 +14,7 @@ date: 2023-07-01T18:25:00-0600
 
 ---
 
-For years, now, I have been frustrated with the “default” text editor options for software development on macOS. I have long used [Visual Studio Code](); before that I used Atom and before that Sublime Text. But in all cases, I have been frustrated that they are not Mac-native apps.
+For years, now, I have been frustrated with the “default” text editor options for software development on macOS. I have long used [Visual Studio Code][code]; before that I used [Atom][atom] and before that [Sublime Text][st]. But in all cases, I have been frustrated that they are not Mac-native apps.
 
 The frustration is born of a thousand paper cuts rather than any one big thing. On the list:
 
@@ -22,11 +22,11 @@ The frustration is born of a thousand paper cuts rather than any one big thing. 
 
 - **Typography.** Use the native system fonts. Period. That does not mean *no* elements can have customized typography, but major design elements should use the standard type faces from the system. Similarly, they should default to using the standard control sizes from the operating system.
 
-- **Controls.** Use native buttons, checkboxes, toggles, etc. No 
+- **Controls.** Use native buttons, checkboxes, toggles, etc. No building your own just to match a mediocre cross-platform brand.
 
 - **The behavior of windows.** New windows should open offset from the current window: down-and-to-the-left. (It took something like five years for VS Code to fix this!) They should support [document proxy icons][dpi], and those proxy icons should be well-behaved according to standard system behaviors. They should have usable title bars.
 
-- **Tabs:** System-native tabs have consistent behavior. Tabs built in [Electron][electron] or some custom <abbr title="user interface">UI</abbr> layer do not. How can they be dragged? *Where* can they be dragged—only within a single window, or between windows?[^native-tabs] Some apps do not support tabs at all; this is more or less fine: the key is that if tabs *are* present, they should work like *native* tabs. That includes the size.
+- **Tabs.** System-native tabs have consistent behavior. Tabs built in [Electron][electron] or some custom <abbr title="user interface">UI</abbr> layer do not. How can they be dragged? *Where* can they be dragged—only within a single window, or between windows?[^native-tabs] Some apps do not support tabs at all; this is more or less fine: the key is that if tabs *are* present, they should work like *native* tabs. That includes the size.
 
 - **Scroll bars.** Native text editors use native scroll bars, and respect the system settings *and* system design of scroll bars. Scroll bars are an incredible affordance! They provide information and useful controls at the same time. They should look and work the same way in a text editor they do anywhere else. In many editors (including Code, Sublime Text, and Zed) they do not.
 
@@ -56,7 +56,7 @@ I drafted this whole post in BBEdit. It felt… good. Responsive in a way that I
 
 [^other-activities]: Otherwise I am likely reading or composing.
 
-[^native-tabs]: Native tabs have plenty of quirks, too. The advantage to using them, though, is that I only have to learn *one* set of quirks!
+[^native-tabs]: Native tabs have plenty of quirks, too. The advantage to using them, though, is that I only have to learn *one* set of quirks! They can even be styled in interesting ways, but they have to match the system behavior. 
 
 [^html]: I have no objection to <abbr title="hypertext markup language">HTML</abbr> interfaces; indeed, I *love* the web. But. Not for a native application!
 
