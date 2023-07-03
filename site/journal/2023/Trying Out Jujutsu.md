@@ -12,11 +12,15 @@ tags:
   - tools
 
 date: 2023-07-01T18:42:00-0600
-updated: 2023-07-02T21:43:00-0600
+updated: 2023-07-03T07:27:00-0600
 updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
       Added some initial notes about initial setup bumps. And a *lot* of notes on the things I learned in trying to fix those!
+
+  - at: 2023-07-03T07:27:00-0600
+    changes: >
+      Reorganized and clarified the existing material a bit.
 
 draft: true
 
@@ -51,28 +55,20 @@ Another couple “getting started” notes:
 
 {% note %}
 
-For all of these kinds of initial notes, I will update them/rewrite them as I figure them out; but I will *not* do is pretend like they were not issues. At some point I expect the above to read something like:
+For all of these kinds of initial notes, I will update them/rewrite them as I figure them out; but I will *not* do is pretend like they were not issues. At some point I expect the notes throughout to read something like:
 
 > - It was not initially clear to me how to see the equivalent of…
 
 {% endnote %}
 
-### Actually committing
-
-Courtesy of the `node_modules` issue described above, I was not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. I suspect this is a combination of Kaleidoscope itself, Jujutsu’s relatively limited documentation at the time of writing, and possibly a bug somewhere in the mix. This is a case where Jujutsu’s choice—a good one, I think? But we will see—to skip Git’s “index” in favor of just having better tooling for working directly with commits in the working copy and rewriting history runs smack into a bunch of tooling which does not expect to be used that way.
-
 [kaleidoscope]: https://kaleidoscope.app
 
 ### Learnings on `jj log`
 
-I initially thought that the `jj log` only included the information since initializing Jujutsu in a given directory. This was because `jj log` takes a somewhat different approach from the other <abbr title="distributed version control system">DVCS</abbr> tools I have used. Per [the tutorial][tutorial]:
+I initially thought that the `jj log` only included the information since initializing Jujutsu in a given directory, rather than the whole Git history, which was quite surprising. In fact, the view I was seeing was entirely down to this default behavior of `jj log`, totally independent of Git. Jujutsu takes a somewhat different approach from the other <abbr title="distributed version control system">DVCS</abbr> tools I have used for describing sets of revisions. Per [the tutorial][tutorial]’s note on the `log` command specifically:
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
-[tutorial]: https://github.com/martinvonz/jj/blob/main/docs/tutorial.md
-
-I initially thought `jj log` was not including the Git history, but in fact the view I was seeing was entirely down to this default behavior of `jj log`, totally independent of Git.
-    
 To show the full revision history for a given commit, you can use a leading `:`, which indicates “parents”. (A trailing `:` indicates “children”.) Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log -r :<id>`. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the identifier you need to use), so I could write `jj log -r :mwoq`, and this will show all the parents of `mwoq`. Like Git, `@` is a shortcut for “the current head commit”. Net, the equivalent command for “show me all the history for this commit” is:
 
 ```sh
@@ -104,11 +100,13 @@ This shows a couple other interesting features of `jj`’s approach to the `log`
 
 That’s all well and good, but even with reading the operator and function guides, I still can’t actually quite make sense out of the default output.
 
-- ==I have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing!==
+- ==TODO: I have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing!==
 
 
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
 
 ### Working on projects
+
+Courtesy of the `node_modules` issue described above, I was not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. I suspect this is a combination of Kaleidoscope itself, Jujutsu’s relatively limited documentation at the time of writing, and possibly a bug somewhere in the mix. This is a case where Jujutsu’s choice—a good one, I think? But we will see—to skip Git’s “index” in favor of just having better tooling for working directly with commits in the working copy and rewriting history runs smack into a bunch of tooling which does not expect to be used that way.
 
 ==TODO: notes as I go!==
