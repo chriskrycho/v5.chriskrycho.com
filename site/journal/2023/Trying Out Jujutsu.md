@@ -12,7 +12,7 @@ tags:
   - tools
 
 date: 2023-07-01T18:42:00-0600
-updated: 2023-07-03T07:27:00-0600
+updated: 2023-07-03T10:45:00-0600
 updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
@@ -21,6 +21,10 @@ updates:
   - at: 2023-07-03T07:27:00-0600
     changes: >
       Reorganized and clarified the existing material a bit.
+
+  - at: 2023-07-03T10:45:00-0600
+    changes: >
+      Wrote up some experience notes on actually using `jj describe` and `jj new`: this is pretty wild, and I think I like it?
 
 draft: true
 
@@ -108,5 +112,30 @@ That’s all well and good, but even with reading the operator and function guid
 ### Working on projects
 
 Courtesy of the `node_modules` issue described above, I was not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. I suspect this is a combination of Kaleidoscope itself, Jujutsu’s relatively limited documentation at the time of writing, and possibly a bug somewhere in the mix. This is a case where Jujutsu’s choice—a good one, I think? But we will see—to skip Git’s “index” in favor of just having better tooling for working directly with commits in the working copy and rewriting history runs smack into a bunch of tooling which does not expect to be used that way.
+
+The flip side of that: Jujutsu’s approach to the working copy results in a *really* interesting shift. In every version control system I have worked with previously (including CVS, PVCS, SVN, Mercurial, and Git), the workflow has been some variation on:
+
+- Make a bunch of changes.
+- Create a commit and write a message to describe it.
+- Possibly amend that set of changes and/or its message.
+- Repeat.
+
+With both Mercurial and Git, it also became possible to rewrite history in various ways; I use Git’s `rebase --interactive` command *extensively* when working on large sets of changes
+
+Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundamental element of the mental and working model. That means that you can describe a change that is still “in progress” as it were. I discovered this while working on a little example code for a blog post I plan to publish later this month: you can describe the change you are working on *and then keep working on it*. The act of describing the change is distinct from the act of “committing” and thus starting a *new* change. This falls out naturally from the fat that the working copy state is something you can operate on directly: akin to Git’s index, but without its many pitfalls. When you are ready to start a new change, you use `jj new` to “Create a new, empty change and edit it in the working copy”. This is also where merging comes in, and it comes with some other frankly astonishing abilities:
+
+```
+-A, --insert-after
+      Insert the new change between the target commit(s) and their children
+
+      [aliases: after]
+
+-B, --insert-before
+      Insert the new change between the target commit(s) and their parents
+
+      [aliases: before]
+```
+
+You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” without that being in the middle of a rebase operation, which makes it inherently somewhat fragile. I never use `git reflog` so much as when doing interactive rebases! I will have to see how this works, but it feel slike it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. (As of the time of writing *this* particular bit, though, that’s still hypothetical to me!)
 
 ==TODO: notes as I go!==
