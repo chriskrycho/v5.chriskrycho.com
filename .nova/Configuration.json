@@ -1,4 +1,8 @@
 {
   "workspace.color" : 8,
-  "workspace.name" : "Sympolymathesy"
+  "workspace.name" : "Sympolymathesy",
+  "workspace.preview_append_paths" : true,
+  "workspace.preview_root" : "site",
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:8080\/"
 }
