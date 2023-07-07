@@ -9,7 +9,14 @@ tags:
   - tools
 
 date: 2023-07-04T19:00:00-0600
+updated: 2023-07-08T14:45:00-0600
+updates:
+  - at: 2023-07-08T14:45:00-0600
+    changes: >
+      An extended entry on how much Nova has impressed me as I have worked basically exclusively with it on a Rust side project.
+
 draft: true
+
 ---
 
 As I [described][blog] at the start of the month, I have taken the opportunity of this downtime to revisit some of my longest-standing developer tool choices: I have made a point to do my writing and software development in [BBEdit][bb] and [Nova][nova] rather than my long-standing habit of using [Sublime Text][st] and [Visual Studio Code][code].
@@ -52,6 +59,21 @@ The only other issue I have is that BBEdit does not let me set certain view defa
 At this point, I have been using Nova for a couple of days for my ongoing side project work in Rust (see comments above about why I ended up *not* trying to use BBEdit for this!). It feels… really, *really* good. I have hit only a few things where I could not do everything Code does. I hit one consistent crash—a case where [rust-analyzer][ra] seems to be crashing and Nova is not handling the crash well—but otherwise it has been incredibly snappy and reliable. More than that, when I had cause to reopen Code briefly (because of the aforementioned crash) it just felt… janky.
 
 [ra]: https://rust-analyzer.github.io
+
+### July 8
+
+Over the past couple of days, I finished a major milestone in one of my side projects—a project written entirely in Rust, and with all of this work carried out entirely in Nova. This was a pretty good stress test for Nova: while the rust-analyzer language server does in fact implement the normal [Language Server Protocol][lsp], the rust-analyzer project is also explicit that the [<abbr title="Visual Studio">VS</abbr> Code][code] extension is the primary target, and it gets attention and sometimes even features other editors do not as a result. How well, I wondered, would Nova stack up?
+
+[lsp]: https://microsoft.github.io/language-server-protocol/
+[code]: https://code.visualstudio.com
+
+The answer, I was delighted to find, is: *smashingly*. Although I hit a number of little bugs and gaps along the way, none of them were remotely show-stoppers, and the overall experience is frankly *so* much better than the experience of using Code that I am now finding it somewhat difficult to imagine going back. As I said above, Code just feels kind of janky by contrast. As I noted in [my original explanation][original] for why I am running this experiment in the first place: every single thing about an Electron app is just a little bit *off*. Not so with Nova.
+
+[original]: https://v5.chriskrycho.com/journal/trying-bbedit-and-nova/
+
+Most of these kinds of small quality-of-life details were also true the last time I looked at Nova. There was another problem then, though: the ecosystem around the editor. While still not massive, the ecosystem is much larger than it was 12–18 months ago. More important than there simply being more extensions is that the territory covered by those extensions has grown dramatically. There *were* Rust and TypeScript extensions back then; they are *good* now. Indeed, the ecosystem which exists for Nova appears generally to be fairly high quality.
+
+The net is that, a week into this experiment, I am *really* liking Nova and I am very likely to end up switching to it as my “daily driver” editor going forward.
 
 ### Summary
 
