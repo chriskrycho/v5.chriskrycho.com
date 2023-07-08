@@ -26,14 +26,19 @@ updates:
     changes: >
       Wrote up some experience notes on actually using `jj describe` and `jj new`: this is pretty wild, and I think I like it?
 
+  - at: 2023-07-09T14:02:00-0600
+    changes: >
+      Rewrote the `jj log` section to incorporate info about revsets, rewrote a couple of the existing sections now that I have significantly more experience, and added a bunch of notes to myself about what to tackle next in this write-up.
+
 draft: true
 
 ---
 
-Along with my experiment with [Mac-native text editors][experiment] over this vacation, I am going to spend some time learning [Jujutsu][jj]. Jujutsu is a new version control system from a software engineer at Google, which already (though tentatively) has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface.
+Along with my experiment with [Mac-native text editors][experiment] over this vacation, I am going to spend some time learning [Jujutsu][jj]. Jujutsu is a new version control system from a software engineer at Google, which already (though tentatively) has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Indeed, I think—hope!—it has a possible future as the [next generation of version control][next-gen-vcs].
 
 [experiment]: https://v5.chriskrycho.com/journal/trying-bbedit-and-nova/
 [jj]: https://github.com/martinvonz/jj#command-line-completion
+[next-gen-vcs]: https://v4.chriskrycho.com/2014/next-gen-vcs.html
 
 {% note %}
 
@@ -47,15 +52,7 @@ Watch this space over the next month: I will update it with notes and comments a
 ==TODO: What is Jujutsu? Why is it interesting?==
 
 
-## Usage notes
-
-### Setup
-
-Setup is, overall, quite easy: `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools, Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
-
-Notionally, Jujutsu understands local `.gitignore` files and uses them. As of my initial explorations (specifically, as of 2023-07-02), it is tracking files I do not want it to in a `node_modules` directory in one project where I am trying it out. This means I have yet to commit anything there, because I really do not want *anything* from `node_modules` in history. Theoretically, `jj untrack` should handle this when combined with `.gitignore`’s already including `node_modules`, but so far: no dice.
-
-Another couple “getting started” notes:
+## Usage notes 
 
 {% note %}
 
@@ -65,11 +62,28 @@ For all of these kinds of initial notes, I will update them/rewrite them as I fi
 
 {% endnote %}
 
-[kaleidoscope]: https://kaleidoscope.app
+### Setup
 
-### Learnings on `jj log`
+Setup is, overall, quite easy: `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools, Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
 
-I initially thought that the `jj log` only included the information since initializing Jujutsu in a given directory, rather than the whole Git history, which was quite surprising. In fact, the view I was seeing was entirely down to this default behavior of `jj log`, totally independent of Git. Jujutsu takes a somewhat different approach from the other <abbr title="distributed version control system">DVCS</abbr> tools I have used for describing sets of revisions. Per [the tutorial][tutorial]’s note on the `log` command specifically:
+Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™. I have since run `jj init` in every Git repository I am actively working on, and have had no issues. It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which mostly works well. (For where it does *not* work all that well, see the detailed section on Git interop below!)
+
+[^hiccup]: I did have [one odd hiccup][init-issue] along the way due to a bug (already fixed, though not in a released version) in how Jujutsu handles a failure when initializing in a directory. While confusing, the problem should be fixed in the next release… and this is what I expected of still-relatively-early software.
+
+[init-issue]: https://github.com/martinvonz/jj/issues/1794
+
+Notionally, Jujutsu understands local `.gitignore` files and uses them. As of my initial explorations (specifically, as of 2023-07-02), it is tracking files I do not want it to in a `node_modules` directory in one project where I am trying it out: there is [a bug][gitignore-issue], plain and simple. I was able to work around it in the end, but it stymied my initial attempts to commit anything there, because I really do not want *anything* from `node_modules` in history.
+
+[gitignore-issue]: https://github.com/martinvonz/jj/issues/1785
+
+
+### Learnings from `jj log`
+
+One of the big things to wrap your head around when first coming to Jujutsu is its approach to its “revsets”, which are the fundamental elements of changes. It takes a somewhat different approach from the other <abbr title="distributed version control system">DVCS</abbr> tools I have used. Specifically: [revsets][revsets] are actually expressions in a functional language “for selecting a set of revisions”. The term and idea are borrowed directly from Mercurial (as is common in many things about Jujutsu, and about which I am quite happy).
+
+[revsets]: https://github.com/martinvonz/jj/blob/f3d6616057fb3db3f9227de3da930e319d29fcc7/docs/revsets.md
+
+The first place you are likely to run into this is in the `log` command, since `jj log` is likely to be something you do pretty early in trying it out: certainly it was for me. I initially thought that the `jj log` only included the information since initializing Jujutsu in a given directory, rather than the whole Git history, which was quite surprising. In fact, the view I was seeing was entirely down to a default behavior of `jj log`, totally independent of Git: the specific revset it chooses to display. Per [the tutorial][tutorial]’s note on the `log` command specifically:
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
@@ -83,9 +97,9 @@ What `jj log` *does* show by default was still a bit non-obvious to me, even aft
 
 > Which revisions to show. Defaults to the `ui.default-revset` setting, or `@ | (remote_branches() | tags()).. | ((remote_branches() | tags())..)-` if it is not set
 
-This shows a couple other interesting features of `jj`’s approach to the `log` command:
+This shows a couple other interesting features of `jj`’s approach to revsets and thus the `log` command:
 
-1. It treats some of these operations as *functions* (`tags()`, `branches()`, etc.). I don’t have a deep handle on this yet, but I plan to come back to it. (There is a whole list [here][functions]!)
+1. It treats some of these operations as *functions* (`tags()`, `branches()`, etc.). I don’t have a deep handle on this yet, but I plan to come back to it. (There is a whole list [here][functions]!) This is not a surprise if you think about what “expressions in a functional language” implies… but it was a surprise to me because I had not yet read that bit of documentation.
 
 2. It makes “operators” [a first-class idea][operators]. Git *has* operators, but this goes a fair bit further:
 
@@ -102,16 +116,19 @@ This shows a couple other interesting features of `jj`’s approach to the `log`
 [functions]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#functions
 [operators]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#operators
 
-That’s all well and good, but even with reading the operator and function guides, I still can’t actually quite make sense out of the default output.
+That’s all well and good, but even with reading the operator and function guides, it still took me a bit to actually quite make sense out of the default output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at.
 
-- ==TODO: I have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing!==
-
+I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to.
 
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
 
 ### Working on projects
 
-Courtesy of the `node_modules` issue described above, I was not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. I suspect this is a combination of Kaleidoscope itself, Jujutsu’s relatively limited documentation at the time of writing, and possibly a bug somewhere in the mix. This is a case where Jujutsu’s choice—a good one, I think? But we will see—to skip Git’s “index” in favor of just having better tooling for working directly with commits in the working copy and rewriting history runs smack into a bunch of tooling which does not expect to be used that way.
+Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git!
+
+==TODO: rewrite this whole paragraph: there’s a Kaleidoscope bug, the ignore bug is being worked on, and I have better thoughts.== Courtesy of the `node_modules` issue described above, I was not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. I suspect this is a combination of Kaleidoscope itself, Jujutsu’s relatively limited documentation at the time of writing, and possibly a bug somewhere in the mix. This is a case where Jujutsu’s choice—a good one, I think? But we will see—to skip Git’s “index” in favor of just having better tooling for working directly with commits in the working copy and rewriting history runs smack into a bunch of tooling which does not expect to be used that way.
+
+[kaleidoscope]: https://kaleidoscope.app
 
 The flip side of that: Jujutsu’s approach to the working copy results in a *really* interesting shift. In every version control system I have worked with previously (including CVS, PVCS, SVN, Mercurial, and Git), the workflow has been some variation on:
 
@@ -122,7 +139,7 @@ The flip side of that: Jujutsu’s approach to the working copy results in a *re
 
 With both Mercurial and Git, it also became possible to rewrite history in various ways; I use Git’s `rebase --interactive` command *extensively* when working on large sets of changes
 
-Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundamental element of the mental and working model. That means that you can describe a change that is still “in progress” as it were. I discovered this while working on a little example code for a blog post I plan to publish later this month: you can describe the change you are working on *and then keep working on it*. The act of describing the change is distinct from the act of “committing” and thus starting a *new* change. This falls out naturally from the fat that the working copy state is something you can operate on directly: akin to Git’s index, but without its many pitfalls. When you are ready to start a new change, you use `jj new` to “Create a new, empty change and edit it in the working copy”. This is also where merging comes in, and it comes with some other frankly astonishing abilities:
+Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundamental element of the mental and working model. That means that you can describe a change that is still “in progress” as it were. I discovered this while working on a little example code for a blog post I plan to publish later this month: you can describe the change you are working on *and then keep working on it*. The act of describing the change is distinct from the act of “committing” and thus starting a *new* change. This falls out naturally from the fact that the working copy state is something you can operate on directly: akin to Git’s index, but without its many pitfalls. When you are ready to start a new change, you use `jj new` to “Create a new, empty change and edit it in the working copy”. This is also where merging comes in, and it comes with some other frankly astonishing abilities:
 
 ```
 -A, --insert-after
@@ -136,6 +153,24 @@ Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundam
       [aliases: before]
 ```
 
-You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” without that being in the middle of a rebase operation, which makes it inherently somewhat fragile. I never use `git reflog` so much as when doing interactive rebases! I will have to see how this works, but it feel slike it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. (As of the time of writing *this* particular bit, though, that’s still hypothetical to me!)
+You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” without that being in the middle of a rebase operation, which makes it inherently somewhat fragile. I never use `git reflog` so much as when doing interactive rebases! Once I got the hang of this, it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. There *is* still an escape hatch for mistakes, though: `jj op log` shows all the operations you have performed on the repo—and frankly, is much more useful and powerful than `git reflog`, because it logs *all* the operations.
 
-==TODO: notes as I go!==
+- ==TODO: on `jj split`==
+- ==TODO: on `jj amend`==
+- ==TODO: on `jj merge`==
+- ==TODO: on `jj squash`==
+
+
+### Git Interop
+
+==TODO: add some commentary and color here==
+
+- ==TODO: branch behavior is a bit quirky-feeling at first, and definitely makes interacting with GitHub repos a bit weird==
+- ==TODO: `jj git push` and friends do not always seem to work==
+- ==TODO: tip: for successful workflow==
+
+{% note %}
+
+Jujutsu does this by using `libgit2`, so there is effectively no risk of breaking your repo because of a Jujutsu–Git interop issue. To be sure, there can be bugs in Jujutsu itself, and you can do things using Jujutsu that will leave you in a bit of a mess, but the same is true of *any* tool which works on your Git repository. The risk might be very slightly higher here than with your average <abbr>GUI</abbr> Git client, since Jujutsu is mapping different semantics onto the repository, but I have fairly high confidence in the project at this point, and I think you can too.
+
+{% endnote %}
