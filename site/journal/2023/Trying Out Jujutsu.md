@@ -30,6 +30,10 @@ updates:
     changes: >
       Rewrote the `jj log` section to incorporate info about revsets, rewrote a couple of the existing sections now that I have significantly more experience, and added a bunch of notes to myself about what to tackle next in this write-up.
 
+  - at: 2023-07-12T21:08:00-0600
+    changes: >
+      Added a section on the experience of having first-class merging Just Work™, added an appendix about Kaleidoscope setup and usage, rewrote the paragraph where I previously mentioned the issues about Kaleidoscope, and iterated on the commit-vs.-change distinction.
+
 draft: true
 
 ---
@@ -126,11 +130,19 @@ I also have yet to figure out how to see the equivalent of `git log`’s full co
 
 Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git!
 
-==TODO: rewrite this whole paragraph: there’s a Kaleidoscope bug, the ignore bug is being worked on, and I have better thoughts.== Courtesy of the `node_modules` issue described above, I was not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. I suspect this is a combination of Kaleidoscope itself, Jujutsu’s relatively limited documentation at the time of writing, and possibly a bug somewhere in the mix. This is a case where Jujutsu’s choice—a good one, I think? But we will see—to skip Git’s “index” in favor of just having better tooling for working directly with commits in the working copy and rewriting history runs smack into a bunch of tooling which does not expect to be used that way.
+Courtesy of the `node_modules` issue described above, I was initially not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. (This turned out to be a quirk with how to launch file diffs; see [the appendix][appendix] if you’re curious.) Once I worked around that, though, I quickly came to see the upside. Most of the time with Git, I am doing one of two things:
+
+- Committing everything that is in my working copy: `git commit -a` is an *extremely* common operation for me.
+- Committing a subset of it, not by using Git's `-p` to do it via that atrocious interface, but instead opening [Fork][fork] and doing it with Fork’s staging <abbr>UI</abbr>.
+
+In the first case, Jujutsu’s choice to skip Git’s “index” looks like a very good one. In the second case, I was initially skeptical. Admittedly, my setup woes exacerbated my skepticism. Once I got things working, though, I started to come around. My workflow with Fork looks an *awful* lot like the workflow that Jujutsu pushes you toward with actually using a diff tool. With Jujutsu, though, *any* diff tool can work. Want to use Vim? [Go for it.][vim-diff]
 
 [kaleidoscope]: https://kaleidoscope.app
+[appendix]: #appendix-kaleidoscope-setup-and-tips
+[fork]: https://git-fork.com
+[vim-diff]: https://gist.github.com/ilyagr/5d6339fb7dac5e7ab06fe1561ec62d45
 
-The flip side of that: Jujutsu’s approach to the working copy results in a *really* interesting shift. In every version control system I have worked with previously (including CVS, PVCS, SVN, Mercurial, and Git), the workflow has been some variation on:
+What is more, Jujutsu’s approach to the working copy results in a *really* interesting shift. In every version control system I have worked with previously (including CVS, PVCS, SVN, Mercurial, and Git), the workflow has been some variation on:
 
 - Make a bunch of changes.
 - Create a commit and write a message to describe it.
@@ -139,7 +151,9 @@ The flip side of that: Jujutsu’s approach to the working copy results in a *re
 
 With both Mercurial and Git, it also became possible to rewrite history in various ways; I use Git’s `rebase --interactive` command *extensively* when working on large sets of changes
 
-Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundamental element of the mental and working model. That means that you can describe a change that is still “in progress” as it were. I discovered this while working on a little example code for a blog post I plan to publish later this month: you can describe the change you are working on *and then keep working on it*. The act of describing the change is distinct from the act of “committing” and thus starting a *new* change. This falls out naturally from the fact that the working copy state is something you can operate on directly: akin to Git’s index, but without its many pitfalls. When you are ready to start a new change, you use `jj new` to “Create a new, empty change and edit it in the working copy”. This is also where merging comes in, and it comes with some other frankly astonishing abilities:
+Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundamental element of the mental and working model. That means that you can describe a change that is still “in progress” as it were. I discovered this while working on a little example code for a blog post I plan to publish later this month: you can describe the change you are working on *and then keep working on it*. The act of describing the change is distinct from the act of “committing” and thus starting a *new* change. This falls out naturally from the fact that the working copy state is something you can operate on directly: akin to Git’s index, but without its many pitfalls. When you are ready to start a new change, you use either `jj commit` to “finalize” this commit with a message, or `jj new` to “Create a new, empty change and edit it in the working copy”. Implied: `jj commit` is just a convenience for `jj describe` and `jj new`. And a bonus: this means that rewording a message earlier in history does not involve some kind of rebase operation; you just `jj describe --revision <target>`.
+
+This is also where merging comes in, and it comes with some other frankly astonishing abilities:
 
 ```
 -A, --insert-after
@@ -155,10 +169,20 @@ Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundam
 
 You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” without that being in the middle of a rebase operation, which makes it inherently somewhat fragile. I never use `git reflog` so much as when doing interactive rebases! Once I got the hang of this, it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. There *is* still an escape hatch for mistakes, though: `jj op log` shows all the operations you have performed on the repo—and frankly, is much more useful and powerful than `git reflog`, because it logs *all* the operations.
 
+<!--
 - ==TODO: on `jj split`==
 - ==TODO: on `jj amend`==
 - ==TODO: on `jj merge`==
 - ==TODO: on `jj squash`==
+-->
+
+Another huge feature of Jujutsu is it support for *first-class conflicts*. Instead of a conflict resulting in a nightmare that has to be resolved before you can move on, Jujutsu can incorporate both the merge and its resolution (whether manual or automatic) directly into commit history. Just having the conflicts in history does not seem that weird. “Okay, you committed the text conflict markers from git, neat.” But: having the conflict and its resolution in history, especially when Jujutsu figured out how to do that resolution for you, as part of a rebase operation? That is just plain *wild*.
+
+I was working on a change to [a library][true-myth] I maintain[^fun] and decided to flip the order in which I landed two changes to `package.json`. Unfortunately, those changes were adjacent to each other in the file and so flipping the order they would land in seemed likely to be non-trivial. It was actually *extremely* trivial. First of all, the flow itself was great: instead of launching an editor for interactive rebase, I just explicitly told Jujutsu to do the rebases: `jj rebase --revision <source> --destination <target>`. I did that for each of the items I wanted to reorder and I was done. (I could also have rebased a whole series of commits; I just did not need to in this case.) Literally, that was it: because Jujutsu had agreed with me that <abbr>JSON</abbr> is a terrible format for changes like this and committed a merge conflict, then *resolved* the merge conflict via the next rebase command, and simply carried on.
+
+[true-myth]: https://github.com/true-myth/true-myth
+
+[^fun]: Yes, this is what I do for fun on my month off. At least: partially.
 
 
 ### Git Interop
@@ -174,3 +198,17 @@ You can do this using interactive rebasing with Git (or with history rewriting w
 Jujutsu does this by using `libgit2`, so there is effectively no risk of breaking your repo because of a Jujutsu–Git interop issue. To be sure, there can be bugs in Jujutsu itself, and you can do things using Jujutsu that will leave you in a bit of a mess, but the same is true of *any* tool which works on your Git repository. The risk might be very slightly higher here than with your average <abbr>GUI</abbr> Git client, since Jujutsu is mapping different semantics onto the repository, but I have fairly high confidence in the project at this point, and I think you can too.
 
 {% endnote %}
+
+## Appendix: Kaleidoscope setup and tips
+
+As noted in my overall write-up, there was a quirk in being able to use [Kaleidoscope][kaleidoscope], my beloved diff-and-merge tool, for the Jujutsu diff editor. However, you *can* use Kaleidoscope that way, and I wanted to document the appropriate setup here:
+
+1. Add the following to your Jujutsu config (`jj config edit --user`) to configure Kaleidoscope for the various diff and merge operations:
+
+    ```toml
+    [ui]
+    diff-editor = ["ksdiff", "--wait", "$left", "--no-snapshot", "$right", "--no-snapshot"]
+    merge-editor = ["ksdiff", "--merge", "--output", "$output", "--base", "$base", "--", "$left", "--snapshot", "$right", "--snapshot"]
+    ```
+
+2. When opening a *file* diff, you must <kbd>Option ⎇</kbd>-double-click, *not* do a normal double-click, so that it will preserve the `--no-snapshot` behavior. That `--no-snapshot` argument to `ksdiff` is what makes the resulting diff editable, which is what Jujutsu needs for its just-edit-a-diff workflow. I have been in touch with the Kaleidoscope folks about this, which is how I even know about this workaround; they are evaluating whether it is possible to make the normal double-click flow preserve the `--no-snapshot` in this case so you do not *have* to do the workaround.
