@@ -1,5 +1,5 @@
 {
-   "extends": "./tsconfig.base.json",
+   "extends": "./base.tsconfig.json",
    "compilerOptions": {
       "noEmit": true /* Do not emit outputs. (BECAUSE WE'RE USING TS-NODE!) */
    },

@@ -1,9 +1,9 @@
-import { Result } from 'true-myth';
+import { tryOrElse } from 'true-myth/result';
 import { URL } from 'url';
 import { logErr, toString } from './utils';
 
 export const absoluteUrl = (path: string, baseUrl: string): string =>
-   Result.tryOrElse(logErr, () => new URL(path, baseUrl))
+   tryOrElse(logErr, () => new URL(path, baseUrl))
       .map(toString)
       .unwrapOr(path);
 
