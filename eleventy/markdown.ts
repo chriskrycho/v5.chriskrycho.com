@@ -1,6 +1,9 @@
 import hljs from 'highlight.js';
 import markdownIt from 'markdown-it';
 import abbr from 'markdown-it-abbr';
+// @ts-ignore -- this is silly, but TS incorrectly reports an error when
+// importing this, indicating that it is an ES module not-importable in a CJS
+// module… but it isn't! It has both! 🤷🏻‍♂️
 import anchor from 'markdown-it-anchor';
 import defList from 'markdown-it-deflist';
 import footnotes from 'markdown-it-footnote';
@@ -8,7 +11,7 @@ import mark from 'markdown-it-mark';
 import implicitFigures from 'markdown-it-implicit-figures';
 import sup from 'markdown-it-sup';
 import { env } from 'process';
-import { Result } from 'true-myth';
+import Result, { tryOr } from 'true-myth/result';
 import slugify from 'uslug';
 import { setup } from 'highlightjs-glimmer';
 
@@ -20,7 +23,7 @@ type HighlightError = {
 };
 
 function highlight(language: string, content: string): Result<string, HighlightError> {
-   return Result.tryOr(
+   return tryOr(
       {
          short: `error highlighting '${language}' with highlight.js`,
          long: `error highlighting '${language}' with highlight.js\ncontent:\n${content}\n`,
