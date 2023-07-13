@@ -34,6 +34,10 @@ updates:
     changes: >
       Added a section on the experience of having first-class merging Just Work™, added an appendix about Kaleidoscope setup and usage, rewrote the paragraph where I previously mentioned the issues about Kaleidoscope, and iterated on the commit-vs.-change distinction.
 
+  - at: 2023-07-13T08:04:00-0600
+    changes: >
+      Elaborated on the development of version control systems (both personally and in general!)… and added a bunch of `<abbr>` tags.
+
 draft: true
 
 ---
@@ -142,14 +146,19 @@ In the first case, Jujutsu’s choice to skip Git’s “index” looks like a v
 [fork]: https://git-fork.com
 [vim-diff]: https://gist.github.com/ilyagr/5d6339fb7dac5e7ab06fe1561ec62d45
 
-What is more, Jujutsu’s approach to the working copy results in a *really* interesting shift. In every version control system I have worked with previously (including CVS, PVCS, SVN, Mercurial, and Git), the workflow has been some variation on:
+What is more, Jujutsu’s approach to the working copy results in a *really* interesting shift. In every version control system I have worked with previously (including [<abbr title="Concurrent Versions System">CVS</abbr>][cvs], [<abbr title="PVCS  Version Manager, originally Polytron Version Control System">PVCS</abbr>][pvcs], [<abbr title="Subversion">SVN</abbr>][svn]), the workflow has been some variation on:
 
 - Make a bunch of changes.
 - Create a commit and write a message to describe it.
-- Possibly amend that set of changes and/or its message.
-- Repeat.
 
-With both Mercurial and Git, it also became possible to rewrite history in various ways; I use Git’s `rebase --interactive` command *extensively* when working on large sets of changes
+[cvs]: https://cvs.nongnu.org
+[pvcs]: https://en.wikipedia.org/wiki/PVCS
+[svn]: https://subversion.apache.org
+
+With both Mercurial and Git, it also became possible to rewrite history in various ways. I use Git’s `rebase --interactive` command *extensively* when working on large sets of changes. (I did the same with Mercurial's history rewriting when I was using it a decade ago.) That expanded the list of common operations to include two more:
+
+- Possibly directly amend that set of changes and/or its description.
+- Possibly restructure history: breaking apart changes, reordering them, rewriting their message, changing what commit they land on top of, and more.
 
 Jujutsu flips all of that on its head. A *change*, not a *commit*, is the fundamental element of the mental and working model. That means that you can describe a change that is still “in progress” as it were. I discovered this while working on a little example code for a blog post I plan to publish later this month: you can describe the change you are working on *and then keep working on it*. The act of describing the change is distinct from the act of “committing” and thus starting a *new* change. This falls out naturally from the fact that the working copy state is something you can operate on directly: akin to Git’s index, but without its many pitfalls. When you are ready to start a new change, you use either `jj commit` to “finalize” this commit with a message, or `jj new` to “Create a new, empty change and edit it in the working copy”. Implied: `jj commit` is just a convenience for `jj describe` and `jj new`. And a bonus: this means that rewording a message earlier in history does not involve some kind of rebase operation; you just `jj describe --revision <target>`.
 
