@@ -1,7 +1,7 @@
 ---
-title: Is TypeScript Good?—A Reply
+title: Is TypeScript Good?—A Reply to Rach Smith
 subtitle: >
-  A reply to [Rach Smith](https://rachsmith.com/is-typescript-good/) as an excuse to discuss software system dynamics.
+  Taking [a thoughtful post](https://rachsmith.com/is-typescript-good/) as an excuse to discuss software system dynamics through the lens of TypeScript.
 
 summary: >
   Rach Smith asks: “Is TypeScript good, or am I just becoming familiar with it?” I come down solidly on the side of “good”—because of how a TypeScript conversion works in terms of system dynamics.
