@@ -15,6 +15,10 @@ updates:
     changes: >
       An extended entry on how much Nova has impressed me as I have worked basically exclusively with it on a Rust side project.
 
+  - at: 2023-07-18T15:00:00-0600
+    changes: >
+      Added an entry for what it has felt like to use BBEdit as my primary “just for basic text work” editor for the past few weeks. Also switched (at least for now?) to using `<details>` tags for the journal sections.
+
 draft: true
 
 ---
@@ -34,7 +38,11 @@ The rest of this post is structured as a series of journal entries authored as I
 
 ## BBEdit
 
-### July 4
+### Journal
+
+<details><summary>A blow-by-blow description of, which you can skip in favor of the summary below if you like; click to expand and read on if you want the details!</summary>
+
+#### July 4
 
 BBEdit feels *quite* good as a writing tool. I initially tried working with it as a replacement for Code, and… it did not work out. That was apparent within a day. While it added support for language servers a few years ago, that approach is very clearly a second-class one in the editor, and things I take for granted when working in Code I could only sort of—very jankily—make work in BBEdit. Renames work well. Go to definition works decently. Finding all references… when it works, it’s nice, but it did not, in general, *work*.
 
@@ -44,8 +52,33 @@ There is one key thing I miss from Sublime when using BBEdit as a primary author
 
 The only other issue I have is that BBEdit does not let me set certain view defaults on a per-language basis. When editing a Markdown file, for example, I *never* want to see line numbers. I can configure Sublime or Code to do that; I cannot find any way to configure BBEdit to do that. I therefore have to toggle it off manually every time I open a Markdown doc, and then it is persistent across *all* document types. Meh.
 
+
 [^cmd-d]: Where <kbd>⌘</kbd><kbd>D</kbd> duplicates the cursor to the next instance of the same text, the sequence <kbd>⌘</kbd><kbd>K</kbd>, <kbd>⌘</kbd><kbd>D</kbd> *skips* the next instance of the same text. This makes the tool equally flexibile to a pure find-and-replace, which can accomplish the same by hitting **Next** instead of **Replace & Find**.
 
+### July 18
+
+I have continued to use BBEdit as my go-to text editor over the past few weeks, and I continue to really like it. I recognize that I have barely tapped its power, and that I am still largely using it the same way I have used Sublime Text for the past six or seven years (since first Atom and then <abbr title="Visual Studio">VS</abbr> Code took over as my “daily driver”): for light and fast text editing with a minimum of fuss. In that role, I am finding that it is indeed noticeably better than Sublime in some ways, most of all in the ways that I hoped when I set out to do this experiment in the first place: feeling native and at home on macOS. The text editing itself is comparably nice in both, which is a testament to how well Sublime works—but the text rendering definitely feels like it *fits* more correctly on macOS.
+
+Certainly the rest of the user interface does: it has a normal (meaning: mostly graphical!) settings panel—though that settings panel allows far *more* customization than most other Mac text editors. It lets you set *which menu items* you want, for goodness’ sake! The counterpoint here is that setting the “advanced”—BBEdit calls them “Expert”—settings requires writing [plist][plist] values from the command line with `defaults write com.barebones.bbedit.<some preference> <some value>`.
+
+<aside>
+
+This prompted me to actually go read the `man` page for `defaults` for the first time. Despite having *used* `defaults write` off and on for over a decade, I had never dug into it. It is a nicely-documented little utility. My favorite bit is the **Bugs** section:
+
+> Defaults can be structured in very complex ways, making it difficult for the user to enter them with this command.
+
+This is: accurate.
+
+</aside>
+
+[plist]: TODO
+
+The quibbles I noted above about per-document-type settings remain mildly annoying. Other issues I hit along the way were apparently at least partly of my own making. For example, I regularly create Markdown links by selecting some text and hitting <kbd>[</kbd> with the expectation that it will wrap the selected text with a matching `]`, after which I can just <kbd>Ctrl</kbd><kbd>F</kbd> it and hit <kbd>(</kbd> and then <kbd>⌘</kbd><kbd>V</kbd> to paste in the link.[^ctrl] BBEdit apparently supports this behavior out of the gate: the manual says it is the default behavior. I somehow turned it off and was going to write it down here as a gap, and then thought, *Nah, there must to be a preference for that, right?* Sure enough, the incredibly extensive User Manual told me what to change, and things are as they should be.
+
+</details>
+
+
+[^ctrl]: Pro tip for people who might like to learn and use some of these Emacs-inspired CoreText shortcuts, or otherwise just get some actual utility out of the <kbd>Ctrl</kbd> key: swap it with the <kbd>Caps Lock</kbd> key, which most of us only very rarely use on a day-to-day basis. On macOS Ventura, open **System Settings** and then navigate to **Keyboard** > **Keyboard Shortcuts** > **Modifier Keys**. There, you can set
 
 ### Summary
 
@@ -54,7 +87,11 @@ The only other issue I have is that BBEdit does not let me set certain view defa
 
 ## Nova
 
-### July 4
+### Journal
+
+<details><summary>A blow-by-blow description of, which you can skip in favor of the summary below if you like; click to expand and read on if you want the details!</summary>
+
+#### July 4
 
 At this point, I have been using Nova for a couple of days for my ongoing side project work in Rust (see comments above about why I ended up *not* trying to use BBEdit for this!). It feels… really, *really* good. I have hit only a few things where I could not do everything Code does. I hit one consistent crash—a case where [rust-analyzer][ra] seems to be crashing and Nova is not handling the crash well—but otherwise it has been incredibly snappy and reliable. More than that, when I had cause to reopen Code briefly (because of the aforementioned crash) it just felt… janky.
 
@@ -74,6 +111,9 @@ The answer, I was delighted to find, is: *smashingly*. Although I hit a number o
 Most of these kinds of small quality-of-life details were also true the last time I looked at Nova. There was another problem then, though: the ecosystem around the editor. While still not massive, the ecosystem is much larger than it was 12–18 months ago. More important than there simply being more extensions is that the territory covered by those extensions has grown dramatically. There *were* Rust and TypeScript extensions back then; they are *good* now. Indeed, the ecosystem which exists for Nova appears generally to be fairly high quality.
 
 The net is that, a week into this experiment, I am *really* liking Nova and I am very likely to end up switching to it as my “daily driver” editor going forward.
+
+</details>
+
 
 ### Summary
 
