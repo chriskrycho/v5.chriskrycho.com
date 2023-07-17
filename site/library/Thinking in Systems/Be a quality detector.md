@@ -3,6 +3,9 @@ title: Be a quality detector.
 date: 2023-06-11T14:10:00-0600
 summary: >
   Donella Meadows on quality: “Pretending that something doesn’t exist if it’s hard to quantify leads to faulty models… the system trap that comes from setting goals around what is easily measured, rather than around what is important. So don’t fall into that trap.…”
+tags:
+  - software development
+  - systems thinking
 
 ---
 
