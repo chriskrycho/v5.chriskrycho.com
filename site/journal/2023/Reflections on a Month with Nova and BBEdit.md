@@ -19,6 +19,10 @@ updates:
     changes: >
       Added an entry for what it has felt like to use BBEdit as my primary “just for basic text work” editor for the past few weeks. Also switched (at least for now?) to using `<details>` tags for the journal sections.
 
+  - at: 2023-07-22T12:55:00-0700
+    changes: >
+      I bought Nova.
+
 draft: true
 
 ---
@@ -111,6 +115,16 @@ The answer, I was delighted to find, is: *smashingly*. Although I hit a number o
 Most of these kinds of small quality-of-life details were also true the last time I looked at Nova. There was another problem then, though: the ecosystem around the editor. While still not massive, the ecosystem is much larger than it was 12–18 months ago. More important than there simply being more extensions is that the territory covered by those extensions has grown dramatically. There *were* Rust and TypeScript extensions back then; they are *good* now. Indeed, the ecosystem which exists for Nova appears generally to be fairly high quality.
 
 The net is that, a week into this experiment, I am *really* liking Nova and I am very likely to end up switching to it as my “daily driver” editor going forward.
+
+
+### July 22
+
+I just bought Nova. I think that tells you the status of this experiment. Since I have been using it as my go-to editor/<abbr title="integrated development environment">IDE</abbr> for Rust, TypeScript, etc. for the past three weeks, I have hit the point where I actively want *not* to open <abbr title="Visual Studio">VS</abbr> Code. I do not miss it. As described above, I have a handful of small things I miss (and might contribute to the ecosystem), and I will have some work to do to make it viable as my editor for the mammoth repo I mostly work on for my daily work (rather than personal work), but I call this part of the experiment a smashing success.
+
+There is very little to say here beyond what I said above in terms of the reasons. I just hit the point today where I knew that I had no more doubts. The question was not “Am I going to buy this?” but simply “When do I get around to buying it?” Given that Panic is a *great* developer—one with a long history of shipping some of the best apps on the Mac, including [Transmit][transmit], of which I am also a very happy customer—I just decided the answer was: *Today*. I am happy to have switched, full stop.
+
+[transmit]: https://panic.com/transmit/
+
 
 </details>
 
