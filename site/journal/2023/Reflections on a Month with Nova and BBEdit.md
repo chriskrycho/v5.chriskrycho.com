@@ -21,7 +21,11 @@ updates:
 
   - at: 2023-07-22T12:55:00-0700
     changes: >
-      I bought Nova.
+      Noting that I bought Nova.
+
+  - at: 2023-07-24T12:08:00-0700
+    changes: >
+      Discussing BBEdit’s `bbdiff` tool.
 
 draft: true
 
@@ -75,7 +79,7 @@ This is: accurate.
 
 </aside>
 
-[plist]: TODO
+[plist]: https://en.wikipedia.org/wiki/Property_list
 
 The quibbles I noted above about per-document-type settings remain mildly annoying. Other issues I hit along the way were apparently at least partly of my own making. For example, I regularly create Markdown links by selecting some text and hitting <kbd>[</kbd> with the expectation that it will wrap the selected text with a matching `]`, after which I can just <kbd>Ctrl</kbd><kbd>F</kbd> it and hit <kbd>(</kbd> and then <kbd>⌘</kbd><kbd>V</kbd> to paste in the link.[^ctrl] BBEdit apparently supports this behavior out of the gate: the manual says it is the default behavior. I somehow turned it off and was going to write it down here as a gap, and then thought, *Nah, there must to be a preference for that, right?* Sure enough, the incredibly extensive User Manual told me what to change, and things are as they should be.
 
@@ -84,9 +88,37 @@ The quibbles I noted above about per-document-type settings remain mildly annoyi
 
 [^ctrl]: Pro tip for people who might like to learn and use some of these Emacs-inspired CoreText shortcuts, or otherwise just get some actual utility out of the <kbd>Ctrl</kbd> key: swap it with the <kbd>Caps Lock</kbd> key, which most of us only very rarely use on a day-to-day basis. On macOS Ventura, open **System Settings** and then navigate to **Keyboard** > **Keyboard Shortcuts** > **Modifier Keys**. There, you can set
 
+### July 24
+
+Two days ago, on opening BBEdit from the command line to jot down my note (below) on going ahead and buying Nova, I noticed that as well as the `bbedit` command there are also `bbdiff`, `bbfind`, and `bbresults` commands. These are all interesting in their own right, but it is `bbdiff` that got my attention: I have had some annoying issues using [Kaleidoscope][k] as the diff editor in [my *other* experiment this month][jj], and wondered if BBEdit’s built-in diff editing capability would do the trick.
+
+[k]: https://kaleidoscope.app
+[jj]: https://v5.chriskrycho.com/journal/jj-init/
+
+It turns out: I cannot get *it* to work either,[^jj-diff] and I do prefer Kaleidoscope to `bbdiff` overall, but there are some really smart and helpful features to `bbdiff` that mean I am likely to use it in certain very specific scenarios where it actually beats out Kaleidoscope. Most notable among those: it makes it easy to diff and merge at a level more granular than *lines*: it provides word-by-word/token-by-token breakdowns. For an example of the kind of change I mean, consider this change to some Rust code:
+
+```diff
+- pub(super) struct Metadata {
++ pub(crate) struct ItemMetadata {
+```
+
+There are two separate changes here:
+
+- the visibility change from `pub(super)` to `pub(crate)`
+- the rename from `Metadata` to `ItemMetadata`
+
+Most diff tools do not expose those different levels at all, because they work purely on the level of lines, not words or other kinds of tokens. BBEdit’s diff view *does*. That comes in quite handy when breaking up a change into multiple commits.
+
+[^jj-diff]: This suggests to me that there is something slightly odd about how Jujutsu invokes these tools such that they are not working; but I will leave aside those details for [the dedicated post][jj].
+
+
 ### Summary
 
 ==TODO: write it at the end of the month!==
+
+<!--
+
+-->
 
 
 ## Nova
