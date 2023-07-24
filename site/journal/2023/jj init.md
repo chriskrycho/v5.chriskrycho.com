@@ -12,7 +12,7 @@ tags:
   - tools
 
 date: 2023-07-01T18:42:00-0600
-updated: 2023-07-24T12:08:00-0700
+updated: 2023-07-24T15:55:00-0700
 updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
@@ -41,6 +41,10 @@ updates:
   - at: 2023-07-24T12:08:00-0700
     changes: >
       Describing my current feelings about the `jj split` and auto-committed working copy vs. `git add --patch` (as mediated by a <abbr>UI</abbr>).
+
+  - at: 2023-07-24T15:55:00-0700
+    changes: >
+      Correcting my description of revision behavior per discussion with the maintainer.
 
 draft: true
 
@@ -115,7 +119,7 @@ This shows a couple other interesting features of `jj`’s approach to revsets a
 
 2. It makes “operators” [a first-class idea][operators]. Git *has* operators, but this goes a fair bit further:
 
-    - It includes `-` for the parent and `+` for a child, and these stack and compose, so writing `@-+-+` is the same as `@`.
+    - It includes `-` for the parent and `+` for a child, and these stack and compose, so writing `@-+-+` is the same as `@` as long as the history is linear. ([That is an important distinction!][distinction])
     
     - It supports union `|`, intersection `&`, and difference `~` operators.
     
@@ -127,6 +131,7 @@ This shows a couple other interesting features of `jj`’s approach to revsets a
 
 [functions]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#functions
 [operators]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#operators
+[distinction]: https://github.com/martinvonz/jj/discussions/1905#discussioncomment-6533386
 
 That’s all well and good, but even with reading the operator and function guides, it still took me a bit to actually quite make sense out of the default output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at.
 
