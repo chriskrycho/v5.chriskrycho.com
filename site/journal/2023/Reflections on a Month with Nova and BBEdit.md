@@ -9,7 +9,7 @@ tags:
   - tools
 
 date: 2023-07-04T19:00:00-0600
-updated: 2023-07-24T12:08:00-0700
+updated: 2023-07-28T18:46:00-0600
 updates:
   - at: 2023-07-08T14:45:00-0600
     changes: >
@@ -26,6 +26,9 @@ updates:
   - at: 2023-07-24T12:08:00-0700
     changes: >
       Discussing BBEdit’s `bbdiff` tool.
+
+  - at: 2023-07-28T18:46:00-0600
+    changes: Where I am landing with BBEdit.
 
 draft: true
 
@@ -110,6 +113,17 @@ There are two separate changes here:
 Most diff tools do not expose those different levels at all, because they work purely on the level of lines, not words or other kinds of tokens. BBEdit’s diff view *does*. That comes in quite handy when breaking up a change into multiple commits.
 
 [^jj-diff]: This suggests to me that there is something slightly odd about how Jujutsu invokes these tools such that they are not working; but I will leave aside those details for [the dedicated post][jj].
+
+
+### July 28
+
+I am really quite satisfied with BBEdit at this point. Every one of the ~17,000 words I have written and published this month has been drafted in it. So likewise with every single commit message for the side project work I have done, and no few of the journal entries for a side project where I am consistently logging my work. Honestly: I am now having a hard time imagining going back to Sublime or other such non-native editors! I am still barely scratching the surface of its capabilities, but all the parts I am using just feel… *good*.
+
+The interesting bit now is to consider: do I *buy* it? BBEdit comes with a free version: a spiritual successor to TextWrangler, which used off and on years ago. When I look at the list of features which are in the paid version, the simple truth is I will not use most of them in the role I have carved out for this particular tool. Where Nova was [easy to decide to buy](#july-22), this is much less obvious. The biggest selling point is the <kbd>⌘</kbd><kbd>⇧</kbd><kbd>U</kbd>-triggered **Commands** menu… but I just bought [Finbar][finbar] and the honest truth is it solves that particular need.
+
+[finbar]: https://www.roeybiran.com/apps/finbar
+
+That leaves me in the interesting spot where I am going to be a happy user BBEdit, but not (yet, at least) a paying one! If at some point my usage pattern shifts, I will happily pay for it, because it is a great tool. Indeed, I may at some point pay for it just because it *is* a great tool and I like supporting the developers of good tools. For the moment, though, I think BBEdit in Free Mode is going to be all I need!
 
 
 ### Summary
