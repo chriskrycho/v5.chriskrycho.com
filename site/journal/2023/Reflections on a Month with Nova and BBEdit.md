@@ -86,8 +86,6 @@ This is: accurate.
 
 The quibbles I noted above about per-document-type settings remain mildly annoying. Other issues I hit along the way were apparently at least partly of my own making. For example, I regularly create Markdown links by selecting some text and hitting <kbd>[</kbd> with the expectation that it will wrap the selected text with a matching `]`, after which I can just <kbd>Ctrl</kbd><kbd>F</kbd> it and hit <kbd>(</kbd> and then <kbd>⌘</kbd><kbd>V</kbd> to paste in the link.[^ctrl] BBEdit apparently supports this behavior out of the gate: the manual says it is the default behavior. I somehow turned it off and was going to write it down here as a gap, and then thought, *Nah, there must to be a preference for that, right?* Sure enough, the incredibly extensive User Manual told me what to change, and things are as they should be.
 
-</details>
-
 
 [^ctrl]: Pro tip for people who might like to learn and use some of these Emacs-inspired CoreText shortcuts, or otherwise just get some actual utility out of the <kbd>Ctrl</kbd> key: swap it with the <kbd>Caps Lock</kbd> key, which most of us only very rarely use on a day-to-day basis. On macOS Ventura, open **System Settings** and then navigate to **Keyboard** > **Keyboard Shortcuts** > **Modifier Keys**. There, you can set
 
@@ -124,6 +122,8 @@ The interesting bit now is to consider: do I *buy* it? BBEdit comes with a free 
 [finbar]: https://www.roeybiran.com/apps/finbar
 
 That leaves me in the interesting spot where I am going to be a happy user BBEdit, but not (yet, at least) a paying one! If at some point my usage pattern shifts, I will happily pay for it, because it is a great tool. Indeed, I may at some point pay for it just because it *is* a great tool and I like supporting the developers of good tools. For the moment, though, I think BBEdit in Free Mode is going to be all I need!
+
+</details>
 
 
 ### Summary
