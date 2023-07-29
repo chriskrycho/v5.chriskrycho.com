@@ -8,7 +8,8 @@ qualifiers:
     Software developers working with JavaScript and TypeScript, or thinking about and working with gradual type systems in other languages. In particularly: I am not arguing *for* TypeScript or Python `types` or Ruby’s Sorbet etc.; I am talking to people who are already interested in adopting them.
   epistemic: >
     I led the conversion of a 150,000-line-of-code app to strictly-typed TypeScript back in 2017–2018, and am the primary “subject matter expert” for LinkedIn’s adoption of TypeScript across its millions of lines of library and application JavaScript.
-date: 2023-05-16T07:55:00-0600
+
+started: 2023-05-16T07:55:00-0600
 draft: true
 
 ---

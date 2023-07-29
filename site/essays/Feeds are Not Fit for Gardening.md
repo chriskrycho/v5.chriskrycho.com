@@ -9,8 +9,9 @@ qualifiers:
     Reading Maggie Appleton’s essay [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) and Mike Caufield’s talk–essay [The Garden and the Stream: A Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).
 thanks: >
   Essays and blog posts over the years by [Alan Jacobs](http://ayjay.org), [Robin Sloan](https://www.robinsloan.com), and [Maggie Appleton](https://maggieappleton.com) provided many of the specific ingredients in [this particular stew](http://v3.chriskrycho.com/art/and-the-stew-tastes-good/), and you can think of this as a response to (perhaps an entry in?) Robin’s call for [New Avenues in 2023](https://www.robinsloan.com/lab/new-avenues/) in particular. I am indebted to many others whose own writing is no doubt part of the mix as well. The current generation of feed tools, though criticized as unfit for one particular purpose here, have done a great deal to move the open web ecosystem forward, so credit especially to [Dave Winer](http://scripting.com) for <abbr>RSS</abbr>, the unruly group behind Atom, and [Manton Reece](https://www.manton.org) and [Brent Simmons](https://inessential.com) for <abbr>JSON</abbr> Feed. [Stephen Carradini](https://stephencarradini.com) provided helpful feedback on early drafts.
+
 draft: true
-date: 2023-01-13T12:15:00-0700
+started: 2023-01-13T12:15:00-0700
 updated: 2023-03-29T09:39:00-0700
 updates:
   - at: 2023-01-21T22:42:00-0700
