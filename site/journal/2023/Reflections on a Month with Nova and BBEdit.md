@@ -9,7 +9,7 @@ tags:
   - tools
 
 date: 2023-07-04T19:00:00-0600
-updated: 2023-07-28T18:46:00-0600
+updated: 2023-07-29T07:29:00-0600
 updates:
   - at: 2023-07-08T14:45:00-0600
     changes: >
@@ -28,6 +28,9 @@ updates:
       Discussing BBEdit’s `bbdiff` tool.
 
   - at: 2023-07-28T18:46:00-0600
+    changes: Where I am landing with BBEdit.
+
+  - at: 2023-07-29T07:29:00-0600
     changes: Where I am landing with BBEdit.
 
 draft: true
@@ -122,6 +125,14 @@ The interesting bit now is to consider: do I *buy* it? BBEdit comes with a free 
 [finbar]: https://www.roeybiran.com/apps/finbar
 
 That leaves me in the interesting spot where I am going to be a happy user BBEdit, but not (yet, at least) a paying one! If at some point my usage pattern shifts, I will happily pay for it, because it is a great tool. Indeed, I may at some point pay for it just because it *is* a great tool and I like supporting the developers of good tools. For the moment, though, I think BBEdit in Free Mode is going to be all I need!
+
+
+### July 29
+
+One way of summarizing my current very positive sentiment about BBEdit:
+
+I like to write on my iPad sometimes. (Less since switching to Apple Silicon-powered laptops a couple years ago, but still sometimes.) Just now, I was thinking about picking up to write with it and thought, <i>Which app, though? Hmm. I really wish BBEdit were on the iPad.</i>
+
 
 </details>
 
