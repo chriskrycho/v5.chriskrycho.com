@@ -8,7 +8,7 @@ tags:
   - software development
   - tools
 
-date: 2023-07-04T19:00:00-0600
+started: 2023-07-04T19:00:00-0600
 updated: 2023-07-29T07:29:00-0600
 updates:
   - at: 2023-07-08T14:45:00-0600

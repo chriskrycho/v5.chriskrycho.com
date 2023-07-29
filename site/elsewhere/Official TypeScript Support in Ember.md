@@ -2,17 +2,21 @@
 title: Official TypeScript Support in Ember
 subtitle: >
   6½ years after I started down this path, we have something great.
+
 link: https://blog.emberjs.com/stable-typescript-types-in-ember-5-1
+
 summary: >
   In December 2016, I started working on unofficial support for TypeScript in Ember. This week, official support landed. In this post: a reflection on that journey and what it has meant to me personally and professionally.
-date: 2023-07-08T13:25:00-0600
+
 tags:
   - Ember
   - TypeScript
+
 qualifiers:
   audience: >
     People with at least a passing interesting in one of: TypeScript or long-term open source software development. No technical knowledge required, and particularly no Ember knowledge or interest required.
 
+started: 2023-07-08T13:25:00-0600
 draft: true
 
 ---

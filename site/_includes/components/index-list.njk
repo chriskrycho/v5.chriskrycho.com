@@ -28,6 +28,8 @@
                      {%- endset -%}
 
                      <h4 class='entry-title'>
+                        {%- set useDate = item.data.date is not undefined -%}
+
                         {% set formattedDate -%}
                         {%- localeDate item.date, 'MMMM d, yyyy' -%}
                         {%- endset -%}
@@ -49,12 +51,25 @@
                               {%- endif -%}
                            {%- endif -%}
                         </a>
+
                         {%- if item.data.link -%}
                            —<a href='{{item.url}}' title='item permalink'>❈</a>
                         {%- endif -%}
+
                         {%- if item.data.title %}
                            (
+                           {%- if useDate -%}
                            {{-formattedDate-}}
+                           {%- endif -%}
+
+                           {%- if item.data.started is not undefined -%}
+                              {%- set formattedStart -%}
+                                 {%- localeDate item.data.started, 'MMMM d, yyyy' -%}
+                              {%- endset -%}
+
+                             {%- if useDate -%}; {% endif -%}
+                             started {{formattedStart}}
+                           {%- endif -%}
 
                            {%- if includeUpdated and item.data.updated -%}
                               {% set updatedDate -%}

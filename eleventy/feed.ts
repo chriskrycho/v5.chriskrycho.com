@@ -56,6 +56,7 @@ declare module '../types/eleventy' {
       summary?: string;
       tags?: string[];
       date?: string | Date;
+      started?: string | Date;
       updated?: string | Date;
       updates?: Array<Update>;
       qualifiers?: Qualifiers;
