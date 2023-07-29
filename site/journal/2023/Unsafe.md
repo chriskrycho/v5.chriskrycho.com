@@ -17,7 +17,16 @@ qualifiers:
   audience: >
     People at least vaguely familiar with the tradeoffs around memory safety in “systems” languages like Rust, C++, Zig, Odin, etc.; and 
 
+thanks: >
+  Dan Freeman reviewed a draft of this before publication and it is better for his input!
+
 started: 2023-07-29T10:05:00-0600
+updated: 2023-07-29T12:35:00-0600
+updates:
+  - at: 2023-07-29T12:35:00-0600
+    changes: >
+      Rewrote a section after reading and getting feedback from Dan Freeman.
+
 draft: true
 
 ---
@@ -42,21 +51,13 @@ Having only one place in the code base which must uphold a given invariant means
 
 The dynamic here is similar to providing a pure functional interface in a language which is implemented with mutable data under the hood (a very common pattern in languages like OCaml and F^♯^). Mutating a new array in place can be far more efficient than using even a well-optimized persistent data structure, but providing a purely functional interface means callers do not have to care about the implementation details and still get the benefits of referential transparency.
 
-Second, the *rest* of the codebase can still be known to be safe! Assume 70% of your code base (an incredibly high amount!) of your code base is wrapped in `unsafe`. That still means 30% of your code which can be statically known to be memory safe. This is no small thing; C, C++, Zig, Odin, etc. offer no such guarantees.[^improved] When trying to learn a system, and especially when trying to understand where things went *wrong* in a system, it is incredibly helpful to be able to know where you should start looking—and where you do not have to waste time looking.
-
-<aside>
-
-In practice, I cannot imagine any idiomatic code base where you would end up with those kind of ratio of safe-to-`unsafe` code. The practice of wrapping `unsafe` code in safe abstractions is a learned habit, though, so I can see how people who have not internalized it could fairly readily end up there.
-
-</aside>
+Second, having any meaningful chunk of your code be reliably ‘safe’ is useful. Assume 70% of your code base is wrapped in `unsafe`. That is still 30% of your code base where you do not have to think about memory safety! (In practice, I cannot imagine any idiomatic code base where you would end up with those kind of ratio of safe-to-`unsafe` code. The practice of wrapping `unsafe` code in safe abstractions is a learned habit, though, so I can see how people who have not internalized it could fairly readily end up there.) This is no small thing; C, C++, Zig, Odin, etc. offer no such guarantees.[^improved] In those languages, all memory safety invariants are upheld implicitly; all isolation is done by choice alone. When trying to learn a system, and especially when trying to understand where things went *wrong* in a system, it is incredibly helpful to be able to know where you should start looking—and where you do not have to waste time looking.
 
 Sometimes people do manage memory safety mostly-effectively by (a) being the only person, or one of a *very* small number of people—likely not more than 3—, working on something, (b) just keeping the whole program in their head at all times, and (c) having incredibly extensive test suites. While maybe *just* possible in those contexts, this is very difficult to sustain over time: our ability to keep a program in our head degrades both as the program grows and with any time spent away from it, and providing that same level of understanding to another person is [difficult at best][naur].
 
 [naur]: https://cdn.chriskrycho.com/file/chriskrycho-com/resources/naur1985programming.pdf
 
-Net: `unsafe` enables you to decrease the surface area you suspect as the source of memory safety bugs when they inevitably happen. It thus improves your ability to reason *locally*: When in non-`unsafe` blocks, you do not have to think about those issues. When in `unsafe` blocks you *do*, but with a clear idea of where the boundary is.
-
-Unless *every line* of the program in wrapped in `unsafe` (which would be extraordinary!), Rust’s distinction between safe and unsafe code is still valuable. Granted that Rust’s memory safety benefits do not come for free! There remains no free lunch. That is quite different than asserting that there is no benefit to reasoning or to verifiability associated with those costs.
+Net: `unsafe` enables you to decrease the surface area you suspect as the source of memory safety bugs when they inevitably happen. It thus improves your ability to reason *locally*: When in non-`unsafe` blocks, you do not have to think about those issues. When in `unsafe` blocks you *do*, but with a clear idea of where the boundary is. Unless *every line* of the program in wrapped in `unsafe` (which would be extraordinary!), then, Rust’s distinction between safe and unsafe code is still valuable. Granted that Rust’s memory safety benefits do not come for free! There remains no free lunch. That is quite different than asserting that there is no benefit to reasoning or to verifiability associated with those costs.
 
 There may be other ways to achieve Rust’s goals of memory safety with lower cognitive load than Rust imposes. If so, that will be great, because Rust’s cognitive load is *not low*. [Val][val] and [Vale][vale] (no relation to each other!) both look interesting here, for example, and so does [Swift]()’s still <abbr title="">WIP</abbr> [ownership system][swift-ownership]. I do not take Rust to be *remotely* the final word in this space: it is the *first* systems language be successful at industrial scales with memory safety and hopefully not the last!
 
