@@ -12,10 +12,7 @@ tags:
 
 qualifiers:
   audience: >
-    
-  epistemic: >
-    
-  content: >
+    Software developers comfortable thinking about type systems—tradeoffs among different kinds of type systems (and thus at least a basic understanding of the existence of different kinds of type systems!), what gradual typing is and how it has been applied to JavaScript, Python, Ruby, Lisp, etc.
 	  
 started: 2023-07-29T12:30:00-0600
 draft: true
@@ -28,6 +25,6 @@ Stub, with the following bits for context:
 
 - I have been doing TypeScript for 7 years
 
-- Richard Feldman commented on a recent podcast (==TODO: find it==) that he does not think
+- Richard Feldman commented in a recent talk (==TODO: find it==) that he does not think
 
 - I tend to agree with Feldman, I think?
