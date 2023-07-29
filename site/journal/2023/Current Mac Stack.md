@@ -13,7 +13,10 @@ qualifiers:
     Folks interested in other people’s work environments and the reasons for it; people who care about quality software; other Mac users or Mac-curious types.
 
 date: 2023-07-29T13:20:00-0600
-
+updated: 2023-07-29T13:50:00-0600
+updates:
+  - at: 2023-07-29T13:50:00-0600
+    changes: Added notes about my other tweaks to default Mac settings.
 
 ---
 
@@ -144,6 +147,22 @@ date: 2023-07-29T13:20:00-0600
 - [**Tadam**](https://www.tadamapp.com): pomodoro timer app—purchased years ago, used constantly when I am unfocused and having a hard time getting things done.
 
 - [**Unite**](https://www.bzgapps.com/unite): handy little utility for making dedicated “apps” out of web pages using WebKit (as I have for Strava, TrainingPeaks, Garmin Connect, [Glass](https://glass.photo), YNAB, my bank, and more). Will probably be replaced by Safari’s forthcoming capability once I upgrade to Sonoma.
+
+
+## Bonus: other tweaks
+
+I find macOS *way* nicer to use by enabling the following settings/tweaks in the **Settings** app:
+
+- **Appearance:** set **Show scroll bars** to **Always**.
+
+- **Accessibility** > **Pointer Control** > **Trackpad Options** > **Use for trackpad for dragging**, with **Dragging style** set to **Three Finger Drag**
+
+- In **Accessibility** > **Display**, enable:
+    - **Reduce transparency** (YMMV; I prefer it this way)
+    - **Show window title icons**
+    - **Show toolbar button shapes**
+
+- **Keyboard** > **Keyboard Shortcuts** > **Modifier Keys**: set Caps Lock to act as Ctrl and vice versa
 
 
 
