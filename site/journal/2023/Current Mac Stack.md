@@ -13,10 +13,14 @@ qualifiers:
     Folks interested in other people’s work environments and the reasons for it; people who care about quality software; other Mac users or Mac-curious types.
 
 date: 2023-07-29T13:20:00-0600
-updated: 2023-07-29T13:50:00-0600
+updated: 2023-07-29T17:08:00-0600
 updates:
   - at: 2023-07-29T13:50:00-0600
     changes: Added notes about my other tweaks to default Mac settings.
+
+  - at: 2023-07-29T17:08:00-0600
+    changes: Added Rocket, which I had forgotten.
+
 
 ---
 
@@ -72,6 +76,8 @@ updates:
 - [**Loopback**](https://rogueamoeba.com/loopback/): audio routing, like having a mixing board in software. Overkill for most folks, but super useful for me with the external microphone I use and my enjoyment of sometimes playing music into a virtual audio interface easily.
 
 - [**Raycast**](https://www.raycast.com): a launcher in the family of Alfred, Launchbar, Quicksilver, etc., but with a much nicer extensibility model and a much more modern UI. As with the others, this can do a lot more than just launch things: I use it as my clipboard history manager and my “completely delete that app from my system” tool as well. Bound to <kbd>⌘</kbd><kbd>Space</kbd> (replacing Spotlight). The <abbr title="artificial intellicence">AI</abbr> chat integration is a neat idea and is well-implemented (though I am still pretty skeptical of the whole underlying tech).
+
+- [**Rocket**](https://matthewpalmer.net/rocket/): emoji picker with customizable trigger key—like Slack’s and Discord’s `:`, but customizable (I use `::`).
 
 - [**SoundSource**](https://rogueamoeba.com/soundsource/): another Rogue Amoeba audio tool—I use this for controlling audio levels of different apps, and it’s great. Mostly set-and-forget, but very handy.
 
