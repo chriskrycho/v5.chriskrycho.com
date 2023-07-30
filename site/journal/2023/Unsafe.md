@@ -63,7 +63,7 @@ There may be other ways to achieve Rust’s goals of memory safety with lower co
 
 [val]: https://www.val-lang.dev
 [vale]: https://vale.dev
-[swift]: http://swift-lang.org/main/
+[swift]: https://www.swift.org
 [swift-ownership]: https://github.com/apple/swift/blob/main/docs/OwnershipManifesto.md
 
 </aside>
