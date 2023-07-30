@@ -107,10 +107,15 @@
       vertical-align: 0.558em;
 
       font: {
-         family: var(--sans);
-         weight: bold;
          size: ms(-2);
          variant-numeric: lining-nums;
+      }
+
+      &.footnote-ref {
+         font: {
+            family: var(--sans);
+            weight: bold;
+         }
       }
    }
 }
