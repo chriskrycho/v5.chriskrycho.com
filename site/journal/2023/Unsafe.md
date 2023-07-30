@@ -18,7 +18,7 @@ qualifiers:
     People at least vaguely familiar with the tradeoffs around memory safety in “systems” languages like Rust, C++, Zig, Odin, etc.; and 
 
 thanks: >
-  Dan Freeman reviewed a draft of this before publication and it is better for his input!
+  [Dan Freeman](https://dfreeman.io) reviewed a draft of this before publication and it is better for his input!
 
 started: 2023-07-29T10:05:00-0600
 updated: 2023-07-29T12:35:00-0600
