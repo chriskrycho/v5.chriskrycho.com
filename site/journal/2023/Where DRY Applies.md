@@ -23,7 +23,11 @@ draft: true
 
 In [a recent post][unsafe], I wrote:
 
-> Having only one place in the code base which must uphold a given invariant means it is far easier to test and to debug when there are failures. It means the code base does not rely on people fully internalizing the rules for each API by reading all of its comments (and those comments being correct and exhaustive!) and then being sufficiently careful everywhere they use that API. “Don’t Repeat Yourself” is most important, and most applicable, when it comes to upholding the invariants in a codebase.
+{% callout %}
+
+Having only one place in the code base which must uphold a given invariant means it is far easier to test and to debug when there are failures. It means the code base does not rely on people fully internalizing the rules for each API by reading all of its comments (and those comments being correct and exhaustive!) and then being sufficiently careful everywhere they use that API. “Don’t Repeat Yourself” is most important, and most applicable, when it comes to upholding the invariants in a codebase.
+
+{% endcallout %}
 
 This is a far more general principle than the context in which I applied it in that post, though, so here I am giving it its own home.
 
