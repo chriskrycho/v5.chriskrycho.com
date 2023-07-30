@@ -50,9 +50,9 @@ updates:
 
 - [**1Password**](https://1password.com): password management. Still the best tool of its sort out there, though a bunch of costs to its Electronification frustrate me. (Text fields! I just want my text fields to work the way they should!) Bound to <kbd>⌃</kbd><kbd>⎇</kbd><kbd>P</kbd> (“password”).
 
-- [Backblaze](https://secure.backblaze.com/r/01pi7n): cloud backup of my entire system. (That’s an affiliate link: we both get a month free if you use it!)
+- [**Backblaze**](https://secure.backblaze.com/r/01pi7n): cloud backup of my entire system. (That’s an affiliate link: we both get a month free if you use it!)
 
-- **Messages**: most people in my immediate circles are on iOS, or just use basic SMS/MMS for messaging, and I have the built-in app set to integrate with my phone identity, so I actually do *most* of my texting of all varieties from my Mac.
+- **Messages**: most people in my immediate circles are on iOS, or just use basic <abbr title="short message service, or 'normal text messages'">SMS</abbr>/<abbr title="multimedia messaging service, or 'SMS but supports images'">MMS</abbr> for messaging, and I have the built-in app set to integrate with my phone identity, so I actually do *most* of my texting of all varieties from my Mac.
 
 - **Music**: while I am not a fan of the design, it does the job, and no other client I have tried does much better. (I have occasionally been tempted to just build what I want here myself—but there is, I think, not a particularly good market there!)
 
@@ -93,7 +93,7 @@ updates:
 
 - [**BBEdit**](https://www.barebones.com/products/bbedit/): also lives here as a secondary tool—every commit message I write goes here, for example, and I do also use it for some secondary tasks.
 
-- [**Dash**](https://kapeli.com/dash): “docset” tool for quick access to API references—I have used this for ages and it is actually pretty hard for me to imagine working without it. Bound to <kbd>⌃</kbd><kbd>⎇</kbd><kbd>D</kbd> for easy access.
+- [**Dash**](https://kapeli.com/dash): “docset” tool for quick access to <abbr title="application programming interface">API</abbr> references—I have used this for ages and it is actually pretty hard for me to imagine working without it. Bound to <kbd>⌃</kbd><kbd>⎇</kbd><kbd>D</kbd> for easy access.
 
 - [**Fork**](https://git-fork.com): Mac-native (and Windows-native! They do it right!) graphical Git client. Mostly used for a quick visual view of branch history and for interactively staging changes.
 
@@ -107,7 +107,7 @@ updates:
 
 - [**Kaleidoscope**](https://kaleidoscope.app): my preferred diff and merge tool. Beautiful, Mac-native, and fast.
 
-- [**Nova**](https://nova.app): advanced code editor/lightweight IDE from [Panic](https://panic.com)—my daily driver for software development. Think VS Code but Mac native instead of Electron and *really* good.
+- [**Nova**](https://nova.app): advanced code editor/lightweight <abbr title="integrated development environment">IDE</abbr> from [Panic](https://panic.com)—my daily driver for software development. Think Visual Studio Code but Mac native instead of Electron and *really* good.
 
 - [**Transmit**](https://panic.com/transmit/): my go-to file transfer app, mostly used for uploading images and other such files to Backblaze B2, which I use in conjunction with Cloudflare as a <abbr title="content delivery network">CDN</abbr> for static content on my website.
 
@@ -142,7 +142,7 @@ updates:
 
 - [**Freedom**](https://freedom.to): productivity hack in the form of “block my access to distractions”. Paid for a lifetime license years ago and make consistent use of it, especially when composing.
 
-- **iZotope RX 9**: incredibly good audio post-processing software, which I mostly use for its best-in-class denoiser.
+- **[iZotope RX](https://www.izotope.com/en/products/rx.html) v9**: incredibly good audio post-processing software, which I mostly use for its best-in-class denoiser.
 
 - [**KeyCastr**](https://github.com/keycastr/keycastr): for showing my keyboard and mouse input when screen sharing or recording a screencast.
 
@@ -152,7 +152,7 @@ updates:
 
 - [**Tadam**](https://www.tadamapp.com): pomodoro timer app—purchased years ago, used constantly when I am unfocused and having a hard time getting things done.
 
-- [**Unite**](https://www.bzgapps.com/unite): handy little utility for making dedicated “apps” out of web pages using WebKit (as I have for Strava, TrainingPeaks, Garmin Connect, [Glass](https://glass.photo), YNAB, my bank, and more). Will probably be replaced by Safari’s forthcoming capability once I upgrade to Sonoma.
+- [**Unite**](https://www.bzgapps.com/unite): handy little utility for making dedicated “apps” out of web pages using WebKit (as I have for Strava, TrainingPeaks, Garmin Connect, [Glass](https://glass.photo), [<abbr title="You Need a Budget">YNAB</abbr>](https://www.ynab.com), my bank, and more). Will probably be replaced by Safari’s forthcoming capability once I upgrade to Sonoma.
 
 
 ## Bonus: other tweaks
@@ -164,7 +164,7 @@ I find macOS *way* nicer to use by enabling the following settings/tweaks in the
 - **Accessibility** > **Pointer Control** > **Trackpad Options** > **Use for trackpad for dragging**, with **Dragging style** set to **Three Finger Drag**
 
 - In **Accessibility** > **Display**, enable:
-    - **Reduce transparency** (YMMV; I prefer it this way)
+    - **Reduce transparency** (<abbr title="your mileage may vary">YMMV</abbr>; I prefer it this way)
     - **Show window title icons**
     - **Show toolbar button shapes**
 
