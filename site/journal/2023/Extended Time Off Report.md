@@ -16,7 +16,7 @@ qualifiers:
   audience: >
     Mostly, future me. But also: anyone who is interested in my shenanigans.
     
-date: 2023-07-30T08:00:00-0600
+date: 2023-07-30T09:00:00-0600
 
 ---
 
