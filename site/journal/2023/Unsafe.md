@@ -63,7 +63,7 @@ There may be other ways to achieve Rust’s goals of memory safety with lower co
 
 [val]: https://www.val-lang.dev
 [vale]: https://vale.dev
-[swift]: http://swift-lang.org/main/
+[swift]: https://www.swift.org
 [swift-ownership]: https://github.com/apple/swift/blob/main/docs/OwnershipManifesto.md
 
 </aside>
@@ -72,7 +72,7 @@ Some safety is better than no safety; the question is how much better, and when 
 
 ## II.
 
-Second, Rust allows us to provide genuinely safe <abbr title="application programming interface">API</abbr>s which wrap unsafe code. Indeed: in practice, no idiomatic Rust code base would have a 70:30 ratio of unsafe:safe code. (The practice of wrapping `unsafe` code in safe abstractions is a learned habit, though, so I can see how people who have not internalized this mechanic could fairly readily end up there.) Those safe wrappers both *uphold* and *isolate* the key invariants for memory safety. Both of these are important, and they are closely related to each other.
+Second, Rust allows us to provide genuinely safe <abbr title="application programming interface">API</abbr>s which wrap unsafe code. Indeed: in practice, no idiomatic Rust code base would have a 70:30 ratio of unsafe:safe code. (The practice of wrapping `unsafe` code in safe abstractions is a learned habit, though, so I can see how people who have not internalized this mechanic could fairly readily end up there.) Those safe wrappers both *uphold* and *isolate* the key invariants for memory safety. Upholding and isolating invariants are both important, and they are closely related to each other.
 
 When dealing in unsafe code—whether in Rust `unsafe` blocks or in all the code in languages like C and C++[^modern-cpp]—the responsibility falls to the programmer to write code which is still safe. This is possible! It is simply very difficult. They key is that if we want to have memory safety, some place in our code must actually *check* that safety. Best of all is when that can be done by the compiler (think of bounds checks on arrays/vectors &c.). A close second is explicitly encoding those checks into the types in our system ([Parse, Don’t Validate][pdv]). A third runner-up is dynamically checking the invariants at runtime and crashing noisily and eagerly if they are violated: this is always better than the kinds of problems that come from memory corruption.[^cycle-time] A safe wrapper around an unsafe <abbr title="application programming interface">API</abbr> can follow either of the latter two approaches, and both are significant improvements over *not* explicitly upholding the contract.
 
