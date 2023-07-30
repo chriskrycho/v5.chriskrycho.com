@@ -163,7 +163,7 @@ Quibbles:
 
 - My experience of BBEdit’s support for language servers was not amazing. I do not plan to use it in contexts where I particularly *need* that support, so this is fine so far as it goes. It is also possible there was some user error here: I only mucked around with it fairly early on in this experiment, and bounced off after finding it not to work quite as I hoped. I may muck around further with that later, since I do expect to spend a *lot* of time in this editor!
 
-By way of conclusion, I offer this thought from of the journal entries above:
+By way of conclusion, I offer this thought from one of the journal entries above:
 
 > I am still barely scratching the surface of its capabilities, but all the parts I am using just feel… *good*.
 > 
