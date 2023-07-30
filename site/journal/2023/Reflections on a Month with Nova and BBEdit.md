@@ -9,7 +9,7 @@ tags:
   - tools
 
 started: 2023-07-04T19:00:00-0600
-updated: 2023-07-29T07:29:00-0600
+updated: 2023-07-30T13:56:00-0600
 updates:
   - at: 2023-07-08T14:45:00-0600
     changes: >
@@ -33,17 +33,21 @@ updates:
   - at: 2023-07-29T07:29:00-0600
     changes: Added another note about my high degree of satisfaction with BBEdit!
 
+  - at: 2023-07-30T13:56:00-0600
+    changes: Added another note about my high degree of satisfaction with BBEdit!
+
 draft: true
 
 ---
 
-As I [described][blog] at the start of the month, I have taken the opportunity of this downtime to revisit some of my longest-standing developer tool choices: I have made a point to do my writing and software development in [BBEdit][bb] and [Nova][nova] rather than my long-standing habit of using [Sublime Text][st] and [Visual Studio Code][code].
+As I [described][blog] at the start of the month, I have taken the opportunity of [some downtime][report] to revisit some of my longest-standing developer tool choices: I have made a point to do my writing and software development in [BBEdit][bb] and [Nova][nova] rather than my long-standing “daily drivers” of [Sublime Text][st] and [Visual Studio Code][code].
 
 [bb]: https://www.barebones.com/products/bbedit/
 [blog]: https://v5.chriskrycho.com/journal/trying-bbedit-and-nova/
 [code]: http://code.visualstudio.com/
 [nova]: https://nova.app
 [st]: https://www.sublimetext.com
+[report]: https://v5.chriskrycho.com/journal/extended-time-off-report/
 
 The rest of this post is structured as a series of journal entries authored as I reflected on my experience using the tools, with a concluding summary. If you want *just* the takeaway, jump to the summaries:
 
@@ -54,7 +58,7 @@ The rest of this post is structured as a series of journal entries authored as I
 
 ### Journal
 
-<details><summary>A blow-by-blow description of, which you can skip in favor of the summary below if you like; click to expand and read on if you want the details!</summary>
+<details><summary>A blow-by-blow description of my experiment, which you can skip in favor of the summary below if you like; click to expand and read on if you want the details!</summary>
 
 #### July 4
 
@@ -139,18 +143,42 @@ I like to write on my iPad sometimes. (Less since switching to Apple Silicon-pow
 
 ### Summary
 
-==TODO: write it at the end of the month!==
+BBEdit has successfully graduated from ‘experiment’ to ‘daily driver’ for me. Every word I have written this month has been written in it, and that is not merely because I was doing this experiment. Rather: it was because the experiment was a smashing success. This is a *great* text editor. It is not perfect, mind: there are a few things I wish it did, or did differently. But it is an extremely good citizen of the Mac, it is incredibly fast, and it was easy to get it to a point where I did not miss Sublime Text—the previous editor I used in this role. So much so that I actually uninstalled Sublime Text yesterday!
 
-<!--
+As I hoped would be the case when I set out, the editor is snappy, responsive, stable, and very, *very* Mac-native. (Honestly: it is more “Mac-like” than no few of the apps Apple itself ships these days! That is a conversation for another day, though.) Most important of all: the text rendering is exactly what it should be on a Mac. Sublime’s text rendering is really quite good, but never felt exactly *native*—not least because it did not respect the system settings for text drawing out of the box, and requiring you to set it via its <abbr title="JavaScript object notation">JSON</abbr> settings view! That goes double for Electron-powered apps like Atom or Code; Chrome’s text rendering is just not the same—and surprising no one who knows me, I *do not like it*.
 
--->
+Speaking of settings: Weird to say, perhaps, but I particularly appreciate a thoughtfully-designed, well-organized, well-laid-out Settings (née Preferences) interface! Compared to Sublime’s very, *very* long <abbr title="JavaScript object notation">JSON</abbr> object, or Code’s mediocre web <abbr title="">UI</abbr> or *its* <abbr title="JavaScript object notation">JSON</abbr> blob. There is a kind of programmer who wants *everything* to be in text, editable in a text editor, preferably without leaving a terminal. I am: not that kind of programmer. I think <abbr title="graphical user interface">GUI</abbr>s are good, actually.
+
+Happy surprises along the way:
+
+- `bbdiff` is an incredibly powerful diff editor, with capabilities I have seen in very few other diff editors. I expect to make good use in particular of its ability to drill down well past the level of differing lines to different *subsets* of lines going forward.
+
+- The ability to customize what appears in the menu bar system is delightful. I wish many more Mac apps did this!
+
+Quibbles:
+
+- There is exactly and only one thing I really actively miss from Sublime: <kbd>⌘</kbd><kbd>D</kbd> for duplicating one’s cursor. However, in practice I mostly use that in the contexts where I would use something shaped more like a lightweight <abbr title="integrated development environment">IDE</abbr>—Code or Nova or similar (on which, see the section on Nova below!). Find and replace does the job (and BBEdit's is *very* good!) but it feels different; I think multiple cursor support would be a great addition to a future version of the editor.
+
+- It would be nice for the full set of per-document options—thinking here especially of line numbers and page guide—to be available on a per-language basis. (Possibly some of the “Expert Mode” settings, i.e. settings accessible via the `defaults` <abbr title="command line interface">CLI</abbr> tool, would afford this, but I have not dug in to find out.) Since BBEdit is primarily going to be a *writing* tool for me, I have defaulted those settings to what I want for writing (they are both disabled!)… but for the occasion when I *do* pop it up for working on an actual bit of programming, I would like them *on*. This is just not something you can do via the program settings <abbr title="graphical user interface">GUI</abbr>, unfortunately.
+
+- My experience of BBEdit’s support for language servers was not amazing. I do not plan to use it in contexts where I particularly *need* that support, so this is fine so far as it goes. It is also possible there was some user error here: I only mucked around with it fairly early on in this experiment, and bounced off after finding it not to work quite as I hoped. I may muck around further with that later, since I do expect to spend a *lot* of time in this editor!
+
+By way of conclusion, I offer this thought from of the journal entries above:
+
+> I am still barely scratching the surface of its capabilities, but all the parts I am using just feel… *good*.
+> 
+> The interesting bit now is to consider: do I *buy* it? BBEdit comes with a free version: a spiritual successor to TextWrangler, which used off and on years ago. When I look at the list of features which are in the paid version, the simple truth is I will not use most of them in the role I have carved out for this particular tool. Where Nova was [easy to decide to buy](#july-22), this is much less obvious. The biggest selling point is the <kbd>⌘</kbd><kbd>⇧</kbd><kbd>U</kbd>-triggered **Commands** menu… but I just bought [Finbar][finbar] and the honest truth is it solves that particular need.
+> 
+> That leaves me in the interesting spot where I am going to be a happy user BBEdit, but not (yet, at least) a paying one! If at some point my usage pattern shifts, I will happily pay for it, because it is a great tool. Indeed, I may at some point pay for it just because it *is* a great tool and I like supporting the developers of good tools. For the moment, though, I think BBEdit in Free Mode is going to be all I need!
+
+[finbar]: https://www.roeybiran.com/apps/finbar
 
 
 ## Nova
 
 ### Journal
 
-<details><summary>A blow-by-blow description of, which you can skip in favor of the summary below if you like; click to expand and read on if you want the details!</summary>
+<details><summary>A blow-by-blow description of my experiment, which you can skip in favor of the summary below if you like; click to expand and read on if you want the details!</summary>
 
 #### July 4
 
