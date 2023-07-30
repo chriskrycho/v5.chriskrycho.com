@@ -12,6 +12,9 @@ tags:
   - Val
   - Vala
   - Swift
+  - C++
+  - Zig
+  - Odin
 
 qualifiers:
   audience: >
@@ -66,7 +69,7 @@ There may be other ways to achieve Rust’s goals of memory safety with lower co
 [swift-ownership]: https://github.com/apple/swift/blob/main/docs/OwnershipManifesto.md
 
 
-[^modern-cpp]: This is still true in modern C++, even with tools like unique pointers, precisely because there is no way to exhaustively check the codebase for all possible variations of safety invariant violations. You cannot search for `unsafe`!
+[^modern-cpp]: This is still true in modern C++, even with tools like unique pointers, precisely because there is no way to exhaustively check the codebase for all possible variations of safety invariant violations. You cannot search for `unsafe` in a language which does not have it!
 
 [^cycle-time]: Notice also that the first two can be caught *much* earlier than the third, because they can be caught by a compiler and do not require running the code. This is a good reason to push these kinds of invariants into a type system where possible; it brings it into [an earlier and *faster* feedback time scale][time-scale].
 
