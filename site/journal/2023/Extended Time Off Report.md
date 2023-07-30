@@ -32,7 +32,7 @@ Courtesy of LinkedIn’s very generous time off policies (“unlimited discretio
 
 - On our return, I got to the point where the site builder can actually generate content end-to-end, including some pretty finicky details of in-content template language replacement mechanics (without the kinds of finicky bugs that tend to plague such things, and which have plagued my current 11ty-powered site from the start). I am really quite pleased with what I have, and while it is *far* from being ready to use as my actual website builder still, it is now in good enough shape that I expect I will be able to get my website working using it sometime in the next 6–12 months (depending on how much time I allocate to it).
 
-- Off and on throughout, I also wrote: a *lot*. The sum total of everything I wrote this month (some of them still in draft at the time I publish this) comes out to well over 20,000 words. More importantly, I am *happy* with all of that as representing minimally productive-for-me thinking-in-public, and maximally making some small—but hopefully real—contributions to how we ought to think about software development.
+- Off and on throughout, I also wrote: a *lot*. The sum total of everything I wrote this month (some of them still in draft at the time I publish this) comes out to well over 20,000 words. More importantly, I am *happy* with all of that as representing at least productive-for-me thinking-in-public, and at most making some small—but hopefully real—contributions to how we ought to think about software development.
 
 - Last but not least in my daughters’ estimation, I played a solid bit of <cite>The Legend of Zelda: Tears of the Kingdom</cite>.
 
