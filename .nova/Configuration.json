@@ -1,4 +1,7 @@
 {
+  "todo.workspace-ignore-paths" : [
+    "public"
+  ],
   "workspace.color" : 8,
   "workspace.name" : "Sympolymathesy",
   "workspace.preview_append_paths" : true,
