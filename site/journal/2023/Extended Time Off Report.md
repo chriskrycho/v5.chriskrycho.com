@@ -18,6 +18,8 @@ qualifiers:
     
 date: 2023-07-30T09:00:00-0600
 
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/Kaweah.jpeg
+
 ---
 
 Courtesy of LinkedIn’s very generous time off policies (“unlimited discretionary time off”, up to three weeks at a stretch as long as you and your manager and team are all good with it) and our annual week-long shut-down over the 4<sup>th</sup> of July holiday, I was able to take off basically all of July. This was a delightful bit of respite and rest after a very stressful first half of the year. And, being me, I mostly recharged by *doing*, because that’s how I roll.
