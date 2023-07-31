@@ -62,6 +62,16 @@
       {% block meta %}
          {{ social.meta(page, config) }}
       {% endblock meta%}
+
+      <!--
+         Yes, this is a tiny bit of JS-powered analytics. It is the least creepy thing I
+         can find and gives me reasonably meaningful data. I am currently doing a little
+         bit of checking: comparing this to what I get from Netlify Analytics, and using
+         both to inform some longer-term planning.
+      -->
+      <!-- Fathom - beautiful, simple website analytics -->
+      <script src="https://cdn.usefathom.com/script.js" data-site="UUNWGZJC" defer></script>
+      <!-- / Fathom -->
    </head>
    <body>
       <main>
