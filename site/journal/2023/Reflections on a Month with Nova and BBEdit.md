@@ -2,8 +2,9 @@
 title: Reflections on a Month with Nova and BBEdit
 subtitle: >
   What works, what doesn’t, and where did this experiment lead me in the end?
+
 summary: >
-  I spent a month seeing whether BBEdit could replace Sublime Text and whether Nova could replace VS Code. The answer: they absolutely did, and I am delighted by it.
+  I spent a month seeing whether BBEdit could replace Sublime Text and whether Nova could replace VS Code. They absolutely did, and I am delighted.
 
 qualifiers:
   audience: >
