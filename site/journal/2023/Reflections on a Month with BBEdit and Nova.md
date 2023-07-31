@@ -16,7 +16,7 @@ tags:
   - software development
   - tools
 
-date: 2023-07-31T08:00:00-0600
+date: 2023-07-31T07:20:00-0600
 started: 2023-07-04T19:00:00-0600
 updated: 2023-07-30T18:52:00-0600
 updates:
@@ -47,8 +47,6 @@ updates:
 
   - at: 2023-07-30T18:52:00-0600
     changes: Finished the write-ups and prepped it for publication, including adding the social media image.
-
-draft: true
 
 ---
 
