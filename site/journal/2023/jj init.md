@@ -46,15 +46,23 @@ updates:
     changes: >
       Correcting my description of revision behavior per discussion with the maintainer.
 
+  - at: 2023-07-31T21:07:00-0700
+    changes: >
+      Starting to do some work on the introduction.
+
 draft: true
 
 ---
 
-Along with my experiment with [Mac-native text editors][experiment] over this vacation, I am going to spend some time learning [Jujutsu][jj]. Jujutsu is a new version control system from a software engineer at Google, which already (though tentatively) has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Indeed, I think—hope!—it has a possible future as the [next generation of version control][next-gen-vcs].
+{% callout %}
+
+Some background: Along with my experiment with [Mac-native text editors][experiment] over a recent extended stretch of time off, I spent some time learning [Jujutsu][jj]. Jujutsu is a new version control system from a software engineer at Google, which already (though tentatively) has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Indeed, I think—hope!—it has a possible future as the [next generation of version control][next-gen-vcs].
 
 [experiment]: https://v5.chriskrycho.com/journal/trying-bbedit-and-nova/
 [jj]: https://github.com/martinvonz/jj#command-line-completion
 [next-gen-vcs]: https://v4.chriskrycho.com/2014/next-gen-vcs.html
+
+{% endcallout %}
 
 {% note %}
 
@@ -65,10 +73,24 @@ Watch this space over the next month: I will update it with notes and comments a
 
 ## Overview
 
+Jujutsu is one possible answer to a question I first started asking [most of a decade ago]([next-gen-vcs]): *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?* To answer that question, it is important to have a sense of what those lessons are.
+
+This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">
+
 ==TODO: What is Jujutsu? Why is it interesting?==
+
+- *change* as distinct from *revision*: borrowed from Mercurial
+- first-class conflicts: borrowed from Pijul and Darcs
+- a reasonable user interface (!!!)
+
+==TODO: what is it *not*, and why?==
+
+- Pijul-style “we have hard math to make all changes commute”
 
 
 ## Usage notes 
+
+That is all interesting enough philosophically, but for a tool that, if successful, will end up being one of a software developer’s most-used tools, there is an even more important question: *What is it actually like to use?*
 
 {% note %}
 
