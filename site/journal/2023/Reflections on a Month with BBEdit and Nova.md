@@ -1,5 +1,5 @@
 ---
-title: Reflections on a Month with Nova and BBEdit
+title: Reflections on a Month with BBEdit and Nova
 subtitle: >
   What works, what doesn’t, and where did this experiment lead me in the end?
 
