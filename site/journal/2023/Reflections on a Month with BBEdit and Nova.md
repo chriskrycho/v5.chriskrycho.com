@@ -271,6 +271,15 @@ I was really unsure, going into this month-long experiment, whether either of th
 As a bonus: I find it really delightful that these are tools made by small companies, not given away free by a mega-corporation.[^msft] I am really—*really*—happy to buy a couple great apps from great companies. And I am looking forward to many years of using these to good effect ahead.
 
 
+{% callout %}
+
+Thoughts, comments, or questions? [Shoot me an email](mailto:hello@chriskrycho.com?subject=Re%3A%20Reflections%20on%20a%20Month%20with%20BBEdit%20and%20Nova), or leave a comment on [Hacker News][hn] or [lobste.rs][l]
+
+[hn]: https://news.ycombinator.com/item?id=36942140
+[l]: https://lobste.rs/s/yxpuix/reflections_on_month_with_bbedit_nova
+
+{% endcallout %}
+
 [^msft]: Yes, I work for [a Microsoft subsidiary][li]. No, that does not oblige me to approve of everything my employer’s owner chooses to do!
 
 [li]: https://linkedin.com/in/chriskrycho
