@@ -23,8 +23,8 @@ qualifiers:
 thanks: >
   [Dan Freeman](https://dfreeman.io) and [Ben Makuh](https://benmakuh.com) reviewed drafts of this post before publication and it is better for their input! (Mistakes and infelicities remain all my own, of course.)
 
+date: 2023-08-02T06:52:00-0600
 started: 2023-07-29T10:05:00-0600
-updated: 2023-07-30T13:21:00-0600
 updates:
   - at: 2023-07-29T12:35:00-0600
     changes: >
@@ -38,15 +38,17 @@ updates:
     changes: >
       Did another pass with restructuring and editing with fresh eyes. Improved the flow of the argument and avoided chunking up the piece quite as much.
 
-draft: true
+  - at: 2023-08-02T06:52:00-0600
+    changes: >
+      A final round of revisions for polish, clarity, flow of the argument, etc.
 
 ---
 
-I semi-regularly hear from developers who claim that using Rust for their systems-level code would not gain them anything because they would have to use `unsafe` extensively in their code base. But this is not true. Even in a code base which makes extensive use of Rust’s `unsafe` keyword and features, including for <abbr title="foreign function interface">FFI</abbr>, low-level bit-twiddling, and so on, the ability to distinguish between safe and unsafe code comes with non-trivial benefits.
+I semi-regularly hear from developers who claim that using Rust for their systems-level code would not gain them anything because they would have to use `unsafe` extensively in their code base. But this is not true. Even in software which makes extensive use of Rust’s `unsafe` keyword and features, including for <abbr title="foreign function interface">FFI</abbr>, low-level bit-twiddling, and so on, the ability to distinguish between safe and unsafe code comes with non-trivial benefits.
 
 {% callout %}
 
-This is not a “Rust is always the best” manifesto. There may be other ways to achieve Rust’s goals of memory safety with lower cognitive load than Rust imposes. If so, that will be great, because Rust’s cognitive load is *not low*. [Val][val] and [Vale][vale] (no relation to each other!) both look interesting here, for example, and so does [Swift][swift]’s still-<abbr title="work-in-progress">WIP</abbr> [ownership system][swift-ownership]. I do not take Rust to be remotely the final word in this space. It is the *first* systems language with memory safety which is successful at industrial scales—not the last!
+This is not a “Rust is always the best” manifesto. There may be other ways to achieve Rust’s goals of memory safety with lower cognitive load than Rust imposes. If so, that will be great, because Rust’s cognitive load is significant. [Val][val] and [Vale][vale] (no relation to each other!) both look interesting here, for example, and so does [Swift][swift]’s still-<abbr title="work-in-progress">WIP</abbr> [ownership system][swift-ownership]. I do not take Rust to be remotely the final word in this space. It is the *first* memory safe systems language to be successful at industrial scale—not the last!
 
 [val]: https://www.val-lang.dev
 [vale]: https://vale.dev
@@ -60,27 +62,34 @@ Rather, this is a critique of one very specific misunderstanding I see floating 
 
 ## 1
 
-Having *any* meaningful chunk of your code be reliably “safe” is useful. When trying to learn a system, and especially when trying to understand where things went wrong in a system, it is incredibly helpful to be able to know where you should start looking—and where you do not have to waste time looking. Assume 70% of your code base is wrapped in `unsafe`: That is still 30% of your code base where you do not have to think about memory safety! This is no small thing; C, C++, Zig, Odin, etc. offer no such guarantees.[^improved] In those languages, all memory safety invariants are upheld implicitly; all isolation is done by choice alone.
+The motivating intuition behind the claim that “we would have to use tons of `unsafe` anyway, so Rust would not help us” is simple and reasonable: Rust comes with significant mental overhead as the price of getting memory safety, so if you are not getting those benefits, why pay the costs?
 
-This is precisely the motivating intuition behind the claim that “we would have to use tons of `unsafe` anyway.” Rust comes with significant mental overhead as the price of getting memory safety, so if you are not getting those benefits, why pay the costs?
+Having *any* meaningful chunk of your code be reliably “safe” is useful, though. When trying to learn a system, and especially when trying to understand where things went wrong in a system, it is incredibly helpful to be able to know where you should start looking—and where you do not have to waste time looking. Assume 70% of your code base is wrapped in `unsafe`: That is still 30% of your code base where you do not have to think about memory safety! This is no small thing; C, C++, Zig, Odin, etc. offer no such guarantees. In those languages, all memory safety invariants are upheld implicitly; all isolation is done by choice alone.[^improved]
 
-Put another way: Some safety is better than no safety. The question is: *How much better? When does it pay for the cognitive overhead of using a language which slows you down up front when dealing with `unsafe`?*[^cards] Is it 70:30 unsafe:safe? Maybe not (though I personally would take that trade every time!). Is it 50:50? I think most honest developers would admit that the trade is worth it: that is a *lot* of increased safety. What about 30:70—inverting the original proportions? Certainly: the vast majority of the program is safe at that point.
+Put another way: Some safety is better than no safety. The question is: *How much better? When does it pay for the cognitive overhead of using a language which slows you down up front when dealing with `unsafe`?*[^cards] Is it 30:70 safe:unsafe? Maybe not (though I personally would take that trade every time!). Is it 50:50? I think most developers would admit that the trade is worth it: that is a *lot* of increased safety. What about 70:30—inverting the original proportions? Certainly: the vast majority of the program is safe at that point. And even the programs I hear discussed in this vein are much closer to the 70:30 safe:unsafe ratio (indeed: likely *even less* unsafe code than that).
 
-People do sometimes manage memory safety (mostly-)effectively in memory-unsafe languages by (a) being the only person, or one of a *very* small number of people working on it—likely not more than 3 or 4—; (b) just keeping the whole program in their head at all times; and (c) having incredibly extensive test suites. While maybe *just* possible in those contexts, this is very difficult to sustain over time. Our ability to keep a program in our head degrades both as the program grows and with any time spent away from it, and providing that same level of understanding to another person is [difficult at best][naur]. The larger a program grows, the longer we work on it, and the more people who are working on it, the more valuable any improvement in program-level safety becomes.
+Granted that people do sometimes manage memory safety (mostly-)effectively in memory-unsafe languages. In practice, that seems to work when:
 
-That is: The value of the safety even in that 70:30 split is much more obvious if you think about it in the context of a team full of junior developers shipping edge-facing software! Even for a solo project, though, I think Rust’s safety guarantees, and its distinction between safe and unsafe code in particular, is valuable: because it makes the program as a whole far easier to understand—to which I now turn.
+- There is only person, or only a *very* small group, working on it—likely not more than 3 or 4.
+- All maintainers have very high continuity with the software over time, neither stepping away from it nor seeing significant changes in the group membership.
+- All maintainers are expert enough to keep the whole program in their heads at all times.
+- The code base has an incredibly extensive (and always-growing) test suite, and is required to be valid through multiple layers of static analysis.
+
+While maybe *just* possible in those contexts, this is very difficult to sustain over time. Most importantly: Our ability to keep a program in our head degrades both as the program grows and with any time spent away from it, and providing that same level of understanding to another person is [difficult at best][naur]. The larger a program grows, the longer we work on it, and the more people who are working on it, the more valuable any improvement in program-level safety becomes.
+
+The value of the safety even in that 30:70 safe:unsafe split is obvious in the context of a team with half a dozen non-expert developers, especially if there is any amount of turnover. Even for a long-running solo project, though, I think Rust’s safety guarantees, and its distinction between safe and unsafe code in particular, is valuable: because it makes the program as a whole far easier to understand—to which I now turn.
 
 [naur]: https://cdn.chriskrycho.com/file/chriskrycho-com/resources/naur1985programming.pdf
 
 ## 2
 
-By providing the safe-`unsafe` distinction, Rust enables us to provide genuinely safe <abbr title="application programming interface">API</abbr>s which themselves *wrap* unsafe code. As a result, in practice, few if any idiomatic Rust libraries or programs would have a 70:30 ratio of unsafe:safe code. (The practice of wrapping `unsafe` code in safe abstractions is a learned habit, though, so I can see how people who have not internalized this mechanic could fairly readily end up there.) Those safe wrappers both *uphold* and *isolate* the key invariants for memory safety. Upholding and isolating invariants are both important, and they are closely related to each other.
+By providing the safe-`unsafe` distinction, Rust enables us to provide genuinely safe <abbr title="application programming interface">API</abbr>s which themselves *wrap* unsafe code. As a result, in practice, few if any idiomatic Rust libraries or programs would have a 30:70 ratio of safe:unsafe code. (The practice of wrapping `unsafe` code in safe abstractions is a learned habit, though, so I can see how people who have not internalized this mechanic could fairly readily end up there.) Those safe wrappers both *uphold* and *isolate* the key invariants for memory safety. Upholding and isolating invariants are both important, and they are closely related to each other.
 
 When dealing in unsafe code—whether in Rust `unsafe` blocks or in all the code in languages like C and C++[^modern-cpp]—the responsibility falls to the programmer to write code which is still safe. This is possible! It is simply very difficult. They key is that if we want to have memory safety, some place in our code must actually *check* that safety. Best of all is when that can be done by the compiler (think of bounds checks on arrays/vectors <em style="letter-spacing: -1.5px">&c</em>.). A close second is explicitly encoding those checks into the types in our system ([Parse, Don’t Validate][pdv]). A third runner-up is dynamically checking the invariants at runtime and crashing noisily and eagerly if they are violated: this is always better than the kinds of problems that come from memory corruption.[^cycle-time] A safe wrapper around an unsafe <abbr title="application programming interface">API</abbr> can follow either of the latter two approaches, and both are significant improvements over *not* explicitly upholding the contract.
 
 [pdv]: https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
 
-The dynamic here is similar to providing a pure functional interface in a language which is implemented with mutable data under the hood (a very common pattern in languages like OCaml and F^♯^). Mutating a new array in place can be far more efficient than using even a well-optimized persistent data structure, but providing a purely functional interface means callers do not have to care about the implementation details and still get the benefits of referential transparency.
+The dynamic here is similar to providing a pure functional interface in a language which is implemented with mutable data under the hood (which pattern is particularly common in languages like OCaml and F^♯^, but available in nearly any language). Mutating a new array in place can be far more efficient than using even a well-optimized persistent data structure, but providing a purely functional interface means callers do not have to care about the implementation details and still get the benefits of referential transparency.
 
 Granted, again, that Rust’s memory safety benefits do not come for free. There remains no free lunch! But unless *every line* of the program in wrapped in `unsafe`—which would be extraordinary!—Rust’s distinction between safe and unsafe code is still valuable, and the more so as you isolate your enforcement of memory safety behind safe wrapping <abbr title="application programming interface">API</abbr>s. Why? Because it significantly improves your ability to *reason locally*: When in non-`unsafe` blocks, you do not have to think about memory safety bugs. When in `unsafe` blocks you *do*, but with a clear idea of where the boundary is.
 
@@ -95,8 +104,8 @@ That goes for memory safety most of all.
 
 [time-scale]: https://v4.chriskrycho.com/2018/scales-of-feedback-time-in-software-development.html
 
-[^improved]: Zig and Odin make some real improvements on C and C++; but they ultimately allow comparable degrees of memory unsafety.
+[^improved]: Zig and Odin make some real improvements on C and C++, to be sure; but they ultimately allow comparable degrees of memory unsafety.
 
-[^cards]: Cards on the table: I am a “slow it down up front because it speeds you up later” thinker. I [run][80-20] this way, I write this way, I program this way; as much as possible I *live* this way. Not everyone agrees. So far as I can, I am writing this to people who may well disagree, and firmly, at least when it comes to code!
+[^cards]: Cards on the table: I am a “slow down up front because it speeds you up later” thinker. I [run][80-20] this way, I write this way, I program this way; as much as possible I *live* this way. Not everyone agrees. So far as I can, I am writing this to people who may well disagree, and firmly, at least when it comes to code!
 
 [80-20]: https://www.8020endurance.com
