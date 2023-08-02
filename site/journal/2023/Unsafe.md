@@ -23,6 +23,8 @@ qualifiers:
 thanks: >
   [Dan Freeman](https://dfreeman.io) and [Ben Makuh](https://benmakuh.com) reviewed drafts of this post before publication and it is better for their input! (Mistakes and infelicities remain all my own, of course.)
 
+image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/unsafe.png
+
 date: 2023-08-02T06:52:00-0600
 started: 2023-07-29T10:05:00-0600
 updates:
@@ -96,6 +98,15 @@ Granted, again, that Rust’s memory safety benefits do not come for free. There
 Having only one place in the code base which must uphold a given invariant means it is far easier to test and to debug when there are failures. It means the code base does not rely on people fully internalizing the rules for each <abbr title="application programming interface">API</abbr> by reading all of its comments (and those comments being correct and exhaustive!) and then being sufficiently careful everywhere they use that <abbr title="application programming interface">API</abbr>. “Don’t Repeat Yourself” is most important, and most applicable, when it comes to upholding the invariants in a program.
 
 That goes for memory safety most of all.
+
+{% callout %}
+
+Thoughts, comments, or questions? [Shoot me an email](mailto:hello@chriskrycho.com?subject=Re%3A%20Unsafe), or leave a comment on [Hacker News][hn] or [lobste.rs][l].
+
+[hn]: https://news.ycombinator.com/item?id=36970305
+[l]: https://lobste.rs/s/kuq1ha/unsafe_on_rust_still_being_helpful_even
+
+{% endcallout %}
 
 
 [^modern-cpp]: This is still true in modern C++, even with tools like unique pointers, precisely because there is no way to exhaustively check the code base for all possible variations of safety invariant violations. You cannot search for `unsafe` in a language which does not make that distinction!
