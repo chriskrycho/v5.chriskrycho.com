@@ -1,14 +1,3 @@
-@mixin bars($top, $width) {
-   content: '';
-   height: 1px;
-   background: var(--bar-color);
-   border-radius: 1px;
-   width: $width;
-   position: absolute;
-   top: $top;
-   transition: background-color var(--transition);
-}
-
 .site-nav {
    background-color: var(--nav-bg);
 
@@ -71,13 +60,23 @@
 
       color: var(--color);
 
+      &:before,
+      &:after {
+         content: '';
+         height: 1px;
+         background: var(--bar-color);
+         border-radius: 1px;
+         width: calc(var(--hr-width) / 2);
+         position: absolute;
+         top: 0.5em;
+         transition: background-color var(--transition);
+      }
+
       &:before {
-         @include bars(0.5em, calc(var(--hr-width) / 2));
          left: calc(0.25em + 100%);
       }
 
       &:after {
-         @include bars(0.5em, calc(var(--hr-width) / 2));
          right: calc(0.4em + 100%);
       }
    }
