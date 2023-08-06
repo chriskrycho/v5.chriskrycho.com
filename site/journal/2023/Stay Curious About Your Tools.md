@@ -38,6 +38,15 @@ It feels: nice! Knowing one’s tools better is a good thing.
 
 I do not regret that I only got here now. We all have limited time, and the path I have taken was a good one. But I am glad that I *am* here now, that I *am* learning these parts of the system better. Most of all: I am glad that all these years along, I am still interested in computing, still interested in going one layer further down into how these things actually work. Staying curious about your tools is good!
 
+{% callout %}
+
+Thoughts, comments, or questions? [Shoot me an email](mailto:hello@chriskrycho.com?subject=Re%3A%20Stay%20Curious%20About%20Your%20Tools), or leave a comment on [Hacker News][hn] or [lobste.rs][l].
+
+[hn]: https://news.ycombinator.com/item?id=37018166
+[l]: https://lobste.rs/s/h9lw63/stay_curious_about_your_tools
+
+{% endcallout %}
+
 
 [editors]: https://v5.chriskrycho.com/journal/reflections-on-a-month-with-bbedit-and-nova/
 
