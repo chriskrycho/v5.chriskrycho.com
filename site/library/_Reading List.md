@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-07-21T22:24:00-0600
+date: 2023-08-06T09:36:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -80,6 +80,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
 
 - [<cite>The Book of Common Prayer: A Biography</cite>](https://bookshop.org/a/21126/9780691191782), Alan Jacobs (new)
+
+- [<cite>Good Strategy/Bad Strategy: The Difference and Why It Matters</cite>](https://bookshop.org/a/21126/9780307886231), Richard P. Rumelt
 
 
 ### Fiction
