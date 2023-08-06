@@ -99,9 +99,20 @@
                   <p><strong>Thanks:</strong> {{item.data.thanks | safe}}</p>
                   {%- endif -%}
                   <hr/>
-                  {%- if includeReplyViaEmail -%}
-                     <p><a href="mailto:{{config.author.email}}?subject={{entryTitle | urlencode}}">Reply via email!</a></p>
-                  {%- endif -%}
+                  <p>
+                     Thanks for reading my feed!
+                     {% if includeReplyViaEmail -%}
+                        Thoughts, comments, or questions?
+                        <a href="mailto:{{config.author.email}}?subject=Re%3A%20{{entryTitle | urlencode}}">Shoot me an email</a>
+                        {%- if item.data.discuss is defined -%}
+                           , or leave a comment on
+                           <a href="{{item.data.discuss.hn}}">Hacker News</a> or
+                           <a href="{{item.data.discuss.lobsters}}">lobste.rs</a>.
+                        {%- else -%}
+                           !
+                        {%- endif -%}
+                     {%- endif -%}
+                  </p>
                ]]>
             </content>
             {%- include 'blocks/rss-author.njk' -%}

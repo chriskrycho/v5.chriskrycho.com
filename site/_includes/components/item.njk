@@ -1,3 +1,5 @@
+{% from './reply.njk' import reply %}
+
 {% macro header(type, title, subtitle, subscribe, link) %}
 {% if title %}
 <header class='item-header {{type}}'>
@@ -33,7 +35,7 @@
 {% endif %}
 {% endmacro %}
 
-{% macro meta(title, date, tags, updated, updates, started, inputPath, thanks, isGhostCollection) %}
+{% macro meta(title, date, tags, updated, updates, started, inputPath, thanks, isGhostCollection, discuss) %}
 {%- set DATE_FORMAT = 'MMMM d, yyyy' %}
 {%- set TIME_FORMAT = 'HH:mm' %}
 <footer class='post-meta'>
@@ -87,9 +89,7 @@
 
    <div class='section-label'>Respond:</div>
    <div class='section-content'>
-      <p>
-         Have a thought to share about this? <a href='mailto:hello@chriskrycho.com?subject={{title}}'>Send me an email!</a> (It’s way better than traditional comments.)
-      </p>
+      {{ reply(title, discuss) }}
    </div>
 
    <div class='section-label'>About:</div>
