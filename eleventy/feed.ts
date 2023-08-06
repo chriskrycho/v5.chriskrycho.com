@@ -1,6 +1,6 @@
 import striptags from 'striptags';
 import { DateTime } from 'luxon';
-import { Result } from 'true-myth';
+import { Maybe, Result } from 'true-myth';
 
 import { Dict, EleventyClass, Item } from '../types/eleventy';
 import JsonFeed, { FeedItem } from '../types/json-feed';
@@ -74,6 +74,10 @@ declare module '../types/eleventy' {
       feedId?: string;
       /** Markdown-enabled thanks to people who contributed to the thing. */
       thanks?: string;
+      discuss?: {
+         hn: string;
+         lobsters: string;
+      };
    }
 }
 
@@ -210,9 +214,19 @@ function contentHtmlFor(
 
    const reply = includeReplyViaEmail
       ? ((): string => {
-           const replySubject = encodeURIComponent(entryTitleFor(item));
+           const replySubject = encodeURIComponent('Re: ' + entryTitleFor(item));
            const replyUrl = `mailto:${config.author.email}?subject=${replySubject}`;
-           return `<hr/><p><a href="${replyUrl}">Reply via email!</a></p>`;
+           const email = `<a href="${replyUrl}">Shoot me an email</a>`;
+
+           const [discussion, punct] = Maybe.of(item.data?.discuss).match({
+              Just: ({ hn, lobsters }) => [
+                 `, or leave a comment on <a href="${hn}">Hacker News</a> or <a href="${lobsters}">lobste.rs</a>`,
+                 '.',
+              ],
+              Nothing: () => ['', '!'],
+           });
+
+           return `<hr/><p>Thoughts, comments, or questions? ${email}${discussion}${punct}</p>`;
         })()
       : '';
 

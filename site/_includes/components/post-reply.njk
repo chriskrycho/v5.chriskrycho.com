@@ -1,0 +1,7 @@
+{% from './reply.njk' import reply as r %}
+
+{% macro reply(title, discuss) %}
+   <div class="callout">
+     {{r(title, discuss)}}
+   </div>
+{% endmacro %}

@@ -17,6 +17,10 @@ qualifiers:
     
 date: 2023-08-05T19:23:00
 
+discuss:
+  hn: https://news.ycombinator.com/item?id=37018166
+  lobsters: https://lobste.rs/s/h9lw63/stay_curious_about_your_tools
+
 ---
 
 I have lately been digging into, and trying to understand better, many of the fundamentals of my operating system. I have been using macOS since it was Mac OS X 10.4 Tiger.[^middle-school] I got the hang of the basics pretty quickly, but my focus initially was just on using the machine to get music composed and class papers written. I started using the command line in 2008 or so, writing Fortran programs for my senior capstone project in physics at <abbr title="The University of Oklahoma">OU</abbr>. Reading `man gfortran` was my introduction to much of how Unix systems work. But I was so far in over my head in those early years that I never *really* slowed down to understand more deeply the system I was using. I learned enough to get by, and tried to understand those parts that I did learn *well*, but I did not dig deeper than whatever was sufficient to the task at hand. I simply did not have time: I was learning how to program, how to write <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>, how to run a debugger (`gdb`!), how to use version control (lots of time with Subversion!).
@@ -37,15 +41,6 @@ Until lately! 16 years into using a Mac as my full-time computer, and 15 years s
 It feels: nice! Knowing one’s tools better is a good thing.
 
 I do not regret that I only got here now. We all have limited time, and the path I have taken was a good one. But I am glad that I *am* here now, that I *am* learning these parts of the system better. Most of all: I am glad that all these years along, I am still interested in computing, still interested in going one layer further down into how these things actually work. Staying curious about your tools is good!
-
-{% callout %}
-
-Thoughts, comments, or questions? [Shoot me an email](mailto:hello@chriskrycho.com?subject=Re%3A%20Stay%20Curious%20About%20Your%20Tools), or leave a comment on [Hacker News][hn] or [lobste.rs][l].
-
-[hn]: https://news.ycombinator.com/item?id=37018166
-[l]: https://lobste.rs/s/h9lw63/stay_curious_about_your_tools
-
-{% endcallout %}
 
 
 [editors]: https://v5.chriskrycho.com/journal/reflections-on-a-month-with-bbedit-and-nova/

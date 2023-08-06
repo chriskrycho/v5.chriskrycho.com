@@ -1,0 +1,14 @@
+{% macro reply(title, discuss) %}
+<p>
+   Thoughts, comments, or questions?
+   <a href='mailto:hello@chriskrycho.com?subject=Re%3A%20{{title | urlencode}}'>Shoot me an email</a>
+   (it’s way better than traditional comments)
+   {%- if discuss -%}
+      , or leave a comment on
+      <a href="{{discuss.hn}}">Hacker News</a> or
+      <a href="{{discuss.lobsters}}">lobste.rs</a>.
+   {%- else -%}
+      !
+   {%- endif -%}
+</p>
+{% endmacro %}

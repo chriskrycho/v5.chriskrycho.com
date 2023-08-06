@@ -23,6 +23,10 @@ qualifiers:
 thanks: >
   [Dan Freeman](https://dfreeman.io) and [Ben Makuh](https://benmakuh.com) reviewed drafts of this post before publication and it is better for their input! (Mistakes and infelicities remain all my own, of course.)
 
+discuss:
+  hn: https://news.ycombinator.com/item?id=36970305
+  lobsters: https://lobste.rs/s/kuq1ha/unsafe_on_rust_still_being_helpful_even
+
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/unsafe.png
 
 date: 2023-08-02T06:52:00-0600
@@ -99,15 +103,8 @@ Having only one place in the code base which must uphold a given invariant means
 
 That goes for memory safety most of all.
 
-{% callout %}
-
-Thoughts, comments, or questions? [Shoot me an email](mailto:hello@chriskrycho.com?subject=Re%3A%20Unsafe), or leave a comment on [Hacker News][hn] or [lobste.rs][l].
-
-[hn]: https://news.ycombinator.com/item?id=36970305
-[l]: https://lobste.rs/s/kuq1ha/unsafe_on_rust_still_being_helpful_even
-
-{% endcallout %}
-
+{% from 'components/post-reply.njk' import reply %}
+{{ reply(title, discuss) }}
 
 [^modern-cpp]: This is still true in modern C++, even with tools like unique pointers, precisely because there is no way to exhaustively check the code base for all possible variations of safety invariant violations. You cannot search for `unsafe` in a language which does not make that distinction!
 
