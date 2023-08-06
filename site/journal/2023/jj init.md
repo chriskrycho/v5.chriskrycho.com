@@ -4,7 +4,8 @@ subtitle: >
   What if we actually *could* replace Git? Jujutsu might give us a real shot.
 qualifiers:
   audience: >
-    People interested in personal toolkits, especially for software.
+    People who have worked with Git or other modern version control systems like Mercurial, Darcs, Pijul, Bazaar, etc., and have at least a basic idea of how they work.
+
 summary: >
   Jujutsu (`jj`) is a new version control system from a software developer at Google. It seems promising, so I am giving it a try on a few personal projects.
 tags:
@@ -50,6 +51,10 @@ updates:
     changes: >
       Starting to do some work on the introduction.
 
+  - at: 2023-08-07T10:11:00-0700
+    changes: >
+      Adding more structure to the piece, and identifying the next pieces to write.
+
 draft: true
 
 ---
@@ -71,19 +76,39 @@ Watch this space over the next month: I will update it with notes and comments a
 {% endnote %}
 
 
+### Outline
+
+The rest of this post is organized into the following overarching sections:
+
+- [Overview](#overview)
+    - [What is Jujutsu](#what-is-jujutsu)
+    - [What is Jujutsu *not*?](#what-is-jujutsu-not)
+- [Usage notes](#usage-notes)
+    - [Setup](#setup)
+    - [Learnings from `jj log`](#learnings-from-jj-log)
+    - [Working on projects](#working-on-projects)
+- [Rewiring your Git brain](#rewiring-your-git-brain)
+    - [Changes](#changes)
+    - [Branches](#branches)
+    - [Git interop](#git-interop)
+
+
 ## Overview
 
 Jujutsu is one possible answer to a question I first started asking [most of a decade ago]([next-gen-vcs]): *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?* To answer that question, it is important to have a sense of what those lessons are.
 
-This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">
+This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">VCS</abbr>.
 
-==TODO: What is Jujutsu? Why is it interesting?==
+### What is Jujutsu?
+
+==TODO: Why is it interesting?==
 
 - *change* as distinct from *revision*: borrowed from Mercurial
 - first-class conflicts: borrowed from Pijul and Darcs
 - a reasonable user interface (!!!)
 
-==TODO: what is it *not*, and why?==
+
+### What is Jujutsu *not*?
 
 - Pijul-style “we have hard math to make all changes commute”
 
@@ -157,7 +182,7 @@ This shows a couple other interesting features of `jj`’s approach to revsets a
 
 That’s all well and good, but even with reading the operator and function guides, it still took me a bit to actually quite make sense out of the default output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at.
 
-I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to.
+I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to. ==TODO: this is the `templates` stuff. It’s unstable but worth pointing people to.== ==TODO: share my own tweaks here.==
 
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
 
@@ -232,13 +257,34 @@ I was working on a change to [a library][true-myth] I maintain[^fun] and decided
 [^fun]: Yes, this is what I do for fun on my month off. At least: partially.
 
 
-### Git Interop
+## Rewiring Your Git Brain
 
-==TODO: add some commentary and color here==
+<figure class='quotation'>
 
-- ==TODO: branch behavior is a bit quirky-feeling at first, and definitely makes interacting with GitHub repos a bit weird==
+> You must unlearn what you have learned.
+
+<figcaption>—Yoda</figcaption>
+
+</figure>
+
+==TODO: add some introductory color here==
+
+
+### Changes
+
+- ==TODO: `commit` vs. `describe` and `new`==
+- ==TODO: `checkout` vs. `new`==
+- ==TODO: `merge` == `new` with a requirement for parent count==
+
+
+### Branches
+
+==TODO: branch behavior is a bit quirky-feeling at first, and definitely makes interacting with GitHub repos a bit weird==
+
+
+### Git interop
+
 - ==TODO: `jj git push` and friends do not always seem to work==
-- ==TODO: tip: for successful workflow==
 
 {% note %}
 
