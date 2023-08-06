@@ -81,7 +81,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Book of Common Prayer: A Biography</cite>](https://bookshop.org/a/21126/9780691191782), Alan Jacobs (new)
 
-- [<cite>Good Strategy/Bad Strategy: The Difference and Why It Matters</cite>](https://bookshop.org/a/21126/9780307886231), Richard P. Rumelt
+- [<cite>Good Strategy/Bad Strategy: The Difference and Why It Matters</cite>](https://bookshop.org/a/21126/9780307886231), Richard P. Rumelt (new)
 
 
 ### Fiction
