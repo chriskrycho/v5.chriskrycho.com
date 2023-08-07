@@ -250,11 +250,9 @@ If this sounds a little complicated, that is because *it is*. There are two big 
 
 The net is: when I want to break apart changes, at least for the moment I find myself quite tempted to go back to Fork and Git’s index. I do not think this problem is intractable, and I think the *idea* of `jj split` is right. It just—“just”!—needs some careful design work. Preferably, the `split` command would make it straightforward to generate an arbitrary number of commits from one initial commit, and it would allow progressive creation of each commit from a “vs. the previous commit” baseline. This is the upside of the index in Git: it does actually reflect the reality that there are three separate “buckets” in view when splitting apart a change: the baseline before all changes, the set of all the changes, and the set you want to include in the *next* commit. Existing diff tools do not really handle this—other than the integrated index-aware diff tools in Git clients!
 
-<!--
 - ==TODO: on `jj amend`==
 - ==TODO: on `jj merge`==
 - ==TODO: on `jj squash`==
--->
 
 Another huge feature of Jujutsu is it support for *first-class conflicts*. Instead of a conflict resulting in a nightmare that has to be resolved before you can move on, Jujutsu can incorporate both the merge and its resolution (whether manual or automatic) directly into commit history. Just having the conflicts in history does not seem that weird. “Okay, you committed the text conflict markers from git, neat.” But: having the conflict and its resolution in history, especially when Jujutsu figured out how to do that resolution for you, as part of a rebase operation? That is just plain *wild*.
 
@@ -275,6 +273,7 @@ One of the really interesting bits about picking up Jujutsu is realizing just ho
 ### Changes
 
 - ==TODO: `commit` vs. `describe` and `new`==
+    - ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
 - ==TODO: `checkout` vs. `new`==
 - ==TODO: `merge` == `new` with a requirement for parent count==
 
