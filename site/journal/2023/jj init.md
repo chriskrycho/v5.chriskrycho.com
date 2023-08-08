@@ -286,7 +286,7 @@ In Git, you work with changes by *committing* them. This took me a fair bit to w
 
 <figure>
 
-<script async id="asciicast-ZqNCOyTrHQA4ueYTD14yy1Tfj" src="https://asciinema.org/a/ZqNCOyTrHQA4ueYTD14yy1Tfj.js" data-speed="2" data-theme="nord"></script>
+<script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
 
 <figcaption>A demo of using <code>jj new</code> to create a three-parent merge</figcaption>
 
