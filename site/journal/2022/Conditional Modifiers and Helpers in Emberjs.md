@@ -13,7 +13,7 @@ summary: >
   Ember.js 3.27 introduced the `helper` and `modifier` helpers to complement the `component` helper, allowing for conditional application of helpers and modifiers.
 templateEngineOverride: md
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/modifiers.png
-updated: 2022-07-23T14:05:00-0600
+updated: 2023-08-12T09:15:00-0600
 updates:
   - at: 2022-05-19T09:01:00-0600
     changes: >
@@ -27,6 +27,11 @@ updates:
   - at: 2022-07-23T14:05:00-0600
     changes: >
       Corrected an error in the original text about string-based lookup of helpers and modifiers.
+  - at: 2023-08-12T09:15:00-0600
+    changes: >
+      Rewrote the section on conditional modifier application to account for Ember’s assertions forbidding dynamic strings as arguments to the `component`, `helper`, and `modifier` keywords in 3.28 and later.
+thanks: >
+  Rob Jackson let me know that we did ultimately add support for string-based invocations. Jarek Radosz let me know about the dynamic string assertion in Ember 3.28 and later.
 
 ---
 
@@ -117,40 +122,18 @@ Just like the `component` helper, the `modifier` and `helper` helpers handle `nu
   type="button"
   {{on "click" @addToCart}}
   {{on "click" this.markAsClicked}}
-  {{(modifier
-    (unless this.hasBeenClicked "track-interaction")
-    "click"
-    customizeData=this.customizeClickData
-  )}}
->
-  Add to Cart
-</button>
-```
-
-Notice that the `modifier` invocation is wrapped in "extra" parentheses: `{{(modifier ...)}}`. *This is not a mistake.* The parentheses here are the syntax for immediately invoking a helper when rendering. We need to do that because `modifier` is a helper, but it is appearing here in the position of a modifier. Ember will throw a build error if you don't include the parentheses, because helpers aren't allowed there! When Ember runs the helper, though, the result is a modifier—exactly what we need to use it here. (Put another way, `modifier` is a higher-order function which *returns* a modifier instance using on the modifier definition you supply it.) Like `component`, 
-
-If it makes more sense in a given context, you can also flip around the order of the conditional:
-
-```hbs
-<button
-  type="button"
-  {{on "click" @addToCart}}
-  {{on "click" this.markAsClicked}}
   {{(unless
     this.hasBeenClicked
-    (modifier
-      "track-interaction" "click" customizeData=this.customizeClickData
-    )
+    (modifier "track-interaction" "click" customizeData=this.customizeClickData)
   )}}
 >
   Add to Cart
 </button>
 ```
 
-Which you choose depends on the use case:
+Notice that the `unless` invocation is wrapped in "extra" parentheses: `{{(unless ...)}}`. *This is not a mistake.* The parentheses here are the syntax for immediately invoking a helper when rendering. We need to do that because `unless` and `modifier` are both helpers, but are appearing here in the position of a modifier. Ember will throw a build error if you don't include the parentheses, because helpers aren't allowed there! When Ember runs the helper, though, the result is a modifier—exactly what we need to use it here. (Put another way, `modifier` is a higher-order function which *returns* a modifier instance using on the modifier definition you supply it.)
 
--   the `{{(unless ...` version is handy if you just want to pick between having a modifier or not.
--   the `{{(modifier (unless ...` version is handy if you want to pick between modifiers to dispatch to with the same args (unusual but not impossible!)
+The order here is also important: we need to pass a static value to the `modifier` helper. Ember 3.28 and later forbid dynamically constructing strings passed to the `component`, `helper`, and `modifier` helpers so that the templates can be statically analyzed and are easier to migrate to strict-mode templates using `<template>`. This is also much friendlier to TypeScript analysis with [Glint](https://typed-ember.gitbook.io/glint)!
 
 
 ### By reference instead of by name
