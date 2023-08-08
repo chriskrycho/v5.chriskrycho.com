@@ -8,9 +8,9 @@
    "license": "MIT",
    "volta": {
       "node": "18.16.0",
-      "yarn": "3.5.0"
+      "pnpm": "8.6.12"
    },
-   "packageManager": "yarn@3.5.0",
+   "packageManager": "pnpm@8.6.12",
    "devDependencies": {
       "@11ty/eleventy": "^2.0.1",
       "@rollup/plugin-node-resolve": "^15.0.2",
@@ -27,6 +27,7 @@
       "@types/serve-static": "^1.15.0",
       "@types/uslug": "^1.0.1",
       "del": "^6.0.0",
+      "gray-matter": "^4.0.3",
       "gulp": "^4.0.2",
       "gulp-dart-sass": "^1.0.2",
       "highlight.js": "^11.8.0",
@@ -60,7 +61,7 @@
       "build:styles": "gulp all",
       "build:site": "eleventy --quiet",
       "build:scripts": "rollup -c rollup.config.mjs",
-      "build": "npm run build:scripts && npm run build:styles && npm run build:site -- --quiet",
+      "build": "npm run build:scripts && npm run build:styles && npm run build:site",
       "watch:styles": "gulp watch",
       "watch:site": "eleventy --serve",
       "watch:scripts": "rollup --config rollup.config.js --watch",
