@@ -17,7 +17,7 @@ tags:
 image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2023-08-07T19:41:00-0700
+updated: 2023-08-07T21:10:00-0700
 updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
@@ -62,6 +62,10 @@ updates:
   - at: 2023-08-07T19:41:00-0700
     changes: >
       YODA! And an introduction to the “Rewiring your Git brain” section.
+
+  - at: 2023-08-07T21:10:00-0700
+    changes: >
+      A first pass at `jj describe` and `jj new`.
 
 draft: true
 
@@ -272,8 +276,23 @@ One of the really interesting bits about picking up Jujutsu is realizing just ho
 
 ### Changes
 
-- ==TODO: `commit` vs. `describe` and `new`==
-    - ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
+In Git, you work with changes by *committing* them. This took me a fair bit to wrap my head around, but in Jujutsu, “commit” is actually basically just an alias for two other operations: `jj describe` and `jj new`, in that order. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `jj commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal operations which are much more capable than `git commit`:
+
+`jj describe` works on *any* commit. It just defaults to the commit that is the current working copy. But if you want to rewrite a message earlier in your commit history, that is not a special operation like it is in Git, where you have to run an interactive rebase to do it. You just do `jj describe --revision <ID> --message "new and improved message"`. That's it. (How you choose to integrate that into your history is a matter for you and your team to decide; and we are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!)
+
+`jj new` is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command, it is just an alias for `new`.
+
+==TODO: replace this with a better recording. I’m leaving it here for my own reference for what to do better next time, as well as the config options I want!==
+
+<figure>
+
+<script async id="asciicast-ZqNCOyTrHQA4ueYTD14yy1Tfj" src="https://asciinema.org/a/ZqNCOyTrHQA4ueYTD14yy1Tfj.js" data-speed="2" data-theme="nord"></script>
+
+<figcaption>A demo of using <code>jj new</code> to create a three-parent merge</figcaption>
+
+</figure>
+
+- ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
 - ==TODO: `checkout` vs. `new`==
 - ==TODO: `merge` == `new` with a requirement for parent count==
 
