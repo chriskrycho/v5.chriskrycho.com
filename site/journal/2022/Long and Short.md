@@ -10,6 +10,11 @@ qualifiers:
 summary: >
   Long-form essays or short knowledge-sharing posts? Why not both?
 date: 2022-09-24T10:33:00-0600
+updated: 2023-08-12T20:33:00-0600
+updates:
+  - at: 2023-08-12T20:33:00-0600
+    changes: >
+      I stopped reading Rickard.
 
 ---
 
@@ -43,7 +48,7 @@ I agree with basically everything Tratt and Regehr get at there, and agree with 
 
 [mere-o]: https://mereorthodoxy.com
 
-At the same time, I have been deeply appreciating [Matt Rickard’s blogging][mr] since I ran across his site a few months ago. Nearly everything he publishes is just a few hundred words long. None of it has anything like the technical depth of one of [Luu’s deep dives][luu] or [Hillel Wayne’s write-ups][wayne]. It’s neither better nor worse inherently, though: it is *wildly different*. Rickard is throwing off summaries and knowledge (more like an old-school late ’00s blogger!), Luu and Wayne are writing essays. The difference is mostly breadth vs. depth.
+At the same time, I have been deeply appreciating [Matt Rickard’s blogging][mr] since I ran across his site a few months ago. (**Edit:** see comments below.) Nearly everything he publishes is just a few hundred words long. None of it has anything like the technical depth of one of [Luu’s deep dives][luu] or [Hillel Wayne’s write-ups][wayne]. It’s neither better nor worse inherently, though: it is *wildly different*. Rickard is throwing off summaries and knowledge (more like an old-school late ’00s blogger!), Luu and Wayne are writing essays. The difference is mostly breadth vs. depth.
 
 [mr]: https://matt-rickard.com
 [luu]: https://danluu.com
@@ -60,3 +65,15 @@ One takeaway I have: the vast majority of my writing on this site over the past 
 
 [10]: https://v5.chriskrycho.com/journal/what-i-can-i-do-with-10-minutes/
 [flow]: https://v5.chriskrycho.com/journal/flow-state/
+
+{% callout %}
+
+**Update, August 12, 2023:**
+
+Well: that’s how it was last September. But Rickard’s daily blogging habit ultimately led to a spot where I found his writing much less interesting. When I first came across it, he was covering a lot of things where his experience level was relatively high and my knowledge was relatively low. Over the months which followed, though, he increasingly ended up opining on things where he had much less experience, and the result was that his signal:noise ratio went way down.
+
+A daily blogging habit is hard enough to sustain. It is far harder in the specific mode Rickard adopted: offering a *take* every day on some part of the tech field. To his credit, Rickard freely admits mistakes he has made along the way—wrong calls, bad predictions, etc.—and I think his writing might still be valuable for some readers. (Put another way: this is not a slam on him!) But I stopped reading, because the relative value of his blog declined substantially over time for me.
+
+The same is notably *not* true of Hillel Wayne. (And I hope Luu starts writing again at some point!)
+
+{% endcallout %}
