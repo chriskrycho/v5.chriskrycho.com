@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-08-06T09:36:00-0600
+date: 2023-08-14T13:09:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -65,8 +65,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://bookshop.org/a/21126/9781625640451), David T. Koyzis (new)
 
-- [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais
-
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
@@ -120,7 +118,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Holy Scripture: A Dogmatic Sketch</cite>](https://bookshop.org/a/21126/9780521538466), John Webster (new)
 
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
-  
+
+- [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais (new)
+
 
 ### Fiction
 
