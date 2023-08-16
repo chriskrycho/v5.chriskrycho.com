@@ -3,13 +3,11 @@ const BASE = 'copyright Chris Krycho, 2019';
 const LICENSE = {
    content: {
       name: 'Creative Commons Attribution 4.0',
-      url:
-         'https://github.com/chriskrycho/v5.chriskrycho.com/blob/master/LICENSE.md#Legalese-1',
+      url: 'https://github.com/chriskrycho/v5.chriskrycho.com/blob/master/LICENSE.md#Legalese-1',
    },
    implementation: {
       name: 'MIT',
-      url:
-         'https://github.com/chriskrycho/v5.chriskrycho.com/blob/master/LICENSE.md#software',
+      url: 'https://github.com/chriskrycho/v5.chriskrycho.com/blob/master/LICENSE.md#software',
    },
 };
 
