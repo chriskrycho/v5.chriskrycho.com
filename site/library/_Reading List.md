@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-08-25T22:48:00-0600
+date: 2023-08-27T17:15:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,8 +79,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Book of Common Prayer: A Biography</cite>](https://bookshop.org/a/21126/9780691191782), Alan Jacobs (new)
 
-- [<cite>Dealers of Lightning: Xerox Parc and the Dawn of the Computer Age</cite>](https://bookshop.org/a/21126/9780887309892), Michael A Hiltzik (new)
-
 
 ### Fiction
 
@@ -122,6 +120,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Team Topologies: Organizing Business and Technology Teams for Fast Flow</cite>](https://bookshop.org/a/21126/9781942788812), Matthew Skelton and Manuel Pais (new)
 
 - [<cite>Good Strategy/Bad Strategy: The Difference and Why It Matters</cite>](https://bookshop.org/a/21126/9780307886231), Richard P. Rumelt (new)
+
+- [<cite>Dealers of Lightning: Xerox Parc and the Dawn of the Computer Age</cite>](https://bookshop.org/a/21126/9780887309892), Michael A Hiltzik (new)
 
 
 ### Fiction
