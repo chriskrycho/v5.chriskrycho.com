@@ -1,13 +1,15 @@
 ---
 title: Curriculum Vitae
 subtitle: >
-    A Senior Staff Software Engineer at LinkedIn focused on enabling web <abbr>UI</abbr> developers to build more reliable products—faster.
+    A Senior Staff Software Engineer at LinkedIn, lately focused on frameworks and languages as tools to help other developers to build better software.
 summary: >
-    I am a Senior Staff Software Engineer at LinkedIn focused on enabling web UI developers to build more reliable products—faster. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
+    I am a Senior Staff Software Engineer at LinkedIn, lately focused on frameworks and languages as tools to help other developers to build better software. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
 
 ---
 
-Even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a better idea of how I work, I think you’ll find the rest of this page a lot more helpful.
+[My résumé][resume] has the short version. This page is the *long* version. Why? Because even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a better idea of how I work, I think you’ll find the rest of this page a lot more helpful.
+
+[resume]: https://cdn.chriskrycho.com/file/chriskrycho-com/resume.pdf
 
 Interested in working with me? Feel free to [say hello][email]!
 
@@ -32,7 +34,7 @@ I am senior software engineering leader, lately focused on programming language 
 
 Prior to my recent focus on developer experience engineering, I have a long history with full-stack web development, spent a half decade doing systems-level programming (including avionics software and computational physics models), and earned an [undergraduate degree in physics](#undergrad) and a [master’s degree in theology](#masters). That combo has led me to care—very deeply—about building the *right things* in the *right way*.
 
-Building the *right things* means I am not interested in startups whose vision consists of either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings.
+Building the *right things* means I am not interested in companies whose vision at either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings.
 
 Building things the *right way* means I am not interested in slapdash product development and rushed delivery. Software development as a field consistently underinvests in product quality and maintainability. It is the responsibility of engineers to raise that bar.
 
@@ -46,20 +48,33 @@ Building things the *right way* means I am not interested in slapdash product de
 
 ### Current: LinkedIn
 
-*An effective technical leader in a large and complex engineering organization.*
+
+*A lead client infrastructure engineer for one of the largest social networks in the world.*
 
 Since **January 2019**, I have worked as an infrastructure engineer at [LinkedIn], focused on developer productivity and application performance for LinkedIn's flagship web app.
 
 Since **September 2021**, as a **Senior Staff Software Engineer**:
 
-- I lead all front-end web development efforts on the flagship web app, setting the strategy and architectural direction
-- I am the primary subject matter expert for LinkedIn’s TypeScript adoption and migration strategies.
-- I work closely with both product teams and other infrastructure teams, and in that role I am one of the primary drivers for web development across the LinkedIn ecosystem.
+- I led a team to fix site-down memory leaks in our <abbr title="server-side rendering">SSR</abbr> stack, and identified and resolved major resiliency gaps in internal Node.js infrastructure.
+- As the primary TypeScript subject-matter expert at LinkedIn:
+    - I solved the most challenging technical blockers, e.g. type-safe event tracking.
+    - I coached LinkedIn’s TypeScript track leads.
+    - I authored [a spec][semver-ts] for Semantic Versioning for TypeScript types.
+    - I forged consensus in the Ember.js open source community on key <abbr title="TypeScript">TS</abbr> blockers:
+        - A novel, backwards-compatible [strategy][migration] to migrate away from DefinitelyTyped, which I also [executed][pr].
+        - A new [authoring format][template], resolving a years-long stalemate.
+- Designed a migration strategy away from Ember. (We did not use it—ask me!)
+- Mentored a half dozen engineers, ranging in seniority from Apprentice to Staff.
+
+[semver-ts]: https://semver-ts.org
+[migration]: https://rfcs.emberjs.com/id/0800-ts-adoption-plan#migration-from-definitelytyped
+[pr]: https://github.com/emberjs/ember.js/pull/20449
+[template]: https://rfcs.emberjs.com/id/0779-first-class-component-templates
 
 From **January 2019–September 2021**, as a **Staff Software Engineer**:
 
 - I developed a business case for TypeScript adoption which was key to the company's choice to fully support TypeScript for our JavaScript projects.
-- I was the tech lead for the adoption of [Ember Octane][octane] across the application. Additionally, as one of a handful of primary technical experts on Octane—at LinkedIn or anywhere else—I support many other teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
+- I dramatically improved developer experience and productivity across the organization as the tech lead for the adoption of [Ember Octane][octane] across the application. Additionally, as one of a handful of primary technical experts on Octane—at LinkedIn or anywhere else—I support many other teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
 - I led efforts to update the app to the current versions of Ember.js, unblocking adoption of Octane.
 - I helped build, and continue to support, [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
 
