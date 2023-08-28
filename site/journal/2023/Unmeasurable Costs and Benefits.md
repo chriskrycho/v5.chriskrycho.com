@@ -16,7 +16,7 @@ summary: >
 
 ---
 
-Graydon Hoare [wrote a good post][hoare] a few months ago about the importance of companies actually funding, and it spawned [a small discussion on Hacker News][hn] today. One of the commenters there [suggested][hnc] a variation on a refrain I have heard more or less non-stop over the past half decade since coming to LinkedIn and joining an infrastructure team whose remit included, to various degrees, open source software contribution and maintenance:
+Graydon Hoare [wrote a good post][hoare] a few months ago about the importance of companies actually funding maintenance of foundational open source software (though much of it also applies to non-open source foundational software!), and it spawned [a small discussion on Hacker News][hn] today. One of the commenters there [suggested][hnc] a variation on a refrain I have heard more or less non-stop over the past half decade since coming to LinkedIn and joining an infrastructure team whose remit included, to various degrees, open source software contribution and maintenance:
 
 > Imo number 1 thing that helps a maintainer on the resume is to say they brought in some number of revenue, and all their bug fixes (especially taking out the fires of the other engineers doing features) saves the company a dollar amount or guaranteed a dollar amount of <abbr title="annually-recurring revenue">ARR</abbr>.
 
