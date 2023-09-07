@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-09-03T16:40:00-0600
+date: 2023-09-09T13:13:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -78,6 +78,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
+
+- [<cite>Obliquity: Why our goals are best achieved indirectly</cite>](https://bookshop.org/a/21126/9780143120551), John Kay (new)
 
 
 ### Fiction
