@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-09-09T13:13:00-0600
+date: 2023-09-16T17:40:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,8 +79,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
-- [<cite>Obliquity: Why our goals are best achieved indirectly</cite>](https://bookshop.org/a/21126/9780143120551), John Kay (new)
-
 
 ### Fiction
 
@@ -126,6 +124,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Dealers of Lightning: Xerox Parc and the Dawn of the Computer Age</cite>](https://bookshop.org/a/21126/9780887309892), Michael A Hiltzik (new)
 
 - [<cite>The Book of Common Prayer: A Biography</cite>](https://bookshop.org/a/21126/9780691191782), Alan Jacobs (new)
+
+- [<cite>Obliquity: Why our goals are best achieved indirectly</cite>](https://bookshop.org/a/21126/9780143120551), John Kay (new)
 
 
 ### Fiction
