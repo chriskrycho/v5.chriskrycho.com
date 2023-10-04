@@ -227,6 +227,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library/The Doctrine of Scripture');
    addCollectionFromDir(config, 'library/Thinking in Systems');
    addCollectionFromDir(config, 'library/Reading Papers in Public');
+   addCollectionFromDir(config, 'library/What Can a Body Do');
    addCollectionFromDir(config, 'notes');
    addCollectionFromDir(config, 'elsewhere');
    addCollectionFromDir(config, 'photos');
