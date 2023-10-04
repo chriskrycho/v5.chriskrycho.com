@@ -1,0 +1,15 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/what-can-a-body-do/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "What Can a Body Do?: How We Meet the Built World",
+      "cover": "https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/what-can-a-body-do.png",
+      "author": "Sara Hendren",
+      "year": 2020,
+      "link": "https://bookshop.org/a/21126/9780735220003"
+   },
+   "tags": ["Sara Hendren"],
+   "qualifiers": {
+      "audience": "Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think."
+   }
+}
