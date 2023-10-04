@@ -17,7 +17,7 @@ I had the idea to add this affordance a few years ago, and a [former colleague][
 
 Well. No. You cannot. But that is not what I needed to do here. All I needed to do here was something incredibly simple and dumb, and the right way to do it was a *dumb* way: with a regular expression. You see, I am not dealing with arbitrary content, or documents which may be ill-formed, or any of the other many good reasons why you actually should not use a regular expression for general-purpose <abbr title="eXtensible Markup Language">XML</abbr> or <abbr title="hypertext markup language">HTML</abbr> document handling. Instead, I was dealing with a very simple find-and-replace operation on <abbr title="hypertext markup language">HTML</abbr> documents who structure I knew to be identical, because I was the sole author of those documents, and created them with well-structured templates.[^3]
 
-So I opened [BBEdit][9], my tool of choice these days for this kind of text transformation or editing, wrote a little not-even-a-regex search query for the tag I wanted to insert the new element in front of, and a replacement text consisting of the new <abbr title="hypertext markup language">HTML</abbr> element and its contents and associated styles. Then I ran **Replace All**, checked that things had worked the way I wanted, and repeated the process in conjunction with some judicious deployment of `jj restore --from main`.[^4] The details varied a little bit depending on the site in question, but those were the broad strokes. The whole thing took me maybe 20 minutes per site.
+So I opened [BBEdit][9], my [tool of choice][10] these days for this kind of text transformation or editing, wrote a little not-even-a-regex search query for the tag I wanted to insert the new element in front of, and a replacement text consisting of the new <abbr title="hypertext markup language">HTML</abbr> element and its contents and associated styles. Then I ran **Replace All**, checked that things had worked the way I wanted, and repeated the process in conjunction with some judicious deployment of `jj restore --from main`.[^4] The details varied a little bit depending on the site in question, but those were the broad strokes. The whole thing took me maybe 20 minutes per site.
 
 The lesson here is not “you should always do the dumb thing with a regex”. It is, rather, “sometimes you should do the dumb thing with a regex”, because that is all it takes to get the job done, and you won’t be revisiting it in the future. If either of those things is *not* true—if there is a more general problem to be solved, or if you expect to revisit it in the future—then build something more capable, more amenable to future revision. Otherwise… don’t.
 
@@ -29,7 +29,7 @@ This is what <abbr title="ya ain’t gonna need it">YAGNI</abbr> is really about
 
 [^3]: Some in [WordPress][6]’s “loop”, some in [Jinja2][7] for [Pelican][8].
 
-[^4]: [My write-up on using Jujutsu][10] is still coming, and will hopefully get finished over the sabbatical I started yesterday!
+[^4]: [My write-up on using Jujutsu][11] is still coming, and will hopefully get finished over the sabbatical I started yesterday!
 
 [1]: https://v4.chriskrycho.com/2019/my-final-round-of-url-rewrites-ever.html
 [2]: https://www.w3.org/Provider/Style/URI
@@ -40,4 +40,5 @@ This is what <abbr title="ya ain’t gonna need it">YAGNI</abbr> is really about
 [7]: https://jinja.palletsprojects.com/en/3.1.x/
 [8]: https://getpelican.com
 [9]: https://www.barebones.com/products/bbedit/
-[10]: https://v5.chriskrycho.com/journal/jj-init/
+[10]: https://v5.chriskrycho.com/journal/reflections-on-a-month-with-bbedit-and-nova/
+[11]: https://v5.chriskrycho.com/journal/jj-init/
