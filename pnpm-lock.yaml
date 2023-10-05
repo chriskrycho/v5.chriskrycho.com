@@ -25,6 +25,9 @@ devDependencies:
   '@rollup/plugin-typescript':
     specifier: ^11.1.0
     version: 11.1.0(rollup@3.20.7)(tslib@2.5.0)(typescript@5.0.4)
+  '@types/common-tags':
+    specifier: ^1.8.2
+    version: 1.8.2
   '@types/gulp-dart-sass':
     specifier: ^1.0.1
     version: 1.0.1
@@ -52,6 +55,9 @@ devDependencies:
   '@types/uslug':
     specifier: ^1.0.1
     version: 1.0.1
+  common-tags:
+    specifier: ^1.8.2
+    version: 1.8.2
   del:
     specifier: ^6.0.0
     version: 6.0.0
@@ -438,6 +444,10 @@ packages:
 
   /@tsconfig/node16@1.0.4:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
+    dev: true
+
+  /@types/common-tags@1.8.2:
+    resolution: {integrity: sha512-Z5UcOnlqxFm0tCCTEhkcVOfSihWOMyKypIWHtQNSYh6fMdPUIVpNdLBYutDpDXVHsMUrYzI2IczUHXIzpUovmQ==}
     dev: true
 
   /@types/eslint-scope@3.7.4:
@@ -1444,6 +1454,11 @@ packages:
   /commander@7.2.0:
     resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
     engines: {node: '>= 10'}
+    dev: true
+
+  /common-tags@1.8.2:
+    resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
+    engines: {node: '>=4.0.0'}
     dev: true
 
   /component-emitter@1.3.0:
