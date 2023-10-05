@@ -29,7 +29,7 @@ import yaml from 'js-yaml';
 import './feed'; // for extension of types -- TODO: move those types elsewhere!
 import striptags from 'striptags';
 import niceList from './nice-list';
-import { callout, note } from './notes';
+import { callout, note, quote } from './shortcodes';
 import { preparseYaml } from './preparse';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
@@ -190,6 +190,7 @@ function config(config: Config): UserConfig {
 
    config.addPairedShortcode('note', note);
    config.addPairedShortcode('callout', callout);
+   config.addPairedShortcode('quote', quote);
 
    config.addPassthroughCopy('site/_redirects');
    config.addPassthroughCopy('site/robots.txt');
