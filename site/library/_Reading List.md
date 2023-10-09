@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-07T20:05:00-0600
+date: 2023-10-08T19:10:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -79,8 +79,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
-- [<cite>What Can a Body Do?: How We Meet the Build World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren (new)
-
 - [<cite>Karl Barth</cite>](https://bookshop.org/a/21126/9780826474636), John Webster (new)
 
 - [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
@@ -132,6 +130,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Book of Common Prayer: A Biography</cite>](https://bookshop.org/a/21126/9780691191782), Alan Jacobs (new)
 
 - [<cite>Obliquity: Why our goals are best achieved indirectly</cite>](https://bookshop.org/a/21126/9780143120551), John Kay (new)
+
+- [<cite>What Can a Body Do?: How We Meet the Build World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren (new)
 
 
 ### Fiction
