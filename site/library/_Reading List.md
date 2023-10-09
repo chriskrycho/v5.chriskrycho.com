@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-08T19:10:00-0600
+date: 2023-10-09T09:50:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -149,9 +149,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Leviathan Wakes</cite>][leviathan-wakes], James S. A. Corey (reread)
 
-- [<cite>A Wizard of Earthsea</cite>](https://bookshop.org/a/21126/9780547722023), Ursula K. Le Guin (new)
-
-- [<cite>The Tombs of Atuan</cite>](https://bookshop.org/a/21126/9780689845369), Ursula K. Le Guin (new)
+- Earthsea, Ursula K. Le Guin (new)
+    - [<cite>A Wizard of Earthsea</cite>](https://bookshop.org/a/21126/9780547722023)
+    - [<cite>The Tombs of Atuan</cite>](https://bookshop.org/a/21126/9780689845369)
+    - [<cite>The Farthest Shore</cite>](https://bookshop.org/a/21126/9780689845345)
 
 ## 2022
 
