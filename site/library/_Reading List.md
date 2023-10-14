@@ -54,9 +54,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
 
-- [<cite>The Printing Press as an Agent of Change</cite>](https://bookshop.org/a/21126/9780521299558), Elizabeth Eisenstein (new)
-    - discussed on Winning Slowly [8.10] and [8.11]
-
 - [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
@@ -130,6 +127,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>What Can a Body Do?: How We Meet the Build World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren (new)
 
 - [<cite>Karl Barth</cite>](https://bookshop.org/a/21126/9780826474636), John Webster (new)
+
+- [<cite>The Printing Press as an Agent of Change</cite>](https://bookshop.org/a/21126/9780521299558), Elizabeth Eisenstein (new)
+    - discussed on Winning Slowly [8.10] and [8.11]
 
 - [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
 
