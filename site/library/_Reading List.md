@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-10T09:20:00-0600
+date: 2023-10-14T11:33:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
