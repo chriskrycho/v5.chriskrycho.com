@@ -75,8 +75,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
 
-- [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
-
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
 - [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
@@ -132,6 +130,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>What Can a Body Do?: How We Meet the Build World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren (new)
 
 - [<cite>Karl Barth</cite>](https://bookshop.org/a/21126/9780826474636), John Webster (new)
+
+- [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
 
 
 ### Fiction
