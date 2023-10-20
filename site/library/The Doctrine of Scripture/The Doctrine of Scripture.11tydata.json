@@ -8,5 +8,8 @@
       "year": 2021,
       "link": "https://bookshop.org/a/21126/9781532664991"
    },
-   "tags": ["Brad East", "theology", "Bible"]
+   "tags": ["Brad East", "theology", "Bible"],
+   "qualifiers": {
+      "audience": "Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think."
+   }
 }
