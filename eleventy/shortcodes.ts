@@ -9,28 +9,52 @@ export const note = (content: string, { type = 'Note' } = {}): string =>
 export const callout = (content: string): string =>
    `<section class='callout' aria-role='note'>${markdown.render(content)}</section>`;
 
+interface BibleRef {
+   source: {
+      book: string;
+      translation: string;
+      /** 3 John does not have a chapter! */
+      chapter?: number;
+      /** '1' or '1–2' */
+      verse: number | string;
+   };
+}
+
 interface Quote {
    source: {
-      author: string;
+      author?: string;
       title: string;
    };
    location?: string;
 }
 
-export const quote = (content: string, quote: Quote): string => {
-   let location = quote.location ? `, ${quote.location}` : '';
-   let rendered = markdown.render(content);
-   let { author, title } = quote.source;
+type Reference = Quote | BibleRef;
+
+export const quote = (content: string, ref: Reference): string => {
+   let citation = isBibleRef(ref) ? bibleRef(ref) : basicCitation(ref);
 
    // Because it's really important here *not* to include indentation so
    // this can run *before* Markdown parsing runs on the rest of it.
    return stripIndents`<figure class='quotation'>
       <blockquote>
-         ${rendered}
+         ${markdown.render(content)}
       </blockquote>
-      <figcaption>
-         —${author}, <cite>${title}</cite>${location}
-      </figcaption>
+      <figcaption>—${citation}</figcaption>
    </figure>
    `;
+
+   function bibleRef({ source: bible }: BibleRef): string {
+      let location = bible.chapter ? `${bible.chapter}:${bible.verse}` : bible.verse;
+      return `${bible.book} ${location}`;
+   }
+
+   function basicCitation(quote: Quote): string {
+      let author = quote.source.author ? `${quote.source.author}, ` : '';
+      let location = quote.location ? `, ${quote.location}` : '';
+      return `${author}<cite>${quote.source.title}</cite>${location}`;
+   }
 };
+
+function isBibleRef(ref: Reference): ref is BibleRef {
+   return 'book' in ref.source;
+}
