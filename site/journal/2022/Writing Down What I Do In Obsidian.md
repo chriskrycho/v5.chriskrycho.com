@@ -6,6 +6,7 @@ tags:
     - learning
     - note-taking
     - Obsidian
+    - video
 qualifiers:
     audience: >
         People who are interested in working effectively, particularly with an eye to keeping track of accomplishments, building “brag docs,” etc.

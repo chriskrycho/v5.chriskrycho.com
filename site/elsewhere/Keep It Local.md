@@ -25,6 +25,7 @@ tags:
   - mental models
   - Ember
   - autotracking
+  - video
 
 ---
 
@@ -181,7 +182,7 @@ Now, if you’re feeling skeptical of my thesis, you might be thinking that I pi
 
 ### Structured Programming
 
-<a name='go-to-statement-considered-harmful'></a>Let’s start with Edgar Dijkstra’s 1968 paper “Go To Statement Considered Harmful”. He opens by arguing that 
+<a name='go-to-statement-considered-harmful'></a>Let’s start with Edgar Dijkstra’s 1968 paper “Go To Statement Considered Harmful”. He opens by arguing that
 
 > …our intellectual powers are rather geared to master static relations and… our powers to visualize processes evolving in time are relatively poorly developed. For that reason we should do (as wise programmers aware of our limitations) our utmost to shorten the conceptual gap between the static program and the dynamic process, to make the correspondence between the program (spread out in text space) and the process (spread out in time) as trivial as possible.
 
@@ -215,7 +216,7 @@ Even when you still have shared mutable state, reducing the scope of the sharing
 
 - The **Open-Closed Principle** says that objects should be “open for extension but closed for modification.” In other words, you should be able to add new functionality to a given type, but you shouldn’t be able to reach in and muck with its guts. When you’re working on the internals of a class built this way, you don’t have to care about what extensions are doing—and vice versa: extensions not only shouldn’t but at best *cannot* muck with and therefore cannot care about internals.
 
-- The **Liskov Substitution Principle** says you ought to be able to use a subtype of a given type anywhere you can use the type itself. So if a function accepts an `Animal`, you should be able to pass a `Cat` to the function. Upholding this principle means we don’t have to care about implementation details of subtypes! 
+- The **Liskov Substitution Principle** says you ought to be able to use a subtype of a given type anywhere you can use the type itself. So if a function accepts an `Animal`, you should be able to pass a `Cat` to the function. Upholding this principle means we don’t have to care about implementation details of subtypes!
 
 - The **Interface Segregation Principle** says you should have lots of small interfaces specific to things which use them, instead of one giant blob interface which handles every possible interaction. If I only need one method, why should I have to care about 235 other methods other clients might need? Interface segregation means I *don’t* have to care about them!
 
@@ -273,13 +274,13 @@ This is a significant difference from Ember classic as well as other observer-ba
 
 1. First, in Ember classic, the combination of dependent key observation and two-way binding meant anyone could *make* any piece of data in the system reactive. This made it impossible to know where a given piece of data was updated without reading *all* of the code which referred to the object at all. It also meant that reactivity was not a function of the data, but a function of who *used* the data, and how. I would say that this is the definition of defeating local reasoning about reactivity, except that the second piece was even *worse*!
 
-2. That second problem was observers. An observer, like a computed property, could be triggered by changes to *any* data in the system… but then it could also go trigger *further* updates to state, or perform arbitrary tasks, or do… anything. With Ember’s classic observers system, it was impossible to know what all you were kicking off with a single `this.set`. Infamously, you could pretty easily get yourself into infinite loops where one `set` could trigger an observer which triggered another `set` and so on forever. What’s more, this wasn’t limited to explicit use of observers: the classic lifecycle hooks like `didReceiveAttrs` had exactly the same kinds of issues. And again: the only way to know was to read through every single place that the data was used in any way (direct or indirect). Good luck! 
+2. That second problem was observers. An observer, like a computed property, could be triggered by changes to *any* data in the system… but then it could also go trigger *further* updates to state, or perform arbitrary tasks, or do… anything. With Ember’s classic observers system, it was impossible to know what all you were kicking off with a single `this.set`. Infamously, you could pretty easily get yourself into infinite loops where one `set` could trigger an observer which triggered another `set` and so on forever. What’s more, this wasn’t limited to explicit use of observers: the classic lifecycle hooks like `didReceiveAttrs` had exactly the same kinds of issues. And again: the only way to know was to read through every single place that the data was used in any way (direct or indirect). Good luck!
 
 When combined with stricter one-way data flow rules for Glimmer components, autotracking dodges both of these:
 
-1. First, the owner of data is in control of reactivity. If a given piece of data is not `@tracked`, it isn’t reactive—period. This means we don’t have the problem of arbitrary consumers being able to make something reactive just by marking it with a dependent key. This makes it *much* clearer where and how reactive data can change—usually in just one place! 
+1. First, the owner of data is in control of reactivity. If a given piece of data is not `@tracked`, it isn’t reactive—period. This means we don’t have the problem of arbitrary consumers being able to make something reactive just by marking it with a dependent key. This makes it *much* clearer where and how reactive data can change—usually in just one place!
 
-2. Second, by removing observers and observer-like lifecycle hooks like `didReceiveAttrs`, and enforcing one-way data flow, we actually end up with many of the benefits of pure functional programming. We can no longer easily trigger arbitrary side effects in response to changes in reactive state. Nearly everything “downstream” of tracked data is simply a pure function of that data—whether that’s in native getters in JavaScript or in helper or component invocations in templates. For the cases where we *need* to do imperative or event-based work, like DOM APIs, we push that into modifiers. This means we no longer have to worry about arbitrary cascades of state changes getting triggered by a single update in our system. 
+2. Second, by removing observers and observer-like lifecycle hooks like `didReceiveAttrs`, and enforcing one-way data flow, we actually end up with many of the benefits of pure functional programming. We can no longer easily trigger arbitrary side effects in response to changes in reactive state. Nearly everything “downstream” of tracked data is simply a pure function of that data—whether that’s in native getters in JavaScript or in helper or component invocations in templates. For the cases where we *need* to do imperative or event-based work, like DOM APIs, we push that into modifiers. This means we no longer have to worry about arbitrary cascades of state changes getting triggered by a single update in our system.
 
 To return to two of my opening examples:
 

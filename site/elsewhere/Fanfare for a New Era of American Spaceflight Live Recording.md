@@ -10,6 +10,7 @@ tags:
     - Logic Pro
     - Dorico
     - Budapest Scoring Orchestra
+    - video
 date: 2023-03-31T15:55:00-0600
 qualifiers:
   audience: >

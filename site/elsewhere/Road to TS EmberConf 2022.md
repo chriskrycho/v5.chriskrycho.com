@@ -10,6 +10,7 @@ tags:
     - TypeScript
     - Semantic Versioning
     - Ember
+    - video
 qualifiers:
     audience: >
         People interested in TypeScript, JavaScript, web frameworks, semantic versioning, and “developer experience”. Also: people who like my talks.

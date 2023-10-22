@@ -8,7 +8,7 @@ tags:
   - vocation
 qualifiers:
   audience: >
-    Theologically-orthodox Christians, or at least folks interested in things that theologically-orthodox Christians think; and specifically those interested in.
+    Theologically-orthodox Christians, or at least folks interested in things that theologically-orthodox Christians think; and specifically those interested in vocation, art, science, and so on.
   epistemic: >
     Still mulling, 6 years later.
   context: >
