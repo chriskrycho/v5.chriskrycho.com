@@ -13,10 +13,7 @@ interface BibleRef {
    source: {
       book: string;
       translation: string;
-      /** 3 John does not have a chapter! */
-      chapter?: number;
-      /** '1' or '1–2' */
-      verse: number | string;
+      passage: string;
    };
 }
 
@@ -44,8 +41,7 @@ export const quote = (content: string, ref: Reference): string => {
    `;
 
    function bibleRef({ source: bible }: BibleRef): string {
-      let location = bible.chapter ? `${bible.chapter}:${bible.verse}` : bible.verse;
-      return `${bible.book} ${location}`;
+      return `${bible.book} ${bible.passage} (${bible.translation})`;
    }
 
    function basicCitation(quote: Quote): string {
