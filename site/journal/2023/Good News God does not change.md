@@ -6,8 +6,7 @@ date: 2023-10-22T16:47:00-0600
 reference:
   book: Malachi
   translation: NLT
-  chapter: 3
-  verse: 6
+  passage: 3:6
 qualifiers:
   audience:
     Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
