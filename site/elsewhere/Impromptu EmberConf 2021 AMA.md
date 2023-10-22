@@ -7,6 +7,7 @@ tags:
   - software development
   - JavaScript
   - Ember
+  - video
 
 ---
 

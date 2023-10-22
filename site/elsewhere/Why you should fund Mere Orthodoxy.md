@@ -3,6 +3,8 @@ title: Why you should fund Mere Orthodoxy
 subtitle: A heartfelt plea from me to you
 date: 2021-12-30T09:30:00-0700
 link: https://www.youtube.com/watch?v=S4MhJR3Vqm0
+tags:
+    - video
 
 ---
 
