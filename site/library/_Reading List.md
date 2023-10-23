@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-23T17:22:00-0600
+date: 2023-10-25T16:50:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -78,8 +78,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Programming Languages: Application and Interpretation</cite>](https://www.plai.org), Shriram Krishnamurthi (new)
 
-- [<cite>Bad Blood: Secrets and Lies in a Silicon Valley Startup</cite>](https://bookshop.org/a/21126/9780525431992), John Carreyrou (new)
-
 
 ### Fiction
 
@@ -136,6 +134,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     - discussed on Winning Slowly [8.10] and [8.11]
 
 - [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
+
+- [<cite>Bad Blood: Secrets and Lies in a Silicon Valley Startup</cite>](https://bookshop.org/a/21126/9780525431992), John Carreyrou (new)
 
 
 ### Fiction
