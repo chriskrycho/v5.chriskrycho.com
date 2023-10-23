@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-14T11:33:00-0600
+date: 2023-10-23T17:22:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -37,6 +37,8 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
 
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
+
+- [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
 
 
 ### Fiction
@@ -74,7 +76,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
-- [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
+- [<cite>Programming Languages: Application and Interpretation</cite>](https://www.plai.org), Shriram Krishnamurthi (new)
+
+- [<cite>Bad Blood: Secrets and Lies in a Silicon Valley Startup</cite>](https://bookshop.org/a/21126/9780525431992), John Carreyrou (new)
 
 
 ### Fiction
