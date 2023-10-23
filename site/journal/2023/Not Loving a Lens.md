@@ -13,6 +13,11 @@ updates:
   - at: 2023-10-16T19:53:00-0600
     changes: >
       Clarified between the Sony 50mm 𝑓/1.2 and 𝑓/1.4 <abbr title="G Master">GM</abbr> lenses.
+  - at: 2023-10-22T19:10:00-0600
+    changes: Added an assumed audience. For posterity!
+
+qualifiers:
+  audience: Camera nerds.
 
 ---
 
