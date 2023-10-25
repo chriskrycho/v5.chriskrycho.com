@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-25T16:50:00-0600
+date: 2023-10-29T19:53:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -83,8 +83,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
-- [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
-
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
 
@@ -157,6 +155,8 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [<cite>A Wizard of Earthsea</cite>](https://bookshop.org/a/21126/9780547722023)
     - [<cite>The Tombs of Atuan</cite>](https://bookshop.org/a/21126/9780689845369)
     - [<cite>The Farthest Shore</cite>](https://bookshop.org/a/21126/9780689845345)
+
+- [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
 
 ## 2022
 
