@@ -12,7 +12,7 @@ qualifiers:
   audience: >
     Other artists—writers, composers, etc.—working with digital files.  And software developers! While I use Dorico projects as the example here, this is equally applicable to all other "big binary blob of data" files used in art etc.
 summary: >
-  I do manual "version control" for Dorico projects. The same basic approach works for Logic Pro or Procreate or Photoshop or any other "big binary blob" format.
+  I do manual “version control” for Dorico projects. The same basic approach works for Logic Pro or Procreate or Photoshop or any other “big binary blob” format.
 
 ---
 
