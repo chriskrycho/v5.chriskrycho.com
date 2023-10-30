@@ -5,7 +5,7 @@ subtitle: >
   Given all the analysis from this series, a concrete proposal to move this forward!
 date: 2021-12-03T16:35:00-0700
 link: https://github.com/emberjs/rfcs/pull/779
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/rfc-0779.png
+image: https://cdn.chriskrycho.com/images/template-imports/rfc-0779.png
 series:
   part: 7
 

@@ -5,7 +5,7 @@ subtitle: >
   Evaluating the tradeoffs of template language designs for *tooling*.
 series:
   part: 3
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports/part-3-table.png
+image: https://cdn.chriskrycho.com/images/template-imports/part-3-table.png
 date: 2021-11-09T16:50:00-0700
 updated: 2021-11-15T07:00:00-0700
 updates:

@@ -3,7 +3,7 @@ title: running / patience
 book:
   title: On Pace
   author: Matt Fitzgerald
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/on-pace.webp
+  cover: https://cdn.chriskrycho.com/images/books/on-pace.webp
   link: https://bookshop.org/a/21126/9798985398007
   year: 2022
 summary: >

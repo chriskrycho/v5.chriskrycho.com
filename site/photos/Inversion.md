@@ -1,14 +1,14 @@
 ---
 title: Inversion
 date: 2022-10-08T19:50:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion%20(Thumb).jpg
+image: https://cdn.chriskrycho.com/images/2022/10-08%20Inversion%20(Thumb).jpg
 
 ---
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion%20(Thumb).jpg" alt="a neighborhood, mountains, and clouds reflecting in a lake " />
+<img src="https://cdn.chriskrycho.com/images/2022/10-08%20Inversion%20(Thumb).jpg" alt="a neighborhood, mountains, and clouds reflecting in a lake " />
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-08%20Inversion.jpg">full size</a> | <a href='https://glass.photo/chriskrycho/2AfZHKcnYlpome4totbQrp'>Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/10-08%20Inversion.jpg">full size</a> | <a href='https://glass.photo/chriskrycho/2AfZHKcnYlpome4totbQrp'>Glass</a></p>
 <table>
     <tr>
         <th scope='row'>Camera</th>

@@ -35,7 +35,7 @@ After following Christ, my family is far and away the most important part of my 
 
 (This site focuses on my public *thinking*; for occasional family updates see [Not a Hint of Hyperbole](https://krycho.com).)
 
-![Krycho family, July 2021](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dnm-2021.jpg)
+![Krycho family, July 2021](https://cdn.chriskrycho.com/images/dnm-2021.jpg)
 
 ## By trade
 

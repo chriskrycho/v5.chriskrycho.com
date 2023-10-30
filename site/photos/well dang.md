@@ -1,7 +1,7 @@
 ---
 title: well, dang
 date: 2022-12-27T20:30:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
+image: https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
 tags:
   - Leica Q2
 
@@ -9,10 +9,10 @@ tags:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang%20thumb.jpg" />
+<img src="https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang%20thumb.jpg" />
 
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/SaSW12A7hXiOBeMUBsdAd">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/SaSW12A7hXiOBeMUBsdAd">Glass</a></p>
 
 <table>
 <tr><th scope="row">Camera</th><td>Leica Q2</td></tr>

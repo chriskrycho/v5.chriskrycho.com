@@ -11,7 +11,7 @@ qualifiers:
     There are few things in software development I’m *extremely* confident about. This is one of them.
 thanks: >
   This material is the fruit of many productive conversations with both [Ben Makuh](https://benmakuh.com) and [Chris Garrett](https://www.pzuraq.com) over the past several years, crystallized by the excellent questions the Flagship Web engineers at LinkedIn have asked me over the last year; and [Jaimie Krycho](https://jaimiekrycho.com) and [Yehuda Katz](https://yehudakatz.com) gave invaluable feedback on drafts and dry runs!
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/talks/keep-it-local-emberconf21.jpg
+image: https://cdn.chriskrycho.com/images/talks/keep-it-local-emberconf21.jpg
 date: 2021-03-31T09:20:00-0600
 tags:
   - talks

@@ -5,7 +5,7 @@ subtitle: >
     My argument for `<template>`: a series in 5 parts.
 summary: >
     The Ember/Glimmer community is experimenting with designs for single-file-components. This series is a deep dive and extended argument for the `<template>` design over alternatives.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/template-imports-demo.png
+image: https://cdn.chriskrycho.com/images/template-imports-demo.png
 permalink: /journal/ember-template-imports/
 layout: archives.njk
 standalonePage: true
@@ -29,5 +29,5 @@ While each of these has its own upsides and downsides, I believe `<template>` is
 
 In addition to the <abbr title="HyperText Markup Language">HTML</abbr> presentation here on my website, you can read this series offline:
 
-- [<abbr title="electronic publication">EPUB</abbr>](https://cdn.chriskrycho.com/file/chriskrycho-com/resources/Ember%20Template%20Imports.epub)
-- [<abbr title="portable document format">PDF</abbr>](https://cdn.chriskrycho.com/file/chriskrycho-com/resources/Ember%20Template%20Imports.pdf)
+- [<abbr title="electronic publication">EPUB</abbr>](https://cdn.chriskrycho.com/resources/Ember%20Template%20Imports.epub)
+- [<abbr title="portable document format">PDF</abbr>](https://cdn.chriskrycho.com/resources/Ember%20Template%20Imports.pdf)

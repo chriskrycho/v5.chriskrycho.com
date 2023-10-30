@@ -6,7 +6,7 @@ summary: >
 book:
   title: Dogmatics in Outline
   author: Karl Barth
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/dogmatics-in-outline.jpg
+  cover: https://cdn.chriskrycho.com/images/books/dogmatics-in-outline.jpg
   link: https://bookshop.org/a/21126/9780061300561
   year: 1959 (first ed. 1949)
 date: 2021-04-04T14:46:00-0600

@@ -14,7 +14,7 @@ tags:
   - version control
   - Jujutsu
 
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/unlearn.jpg
+image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
 updated: 2023-08-07T21:10:00-0700
@@ -271,7 +271,7 @@ I was working on a change to [a library][true-myth] I maintain[^fun] and decided
 
 One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
+<img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
 
 
 ### Changes

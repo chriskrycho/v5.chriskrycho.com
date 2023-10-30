@@ -16,7 +16,7 @@ qualifiers:
         People interested in photography, photography gear, and/or web workflows for publishing photography.
 
 date: 2021-07-10T17:20:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/C83397FC-DC11-4D08-A683-5C6BFA2A8263.jpeg
+image: https://cdn.chriskrycho.com/images/C83397FC-DC11-4D08-A683-5C6BFA2A8263.jpeg
 thanks: >
     Jaimie Krycho took the photo used for social media and at the end of the post!
 
@@ -86,4 +86,4 @@ Now, you might wonder whether this is what I would *recommend*. The answer there
 
 ---
 
-![at Dinosaur National Monument today… yes, with two cameras](https://cdn.chriskrycho.com/file/chriskrycho-com/images/C83397FC-DC11-4D08-A683-5C6BFA2A8263.jpeg)
+![at Dinosaur National Monument today… yes, with two cameras](https://cdn.chriskrycho.com/images/C83397FC-DC11-4D08-A683-5C6BFA2A8263.jpeg)

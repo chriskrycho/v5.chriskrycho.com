@@ -6,9 +6,9 @@ date: 2022-10-21T21:45:00-0400
 ---
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-21%20walking%20back%20to%20the%20hotel%20(thumb).jpg" alt="a set of arches and lights at night, in black and white" />
+<img src="https://cdn.chriskrycho.com/images/2022/10-21%20walking%20back%20to%20the%20hotel%20(thumb).jpg" alt="a set of arches and lights at night, in black and white" />
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-21%20walking%20back%20to%20the%20hotel.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/39EbbrmA5kqmbfxeBfDA8F">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/10-21%20walking%20back%20to%20the%20hotel.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/39EbbrmA5kqmbfxeBfDA8F">Glass</a></p>
 
 <table>
 <tr><th scope="row">Camera</th><td>Sony α7R IV</td></tr>

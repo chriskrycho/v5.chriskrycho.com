@@ -1,14 +1,14 @@
 ---
 title: NYC, Looking Up
 date: 2022-10-19T21:15:00-0400
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-16%20NY%20looking%20up%20(thumb).jpg
+image: https://cdn.chriskrycho.com/images/2022/10-16%20NY%20looking%20up%20(thumb).jpg
 
 ---
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-16%20NY%20looking%20up%20(thumb).jpg" alt="a neighborhood, mountains, and clouds reflecting in a lake " />
+<img src="https://cdn.chriskrycho.com/images/2022/10-16%20NY%20looking%20up%20(thumb).jpg" alt="a neighborhood, mountains, and clouds reflecting in a lake " />
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-16%20NY%20looking%20up.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/7Uq8hfnUDFa76RNMphjhcx">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/10-16%20NY%20looking%20up.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/7Uq8hfnUDFa76RNMphjhcx">Glass</a></p>
 
 <table>
 <tr><th scope="row">Camera</th><td>Sony α7R IV</td></tr>

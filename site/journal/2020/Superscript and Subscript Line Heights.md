@@ -7,7 +7,7 @@ summary: >
     Superscripts and subscripts should not affect the vertical rhythm of the text.
 qualifiers:
     audience: People who want their websites, apps, etc. to look right.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/superscript%20horror%20show.png
+image: https://cdn.chriskrycho.com/images/superscript%20horror%20show.png
 tags:
     - typography
     - design

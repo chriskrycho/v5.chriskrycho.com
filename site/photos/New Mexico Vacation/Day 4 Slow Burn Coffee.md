@@ -2,7 +2,7 @@
 title: Slow Burn Coffee
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 4: the loveliest space I have yet seen in the city.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210406-thumb.jpg
+image: https://cdn.chriskrycho.com/images/new-mexico-vacation/20210406-thumb.jpg
 date: 2021-04-06T11:10:00-0600
 updated: 2021-04-06T13:00:00-0600
 
@@ -17,7 +17,7 @@ I walked into [Slow Burn Coffee][sbc] and the beauty of the space stopped me sti
 
 [![Sony α7R IV and Sony FE 20mm 𝑓/1.8 G  
 𝑓/5.6, 1/40s, <abbr>ISO</abbr> 320  
-[(see it full size on Unsplash)][unsplash]](https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210406-thumb.jpg)][unsplash]
+[(see it full size on Unsplash)][unsplash]](https://cdn.chriskrycho.com/images/new-mexico-vacation/20210406-thumb.jpg)][unsplash]
 
 [unsplash]: https://unsplash.com/photos/9xz8TsW4Zr8
 

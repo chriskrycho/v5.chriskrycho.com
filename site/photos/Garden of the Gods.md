@@ -2,7 +2,7 @@
 title: Garden of the Gods
 subtitle: We’ve lived here for almost five years and hadn’t been till friends visited a couple weeks ago.
 date: 2022-09-17T21:10:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/Garden%20of%20the%20Gods%20thumb.jpg
+image: https://cdn.chriskrycho.com/images/2022/Garden%20of%20the%20Gods%20thumb.jpg
 summary: >
     A black and white photo of one of the rock formations in Garden of the Gods.
 
@@ -11,7 +11,7 @@ summary: >
 <figure>
 <img src='{{image}}' alt='A black and white photo of one of the rock formations in Garden of the Gods' />
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/Garden%20of%20the%20Gods.jpg">full size</a> | <a href='https://glass.photo/chriskrycho/7YRTwv15nXr3yuGcfw85Ih'>Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/Garden%20of%20the%20Gods.jpg">full size</a> | <a href='https://glass.photo/chriskrycho/7YRTwv15nXr3yuGcfw85Ih'>Glass</a></p>
 <table>
     <tr>
         <th scope='row'>Camera</th>

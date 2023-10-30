@@ -10,7 +10,7 @@ qualifiers:
   audience: >
     People interested in personal toolkits, especially for software; and people who want to better understand detail-obsessed people like me who always talk about their preferences for platform-native software.
 
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/BBEdit%20and%20Nova.png
+image: https://cdn.chriskrycho.com/images/BBEdit%20and%20Nova.png
 
 tags:
   - software development

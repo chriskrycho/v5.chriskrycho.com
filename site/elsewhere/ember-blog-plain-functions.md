@@ -9,7 +9,7 @@ tags:
   - software development
   - JavaScript
   - Ember
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ember-plain-functions.png
+image: https://cdn.chriskrycho.com/images/ember-plain-functions.png
 qualifiers:
   audience: Folks interested in what the Ember.js community is up to.
 

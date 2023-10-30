@@ -5,7 +5,7 @@ qualifiers:
     audience: readers of sci-fi (…or people who aren’t, but who just like to be challenged in their thinking).
 book:
     title: Red Mars
-    cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/red-mars.jpg
+    cover: https://cdn.chriskrycho.com/images/red-mars.jpg
     link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRed-Mars-Kim-Stanley-Robinson%2Fbook%2F5602896%3Fmatches%3D189
     author: Kim Stanley Robinson
     year: 1992

@@ -18,7 +18,7 @@ qualifiers:
         Anyone interested in the process of writing composed music.
 series:
     part: 9
-audio: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-8.mp3
+audio: https://cdn.chriskrycho.com/music/crew-dragon-2/day-8.mp3
 
 ---
 
@@ -36,11 +36,11 @@ I have a few further comments, but first, the music!
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-8.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/day-8.mp3"
     title="getting close to the end now..."
     controls
   ></audio>
-  <figcaption>rough draft of the complete fanfare! (<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-8.pdf">read the score</a>)</figcaption>
+  <figcaption>rough draft of the complete fanfare! (<a href="https://cdn.chriskrycho.com/music/crew-dragon-2/day-8.pdf">read the score</a>)</figcaption>
 </figure>
 
 ## Further thoughts
@@ -57,7 +57,7 @@ Now that I have actually *completed* a draft of this piece, I have a bunch of fu
 
 You may have noticed if you looked at [the score][score] (today or previously) that the title on the page is <cite>Fanfare for a New Era of American Spaceflight</cite>. I titled the blog post series “Composing a Fanfare for Crew Dragon” because I did not actually have that title when I started work, but I like it. There is a long history of “Fanfare for…” and while this piece will never stack up next to something like Copland’s <cite>Fanfare for the Common Man</cite>, that’s at least the kind of thing I had in mind!
 
-[score]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-8.pdf
+[score]: https://cdn.chriskrycho.com/music/crew-dragon-2/day-8.pdf
 
 ### Dorico
 

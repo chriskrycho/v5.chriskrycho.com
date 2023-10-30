@@ -15,7 +15,7 @@ updated: 2022-11-09T09:45:00-0700
 updates:
   - at: 2022-11-09T09:45:00-0700
     changes: Added a link and embed to the screencast I made.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian-workflow/2022-11-08@2x-dark.png
+image: https://cdn.chriskrycho.com/images/obsidian-workflow/2022-11-08@2x-dark.png
 templateEngineOverride: md
 
 ---
@@ -120,9 +120,9 @@ This renders the contents of the **Outcomes** section of the daily work note dir
 The result looks something like this:
 
 <picture style="max-width: var(--max-width)">
-    <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian-workflow/2022-11-08@2x-dark.png" media="(prefers-color-scheme: dark)">
-    <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian-workflow/2022-11-08@2x-light.png" media="(prefers-color-scheme: light)">
-    <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/obsidian-workflow/2022-11-08@2x-dark.png">
+    <source srcset="https://cdn.chriskrycho.com/images/obsidian-workflow/2022-11-08@2x-dark.png" media="(prefers-color-scheme: dark)">
+    <source srcset="https://cdn.chriskrycho.com/images/obsidian-workflow/2022-11-08@2x-light.png" media="(prefers-color-scheme: light)">
+    <img src="https://cdn.chriskrycho.com/images/obsidian-workflow/2022-11-08@2x-dark.png">
 </picture>
 
 The result is that each work tracking note can be the source of truth for that particular day/week/month/etc.—the other note just *includes* it. I don’t have to copy back and forth to keep things in sync anymore. This is *fantastic*, and I recommend it highly!

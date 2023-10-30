@@ -1,7 +1,7 @@
 ---
 title: Alley sunset
 date: 2021-08-26T20:35:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/20210825-Street-thumb.jpg
+image: https://cdn.chriskrycho.com/images/2021/20210825-Street-thumb.jpg
 summary: >
     Shot of an alley sunset while walking in downtown Colorado Springs yesterday evening: the sunset was beautiful.
 

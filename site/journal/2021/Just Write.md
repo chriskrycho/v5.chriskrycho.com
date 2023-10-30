@@ -3,7 +3,7 @@ title: Just Write
 subtitle: "Even if you only have five minutes: write anyway."
 date: 2021-01-04T20:15:00-0700
 updated: 2021-01-04T20:22:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/just-write.png
+image: https://cdn.chriskrycho.com/images/just-write.png
 tags:
   - writing
 

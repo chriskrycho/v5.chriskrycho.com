@@ -11,7 +11,7 @@ qualifiers:
     Other people with highly-technical savvy audiences who want to understand what kind of traffic they actually have.
 	  
 date: 2023-08-12T14:04:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/analytics.png
+image: https://cdn.chriskrycho.com/images/analytics.png
 
 ---
 

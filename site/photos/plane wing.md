@@ -1,15 +1,15 @@
 ---
 title: plane wing
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-16-plane-wing-thumb.jpg
+image: https://cdn.chriskrycho.com/images/2022/10-16-plane-wing-thumb.jpg
 date: 2022-10-24T20:10:00-0600
 
 ---
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-16-plane-wing-thumb.jpg" alt="looking back at an airplane wing while climbing through a cloud" />
+<img src="https://cdn.chriskrycho.com/images/2022/10-16-plane-wing-thumb.jpg" alt="looking back at an airplane wing while climbing through a cloud" />
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/10-16-plane-wing.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/2DwCJyQE9DQSaXMvJrZesx">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/10-16-plane-wing.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/2DwCJyQE9DQSaXMvJrZesx">Glass</a></p>
 
 <figcaption>
 

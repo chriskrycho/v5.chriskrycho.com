@@ -2,7 +2,7 @@
 title: Lone Cactus
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 6: compensating for mid-day lighting to share a glimpse of this lonely/lovely plant.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210408-thumb.jpg
+image: https://cdn.chriskrycho.com/images/new-mexico-vacation/20210408-thumb.jpg
 date: 2021-04-08T19:45:00-0600
 
 ---
@@ -15,7 +15,7 @@ In sum: a bunch of my experiments on the rest of the walk paid off in this shot 
 
 [![Sony α7R IV and Sony FE 20mm 𝑓/1.8 G  
 𝑓/2.0, 1/500s, <abbr>ISO</abbr> 100  
-[(see it full size on Unsplash)][unsplash]](https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210408-thumb.jpg)][unsplash]
+[(see it full size on Unsplash)][unsplash]](https://cdn.chriskrycho.com/images/new-mexico-vacation/20210408-thumb.jpg)][unsplash]
 
 [unsplash]: https://unsplash.com/photos/1GNNzw_hqQU
 

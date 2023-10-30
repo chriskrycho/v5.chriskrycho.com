@@ -2,7 +2,7 @@
 title: Motel Guest’s Only
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 1: An overflow lot in Las Vegas, New Mexico
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210403-thumb.jpg
+image: https://cdn.chriskrycho.com/images/new-mexico-vacation/20210403-thumb.jpg
 date: 2021-04-03T21:21:00-0600
 updated: 2021-04-06T19:33:00-0600
 

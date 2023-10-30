@@ -32,7 +32,7 @@ So what I have to show for the day is this *really* basic start to the orchestra
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-2.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/day-2.mp3"
     title="earliest orchestration"
     controls
   ></audio>

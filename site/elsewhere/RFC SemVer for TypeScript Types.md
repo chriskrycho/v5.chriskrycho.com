@@ -13,7 +13,7 @@ qualifiers:
     Mostly pretty confident we got this one right. Mostly.
 thanks: >
   This <abbr>RFC</abbr> is the result of many long and detailed conversations with the other members of the [Typed Ember](https://github.com/typed-ember) team—in the last couple years, especially [Dan Freeman](https://github.com/dfreeman) and [James C. Davis](https://github.com/jamescdavis), as well as [Mike North](https://github.com/mike-north) in 2018–2019. It also profited enormously from many conversations with [Chris Garrett (@pzuraq)](https://github.com/pzuraq) and [Rob Jackson (@rwjblue)](https://github.com/rwjblue) over the years. Any mistakes are mine; much of what is good in this is theirs.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/typescript.jpeg
+image: https://cdn.chriskrycho.com/images/typescript.jpeg
 date: 2021-03-23T21:30:00-0600
 tags:
   - software development

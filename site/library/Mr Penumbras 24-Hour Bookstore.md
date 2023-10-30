@@ -10,7 +10,7 @@ qualifiers:
     Lovers of books in all their glory.
 book:
   title: Mr. Penumbra’s 24-Hour Bookstore
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/mr-penumbras-24-hour-bookstore.jpg
+  cover: https://cdn.chriskrycho.com/images/books/mr-penumbras-24-hour-bookstore.jpg
   author: Robin Sloan
   year: 2012
   link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389

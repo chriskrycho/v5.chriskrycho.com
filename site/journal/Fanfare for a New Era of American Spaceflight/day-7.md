@@ -32,9 +32,9 @@ Without further ado, here’s what I have as of tonight!
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-7.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/day-7.mp3"
     title="getting close to the end now..."
     controls
   ></audio>
-  <figcaption>getting close to the end now… (<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-7.pdf">read the score</a>)</figcaption>
+  <figcaption>getting close to the end now… (<a href="https://cdn.chriskrycho.com/music/crew-dragon-2/day-7.pdf">read the score</a>)</figcaption>
 </figure>

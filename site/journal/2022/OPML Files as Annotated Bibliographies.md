@@ -22,7 +22,7 @@ I have a to-do item which pops up once a quarter:
 
 > Update `subscriptions.opml`
 
-It reminds me to go update [this file](https://cdn.chriskrycho.com/file/chriskrycho-com/subscriptions.opml), which has a list of all the feeds I’m subscribed to in my feed reader.[^1] You can, if you like, treat it as an old-school [blog roll](https://blogroll.org/what-are-blogrolls/); that’s sort of what it’s there for. But: it’s not a very good blog roll! Like a lot of things <abbr title="really simple syndication">RSS</abbr> and <abbr>RSS</abbr>-adjacent, <abbr title="outline processor markup language">OPML</abbr> files are clunky Web <span style="font-feature-settings: 'onum' 0;">1.0</span> artifacts—oriented for machines first, nerds second, normal people never.
+It reminds me to go update [this file](https://cdn.chriskrycho.com/subscriptions.opml), which has a list of all the feeds I’m subscribed to in my feed reader.[^1] You can, if you like, treat it as an old-school [blog roll](https://blogroll.org/what-are-blogrolls/); that’s sort of what it’s there for. But: it’s not a very good blog roll! Like a lot of things <abbr title="really simple syndication">RSS</abbr> and <abbr>RSS</abbr>-adjacent, <abbr title="outline processor markup language">OPML</abbr> files are clunky Web <span style="font-feature-settings: 'onum' 0;">1.0</span> artifacts—oriented for machines first, nerds second, normal people never.
 
 It doesn’t *have* to be “normal people never”, though.
 

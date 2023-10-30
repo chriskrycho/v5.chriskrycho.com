@@ -8,7 +8,7 @@ tags:
   - Sony Alpha
 summary: >
   It has been about a year and a half since I picked up my Sony Sonnar T* FE 55mm 𝑓/1.8 ZA, and I have decided: I just do not like it that much.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/Sony%2055mm.png
+image: https://cdn.chriskrycho.com/images/Sony%2055mm.png
 updates:
   - at: 2023-10-16T19:53:00-0600
     changes: >

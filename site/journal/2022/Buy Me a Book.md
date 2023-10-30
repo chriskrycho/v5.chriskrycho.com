@@ -6,7 +6,7 @@ date: 2022-01-01T21:55:00-0700
 tags:
   - site meta
   - writing
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/bmab.jpeg
+image: https://cdn.chriskrycho.com/images/bmab.jpeg
 
 ---
 
