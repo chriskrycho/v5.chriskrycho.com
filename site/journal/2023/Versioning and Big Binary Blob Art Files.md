@@ -13,6 +13,11 @@ qualifiers:
     Other artists—writers, composers, etc.—working with digital files.  And software developers! While I use Dorico projects as the example here, this is equally applicable to all other "big binary blob of data" files used in art etc.
 summary: >
   I do manual “version control” for Dorico projects. The same basic approach works for Logic Pro or Procreate or Photoshop or any other “big binary blob” format.
+updated: 2023-10-30T18:48:00-0600
+updates:
+  - at: 2023-10-30T18:48:00-0600
+    changes: >
+      Added a footnote about git-annex and Git LFS after [a conversation on Twitter](https://x.com/CalebMaclennan/status/1719063198198866043?s=20).
 
 ---
 
@@ -76,7 +81,7 @@ A bonus note for software developers—
 
 There is a huge hole for this kind of capability outside software development. Some apps build in this kind of capability themselves, like Adobe’s Lightroom <abbr title="Creative Cloud">CC</abbr>. There is nothing that works across apps, though. That means that multimedia projects which cross the boundary between different applications and thus file formats are stuck with the kind of manual management I describe here.
 
-The problem is fundamentally difficult, because by definition “big binary blobs” like these are harder to deal with for our version control systems as they exist today. Each application *has* to do the work implementing its own versioning system as a result. I suspect the only path forward here is for someone to design a versioning protocol for arbitrary binary formats. Such a protocol would be difficult to design, to say the least. It is not for nothing that existing version control systems are largely built on top of the existing “protocol” that is plain text formats.
+The problem is fundamentally difficult, because by definition “big binary blobs” like these are harder to deal with for our version control systems as they exist today.[^lfs] Each application *has* to do the work implementing its own versioning system as a result. I suspect the only path forward here is for someone to design a versioning protocol for arbitrary binary formats. Such a protocol would be difficult to design, to say the least. It is not for nothing that existing version control systems are largely built on top of the existing “protocol” that is plain text formats.
 
 Still: an interesting set of things to consider—
 
@@ -93,3 +98,8 @@ Still: an interesting set of things to consider—
 [^3]:	Yes, yes, [LilyPond](https://lilypond.org) users, I know: you can repurpose tools like Git to work with LilyPond since it is a textual format. I do that for writing, too! But I have reasons to prefer tools like Dorico and Logic, and so do the vast majority of working composers.
 
 [^4]:	I also have dedicated directories for Logic Pro and Staffpad. Although I am not using Staffpad much at this point, I used it extensively at the beginning of the project. Similarly, I use Logic Pro primarily when sketching out new ideas—melodic, harmonic, or orchestration—so it has not gotten much use in the last year or so while I have just been plugging away at parts where I already have those basics nailed down. Having the distinction between these directories is quite handy, though!
+
+[^lfs]:	This is still true even when including tools like [git-annex][ga] or [Git LFS][lfs]. For one thing, the interaction model is very different. For another, the target audience is even *more* different! While it is neat that you can wrangle Git into doing something somewhat useful with the combination of these kinds of tools and various low-level Git utilities, it is not remotely applicable to any non-software-developer types reading this!
+
+[ga]: https://git-annex.branchable.com
+[lfs]: https://git-lfs.com
