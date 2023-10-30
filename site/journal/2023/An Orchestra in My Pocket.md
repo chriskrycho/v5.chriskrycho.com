@@ -10,7 +10,7 @@ tags:
   - Logic Pro
 summary: >
   Back in high school and college, I half-joked about wanting an orchestra in my pocket. Today I… basically have one—in my bag, at least. It’s amazing.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/sa-bbcso-core.png
+image: https://cdn.chriskrycho.com/images/sa-bbcso-core.png
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: blossoming
 date: 2023-04-18T13:09:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/blossoming%20(thumb).jpg
+image: https://cdn.chriskrycho.com/images/2023/blossoming%20(thumb).jpg
 ---
 
 Two days ago, walking through our neighborhood. And yesterday evening, trying to dial in the colors in Lightroom <abbr title="Creative Cloud">CC</abbr>: more practice on color grading and image processing.
@@ -10,11 +10,11 @@ The α7R V’s out-of-camera colors (like Sony’s in general) are… *fine*. T
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/blossoming%20(thumb).jpg">
+<img src="https://cdn.chriskrycho.com/images/2023/blossoming%20(thumb).jpg">
 
 <figcaption>
 
-[full size](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/blossoming.jpg) | [Glass](https://glass.photo/chriskrycho/38NoASfPyNcWR0JPiHXmyZ)
+[full size](https://cdn.chriskrycho.com/images/2023/blossoming.jpg) | [Glass](https://glass.photo/chriskrycho/38NoASfPyNcWR0JPiHXmyZ)
 
 
 <table>

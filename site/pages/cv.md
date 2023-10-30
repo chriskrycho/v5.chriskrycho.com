@@ -9,7 +9,7 @@ summary: >
 
 [My résumé][resume] has the short version. This page is the *long* version. Why? Because even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a better idea of how I work, I think you’ll find the rest of this page a lot more helpful.
 
-[resume]: https://cdn.chriskrycho.com/file/chriskrycho-com/resume.pdf
+[resume]: https://cdn.chriskrycho.com/resume.pdf
 
 Interested in working with me? Feel free to [say hello][email]!
 

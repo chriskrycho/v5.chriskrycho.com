@@ -53,7 +53,7 @@ As is my habit in airports—especially when, as today, we ended up with an hour
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/sony-lens/in-airport.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/sony-lens/in-airport.jpg">
 
 <figcaption><abbr>ISO</abbr> 125, 36mm, 𝑓/8.0, 1/40s</figcaption>
 
@@ -69,14 +69,14 @@ For portraits, it’s simply phenomenal. It feels like cheating.
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/sony-lens/ice-cream-1.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/sony-lens/ice-cream-1.jpg">
 
 <figcaption><abbr>ISO</abbr> 400, 𝑓/1.8, 1/8,000s</figcaption>
 </figure>
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/sony-lens/ice-cream-2.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/sony-lens/ice-cream-2.jpg">
 
 <figcaption><abbr>ISO</abbr> 320, 𝑓/1.8, 1/8,000s</figcaption>
 </figure>
@@ -85,7 +85,7 @@ The lens isn’t without some downsides, though. One I noticed is the fringing w
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/birds-fringing.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/birds-fringing.jpg">
 
 <figcaption><abbr>ISO</abbr> 125, 𝑓/1.8, 1/8000s</figcaption>
 </figure>
@@ -94,7 +94,7 @@ I was able to fix *most* of that with Lightroom, but not all: if you look closel
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/birds-edited.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/birds-edited.jpg">
 
 <figcaption>
 

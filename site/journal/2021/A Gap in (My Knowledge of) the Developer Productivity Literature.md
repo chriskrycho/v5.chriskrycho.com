@@ -13,7 +13,7 @@ qualifiers:
     Exploratory, open-ended, all questions and no answers.
 thanks: >
   A conversation with [Will Larson](https://lethain.com) and [Gergely Orosz](http://PragmaticEngineer.com) on the [TechWriters Discord](https://techwriters.dev) catalyzed a bunch of thoughts I’ve had bouncing around in my head from conversations with my manager [Adam Hobson](https://adamhobson.com).
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/Accelerate.jpg
+image: https://cdn.chriskrycho.com/images/Accelerate.jpg
 tags:
   - engineering effectiveness
   - developer productivity

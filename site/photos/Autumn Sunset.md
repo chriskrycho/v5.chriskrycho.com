@@ -1,18 +1,18 @@
 ---
 title: Autumn Sunset
 date: 2023-04-15T20:27:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset%20(preview).jpg
+image: https://cdn.chriskrycho.com/images/2023/Autumn%20Sunset%20(preview).jpg
 ---
 
 A lovely (subtle) sunset last autumn. I dropped out the shadows here a *lot*: in “real life” and in the photograph both, the foreground was quite visible… neighborhood and mountains alike. But I think about this a lot: the *effect* of this photo is much more like what it *felt* like that evening. The human mind can focus on the sky in a scene like this in person in a way that a photograph which “accurately” represents the scene completely misses.
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset%20(preview).jpg" alt="A sunset over Colorado mountains and lake" />
+<img src="https://cdn.chriskrycho.com/images/2023/Autumn%20Sunset%20(preview).jpg" alt="A sunset over Colorado mountains and lake" />
 
 <figcaption>
 
-[full size](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/Autumn%20Sunset.jp) | [on Glass](https://glass.photo/chriskrycho/26tBVvnM1cJy3A2fMqu4Sz)
+[full size](https://cdn.chriskrycho.com/images/2023/Autumn%20Sunset.jp) | [on Glass](https://glass.photo/chriskrycho/26tBVvnM1cJy3A2fMqu4Sz)
 
 <table>
 <tr><th scope="row">Camera</th><td>Sony α7R IV</td></tr>

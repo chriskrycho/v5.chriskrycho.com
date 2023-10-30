@@ -12,7 +12,7 @@ qualifiers:
     People who like thinking about learning, and who are up for some programming languages talk. Lots of programming languages talk.
 summary: >
   I am—finally—learning Racket, as a tool for learning to build programming languages. It is rewiring my brain, in the best way. It feels good.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/racket-logo.png
+image: https://cdn.chriskrycho.com/images/racket-logo.png
 
 ---
 

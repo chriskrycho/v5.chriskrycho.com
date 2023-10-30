@@ -59,7 +59,7 @@ I had the body out a handful of times today, mostly at the airport before we lef
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/sony-lens/in-airport.jpg" alt="two girls looking out an airport window">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/sony-lens/in-airport.jpg" alt="two girls looking out an airport window">
 
 <figcaption><abbr>ISO</abbr> 125, 36mm, 𝑓/8.0, 1/40s</figcaption>
 
@@ -81,7 +81,7 @@ Given my love of prime lenses, I have come to rely on the ability to use those <
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/birds-edited.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/birds-edited.jpg">
 
 <figcaption>
 
@@ -101,7 +101,7 @@ The α7R IV would have given me a perfectly usable tight crop here—I know beca
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/camera/green-heron.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/camera/green-heron.jpg">
 
 <figcaption>Tamron 35-150mm 𝑓/2–2.8 Di III VXD; <abbr>ISO</abbr> 320, 150mm, 𝑓/2.8, 1/500s</figcaption>
 
@@ -111,7 +111,7 @@ The bird tracking made grabbing a bunch of shots like this incredibly easy. The 
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/camera/white-bird.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/camera/white-bird.jpg">
 
 <figcaption>Sony Sonnar T\* 55mm 𝑓/1.8 ZA; <abbr>ISO</abbr>100, 𝑓/3.5, 1/2,500s</figcaption>
 

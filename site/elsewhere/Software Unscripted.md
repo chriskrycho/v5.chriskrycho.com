@@ -5,7 +5,7 @@ subtitle: >
   Along with Rust, TypeScript, SemVer, open source ecosystems and maintenance, and more!
 date: 2023-09-06T21:05:00-0600
 link: https://open.spotify.com/episode/43Jg9r2jOGRUYaQx5YOXO2
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/software-unscripted.jpg
+image: https://cdn.chriskrycho.com/images/software-unscripted.jpg
 tags:
   - Rust
   - TypeScript

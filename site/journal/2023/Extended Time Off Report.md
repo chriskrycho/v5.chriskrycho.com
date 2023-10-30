@@ -18,7 +18,7 @@ qualifiers:
     
 date: 2023-07-30T09:00:00-0600
 
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/Kaweah.jpeg
+image: https://cdn.chriskrycho.com/images/Kaweah.jpeg
 
 ---
 

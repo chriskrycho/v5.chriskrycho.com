@@ -8,7 +8,7 @@ tags:
 summary: >
   TypeScript’s assertions functions (`asserts`) can be mis-used to good effect when modeling unfortunate mutation-driven APIs. But “misuse” is the right word.
 date: 2022-04-28T08:30:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/ts-asserts-oh-my.png
+image: https://cdn.chriskrycho.com/images/ts-asserts-oh-my.png
 
 ---
 

@@ -10,7 +10,7 @@ qualifiers:
   audience: >
     macOS users who have or are interested in [Supernote](https://supernote.com), don’t want to use Supernote’s China-based sync service, and also don’t have *or want* Dropbox on their local system. (Bonus: works just dandy with [reMarkable 2](https://remarkable.com) as well.)
 date: 2022-12-12T20:35:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/droplet.png
+image: https://cdn.chriskrycho.com/images/droplet.png
 summary: >
   I have a Supernote A5X but no desire to use Supernote Cloud, and a Dropbox account but no desire to have Dropbox on my machine… so it’s good that I also have a copy of Panic’s Transmit app.
 

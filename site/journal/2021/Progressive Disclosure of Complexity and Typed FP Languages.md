@@ -17,7 +17,7 @@ tags:
   - PureScript
   - programming languages
   - API design
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/three-fp-ish-tools.png
+image: https://cdn.chriskrycho.com/images/three-fp-ish-tools.png
 templateEngineOverride: md
 
 ---

@@ -27,7 +27,7 @@ I decided to write something for the upcoming [Crew Dragon Demo 2 launch][launch
 
 I spent today working at the piano, sketching out a variety of ideas—melodic motions, harmonies, variations on the above. It took me a good hour and a half just to knock the dust off: it’s been a good 3½ years since I wrote anything! At that point, I had the *very* first hints of what I think will actually become the guts of the piece, but the specifics—in melodic sequence and in rhythm—were all still frustratingly *wrong*. After almost four hours, I had a few ideas which were getting close—
 
-[![my musical notes mid-afternoon](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/2020-05-04-notebook-thumb.jpeg)](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/2020-05-04-notebook.jpeg)
+[![my musical notes mid-afternoon](https://cdn.chriskrycho.com/music/crew-dragon-2/2020-05-04-notebook-thumb.jpeg)](https://cdn.chriskrycho.com/music/crew-dragon-2/2020-05-04-notebook.jpeg)
 
 —but it took another couple hours for them to gel into something I am actually reasonably pleased with as a starting point for the rest of the week.
 
@@ -35,7 +35,7 @@ At the end of the day, I came away with two related sketches. The first is in th
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/Space-ish%20Fanfare%20Sketch.mp3"
     title="Space-ish Fanfare Sketch"
   controls
   ></audio>
@@ -44,7 +44,7 @@ At the end of the day, I came away with two related sketches. The first is in th
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/Space-ish%20Melodic.mp3"
     title="Space-ish Melodic sketch"
     controls
   ></audio>

@@ -27,7 +27,7 @@ discuss:
   hn: https://news.ycombinator.com/item?id=36970305
   lobsters: https://lobste.rs/s/kuq1ha/unsafe_on_rust_still_being_helpful_even
 
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/unsafe.png
+image: https://cdn.chriskrycho.com/images/unsafe.png
 
 date: 2023-08-02T06:52:00-0600
 started: 2023-07-29T10:05:00-0600
@@ -85,7 +85,7 @@ While maybe *just* possible in those contexts, this is very difficult to sustain
 
 The value of the safety even in that 30:70 safe:unsafe split is obvious in the context of a team with half a dozen non-expert developers, especially if there is any amount of turnover. Even for a long-running solo project, though, I think Rust’s safety guarantees, and its distinction between safe and unsafe code in particular, is valuable: because it makes the program as a whole far easier to understand—to which I now turn.
 
-[naur]: https://cdn.chriskrycho.com/file/chriskrycho-com/resources/naur1985programming.pdf
+[naur]: https://cdn.chriskrycho.com/resources/naur1985programming.pdf
 
 ## 2
 

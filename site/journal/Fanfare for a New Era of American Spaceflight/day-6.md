@@ -30,11 +30,11 @@ Without further ado, the piece as I have it today:
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-6.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/day-6.mp3"
     title="thefirst draft of the first half of the second section"
     controls
   ></audio>
-  <figcaption>the first draft of the first half of the second section (<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-6.pdf">read the score</a>)</figcaption>
+  <figcaption>the first draft of the first half of the second section (<a href="https://cdn.chriskrycho.com/music/crew-dragon-2/day-6.pdf">read the score</a>)</figcaption>
 </figure>
 
 

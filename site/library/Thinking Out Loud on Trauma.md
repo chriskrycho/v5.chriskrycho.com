@@ -6,7 +6,7 @@ date: 2022-08-06T16:30:00-0600
 qualifiers:
   epistemic: >
     Bloggy and curious, literally “thinking out loud”. I haven’t given this *any* sustained thought, and this is more or less unedited. Take it for what you will, and be gentle with my ignorance.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/body-keeps-the-score.jpeg
+image: https://cdn.chriskrycho.com/images/books/body-keeps-the-score.jpeg
 
 ---
 

@@ -2,7 +2,7 @@
 title: The Best Brewery I Visited in ABQ
 subtitle: >
   [New Mexico Vacation](/photos/new-mexico-vacation/), Day 7: the bar at [High and Dry Brewing](http://highanddrybrewing.com).
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210409.jpg
+image: https://cdn.chriskrycho.com/images/new-mexico-vacation/20210409.jpg
 date: 2021-04-09T20:00:00-0600
 
 ---
@@ -11,7 +11,7 @@ Of all the breweries I hit in Albuquerque—a town increasingly well-known for i
 
 [![iPhone 12 Mini 14mm 𝑓/1.6  
 𝑓/2.4, 1/15s, <abbr>ISO</abbr> 640  
-[(see it full size on Unsplash)][unsplash]](https://cdn.chriskrycho.com/file/chriskrycho-com/images/new-mexico-vacation/20210409.jpg)][unsplash]
+[(see it full size on Unsplash)][unsplash]](https://cdn.chriskrycho.com/images/new-mexico-vacation/20210409.jpg)][unsplash]
 
 [unsplash]: https://unsplash.com/photos/VD-bXCx3d4k
 

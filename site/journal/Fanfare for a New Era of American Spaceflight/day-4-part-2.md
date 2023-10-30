@@ -15,7 +15,7 @@ qualifiers:
         Anyone interested in the process of writing composed music.
 series:
     part: 5
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-4b-thumb.jpeg
+image: https://cdn.chriskrycho.com/music/crew-dragon-2/day-4b-thumb.jpeg
 
 ---
 
@@ -27,7 +27,7 @@ I knew when I came back to the piano that I wanted to connect the sounds of the 
 
 With the new rhythms in place and a few new melodic and harmonic ideas (key change!), I also decided it would be helpful to survey the actual harmonies I ended up using in the fanfare, for easy reference. I fully expect to pull those back out more or less directly in this next section, and then to vary them.
 
-[![my working notes from this evening](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-4b-thumb.jpeg)](https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-4b.jpeg)
+[![my working notes from this evening](https://cdn.chriskrycho.com/music/crew-dragon-2/day-4b-thumb.jpeg)](https://cdn.chriskrycho.com/music/crew-dragon-2/day-4b.jpeg)
 
 [day-4-part-1]: https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-4-part-1/
 [day-1]: https://v5.chriskrycho.com/journal/crew-dragon-fanfare/day-1/

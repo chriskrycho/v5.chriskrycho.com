@@ -2,7 +2,7 @@
 title: Late Afternoon Lake
 subtitle: >
   Went for a walk, took my camera, was *giddy* that I had done so when I saw how beautiful the sky was.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/20210621-thumb.jpg
+image: https://cdn.chriskrycho.com/images/20210621-thumb.jpg
 date: 2021-07-06T21:00:00-0600
 
 ---

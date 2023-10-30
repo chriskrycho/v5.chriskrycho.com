@@ -8,7 +8,7 @@ tags:
     - Dorico
     - StaffPad
     - MusicXML
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png
+image: https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png
 qualifiers:
     audience: >
         People interested in the nitty-gritty details of music notation software transfer formats.
@@ -29,11 +29,11 @@ For this post, I’m going to dig into the major ways the applications differ in
 
     - StaffPad uses by a traditional 5-line staff:
 
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of wood blocks">
+        <img src="https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of wood blocks">
 
     - Dorico uses a line-per-block percussion-style staff:
 
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of wood blocks">
+        <img src="https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of wood blocks">
 
 - They are not a collection of *totally different* percussion instruments all grouped together as in a drum kit staff, but the blocks do also have distinct elements to strike in a way that differs from e.g. a piano or a glockenspiel.
 
@@ -51,17 +51,17 @@ First, notice again the two different visual representations of the instrument.
 
 StaffPad:
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of wood blocks">
+<img src="https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/StaffPad%20Wood%20Blocks%20view.png" alt="StaffPad view of wood blocks">
 
 Dorico:
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of wood blocks">
+<img src="https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20view.png" alt="Dorico view of wood blocks">
 
 This gives us our first hint of how the two programs *model* the instruments differently: StaffPad is treating this as an unpitched instrument in some ways (notice the two-thick-bars start of the staff), but using a pitched-instrument-style staff to represent it. Dorico is doing something totally different, with a single line per block—as if it is representing each wood block as a distinct instrument, but grouped together into a single visual representation. As it turns out, that visual difference (apparent here as it is not necessarily in other, simpler percussion instruments we might have looked at) is *exactly* what is going on under the hood.
 
 What’s more, I have actually cheated a bit here to make these appear more similar than they normally would. By default, Dorico actually presents these with the individual blocks named:
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20default%20view.png" alt="Dorico view of wood blocks">
+<img src="https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/Dorico%20Wood%20Blocks%20default%20view.png" alt="Dorico view of wood blocks">
 
 I went out of my way to create a [Group][perc-group] to get the notation as close as possible to StaffPad’s to highlight the difference in presentation of the musical staves, but with the default instrument naming in view it becomes that much more clear: Dorico thinks of each block as a distinct item on unpitched lines, whereas StaffPad thinks of them as a single instrument with unpitched blocks mapped to pitched stave lines, and they present them accordingly.
 
@@ -243,8 +243,8 @@ While I don’t *know* that I’ll do that, I now have a pretty good sense of wh
 
 If you're curious and want to dig in further yourself, I‘ve uploaded both of the Music<abbr>XML</abbr> files used in this discussion; feel free to take a look:
 
-- [StaffPad](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Staffpad.xml)
-- [Dorico](https://cdn.chriskrycho.com/file/chriskrycho-com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Dorico.xml)
+- [StaffPad](https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Staffpad.xml)
+- [Dorico](https://cdn.chriskrycho.com/images/dorico-staffpad-musicxml/Wood%20Blocks!%20%E2%80%93%20Dorico.xml)
 
 
 

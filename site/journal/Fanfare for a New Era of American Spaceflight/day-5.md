@@ -42,7 +42,7 @@ As noted in my <b>Note</b> above: I actually *did* make some progress! This orch
 
 <figure>
   <audio
-    src="https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-5.mp3"
+    src="https://cdn.chriskrycho.com/music/crew-dragon-2/day-5.mp3"
     title="improved fanfare orchestration"
     controls
   ></audio>
@@ -51,4 +51,4 @@ As noted in my <b>Note</b> above: I actually *did* make some progress! This orch
 
 That also has a few tweaks to the fanfare since yesterday—bits I noticed on relistening. If you’d like to compare, [here’s the latest version of the score][score].
 
-[score]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/crew-dragon-2/day-5.pdf
+[score]: https://cdn.chriskrycho.com/music/crew-dragon-2/day-5.pdf

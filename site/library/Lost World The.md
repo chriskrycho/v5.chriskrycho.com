@@ -10,7 +10,7 @@ updated: 2020-08-20T06:45:02-0600
 book:
   title: The Lost World
   author: Michael Crichton
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/the-lost-world.jpg
+  cover: https://cdn.chriskrycho.com/images/books/the-lost-world.jpg
   link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316%3Fmatches%3D1048
   year: 1995
   review:

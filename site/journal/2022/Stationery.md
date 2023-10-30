@@ -1,7 +1,7 @@
 ---
 title: On Stationery
 subtitle: …and unreasonable joys in small, real goods.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/blank%20Panobook.jpg
+image: https://cdn.chriskrycho.com/images/blank%20Panobook.jpg
 date: 2022-04-01T09:20:00-0600
 tags:
   - thinking
@@ -27,4 +27,4 @@ Replace “remember it now” with “think it through” and you have my relati
 
 Sitting at my desk *without* my tool-for-thinking for the last month, I have felt unmoored. And so perhaps it is no surprise that it felt like coming home when I opened the new notebook late yesterday. Is it still a bit ridiculous? Perhaps. I rightly laughed at myself for how strongly I felt that. And yet: the small joys of well-crafted tools are very good indeed.
 
-![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/blank%20Panobook.jpg "picture of a blank Panobook with Uni-ball Signo RT 1 0.38mm black pen")
+![](https://cdn.chriskrycho.com/images/blank%20Panobook.jpg "picture of a blank Panobook with Uni-ball Signo RT 1 0.38mm black pen")

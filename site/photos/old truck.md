@@ -1,16 +1,16 @@
 ---
 title: old truck
 date: 2023-01-01T16:27:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/04-04%20truck%20(thumb).jpg
+image: https://cdn.chriskrycho.com/images/2021/04-04%20truck%20(thumb).jpg
 ---
 
 Across the street from a café in Albuquerque in April 2021, but felt like it could have been anywhen.
 
 <figure>
 
-<a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/04-04%20truck.jpg"><img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/04-04%20truck%20(thumb).jpg" /></a>
+<a href="https://cdn.chriskrycho.com/images/2021/04-04%20truck.jpg"><img src="https://cdn.chriskrycho.com/images/2021/04-04%20truck%20(thumb).jpg" /></a>
 
-<figcaption><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/04-04%20truck.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/1p26jU9EXAk2vTgxLUoVJ0">Glass</a></figcaption>
+<figcaption><a href="https://cdn.chriskrycho.com/images/2021/04-04%20truck.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/1p26jU9EXAk2vTgxLUoVJ0">Glass</a></figcaption>
 
 </figure>
 

@@ -16,7 +16,7 @@ tags:
 book:
     title: Evolution as a Religion
     author: Mary Midgley
-    cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/evolution-as-a-religion.jpg
+    cover: https://cdn.chriskrycho.com/images/books/evolution-as-a-religion.jpg
     link: https://www.alibris.com/Evolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley/book/2179950
     year: 1985, 2002
 date: 2020-08-13T21:30:00-0600

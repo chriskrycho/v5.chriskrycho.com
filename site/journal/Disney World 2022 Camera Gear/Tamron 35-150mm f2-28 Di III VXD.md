@@ -49,7 +49,7 @@ Even visually, the thing is almost comically large.
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/in-hand.jpeg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/in-hand.jpeg">
 
 </figure>
 
@@ -57,7 +57,7 @@ Even mounted to the α7 IV, it dwarfs the not-small body:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/scale.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/scale.jpg">
 
 <figcaption>Sony α7R IV, 35mm FE 𝑓/1.8, <abbr>ISO</abbr> 1000, 𝑓/4.5, 1/250s</figcaption>
 
@@ -69,7 +69,7 @@ Its versatility is undeniable, though. As every review I have seen comments, it 
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/portrait.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/portrait.jpg">
 
 <figcaption><abbr>ISO</abbr> 500, 150mm, 𝑓/2.8, 1/100s</figcaption>
 
@@ -79,7 +79,7 @@ But it is equally good for shooting a still life at ~55mm:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/still-life.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/still-life.jpg">
 
 <figcaption><abbr>ISO</abbr> 100, 56mm, 𝑓/2.2, 1/800s</figcaption>
 
@@ -94,7 +94,7 @@ I barely used this lens today. To be fair, I didn’t much use the camera or the
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/landscape.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/landscape.jpg">
 
 <figcaption><abbr>ISO</abbr> 125, 36mm, 𝑓/8.0, 1/40s</figcaption>
 
@@ -115,7 +115,7 @@ It is nothing remarkable here, though a pretty enough scene. To its credit, thou
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/flight.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/flight.jpg">
 
 <figcaption><abbr>ISO</abbr> 10,000, 150mm, 𝑓/5.0, 1/800s</figcaption>
 
@@ -125,7 +125,7 @@ And this:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/bird-talk.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/bird-talk.jpg">
 
 <figcaption><abbr>ISO</abbr> 160, 150mm, 𝑓/2.8, 1/500s</figcaption>
 
@@ -135,7 +135,7 @@ And this:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/eagle.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/eagle.jpg">
 
 <figcaption><abbr>ISO</abbr> 200, 150mm, 𝑓/2.8, 1/500s</figcaption>
 
@@ -145,7 +145,7 @@ And, for that matter, these from other times in the week:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/perching.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/perching.jpg">
 
 <figcaption><abbr>ISO</abbr> 125, 150mm, 𝑓/2.8, 1/1,250s</figcaption>
 
@@ -153,7 +153,7 @@ And, for that matter, these from other times in the week:
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/grooming.jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/grooming.jpg">
 
 <figcaption><abbr>ISO</abbr> 2,000, 150mm, 𝑓/2.8, 1/160s</figcaption>
 

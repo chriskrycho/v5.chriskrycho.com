@@ -5,7 +5,7 @@ permalink: /journal/disney-world-2022-camera-gear/
 standalonePage: true
 layout: archives.njk
 order: OLD_FIRST
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/disney/tamron-lens/scale.jpg
+image: https://cdn.chriskrycho.com/images/2022/disney/tamron-lens/scale.jpg
 tags:
   - photography
   - travel

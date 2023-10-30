@@ -9,7 +9,7 @@ updated: 2020-08-20T06:45:01-0600
 book:
   title: Jurassic Park
   author: Michael Crichton
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/jurassic-park.jpg
+  cover: https://cdn.chriskrycho.com/images/books/jurassic-park.jpg
   link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033
   year: 1991
   review:

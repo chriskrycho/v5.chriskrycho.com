@@ -1,7 +1,7 @@
 ---
 title: cold (2)
 date: 2022-12-22T20:22:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%202%20(thumb).jpg
+image: https://cdn.chriskrycho.com/images/2022/12-22%20cold%202%20(thumb).jpg
 tags:
   - Leica Q2
 featured: true
@@ -12,10 +12,10 @@ The same photo as [the previous one](https://v5.chriskrycho.com/photos/cold/), b
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%202%20(thumb).jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/12-22%20cold%202%20(thumb).jpg">
 
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%202.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/5s60dExT7HaWNQzVxrepzF">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/12-22%20cold%202.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/5s60dExT7HaWNQzVxrepzF">Glass</a></p>
 </figcaption>
 
 <table>

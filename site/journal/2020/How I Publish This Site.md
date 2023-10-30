@@ -150,21 +150,21 @@ I use GitHub as a convenient tool for coordination, but (and this is important t
 I usually create a Git <i>branch</i> for new posts before I publish them, so that I can take of some of the Netlify features described in the next section. On a Mac, I use mostly the command line and occasionally the [Fork] Git UI for interacting with the repository. On iOS, I use [Working Copy] to interact with the repository. It exposes the repository as a location which I can open from other apps which support document provider locations:
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/how-i-publish/document-picker.jpeg" style="max-width: 416px" />
+<img src="https://cdn.chriskrycho.com/images/how-i-publish/document-picker.jpeg" style="max-width: 416px" />
 <figcaption>Opening a Working Copy location from 1Writer</figcaption>
 </figure>
 
 Then I can work with it directly in any app which has mounted the folder. For example, viewing this very post in iA Writer:
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/how-i-publish/ia-writer-view.jpeg" style="max-width: 416px" />
+<img src="https://cdn.chriskrycho.com/images/how-i-publish/ia-writer-view.jpeg" style="max-width: 416px" />
 <figcaption>Viewing a Working Copy-supplied item in iA Writer</figcaption>
 </figure>
 
 When I’m done, I can just commit that file to the repository on whatever branch I’m working in and push it up to GitHub, and it will trigger the publication workflow that I built with Netlify (described in the next section).
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/how-i-publish/commit.jpeg" style="max-width: 416px" />
+<img src="https://cdn.chriskrycho.com/images/how-i-publish/commit.jpeg" style="max-width: 416px" />
 <figcaption>Committing a change in Working Copy</figcaption>
 </figure>
 

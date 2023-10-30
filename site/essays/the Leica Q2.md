@@ -13,7 +13,7 @@ tags:
   - photography
   - Leica Q2
 date: 2022-12-28T21:05:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
+image: https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
 summary: >
   The Leica Q2 is a phenomenal camera—and yes, Leica earns its price point. It is not for me, though.
 featured: true
@@ -58,7 +58,7 @@ First of all, the fixed-mount Leica 28mm 𝑓/1.7 Summicron <span class="smcp">A
 [fe85]: https://www.sony.com/lr/electronics/camera-lenses/sel85f18
 [fe20]: https://www.sony.com/lr/electronics/camera-lenses/sel20f18g
 
-![see it full size [here](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang.jpg)](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20well%2C%20dang%20thumb.jpg)
+![see it full size [here](https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang.jpg)](https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang%20thumb.jpg)
 
 Operating the lens is a joy, too. The clicks for changes in aperture are crisp and satisfying and reliable. The fact that the focus ring not only has a linear throw, but a *fixed* linear throw, was a game-changer. The Sony lenses I am familiar with often have nicely linear focus rings, but none of them have a fixed throw. Combined with the distinctive Leica finger rest for the focus ring, you can learn, even in the short span of a week, what focusing in a given range *feels* like. I expect to miss that little nub and its fixed start and end points when I come back to shooting with my Sony primes.
 
@@ -76,7 +76,7 @@ Finally, [the Fotos app][fotos] is be nothing to write home about in terms of in
 
 This is a good place to say that exactly the same things hold for the software and menu system of the camera itself. They are easy to navigate and easy to make choices in. They are, in fact, easier to work with not only than my α7R IV’s menus (Sony’s infamously difficult previous menu system) but even than the current, much-improved menu system Sony has shipped on more recent models like the α7 IV and α7R V.
 
-![see it full size [here](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-26%20gingerbread.jpg)](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-26%20gingerbread%20(thumb).jpg)
+![see it full size [here](https://cdn.chriskrycho.com/images/2022/12-26%20gingerbread.jpg)](https://cdn.chriskrycho.com/images/2022/12-26%20gingerbread%20(thumb).jpg)
 
 The Q2’s body and lens come together to make for a viscerally pleasant experience—caveat about its <span class="smcp">ISO</span> dial notwithstanding. Every twist of the focus or aperture rings, every click of the shutter, felt good: irrepressibly smiling at it good, exclaiming aloud over it good. Shooting with the it was *nice*, in a way that very few things are nice.
 
@@ -88,7 +88,7 @@ First and foremost among these: The lens is a trade-off—dare I say, a compromi
 
 Having such a wide angle as the baseline means you will only rarely feel like you wish things were *wider*. At the same time, you can crop in significantly from 28mm to get a still-usable shot with the effective viewing angle of a 35mm or 55mm or 75mm lens (to name just the three crops which the Q2 will show you on screen). It would not be possible to do the inverse: given a 55mm lens, there is no “cropping out” to 35mm. You can shoot quite wide architecture or landscape views with this lens that you simply cannot get with a 50mm. This one, for example ([shared][cold-2] via my [photos][photos] feed the other day):
 
-![original post: [cold (2)](https://v5.chriskrycho.com/photos/cold-2/)](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%202%20(thumb).jpg)
+![original post: [cold (2)](https://v5.chriskrycho.com/photos/cold-2/)](https://cdn.chriskrycho.com/images/2022/12-22%20cold%202%20(thumb).jpg)
 
 [cold-2]: https://v5.chriskrycho.com/photos/cold-2/
 [photos]: https://v5.chriskrycho.com/photos/
@@ -99,7 +99,7 @@ One: for all that the lens is incredibly *sharp* edge to edge, it’s still a wi
 
 Two: cropping in to a 55mm field of view from a 28mm lens is not actually the *same* as shooting with a 55mm lens. The (lack of) compression in the depth of field is *significantly* different between the two, and that shows up most of all in portraiture, which is one of the main uses to which I put my camera—the contents of my Glass feed notwithstanding![^glass-feed] As a result, this lens does not easily produce flattering portraits. That isn’t really a surprise: going wider than 35mm for portraiture requires you to *really* know what you’re doing. I don’t doubt there are many photographers who can still flatter their subjects with this lens, but it’s beyond my skill to do it consistently.
 
-![The best portrait I managed with the Q2… was of myself (see it full size [here](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20mirror.jpg)).](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20mirror%20thumb.jpg)
+![The best portrait I managed with the Q2… was of myself (see it full size [here](https://cdn.chriskrycho.com/images/2022/12-21%20mirror.jpg)).](https://cdn.chriskrycho.com/images/2022/12-21%20mirror%20thumb.jpg)
 
 Three: I rely heavily on the ability to crop in even when using a longer lens (a point I noted when doing [my mini-review][a7iv-review] of [the α7 IV][a7iv] as well). Especially at family gatherings, I will lean on the high resolution of the α7R IV to get a useful image from across the room with my go-to 55mm. The wider your field of view is, the harder that is, because that wider field of view inherently means a subject across the room occupies fewer of the pixels on the sensor. You can still crop in, but you will have much less to work with.
 
@@ -131,7 +131,7 @@ The Q2’s auto-focus performance reminded me of nothing so much as the Canon <a
 
 In fairness, it is not a surprise, either. The Q2 is clearly a spiritual descendant of Leica’s M-series of range-finder cameras, which are by definition *only* manual-focus.[^playing-with-m] The fact that the Q and Q2 have auto-focus at all is, like the <abbr title="electronic view finder">EVF</abbr> and live view back panel, a huge shift for Leica in this form factor. Too, it is a *much* smaller body and a *much* smaller lens than Sony I am comparing to; Leica’s [SL2](https://leicacamerausa.com/leica-sl2.html) is far more directly comparable to Sony’s α7 line.
 
-![coffee accoutrements (see it full size [here](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20coffee%20accoutrements.jpg))](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-21%20coffee%20accoutrements%20(thumb).jpg)
+![coffee accoutrements (see it full size [here](https://cdn.chriskrycho.com/images/2022/12-21%20coffee%20accoutrements.jpg))](https://cdn.chriskrycho.com/images/2022/12-21%20coffee%20accoutrements%20(thumb).jpg)
 
 When I picked up my α7R IV and snapped a few pictures of the family before heading out to drop it off for repairs, I was immediately grateful for how easy it made it to nail focus. While there is a certain pleasure to nailing focus with the Q2 in manual mode, there is a totally different kind of pleasure to the effortless focusing that is part and parcel of shooting with any recent Sony camera and lens.[^others] What is more, that effortlessness extends to one of the key factors in nailing focus: eye tracking. It is one thing to find the right focus for a single shot; it is something else to be able to keep it up as a subject moves around. With the Q2, I was always fighting to keep up, whether in auto or manual focus mode. Sure, I could have stopped down, but that comes with its own downsides, especially in dim rooms.
 

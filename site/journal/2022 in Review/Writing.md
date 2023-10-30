@@ -38,7 +38,7 @@ Right up front, the things I’m most proud of/think hold up best/most want you 
 
 For the first time in many years, I actually *did* accomplish one of my major writing goals for the year: I wrote, and published, a for-real-and-true essay in the (literal physical) pages of <cite>Mere Orthodoxy</cite>. Particularly given the overarching difficulties of the year, it felt good to get a real piece of work out there into the world, and all the more so because it ended up on real pages.
 
-![in print at <cite>Mere Orthodoxy</cite>](https://cdn.chriskrycho.com/file/chriskrycho-com/images/mere-o-3.jpg)
+![in print at <cite>Mere Orthodoxy</cite>](https://cdn.chriskrycho.com/images/mere-o-3.jpg)
 
 I remain pretty happy with this particular book-review-essay, so if you missed it when I posted it, I do encourage you to [give it a read][mere-o]: it has some of my best thinking on work, remote and otherwise, as we come into the third decade of the 21st century. Of course, please also forgive the typos and infelicities of phrasing that one can only find *after* something goes to print. That was an old experience for me (I fixed a dozen issues in [my essay on the Leica Q2][q2] just this morning, as one does!) but a new experience for me in that, well: *print*. You can fix the typos on a website. Not so much in paper copy.
 

@@ -9,10 +9,10 @@ summary: >
 Our next-door neighbors had a visitor on their roof today. 🤩 🇺🇸 🦅 
 
 <figure>
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/04-11%20eagle%20takeoff.jpg" alt="shot of a bald eagle flying in a mountain neighborhood">
+<img src="https://cdn.chriskrycho.com/images/2023/04-11%20eagle%20takeoff.jpg" alt="shot of a bald eagle flying in a mountain neighborhood">
 
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/04-11%20eagle%20takeoff.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/7X12VIeVs3OAbvsC13FlbS">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2023/04-11%20eagle%20takeoff.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/7X12VIeVs3OAbvsC13FlbS">Glass</a></p>
 <table>
 <tr><th scope="row">Camera</th><td>Sony ɑ7R V</td></tr>
 <tr><th scope="row">Lens</th><td>FE 85mm F1.8</td></tr>

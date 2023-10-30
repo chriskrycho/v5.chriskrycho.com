@@ -7,7 +7,7 @@ qualifiers:
 book:
     title: >
       The Man from the Future: The Visionary Life of John Von Neumann
-    cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/man-from-the-future.jpeg
+    cover: https://cdn.chriskrycho.com/images/books/man-from-the-future.jpeg
     link: https://bookshop.org/a/21126/9781324003991
     author: Ananyo Bhattacharya
     year: 2022

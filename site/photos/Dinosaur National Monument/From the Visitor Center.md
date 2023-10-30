@@ -3,13 +3,13 @@ title: From the Visitor Center
 date: 2021-09-12T20:25:00-0600
 summary: >
     Looking northeast from the Dinosaur National Monument Quarry Visitor Center, on our family trip back in July.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/From%20the%20Visitor%20Center%20thumb.jpg
+image: https://cdn.chriskrycho.com/images/2021/From%20the%20Visitor%20Center%20thumb.jpg
 
 ---
 
 Looking northeast from the Dinosaur National Monument [Quarry Visitor Center][qvc], on our family trip back in July. ([Unsplash][u], [Glass][g]).
 
-<img src='https://cdn.chriskrycho.com/file/chriskrycho-com/images/2021/From%20the%20Visitor%20Center%20thumb.jpg' alt='picture of a desert mountainside backed by further desert mountains' />
+<img src='https://cdn.chriskrycho.com/images/2021/From%20the%20Visitor%20Center%20thumb.jpg' alt='picture of a desert mountainside backed by further desert mountains' />
 
 <table>
     <tr>

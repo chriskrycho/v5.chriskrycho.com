@@ -6,7 +6,7 @@ qualifiers:
 book:
   title: Recursion
   author: Blake Crouch
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/recursion.jpg
+  cover: https://cdn.chriskrycho.com/images/books/recursion.jpg
   link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRecursion-Blake-Crouch%2Fbook%2F42580801
   year: 2019
   review:

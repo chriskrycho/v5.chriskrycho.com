@@ -9,7 +9,7 @@ qualifiers:
 book:
   title: Sourdough
   author: Robin Sloan
-  cover: https://cdn.chriskrycho.com/file/chriskrycho-com/images/books/sourdough.jpg
+  cover: https://cdn.chriskrycho.com/images/books/sourdough.jpg
   link: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343
   year: 2019
   review:

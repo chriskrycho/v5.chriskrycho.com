@@ -87,7 +87,7 @@ Much of my non-fiction reading was not books, but articles, essays, etc. of vari
 [pocket]: https://getpocket.com/en/
 [integration]: https://help.kobo.com/hc/en-us/articles/360017763753-Use-the-Pocket-App-with-your-Kobo-eReader
 
-I continue to be a *paying* subscriber to [<cite>The Hedgehog Review</cite>][thr] and [Stratechery](https://stratechery.com), and am delighted to now also be a paying subscriber to [<cite>Mere Orthodoxy</cite>][mere-o]’s print edition. All three were great sources of good, deep, interesting reads this year. I commend them to you! I also subscribe to a great many newsletters as well as traditional <abbr title="really simple syndication">RSS</abbr>/Atom/<abbr title="JavaScript Object Notation">JSON</abbr> feeds. You can see my old-school subscriptions [here](https://cdn.chriskrycho.com/file/chriskrycho-com/subscriptions.opml) (and I will try to update that quarterly or so, as it does change over time!).
+I continue to be a *paying* subscriber to [<cite>The Hedgehog Review</cite>][thr] and [Stratechery](https://stratechery.com), and am delighted to now also be a paying subscriber to [<cite>Mere Orthodoxy</cite>][mere-o]’s print edition. All three were great sources of good, deep, interesting reads this year. I commend them to you! I also subscribe to a great many newsletters as well as traditional <abbr title="really simple syndication">RSS</abbr>/Atom/<abbr title="JavaScript Object Notation">JSON</abbr> feeds. You can see my old-school subscriptions [here](https://cdn.chriskrycho.com/subscriptions.opml) (and I will try to update that quarterly or so, as it does change over time!).
 
 <aside>
 

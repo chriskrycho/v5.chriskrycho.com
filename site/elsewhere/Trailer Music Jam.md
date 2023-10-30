@@ -56,4 +56,4 @@ If you’d like to mess around with it, you’re welcome to [download the Logic 
 [strings]: https://www.spitfireaudio.com/shop/a-z/spitfire-solo-strings/
 [percussion]: https://www.spitfireaudio.com/shop/a-z/spitfire-percussion/
 [aperture]: https://www.youtube.com/watch?v=gQkKS8MF-Vs
-[project]: https://cdn.chriskrycho.com/file/chriskrycho-com/music/Trailer%20Music%20Jam.logicx.zip
+[project]: https://cdn.chriskrycho.com/music/Trailer%20Music%20Jam.logicx.zip

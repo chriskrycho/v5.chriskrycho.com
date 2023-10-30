@@ -13,7 +13,7 @@ qualifiers:
 
 Half an hour ago, I came across [Titus Wormer](https://wooorm.com)’s delightful [Write Music](https://wooorm.com/write-music/): a tiny little visualization tool for sentence length. Out of curiosity, I dropped a few of my essays into the tool. It informed me—with massive blocks of blue-highlighted text—that I tend write a lot of long sentences: by its definition, *very* long. (Who knew?)
 
-![](https://cdn.chriskrycho.com/file/chriskrycho-com/images/Write%20Music%20example%20paragraph.png "The preceding paragraph, with the site's default highlighting")
+![](https://cdn.chriskrycho.com/images/Write%20Music%20example%20paragraph.png "The preceding paragraph, with the site's default highlighting")
 
 The tool is [open source](https://github.com/wooorm/write-music), though. I pulled down a copy and changed it. Instead of capping out at 12 words, I let it highlight differences in much longer kinds of sentences. As a result, it is much more illuminating about my own writing:
 

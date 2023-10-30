@@ -1,18 +1,18 @@
 ---
 title: spring evening
 date: 2023-04-17T20:59:00-0600
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/spring%20evening%20(thumb).jpg
+image: https://cdn.chriskrycho.com/images/2023/spring%20evening%20(thumb).jpg
 ---
 
 Continuing to work on (read: muck around with) color grading in Lightroom <abbr title="Creative Cloud">CC</abbr>. This isn’t quite where I want it to be but it is waaaaay ahead of the image as it came out of the camera.
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/spring%20evening%20(thumb).jpg">
+<img src="https://cdn.chriskrycho.com/images/2023/spring%20evening%20(thumb).jpg">
 
 <figcaption>
 
-[full size](https://cdn.chriskrycho.com/file/chriskrycho-com/images/2023/spring%20evening.jpg) | [Glass](https://glass.photo/chriskrycho/6YFCKwX3F0NeBBEFdbFl0E)
+[full size](https://cdn.chriskrycho.com/images/2023/spring%20evening.jpg) | [Glass](https://glass.photo/chriskrycho/6YFCKwX3F0NeBBEFdbFl0E)
 
 <table>
 <tr><th scope="row">Camera</th><td>Sony α7R V</td></tr>

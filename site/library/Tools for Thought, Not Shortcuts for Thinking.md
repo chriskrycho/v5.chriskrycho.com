@@ -19,7 +19,7 @@ qualifiers:
 
 date: 2023-08-14T08:30:00-0600
 
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/memex.jpg
+image: https://cdn.chriskrycho.com/images/memex.jpg
 
 ---
 

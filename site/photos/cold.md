@@ -1,7 +1,7 @@
 ---
 title: cold
 date: 2022-12-22T19:46:00-0700
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%20(thumb).jpg
+image: https://cdn.chriskrycho.com/images/2022/12-22%20cold%20(thumb).jpg
 tags:
   - Leica Q2
 
@@ -11,10 +11,10 @@ Trying to catch a hint of the feeling of the end of the coldest day I’ve ever 
 
 <figure>
 
-<img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold%20(thumb).jpg">
+<img src="https://cdn.chriskrycho.com/images/2022/12-22%20cold%20(thumb).jpg">
 
 <figcaption>
-<p><a href="https://cdn.chriskrycho.com/file/chriskrycho-com/images/2022/12-22%20cold.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/2mmw5kMMBkYboFtRJoLWGN">Glass</a></p>
+<p><a href="https://cdn.chriskrycho.com/images/2022/12-22%20cold.jpg">full size</a> | <a href="https://glass.photo/chriskrycho/2mmw5kMMBkYboFtRJoLWGN">Glass</a></p>
 </figcaption>
 
 <table>

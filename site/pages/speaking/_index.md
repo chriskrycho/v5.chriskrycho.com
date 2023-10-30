@@ -1,7 +1,7 @@
 ---
 title: Speaking
 subtitle: I’d love to appear on your podcast or speak at your conference!
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/speaking.jpg
+image: https://cdn.chriskrycho.com/images/speaking.jpg
 permalink: /speaking/
 
 ---
@@ -9,7 +9,7 @@ permalink: /speaking/
 I’ve been podcasting since 2014 and have spoken at a number of conferences since 2015. (See [below](#past-talks) for some of the talks I’ve given over the years!) I am equally happy having off-the-cuff discussions and giving deeply-prepared presentations.
 
 <figure>
-<img alt="picture of Chris gesturing" src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/speaking.jpg">
+<img alt="picture of Chris gesturing" src="https://cdn.chriskrycho.com/images/speaking.jpg">
 <figcaption>Speaking at All Things Open 2019</figcaption>
 </figure>
 

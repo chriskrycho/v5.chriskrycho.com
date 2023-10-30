@@ -104,9 +104,9 @@ Initially, both `new-horizons` and `new-horizons-alt` with the same Git commit g
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/initial-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/initial-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/initial-light.png">
     </picture>
     <figcaption>initial state</figcaption>
 </figure>
@@ -121,9 +121,9 @@ The result is identical, except that I now have a working branch:
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-pluto-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/with-pluto-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/with-pluto-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/with-pluto-light.png">
     </picture>
     <figcaption>with <code>pluto</code></figcaption>
 </figure>
@@ -132,9 +132,9 @@ I start by adding the baseline for the large change—upgrading the dependency:
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-upgrade-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/with-upgrade-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/with-upgrade-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/with-upgrade-light.png">
     </picture>
     <figcaption>with upgrade commit on <code>pluto</code></figcaption>
 </figure>
@@ -143,9 +143,9 @@ Then I get the test suite running against that change, and identify a failure in
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/with-first-fix-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/with-first-fix-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/with-first-fix-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/with-first-fix-light.png">
     </picture>
     <figcaption>with first fix on <code>pluto</code></figcaption>
 </figure>
@@ -185,9 +185,9 @@ Now `pluto` in the `new-horizons` clone has the upgrade and a fix in place, whil
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-cherry-picking-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-cherry-picking-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-cherry-picking-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/after-cherry-picking-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/after-cherry-picking-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/after-cherry-picking-light.png">
     </picture>
     <figcaption>after cherry picking</figcaption>
 </figure>
@@ -216,9 +216,9 @@ Doing the `pull` on `master` in both clones will get it up to date with the fix 
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-pulling-and-rebasing-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-pulling-and-rebasing-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/after-pulling-and-rebasing-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/after-pulling-and-rebasing-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/after-pulling-and-rebasing-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/after-pulling-and-rebasing-light.png">
     </picture>
     <figcaption>after pulling and rebasing</figcaption>
 </figure>
@@ -258,9 +258,9 @@ Here's how that works. Everything *starts* the same as in the previous flow: wit
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/initial-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/initial-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/initial-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/initial-light.png">
     </picture>
     <figcaption>the same initial state</figcaption>
 </figure>
@@ -269,9 +269,9 @@ Now, instead of fixing just *one* bug before switching back over, I fix several 
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/series-of-fixes-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/series-of-fixes-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/series-of-fixes-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/series-of-fixes-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/series-of-fixes-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/series-of-fixes-light.png">
     </picture>
     <figcaption>a series of fixes on <code>pluto</code></figcaption>
 </figure>
@@ -280,9 +280,9 @@ Keeping them in discrete commits like this means I can `cherry-pick` them indivi
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fixes-separate-branches-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fixes-separate-branches-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fixes-separate-branches-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/fixes-separate-branches-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/fixes-separate-branches-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/fixes-separate-branches-light.png">
     </picture>
     <figcaption>fixes applied to separate branches</figcaption>
 </figure>
@@ -298,9 +298,9 @@ Now `master` contains all of the changes I made. They’re not necessarily in th
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-commits-master-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-commits-master-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/multiple-commits-master-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/multiple-commits-master-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/multiple-commits-master-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/multiple-commits-master-light.png">
     </picture>
     <figcaption>multiple commits on <code>master</code></figcaption>
 </figure>
@@ -315,9 +315,9 @@ Now, my commit graph for `pluto` is once again just `master` with one extra comm
 
 <figure>
     <picture>
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged-light.png" media="(prefers-color-scheme: light)">
-        <source srcset="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged-dark.png" media="(prefers-color-scheme: dark)">
-        <img src="https://cdn.chriskrycho.com/file/chriskrycho-com/images/essays/git-workflow/fully-merged-light.png">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/fully-merged-light.png" media="(prefers-color-scheme: light)">
+        <source srcset="https://cdn.chriskrycho.com/images/essays/git-workflow/fully-merged-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="https://cdn.chriskrycho.com/images/essays/git-workflow/fully-merged-light.png">
     </picture>
     <figcaption>after rebasing with <code>A</code>, <code>B</code>, and <code>C</code>.</figcaption>
 </figure>

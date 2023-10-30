@@ -8,7 +8,7 @@ tags:
 qualifiers:
   audience: >
     People who care (at least a little) about our popular culture; and people who either have seen or do not care about being spoiled on <cite>Eternals</cite>, because this post discusses it freely.
-image: https://cdn.chriskrycho.com/file/chriskrycho-com/images/eternals.jpg
+image: https://cdn.chriskrycho.com/images/eternals.jpg
 date: 2022-01-22T21:17:00-0700
 
 ---
