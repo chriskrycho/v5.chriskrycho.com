@@ -17,7 +17,7 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2023-08-07T21:10:00-0700
+updated: 2023-10-31T11:24:00-0600
 updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
