@@ -67,6 +67,10 @@ updates:
     changes: >
       A first pass at `jj describe` and `jj new`.
 
+  - at: 2023-10-31T11:24:00-0600
+    changes: >
+      Filling in what makes `jj` interesting, and explaining templates a bit.
+
 draft: true
 
 ---
@@ -113,16 +117,33 @@ This is trickier than it might seem. Git has substantially the most “mind-shar
 
 ### What is Jujutsu?
 
-==TODO: Why is it interesting?==
+Jujutsu is, broadly speaking, two things:
 
-- *change* as distinct from *revision*: borrowed from Mercurial
-- first-class conflicts: borrowed from Pijul and Darcs
-- a reasonable user interface (!!!)
+1. **It is a new front-end to Git.** This is *by far* the less interesting of the two things, but in practice it is a substantial part of the experience of using the tool today. In this regard, it sits in the same notional space as something like [gitoxide](https://github.com/Byron/gitoxide) (though `jj` is far more usable for day to day work than gitoxide’s `gix` and `ein` so far).
+
+2. **It is a new design for distributed version control.** This is by far the more interesting part. In particular, Jujutsu brings to the table a few key concepts—none of which are themselves novel, but the combination of which is *really* nice to use in practice:
+
+    - *Changes* are distinct from *revisions*: an idea borrowed from Mercurial, but quite different from Git’s model.
+    - Conflicts are first-class items: an idea borrowed from [Pijul][pijul] and [Darcs][darcs].
+    - The user interface is not only reasonable but actually *really good*: an idea borrowed from, uhh, literally everything but Git.
+
+[pijul]: https://pijul.org
+[darcs]: https://darcs.net
+
+The combo of those means that you can use it today in your existing Git repos, as I have been for the past several months, and that it is a *really good* experience using it that way. Moreover, given it is being actively develpoed at and by Google for use as a replacement for its current custom <abbr>VCS</abbr> setup, it seems like it has a good future ahead of it.
+
+Net: at a minimum you get a better experience for using Git with it. At a maximum, you get a path to what I hope is the future of version control.
 
 
 ### What is Jujutsu *not*?
 
-- Pijul-style “we have hard math to make all changes commute”
+Jujutsu is *not* trying to do every interesting thing that other Git-alternative <abbr>DVCS</abbr> systems out there do. Unlike [Pijul][pijul], for example, it does not work from a theory of patches such that the order changes are applied is irrelevant. However, as I noted above and show in detail below, jj *does* distinguish between *changes* and *revisions*, and has first-class support for conflicts, which means that many of the benefits of Pijul’s handling come along anyway.
+
+Unlike [Fossil][fossil], Jujutsu is also not trying to be an all-in-one tool. Accordingly: It does not come with a replacement for GitHub or other such “forges”. It does not include bug tracking. It does not support chat or a forum or a wiki. Instead, it is currently aimed at just doing the base <abbr title="version control system">VCS</abbr> operations well.
+
+[fossil]: https://fossil-scm.org/home/doc/trunk/www/index.wiki
+
+Finally, there is a thing jj is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports multiple "back ends" for the sake of keeping the door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
 
 
 ## Usage notes 
@@ -194,9 +215,21 @@ This shows a couple other interesting features of `jj`’s approach to revsets a
 
 That’s all well and good, but even with reading the operator and function guides, it still took me a bit to actually quite make sense out of the default output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at.
 
-I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to. ==TODO: this is the `templates` stuff. It’s unstable but worth pointing people to.== ==TODO: share my own tweaks here.==
+I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to.
+
+This is all managed via [a templating system][templates], which uses “a functional language to customize output of commands”. The format is still evolving, but you can use it to customize the output today… while being aware that you may have to update it in the future. Keywords include things like `description` and `change_id`, and these can be customized in jj’s config. For example, I made these tweaks to mine:
+
+```toml
+[template-aliases]
+'format_short_id(id)' = 'id.shortest()'
+```
+
+This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: jj will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`.
+
+[templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
 
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
+
 
 ### Working on projects
 
