@@ -51,7 +51,7 @@
       <p>
          {% if draft %}
             {% if started is defined -%}
-            This entry was started on {% localeDate started, DATE_FORMAT %}
+            This draft was started on {% localeDate started, DATE_FORMAT %}
                {%- if updated is defined -%}
                   , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
                {%- endif -%}
