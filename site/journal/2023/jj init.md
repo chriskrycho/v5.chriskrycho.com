@@ -17,7 +17,7 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2023-11-01T09:27:00-0600
+updated: 2023-11-02T17:17:00-0600
 updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
@@ -74,6 +74,10 @@ updates:
   - at: 2023-11-01T09:27:00-0600
     changes: >
       Describing a bit about how `jj new -A` works and integrates with its story for clean rebases.
+
+  - at: 2023-11-02T17:17:00-0600
+    changes: >
+      Added a first pass at a conclusion, and started on the restructuring this needs.
 
 draft: true
 
@@ -150,7 +154,7 @@ Unlike [Fossil][fossil], Jujutsu is also not trying to be an all-in-one tool. Ac
 Finally, there is a thing jj is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports multiple "back ends" for the sake of keeping the door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
 
 
-## Usage notes 
+## Usage notes
 
 That is all interesting enough philosophically, but for a tool that, if successful, will end up being one of a software developer’s most-used tools, there is an even more important question: *What is it actually like to use?*
 
@@ -235,9 +239,36 @@ This gives me super short names for changes and commits, which makes for a *much
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
 
 
-### Working on projects
+## Workflow
 
 Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git!
+
+One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
+
+<img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
+
+
+### Changes
+
+In Git, you work with changes by *committing* them. This took me a fair bit to wrap my head around, but in Jujutsu, “commit” is actually basically just an alias for two other operations: `jj describe` and `jj new`, in that order. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `jj commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal operations which are much more capable than `git commit`:
+
+`jj describe` works on *any* commit. It just defaults to the commit that is the current working copy. But if you want to rewrite a message earlier in your commit history, that is not a special operation like it is in Git, where you have to run an interactive rebase to do it. You just do `jj describe --revision <ID> --message "new and improved message"`. That's it. (How you choose to integrate that into your history is a matter for you and your team to decide; and we are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!)
+
+`jj new` is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command, it is just an alias for `new`.
+
+==TODO: replace this with a better recording. I’m leaving it here for my own reference for what to do better next time, as well as the config options I want!==
+
+<figure>
+
+<script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
+
+<figcaption>A demo of using <code>jj new</code> to create a three-parent merge</figcaption>
+
+</figure>
+
+- ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
+- ==TODO: `checkout` vs. `new`==
+- ==TODO: `merge` == `new` with a requirement for parent count==
 
 Courtesy of the `node_modules` issue described above, I was initially not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. (This turned out to be a quirk with how to launch file diffs; see [the appendix][appendix] if you’re curious.) Once I worked around that, though, I quickly came to see the upside. Most of the time with Git, I am doing one of two things:
 
@@ -287,13 +318,17 @@ You can do this using interactive rebasing with Git (or with history rewriting w
 
 I never use `git reflog` so much as when doing interactive rebases! Once I got the hang of this, it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. There *is* still an escape hatch for mistakes, though: `jj op log` shows all the operations you have performed on the repo—and frankly, is much more useful and powerful than `git reflog`, because it logs *all* the operations.
 
+### Split
+
 This also leads to another significant difference with Git: around breaking up your current set of changes on disk. As I noted above, Jujutsu treats the working copy itself as a commit instead of having an “index” like Git. Git really *only* lets you break apart a set of changes with the index, using `git add --patch`. Jujutsu instead has a `split` command, which launches a diff editor and lets you select what you want to incorporate—rather like `git add --patch` does. As with all of its commands, though, `jj split` works exactly the same way on *any* commit; the working copy commit gets it “for free”.
 
 Philosophically, I really like this. Practically, it is a slightly bumpier experience for me than the Git approach at the moment. Recall that I do not use `git add --patch` directly. Instead, I always stage changes into the Git index using a graphical tool like [Fork][fork]. That workflow is slightly nicer than editing a diff—at least, as Jujutsu does it today. In Fork (and similar tools), you start with *no* changes and add what you want to the change set you want. By contrast, `jj split` launches a diff view with *all* the changes from a given commit present: splitting the commit involves *removing* changes from the right side of the diff so that it has only the changes you want to be present in the first of two new commits; whatever is *not* present in the final version of the right side when you close your diff editor ends up in the second commit.
 
 If this sounds a little complicated, that is because *it is*. There are two big downsides to this approach, philosophically elegant though it is. First, I find it comes with more cognitive load. It requires thinking in terms of negation rather than addition, and the “second commit” becomes less and less visible over time as you remove it from the first commit. Second, it requires you to repeat the operation when breaking up something into more than two commits. I semi-regularly take a single bucket of changes on disk and chunk it up into *many* more than just 2 commits, though! That significantly multiplies the cognitive overhead.
 
-Now, since I started working with jj, the team has switched the default view for working with these kinds of diffs to a three-pane view in [Meld][meld], which allegedly makes it somewhat better. However, Meld is pretty janky on macOS (as [GTK][gtk] apps basically always are), and it has a *terrible* startup time for reasons that are unclear at this point, which means this was not a great experience in the first place… and Meld [crashes on launch][meld-crash] on the current version of macOS.
+Now, since I started working with jj, the team has switched the default view for working with these kinds of diffs to using `scm-diff-editor`, a <abbr title="textual user interface">TUI</abbr> which has a first-class notion of this kind of workflow.[^meld] That initially (and still as of the version included with `jj` v0.11.0, the latest as of this writing) had a bug in it which meant that any new file was *always* included (though that should be fixed in the next release), which meant `jj split` was a bit annoying to work with when adding new files.
+
+[^meld]: They also enabled support for a three-pane view in [Meld][meld], which allegedly makes it somewhat better. However, Meld is pretty janky on macOS (as [GTK][gtk] apps basically always are), and it has a *terrible* startup time for reasons that are unclear at this point, which means this was not a great experience in the first place… and Meld [crashes on launch][meld-crash] on the current version of macOS.
 
 [meld]: https://meld.app
 [gtk]: https://www.gtk.org
@@ -313,45 +348,12 @@ I was working on a change to [a library][true-myth] I maintain[^fun] and decided
 
 [^fun]: Yes, this is what I do for fun on my month off. At least: partially.
 
-
-## Rewiring Your Git Brain
-
-<!-- TODO: I really need to integrate this whole section into the section above and break things down more! -->
-
-One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
-
-<img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
-
-
-### Changes
-
-In Git, you work with changes by *committing* them. This took me a fair bit to wrap my head around, but in Jujutsu, “commit” is actually basically just an alias for two other operations: `jj describe` and `jj new`, in that order. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `jj commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal operations which are much more capable than `git commit`:
-
-`jj describe` works on *any* commit. It just defaults to the commit that is the current working copy. But if you want to rewrite a message earlier in your commit history, that is not a special operation like it is in Git, where you have to run an interactive rebase to do it. You just do `jj describe --revision <ID> --message "new and improved message"`. That's it. (How you choose to integrate that into your history is a matter for you and your team to decide; and we are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!)
-
-`jj new` is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command, it is just an alias for `new`.
-
-==TODO: replace this with a better recording. I’m leaving it here for my own reference for what to do better next time, as well as the config options I want!==
-
-<figure>
-
-<script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
-
-<figcaption>A demo of using <code>jj new</code> to create a three-parent merge</figcaption>
-
-</figure>
-
-- ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
-- ==TODO: `checkout` vs. `new`==
-- ==TODO: `merge` == `new` with a requirement for parent count==
-
-
 ### Branches
 
 ==TODO: branch behavior is a bit quirky-feeling at first, and definitely makes interacting with GitHub repos a bit weird==
 
 
-### Git interop
+## Git interop
 
 - ==TODO: `jj git push` and friends do not always seem to work==
 
@@ -360,6 +362,13 @@ In Git, you work with changes by *committing* them. This took me a fair bit to w
 Jujutsu does this by using `libgit2`, so there is effectively no risk of breaking your repo because of a Jujutsu–Git interop issue. To be sure, there can be bugs in Jujutsu itself, and you can do things using Jujutsu that will leave you in a bit of a mess, but the same is true of *any* tool which works on your Git repository. The risk might be very slightly higher here than with your average <abbr>GUI</abbr> Git client, since Jujutsu is mapping different semantics onto the repository, but I have fairly high confidence in the project at this point, and I think you can too.
 
 {% endnote %}
+
+## Conclusion
+
+Jujutsu has become my version control tool of choice since I picked it up over the summer. The rough edges and gaps I described throughout this write-up notwithstanding, I *much* prefer it to working with Git directly. While it is not yet ready for mainstream adoption, it is getting there very quickly. I do not hesitate to recommend that you try it out on personal projects: indeed, I actively recommend it!
+
+I am also very eager to see what a native jj backend would look like. Today, it is “just” a much better model for working with Git repos. A world where the same level of smarts being applied to the front-end goes into the back-end too is a world well worth looking forward to.
+
 
 ## Appendix: Kaleidoscope setup and tips
 
