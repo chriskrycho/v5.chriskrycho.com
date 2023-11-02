@@ -10,6 +10,9 @@ tag:
 qualifiers:
   audience: >
     People interested in and broadly familiar with the state of software pedagogy.
+discuss:
+  hn: https://news.ycombinator.com/item?id=38115884
+  lobsters: https://lobste.rs/s/qcohfn/observation_on_programming_pedagogy
 
 ---
 
