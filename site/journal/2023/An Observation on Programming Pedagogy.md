@@ -13,7 +13,7 @@ qualifiers:
 
 ---
 
-I have long found programming *textbooks* rather difficult to deal with. Distinctly textbooks, as distinct from books aimed at practitioners. I realized one major reason for this frustration while continuing my journey through [<cite>Programming Languages: Application and Interpretation</cite>](https://plai.org) (<cite><abbr title="Programming Languages: Application and Interpretation>PLAI</abbr></cite>). After spending a couple chapters working through its macro system, <cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite> moves into defining and working with objects and classes, with this transition:
+I have long found programming *textbooks* rather difficult to deal with. Distinctly textbooks, as distinct from books aimed at practitioners. I realized one major reason for this frustration while continuing my journey through [<cite>Programming Languages: Application and Interpretation</cite>](https://plai.org) (<cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite>). After spending a couple chapters working through its macro system, <cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite> moves into defining and working with objects and classes, with this transition:
 
 <figure class="quotation">
 
@@ -29,7 +29,7 @@ This pattern is extremely common in textbooks in my experience. And even with th
 
 There are likely many reasons for these differences, but one of the biggest occurred to me this morning: precisely the [assumed audience](https://v4.chriskrycho.com/2018/assumed-audiences.html). Materials aimed at college students can assume the available of <abbr title="teaching assistant">TA</abbr>s, office hours with the professor, and a community of peers working through the same materials. If one student gets stuck, she has *many* sources of help besides the book itself. Much of the structure of college pedagogy is oriented around, and implicitly or explicitly assumes, those other factors as support structures for the process of learning. Materials aimed at practitioners must assume that the learner is working alone, with *no* support structure, likely in spare time carved out between a day job and whatever other responsibilities she has in life. A textbook does not have to, and as usually deployed indeed should not, provide all of the help and feedback required for learning along the way. Materials written for the solitary learner must make just the opposite choice.
 
-We could really use more materials which cover the same ground as textbooks like <cite><abbr title="Programming Languages: Application and Interpretation>PLAI</abbr></cite> but which take the practitioner approach pedagogically!
+We could really use more materials which cover the same ground as textbooks like <cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite> but which take the practitioner approach pedagogically!
 
 
 [^parsers]: Except for materials on parsers. Those always have a [“Now draw the rest of the f–––ing owl”](https://knowyourmeme.com/memes/how-to-draw-an-owl) attitude for some reason.
