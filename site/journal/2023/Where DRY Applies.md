@@ -19,6 +19,9 @@ qualifiers:
 date: 2023-11-02T17:01:00-0600	  
 started: 2023-07-29T12:43:00-0600
 
+discuss:
+  hn: https://news.ycombinator.com/item?id=38121669
+  lobsters: https://lobste.rs/s/leor0x/where_dry_applies
 
 ---
 
