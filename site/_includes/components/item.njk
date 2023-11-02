@@ -35,7 +35,7 @@
 {% endif %}
 {% endmacro %}
 
-{% macro meta(title, date, tags, updated, updates, started, inputPath, thanks, isGhostCollection, discuss) %}
+{% macro meta(title, date, tags, updated, updates, started, inputPath, thanks, isGhostCollection, discuss, draft) %}
 {%- set DATE_FORMAT = 'MMMM d, yyyy' %}
 {%- set TIME_FORMAT = 'HH:mm' %}
 <footer class='post-meta'>
@@ -49,16 +49,30 @@
    <div class='section-label'>Posted:</div>
    <div class='section-content'>
       <p>
-         This entry was {% if updated is defined -%} originally {%- endif %} published in
-         <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
-         on <span class='dt-published'>{% localeDate date, DATE_FORMAT %}</span>
-         {%- if updated is defined -%}
-         , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
-         {%- endif -%}
-         {% if started is defined -%}
-         ; it was started on {% localeDate started, DATE_FORMAT %}
-         {%- endif -%}
-         .
+         {% if draft %}
+            {% if started is defined -%}
+            This entry was started on {% localeDate started, DATE_FORMAT %}
+               {%- if updated is defined -%}
+                  , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+               {%- endif -%}
+               .
+            {% else %}
+               {%- if updated is defined -%}
+                  This draft was last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>).
+               {%- endif -%}
+            {%- endif -%}
+         {% else %}
+            This entry was {% if updated is defined -%} originally {%- endif %} published in
+            <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
+            on <span class='dt-published'>{% localeDate date, DATE_FORMAT %}</span>
+            {%- if updated is defined -%}
+            , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+            {%- endif -%}
+            {% if started is defined -%}
+            ; it was started on {% localeDate started, DATE_FORMAT %}
+            {%- endif -%}
+            .
+         {% endif %}
       </p>
 
       {%- if updates -%}
