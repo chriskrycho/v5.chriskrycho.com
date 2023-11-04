@@ -27,6 +27,7 @@ http://v5.chriskrycho.com/* https://v5.chriskrycho.com/:splat 301!
 /library/reading-papers/* /library/reading-papers-in-public/:splat 301!
 /journal/trying-out-jujutsu/ /journal/jj-init/ 301!
 /journal/reflections-on-a-month-with-nova-and-bbedit/ /journal/reflections-on-a-month-with-bbedit-and-nova/
+/journal/note-on-typescript-conversions/ /journal/how-to-do-a-typescript-conversion/ 301!
 
 # ...including after I made library collections work correctly
 /library/good-theology-demands-good-theologians/ /library/the-culture-of-theology/good-theology-demands-good-theologians/ 301!
