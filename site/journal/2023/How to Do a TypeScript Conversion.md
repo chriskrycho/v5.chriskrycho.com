@@ -1,6 +1,6 @@
 ---
 title: >
-  Note: On TypeScript Conversions
+  How to Do a TypeScript Conversion
 subtitle: >
   Addressing a very common question: do-it-as-you-go or follow the dependency graph?
 qualifiers:
