@@ -13,6 +13,10 @@ image: https://cdn.chriskrycho.com/images/Ackbar-trap.jpeg
 
 date: 2023-11-03T15:06:00-0600
 
+discuss:
+  hn: https://news.ycombinator.com/item?id=38145194
+  lobsters: https://lobste.rs/s/zgxiph/how_do_typescript_conversion
+
 ---
 
 One of the most common questions I get from people interested in converting their JavaScript applications to TypeScript is: *How should I approach this?* There are two approaches people tend to think of:
