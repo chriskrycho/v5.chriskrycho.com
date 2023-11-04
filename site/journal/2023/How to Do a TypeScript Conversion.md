@@ -21,7 +21,7 @@ discuss:
 
 One of the most common questions I get from people interested in converting their JavaScript applications to TypeScript is: *How should I approach this?* There are two approaches people tend to think of:
 
-- A relatively relaxed approach: setting `compilerOptions: false` initially, converting files as you touch them, and gradually increasing the robustness of the types by enabling individual strictness flags until you have them all turned on—or some combination of these.
+- A relatively relaxed approach: setting `compilerOptions.strict: false` initially, converting files as you touch them, and gradually increasing the robustness of the types by enabling individual strictness flags until you have them all turned on—or some combination of these.
 
 - A more rigorous approach: setting `compilerOptions.strict: true`, and very carefully converting the codebase in a “leaves-first” order, where no module is converted without first having types for all of its dependencies. Making explicit what “more rigorous” probably already implies: this is my preferred approach.
 
