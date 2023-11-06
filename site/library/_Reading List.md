@@ -62,8 +62,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://bookshop.org/a/21126/9781577996279), John Webster (new)
 
-- [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://bookshop.org/a/21126/9781625640451), David T. Koyzis (new)
-
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
 - [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
@@ -134,6 +132,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Metaphors We Live By</cite>](https://bookshop.org/a/21126/9780226468013), George Lakoff and Mark Johnson (new)
 
 - [<cite>Bad Blood: Secrets and Lies in a Silicon Valley Startup</cite>](https://bookshop.org/a/21126/9780525431992), John Carreyrou (new)
+
+- [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://bookshop.org/a/21126/9781625640451), David T. Koyzis (new)
 
 
 ### Fiction
