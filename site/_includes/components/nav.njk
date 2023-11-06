@@ -1,5 +1,13 @@
 {% macro item(navItem, pageUrl) %}
-<li><a href='{{navItem.path}}' {% if pageUrl === navItem.path %}class='current'{% endif %}>{{navItem.title}}</a></li>
+<li>
+   <a href='{{navItem.path}}'
+      {% if pageUrl === navItem.path %}
+         class='current'
+         aria-current="page"
+      {% endif %}>
+      {{navItem.title}}
+   </a>
+</li>
 {% endmacro %}
 
 {% macro link(navItem) %}
