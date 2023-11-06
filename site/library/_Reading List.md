@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-10-29T19:53:00-0600
+date: 2023-11-06T10:17:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -55,8 +55,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
-
-- [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
 
@@ -134,6 +132,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Bad Blood: Secrets and Lies in a Silicon Valley Startup</cite>](https://bookshop.org/a/21126/9780525431992), John Carreyrou (new)
 
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://bookshop.org/a/21126/9781625640451), David T. Koyzis (new)
+
+- [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
 
 
 ### Fiction
