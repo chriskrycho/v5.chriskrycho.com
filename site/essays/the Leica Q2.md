@@ -12,6 +12,7 @@ thanks: >
 tags:
   - photography
   - Leica Q2
+  - Leica
 date: 2022-12-28T21:05:00-0700
 image: https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
 summary: >
@@ -44,9 +45,9 @@ It was only a little under a week, but I think, astonishingly, that Leica actual
 I said to my friend [Tim Hopper](https://photos.tdhopper.com) the day the Q2 arrived, after just a few hours of off-and-on use:
 
 > I think… I think I have a problem on my hands.… I like this camera a LOT.
-> 
+>
 > The handling is great, and the lens is just… dang.
-> 
+>
 > Also their phone app isn’t incredible or anything but it beats the PANTS off of Sony’s.
 
 That quickly-jotted series of text messages aptly characterized my experience. From a basic mechanics-of-shooting and quality-of-photos perspective, I *love* the Q2.
