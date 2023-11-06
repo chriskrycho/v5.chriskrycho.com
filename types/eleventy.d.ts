@@ -233,12 +233,7 @@ export interface Config {
     */
    addWatchTarget(path: string): void;
 
-   addCollection(
-      name: string,
-      builder: (
-         collection: Collection,
-      ) => Page[] | Record<string, unknown> | Promise<Record<string, unknown>>,
-   ): void;
+   addCollection(name: string, builder: (collection: Collection) => unknown): void;
 
    addFilter(name: string, filter: AnyFunction): string | void;
 

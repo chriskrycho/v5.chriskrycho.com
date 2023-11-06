@@ -135,6 +135,17 @@ const drafts = (collection: Collection): Item[] =>
       .filter(excludingStandalonePages)
       .sort(byDate(Order.NewFirst));
 
+const tags = (collection: Collection): string[] => {
+   let uniqueTags = collection.getAll().reduce((tags, item) => {
+      for (let tag of item.data?.tags ?? []) {
+         tags.add(tag);
+      }
+      return tags;
+   }, new Set<string>());
+
+   return Array.from(uniqueTags).sort();
+};
+
 const typesetOptions: Options = {
    disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
 };
@@ -157,6 +168,15 @@ function config(config: Config): UserConfig {
    config.addFilter('toCollectionUrl', toCollectionUrl);
    config.addFilter('toCollectionName', toCollectionName);
    config.addFilter('toRootCollection', toRootCollection);
+   config.addFilter(
+      'topLevel',
+      (obj) =>
+         '<ul>' +
+         Object.entries(obj)
+            .map(([k, v]) => `<li>${k}: ${v}</li>`)
+            .join('\n') +
+         '</ul>',
+   );
    config.addFilter('stringify', (obj) => JSON.stringify(obj));
    config.addFilter('archiveByYears', archiveByYear);
    config.addFilter('absoluteUrl', absoluteUrl);
@@ -205,6 +225,8 @@ function config(config: Config): UserConfig {
    config.addCollection('pages', (collection) =>
       collection.getAll().filter((item) => item.data?.standalonePage),
    );
+   config.addCollection('tags', tags);
+
    addCollectionFromDir(config, 'journal');
    addCollectionFromDir(config, 'journal/Fanfare for a New Era of American Spaceflight');
    addCollectionFromDir(config, 'journal/Ember Template Imports');

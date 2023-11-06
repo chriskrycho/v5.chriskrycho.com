@@ -1,0 +1,46 @@
+{% extends 'base.njk' %}
+{% import 'components/item.njk' as item %}
+{% import 'components/archive-list.njk' as archive %}
+{% from 'components/social.njk' import meta %}
+
+{%- set title -%}
+   topic: {{tag}}
+{%- endset -%}
+
+{%- block meta %}
+{{ meta(collections.live | current(page), config, title) }}
+{%- endblock meta %}
+
+{%- set styled_title -%}
+   <span class='tag-label'>topic:</span> <span class='tag-name'>{{tag}}</span>
+{%- endset -%}
+
+{%- block main -%}
+<section class='content-block'>
+
+{{item.header(type='archive', title=styled_title, subtitle=subtitle)}}
+
+<article class='article-content for-callout'>
+   <div class='callout'>
+      <p>I may also have written on this on earlier versions of my website:</p>
+      {%- set tagSlug = tag | slug -%}
+      <ol class='past-versions' style="counter-reset: version 2">
+         <li><a href='https://v3.chriskrycho.com'>2012–2013</a></li>
+         <li><a href='https://v4.chriskrycho.com/{{tagSlug}}'>2014–2019</a></li>
+      </ol>
+      <p>(The even-earlier versions of the site existed… but are not relevant here.)</p>
+   </div>
+</article>
+
+{%- set tagCollection = collections[tag] | isLive -%}
+{%- if tagCollection and tagCollection.length -%}
+   {{ archive.list(tagCollection | excludingStandalonePages | archiveByYears('OLD_FIRST'), idByCollection=true) }}
+{%- endif -%}
+
+<article class='article-content for-callout'>
+   <div class='callout'>
+      <p>That’s it for this topic… but <a href="/topics/">there are many, many more</a>!</p>
+   </div>
+</article>
+</section>
+{%- endblock main -%}
