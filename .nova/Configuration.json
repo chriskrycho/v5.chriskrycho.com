@@ -1,7 +1,8 @@
 {
   "index.ignored_file_patterns" : [
     "node_modules",
-    "public"
+    "public",
+    "site\/_styles"
   ],
   "todo.workspace-ignore-paths" : [
     "public"
