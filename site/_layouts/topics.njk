@@ -36,5 +36,5 @@
 {%- if tagCollection and tagCollection.length -%}
    {{ archive.list(tagCollection | excludingStandalonePages | archiveByYears('OLD_FIRST'), idByCollection=true) }}
 {%- endif -%}
-</div>
+</section>
 {%- endblock main -%}
