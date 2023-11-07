@@ -27,7 +27,7 @@ Sometimes preachers or writers will say that “God himself is the good news.”
 
 The idea that God never changes[^impassibility] has a bad rap among some theologians because they feel it makes God too unlike us: unrelatable.
 
-This text tells us that is exactly backwards. As I put it to my daughters a couple minutes ago: the good news it that God is *not* like me. He is not patient one day and irritable the next. He is not kind one day and harsh the next. He is not unpredictable. He is the same.
+This text tells us that is exactly backwards. As I put it to my daughters a couple minutes ago: the good news is that God is *not* like me. He is not patient one day and irritable the next. He is not kind one day and harsh the next. He is not unpredictable. He is the same.
 
 Crucially, he is the same in his *goodness*. He is wholly good, and he is reliably good. He is who he is, all the time, 100% of the time. That makes God himself the good news. Because he is good, always.
 
