@@ -7,7 +7,7 @@ qualifiers:
   audience: >
     Software developers working with JavaScript and TypeScript, or thinking about and working with gradual type systems in other languages. In particularly: I am not arguing *for* TypeScript or Python `types` or Ruby’s Sorbet etc.; I am talking to people who are already interested in adopting them.
   epistemic: >
-    I led the conversion of a 150,000-line-of-code app to strictly-typed TypeScript back in 2017–2018, and was the primary “subject matter expert” for LinkedIn’s adoption of TypeScript across its millions of lines of library and application JavaScript.
+    I was the primary “subject matter expert” for LinkedIn’s adoption of TypeScript across its millions of lines of library and application JavaScript, helped dozens of teams adopt TypeScript in the Ember.js community over the past six years, and successfully led the conversion of a 150,000-line-of-code app to strictly-typed TypeScript back in 2017–2018.
 
 image: https://cdn.chriskrycho.com/images/Ackbar-trap.jpeg
 
