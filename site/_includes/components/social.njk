@@ -1,5 +1,9 @@
 {%- macro meta(page, config, titleOverride) -%}
+   {%- if page.data.image -%}
+   <meta name="twitter:card" content="summary_large_image"/>
+   {%- else -%}
    <meta name="twitter:card" content="summary"/>
+   {%- endif -%}
    <meta name="twitter:site" content="@chriskrycho"/>
    <meta name="twitter:creator" content="@chriskrycho"/>
 
