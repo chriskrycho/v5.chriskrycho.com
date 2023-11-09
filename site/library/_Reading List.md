@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-11-06T10:17:00-0700
+date: 2023-11-09T10:07:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -57,8 +57,6 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [posts on the book](/topics/eccentric-existence/)
 
 - [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
-
-- [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://bookshop.org/a/21126/9781577996279), John Webster (new)
 
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
 
@@ -134,6 +132,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>We Answer to Another: Authority, Office, and the Image of God</cite>](https://bookshop.org/a/21126/9781625640451), David T. Koyzis (new)
 
 - [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
+
+- [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://bookshop.org/a/21126/9781577996279), John Webster (new)
 
 
 ### Fiction
