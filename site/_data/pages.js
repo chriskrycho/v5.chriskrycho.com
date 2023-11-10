@@ -6,6 +6,7 @@ module.exports = [
    { type: 'page', title: 'Elsewhere', url: '/elsewhere/' },
    { type: 'separator' },
    { type: 'page', title: 'Archive', url: '/archive/' },
+   { type: 'page', title: 'Follow', url: '/follow/' },
    { type: 'page', title: 'Colophon', url: '/colophon/' },
    { type: 'separator' },
    { type: 'page', title: 'About', url: '/about/' },
