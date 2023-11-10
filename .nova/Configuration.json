@@ -2,7 +2,8 @@
   "index.ignored_file_patterns" : [
     "node_modules",
     "public",
-    "site\/_styles"
+    "site\/_styles",
+    ".jj"
   ],
   "todo.workspace-ignore-paths" : [
     "public"
