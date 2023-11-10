@@ -232,6 +232,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal/Ember Template Imports');
    addCollectionFromDir(config, 'journal/Disney World 2022 Camera Gear');
    addCollectionFromDir(config, 'journal/2022 in Review');
+   addCollectionFromDir(config, 'journal/Next');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'library/Confronted by Grace');

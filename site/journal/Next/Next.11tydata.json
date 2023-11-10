@@ -1,0 +1,7 @@
+{
+   "layout": "post.njk",
+   "permalink": "/journal/next/{{page.fileSlug | slug}}/index.html",
+   "series": {
+      "title": "Next"
+   }
+}
