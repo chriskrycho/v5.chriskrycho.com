@@ -19,7 +19,7 @@ If you prefer to get emailed when I post, you can subscribe to either [every pos
 
 For my photography, [follow me on Glass](https://glass.photo/chriskrycho), or subscribe [via Glass’ <abbr>RSS</abbr> feed](https://glass.photo/chriskrycho/rss).
 
-You can also find me around the web in various contexts. In no alphabetical order, social media sites I am more or less active on:
+You can also find me around the web in various contexts. In alphabetical order, social media sites I am more or less active on:
 
 - [Bluesky](https://bsky.app/profile/chriskrycho.com)
 - [LinkedIn](http://linkedin.com/in/chriskrycho/)
