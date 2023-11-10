@@ -46,53 +46,72 @@
             <content type="html">
                <![CDATA[
                   {%- if item.data.subtitle -%}
-                     <i>{{- item.data.subtitle | safe -}}</i>
+                     <p><i>{{- item.data.subtitle | safe -}}</i></p>
                   {%- endif -%}
+
                   {%- if item.data.qualifiers.audience -%}
                      <p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> {{ item.data.qualifiers.audience | safe -}}</p>
                   {%- endif -%}
+
                   {%- if item.data.qualifiers.context -%}
                      <p><b>A bit of context:</b> {{ item.data.qualifiers.context | safe -}}</p>
                   {%- endif -%}
+
                   {%- if item.data.qualifiers.epistemic -%}
                      <p><b>Epistemic status:</b> {{ item.data.qualifiers.epistemic | safe -}}</p>
                   {%- endif -%}
+
                   {%- if item.data.qualifiers.discusses -%}
                      <p><b>Heads up:</b> this post directly discusses {{item.data.qualifiers.discusses | niceList | safe}}.</p>
                   {%- endif -%}
+
                   {%- if updates -%}
-                  <p><i>Meaningful changes since creating this page:</i></p>
-                  <ul>
-                     {%- for update in updates -%}
-                     <li>
-                        <i>{% localeDate update.at, 'MMMM d, yyyy' %}:</i>
-                        {{update.changes | safe}}
-                     </li>
-                     {%- endfor -%}
-                  </ul>
+                     <p><i>Meaningful changes since creating this page:</i></p>
+                     <ul>
+                        {%- for update in updates -%}
+                        <li>
+                           <i>{% localeDate update.at, 'MMMM d, yyyy' %}:</i>
+                           {{update.changes | safe}}
+                        </li>
+                        {%- endfor -%}
+                     </ul>
                   {%- endif -%}
 
                   {%- if item.data.qualifiers -%}
                     <hr/>
                   {%- endif -%}
 
-
                   {%- if item.data.book and item.data.book.review -%}
                      {%- set book = item.data.book -%}
-                     <p>
-                        {%- if book.cover -%}
-                        <img src="{{book.cover | safe}}" alt="cover art for {{book.title | safe}}" />
-                        {%- endif -%}
+
+                     {%- set book_desc -%}
                         {%- if book.link -%}
-                        <a href="{{book.link | safe}}" rel="nofollow"><cite>{{book.title | safe}}</cite></a>, {{book.author | safe}} ({{book.year | safe}})<br/></a>
+                           <p><a href="{{book.link | safe}}"><cite>{{book.title | safe}}</cite></a>, {{book.author | safe}} ({{book.year | safe}})</p>
                         {%- else -%}
-                        <cite>{{book.title | safe}}</cite>, {{book.author | safe}} ({{book.year | safe}})<br/>
+                           <p><cite>{{book.title | safe}}</cite>, {{book.author | safe}} ({{book.year | safe}})</p>
                         {%- endif -%}
+                     {%- endset -%}
+
+                     {%- set book_review -%}
                         {%- if book.review -%}
-                        <b>{{book.review.rating | safe}}:</b> {{book.review.summary | safe -}}
+                           <p><b>{{book.review.rating | safe}}:</b> {{book.review.summary | safe -}}</p>
                         {%- endif -%}
-                     </p>
+                     {%- endset -%}
+
+                     {%- if book.cover -%}
+                     <figure>
+                        <img src="{{book.cover | safe}}" alt="cover art for {{book.title | safe}}" />
+                        <figcaption>
+                          {{-book_desc-}}
+                          {{-book_review-}}
+                        </figcaption>
+                     </figure>
+                     {%- else -%}
+                        {{-book_desc-}}
+                        {{-book_review-}}
+                     {%- endif -%}
                   {%- endif -%}
+
                   {{-item.templateContent | safe-}}
                   {%- if item.data.thanks -%}
                   <hr/>
@@ -102,7 +121,6 @@
                   <p>
                      Thanks for reading my feed!
                      {% if includeReplyViaEmail -%}
-                        Thoughts, comments, or questions?
                         <a href="mailto:{{config.author.email}}?subject=Re%3A%20{{entryTitle | urlencode}}">Shoot me an email</a>
                         {%- if item.data.discuss is defined -%}
                            , or leave a comment on
@@ -110,6 +128,12 @@
                            <a href="{{item.data.discuss.lobsters}}">lobste.rs</a>.
                         {%- else -%}
                            !
+                        {%- endif -%}
+                     {%- else -%}
+                        {%- if item.data.discuss is defined -%}
+                           Thoughts, comments, or questions? Leave a comment on
+                           <a href="{{item.data.discuss.hn}}">Hacker News</a> or
+                           <a href="{{item.data.discuss.lobsters}}">lobste.rs</a>.
                         {%- endif -%}
                      {%- endif -%}
                   </p>
