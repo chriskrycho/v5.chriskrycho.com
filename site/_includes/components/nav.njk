@@ -1,7 +1,7 @@
 {% macro item(navItem, pageUrl) %}
 <li>
-   <a href='{{navItem.path}}'
-      {% if pageUrl === navItem.path %}
+   <a href='{{navItem.url}}'
+      {% if pageUrl === navItem.url %}
          class='current'
          aria-current="page"
       {% endif %}>
