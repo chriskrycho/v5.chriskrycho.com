@@ -80,7 +80,7 @@ From **January 2019–October 2023**, I worked as an infrastructure engineer at 
 
 #### 2021.09–2023.10: Senior Staff Software Engineer
 
-*Tech lead for one of the largest social networks in the world.*
+*TypeScript domain expert and Flagship web app tech lead.*
 
 - As the primary TypeScript subject-matter expert at LinkedIn:
     - I solved the most challenging technical challenges, e.g. enabling type-safe event tracking.
