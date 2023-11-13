@@ -3,14 +3,33 @@ title: "Next: Role?"
 subtitle: Ratchets over levers.
 series:
     part: 1
+
 date: 2023-11-12T21:45:01-0700
+
+tags:
+    - software development
+    - career
+
 qualifiers:
     audience: >
         Anyone interested in my thoughts on the next phase of my career—but *especially* anyone who might want to work with me.
 
+summary: >
+    As software continues to “eat the world” it matters more than ever how we build it. So let’s raise the floor—and the ceiling—for what software can be.
+
+image: https://cdn.chriskrycho.com/images/ratchet.jpg
+
 ---
 
+{% callout %}
 
+Part of a series on what’s next for me:
+
+1. [**Next: Role?**](/journal/next/role/) (this post): for those curious about where I am heading next… including folks who might want to hire me.
+2. [Now: Sabbatical](/journal/next/sabbatical/): for those interested in how I am spending this sabbatical.
+3. [Past: Leaving LinkedIn](/journal/next/leaving-linkedin/): for those interested in why I am on this new path.
+
+{% endcallout %}
 
 I love building software. I did not expect this when I started, and I did not come to this career with a great deal of purpose at first. Programming was just a good-enough job I could land with a physics degree in hand straight out of college. It has become a lasting passion, though. I told my wife recently: I can imagine a world where I worked full time as a composer… but in that world I would be still writing software as a hobby on the side, because it is such a joy to me.
 
@@ -20,7 +39,7 @@ Think of the person cutting your hair: the software in the point-of-sale system.
 
 Those of us who practice software engineering owe it to all of those people to make software which works well, which works *for them*. Period.
 
-“Solving” the problem of poor software craft is an impossible problem. I mean that: *impossible*. Poor craft is the result of massive systemic problems as well as many individual failures. It will always exist, because people will remain people: sometimes lazy or unmotivated or just stressed out by other things going on in .
+“Solving” the problem of poor software craft is an impossible problem. I mean that: *impossible*. Poor craft is the result of massive systemic problems as well as many individual failures. It will always exist, because people will remain people: sometimes lazy or unmotivated or just stressed out by other things going on in their lives, sometimes greedy and short-sighted and foolish.
 
 We can make it *better*, though.
 

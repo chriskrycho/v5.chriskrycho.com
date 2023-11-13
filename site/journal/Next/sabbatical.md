@@ -1,9 +1,11 @@
 ---
-title: "Now: A Three-Month Sabbatical"
+title: "Now: Sabbatical"
 subtitle: Resting well and (by?) working hard.
 series:
     part: 2
+
 date: 2023-11-12T21:45:02-0700
+
 tags:
     - rest
     - burnout
@@ -20,19 +22,27 @@ qualifiers:
 
 ---
 
+{% callout %}
 
+Part of a series on what’s next for me:
+
+1. [Next: Role?](/journal/next/role/): for those curious about where I am heading next… including folks who might want to hire me.
+2. [**Now: Sabbatical**](/journal/next/sabbatical/) (this post): for those interested in how I am spending this sabbatical.
+3. [Past: Leaving LinkedIn](/journal/next/leaving-linkedin/): for those interested in why I am on this new path.
+
+{% endcallout %}
 
 Over the course of the rest of 2023, I hope[^1] to:
 
 - make a bunch of progress on the large orchestral work I started back in 2021;
-- learn [Racket](https://racket-lang.org), including [Typed Racket](https://docs.racket-lang.org/ts-guide/), and use it to learn how to build programming languages, starting by working through [<cite>PLAI</cite>](https://www.plai.org);
+- learn [Racket](https://racket-lang.org), including [Typed Racket](https://docs.racket-lang.org/ts-guide/), and use it to learn how to build programming languages, starting by working through [<cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite>](https://www.plai.org);
 - finish a couple in-flight essays;
 - write a decent bit of code, e.g. for my next-generation personal website builder and perhaps some related to [one](https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/) or [another](https://v5.chriskrycho.com/journal/jj-init/) of those in-flight essays;
 - and read a *lot* of books.
 
 That might not sound like your idea of a sabbatical, but it *absolutely* sounds like mine. For one thing, I find myself most able to rest in the sense of getting back energy when I am learning and exploring. For another, parts of that will not be work-like at all. Last but not least: I started by taking all of the first week to “veg”, and all of the second week entirely away from computers etc.: only books, paper journals, etc.
 
-My goal in starting out with that kind of basic physical and mental rest as a foundation was to make the weeks which followed that much more energizing. So far, that has proven out! I am just about ⅔ of the way through <cite>PLAI</cite> and having tons of fun with it. I am also most of the way through a draft of one section of that symphonic work. Along the way, I have also written a bunch of shorter blog posts, made some tweaks to my current website, and started planning in earnest for the next iteration of the website.
+My goal in starting out with that kind of basic physical and mental rest as a foundation was to make the weeks which followed that much more energizing. So far, that has proven out! I am just about ⅔ of the way through <cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite> and having tons of fun with it. I am also most of the way through a draft of one section of that symphonic work. Along the way, I have also written a bunch of shorter blog posts, made some tweaks to my current website, and started planning in earnest for the next iteration of the website.
 
 At the halfway point, I feel much, much less mentally and emotionally tired and stressed than I did starting out. The space has also yielded some of the fruit I hoped for in terms of thinking about my next role: it is hard for me to really imagine something *new* while deep in the grind of a current role. As I came into November, though, I found myself imagining a lot of fun alternative approaches to my chosen career. Whatever comes of those, it has been helpful to have the space to come up with new ideas, and to set aside the assumption that things must be as they have always been.
 
