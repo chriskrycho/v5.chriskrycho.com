@@ -15,7 +15,7 @@ qualifiers:
         Anyone interested in my thoughts on the next phase of my career—but *especially* anyone who might want to work with me.
 
 summary: >
-    As software continues to “eat the world” it matters more than ever how we build it. So let’s raise the floor—and the ceiling—for what software can be.
+    Software keeps “eating the world”—so quality matters! We must build, and teach people how to use, ratchets: to permanently raise the bar.
 
 image: https://cdn.chriskrycho.com/images/ratchet.jpg
 
