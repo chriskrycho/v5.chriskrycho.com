@@ -1,9 +1,10 @@
 ---
 title: Curriculum Vitae
 subtitle: >
-    A Senior Staff Software Engineer at LinkedIn, lately focused on frameworks and languages as tools to help other developers to build better software.
+    A senior engineering leader, lately focused on frameworks and languages as ratchets: tools which help other developers to build better software.
+
 summary: >
-    I am a Senior Staff Software Engineer at LinkedIn, lately focused on frameworks and languages as tools to help other developers to build better software. You can have my traditional résumé, but this page will tell you a lot more about whether we might work well together.
+    A senior engineering leader, lately focused on frameworks and languages as ratchets: tools which help other developers to build better software.
 
 ---
 
@@ -15,13 +16,17 @@ Interested in working with me? Feel free to [say hello][email]!
 
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
 
-- [<i>About Me</i>](#about-me)—my philosophy of software development and my slightly unusual educational background, featuring a [Master of Divinity](#masters) and a [Bachelor of Science in Physics](#undergrad)
-
-- [<i>My Work</i>](#my-work)—not just where I’ve worked and the tech I used, but what I brought to the table and the difference I made:
-    - [Current: LinkedIn](#current-linkedin)
-    - [Earlier Work](#earlier-work)
-
-- [<i>My Projects</i>](#my-projects)—including podcasts I produce, talks I've given, and open-source software I’ve developed or contributed to:
+- [<i>About Me</i>](#about-me)
+    - [Philosophy: Ratchets, Not Levers](#philosophy-ratchets-not-levers)
+    - [Education](#education)
+- [<i>Work</i>](#work)—not just where I’ve worked and the tech I used, but what I brought to the table and the difference I made:
+    - [2019–2023: LinkedIn](#2019-2023-linkedin)
+    - [2016–2018: Olo](#2016-2018-olo)
+    - [2014–2015: HolyBible.com](#2014-2015-holybiblecom)
+    - [2012–2015: Quest Consultants](#2012–2015-quest-consultants)
+    - [2010–2015: Miscellaneous Consulting](#2010-2015-miscellaneous-consulting)
+    - [2009–2012: Northrop Grumman](#2009-2012-northrop-grumman)
+- [<i>Projects</i>](#projects):
     - [Podcasts](#podcasts)
     - [Open Source Software](#open-source-software)
     - [Talks](#speaking)
@@ -32,11 +37,34 @@ Interested in working with me? Feel free to [say hello][email]!
 
 I am senior software engineering leader, lately focused on programming language adoption, web framework development, and developer productivity and experience. Other long-running professional interests include <abbr title="user interface">UI</abbr>, typography, functional programming, and ethical software development.
 
-Prior to my recent focus on developer experience engineering, I have a long history with full-stack web development, spent a half decade doing systems-level programming (including avionics software and computational physics models), and earned an [undergraduate degree in physics](#undergrad) and a [master’s degree in theology](#masters). That combo has led me to care—very deeply—about building the *right things* in the *right way*.
+Prior to my recent focus on developer experience, I have a long history with full-stack web development, spent a half decade doing systems-level programming (including avionics software and computational physics models), and earned an [undergraduate degree in physics](#undergrad) and a [master’s degree in theology](#masters). That combo has led me to care—very deeply—about building the *right things* in the *right way*.
 
-Building the *right things* means I am not interested in companies whose vision at either "tear down an existing industry" or "applying software will solve all our problems." I would much rather work for a company with both a vision for how its product improves human lives and a recognition of the limits of technology. Tech is not a panacea for human ills and too often simply reinforces the worst of our existing failings.
+### Philosophy: Ratchets, Not Levers
 
-Building things the *right way* means I am not interested in slapdash product development and rushed delivery. Software development as a field consistently underinvests in product quality and maintainability. It is the responsibility of engineers to raise that bar.
+Software is also incredibly important to the world as it is—whether you like it or not. I think often of Marc Andreessen’s line that “software is eating the world”: for so it is. Where a venture capitalist sees that primarily in terms of the enormous piles of money it represents, though, I see it in terms of the many people who use software not by choice but necessity. For every person like me who really enjoys digital technologies and puts them at the center of their work, there are many others for whom computing is at best ancillary to their actual work, indeed for whom it might just be in the *way* of doing their real work.
+
+Think of the person cutting your hair: the software in the point-of-sale system. Think of a single parent wrangling school activity schedules through Facebook. Think of the Uber driver. Think of people making a living selling craft-work on Etsy. Think of the small businesses who have to advertise on Instagram. Think of the people just trying to pay for parking on the way to do something else.
+
+Those of us who practice software engineering owe it to all of those people to make software which works well, which works *for them*. Period.
+
+“Solving” the problem of poor software craft is an impossible problem. I mean that: *impossible*. Poor craft is the result of massive systemic problems as well as many individual failures. It will always exist, because people will remain people: sometimes lazy or unmotivated or just stressed out by other things going on in their lives, sometimes greedy and short-sighted and foolish.
+
+We can make it *better*, though.
+
+I increasingly value tools and processes which do one of two things:
+
+- “Raise the floor”: cutting down both the number and severity of bugs we ship.
+- “Raise the ceiling” by making it possible to deliver more interesting features.
+
+There are many such: processes like code review, techniques like <abbr title="test-driven development">TDD</abbr> and <abbr title="domain-driven design">DDD</abbr>, and correct-by-construction <abbr title="application programming interface">API</abbr> designs; tools like formal modeling; improvements in our programming languages; formal verification; and so on.
+
+Unfortunately, many of these techniques enable and sustain progress only so long as everyone can operate like a very senior engineer on her best days. All of us should strive for that kind of excellence—but not one of us is always at our best. What is more, many of us have a long way to go before we are even able to operate that way. Every one of us started out as a junior engineer, after all.
+
+The real wins, then, are tools which do not require everyone to be at their best at every moment: *ratchets*, not *levers*. Levers let you move things, but if you are holding something up with a lever, you have to keep holding it—forever. A ratchet lets you drive forward motion *without* slipping back as soon as you let up on the pressure.
+
+This is why I care so much about [Rust](https://www.rust-lang.org). This is why I spent so much of the past decade working on [TypeScript](https://typescriptlang.org) adoption. This is even why I invested in the work I did on Ember Octane and [produced so much material about it](https://v5.chriskrycho.com/topics/ember). Each of those was (and is!) just such a ratchet, albeit to varying degrees and in various contexts. Rust is a particularly good example: it lets us ship faster software with fewer bugs in areas that really matter, and it enables a *lot* more people to do that kind of work than were able to do so (especially: to do so *safely* for their users) with C and C++. You can trust a junior to ship high-performance “close-to-the-metal” code written in Rust without worrying about memory safety; your team can focus more on architecture than on running valgrind. Rust is a ratchet.
+
+Ratchets are incremental improvements, not silver bullets. So was structured programming, though. A change does not have to be a silver bullet to be valuable. It just has to make for better software—and critically, better software that does not require you to be always at your best. Fewer `SEGFAULT`s and fewer vulnerabilities as a result of memory safety is good. Fewer cases of “`undefined` is not a function” is good. [Faster cycle times](https://v4.chriskrycho.com/2018/scales-of-feedback-time-in-software-development.html) on identifying and fixing bugs is good.
 
 ### Education
 
@@ -44,49 +72,52 @@ Building things the *right way* means I am not interested in slapdash product de
 
 <a name=undergrad></a>I graduated *magna cum laude* with a **Bachelor of Science in Physics** from **The University of Oklahoma** in **May 2009**, having been a regular departmental award winner. My senior thesis, a project in computational neurophysics (in Fortran 90!), led me into programming—but/and I still miss doing physics and math on a regular basis.
 
-## My Work
+## Work
 
-### Current: LinkedIn
+### 2019–2023: LinkedIn
 
+From **January 2019–October 2023**, I worked as an infrastructure engineer at [LinkedIn], focused on developer productivity and application performance for LinkedIn's flagship web app.
 
-*A lead client infrastructure engineer for one of the largest social networks in the world.*
+#### 2021.09–2023.10: Senior Staff Software Engineer
 
-Since **January 2019**, I have worked as an infrastructure engineer at [LinkedIn], focused on developer productivity and application performance for LinkedIn's flagship web app.
+*Tech lead for one of the largest social networks in the world.*
 
-Since **September 2021**, as a **Senior Staff Software Engineer**:
-
-- I led a team to fix site-down memory leaks in our <abbr title="server-side rendering">SSR</abbr> stack, and identified and resolved major resiliency gaps in internal Node.js infrastructure.
 - As the primary TypeScript subject-matter expert at LinkedIn:
-    - I solved the most challenging technical blockers, e.g. type-safe event tracking.
+    - I solved the most challenging technical challenges, e.g. enabling type-safe event tracking.
     - I coached LinkedIn’s TypeScript track leads.
     - I authored [a spec][semver-ts] for Semantic Versioning for TypeScript types.
-    - I forged consensus in the Ember.js open source community on key <abbr title="TypeScript">TS</abbr> blockers:
-        - A novel, backwards-compatible [strategy][migration] to migrate away from DefinitelyTyped, which I also [executed][pr].
-        - A new [authoring format][template], resolving a years-long stalemate.
-- Designed a migration strategy away from Ember. (We did not use it—ask me!)
-- Mentored a half dozen engineers, ranging in seniority from Apprentice to Staff.
+    - I forged consensus in the Ember.js open source community on key TypeScript gaps and blockers:
+        - A novel, backwards-compatible [strategy][migration] to migrate away from DefinitelyTyped, which I also [implemented][pr].
+        - A new [component authoring format][template], resolving a years-long stalemate in the community.
+
+- I led a team to fix site-down memory leaks in our <abbr title="server-side rendering">SSR</abbr> stack, and identified and resolved major resiliency gaps in internal Node.js infrastructure.
+
+- I designed a migration strategy away from Ember. (We did not use it—ask me!)
+
+- I mentored a half dozen engineers, ranging from Apprentice to Staff.
 
 [semver-ts]: https://semver-ts.org
 [migration]: https://rfcs.emberjs.com/id/0800-ts-adoption-plan#migration-from-definitelytyped
 [pr]: https://github.com/emberjs/ember.js/pull/20449
 [template]: https://rfcs.emberjs.com/id/0779-first-class-component-templates
 
-From **January 2019–September 2021**, as a **Staff Software Engineer**:
+#### 2019.01–2021.09: Staff Software Engineer
 
-- I developed a business case for TypeScript adoption which was key to the company's choice to fully support TypeScript for our JavaScript projects.
+*Transforming a multi-million line-of-code app… without disrupting product velocity.*
+
+- I developed a business case for TypeScript adoption which was key to the company's choice to fully support TypeScript for our JavaScript libraries and applications.
+
 - I dramatically improved developer experience and productivity across the organization as the tech lead for the adoption of [Ember Octane][octane] across the application. Additionally, as one of a handful of primary technical experts on Octane—at LinkedIn or anywhere else—I support many other teams rewriting existing code into Octane idioms and teams building brand new experiences Octane-first.
+
 - I led efforts to update the app to the current versions of Ember.js, unblocking adoption of Octane.
+
 - I helped build, and continue to support, [Volta], an open-source, cross-platform tool (written in Rust!) for managing Node.js environments in a reproducible, reliable way.
 
 [LinkedIn]: https://www.linkedin.com/feed/
 [octane]: https://emberjs.com/editions/octane
 [Volta]: https://volta.sh
 
-### Earlier Work
-
-*I am the developer and leader I am today because of many experiences **before** today.*
-
-#### Olo
+### 2016–2018: Olo
 
 *From individual contributor to a project lead with organization-wide influence.*
 
@@ -125,7 +156,7 @@ Throughout my time at Olo, I:
 
 I matured significantly as both an individual contributor and a leader in my time at Olo. For the first time, I was able to make a substantial difference at the team level, at the organizational level, and at the level of the broader technical community.
 
-#### HolyBible.com
+### 2014–2015: HolyBible.com
 
 *A formative experience: a technical success but a product design failure.*
 
@@ -145,7 +176,7 @@ The project was a *substantial technical success*: it has rarely crashed and had
 
 On the other hand, the project was a *product design failure*. The site is beautiful and functional, but it failed to meet the seminary’s goals for driving more traffic to the seminary landing page. My failure to establish what "success" meant to the seminary led me to deliver a technically-solid piece of software… that solved the wrong problem.
 
-#### Quest Consultants, Inc.
+### 2012–2015: Quest Consultants
 
 *Collaborating across disciplines; transitioning to remote work.*
 
@@ -160,7 +191,19 @@ From **May 2012–January 2016**, I worked (first as a full-time employee, then 
 
 Those efforts taught me a great deal about communicating effectively with domain experts, working remotely (as I did beginning in January 2013), testing effectively, refactoring legacy codebases safely, and wrangling large software development efforts over time.
 
-#### Northrop Grumman
+
+### 2010–2015 Miscellaneous Consulting
+
+*Teaching myself web development.*
+
+**Beginning in January 2010**, I taught myself web programming, beginning with PHP and jQuery and the LAMP stack. Having a good working knowledge of <abbr title="hypertext markup language">HTML</abbr> and <abbr title="cascading style sheets">CSS</abbr> from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom <abbr title="content management system">CMS</abbr> for the Oklahoma Board of Medical Licensure.
+
+[innova]: https://innovacomputing.com
+
+My goal throughout was not merely to make some extra money, nice though that was. Rather, I aimed to transition from the world of C and Fortran where I began my career to working full time in <abbr>UI</abbr>-focused web development.
+
+
+### 2009–2012: Northrop Grumman
 
 *Learning the basics of software engineering.*
 
@@ -172,21 +215,11 @@ From **July 2009–May 2012**, I worked as a **Software Engineer I** on the B-2 
 
 Over those three years I acquired a good dose of humility and basic knowledge of software engineering, including the use of bug trackers and source control, strategies for testing, and patterns for writing maintainable code.
 
-#### Miscellaneous Consulting
 
-*Teaching myself web development.*
+## Projects
 
-**Beginning in January 2010**, I taught myself web programming, beginning with PHP and jQuery and the LAMP stack. Having a good working knowledge of <abbr title="hypertext markup language">HTML</abbr> and <abbr title="cascading style sheets">CSS</abbr> from designing my own blog in college, I decided to learn web development. I began by building church websites and blogs for friends in WordPress. Later, while working as a subcontracting consultant for [Innova Computing][innova], I developed a custom <abbr title="content management system">CMS</abbr> for the Oklahoma Board of Medical Licensure.
+I am also a prolific writer, podcaster, and open source software contributor.
 
-[innova]: https://innovacomputing.com
-
-My goal throughout was not merely to make some extra money, nice though that was. Rather, I aimed to transition from the world of C and Fortran where I began my career to working full time in <abbr>UI</abbr>-focused web development. (Mission accomplished.)
-
-## My Projects
-
-Besides my family life, church participation, and day-to-day work, I am also a prolific writer, podcaster, and open source software contributor. My writing you can find primarily on this website; I focus primarily on technology, ethics, and faith (though if you want to read my so-so poetry, [that’s here too][poetry]).
-
-[poetry]: https://v4.chriskrycho.com/poetry
 
 ### Podcasts
 
@@ -199,11 +232,12 @@ Besides my family life, church participation, and day-to-day work, I am also a p
 [ws-6.06]: https://winningslowly.org/6.06/
 [nr]: https://newrustacean.com
 
+
 ### Open Source Software
 
 #### TypeScript and Ember.js
 
-I am presently a member of the Ember.js Framework and Typed Ember core teams, the latter of which I founded in 2017. The efforts of the Typed Ember Core team ultimately led to the adoption of TypeScript as an officially supported language for Ember, including the development of a [Semantic Versioning for TypeScript Types spec](https://www.semver-ts.org), a [best-in-class language server](https://github.com/typed-ember/glint), and the only attempted gradual migration path from [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) to natively-published types.
+I founded the Ember.js TypeScript team in 2017 and led it until I resigned in September 2023. I was part of the Ember.js Framework team February 2022–May 2023. The efforts of the Ember TypeScript team ultimately led to the adoption of TypeScript as an officially supported language for Ember, including the development of a [Semantic Versioning for TypeScript Types spec](https://www.semver-ts.org), a [best-in-class language server](https://github.com/typed-ember/glint), and the only attempted gradual migration path from [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) to natively-published types.
 
 #### Volta
 
