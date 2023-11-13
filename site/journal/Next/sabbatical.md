@@ -32,7 +32,7 @@ Part of a series on what’s next for me:
 
 {% endcallout %}
 
-Over the course of the rest of 2023, I hope[^1] to:
+Since leaving my job at LinkedIn at the start of October, I am taking a proper sabbatical through the end of 2023. I am spending these months resting, composing, writing, reading, learning things I have not had a chance to learn on the job, and hanging out with my family. Over the course of the rest of the year, I hope[^1] to:
 
 - make a bunch of progress on the large orchestral work I started back in 2021;
 - learn [Racket](https://racket-lang.org), including [Typed Racket](https://docs.racket-lang.org/ts-guide/), and use it to learn how to build programming languages, starting by working through [<cite><abbr title="Programming Languages: Application and Interpretation">PLAI</abbr></cite>](https://www.plai.org);
