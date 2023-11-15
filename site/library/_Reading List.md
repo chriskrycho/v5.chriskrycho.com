@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-11-14T19:10:00-0700
+date: 2023-11-15T07:47:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,6 +69,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
+
+- [<cite>Call for God: New Sermons from Basel Prison</cite>](https://bookshop.org/a/21126/9780334002574), Karl Barth, translated by A. T. Mackay (new)
+
+- [<cite>Open Music Theory</cite>](https://viva.pressbooks.pub/openmusictheory/), Mark Gotham, Kyle Gullings, Chelsey Hamm, Bryn Hughes, Brian Jarvis, Megan Lavengood, and John Peterson (new)
 
 
 ### Fiction
