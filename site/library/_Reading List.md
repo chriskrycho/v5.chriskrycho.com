@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-11-09T10:07:00-0700
+date: 2023-11-14T19:10:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -70,8 +70,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
-- [<cite>Programming Languages: Application and Interpretation</cite>](https://www.plai.org), Shriram Krishnamurthi (new)
-
 
 ### Fiction
 
@@ -134,6 +132,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Seven Languages in Seven Weeks</cite>](https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/), Bruce A. Tate (new)
 
 - [<cite>Confronted by Grace: Meditations of a Theologian</cite>](https://bookshop.org/a/21126/9781577996279), John Webster (new)
+
+- [<cite>Programming Languages: Application and Interpretation</cite>](https://www.plai.org), Shriram Krishnamurthi (new)
 
 
 ### Fiction
