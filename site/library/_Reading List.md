@@ -78,6 +78,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Staff Engineer's Path</cite>](https://bookshop.org/a/21126/9781098118730), Tanya Reilly (new)
 
+- [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
+
 
 ### Fiction
 
