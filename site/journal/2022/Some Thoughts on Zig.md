@@ -59,4 +59,4 @@ I think the very real appeal of Zig is indicative of a need in this space, thoug
 
 [^elm]: Honorable mentions here to both F♯ and OCaml; neither is a *huge* language but both are significantly larger than Elm.
 
-[^doubt]: This isn’t hypothetical: I did it learning on the job in my first gig out of college with nothing to build on besides a year of Fortran 90 physics code, a single semester of introductory Java, and a lot of terrible <abbr>HTML</> and <abbr>CSS</abbr> hackery.
+[^doubt]: This isn’t hypothetical: I did it learning on the job in my first gig out of college with nothing to build on besides a year of Fortran 90 physics code, a single semester of introductory Java, and a lot of terrible <abbr title="hypertext markup language">HTML</abbr> and <abbr title="cascading styel sheets">CSS</abbr> hackery.
