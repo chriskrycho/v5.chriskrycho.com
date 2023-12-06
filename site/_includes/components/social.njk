@@ -1,5 +1,16 @@
 {%- macro meta(page, config, titleOverride) -%}
-   {%- set image = page.data.image or page.data.book.cover -%}
+   {%- set pageTitle = titleOverride or page.data.title -%}
+   {%- set title = pageTitle | siteTitle(config) | striptags(true) | safe -%}
+
+   {%- set image -%}
+      {%- if page.data.image -%}
+         {{page.data.image}}
+      {%- elif page.data.book.cover -%}
+         {{page.data.book.cover}}
+      {%- else -%}
+         https://cdn.statically.io/og/theme=dark/{{pageTitle}} – Sympolymathesy.png
+      {%- endif -%}
+   {%- endset -%}
 
    {%- if image -%}
    <meta name="twitter:card" content="summary_large_image"/>
@@ -32,11 +43,6 @@
    <meta property="og:url" content="{{url}}"/>
    <meta name="article:author" content="{{config.url}}"/>
 
-   {%- if titleOverride -%}
-      {%- set title = titleOverride | siteTitle(config) | striptags(true) | safe -%}
-   {%- else -%}
-      {%- set title = page.data.title | siteTitle(config) | striptags(true) | safe -%}
-   {%- endif -%}
    <meta property="og:title" content="{{title}}"/>
    <meta name="twitter:title" content="{{title}}"/>
 
