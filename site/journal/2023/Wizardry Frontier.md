@@ -25,7 +25,9 @@ discuss:
 
 ---
 
-Niko Matsakis just published a post in which he [floated some Rust design axioms](https://smallcultfollowing.com/babysteps/blog/2023/12/07/rust-design-axioms/?utm_source=Chris%20Krycho%20sent%20me). If you are interested in either Rust or programming language design in general, I think it is worth your time. Here, I want to pick up on a contrast he introduces between two axioms:
+One way of describing the history of programming languages over the past 75 years is: They have steadily raised the baseline of what “normal” programmers can express in their languages. I say “steadily” and not “consistently” because there have been plenty of false starts along the way and many a popular language that is a sidestep at best. Even so, “steadily” captures the reality well. We can and occasionally still do write machine code or assembly, when appropriate. In general, though, we tend to write at a level of abstraction that would have been astonishing to the first few generations of programmers, courtesy of advances in programming language design *and* implementation. That is, advanced type systems *and* high-performance garbage collectors, safe dynamic programming *and* <abbr title="just-in-time (compilers)">JIT</abbr>s—and so on.[^1]
+
+Consider this recent post from Niko Matsakis, [floating some Rust design axioms](https://smallcultfollowing.com/babysteps/blog/2023/12/07/rust-design-axioms/?utm_source=Chris%20Krycho%20sent%20me). (If you are interested in either Rust or programming language design in general, I think it is worth your time.) Here, I want to pick up on a contrast he introduces between two axioms:
 
 > Consider reliability: that is a core axiom of Rust, no doubt, but is it the most important? I would argue it is not. If it were, we wouldn’t permit unsafe code, or at least not without a safety proof. I think our core axiom is actually that Rust [is] meant to be used, and used for building a particular kind of program.…
 >
@@ -34,8 +36,6 @@ Niko Matsakis just published a post in which he [floated some Rust design axioms
 > To express this in our axioms, we put **accessible** as the top-most axiom. It defines the mission overall. But we put **reliability** as the second in the list, since that takes precedence over everything else.
 
 Let me say up front that I think this was and is the right design choice for Rust. What follows is not about Rust at all. Instead, I am interested in thinking about an implication of Niko’s point here for languages in general.
-
-One way of describing the history of programming languages over the past 75 years is: They have steadily raised the baseline of what “normal” programmers can express in their languages. I say “steadily” and not “consistently” because there have been plenty of false starts along the way and many a popular language that is a sidestep at best. Even so, “steadily” captures the reality well. We can and occasionally still do write machine code or assembly, when appropriate. In general, though, we tend to write at a level of abstraction that would have been astonishing to the first few generations of programmers, courtesy of advances in programming language design *and* implementation. That is, advanced type systems *and* high-performance garbage collectors, safe dynamic programming *and* <abbr title="just-in-time (compilers)">JIT</abbr>s—and so on.[^1]
 
 When Niko writes that “we are trying to get away from” the idea “that systems programming is just for ‘wizards’” I vigorously agree with him. Folks in the Rust community sometimes like to say that one of its key ideas is that “we can have nice things”, that performance and usability can go together. That framing for Rust is, as far as I know, [originally from me](https://newrustacean.com/show_notes/bonus/_4/)! Sign me up, then, for getting away from “only for wizards” framings. There is more to say, though.
 
