@@ -19,6 +19,10 @@ tags:
     - Lean
     - ratchets
 
+discuss:
+    hn: https://news.ycombinator.com/item?id=38559661
+    lobsters: https://lobste.rs/s/6eizz1/wizardry_frontier
+
 ---
 
 Niko Matsakis just published a post in which he [floated some Rust design axioms](https://smallcultfollowing.com/babysteps/blog/2023/12/07/rust-design-axioms/?utm_source=Chris%20Krycho%20sent%20me). If you are interested in either Rust or programming language design in general, I think it is worth your time. Here, I want to pick up on a contrast he introduces between two axioms:
