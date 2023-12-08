@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-01T14:25:00-0700
+date: 2023-12-09T10:06:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -77,6 +77,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Open Music Theory</cite>](https://viva.pressbooks.pub/openmusictheory/), Mark Gotham, Kyle Gullings, Chelsey Hamm, Bryn Hughes, Brian Jarvis, Megan Lavengood, and John Peterson (new)
 
 - [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
+
+- [<cite>Crafting Interpreters</cite>], Robert Nystrom (new)
 
 
 ### Fiction
