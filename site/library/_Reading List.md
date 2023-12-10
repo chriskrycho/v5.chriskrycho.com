@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-09T10:06:00-0700
+date: 2023-12-14T06:50:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,8 +69,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
-
-- [<cite>Call for God: New Sermons from Basel Prison</cite>](https://bookshop.org/a/21126/9780334002574), Karl Barth, translated by A. T. Mackay (new)
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 
@@ -147,6 +145,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Staff Engineer's Path</cite>](https://bookshop.org/a/21126/9781098118730), Tanya Reilly (new)
 
+- [<cite>Call for God: New Sermons from Basel Prison</cite>](https://bookshop.org/a/21126/9780334002574), Karl Barth, translated by A. T. Mackay (new)
 
 ### Fiction
 
