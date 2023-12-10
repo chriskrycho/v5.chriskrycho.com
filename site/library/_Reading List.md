@@ -19,6 +19,7 @@ Quick links:
 
 - [Planned](#planned)
 - [Started](#started)
+- [Tabled](#tabled)
 - [2023](#2023)
 - [2022](#2022)
 - [2021](#2021)
@@ -56,19 +57,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
 
-- [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
-
 - [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
-
-- [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
 
 - [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
 
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
-
-- [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 
@@ -80,11 +75,23 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Vanished Kingdoms</cite>], Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
+
 ### Fiction
 
 - [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
+
+
+## Tabled
+
+These are books I have started at some point but have (at least for now!) put aside and do not currently plan to finish, but which I might come back to eventually.
+
+- [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
+
+- [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
+
+- [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
 
 
 ## 2023
@@ -147,6 +154,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Staff Engineer's Path</cite>](https://bookshop.org/a/21126/9781098118730), Tanya Reilly (new)
 
 - [<cite>Call for God: New Sermons from Basel Prison</cite>](https://bookshop.org/a/21126/9780334002574), Karl Barth, translated by A. T. Mackay (new)
+
 
 ### Fiction
 
@@ -449,7 +457,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 
 ## 2018
-
 
 ### Fiction
 
