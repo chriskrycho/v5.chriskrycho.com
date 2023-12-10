@@ -78,6 +78,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Crafting Interpreters</cite>], Robert Nystrom (new)
 
+- [<cite>Vanished Kingdoms</cite>], Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
 ### Fiction
 
