@@ -1,7 +1,7 @@
 ---
 title: The Wizardry Frontier
 subtitle: >
-    On the idea that accessibility and reliability (or other such dichotomies) must remain at odds in programming languages.
+    Against the idea that accessibility and reliability (or other such dichotomies) must remain at odds in programming languages.
 
 date: 2023-12-07T10:40:00-0700
 
@@ -31,6 +31,10 @@ updates:
     - at: 2023-12-08T07:55:00-0700
       changes: >
           Reordered some of the content and made some minor phrasing changes to clarify the argument of the piece.
+
+    - at: 2023-12-14T11:00:00-0700
+      changes: >
+          Changed the subtitle to be clear that it *rejects* the permanence of these dichotomies.   
 
 ---
 
