@@ -71,9 +71,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
 
-- [<cite>Crafting Interpreters</cite>], Robert Nystrom (new)
+- [<cite>Crafting Interpreters</cite>](https://craftinginterpreters.com), Robert Nystrom (new)
 
-- [<cite>Vanished Kingdoms</cite>], Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
+- [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
 
 ### Fiction
