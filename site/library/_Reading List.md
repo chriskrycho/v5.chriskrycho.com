@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-14T06:50:00-0700
+date: 2023-12-14T07:30:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -13,7 +13,7 @@ I keep this page fairly current; it was last updated on {% localeDate page.date,
 - The section for each year includes all the books I read that year (including the current year), in the order I finished the books.
 - Books are marked “(new)” if this was the first time I read them, or “(reread)” otherwise.
 - I separate out fiction and non-fiction not because I value them differently, but because they just *are* very different.
-- Links on the books themselves are affiliate links to Alibris or Bookshop.org!
+- Links on the books themselves are affiliate to Bookshop.org!
 
 Quick links:
 
@@ -44,7 +44,7 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 ### Fiction
 
-- [<cite>Blue Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBlue-Mars-Kim-Stanley-Robinson%2Fbook%2F745509), Kim Stanley Robinson (new)
+- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
 
 
 ## Started
@@ -57,7 +57,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
 
-- [<cite>The Orthodox Way</cite>](https://www.alibris.com/The-orthodox-way-Kallistos-Ware/book/4903362?matches=18), Kallistos Ware (new)
+- [<cite>The Orthodox Way</cite>](https://bookshop.org/a/21126/9780881416299), Kallistos Ware (new)
 
 - [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
 
@@ -78,7 +78,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- [<cite>Green Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FGreen-Mars-Kim-Stanley-Robinson%2Fbook%2F2708153), Kim Stanley Robinson (new)
+- [<cite>Green Mars</cite>](https://bookshop.org/a/21126/9780593358849), Kim Stanley Robinson (new)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
@@ -248,12 +248,12 @@ These are books I have started at some point but have (at least for now!) put as
 
 - [<cite>Accelerate: Building and Scaling High Performing Technology Organizations</cite>](https://bookshop.org/a/21126/9781942788331), Nicole Forsgren, Jez Humble, and Gene Kim (new)
 
-- [<cite>God Without Measure: Working Papers in Christian Theology: Volume I: God and the Works of God</cite>](https://www.alibris.com/search/books/isbn/9780567682512), John Webster (new)
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume I: God and the Works of God</cite>](https://bookshop.org/a/21126/9780567682512), John Webster (new)
     - [posts on the book](/library/god-without-measure/volume-i/)
 
 - [<cite>Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX</cite>](https://bookshop.org/a/21126/9780062979971), Eric Berger (new)
 
-- [<cite>God Without Measure: Working Papers in Christian Theology: Volume II: Virtue and Intellect</cite>](https://www.alibris.com/search/books/isbn/9780567686046), John Webster (new)
+- [<cite>God Without Measure: Working Papers in Christian Theology: Volume II: Virtue and Intellect</cite>](https://bookshop.org/a/21126/9780567686046), John Webster (new)
 
 
 ### Fiction
@@ -272,7 +272,7 @@ These are books I have started at some point but have (at least for now!) put as
 
 - [<cite>The Lord of the Rings: The Two Towers</cite>][lotr], J.R.R. Tolkien (reread… with my older daughter!)
 
-- <cite>Project Hail Mary</cite>, Andy Weir (new)
+- [<cite>Project Hail Mary</cite>](https://bookshop.org/a/21126/9780593135228), Andy Weir (new)
 
 - [<cite>The Lord of the Rings: The Return of the King</cite>][lotr], J.R.R. Tolkien (reread… with my older daughter!)
 
@@ -281,9 +281,9 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Shadow & Claw: The First Half of The Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250781253), Gene Wolfe (new)
 
 
-[babylons-ashes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBabylons-Ashes-James-S-a-Corey%2Fbook%2F33984004
-[persepolis-rising]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPersepolis-Rising-James-S-a-Corey%2Fbook%2F38609952
-[tiamats-wrath]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FTiamats-Wrath-James-S-A-Corey%2Fbook%2F41085677
+[babylons-ashes]: https://bookshop.org/a/21126/9780316217644
+[persepolis-rising]: https://bookshop.org/a/21126/9780316332859
+[tiamats-wrath]: https://bookshop.org/a/21126/9780316332897
 [leviathan-falls]: https://bookshop.org/a/21126/9780316332910
 
 
@@ -295,32 +295,32 @@ These are books I have started at some point but have (at least for now!) put as
 - <cite>Phaedrus</cite>, Plato (new)
     - discussed on Winning Slowly [8.02] and [8.03]
 
-- [<cite>The Postmodern Condition</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Postmodern-Condition-A-Report-on-Knowledge-Jean-Francois-Lyotard%2Fbook%2F5256171), Jean-François Lyotard (new)
+- [<cite>The Postmodern Condition</cite>](https://bookshop.org/a/21126/9780816611737), Jean-François Lyotard (new)
     - discussed on Winning Slowly [8.04] and [8.05]
 
-- [<cite>Dark Matters: On the Surveillance of Blackness</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matters-On-the-Surveillance-of-Blackness-Simone-Browne%2Fbook%2F32087130), Simone Browne (new)
+- [<cite>Dark Matters: On the Surveillance of Blackness</cite>](https://bookshop.org/a/21126/9780822359388), Simone Browne (new)
     - discussed on Winning Slowly [8.12] and [8.13]
 
-- [<cite>The Real World of Technology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Real-World-of-Technology-Dr-Ursula-M-Franklin-PH-D%2Fbook%2F5575099), Ursula Franklin (new)
+- [<cite>The Real World of Technology</cite>](https://bookshop.org/a/21126/9780887846366), Ursula Franklin (new)
     - discussed on Winning Slowly [8.14] and [8.15]
 
-- [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEvolution-as-a-Religion-Strange-Hopes-and-Stranger-Fears-Mary-Midgley%2Fbook%2F2179950), Mary Midgley (new)
+- [<cite>Evolution as Religion: Strange Hopes and Stranger Fears</cite>](https://bookshop.org/a/21126/9780415278331), Mary Midgley (new)
     - discussed on Winning Slowly episodes [8.16] and [8.17]
     - [posts on the book](https://v5.chriskrycho.com/topics/evolution-as-a-religion)
 
-- [<cite>The Culture of Theology</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Culture-of-Theology-John-Webster%2Fbook%2F43815243), John Webster (new)
+- [<cite>The Culture of Theology</cite>](https://bookshop.org/a/21126/9781540960801), John Webster (new)
     - [posts on the book](/topics/the-culture-of-theology/)
 
 - [<cite>Shape Up</cite>](https://basecamp.com/shapeup), Ryan Singer (new)
 
-- [<cite>Politics & the Order of Love</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FPolitics-and-the-Order-of-Love-An-Augustinian-Ethic-of-Democratic-Citizenship-Eric-Gregory%2Fbook%2F27709325), Eric Gregory (new)
+- [<cite>Politics & the Order of Love: An Augustinian Ethic of Democratic Citizenship</cite>](https://bookshop.org/a/21126/9780226307527), Eric Gregory (new)
     - [posts on the book](/topics/politics-and-the-order-of-love/)
     - [review](/library/politics-and-the-order-of-love/)
 
-- [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FFinding-Holy-in-the-Suburbs-Living-Faithfully-in-the-Land-of-Too-Much%2Fbook%2F40780432), Ashley Hales (new)
+- [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://bookshop.org/a/21126/9780830845453), Ashley Hales (new)
     - [review](/library/finding-holy-in-the-suburbs/)
 
-- [<cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2Fsearch%2Fbooks%2Fisbn%2F9780300234176) (also available for free from the author [here](https://www.twitterandteargas.org)), Zeynep Tüfeçki (new)
+- [<cite>Twitter and Tear Gas: The Power and Fragility of Networked Protest</cite>](https://bookshop.org/a/21126/9780300234176), Zeynep Tüfeçki (new)
     - discussed on Winning Slowly episoes [8.20] and [8.21]
 
 
@@ -333,41 +333,41 @@ These are books I have started at some point but have (at least for now!) put as
     - [<cite>Auberon</cite>](https://www.jamessacorey.com/books/auberon/) (short fiction) (new)
     - [<cite>Gods of Risk</cite>](https://www.jamessacorey.com/books/gods-of-risk/) (short fiction)
 
-- [<cite>The Age of Spiritual Machines</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Age-of-Spiritual-Machines-Ray-Kurzweil-PhD%2Fbook%2F167799), Ray Kurzweil (new)[^kurzweil]
+- [<cite>The Age of Spiritual Machines</cite>](https://bookshop.org/a/21126/9780140282023), Ray Kurzweil (new)[^kurzweil]
     - discussed on Winning Slowly [8.06] and [8.07]
 
-- [<cite>Jurassic Park</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FJurassic-Park-Michael-Crichton%2Fbook%2F3483033), Michael Crichton (new)
+- [<cite>Jurassic Park</cite>](https://bookshop.org/a/21126/9780345538987), Michael Crichton (new)
     - [review](/library/jurassic-park/)
     - discussed on Winning Slowly [8.08] and [8.09]
 
-- [<cite>The Lost World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Lost-World-Michael-Crichton%2Fbook%2F4049316), Michael Crichton (new)
+- [<cite>The Lost World</cite>](https://bookshop.org/a/21126/9780345538994), Michael Crichton (new)
     - [review](/library/the-lost-world/)
 
-- [<cite>Sourdough</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSourdough-Robin-Sloan%2Fbook%2F37961343), Robin Sloan (new)
+- [<cite>Sourdough</cite>](https://bookshop.org/a/21126/9781250192752), Robin Sloan (new)
     - [review](/library/sourdough/)
 
-- <cite>The Orphans Trilogy</cite>, Sean Williams and Shane Dix (new)
-    - [<cite>Echoes of Earth</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FEchoes-of-Earth-Sean-Williams%2Fbook%2F1874511%3Fmatches%3D35)
-    - <cite>Orphans of Earth</cite>, Sean Williams and Shane Dix (new)
-    - <cite>Heirs of Earth</cite>, Sean Williams and Shane Dix (new)
+- <cite>The Orphans Trilogy</cite>,[^missing-links] Sean Williams and Shane Dix (new)
+    - <cite>Echoes of Earth</cite>
+    - <cite>Orphans of Earth</cite>
+    - <cite>Heirs of Earth</cite>
 
-- [<cite>Delta-V</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDelta-V-Daniel-Suarez%2Fbook%2F42331977), Daniel Suarez (new)
+- [<cite>Delta-V</cite>](https://bookshop.org/a/21126/9781524742416), Daniel Suarez (new)
 
 - <cite>Contact</cite>, Carl Sagan (new)
     - discussed on Winning Slowly episodes [8.18] and [8.19]
 
 - [<cite>Age of Myth: Book One of the Legends of the First Empire</cite>](https://bookshop.org/a/21126/9781101965351), Michael J. Sullivan (new)
 
-- The Expanse, James S.A. Corey ([new reread](https://v5.chriskrycho.com/notes/2020-11-05-1943/)):
+- The Expanse, James S.A. Corey (reread… again)):
     - [<cite>Leviathan Wakes</cite>][leviathan-wakes]
     - [<cite>Caliban’s War</cite>][calibans-war]
     - [<cite>Abaddon’s Gade</cite>][abaddons-gate]
 
-- [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FMr-Penumbras-24-Hour-Bookstore-Robin-Sloan%2Fbook%2F21924389), Robin Sloan (new)
+- [<cite>Mr. Penumbra’s 24-Hour Bookstore</cite>](https://bookshop.org/a/21126/9781250037756), Robin Sloan (new)
     - [review](/library/mr-penumbras-24-hour-bookstore/)
     - discussed on [Winning Slowly 8.22][8.22]
 
-- [<cite>Rhythm of War</cite>](https://click.linksynergy.com/deeplink?id=&mid=&murl=https%3A%2F%2Fwww.alibris.com%2FRhythm-of-War-Brandon-Sanderson%2Fbook%2F47893962), Brandon Sanderson (new)
+- [<cite>Rhythm of War</cite>](https://bookshop.org/a/21126/9781250757302), Brandon Sanderson (new)
 
 - <cite>Mistborn: Secret History</cite>, Brandon Sanderson (reread)
 
@@ -393,21 +393,23 @@ These are books I have started at some point but have (at least for now!) put as
 [8.21]: https://winningslowly.org/8.21
 [8.22]: https://winningslowly.org/8.22
 
-[^kurzweil]: This is where it is for a reason. Don’t @ me.
-
 
 ## 2019
 
 
 ### Non-Fiction
 
-- [<cite>All That’s Good: Recovering the Lost Art of Discernment</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAll-Thats-Good-Recovering-the-Lost-Art-of-Discernment-Hannah-Anderson%2Fbook%2F40621499), Hannah Anderson (new)—[review](https://v4.chriskrycho.com/2019/review-all-thats-good.html)
+- [<cite>All That’s Good: Recovering the Lost Art of Discernment</cite>](https://bookshop.org/a/21126/9780802418555), Hannah Anderson (new)
+    - [review](https://v4.chriskrycho.com/2019/review-all-thats-good.html)
 
-- [<cite>Retrieving Eternal Generation</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRetrieving-Eternal-Generation-Zondervan%2Fbook%2F38506657), edited by Fred Sanders and Scott R. Swain (new)—[review](https://v4.chriskrycho.com/2019/review-retrieving-eternal-generation.html)
+- [<cite>Retrieving Eternal Generation</cite>](https://bookshop.org/a/21126/9780310537878), edited by Fred Sanders and Scott R. Swain (new)
+    - [review](https://v4.chriskrycho.com/2019/review-retrieving-eternal-generation.html)
 
-- [<cite>What is An Evangelical</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWho-Is-an-Evangelical-The-History-of-a-Movement-in-Crisis-Thomas-S-Kidd%2Fbook%2F43567758), Thomas Kidd (new)—[review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
+- <cite>What is An Evangelical</cite>,[^missing-links] Thomas Kidd (new)
+    - [review](https://v4.chriskrycho.com/2019/review-what-is-an-evangelical.html)
 
-- [<cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FIn-Search-of-the-Common-Good-Christian-Fidelity-in-a-Fractured-World-Jake-Meador%2Fbook%2F42719272), Jake Meador (new)—discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
+- <cite>In Search of the Common Good: Christian Fidelity in a Fractured World</cite>,[^missing-links] Jake Meador (new)
+    - discussed in an interview with Jake [on Winning Slowly](https://winningslowly.org/standalone-episodes.05/)
 
 - [<cite>The Year of Our Lord 1943</cite>](https://bookshop.org/a/21126/9780190864651), Alan Jacobs (new)
 
@@ -422,22 +424,22 @@ These are books I have started at some point but have (at least for now!) put as
 - <cite>Beowulf</cite> (new)
     - [review](https://v4.chriskrycho.com/2019/beowulf-a-few-thoughts.html)
 
-- [<cite>The Martian</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Martian-Andy-Weir%2Fbook%2F25356914), Andy Weir (reread)
+- [<cite>The Martian</cite>](https://bookshop.org/a/21126/9780553418026), Andy Weir (reread)
 
 - The Themis Files, Sylvain Neuvel (new):
-    - [<cite>Sleeping Giants</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FSleeping-Giants-Sylvain-Neuvel%2Fbook%2F33538194)
-    - [<cite>Waking Gods</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FWaking-Gods-Sylvain-Neuvel%2Fbook%2F43963996)
-    - [<cite>Only Human</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FOnly-Human-Sylvain-Neuvel%2Fbook%2F39561148)
+    - [<cite>Sleeping Giants</cite>](https://bookshop.org/a/21126/9781101886717)
+    - [<cite>Waking Gods</cite>](https://bookshop.org/a/21126/9781101886748)
+    - [<cite>Only Human</cite>](https://bookshop.org/a/21126/9780399180132)
 
     [review](https://v4.chriskrycho.com/2019/review-the-themis-files.html)
 
-- [<cite>Red Mars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FBlue-Mars-Kim-Stanley-Robinson%2Fbook%2F745509), Kim Stanley Robinson (new)
+- [<cite>Red Mars</cite>]https://bookshop.org/a/21126/9780593358825), Kim Stanley Robinson (new)
     - [review](/library/red-mars/)
 
-- [<cite>Recursion</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRecursion-Blake-Crouch%2Fbook%2F42580801), Blake Crouch (new)
+- [<cite>Recursion</cite>](https://bookshop.org/a/21126/9781524759797), Blake Crouch (new)
     - [review](/library/recursion/)
 
-- [<cite>Dark Matter</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FDark-Matter-Blake-Crouch%2Fbook%2F34241696), Blake Crouch (new)
+- [<cite>Dark Matter</cite>](https://bookshop.org/a/21126/9781101904244), Blake Crouch (new)
     - [review](/library/dark-matter/)
 
 - The Expanse, James S.A. Corey (reread):
@@ -449,31 +451,38 @@ These are books I have started at some point but have (at least for now!) put as
 
 [hobbit]: https://bookshop.org/a/21126/9780395873465
 [lotr]: https://bookshop.org/a/21126/9780618260584
-[leviathan-wakes]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FLeviathan-Wakes-James-S-A-Corey%2Fbook%2F16882667
-[calibans-war]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCalibans-War-James-S-A-Corey%2Fbook%2F28575716
-[abaddons-gate]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAbaddons-Gate-James-S-A-Corey%2Fbook%2F24065826
-[cibola-burn]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FCibola-Burn-James-S-A-Corey%2Fbook%2F26289654
-[nemesis-games]: https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FNemesis-Games-James-S-a-Corey%2Fbook%2F30151014
+[leviathan-wakes]: https://bookshop.org/a/21126/9780316129084
+[calibans-war]: https://bookshop.org/a/21126/9780316129060
+[abaddons-gate]: https://bookshop.org/a/21126/9780316129077
+[cibola-burn]: https://bookshop.org/a/21126/9780316334686
+[nemesis-games]: https://bookshop.org/a/21126/9780316334716
 
 
 ## 2018
 
 ### Fiction
 
-- [<cite>Agent of Change</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FAgent-of-Change-Sharon-Lee%2Fbook%2F23072866), Sharon Lee and Steve Miller (new)
+- [<cite>Agent of Change</cite>](https://bookshop.org/a/21126/9781481483643), Sharon Lee and Steve Miller (new)
     - [review](https://v4.chriskrycho.com/2018/agent-of-change.html)
 
-- [<cite>The Calculating Stars</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Calculating-Stars-A-Lady-Astronaut-Novel-Mary-Robinette-Kowal%2Fbook%2F39801025), Mary Robinette Kowal (new)
+- [<cite>The Calculating Stars</cite>](https://bookshop.org/a/21126/9780765378385), Mary Robinette Kowal (new)
     - [review](https://v4.chriskrycho.com/2018/the-calculating-stars.html)
 
-- [<cite>The Fated Sky</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Fated-Sky-A-Lady-Astronaut-Novel-Mary-Robinette-Kowal%2Fbook%2F40036198), Mary Robinette Kowal (new)
+- [<cite>The Fated Sky</cite>](https://bookshop.org/a/21126/9780765398949), Mary Robinette Kowal (new)
     - [review](https://v4.chriskrycho.com/2018/review-the-fated-sky.html)
 
-- [<cite>Ringworld</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FRingworld-Larry-Niven%2Fbook%2F5764809), Larry Niven (new)
+- [<cite>Ringworld</cite>](https://bookshop.org/a/21126/9780345333926), Larry Niven (new)
     - [review](https://v4.chriskrycho.com/2018/ringworld-review.html)
 
-- [<cite>The Fifth Season</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Fifth-Season-N-K-Jemisin%2Fbook%2F31475116), N. K. Jemison (new)
+- The <cite>Broken Earth</cite> trilogy, N. K. Jemisin (new)
+    - [<cite>The Fifth Season</cite>](https://bookshop.org/a/21126/9780316229296)
+    - [<cite>The Obelisk Gate</cite>](https://bookshop.org/a/21126/9780316229265)
+    - [<cite>The Stone Sky</cite>](https://bookshop.org/a/21126/9780316229241)
 
-- [<cite>The Obelisk Gate</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Obelisk-Gate-N-K-Jemisin%2Fbook%2F34307835), N. K. Jemison (new)
+    These are incredibly grim and fairly violent. I do not regret having read them, but I also cannot *endorse* reading them.
 
-- [<cite>The Stone Sky</cite>](https://click.linksynergy.com/deeplink?id=qvtf8Hp8DGA&mid=2653&murl=https%3A%2F%2Fwww.alibris.com%2FThe-Stone-Sky-N-K-Jemisin%2Fbook%2F38128431), N. K. Jemison (new)
+
+
+[^kurzweil]: This is where it is for a reason. Don’t @ me.
+
+[^missing-links]: These do not have links because they are entirely unavailable on Bookshop.org, and may be out of print. You may still be able to find them [on Alibris](https://www.alibris.com)… or by asking a local used bookstore!
