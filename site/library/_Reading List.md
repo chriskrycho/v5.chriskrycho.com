@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-14T12:36:00-0700
+date: 2023-12-14T13:57:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -56,8 +56,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
     - [posts on the book](/topics/eccentric-existence/)
-
-- [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
 
@@ -154,6 +152,8 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Call for God: New Sermons from Basel Prison</cite>](https://bookshop.org/a/21126/9780334002574), Karl Barth, translated by A. T. Mackay (new)
 
 - [<cite>The Orthodox Way</cite>](https://bookshop.org/a/21126/9780881416299), Kallistos Ware (new)
+
+- [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
 
 ### Fiction
