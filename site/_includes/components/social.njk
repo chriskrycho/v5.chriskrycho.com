@@ -8,7 +8,7 @@
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover}}
       {%- else -%}
-         https://cdn.statically.io/og/theme=dark/{{pageTitle}} – Sympolymathesy.png
+         https://cdn.statically.io/og/theme=dark/{{pageTitle | urlencode}} – Sympolymathesy.png
       {%- endif -%}
    {%- endset -%}
 
