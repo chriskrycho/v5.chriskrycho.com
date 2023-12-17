@@ -103,9 +103,7 @@ do_something(&mut foo);
 do_something(foo);
 ```
 
-Unfortunately, it would make it really easy to end up in situations where you get compiler errors far away from the *actual* mistake you made. Even in a fairly simple case, where you have local ownership of a type, you can end up with errors far 
-
-More importantly, it would make it so that changes in one spot could *cascade* in surprising ways and then produce those errors-far-from-the-change. Consider a function like this:
+Unfortunately, it would make it really easy to end up in situations where you get compiler errors far away from the *actual* mistake you made. Notably, that is true even in a fairly simple case, where you have local ownership of a type. More importantly, it would make it so that changes in one spot could *cascade* in surprising ways and then produce those errors-far-from-the-change. Consider a function like this:
 
 ```rust
 fn look_at_the_arg(foo: &Foo) {
