@@ -4,6 +4,12 @@ subtitle: >
     Mildly contra Matthew Butterick on music, grids, and how to relate them to typography.
 
 date: 2023-12-07T09:20:00-0700
+updated: 2023-12-17T08:35:00-0700
+updates:
+   - at: 2023-12-17T08:35:00-0700
+     changes: >
+         Added an addendum on scales as a *starting point* for developing composers/typographers.
+
 image: https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 
 qualifiers:
@@ -42,6 +48,17 @@ I actually agree with much of Butterick’s point here (indeed: if the only thin
 
 With those points in mind, I offer an alternative formulation of the same closing paragraph:
 
-As a composer, I think this metaphor is quite apt—as long as we understand its limits. Musicians think hard about scales and harmony. These kinds of “grids” serve as starting points, a framework on which to hang the rest of the musical decisions. In some music, that framework is a starting point from which performers are free to make many modifications. Even in other, more strict kinds of performances, the composer herself may both choose an underlying harmonic and rhythmic structure and then consciously deviate from it to achieve a desired effect—or she may use the constraints of a grid to force her to accomplish musical interest in other ways. Rare—but sometimes quite excellent—is the musical piece which has *no* “grid” and is still musically interesting and beautiful. The exact same dynamic holds for typographical scales: they can be anything useful starting points on which to “riff”. Knowing when and how to deploy them is a matter of taste. Just as the composer’s musical sense is the ultimate judge of the music, the typographer’s eye is the judge of the page.
+{% callout %}
+
+As a composer, I think this metaphor is quite apt—as long as we understand its limits. Musicians think hard about scales and harmony. These kinds of “grids” serve as starting points, a framework on which to hang the rest of the musical decisions. In some music, that framework is a starting point from which performers are free to make many modifications. Even in other, more strict kinds of performances, the composer herself may both choose an underlying harmonic and rhythmic structure and then consciously deviate from it to achieve a desired effect—or she may use the constraints of a grid to force her to accomplish musical interest in other ways. Rare—but sometimes quite excellent—is the musical piece which has *no* “grid” and is still musically interesting and beautiful. The exact same dynamic holds for typographical scales: they can be useful starting points on which to “riff”. Knowing when and how to deploy them is a matter of taste. Just as the composer’s musical sense is the ultimate judge of the music, the typographer’s eye is the judge of the page.
+
+{% endcallout %}
+
+**An addendum:** It is true that advanced composers or performers can go far away from harmonic scales and metrical grids to accomplish their musical ends. But it is also true that beginning composers *do not start that way*. The course of study begins with very rigorous structure, most often following the course of musical history. Formal instruction in composition, for example, involves [exercises][gp] with *extremely* constrained rules for both metrical and harmonic structure, [standard forms][sonata] to compose, standard ensembles to write for, and so on. There are differences for musicians whose focus is performance over composition—but the best musicians, across genres and forms, are *also* students of what has come before and what works well and what does not. Mature composers and performers can go “off the rails” because, again, they know where the rails are and what they are for. Exactly the same applies to typographers and designers.
+
+[gp]: https://en.wikipedia.org/wiki/Gradus_ad_Parnassum
+[sonata]: https://en.wikipedia.org/wiki/Sonata_form
+
+
 
 [^1]:	This has historically been one of my favorite ways to end up in really interesting places tonally for chamber music in particular. My [Single Movement for Clarinet and Cello](https://soundcloud.com/chriskrycho/single-movement-for-clarinet), for example, works with a constructed “mode” and I had a lot of fun with it.
