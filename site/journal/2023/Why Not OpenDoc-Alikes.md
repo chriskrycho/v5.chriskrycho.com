@@ -18,7 +18,7 @@ qualifiers:
 
 This morning I came across [Apps considered harmful](https://duncancragg.substack.com/p/apps-considered-harmful), by Duncan Cragg.
 
-There is a *lot* of [this sentiment](https://duncancragg.substack.com/p/apps-considered-harmful) floating around (this one posted in the Future of Coding space, but the rhetoric is extremely common more generally). A lot of [the work](https://www.inkandswitch.com/embark/) out of the [Ink & Switch](https://www.inkandswitch.com) folks is adjacent to it (and less rhetorically heated!), for example.
+There is a *lot* of this sentiment floating around (this one posted in the Future of Coding space, but the rhetoric is extremely common more generally). A lot of [the work](https://www.inkandswitch.com/embark/) out of the [Ink & Switch](https://www.inkandswitch.com) folks is adjacent to it (and less rhetorically heated!), for example.
 
 I… understand the frustration and the things it wants to solve. I get why folks were and are drawn to the ideas behind [OpenDoc](https://en.wikipedia.org/wiki/OpenDoc).
 
