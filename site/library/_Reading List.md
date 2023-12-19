@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-14T15:55:00-0700
+date: 2023-12-18T21:57:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,8 +69,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 
 ### Fiction
-
-- [<cite>Green Mars</cite>](https://bookshop.org/a/21126/9780593358849), Kim Stanley Robinson (new)
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
@@ -177,6 +175,9 @@ These are books I have started at some point but have (at least for now!) put as
     - [<cite>The Farthest Shore</cite>](https://bookshop.org/a/21126/9780689845345)
 
 - [<cite>Sword & Citadel: The Second Half of the Book of the New Sun</cite>](https://bookshop.org/a/21126/9781250827036), Gene Wolfe (new)
+
+- [<cite>Green Mars</cite>](https://bookshop.org/a/21126/9780593358849), Kim Stanley Robinson (new)
+
 
 ## 2022
 
