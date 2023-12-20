@@ -4,6 +4,12 @@ subtitle: >
     Too much spooky action at a distance.
 
 date: 2023-12-16T16:20:00-0700
+updated: 2023-12-20T10:30:00-0700
+updates:
+    - at: 2023-12-20T10:30:00-0700
+      changes: >
+          Added a clarification about the original example.
+
 tags:
     - Rust
     - programming languages
@@ -15,6 +21,9 @@ qualifiers:
 
 summary: >
     While it would be possible and even safe to add type-based function overloads in Rust, it would be a bad design move. Too much spooky action at a distance!
+
+thanks: >
+    [Rob Jackson](https://www.rwjblue.com) got me thinking about this in the first place. [Larry Garfield](https://www.garfieldtech.com) provided really helpful feedback on the version I originally published.
 
 ---
 
@@ -157,6 +166,8 @@ fn drop_example(foo: &Foo) {
 ```
 
 Again, assume that `do_something` is overloaded as shown above. What happens if we change `drop_example` here to take `Foo` instead of `&Foo`? Now `do_something` also takes ownership of `Foo`, and therefore the `Drop` implementation for `Foo` runs as soon as `do_something` ends. Depending on what you are doing in the rest of `drop_example` and how expensive the `Drop` implementation for `Foo` is, that might be fine—or it might be surprising and *very* unwanted! Again, you may or may not have wanted to change the semantics of the call to `do_something` just because you changed the semantics of `drop_example`… but if we had this kind of type-based overloading, that would be exactly what you are saddled with.
+
+What about the original example, though? In that case I was discussing overloads that differed on entirely different kinds of arguments passed to them, *not* on reference type or mutability. Well, it turns out that these two examples are actually closely related: mutability and reference type are not only a matter of “passing semantics” as they might be in other languages in Rust’s space. References and mutability are part of the *type* in Rust. That said, they sit in a different part of the type checking space than the type of the thing being handed around by reference or moved etc. This means that you could imagine a version of type-based overloading that supports the original example, but does *not* support type-based overloading where ownership and mutability semantics are concerned. That would work… but for experienced Rust developers, it would immediately raise the question of overloading on ownership. It would leave the language in a slightly weird spot where you can overload on *one* useful axis, but not another.
 
 That is not 100% conclusive, of course. You could make the case that Rust does lots of things “implicitly” rather than “explicitly” for the sake of convenience to the user—and that this should be one of them. In particular, this does not introduce any new *safety* hazards, because the compiler would always catch all the same kinds of errors it does today in terms of ownership in this world. The only kinds of changes it would introduce would be the sort described above. What is more, you would not even need an [Edition](https://doc.rust-lang.org/edition-guide/editions/index.html) change to support it, because the behavior here would be purely additive and always something authors would have to opt into.
 
