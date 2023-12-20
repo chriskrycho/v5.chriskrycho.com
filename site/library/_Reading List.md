@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-18T21:57:00-0700
+date: 2023-12-19T21:42:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -44,7 +44,7 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 ### Fiction
 
-- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
+(no specific plans right now!)
 
 
 ## Started
@@ -71,6 +71,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
+
+- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new) 
 
 
 ## Tabled
