@@ -25,7 +25,7 @@ Self-biographies are a bit weird. No two ways around it. But they *do* give us a
 
 The single most important fact of my life is that, to quote [Saint Paul](https://www.esv.org/1+Corinthians+6/): I am not my own, but I was bought with a price—and that price was the death of Jesus Christ, God-the-Son, in my place.[^on-1-cor-6]
 
-I am specifically a Christian in the historic Reformed tradition—aiming always to be irenic, catholic, and orthodox.
+I am specifically an Anglican Christian in the historic Reformed tradition—aiming always to be irenic, catholic, and orthodox.
 
 [^on-1-cor-6]: Paul was writing specifically about sexual immorality—but the form of his argument is to ground that specific injunction in a very sweeping, indeed a totalizing, claim about the Christian life.
 
@@ -41,9 +41,7 @@ After following Christ, my family is far and away the most important part of my 
 
 Since graduating college, I have been working more or less full-time in the software industry. I starting out writing avionics software and then hazards and risk mitigation software for the energy industry. After picking up web development on the side, I eventually transitioned into web development full time. You can see my [<abbr title="curriculum vitae">CV</abbr>](/cv/) for the nitty-gritty professional-historical details! Below are just the salient bits of what I’m doing *right now*.
 
-### LinkedIn
-
-I’m currently a Senior Staff Software Engineer at LinkedIn, working on front-end infrastructure for what most people think of when you say LinkedIn: the app you sign into, send messages and read updates on, etc. These days my focus is on the overall technical direction of the app and supporting other engineers working on TypeScript adoption. In 2021 I led our adoption of [Ember Octane]—a project I had been doing prep work for in the app since August 2019. I am also a member of the Ember Framework core team, and since 2017 (well before I joined LinkedIn) I have been one of several people driving forward [TypeScript] adoption in the Ember community—culminating with the creation of the Ember TypeScript core team in 2022.
+Most recently I was a Senior Staff Software Engineer at LinkedIn, working on front-end infrastructure for what most people think of when you say LinkedIn: the app you sign into, send messages and read updates on, etc. For the past few years, I served as the tech lead for the flagship app and as the primary subject matter expert for LinkedIn’s TypeScript adoption effort. In 2021 I led LinkedIn’s adoption of [Ember Octane]—a project I had been doing prep work for in the app since August 2019. I was also a member of the Ember Framework core team, and since 2017 (well before I joined LinkedIn) I was one of several people driving forward [TypeScript] adoption in the Ember community—culminating with the creation of the Ember TypeScript core team in 2022.
 
 [Ember Octane]: https://emberjs.com/editions/octane/
 [TypeScript]: https://www.typescriptlang.org
@@ -80,7 +78,18 @@ Since 2010, I have been a long-distance runner. A bout of mono left me incredibl
 
 [Ultimate]: https://en.wikipedia.org/wiki/Ultimate_(sport)
 
-### A podcaster
+### A composer
+
+In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. That interest lay dormant for most of a decade after college. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, but little else. Then, in 2020, I picked back up my composer’s pen and have not put it down.
+
+My most interesting published work to date is [Fanfare for a New Era of American Spaceflight][fanfare], which I recorded with the Budapest Scoring Orchestra. I am also hard at work on a large-scale symphonic work, along with some chamber works and some church music. Some or all of that may appear here in the future!
+
+Beyond that, you can check out a limited sample of my work [on SoundCloud], as well as [the 'music' tag on this site](/topics/music/).
+
+[fanfare]: https://v5.chriskrycho.com/elsewhere/fanfare-for-a-new-era-of-american-spaceflight-live-recording/
+[on SoundCloud]: https://soundcloud.com/chriskrycho/tracks
+
+### An erstwhile podcaster
 
 In January 2014, my long-time friend [Stephen Carradini] and I launched [Winning Slowly]—a podcast about tech, religion, ethics, and art. He called it a tech podcast with other angles; I called it our excuse to talk about literally every part of human existence. We were both right. And you wouldn’t be wrong to see it as another spot where I consciously practiced <i>public theology</i>.
 
@@ -98,9 +107,3 @@ Out of that initial experiment grew a general interest in podcasting as a medium
 - [Mass Affection](https://massaffection.com)—another foray into podcasting with my wife, this time about the video game series <cite>Mass Effect</cite>. We aspire to finish this… eventually. It’s been hard to carve out the time for it the last couple years, but we always enjoy it when we do!
 
 I find podcasting a great complement to writing. It is available in spaces and places where people cannot read (like commuting), and it’s also a great place to flesh out thoughts I have already put in writing or am trying to figure out how to put in writing. While I am not currently producing any podcasts, I will not rule out the possibility of doing so again in the future—and I am happy to be a guest on *other* podcasts!
-
-### A composer
-
-In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. Since graduating college, I have composed relatively little, but it remains a delight when I get a chance to do it. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, and actually have a few things actively in work (if on the back burner). You can check out a limited sample of my work (which I hope to expand soon, for the curious if nothing else) [on SoundCloud], as well as [the 'music' tag on this site](/topics/music/).
-
-[on SoundCloud]: https://soundcloud.com/chriskrycho/tracks
