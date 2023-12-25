@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-19T21:42:00-0700
+date: 2023-12-24T21:18:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -54,9 +54,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Non-fiction
 
-- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
-    - [posts on the book](/topics/eccentric-existence/)
-
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 
 - [<cite>Open Music Theory</cite>](https://viva.pressbooks.pub/openmusictheory/), Mark Gotham, Kyle Gullings, Chelsey Hamm, Bryn Hughes, Brian Jarvis, Megan Lavengood, and John Peterson (new)
@@ -67,12 +64,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
+- [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
+
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
-- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new) 
+- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
 
 
 ## Tabled
@@ -86,6 +85,11 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
 
 - [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
+
+- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
+    - [posts on the book](/topics/eccentric-existence/)
+
+    Tabled, ultimately, because I found I had gotten everything helpful I could from Kelsey’s opening few chapters, and decided it was not worth wading through his absolutely awful prose for the sake of his equally atrocious hermeneutical moves later in the book.
 
 
 ## 2023
