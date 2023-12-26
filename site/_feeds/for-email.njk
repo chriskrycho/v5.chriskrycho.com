@@ -1,0 +1,15 @@
+---
+title: Email Feed
+permalink: /email-feed.xml
+standalonePage: true
+eleventyExcludeFromCollections: true
+---
+
+{%- import 'components/atom.njk' as atom -%}
+
+{%- extends 'feed.njk' -%}
+
+   {%- block entries -%}
+   {%- set items = collections.live | excludingStandalonePages -%}
+   {{-atom.entries(items, config, false, false)-}}
+{%- endblock entries -%}

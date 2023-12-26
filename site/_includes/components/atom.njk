@@ -1,4 +1,4 @@
-{%- macro entries(items, config, includeReplyViaEmail = true) -%}
+{%- macro entries(items, config, includeReplyViaEmail = true, includeThanksForReading = true) -%}
    {# invalid without date #}
    {%- if items is not undefined and items.length > 0 -%}
       {%- for item in items | withValidDate | take(25) -%}
@@ -118,8 +118,9 @@
                   <p><strong>Thanks:</strong> {{item.data.thanks | safe}}</p>
                   {%- endif -%}
                   <hr/>
+                  {%- if includeThanksForReading -%}
                   <p>
-                     Thanks for reading my feed!
+                     Thanks for reading my feed! Thoughts, comments, or questions?
                      {% if includeReplyViaEmail -%}
                         <a href="mailto:{{config.author.email}}?subject=Re%3A%20{{entryTitle | urlencode}}">Shoot me an email</a>
                         {%- if item.data.discuss is defined -%}
@@ -131,12 +132,13 @@
                         {%- endif -%}
                      {%- else -%}
                         {%- if item.data.discuss is defined -%}
-                           Thoughts, comments, or questions? Leave a comment on
+                           Leave a comment on
                            <a href="{{item.data.discuss.hn}}">Hacker News</a> or
                            <a href="{{item.data.discuss.lobsters}}">lobste.rs</a>.
                         {%- endif -%}
                      {%- endif -%}
                   </p>
+                  {%- endif -%}
                ]]>
             </content>
             {%- include 'blocks/rss-author.njk' -%}
