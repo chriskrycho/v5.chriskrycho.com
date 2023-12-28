@@ -1,6 +1,6 @@
 ---
 title: "Past: Leaving LinkedIn"
-subtitle: Making good on a promise to myself five years ago.
+subtitle: Making good on a promise made to myself five years ago.
 series:
     part: 3
 
