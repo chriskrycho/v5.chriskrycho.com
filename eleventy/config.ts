@@ -275,6 +275,8 @@ function config(config: Config): UserConfig {
 
    config.setDataDeepMerge(true);
 
+   // Note: this does not handle the *rest* of the data cascade, *only* front
+   // matter, so things in `.11tydata.json` will *not* be handled.
    config.setFrontMatterParsingOptions({
       engines: {
          yaml: (s) => {
