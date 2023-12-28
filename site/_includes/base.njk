@@ -92,7 +92,7 @@
                {%- elif entry.type === 'link' -%}
                   {{nav.link(entry)}}
                {%- elif entry.type === 'separator' -%}
-                  <li aria-hidden><hr></li>
+                  <li aria-hidden="true"><hr></li>
                {%- endif -%}
             {%- endfor -%}
          </ul>
