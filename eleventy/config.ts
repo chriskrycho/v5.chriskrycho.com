@@ -55,6 +55,7 @@ const isNotVoid = <A>(a: A | null | undefined): a is A => a != null;
 
 const isStandalonePage = (item: Item) => item.data?.standalonePage ?? false;
 const excludingStandalonePages = not(isStandalonePage);
+const sendEmail = (item: Item) => item.data?.sendEmail ?? true;
 
 /**
    Use a path to create a collection from all items contained within it.
@@ -192,6 +193,7 @@ function config(config: Config): UserConfig {
    config.addFilter('sourceLink', PageLinks.source);
    config.addFilter('excludingCollection', excludingCollection);
    config.addFilter('excludingStandalonePages', filter(excludingStandalonePages));
+   config.addFilter('shouldSendEmail', filter(sendEmail));
    config.addFilter('concat', (a: Item[] | undefined, b: Item[] | undefined) => {
       return (a ?? []).concat(b ?? []);
    });
@@ -233,6 +235,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal/Disney World 2022 Camera Gear');
    addCollectionFromDir(config, 'journal/2022 in Review');
    addCollectionFromDir(config, 'journal/Next');
+   addCollectionFromDir(config, 'journal/2023 in Review');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'library/Confronted by Grace');

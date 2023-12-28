@@ -1,0 +1,13 @@
+{
+   "layout": "post.njk",
+   "permalink": "/journal/2023-in-review/{{page.fileSlug | slug}}/index.html",
+   "qualifiers": {
+      "audience": "People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)",
+      "context": "For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all <a href=\"https://v5.chriskrycho.com/journal/2023-in-review/\">here</a>."
+   },
+   "series": {
+      "title": "2023 in Review"
+   },
+   "tags": ["annual reflections"],
+   "sendEmail": false
+}

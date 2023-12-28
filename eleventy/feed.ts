@@ -78,6 +78,7 @@ declare module '../types/eleventy' {
          hn: string;
          lobsters: string;
       };
+      sendEmail?: boolean;
    }
 }
 
