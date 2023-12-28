@@ -3,7 +3,7 @@
 {% from 'components/preferences.njk' import Preferences %}
 
 <!DOCTYPE html>
-<html data-sympolymathesy='root'>
+<html lang="en" data-sympolymathesy='root'>
    <head>
       <meta charset='utf-8'/>
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -92,7 +92,7 @@
                {%- elif entry.type === 'link' -%}
                   {{nav.link(entry)}}
                {%- elif entry.type === 'separator' -%}
-                  <li role='separator'><hr></li>
+                  <li aria-hidden><hr></li>
                {%- endif -%}
             {%- endfor -%}
          </ul>

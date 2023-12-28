@@ -5,7 +5,11 @@
 
 {% macro Preferences() %}
    <div data-sympolymathesy='preferences' class='preferences no-js-hidden'>
-      <button class="preferences-panel__button preferences-button preferences-button__open" data-sympolymathesy='show'>
+      <button
+         title="Open settings panel"
+         class="preferences-panel__button preferences-button preferences-button__open"
+         data-sympolymathesy='show'
+      >
          <svg class='preferences-icon' viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
             <path d="M2.5 7.5H0m15 5h-2.5m2.5-10H8.5m-2 0H0m4.5 5H15m-4.5 5H0m10.5-2v4h2v-4h-2zm-8-5v4h2v-4h-2zm4-5v4h2v-4h-2z" stroke="currentColor"/>
             Show preferences
@@ -14,7 +18,11 @@
       </button>
 
       <div class="preferences-panel hidden" data-sympolymathesy='panel'>
-         <button class="preferences-panel__button preferences-button preferences-button__close" data-sympolymathesy='close'>
+         <button
+            title="Close settings panel"
+            class="preferences-panel__button preferences-button preferences-button__close"
+            data-sympolymathesy='close'
+         >
             <svg class='preferences-icon' viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                <path d="M1.5 1.5l12 12m-12 0l12-12" stroke="currentColor"/>
                Hide preferences
