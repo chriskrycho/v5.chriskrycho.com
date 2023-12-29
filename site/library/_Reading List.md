@@ -130,7 +130,7 @@ These are books I have started at some point but have (at least for now!) put as
 
 - [<cite>Obliquity: Why our goals are best achieved indirectly</cite>](https://bookshop.org/a/21126/9780143120551), John Kay (new)
 
-- [<cite>What Can a Body Do?: How We Meet the Build World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren (new)
+- [<cite>What Can a Body Do?: How We Meet the Built World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren (new)
 
 - [<cite>Karl Barth</cite>](https://bookshop.org/a/21126/9780826474636), John Webster (new)
 

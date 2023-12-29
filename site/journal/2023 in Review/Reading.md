@@ -46,7 +46,7 @@ These are books I read in conjunction with business and tech… even if they ar
 - [<cite>Dealers of Lightning: Xerox Parc and the Dawn of the Computer Age</cite>](https://bookshop.org/a/21126/9780887309892), Michael A Hiltzik
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett
 - [<cite>Shifting the impossible to the inevitable: A Private <abbr>ARPA</abbr> user manual</cite>](https://benjaminreinhardt.com/parpa), Ben Reinhardt
-- [<cite>What Can a Body Do?: How We Meet the Build World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren
+- [<cite>What Can a Body Do?: How We Meet the Built World</cite>](https://bookshop.org/a/21126/9780735220003), Sara Hendren
 
 ### Fiction
 
