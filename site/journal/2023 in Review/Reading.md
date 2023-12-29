@@ -50,7 +50,7 @@ These are books I read in conjunction with business and tech… even if they ar
 
 ### Fiction
 
-The truth is that standout novels is nearly the whole list from this year—the only books on here are rereads or filed under “still pretty good, just not *amazing*”:
+The truth is that standout novels is nearly the whole list from this year—the only novels I read which do not appear here were rereads or are filed under “still pretty good, just not *amazing*”:
 
 - [<cite>Tomorrow, and Tomorrow, and Tomorrow</cite>](https://bookshop.org/a/21126/9780593321201), Gabrielle Zevin
 - <cite>Memory, Sorrow, and Thorn</cite>, Tad Williams
