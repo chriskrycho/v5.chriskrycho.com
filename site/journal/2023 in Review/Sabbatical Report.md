@@ -36,9 +36,9 @@ Happily, on that key point the sabbatical has been a smashing success—and a f
 
 - I have made significant progress on that orchestral work (and I mean *significant* progress), and also wrote another short work for a much smaller ensemble. More on both of these in my post on [the rest of life](https://v5.chriskrycho.com/journal/2023-in-review/rest-of-life/).
 
-- I did learn enough Racket and Typed Racket to finish ["<abbr title="Programming Languages: Application and interpretation">PLAI</abbr>"](https://www.plai.org).
+- I did learn enough Racket and Typed Racket to finish [<cite><abbr title="Programming Languages: Application and interpretation">PLAI</abbr></cite>](https://www.plai.org).
 
-- I made some progress on my site-builder *and* wrote a bunch of code in the course of working through parts of both ["Functional Programming in Lean"](https://lean-lang.org/functional_programming_in_lean/title.html) and ["Crafting Interpreters"](https://craftinginterpreters.com).
+- I made some progress on my site-builder *and* wrote a bunch of code in the course of working through parts of both [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html) and [<cite>Crafting Interpreters</cite>](https://craftinginterpreters.com).
 
 - As for reading a lot of books? Oh yes. See the [Reading](https://v5.chriskrycho.com/journal/2023-in-review/reading/) post!
 
