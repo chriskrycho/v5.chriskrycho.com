@@ -43,7 +43,7 @@ Of those, the ones from this year I most want people to read are (ordered alphab
 
 - [Stocks, Flows, Resiliency, and Layoffs](https://v5.chriskrycho.com/library/thinking-in-systems/stocks-flows-resiliency-layoffs/)—an almost-essay riffing on a couple key quotes from Donella Meadows’ <cite>Thinking in Systems</cite>.
 
-- [Tools for Thought, Not Shortcuts for Thinking](https://v5.chriskrycho.com/library/tools-for-thought-not-shortcuts-for-thinking/)—a small push back against the a very common way of describing computers as “tools for thoughts”.
+- [Tools for Thought, Not Shortcuts for Thinking](https://v5.chriskrycho.com/library/tools-for-thought-not-shortcuts-for-thinking/)—a small push against a very common way of describing and thinking about computers.
 
 - [Unmeasurable Costs and Benefits](https://v5.chriskrycho.com/journal/unmeasurable-costs-and-benefits/)—extracted from a Hacker News discussion (again: of all places!) but representing an important part of my thinking about the common idea that we can “just come up with a way to measure it” for *everything* we do in software. Pairs well with [Be a quality detector](https://v5.chriskrycho.com/library/thinking-in-systems/be-a-quality-detector/), again from Donella Meadows’ <cite>Thinking in Systems</cite>.
 
