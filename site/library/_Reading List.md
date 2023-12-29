@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-24T21:18:00-0700
+date: 2023-12-29T08:10:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -64,8 +64,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
-- [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
-
 
 ### Fiction
 
@@ -90,6 +88,10 @@ These are books I have started at some point but have (at least for now!) put as
     - [posts on the book](/topics/eccentric-existence/)
 
     Tabled, ultimately, because I found I had gotten everything helpful I could from Kelsey’s opening few chapters, and decided it was not worth wading through his absolutely awful prose for the sake of his equally atrocious hermeneutical moves later in the book.
+
+- [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
+
+    I suspect there are a few interesting things in this book, but Taleb is perhaps the most insufferable writer of nonfiction I have encountered in the last decade. The core idea of “things which get stronger via challenge” is a mildly interesting idea, but the egotistical delivery and “Isn’t it amazing how no one else ever saw this? Aren’t I so smart? And also isn’t it great how I am ripped? And let me call every other philosophy or approach ‘sissy’ or ‘wussy’…” got very old very quickly.
 
 
 ## 2023
