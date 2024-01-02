@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2023-12-29T08:10:00-0700
+date: 2024-01-01T22:23:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -69,8 +69,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
-- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
-
 
 ## Tabled
 
@@ -92,6 +90,13 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
 
     I suspect there are a few interesting things in this book, but Taleb is perhaps the most insufferable writer of nonfiction I have encountered in the last decade. The core idea of “things which get stronger via challenge” is a mildly interesting idea, but the egotistical delivery and “Isn’t it amazing how no one else ever saw this? Aren’t I so smart? And also isn’t it great how I am ripped? And let me call every other philosophy or approach ‘sissy’ or ‘wussy’…” got very old very quickly.
+
+
+## 2024
+
+### Fiction
+
+- [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
 
 
 ## 2023
