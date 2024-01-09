@@ -6,6 +6,9 @@ subtitle: >
 tags:
     - software development
     - talks
+    - public speaking
+    - Semantic Versioning
+    - programming languages
 
 date: 2024-01-09T08:45:00-0700
 
