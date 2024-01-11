@@ -5,11 +5,14 @@ series:
     part: 1
 
 date: 2023-11-12T21:45:01-0700
-updated: 2024-12-10T07:45:00-0700
+updated: 2024-01-12T16:35:00-0700
 updates:
-    - at: 2024-12-10T07:45:00-0700
+    - at: 2024-01-10T07:45:00-0700
       changes: >
           Added a clarifying note about what kinds of ratchets I have in view.
+    - at: 2024-01-12T16:35:00-0700
+      changes: >
+          Added some details about how I might relate this next role to my past work with Ember.js.
 
 tags:
     - software development
@@ -63,7 +66,7 @@ This is why I care so much about [Rust](https://www.rust-lang.org). This is why 
 
 Ratchets are incremental improvements, not silver bullets. So was structured programming, though. A change does not have to be a silver bullet to be valuable. It just has to make for better software—and critically, better software that does not require you to be always at your best. Fewer `SEGFAULT`s and fewer vulnerabilities as a result of memory safety is good. Fewer cases of “`undefined` is not a function” is good. [Faster cycle times](https://v4.chriskrycho.com/2018/scales-of-feedback-time-in-software-development.html) on identifying and fixing bugs is good.
 
-So what I am doing next? Hopefully, making a ratchet—and teaching people how to use it, because that combination of craft and education is what I love most, and what I am best at.
+So what I am doing next? Hopefully, making a ratchet—and teaching people how to use it, because that combination of craft and education is what I love most, and what I am best at.[^2]
 
 {% note %}
 
@@ -79,4 +82,6 @@ There are many ways to build ratchets for the software industry, including—but
 
 If that’s the kind of thing you’re building—big company or startup, big idea or small-but-awesome—[say hello](mailto:hello@chriskrycho.com?subject=Ratchets)!
 
-[^1]:	And fast software is [the best software](https://craigmod.com/essays/fast_software/ "“Fast Software, the Best Software: On the benefits of speedy software, and how it affects user perception of engineering quality and overall usability”, by Craig Mod").
+[^1]: And fast software is [the best software](https://craigmod.com/essays/fast_software/ "“Fast Software, the Best Software: On the benefits of speedy software, and how it affects user perception of engineering quality and overall usability”, by Craig Mod").
+
+[^2]: Acquaintances and long-time readers might wonder how this connects to my long-standing involvement in the Ember.js community. I am glad for the time I spent working on things in the Ember community, and for several enduring friendships I made there. However, as of my resignations from the Ember Framework Core Team late last spring and from the Ember TypeScript Core Team in the fall, I am done working on Ember in any ongoing way. I still think there is interesting work to be done in the front-end web space, but I will be doing it in other contexts.
