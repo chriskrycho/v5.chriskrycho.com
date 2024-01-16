@@ -44,9 +44,11 @@ If you like it, please use it! The music is freely available under [a license][l
 - [Lyrics (text file)](https://cdn.chriskrycho.com/music/sanctus-for-epiphany/Lyrics%20from%20A%20Sanctus%20for%20Epiphany.txt)
 - [mp3 download](https://cdn.chriskrycho.com/music/sanctus-for-epiphany/Sanctus%20for%20Epiphany.mp3)
 
-Here’s what I shared with our congregation about the piece:
+Here’s what I shared with [our congregation][htac] about the piece:
 
 > As I was composing the new *Sanctus* for Epiphany, I was thinking about three things. The first two were the normal “tools” in a composer’s toolbox that one uses for setting a text like this well: making sure that any mentions of God are musically prominent, and making sure that texts like “Hosanna in the highest” don’t go “downward” tonally. The second was keeping the lines singable for a congregation. The final consideration was how to fit those things together with Epiphany! God has appeared! Epiphany reminds us—from Jesus’ circumcision, through the visit of the Magi, to his baptism, of how God appeared. In Jesus, God is truly *with* us, *among* us, was truly *one of us*—and this was not only for Jews, but for Gentiles like me. This is a cause for rejoicing: the holiness of God drawn near, for all of us. *Soli deo gloria*!
+
+[htac]: https://www.holytrinityanglican.church
 
 I have never written a piece like this before. It was a fun new challenge musically to write something with all my composition training in mind, but in a style and mode that suits our congregation. It has been a real joy to share with our church. Getting to stand with the congregation and sing it as someone *else* played it yesterday (the second Sunday in Epiphany) was really special. Hopefully I will be writing more music like this in the months and years ahead!
 
