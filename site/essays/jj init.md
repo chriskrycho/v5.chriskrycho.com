@@ -17,15 +17,19 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2023-11-02T17:17:00-0600
+updated: 2024-01-16T20:48:00-0700
 updates:
-  - at: 2023-07-02T21:43:00-0600
+  - at: 2024-01-16T20:48:00-0700
     changes: >
-      Added some initial notes about initial setup bumps. And a *lot* of notes on the things I learned in trying to fix those!
+      `jj init` is an essay, and I am rewriting it—not a dev journal, but an essay introduction to the tool.
 
   - at: 2023-07-03T07:27:00-0600
     changes: >
       Reorganized and clarified the existing material a bit.
+
+  - at: 2023-07-02T21:43:00-0600
+    changes: >
+      Added some initial notes about initial setup bumps. And a *lot* of notes on the things I learned in trying to fix those!
 
   - at: 2023-07-03T10:45:00-0600
     changes: >
@@ -85,7 +89,7 @@ draft: true
 
 {% callout %}
 
-Some background: Along with my experiment with [Mac-native text editors][experiment] over a recent extended stretch of time off, I spent some time learning [Jujutsu][jj]. Jujutsu is a new version control system from a software engineer at Google, which already (though tentatively) has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Indeed, I think—hope!—it has a possible future as the [next generation of version control][next-gen-vcs].
+Some background: Along with an experiment with [Mac-native text editors][experiment] over a extended stretch of time off in July 2023, I spent some time learning [Jujutsu][jj]—and it became my daily driver for version control. Jujutsu is a new version control system from a software engineer at Google, which already has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Indeed, I think—hope!—it has a possible future as the [next generation of version control][next-gen-vcs].
 
 [experiment]: https://v5.chriskrycho.com/journal/trying-bbedit-and-nova/
 [jj]: https://github.com/martinvonz/jj#command-line-completion
@@ -95,7 +99,7 @@ Some background: Along with my experiment with [Mac-native text editors][experim
 
 {% note %}
 
-Watch this space over the next month: I will update it with notes and comments about the experience, as well as expanding on these thoughts. This is a “garden”-style post and will grow organically over time!
+Watch this space: I will update and rewrite it with notes and comments about the experience, as well as expanding on these thoughts. This is a “garden”-style post and will grow organically over time!
 
 {% endnote %}
 
@@ -123,27 +127,28 @@ Jujutsu is one possible answer to a question I first started asking [most of a d
 
 This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">VCS</abbr>.
 
-### What is Jujutsu?
+The problems with Git are many, though. Most of all, its infamously terrible command line interface results in a terrible user experience. In my experience, very few working  developers have a good mental model for Git. Instead, they have a handful of commands they have learned over the years: enough to get by, and little more. The common rejoinder is that developers ought to learn how Git works internally—that everything will make more sense that way.
 
-Jujutsu is, broadly speaking, two things:
+This is nonsense. Git’s internals are are *interesting* on an implementation level, but frankly add up to an incoherent mess in terms of a user mental model. This is a classic mistake for software developers, and one I have fallen prey to myself any number of times. I do not blame the Git developers for it, exactly. No one should have to understand the internals of the system to use it well, though; that is a simple failure of software design. Moreover, even those internals do not particularly *cohere*. The index, the number of things labeled “-ish” in the glossary, the way that a “detached `HEAD`” interacts with branches, the distinction between tags and branches, the important distinctions between commits, refs, and objects… It is not that any one of those things is bad in isolation, but as a set they do not amount to a mental model I can describe charitably. Put in programming language terms: One of the reasons the “surface syntax” of Git is so hard is that its semantics are a bit confused, and that *inevitably* shows up in the interface to users.
 
-1. **It is a new front-end to Git.** This is *by far* the less interesting of the two things, but in practice it is a substantial part of the experience of using the tool today. In this regard, it sits in the same notional space as something like [gitoxide](https://github.com/Byron/gitoxide) (though `jj` is far more usable for day to day work than gitoxide’s `gix` and `ein` so far).
+Still, a change in a system so deeply embedded in the software development ecosystem is not cheap. Is it worth the cost of adoption?  Well, Jujutsu has a trick up its sleeve: there is no adoption cost. You just install it—`brew install jj` will do the trick on macOS—and run a single command in an existing Git repository, and… that’s it. (“There is no step 3.”) I expect that mode will always work, even though there will be a migration step at some point in the future, when Jujutsu’s own, non-Git backend becomes a viable—and ultimately the recommended—option. I am getting ahead of myself though. The first thing to understand is what Jujutsu is, and is not.
+
+Jujutsu is two things:
+
+1. **It is a new front-end to Git.** This is *by far* the less interesting of the two things, but in practice it is a substantial part of the experience of using the tool today. In this regard, it sits in the same notional space as something like [gitoxide](https://github.com/Byron/gitoxide). Jujutsu’s `jj` is far more usable for day to day work than gitoxide’s `gix` and `ein` so far, though, and it also has very different aims. That takes us to:
 
 2. **It is a new design for distributed version control.** This is by far the more interesting part. In particular, Jujutsu brings to the table a few key concepts—none of which are themselves novel, but the combination of which is *really* nice to use in practice:
 
     - *Changes* are distinct from *revisions*: an idea borrowed from Mercurial, but quite different from Git’s model.
     - Conflicts are first-class items: an idea borrowed from [Pijul][pijul] and [Darcs][darcs].
-    - The user interface is not only reasonable but actually *really good*: an idea borrowed from, uhh, literally everything but Git.
+    - The user interface is not only reasonable but actually *really good*: an idea borrowed from… literally every <abbr>VCS</abbr> other than Git.
 
 [pijul]: https://pijul.org
 [darcs]: https://darcs.net
 
-The combo of those means that you can use it today in your existing Git repos, as I have been for the past several months, and that it is a *really good* experience using it that way. Moreover, given it is being actively develpoed at and by Google for use as a replacement for its current custom <abbr>VCS</abbr> setup, it seems like it has a good future ahead of it.
+The combo of those means that you can use it today in your existing Git repos, as I have been for the past six months, and that it is a *really good* experience using it that way. (Better than Git!) Moreover, given it is being actively developed at and by Google for use as a replacement for its current custom <abbr>VCS</abbr> setup, it seems like it has a good future ahead of it.
 
-Net: at a minimum you get a better experience for using Git with it. At a maximum, you get a path to what I hope is the future of version control.
-
-
-### What is Jujutsu *not*?
+Net: at a minimum you get a better experience for using Git with it. At a maximum, you get an incredibly smooth and shallow on-ramp to what I earnestly hope is the future of version control.
 
 Jujutsu is *not* trying to do every interesting thing that other Git-alternative <abbr>DVCS</abbr> systems out there do. Unlike [Pijul][pijul], for example, it does not work from a theory of patches such that the order changes are applied is irrelevant. However, as I noted above and show in detail below, jj *does* distinguish between *changes* and *revisions*, and has first-class support for conflicts, which means that many of the benefits of Pijul’s handling come along anyway.
 
@@ -151,7 +156,7 @@ Unlike [Fossil][fossil], Jujutsu is also not trying to be an all-in-one tool. Ac
 
 [fossil]: https://fossil-scm.org/home/doc/trunk/www/index.wiki
 
-Finally, there is a thing jj is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports multiple "back ends" for the sake of keeping the door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
+Finally, there is a thing Jujutsu is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports its own, “native” back end for the sake of keeping that door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
 
 
 ## Usage notes
