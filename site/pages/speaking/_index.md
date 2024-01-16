@@ -6,7 +6,7 @@ permalink: /speaking/
 
 ---
 
-I’ve been podcasting since 2014 and have spoken at a number of conferences since 2015. (See [below](#past-talks) for some of the talks I’ve given over the years!) I am equally happy having off-the-cuff discussions and giving deeply-prepared presentations.
+I’ve been podcasting since 2014 and have spoken at a number of conferences since 2015. I am equally happy having off-the-cuff discussions and giving deeply-prepared presentations.
 
 <figure>
 <img alt="picture of Chris gesturing" src="https://cdn.chriskrycho.com/images/speaking.jpg">
@@ -31,8 +31,6 @@ If those sound interesting to you, I’d love to be on your show or speak at you
 
 **Time:** For podcasts or panel discussions, please give me at least of a month of notice so I can coordinate it with my family and fit it into my work schedule. For talks, I need at least two months’ notice so I can deliver a quality presentation and (for in-person events) coordinate travel with my family and work.
 
-**Honoraria:** I currently do not accept honoraria. Please direct any money allocated to speaker fees to a non-profit or charity instead.
-
 **Diversity:** I will not appear at conferences without reasonably diverse slates of speakers. What that means will differ appropriately by location: the demographics of northern Europe and the demographics of the American South are different. But you should have as close as possible to an even number of men and women speaking, and you should be aiming for your speakers to be representative of your local culture—not just of your programming community. (If a programming community is 99% people who are just like me, that probably isn’t healthy!) If you have doubts about the makeup of your conference, feel free to get in touch to discuss it.
 
 ---
@@ -42,34 +40,35 @@ If those sound interesting to you, I’d love to be on your show or speak at you
 
 ---
 
-## Past Talks
+## Talks
 
-A sample of my talks, podcast appearances, and workshops:
+- [The Road to TypeScript](https://www.youtube.com/watch?v=UOw7TydAT_s), EmberConf, March 2022
+- [Keep It Local: Or: (part of) what “reasoning about your code” really means](https://v5.chriskrycho.com/elsewhere/keep-it-local/), EmberConf, March 2021
+- Don’t Go Bankrupt: Managing Technical Costs, [All Things Open](http://allthingsopen.net), October 2019
+- Rust and WebAssembly, Denver/Boulder Rust Meetup, May 2018
+- [Chris Krycho: TypeScript and Ember js - Why and How?][atx-ts], EmberATX, April 2018
+- [Becoming a Contributor][rbr2017], Rust Belt Rust 2017, October 2017
+- [*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015], BibleTech 2015, May 2015—the first talk I ever gave, and not a bad one!
 
-- [<b>The Road to TypeScript</b>](https://www.youtube.com/watch?v=UOw7TydAT_s), EmberConf, March 2022
-
-- [<b>Keep It Local: Or: (part of) what “reasoning about your code” really means</b>](https://v5.chriskrycho.com/elsewhere/keep-it-local/), EmberConf, March 2021
-
-- <b>Don’t Go Bankrupt: Managing Technical Costs</b>, [All Things Open](http://allthingsopen.net), October 2019
-
-- [<b>Using TypeScript Like a Pro with Chris Krycho</b>, CoRecursive Podcast][corecursive], July 2019
-
-- [<b>Supercharging Ember Octane with TypeScript</b>](https://2019.emberconf.com/speakers.html#), EmberConf Workshop, March 2019—an invited three-hour workshop afte the previous year’s success
-
-- <b>Rust and WebAssembly</b>, Denver/Boulder Rust Meetup, May 2018
-
-- [<b>Chris Krycho: TypeScript and Ember js - Why and How?</b>][atx-ts], EmberATX, April 2018
-
-- [<b>TypeScript Up Your Ember.js App</b>](https://2018.emberconf.com/speakers.html#chris-krycho), EmberConf Workshop, March 2018
-
-- [<b>Becoming a Contributor</b>][rbr2017], Rust Belt Rust 2017, October 2017
-
-- [<b>Chris Krycho / An Unintentional Journey</b>, Remote Works Podcast][rw], February 2017
-
-- <b>[*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015]</b>, BibleTech 2015, May 2015—the first talk I ever gave, and not a bad one!
-
-[corecursive]: https://corecursive.com/034-chris-krycho-typescript/
 [atx-ts]: https://www.youtube.com/watch?v=fFzxbBrvytU
 [rbr2017]: https://youtube.com/watch?v=Abu2BNixXak
-[rw]: https://remote.works/episode/5
 [bibletech2015]: https://m.youtube.com/watch?v=cDAh35IwJsE
+
+## Podcast appearances
+
+- [Software Unscripted: Type System Complexity][su], September 2023
+- [Rustacean Station: New Rustacean with Chris Krycho][rs]
+- [Whiskey, Web, and Whatnot: Bringing Types to Ember][www], May 2022
+- [Corecursive: Using TypeScript Like a Pro with Chris Krycho][corecursive], July 2019
+- [Remote Works: Chris Krycho / An Unintentional Journey][rw], February 2017
+
+[su]: https://open.spotify.com/episode/43Jg9r2jOGRUYaQx5YOXO2
+[rs]: https://rustacean-station.org/episode/chris-krycho/
+[www]: https://www.whiskeywebandwhatnot.fm/bringing-types-to-ember-with-chris-krycho/
+[corecursive]: https://corecursive.com/034-chris-krycho-typescript/
+[rw]: https://remote.works/episode/5
+
+## Workshops
+
+- [Supercharging Ember Octane with TypeScript](https://2019.emberconf.com/speakers.html#), EmberConf Workshop, March 2019 (invited) three-hour workshop after the previous year’s success
+- [TypeScript Up Your Ember.js App](https://2018.emberconf.com/speakers.html#chris-krycho), EmberConf Workshop, March 2018
