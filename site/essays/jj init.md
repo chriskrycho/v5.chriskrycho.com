@@ -23,6 +23,58 @@ updates:
     changes: >
       `jj init` is an essay, and I am rewriting it—not a dev journal, but an essay introduction to the tool.
 
+  - at: 2023-11-02T17:17:00-0600
+    changes: >
+      Added a first pass at a conclusion, and started on the restructuring this needs.
+
+  - at: 2023-11-01T09:27:00-0600
+    changes: >
+      Describing a bit about how `jj new -A` works and integrates with its story for clean rebases.
+
+  - at: 2023-10-31T11:24:00-0600
+    changes: >
+      Filling in what makes `jj` interesting, and explaining templates a bit.
+
+  - at: 2023-08-07T21:10:00-0700
+    changes: >
+      A first pass at `jj describe` and `jj new`.
+
+  - at: 2023-08-07T19:41:00-0700
+    changes: >
+      YODA! And an introduction to the “Rewiring your Git brain” section.
+
+  - at: 2023-08-07T10:11:00-0700
+    changes: >
+      Adding more structure to the piece, and identifying the next pieces to write.
+
+  - at: 2023-07-31T21:07:00-0700
+    changes: >
+      Starting to do some work on the introduction.
+
+  - at: 2023-07-24T15:55:00-0700
+    changes: >
+      Correcting my description of revision behavior per discussion with the maintainer.
+
+  - at: 2023-07-24T12:08:00-0700
+    changes: >
+      Describing my current feelings about the `jj split` and auto-committed working copy vs. `git add --patch` (as mediated by a <abbr>UI</abbr>).
+
+  - at: 2023-07-13T08:04:00-0600
+    changes: >
+      Elaborated on the development of version control systems (both personally and in general!)… and added a bunch of `<abbr>` tags.
+
+  - at: 2023-07-12T21:08:00-0600
+    changes: >
+      Added a section on the experience of having first-class merging Just Work™, added an appendix about Kaleidoscope setup and usage, rewrote the paragraph where I previously mentioned the issues about Kaleidoscope, and iterated on the commit-vs.-change distinction.
+
+  - at: 2023-07-09T14:02:00-0600
+    changes: >
+      Rewrote the `jj log` section to incorporate info about revsets, rewrote a couple of the existing sections now that I have significantly more experience, and added a bunch of notes to myself about what to tackle next in this write-up.
+
+  - at: 2023-07-03T10:45:00-0600
+    changes: >
+      Wrote up some experience notes on actually using `jj describe` and `jj new`: this is pretty wild, and I think I like it?
+
   - at: 2023-07-03T07:27:00-0600
     changes: >
       Reorganized and clarified the existing material a bit.
@@ -30,58 +82,6 @@ updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
       Added some initial notes about initial setup bumps. And a *lot* of notes on the things I learned in trying to fix those!
-
-  - at: 2023-07-03T10:45:00-0600
-    changes: >
-      Wrote up some experience notes on actually using `jj describe` and `jj new`: this is pretty wild, and I think I like it?
-
-  - at: 2023-07-09T14:02:00-0600
-    changes: >
-      Rewrote the `jj log` section to incorporate info about revsets, rewrote a couple of the existing sections now that I have significantly more experience, and added a bunch of notes to myself about what to tackle next in this write-up.
-
-  - at: 2023-07-12T21:08:00-0600
-    changes: >
-      Added a section on the experience of having first-class merging Just Work™, added an appendix about Kaleidoscope setup and usage, rewrote the paragraph where I previously mentioned the issues about Kaleidoscope, and iterated on the commit-vs.-change distinction.
-
-  - at: 2023-07-13T08:04:00-0600
-    changes: >
-      Elaborated on the development of version control systems (both personally and in general!)… and added a bunch of `<abbr>` tags.
-
-  - at: 2023-07-24T12:08:00-0700
-    changes: >
-      Describing my current feelings about the `jj split` and auto-committed working copy vs. `git add --patch` (as mediated by a <abbr>UI</abbr>).
-
-  - at: 2023-07-24T15:55:00-0700
-    changes: >
-      Correcting my description of revision behavior per discussion with the maintainer.
-
-  - at: 2023-07-31T21:07:00-0700
-    changes: >
-      Starting to do some work on the introduction.
-
-  - at: 2023-08-07T10:11:00-0700
-    changes: >
-      Adding more structure to the piece, and identifying the next pieces to write.
-
-  - at: 2023-08-07T19:41:00-0700
-    changes: >
-      YODA! And an introduction to the “Rewiring your Git brain” section.
-
-  - at: 2023-08-07T21:10:00-0700
-    changes: >
-      A first pass at `jj describe` and `jj new`.
-
-  - at: 2023-10-31T11:24:00-0600
-    changes: >
-      Filling in what makes `jj` interesting, and explaining templates a bit.
-
-  - at: 2023-11-01T09:27:00-0600
-    changes: >
-      Describing a bit about how `jj new -A` works and integrates with its story for clean rebases.
-
-  - at: 2023-11-02T17:17:00-0600
-    changes: >
-      Added a first pass at a conclusion, and started on the restructuring this needs.
 
 draft: true
 
