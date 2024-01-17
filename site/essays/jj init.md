@@ -17,8 +17,12 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2024-01-16T20:48:00-0700
+updated: 2024-01-18T15:25:00-0700
 updates:
+  - at: 2024-01-18T15:25:00-0700
+    changes: >
+      Made some further structural revisions, removing some now-defunct copy about the original plan, expanded on the conclusion, and substantially expanded the conclusion.
+
   - at: 2024-01-16T20:48:00-0700
     changes: >
       `jj init` is an essay, and I am rewriting it—not a dev journal, but an essay introduction to the tool.
@@ -104,9 +108,7 @@ Watch this space: I will update and rewrite it with notes and comments about the
 {% endnote %}
 
 
-### Outline
-
-The rest of this post is organized into the following overarching sections:
+<details><summary>Outline</summary>
 
 - [Overview](#overview)
     - [What is Jujutsu](#what-is-jujutsu)
@@ -120,6 +122,7 @@ The rest of this post is organized into the following overarching sections:
     - [Branches](#branches)
     - [Git interop](#git-interop)
 
+</details>
 
 ## Overview
 
@@ -159,36 +162,31 @@ Unlike [Fossil][fossil], Jujutsu is also not trying to be an all-in-one tool. Ac
 Finally, there is a thing Jujutsu is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports its own, “native” back end for the sake of keeping that door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
 
 
-## Usage notes
+## Using Jujutsu
 
 That is all interesting enough philosophically, but for a tool that, if successful, will end up being one of a software developer’s most-used tools, there is an even more important question: *What is it actually like to use?*
 
-{% note %}
-
-For all of these kinds of initial notes, I will update them/rewrite them as I figure them out; but I will *not* do is pretend like they were not issues. At some point I expect the notes throughout to read something like:
-
-> - It was not initially clear to me how to see the equivalent of…
-
-{% endnote %}
 
 ### Setup
 
-Setup is, overall, quite easy: `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools, Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
+Setup is painless. Running `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools, Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
 
-Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™. I have since run `jj init` in every Git repository I am actively working on, and have had no issues. It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which mostly works well. (For where it does *not* work all that well, see the detailed section on Git interop below!)
+Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™, right down to correctly handling `.gitignore` files.[^gitignore] I have since run `jj init` in every Git repository I am actively working on, and have had no issues.[^gitignore] It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which mostly works well. (For where it does *not* work all that well, see the detailed section on Git interop below!)
 
-[^hiccup]: I did have [one odd hiccup][init-issue] along the way due to a bug (already fixed, though not in a released version) in how Jujutsu handles a failure when initializing in a directory. While confusing, the problem should be fixed in the next release… and this is what I expected of still-relatively-early software.
+[^hiccup]: I did have [one odd hiccup][init-issue] along the way due to a bug (already fixed, though not in a released version) in how Jujutsu handles a failure when initializing in a directory. While confusing, the problem was fixed in the next release… and this is what I expected of still-relatively-early software.
 
 [init-issue]: https://github.com/martinvonz/jj/issues/1794
 
-Notionally, Jujutsu understands local `.gitignore` files and uses them. As of my initial explorations (specifically, as of 2023-07-02), it is tracking files I do not want it to in a `node_modules` directory in one project where I am trying it out: there is [a bug][gitignore-issue], plain and simple. I was able to work around it in the end, but it stymied my initial attempts to commit anything there, because I really do not want *anything* from `node_modules` in history.
+[^gitignore]: Back during my initial explorations, this was not entirely true, and Jujutsu was tracking files I do not want it to deep in a `node_modules` directory in one project where I was trying it out. There is [a bug][gitignore-issue], plain and simple. I was able to work around it in the end, but it stymied my initial attempts to commit anything there, because I really do not want *anything* from `node_modules` in history.
 
 [gitignore-issue]: https://github.com/martinvonz/jj/issues/1785
 
+[^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
 
-### Learnings from `jj log`
 
-One of the big things to wrap your head around when first coming to Jujutsu is its approach to its “revsets”, which are the fundamental elements of changes. It takes a somewhat different approach from the other <abbr title="distributed version control system">DVCS</abbr> tools I have used. Specifically: [revsets][revsets] are actually expressions in a functional language “for selecting a set of revisions”. The term and idea are borrowed directly from Mercurial (as is common in many things about Jujutsu, and about which I am quite happy).
+### Revisions and revsets
+
+One of the big things to wrap your head around when first coming to Jujutsu is its approach to its *revisions* and *revsets*, i.e. “sets of revision”. Revisions are the fundamental elements of changes in Jujutsu, not “commits” as in Git. [Revsets][revsets] are then expressions in a functional language for selecting a set of revisions. The term and idea of revsets are borrowed directly from Mercurial. (Indeed, many things about Jujutsu build on Mercurial’s choices—a decision which makes me quite happy.)
 
 [revsets]: https://github.com/martinvonz/jj/blob/f3d6616057fb3db3f9227de3da930e319d29fcc7/docs/revsets.md
 
@@ -240,8 +238,6 @@ This is all managed via [a templating system][templates], which uses “a functi
 This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: jj will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`.
 
 [templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
-
-[^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
 
 
 ## Workflow
@@ -355,12 +351,18 @@ I was working on a change to [a library][true-myth] I maintain[^fun] and decided
 
 ### Branches
 
-==TODO: branch behavior is a bit quirky-feeling at first, and definitely makes interacting with GitHub repos a bit weird==
+==TODO: describe branch behavior==
+
+In practice, I find the choice makes perfect sense in local use. Especially for the case where I am making some small and self-contained change, the name of a given branch is often just some short, [snake-case][snake-case]-ified version of the commit message. The default log template described above shows me the current set of branches, and their commit messages are usually sufficiently informative that I do not need anything else. However, there are some downsides to this approach in practice.
+
+First, the lack of a “current branch” makes for some extra friction when working with tools like GitHub, GitLab, Gitea, and so on. The GitHub model (which other tools have copied) treats branches as the basis for all work. GitHub displays warning messages about commits which are not on a branch, and will not allow you to create a pull request from an anonymous branch. In many ways, this is simply because Git itself treats  branches as special and important. GitHub is just following Git’s example of loud warnings about being on a “detached HEAD” commit, after all. ==TODO: keep going==
+
+Second, ==TODO: collaboration==
+
+[snake-case]: TODO
 
 
-## Git interop
-
-- ==TODO: `jj git push` and friends do not always seem to work==
+### Git interop
 
 {% note %}
 
@@ -368,14 +370,21 @@ Jujutsu does this by using `libgit2`, so there is effectively no risk of breakin
 
 {% endnote %}
 
+### The rough edges
+
+Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. <!-- TODO: enumerate them! -->
+
+
 ## Conclusion
 
-Jujutsu has become my version control tool of choice since I picked it up over the summer. The rough edges and gaps I described throughout this write-up notwithstanding, I *much* prefer it to working with Git directly. While it is not yet ready for mainstream adoption, it is getting there very quickly. I do not hesitate to recommend that you try it out on personal projects: indeed, I actively recommend it!
+Jujutsu has become my version control tool of choice since I picked it up over the summer. The rough edges and gaps I described throughout this write-up notwithstanding, I *much* prefer it to working with Git directly. I do not hesitate to recommend that you try it out on personal projects: indeed, I actively recommend it! Moreover, because using it in existing Git repositories is transparent, there is no inherent reason individual developers or teams cannot use it today. (Your corporate security policy might have be a different story.)
 
-I am also very eager to see what a native jj backend would look like. Today, it is “just” a much better model for working with Git repos. A world where the same level of smarts being applied to the front-end goes into the back-end too is a world well worth looking forward to.
+Is Jujutsu ready for you to roll out at your Fortune 500 company? Probably not. While it is improving at a steady clip—most of the rough edges I hit in mid-2023 are long since fixed—it is still undergoing breaking changes in design here and there, and there is effectively no material out there about how to use it yet. (This essay exists, in part, as an attempt to change that!) Beyond Jujutsu itself, there is a lot of work to be done to build an ecosystem around it. Most of the remaining rough edges are squarely to do with the lack of understanding from other tools.  The project is marching steadily toward a 1.0 release… someday. As for when that might be, there are as far as I know no plans: there is still too much to do. Above all, I am very eager to see what a native Jujutsu backend would look like. Today, it is “just” a much better model for working with Git repos. A world where the same level of smarts being applied to the front end goes into the back end too is a world well worth looking forward to.
 
 
 ## Appendix: Kaleidoscope setup and tips
+
+<!-- TODO: do I even keep this at all? -->
 
 As noted in my overall write-up, there was a quirk in being able to use [Kaleidoscope][kaleidoscope], my beloved diff-and-merge tool, for the Jujutsu diff editor. However, you *can* use Kaleidoscope that way, and I wanted to document the appropriate setup here:
 
