@@ -110,17 +110,7 @@ Watch this space: I will update and rewrite it with notes and comments about the
 
 <details><summary>Outline</summary>
 
-- [Overview](#overview)
-    - [What is Jujutsu](#what-is-jujutsu)
-    - [What is Jujutsu *not*?](#what-is-jujutsu-not)
-- [Usage notes](#usage-notes)
-    - [Setup](#setup)
-    - [Learnings from `jj log`](#learnings-from-jj-log)
-    - [Working on projects](#working-on-projects)
-- [Rewiring your Git brain](#rewiring-your-git-brain)
-    - [Changes](#changes)
-    - [Branches](#branches)
-    - [Git interop](#git-interop)
+<!-- TODO: generate outline once it’s done -->
 
 </details>
 
@@ -204,7 +194,7 @@ What `jj log` *does* show by default was still a bit non-obvious to me, even aft
 
 > Which revisions to show. Defaults to the `ui.default-revset` setting, or `@ | (remote_branches() | tags()).. | ((remote_branches() | tags())..)-` if it is not set
 
-This shows a couple other interesting features of `jj`’s approach to revsets and thus the `log` command:
+This shows a couple other interesting features of Jujutsu’s approach to revsets and thus the `log` command:
 
 1. It treats some of these operations as *functions* (`tags()`, `branches()`, etc.). I don’t have a deep handle on this yet, but I plan to come back to it. (There is a whole list [here][functions]!) This is not a surprise if you think about what “expressions in a functional language” implies… but it was a surprise to me because I had not yet read that bit of documentation.
 
@@ -218,7 +208,7 @@ This shows a couple other interesting features of `jj`’s approach to revsets a
 
     - There is also a `..` operator, which also composes appropriately (and, smartly, is the same as `..` in Git when used between two commits, `<id1>..<id2>`). The trailing version, `<id>..`, is interesting: it is “revisions that are not ancestors of `<id>`”.
 
-    This strikes me as *extremely* interesting: I think it will dodge a loooot of pain in dealing with Git histories, because it lets you ask questions about the history in a compositional way using normal set logic.
+    This strikes me as *extremely* interesting: I think it will dodge a lot of pain in dealing with Git histories, because it lets you ask questions about the history in a compositional way using normal set logic.
 
 [functions]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#functions
 [operators]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#operators
@@ -251,11 +241,11 @@ One of the really interesting bits about picking up Jujutsu is realizing just ho
 
 ### Changes
 
-In Git, you work with changes by *committing* them. This took me a fair bit to wrap my head around, but in Jujutsu, “commit” is actually basically just an alias for two other operations: `jj describe` and `jj new`, in that order. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `jj commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal operations which are much more capable than `git commit`:
+In Git, as in Subversion and Mercurial and others before, you work with changes by *committing* them. In Jujutsu, there is no first-class notion of “committing” code.[^legacy-commit] This took me a fair bit to wrap my head around! Instead, the operations involved with “committing” in Git and other such systems is split into two discrete operations in Jujutsu:  `describe` and `new`. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `jj commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal, and much more capable than `git commit`.
 
-`jj describe` works on *any* commit. It just defaults to the commit that is the current working copy. But if you want to rewrite a message earlier in your commit history, that is not a special operation like it is in Git, where you have to run an interactive rebase to do it. You just do `jj describe --revision <ID> --message "new and improved message"`. That's it. (How you choose to integrate that into your history is a matter for you and your team to decide; and we are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!)
+The `describe` command works on *any* commit. It just defaults to the commit that is the current working copy. But if you want to rewrite a message earlier in your commit history, that is not a special operation like it is in Git, where you have to run an interactive rebase to do it. You just do `jj describe --revision <ID> --message "new and improved message"`. That's it. (How you choose to integrate that into your history is a matter for you and your team to decide; and we are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!)
 
-`jj new` is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command, it is just an alias for `new`.
+The `new` command is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command, it is just an alias for `new`.
 
 ==TODO: replace this with a better recording. I’m leaving it here for my own reference for what to do better next time, as well as the config options I want!==
 
@@ -318,6 +308,8 @@ What is more, `jj new` lets you create a new commit anywhere in the history of y
 You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” unless you are in the middle of a rebase operation, which makes it inherently somewhat fragile. To be extra clear: Git allows you to check out make a new change at any point in your graph, but it creates a branch at that point, and none of the descendants of that original point in your commit graph will come along without explicitly rebasing. Moreover, even once you do an explicit rebase and cherry-pick in the commit, the original commit is still hanging out, so you likely need to delete that branch. With `jj new -A <some change ID>`, you just insert the change directly into the history and rebasing and merging every child “just works”.
 
 I never use `git reflog` so much as when doing interactive rebases! Once I got the hang of this, it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. There *is* still an escape hatch for mistakes, though: `jj op log` shows all the operations you have performed on the repo—and frankly, is much more useful and powerful than `git reflog`, because it logs *all* the operations.
+
+[^legacy-commit]: Jujutsu *used* to have a `commit` command, but `jj commit --message "hello"` was just an alias for `jj describe --message "hello" && jj new`.
 
 ### Split
 
