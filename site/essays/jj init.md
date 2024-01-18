@@ -167,11 +167,14 @@ Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just r
 
 [init-issue]: https://github.com/martinvonz/jj/issues/1794
 
-[^gitignore]: Back during my initial explorations, this was not entirely true, and Jujutsu was tracking files I do not want it to deep in a `node_modules` directory in one project where I was trying it out. There is [a bug][gitignore-issue], plain and simple. I was able to work around it in the end, but it stymied my initial attempts to commit anything there, because I really do not want *anything* from `node_modules` in history.
+[^gitignore]: Back during my initial explorations, this was not entirely true, and Jujutsu was tracking files I do not want it to deep in a `node_modules` directory in one project where I was trying it out. It turned out there was [a bug][gitignore-issue], plain and simple. I was able to work around it in the end, but it stymied my initial attempts to commit anything there, because I really do not want *anything* from `node_modules` in history. However, that bug got fixed fairly quickly. This tells you two things:
+
+    - Jujutsu is still early, though of course it is much less early than it was six months ago when I had that problem.
+    - The Jujutsu team is *great* about solving these kinds of issues, and in a timely way.
 
 [gitignore-issue]: https://github.com/martinvonz/jj/issues/1785
 
-[^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life.
+[^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life—whether using Git or Jujutsu.
 
 
 ### Revisions and revsets
@@ -241,32 +244,38 @@ One of the really interesting bits about picking up Jujutsu is realizing just ho
 
 ### Changes
 
-In Git, as in Subversion and Mercurial and others before, you work with changes by *committing* them. In Jujutsu, there is no first-class notion of “committing” code.[^legacy-commit] This took me a fair bit to wrap my head around! Instead, the operations involved with “committing” in Git and other such systems is split into two discrete operations in Jujutsu:  `describe` and `new`. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `jj commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal, and much more capable than `git commit`.
+In Git, as in Subversion and Mercurial and other version control systems before them, when you finish with a change, you *commit* it. In Jujutsu, there is no first-class notion of “committing” code.[^legacy-commit] This took me a fair bit to wrap my head around! Instead, Jujutsu has two discrete operations:  `describe` and `new`. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `git commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal, and much more capable than `git commit` as a result.
 
-The `describe` command works on *any* commit. It just defaults to the commit that is the current working copy. But if you want to rewrite a message earlier in your commit history, that is not a special operation like it is in Git, where you have to run an interactive rebase to do it. You just do `jj describe --revision <ID> --message "new and improved message"`. That's it. (How you choose to integrate that into your history is a matter for you and your team to decide; and we are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!)
+The `describe` command works on *any* commit. It defaults to the commit that is the current working copy. If you want to rewrite a message earlier in your commit history, though, that is not a special operation like it is in Git, where you have to perform an interactive rebase to do it. You just call `jj describe` with a `--revision`  (or `-r` for short, as everywhere in Jujutsu) argument. For example:
 
-The `new` command is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command, it is just an alias for `new`.
+```sh
+# long version
+$ jj describe --revision abcd --message "An updated message."
+
+# short version
+$ jj describe -r abcd -m "An updated message."
+```
+
+That's it. How you choose to integrate that into your workflow is a matter for you and your team to decide, of course. Jujutsu understands that some branches should not have their history rewritten this way, though, and lets you specify what the “immutable heads” revset should be accordingly. This actually makes it safer than Git, where the tool itself does not understand that kind of immutability and we rely on forges to protect certain branches from being targeted by a force push.
+
+The `new` command is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command,[^legacy-checkout] it is just an alias for `new`.
 
 ==TODO: replace this with a better recording. I’m leaving it here for my own reference for what to do better next time, as well as the config options I want!==
 
 <figure>
 
-<script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
+- <script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
 
 <figcaption>A demo of using <code>jj new</code> to create a three-parent merge</figcaption>
 
 </figure>
 
-- ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
-- ==TODO: `checkout` vs. `new`==
-- ==TODO: `merge` == `new` with a requirement for parent count==
-
-Courtesy of the `node_modules` issue described above, I was initially not able even to commit the very update to this item where I am writing this sentence using Jujutsu, because I could not figure out how to get it configured with [Kaleidoscope][kaleidoscope], my go-to diff and merge tool. (This turned out to be a quirk with how to launch file diffs; see [the appendix][appendix] if you’re curious.) Once I worked around that, though, I quickly came to see the upside. Most of the time with Git, I am doing one of two things:
+Most of the time with Git, I am doing one of two things:
 
 - Committing everything that is in my working copy: `git commit -a` is an *extremely* common operation for me.
 - Committing a subset of it, not by using Git's `-p` to do it via that atrocious interface, but instead opening [Fork][fork] and doing it with Fork’s staging <abbr>UI</abbr>.
 
-In the first case, Jujutsu’s choice to skip Git’s “index” looks like a very good one. In the second case, I was initially skeptical. Admittedly, my setup woes exacerbated my skepticism. Once I got things working, though, I started to come around. My workflow with Fork looks an *awful* lot like the workflow that Jujutsu pushes you toward with actually using a diff tool. With Jujutsu, though, *any* diff tool can work. Want to use Vim? [Go for it.][vim-diff]
+In the first case, Jujutsu’s choice to skip Git’s “index” looks like a very good one. In the second case, I was initially skeptical. Admittedly, my setup woes exacerbated my skepticism. Once I got things working, though, I started to come around. My workflow with [Fork][fork] looks an *awful* lot like the workflow that Jujutsu pushes you toward with actually using a diff tool. With Jujutsu, though, *any* diff tool can work. Want to use Vim? [Go for it.][vim-diff]
 
 [kaleidoscope]: https://kaleidoscope.app
 [appendix]: #appendix-kaleidoscope-setup-and-tips
@@ -311,6 +320,8 @@ I never use `git reflog` so much as when doing interactive rebases! Once I got t
 
 [^legacy-commit]: Jujutsu *used* to have a `commit` command, but `jj commit --message "hello"` was just an alias for `jj describe --message "hello" && jj new`.
 
+[^legacy-checkout]: For now, anyway! The current plan is to deprecate it and teach people, including via the <abbr title="command line interface">CLI</abbr> itself—to use `new` instead.
+
 ### Split
 
 This also leads to another significant difference with Git: around breaking up your current set of changes on disk. As I noted above, Jujutsu treats the working copy itself as a commit instead of having an “index” like Git. Git really *only* lets you break apart a set of changes with the index, using `git add --patch`. Jujutsu instead has a `split` command, which launches a diff editor and lets you select what you want to incorporate—rather like `git add --patch` does. As with all of its commands, though, `jj split` works exactly the same way on *any* commit; the working copy commit gets it “for free”.
@@ -319,15 +330,14 @@ Philosophically, I really like this. Practically, it is a slightly bumpier exper
 
 If this sounds a little complicated, that is because *it is*. There are two big downsides to this approach, philosophically elegant though it is. First, I find it comes with more cognitive load. It requires thinking in terms of negation rather than addition, and the “second commit” becomes less and less visible over time as you remove it from the first commit. Second, it requires you to repeat the operation when breaking up something into more than two commits. I semi-regularly take a single bucket of changes on disk and chunk it up into *many* more than just 2 commits, though! That significantly multiplies the cognitive overhead.
 
-Now, since I started working with jj, the team has switched the default view for working with these kinds of diffs to using `scm-diff-editor`, a <abbr title="textual user interface">TUI</abbr> which has a first-class notion of this kind of workflow.[^meld] That initially (and still as of the version included with `jj` v0.11.0, the latest as of this writing) had a bug in it which meant that any new file was *always* included (though that should be fixed in the next release), which meant `jj split` was a bit annoying to work with when adding new files.
-
-[^meld]: They also enabled support for a three-pane view in [Meld][meld], which allegedly makes it somewhat better. However, Meld is pretty janky on macOS (as [GTK][gtk] apps basically always are), and it has a *terrible* startup time for reasons that are unclear at this point, which means this was not a great experience in the first place… and Meld [crashes on launch][meld-crash] on the current version of macOS.
+Now, since I started working with jj, the team has switched the default view for working with these kinds of diffs to using `scm-diff-editor`, a <abbr title="textual user interface">TUI</abbr> which has a first-class notion of this kind of workflow.[^meld] That <abbr>TUI</abbr> works reasonably well, but is much less pleasant to use than something like the nice <abbr>GUI</abbr>s of [Fork][fork]  or [Tower][tower].
 
 [meld]: https://meld.app
 [gtk]: https://www.gtk.org
 [meld-crash]: https://github.com/yousseb/meld/issues/147
+[tower]: TODO
 
-The net is: when I want to break apart changes, at least for the moment I find myself quite tempted to go back to Fork and Git’s index. I do not think this problem is intractable, and I think the *idea* of `jj split` is right. It just—“just”!—needs some careful design work. Preferably, the `split` command would make it straightforward to generate an arbitrary number of commits from one initial commit, and it would allow progressive creation of each commit from a “vs. the previous commit” baseline. This is the upside of the index in Git: it does actually reflect the reality that there are three separate “buckets” in view when splitting apart a change: the baseline before all changes, the set of all the changes, and the set you want to include in the commit. Existing diff tools do not really handle this—other than the integrated index-aware diff tools in Git clients!
+The net is: when I want to break apart changes, at least for the moment I find myself quite tempted to go back to Fork and Git’s index. I do not think this problem is intractable, and I think the *idea* of `jj split` is right. It just—“just”!—needs some careful design work. Preferably, the `split` command would make it straightforward to generate an arbitrary number of commits from one initial commit, and it would allow progressive creation of each commit from a “vs. the previous commit” baseline. This is the upside of the index in Git: it does actually reflect the reality that there are three separate “buckets” in view when splitting apart a change: the baseline before all changes, the set of all the changes, and the set you want to include in the commit. Existing diff tools do not really handle this—other than the integrated index-aware diff tools in Git clients, which then have their own oddities when interacting with Jujutsu, since it ignores the index.
 
 - ==TODO: on `jj amend`==
 - ==TODO: on `jj merge`==
@@ -341,9 +351,13 @@ I was working on a change to [a library][true-myth] I maintain[^fun] and decided
 
 [^fun]: Yes, this is what I do for fun on my month off. At least: partially.
 
+[^meld]: They also enabled support for a three-pane view in [Meld][meld], which allegedly makes it somewhat better. However, Meld is pretty janky on macOS (as [GTK][gtk] apps basically always are), and it has a *terrible* startup time for reasons that are unclear at this point, which means this was not a great experience in the first place… and Meld [crashes on launch][meld-crash] on the current version of macOS.
+
+
 ### Branches
 
-==TODO: describe branch behavior==
+- ==TODO: describe branch behavior==
+- ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
 
 In practice, I find the choice makes perfect sense in local use. Especially for the case where I am making some small and self-contained change, the name of a given branch is often just some short, [snake-case][snake-case]-ified version of the commit message. The default log template described above shows me the current set of branches, and their commit messages are usually sufficiently informative that I do not need anything else. However, there are some downsides to this approach in practice.
 
@@ -367,6 +381,8 @@ Jujutsu does this by using `libgit2`, so there is effectively no risk of breakin
 ### The rough edges
 
 Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. <!-- TODO: enumerate them! -->
+
+<!-- TODO: expand on this a bit, too -->We are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section!
 
 
 ## Conclusion
