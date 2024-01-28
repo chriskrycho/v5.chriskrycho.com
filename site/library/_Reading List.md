@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-01-01T22:23:00-0700
+date: 2024-01-28T14:02:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -65,6 +65,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
+- [The Crux: How Leaders Become Strategists](https://bookshop.org/a/21126/9781541701243), Richard Rumelt (new)
+
 
 ### Fiction
 
@@ -94,6 +96,10 @@ These are books I have started at some point but have (at least for now!) put as
 
 
 ## 2024
+
+### Non-fiction
+
+- [Eve: How the Female Body Drove 200 Million Years of Human Evolution](https://bookshop.org/a/21126/9780385350549), Cat Bohannon (new)
 
 ### Fiction
 
