@@ -17,8 +17,12 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2024-01-29T13:05:00-0700
+updated: 2024-01-30T08:05:00-0700
 updates:
+  - at: 2024-01-30T08:05:00-0700
+    changes: >
+      Added a ton of material on branches and on CLI design.
+
   - at: 2024-01-29T13:05:00-0700
     changes: >
       Wrote up a section on “changing changes”, focused on the `squash` and `move` commands.
@@ -389,18 +393,25 @@ This eliminates another entire category of places I have historically had to rea
 
 ### Branches
 
-- ==TODO: describe branch behavior==
+Branches are another of the very significant differences between Jujutsu and Git—another place where Jujutsu acts a bit more like Mercurial, in fact. In Git, everything happens on named branches. You *can* operate on anonymous branches in Git, but it will yell at you constantly about being on a “detached `HEAD`”. Jujutsu inverts this. The normal working mode in Jujutsu is just to make a series of changes, which then naturally form “branches” in the change graph, but which do not require a name out of the gate. You can give a branch a name any time, using `jj branch create`. That name is just a pointer to the change you pointed it at, though; it does not automatically “follow” you as you do `jj new` to create new changes. (Readers familiar with Mercurial may recognize that this is very similar to its [bookmarks][hg-bookmark]), though without the notion of “active” and “inactive” bookmarks.)
+
+To update what a branch name points to, you use the `branch set` command.  To completely get rid of a branch, including removing it from any remotes you have pushed the branch to, you use the `branch delete` command. Handily, if you want to forget all your *local* branch operations (though not the changes they apply to), you can use the `branch forget` command. That can come in useful when your local copy of a branch has diverged from what is on the remote and you don’t want to reconcile the changes and just want to get back to whatever is on the remote for that branch. No need for `git reset --hard origin/<branch name>`, just `jj branch forget <branch name>` and then the next time you pull from the remote, you will get back its view of the branch!
+
+[hg-bookmark]: https://wiki.mercurial-scm.org/Bookmarks
+
 - ==TODO: in particular: you can `describe` and `branch set` and `push` without doing `new`!==
 
-In practice, I find the choice makes perfect sense in local use. Especially for the case where I am making some small and self-contained change, the name of a given branch is often just some short, [snake-case][snake-case]-ified version of the commit message. The default log template described above shows me the current set of branches, and their commit messages are usually sufficiently informative that I do not need anything else. However, there are some downsides to this approach in practice.
+Jujutsu’s defaulting to anonymous branches took me a bit to get used to, after a decade of doing all of my work in Git and of necessity having to do my work on named branches. As with so many things about Jujutsu, though, I have very much come to appreciate this default. In particular,I find this approach makes really good sense for all the steps where I am not yet sharing a set of changes with others. Even once I *am* sharing the changes with others, Git’s requirement of a branch name can start to feel kind of silly at times. Especially for the case where I am making some small and self-contained change, the name of a given branch is often just some short, [snake-case][snake-case]-ified version of the commit message. The default log template shows me the current set of branches, and their commit messages are usually sufficiently informative that I do not need anything else.
 
-First, the lack of a “current branch” makes for some extra friction when working with tools like GitHub, GitLab, Gitea, and so on. The GitHub model (which other tools have copied) treats branches as the basis for all work. GitHub displays warning messages about commits which are not on a branch, and will not allow you to create a pull request from an anonymous branch. In many ways, this is simply because Git itself treats  branches as special and important. GitHub is just following Git’s example of loud warnings about being on a “detached `HEAD`” commit, after all.
+[snake-case]: https://en.wikipedia.org/wiki/Snake_case
+
+However, there are some downsides to this approach in practice, at least given today’s ecosystem. First, the lack of a “current branch” makes for some extra friction when working with tools like GitHub, GitLab, Gitea, and so on. The GitHub model (which other tools have copied) treats branches as the basis for all work. GitHub displays warning messages about commits which are not on a branch, and will not allow you to create a pull request from an anonymous branch. In many ways, this is simply because Git itself treats  branches as special and important. GitHub is just following Git’s example of loud warnings about being on a “detached `HEAD`” commit, after all.
 
 What this means in practice, though, is that there is an extra operation required any time you want to push your changes to GitHub or a similar forge. With Git, you simply `git push` after making your changes, and since Git keeps the current branch pointing at the current `HEAD`, Git aliases `git push` with no arguments to `git push <configured remote for current branch> <current branch>`. Jujutsu does not do this, and given how its branching model works today, *cannot* do this, because named branches do not “follow” your operations. Instead, you must first explicitly set the branch to the most recent commit, `jj branch set <current branch>`. Only then can you run `jj git push`. This is only a paper cut, but it is a paper cut. ==TODO: keep going==
 
 Second, ==TODO: collaboration==
 
-[snake-case]: TODO
+Taking a step back, though, working with branches in Jujutsu is *great* overall. The `branch` command is a particularly good lens for seeing what a well-designed <abbr title="command line interface">CLI</abbr> is like and how it can make your work easier. Notice that the various commands there are all of the form `jj branch <do something>`. There are a handful of other `branch` subcommands not mentioned so far: `list`, `rename`, `track`, and `untrack`. Git has slowly improved its design here over the past few years, but still lacks the straightforward coherence of Jujutsu’s design. For one thing, all of these are *subcommands* in Jujutsu, not like Git’s mishmash of flags which can be combined in some cases but not others, and have different meanings depending on where they are deployed. For another, as with the rest of Jujutsu’s CLI structure, they use the same options to mean the same things. If you want to list all the branches which point to a given set of revisions, you use the `-r`/`--revisions` flag, exactly like you do with any other command involving revisions in Jujutsu. In general, Jujutsu has a very strong and careful distinction between *commands* (including subcommands) and *options*. Git does not. The `track` and `untrack` subcommands are a perfect example. In Jujutsu, you track a remote branch by running a command like `jj branch track <branch>@<remote>`. The corresponding Git command is `git branch --set-upstream-to <remote>/<branch>`. But to *list and filter* branches in Git, you also pass flags, e.g. `git branch --all` is the equivalent of `jj branch list --all`. The Git one is shorter, but also notably less coherent; there is no way to build a mental model for it. With Jujutsu, the mental model is obvious and consistent: `jj <command> <options>` or `jj <context> <command> <options>`, where `<context>` is something like `branch` or `workspace` or `op` (for operation).
 
 
 ### Git interop
