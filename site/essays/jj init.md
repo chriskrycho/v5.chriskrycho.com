@@ -17,8 +17,12 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2024-01-18T15:25:00-0700
+updated: 2024-01-29T08:05:00-0700
 updates:
+  - at: 2024-01-29T08:05:00-0700
+    changes: >
+      Added a section on `obslog`, and made sure the text was consistent on use of “Jujutsu” vs. `jj` for the name of the tool vs. command-line invocations.
+
   - at: 2024-01-18T15:25:00-0700
     changes: >
       Made some further structural revisions, removing some now-defunct copy about the original plan, expanded on the conclusion, and substantially expanded the conclusion.
@@ -221,23 +225,21 @@ That’s all well and good, but even with reading the operator and function guid
 
 I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to.
 
-This is all managed via [a templating system][templates], which uses “a functional language to customize output of commands”. The format is still evolving, but you can use it to customize the output today… while being aware that you may have to update it in the future. Keywords include things like `description` and `change_id`, and these can be customized in jj’s config. For example, I made these tweaks to mine:
+This is all managed via [a templating system][templates], which uses “a functional language to customize output of commands”. The format is still evolving, but you can use it to customize the output today… while being aware that you may have to update it in the future. Keywords include things like `description` and `change_id`, and these can be customized in Jujutsu’s config. For example, I made these tweaks to mine:
 
 ```toml
 [template-aliases]
 'format_short_id(id)' = 'id.shortest()'
 ```
 
-This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: jj will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`.
+This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: Jujutsu will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`.
 
 [templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
 
 
 ## Workflow
 
-Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git!
-
-One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
+Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git! One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
 
 <img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
 
@@ -272,7 +274,7 @@ The `new` command is the core of creating any new change, and it does not requir
 
 Most of the time with Git, I am doing one of two things:
 
-- Committing everything that is in my working copy: `git commit -a` is an *extremely* common operation for me.
+- Committing everything that is in my working copy: `git commit --all`[^ci-a-alias] is an *extremely* common operation for me.
 - Committing a subset of it, not by using Git's `-p` to do it via that atrocious interface, but instead opening [Fork][fork] and doing it with Fork’s staging <abbr>UI</abbr>.
 
 In the first case, Jujutsu’s choice to skip Git’s “index” looks like a very good one. In the second case, I was initially skeptical. Admittedly, my setup woes exacerbated my skepticism. Once I got things working, though, I started to come around. My workflow with [Fork][fork] looks an *awful* lot like the workflow that Jujutsu pushes you toward with actually using a diff tool. With Jujutsu, though, *any* diff tool can work. Want to use Vim? [Go for it.][vim-diff]
@@ -314,28 +316,36 @@ What is more, `jj new` lets you create a new commit anywhere in the history of y
       [aliases: before]
 ```
 
-You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” unless you are in the middle of a rebase operation, which makes it inherently somewhat fragile. To be extra clear: Git allows you to check out make a new change at any point in your graph, but it creates a branch at that point, and none of the descendants of that original point in your commit graph will come along without explicitly rebasing. Moreover, even once you do an explicit rebase and cherry-pick in the commit, the original commit is still hanging out, so you likely need to delete that branch. With `jj new -A <some change ID>`, you just insert the change directly into the history and rebasing and merging every child “just works”.
+You can do this using interactive rebasing with Git (or with history rewriting with Mercurial, though I am afraid my `hg` is rusty enough that I do not remember the details). What you cannot do in Git specifically is say “Start a new change at point *x*” unless you are in the middle of a rebase operation, which makes it inherently somewhat fragile. To be extra clear: Git allows you to check out make a new change at any point in your graph, but it creates a branch at that point, and none of the descendants of that original point in your commit graph will come along without explicitly rebasing. Moreover, even once you do an explicit rebase and cherry-pick in the commit, the original commit is still hanging out, so you likely need to delete that branch. With `jj new -A <some change ID>`, you just insert the change directly into the history. Jujutsu will rebase every child in the history, including any merges if necessary; it “just works”. That does not guarantee you will not have conflicts, of course, but Jujutsu also handles conflicts better—way better—than Git. More on that below.
 
-I never use `git reflog` so much as when doing interactive rebases! Once I got the hang of this, it basically obviates most of the need for Git’s interactive rebase mode, especially when combined with Jujutsu’s support for “first-class conflicts”. There *is* still an escape hatch for mistakes, though: `jj op log` shows all the operations you have performed on the repo—and frankly, is much more useful and powerful than `git reflog`, because it logs *all* the operations.
+I never use `git reflog` so much as when doing interactive rebases. Once I got the hang of Jujutsu’s ability to `jj new` anywhere, it basically obviates most of the places I have needed Git’s interactive rebase mode, especially when combined with Jujutsu’s aforementioned support for “first-class conflicts”. There *is* still an escape hatch for mistakes, though: `jj op log` shows all the operations you have performed on the repo—and frankly, is much more useful and powerful than `git reflog`, because it logs *all* the operations, including whenever Jujutsu updates its view of your working copy via `jj status`, when it fetches new revisions from a remote.
+
+Additionally, Jujutsu allows you to see how any change has evolved over time. This handily solves multiple pain points in Git. For example, if you have made changes in your working copy, and would like to split it into multiple changes, Git only has a binary state to let you tease those apart: staged, or not. As a result, that kind of operation ranges in difficulty from merely painful to outright impossible. With its `obslog` command,[^obslog] Jujutsu allows you to see how a change has evolved over time. Since the working copy is just one more kind of “change”, you can very easily [retrieve][obslog-rewrite] earlier state—any time you did a `jj status` check, or any other command which snapshotted the state of the repository (which is most of them). That applies equally to earlier changes. If you just rebased, for example, and realize you moved some changes to code into the wrong revision, you can use the combination of `obslog` and `new` and `restore` (or `move`) to pull it back apart into the desired sequence of changes. (This one is hard to describe, so I may put up a video of it later!)
+
+[obslog-rewrite]: https://github.com/martinvonz/jj/blob/3d0b3d57d82c5fe77527704d008256b7d995209c/docs/FAQ.md#i-accidentally-amended-the-working-copy-how-do-i-move-the-new-changes-into-its-own-commit
 
 [^legacy-commit]: Jujutsu *used* to have a `commit` command, but `jj commit --message "hello"` was just an alias for `jj describe --message "hello" && jj new`.
 
 [^legacy-checkout]: For now, anyway! The current plan is to deprecate it and teach people, including via the <abbr title="command line interface">CLI</abbr> itself—to use `new` instead.
 
+[^ci-a-alias]: Actually it is normally `git ci -am "<message>"` with `-a` for “all” (`--all`) and `-m` for the message, and smashed together to avoid any  needless extra typing.
+
+[^obslog]: The name is from Mercurial’s [evolution](https://www.mercurial-scm.org/doc/evolution/) feature, where it refers to changes which have become *obsolescent*, thus `obslog` is the “obsolescent changes log”. I recently suggested to the Jujutsu maintainers that renaming this might be helpful, because it took me six months of daily use to discover this incredibly helpful tool.
+
 ### Split
 
 This also leads to another significant difference with Git: around breaking up your current set of changes on disk. As I noted above, Jujutsu treats the working copy itself as a commit instead of having an “index” like Git. Git really *only* lets you break apart a set of changes with the index, using `git add --patch`. Jujutsu instead has a `split` command, which launches a diff editor and lets you select what you want to incorporate—rather like `git add --patch` does. As with all of its commands, though, `jj split` works exactly the same way on *any* commit; the working copy commit gets it “for free”.
 
-Philosophically, I really like this. Practically, it is a slightly bumpier experience for me than the Git approach at the moment. Recall that I do not use `git add --patch` directly. Instead, I always stage changes into the Git index using a graphical tool like [Fork][fork]. That workflow is slightly nicer than editing a diff—at least, as Jujutsu does it today. In Fork (and similar tools), you start with *no* changes and add what you want to the change set you want. By contrast, `jj split` launches a diff view with *all* the changes from a given commit present: splitting the commit involves *removing* changes from the right side of the diff so that it has only the changes you want to be present in the first of two new commits; whatever is *not* present in the final version of the right side when you close your diff editor ends up in the second commit.
+Philosophically, I really like this. Practically, though, it is a slightly bumpier experience for me than the Git approach at the moment. Recall that I do not use `git add --patch` directly. Instead, I always stage changes into the Git index using a graphical tool like [Fork][fork]. That workflow is slightly nicer than editing a diff—at least, as Jujutsu does it today. In Fork (and similar tools), you start with *no* changes and add what you want to the change set you want. By contrast, `jj split` launches a diff view with *all* the changes from a given commit present: splitting the commit involves *removing* changes from the right side of the diff so that it has only the changes you want to be present in the first of two new commits; whatever is *not* present in the final version of the right side when you close your diff editor ends up in the second commit.
 
 If this sounds a little complicated, that is because *it is*. There are two big downsides to this approach, philosophically elegant though it is. First, I find it comes with more cognitive load. It requires thinking in terms of negation rather than addition, and the “second commit” becomes less and less visible over time as you remove it from the first commit. Second, it requires you to repeat the operation when breaking up something into more than two commits. I semi-regularly take a single bucket of changes on disk and chunk it up into *many* more than just 2 commits, though! That significantly multiplies the cognitive overhead.
 
-Now, since I started working with jj, the team has switched the default view for working with these kinds of diffs to using `scm-diff-editor`, a <abbr title="textual user interface">TUI</abbr> which has a first-class notion of this kind of workflow.[^meld] That <abbr>TUI</abbr> works reasonably well, but is much less pleasant to use than something like the nice <abbr>GUI</abbr>s of [Fork][fork]  or [Tower][tower].
+Now, since I started working with Jujutsu, the team has switched the default view for working with these kinds of diffs to using `scm-diff-editor`, a <abbr title="textual user interface">TUI</abbr> which has a first-class notion of this kind of workflow.[^meld] That <abbr>TUI</abbr> works reasonably well, but is much less pleasant to use than something like the nice <abbr>GUI</abbr>s of [Fork][fork]  or [Tower][tower].
 
 [meld]: https://meld.app
 [gtk]: https://www.gtk.org
 [meld-crash]: https://github.com/yousseb/meld/issues/147
-[tower]: TODO
+[tower]: https://www.git-tower.com/mac
 
 The net is: when I want to break apart changes, at least for the moment I find myself quite tempted to go back to Fork and Git’s index. I do not think this problem is intractable, and I think the *idea* of `jj split` is right. It just—“just”!—needs some careful design work. Preferably, the `split` command would make it straightforward to generate an arbitrary number of commits from one initial commit, and it would allow progressive creation of each commit from a “vs. the previous commit” baseline. This is the upside of the index in Git: it does actually reflect the reality that there are three separate “buckets” in view when splitting apart a change: the baseline before all changes, the set of all the changes, and the set you want to include in the commit. Existing diff tools do not really handle this—other than the integrated index-aware diff tools in Git clients, which then have their own oddities when interacting with Jujutsu, since it ignores the index.
 
@@ -345,11 +355,11 @@ The net is: when I want to break apart changes, at least for the moment I find m
 
 Another huge feature of Jujutsu is it support for *first-class conflicts*. Instead of a conflict resulting in a nightmare that has to be resolved before you can move on, Jujutsu can incorporate both the merge and its resolution (whether manual or automatic) directly into commit history. Just having the conflicts in history does not seem that weird. “Okay, you committed the text conflict markers from git, neat.” But: having the conflict and its resolution in history, especially when Jujutsu figured out how to do that resolution for you, as part of a rebase operation? That is just plain *wild*.
 
-I was working on a change to [a library][true-myth] I maintain[^fun] and decided to flip the order in which I landed two changes to `package.json`. Unfortunately, those changes were adjacent to each other in the file and so flipping the order they would land in seemed likely to be non-trivial. It was actually *extremely* trivial. First of all, the flow itself was great: instead of launching an editor for interactive rebase, I just explicitly told Jujutsu to do the rebases: `jj rebase --revision <source> --destination <target>`. I did that for each of the items I wanted to reorder and I was done. (I could also have rebased a whole series of commits; I just did not need to in this case.) Literally, that was it: because Jujutsu had agreed with me that <abbr>JSON</abbr> is a terrible format for changes like this and committed a merge conflict, then *resolved* the merge conflict via the next rebase command, and simply carried on.
+A while back, I was working on a change to [a library][true-myth] I maintain[^fun] and decided to flip the order in which I landed two changes to `package.json`. Unfortunately, those changes were adjacent to each other in the file and so flipping the order they would land in seemed likely to be painfully difficult. It was actually trivial. First of all, the flow itself was great: instead of launching an editor for interactive rebase, I just explicitly told Jujutsu to do the rebases: `jj rebase --revision <source> --destination <target>`. I did that for each of the items I wanted to reorder and I was done. (I could also have rebased a whole series of commits; I just did not need to in this case.) Literally, that was it: because Jujutsu had agreed with me that <abbr>JSON</abbr> is a terrible format for changes like this and committed a merge conflict, then *resolved* the merge conflict via the next rebase command, and simply carried on.
 
 [true-myth]: https://github.com/true-myth/true-myth
 
-[^fun]: Yes, this is what I do for fun on my month off. At least: partially.
+[^fun]: Yes, this is what I do for fun on my time off. At least: partially.
 
 [^meld]: They also enabled support for a three-pane view in [Meld][meld], which allegedly makes it somewhat better. However, Meld is pretty janky on macOS (as [GTK][gtk] apps basically always are), and it has a *terrible* startup time for reasons that are unclear at this point, which means this was not a great experience in the first place… and Meld [crashes on launch][meld-crash] on the current version of macOS.
 
@@ -371,6 +381,8 @@ Second, ==TODO: collaboration==
 
 
 ### Git interop
+
+==TODO: introduce this section==
 
 {% note %}
 
