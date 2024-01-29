@@ -225,11 +225,7 @@ This shows a couple other interesting features of Jujutsu’s approach to revset
 [operators]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#operators
 [distinction]: https://github.com/martinvonz/jj/discussions/1905#discussioncomment-6533386
 
-That’s all well and good, but even with reading the operator and function guides, it still took me a bit to actually quite make sense out of the default output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at.
-
-I also have yet to figure out how to see the equivalent of `git log`’s full commit message; when I `jj log`, it prints only the summary line, and the `jj log --help` output did not give me any hints about what I am missing! There *is* a template language for log output, and there are hints here and there in the docs for how it works, but the format is explicitly unstable and intentionally undocumented. Happily, the Git interop means I can just run `git log` instead if I need to.
-
-This is all managed via [a templating system][templates], which uses “a functional language to customize output of commands”. The format is still evolving, but you can use it to customize the output today… while being aware that you may have to update it in the future. Keywords include things like `description` and `change_id`, and these can be customized in Jujutsu’s config. For example, I made these tweaks to mine:
+Jujutsu also provides a really capable [templating system][templates], which uses “a functional language to customize output of commands”. That functional language is built on top of the functional language that the whole language uses for describing revisions (described in brief above!), so you can use the same kinds of operators in templates for output as you do for navigating and manipulating the repository. The template format is still evolving, but you can use it to customize the output today… while being aware that you may have to update it in the future. Keywords include things like `description` and `change_id`, and these can be customized in Jujutsu’s config. For example, I made this tweak to mine, overriding the built-in `format_short_id` alias:
 
 ```toml
 [template-aliases]
@@ -238,7 +234,11 @@ This is all managed via [a templating system][templates], which uses “a functi
 
 This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: Jujutsu will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`.
 
+Additionally, there are a number of built-in templates. For example, to see the equivalent of Git’s `log --pretty` you can use Jujutsu’s `log -T builtin_log_detailed` (`-T` for “template”; you can also use the long from `--template`). You can define your own templates in a `[templates]` section, or add your own `[template-aliases]` block, using the template language and any combination of further functions you define yourself.
+
 [templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
+
+That’s all well and good, but even with reading the docs for the revset language and the templating language, it still took me a bit to actually quite make sense out of the default output, much less to get a handle on how to customize the output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at. And, to be fair to Jujutsu, both the revset language and the templating language are *incredibly* easier to understand and work with than the corresponding Git materials.
 
 
 ## Workflow
