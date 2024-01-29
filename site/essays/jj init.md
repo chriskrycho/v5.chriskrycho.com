@@ -17,8 +17,12 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2024-01-29T08:05:00-0700
+updated: 2024-01-29T13:05:00-0700
 updates:
+  - at: 2024-01-29T13:05:00-0700
+    changes: >
+      Wrote up a section on “changing changes”, focused on the `squash` and `move` commands.
+
   - at: 2024-01-29T08:05:00-0700
     changes: >
       Added a section on `obslog`, and made sure the text was consistent on use of “Jujutsu” vs. `jj` for the name of the tool vs. command-line invocations.
@@ -266,7 +270,7 @@ The `new` command is the core of creating any new change, and it does not requir
 
 <figure>
 
-- <script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
+<script async id="asciicast-SUJdMwnKJqjUqAKvkjyQT3HGe" src="https://asciinema.org/a/SUJdMwnKJqjUqAKvkjyQT3HGe.js" data-speed="1.5" data-theme="nord"></script>
 
 <figcaption>A demo of using <code>jj new</code> to create a three-parent merge</figcaption>
 
@@ -349,11 +353,9 @@ Now, since I started working with Jujutsu, the team has switched the default vie
 
 The net is: when I want to break apart changes, at least for the moment I find myself quite tempted to go back to Fork and Git’s index. I do not think this problem is intractable, and I think the *idea* of `jj split` is right. It just—“just”!—needs some careful design work. Preferably, the `split` command would make it straightforward to generate an arbitrary number of commits from one initial commit, and it would allow progressive creation of each commit from a “vs. the previous commit” baseline. This is the upside of the index in Git: it does actually reflect the reality that there are three separate “buckets” in view when splitting apart a change: the baseline before all changes, the set of all the changes, and the set you want to include in the commit. Existing diff tools do not really handle this—other than the integrated index-aware diff tools in Git clients, which then have their own oddities when interacting with Jujutsu, since it ignores the index.
 
-- ==TODO: on `jj amend`==
-- ==TODO: on `jj merge`==
-- ==TODO: on `jj squash`==
+### First-class conflicts
 
-Another huge feature of Jujutsu is it support for *first-class conflicts*. Instead of a conflict resulting in a nightmare that has to be resolved before you can move on, Jujutsu can incorporate both the merge and its resolution (whether manual or automatic) directly into commit history. Just having the conflicts in history does not seem that weird. “Okay, you committed the text conflict markers from git, neat.” But: having the conflict and its resolution in history, especially when Jujutsu figured out how to do that resolution for you, as part of a rebase operation? That is just plain *wild*.
+Another huge feature of Jujutsu is its support for *first-class conflicts*. Instead of a conflict resulting in a nightmare that has to be resolved before you can move on, Jujutsu can incorporate both the merge and its resolution (whether manual or automatic) directly into commit history. Just having the conflicts in history does not seem that weird. “Okay, you committed the text conflict markers from git, neat.” But: having the conflict and its resolution in history, especially when Jujutsu figured out how to do that resolution for you, as part of a rebase operation? That is just plain *wild*.
 
 A while back, I was working on a change to [a library][true-myth] I maintain[^fun] and decided to flip the order in which I landed two changes to `package.json`. Unfortunately, those changes were adjacent to each other in the file and so flipping the order they would land in seemed likely to be painfully difficult. It was actually trivial. First of all, the flow itself was great: instead of launching an editor for interactive rebase, I just explicitly told Jujutsu to do the rebases: `jj rebase --revision <source> --destination <target>`. I did that for each of the items I wanted to reorder and I was done. (I could also have rebased a whole series of commits; I just did not need to in this case.) Literally, that was it: because Jujutsu had agreed with me that <abbr>JSON</abbr> is a terrible format for changes like this and committed a merge conflict, then *resolved* the merge conflict via the next rebase command, and simply carried on.
 
@@ -362,6 +364,27 @@ A while back, I was working on a change to [a library][true-myth] I maintain[^fu
 [^fun]: Yes, this is what I do for fun on my time off. At least: partially.
 
 [^meld]: They also enabled support for a three-pane view in [Meld][meld], which allegedly makes it somewhat better. However, Meld is pretty janky on macOS (as [GTK][gtk] apps basically always are), and it has a *terrible* startup time for reasons that are unclear at this point, which means this was not a great experience in the first place… and Meld [crashes on launch][meld-crash] on the current version of macOS.
+
+
+### Changing changes
+
+There are a few other niceties which fall out of Jujutsu’s distinction between changes and commits, especially when combined with first-class conflicts.
+
+First up, `jj squash` takes all the changes in a given commit and, well, *squashes* them into the parent of that commit.[^amend-alias] Given a working copy with a bunch of changes, you can move them straight into the parent by just typing `jj squash`. If you want to squash some change besides the one you are currently editing, you just pass the `-r`/`--revision` flag, as with most Jujutsu commands: `jj squash -r abc` will squash the change identified by `abc` into its parent. You can also use the `--interactive` (`-i` for short) argument to move just a part of a change into its parent. Using that flag will pop up your configured diff editor just like `jj split` will and allow you to select which items you want to move into the parent and which you want to keep separate. Or, for an even faster option, if you have specific files to move while leaving others alone, and you do not need to handle subsections of those files, you can pass them as the final arguments to the command, like `jj squash ./path/a ./path/c`.
+
+As it turns out, this ability to  move part of one change into a different change is a really useful thing to be able to do in general. I find it particularly handy when building up a set of changes where I want each one to be coherent—say, for the sake of having a commit history which is easy for others to review. You *could* do that by doing some combination of `jj split` and `jj new --after <some change ID>` and then doing `jj rebase` to move around the changes… but as usual, Jujutsu has a better way. The `squash` command is actually just a shortcut for Jujutsu’s `move` command with some arguments filled in. The `move` command has `--from` and `--to` arguments which let you specify which revisions you want to move between. When you run `jj squash` with no other arguments, that is the equivalent of `jj move --from @ --to @-`. When you run `jj squash -r abc`, that is the equivalent of `jj move --from abc --to abc-`. Since it takes those arguments explicitly, though, `move` lets you move changes around between *any* changes. They do not need to be anywhere near each other in history.
+
+<figure>
+
+<script async id="asciicast-634399" src="https://asciinema.org/a/634399.js"></script>
+
+<figcaption>A demo of using <code>jj move</code></figcaption>
+
+</figure>
+
+This eliminates another entire category of places I have historically had to reach for `git rebase --interactive`. While there are still a few times where I think Jujutsu could use something akin to Git’s interactive rebase mode, they are legitimately *few*, and mostly to do with wanting to be able to do batch reordering of commits. To be fair, though, I only want to do that perhaps a few times a year.
+
+[^amend-alias]: For people coming from Git, there is also an `amend` alias, so you can use `jj amend` instead, but it does the same thing as `squash` and in fact the help text for `jj amend` makes it clear that it just *is* `squash`.
 
 
 ### Branches
