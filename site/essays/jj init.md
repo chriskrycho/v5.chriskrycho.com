@@ -17,8 +17,12 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2024-01-30T09:55:00-0700
+updated: 2024-01-31T08:05:00-0700
 updates:
+  - at: 2024-01-31T08:05:00-0700
+    changes: >
+      Finished describing first-class conflicts and added asciinema recordings showing conflicts with merges and rebases.
+
   - at: 2024-01-30T09:55:00-0700
     changes: >
       Added a ton of material on branches and on CLI design.
@@ -363,9 +367,28 @@ Another huge feature of Jujutsu is its support for *first-class conflicts*. Inst
 
 A while back, I was working on a change to [a library][true-myth] I maintain[^fun] and decided to flip the order in which I landed two changes to `package.json`. Unfortunately, those changes were adjacent to each other in the file and so flipping the order they would land in seemed likely to be painfully difficult. It was actually trivial. First of all, the flow itself was great: instead of launching an editor for interactive rebase, I just explicitly told Jujutsu to do the rebases: `jj rebase --revision <source> --destination <target>`. I did that for each of the items I wanted to reorder and I was done. (I could also have rebased a whole series of commits; I just did not need to in this case.) Literally, that was it: because Jujutsu had agreed with me that <abbr>JSON</abbr> is a terrible format for changes like this and committed a merge conflict, then *resolved* the merge conflict via the next rebase command, and simply carried on.
 
-==TODO: elaborate a bit on this==
-
 [true-myth]: https://github.com/true-myth/true-myth
+
+At a mechanical level, Jujutsu will add conflict markers to a file, not unlike those Git adds in merge conflicts. However, unlike Git, those are not just markers in a file. They are part of a system which understands what conflicts are semantically, and therefore also what *resolving* a conflict is semantically. This not only produces nice automatic outcomes like the one I described with my library above; it also means that you have more options for how to accomplish a resolution, and for how to treat a conflict. Git trains you to see a conflict between two branches as a problem. It requires you to solve that problem before moving on. Jujutsu *allows* you to treat a conflict as a problem which much be resolved, but it does not *require* it. Resolving conflicts in merges in Git is often quite messy. It is even worse when rebasing. I have spent an incredibly amount of time attempting merges only to give up and `git reset --hard <before the merge>`, and possibly even more time trying to resolve a conflicting in a rebase only to bail with `git rebase --abort`. Jujutsu allows you to create a merge, leave the conflict in place, and then introduce a resolution in the *next* commit, telling the whole story with your change history. Likewise with a rebase: depending on whether you require all your intermediate revisions to be able to be built or would rather show a history including conflicts, you could choose to rebase, leave all the intermediate changes conflicted, and resolve it only at the end.
+
+<figure>
+
+<script async id="asciicast-Uyfv9qcPTfVeNyoVCINpq5Qfq" src="https://asciinema.org/a/Uyfv9qcPTfVeNyoVCINpq5Qfq.js"></script>
+
+<figcaption>Conflict resolution with merges</figcaption>
+
+</figure>
+
+<figure>
+
+<script async id="asciicast-k5pFEM07wX1F9ZxcQsLnMTGCd" src="https://asciinema.org/a/k5pFEM07wX1F9ZxcQsLnMTGCd.js"></script>
+
+<figcaption>Conflict resolution with rebases</figcaption>
+
+</figure>
+
+
+Conflicts are inevitable when you have enough people working on a repository. Honestly: conflicts happen when I am working *alone* in a repository, as suggested by my anecdote above. Having this ability to keep working with the repository even in a conflicted state, as well as to resolve the conflicts in a more interactive and iterative way is something I now find difficult to live without.
 
 [^fun]: Yes, this is what I do for fun on my time off. At least: partially.
 
