@@ -17,9 +17,9 @@ tags:
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
 started: 2023-07-01T18:42:00-0600
-updated: 2024-01-30T08:05:00-0700
+updated: 2024-01-30T09:55:00-0700
 updates:
-  - at: 2024-01-30T08:05:00-0700
+  - at: 2024-01-30T09:55:00-0700
     changes: >
       Added a ton of material on branches and on CLI design.
 
