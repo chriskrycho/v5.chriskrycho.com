@@ -426,6 +426,18 @@ Branches are another of the very significant differences between Jujutsu and Git
 
 To update what a branch name points to, you use the `branch set` command.  To completely get rid of a branch, including removing it from any remotes you have pushed the branch to, you use the `branch delete` command. Handily, if you want to forget all your *local* branch operations (though not the changes they apply to), you can use the `branch forget` command. That can come in useful when your local copy of a branch has diverged from what is on the remote and you don’t want to reconcile the changes and just want to get back to whatever is on the remote for that branch. No need for `git reset --hard origin/<branch name>`, just `jj branch forget <branch name>` and then the next time you pull from the remote, you will get back its view of the branch!
 
+<figure class='embed'>
+
+<div class='embed__wrapper'>
+
+<iframe class='embed__content' src="https://social.jvns.ca/@b0rk/111851540697408119/embed" allowfullscreen="allowfullscreen" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"></iframe>
+
+</div>
+
+<figcaption>It’s not just me who wants this!</figcaption>
+
+</figure>
+
 Jujutsu’s defaulting to anonymous branches took me a bit to get used to, after a decade of doing all of my work in Git and of necessity having to do my work on named branches. As with so many things about Jujutsu, though, I have very much come to appreciate this default. In particular,I find this approach makes really good sense for all the steps where I am not yet sharing a set of changes with others. Even once I *am* sharing the changes with others, Git’s requirement of a branch name can start to feel kind of silly at times. Especially for the case where I am making some small and self-contained change, the name of a given branch is often just some short, [snake-case][snake-case]-ified version of the commit message. The default log template shows me the current set of branches, and their commit messages are usually sufficiently informative that I do not need anything else.
 
 [snake-case]: https://en.wikipedia.org/wiki/Snake_case
