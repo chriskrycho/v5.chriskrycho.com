@@ -2,12 +2,17 @@
 title: jj init
 subtitle: >
   What if we actually *could* replace Git? Jujutsu might give us a real shot.
+
 qualifiers:
   audience: >
     People who have worked with Git or other modern version control systems like Mercurial, Darcs, Pijul, Bazaar, etc., and have at least a basic idea of how they work.
 
 summary: >
   Jujutsu (`jj`) is a new version control system from a software developer at Google. It seems promising, so I am giving it a try on a few personal projects.
+
+thanks: >
+  [Waleed Khan (<b>@arxanas</b>)](https://github.com/arxanas)), [Joy Reynolds (<b>@joyously</b>)](https://github.com/joyously), and [Isabella Basso (<b>@isinyaaa</b>)](https://github.com/isinyaaa) all took time to read and comment on earlier drafts of this mammoth essay, and it is substantially better for their feedback!
+
 tags:
   - software development
   - tools
@@ -284,7 +289,7 @@ The `new` command is the core of creating any new change, and it does not requir
 
 </figure>
 
-Most of the time with Git, I am doing one of two things:
+Most of the time with Git, I am doing one of two things when I go to commit a change:
 
 - Committing everything that is in my working copy: `git commit --all`[^ci-a-alias] is an *extremely* common operation for me.
 - Committing a subset of it, not by using Git's `-p` to do it via that atrocious interface, but instead opening [Fork][fork] and doing it with Fork’s staging <abbr>UI</abbr>.
@@ -337,6 +342,7 @@ Additionally, Jujutsu allows you to see how any change has evolved over time. Th
 [obslog-rewrite]: https://github.com/martinvonz/jj/blob/3d0b3d57d82c5fe77527704d008256b7d995209c/docs/FAQ.md#i-accidentally-amended-the-working-copy-how-do-i-move-the-new-changes-into-its-own-commit
 
 [^legacy-commands]: If you look at the `jj help` output today, you will notice that Jujutsu has `checkout`, `merge`, and `commit` commands. Each is just an alias for a behavior using `new`, `describe`, or both, though:
+
     - `checkout` is just an alias for `new`
     - `commit` is just a shortcut for `jj describe -m "<some message>" && jj new`
     - `merge` is just `jj new` with an implicit `@` as the first argument.
@@ -420,7 +426,6 @@ This eliminates another entire category of places I have historically had to rea
 
 [^amend-alias]: For people coming from Git, there is also an `amend` alias, so you can use `jj amend` instead, but it does the same thing as `squash` and in fact the help text for `jj amend` makes it clear that it just *is* `squash`.
 
-
 ### Branches
 
 Branches are another of the very significant differences between Jujutsu and Git—another place where Jujutsu acts a bit more like Mercurial, in fact. In Git, everything happens on named branches. You *can* operate on anonymous branches in Git, but it will yell at you constantly about being on a “detached `HEAD`”. Jujutsu inverts this. The normal working mode in Jujutsu is just to make a series of changes, which then naturally form “branches” in the change graph, but which do not require a name out of the gate. You can give a branch a name any time, using `jj branch create`. That name is just a pointer to the change you pointed it at, though; it does not automatically “follow” you as you do `jj new` to create new changes. (Readers familiar with Mercurial may recognize that this is very similar to its [bookmarks][hg-bookmark]), though without the notion of “active” and “inactive” bookmarks.)
@@ -449,7 +454,9 @@ However, there are some downsides to this approach in practice, at least given t
 
 What this means in practice, though, is that there is an extra operation required any time you want to push your changes to GitHub or a similar forge. With Git, you simply `git push` after making your changes. (More on Git interop below.) Since Git keeps the current branch pointing at the current `HEAD`, Git aliases `git push` with no arguments to `git push <configured remote for current branch> <current branch>`. Jujutsu does not do this, and given how its branching model works today, *cannot* do this, because named branches do not “follow” your operations. Instead, you must first explicitly set the branch to the commit you want to push. In the most common case, where you are pushing your latest set of changes, that is just `jj branch set <branch name>`; it takes the current change automatically. Only then can you run `jj git push` to actually get an update. This is only a paper cut, but it is a paper cut. It is one extra command every single time you go to push a change to share with others, or even just to get it off of your machine.[^off-machine] That might not seem like a lot, but it adds up.
 
-There is a real design challenge here, though. On the one hand, the main time I use branches in Jujutsu at this point is for pushing to a Git forge like GitHub. I rarely feel the need for them for just working on a set of changes, where `jj log` and `jj new <some revision>` give me everything I need. In that sense, it seems like having the branch “follow along” with my work would be natural: if I have gone to the trouble of creating a name for a branch and pushing it to some remote, then it is very likely I want to keep it up to date as I add changes to the branch I named. On the other hand, there is a big upside to not doing that automatically: pushing changes becomes an intentional act. I cannot count the number of times I have been working on what is essentially just an experiment in a Git repo, forgotten to change from the `foo-feature` to a new `foo-feature-experiment` branch, and then done a `git push`. Especially if I am collaborating with others on `foo-feature`, now I have to force push back to the previous to reset things, and let others know to wait for that, etc. That never happens with the Jujutsu model. Since updating a named branch is always an intentional act, you can experiment to your heart’s content, and know you will never *accidentally* push changes to a branch that way. I go back and forth: Maybe the little bit of extra friction is worth it.
+There is a real tension in the design space here, though. On the one hand, the main time I use branches in Jujutsu at this point is for pushing to a Git forge like GitHub. I rarely feel the need for them for just working on a set of changes, where `jj log` and `jj new <some revision>` give me everything I need. In that sense, it seems like having the branch “follow along” with my work would be natural: if I have gone to the trouble of creating a name for a branch and pushing it to some remote, then it is very likely I want to keep it up to date as I add changes to the branch I named. On the other hand, there is a big upside to not doing that automatically: pushing changes becomes an intentional act. I cannot count the number of times I have been working on what is essentially just an experiment in a Git repo, forgotten to change from the `foo-feature` to a new `foo-feature-experiment` branch, and then done a `git push`. Especially if I am collaborating with others on `foo-feature`, now I have to force push back to the previous to reset things, and let others know to wait for that, etc. That never happens with the Jujutsu model. Since updating a named branch is always an intentional act, you can experiment to your heart’s content, and know you will never *accidentally* push changes to a branch that way. I go back and forth: Maybe the little bit of extra friction when you *do* want to push a branch is worth it for all the times you do not have to consciously move a branch backwards to.
+
+As it happens, Jujutsu also has a handy little feature for when you have done a bunch of work on an anonymous branch and are ready to push it to a Git forge. The `jj git push` subcommand takes an optional `--change`/`-c` flag, which creates a branch based on your current change ID. It works really well when you only have a single change you are going to push and then continually work on, or any time you are content that your current change will remain the tip of the branch. It works a little *less* well when you are going to add further changes later, because you need to then actually use the branch name with `jj branch set push/<change ID> -r <revision>`.
 
 Taking a step back, though, working with branches in Jujutsu is *great* overall. The `branch` command is a particularly good lens for seeing what a well-designed <abbr title="command line interface">CLI</abbr> is like and how it can make your work easier. Notice that the various commands there are all of the form `jj branch <do something>`. There are a handful of other `branch` subcommands not mentioned so far: `list`, `rename`, `track`, and `untrack`. Git has slowly improved its design here over the past few years, but still lacks the straightforward coherence of Jujutsu’s design. For one thing, all of these are *subcommands* in Jujutsu, not like Git’s mishmash of flags which can be combined in some cases but not others, and have different meanings depending on where they are deployed. For another, as with the rest of Jujutsu’s CLI structure, they use the same options to mean the same things. If you want to list all the branches which point to a given set of revisions, you use the `-r`/`--revisions` flag, exactly like you do with any other command involving revisions in Jujutsu. In general, Jujutsu has a very strong and careful distinction between *commands* (including subcommands) and *options*. Git does not. The `track` and `untrack` subcommands are a perfect example. In Jujutsu, you track a remote branch by running a command like `jj branch track <branch>@<remote>`. The corresponding Git command is `git branch --set-upstream-to <remote>/<branch>`. But to *list and filter* branches in Git, you also pass flags, e.g. `git branch --all` is the equivalent of `jj branch list --all`. The Git one is shorter, but also notably less coherent; there is no way to build a mental model for it. With Jujutsu, the mental model is obvious and consistent: `jj <command> <options>` or `jj <context> <command> <options>`, where `<context>` is something like `branch` or `workspace` or `op` (for operation).
 
@@ -478,6 +485,16 @@ Jujutsu’s Git integration currently runs on `libgit2`, so there is effectively
 Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. ==TODO: enumerate them!==
 
 We are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section! ==TODO: expand on this==
+
+Some of Jujutsu’s very nice features also make working on existing Git forges a bit wonky. For example, notice what each of these operations has in common:
+
+- Inserting changes at arbitrary points.
+- Rewording a change description.
+- Rebasing a series of changes.
+- Splitting apart commits.
+- Combining existing commits.
+
+They are all changes to history. If you have pushed a branch to a remote, doing any of these operations with changes on that branch and pushing to a remote again will be a *force push*. Most mainstream Git forges handle force pushing pretty badly. In particular, GitHub has some support for showing diffs between force pushes, but it is very basic and loses all conversational context. As a result, any workflow which makes heavy use of force pushes will be bumpy. Jujutsu is not to blame for the gaps in those tools, but it certainly does expose them.
 
 
 ## Conclusion
