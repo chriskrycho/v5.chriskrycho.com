@@ -472,9 +472,9 @@ Jujutsu’s Git integration currently runs on `libgit2`, so there is effectively
 
 ### The rough edges
 
-Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. <!-- TODO: enumerate them! -->
+Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. ==TODO: enumerate them!==
 
-We are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section! <!-- TODO: expand on this a bit, too -->
+We are going to want new tooling which actually understands Jujutsu. This will be a recurring theme in this section! ==TODO: expand on this==
 
 
 ## Conclusion
