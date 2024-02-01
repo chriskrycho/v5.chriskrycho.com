@@ -11,7 +11,7 @@ summary: >
   Jujutsu (`jj`) is a new version control system from a software developer at Google. It seems promising, so I am giving it a try on a few personal projects.
 
 thanks: >
-  [Waleed Khan (<b>@arxanas</b>)](https://github.com/arxanas)), [Joy Reynolds (<b>@joyously</b>)](https://github.com/joyously), and [Isabella Basso (<b>@isinyaaa</b>)](https://github.com/isinyaaa) all took time to read and comment on earlier drafts of this mammoth essay, and it is substantially better for their feedback!
+  [Waleed Khan (@arxanas)](https://github.com/arxanas), [Joy Reynolds (@joyously)](https://github.com/joyously), and [Isabella Basso (@isinyaaa)](https://github.com/isinyaaa) all took time to read and comment on earlier drafts of this mammoth essay, and it is substantially better for their feedback!
 
 tags:
   - software development
