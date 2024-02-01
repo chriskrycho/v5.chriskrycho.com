@@ -203,10 +203,10 @@ The first place you are likely to run into this is in the `log` command, since `
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
-To show the full revision history for a given commit, you can use a leading `:`, which indicates “parents”. (A trailing `:` indicates “children”.) Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log -r :<id>`. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the identifier you need to use), so I could write `jj log -r :mwoq`, and this will show all the parents of `mwoq`. Like Git, `@` is a shortcut for “the current head commit”. Net, the equivalent command for “show me all the history for this commit” is:
+To show the full revision history for a given commit, you can use a leading `::`, which indicates “parents”. (A trailing `::` indicates “children”.) Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log -r ::<id>`. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the identifier you need to use), so I could write `jj log -r ::mwoq`, and this will show all the parents of `mwoq`. Like Git, `@` is a shortcut for “the current head commit”. Net, the equivalent command for “show me all the history for this commit” is:
 
 ```sh
-$ jj log -r :@
+$ jj log -r ::@
 ```
 
 What `jj log` *does* show by default was still a bit non-obvious to me, even after that. *Which* remote commits added for context, and why? The answer is in the `help` output for `jj log`’s `-r`/`--revisions` option:
@@ -223,7 +223,7 @@ This shows a couple other interesting features of Jujutsu’s approach to revset
     
     - It supports union `|`, intersection `&`, and difference `~` operators.
     
-    - The aforementioned `:<id>` for ancestors has a matching `<id>:` for descendants and `<id1>:<id2>` for a directed acyclic graph range between two commits. Notably, `<id1>:<id2>` is just `<id1>: & :<id2>`.
+    - The aforementioned `::<id>` for ancestors has a matching `<id>::` for descendants and `<id1>:<id2>` for a directed acyclic graph range between two commits. Notably, `<id1>:<id2>` is just `<id1>:: & ::<id2>`.
 
     - There is also a `..` operator, which also composes appropriately (and, smartly, is the same as `..` in Git when used between two commits, `<id1>..<id2>`). The trailing version, `<id>..`, is interesting: it is “revisions that are not ancestors of `<id>`”.
 
@@ -246,7 +246,7 @@ Additionally, there are a number of built-in templates. For example, to see the 
 
 [templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
 
-That’s all well and good, but even with reading the docs for the revset language and the templating language, it still took me a bit to actually quite make sense out of the default output, much less to get a handle on how to customize the output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. If and as the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at. And, to be fair to Jujutsu, both the revset language and the templating language are *incredibly* easier to understand and work with than the corresponding Git materials.
+That’s all well and good, but even with reading the docs for the revset language and the templating language, it still took me a bit to actually quite make sense out of the default output, much less to get a handle on how to customize the output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. As the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at. And, to be fair to Jujutsu, both the revset language and the templating language are *incredibly* easier to understand and work with than the corresponding Git materials.
 
 
 ## Workflow
