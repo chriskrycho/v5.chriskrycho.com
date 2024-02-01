@@ -272,7 +272,7 @@ $ jj describe -r abcd -m "An updated message."
 
 That's it. How you choose to integrate that into your workflow is a matter for you and your team to decide, of course. Jujutsu understands that some branches should not have their history rewritten this way, though, and lets you specify what the “immutable heads” revset should be accordingly. This actually makes it safer than Git, where the tool itself does not understand that kind of immutability and we rely on forges to protect certain branches from being targeted by a force push.
 
-The `new` command is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Another is that while Jujutsu *has* a `checkout` command,[^legacy-checkout] it is just an alias for `new`.
+The `new` command is the core of creating any new change, and it does not require there to be only a single parent. You can create a new change with as many parents as is appropriate! Is a given change logically the child of four other changes, with identifiers `a`, `b`, `c`, and `d`? `jj new a b c d`. That's it. One neat consequence that falls out of this: `jj merge` is just `jj new` with the requirement that it have at least two parents. Likewise, you do not need a `commit` command, because you can describe a given change at any time with `describe`, and you can create a new change at any time with `new`. If you already know the next thing you are going to do, you can even describe it by passing `-m`/`--message` to `new` when creating the new change![^legacy-commands]
 
 ==TODO: replace this with a better recording. I’m leaving it here for my own reference for what to do better next time, as well as the config options I want!==
 
@@ -336,9 +336,12 @@ Additionally, Jujutsu allows you to see how any change has evolved over time. Th
 
 [obslog-rewrite]: https://github.com/martinvonz/jj/blob/3d0b3d57d82c5fe77527704d008256b7d995209c/docs/FAQ.md#i-accidentally-amended-the-working-copy-how-do-i-move-the-new-changes-into-its-own-commit
 
-[^legacy-commit]: Jujutsu *used* to have a `commit` command, but `jj commit --message "hello"` was just an alias for `jj describe --message "hello" && jj new`.
-
-[^legacy-checkout]: For now, anyway! The current plan is to deprecate it and teach people, including via the <abbr title="command line interface">CLI</abbr> itself—to use `new` instead.
+[^legacy-commands]: If you look at the `jj help` output today, you will notice that Jujutsu has `checkout`, `merge`, and `commit` commands. Each is just an alias for a behavior using `new`, `describe`, or both, though:
+    - `checkout` is just an alias for `new`
+    - `commit` is just a shortcut for `jj describe -m "<some message>" && jj new`
+    - `merge` is just `jj new` with an implicit `@` as the first argument.
+    
+    All of these are going to go away in the medium term with both documentation and output from the <abbr title="command line interface">CLI</abbr> that teach people to use `new` instead.
 
 [^ci-a-alias]: Actually it is normally `git ci -am "<message>"` with `-a` for “all” (`--all`) and `-m` for the message, and smashed together to avoid any  needless extra typing.
 
