@@ -177,9 +177,6 @@ Finally, there is a thing Jujutsu is not *yet*: a standalone <abbr>VCS</abbr> re
 
 That is all interesting enough philosophically, but for a tool that, if successful, will end up being one of a software developer’s most-used tools, there is an even more important question: *What is it actually like to use?*
 
-
-### Setup
-
 Setup is painless. Running `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools, Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
 
 Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™, right down to correctly handling `.gitignore` files. I have since run `jj init` in every Git repository I am actively working on, and have had no issues.[^gitignore] It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which mostly works well. (For where it does *not* work all that well, see the detailed section on Git interop below!)
@@ -263,7 +260,7 @@ Once a project is initialized, working on it is fairly straightforward, though t
 
 ### Changes
 
-In Git, as in Subversion and Mercurial and other version control systems before them, when you finish with a change, you *commit* it. In Jujutsu, there is no first-class notion of “committing” code.[^legacy-commit] This took me a fair bit to wrap my head around! Instead, Jujutsu has two discrete operations:  `describe` and `new`. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `git commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal, and much more capable than `git commit` as a result.
+In Git, as in Subversion and Mercurial and other version control systems before them, when you finish with a change, you *commit* it. In Jujutsu, there is no first-class notion of “committing” code. This took me a fair bit to wrap my head around! Instead, Jujutsu has two discrete operations:  `describe` and `new`. `jj describe` lets you provide a descriptive message for any change. `jj new` starts a new change. You can think of `git commit --message "something I did"` as being equivalent to `jj describe --message "some I did" && jj new`. This falls out of the fact that `jj describe` and `jj new` are orthogonal, and much more capable than `git commit` as a result.
 
 The `describe` command works on *any* commit. It defaults to the commit that is the current working copy. If you want to rewrite a message earlier in your commit history, though, that is not a special operation like it is in Git, where you have to perform an interactive rebase to do it. You just call `jj describe` with a `--revision`  (or `-r` for short, as everywhere in Jujutsu) argument. For example:
 
@@ -294,7 +291,7 @@ Most of the time with Git, I am doing one of two things when I go to commit a ch
 - Committing everything that is in my working copy: `git commit --all`[^ci-a-alias] is an *extremely* common operation for me.
 - Committing a subset of it, not by using Git's `-p` to do it via that atrocious interface, but instead opening [Fork][fork] and doing it with Fork’s staging <abbr>UI</abbr>.
 
-In the first case, Jujutsu’s choice to skip Git’s “index” looks like a very good one. In the second case, I was initially skeptical. Admittedly, my setup woes exacerbated my skepticism. Once I got things working, though, I started to come around. My workflow with [Fork][fork] looks an *awful* lot like the workflow that Jujutsu pushes you toward with actually using a diff tool. With Jujutsu, though, *any* diff tool can work. Want to use Vim? [Go for it.][vim-diff]
+In the first case, Jujutsu’s choice to skip Git’s “index” looks like a very good one. In the second case, I was initially skeptical. Once I got the hang of working this way, though, I started to come around. My workflow with [Fork][fork] looks an *awful* lot like the workflow that Jujutsu pushes you toward with actually using a diff tool. With Jujutsu, though, *any* diff tool can work. Want to use Vim? [Go for it.][vim-diff]
 
 [kaleidoscope]: https://kaleidoscope.app
 [appendix]: #appendix-kaleidoscope-setup-and-tips
