@@ -350,7 +350,7 @@ This also leads to another significant difference with Git: around breaking up y
 
 Philosophically, I really like this. Practically, though, it is a slightly bumpier experience for me than the Git approach at the moment. Recall that I do not use `git add --patch` directly. Instead, I always stage changes into the Git index using a graphical tool like [Fork][fork]. That workflow is slightly nicer than editing a diff—at least, as Jujutsu does it today. In Fork (and similar tools), you start with *no* changes and add what you want to the change set you want. By contrast, `jj split` launches a diff view with *all* the changes from a given commit present: splitting the commit involves *removing* changes from the right side of the diff so that it has only the changes you want to be present in the first of two new commits; whatever is *not* present in the final version of the right side when you close your diff editor ends up in the second commit.
 
-If this sounds a little complicated, that is because *it is*. There are two big downsides to this approach, philosophically elegant though it is. First, I find it comes with more cognitive load. It requires thinking in terms of negation rather than addition, and the “second commit” becomes less and less visible over time as you remove it from the first commit. Second, it requires you to repeat the operation when breaking up something into more than two commits. I semi-regularly take a single bucket of changes on disk and chunk it up into *many* more than just 2 commits, though! That significantly multiplies the cognitive overhead.
+If this sounds a little complicated, that is because it is—at least for today. That qualifier is important, because a lot of this is down to tooling, and we have about as much dedicated tooling for Jujutsu as Git had in 2007, which is to say: not much. Qualifier notwithstanding, and philosophical elegance notwithstanding, the complexity is still real here in early 2024. There are two big downsides as things stand. First, I find it comes with more cognitive load. It requires thinking in terms of negation rather than addition, and the “second commit” becomes less and less visible over time as you remove it from the first commit. Second, it requires you to repeat the operation when breaking up something into more than two commits. I semi-regularly take a single bucket of changes on disk and chunk it up into *many* more than just 2 commits, though! That significantly multiplies the cognitive overhead.
 
 Now, since I started working with Jujutsu, the team has switched the default view for working with these kinds of diffs to using `scm-diff-editor`, a <abbr title="textual user interface">TUI</abbr> which has a first-class notion of this kind of workflow.[^meld] That <abbr>TUI</abbr> works reasonably well, but is much less pleasant to use than something like the nice <abbr>GUI</abbr>s of [Fork][fork]  or [Tower][tower].
 
@@ -455,13 +455,20 @@ Taking a step back, though, working with branches in Jujutsu is *great* overall.
 
 ### Git interop
 
-==TODO: introduce this section==
+Jujutsu’s native back end exists, and every feature has to work with it, so it will some day be a real feature of the <abbr>VCS</abbr>. Today, though, the Git backend is the only one you should use. So much so that if you try to run `jj init` without passing `--git`, Jujutsu won’t let you by default:
 
-{% note %}
+```sh
+> jj init
+Error: The native backend is disallowed by default.
+Hint: Did you mean to pass `--git`?
+Set `ui.allow-init-native` to allow initializing a repo with the native backend.
+```
 
-Jujutsu does this by using `libgit2`, so there is effectively no risk of breaking your repo because of a Jujutsu–Git interop issue. To be sure, there can be bugs in Jujutsu itself, and you can do things using Jujutsu that will leave you in a bit of a mess, but the same is true of *any* tool which works on your Git repository. The risk might be very slightly higher here than with your average <abbr>GUI</abbr> Git client, since Jujutsu is mapping different semantics onto the repository, but I have fairly high confidence in the project at this point, and I think you can too.
+In practice, you are going to be using the Git backend. In practice, I have been using the Git backend for the last seven months, full time, on every one of my personal repositories and all the open source projects I have contributed to. With the sole exception of someone watching me while we pair, no one has noticed, because the Git integration is that solid and robust.
 
-{% endnote %}
+Jujutsu’s Git integration currently runs on `libgit2`, so there is effectively no risk of breaking your repo because of a Jujutsu–Git interop issue. To be sure, there can be bugs in Jujutsu itself, and you can do things using Jujutsu that will leave you in a bit of a mess, but the same is true of *any* tool which works on your Git repository. The risk might be very slightly higher here than with your average <abbr>GUI</abbr> Git client, since Jujutsu is mapping different semantics onto the repository, but I have extremely high confidence in the project at this point, and I think you can too.
+
+==TODO: finish section==
 
 ### The rough edges
 
