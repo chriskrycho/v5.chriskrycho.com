@@ -203,7 +203,7 @@ The first place you are likely to run into this is in the `log` command, since `
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
-To show the full revision history for a given commit, you can use a leading `::`, which indicates “parents”. (A trailing `::` indicates “children”.) Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log -r ::<id>`. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the identifier you need to use), so I could write `jj log -r ::mwoq`, and this will show all the parents of `mwoq`. Like Git, `@` is a shortcut for “the current head commit”. Net, the equivalent command for “show me all the history for this commit” is:
+To show the full revision history for a given commit, you can use a leading `::`, which indicates “ancestors”. (A trailing `::` indicates “descendants”.) Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log -r ::<id>`. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the identifier you need to use), so I could write `jj log -r ::mwoq`, and this will show all the ancestors of `mwoq`. Like Git, `@` is a shortcut for “the current head commit”. Net, the equivalent command for “show me all the history for this commit” is:
 
 ```sh
 $ jj log -r ::@
