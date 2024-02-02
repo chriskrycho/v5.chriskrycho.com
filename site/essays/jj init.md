@@ -175,9 +175,9 @@ Now: into the details!
 
 That is all interesting enough philosophically, but for a tool that, if successful, will end up being one of a software developer’s most-used tools, there is an even more important question: *What is it actually like to use?*
 
-Setup is painless. Running `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools, Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
+Setup is painless. Running `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools,[^rust] Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
 
-Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™, right down to correctly handling `.gitignore` files. I have since run `jj init` in every Git repository I am actively working on, and have had no issues.[^gitignore] It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which mostly works well.
+Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™, right down to correctly handling `.gitignore` files. I have since run `jj init` in every Git repository I am actively working on, and have had no issues in many months. It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which works well.
 
 <figure>
 
@@ -191,18 +191,13 @@ Once a project is initialized, working on it is fairly straightforward, though t
 
 <img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
 
+[^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life—whether using Git or Jujutsu.
+
+[^rust]: Yes, it is written in Rust, and it is pretty darn fast. But Git is written in C, and is *also* pretty darn fast. There are of course some safety upsides to using Rust here, but Rust is not particularly core to Jujutsu’s “branding”. It was just a fairly obvious choice for a project like this at this point—which is exactly what I have long hoped Rust would become!
+
 [^hiccup]: I did have [one odd hiccup][init-issue] along the way due to a bug (already fixed, though not in a released version) in how Jujutsu handles a failure when initializing in a directory. While confusing, the problem was fixed in the next release… and this is what I expected of still-relatively-early software.
 
 [init-issue]: https://github.com/martinvonz/jj/issues/1794
-
-[^gitignore]: Back during my initial explorations, this was not entirely true, and Jujutsu was tracking files I do not want it to deep in a `node_modules` directory in one project where I was trying it out. It turned out there was [a bug][gitignore-issue], plain and simple. I was able to work around it in the end, but it stymied my initial attempts to commit anything there, because I really do not want *anything* from `node_modules` in history. However, that bug got fixed fairly quickly. This tells you two things:
-
-    - Jujutsu is still early, though of course it is much less early than it was six months ago when I had that problem.
-    - The Jujutsu team is *great* about solving these kinds of issues, and in a timely way.
-
-[gitignore-issue]: https://github.com/martinvonz/jj/issues/1785
-
-[^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life—whether using Git or Jujutsu.
 
 
 ### Revisions and revsets
