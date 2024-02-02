@@ -18,12 +18,18 @@ tags:
   - tools
   - version control
   - Jujutsu
+  - Git
 
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
+date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
-updated: 2024-02-01T17:25:00-0700
+updated: 2024-02-02T08:35:00-0700
 updates:
+  - at: 2024-02-02T08:35:00-0700
+    changes: >
+      Reworked section on revsets and prepared for publication!
+
   - at: 2024-02-01T17:25:00-0700
     changes: >
       Finished a draft! Added one and updated another asciinema for some of the basics, finished up the tooling section, and made a bunch of small edits.
@@ -111,8 +117,6 @@ updates:
   - at: 2023-07-02T21:43:00-0600
     changes: >
       Added some initial notes about initial setup bumps. And a *lot* of notes on the things I learned in trying to fix those!
-
-draft: true
 
 ---
 
