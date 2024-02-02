@@ -22,6 +22,10 @@ tags:
 
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
+discuss:
+  hn: https://news.ycombinator.com/item?id=39232456
+  lobsters: https://lobste.rs/s/pvvbhm/jj_init
+
 date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
 updated: 2024-02-02T08:35:00-0700
