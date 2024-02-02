@@ -8,7 +8,7 @@ qualifiers:
     People who have worked with Git or other modern version control systems like Mercurial, Darcs, Pijul, Bazaar, etc., and have at least a basic idea of how they work.
 
 summary: >
-  Jujutsu (`jj`) is a new version control system from a software developer at Google. It seems promising, so I am giving it a try on a few personal projects.
+  Jujutsu (`jj`) is a new version control system from a software developer at Google. I have been using it full time for 6 months. Here’s why you should switch, too.
 
 thanks: >
   [Waleed Khan (@arxanas)](https://github.com/arxanas), [Joy Reynolds (@joyously)](https://github.com/joyously), and [Isabella Basso (@isinyaaa)](https://github.com/isinyaaa) all took time to read and comment on earlier drafts of this mammoth essay, and it is substantially better for their feedback!
@@ -25,6 +25,11 @@ image: https://cdn.chriskrycho.com/images/unlearn.jpg
 discuss:
   hn: https://news.ycombinator.com/item?id=39232456
   lobsters: https://lobste.rs/s/pvvbhm/jj_init
+  li: https://www.linkedin.com/feed/update/urn:li:activity:6923287174180212736/
+  twitter: https://twitter.com/chriskrycho/status/1753489910600712246?s=20
+  mastodon: https://mastodon.social/@chriskrycho/111863369362392797
+  bluesky: https://bsky.app/profile/chriskrycho.com/post/3kkhe5pxuek27
+  threads: https://www.threads.net/@chriskrycho/post/C22w19OgBJV
 
 date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
@@ -361,7 +366,7 @@ Additionally, Jujutsu allows you to see how any change has evolved over time. Th
     - `checkout` is just an alias for `new`
     - `commit` is just a shortcut for `jj describe -m "<some message>" && jj new`
     - `merge` is just `jj new` with an implicit `@` as the first argument.
-    
+
     All of these are going to go away in the medium term with both documentation and output from the <abbr title="command line interface">CLI</abbr> that teach people to use `new` instead.
 
 [^ci-a-alias]: Actually it is normally `git ci -am "<message>"` with `-a` for “all” (`--all`) and `-m` for the message, and smashed together to avoid any  needless extra typing.
@@ -528,6 +533,21 @@ Jujutsu has become my version control tool of choice since I picked it up over t
 
 Is Jujutsu ready for you to roll out at your Fortune 500 company? Probably not. While it is improving at a steady clip—most of the rough edges I hit in mid-2023 are long since fixed—it is still undergoing breaking changes in design here and there, and there is effectively no material out there about how to use it yet. (This essay exists, in part, as an attempt to change that!) Beyond Jujutsu itself, there is a lot of work to be done to build an ecosystem around it. Most of the remaining rough edges are squarely to do with the lack of understanding from other tools.  The project is marching steadily toward a 1.0 release… someday. As for when that might be, there are as far as I know no plans: there is still too much to do. Above all, I am very eager to see what a native Jujutsu backend would look like. Today, it is “just” a much better model for working with Git repos. A world where the same level of smarts being applied to the front end goes into the back end too is a world well worth looking forward to.
 
+{% callout %}
+
+Thoughts, comments, or questions? Discuss:
+
+- [Hacker News]({{discuss.hn}})
+- [lobste.rs]({{discuss.lobsters}})
+- [LinkedIn]({{discuss.li}})
+- [Mastodon]({{discuss.mastodon}})
+- [Threads]({{discuss.threads}})
+- [Bluesky]({{discuss.bluesky}})
+- [Twitter/X]({{discuss.twitter}})
+
+
+{% endcallout %}
+
 [^death-by-google]: Google is famous for killing *products*, but less so developer tools.
 
 ## Appendix: Kaleidoscope setup and tips
@@ -541,7 +561,7 @@ As alluded to above, I have done my best to make it possible to use [Kaleidoscop
     diff-editor = ["ksdiff", "--wait", "$left", "--no-snapshot", "$right", "--no-snapshot"]
     merge-editor = ["ksdiff", "--merge", "--output", "$output", "--base", "$base", "--", "$left", "--snapshot", "$right", "--snapshot"]
     ```
-    
+
     I will note, however, that I have still not been 100% successful using Kaleidoscope this way. In particular, `jj split` does not give me the desired results; it often ends up reporting “Nothing changed” when I close Kaleidoscope.
 
 2. When opening a *file* diff, you must <kbd>Option</kbd><kbd>⎇</kbd>-double-click, *not* do a normal double-click, so that it will preserve the `--no-snapshot` behavior. That `--no-snapshot` argument to `ksdiff` is what makes the resulting diff editable, which is what Jujutsu needs for its just-edit-a-diff workflow. I have been in touch with the Kaleidoscope folks about this, which is how I even know about this workaround; they are evaluating whether it is possible to make the normal double-click flow preserve the `--no-snapshot` in this case so you do not *have* to do the workaround.
