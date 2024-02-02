@@ -126,16 +126,20 @@ Some background: Along with an experiment with [Mac-native text editors][experim
 
 {% endcallout %}
 
-{% note %}
-
-Watch this space: I will update and rewrite it with notes and comments about the experience, as well as expanding on these thoughts. This is a “garden”-style post and will grow organically over time!
-
-{% endnote %}
-
-
 <details><summary>Outline</summary>
 
-<!-- TODO: generate outline once it’s done -->
+- [Overview](#overview)
+- [Using Jujutsu](#using-jujutsu)
+    - [Revisions and revsets](#revisions-and-revsets)
+    - [Changes](#changes)
+    - [Split](#split)
+    - [First-class conflicts](#first-class-conflicts)
+    - [Changing changes](#changing-changes)
+    - [Branches](#branches)
+    - [Git interop](#git-interop)
+    - [Is it ready?](#is-it-ready)
+- [Conclusion](#conclusion)
+- [Appendix: Kaleidoscope setup and tips](#appendix-kaleidoscope-setup-and-tips)
 
 </details>
 
@@ -192,6 +196,10 @@ Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just r
 <figcaption>Cloning <a href="https://true-myth.js.org">true-myth</a> and initializing it as a Jujutsu repo</figcaption>
 
 </figure>
+
+Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git! One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
+
+<img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
 
 [^hiccup]: I did have [one odd hiccup][init-issue] along the way due to a bug (already fixed, though not in a released version) in how Jujutsu handles a failure when initializing in a directory. While confusing, the problem was fixed in the next release… and this is what I expected of still-relatively-early software.
 
@@ -261,13 +269,6 @@ Additionally, there are a number of built-in templates. For example, to see the 
 [templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
 
 That’s all well and good, but even with reading the docs for the revset language and the templating language, it still took me a bit to actually quite make sense out of the default output, much less to get a handle on how to customize the output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. As the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at. And, to be fair to Jujutsu, both the revset language and the templating language are *incredibly* easier to understand and work with than the corresponding Git materials.
-
-
-## Workflow
-
-Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git! One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
-
-<img src="https://cdn.chriskrycho.com/images/unlearn.gif" alt="Yoda saying “You must unlearn what you have learned.”">
 
 
 ### Changes
