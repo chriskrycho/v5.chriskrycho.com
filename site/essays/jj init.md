@@ -116,15 +116,12 @@ draft: true
 
 ---
 
-
-## Overview
-
-[Jujutsu][jj] is one possible answer to a question I first started asking [most of a decade ago]([next-gen-vcs]): *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?* To answer that question, it is important to have a sense of what those lessons are.
+[Jujutsu][jj] is a new version control system from a software engineer at Google, where it is on track to replace Google’s existing  with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Jujutsu offers one possible answer to a question I first started asking [most of a decade ago][next-gen-vcs]: *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?*
 
 [jj]: https://github.com/martinvonz/jj#command-line-completion
 [next-gen-vcs]: https://v4.chriskrycho.com/2014/next-gen-vcs.html
 
-This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">VCS</abbr>.
+To answer that question, it is important to have a sense of what those lessons are. This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">VCS</abbr>.
 
 The problems with Git are many, though. Most of all, its infamously terrible command line interface results in a terrible user experience. In my experience, very few working  developers have a good mental model for Git. Instead, they have a handful of commands they have learned over the years: enough to get by, and little more. The common rejoinder is that developers ought to learn how Git works internally—that everything will make more sense that way.
 
