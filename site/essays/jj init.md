@@ -116,36 +116,13 @@ draft: true
 
 ---
 
-{% callout %}
-
-Some background: Along with an experiment with [Mac-native text editors][experiment] over a extended stretch of time off in July 2023, I spent some time learning [Jujutsu][jj]—and it became my daily driver for version control. Jujutsu is a new version control system from a software engineer at Google, which already has a good future there as a next-gen development beyond Google’s history with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. Indeed, I think—hope!—it has a possible future as the [next generation of version control][next-gen-vcs].
-
-[experiment]: https://v5.chriskrycho.com/journal/trying-bbedit-and-nova/
-[jj]: https://github.com/martinvonz/jj#command-line-completion
-[next-gen-vcs]: https://v4.chriskrycho.com/2014/next-gen-vcs.html
-
-{% endcallout %}
-
-<details><summary>Outline</summary>
-
-- [Overview](#overview)
-- [Using Jujutsu](#using-jujutsu)
-    - [Revisions and revsets](#revisions-and-revsets)
-    - [Changes](#changes)
-    - [Split](#split)
-    - [First-class conflicts](#first-class-conflicts)
-    - [Changing changes](#changing-changes)
-    - [Branches](#branches)
-    - [Git interop](#git-interop)
-    - [Is it ready?](#is-it-ready)
-- [Conclusion](#conclusion)
-- [Appendix: Kaleidoscope setup and tips](#appendix-kaleidoscope-setup-and-tips)
-
-</details>
 
 ## Overview
 
-Jujutsu is one possible answer to a question I first started asking [most of a decade ago]([next-gen-vcs]): *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?* To answer that question, it is important to have a sense of what those lessons are.
+[Jujutsu][jj] is one possible answer to a question I first started asking [most of a decade ago]([next-gen-vcs]): *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?* To answer that question, it is important to have a sense of what those lessons are.
+
+[jj]: https://github.com/martinvonz/jj#command-line-completion
+[next-gen-vcs]: https://v4.chriskrycho.com/2014/next-gen-vcs.html
 
 This is trickier than it might seem. Git has substantially the most “mind-share” in the current generation; most software developers learn it and use it not because they have done any investigation of the tool and its alternatives but because it is a _de facto_ standard: a situation which arose in no small part because of its “killer app” in the form of GitHub. Developers who have been around for more than a decade or so have likely seen more than one version control system—but there are many, *many* developers for whom Git was their first and, so far, last <abbr title="version control system">VCS</abbr>.
 
@@ -168,9 +145,7 @@ Jujutsu is two things:
 [pijul]: https://pijul.org
 [darcs]: https://darcs.net
 
-The combo of those means that you can use it today in your existing Git repos, as I have been for the past six months, and that it is a *really good* experience using it that way. (Better than Git!) Moreover, given it is being actively developed at and by Google for use as a replacement for its current custom <abbr>VCS</abbr> setup, it seems like it has a good future ahead of it.
-
-Net: at a minimum you get a better experience for using Git with it. At a maximum, you get an incredibly smooth and shallow on-ramp to what I earnestly hope is the future of version control.
+The combo of those means that you can use it today in your existing Git repos, as I have been for the past six months, and that it is a *really good* experience using it that way. (Better than Git!) Moreover, given it is being actively developed at and by Google for use as a replacement for its current custom <abbr>VCS</abbr> setup, it seems like it has a good future ahead of it. Net: at a minimum you get a better experience for using Git with it. At a maximum, you get an incredibly smooth and shallow on-ramp to what I earnestly hope is the future of version control.
 
 Jujutsu is *not* trying to do every interesting thing that other Git-alternative <abbr>DVCS</abbr> systems out there do. Unlike [Pijul][pijul], for example, it does not work from a theory of patches such that the order changes are applied is irrelevant. However, as I noted above and show in detail below, jj *does* distinguish between *changes* and *revisions*, and has first-class support for conflicts, which means that many of the benefits of Pijul’s handling come along anyway.
 
@@ -179,6 +154,24 @@ Unlike [Fossil][fossil], Jujutsu is also not trying to be an all-in-one tool. Ac
 [fossil]: https://fossil-scm.org/home/doc/trunk/www/index.wiki
 
 Finally, there is a thing Jujutsu is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports its own, “native” back end for the sake of keeping that door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
+
+Now: into the details!
+
+<details><summary>Outline</summary>
+
+- [Using Jujutsu](#using-jujutsu)
+    - [Revisions and revsets](#revisions-and-revsets)
+    - [Changes](#changes)
+    - [Split](#split)
+    - [First-class conflicts](#first-class-conflicts)
+    - [Changing changes](#changing-changes)
+    - [Branches](#branches)
+    - [Git interop](#git-interop)
+    - [Is it ready?](#is-it-ready)
+- [Conclusion](#conclusion)
+- [Appendix: Kaleidoscope setup and tips](#appendix-kaleidoscope-setup-and-tips)
+
+</details>
 
 
 ## Using Jujutsu
