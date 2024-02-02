@@ -18,12 +18,18 @@ tags:
   - tools
   - version control
   - Jujutsu
+  - Git
 
 image: https://cdn.chriskrycho.com/images/unlearn.jpg
 
+date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
-updated: 2024-02-01T17:25:00-0700
+updated: 2024-02-02T08:35:00-0700
 updates:
+  - at: 2024-02-02T08:35:00-0700
+    changes: >
+      Reworked section on revsets and prepared for publication!
+
   - at: 2024-02-01T17:25:00-0700
     changes: >
       Finished a draft! Added one and updated another asciinema for some of the basics, finished up the tooling section, and made a bunch of small edits.
@@ -112,8 +118,6 @@ updates:
     changes: >
       Added some initial notes about initial setup bumps. And a *lot* of notes on the things I learned in trying to fix those!
 
-draft: true
-
 ---
 
 [Jujutsu][jj] is a new version control system from a software engineer at Google, where it is on track to replace Google’s existing  with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. It offers one possible answer to a question I first started asking [most of a decade ago][next-gen-vcs]: *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?*
@@ -189,7 +193,7 @@ Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just r
 
 </figure>
 
-Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git! The first of those is how it approach revisions and changes.
+Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git!
 
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life—whether using Git or Jujutsu.
 
@@ -202,43 +206,34 @@ Once a project is initialized, working on it is fairly straightforward, though t
 
 ### Revisions and revsets
 
-One of the big things to wrap your head around when first coming to Jujutsu is its approach to its *revisions* and *revsets*, i.e. “sets of revision”. Revisions are the fundamental elements of changes in Jujutsu, not “commits” as in Git. [Revsets][revsets] are then expressions in a functional language for selecting a set of revisions. The term and idea of revsets are borrowed directly from Mercurial. (Indeed, many things about Jujutsu build on Mercurial’s choices—a decision which makes me quite happy.)
+One of the first things to wrap your head around when first coming to Jujutsu is its approach to its *revisions* and *revsets*, i.e. “sets of revision”. Revisions are the fundamental elements of changes in Jujutsu, not “commits” as in Git. [Revsets][revsets] are then expressions in a functional language for selecting a set of revisions. Both the idea and the terminology are borrowed directly from Mercurial, though the implementation is totally new. (Many things about Jujutsu borrow from Mercurial—a decision which makes me quite happy.) The vast majority of Jujutsu commands take a `--revision`/`-r` command to select a revision. So far that might not sound particularly different from Git’s notion of commits and commit ranges, and they are indeed similar at a surface level. However, the differences start showing up pretty quickly, both in terms of working with revisions and in terms of how revisions are a different notion of *change* than a Git commit.
 
 [revsets]: https://github.com/martinvonz/jj/blob/f3d6616057fb3db3f9227de3da930e319d29fcc7/docs/revsets.md
 
-The first place you are likely to run into this is in the `log` command, since `jj log` is likely to be something you do pretty early in trying it out. (Certainly it was for me.) I initially thought that the `jj log` only included the information since initializing Jujutsu in a given directory, rather than the whole Git history, which was quite surprising. In fact, the view I was seeing was entirely down to a default behavior of `jj log`, totally independent of Git: the specific revset it chooses to display. Per [the tutorial][tutorial]’s note on the `log` command specifically:
+The first place you are likely to experience how revisions and revsets are different—and neat!—is with the `log` command, since looking at the commit log is likely to be something you do pretty early in using  a new version control tool. (Certainly it was for me.) When you clone a repo and initialize Jujutsu in it and then run `jj log`, you will see something rather different from what `git log` would show you—indeed, rather different from anything I even know *how* to get `git log` to show you.  Per [the tutorial][tutorial]’s note on the `log` command specifically:
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
-To show the full revision history for a given commit, you can use a leading `::`, which indicates “ancestors”. (A trailing `::` indicates “descendants”.) Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log -r ::<id>`. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the identifier you need to use), so I could write `jj log -r ::mwoq`, and this will show all the ancestors of `mwoq`. Like Git, `@` is a shortcut for “the current head commit”. Net, the equivalent command for “show me all the history for this commit” is:
-
-```sh
-$ jj log -r ::@
-```
-
 What `jj log` *does* show by default was still a bit non-obvious to me, even after that. *Which* remote commits added for context, and why? The answer is in the `help` output for `jj log`’s `-r`/`--revisions` option:
 
-> Which revisions to show. Defaults to the `ui.default-revset` setting, or `@ | (remote_branches() | tags()).. | ((remote_branches() | tags())..)-` if it is not set
+> Which revisions to show. Defaults to the `ui.default-revset` setting, or `@ | ancestors(immutable_heads().., 2) | heads(immutable_heads())` if it is not set
 
-This shows a couple other interesting features of Jujutsu’s approach to revsets and thus the `log` command:
-
-First, it treats some of these operations as *functions* (`tags()`, `branches()`, etc.). I don’t have a deep handle on this yet, but I plan to come back to it. (There is a whole list [here][functions]!) This is not a surprise if you think about what “expressions in a functional language” implies… but it was a surprise to me because I had not yet read that bit of documentation.
-
-Second, it makes “operators” [a first-class idea][operators]. Git *has* operators, but this goes a fair bit further:
+I will come back to this revset in a moment to explain it in detail. First, though, this shows a couple other interesting features of Jujutsu’s approach to revsets and thus the `log` command. First, it treats some of these operations as *functions* (`tags()`, `branches()`, etc.). I don’t have a deep handle on this yet, but I plan to come back to it. (There is a whole list [here][functions]!) This is not a surprise if you think about what “expressions in a functional language” implies… but it was a surprise to me because I had not yet read that bit of documentation. Second, it makes “operators” [a first-class idea][operators]. Git *has* operators, but this goes a fair bit further:
 
 - It includes `-` for the parent and `+` for a child, and these stack and compose, so writing `@-+-+` is the same as `@` as long as the history is linear. ([That is an important distinction!][distinction])
 
 - It supports union `|`, intersection `&`, and difference `~` operators.
 
-- The aforementioned `::<id>` for ancestors has a matching `<id>::` for descendants and `<id1>:<id2>` for a directed acyclic graph range between two commits. Notably, `<id1>:<id2>` is just `<id1>:: & ::<id2>`.
+- A leading `::`, which means “ancestors”. A trailing `::` means “descendants”. Using `::` between commits gives a view of the directed acyclic graph range between two commits. Notably, `<id1>::<id2>` is just `<id1>:: & ::<id2>`.
 
-- There is also a `..` operator, which also composes appropriately (and, smartly, is the same as `..` in Git when used between two commits, `<id1>..<id2>`). The trailing version, `<id>..`, is interesting: it is “revisions that are not ancestors of `<id>`”.
+- There is also a `..` operator, which also composes appropriately (and, smartly, is the same as `..` in Git when used between two commits, `<id1>..<id2>`). The trailing version, `<id>..`, is interesting: it is “revisions that are not ancestors of `<id>`”. Likewise, the leading version `..<id>` is all revisions which *are* ancestors of `<id>`
 
-This strikes me as *extremely* interesting: I think it will dodge a lot of pain in dealing with Git histories, because it lets you ask questions about the history in a compositional way using normal set logic.
+Now, I used `<id>` here, but throughout these actually operate on revsets, so you could use them with any revset. For example, `..tags()` will give you the ancestors of all tags. This strikes me as *extremely* interesting: I think it will dodge a lot of pain in dealing with Git histories, because it lets you ask questions about the history in a compositional way using normal set logic. To make that concrete: back in October, Jujutsu contributor @aseipp [pointed out][gh-pages] how easy it is to use this to get a log which excludes `gh-pages`. (Anyone who has worked on a repo with a `gh-pages` branch knows how annoying it is to have it cluttering up your view of the rest of your Git history!) First, you define an alias for the revset that only includes the `gh-pages` branch: `'gh-pages' = 'remote_branches(exact:"gh-pages")'`. Then you can *exclude* it from other queries with the `~` negation operator: `jj log -r "all() ~ ancestors(gh-pages)"` would give you a log view for every revision with `all()` and then exclude every ancestor of the `gh-pages` branch.
 
 [functions]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#functions
 [operators]: https://github.com/martinvonz/jj/blob/main/docs/revsets.md#operators
 [distinction]: https://github.com/martinvonz/jj/discussions/1905#discussioncomment-6533386
+[gh-pages]: https://discord.com/channels/968932220549103686/969291218347524238/1169016692651864144
 
 Jujutsu also provides a really capable [templating system][templates], which uses “a functional language to customize output of commands”. That functional language is built on top of the functional language that the whole language uses for describing revisions (described in brief above!), so you can use the same kinds of operators in templates for output as you do for navigating and manipulating the repository. The template format is still evolving, but you can use it to customize the output today… while being aware that you may have to update it in the future. Keywords include things like `description` and `change_id`, and these can be customized in Jujutsu’s config. For example, I made this tweak to mine, overriding the built-in `format_short_id` alias:
 
@@ -247,13 +242,36 @@ Jujutsu also provides a really capable [templating system][templates], which use
 'format_short_id(id)' = 'id.shortest()'
 ```
 
-This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: Jujutsu will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`.
-
-Additionally, there are a number of built-in templates. For example, to see the equivalent of Git’s `log --pretty` you can use Jujutsu’s `log -T builtin_log_detailed` (`-T` for “template”; you can also use the long from `--template`). You can define your own templates in a `[templates]` section, or add your own `[template-aliases]` block, using the template language and any combination of further functions you define yourself.
+This gives me super short names for changes and commits, which makes for a *much* nicer experience when reading and working with both in the log output: Jujutsu will give me the shortest unique identifier for a given change or commit, which I can then use with commands like `jj new`. Additionally, there are a number of built-in templates. For example, to see the equivalent of Git’s `log --pretty` you can use Jujutsu’s `log -T builtin_log_detailed` (`-T` for “template”; you can also use the long from `--template`). You can define your own templates in a `[templates]` section, or add your own `[template-aliases]` block, using the template language and any combination of further functions you define yourself.
 
 [templates]: https://martinvonz.github.io/jj/v0.10.0/templates/
 
 That’s all well and good, but even with reading the docs for the revset language and the templating language, it still took me a bit to actually quite make sense out of the default output, much less to get a handle on how to customize the output. Right now, the docs have a bit of a flavor of <i>explanations for people who already have a pretty good handle on version control systems</i>, and the description of what you get from `jj log` is a good example of that. As the project gains momentum, it will need other kinds of more-introductory material, but the current status is totally fair and reasonable for the stage the project is at. And, to be fair to Jujutsu, both the revset language and the templating language are *incredibly* easier to understand and work with than the corresponding Git materials.
+
+Returning to the difference between the default output from `jj log` and `git log`, the key is that unless you pass `-r`, Jujutsu uses the `ui.default-revset` selector to provide a much more informative view than `git log` does. Again, the default is `@ | ancestors(immutable_heads().., 2) | heads(immutable_heads())`. Walking through that:
+
+- The `@` operator selects the current head revision.
+- The `|` union operator says “or this other revset”, so this will show `@` itself *and* the result of the other two queries.
+- The `immutable_heads()` function gets the list of head revisions which are, well, [immutable][immutable-heads]. By default, this is `trunk() | tags()`, so whatever the trunk branch is (most commonly `main` or `master`) and also any tags in the repository.
+- Adding `..` to the first `immutable_heads()` function selects revisions which are not ancestors of those immutable heads. This is basically asking for branches which are not the trunk and which do not end at a tag.
+- Then `ancestors(immutable_heads().., 2)` requests the ancestors of those branches, but only two deep.
+- Finally, `heads()` gets the tips of all branches which appear in the revset passed to it: a head is a commit with no children. Thus, `heads(immutable_heads())` gets *just* the branch tips for the list of revisions computed by `immutable_heads()`.[^heads]
+
+[immutable-heads]: https://martinvonz.github.io/jj/v0.13.0/config/#set-of-immutable-commits
+
+When you put those all together, your log view will always show your current head change, all the open branches which have not been merged into your trunk branch, and whatever you have configured to be immutable—out of the box, trunk and all tags. That is *vastly* more informative than `git log`’s default output, even if it is a bit surprising the first time you see it. Nor is it particularly possible to get that in a single `git log` command. By contrast, getting the equivalent of `git log` is trivial.
+
+To show the full revision history for a given commit, you can use  Since `jj log` always gives you the identifier for a revision, you can follow it up with `jj log --revision ::<change id>`, or `jj log -r ::<change id>` for short. For example, in one repo where I am trying this, the most recent commit identifier starts with `mwoq` (Jujutsu helpfully highlights the segment of the change identifier you need to use), so I could write `jj log -r ::mwoq`, and this will show all the ancestors of `mwoq`, or `jj log -r ..mwoq` to get all the ancestors of the commit except the root. (The root is uninteresting.) Net, the equivalent command for “show me all the history for this commit” is:
+
+```sh
+$ jj log -r ..@
+```
+
+Revsets are very powerful, very flexible, and yet much easier to use than Git’s operators. That is in part because of the language used to express them. It is also in part because revsets build on a fundamentally different view of the world than Git commits: Jujutsu’s idea of *changes*.
+
+[^first-log-experience]:  I initially thought that the `jj log` only included the information since initializing Jujutsu in a given directory, rather than the whole Git history, which was quite surprising. In fact, the view I was seeing was entirely down to a default behavior of `jj log`, totally independent of Git: the specific revset it chooses to display.
+
+[^heads]: This is not quite the same as Git’s `HEAD` or as Mercurial’s “tip”—there is only one of either of those, and they are not the same as each other!
 
 
 ### Changes
