@@ -223,6 +223,8 @@ The first place you are likely to experience how revisions and revsets are diffe
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
+[tutorial]: https://github.com/martinvonz/jj/blob/f3d6616057fb3db3f9227de3da930e319d29fcc7/docs/tutorial.md
+
 What `jj log` *does* show by default was still a bit non-obvious to me, even after that. *Which* remote commits added for context, and why? The answer is in the `help` output for `jj log`’s `-r`/`--revisions` option:
 
 > Which revisions to show. Defaults to the `ui.default-revset` setting, or `@ | ancestors(immutable_heads().., 2) | heads(immutable_heads())` if it is not set
