@@ -33,8 +33,13 @@ discuss:
 
 date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
-updated: 2024-02-02T14:55:00-0700
+
+updated: 2024-02-03T10:25:00-0700
 updates:
+  - at: 2024-02-03T10:25:00-0700
+    changes: >
+      Added an example of the `log` format right up front in that section.
+
   - at: 2024-02-02T08:35:00-0700
     changes: >
       Reworked section on revsets and prepared for publication!
@@ -219,7 +224,152 @@ One of the first things to wrap your head around when first coming to Jujutsu is
 
 [revsets]: https://github.com/martinvonz/jj/blob/f3d6616057fb3db3f9227de3da930e319d29fcc7/docs/revsets.md
 
-The first place you are likely to experience how revisions and revsets are different—and neat!—is with the `log` command, since looking at the commit log is likely to be something you do pretty early in using  a new version control tool. (Certainly it was for me.) When you clone a repo and initialize Jujutsu in it and then run `jj log`, you will see something rather different from what `git log` would show you—indeed, rather different from anything I even know *how* to get `git log` to show you.  Per [the tutorial][tutorial]’s note on the `log` command specifically:
+The first place you are likely to experience how revisions and revsets are different—and neat!—is with the `log` command, since looking at the commit log is likely to be something you do pretty early in using  a new version control tool. (Certainly it was for me.) When you clone a repo and initialize Jujutsu in it and then run `jj log`, you will see something rather different from what `git log` would show you—indeed, rather different from anything I even know *how* to get `git log` to show you. For example, here’s what I see today when running `jj log` on the Jujutsu repository, limiting it to show just the last 10 revisions:
+
+```
+> jj log --limit 10
+@  ukvtttmt hello@chriskrycho.com 2024-02-03 09:37:24.000 -07:00 1a0b8773
+│  (empty) (no description set)
+◉  qppsqonm essiene@google.com 2024-02-03 15:06:09.000 +00:00 main* HEAD@git bcdb9beb
+·  cli: Move git_init() from init.rs to git.rs
+· ◉  rzwovrll ilyagr@users.noreply.github.com 2024-02-01 14:25:17.000 -08:00
+┌─┘  ig/contributing@origin 01e0739d
+│    Update contributing.md
+◉  nxskksop 49699333+dependabot[bot]@users.noreply.github.com 2024-02-01 08:56:08.000
+·  -08:00 fb6c834f
+·  cargo: bump the cargo-dependencies group with 3 updates
+· ◉  tlsouwqs jonathantanmy@google.com 2024-02-02 21:26:23.000 -08:00
+· │  jt/missingop@origin missingop@origin 347817c6
+· │  workspace: recover from missing operation
+· ◉  zpkmktoy jonathantanmy@google.com 2024-02-02 21:16:32.000 -08:00 2d0a444e
+· │  workspace: inline is_stale()
+· ◉  qkxullnx jonathantanmy@google.com 2024-02-02 20:58:21.000 -08:00 7abf1689
+┌─┘  workspace: refactor for_stale_working_copy
+◉  yyqlyqtq yuya@tcha.org 2024-01-31 09:40:52.000 +09:00 976b8012
+·  index: on reinit(), delete all segment files to save disk space
+· ◉  oqnvqzzq martinvonz@google.com 2024-01-23 10:34:16.000 -08:00
+┌─┘  push-oznkpsskqyyw@origin 54bd70ad
+│    working_copy: make reset() take a commit instead of a tree
+◉  rrxuwsqp stephen.g.jennings@gmail.com 2024-01-23 08:59:43.000 -08:00 57d5abab
+·  cli: display which file's conflicts are being resolved
+```
+
+Here’s the output for the same basic command in Git—note that I am not trying to get a *similar* output from Git, just asking what it shows by default (and warning: wall of log output!):
+
+```
+> git log -10
+commit: bcdb9beb6ce5ba625ae73d4839e4574db3d9e559     HEAD -> main, origin/main
+date:   Mon, 15 Jan 2024 22:31:33 +0000
+author: Essien Ita Essien <essiene@gmail.com>
+
+    cli: Move git_init() from init.rs to git.rs
+    
+    * Move git_init() to cli/src/commands/git.rs and call it from there.
+    * Move print_trackable_remote_branches into cli_util since it's not git specific,
+      but would apply to any backend that supports remote branches.
+    * A no-op change. A follow up PR will make use of this.
+
+commit: 31e4061bab6cfc835e8ac65d263c29e99c937abf
+date:   Mon, 8 Jan 2024 10:41:07 +0000
+author: Essien Ita Essien <essiene@gmail.com>
+
+    cli: Refactor out git_init() to encapsulate all git related work.
+    
+    * Create a git_init() function in cli/src/commands/init.rs where all git related work is done.
+      This function will be moved to cli/src/commands/git.rs in a subsequent PR.
+
+commit: 8423c63a0465ada99c81f87e06f833568a22cb48
+date:   Mon, 8 Jan 2024 10:41:07 +0000
+author: Essien Ita Essien <essiene@gmail.com>
+
+    cli: Refactor workspace root directory creation
+    
+    * Add file_util::create_or_reuse_dir() which is needed by all init
+      functionality regardless of the backend.
+
+commit: b3c47953e807bef202d632c4e309b9a8eb814fde
+date:   Wed, 31 Jan 2024 20:53:23 -0800
+author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
+
+    config.md docs: document `jj config edit` and `jj config path`
+    
+    This changes the intro section to recommend using `jj config edit` to
+    edit the config instead of looking for the files manually.
+
+commit: e9c482c0176d5f0c0c28436f78bd6002aa23a5e2
+date:   Wed, 31 Jan 2024 20:53:23 -0800
+author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
+
+    docs: mention in `jj help config edit` that the command can create a file
+    
+
+commit: 98948554f72d4dc2d5f406da36452acb2868e6d7
+date:   Wed, 31 Jan 2024 20:53:23 -0800
+author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
+
+    cli `jj config`: add `jj config path` command
+    
+
+commit: 8a4b3966a6ff6b9cc1005c575d71bfc7771bced1
+date:   Fri, 2 Feb 2024 22:08:00 -0800
+author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
+
+    test_global_opts: make test_version just a bit nicer when it fails
+    
+
+commit: 42e61327718553fae6b98d7d96dd786b1f050e4c
+date:   Fri, 2 Feb 2024 22:03:26 -0800
+author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
+
+    test_global_opts: extract --version to its own test
+    
+
+commit: 42c85b33c7481efbfec01d68c0a3b1ea857196e0
+date:   Fri, 2 Feb 2024 15:23:56 +0000
+author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+
+    cargo: bump the cargo-dependencies group with 1 update
+    
+    Bumps the cargo-dependencies group with 1 update: [tokio](https://github.com/tokio-rs/tokio).
+    
+    
+    Updates `tokio` from 1.35.1 to 1.36.0
+    - [Release notes](https://github.com/tokio-rs/tokio/releases)
+    - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.35.1...tokio-1.36.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: tokio
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+      dependency-group: cargo-dependencies
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+commit: 32c6406e5f04d2ecb6642433b0faae2c6592c151
+date:   Fri, 2 Feb 2024 15:22:21 +0000
+author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+
+    github: bump the github-dependencies group with 1 update
+    
+    Bumps the github-dependencies group with 1 update: [DeterminateSystems/magic-nix-cache-action](https://github.com/determinatesystems/magic-nix-cache-action).
+    
+    
+    Updates `DeterminateSystems/magic-nix-cache-action` from 1402a2dd8f56a6a6306c015089c5086f5e1ca3ef to eeabdb06718ac63a7021c6132129679a8e22d0c7
+    - [Release notes](https://github.com/determinatesystems/magic-nix-cache-action/releases)
+    - [Commits](https://github.com/determinatesystems/magic-nix-cache-action/compare/1402a2dd8f56a6a6306c015089c5086f5e1ca3ef...eeabdb06718ac63a7021c6132129679a8e22d0c7)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: DeterminateSystems/magic-nix-cache-action
+      dependency-type: direct:production
+      dependency-group: github-dependencies
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+```
+
+What’s happening in the Jujutsu log output? Per [the tutorial][tutorial]’s note on the `log` command specifically:
 
 > By default, `jj log` lists your local commits, with some remote commits added for context. The `~` indicates that the commit has parents that are not included in the graph. We can use the `-r` flag to select a different set of revisions to list.
 
