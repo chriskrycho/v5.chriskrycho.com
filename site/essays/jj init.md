@@ -263,7 +263,7 @@ date:   Mon, 15 Jan 2024 22:31:33 +0000
 author: Essien Ita Essien <essiene@gmail.com>
 
     cli: Move git_init() from init.rs to git.rs
-    
+
     * Move git_init() to cli/src/commands/git.rs and call it from there.
     * Move print_trackable_remote_branches into cli_util since it's not git specific,
       but would apply to any backend that supports remote branches.
@@ -274,7 +274,7 @@ date:   Mon, 8 Jan 2024 10:41:07 +0000
 author: Essien Ita Essien <essiene@gmail.com>
 
     cli: Refactor out git_init() to encapsulate all git related work.
-    
+
     * Create a git_init() function in cli/src/commands/init.rs where all git related work is done.
       This function will be moved to cli/src/commands/git.rs in a subsequent PR.
 
@@ -283,7 +283,7 @@ date:   Mon, 8 Jan 2024 10:41:07 +0000
 author: Essien Ita Essien <essiene@gmail.com>
 
     cli: Refactor workspace root directory creation
-    
+
     * Add file_util::create_or_reuse_dir() which is needed by all init
       functionality regardless of the backend.
 
@@ -292,7 +292,7 @@ date:   Wed, 31 Jan 2024 20:53:23 -0800
 author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
 
     config.md docs: document `jj config edit` and `jj config path`
-    
+
     This changes the intro section to recommend using `jj config edit` to
     edit the config instead of looking for the files manually.
 
@@ -301,42 +301,42 @@ date:   Wed, 31 Jan 2024 20:53:23 -0800
 author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
 
     docs: mention in `jj help config edit` that the command can create a file
-    
+
 
 commit: 98948554f72d4dc2d5f406da36452acb2868e6d7
 date:   Wed, 31 Jan 2024 20:53:23 -0800
 author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
 
     cli `jj config`: add `jj config path` command
-    
+
 
 commit: 8a4b3966a6ff6b9cc1005c575d71bfc7771bced1
 date:   Fri, 2 Feb 2024 22:08:00 -0800
 author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
 
     test_global_opts: make test_version just a bit nicer when it fails
-    
+
 
 commit: 42e61327718553fae6b98d7d96dd786b1f050e4c
 date:   Fri, 2 Feb 2024 22:03:26 -0800
 author: Ilya Grigoriev <ilyagr@users.noreply.github.com>
 
     test_global_opts: extract --version to its own test
-    
+
 
 commit: 42c85b33c7481efbfec01d68c0a3b1ea857196e0
 date:   Fri, 2 Feb 2024 15:23:56 +0000
 author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
     cargo: bump the cargo-dependencies group with 1 update
-    
+
     Bumps the cargo-dependencies group with 1 update: [tokio](https://github.com/tokio-rs/tokio).
-    
-    
+
+
     Updates `tokio` from 1.35.1 to 1.36.0
     - [Release notes](https://github.com/tokio-rs/tokio/releases)
     - [Commits](https://github.com/tokio-rs/tokio/compare/tokio-1.35.1...tokio-1.36.0)
-    
+
     ---
     updated-dependencies:
     - dependency-name: tokio
@@ -344,28 +344,28 @@ author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.c
       update-type: version-update:semver-minor
       dependency-group: cargo-dependencies
     ...
-    
+
     Signed-off-by: dependabot[bot] <support@github.com>
 commit: 32c6406e5f04d2ecb6642433b0faae2c6592c151
 date:   Fri, 2 Feb 2024 15:22:21 +0000
 author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
     github: bump the github-dependencies group with 1 update
-    
+
     Bumps the github-dependencies group with 1 update: [DeterminateSystems/magic-nix-cache-action](https://github.com/determinatesystems/magic-nix-cache-action).
-    
-    
+
+
     Updates `DeterminateSystems/magic-nix-cache-action` from 1402a2dd8f56a6a6306c015089c5086f5e1ca3ef to eeabdb06718ac63a7021c6132129679a8e22d0c7
     - [Release notes](https://github.com/determinatesystems/magic-nix-cache-action/releases)
     - [Commits](https://github.com/determinatesystems/magic-nix-cache-action/compare/1402a2dd8f56a6a6306c015089c5086f5e1ca3ef...eeabdb06718ac63a7021c6132129679a8e22d0c7)
-    
+
     ---
     updated-dependencies:
     - dependency-name: DeterminateSystems/magic-nix-cache-action
       dependency-type: direct:production
       dependency-group: github-dependencies
     ...
-    
+
     Signed-off-by: dependabot[bot] <support@github.com>
 ```
 
@@ -379,7 +379,7 @@ What `jj log` *does* show by default was still a bit non-obvious to me, even aft
 
 > Which revisions to show. Defaults to the `ui.default-revset` setting, or `@ | ancestors(immutable_heads().., 2) | heads(immutable_heads())` if it is not set
 
-I will come back to this revset in a moment to explain it in detail. First, though, this shows a couple other interesting features of Jujutsu’s approach to revsets and thus the `log` command. First, it treats some of these operations as *functions* (`tags()`, `branches()`, etc.). I don’t have a deep handle on this yet, but I plan to come back to it. (There is a whole list [here][functions]!) This is not a surprise if you think about what “expressions in a functional language” implies… but it was a surprise to me because I had not yet read that bit of documentation. Second, it makes “operators” [a first-class idea][operators]. Git *has* operators, but this goes a fair bit further:
+I will come back to this revset in a moment to explain it in detail. First, though, this shows a couple other interesting features of Jujutsu’s approach to revsets and thus the `log` command. First, it treats some of these operations as *functions* (`ancestors()`, `immutable_heads()`, etc.). There is a whole list [of these functions][functions]! This is not a surprise if you think about what “expressions in a functional language” implies… but it was a surprise to me because I had not yet read that bit of documentation. Second, it makes “operators” [a first-class idea][operators]. Git *has* operators, but this goes a fair bit further:
 
 - It includes `-` for the parent and `+` for a child, and these stack and compose, so writing `@-+-+` is the same as `@` as long as the history is linear. ([That is an important distinction!][distinction])
 
