@@ -134,7 +134,7 @@ updates:
 
 ---
 
-[Jujutsu][jj] is a new version control system from a software engineer at Google, where it is on track to replace Google’s existing  with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. It offers one possible answer to a question I first started asking [most of a decade ago][next-gen-vcs]: *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?*
+[Jujutsu][jj] is a new version control system from a software engineer at Google, where it is on track to replace Google’s existing love-hate relationship with Perforce, Piper, and Mercurial. I find it interesting both for the approach it takes and for its careful design choices in terms of both implementation details and user interface. It offers one possible answer to a question I first started asking [most of a decade ago][next-gen-vcs]: *What might a next-gen version control system look like—one which actually learned from the best parts of all of this generation’s systems, including Mercurial, Git, Darcs, Fossil, etc.?*
 
 [jj]: https://github.com/martinvonz/jj#command-line-completion
 [next-gen-vcs]: https://v4.chriskrycho.com/2014/next-gen-vcs.html
