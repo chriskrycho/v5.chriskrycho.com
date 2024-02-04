@@ -34,12 +34,16 @@ discuss:
 date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
 
-updated: 2024-02-04T15:17:00-0700
+updated: 2024-02-08T13:55:00-0700
 updates:
+  - at: 2024-02-08T13:55:00-0700
+    changes: >
+      Updated to use `jj git init` instead of plain `jj init`, to match the 0.14 release.
+
   - at: 2024-02-04T15:17:00-0700
     changes: >
       Filled out the section on Git interop. (How did I miss that before publishing?!?)
-  
+
   - at: 2024-02-03T10:25:00-0700
     changes: >
       Added an example of the `log` format right up front in that section.
@@ -170,7 +174,7 @@ Jujutsu is *not* trying to do every interesting thing that other Git-alternative
 
 [fossil]: https://fossil-scm.org/home/doc/trunk/www/index.wiki
 
-Finally, there is a thing Jujutsu is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports its own, “native” back end for the sake of keeping that door open for future capabilities, and the test suite exercises both the Git and the “native” back end, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
+Finally, there is a thing Jujutsu is not *yet*: a standalone <abbr>VCS</abbr> ready to use *without* Git. It supports its own, “native” backend for the sake of keeping that door open for future capabilities, and the test suite exercises both the Git and the “native” backend, but the “native” one is not remotely ready for regular use. That said, this one I do expect to see change over time!
 
 One of the really interesting bits about picking up Jujutsu is realizing just how weirdly Git has wired your brain, and re-learning how to think about how a version control system can work. It is one thing to believe—very strongly, in my case!—that Git’s <abbr title="user interface">UI</abbr> design is deeply janky (and its underlying model just so-so); it is something else to experience how much better a <abbr title="version control system">VCS</abbr> <abbr title="user interface">UI</abbr> can be (even without replacing the underlying model!).
 
@@ -201,7 +205,7 @@ That is all interesting enough philosophically, but for a tool that, if successf
 
 Setup is painless. Running `brew install jj` did everything I needed. As with most modern Rust-powered <abbr title="command line interface">CLI</abbr> tools,[^rust] Jujutsu comes with great completions right out of the box. I did make one post-install tweak, since I am going to be using this on existing Git projects: I updated my `~/.gitignore_global` to ignore `.jj` directories anywhere on disk.[^mac-pro-tip]
 
-Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj init --git-repo <path to repo>`. That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™, right down to correctly handling `.gitignore` files. I have since run `jj init` in every Git repository I am actively working on, and have had no issues in many months. It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which works well.
+Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just run `jj git init --git-repo <path to repo>`.[^git-init] That’s the entire flow. After that you can use `git` and `jj` commands alike on the repository, and everything Just Works™, right down to correctly handling `.gitignore` files. I have since run `jj git init` in every Git repository I am actively working on, and have had no issues in many months. It is also possible to initialize a Jujutsu copy of a Git project *without* having an existing Git repo, using `jj git clone`, which I have also done, and which works well.
 
 <figure>
 
@@ -214,6 +218,8 @@ Using Jujutsu in an existing Git project is also quite easy.[^hiccup] You just r
 Once a project is initialized, working on it is fairly straightforward, though there are some significant adjustments required if you have deep-seated habits from Git!
 
 [^mac-pro-tip]: Pro tip for Mac users: add `.DS_Store` to your `~/.gitignore_global` and live a much less annoyed life—whether using Git or Jujutsu.
+
+[^git-init]: The plain `jj init` command is reserved for initializing with the native backend… which is currently turned off. This is absolutely the right call for now, until the native backend is ready, but it is a mild bit of extra friction (and makes the title of this essay a bit amusing until the native backend comes online…).
 
 [^rust]: Yes, it is written in Rust, and it is pretty darn fast. But Git is written in C, and is *also* pretty darn fast. There are of course some safety upsides to using Rust here, but Rust is not particularly core to Jujutsu’s “branding”. It was just a fairly obvious choice for a project like this at this point—which is exactly what I have long hoped Rust would become!
 
@@ -643,7 +649,7 @@ Taking a step back, though, working with branches in Jujutsu is *great* overall.
 
 ### Git interop
 
-Jujutsu’s native back end exists, and every feature has to work with it, so it will some day be a real feature of the <abbr>VCS</abbr>. Today, though, the Git backend is the only one you should use. So much so that if you try to run `jj init` without passing `--git`, Jujutsu won’t let you by default:
+Jujutsu’s native backend exists, and every feature has to work with it, so it will some day be a real feature of the <abbr>VCS</abbr>. Today, though, the Git backend is the only one you should use. So much so that if you try to run `jj init` without passing `--git`, Jujutsu won’t let you by default:
 
 ```sh
 > jj init
@@ -652,7 +658,7 @@ Hint: Did you mean to pass `--git`?
 Set `ui.allow-init-native` to allow initializing a repo with the native backend.
 ```
 
-In practice, you are going to be using the Git backend. In practice, I have been using the Git backend for the last seven months, full time, on every one of my personal repositories and all the open source projects I have contributed to. With the sole exception of someone watching me while we pair, no one has noticed, because the Git integration is that solid and robust. This interop means that adoption can be very low friction. Any individual can simply run `jj init --git-repo .` in a given Git repository, and start doing their work with Jujutsu instead of Git, and all that work gets translated directly into operations on the Git repository.
+In practice, you are going to be using the Git backend. In practice, I have been using the Git backend for the last seven months, full time, on every one of my personal repositories and all the open source projects I have contributed to. With the sole exception of someone watching me while we pair, no one has noticed, because the Git integration is that solid and robust. This interop means that adoption can be very low friction. Any individual can simply run `jj git init --git-repo .` in a given Git repository, and start doing their work with Jujutsu instead of Git, and all that work gets translated directly into operations on the Git repository.
 
 Interoperating with Git also means that there is a two way-street between Jujutsu and Git. You can do a bunch of work with `jj` commands, and then if you hit something you don’t know how to do with Jujutsu yet, you can flip over and do it the way you already know with a `git` command. When you next run a `jj` command, like `jj status`, it will (very quickly!) import the updates from Git and go back about its normal business. The same thing happens when you run commands like `jj git fetch` to get the latest updates from a Git remote. All the explicit Git interop commands live under a `git` subcommand: `jj git push`, `jj git fetch`, etc. There are a handful of these, including the ability to explicitly ask to synchronize with the Git repository, but the only ones I use on a day to day basis are `jj git push` and `jj git fetch`. Notably, there is no `jj git pull`, because Jujutsu keeps a distinction between getting the latest changes from the server and changing your local copy’s state. I have not missed `git pull` at all.
 
@@ -663,7 +669,7 @@ This Git integration currently runs on `libgit2`, so there is effectively no ris
 
 ### Is it ready?
 
-Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. For example: commit signing with <abbr title="GNU Privacy Guard">GPG</abbr> or <abbr title="secure shell">SSH</abbr> does not yet work. There is an open <abbr title="pull request">PR</abbr> for the basics of the feature with <abbr title="GNU Privacy Guard">GPG</abbr> support, and <abbr title="secure shell">SSH</abbr> support will be straightforward to add once the basics, but landed it has not.[^signing] The list of actual gaps or missing features is getting short, though. When I started using Jujutsu back in July 2023, there was not yet any support for sparse checkouts or for workspaces (analogous to Git worktrees). Both of those landed in the interval, and there is consistent forward motion from both Google and non-Google contributors. In fact, the biggest gap I see as a regular user in Jujutsu itself is the lack of the kinds of capabilities that will hopefully come once work starts in earnest on the native back end.
+Unsurprisingly, given the scale of the problem domain, there are still some rough edges and gaps. For example: commit signing with <abbr title="GNU Privacy Guard">GPG</abbr> or <abbr title="secure shell">SSH</abbr> does not yet work. There is an open <abbr title="pull request">PR</abbr> for the basics of the feature with <abbr title="GNU Privacy Guard">GPG</abbr> support, and <abbr title="secure shell">SSH</abbr> support will be straightforward to add once the basics, but landed it has not.[^signing] The list of actual gaps or missing features is getting short, though. When I started using Jujutsu back in July 2023, there was not yet any support for sparse checkouts or for workspaces (analogous to Git worktrees). Both of those landed in the interval, and there is consistent forward motion from both Google and non-Google contributors. In fact, the biggest gap I see as a regular user in Jujutsu itself is the lack of the kinds of capabilities that will hopefully come once work starts in earnest on the native backend.
 
 The real gaps and rough edges at this point are down to the lack of an ecosystem of tools around Jujutsu, and the ways that existing Git tools interact with Jujutsu’s design for Git interop. The lack of tooling is obvious: no one has built the equivalent of [Fork][fork] or [Tower][tower], and there is no native integration in <abbr title="integrated development environment">IDE</abbr>s like IntelliJ or Visual Studio or in editors like <abbr title="Visual Studio">VS</abbr> Code or Vim. Since Jujutsu currently works primarily in terms of Git, you will get *some* useful feedback. All of those tools expect to be working in terms of Git’s index and not in terms of a Jujutsu-style working copy, though. Moreover, most of them (unsurprisingly!) share Git’s own confusion about why you are working on a detached `HEAD` nearly all the time. On the upside, viewing the history of a repo generally works well, with the exception that some tools will not show anonymous branches/detached `HEAD`s other than one you have actively checked out. Detached heads also tend to confuse tools like GitHub’s `gh`; you will often need to do a bit of extra manual argument-passing to get them to work. (`gh pr create --web --head <name>` is has been showing up in my history a lot for exactly this reason.)
 
@@ -690,7 +696,7 @@ There are opportunities here beyond implementing the same kinds of capabilities 
 
 Jujutsu has become my version control tool of choice since I picked it up over the summer. The rough edges and gaps I described throughout this write-up notwithstanding, I *much* prefer it to working with Git directly. I do not hesitate to recommend that you try it out on personal or open source projects. Indeed, I actively recommend it! I have used Jujutsu almost exclusively for the past seven months, and I am not sure what would make me go back to using Git other than Jujutsu being abandoned entirely. Given its apparently-bright future at Google, that seems unlikely.[^death-by-google] Moreover, because using it in existing Git repositories is transparent, there is no inherent reason individual developers or teams cannot use it today. (Your corporate security policy might have be a different story.)
 
-Is Jujutsu ready for you to roll out at your Fortune 500 company? Probably not. While it is improving at a steady clip—most of the rough edges I hit in mid-2023 are long since fixed—it is still undergoing breaking changes in design here and there, and there is effectively no material out there about how to use it yet. (This essay exists, in part, as an attempt to change that!) Beyond Jujutsu itself, there is a lot of work to be done to build an ecosystem around it. Most of the remaining rough edges are squarely to do with the lack of understanding from other tools.  The project is marching steadily toward a 1.0 release… someday. As for when that might be, there are as far as I know no plans: there is still too much to do. Above all, I am very eager to see what a native Jujutsu backend would look like. Today, it is “just” a much better model for working with Git repos. A world where the same level of smarts being applied to the front end goes into the back end too is a world well worth looking forward to.
+Is Jujutsu ready for you to roll out at your Fortune 500 company? Probably not. While it is improving at a steady clip—most of the rough edges I hit in mid-2023 are long since fixed—it is still undergoing breaking changes in design here and there, and there is effectively no material out there about how to use it yet. (This essay exists, in part, as an attempt to change that!) Beyond Jujutsu itself, there is a lot of work to be done to build an ecosystem around it. Most of the remaining rough edges are squarely to do with the lack of understanding from other tools.  The project is marching steadily toward a 1.0 release… someday. As for when that might be, there are as far as I know no plans: there is still too much to do. Above all, I am very eager to see what a native Jujutsu backend would look like. Today, it is “just” a much better model for working with Git repos. A world where the same level of smarts being applied to the front end goes into the backend too is a world well worth looking forward to.
 
 {% callout %}
 
