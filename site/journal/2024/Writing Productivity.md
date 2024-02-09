@@ -8,7 +8,7 @@ date: 2024-02-09T09:10:00-0700
 
 qualifiers:
     audience: >
-        People, especially engineers, who might be unpersuaded about the value of investing in improving their personal productivity and velocity on things like writing and
+        People, especially engineers, who might be unpersuaded about the value of investing in improving their personal productivity and velocity on things like writing.
 
 tags:
     - writing
