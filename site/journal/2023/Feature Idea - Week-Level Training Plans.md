@@ -7,6 +7,7 @@ image: https://cdn.chriskrycho.com/images/garmin%20plan.png
 date: 2023-01-16T08:33:00-0700
 tags:
   - fitness
+  - running
   - health
   - product ideas
   - software development
