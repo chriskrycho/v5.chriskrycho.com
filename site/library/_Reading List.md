@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-02-02T15:50:00-0700
+date: 2024-02-11T15:20:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -64,6 +64,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Crafting Interpreters</cite>](https://craftinginterpreters.com), Robert Nystrom (new)
 
 - [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
+
+- [<cite>A Quiet Mind to Suffer with: Mental Illness, Trauma, and the Death of Christ</cite>](https://bookshop.org/a/21126/9781683597049), John Andrew Bryant (new)
+
+- [<cite>How Big Things Get Done: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything in Between</cite>](https://bookshop.org/a/21126/9780593239513), Bent Flyvbjerg and Dan Gardner (new)
 
 
 
