@@ -75,6 +75,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
+- [<cite>Our Game</cite>](https://bookshop.org/a/21126/9780345418319), John le Carré (new)
+
 
 ## Tabled
 
