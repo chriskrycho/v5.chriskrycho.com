@@ -99,6 +99,15 @@
          padding-bottom: 1em;
          max-width: 100%;
       }
+
+      object {
+         height: 100%;
+         width: 100%;
+      }
+
+      object.pdf {
+         aspect-ratio: 8.5 / 11;
+      }
    }
 
    audio {
