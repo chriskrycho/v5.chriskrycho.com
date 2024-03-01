@@ -12,7 +12,6 @@ qualifiers:
 image: https://images.unsplash.com/photo-1551192244-8f0f235b5453?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80
 thanks: >
     [Social media photo](https://unsplash.com/photos/VeiqoYAEeis) by [Kate Torline](https://unsplash.com/@kate_torline?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-featured: true
 
 ---
 

@@ -17,7 +17,6 @@ date: 2022-12-28T21:05:00-0700
 image: https://cdn.chriskrycho.com/images/2022/12-21%20well%2C%20dang%20thumb.jpg
 summary: >
   The Leica Q2 is a phenomenal camera—and yes, Leica earns its price point. It is not for me, though.
-featured: true
 
 ---
 

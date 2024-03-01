@@ -4,7 +4,6 @@ date: 2022-12-22T20:22:00-0700
 image: https://cdn.chriskrycho.com/images/2022/12-22%20cold%202%20(thumb).jpg
 tags:
   - Leica Q2
-featured: true
 
 ---
 
