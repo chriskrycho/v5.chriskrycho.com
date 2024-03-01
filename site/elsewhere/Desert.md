@@ -3,6 +3,7 @@ title: The Desert
 permalink: /elsewhere/the-desert/
 subtitle: >
     For solo piano. A Lenten musical meditation.
+
 date: 2024-03-01T07:30:00-0700
 tags:
     - music
@@ -16,6 +17,8 @@ qualifiers:
         People interested in contemporary classical music. Perhaps extra interesting if you are curious about the compositional process.
 
 image: https://cdn.chriskrycho.com/images/the-desert-splash.jpg
+
+features: true
 
 summary: >
     A new work for solo piano. Less John Williams, more Arvo Pärt. Give it a listen!
