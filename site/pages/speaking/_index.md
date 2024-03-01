@@ -56,16 +56,18 @@ If those sound interesting to you, I’d love to be on your show or speak at you
 
 ## Podcast appearances
 
+- [Corecursive: Leaving LinkedIn][corecursive-2], March 2024
 - [Software Unscripted: Type System Complexity][su], September 2023
 - [Rustacean Station: New Rustacean with Chris Krycho][rs]
 - [Whiskey, Web, and Whatnot: Bringing Types to Ember][www], May 2022
-- [Corecursive: Using TypeScript Like a Pro with Chris Krycho][corecursive], July 2019
+- [Corecursive: Using TypeScript Like a Pro with Chris Krycho][corecursive-1], July 2019
 - [Remote Works: Chris Krycho / An Unintentional Journey][rw], February 2017
 
+[corecursive-2]: https://corecursive.com/leaving-linkedin-with-chris-krycho/
 [su]: https://open.spotify.com/episode/43Jg9r2jOGRUYaQx5YOXO2
 [rs]: https://rustacean-station.org/episode/chris-krycho/
 [www]: https://www.whiskeywebandwhatnot.fm/bringing-types-to-ember-with-chris-krycho/
-[corecursive]: https://corecursive.com/034-chris-krycho-typescript/
+[corecursive-1]: https://corecursive.com/034-chris-krycho-typescript/
 [rw]: https://remote.works/episode/5
 
 ## Workshops
