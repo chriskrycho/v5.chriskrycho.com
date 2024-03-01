@@ -5,6 +5,7 @@ subtitle: >
     For solo piano. A Lenten musical meditation.
 
 date: 2024-03-01T07:30:00-0700
+updated: 2024-03-01T11:36:00-0700
 tags:
     - music
     - composing
@@ -27,12 +28,14 @@ summary: >
 
 I am delighted to announce that you can listen to a new piece of music I wrote: The Desert, for solo piano:
 
+- [Bandcamp][b]
 - [Spotify][s]
 - [Apple Music][apple] or [iTunes][it]
 - [YouTube][yt] or [YouTube Music][ytm]
 - [Amazon Music][am]
 - [everywhere else][sw]
 
+[b]: https://chriskrycho.bandcamp.com/track/the-desert
 [s]: https://open.spotify.com/track/2jrOKyTyvgGGJi7faqgUVx
 [apple]: https://music.apple.com/us/album/the-desert-single/1731401721
 [it]: https://music.apple.com/au/album/the-desert/1731401721?i=1731401722&app=itunes
