@@ -19,8 +19,6 @@ qualifiers:
 
 image: https://cdn.chriskrycho.com/images/the-desert-splash.jpg
 
-features: true
-
 summary: >
     A new work for solo piano. Less John Williams, more Arvo Pärt. Give it a listen!
 
