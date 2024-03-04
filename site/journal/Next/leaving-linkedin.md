@@ -14,6 +14,8 @@ qualifiers:
     audience: >
         People interested in the contours of a career in general, and specifically who care about why I left LinkedIn earlier this fall.
 
+image: https://cdn.chriskrycho.com/images/corecursive-leaving-linkedin.jpeg
+
 ---
 
 {% callout %}
