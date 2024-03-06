@@ -3,6 +3,7 @@ title: On CoRecursive Again!
 subtitle: Talking about my time at LinkedIn, including why I left.
 date: 2024-03-04T15:00:00-0700
 link: https://corecursive.com/leaving-linkedin-with-chris-krycho/
+image: https://cdn.chriskrycho.com/images/corecursive-leaving-linkedin.jpeg
 tags:
     - career
     - LinkedIn

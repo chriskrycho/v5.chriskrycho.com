@@ -1,10 +1,15 @@
 ---
 title: "Past: Leaving LinkedIn"
-subtitle: Making good on a promise made to myself five years ago.
+subtitle: Making good on a promise I made to myself five years ago.
 series:
     part: 3
 
 date: 2023-11-12T21:45:03-0700
+updated: 2024-03-06T07:15:00-0700
+updates:
+    - at: 2024-03-06T07:15:00-0700
+      changes: >
+        Added link to CoRecursive episode, fixed the subtitle, and added a summary.
 
 tags:
     - career
@@ -14,7 +19,8 @@ qualifiers:
     audience: >
         People interested in the contours of a career in general, and specifically who care about why I left LinkedIn earlier this fall.
 
-image: https://cdn.chriskrycho.com/images/corecursive-leaving-linkedin.jpeg
+summary: >
+    I left LinkedIn in late 2023 after a 5-year-stint—because I increasingly differed with the company’s cultural and technical direction.
 
 ---
 
@@ -51,5 +57,13 @@ Reflecting on 2022, [I wrote](https://v5.chriskrycho.com/journal/2022-in-review/
 Life is short, and our work is a massive part of it. Given the considerable blessing of financial stability and margin, and given the question: *Spend the next few years of my life working on things I do not really believe in? Or… do something else?* The answer was easy. Not everyone has the opportunity to make that call, I recognize. Sometimes, you just have to do annoying or terrible work to put food on the table for your family.  That comes with a sense of responsibility. For those of us who *do* have that opportunity, though, it matters that we take it: It matters that we use financial stability as a lever to make sure our work actually moves the world—however fractionally—in the directions we believe in.
 
 I remain very glad to have gone to LinkedIn. I developed some great relationships there—made friends we have had fly across the country to spend time in our home!—and did really good work. I grew and learned a great deal through working at significant scale both technically and organizationally. But now it’s time for [something new](/journal/next/role/).
+
+---
+
+**Bonus:** a few months after publishing this, I recorded [an interview with Adam Gordon Bell on CoRecursive][cr] about my time at LinkedIn, including *leaving* LinkedIn. If you want a little more detail on what I wrote above, [check it out][cr]—it has a full transcript as well as the audio recording.
+
+[cr]: https://corecursive.com/leaving-linkedin-with-chris-krycho/
+
+
 
 [^1]:	My most common description of that roadmap has been: *building mediocre developer experiences with mediocre technologies to deliver mediocre user experiences in the name of product velocity*—and, worse, doing so as a technical bandaid over other, far more fundamental, cultural and organizational issues. The details are not public, and people could reverse course, so I will not belabor the point here. But my judgment stands unless or until they *do* reverse course.
