@@ -17,6 +17,8 @@ summary: >
 
 I have been mulling on [this post][blog] about church music culture since a friend send it to me a couple days ago, and… I have some disagreements. Buckle up; this is an old-school fisking/bloggy rant. (You should read that post first; none of the rest of this will make any sense otherwise.)
 
+[blog]: https://theopolisinstitute.com/holy-toledo-a-critique-of-eclecticism/
+
 First, for the really snarky take: if you want to know the result of following Ahern’s advice, go to any megachurch and sit through the service. You’ll get a coherent musical culture that hasn’t spent its time and energy trying to connect with the musical traditions of the past! That is: Bethel and Hillsong and Chris Tomlin. That is not *my* taste, and I suspect it isn’t the author’s, either… but it is exactly what he asked for!
 
 For the less snarky take, though, a few points:
