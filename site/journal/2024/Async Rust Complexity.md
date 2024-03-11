@@ -45,7 +45,9 @@ Rust’s general approach is not to paper over complexity, but to try to (a) exp
 
 I understand why. What defaults do you pick, and why, and how does that impact the ecosystem? (Does picking something imply other approaches are bad—even if no one intends that?) But: it is still a problem from the perspective of someone trying to learn this part of the language.
 
-Of course, having a good chapter in the official book might help, so I will now get back to working on that.
+The difference between *can choose* and *must choose* is really, really significant. We should figure out what it would look like to ship a reasonable default executor so that the out of the box experience is *good*, and people can opt into other choices *when they need them*.
+
+Of course, having a good chapter in the official book might also help, so I will now get back to working on that.
 
 
 [sc]: https://en.wikipedia.org/wiki/Structured_concurrency
@@ -53,4 +55,4 @@ Of course, having a good chapter in the official book might help, so I will now 
 
 [^lazy]: I have some still-developing thoughts on how the laziness of the type is related to some of the difficulties people have, even if well-motivated. Much of Rust is an eager language, but there are key exceptions like `Iterator`, and people do not seem to struggle with those. More to mull on here.
 
-[^swift-executor]: Swift implemented support for custom executors in its most recent release, Swift 5.9, with *similar* aims to how Rust has approached the space.
+[^swift-executor]: Swift implemented support for custom executors in its most recent release, Swift 5.9, with *similar* aims to how Rust has approached the space, but notably Rust ships a default executor out of the box.
