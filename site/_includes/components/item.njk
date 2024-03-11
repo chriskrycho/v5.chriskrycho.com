@@ -35,7 +35,7 @@
 {% endif %}
 {% endmacro %}
 
-{% macro meta(title, date, tags, updated, updates, started, inputPath, thanks, isGhostCollection, discuss, draft) %}
+{% macro meta(title, date, tags, updated, updates, started, inputPath, thanks, isGhostCollection, discuss, draft, related) %}
 {%- set DATE_FORMAT = 'MMMM d, yyyy' %}
 {%- set TIME_FORMAT = 'HH:mm' %}
 <footer class='post-meta'>
@@ -91,6 +91,15 @@
 
       <p>Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a></p>
    </div>
+
+   {%- if related.length > 0 -%}
+   <div class='section-label'>Related:</div>
+   <ul class='section-content'>
+      {%- for item in related %}
+      <li>{{item | inlineMd | safe}}</li>
+      {%- endfor -%}
+   </ul>
+   {%- endif -%}
 
    {%- if tags.length > 0 %}
    <div class='section-label'>Topics:</div>

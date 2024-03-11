@@ -113,6 +113,15 @@
                   {%- endif -%}
 
                   {{-item.templateContent | safe-}}
+
+                  {%- if item.related.length > 0 -%}
+                     <h2>Related:</h2>
+                     <ul class='section-content'>
+                     {%- for item in related %}
+                        <li>{{item | inlineMd | safe}}</li>
+                     {%- endfor -%}
+                     </ul>
+                  {%- endif -%}
                   {%- if item.data.thanks -%}
                   <hr/>
                   <p><strong>Thanks:</strong> {{item.data.thanks | safe}}</p>
