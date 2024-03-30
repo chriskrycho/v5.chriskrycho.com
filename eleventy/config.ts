@@ -51,7 +51,7 @@ const isLive = (item: Item) =>
    fromDateOrString(item.date).toSeconds() <= buildTime() &&
    !item.data?.draft;
 
-const isNotVoid = <A>(a: A | null | undefined): a is A => a != null;
+const isDefined = <A>(a: A | null | undefined): a is A => a != null;
 
 const isStandalonePage = (item: Item) => item.data?.standalonePage ?? false;
 const excludingStandalonePages = not(isStandalonePage);
@@ -94,7 +94,7 @@ function latest(collection: Collection): Item[] {
       all.find(inCollectionNamed('photos')),
       all.find(inCollectionNamed('elsewhere')),
    ]
-      .filter(isNotVoid)
+      .filter(isDefined)
       .sort(byDate(Order.NewFirst));
 }
 
@@ -115,7 +115,7 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
       all.find(inCollectionNamed('photos')),
       all.find(inCollectionNamed('elsewhere')),
    ]
-      .filter(isNotVoid)
+      .filter(isDefined)
       .sort(byUpdated(Order.NewFirst));
 }
 
