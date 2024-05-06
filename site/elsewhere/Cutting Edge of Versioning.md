@@ -15,13 +15,11 @@ tags:
     - Semantic Versioning
     - TypeScript
     - Unison
+qualifiers:
+    context: >
+        Today I gave the first of two talks at LambdaConf 2024. This one was particularly born out of [the work I did on SemVer for TypeScript types](https://v5.chriskrycho.com/elsewhere/semver-for-ts-types-beta/) and the work I did to [put Ember on a regular upgrade cadence](https://github.com/emberjs/rfcs/pull/830). The rest of this post consists of the slides and the script I wrote for the talk. I will add a post to my feeds when the video is up!
 
 ---
-
-Today I gave the first of two talks at LambdaConf 2024. This one was particularly born out of [the work I did on SemVer for TypeScript types][semver-ts] and the work I did to [put Ember on a regular upgrade cadence][ember-versions]. The rest of this post consists of the slides and the script I wrote for the talk. I will add a post to my feeds when the video is up!
-
-[semver-ts]: https://v5.chriskrycho.com/elsewhere/semver-for-ts-types-beta/
-[ember-versions]: https://github.com/emberjs/rfcs/pull/830
 
 <figure class="embed"><div class="embed__wrapper">
 <iframe class="embed__content speakerdeck-iframe" src="https://speakerdeck.com/player/a68bcf9849ce456a8ca86f93f7ffb7f4" title="The Cutting Edge Of Versioning (LambdaConf 2024)" allowfullscreen="true" data-ratio="1.7777777777777777"></iframe>
