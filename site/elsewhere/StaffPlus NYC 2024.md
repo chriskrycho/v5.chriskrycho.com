@@ -1,5 +1,5 @@
 ---
-title: Substrate Engineering (StaffPlus New York 2024)
+title: "Upcoming: Substrate Engineering (StaffPlus New York 2024)"
 subtitle: >
     Coming in September: a talk on “Engineering Foundations in a World of <abbr title="large language model">LLM</abbr>s”.
 
