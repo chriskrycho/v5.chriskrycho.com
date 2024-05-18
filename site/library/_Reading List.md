@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-03-11T08:13:00-0600
+date: 2024-05-20T09:45:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -61,6 +61,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
 
+- [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
+
+- [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
+
+- [<cite>Fancy Bear Goes Phishing: The Dark History of the Information Age, in Five extraordinary Hacks</cite>](https://bookshop.org/a/21126/9780374601171), Scott J. Shapiro
+
 
 ### Fiction
 
@@ -105,7 +111,11 @@ These are books I have started at some point but have (at least for now!) put as
 
 - [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
 
-- [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
+- [<cite>How Big Things Get Done: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between</cite>](https://bookshop.org/a/21126/9780593239513), Bent Flyvbjerg (new)
+
+- [<cite>The Guns of August: The Outbreak of World War I</cite>](https://bookshop.org/a/21126/9780345386236), Barbara Tuchman (new)
+
+- [<cite>Flying Blind: The 737 MAX Tragedy and the Fall of Boeing</cite>](https://bookshop.org/a/21126/9780593082515), Peter Robison (new)
 
 
 ### Fiction
