@@ -26,6 +26,6 @@ My friend [Brad East][brad] just [started][brad-micro] trying out [micro.blog][m
 
 One bonus item on his reasons to like [micro.blog][mb] (and things like it) is that people can just subscribe via feed. Google Reader’s demise pushed a lot of people off using <abbr title="Really Simple Syndication">RSS</abbr>/Atom/etc., but it still works as well as it ever did, and you can still subscribe to most any site in the world—including Brad’s microblog—for free. On Mac or iOS, you can use [NetNewsWire][nnw]. I am sure there are similar options on Windows and Android. And Brad’s micro blog posts—or anyone else’s on well-designed platforms which support it—can just be short notes you read alongside the long essays that pop up from time to time from some other author publishes.
 
-[nww]: https://netnewswire.com
+[nnw]: https://netnewswire.com
 
 That is: microblogs are currently *associated* with “social media”. But they are not intrinsically social, and there are good ways to use microblogs, and blogs in general that are not *social* at all. That is, simply, good: at least as an option to have on the table.
