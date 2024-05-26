@@ -44,9 +44,9 @@ Reflecting on 2022, [I wrote](https://v5.chriskrycho.com/journal/2022-in-review/
 
 > I find that when I end up spending a majority of my time on writing documents to articulate strategies, or dealing with team dynamics, or otherwise away from *building*, I am least satisfied. Those are all good kinds of work and they all need doing, and I don’t mind spending some of my time on them, but they never *energize* me the way that both building and teaching do.
 >
-> …I am looking forward to having some space to do more R&D and exploration around how to continue making an impact on developers’ ability to develop quality software quickly.
+> …I am looking forward to having some space to do more <abbr title="research and development">R&D</abbr> and exploration around how to continue making an impact on developers’ ability to develop quality software quickly.
 >
-> [The] year felt odd: while we made a *little* bit of progress on things in that space of “developers’ ability to develop quality software quickly”, basically all of the work we were doing felt like catch-up work — both in terms of getting LinkedIn’s web stack caught up with capabilities its mobile stacks have had for a while with types, and in terms of getting LinkedIn’s web stack at least in the ball park of where other front end stacks have been for a while. Catching up is good… but it is generally hard to advance the field *from behind*\*.
+> [The] year felt odd: while we made a *little* bit of progress on things in that space of “developers’ ability to develop quality software quickly”, basically all of the work we were doing felt like catch-up work — both in terms of getting LinkedIn’s web stack caught up with capabilities its mobile stacks have had for a while with types, and in terms of getting LinkedIn’s web stack at least in the ball park of where other front end stacks have been for a while. Catching up is good… but it is generally hard to advance the field *from behind*.
 >
 > …
 >
