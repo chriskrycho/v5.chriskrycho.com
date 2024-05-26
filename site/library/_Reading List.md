@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-05-20T09:45:00-0700
+date: 2024-05-28T07:00:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -65,7 +65,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
 
-- [<cite>Fancy Bear Goes Phishing: The Dark History of the Information Age, in Five extraordinary Hacks</cite>](https://bookshop.org/a/21126/9780374601171), Scott J. Shapiro
+- [<cite>Crucial Conversations: Tools for Talking When Stakes are High</cite>](https://bookshop.org/a/21126/9781260474183)(Third Edition), Al Switzler, Emily Gregory, Ron McMillan, Kerry Patterson, and Joseph Grenny (new)
 
 
 ### Fiction
@@ -116,6 +116,8 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>The Guns of August: The Outbreak of World War I</cite>](https://bookshop.org/a/21126/9780345386236), Barbara Tuchman (new)
 
 - [<cite>Flying Blind: The 737 MAX Tragedy and the Fall of Boeing</cite>](https://bookshop.org/a/21126/9780593082515), Peter Robison (new)
+
+- [<cite>Fancy Bear Goes Phishing: The Dark History of the Information Age, in Five extraordinary Hacks</cite>](https://bookshop.org/a/21126/9780374601171), Scott J. Shapiro (new)
 
 
 ### Fiction
