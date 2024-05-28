@@ -1,2 +1,5 @@
 # Never format Markdown files. For real though.
 *.md
+
+# Or YAML, at least at present
+*.yaml

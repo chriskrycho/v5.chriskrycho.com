@@ -1,0 +1,195 @@
+services:
+  - type: web
+    name: v5.chriskrycho.com
+    runtime: static
+    envVars:
+    - key: SKIP_INSTALL_DEPS
+      value: 'true'
+    buildCommand: |
+      corepack enable
+      pnpm install --frozen-lockfile
+      pnpm build
+    staticPublishPath: './public'
+    domain: v5.chriskrycho.com
+    routes:
+      # Redirect misconfigured URLs from when I accidentally had `title | slug`
+      # instead of `fileSlug | slug`.
+      - type: redirect
+        source: /journal/relaunch!
+        destination: /journal/relaunch
+
+      # A few URLs I changed on purpose after publication
+      - type: redirect
+        source: /journal/work-in-progress-composition-for-crew-dragon-demo-2/
+        destination: /journal/crew-dragon-fanfare/day-1/
+      - type: redirect
+        source: /journal/crew-dragon-fanfare-day-2/
+        destination: /journal/crew-dragon-fanfare/day-2/
+      - type: redirect
+        source: /journal/crew-dragon-fanfare/day-4/
+        destination: /journal/crew-dragon-fanfare/day-4-part-1/
+      - type: redirect
+        source: /journal/crew-dragon-fanfare/days-7-and-8/
+        destination: /journal/crew-dragon-fanfare/day-7/
+      - type: redirect
+        source: /journal/this-week-i-learned-*/
+        destination: /journal/this-week-i-learned/*/
+      - type: redirect
+        source: /appearances/*
+        destination: /elsewhere/*
+      - type: redirect
+        source: /library/2020-11-28-1146/
+        destination: /notes/2020-11-28-1146/
+      - type: redirect
+        source: /journal/private-chat-and-dms-are-good-actually/
+        destination: /essays/private-chat-and-dms-are-good-actually/
+      - type: redirect
+        source: /journal/heuristics-for-good-software-design/introducing-heuristics-for-good-software-design/
+        destination: /journal/heuristics-for-good-software-design/introduction/
+      - type: redirect
+        source: /photos/life-finds-a-way/
+        destination: /photos/dinosaur-national-monument/life-finds-a-way/
+      - type: redirect
+        source: /feed-without-notes.json
+        destination: /feeds/without-notes.json
+      - type: redirect
+        source: /feed-without-notes.xml
+        destination: /feeds/without-notes.xml
+      - type: redirect
+        source: /feed-without-reply.json
+        destination: /feeds/without-reply.json
+      - type: redirect
+        source: /library/god-without-measure/volume-1/*
+        destination: /library/god-without-measure/volume-i/*
+      - type: redirect
+        source: /journal/crew-dragon-fanfare/*
+        destination: /journal/fanfare-for-a-new-era-of-american-spaceflight/*
+      - type: redirect
+        source: /library/reading-papers/*
+        destination: /library/reading-papers-in-public/*
+      - type: redirect
+        source: /journal/trying-out-jujutsu/
+        destination: /journal/jj-init/
+      - type: redirect
+        source: /journal/reflections-on-a-month-with-nova-and-bbedit/
+        destination: /journal/reflections-on-a-month-with-bbedit-and-nova/
+      - type: redirect
+        source: /journal/note-on-typescript-conversions/
+        destination: /journal/how-to-do-a-typescript-conversion/
+      - type: redirect
+        source: /journal/jj-init/
+        destination: /essays/jj-init/
+
+      # ...including after I made library collections work correctly
+      - type: redirect
+        source: /library/good-theology-demands-good-theologians/
+        destination: /library/the-culture-of-theology/good-theology-demands-good-theologians/
+      - type: redirect
+        source: /library/the-first-and-last-act-of-theological-existence/
+        destination: /library/the-culture-of-theology/the-first-and-last-act-of-theological-existence/
+      - type: redirect
+        source: /library/theological-self-criticism/
+        destination: /library/the-culture-of-theology/theological-self-criticism/
+      - type: redirect
+        source: /library/the-story-of-modern-theology/
+        destination: /library/the-culture-of-theology/the-story-of-modern-theology/
+      - type: redirect
+        source: /library/christian-theologys-place-in-the-university/
+        destination: /library/the-culture-of-theology/christian-theologys-place-in-the-university/
+      - type: redirect
+        source: /library/the-real-aim-of-utopias/
+        destination: /library/the-culture-of-theology/the-real-aim-of-utopias/
+      - type: redirect
+        source: /library/an-anti-culture/
+        destination: /library/the-culture-of-theology/an-anti-culture/
+      - type: redirect
+        source: /library/christian-astonishment/
+        destination: /library/the-culture-of-theology/christian-astonishment/
+      - type: redirect
+        source: /library/good-theologians/
+        destination: /library/the-culture-of-theology/good-theologians/
+
+      - type: redirect
+        source: /library/perfectionism-without-perfectibility/
+        destination: /library/politics-and-the-order-of-love/perfectionism-without-perfectibility/
+      - type: redirect
+        source: /library/the-mixed-moral-qualities-of-any-age/
+        destination: /library/politics-and-the-order-of-love/the-mixed-moral-qualities-of-any-age/
+      - type: redirect
+        source: /library/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/
+        destination: /library/politics-and-the-order-of-love/all-is-broken-and-incomplete-and-politics-can-not-heal-the-rupture/
+      - type: redirect
+        source: /library/a-chalcedonian-conceptual-grammar-for-love-and-justice/
+        destination: /library/politics-and-the-order-of-love/a-chalcedonian-conceptual-grammar-for-love-and-justice/
+
+      - type: redirect
+        source: /library/fall-centered-theological-anthropologies/
+        destination: /library/eccentric-existence/fall-centered-theological-anthropologies/
+      - type: redirect
+        source: /library/gods-self-commitment-to-creatures/
+        destination: /library/eccentric-existence/gods-self-commitment-to-creatures/
+      - type: redirect
+        source: /library/problematic/
+        destination: /library/eccentric-existence/problematic/
+      - type: redirect
+        source: /library/tell-me-your-priors/
+        destination: /library/eccentric-existence/tell-me-your-priors/
+      - type: redirect
+        source: /library/the-triune-creators-relating-to-creation/
+        destination: /library/eccentric-existence/the-triune-creators-relating-to-creation/
+
+      # ...and notes redirects for bad slug generation
+      - type: redirect
+        source: /notes/feed-for-social.*
+        destination: https://v1.notes.chriskrycho.com/feeds/without-reply.*
+      - type: redirect
+        source: /notes/*
+        destination: https://v1.notes.chriskrycho.com/*
+
+      # and topics I merged
+      - type: redirect
+        source: /topics/logic-pro-x
+        destination: /topics/logic-pro/
+      - type: redirect
+        source: /topics/auto-tracking
+        destination: /topics/autotracking/
+      - type: redirect
+        source: /topics/ember.js
+        destination: /topics/ember/
+      - type: redirect
+        source: /topics/programming-language
+        destination: /topics/programming-languages/
+      - type: redirect
+        source: /topics/composition
+        destination: /topics/composing
+      - type: redirect
+        source: /topics/productivity
+        destination: /topics/working-effectively
+
+      # and topics that I turned into collections
+      - type: redirect
+        source: /topics/the-culture-of-theology
+        destination: /library/the-culture-of-theology
+      - type: redirect
+        source: /topics/the-doctrine-of-scripture
+        destination: /library/the-doctrine-of-scripture
+
+      # and then some things I just plain moved
+      - type: redirect
+        source: /photos/disney-world-2022-camera-gear/
+        destination: /journal/disney-world-2022-camera-gear/
+      - type: redirect
+        source: /photos/sony-sonnar-t-fe-55mm-f18-za/
+        destination: /journal/disney-world-2022-camera-gear/sony-sonnar-t-fe-55mm-f18-za/
+      - type: redirect
+        source: /photos/sony-a7-iv/
+        destination: /journal/disney-world-2022-camera-gear/sony-a7-iv/
+      - type: redirect
+        source: /photos/tamron-35-150mm-f2-28-di-iii-vxd/
+        destination: /journal/disney-world-2022-camera-gear/tamron-35-150mm-f2-28-di-iii-vxd/
+
+      # A future version of my publishing software should embrace the idea that
+      # series roots can have feed entries
+      - type: redirect
+        source: /journal/2022-in-review/overview-and-introduction/
+        destination: /journal/2022-in-review/
