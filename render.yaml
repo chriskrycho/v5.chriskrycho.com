@@ -10,6 +10,7 @@ services:
       pnpm install --frozen-lockfile
       pnpm build
     staticPublishPath: './public'
+    pullRequestPreviewsEnabled: true
     domain: v5.chriskrycho.com
     routes:
       # Redirect misconfigured URLs from when I accidentally had `title | slug`
