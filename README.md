@@ -1,7 +1,5 @@
 # v5.chriskrycho.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/15dd2381-bb68-4e1e-94d7-38a0b7d6d2fb/deploy-status)](https://app.netlify.com/sites/v5-chriskrycho-com/deploys)
-
 The fifth iteration of my website! For details, see [the launch post]!
 
 [the launch post]: https://v5.chriskrycho.com/journal/relaunch/
