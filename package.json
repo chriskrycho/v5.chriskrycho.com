@@ -42,6 +42,7 @@
       "markdown-it-deflist": "^2.1.0",
       "markdown-it-footnote": "^3.0.3",
       "markdown-it-implicit-figures": "^0.10.0",
+      "markdown-it-mark": "^3.0.1",
       "markdown-it-sup": "^1.0.0",
       "prettier": "^2.8.7",
       "rollup": "^3.20.7",
@@ -70,8 +71,5 @@
       "watch": "npm run watch:site && npm run watch:styles",
       "serve": "env DEV=true eleventy --quiet --serve --incremental",
       "clean": "rm -rf public"
-   },
-   "dependencies": {
-      "markdown-it-mark": "^3.0.1"
    }
 }
