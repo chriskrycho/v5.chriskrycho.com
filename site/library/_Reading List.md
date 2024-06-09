@@ -81,9 +81,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Non-fiction
 
-- [Eve: How the Female Body Drove 200 Million Years of Human Evolution](https://bookshop.org/a/21126/9780385350549), Cat Bohannon (new)
+- [<cite>Eve: How the Female Body Drove 200 Million Years of Human Evolution</cite>](https://bookshop.org/a/21126/9780385350549), Cat Bohannon (new)
 
-- [The Crux: How Leaders Become Strategists](https://bookshop.org/a/21126/9781541701243), Richard Rumelt (new)
+- [<cite>The Crux: How Leaders Become Strategists</cite>](https://bookshop.org/a/21126/9781541701243), Richard Rumelt (new)
 
 - [<cite>A Quiet Mind to Suffer with: Mental Illness, Trauma, and the Death of Christ</cite>](https://bookshop.org/a/21126/9781683597049), John Andrew Bryant (new)
 
