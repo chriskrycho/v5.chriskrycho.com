@@ -65,8 +65,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
 
-- [<cite>Crucial Conversations: Tools for Talking When Stakes are High</cite>](https://bookshop.org/a/21126/9781260474183)(Third Edition), Al Switzler, Emily Gregory, Ron McMillan, Kerry Patterson, and Joseph Grenny (new)
-
 
 ### Fiction
 
@@ -528,6 +526,10 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
 
     I suspect there are a few interesting things in this book, but Taleb is perhaps the most insufferable writer of nonfiction I have encountered in the last decade. The core idea of “things which get stronger via challenge” is a mildly interesting idea, but the egotistical delivery and “Isn’t it amazing how no one else ever saw this? Aren’t I so smart? And also isn’t it great how I am ripped? And let me call every other philosophy or approach ‘sissy’ or ‘wussy’…” got very old very quickly.
+
+- [<cite>Crucial Conversations: Tools for Talking When Stakes are High</cite>](https://bookshop.org/a/21126/9781260474183)(Third Edition), Al Switzler, Emily Gregory, Ron McMillan, Kerry Patterson, and Joseph Grenny (new)
+
+    Despite a friend’s recommendation, I absolutely could not get into this—at least not in audiobook form. Maybe at some point I will skim it in ebook form? Maybe not.
 
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
