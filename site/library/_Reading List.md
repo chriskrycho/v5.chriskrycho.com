@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-05-28T07:00:00-0700
+date: 2024-06-08T20:25:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -19,7 +19,6 @@ Quick links:
 
 - [Planned](#planned)
 - [Started](#started)
-- [Tabled](#tabled)
 - [2024](#2024)
 - [2023](#2023)
 - [2022](#2022)
@@ -27,6 +26,7 @@ Quick links:
 - [2020](#2020)
 - [2019](#2019)
 - [2018](#2018)
+- [Tabled](#tabled)
 
 
 ## Planned
@@ -72,27 +72,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
 
+### Poetry
 
-## Tabled
-
-These are books I have started at some point but have (at least for now!) put aside and do not currently plan to finish, but which I might come back to eventually.
-
-- [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
-
-- [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
-
-- [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
-
-- [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
-
-- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
-    - [posts on the book](/topics/eccentric-existence/)
-
-    Tabled, ultimately, because I found I had gotten everything helpful I could from Kelsey’s opening few chapters, and decided it was not worth wading through his absolutely awful prose for the sake of his equally atrocious hermeneutical moves later in the book.
-
-- [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
-
-    I suspect there are a few interesting things in this book, but Taleb is perhaps the most insufferable writer of nonfiction I have encountered in the last decade. The core idea of “things which get stronger via challenge” is a mildly interesting idea, but the egotistical delivery and “Isn’t it amazing how no one else ever saw this? Aren’t I so smart? And also isn’t it great how I am ripped? And let me call every other philosophy or approach ‘sissy’ or ‘wussy’…” got very old very quickly.
+- [<cite>Ponds</cite>](https://bookshop.org/a/21126/9798385210640), J. C. Scharl (new)
 
 
 ## 2024
@@ -118,6 +100,8 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Flying Blind: The 737 MAX Tragedy and the Fall of Boeing</cite>](https://bookshop.org/a/21126/9780593082515), Peter Robison (new)
 
 - [<cite>Fancy Bear Goes Phishing: The Dark History of the Information Age, in Five extraordinary Hacks</cite>](https://bookshop.org/a/21126/9780374601171), Scott J. Shapiro (new)
+
+- [<cite>The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage</cite>](https://bookshop.org/a/21126/9781416507789), Clifford Stoll (new)
 
 
 ### Fiction
@@ -523,6 +507,27 @@ These are books I have started at some point but have (at least for now!) put as
 
     These are incredibly grim and fairly violent. I do not regret having read them, but I also cannot *endorse* reading them.
 
+
+## Tabled
+
+These are books I have started at some point but have (at least for now!) put aside and do not currently plan to finish, but which I might come back to eventually.
+
+- [<cite>Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares</cite>](https://web.stanford.edu/~boyd/vmls/vmls.pdf), Stephen Boyd (new)
+
+- [<cite>What Are Christians For?: Life Together at the End of the World</cite>](https://bookshop.org/a/21126/9780830847365), Jake Meador (new)
+
+- [<cite>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</cite>](https://bookshop.org/a/21126/9780143127741), Bessel van der Kolk (new)
+
+- [<cite>Essentials of Compilation: An Incremental Approach in Racket</cite>](https://mitpress.mit.edu/9780262047760/essentials-of-compilation/), Jeremy G. Siek (new)
+
+- [<cite>Eccentric Existence: A Theological Anthropology</cite>](https://bookshop.org/a/21126/9780664220525), David H. Kelsey (new)
+    - [posts on the book](/topics/eccentric-existence/)
+
+    Tabled, ultimately, because I found I had gotten everything helpful I could from Kelsey’s opening few chapters, and decided it was not worth wading through his absolutely awful prose for the sake of his equally atrocious hermeneutical moves later in the book.
+
+- [<cite>Antifragile: Things That Gain from Disorder</cite>](https://bookshop.org/a/21126/9780812979688), Nassim Nicholas Taleb (new)
+
+    I suspect there are a few interesting things in this book, but Taleb is perhaps the most insufferable writer of nonfiction I have encountered in the last decade. The core idea of “things which get stronger via challenge” is a mildly interesting idea, but the egotistical delivery and “Isn’t it amazing how no one else ever saw this? Aren’t I so smart? And also isn’t it great how I am ripped? And let me call every other philosophy or approach ‘sissy’ or ‘wussy’…” got very old very quickly.
 
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
