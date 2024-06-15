@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-06-08T20:25:00-0600
+date: 2024-06-15T07:06:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -68,7 +68,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 ### Fiction
 
-- [<cite>The Legend of Sigurd and Gudrún</cite>, J. R. R. Tolkien](https://bookshop.org/a/21126/9780547394572) (new)
+- [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
+
+- [<cite>The Lord of the Rings</cite>][lotr], J. R. R. Tolkien (reread)
 
 ### Poetry
 
