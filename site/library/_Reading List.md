@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-06-15T07:06:00-0600
+date: 2024-06-23T07:06:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -109,6 +109,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
 
 - [<cite>Our Game</cite>](https://bookshop.org/a/21126/9780345418319), John le Carré (new)
+
+- [<cite>Moonbound</cite>](https://bookshop.org/a/21126/9780374610609), Robin Sloan (new)
 
 
 ## 2023
