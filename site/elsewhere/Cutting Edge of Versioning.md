@@ -3,7 +3,14 @@ title: The Cutting Edge of Versioning (LambdaConf 2024)
 subtitle: >
     Semantic Versioning, library & framework evolution,
     programming language design, type systems, and you.
+
 date: 2024-05-06T15:24:00-0600
+updated: 2024-06-26T09:40:00-0600
+updates:
+    - at: 2024-06-26T09:40:00-0600
+      changes: >
+        Added a video embed with the recording of the talk.
+
 tags:
     - public speaking
     - software development
@@ -18,20 +25,30 @@ tags:
 qualifiers:
     context: >
         Today I gave the first of two talks at LambdaConf 2024. This one was particularly born out of [the work I did on SemVer for TypeScript types](https://v5.chriskrycho.com/elsewhere/semver-for-ts-types-beta/) and the work I did to [put Ember on a regular upgrade cadence](https://github.com/emberjs/rfcs/pull/830). The rest of this post consists of the slides and the script I wrote for the talk. I will add a post to my feeds when the video is up!
+    audience: >
+        Software developers
 
 ---
+
+<figure class='embed'>
+
+<div class='embed__wrapper'>
+<iframe class='embed__content' src="https://www.youtube.com/embed/0Pyyy-BAIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<figcaption><a href="https://www.youtube.com/watch?v=Mt7v-VbFjxk">The Cutting Edge of Versioning</figcaption>
+
+</figure>
+
+Here are the slides:
 
 <figure class="embed"><div class="embed__wrapper">
 <iframe class="embed__content speakerdeck-iframe" src="https://speakerdeck.com/player/a68bcf9849ce456a8ca86f93f7ffb7f4" title="The Cutting Edge Of Versioning (LambdaConf 2024)" allowfullscreen="true" data-ratio="1.7777777777777777"></iframe>
-</div></figure>
+</div>
+<figcaption>Slides for the talk</figcaption>
+</figure>
 
----
-
-{% note %}
-
-This is a *script*, not a *transcript*, so you will note some differences when the video is eventually up.
-
-{% endnote %}
+And if you like, you can read the talk as I prepared it. (Note that this is a *script*, not a *transcript*, so you will note some differences from the video above!)
 
 # The Cutting Edge of Versioning
 
