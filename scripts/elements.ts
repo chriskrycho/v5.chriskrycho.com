@@ -2,32 +2,33 @@ import { $, $$, assert } from './utils.js';
 
 // SAFETY: we immediately check (in debug!) that each cast is correct.
 export default function getElements() {
-   const Root = $('root') as HTMLElement;
+   const Root = $('root');
    assert(Root instanceof HTMLElement, 'misconfigured root element');
 
-   const Container = $('preferences') as HTMLElement;
+   const Container = $('preferences');
    assert(Container instanceof HTMLElement, 'misconfigured preferences element');
    Container.classList.remove('no-js-hidden');
 
-   const Panel = $('panel') as HTMLElement;
+   const Panel = $('panel');
    assert(Panel instanceof HTMLElement, 'misconfigured panel element');
 
-   const Show = $('show') as HTMLButtonElement;
+   const Show = $('show');
    assert(Show instanceof HTMLButtonElement, 'misconfigured adjust element');
 
-   const Close = $('close') as HTMLButtonElement;
+   const Close = $('close');
    assert(Close instanceof HTMLButtonElement, 'misconfigured adjust element');
 
-   const ColorSchemes = $$('theme') as NodeListOf<HTMLInputElement>;
+   const ColorSchemes = $$('theme');
    assert(
       ColorSchemes.length === 3 &&
-         Array.from(ColorSchemes).every(
-            (scheme) => scheme instanceof HTMLInputElement && scheme.type === 'radio',
-         ),
+         ((cs: typeof ColorSchemes): cs is NodeListOf<HTMLInputElement> =>
+            Array.from(cs).every(
+               (scheme) => scheme instanceof HTMLInputElement && scheme.type === 'radio',
+            ))(ColorSchemes),
       'misconfigured color schemes',
    );
 
-   const NavMode = $('hide-side-nav') as HTMLInputElement;
+   const NavMode = $('hide-side-nav');
    assert(
       NavMode instanceof HTMLInputElement && NavMode.type === 'checkbox',
       'misconfigured reading mode',
