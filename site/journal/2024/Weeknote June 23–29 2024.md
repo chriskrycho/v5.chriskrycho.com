@@ -8,6 +8,8 @@ tags:
     - music
     - programming languages
     - weeknotes
+    - reading
+    - philosophy
 summary: >
     Finishing a lot of first drafts: in music, in writing TRPL, and in talk preparation.
 
