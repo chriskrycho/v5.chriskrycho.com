@@ -3,11 +3,20 @@ title: An Observation on Constructor Syntax
 subtitle: >
     From debating whether to implement them in my little programming language.
 date: 2024-07-02T21:12:00-0600
+updated: 2024-07-03T07:13:00-0600
+updates:
+    - at: 2024-07-03T07:13:00-0600
+      changes: >
+        Corrected the code sample for `static fn new`, and added a note on control flow and initialization.
+
 tags:
     - programming languages
     - Rust
     - Swift
     - software development
+
+thanks: >
+    [Dan Freeman](https://dfreeman.io) very gently and kindly pointed out that I had missed some important bits in my write-up on the `static fn` alternative *and* on control flow analysis for initialization.
 
 ---
 
@@ -25,9 +34,9 @@ struct Person {
       self.age = age
    }
 
-   fn regular-method () {/* … */}
+   fn regular-method () -> SomeType {/* … */}
 
-   static fn static-method () {/* … */}
+   static fn static-method () -> AnotherType {/* … */}
 }
 ```
 
@@ -38,14 +47,16 @@ struct Person {
    name: Maybe String,
    age: UInt,
 
-   static fn new (name: Maybe String, age: UInt) {
-      self.name = name
-      self.age = age
+   static fn new (name: Maybe String, age: UInt) -> Person {
+      Person {
+         name: name,
+         age: age,
+      }
    }
 
-   fn regular-method () {/* … */}
+   fn regular-method () -> SomeType {/* … */}
 
-   static fn static-method () {/* … */}
+   static fn static-method () -> AnotherType {/* … */}
 }
 ```
 
@@ -72,6 +83,8 @@ Two thoughts which emerge from that:
     You could imagine solving that with special syntax on the method declaration or something, but that would get *very* noisy very quickly.
 
 2. This exact dynamic may be, along with the long history of constructors in C++, part of how Swift ended up with its approach to `init`. I would love to hear from Swift people who know!
+
+3. If you do a traditional constructor, i.e. my “special case” version you need to validate that the control flow through the body of that does in fact initialize the entire type correctly. The `static fn` version does *not* have that problem. It does require you to have syntax for constructing a struct directly, as the example above shows!
 
 For my purposes, I am going to start by just special-casing `new` and moving on, I think. But I reserve the right to change my mind. After all, the whole point here is to play around and learn about the tradeoffs *by building the thing*. More anon!
 
