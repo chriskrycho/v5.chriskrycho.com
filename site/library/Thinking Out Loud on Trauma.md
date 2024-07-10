@@ -3,6 +3,11 @@ title: Thinking Out Loud on “Trauma”
 subtitle: >
   Some musing and notes after reading the first fifth of <cite>The Body Keeps the Score</cite>
 date: 2022-08-06T16:30:00-0600
+tags:
+    - mental illness
+    - reading
+    - The Body Keeps the Score
+
 qualifiers:
   epistemic: >
     Bloggy and curious, literally “thinking out loud”. I haven’t given this *any* sustained thought, and this is more or less unedited. Take it for what you will, and be gentle with my ignorance.
@@ -12,7 +17,9 @@ image: https://cdn.chriskrycho.com/images/books/body-keeps-the-score.jpeg
 
 ## 1.
 
-Waiting at a doctor’s office for a family member’s appointment this morning, I picked up a copy of [<cite>The Body Keeps the Score</cite>](TODO) that was sitting in the waiting room. As I made my way through Bessel van der Kolk’s background narratives, a particular statement caught my attention: that the various drug treatments worked out by psychiatrists and pharmaceutical companies over the last four decades work quite well for *most* of the trauma cases… but *not* the most classic <abbr title="post-traumatic stress disorder">PTSD</abbr> patients there are, the ones who helped get the term defined in the first place: veterans.
+Waiting at a doctor’s office for a family member’s appointment this morning, I picked up a copy of [<cite>The Body Keeps the Score</cite>][book] that was sitting in the waiting room. As I made my way through Bessel van der Kolk’s background narratives, a particular statement caught my attention: that the various drug treatments worked out by psychiatrists and pharmaceutical companies over the last four decades work quite well for *most* of the trauma cases… but *not* the most classic <abbr title="post-traumatic stress disorder">PTSD</abbr> patients there are, the ones who helped get the term defined in the first place: veterans.
+
+[book]: https://bookshop.org/a/21126/9780143127741
 
 That’s weird.
 
