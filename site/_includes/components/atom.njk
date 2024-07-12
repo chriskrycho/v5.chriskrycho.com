@@ -45,6 +45,10 @@
             <summary type="html">{{- summary -}}</summary>
             <content type="html">
                <![CDATA[
+                  {%- if item.data.feedOnly -%}
+                  <p><em>Psst: this is a feed-only item which will <em>never</em> appear on the regular site!</em></p>
+                  {%- endif -%}
+
                   {%- if item.data.subtitle -%}
                      <p><i>{{- item.data.subtitle | safe -}}</i></p>
                   {%- endif -%}

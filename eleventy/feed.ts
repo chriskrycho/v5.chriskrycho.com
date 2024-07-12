@@ -79,6 +79,7 @@ declare module '../types/eleventy' {
          lobsters: string;
       };
       sendEmail?: boolean;
+      feedOnly?: boolean;
    }
 }
 
@@ -187,6 +188,11 @@ function contentHtmlFor(
    config: SiteConfig,
    includeReplyViaEmail: boolean,
 ): string {
+   const feedOnly =
+      item.data?.feedOnly === true
+         ? '<p><em>Psst: this is a feed-only item which will <em>never</em> appear on the regular site!</em></p>'
+         : '';
+
    const subtitle =
       typeof item.data?.subtitle === 'string'
          ? `<p><i>${markdown.renderInline(item.data.subtitle)}</i></p>`
@@ -232,7 +238,14 @@ function contentHtmlFor(
       : '';
 
    return (
-      subtitle + qualifiers + bookInfo + updates + item.templateContent + thanks + reply
+      feedOnly +
+      subtitle +
+      qualifiers +
+      bookInfo +
+      updates +
+      item.templateContent +
+      thanks +
+      reply
    );
 }
 

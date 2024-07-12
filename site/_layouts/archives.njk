@@ -27,6 +27,7 @@ standalonePage: true
    {%-
       set items = collections[c]
          | excludingStandalonePages
+         | excludingFeedOnly
          | archiveByYears(order)
    -%}
    {{ archive.list(items) }}

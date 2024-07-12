@@ -34,7 +34,7 @@
 
 {%- set tagCollection = collections[tag] | isLive -%}
 {%- if tagCollection and tagCollection.length -%}
-   {{ archive.list(tagCollection | excludingStandalonePages | archiveByYears('OLD_FIRST'), idByCollection=true) }}
+   {{ archive.list(tagCollection | excludingStandalonePages | excludingFeedOnly | archiveByYears('OLD_FIRST'), idByCollection=true) }}
 {%- endif -%}
 
 <article class='article-content for-callout'>
