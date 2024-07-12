@@ -2,6 +2,12 @@
 title: Seeing Like a Programmer (LambdaConf 2024)
 subtitle: Resiliency, Limits, and Moral Hazards in Software Engineering
 date: 2024-05-07T17:40:00-0600
+updated: 2024-07-11T20:10:00-0600
+updates:
+    - at: 2024-07-11T20:10:00-0600
+      changes: >
+        Added the video link and a note about the talk at the top.
+
 tags:
     - public speaking
     - software development
@@ -12,26 +18,32 @@ tags:
 
 qualifiers:
     audience: >
-        People interested in how we can make good software. In more than one sense of the phrase “good software”.
+        People interested in how we can make good software. In more than one sense of the phrase “good software”. **That means *not* just software engineers.**
 
     context: >
-        Today I gave the second of two talks at LambdaConf 2024: exploring what we can do to make our software *better*… and also what to do to make *better software*. As the title might suggest, it explicitly draws on James C. Scott’s <cite>Seeing Like a State</cite>; it also draws extensively on Peter Naur’s “Programming as Theory-Building”, Donella Meadows’ <cite>Thinking in Systems</cite>, and more. The rest of this post consists of the slides and the script I wrote for the talk. I will add a post to my feeds when the video is up!
+        Today I gave the second of two talks at LambdaConf 2024: exploring what we can do to make our software *better*… and also what to do to make *better software*. As the title might suggest, it explicitly draws on James C. Scott’s <cite>Seeing Like a State</cite>; it also draws extensively on Peter Naur’s “Programming as Theory-Building”, Donella Meadows’ <cite>Thinking in Systems</cite>, and more.
 
 ---
 
+This is the best talk I have ever given, and also by far the most important. I am incredibly proud of it, and if you find it helpful or thought-provoking, I would really love it if you shared it. You don’t need to be a software engineer or even to know all that much about software to appreciate this talk, and some of the people I think need to hear it most are people who work *with* software engineers but who are not themselves software engineers.
 
+<figure class='embed'>
+
+<div class='embed__wrapper'>
+<iframe class='embed__content' src="https://www.youtube.com/embed/k7Jer1wwoDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<figcaption><a href="https://www.youtube.com/watch?v=k7Jer1wwoDw">Seeing Like a Programmer</figcaption>
+
+</figure>
+
+Here are the slides:
 
 <figure class="embed"><div class="embed__wrapper">
 <iframe class="embed__content speakerdeck-iframe" src="https://speakerdeck.com/player/07b6b710e90e44049e7a70d8113bb817" title="“Seeing Like a Programmer”—Resiliency, Limits, and Moral Hazards in Software Engineering (LambdaConf 2024)" allowfullscreen="true" data-ratio="1.7777777777777777"></iframe>
 </div></figure>
 
----
-
-{% note %}
-
-This is a *script*, not a *transcript*, so you will note some differences when the video is eventually up.
-
-{% endnote %}
+And if you like, you can read the talk as I prepared it. (Note that this is a *script*, not a *transcript*, so you will note some differences from the video above!)
 
 # Seeing Like a Programmer
 
