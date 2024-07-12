@@ -1,7 +1,7 @@
 ---
 title: LambdaConf 2024 Talk Videos Released!
 date: 2024-07-11T20:11:00-0600
-updated: 2024-07-11T20:29:00-0600
+updated: 2024-07-12T05:25:00-0600
 feedOnly: true
 summary: >
     You can now watch my LambdaConf 2024 talks: “Seeing Like a Programmer” and “The Cutting Edge of Versioning”.
@@ -32,4 +32,4 @@ programming language design, type systems, and you][versioning]—aimed much mor
     > How can new languages include versioning semantics in their design constraints? What tooling should we build for existing ecosystems? Above all, what should you do in your own projects?
 
 [seeing]: https://www.youtube.com/watch?v=k7Jer1wwoDw
-[versioning]: https://www.youtube.com/watch?v=Mt7v-VbFjxk
+[versioning]: https://www.youtube.com/watch?v=0Pyyy-BAIYQ
