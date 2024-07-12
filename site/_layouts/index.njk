@@ -15,10 +15,10 @@ standalonePage: true
    {% block after_content %}{% endblock after_content %}
 </article>
 
-{{list(collections.featured | excludingFeedOnly, title="Featured")}}
-{{list(collections.latest | excludingFeedOnly, "The Latest")}}
+{{list(collections.featured, title="Featured")}}
+{{list(collections.latest, "The Latest")}}
 {% if collections.drafts and collections.drafts.length > 0 %}
-   {{list(collections.drafts | excludingFeedOnly, title="In Progress", includeUpdated=true)}}
+   {{list(collections.drafts, title="In Progress", includeUpdated=true)}}
 {% endif %}
 {{list(collections.updated, title="Updated Recently", includeUpdated=true)}}
 {%- endblock main -%}

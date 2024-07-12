@@ -85,6 +85,7 @@ function latest(collection: Collection): Item[] {
       .getAll()
       .filter(isLive)
       .filter(excludingStandalonePages)
+      .filter(not(feedOnly))
       .sort(byDate(Order.NewFirst));
 
    return [
@@ -106,6 +107,7 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
       .getAll()
       .filter(isLive)
       .filter(excludingStandalonePages)
+      .filter(not(feedOnly))
       .filter(hasUpdated)
       .sort(byUpdated(Order.NewFirst));
 
@@ -127,6 +129,7 @@ const featured = (collection: Collection): Item[] =>
       .getAll()
       .filter(isLive)
       .filter(excludingStandalonePages)
+      .filter(not(feedOnly))
       .filter(isFeatured)
       .sort(byDate(Order.NewFirst));
 
@@ -135,6 +138,7 @@ const drafts = (collection: Collection): Item[] =>
       .getAll()
       .filter((item) => item.data?.draft === true)
       .filter(excludingStandalonePages)
+      .filter(not(feedOnly))
       .sort(byDate(Order.NewFirst));
 
 const tags = (collection: Collection): string[] => {
