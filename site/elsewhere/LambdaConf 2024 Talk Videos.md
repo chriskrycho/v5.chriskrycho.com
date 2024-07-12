@@ -9,7 +9,7 @@ summary: >
 
 As was foretold (?) both of my LambdaConf 2024 videos have at last been released on YouTube!
 
-- [Seeing Like a Programmer: Resiliency, Limits, and Moral Hazards in Software Engineering][seeing]—the best talk I have ever given, and also by far the most important. I am incredibly proud of it, and if you find it helpful or thought-provoking, I would really love it if you shared it. You don’t need to be a software engineer or even to know all that much about software to appreciate this talk, and some of the people I think need to hear it most are people who work *with* software engineers but who are not themselves software engineers.
+- [Seeing Like a Programmer: Resiliency, Limits, and Moral Hazards in Software Engineering][seeing]—the best talk I have ever given, and also by far the most important. You don’t need to be a software engineer or even to know all that much about software to appreciate this talk, and some of the people I think need to hear it most are people who work *with* software engineers but who are not themselves software engineers. If you find it helpful or thought-provoking, I would really love it if you shared it!
 
     The abstract for the talk was:
 
@@ -20,7 +20,7 @@ As was foretold (?) both of my LambdaConf 2024 videos have at last been released
     > We should not give up on software—or on software engineering! But great engineers know not only when and how to apply their tools, but also the limits of their tools and their whole trade.
 
 - [The Cutting Edge of Versioning: Semantic Versioning, library & framework evolution,
-programming language design, type systems, and you.]—aimed much more squarely at software developers, and much more an in-the-weeds exploration of a nitty-gritty topic in day-to-day software engineering.
+programming language design, type systems, and you][versioning]—aimed much more squarely at software developers, and much more an in-the-weeds exploration of a nitty-gritty topic in day-to-day software engineering.
 
     Here was the abstract for this one:
 
