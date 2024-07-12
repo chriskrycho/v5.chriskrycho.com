@@ -1,6 +1,7 @@
 ---
 title: LambdaConf 2024 Talk Videos Released!
 date: 2024-07-11T20:11:00-0600
+updated: 2024-07-11T20:29:00-0600
 feedOnly: true
 summary: >
     You can now watch my LambdaConf 2024 talks: “Seeing Like a Programmer” and “The Cutting Edge of Versioning”.
