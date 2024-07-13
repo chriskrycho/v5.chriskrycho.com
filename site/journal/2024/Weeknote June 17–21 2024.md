@@ -9,6 +9,8 @@ tags:
     - speaking
     - reading
     - site meta
+    - weeknotes
+
 summary: >
     SwiftUI, parsing, progress on the async chapter of TRPL, a second pass on a bit of orchestra music, StaffPlus drafting, The Changelog, and Moonbound!
 

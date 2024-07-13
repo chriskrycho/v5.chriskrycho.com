@@ -7,6 +7,8 @@ tags:
     - music
     - composing
     - reading
+    - weeknotes
+
 summary: >
     Top-level forms in my programming language, half of a major revision pass on the async chapter for TRPL, a first dry run for StaffPlus, and job hunting!
 
@@ -42,7 +44,7 @@ Mostly just a bunch of essays this week, and none so compelling that I feel like
 
 ## Career/etc.
 
-Steady on with the networking/job hunting for [my next role](https://v5.chriskrycho.com/journal/next/role/)! 
+Steady on with the networking/job hunting for [my next role](https://v5.chriskrycho.com/journal/next/role/)!
 
 - I wrote an apparently-compelling cold email that turned into a call next week with a developer/engineering-focused startup whose work I really like, so we’ll see where that goes.
 
