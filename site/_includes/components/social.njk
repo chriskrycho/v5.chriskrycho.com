@@ -7,9 +7,11 @@
          {{page.data.image}}
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover}}
-      {%- else -%}
+      {%- elif pageTitle -%}
          {%- set fullTitle = pageTitle + " – Sympolymathesy" -%}
          https://cdn.statically.io/og/theme=dark/{{fullTitle | urlencode}}.png
+      {%- else -%}
+         https://cdn.statically.io/og/theme=dark/Sympolymathesy.png
       {%- endif -%}
    {%- endset -%}
 
