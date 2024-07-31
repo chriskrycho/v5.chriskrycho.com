@@ -3,7 +3,7 @@ title: "PSA: Do Not Use Blockquotes for Admonitions"
 subtitle: >
     Markdown leads you into this trap, but you don’t have to fall into it.
 date: 2024-07-30T16:06:00-0600
-updated: 2024-07-30T18:30:00-0600
+updated: 2024-07-30T19:23:00-0600
 updates:
     - at: 2024-07-30T18:30:00-0600
       changes: >
@@ -19,7 +19,7 @@ templateEngineOverride: md
 
 ---
 
-Public service announcement: please do not use `<blockquote>` (including by using the `>` form in blockquote which *creates* a `<blockquote>`) where you really mean some kind of admonition or callout. (This is the biggest accessibility consequence I can think of from Markdown’s limited vocabulary.) Use an actual admonition if your Markdown engine supports it, or custom <abbr title="HyperText Markup Language">HTML</abbr> otherwise.
+Public service announcement: please do not use `<blockquote>` (including by using the `>` form in Markdown which *creates* a `<blockquote>`) where you really mean some kind of admonition or callout. (This is the biggest accessibility consequence I can think of from Markdown’s limited vocabulary.) Use an actual admonition if your Markdown engine supports it, or custom <abbr title="HyperText Markup Language">HTML</abbr> otherwise.
 
 Why? Because people reading your site with assistive technology like VoiceOver will not see the visual presentation of your block quote (however much it looks like an admonition); they will simply hear it narrated as a quote. (Yes, people who need to use screen readers are used to working around that. No, that does  not mean we should accept the _status quo_ as “good enough”.)
 
