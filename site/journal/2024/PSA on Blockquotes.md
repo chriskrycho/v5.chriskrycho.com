@@ -11,6 +11,8 @@ updates:
 
 tags:
     - accessibility
+    - writing
+    - blogging
 
 # This has a code sample of the shortcode in it. «sigh»
 templateEngineOverride: md
