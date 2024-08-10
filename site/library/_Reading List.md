@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-06-23T07:06:00-0600
+date: 2024-08-09T19:58:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -102,6 +102,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Fancy Bear Goes Phishing: The Dark History of the Information Age, in Five extraordinary Hacks</cite>](https://bookshop.org/a/21126/9780374601171), Scott J. Shapiro (new)
 
 - [<cite>The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage</cite>](https://bookshop.org/a/21126/9781416507789), Clifford Stoll (new)
+
+- [<cite>The First World War</cite>](https://bookshop.org/a/21126/9780375700453), John Keegan (new)
 
 
 ### Fiction
