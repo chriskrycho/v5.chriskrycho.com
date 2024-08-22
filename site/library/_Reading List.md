@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-08-12T20:48:00-0600
+date: 2024-08-21T19:19:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -65,8 +65,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
 
-- [<cite>Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance</cite>](https://bookshop.org/a/21126/9780062499981), Alex Hutchinson (new)
-
 - [<cite>The Face of Battle</cite>](https://bookshop.org/a/21126/9780140048971), John Keegan (new)
 
 
@@ -108,6 +106,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage</cite>](https://bookshop.org/a/21126/9781416507789), Clifford Stoll (new)
 
 - [<cite>The First World War</cite>](https://bookshop.org/a/21126/9780375700453), John Keegan (new)
+
+- [<cite>Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance</cite>](https://bookshop.org/a/21126/9780062499981), Alex Hutchinson (new)
 
 
 ### Fiction
