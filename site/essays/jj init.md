@@ -34,9 +34,9 @@ discuss:
 date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
 
-updated: 2024-09-09T08:15:00-0700
+updated: 2024-09-09T08:15:00-0600
 updates:
-  - at: 2024-09-09T08:15:00-0700
+  - at: 2024-09-09T08:15:00-0600
     changes: >
       Fixed some typos and added a note about out of date content.
   - at: 2024-02-08T13:55:00-0700
