@@ -471,6 +471,14 @@
       margin-bottom: 1rem;
    }
 
+   .slide {
+      margin-bottom: 1rem;
+
+      img {
+         border: 1px solid var(--main-border);
+      }
+   }
+
    blockquote {
       font: {
          family: var(--sans);
