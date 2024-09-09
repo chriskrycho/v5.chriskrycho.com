@@ -34,8 +34,11 @@ discuss:
 date: 2024-02-02T11:30:00-0700
 started: 2023-07-01T18:42:00-0600
 
-updated: 2024-02-08T13:55:00-0700
+updated: 2024-09-09T08:15:00-0700
 updates:
+  - at: 2024-09-09T08:15:00-0700
+    changes: >
+      Fixed some typos and added a note about out of date content.
   - at: 2024-02-08T13:55:00-0700
     changes: >
       Updated to use `jj git init` instead of plain `jj init`, to match the 0.14 release.
@@ -182,24 +185,27 @@ One of the really interesting bits about picking up Jujutsu is realizing just ho
 
 Time to become a Jedi Knight. Jujutsu Knight? Jujutsu Master? Jujutsu apprentice, at least. Let’s dig in!
 
-<details><summary>Outline</summary>
+### Outline
 
-- [Using Jujutsu](#using-jujutsu)
-    - [Revisions and revsets](#revisions-and-revsets)
-    - [Changes](#changes)
-    - [Split](#split)
-    - [First-class conflicts](#first-class-conflicts)
-    - [Changing changes](#changing-changes)
-    - [Branches](#branches)
-    - [Git interop](#git-interop)
-    - [Is it ready?](#is-it-ready)
-- [Conclusion](#conclusion)
-- [Appendix: Kaleidoscope setup and tips](#appendix-kaleidoscope-setup-and-tips)
-
-</details>
-
+-  [Using Jujutsu](#using-jujutsu)
+   -  [Revisions and revsets](#revisions-and-revsets)
+   -  [Changes](#changes)
+   -  [Split](#split)
+   -  [First-class conflicts](#first-class-conflicts)
+   -  [Changing changes](#changing-changes)
+   -  [Branches](#branches)
+   -  [Git interop](#git-interop)
+   -  [Is it ready?](#is-it-ready)
+-  [Conclusion](#conclusion)
+-  [Appendix: Kaleidoscope setup and tips](#appendix-kaleidoscope-setup-and-tips)
 
 ## Using Jujutsu
+
+{% note %}
+
+Since I published this in early 2024, many details about Jujutsu have changed—especially around specific <abbr title="command line interface">CLI</abbr> invocations—, and a fair number of the papercuts have been fixed. The big picture is the same as it was, but I can *even more* strongly recommend it than I did originally.
+
+{% endnote %}
 
 That is all interesting enough philosophically, but for a tool that, if successful, will end up being one of a software developer’s most-used tools, there is an even more important question: *What is it actually like to use?*
 
