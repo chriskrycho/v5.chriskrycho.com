@@ -21,12 +21,29 @@ tags:
     - leadership
 
 date: 2024-09-09T12:30:00-0600
+updated: 2024-09-14T14:40:00-0600
+updates:
+    - at: 2024-09-14T14:40:00-0600
+      changes: >
+        Added the meta content I wrote when sharing this on social media.
 
 ---
 
 This past Thursday, I spoke at the excellent [StaffPlus New York][conf] conference—one of the best-run conferences I have attended or spoken at—on the subject of <abbr title="large language model">LLM</abbr>s and how they intersect with our engineering foundations. The videos are generally not public, though if they do publish mine to YouTube I will link it here; but I am able to share my slides and script! What follows is not a word-for-word transcript but my speaker notes and slides.
 
 [conf]: https://leaddev.com/staffplus-new-york/agenda
+
+Before the content itself, though, a meta note about this talk: I am, as a lot of folks out there know, not exactly bullish on <abbr title="large language model">LLM</abbr>s in general. I think most of the hype is nonsense—even while I think some of their capabilities are really astonishing!—but I do think they’re here to stay. So:
+
+First of all, if we’re going to be working in a world where people are authoring code with <abbr title="large language model">LLM</abbr>s (Copilot etc.) and using them to “do things” as agent-based systems, the world of inputs to the models matters, as do the environments in which they run. They matter a *lot*!
+
+Second, I think a lot of engineering organizations pretty consistently underinvest in foundations, because of the simple realities that many kinds of foundations projects take longer and have a less direct/measurable connection to profitability. They just do, no way around it.
+
+Third, then, what are the ways that engineering leaders—including managers, but especially Staff+ engineers—can mitigate the risks of <abbr title="large language model">LLM</abbr>s and improve the chances that they are net neutral or even positive, rather than negative, for software quality, UX, and business outcomes?
+
+Secretly (and yes, I am saying it out loud now!) it is predicated on my belief that ***these are the things we should be doing anyway***… but this is a moment when we have a really obvious reason how and why these things matter, with which we can make that case to decision-makers.
+
+And because these are the things we should be doing anyway, an organization which uses this <abbr title="large language model">LLM</abbr>-hype-moment to improve the foundations on which we run <abbr title="large language model">LLM</abbr>-related systems… will be in a better spot two years from now *even if the <abbr title="large language model">LLM</abbr> ecosystem craters*. Seems like a win.
 
 ---
 
