@@ -64,8 +64,7 @@ Same question, but now we’re talking about (safe) Rust. Now I can trust all th
 
 <section class="slide">
 
-<img class="slide-image" src="https://cdn.chriskrycho.com/images/talks/substrate-engineering-2024/005.png" alt="Slide reading 'Our systems are not ready for
-a world of pervasive LLMs.'">
+<img class="slide-image" src="https://cdn.chriskrycho.com/images/talks/substrate-engineering-2024/005.png" alt="Slide reading 'Our systems are not ready for a world of pervasive LLMs.'">
 
 This is not a talk about C and Rust. It is a talk about engineering systems, and how we think about them in a world where <abbr title="large language model">LLM</abbr>s are pervasive, for good and for ill. Because my thesis is that our engineering systems are simply not ready for a world of pervasive <abbr title="large language model">LLM</abbr>s.
 
