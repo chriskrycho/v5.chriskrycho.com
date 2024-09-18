@@ -9,15 +9,40 @@ summary: >
 
 If you would like to follow my writing, you can subscribe via feed or email. I maintain separate Atom and <abbr title="JavaScript Object Notation">JSON</abbr> feeds for each of the overall sections of the site:
 
-- **Everything:** [Atom](/feed.xml) | [<abbr title="JavaScript Object Notation">JSON</abbr>](/feed.json)
-- Essays: [Atom](/essays/feed.xml) | [<abbr title="JavaScript Object Notation">JSON</abbr>](/essays/feed.json)
-- Journal: [Atom](/journal/feed.xml) | [<abbr title="JavaScript Object Notation">JSON</abbr>](/journal/feed.json)
-- Library: [Atom](/library/feed.xml) | [<abbr title="JavaScript Object Notation">JSON</abbr>](/library/feed.json)
-- Elsewhere: [Atom](/elsewhere/feed.xml) | [<abbr title="JavaScript Object Notation">JSON</abbr>](/elsewhere/feed.json)
+<table>
+    <tr>
+        <th scope="row"><strong>Everything</strong></td>
+        <td><a href="/feed.xml">Atom</a></td>
+        <td><a href="/feed.json">JSON</a></td>
+    </tr>
+    <tr>
+        <th scope="row">Essays</td>
+        <td><a href="/essays/feed.xml">Atom</a></td>
+        <td><a href="/essays/feed.json">JSON</a></td>
+    </tr>
+    <tr>
+        <th scope="row">Journal</td>
+        <td><a href="/journal/feed.xml">Atom</a></td>
+        <td><a href="/journal/feed.json">JSON</a></td>
+    </tr>
+    <tr>
+        <th scope="row">Library</td>
+        <td><a href="/library/feed.xml">Atom</a></td>
+        <td><a href="/library/feed.json">JSON</a></td>
+    </tr>
+    <tr>
+        <th scope="row">Elsewhere</td>
+        <td><a href="/elsewhere/feed.xml">Atom</a></td>
+        <td><a href="/elsewhere/feed.json">JSON</a></td>
+    </tr>
+
+</table>
 
 If you prefer to get emailed when I post, you can subscribe to either [every post](https://buttondown.email/sympolymathesy) or [a weekly digest](https://buttondown.email/sympolymathesy-digest).
 
-For my photography, [follow me on Glass](https://glass.photo/chriskrycho), or subscribe [via Glass’ <abbr>RSS</abbr> feed](https://glass.photo/chriskrycho/rss).
+{% include 'blocks/buttondown.njk' %}
+
+---
 
 You can also find me around the web in various contexts. In alphabetical order, social media sites I am more or less active on:
 

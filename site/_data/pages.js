@@ -1,8 +1,9 @@
 module.exports = [
+   { type: 'page', title: 'Services', url: '/services/' },
+   { type: 'separator' },
    { type: 'page', title: 'Essays', url: '/essays/' },
    { type: 'page', title: 'Journal', url: '/journal/' },
    { type: 'page', title: 'Library', url: '/library/' },
-   { type: 'page', title: 'Photos', url: 'https://glass.photo/chriskrycho' },
    { type: 'page', title: 'Elsewhere', url: '/elsewhere/' },
    { type: 'separator' },
    { type: 'page', title: 'Archive', url: '/archive/' },

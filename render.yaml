@@ -13,6 +13,11 @@ services:
     pullRequestPreviewsEnabled: true
     domain: v5.chriskrycho.com
     routes:
+      # Paths I want to work both ways if people search
+      - type: rewrite
+        source: /consulting/
+        destination: /services/
+
       # Redirect misconfigured URLs from when I accidentally had `title | slug`
       # instead of `fileSlug | slug`.
       - type: redirect
