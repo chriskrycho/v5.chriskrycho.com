@@ -21,15 +21,22 @@ tags:
     - leadership
 
 date: 2024-09-09T12:30:00-0600
-updated: 2024-09-14T14:40:00-0600
+updated: 2024-09-18T16:58:00-0600
 updates:
+    - at: 2024-09-18T16:58:00-0600
+      changes: >
+        Added a link to the recording.
     - at: 2024-09-14T14:40:00-0600
       changes: >
         Added the meta content I wrote when sharing this on social media.
 
 ---
 
-This past Thursday, I spoke at the excellent [StaffPlus New York][conf] conference—one of the best-run conferences I have attended or spoken at—on the subject of <abbr title="large language model">LLM</abbr>s and how they intersect with our engineering foundations. The videos are generally not public, though if they do publish mine to YouTube I will link it here; but I am able to share my slides and script! What follows is not a word-for-word transcript but my speaker notes and slides.
+This past Thursday (September 5, 2024), I spoke at the excellent [StaffPlus New York][conf] conference—one of the best-run conferences I have attended or spoken at—on the subject of <abbr title="large language model">LLM</abbr>s and how they intersect with our engineering foundations. The video is available [here][video] behind an email-wall (not, gladly, a paywall!), so check it out!
+
+[video]: https://leaddev.com/staffplus-new-york-2024/video/substrate-engineering-engineering-foundations-world-llms
+
+Below are my slides and script! What follows is not a word-for-word transcript but my speaker notes and slides.
 
 [conf]: https://leaddev.com/staffplus-new-york/agenda
 

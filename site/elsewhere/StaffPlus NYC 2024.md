@@ -12,11 +12,24 @@ tags:
     - GPT
 
 date: 2024-04-26T17:00:00-0600
+updated: 2024-09-18T16:56:00-0600
+updates:
+    - at: 2024-09-18T16:56:00-0600
+      changes: >
+        Added a callout to link forward to the talk and its slides.
 
 summary: >
     I will be speaking at StaffPlus NYC 2024, on the idea that generative AI tools have made investments in engineering foundations even more important.
 
 ---
+
+{% callout %}
+
+**Update (September 18, 2024):** You can find this talk and its slides and script [here][delivered].
+
+[delivered]: https://v5.chriskrycho.com/elsewhere/substrate-engineering/
+
+{% endcallout %}
 
 I will be at [StaffPlus New York][conf], making my best argument for the idea that the advent of tools like [Copilot][copilot] and [ChatGPT][cgpt] has actually made engineering foundations more important than ever. (Yes, a very *me* take!)
 
