@@ -1,5 +1,6 @@
 ---
 title: Services
+subtitle: Technical strategy, TypeScript, and Rust specialist.
 ---
 
 I help teams with front-end web strategy development, TypeScript adoption and conversion, and Rust adoption. I also provide individual coaching.
