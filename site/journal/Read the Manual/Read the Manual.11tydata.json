@@ -1,0 +1,5 @@
+{
+   "layout": "post.njk",
+   "permalink": "/journal/read-the-manual/{{tool | slug}}/index.html",
+   "tags": ["software development"]
+}
