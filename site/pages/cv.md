@@ -12,14 +12,17 @@ summary: >
 
 [resume]: https://cdn.chriskrycho.com/resume.pdf
 
-Interested in working with me? Feel free to [say hello][email]!
+Interested in working with me? Take a look at [the services I offer][services] or feel free to [say hello][email]!
 
+[services]: /services
 [email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
 
 - [<i>About Me</i>](#about-me)
     - [Philosophy: Ratchets, Not Levers](#philosophy-ratchets-not-levers)
     - [Education](#education)
 - [<i>Work</i>](#work)—not just where I’ve worked and the tech I used, but what I brought to the table and the difference I made:
+    - [2024: Writing and Consulting](#2024-writing-and-consulting)
+    - [2023–2024: Mini-Sabbatical](#2023-2024-mini-sabbatical)
     - [2019–2023: LinkedIn](#2019-2023-linkedin)
     - [2016–2018: Olo](#2016-2018-olo)
     - [2014–2015: HolyBible.com](#2014-2015-holybiblecom)
@@ -73,6 +76,26 @@ Ratchets are incremental improvements, not silver bullets. So was structured pro
 <a name=undergrad></a>I graduated *magna cum laude* with a **Bachelor of Science in Physics** from **The University of Oklahoma** in **May 2009**, having been a regular departmental award winner. My senior thesis, a project in computational neurophysics (in Fortran 90!), led me into programming—but/and I still miss doing physics and math on a regular basis.
 
 ## Work
+
+### 2024: Writing and Consulting
+
+Starting in March 2024, I have been working as an independent consultant (you can [hire me!][services]). A few notable engagements:
+
+- I have written a new chapter on concurrent programming with `async` and `await` for [<cite>The Rust Programming Language</cite>][trpl], the official Rust book (currently in revision) and have taken over co-maintainership of the book project.
+- I successfully helped [Subsplash][subsplash] develop a front-end technical strategy for their large and successful application.
+- I worked with [Pydantic][pydantic] on internal prototypes.
+
+[trpl]: https://doc.rust-lang.org/book
+[subsplash]: https://www.subsplash.com
+[pydantic]: https://pydantic.dev
+
+### 2023–2024: Mini-Sabbatical
+
+From **October–December 2023**, I took a small sabbatical, focused on spending time with my family, [composing][music] contemporary classical music, and learning how to build programming languages.
+
+[music]: https://music.chriskrycho.com
+
+In **January–March 2024**, I spent time actively reconnecting with old colleagues and acquaintances and meeting new people across the field, working to identify next steps for my career and interesting people to work with.
 
 ### 2019–2023: LinkedIn
 
