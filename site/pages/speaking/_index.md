@@ -45,6 +45,7 @@ If those sound interesting to you, I’d love to be on your show or speak at you
 
 ## Talks
 
+- [Substrate Engineering: Engineering Foundations in a World of <abbr title="large language model">LLM</abbr>s][substrate], StaffPlus New York, September 2024
 - [Seeing Like a Programmer][seeing], LambdaConf, May 2024
 - [The Cutting Edge of Versioning][versioning], LambdaConf, May 2024
 - [The Road to TypeScript][road-to-ts], EmberConf, March 2022
@@ -55,6 +56,7 @@ If those sound interesting to you, I’d love to be on your show or speak at you
 - [Becoming a Contributor][rbr2017], Rust Belt Rust 2017, October 2017
 - [*Tolle Lege!* Designing Readable Bibles With Digital Typography][bibletech2015], BibleTech 2015, May 2015—the first talk I ever gave, and not a bad one!
 
+[substrate]: https://v5.chriskrycho.com/elsewhere/substrate-engineering/
 [seeing]: https://v5.chriskrycho.com/elsewhere/seeing-like-a-programmer/
 [versioning]: https://v5.chriskrycho.com/elsewhere/cutting-edge-of-versioning/
 [road-to-ts]: https://www.youtube.com/watch?v=UOw7TydAT_s
