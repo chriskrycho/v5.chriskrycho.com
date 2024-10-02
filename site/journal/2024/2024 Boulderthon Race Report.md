@@ -41,7 +41,7 @@ You can check out more details [on Strava][strava], and if you want to watch me 
 
 I nailed my overall pacing plan again, and averaged 3–4s/mile better than I hit on my last pacing training run *including* those extra miles. (Technically, I went *faster* than my pacing plan, but every miles was at appropriate relative intensity.) Doubly on the upside, if I chop that extra 5K out and look at my time for *just* the actual course, I ran a 1:19:57, which is better than I could have hoped: just under 6:06/mile.
 
-A year and a half ago, I set a personal goal to run a half marathon sub-1:20:00 before I turn 40. I expected that to require finding a very flat course at sea level, and frankly to be a “barely got there even so” kind of thing. Instead, I did it today, on a mildly hilly course a mile above sea level while fighting off gut issues *and accidentally running an extra 3.1 miles* and therefore intentionally dialing back my pace a bit.
+A year and a half ago, I set a personal goal to run a half marathon under 1:20:00 before I turn 40 in 2027. I expected that to require finding a very flat course at sea level, and frankly to be a “barely got there even so” kind of thing. Instead, I did it today, on a mildly hilly course a mile above sea level while fighting off gut issues *and accidentally running an extra 3.1 miles* and therefore intentionally dialing back my pace a bit.
 
 I couldn’t be happier with the performance, though I of course am also profoundly annoyed by the experience overall.
 
@@ -49,9 +49,13 @@ So… what happened?
 
 ## Training and prep
 
-My training and eating were *very* similar to what I did for Colfax [this spring](https://v5.chriskrycho.com/journal/2024-colfax-race-report/). For training, I did the [On Pace Level 3](https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-295801/80-20-running-on-pace-half-marathon-level-3-rpe-based-6-5-to-10-hours-per-week) plan from [80/20 Endurance](https://www.8020endurance.com) instead of [the “regular” Level 3](https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-107716/80-20-running-half-marathon-level-3-hr-based-5-to-9-hours-per-week) plan as I did in the spring. For the half marathon distance at least, the On Pace plans are sort of a “0.5 extra” version of the 80/20 Endurance plans: they have a decent bit more volume in terms of time and mileage, and in my opinion a slightly harder balance of “workout” type runs.
+My training and eating were *very* similar to what I did for Colfax [this spring][colfax]. For training, I did the [On Pace Level 3][op3] plan from [80/20 Endurance](https://www.8020endurance.com) instead of [the “regular” Level 3][l3] plan as I did in the spring. For the half marathon distance at least, the On Pace plans are sort of a “0.5 extra” version of the 80/20 Endurance plans: they have a decent bit more volume in terms of time and mileage, and in my opinion a slightly harder balance of “workout” type runs.
 
-I really like the 80/20 Endurance plans in general, but the On Pace plans have been particularly good for me. I over-relied on heart rate for a long time because it was *so* critical for my running when I started out, on the On Pace plans are a forcing function away from that. They have helped me learn to *feel* . Probably any good plan focused on perceived effort would have done that for me, but the 80/20 plans are the ones that *have* done it for me.
+[colfax]: https://v5.chriskrycho.com/journal/2024-colfax-race-report/
+[op3]: https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-295801/80-20-running-on-pace-half-marathon-level-3-rpe-based-6-5-to-10-hours-per-week
+[l3]: https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-107716/80-20-running-half-marathon-level-3-hr-based-5-to-9-hours-per-week
+
+I really like the 80/20 Endurance plans in general, but the On Pace plans have been particularly good for me. I over-relied on heart rate for a long time because it was *so* critical for my running when I started out, on the On Pace plans are a forcing function away from that. They have helped me learn to know different paces and efforts by *feel*. Probably any good plan focused on perceived effort would have done that for me, but the 80/20 plans are the ones that *have* done it for me.
 
 The other difference for me vs. Colfax was a much stronger emphasis on managing my macros food-wise. After years of annoyance with MyFitnessPal—and thus, years of starting using it and then bailing on it because it was so annoying—I found and started using [FoodNoms](https://www.foodnoms.com) a few months ago to help me track both intake level and macros, and it has been really helpful on both fronts. I lost a couple pounds and significantly shifted my body fat ratio along the way. That then also helped me with carb-loading in the week before the race, and particularly the day before.
 
