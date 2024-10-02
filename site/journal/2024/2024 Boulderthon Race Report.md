@@ -5,6 +5,7 @@ subtitle: >
     In which I accidentally ran 16.2 miles instead of 13.1. Whoops.
 
 date: 2024-10-01T21:34:00-0600
+updated: 2024-10-02T09:16:00-0600
 
 qualifiers:
     audience: >
@@ -13,6 +14,8 @@ qualifiers:
 tags:
     - fitness
     - running
+
+image: https://cdn.chriskrycho.com/images/boulderthon%20whoops.png
 
 ---
 
@@ -98,11 +101,11 @@ As I pushed, I started setting goals for the rest of the course:
 - Can I break the 1:20:00 mark when I hit the half marathon distance? *Yes.*
 - Can I run sub-1:40:00 for the whole 16.2-mile nonsense I set up for myself, even with the climbs at the end on tired legs? *Yes.*
 
-In the end, nI finished strong. It was a strangely satisfying thing, once I settled in: to pass *nearly everyone*—running past literally thousands of people and chasing those personal goals, since the official finish was now meaningless.
+In the end, I finished strong. It was a strangely satisfying thing, once I settled in: to pass *nearly everyone*—running past literally thousands of people and chasing those personal goals, since the official finish was now meaningless.
 
-In the end, I finished at 1:39:30. The extra 5K, including those 20 seconds of walking through indecision and gut pain, took me 19:33; my time “on course” was just under 1:20:00—a number I had only barely begun to wonder if it was possible to hit in the last couple days before the race. And I did it with an extra three miles on my feet, and I had gas in the tank when I was done, because.
+In the end, I finished at 1:39:30. The extra 5K, including those 20 seconds of walking through indecision and gut pain, took me 19:33; my time “on course” was just under 1:20:00—a number I had only barely begun to wonder if it was possible to hit in the last couple days before the race. And I did it with an extra three miles on my feet, and I had gas in the tank when I was done, precisely because I was holding back a bit.
 
-I feel frustrated about the outcome, of course. At the same time, I am extremely proud of what I did with the outcome. I could have quit; I could have just decided to find one of my friends and run it in with them instead (which would have been a good and reasonable thing to do!); I even could have just decided to run the rest of the full marathon and see where it put me (there was enough support on course).
+I feel frustrated about the outcome, of course. At the same time, I am extremely proud of what I did with the circumstances. I could have quit; I could have just decided to find one of my friends and run it in with them instead (which would have been a good and reasonable thing to do!); I even could have just decided to run the rest of the full marathon and see where it put me (there was enough support on course). I did none of those things: I finished hard and learned a lot more about my current limits.
 
 ## Learned
 
