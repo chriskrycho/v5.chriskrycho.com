@@ -34,7 +34,10 @@ My official placing was:
 
 Which is pretty darn good!
 
-If you want to watch me run across the finish line with a look of *some* fatigue but mostly *well, that’s annoying, but I hit the personal target I set for myself when I got back on the course*, you can watch [the finish line video here](https://www.youtube.com/live/rlpG3xseimQ?si=DMxb-AwqFHiEfgoz&t=2460) (which starts at the point where I’m visible in frame).
+You can check out more details [on Strava][strava], and if you want to watch me run across the finish line with a look of *some* fatigue but mostly *well, that’s annoying, but I hit the personal target I set for myself when I got back on the course*, you can watch [the finish line video here][yt] (which starts at the point where I’m visible in frame).
+
+[strava]: https://www.strava.com/activities/12533473109
+[yt]: https://www.youtube.com/live/rlpG3xseimQ?si=DMxb-AwqFHiEfgoz&t=2460
 
 I nailed my overall pacing plan again, and averaged 3s/mile better than I hit on my last pacing training run *including* those extra miles. (Technically, I went *faster* than my pacing plan, but every miles was at appropriate relative intensity.) Doubly on the upside, if I chop that extra 5K out and look at my time for *just* the actual course, I ran a 1:19:57, which is better than I could have hoped: just under 6:06/mile.
 
