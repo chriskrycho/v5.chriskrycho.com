@@ -39,7 +39,7 @@ You can check out more details [on Strava][strava], and if you want to watch me 
 [strava]: https://www.strava.com/activities/12533473109
 [yt]: https://www.youtube.com/live/rlpG3xseimQ?si=DMxb-AwqFHiEfgoz&t=2460
 
-I nailed my overall pacing plan again, and averaged 3s/mile better than I hit on my last pacing training run *including* those extra miles. (Technically, I went *faster* than my pacing plan, but every miles was at appropriate relative intensity.) Doubly on the upside, if I chop that extra 5K out and look at my time for *just* the actual course, I ran a 1:19:57, which is better than I could have hoped: just under 6:06/mile.
+I nailed my overall pacing plan again, and averaged 3–4s/mile better than I hit on my last pacing training run *including* those extra miles. (Technically, I went *faster* than my pacing plan, but every miles was at appropriate relative intensity.) Doubly on the upside, if I chop that extra 5K out and look at my time for *just* the actual course, I ran a 1:19:57, which is better than I could have hoped: just under 6:06/mile.
 
 A year and a half ago, I set a personal goal to run a half marathon sub-1:20:00 before I turn 40. I expected that to require finding a very flat course at sea level, and frankly to be a “barely got there even so” kind of thing. Instead, I did it today, on a mildly hilly course a mile above sea level while fighting off gut issues *and accidentally running an extra 3.1 miles* and therefore intentionally dialing back my pace a bit.
 
