@@ -23,6 +23,9 @@ tags:
 date: 2024-09-09T12:30:00-0600
 updated: 2024-09-18T16:58:00-0600
 updates:
+    - at: 2024-10-07T20:21:00-0600
+      changes: >
+        Switched over to linking and embedding the YouTube video instead, since it is now available.
     - at: 2024-09-18T16:58:00-0600
       changes: >
         Added a link to the recording.
@@ -32,9 +35,19 @@ updates:
 
 ---
 
-This past Thursday (September 5, 2024), I spoke at the excellent [StaffPlus New York][conf] conference—one of the best-run conferences I have attended or spoken at—on the subject of <abbr title="large language model">LLM</abbr>s and how they intersect with our engineering foundations. The video is available [here][video] behind an email-wall (not, gladly, a paywall!), so check it out!
+This past Thursday (September 5, 2024), I spoke at the excellent [StaffPlus New York][conf] conference—one of the best-run conferences I have attended or spoken at—on the subject of <abbr title="large language model">LLM</abbr>s and how they intersect with our engineering foundations. You can watch the video [here][yt]:
 
-[video]: https://leaddev.com/staffplus-new-york-2024/video/substrate-engineering-engineering-foundations-world-llms
+[yt]: https://www.youtube.com/watch?v=VkSGJdPyLxQ
+
+<figure class='embed'>
+
+<div class='embed__wrapper'>
+<iframe class='embed__content' src="https://www.youtube.com/embed/VkSGJdPyLxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<figcaption><a href="https://www.youtube.com/watch?v=VkSGJdPyLxQ">Substrate Engineering</figcaption>
+
+</figure>
 
 Below are my slides and script! What follows is not a word-for-word transcript but my speaker notes and slides.
 

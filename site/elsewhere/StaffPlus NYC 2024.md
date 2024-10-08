@@ -25,7 +25,7 @@ summary: >
 
 {% callout %}
 
-**Update (September 18, 2024):** You can find this talk and its slides and script [here][delivered].
+**Update (October 07, 2024):** You can find this talk, including both a video recording and its slides and script [here][delivered].
 
 [delivered]: https://v5.chriskrycho.com/elsewhere/substrate-engineering/
 
