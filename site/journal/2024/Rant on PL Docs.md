@@ -15,6 +15,8 @@ tags:
     - writing
     - Rust
 
+image: https://cdn.chriskrycho.com/images/unison.png
+
 ---
 
 One of the hardest challenges for providing great documentation and learning for a programming language is that it needs to do many different kinds of learning materials—language fundamentals, idioms, concepts, etc.—for many different audiences… and the challenge is fractal.
