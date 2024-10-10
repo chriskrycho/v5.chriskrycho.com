@@ -46,7 +46,12 @@ Not all of those needs quite as much tailoring for different audiences, but you 
 
 [apple-docs]: https://v4.chriskrycho.com/2019/apple-your-developer-documentation-is-garbage.html
 
-Building this stuff is not glamorous, but it makes a big difference in using and learning a language. I remember how revolutionary https://en.cppreference.com/w/ felt, and likewise then https://www.mkdocs.org when it came along. docs.rs and hex.pm were and are a really big step change, too! (I miss them in <abbr title="JavaScript">JS</abbr>/<abbr title="TypeScript">TS</abbr>!)
+Building this stuff is not glamorous, but it makes a big difference in using and learning a language. I remember how revolutionary [C++ Reference][cpp] felt, and likewise then [MkDocs][mkdocs] when it came along. [docs.rs][drs] and [hex.pm][hpm] were and are a really big step change, too! (I miss them in <abbr title="JavaScript">JS</abbr>/<abbr title="TypeScript">TS</abbr>!)
+
+[cpp]: https://en.cppreference.com/w/
+[mkdocs]: https://www.mkdocs.org
+[drs]: https://docs.rs
+[hpm]: https://hex.pm
 
 These days, I see [Unison][unison] pushing things [forward][ud] a fair bit, but that’s the main one. Consider this a call for other programming language ecosystems—new or established!—to keep iterating in this space, to see just how far we can push things quality-wise and accessibility-wise.
 
