@@ -23,7 +23,7 @@ Here is another story you have heard from me a few times: Today, I set a new per
 
 [race]: https://www.longviewmarathon.com
 
-Here is a story you have *not* heard from me before—not recently, indeed not ever: Today, I *won* a race.
+Here is a story you have *not* heard from me before—not recently, indeed not ever: Today, I *won* my race.
 
 <figure>
 <video src="https://cdn.chriskrycho.com/videos/longview-finish.mov" controls allowfullscreen playsinline>
@@ -47,6 +47,8 @@ Placing: first!
 - 1/283 overall (top 0.35%)
 - 1/113 men (top 0.88%)
 - 1/45 men 30–39 (top 2.2%)
+
+(Here is [the Strava link](https://www.strava.com/activities/12638663178/overview) for those of you who are there!)
 
 This is *even better* than I would have guessed coming off of [Boulderthon two weeks ago][boulderthon-report]. I knew I could go a decent bit faster than that, given I had “gas left in the tank” and had done 16.2 mile. I did not think, 13 days ago, that I could do 7s/mile faster.
 
