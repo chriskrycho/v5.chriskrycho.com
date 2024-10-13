@@ -4,7 +4,7 @@ subtitle: >
     A brand new experience for me: finishing first in a race.
 
 date: 2024-10-12T22:25:00-0600
-updated: 2024-10-13T14:29:00-0600
+updated: 2024-10-13T15:53:00-0600
 
 qualifiers:
     audience: >
@@ -74,11 +74,13 @@ One interesting thing I observed over the past four weeks—including over both 
 
 ## Pre-race
 
-This particular race was quite a ways away from where I live, but gladly I have friends who live in the area, including one of the guys I have known forever and been training-in-parallel-with the past few years. (I highly recommend this kind of “remote” training with friends. It has been hugely mutually encouraging for all of us.) He and his wife kindly let me crash on a couch at their place, so I drove up yesterday evening, hung out with them for a while, and then was in bed by a bit before 10pm. Normally, I would try to be in bed by 9pm, but this race started *late*, and I didn’t want to be sitting around twiddling my thumbs any more than I had to!
+This particular race was quite a ways away from where I live, but gladly I have friends who live in the area, including one of the guys I have known forever and been training-in-parallel-with the past few years. (I highly recommend this kind of “remote” training with friends. It has been hugely mutually encouraging for all of us.) He and his wife kindly let me crash on a couch at their place, so I drove up yesterday evening, hung out with them for a while, and then was in bed by a bit before 10pm. Normally, I would try to be in bed by 9pm, but this race started *late*—8:30am, compared to the 6:30 or 7:00am starts I am accustomed to. I didn’t want to be sitting around twiddling my thumbs any more than I had to!
 
-This morning, I got up, ate a reasonably-sized bowl of cereal and a banana, and—critically—drank only two ounces of coffee, unlike the six ounces I had before Boulderthon. That was perfect: just enough to stave off the caffeine headache I would otherwise have been nursing a few hours later, but not enough to upset my gut. Then I gratefully accepted a banana from my friend to eat on the way to the race area.
+This morning, I got up, ate a reasonably-sized bowl of cereal and a banana, and—critically—drank only two ounces of coffee, unlike the six ounces I had before Boulderthon. That was perfect: just enough to stave off the caffeine headache I would otherwise have been nursing a few hours later, but not enough to upset my gut.
 
-Because this race was a point-to-point, my friend and I drove my car down to the finish area, and then I rode with him back up where the race start area was. I picked up my bib, hit the bathroom, and then we just chilled out and chatted for another half hour or so. As we got to the end of that, I took two gels: a [Cassis <span class="all-smcp">AMACX</span> Turbo Gel][cassis] and a [Strawberry <span class="all-smcp">AMACX</span> Drink Gel][strawberry]. My plan going in was to avoid taking the caffeinated gel and take only the strawberry if I was having any stomach discomfort whatsoever—a case of literally trusting my gut. In the event, my stomach felt fine, courtesy, I think, of having had only 2 ounces of coffee. I hit the bathroom one more time (seriously: *no* repeats of the problems I had at Boulderthon) and then spent a bit warming up. Then it was go time!
+Because this race was a point-to-point, my friend and I drove my car down to the finish area, and then I rode with him back up where the race start area was. I picked up my bib, hit the bathroom, and then we just chilled out and chatted for another half hour or so. I steadily drank a fair bit of regular water and a fair bit of <span class="all-smcp">LMNT</span> water: not so much to make me need to go to the bathroom on course (a worry at Boulderthon!) but enough to be well-hydrated even if and as it heated up a bit.
+
+As we got to about 8am, I took two gels about 15 minutes apart: an [<span class="all-smcp">AMACX</span> Cassis Turbo Gel][cassis] and an [<span class="all-smcp">AMACX</span> Strawberry Drink Gel][strawberry]. My plan was literally to trust my gut—if I was having any stomach discomfort whatsoever, I would skip the caffeinated gel and take only the strawberry drink gel. In the event, my stomach felt fine, so I took both. Cutting the coffee really seemed to help. I hit the bathroom one last time (seriously: *no* repeats of the problems I had at Boulderthon!) and then spent a bit warming up. Then it was go time!
 
 [cassis]: https://thefeed.com/products/amacx-turbo-gel?variant=40201421619263&queryID=3315825cc035e57f618ae09d90e62769
 [strawberry]: https://thefeed.com/products/amacx-drink-gel?variant=40201434169407&queryID=37b7ad3f731124455a212e8eecf76f15
