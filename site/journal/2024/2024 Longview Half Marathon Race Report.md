@@ -4,6 +4,7 @@ subtitle: >
     A brand new experience for me: finishing first in a race.
 
 date: 2024-10-12T22:25:00-0600
+updated: 2024-10-13T14:29:00-0600
 
 qualifiers:
     audience: >
@@ -56,7 +57,7 @@ So… what happened?
 
 ## Training and prep
 
-Up through two weeks ago, my training and prep was, well, my training and prep for Boulderthon. Since then, I have done [80/20 Endurance][8020]’s [two-week long-course bridge plan][plan]—using the effort (<abbr title="Rating of Perceived Effort">RPE</abbr>)-based plan, because I used the <abbr title="Rating of Perceived Effort">RPE</abbr>-based [On Pace][pace-plan] plan for training all season. Given that there were only 13 days between the races, not a full two weeks, I needed to tweak that plan very slightly.
+Up through two weeks ago, my training and prep was, well, my training and prep for Boulderthon. Since then, I have done [80/20 Endurance][8020]’s [two-week long-course bridge plan][plan]—using the effort (<abbr title="Rating of Perceived Effort">RPE</abbr>)-based plan, because I used the <abbr title="Rating of Perceived Effort">RPE</abbr>-based [On Pace Level 3][pace-plan] plan for training all season. Given that there were only 13 days between the races, not a full two weeks, I needed to tweak that plan very slightly.
 
 I chose to delete one foundation day in the first week, keeping the more intense workouts. That was probably a slight mistake. It would have been better to keep the foundation day and drop the workout, seeing as I also had another *huge* training stimulus: Boulderthon itself! I had done a 16-mile run at near-half-marathon-race-pace, which is a *massive* training stimulus—so massive you really should not do anything like it very often during training.
 
@@ -66,6 +67,7 @@ One interesting thing I observed over the past four weeks—including over both 
 
 [8020]: https://www.8020endurance.com
 [plan]: https://www.trainingpeaks.com/training-plans/running/tp-391269/80-20-running-2-week-long-course-bridge-plan-level-3-half-marathon-and-up-rpe-ba
+[pace-plan]: https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-295801/80-20-running-on-pace-half-marathon-level-3-rpe-based-6-5-to-10-hours-per-week
 
 [^satiation]: Unfortunately, I do not find satiation to be a *sufficiently* reliable guide to be able to rely on it, despite having spent quite a bit of time working at it over the past year. I have quite consistently found that eating to satiation leaves gaining or losing weight in undesirable ways, with no particular rhyme or reason to which from what I have been able to work out so far!
 
