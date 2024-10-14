@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-08-21T19:19:00-0600
+date: 2024-10-14T16:30:00-0600
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -65,14 +65,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
 
-- [<cite>The Face of Battle</cite>](https://bookshop.org/a/21126/9780140048971), John Keegan (new)
+- [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
-
-- [<cite>The Lord of the Rings</cite>][lotr], J. R. R. Tolkien (reread)
 
 ### Poetry
 
@@ -109,6 +107,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance</cite>](https://bookshop.org/a/21126/9780062499981), Alex Hutchinson (new)
 
+- [<cite>Apollo 13</cite>](https://bookshop.org/a/21126/9780618619580), James Lovell and Jeffrey Kluger (reread)
+
 
 ### Fiction
 
@@ -117,6 +117,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Our Game</cite>](https://bookshop.org/a/21126/9780345418319), John le Carré (new)
 
 - [<cite>Moonbound</cite>](https://bookshop.org/a/21126/9780374610609), Robin Sloan (new)
+
+- [<cite>The Lord of the Rings</cite>][lotr], J. R. R. Tolkien (reread)
+
+- [<cite>The Armageddon Protocol</cite>](https://bookshop.org/a/21126/9781915998002), Dan Moren (new)
 
 
 ## 2023
@@ -541,6 +545,9 @@ These are books I have started at some point but have (at least for now!) put as
 
     Despite a friend’s recommendation, I absolutely could not get into this—at least not in audiobook form. Maybe at some point I will skim it in ebook form? Maybe not.
 
+- [<cite>The Face of Battle</cite>](https://bookshop.org/a/21126/9780140048971), John Keegan (new)
+
+    I was listening on audiobook and that was *not* the format for this one. Might pick it back up at some point in print.
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
