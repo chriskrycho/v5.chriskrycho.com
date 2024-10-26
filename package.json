@@ -57,7 +57,8 @@
    "prettier": {
       "singleQuote": true,
       "printWidth": 90,
-      "trailingComma": "all"
+      "trailingComma": "all",
+      "tabWidth": 3
    },
    "scripts": {
       "build:styles": "gulp all",

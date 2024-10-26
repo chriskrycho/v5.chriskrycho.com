@@ -39,90 +39,140 @@
 {%- set DATE_FORMAT = 'MMMM d, yyyy' %}
 {%- set TIME_FORMAT = 'HH:mm' %}
 <footer class='post-meta'>
+   <div class='post-meta-section'>
+      <div class='section-label'>About:</div>
+      <div class='section-content'>
+         <p>
+            I’m Chris Krycho—a follower of Christ, a husband, and a dad.</p>
+         </p>
+
+         <p>
+            I help teams with front-end web strategy, TypeScript adoption and
+            conversions, and Rust adoption. <a href="/services/">Hire me to work
+            with you!</a>
+         </p>
+
+         <p>
+            In addition to <a href='/cv/'>software engineering</a>, I am also a
+            <a href='https://music.chriskrycho.com'>composer</a>, a writer and
+            theologian, a <a href='https://www.strava.com/athletes/chriskrycho'>runner
+            and cyclist</a>, and an erstwhile podcaster. <a href="/about">Read
+            more</a>.
+         </p>
+      </div>
+   </div>
+
+   <div class='post-meta-section'>
+      <div class='section-label'>Subscribe:</div>
+      <div class='section-content'>
+         <p>
+           Add the <a href="/feed.xml">feed</a> to your feed reader.
+         </p>
+         <form
+         action="https://buttondown.com/api/emails/embed-subscribe/sympolymathesy"
+         method="post"
+         target="popupwindow"
+         onsubmit="window.open('https://buttondown.com/sympolymathesy', 'popupwindow')"
+         class="embeddable-buttondown-form post-subscribe"
+         >
+         <label for="bd-email" class="post-subscribe__label">Subscribe via email:</label>
+         <input type="email" name="email" id="bd-email" class="post-subscribe__input" />
+         <button type="submit" class="post-subscribe__submit">Subscribe</button>
+         </form>
+      </div>
+   </div>
+
    {% if thanks is defined %}
-   <div class='section-label'>Thanks:</div>
-   <div class='section-content'>
-      {{thanks | safe}}
+   <div class='post-meta-section'>
+      <div class='section-label'>Thanks:</div>
+      <div class='section-content'>
+         {{thanks | safe}}
+      </div>
    </div>
    {% endif %}
 
-   <div class='section-label'>Posted:</div>
-   <div class='section-content'>
-      <p>
-         {% if draft %}
-            {% if started is defined -%}
-            This draft was started on {% localeDate started, DATE_FORMAT %}
+   <div class='post-meta-section'>
+      <div class='section-label'>Posted:</div>
+      <div class='section-content'>
+         <p>
+            {% if draft %}
+               {% if started is defined -%}
+               This draft was started on {% localeDate started, DATE_FORMAT %}
+                  {%- if updated is defined -%}
+                     , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+                  {%- endif -%}
+                  .
+               {% else %}
+                  {%- if updated is defined -%}
+                     This draft was last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>).
+                  {%- endif -%}
+               {%- endif -%}
+            {% else %}
+               This entry was {% if updated is defined -%} originally {%- endif %} published in
+               <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
+               on <span class='dt-published'>{% localeDate date, DATE_FORMAT %}</span>
                {%- if updated is defined -%}
-                  , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+               , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
+               {%- endif -%}
+               {% if started is defined -%}
+               ; it was started on {% localeDate started, DATE_FORMAT %}
                {%- endif -%}
                .
-            {% else %}
-               {%- if updated is defined -%}
-                  This draft was last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>).
-               {%- endif -%}
-            {%- endif -%}
-         {% else %}
-            This entry was {% if updated is defined -%} originally {%- endif %} published in
-            <a href='/{{inputPath | toCollectionUrl(isGhostCollection)}}/'>{{inputPath | toCollectionName(isGhostCollection) | title}}</a>
-            on <span class='dt-published'>{% localeDate date, DATE_FORMAT %}</span>
-            {%- if updated is defined -%}
-            , and last updated on {% localeDate updated, DATE_FORMAT %} (you can see the full revision history <a href='{{inputPath | historyLink}}'>here</a>)
-            {%- endif -%}
-            {% if started is defined -%}
-            ; it was started on {% localeDate started, DATE_FORMAT %}
-            {%- endif -%}
-            .
-         {% endif %}
-      </p>
+            {% endif %}
+         </p>
 
-      {%- if updates -%}
-      <div class='updates'>
-         <p><i>Meaningful changes since creating this page:</i></p>
-         <ul>
-         {%- for update in updates -%}
-         <li>
-            <i>{% localeDate update.at, DATE_FORMAT %}:</i>
-            {{update.changes | safe}}
-         </li>
-         {%- endfor -%}
-         </ul>
+         {%- if updates -%}
+         <div class='updates'>
+            <p><i>Meaningful changes since creating this page:</i></p>
+            <ul>
+            {%- for update in updates -%}
+            <li>
+               <i>{% localeDate update.at, DATE_FORMAT %}:</i>
+               {{update.changes | safe}}
+            </li>
+            {%- endfor -%}
+            </ul>
+         </div>
+         {%- endif -%}
+
+         <p>Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a></p>
       </div>
-      {%- endif -%}
-
-      <p>Spotted a typo? <a href='{{inputPath | editLink}}'>Submit a correction!</a></p>
    </div>
 
    {%- if related.length > 0 -%}
-   <div class='section-label'>Related:</div>
-   <ul class='section-content'>
-      {%- for item in related %}
-      <li>{{item | inlineMd | safe}}</li>
-      {%- endfor -%}
-   </ul>
+   <div class='post-meta-section'>
+      <div class='section-label'>Related:</div>
+      <ul class='section-content'>
+         {%- for item in related %}
+         <li>{{item | inlineMd | safe}}</li>
+         {%- endfor -%}
+      </ul>
+   </div>
    {%- endif -%}
 
    {%- if tags.length > 0 %}
-   <div class='section-label'>Topics:</div>
-   <ul class='topics section-content'>
-      {%- for tag in tags %}
-      <li class='__topic'><a href='/topics/{{tag | slug}}'>{{tag}}</a></li>
-      {%- endfor -%}
-   </ul>
+   <div class='post-meta-section'>
+      <div class='section-label'>Topics:</div>
+      <ul class='topics section-content'>
+         {%- for tag in tags %}
+         <li class='__topic'><a href='/topics/{{tag | slug}}'>{{tag}}</a></li>
+         {%- endfor -%}
+      </ul>
+   </div>
    {%- endif %}
 
-   <div class='section-label'>Respond:</div>
-   <div class='section-content'>
-      {{ reply(title, discuss) }}
+   <div class='post-meta-section'>
+      <div class='section-label'>Respond:</div>
+      <div class='section-content'>
+         {{ reply(title, discuss) }}
+      </div>
    </div>
 
-   <div class='section-label'>About:</div>
-   <div class='section-content'>
-      {% include 'blocks/short-about.njk' %}
-   </div>
-
-   <div class='section-label'>Support:</div>
-   <div class='section-content'>
-      {% include 'blocks/sponsor-me.njk' %}
+   <div class='post-meta-section'>
+      <div class='section-label'>Support:</div>
+      <div class='section-content'>
+         {% include 'blocks/sponsor-me.njk' %}
+      </div>
    </div>
 </footer>
 {% endmacro %}

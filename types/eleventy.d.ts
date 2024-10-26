@@ -158,6 +158,16 @@ export interface EleventyClass {
 }
 
 export interface Config {
+   /**
+      In addition to Global Data Files global data can be added to the Eleventy
+      config object using the `addGlobalData` method. This is especially useful
+      for plugins.
+   
+      The first value of `addGlobalData` is the key that will be available to
+      your templates and the second value is the value of the value returned to
+      the template.
+   */
+   addGlobalData(key: string, value: string | undefined): void;
    dir?: {
       /** Controls the top level directory/file/glob that we’ll use to look for templates. */
       input?: string;

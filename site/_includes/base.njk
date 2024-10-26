@@ -10,9 +10,9 @@
       <title>{{title | siteTitle(config) | striptags(true) | safe}}</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-      <link rel="stylesheet" href="/styles/style.css">
-      <link rel="stylesheet" href="/styles/fonts.css">
-      <link rel="stylesheet" href="/styles/print.css" media="print">
+      <link rel="stylesheet" href="/styles/style.css{% randomHash ENV %}">
+      <link rel="stylesheet" href="/styles/fonts.css{% randomHash ENV %}">
+      <link rel="stylesheet" href="/styles/print.css{% randomHash ENV %}" media="print">
 
       <meta name="view-transition" content="same-origin" />
 

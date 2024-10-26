@@ -1,4 +1,5 @@
 import { env } from 'process';
+import { randomBytes } from 'node:crypto';
 
 import { DateTime } from 'luxon';
 
@@ -213,6 +214,10 @@ function config(config: Config): UserConfig {
       return safe.slice(0, safe.lastIndexOf(' ', 200)) + '…';
    });
 
+   config.addShortcode('randomHash', (env: string | undefined) =>
+      env === 'serve' ? `?v=${randomBytes(8).toString('hex')}` : '',
+   );
+
    config.addShortcode('localeDate', localeDate);
    config.addShortcode('copyright', copyright);
 
@@ -299,6 +304,8 @@ function config(config: Config): UserConfig {
          },
       },
    });
+
+   config.addGlobalData('ENV', process.env.ELEVENTY_RUN_MODE);
 
    return {
       dir: {
