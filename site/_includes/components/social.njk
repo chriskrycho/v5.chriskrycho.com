@@ -8,10 +8,10 @@
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover}}
       {%- elif pageTitle -%}
-         {%- set fullTitle = pageTitle + " – Sympolymathesy" -%}
+         {%- set fullTitle = pageTitle + " – Sympolymathesy, by Chris Krycho" -%}
          https://cdn.statically.io/og/theme=dark/{{fullTitle | urlencode}}.png
       {%- else -%}
-         https://cdn.statically.io/og/theme=dark/Sympolymathesy.png
+         https://cdn.chriskrycho.com/images/sympolymathesy-social.png
       {%- endif -%}
    {%- endset -%}
 
