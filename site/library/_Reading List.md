@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-10-14T16:30:00-0600
+date: 2024-11-05T07:05:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -67,10 +67,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
 
+- [<cite>The Ordinal Society</cite>](https://bookshop.org/a/21126/9780674971141), Marion Fourcade and Kieran Healy (new)
+
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
+
+- [<cite>A Talent for War</cite>](https://bookshop.org/a/21126/9780441012176), Jack McDevitt (new)
 
 ### Poetry
 
@@ -121,6 +125,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Lord of the Rings</cite>][lotr], J. R. R. Tolkien (reread)
 
 - [<cite>The Armageddon Protocol</cite>](https://bookshop.org/a/21126/9781915998002), Dan Moren (new)
+
+- [<cite>The Mercy of Gods</cite>](https://bookshop.org/a/21126/9780316525572), James S. A. Corey (new)
 
 
 ## 2023
