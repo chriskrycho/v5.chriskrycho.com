@@ -40,6 +40,27 @@
 {%- set TIME_FORMAT = 'HH:mm' %}
 <footer class='post-meta'>
    <div class='post-meta-section'>
+      <div class='section-label'>Subscribe:</div>
+      <div class='section-content'>
+         <p>
+            Like what you just read? Add the <a href="/feed.xml">feed</a> to your
+            feed reader!
+         </p>
+         <form
+         action="https://buttondown.com/api/emails/embed-subscribe/sympolymathesy"
+         method="post"
+         target="popupwindow"
+         onsubmit="window.open('https://buttondown.com/sympolymathesy', 'popupwindow')"
+         class="embeddable-buttondown-form post-subscribe"
+         >
+         <label for="bd-email" class="post-subscribe__label">Or subscribe via email:</label>
+         <input type="email" name="email" id="bd-email" class="post-subscribe__input" />
+         <button type="submit" class="post-subscribe__submit">Subscribe</button>
+         </form>
+      </div>
+   </div>
+
+   <div class='post-meta-section'>
       <div class='section-label'>About:</div>
       <div class='section-content'>
          <p>
@@ -59,26 +80,6 @@
             and cyclist</a>, and an erstwhile podcaster. <a href="/about">Read
             more</a>.
          </p>
-      </div>
-   </div>
-
-   <div class='post-meta-section'>
-      <div class='section-label'>Subscribe:</div>
-      <div class='section-content'>
-         <p>
-           Add the <a href="/feed.xml">feed</a> to your feed reader.
-         </p>
-         <form
-         action="https://buttondown.com/api/emails/embed-subscribe/sympolymathesy"
-         method="post"
-         target="popupwindow"
-         onsubmit="window.open('https://buttondown.com/sympolymathesy', 'popupwindow')"
-         class="embeddable-buttondown-form post-subscribe"
-         >
-         <label for="bd-email" class="post-subscribe__label">Subscribe via email:</label>
-         <input type="email" name="email" id="bd-email" class="post-subscribe__input" />
-         <button type="submit" class="post-subscribe__submit">Subscribe</button>
-         </form>
       </div>
    </div>
 
