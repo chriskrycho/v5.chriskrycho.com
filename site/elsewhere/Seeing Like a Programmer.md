@@ -8,6 +8,10 @@ updates:
       changes: >
         Added the video link and a note about the talk at the top.
 
+    - at: 2024-11-05T07:45:00-0700
+      changes: >
+        Tweaked the introduction a bit.
+
 tags:
     - public speaking
     - software development
@@ -20,14 +24,13 @@ qualifiers:
     audience: >
         People interested in how we can make good software. In more than one sense of the phrase “good software”. **That means *not* just software engineers.**
 
-    context: >
-        Today I gave the second of two talks at LambdaConf 2024: exploring what we can do to make our software *better*… and also what to do to make *better software*. As the title might suggest, it explicitly draws on James C. Scott’s <cite>Seeing Like a State</cite>; it also draws extensively on Peter Naur’s “Programming as Theory-Building”, Donella Meadows’ <cite>Thinking in Systems</cite>, and more.
-
 featured: true
 
 ---
 
-This is the best talk I have ever given, and also by far the most important. I am incredibly proud of it, and if you find it helpful or thought-provoking, I would really love it if you shared it. You don’t need to be a software engineer or even to know all that much about software to appreciate this talk, and some of the people I think need to hear it most are people who work *with* software engineers but who are not themselves software engineers.
+This is the second of two talks at LambdaConf 2024: exploring what we can do to make our software *better*… and also what to do to make *better software*. As the title might suggest, it explicitly draws on James C. Scott’s <cite>Seeing Like a State</cite>; it also draws extensively on Peter Naur’s “Programming as Theory-Building”, Donella Meadows’ <cite>Thinking in Systems</cite>, and more.
+
+If you find this helpful or thought-provoking, I would love it if you shared it. You don’t need to be a software engineer or even to know all that much about software to appreciate this talk, and some of the people I think need to hear it most are people who work *with* software engineers but who are not themselves software engineers.
 
 <figure class='embed'>
 
