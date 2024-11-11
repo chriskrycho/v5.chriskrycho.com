@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-05T07:05:00-0700
+date: 2024-11-10T19:56:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -74,8 +74,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
 
-- [<cite>A Talent for War</cite>](https://bookshop.org/a/21126/9780441012176), Jack McDevitt (new)
-
 ### Poetry
 
 - [<cite>Ponds</cite>](https://bookshop.org/a/21126/9798385210640), J. C. Scharl (new)
@@ -127,6 +125,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Armageddon Protocol</cite>](https://bookshop.org/a/21126/9781915998002), Dan Moren (new)
 
 - [<cite>The Mercy of Gods</cite>](https://bookshop.org/a/21126/9780316525572), James S. A. Corey (new)
+
+- [<cite>A Talent for War</cite>](https://bookshop.org/a/21126/9780441012176), Jack McDevitt (new)
 
 
 ## 2023
