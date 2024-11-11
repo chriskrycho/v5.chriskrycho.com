@@ -61,6 +61,10 @@ html {
    font: var(--fs-base) / var(--line-height) var(--serif);
 }
 
+body {
+   -webkit-font-smoothing: antialiased;
+}
+
 @import './color-scheme';
 @import './mixins';
 
