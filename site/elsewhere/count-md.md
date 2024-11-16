@@ -25,7 +25,7 @@ To get the command line tool, you’ll need to have Rust installed, and then you
 
 - Unicode-aware: it uses Unicode-aware word boundary splitting, so it works across languages.
 
-- <abbr>HTML</abbr>-aware: it does not count HTML tags!
+- <abbr>HTML</abbr>-aware: it does not count <abbr>HTML</abbr> tags!
 
 - Markdown-aware: it does not count Markdown syntax either: `> > ## Heading 2 in a Nested Quote` is 6 words, not 9.
 
