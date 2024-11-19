@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-17T08:02:00-0700
+date: 2024-11-18T19:08:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -66,6 +66,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
 
 - [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
+
+- [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
 
 
 ### Fiction
