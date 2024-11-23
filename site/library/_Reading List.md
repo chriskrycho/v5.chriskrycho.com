@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-18T19:08:00-0700
+date: 2024-11-23T07:55:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -57,10 +57,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 
-- [<cite>Open Music Theory</cite>](https://viva.pressbooks.pub/openmusictheory/), Mark Gotham, Kyle Gullings, Chelsey Hamm, Bryn Hughes, Brian Jarvis, Megan Lavengood, and John Peterson (new)
-
-- [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
-
 - [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
@@ -112,7 +108,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Apollo 13</cite>](https://bookshop.org/a/21126/9780618619580), James Lovell and Jeffrey Kluger (reread)
 
 - [<cite>The Ordinal Society</cite>](https://bookshop.org/a/21126/9780674971141), Marion Fourcade and Kieran Healy (new)
- 
+
 
 ### Fiction
 
@@ -556,6 +552,15 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>The Face of Battle</cite>](https://bookshop.org/a/21126/9780140048971), John Keegan (new)
 
     I was listening on audiobook and that was *not* the format for this one. Might pick it back up at some point in print.
+
+- [<cite>Open Music Theory</cite>](https://viva.pressbooks.pub/openmusictheory/), Mark Gotham, Kyle Gullings, Chelsey Hamm, Bryn Hughes, Brian Jarvis, Megan Lavengood, and John Peterson (new)
+
+    This was useful as a refresher, but I don’t presently have time to work through the whole thing!
+
+- [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
+
+    This is great, and I worked through about half of it, but then it was time to focus on finding a job, and that meant minimizing outside projects.
+
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
