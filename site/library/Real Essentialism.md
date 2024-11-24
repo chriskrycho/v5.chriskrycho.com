@@ -16,7 +16,7 @@ book:
     review:
         rating: Not Recommended
         summary: >
-            The world could use, I think, good defense of Aristotelian essentialism. Unfortunately, <cite>Real Essentialism</cite> is not that defense; it is instead a mix of circular and motivated reasoning and arrogant assertion in place of argument.
+            The world could use, I think, a good defense of Aristotelian essentialism. Unfortunately, <cite>Real Essentialism</cite> is not that defense; it is instead a mix of circular and motivated reasoning and arrogant assertion in place of argument.
 
 tags:
     - book reviews
