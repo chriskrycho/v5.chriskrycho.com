@@ -26,7 +26,7 @@
    </section>
    {% if book.review %}
       <section class='book-review__summary'>
-         <b>{{book.review.rating}}</b><br>
+         <b>{{book.review.rating}}</b>:
          {{book.review.summary | safe}}
       </section>
    {% endif %}
