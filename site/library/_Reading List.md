@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-24T09:25:00-0700
+date: 2024-11-24T09:59:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -108,6 +108,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Ordinal Society</cite>](https://bookshop.org/a/21126/9780674971141), Marion Fourcade and Kieran Healy (new)
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
+    - [review](/library/real-essentialism/)
 
 
 ### Fiction
