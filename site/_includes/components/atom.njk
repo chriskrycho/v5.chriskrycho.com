@@ -34,8 +34,8 @@
             {%- if item.data.summary -%}
                {{-item.data.summary-}}
             {%- elif item.data.book.review -%}
-               {{-item.data.book.review.rating-}}:
-               {{item.data.book.review.summary-}}
+               {{-item.data.book.review.rating|safe-}}:
+               {{item.data.book.review.summary|safe-}}
             {%- elif item.data.subtitle -%}
                {{-item.data.subtitle-}}
             {%- else -%}
