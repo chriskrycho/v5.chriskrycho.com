@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-23T07:55:00-0700
+date: 2024-11-24T09:25:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -59,8 +59,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
 
-- [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
-
 - [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
 
 - [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
@@ -108,6 +106,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Apollo 13</cite>](https://bookshop.org/a/21126/9780618619580), James Lovell and Jeffrey Kluger (reread)
 
 - [<cite>The Ordinal Society</cite>](https://bookshop.org/a/21126/9780674971141), Marion Fourcade and Kieran Healy (new)
+
+- [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
 
 
 ### Fiction
