@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-24T17:02:00-0700
+date: 2024-11-24T20:20:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -67,6 +67,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
+- [<cite>The Heart of What Was Lost</cite>](https://bookshop.org/a/21126/9780756413835), Tad Williams (new)
 
 ### Poetry
 
