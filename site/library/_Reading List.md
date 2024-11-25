@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-24T09:59:00-0700
+date: 2024-11-24T17:02:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -88,8 +88,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Crafting Interpreters</cite>](https://craftinginterpreters.com), Robert Nystrom (new)
 
 - [<cite>Vanished Kingdoms: The Rise and Fall of States and Nations</cite>](https://bookshop.org/a/21126/9780143122951), Norman Davies (new… ish: I read the first third of this half a decade ago and put it down, and now have picked it back up)
-
-- [<cite>How Big Things Get Done: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between</cite>](https://bookshop.org/a/21126/9780593239513), Bent Flyvbjerg (new)
 
 - [<cite>The Guns of August: The Outbreak of World War I</cite>](https://bookshop.org/a/21126/9780345386236), Barbara Tuchman (new)
 
