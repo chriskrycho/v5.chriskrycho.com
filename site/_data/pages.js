@@ -5,6 +5,8 @@ module.exports = [
    { type: 'page', title: 'Journal', url: '/journal/' },
    { type: 'page', title: 'Library', url: '/library/' },
    { type: 'page', title: 'Elsewhere', url: '/elsewhere/' },
+   { type: 'page', title: 'Notes', url: '/notes/' },
+   { type: 'separator' },
    { type: 'page', title: 'Archive', url: '/archive/' },
    { type: 'separator' },
    { type: 'page', title: 'Follow', url: '/follow/' },
