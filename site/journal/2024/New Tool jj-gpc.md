@@ -8,6 +8,8 @@ qualifiers:
     audience: >
         People who use (or are interested in) jj and/or little command line tools in general.
 
+image: https://cdn.chriskrycho.com/images/jj-gpc.png
+
 ---
 
 Last night and this morning I built a tiny new tool for my own purposes, called `jj-gpc`, where `gpc` is short for `git push --create`.
