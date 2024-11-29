@@ -10,11 +10,14 @@ qualifiers:
 
 image: https://cdn.chriskrycho.com/images/jj-gpc.png
 
-updated: 2024-11-28T21:30:00-0700
+updated: 2024-11-28T21:54:00-0700
 updates:
     - at: 2024-11-28T21:30:00-0700
       changes: >
         Added actual examples of the output, thanks to [reader feedback](https://bsky.app/profile/necauq.ua/post/3lc2huylx3k2x)!
+    - at: 2024-11-28T21:54:00-0700
+      changes: >
+        Added several more examples from real-world uses of the tool.
 
 ---
 
@@ -87,6 +90,21 @@ I then ran it on a different repo (some not-yet public work) three times and ove
 - `cleaning-and-fixes`
 - `small-bug-fixes`
 - `small-code-updates`
+
+Then I checked what it would have spit out for the commits in [this PR][pr] to my [True Myth][tm] types library, and it gave these pretty solid examples:
+
+- `bump-typescript-version`
+- `support-ts-versions`
+
+The summary messages that went into that:
+
+```
+Explicitly support TS 5.6 and 5.7 in CI and docs
+build(deps-dev): bump typescript from 5.6.3 to 5.7.2
+```
+
+[pr]: https://github.com/true-myth/true-myth/pull/868
+[tm]: https://github.com/true-myth/true-myth
 
 Are any of those *great*? No. Are all of them more reasonable-seeming than `push-ynuuvsuttuqu`? Undoubtedly. In the latter case in particular, they also aren’t really representative of the nature of the work. This gets at an obvious issue with this tool: every commit message gets the same weight. A handful of small fixes or refactors that are simply “tidying up” before making a change are treated as equally important to the actual substantive change.
 
