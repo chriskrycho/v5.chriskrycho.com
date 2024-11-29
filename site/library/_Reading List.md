@@ -37,9 +37,7 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 ### Non-fiction
 
 - <cite>A Time to Keep</cite>, Ephraim Radner (new)
-
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
-
 - [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
 
 
