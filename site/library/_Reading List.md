@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-24T20:20:00-0700
+date: 2024-11-29T08:01:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -56,18 +56,15 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
-
 - [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
-
 - [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
-
 - [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
-- [<cite>The Heart of What Was Lost</cite>](https://bookshop.org/a/21126/9780756413835), Tad Williams (new)
+
 
 ### Poetry
 
@@ -113,19 +110,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
-
 - [<cite>Our Game</cite>](https://bookshop.org/a/21126/9780345418319), John le Carré (new)
-
 - [<cite>Moonbound</cite>](https://bookshop.org/a/21126/9780374610609), Robin Sloan (new)
-
 - [<cite>The Lord of the Rings</cite>][lotr], J. R. R. Tolkien (reread)
-
 - [<cite>The Armageddon Protocol</cite>](https://bookshop.org/a/21126/9781915998002), Dan Moren (new)
-
 - [<cite>The Mercy of Gods</cite>](https://bookshop.org/a/21126/9780316525572), James S. A. Corey (new)
-
 - [<cite>A Talent for War</cite>](https://bookshop.org/a/21126/9780441012176), Jack McDevitt (new)
-
+- [<cite>The Heart of What Was Lost</cite>](https://bookshop.org/a/21126/9780756413835), Tad Williams (new)
 
 ## 2023
 
