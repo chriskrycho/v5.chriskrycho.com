@@ -10,6 +10,12 @@ qualifiers:
 
 image: https://cdn.chriskrycho.com/images/jj-gpc.png
 
+updated: 2024-11-28T21:30:00-0700
+updates:
+    - at: 2024-11-28T21:30:00-0700
+      changes: >
+        Added actual examples of the output, thanks to [reader feedback](https://bsky.app/profile/necauq.ua/post/3lc2huylx3k2x)!
+
 ---
 
 Last night and this morning I built a tiny new tool for my own purposes, called `jj-gpc`, where `gpc` is short for `git push --create`.
@@ -50,3 +56,38 @@ I was originally using [the `qwen2.5-coder` model][q] but found it a bit slow. I
 [q]: https://ollama.com/library/qwen2.5-coder
 
 Anyway, it might be useful to you, but it will *definitely* be useful for me, and it was a really fun little bit of Thanksgiving holiday hacking!
+
+---
+
+A reader quite reasonably [noted][bsky] that it would be handy to show some example branch names, so I ran it against some work I am doing in a branch in the repo for <cite>The Rust Programming Language</cite> book. The summary messages fed to the <abbr title="large language model">LLM</abbr> on this branch were:
+
+[bsky]: https://bsky.app/profile/necauq.ua/post/3lc2huylx3k2x
+
+```
+infra: use new version of pulldown-cmark-to-cmark
+Ch. 17: ignore internal links
+infra: fix output for nostarch book listings
+infra: remove extra leading `>` in nostarch output
+infra: update dependencies for mdbook preprocessors
+Add Chris Krycho (me!) to the nostarch book.toml authors
+infra: decouple preprocessors from current mdbook version
+infra: create mdbook-trpl-figure preprocessor
+infra: use anyhow for error reporting
+infra: share infrastructure for mdbook preprocessors
+```
+
+I ran it three times against that list and it produced the following branch names:
+
+- `update-infra-issues`
+- `update-mdbook-dependencies`
+- `software-updates-implemented`
+
+I then ran it on a different repo (some not-yet public work) three times and over those runs it spit out:
+
+- `cleaning-and-fixes`
+- `small-bug-fixes`
+- `small-code-updates`
+
+Are any of those *great*? No. Are all of them more reasonable-seeming than `push-ynuuvsuttuqu`? Undoubtedly. In the latter case in particular, they also aren’t really representative of the nature of the work. This gets at an obvious issue with this tool: every commit message gets the same weight. A handful of small fixes or refactors that are simply “tidying up” before making a change are treated as equally important to the actual substantive change.
+
+For my purposes with this tool, that is fine. After all, the point is simply that for most changes, most of the time, the branch name really does not matter. And of course, I can probably improve it later, by telling it to ignore certain messages, or by passing it the full commit message instead of just summaries. In cases where I actually *do* care, I can choose a name myself.
