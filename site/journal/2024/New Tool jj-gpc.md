@@ -10,7 +10,7 @@ qualifiers:
 
 image: https://cdn.chriskrycho.com/images/jj-gpc.png
 
-updated: 2024-11-28T21:54:00-0700
+updated: 2024-11-29T19:35:00-0700
 updates:
     - at: 2024-11-28T21:30:00-0700
       changes: >
@@ -18,10 +18,15 @@ updates:
     - at: 2024-11-28T21:54:00-0700
       changes: >
         Added several more examples from real-world uses of the tool.
+    - at: 2024-11-29T19:35:00-0700
+      changes: >
+        Actually linked to the GitHub repo for the tool.
 
 ---
 
-Last night and this morning I built a tiny new tool for my own purposes, called `jj-gpc`, where `gpc` is short for `git push --create`.
+Last night and this morning I built a tiny new tool for my own purposes, called `jj-gpc`, where `gpc` is short for `git push --create`. You can find it [on GitHub][tool]!
+
+[tool]: https://github.com/chriskrycho/jj-gpc
 
 [Jujutsu][jj] is a modern, Git-compatible version control system. (I wrote [a nice long introduction][jj-init] to it early this year—a few details are outdated, but the big picture is as it was then, but even nicer.) It supports, and I primarily use, anonymous branches for development. Since Git, and thus all Git-based “forges” (GitHub, GitLab, Bitbucket, etc.) require branch names, though, you need to give a branch name when you push your changes for others to work with.
 
