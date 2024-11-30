@@ -90,12 +90,12 @@ function latest(collection: Collection): Item[] {
       .sort(byDate(Order.NewFirst));
 
    return [
+      all.find(inCollectionNamed('elsewhere')),
       all.find(inCollectionNamed('essays')),
       all.find(inCollectionNamed('journal')),
-      all.find(inCollectionNamed('notes')),
       all.find(inCollectionNamed('library')),
+      all.find(inCollectionNamed('notes')),
       all.find(inCollectionNamed('photos')),
-      all.find(inCollectionNamed('elsewhere')),
    ]
       .filter(isDefined)
       .sort(byDate(Order.NewFirst));
