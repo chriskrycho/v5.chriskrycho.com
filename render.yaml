@@ -148,9 +148,6 @@ services:
       - type: redirect
         source: /notes/feed-for-social.*
         destination: https://v1.notes.chriskrycho.com/feeds/without-reply.*
-      - type: redirect
-        source: /notes/*
-        destination: https://v1.notes.chriskrycho.com/*
 
       # and topics I merged
       - type: redirect
