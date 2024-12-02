@@ -1,5 +1,5 @@
 ---
-title: brew services uses launchctl or systmctl
+title: brew services uses launchctl or systemctl
 date: 2024-12-02T07:45:00-0700
 tags:
     - software development
