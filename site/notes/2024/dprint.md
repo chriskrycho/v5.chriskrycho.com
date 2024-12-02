@@ -8,6 +8,7 @@ qualifiers:
         Software developers, especially in the JavaScript/TypeScript ecosystem.
 
 date: 2024-12-03T11:31:00-0700
+image: https://cdn.chriskrycho.com/images/dprint.png
 
 tags:
     - software development
