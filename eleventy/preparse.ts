@@ -2,7 +2,7 @@ import { Data } from 'eleventy';
 import markdown from './markdown';
 
 /**
-  Pre-parse the various 
+  Pre-parse the various
  */
 export function preparseYaml(data: Data): Data {
    if (data.title) data.title = markdown.renderInline(data.title);
@@ -13,7 +13,9 @@ export function preparseYaml(data: Data): Data {
          data.qualifiers.audience = markdown.renderInline(data.qualifiers.audience);
 
       if (data.qualifiers.context)
-         data.qualifiers.context = markdown.renderInline(data.qualifiers.context);
+         data.qualifiers.context = markdown.render(
+            `<b>A bit of context:</b>: ${data.qualifiers.context}`,
+         );
 
       if (data.qualifiers.discusses)
          data.qualifiers.discusses = data.qualifiers.discusses.map(

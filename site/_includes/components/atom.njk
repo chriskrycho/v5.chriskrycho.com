@@ -58,7 +58,7 @@
                   {%- endif -%}
 
                   {%- if item.data.qualifiers.context -%}
-                     <p><b>A bit of context:</b> {{ item.data.qualifiers.context | safe -}}</p>
+                     <p>{{ item.data.qualifiers.context | safe -}}</p>
                   {%- endif -%}
 
                   {%- if item.data.qualifiers.epistemic -%}
