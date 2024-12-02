@@ -6,6 +6,10 @@ tags:
     - macOS
     - command line tools
 
+qualifiers:
+    audience: >
+        People who use the homebrew tool on macOS or Linux.
+
 ---
 
 I just installed [atuin][a] to try it out as I do my work this week, and when `brew install atuin` finished, it came with a note I had not seen before:
