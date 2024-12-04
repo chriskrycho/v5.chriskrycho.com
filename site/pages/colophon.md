@@ -11,6 +11,10 @@ I also use [Adobe Fonts] for one of the typefaces on the site (see [below](#typo
 
 Otherwise, there is zero tracking—of any sort—on this site.
 
+## AI
+
+None. Not one word of this site was written by a large language model or even with input from one, and that will always be true.
+
 ## Implementation
 
 I built this version of the site with [Eleventy]. You can find the entirety of the implementation (and indeed the entire *history* of the implementation) [on GitHub][repo]. I'm using it with the following plugins:
