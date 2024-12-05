@@ -2,7 +2,7 @@ import striptags from 'striptags';
 import { DateTime } from 'luxon';
 import { Maybe, Result } from 'true-myth';
 
-import { Dict, EleventyClass, Item } from '../types/eleventy';
+import { EleventyClass, Item } from '../types/eleventy';
 import JsonFeed, { FeedItem } from '../types/json-feed';
 import absoluteUrl from './absolute-url';
 import { canParseDate } from './date-time';
@@ -12,6 +12,7 @@ import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
 import niceList from './nice-list';
+import { type Book, imageValue, isBook, type Qualifiers } from './data';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
@@ -19,93 +20,6 @@ type SiteConfig = typeof import('../site/_data/config');
 /** Defensive function in case handed bad data */
 const optionalString = (value: unknown): string | undefined =>
    typeof value === 'string' ? value : undefined;
-
-type Author = { author: string } | { authors: string[] };
-
-interface Review {
-   review?: {
-      rating:
-         | 'Required'
-         | 'Recommended'
-         | 'Recommended With Qualifications'
-         | 'Not Recommended';
-      summary: string;
-   };
-}
-
-interface BookMeta {
-   title: string;
-   year?: number | string;
-   cover?: string;
-   link?: string;
-}
-
-// Must be a `type` alias because interfaces cannot extend unions.
-type Book = BookMeta & Author & Review;
-
-interface Update {
-   at: string | Date;
-   changes: string;
-}
-
-/** Extending the base Eleventy item with my own data */
-declare module '../types/eleventy' {
-   interface Data {
-      title?: string;
-      subtitle?: string;
-      summary?: string;
-      tags?: string[];
-      date?: string | Date;
-      started?: string | Date;
-      updated?: string | Date;
-      updates?: Array<Update>;
-      qualifiers?: Qualifiers;
-      image?: string;
-      link?: string;
-      splash?: string;
-      book?: Book;
-      standalonePage?: boolean;
-      featured?: boolean;
-      draft?: boolean;
-      /**
-       * Allow overriding the normal feed ID to enable keeping feed entries stable even if
-       * the slug changes.
-       */
-      feedId?: string;
-      /** Markdown-enabled thanks to people who contributed to the thing. */
-      thanks?: string;
-      discuss?: {
-         hn: string;
-         lobsters: string;
-      };
-      sendEmail?: boolean;
-      feedOnly?: boolean;
-   }
-}
-
-interface Qualifiers {
-   audience?: string;
-   context?: string;
-   epistemic?: string;
-   discusses?: string[];
-}
-
-function isBook(maybeBook: unknown): maybeBook is Book {
-   if (typeof maybeBook !== 'object' || !maybeBook) {
-      return false;
-   }
-
-   const maybe = maybeBook as Dict<unknown>;
-
-   return (
-      typeof maybe.title === 'string' &&
-      (typeof maybe.author === 'string' || Array.isArray(maybe.authors)) &&
-      (typeof maybe.year == 'number' || typeof maybe.year === 'string') &&
-      typeof maybe.review === 'object' &&
-      typeof maybe.cover === 'string' &&
-      typeof maybe.link === 'string'
-   );
-}
 
 const joinAuthors = (authors: string[]): Result<string, string> => {
    switch (authors.length) {
@@ -305,7 +219,7 @@ const toFeedItemGivenConfig =
                  item.data?.updated instanceof Date
                     ? isoDate(item.data.updated)
                     : undefined,
-              image: optionalString(item.data?.image ?? item.data?.book?.cover),
+              image: imageValue(item.data),
               external_url: optionalString(item.data?.link ?? item.data?.book?.link),
               tags: Array.isArray(item.data?.tags) ? item.data?.tags : [],
               banner_image:

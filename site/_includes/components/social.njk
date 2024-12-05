@@ -4,7 +4,13 @@
 
    {%- set image -%}
       {%- if page.data.image -%}
-         {{page.data.image}}
+         {%- if page.data.image.cdn -%}
+            https://cdn.chriskrycho.com/images/{{page.data.image.cdn}}
+         {%- elif page.data.image.url -%}
+            {{page.data.image.url}}
+         {%- else -%}
+            {{page.data.image}}
+         {%- endif -%}
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover}}
       {%- elif pageTitle -%}

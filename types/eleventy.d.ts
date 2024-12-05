@@ -1,13 +1,5 @@
 type ServeStaticOptions = import('serve-static').ServeStaticOptions;
 
-// ---- Utility types
-interface Dict<T = unknown> {
-   [key: string]: T | undefined;
-}
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type AnyFunction<T = any> = (...args: any[]) => T;
-
 // ---- Eleventy types
 interface BrowserSyncConfig {
    /** Browsersync includes a user-interface that is accessed via a separate port. The UI allows to controls all devices, push sync updates and much more. */
@@ -67,6 +59,7 @@ interface BrowserSyncConfig {
 
 type Empty = { isEmpty: true; empty: string } | { isEmpty: false };
 
+import { AnyFunction, Dict } from '../eleventy/type-utils';
 import type { GrayMatterFile, GrayMatterOption } from 'gray-matter';
 
 export type Engine = (input: string) => GrayMatterFile<string>;
@@ -162,7 +155,7 @@ export interface Config {
       In addition to Global Data Files global data can be added to the Eleventy
       config object using the `addGlobalData` method. This is especially useful
       for plugins.
-   
+
       The first value of `addGlobalData` is the key that will be available to
       your templates and the second value is the value of the value returned to
       the template.
