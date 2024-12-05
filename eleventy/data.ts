@@ -47,13 +47,9 @@ export function imageValue(
    if (typeof data.image == 'string') return data.image;
 
    if (typeof data.image == 'object' && data.image != null) {
-      console.log(JSON.stringify(data.image));
-      let x =
-         'cdn' in data.image
-            ? `https://cdn.chriskrycho.com/images/${data.image.cdn}`
-            : data.image.url;
-      console.log(x);
-      return x;
+      return 'cdn' in data.image
+         ? `https://cdn.chriskrycho.com/images/${data.image.cdn}`
+         : data.image.url;
    }
 
    if (typeof data.book == 'object' && data.book != null) return data.book.cover;
