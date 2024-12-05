@@ -14,7 +14,7 @@ tags:
 
 ---
 
-The [Jujutsu (`jj`)][jj] team has just released [v0.24][v0.24]. A few highlights from the new release—
+The [Jujutsu (`jj`)][jj] team has just released [v0.24][v0.24]. On macOS, `brew update jj` if you already have it or `brew install jj` if you have yet to install and try it! (See the repo for details for other operating systems.) A few highlights from the new release—
 
 [jj]: https://github.com/martinvonz/jj
 
@@ -41,5 +41,3 @@ Finally, this release also got rid of some deprecated features: `move`, `merge`,
 [v0.24]: https://github.com/martinvonz/jj/releases/tag/v0.24.0
 [essay]: https://v5.chriskrycho.com/essays/jj-init/
 [video]: https://www.youtube.com/watch?v=2otjrTzRfVk
-
-On macOS, `brew update jj` if you already have it or `brew install jj` if you have yet to install and try it!
