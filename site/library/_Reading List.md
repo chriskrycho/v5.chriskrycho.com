@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-12-06T09:43:00-0700
+date: 2024-12-06T11:52:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -66,6 +66,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Poetry
 
 - [<cite>Ponds</cite>](https://bookshop.org/a/21126/9798385210640), J. C. Scharl (new)
+- <cite>Advent: An Anthology</cite>, Hannah Hodgson (new)
 
 
 ## 2024
@@ -104,7 +105,7 @@ These are books I have actually begun reading. (You will see items move from [<b
     - [review](/library/real-essentialism/)
 
 - [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
- 
+
 
 ### Fiction
 
