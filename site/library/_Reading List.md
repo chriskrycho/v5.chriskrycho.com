@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-11-29T08:01:00-0700
+date: 2024-12-06T09:43:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -56,7 +56,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
 - [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
-- [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
 
 
 ### Fiction
@@ -104,6 +103,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
     - [review](/library/real-essentialism/)
 
+- [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
+ 
 
 ### Fiction
 
