@@ -25,7 +25,7 @@ Earlier this week, I [mentioned][dprev] that I have been switching a lot of my p
 [nova]: https://nova.app
 [nova-dprint]: https://github.com/chriskrycho/nova-dprint/tree/main
 
-I just published [an initial release (v0.1.0)][release] of [that extension][extension], and if you have Nova installed you can install it directly by [clicking this link](nova://extension?id=chriskrycho.dprint) or by searching for it in Nova’s extension library. It currently supports formatting a whole file at once, including the ability to format on save.
+I just published [an initial release (v0.1.0)][release] of [that extension][extension]! If you have Nova installed you can install it directly by [clicking this link](nova://extension?id=chriskrycho.dprint) or by searching for it in Nova’s extension library. It currently supports formatting a whole file at once, including the ability to format on save.
 
 [release]: https://github.com/chriskrycho/nova-dprint/releases/tag/v0.1.0
 [extension]: https://extensions.panic.com/extensions/chriskrycho/chriskrycho.dprint/
