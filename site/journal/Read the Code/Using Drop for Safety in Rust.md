@@ -16,6 +16,11 @@ qualifiers:
 
         [drop]: https://doc.rust-lang.org/1.82.0/std/ops/trait.Drop.html
 
+thanks: |
+    [Rob Jackson][rwjblue] read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
+
+    [rwjblue]: https://github.com/rwjblue/
+
 ---
 
 As I was working on some revisions to <cite>The Rust Programming Language</cite> book,[^whoa] I had cause to look at [the `Vec::drain` method][drain-method-docs], and that led me down a rabbit hole—the rabbit hole we are now going to traverse together.
@@ -38,7 +43,7 @@ Removed: 3
 Remaining: [1, 4, 5]
 ```
 
-Here’s how [its][drain-method-docs] describe it as of Rust 1.83 (emphasis mine):
+Here’s how [the docs][drain-method-docs] describe `Vec::drain` as of Rust 1.83 (emphasis mine):
 
 > Removes the specified range from the vector in bulk, returning all removed elements as an iterator. If the iterator is dropped before being fully consumed, it drops the remaining removed elements.
 >
@@ -395,7 +400,7 @@ That was a lot of ground, but it showed off some interesting bits about providin
 2. The iterator over that `Vec` can never be invalidated either.
 3. Both (1) and (2) are true *even in the face of badly behaved implementations of other types*, as long as there is no *unsound* code in that bad behavior.
 
-It is also worth seeing that while this *includes* memory safety, the way the ownership semantics work in the public API here eliminates *other* kinds of bugs too. You can have iterator invalidation bugs in Java or JavaScript just fine if you don’t take care! In Rust, you can only have an iterator invalidation bug by explicitly opting into `unsafe`. That’s neat, and it’s one reason I miss Rust when working in other languages!
+It is also worth seeing that while this *includes* memory safety, the way the ownership semantics work in the public <abbr title="application programming interface">API</abbr> here eliminates *other* kinds of bugs too. You can have iterator invalidation bugs in Java or JavaScript just fine if you don’t take care! In Rust, you can only have an iterator invalidation bug by explicitly opting into `unsafe`. That’s neat, and it’s one reason I miss Rust when working in other languages!
 
 I also particularly want to note this use of a `DropGuard` to uphold those guarantees. This is *similar* to the kind of thing you can do with the `using` construct in C# or JavaScript or the `with` construct in Python—but in those cases, there is a special language affordance built in to handle that kind of scoping so you can deploy it for cases where you need it. In Rust, it falls directly out of the combination of ownership and having a destructor that runs automatically when an item goes out of scope. You do not *need* any special language constructs for it other than those two.
 
@@ -407,7 +412,7 @@ If you want to read more about provenance, check out these posts by Rust memory 
 - [Pointers Are Complicated II, or: We need better language specs](https://www.ralfj.de/blog/2020/12/14/provenance.html)
 - [Pointers Are Complicated III, or: Pointer-integer casts exposed](https://www.ralfj.de/blog/2022/04/11/provenance-exposed.html)
 
-You might also want to look into [the <span class='all-smcp'>CHERI</span> project][cheri], which is working on adding provenance to pointers at the hardware instruction level, which would help immensely with safety in C.
+You might also want to look into [the <abbr title="Capability Hardware Enhanced RISC Instructions">CHERI</abbr> project][cheri], which is working on adding provenance to pointers at the hardware instruction level, which would help immensely with safety in C.
 
 [cheri]: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/
 
