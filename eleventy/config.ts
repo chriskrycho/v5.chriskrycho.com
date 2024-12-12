@@ -247,6 +247,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal/2022 in Review');
    addCollectionFromDir(config, 'journal/Next');
    addCollectionFromDir(config, 'journal/2023 in Review');
+   addCollectionFromDir(config, 'journal/Read the Code');
    addCollectionFromDir(config, 'journal/Read the Manual');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
