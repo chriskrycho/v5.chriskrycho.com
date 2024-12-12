@@ -18,7 +18,7 @@ image:
 
 qualifiers:
     audience: |
-        Software developers who use jj for version control (or are curious about it) looking to add new tricks to their toolkit. Assumes the Jujutsu bits; see [the docs] if this is confusing but you want to make it happen for you!
+        Software developers who use jj for version control (or are curious about it) looking to add new tricks to their toolkit. Assumes the Jujutsu bits; see [the docs][docs] if this is confusing but you want to make it happen for you!
         
         [docs]: https://martinvonz.github.io/jj/latest/
 
