@@ -54,19 +54,19 @@
                   {%- endif -%}
 
                   {%- if item.data.qualifiers.audience -%}
-                     <p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> {{ item.data.qualifiers.audience | safe -}}</p>
+                     {{- item.data.qualifiers.audience | safe -}}
                   {%- endif -%}
 
                   {%- if item.data.qualifiers.context -%}
-                     <p>{{ item.data.qualifiers.context | safe -}}</p>
+                     {{- item.data.qualifiers.context | safe -}}
                   {%- endif -%}
 
                   {%- if item.data.qualifiers.epistemic -%}
-                     <p><b>Epistemic status:</b> {{ item.data.qualifiers.epistemic | safe -}}</p>
+                     {{- item.data.qualifiers.epistemic | safe -}}
                   {%- endif -%}
 
                   {%- if item.data.qualifiers.discusses -%}
-                     <p><b>Heads up:</b> this post directly discusses {{item.data.qualifiers.discusses | niceList | safe}}.</p>
+                     {{- item.data.qualifiers.discusses | safe -}}
                   {%- endif -%}
 
                   {%- if updates -%}

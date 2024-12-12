@@ -26,29 +26,18 @@
 
 {% if qualifiers -%}
 <div class='qualifiers'>
-   {% if qualifiers.audience -%}
-   <p>
-      <b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed audience</a>:</b>
-      {{qualifiers.audience | safe}}
-   </p>
-   {%- endif %}
-   {% if qualifiers.context -%}
-   <p>
-      {{qualifiers.context | safe}}
-   </p>
-   {%- endif %}
-   {% if qualifiers.epistemic %}
-   <p>
-      <b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic status</a>:</b>
-      {{qualifiers.epistemic | safe}}
-   </p>
-   {% endif %}
-   {% if qualifiers.discusses %}
-   <p>
-      <b>Heads up:</b>
-      This post directly discusses {{qualifiers.discusses | niceList | safe}}.
-   </p>
-   {% endif %}
+   {%- if qualifiers.audience -%}
+      {{- qualifiers.audience | safe -}}
+   {%- endif -%}
+   {%- if qualifiers.context -%}
+      {{- qualifiers.context | safe -}}
+   {%- endif -%}
+   {%- if qualifiers.epistemic -%}
+      {{- qualifiers.epistemic | safe -}}
+   {%- endif -%}
+   {%- if qualifiers.discusses -%}
+      {{- qualifiers.discusses | safe -}}
+   {%- endif -%}
 </div>
 {%- endif %}
 

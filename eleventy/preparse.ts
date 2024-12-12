@@ -1,5 +1,19 @@
 import { Data } from 'eleventy';
+
+import Maybe from 'true-myth/maybe';
+
 import markdown from './markdown';
+import niceList from './nice-list';
+
+const ASSUMED_AUDIENCE =
+   "<b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed audience</a>:</b>";
+
+const CONTEXT = '<b>A bit of context:</b>:';
+
+const EPISTEMIC_STATUS =
+   "<b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic status</a>:</b>";
+
+const DISCUSSES = '<b>Heads up:</b> this post directly discusses';
 
 /**
   Pre-parse the various
@@ -10,31 +24,40 @@ export function preparseYaml(data: Data): Data {
 
    if (data.qualifiers) {
       if (data.qualifiers.audience)
-         data.qualifiers.audience = markdown.renderInline(data.qualifiers.audience);
+         data.qualifiers.audience = markdown.render(
+            `${ASSUMED_AUDIENCE} ${data.qualifiers.audience}`,
+         );
 
       if (data.qualifiers.context)
          data.qualifiers.context = markdown.render(
-            `<b>A bit of context:</b>: ${data.qualifiers.context}`,
+            `${CONTEXT} ${data.qualifiers.context}`,
          );
 
-      if (data.qualifiers.discusses)
-         data.qualifiers.discusses = data.qualifiers.discusses.map(
-            markdown.renderInline.bind(markdown),
-         );
+      if (data.qualifiers.discusses) {
+         let discusses = Array.isArray(data.qualifiers.discusses)
+            ? niceList(data.qualifiers.discusses)
+            : Maybe.just(data.qualifiers.discusses);
 
-      if (data.qualifiers.epistemic)
-         data.qualifiers.epistemic = markdown.renderInline(data.qualifiers.epistemic);
+         data.qualifiers.discusses = discusses
+            .map((s) => `${DISCUSSES} ${markdown.renderInline(s)}.`)
+            .unwrapOr(undefined);
+      }
+
+      if (data.qualifiers.epistemic) {
+         data.qualifiers.epistemic = markdown.render(
+            `${EPISTEMIC_STATUS} ${data.qualifiers.epistemic}`,
+         );
+      }
    }
 
    if (data.updates) {
-      for (let update of data.updates)
-         update.changes = markdown.renderInline(update.changes);
+      for (let update of data.updates) update.changes = markdown.render(update.changes);
    }
 
    if (data.book?.review?.summary)
-      data.book.review.summary = markdown.renderInline(data.book.review.summary);
+      data.book.review.summary = markdown.render(data.book.review.summary);
 
-   if (data.thanks) data.thanks = markdown.renderInline(data.thanks);
+   if (data.thanks) data.thanks = markdown.render(data.thanks);
 
    return data;
 }

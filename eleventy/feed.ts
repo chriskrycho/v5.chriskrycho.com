@@ -11,7 +11,6 @@ import siteTitle from './site-title';
 import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
-import niceList from './nice-list';
 import { type Book, imageValue, isBook, type Qualifiers } from './data';
 
 type BuildInfo = typeof import('../site/_data/build');
@@ -70,31 +69,19 @@ function entryTitleFor(item: Item): string {
 function htmlForQualifiers(qualifiers?: Qualifiers) {
    if (!qualifiers) return '';
 
-   const audience =
-      typeof qualifiers.audience === 'string'
-         ? `<p><a href="https://v4.chriskrycho.com/2018/assumed-audiences.html"><b>Assumed audience:</b></a> ${markdown.renderInline(
-              qualifiers.audience,
-           )}</p>`
-         : '';
+   const audience = qualifiers.audience ?? '';
+   const context = qualifiers.context ?? '';
+   const epistemicStatus = qualifiers.epistemic ?? '';
 
-   const context =
-      typeof qualifiers.context === 'string'
-         ? `<p><b>A bit of context:</b> ${markdown.renderInline(qualifiers.context)}</p>`
-         : '';
+   // This is guaranteed to be a string here if it exists. Eleventy’s approach
+   // does not let me “parse, don’t validate”. Need to finish lx. «sigh» So fail
+   // fast if that is *not* true!
+   if (Array.isArray(qualifiers.discusses))
+      throw new Error('Invalid `qualifiers.discusses`');
 
-   const epistemicStatus =
-      typeof qualifiers.epistemic === 'string'
-         ? `<p><b>Epistemic status:</b> ${markdown.renderInline(
-              qualifiers.epistemic,
-           )}</p>`
-         : '';
+   let contentNotice = qualifiers.discusses ?? '';
 
-   let contentNotice = niceList(qualifiers.discusses)
-      .map((s) => `<p><b>Heads up:</b> this post directly discusses ${s}.</p>`)
-      .unwrapOr('');
-
-   const divider = '<hr/>';
-   return audience + context + epistemicStatus + contentNotice + divider;
+   return audience + context + epistemicStatus + contentNotice + '<hr/>';
 }
 
 function contentHtmlFor(

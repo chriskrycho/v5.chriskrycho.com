@@ -106,5 +106,5 @@ export interface Qualifiers {
    audience?: string;
    context?: string;
    epistemic?: string;
-   discusses?: string[];
+   discusses?: string | string[];
 }
