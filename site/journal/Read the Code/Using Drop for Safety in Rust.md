@@ -17,7 +17,7 @@ qualifiers:
         [drop]: https://doc.rust-lang.org/1.82.0/std/ops/trait.Drop.html
 
 thanks: |
-    [Rob Jackson][rwjblue] read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
+    [Rob Jackson][rwjblue] and Chris Freeman read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
 
     [rwjblue]: https://github.com/rwjblue/
 
@@ -59,7 +59,7 @@ That could potentially be a *lot* of work for the computer to do right up front,
 
 So Rust does something totally different here instead: it *keeps* a mutable reference to the original `Vec`, and it only ever reads from and updates the original storage. It can do that because of Rust’s ownership rules: nothing else is allowed to get read or write access to the original `Vec` as long as the iterator produced by `Vec::drain` exists, so nothing can ever get into a buggy state by invalidating the iterator or its backing storage (for example, by mutating the values in the `Vec`, changing its length, etc.).
 
-Rust does this [by creating a new data structure][drain-method-impl], quite reasonably named [`Drain`][drain-struct-docs], which [holds onto][drain-struct-impl] that mutable reference to the original `Vec` and a range iterator for accessing the values of the `Vec` without. When you then use iterator methods on that, it walks over the `Vec` by using the range iterator to access specific elements in the `Vec`—and, critically, it does this by returning their values via an unsafe `std::ptr::read` call to return the internal value immediately.
+Rust does this [by creating a new data structure][drain-method-impl], quite reasonably named [`Drain`][drain-struct-docs], which [holds onto][drain-struct-impl] that mutable reference to the original `Vec` and a range iterator for accessing the values of the `Vec` by indexing into it. When you then use iterator methods on that, it walks over the `Vec` by using the range iterator to access specific elements in the `Vec`—and, critically, it does this by returning their values via an unsafe `std::ptr::read` call to return the internal value immediately.
 
 [drain-method-impl]: https://github.com/rust-lang/rust/blob/1f3bf231e160b9869e2a85260fd6805304bfcee2/library/alloc/src/vec/mod.rs#L2603-L2631
 [drain-struct-docs]: https://doc.rust-lang.org/1.83.0/std/vec/struct.Drain.html
@@ -119,7 +119,19 @@ if self.0.tail_len > 0 {
 }
 ```
 
-That value is set only once, when the struct is initialized in `Vec::drain`, along with `tail_start`:
+The “tail” whose length is calculated here is the set of elements which come after the end of the range specified when calling `Vec::drain`. Returning to the example code I showed at the beginning:
+
+```rust
+let mut values = vec![1, 2, 3, 4, 5];
+for val in values.drain(1..3) {
+    println!("Removed: {val}");
+}
+println!("Remaining: {values:?}");
+```
+
+The tail here are the values `4` and `5`, which are not drained.
+
+The `tail_len` value is set only once, when the struct is initialized in `Vec::drain`, along with `tail_start`:
 
 ```rust
 pub fn drain<R>(&mut self, range: R) -> Drain<'_, T>
@@ -153,17 +165,9 @@ where
 }
 ```
 
-Here you can see that `tail_start` and `tail_end` represent anything *after* the section you are pulling out with `drain`, with a special bit of handling to guarantee memory safety when dealing with the original `Vec`’s contents. Returning to the example code I showed at the beginning:
+Here you can see that `tail_start` and `tail_end` represent anything *after* the section you are pulling out with `drain`, with a special bit of handling to guarantee memory safety when dealing with the original `Vec`’s contents.
 
-```rust
-let mut values = vec![1, 2, 3, 4, 5];
-for val in values.drain(1..3) {
-    println!("Removed: {val}");
-}
-println!("Remaining: {values:?}");
-```
-
-Then `tail_start` here will be `3` and `tail_end` will be `4`: `..` *excludes* the end of the range, so the “tail” will be `3..4`, that is, the values `4` and `5` in the `Vec`.
+Thus, in my example code, `tail_start` will be `3` and `tail_end` will be `4`: `..` *excludes* the end of the range, with the values `4` and `5`, exactly as I described above.
 
 If there is a tail, the `DropGuard` relocates each of those items using [the `std::ptr::copy` function][ptr-copy], which is similar to the C function `memmove`. It gets a mutable reference to the original `Vec`, and again only copies over the values if the tail is not already at the end of the original `Vec`.
 
