@@ -10,6 +10,9 @@ tags:
     - software development
     - reading code
 
+image:
+    cdn: drain-drop.png
+
 qualifiers:
     audience: |
         People who can read Rust and have a basic (and I do mean basic!) understanding of its ownership semantics and [its `Drop` trait][drop].
