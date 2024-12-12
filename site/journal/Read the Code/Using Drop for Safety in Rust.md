@@ -20,7 +20,7 @@ qualifiers:
         [drop]: https://doc.rust-lang.org/1.82.0/std/ops/trait.Drop.html
 
 thanks: |
-    [Rob Jackson][rwjblue] Chris Freeman, and [Dan Freeman][df] (no relation!) read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
+    [Rob Jackson][rwjblue], [Chris Freeman][cf], and [Dan Freeman][df] (no relation!) read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
 
     [rwjblue]: https://github.com/rwjblue/
     [cf]: https://github.com/cafreeman/
