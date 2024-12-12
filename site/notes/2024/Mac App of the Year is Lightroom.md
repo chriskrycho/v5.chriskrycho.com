@@ -13,7 +13,7 @@ tags:
     - Adobe
     - photography
 
-images:
+image:
     cdn: mac-app-of-2024.png
 
 ---
