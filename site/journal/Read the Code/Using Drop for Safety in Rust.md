@@ -3,7 +3,7 @@ title: "Read the Code: Using Drop for Safety in Rust"
 subtitle: |
     A deep dive into Rust’s `vec::Drain` and its `Drop` implementation as an example of how ownership prevents subtle bugs—memory and otherwise!
 
-date: 2024-12-12T12:00:00-0700
+date: 2024-12-12T12:05:00-0700
 
 tags:
     - Rust
@@ -20,9 +20,11 @@ qualifiers:
         [drop]: https://doc.rust-lang.org/1.82.0/std/ops/trait.Drop.html
 
 thanks: |
-    [Rob Jackson][rwjblue] and Chris Freeman read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
+    [Rob Jackson][rwjblue] Chris Freeman, and [Dan Freeman][df] (no relation!) read and provided helpful feedback on this before publication. All errors and infelicities are, of course, my own.
 
     [rwjblue]: https://github.com/rwjblue/
+    [cf]: https://github.com/cafreeman/
+    [df]: https://github.com/dfreeman
 
 ---
 
@@ -108,6 +110,7 @@ This is an internal data structure, a type *only* available in the body of this 
 ```rust
 impl<'r, 'a, T> Drop for DropGuard<'r, 'a, T> {
     fn drop(&mut self) {
+        // the body of the implementation (which we’re about to see!)
     }
 }
 ```
