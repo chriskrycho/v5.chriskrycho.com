@@ -1,9 +1,9 @@
 ---
-title: Using Drop for Safety in Rust
+title: "Read the Code: Using Drop for Safety in Rust"
 subtitle: |
-    A deep dive into Rust’s `Vec::drain` and its corresponding `Drop` as an example of how ownership prevents subtle bugs—memory and otherwise!
+    A deep dive into Rust’s `vec::Drain` and its `Drop` implementation as an example of how ownership prevents subtle bugs—memory and otherwise!
 
-date: 2024-12-11T19:00:00-0700
+date: 2024-12-12T12:00:00-0700
 
 tags:
     - Rust
@@ -411,7 +411,7 @@ You might also want to look into [the <span class='all-smcp'>CHERI</span> projec
 
 [cheri]: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/
 
-For a couple of great reads on how you can (and Rust does) use ownership in related ways to provide powerful guarantees about your code, check out Cliff Biffle’s posts [The Typestate Pattern in Rust][cliffle-typestate] and [Why Rust mutexes look like they do][cliffle-mutex].
+For two more great reads on how you can (and Rust does) use ownership in related ways to provide powerful guarantees about your code, check out Cliff Biffle’s posts [The Typestate Pattern in Rust][cliffle-typestate] and [Why Rust mutexes look like they do][cliffle-mutex]. Those are where I first came to understand the pattern I walked through in this post!
 
 [cliffle-typestate]: https://cliffle.com/blog/rust-typestate/
 [cliffle-mutex]: https://cliffle.com/blog/rust-mutexes/

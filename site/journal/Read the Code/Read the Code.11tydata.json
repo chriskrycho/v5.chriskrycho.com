@@ -1,0 +1,5 @@
+{
+   "layout": "post.njk",
+   "permalink": "/journal/read-the-code/{{page.fileSlug | slug}}/index.html",
+   "tags": ["software development"]
+}
