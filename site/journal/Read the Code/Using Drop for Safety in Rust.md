@@ -26,6 +26,10 @@ thanks: |
     [cf]: https://github.com/cafreeman/
     [df]: https://github.com/dfreeman
 
+discuss:
+    hn: https://news.ycombinator.com/item?id=42402280
+    lobsters: https://lobste.rs/s/zeys16/read_code_using_drop_for_safety_rust
+
 ---
 
 As I was working on some revisions to <cite>The Rust Programming Language</cite> book,[^whoa] I had cause to look at [the `Vec::drain` method][drain-method-docs], and that led me down a rabbit hole—the rabbit hole we are now going to traverse together.
