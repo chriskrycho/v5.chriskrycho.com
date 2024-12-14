@@ -172,6 +172,9 @@ services:
       - type: redirect
         source: /topics/micro.blog
         destination: /topics/social-media/
+      - type: redirect
+        source: /topics/design-systems
+        destination: /topics/design/
 
       # and topics that I turned into collections
       - type: redirect
