@@ -7,7 +7,7 @@ updated: 2020-08-15T20:38:00-0700
 tags:
     - writing
     - blogging
-    - web design
+    - design
     - open-source software
     - TypeScript
     - site meta

@@ -14,7 +14,7 @@ tags:
     - JavaScript
     - TypeScript
     - CSS
-    - web design
+    - design
     - site meta
 qualifiers:
   audience: >

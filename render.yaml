@@ -175,6 +175,9 @@ services:
       - type: redirect
         source: /topics/design-systems
         destination: /topics/design/
+      - type: redirect
+        source: /topics/web-design
+        destination: /topics/design/
 
       # and topics that I turned into collections
       - type: redirect

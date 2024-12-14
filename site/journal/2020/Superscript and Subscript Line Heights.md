@@ -11,7 +11,6 @@ image: https://cdn.chriskrycho.com/images/superscript%20horror%20show.png
 tags:
     - typography
     - design
-    - web design
 
 ---
 
