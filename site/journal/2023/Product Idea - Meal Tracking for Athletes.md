@@ -20,7 +20,6 @@ qualifiers:
     - dieting
 tags:
   - product ideas
-  - niche product ideas
   - fitness
   - health
   - software development
