@@ -196,6 +196,9 @@ services:
       - type: redirect
         source: /topics/type-theory
         destination: /topics/type-systems/
+      - type: redirect
+        source: /topics/hacking
+        destination: /topics/software/
 
       # and topics that I turned into collections
       - type: redirect
