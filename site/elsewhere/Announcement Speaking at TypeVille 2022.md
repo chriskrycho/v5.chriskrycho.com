@@ -13,7 +13,7 @@ tags:
   - OCaml
   - Rust
   - Haskell
-  - type theory
+  - type systems
   - functional programming
   - domain-driven design
 

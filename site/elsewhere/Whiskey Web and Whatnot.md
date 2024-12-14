@@ -8,7 +8,7 @@ link: https://www.whiskeywebandwhatnot.fm/bringing-types-to-ember-with-chris-kry
 tags:
     - TypeScript
     - Ember
-    - type theory
+    - type systems
     - web development
     - podcasting
     - open-source software

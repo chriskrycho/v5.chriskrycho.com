@@ -193,6 +193,9 @@ services:
       - type: redirect
         source: /topics/niche-product-ideas
         destination: /topics/product-ideas/
+      - type: redirect
+        source: /topics/type-theory
+        destination: /topics/type-systems/
 
       # and topics that I turned into collections
       - type: redirect

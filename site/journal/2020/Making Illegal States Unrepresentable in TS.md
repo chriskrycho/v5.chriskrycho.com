@@ -14,7 +14,7 @@ thanks: >
 tags:
   - TypeScript
   - software development
-  - type theory
+  - type systems
   - F#
   - functional programming
 

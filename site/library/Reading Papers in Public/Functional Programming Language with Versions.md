@@ -14,7 +14,7 @@ tags:
   - TypeScript
   - programming languages
   - computer science
-  - type theory
+  - type systems
   - functional programming
   - learning
 paper:

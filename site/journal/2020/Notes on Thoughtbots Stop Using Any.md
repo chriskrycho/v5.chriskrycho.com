@@ -14,7 +14,7 @@ tags:
   - TypeScript
   - JavaScript
   - software development
-  - type theory
+  - type systems
 
 ---
 

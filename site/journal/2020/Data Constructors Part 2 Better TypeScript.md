@@ -16,7 +16,7 @@ tags:
     - functional programming
     - programming languages
     - TypeScript
-    - type theory
+    - type systems
     - Grain
 
 series:

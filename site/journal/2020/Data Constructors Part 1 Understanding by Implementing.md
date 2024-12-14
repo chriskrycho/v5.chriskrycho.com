@@ -22,7 +22,7 @@ tags:
     - Grain
     - functional programming
     - programming languages
-    - type theory
+    - type systems
     - software development
 
 series:
