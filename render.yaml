@@ -199,6 +199,12 @@ services:
       - type: redirect
         source: /topics/hacking
         destination: /topics/software/
+      - type: redirect
+        source: /topics/software-develompent
+        destination: /topics/software-development/
+      - type: redirect
+        source: /topics/software-design
+        destination: /topics/software-development/
 
       # and topics that I turned into collections
       - type: redirect

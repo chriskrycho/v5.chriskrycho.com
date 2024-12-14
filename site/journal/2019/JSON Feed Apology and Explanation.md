@@ -7,7 +7,7 @@ updated: 2019-12-15T09:35:00-0600
 tags:
     - TypeScript
     - JavaScript
-    - software design
+    - software development
     - blogging
     - JSON Feed
     - site meta

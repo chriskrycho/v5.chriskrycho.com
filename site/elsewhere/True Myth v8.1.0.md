@@ -9,7 +9,7 @@ image: https://cdn.chriskrycho.com/images/true-myth-v8.1.0.png
 date: 2024-12-03T17:26:00-0700
 
 tags:
-    - software develompent
+    - software development
     - open-source software
     - TypeScript
 
