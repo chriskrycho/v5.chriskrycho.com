@@ -17,7 +17,7 @@ tags:
     - Cloudflare
     - Hover
     - own your turf
-    - IndieWeb
+    - open web
 
 ---
 

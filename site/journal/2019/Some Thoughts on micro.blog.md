@@ -11,7 +11,7 @@ tags:
     - social media
     - writing
     - working effectively
-    - IndieWeb
+    - open web
 
 ---
 

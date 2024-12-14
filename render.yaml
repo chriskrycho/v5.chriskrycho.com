@@ -178,6 +178,9 @@ services:
       - type: redirect
         source: /topics/web-design
         destination: /topics/design/
+      - type: redirect
+        source: /topics/IndieWeb
+        destination: /topics/open-web/
 
       # and topics that I turned into collections
       - type: redirect
