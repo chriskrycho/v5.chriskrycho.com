@@ -205,6 +205,9 @@ services:
       - type: redirect
         source: /topics/software-design
         destination: /topics/software-development/
+      - type: redirect
+        source: /topics/developer-productivity
+        destination: /topics/engineering-effectiveness/
 
       # and topics that I turned into collections
       - type: redirect

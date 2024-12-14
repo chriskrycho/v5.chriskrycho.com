@@ -16,7 +16,6 @@ thanks: >
 image: https://cdn.chriskrycho.com/images/Accelerate.jpg
 tags:
   - engineering effectiveness
-  - developer productivity
   - software development
   - leadership
 

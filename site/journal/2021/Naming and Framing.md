@@ -12,7 +12,6 @@ summary: >
 tags:
   - software development
   - engineering effectiveness
-  - developer productivity
 
 ---
 
