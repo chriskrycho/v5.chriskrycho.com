@@ -165,10 +165,13 @@ services:
         destination: /topics/programming-languages/
       - type: redirect
         source: /topics/composition
-        destination: /topics/composing
+        destination: /topics/composing/
       - type: redirect
         source: /topics/productivity
-        destination: /topics/working-effectively
+        destination: /topics/working-effectively/
+      - type: redirect
+        source: /topics/micro.blog
+        destination: /topics/social-media/
 
       # and topics that I turned into collections
       - type: redirect

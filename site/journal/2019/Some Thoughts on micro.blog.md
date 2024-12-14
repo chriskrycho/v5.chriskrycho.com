@@ -10,9 +10,8 @@ summary: >
 tags:
     - social media
     - writing
-    - productivity
+    - working effectively
     - IndieWeb
-    - micro.blog
 
 ---
 
