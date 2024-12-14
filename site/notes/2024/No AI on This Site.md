@@ -7,7 +7,7 @@ summary: |
 date: 2024-12-03T21:11:00-0700
 
 tags:
-    - AI
+    - AI and ML
     - site meta
     - writing
 

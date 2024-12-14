@@ -181,6 +181,15 @@ services:
       - type: redirect
         source: /topics/IndieWeb
         destination: /topics/open-web/
+      - type: redirect
+        source: /topics/ai
+        destination: /topics/ai-and-ml/
+      - type: redirect
+        source: /topics/gpt
+        destination: /topics/ai-and-ml/
+      - type: redirect
+        source: /topics/ml
+        destination: /topics/ai-and-ml/
 
       # and topics that I turned into collections
       - type: redirect

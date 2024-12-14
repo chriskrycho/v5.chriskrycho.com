@@ -20,9 +20,7 @@ qualifiers:
     Anyone thinking seriously about 
 tags:
   - software development
-  - AI
-  - ML
-  - GPT
+  - AI and ML
 
 ---
 

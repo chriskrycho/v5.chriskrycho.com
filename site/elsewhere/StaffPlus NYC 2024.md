@@ -7,9 +7,7 @@ tags:
     - software development
     - talks
     - public speaking
-    - AI
-    - ML
-    - GPT
+    - AI and ML
 
 date: 2024-04-26T17:00:00-0600
 updated: 2024-09-18T16:56:00-0600

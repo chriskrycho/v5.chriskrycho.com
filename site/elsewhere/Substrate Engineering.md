@@ -17,7 +17,7 @@ tags:
     - software development
     - talks
     - public speaking
-    - AI
+    - AI and ML
     - leadership
 
 date: 2024-09-09T12:30:00-0600

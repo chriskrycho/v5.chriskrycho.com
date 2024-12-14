@@ -13,8 +13,7 @@ summary: >
   This tool has a lot of promise: its UI design is absolutely pointed the right direction and has really wise defaults, the underlying model is deployed in a really smart way, and its failings are the failings of all current LLM-based systems.
 date: 2023-01-10T19:13:00
 tags:
-  - AI
-  - ML
+  - AI and ML
 ---
 
 One thing I *really* like right out of the gate is that it actively explains *how* it got the answers it does. Every single piece of data it surfaces links back to the content it refers to.

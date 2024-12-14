@@ -5,8 +5,7 @@ subtitle: >
 
 date: 2024-12-09T09:59:00-0700
 tags:
-    - AI
-    - large language model
+    - AI and ML
     - quotes
     - ethics
 
