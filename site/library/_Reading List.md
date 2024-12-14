@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-12-12T13:28:00-0700
+date: 2024-12-13T19:36:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -36,7 +36,6 @@ These are books I am *actively* planning to read—not just volumes I’m vaguel
 
 ### Non-fiction
 
-- <cite>A Time to Keep</cite>, Ephraim Radner (new)
 - <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
 - [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
 
@@ -55,8 +54,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>The Rise and Fall of the Third Reich</cite>](https://bookshop.org/a/21126/9781451651683), William L. Shirer (new)
+- <cite>A Time to Keep</cite>, Ephraim Radner (new)
 
-
+ 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
