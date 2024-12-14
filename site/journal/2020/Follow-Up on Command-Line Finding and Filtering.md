@@ -8,7 +8,7 @@ summary: >
     You can use a variant flag with GNU grep and ripgrep to filter with null characters.
 tags:
     - things I learned
-    - command line
+    - command line tools
     - software development
 qualifiers:
     audience: >

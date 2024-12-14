@@ -208,6 +208,9 @@ services:
       - type: redirect
         source: /topics/developer-productivity
         destination: /topics/engineering-effectiveness/
+      - type: redirect
+        source: /topics/command-line
+        destination: /topics/command-line-tools/
 
       # and topics that I turned into collections
       - type: redirect

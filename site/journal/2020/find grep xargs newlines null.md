@@ -8,7 +8,7 @@ summary: >
     If you want to find files, filter them on file name, and pipe the result into some other Unix command, use tr to substitute the null character for newlines.
 tags:
     - things I learned
-    - command line
+    - command line tools
     - software development
 qualifiers:
     audience: >
