@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-12-13T19:36:00-0700
+date: 2024-12-14T09:32:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -54,7 +54,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>The Rise and Fall of the Third Reich</cite>](https://bookshop.org/a/21126/9781451651683), William L. Shirer (new)
-- <cite>A Time to Keep</cite>, Ephraim Radner (new)
+- [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 
  
 ### Fiction
