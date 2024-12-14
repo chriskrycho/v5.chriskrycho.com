@@ -13,7 +13,7 @@ tags:
   - writing
   - music
   - photography
-  - productivity
+  - working effectively
   - self-discipline
   - habits
 date: 2023-01-01T16:51:00-0700

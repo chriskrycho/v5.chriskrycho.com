@@ -18,7 +18,7 @@ tags:
   - photography
   - blogging
   - LinkedIn
-  - productivity
+  - working effectively
   - self-discipline
   - habits
 

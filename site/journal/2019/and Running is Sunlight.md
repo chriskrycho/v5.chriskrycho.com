@@ -7,7 +7,7 @@ updated: 2019-12-09T20:33:00-0600
 tags:
     - fitness
     - travel
-    - productivity
+    - working effectively
     - running
     - writing
     - health

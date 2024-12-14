@@ -7,7 +7,7 @@ date: 2020-04-29T07:00:00-0600
 tags:
     - software development
     - product development
-    - productivity
+    - working effectively
     - CSS
     - SCSS
     - Elm

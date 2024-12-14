@@ -23,7 +23,7 @@ tags:
   - blogging
   - rewrite
   - LinkedIn
-  - productivity
+  - working effectively
   - self-discipline
   - habits
 

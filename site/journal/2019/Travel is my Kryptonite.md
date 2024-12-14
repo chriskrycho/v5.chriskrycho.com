@@ -5,7 +5,7 @@ subtitle: >
 date: 2019-11-26T20:42:00-0600
 updated: 2019-12-09T20:33:00-0600
 tags:
-    - productivity
+    - working effectively
     - writing
     - fitness
     - running

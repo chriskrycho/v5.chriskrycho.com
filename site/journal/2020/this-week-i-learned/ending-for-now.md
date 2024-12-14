@@ -11,7 +11,7 @@ qualifiers:
     epistemic: >
         Pretty darn comfortable with this decision and indeed with the decision-making mode that produced it.
 tags:
-    - productivity
+    - working effectively
     - site meta
     - blogging
     - writing
