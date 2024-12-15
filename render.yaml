@@ -226,6 +226,9 @@ services:
       - type: redirect
         source: /topics/advent
         destination: /topics/theology/
+      - type: redirect
+        source: /topics/priors
+        destination: /topics/hermeneutics/
 
       # and topics that I turned into collections
       - type: redirect

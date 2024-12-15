@@ -9,7 +9,6 @@ tags:
     - hermeneutics
     - reading
     - writing
-    - priors
     - David H. Kelsey
     - reading notes
 date: 2020-01-12T20:55:00-0600
