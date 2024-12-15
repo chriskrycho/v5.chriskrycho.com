@@ -9,6 +9,7 @@ tags:
   - Amazon
   - Microsoft
 date: 2023-07-25T15:30:00-0700
+updated: 2024-12-14T17:00:00-0700
 summary: >
   My friend Brad East contemplates whittling down his dependence on Big Tech to just one company… and I affirm this plan. A sketched out reply on how and why.
 
@@ -37,26 +38,18 @@ Since I am killing time waiting with my family in the airport, I sent him a quic
 
 ---
 
-Spoilers: what you outline there is more or less what I have done. You
-could go further by going for Linux machines and open source sync etc.,
-but the falloff in quality is *severe*. I find the tradeoff of
-"Basically use Apple stuff" to be a pretty decent one at present: the
-hardware and software is best in class, the ecosystem smaller but *much*
-higher quality than what you find for almost everything on Windows, and
-the privacy setup is *much* better for an average person. (You *can* do
-better on privacy with Linux and Android, but the effort level is high
-and the costs to UX even higher, and they don't matter unless you work
-for the CIA or are a missionary in an *extremely* closed country or
-something like that.)
+Spoilers: what you outline there is more or less what I have done. You could go further by going for Linux machines and open source sync etc., but the falloff in quality is *severe*. I find the tradeoff of "Basically use Apple stuff" to be a pretty decent one at present:  hardware and software is best in class, the ecosystem smaller but * higher quality than what you find for almost everything on Windows, and the privacy setup is *much* better for an average person. (You *can*  better on privacy with Linux and Android, but the effort level is high and the costs to <abbr title="user experience">UX</abbr> even higher, and they don't matter unless you work for the <abbr>CIA</abbr> or are a missionary in an *extremely* closed country or something like that.)
 
-On Amazon: we swore it off almost a decade ago, and we haven't missed it much, to be honest. The more so as it has turned into a giant pile of junk from third-party vendors over time. Amazon TV is th one *sort of* useful thing, mostly for *The Expanse*... which is now over. (I think I will watch S2 of *The Wheel of Time* and *The Rings of Power*, but "think" tells you how strong my endorsement is not.)
+On Amazon: we swore it off almost a decade ago, and we haven't missed it much, to be honest. The more so as it has turned into a giant pile of junk from third-party vendors over time. Amazon <abbr>TV</abbr> is the one *sort of* useful thing, mostly for *The Expanse*... which is now over. (I think I will watch S2 of *The Wheel of Time* and *The Rings of Power*, but "think" tells you how strong my endorsement is not.[^s2s])
 
 Bonus of getting off of Microsoft: Keynote is much better than Powerpoint.
 
-And if you switched to a plain text format for writing ([Markdown](https://www.markdownguide.org/) most likely), you'd have something much more portable *forever* as an authoring format---with the tradeoff of needing some tools get from that format into something you can send to a journal/do revisions on/etc. Given the shape of your field, I suspect actually getting out of Word *entirely* (rather than just at a personal/familial level) would be the hardest bit, just because that's how revisions and collaborations so often get done. Jacobs wrote about this dynamic a while back, though: he (like me) lives in plain text *as long as possible* and then switches over to Word *only* for the revisions-with-an-editor phase.
+And if you switched to a plain text format for writing ([Markdown](https://www.markdownguide.org/) most likely), you'd have something much more portable *forever* as an authoring format—with the tradeoff of needing some tools get from that format into something you can send to a journal/do revisions on/etc. Given the shape of your field, I suspect actually getting out of Word *entirely* (rather than just at a personal/familial level) would be the hardest bit, just because that's how revisions and collaborations so often get done. Jacobs wrote about this dynamic a while back, though: he (like me) lives in plain text *as long as possible* and then switches over to Word *only* for the revisions-with-an-editor phase.
 
-If you want off of Gmail, bite the one-time bullet of (a) switching to a new provider, (b) migrating everything, (c) forwarding everything in perpetuity, and (d) setting up an auto-responder to tell people about the change of email address. You probably don't *want* to actually kill the address---too much stuff tied to it, in my experience---but you can steadily move account references off of it. Bonus: point everything to `brad@bradeast.org` or `hello@bradeast.org` or something along those lines when you do that, and then *it does not matter who your email provider is*. If you want a recommendation (and [a referral link](https://ref.fm/u14660385)!): I use and am *extremely* satisfied with Fastmail, which I have been using since 2014 or so.
+If you want off of Gmail, bite the one-time bullet of (a) switching to a new provider, (b) migrating everything, (c) forwarding everything in perpetuity, and (d) setting up an auto-responder to tell people about the change of email address. You probably don't *want* to actually kill the address—too much stuff tied to it, in my experience—but you can steadily move account references off of it. Bonus: point everything to `brad@bradeast.org` or `hello@bradeast.org` or something along those lines when you do that, and then *it does not matter who your email provider is*. If you want a recommendation (and [a referral link](https://ref.fm/u14660385)!): I use and am *extremely* satisfied with Fastmail, which I have been using since 2014 or so.
 
 Long story short: I approve!
 
 Also... I realize that you basically nerd sniped me into a first draft of the post you started bugging me about all those years ago.
+
+[^s2s]: A note from the future, when I was cleaning this up for some typos: We watched Season 2 of <cite>The Wheel of Time</cite>, and will probably keep watching it. We did *not* watch Season 2 of <cite>Rings of Power</cite> and for my part I do not expect to watch any more of it.
