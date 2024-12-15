@@ -1,5 +1,3 @@
-main();
-
 function main() {
    const { Root, Container, Panel, Show, Close, ColorSchemes, NavMode } = getElements();
 
@@ -197,3 +195,5 @@ const enum Theme {
 const THEME_VALUES: string[] = [Theme.System, Theme.Light, Theme.Dark];
 
 const isTheme = (s: string): s is Theme => THEME_VALUES.includes(s);
+
+main();
