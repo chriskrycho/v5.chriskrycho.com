@@ -13,7 +13,7 @@ tags:
   - TypeScript
   - JavaScript
   - programming languages
-  - sum types
+  - type systems
 
 ---
 

@@ -214,6 +214,9 @@ services:
       - type: redirect
         source: /topics/redux
         destination: /topics/javascript/
+      - type: redirect
+        source: /topics/sum-types
+        destination: /topics/type-systems/
 
       # and topics that I turned into collections
       - type: redirect
