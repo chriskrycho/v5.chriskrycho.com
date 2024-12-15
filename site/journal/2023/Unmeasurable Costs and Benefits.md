@@ -3,6 +3,7 @@ title: Unmeasurable Costs and Benefits
 subtitle: >
   One major reason standard advice about “demonstrating value (or impact)” does not work well for foundational software, including (but not only) open-source library code.
 date: 2023-08-26T18:32:00-0600
+updated: 2024-12-14T17:03:00-0700
 qualifiers:
   audience: >
     Software developers and managers thinking about the costs and benefits of foundational ecosystem maintenance—riffing in particular on [this post by Graydon Hoare](https://graydon2.dreamwidth.org/306832.html) (which you should read first).
@@ -39,7 +40,7 @@ The [natural rejoinder][hnc2] is: “Well, which is it? You say it cannot be mea
 
 This is a totally reasonable response! So let me elaborate a little on how these things can be true at the same time.
 
-1. Imagine a scenario where there are two versions of an API: one is bug-prone, the other is “correct by construction”—you literally *cannot* call it the wrong way.
+1. Imagine a scenario where there are two versions of an <abbr title="application programming interface">API</abbr>: one is bug-prone, the other is “correct by construction”—you literally *cannot* call it the wrong way.
 
 2. Assume that for some percentage of the “invalid” versions of the bug-prone <abbr title="application programming interface">API</abbr> are called, the result is something that ends up going wrong in production and taking 3 developers an hour to resolve. (This kind of level-of-effort is not at all unusual in my experience dealing with on-call at both a mid-sized startup and at the scale of LinkedIn!) Let’s call it 10% to pick a reasonably small number: only 1 out of 10 bad invocations for this <abbr title="application programming interface">API</abbr> put us here.[^1]
 
@@ -51,7 +52,9 @@ Put those together, and you’re talking about 100 incidents × 3 developers × 
 
 Add that up across the whole surface area of a codebase—dozens and dozens of bugs, across however many users and lines of code—and you’re talking real money. A million dollars is just 450 of those kinds of bugs with similar “blast radius” and occurence rate. This is the kind of rough mental math that leads me to talk about “netting out in the millions” benefit-wise. Thus far you could imagine “putting a number on it”.
 
-Where it goes wrong is: with the good version of that <abbr title="application programming interface">API</abbr>, *the bug never happens*. There is nothing to measure, because our reasoning has to deal entirely in counterfactuals: “What would it have cost us if we had a bug in this particular part of the framework?” But you can do that *ad infinitum*.
+Where it goes wrong: With the good version of that <abbr title="application programming interface">API</abbr>, *the bug never happens*.
+
+There is nothing to measure, because our reasoning has to deal entirely in counterfactuals: “What would it have cost us if we had a bug in this particular part of the framework?” But you can do that *ad infinitum*.
 
 More or less every part of a library can be more or less buggy, more or less easy to maintain, more or less amenable to scaling up to meet the needs of an application which uses it, more or less capable of adding new capabilities without requiring you to rewrite it, etc. The part that is impossible to measure is the benefit of all the “right” decisions along the way: the bugs you never saw, indeed never even had to think about because the <abbr title="application programming interface">API</abbr> just made them impossible in the first place.
 
