@@ -220,6 +220,12 @@ services:
       - type: redirect
         source: /topics/ratchets
         destination: /topics/software development/
+      - type: redirect
+        source: /topics/passiontide
+        destination: /topics/theology/
+      - type: redirect
+        source: /topics/advent
+        destination: /topics/theology/
 
       # and topics that I turned into collections
       - type: redirect
