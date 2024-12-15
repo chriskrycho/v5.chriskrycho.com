@@ -67,7 +67,7 @@
       "build": "npm run build:scripts && npm run build:styles && npm run build:site",
       "watch:styles": "gulp watch",
       "watch:site": "eleventy --serve",
-      "watch:scripts": "rollup --config rollup.config.js --watch",
+      "watch:scripts": "rollup --config rollup.config.mjs --watch",
       "watch": "npm run watch:site && npm run watch:styles",
       "serve": "env DEV=true eleventy --quiet --serve --incremental",
       "clean": "rm -rf public"
