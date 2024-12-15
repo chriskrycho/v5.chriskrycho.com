@@ -211,6 +211,9 @@ services:
       - type: redirect
         source: /topics/command-line
         destination: /topics/command-line-tools/
+      - type: redirect
+        source: /topics/redux
+        destination: /topics/javascript/
 
       # and topics that I turned into collections
       - type: redirect
