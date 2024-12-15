@@ -9,7 +9,7 @@ tags:
   - Amazon
   - Microsoft
 date: 2023-07-25T15:30:00-0700
-updated: 2024-12-14T17:00:00-0700
+updated: 2024-12-14T18:31:00-0700
 summary: >
   My friend Brad East contemplates whittling down his dependence on Big Tech to just one company… and I affirm this plan. A sketched out reply on how and why.
 
@@ -44,7 +44,10 @@ On Amazon: we swore it off almost a decade ago, and we haven't missed it much, t
 
 Bonus of getting off of Microsoft: Keynote is much better than Powerpoint.
 
-And if you switched to a plain text format for writing ([Markdown](https://www.markdownguide.org/) most likely), you'd have something much more portable *forever* as an authoring format—with the tradeoff of needing some tools get from that format into something you can send to a journal/do revisions on/etc. Given the shape of your field, I suspect actually getting out of Word *entirely* (rather than just at a personal/familial level) would be the hardest bit, just because that's how revisions and collaborations so often get done. Jacobs wrote about this dynamic a while back, though: he (like me) lives in plain text *as long as possible* and then switches over to Word *only* for the revisions-with-an-editor phase.
+And if you switched to a plain text format for writing ([Markdown](https://www.markdownguide.org/) most likely), you'd have something much more portable *forever* as an authoring format—with the tradeoff of needing some tools get from that format into something you can send to a journal/do revisions on/etc. Given the shape of your field, I suspect actually getting out of Word *entirely* (rather than just at a personal/familial level) would be the hardest bit, just because that's how revisions and collaborations so often get done. [Jacobs][ayjay] wrote about this dynamic [a while back][tna], though: he (like me) lives in plain text *as long as possible* and then switches over to Word *only* for the revisions-with-an-editor phase.
+
+[ayjay]: https://ayjay.org
+[tna]: https://www.thenewatlantis.com/text-patterns/no-microsoft-word-really-is-that-bad
 
 If you want off of Gmail, bite the one-time bullet of (a) switching to a new provider, (b) migrating everything, (c) forwarding everything in perpetuity, and (d) setting up an auto-responder to tell people about the change of email address. You probably don't *want* to actually kill the address—too much stuff tied to it, in my experience—but you can steadily move account references off of it. Bonus: point everything to `brad@bradeast.org` or `hello@bradeast.org` or something along those lines when you do that, and then *it does not matter who your email provider is*. If you want a recommendation (and [a referral link](https://ref.fm/u14660385)!): I use and am *extremely* satisfied with Fastmail, which I have been using since 2014 or so.
 
