@@ -21,7 +21,6 @@ tags:
     - Idris
     - Haskell
     - TypeScript
-    - ratchets
 
 discuss:
     hn: https://news.ycombinator.com/item?id=38559661

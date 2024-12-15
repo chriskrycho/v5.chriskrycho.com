@@ -217,6 +217,9 @@ services:
       - type: redirect
         source: /topics/sum-types
         destination: /topics/type-systems/
+      - type: redirect
+        source: /topics/ratchets
+        destination: /topics/software development/
 
       # and topics that I turned into collections
       - type: redirect
