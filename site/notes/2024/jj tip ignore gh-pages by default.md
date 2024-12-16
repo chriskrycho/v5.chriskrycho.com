@@ -2,14 +2,26 @@
 title: "jj tip: ignore `gh-pages` by default"
 subtitle: |
     I want my log to show me only *useful* information. Revsets let me do that!
+
 date: 2024-12-16T12:20:00-0700
+
 summary: >
     I defined a revset and tweaked my defaults in Jujutsu so now I never have to think about `gh-pages` unless I actively want to.
+
 tags:
     - software development
     - tools
     - version control
     - Jujutsu
+
+qualifiers:
+    audience: |
+        People interested in improving their experience with version control, particularly with [Jujutsu (jj)][jj]—assumes basic knowledge of jj revsets and so on; see [the docs][jj] if you’re curious!
+        
+        [jj]: https://martinvonz.github.io/jj/latest/
+
+image:
+    cdn: jj-config-toml.png
 
 ---
 
