@@ -86,6 +86,9 @@ services:
       - type: redirect
         source: /journal/jj-init/
         destination: /essays/jj-init/
+      - type: redirect
+        source: /journal/read-the-code/using-drop-for-safety-in-rust/
+        destination: /journal/read-the-code/using-drop-safely-in-rust/
 
       # ...including after I made library collections work correctly
       - type: redirect

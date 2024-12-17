@@ -1,9 +1,17 @@
 ---
-title: "Read the Code: Using Drop for Safety in Rust"
+title: "Read the Code: Using Drop Safely in Rust"
 subtitle: |
     A deep dive into Rust’s `vec::Drain` and its `Drop` implementation as an example of how ownership prevents subtle bugs—memory and otherwise!
 
 date: 2024-12-12T12:05:00-0700
+updated: 2024-12-17T08:00:00-0700
+updates:
+    - at: 2024-12-17T08:00:00-0700
+      changes: |
+        Corrected the description of the relationship between the `Drop` implementation and soundness. Thanks to [dathinab on HackerNews][d] for [the correction][correction]!
+
+        [d]: https://news.ycombinator.com/user?id=dathinab
+        [correction]: https://news.ycombinator.com/item?id=42433636
 
 tags:
     - Rust
@@ -27,7 +35,7 @@ thanks: |
     [df]: https://github.com/dfreeman
 
 discuss:
-    hn: https://news.ycombinator.com/item?id=42402280
+    hn: https://news.ycombinator.com/item?id=42429672
     lobsters: https://lobste.rs/s/zeys16/read_code_using_drop_for_safety_rust
 
 ---
@@ -74,21 +82,23 @@ Rust does this [by creating a new data structure][drain-method-impl], quite reas
 [drain-struct-docs]: https://doc.rust-lang.org/1.83.0/std/vec/struct.Drain.html
 [drain-struct-impl]: https://github.com/rust-lang/rust/blob/1f3bf231e160b9869e2a85260fd6805304bfcee2/library/alloc/src/vec/drain.rs#L22-L34
 
-That *would* be unsound if it were possible for someone to get access to the values in the `Vec` during or after the `Drain` iterator had access to it. As I noted above, though, nothing can get access to it while the `Drain` iterator has access, because it takes `self` by mutable reference. So far, this probably seems pretty straightforward if you are familiar with Rust—the `std::ptr::read` bit is the only unusual part.
+That *would* be unsound if it were possible for someone to get access to the values in the `Vec` during or after the `Drain` iterator had access to it, *or* if the `Vec` “remembered” all the elements the `Drain` gets access to. As I noted above, though, nothing can get access to it while the `Drain` iterator has access, because it takes `self` by mutable reference. So far, this probably seems pretty straightforward if you are familiar with Rust—the `std::ptr::read` bit is the only unusual part.
 
 What about *after* you finish with the draining iterator, though? How does Rust guarantee that part of the contract?
 
 This is where it gets interesting.
 
-When the iterator is dropped—either because you hit the end of a `for` loop over it or because you drop it after iterating over some subset of elements—the `Drain` type’s implementation of [the `Drop` trait][drop-docs] takes over. That means that `impl Drop for Drain` is responsible for making sure that `Drain` is sound. This is a common pattern in Rust, well worth understanding, and it is also really *neat*, so let’s walk through it—all of it, every last line!
+When the iterator is dropped—either because you hit the end of a `for` loop over it or because you drop it after iterating over some subset of elements—the `Drain` type’s implementation of [the `Drop` trait][drop-docs] takes over. That means that `impl Drop for Drain` is responsible to make sure that the unsafe cleanup it does for `Drain` remains sound, while also avoiding leaking the memory that the `Vec` forgot when we created the `Drain` (we will come back to this below).
 
 {% note %}
 
-I am going to leave off the extra type parameter for the `Allocator`, but otherwise, this post includes every bit of code in [the implementation][drop-impl] (in this case, as of Rust 1.85 nightly). Even so, you may want to pull up that code side by side with this post to make it easy to see all of it in context!
-
-[drop-impl]: https://github.com/rust-lang/rust/blob/1f3bf231e160b9869e2a85260fd6805304bfcee2/library/alloc/src/vec/drain.rs#L173-L240
+An earlier version of this post said that the `Drop` implementation for `Drain` was responsible for preserving the soundness of `Drain`. This was not only wrong, it was exactly backwards! A `Drop` implementation can *never* be relied on to preserve soundness in the implementation of a type in Rust. I should have known this; at some point I *did* know it… but I had forgotten. This has been a well-known rule since before Rust 1.0 and in fact was a major thing fixed in the lead-up to Rust 1.0: the “Leakpocalypse”!
 
 {% endnote %}
+
+This is a common pattern in Rust, well worth understanding, and it is also really *neat*, so let’s walk through it—all of it! I am going to leave off the extra type parameter for the `Allocator`, but otherwise, this post includes every bit of code in [the implementation][drop-impl] (in this case, as of Rust 1.85 nightly). Even so, you may want to pull up that code side by side with this post to make it easy to see all of it in context!
+
+[drop-impl]: https://github.com/rust-lang/rust/blob/1f3bf231e160b9869e2a85260fd6805304bfcee2/library/alloc/src/vec/drain.rs#L173-L240
 
 [drop-docs]: https://doc.rust-lang.org/1.83.0/std/ops/trait.Drop.html
 
@@ -223,6 +233,19 @@ When I said earlier that we would minimize the work done for relocating items, t
 (If you’re wondering, this does mean that if you are draining some small part of a large `Vec`, you may see a performance hiccup when you’re done with the `Drain`. As always with performance, though, you should measure before you assume this is a problem!)
 
 Once the memory move is done, the `DropGuard` is also done. We will see shortly how it gets *used*, and I will explain then why it is used *this way*. Back to the rest of the `drop` implementation for `Drain`.
+
+Now, before we move on, we need to pause and look back at how `Drain` is constructed one more time, because as I noted above, the `Drop` implementation cannot be responsible for maintaining the soundness of the implementation. It may not ever be run! Instead, `Vec::drain` preserves soundness with this line when it *builds* the `Drain`:
+
+```rust
+// set self.vec length's to start, to be safe in case Drain is leaked
+self.set_len(start);
+```
+
+Semantically, this “truncates” the `Vec` (which is `self` here) so it does not include the elements from the start of the drained range on. Note the message: “to be safe in case Drain is leaked”. This means that if someone were to do something like call [the `std::mem::forget` function][forget] on the `Drain`, thus “leaking” it, no *safety* invariants would be broken. The memory would be leaked—explicitly and by intent, in that case!—but it would not be susceptible to invalid aliasing or otherwise unsound.
+
+This is a really important point about safety in Rust: leaking is usually a *bug*, but it is not a *safety* issue. Taking a step back, this should be fairly obvious if we think about other programming languages which are *entirely* safe. You can create memory leaks in JavaScript in the browser, even though it is a garbage-collected language with basically no unsafe escape hatches![^js-basically] I spent nearly all of the first quarter of both 2022 and 2023 job chasing memory leaks in JavaScript, and there was no *unsafe code* in sight!
+
+[forget]: https://doc.rust-lang.org/1.82.0/std/mem/fn.forget.html
 
 First, it pulls the range iterator out of the `Drain` and uses it to figure out how many items it needs to drop when cleaning everything up—because, as the docs noted, “If the iterator is dropped before being fully consumed, it drops the remaining removed elements.”
 
@@ -413,6 +436,7 @@ That was a lot of ground, but it showed off some interesting bits about providin
 1. The original `Vec` is never accessible in an invalid state during or after using `drain` on it.
 2. The iterator over that `Vec` can never be invalidated either.
 3. Both (1) and (2) are true *even in the face of badly behaved implementations of other types*, as long as there is no *unsound* code in that bad behavior.
+4. The worst potential outcome—in the case that `impl Drop for Drain` never gets run at all—is that the memory is leaked. This is *not good*, but it is also *still safe*.
 
 It is also worth seeing that while this *includes* memory safety, the way the ownership semantics work in the public <abbr title="application programming interface">API</abbr> here eliminates *other* kinds of bugs too. You can have iterator invalidation bugs in Java or JavaScript just fine if you don’t take care! In Rust, you can only have an iterator invalidation bug by explicitly opting into `unsafe`. That’s neat, and it’s one reason I miss Rust when working in other languages!
 
@@ -420,11 +444,20 @@ I also particularly want to note this use of a `DropGuard` to uphold those guara
 
 ## Further reading
 
+For notes on the interaction between `Drop`, safety, and leaking, see [the Leaking section][leaking] of the [Rustonomicon][nom], Rust’s official guide to unsafe code.
+
+[leaking]: https://doc.rust-lang.org/nightly/nomicon/leaking.html
+[nom]: https://doc.rust-lang.org/nightly/nomicon/intro.html
+
 If you want to read more about provenance, check out these posts by Rust memory model expert Ralf Jung:
 
-- [Pointers Are Complicated, or: What's in a Byte?](https://www.ralfj.de/blog/2018/07/24/pointers-and-bytes.html)
-- [Pointers Are Complicated II, or: We need better language specs](https://www.ralfj.de/blog/2020/12/14/provenance.html)
-- [Pointers Are Complicated III, or: Pointer-integer casts exposed](https://www.ralfj.de/blog/2022/04/11/provenance-exposed.html)
+- [Pointers Are Complicated, or: What's in a Byte?][p-i]
+- [Pointers Are Complicated II, or: We need better language specs][p-ii]
+- [Pointers Are Complicated III, or: Pointer-integer casts exposed][p-iii]
+
+[p-i]: https://www.ralfj.de/blog/2018/07/24/pointers-and-bytes.html
+[p-ii]: https://www.ralfj.de/blog/2020/12/14/provenance.html
+[p-iii]: https://www.ralfj.de/blog/2022/04/11/provenance-exposed.html
 
 You might also want to look into [the <abbr title="Capability Hardware Enhanced RISC Instructions">CHERI</abbr> project][cheri], which is working on adding provenance to pointers at the hardware instruction level, which would help immensely with safety in C.
 
@@ -441,9 +474,12 @@ For two more great reads on how you can (and Rust does) use ownership in related
 
     > by Steve Klabnik, Carol Nichols, and Chris Krycho, with contributions from the Rust Community
 
+[^js-basically]: There are exceptions to this even in the browser runtimes, by way of types like [`SharedArrayBuffer`][sab], but the point stands.
+
+[sab]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer
+
 [^unstable]: The standard library does this a fair bit for specific things like this. Less over time, though, in general!
 
 [^nightly]: You could use the relevant feature flag to do it on nightly Rust… but you shouldn’t, particularly because it is not planned for stabilization at present.
 
 [^basically-c]: In other words, it is basically a C array.
-
