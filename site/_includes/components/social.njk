@@ -15,7 +15,7 @@
          {{page.data.book.cover}}
       {%- elif pageTitle -%}
          {%- set fullTitle = pageTitle + " – Sympolymathesy, by Chris Krycho" -%}
-         https://cdn.statically.io/og/theme=dark/{{fullTitle | urlencode}}.png
+         https://cdn.statically.io/og/theme=dark/{{fullTitle | striptags(true) | urlencode}}.png
       {%- else -%}
          https://cdn.chriskrycho.com/images/sympolymathesy-social.png
       {%- endif -%}
