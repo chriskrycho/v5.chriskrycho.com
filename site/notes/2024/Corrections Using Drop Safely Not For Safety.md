@@ -6,6 +6,8 @@ updated: 2024-12-17T08:23:00-0700
 tags:
     - Rust
     - errata
+qualifiers:
+    audience: Rust developers (particularly those who read a recent post of mine with an error in it).
 
 ---
 
