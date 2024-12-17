@@ -2,13 +2,14 @@
 title: "Corrections: Using Drop *Safely*, Not *For Safety*"
 subtitle: My note about using `Drop` in Rust last week had a serious error!
 date: 2024-12-17T08:00:00-0700
+updated: 2024-12-17T08:23:00-0700
 tags:
     - Rust
     - errata
 
 ---
 
-Last week I published [a post][post], then titled **Using Drop for Safety in Rust**, that contained a significant error—one I should have known about, because it is ancient Rust history! If you read that post, the main thing to take away is that it is always unsafe and therefore unsound to relly on a `Drop` imlpementation for safety or soundness, because Rust does not (and as a matter of fairly long-standing constraints on its design *cannot*) guarantee that a `Drop` implementation will be run. Thus, any `unsafe` code you write *must* not rely on the `Drop` implementation.
+Last week I published [a post][post], then titled **Using Drop for Safety in Rust**, that contained a significant error—one I should have known about, because it is ancient Rust history! If you read that post, the main thing to take away is that it is always unsafe and therefore unsound to rely on a `Drop` imlpementation for safety or soundness, because Rust does not (and as a matter of fairly long-standing constraints on its design *cannot*) guarantee that a `Drop` implementation will be run. Thus, any `unsafe` code you write *must* not rely on the `Drop` implementation.
 
 [post]: https://v5.chriskrycho.com/journal/read-the-code/using-drop-safely-in-rust/
 
