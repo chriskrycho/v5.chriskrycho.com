@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-12-15T13:26:00-0700
+date: 2024-12-19T20:57:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -53,7 +53,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
-- [<cite>The Rise and Fall of the Third Reich</cite>](https://bookshop.org/a/21126/9781451651683), William L. Shirer (new)
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 
  
@@ -109,7 +108,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Remaking the World: How 1776 Created the Post-Christian West</cite>](https://bookshop.org/a/21126/9781433580536), Andrew Wilson (new)
 
 - [<cite>How Life Works: A User’s Guide to the New Biology</cite>](https://bookshop.org/a/21126/9780226826684), Philip Ball (new)
- 
+
+- [<cite>The Rise and Fall of the Third Reich</cite>](https://bookshop.org/a/21126/9781451651683), William L. Shirer (new)
+
 
 ### Fiction
 
