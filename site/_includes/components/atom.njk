@@ -34,8 +34,8 @@
             {%- if item.data.summary -%}
                {{-item.data.summary-}}
             {%- elif item.data.book.review -%}
-               {{-item.data.book.review.rating|safe-}}:
-               {{item.data.book.review.summary|safe-}}
+               {{-item.data.book.review.rating | safe-}}:
+               {{item.data.book.review.summary | striptags(true) | safe-}}
             {%- elif item.data.subtitle -%}
                {{-item.data.subtitle-}}
             {%- else -%}
@@ -106,13 +106,13 @@
                      <figure>
                         <img src="{{book.cover | safe}}" alt="cover art for {{book.title | safe}}" />
                         <figcaption>
-                          {{-book_desc-}}
-                          {{-book_review-}}
+                          {{-book_desc | safe-}}
+                          {{-book_review | safe-}}
                         </figcaption>
                      </figure>
                      {%- else -%}
-                        {{-book_desc-}}
-                        {{-book_review-}}
+                        {{-book_desc | safe-}}
+                        {{-book_review | safe-}}
                      {%- endif -%}
                   {%- endif -%}
 
