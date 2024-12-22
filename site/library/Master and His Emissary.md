@@ -9,7 +9,7 @@ qualifiers:
         People interested in neuroscience, philosophy, books, and (especially) the intersection of the three; takes for granted a very small degree of background knowledge about neuroscience and philosophy.
 
 date: 2024-12-22T10:06:00-0700
-updated: 2024-12-22T10:29:00-0700
+updated: 2024-12-22T13:53:00-0700
 
 book:
     title: >
