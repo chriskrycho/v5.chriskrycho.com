@@ -3,6 +3,7 @@ title: Psychological Benefits of Cool-Downs
 subtitle: Making the next run easier by changing the experience of *this* one.
 
 date: 2024-12-23T15:49:00-0700
+date: 2024-12-24T09:51:00-0700
 
 tags:
     - running
@@ -62,7 +63,7 @@ I remember the hard work in the middle of today’s run. I remember that it was 
 
 The hosts of [<cite>The Running Public</cite>][trp] often talk about “staying available” as one of the most important parts of running, especially endurance running. They usually emphasize that in the context of avoiding injury, but it also applies to *mental* availability. How ready are you to go out and work hard[^hard] again in two or three days? Well, a big part of that probably depends on how you felt when you finished your *last* hard workout.
 
-Indeed, making this switch was a game-changer for me. I used to struggle ever to get through the harder workouts in my own self-made training programs—not only struggling to complete them, struggling even to start them. Switching to the plans I use now has seen me getting through substantially harder workouts *and* doing them much more often. No doubt the overall quality and balance and ebb and flow of these training programming helps. But I am also positive the cool-downs have been a big part of it.
+Indeed, making this switch was a game-changer for me. I used to struggle to get through the harder workouts in my own self-made training programs—not only struggling to complete them, struggling even to start them. Switching to the plans I use now has seen me getting through substantially harder workouts *and* doing them much more often. No doubt the overall quality and balance and ebb and flow of these training programs helps. But I am also positive the cool-downs have been a big part of it.
 
 [trp]: https://therunningpublic.com
 
