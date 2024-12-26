@@ -1,9 +1,9 @@
-
 ---
 title: Why the Jujutsu posts are all about differences from Git
 subtitle: After all, it can do all the normal Git workflows, too…
 
 date: 2024-12-25T17:05:00-0700
+updated: 2024-12-25T18:24:00-0700
 
 qualifiers:
     audience: >
