@@ -3,7 +3,7 @@ title: Psychological Benefits of Cool-Downs
 subtitle: Making the next run easier by changing the experience of *this* one.
 
 date: 2024-12-23T15:49:00-0700
-date: 2024-12-24T09:51:00-0700
+updated: 2024-12-24T09:51:00-0700
 
 tags:
     - running
