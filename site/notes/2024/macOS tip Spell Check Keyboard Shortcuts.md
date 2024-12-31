@@ -10,7 +10,7 @@ tags:
 
 A thing I learned years and years ago, then forgot, and remembered only recently: nearly any text field on a Mac has access to macOS’s built-in spell checking functionality. (Exceptions are usually a sign of something weird about the text field!)
 
-- <kbd>⌘</kbd><kbd>:</kbd> triggers **Edit > Spelling and Grammar > Check Document Now**
+- <kbd>⌘</kbd><kbd>:</kbd> triggers **Edit > Spelling and Grammar > Show Spelling and Grammar**
 
 - <kbd>⌘</kbd><kbd>;</kbd> triggers **Edit > Spelling and Grammar > Check Document Now**, which steps sequentially through any detected spelling and grammar issues in the document.
 
