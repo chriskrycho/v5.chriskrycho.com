@@ -3,7 +3,7 @@ title: 2024 in Review
 subtitle: A weird year—not a bad one, sometimes a great one, always a strange one.
 
 date: 2024-12-31T17:35:00-0700
-updated: 2024-12-31T19:16:00-0700
+updated: 2024-12-31T20:43:00-0700
 
 summary: >
     A very strange year: parts of it far exceeding my hopes, others falling rather flat.
@@ -31,6 +31,7 @@ This year was strange. Parts of it went exceedingly well, far surpassing not onl
 - [Reading](#reading)
 - [Health and Fitness](#health-and-fitness)
 - [Professional](#professional)
+- [Music](#music]
 - [The Rest of Life](#the-rest-of-life)
 
 ---
@@ -69,6 +70,7 @@ I was also on two podcasts this year:
 [changelog]: https://changelog.com/podcast/597
 [predrag]: https://predr.ag
 
+
 ## Writing
 
 **Summary:** Pretty good!
@@ -78,7 +80,7 @@ Outside this site, I published [a review of <cite>A Quiet Mind to Suffer With</c
 [aqmtsw]: https://www.thegospelcoalition.org/reviews/quiet-mind-suffer/
 [tgc]: https://www.thegospelcoalition.org
 
-As usual, though, most of my writing this year was in spaces I own, primarily this site and [my music newsletter][music-newsletter]. Here, I published some 79,591 words, including the final count on this post.[^recursive] For my music newsletter, *not* including the final issue going out later today, I published another 11,923 words. That totals out to 91,514 words—substantially more than any recent year, and indeed enough to fill a decent-sized book!
+As usual, though, most of my writing this year was in spaces I own, primarily this site and [my music newsletter][music-newsletter]. Here, I published some 79,668 words, including the final count on this post.[^recursive] For my music newsletter, I published another 13,103 words. That totals out to 92,771 words—substantially more than any recent year, and indeed enough to fill a decent-sized book!
 
 More than just the words, I am happy that I ran some experiments this year, like [weeknotes][w], weekly [Read the Manual][rtm] posts, [Read the Code][rtc] posts, and my [new approach to noteblogging][noteblog]. Weeknotes proved to be too much, and relatively low value. The Read the Manual and Read the Code posts are good, but even the Read the Manual posts are high enough effort that I do not expect to keep doing them *weekly* unless I can get the hang of doing them *much* faster. (I paused them while on a social media hiatus over Lent, because in many ways they’re targeted at social media.) I really like noteblogging and hope to keep it up—but I do need to leave room for essay-writing as well.
 
@@ -89,7 +91,7 @@ More than just the words, I am happy that I ran some experiments this year, like
 
 There is one more thing to say about writing, but I will leave that to the [Professional](#professional) section below.
 
-[^recursive]: Yes, that means that I cannot fill in that number until I finish writing this.
+[^recursive]: Yes, that means that I cannot fill in that number until I finish writing this, and I  did have to update it when making edits after publication.
 
 
 ## Reading
@@ -190,14 +192,21 @@ This was a fun year, though not one with a *ton* of visible output. The big thin
 - Wrote [a <cite>Sanctus</cite> for Epiphany][sanctus].
 - Wrote 9 minutes more of my first symphony, including finishing the second movement and making good progress on the third.
 - *Tell everyone* I am working on a symphony, after having kept it quiet for the past 3½ years of working on it!
+- Participated in an event involving [an aerial silks interpretation][silks] of my [fanfare][ff].
+- Composed and released [<cite>The Desert</cite>][desert], a short solo piano work inspired by Lent.
 - Set up a [new music website][music] and start trying to write and publish *more* steadily about my work in the hopes of building more of an audience.
 
-[music]: https://chriskrycho.music
 [sanctus]: https://v5.chriskrycho.com/journal/sanctus-for-epiphany/
+[silks]: https://youtu.be/RU7WAn0nQVc?t=735&si=T1QoG2WkS7Je-LWT
+[ff]: https://music.chriskrycho.com/desert-2024.html
+[desert]: https://music.chriskrycho.com/desert-2024.html
+[music]: https://chriskrycho.music
 
-I will have a fair bit more to say about each of those in the newsletter issue I'll publish in a few hours, so [go subscribe][music-newsletter] if you want the details!
+I have a fair bit more to say about each of those in [this month’s issue][dec-2024-newsletter] of my [music newsletter][music-newsletter], so go read that for more details, and of course do [subscribe][music-newsletter-subscribe] if you want to stay up to date on my musical doings!
 
+[dec-2024-newsletter]: https://newsletter.music.chriskrycho.com/archive/december-2024-wrapping-the-year/
 [music-newsletter]: https://newsletter.music.chriskrycho.com
+[music-newsletter-subscribe]: https://newsletter.music.chriskrycho.com/#subscribe-form
 
 ## The Rest of Life
 
