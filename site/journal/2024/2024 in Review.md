@@ -1,15 +1,25 @@
 ---
 title: 2024 in Review
+subtitle: A weird year—not a bad one, sometimes a great one, always a strange one.
+
 date: 2024-12-31T17:35:00-0700
+updated: 2024-12-31T17:48:00-0700
+
 summary: >
-    A very strange year: parts of it far exceeding my hopes, others far
+    A very strange year: parts of it far exceeding my hopes, others falling rather flat.
 
 tags:
     - health
     - fitness
     - reading
     - writing
-    - career
+    - public speaking
+    - composing
+    - music
+    - career development
+    - annual reflections
+    - Rust
+    - learning
 
 ---
 
