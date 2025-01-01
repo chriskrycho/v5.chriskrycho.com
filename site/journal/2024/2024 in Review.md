@@ -3,7 +3,7 @@ title: 2024 in Review
 subtitle: A weird year—not a bad one, sometimes a great one, always a strange one.
 
 date: 2024-12-31T17:35:00-0700
-updated: 2024-12-31T20:43:00-0700
+updated: 2024-12-31T20:59:00-0700
 
 summary: >
     A very strange year: parts of it far exceeding my hopes, others falling rather flat.
@@ -31,7 +31,7 @@ This year was strange. Parts of it went exceedingly well, far surpassing not onl
 - [Reading](#reading)
 - [Health and Fitness](#health-and-fitness)
 - [Professional](#professional)
-- [Music](#music]
+- [Music](#music)
 - [The Rest of Life](#the-rest-of-life)
 
 ---
@@ -80,7 +80,7 @@ Outside this site, I published [a review of <cite>A Quiet Mind to Suffer With</c
 [aqmtsw]: https://www.thegospelcoalition.org/reviews/quiet-mind-suffer/
 [tgc]: https://www.thegospelcoalition.org
 
-As usual, though, most of my writing this year was in spaces I own, primarily this site and [my music newsletter][music-newsletter]. Here, I published some 79,668 words, including the final count on this post.[^recursive] For my music newsletter, I published another 13,103 words. That totals out to 92,771 words—substantially more than any recent year, and indeed enough to fill a decent-sized book!
+As usual, though, most of my writing this year was in spaces I own, primarily this site and [my music newsletter][music-newsletter]. Here, I published some 79,667 words, including the final count on this post.[^recursive] For my music newsletter, I published another 13,103 words. That totals out to 92,770 words—substantially more than any recent year, and indeed enough to fill a decent-sized book!
 
 More than just the words, I am happy that I ran some experiments this year, like [weeknotes][w], weekly [Read the Manual][rtm] posts, [Read the Code][rtc] posts, and my [new approach to noteblogging][noteblog]. Weeknotes proved to be too much, and relatively low value. The Read the Manual and Read the Code posts are good, but even the Read the Manual posts are high enough effort that I do not expect to keep doing them *weekly* unless I can get the hang of doing them *much* faster. (I paused them while on a social media hiatus over Lent, because in many ways they’re targeted at social media.) I really like noteblogging and hope to keep it up—but I do need to leave room for essay-writing as well.
 
