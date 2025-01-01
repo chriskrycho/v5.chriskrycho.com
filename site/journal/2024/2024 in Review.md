@@ -3,7 +3,7 @@ title: 2024 in Review
 subtitle: A weird year—not a bad one, sometimes a great one, always a strange one.
 
 date: 2024-12-31T17:35:00-0700
-updated: 2024-12-31T17:48:00-0700
+updated: 2024-12-31T19:16:00-0700
 
 summary: >
     A very strange year: parts of it far exceeding my hopes, others falling rather flat.
@@ -45,11 +45,12 @@ I gave three talks:
 
 - [The Cutting Edge of Versioning][tceov], also at LambdaConf in May.
 	
-- [Substrate Engineering: Engineering Foundations in a World of <abbr title="large language model">LLM</abbr>s][se], at [StaffPlus New York][staffplus]
+- [Substrate Engineering: Engineering Foundations in a World of <abbr title="large language model">LLM</abbr>s][se], at [StaffPlus New York][staffplus] in September
 
 [slap]: https://v5.chriskrycho.com/elsewhere/seeing-like-a-programmer/
 [tceov]: https://v5.chriskrycho.com/elsewhere/cutting-edge-of-versioning/
-[staffplus]: https://v5.chriskrycho.com/elsewhere/substrate-engineering/
+[se]: https://v5.chriskrycho.com/elsewhere/substrate-engineering/
+[staffplus]: https://leaddev.com/software-quality/substrate-engineering-engineering-foundations-in-a-world-of-llms
 
 Each of those was well received; “Seeing Like a Programmer” is the talk I am by far the proudest of so far and had incredibly positive feedback—its reception is the reason I was [invited to give a keynote][keynote] at *next* year’s LambdaConf!
 
@@ -66,6 +67,7 @@ I was also on two podcasts this year:
 [hn]: https://news.ycombinator.com/item?id=39612443
 [changelog-post]: https://v5.chriskrycho.com/elsewhere/changelog-597/
 [changelog]: https://changelog.com/podcast/597
+[predrag]: https://predr.ag
 
 ## Writing
 
@@ -132,7 +134,7 @@ This year I not only achieved my fitness goals, I blew far past them. *Far* past
 
 - In September, I ran the Boulderthon Half Marathon at a pace 13 seconds per mile faster than Colfax… but also ran an extra 5km. Whoops. Still, I came out feeling *strong*, even if frustrated. ([race report](https://v5.chriskrycho.com/journal/2024-boulderthon-race-report/))
 
-- In October, I made up for that by running in, setting another <abbr>PR</abbr> at, and actually *winning* the Longview Half Marathon, taking a total of 20 seconds/mile off from my time at Colfax in the spring and finishing at a 6:01/mile pace and finishing in 1:18:47. ([race report](https://v5.chriskrycho.com/journal/2024-colfax-race-report/))
+- In October, I made up for that by running in, setting another <abbr>PR</abbr> at, and actually *winning* the Longview Half Marathon, taking a total of 20 seconds/mile off from my time at Colfax in the spring and finishing at a 6:01/mile pace and finishing in 1:18:47. ([race report](https://v5.chriskrycho.com/journal/2024-longview-half-marathon-race-report/))
 
 Had you told me at the start of the year I would run even the Colfax time, still less the Longview time, I would have been astonished. I set a goal a couple years ago to run a sub-1:20:00 half marathon before I turn 40, still 2½ years from now, and I assumed I would need to find a flat course at sea level to do it. Now I am wondering if I can crack 1:15:00 on a flat course at sea level!
 
@@ -158,7 +160,7 @@ Happily, I still have some prospects, and some consulting opportunities ahead. I
 
 As I told Jaimie when thinking recently about an offer I had back in February, I do not exactly *regret* not taking it—I would not have gotten to work on <cite>The Rust Programming Language</cite> if I had, and I continue to believe it would have had some frustrations for me—but I also think it would have been *fine* if I had taken it. A more recent offer I ended up turning down was a case where there is a version of the role I think I would be phenomenally successful in, but the role as they want it to be is one that would both frustrate me and torpedo important parts of the future of my career. Alas.
 
-I did not “ship” as much as I would have liked this year. I build some small pieces of tooling around <cite>The Rust Programming Language</cite>, shipped [a couple][count-md] small [tools][jj-gpc], and landed some [updates][tm-releases] to True Myth, including—after years of thinking about it!—an implementation of [a `Task` type][task].
+I did not “ship” as much as I would have liked this year. I did build some small pieces of tooling around <cite>The Rust Programming Language</cite>, published [a couple][count-md] small [tools][jj-gpc], and landed some [updates][tm-releases] to True Myth, including—after years of thinking about it!—an implementation of [a `Task` type][task]. All of those are good! However, I had a number of other ideas and projects in flight that I simply did not get across the line—not least, the next revision of this site.
 
 [count-md]: https://github.com/chriskrycho/count-md
 [jj-gpc]: https://github.com/chriskrycho/jj-gpc
