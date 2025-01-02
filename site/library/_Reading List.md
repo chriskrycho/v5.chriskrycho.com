@@ -2,7 +2,7 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2024-12-19T20:57:00-0700
+date: 2025-01-02T12:58:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
@@ -54,12 +54,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
+- [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 
  
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
 - [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
+- [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—reading alongside my 12-year-old daughter!)
 
 
 ### Poetry
