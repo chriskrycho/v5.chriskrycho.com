@@ -6,6 +6,7 @@ image:
     cdn: true-myth-v8.2.0.png
 
 date: 2025-01-02T21:15:00-0700
+updated: 2025-01-02T21:34:00-0700
 
 tags:
     - open-source software
@@ -29,7 +30,7 @@ The main thing right up front: I just released [True Myth v8.2.0][release], whic
 
 Now for a few more details:
 
-1. When I said it is like a hybrid between a `Promise` and a `Result`, I meant it. Under the hood, `Task<T, E>` actually *uses* a `Promise<Result<T, E>>`. You never have to work or think about the fact that it is a `Promise<Result<T, E>>` unless you explicitly ask to do so by calling `someTask.toPromise()`. Instead, we provide nice <abbr title="application programming interface">API</abbr>s for interacting with it 
+1. When I said it is like a hybrid between a `Promise` and a `Result`, I meant it. Under the hood, `Task<T, E>` actually *uses* a `Promise<Result<T, E>>`. You never have to work or think about the fact that it is a `Promise<Result<T, E>>` unless you explicitly ask to do so by calling `someTask.toPromise()`. Instead, we provide nice <abbr title="application programming interface">API</abbr>s for interacting with it : `map`, `mapRejected`, `and`, `or`, `andThen`, `orElse`, `match`, and handy (slightly mind-blowing!) getters to let you introspect synchronously on the state of the async operation.
 
 2. This `Task` type *can never throw an error* unless you go out of your way to throw an error in the middle of one of its methods. (At which point, uhh… yeah, you threw an error. Why did you do that?) Instead, it actively captures all resolutions as `Resolved` with a `T` value and rejections as `Rejected` with an `E` value. In other words, `Task<T, E>` is to `Promise<T>` for async operations as `Result<T, E>` is to `T` for synchronous operations.
 
@@ -64,7 +65,7 @@ let theValue = await someTask.unwrapOr(aDefaultValue);
     
 That second one is definitely nicer[^syntax]—but it is not *that* much nicer, and what you cannot see from the syntax sample alone is that it has also given away the guarantee that `Task` and `Result` uphold of never having to worry about exceptions. That is a *really* significant tradeoff.
 
-Finally, there are some important convenience methods we need to make it *really* easy to work with `Task` and `Result` together. For example, the [demo code with `Task` and Zod][gist] currently uses an `andThen` and produces a new `Task` from the Zod `safeParse` call, but Zod’s `safeParse` is synchronous, so that should really use a `Result`. (Zod has a related async version of `safeParse` which would make perfect sense to combine with `Task`.) Right now, that would produce a `Task<Result<NestedT, NestedE>, E>`, though, which is *extremely* undesirable ergonomically.
+Finally, there are some important convenience methods we need to make it *really* easy to work with `Task` and `Result` together. For example, the [demo code with `Task` and Zod][gist] currently uses an `andThen` and produces a new `Task` from the Zod `safeParse` call, but Zod’s `safeParse` is synchronous, so that should really use a `Result`. (Zod has a related async version of `safeParse` which would make perfect sense to combine with `Task`.) Right now, that would produce a `Task<Result<NestedT, NestedE>, E>`, though, which is *extremely* undesirable ergonomically. We will want to add methods which can flatten that nicely!
 
 None of these will not be especially hard to add or fix, and in fact I already have a first pass done on some of them, but they are not ready to ship—and I *really* wanted to [ship this][year-of-shipping]. Shipping begets shipping. Momentum matters. Getting this version out the door got me excited, and I think it will be that much easier to turn around and get those other features out the door.
 
