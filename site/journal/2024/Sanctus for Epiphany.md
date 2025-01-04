@@ -9,7 +9,7 @@ summary: >
 
 image: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/cover.png
 date: 2024-01-15T20:17:00-0700
-updated: 2025-01-04T10:11:00-0700
+updated: 2025-01-04T10:19:00-0700
 updates:
     - at: 2025-01-04T10:11:00-0700
       changes: >
@@ -49,7 +49,8 @@ If you like it, please use it! The music is freely available under [a license][l
 - [Chord sheet (<abbr title="portable document format">PDF</abbr>)][chords]
 - [Dorico project][dorico]
 - [Lyrics (text file)][lyrics]
-- [mp3 download][mp3]
+- [Vocal and piano rehearsal (mp3)][mp3]
+- [Choir and piano mockup (mp3)][choir-mockup]
 
 [full-score]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Full%20score%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
 [vocal]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Vocal%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
@@ -59,6 +60,7 @@ If you like it, please use it! The music is freely available under [a license][l
 [dorico]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Sanctus%20for%20Epiphany.dorico
 [lyrics]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/Lyrics%20from%20A%20Sanctus%20for%20Epiphany.txt
 [mp3]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/Sanctus%20for%20Epiphany.mp3
+[choir-mockup]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-01%20%E2%80%93%20Choir%20Mockup%20%E2%80%93%20Sanctus%20for%20Epiphany.mp3
 
 Here’s what I shared with [our congregation][htac] about the piece:
 
