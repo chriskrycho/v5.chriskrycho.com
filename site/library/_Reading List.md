@@ -2,13 +2,16 @@
 title: Reading List
 subtitle: The books I am—or plan to be—reading!
 layout: page.njk
-date: 2025-01-02T12:58:00-0700
 standalonePage: true
 permalink: /library/reading-list/
 
+# custom value for this page only, so that searches like `rg -l0 'date: 2025` or
+# `rg -l0 'updated: 2025` do not include it.
+modified: 2025-01-02T12:58:00-0700
+
 ---
 
-I keep this page fairly current; it was last updated on {% localeDate page.date, 'MMMM d, yyyy' %}.
+I keep this page fairly current; it was last updated on {% localeDate modified, 'MMMM d, yyyy' %}.
 
 - The section for each year includes all the books I read that year (including the current year), in the order I finished the books.
 - Books are marked “(new)” if this was the first time I read them, or “(reread)” otherwise.
@@ -56,7 +59,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 
- 
+
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
