@@ -5,8 +5,8 @@ layout: page.njk
 standalonePage: true
 permalink: /library/reading-list/
 
-# custom value for this page only, so that searches like `rg -l0 'date: 2025` or
-# `rg -l0 'updated: 2025` do not include it.
+# custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
+# do not include it.
 modified: 2025-01-05T15:25:00-0700
 
 ---
