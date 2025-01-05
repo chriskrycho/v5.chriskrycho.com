@@ -9,11 +9,14 @@ summary: >
 
 image: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/cover.png
 date: 2024-01-15T20:17:00-0700
-updated: 2025-01-04T10:19:00-0700
+updated: 2025-01-05T16:25:00-0700
 updates:
     - at: 2025-01-04T10:11:00-0700
       changes: >
         Updated the post to include minor revisions to the piece and a four-part harmony.
+    - at: 2025-01-05T16:25:00-0700
+      changes: >
+        Updated the lead sheet.
 
 tags:
     - music
@@ -55,7 +58,7 @@ If you like it, please use it! The music is freely available under [a license][l
 [full-score]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Full%20score%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
 [vocal]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Vocal%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
 [piano]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Piano%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
-[lead-sheet]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Full%20score%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
+[lead-sheet]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-05%20%E2%80%93%20Lead%20Sheet%20%E2%80%93%20Sanctus%20for%20Epiphany.pdf
 [chords]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/Sanctus%20for%20Epiphany%20-%20Chords.pdf
 [dorico]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/2025-01-03%20%E2%80%93%20Sanctus%20for%20Epiphany.dorico
 [lyrics]: https://cdn.chriskrycho.com/music/sanctus-for-epiphany/Lyrics%20from%20A%20Sanctus%20for%20Epiphany.txt
