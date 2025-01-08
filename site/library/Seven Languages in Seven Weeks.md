@@ -13,6 +13,7 @@ summary: >
 book:
     title: "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages"
     cover: https://cdn.chriskrycho.com/images/books/7lang7weeks.jpg
+    author: Bruce Tate
     review:
         rating: Recommended
         summary: >
