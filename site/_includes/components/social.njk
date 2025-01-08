@@ -4,15 +4,9 @@
 
    {%- set image -%}
       {%- if page.data.image -%}
-         {%- if page.data.image.cdn -%}
-            https://cdn.chriskrycho.com/images/{{page.data.image.cdn}}
-         {%- elif page.data.image.url -%}
-            {{page.data.image.url}}
-         {%- else -%}
-            {{page.data.image}}
-         {%- endif -%}
+         {{page.data.image | resolvedImage}}
       {%- elif page.data.book.cover -%}
-         {{page.data.book.cover}}
+         {{page.data.book.cover | resolvedImage}}
       {%- elif pageTitle -%}
          {%- set fullTitle = pageTitle + " – Sympolymathesy, by Chris Krycho" -%}
          https://cdn.statically.io/og/theme=dark/{{fullTitle | striptags(true) | urlencode}}.png
