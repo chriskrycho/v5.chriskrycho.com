@@ -8,6 +8,7 @@ import absoluteUrl from './absolute-url';
 import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year';
 import copyright from './copyright';
 import currentPage from './current-page';
+import { resolvedImage } from './data';
 import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time';
 import isoDate from './iso-date';
 import localeDate from './locale-date';
@@ -213,6 +214,8 @@ function config(config: Config): UserConfig {
       let safe = striptags(content);
       return safe.slice(0, safe.lastIndexOf(' ', 200)) + '…';
    });
+
+   config.addFilter('resolvedImage', resolvedImage);
 
    config.addShortcode('randomHash', (env: string | undefined) =>
       env === 'serve' ? `?v=${randomBytes(8).toString('hex')}` : '',

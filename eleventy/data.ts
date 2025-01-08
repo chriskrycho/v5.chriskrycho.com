@@ -39,25 +39,37 @@ declare module '../types/eleventy' {
 
 type Image = string | { cdn: string } | { url: string };
 
-export function imageValue(
-   data: Pick<ItemData, 'image' | 'book'> | undefined,
-): string | undefined {
-   if (!data) return undefined;
+export function resolvedImage(image: Image | undefined): string | undefined {
+   if (!image) return undefined;
 
-   if (typeof data.image == 'string') return data.image;
+   if (typeof image == 'string') return image;
 
-   if (typeof data.image == 'object' && data.image != null) {
-      return 'cdn' in data.image
-         ? `https://cdn.chriskrycho.com/images/${data.image.cdn}`
-         : data.image.url;
+   if (typeof image == 'object' && image != null) {
+      return 'cdn' in image
+         ? `https://cdn.chriskrycho.com/images/${image.cdn}`
+         : image.url;
    }
-
-   if (typeof data.book == 'object' && data.book != null) return data.book.cover;
 
    return undefined;
 }
 
-export type Author = { author: string } | { authors: string[] };
+export function imageValue(
+   data: Pick<ItemData, 'image' | 'book'> | undefined,
+): string | undefined {
+   return resolvedImage(data?.image ?? data?.book?.cover);
+}
+
+export type SingleAuthor = { author: string };
+export type MultipleAuthors = { authors: string[] };
+export type Author = SingleAuthor | MultipleAuthors;
+
+export function hasAuthor(book: Book): book is Book & SingleAuthor {
+   return 'author' in book;
+}
+
+export function hasAuthors(book: Book): book is Book & MultipleAuthors {
+   return 'authors' in book;
+}
 
 export interface Review {
    review?: {
@@ -73,7 +85,7 @@ export interface Review {
 export interface BookMeta {
    title: string;
    year?: number | string;
-   cover?: string;
+   cover?: Image;
    link?: string;
 }
 

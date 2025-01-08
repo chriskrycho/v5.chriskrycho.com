@@ -104,7 +104,7 @@
 
                      {%- if book.cover -%}
                      <figure>
-                        <img src="{{book.cover | safe}}" alt="cover art for {{book.title | safe}}" />
+                        <img src="{{book.cover | resolvedImage | safe}}" alt="cover art for {{book.title | safe}}" />
                         <figcaption>
                           {{-book_desc | safe-}}
                           {{-book_review | safe-}}

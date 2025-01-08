@@ -11,7 +11,7 @@ import siteTitle from './site-title';
 import { toRootCollection } from './collection';
 import markdown from './markdown';
 import localeDate from './locale-date';
-import { type Book, imageValue, isBook, type Qualifiers } from './data';
+import { type Book, hasAuthors, imageValue, isBook, type Qualifiers } from './data';
 
 type BuildInfo = typeof import('../site/_data/build');
 type SiteConfig = typeof import('../site/_data/config');
@@ -38,7 +38,7 @@ const joinAuthors = (authors: string[]): Result<string, string> => {
 };
 
 const authorString = (book: Book): Result<string, string> =>
-   'authors' in book ? joinAuthors(book.authors) : Result.ok(book.author);
+   hasAuthors(book) ? joinAuthors(book.authors) : Result.ok(book.author);
 
 function describe(book: Book): string {
    const linked = (content: string): string =>
@@ -47,11 +47,8 @@ function describe(book: Book): string {
    const year = book.year ? ` (${book.year})` : '';
 
    const title = linked(`<cite>${book.title}</cite>`);
-   const author = authorString(book).match({
-      Ok: (a) => a,
-      Err: (r) => {
-         throw new Error(`Error describing ${book.title}: ${r}`);
-      },
+   const author = authorString(book).unwrapOrElse((reason) => {
+      throw new Error(`Error describing ${book.title}: ${reason}`);
    });
 
    const bookInfo = `<p>${title}, ${author}${year}</p>`;

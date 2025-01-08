@@ -4,6 +4,7 @@ import Maybe from 'true-myth/maybe';
 
 import markdown from './markdown';
 import niceList from './nice-list';
+import { hasAuthor, hasAuthors } from './data';
 
 const ASSUMED_AUDIENCE =
    "<b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed audience</a>:</b>";
@@ -15,9 +16,7 @@ const EPISTEMIC_STATUS =
 
 const DISCUSSES = '<b>Heads up:</b> this post directly discusses';
 
-/**
-  Pre-parse the various
- */
+/** Pre-parse the various YAML header data into HTML. */
 export function preparseYaml(data: Data): Data {
    if (data.title) data.title = markdown.renderInline(data.title);
    if (data.subtitle) data.subtitle = markdown.renderInline(data.subtitle);
@@ -54,8 +53,20 @@ export function preparseYaml(data: Data): Data {
       for (let update of data.updates) update.changes = markdown.render(update.changes);
    }
 
-   if (data.book?.review?.summary)
-      data.book.review.summary = markdown.render(data.book.review.summary);
+   if (data.book) {
+      if (data.book.review?.summary)
+         data.book.review.summary = markdown.render(data.book.review.summary);
+
+      if (hasAuthor(data.book)) {
+         data.book.author = markdown.renderInline(data.book.author);
+      }
+
+      if (hasAuthors(data.book)) {
+         data.book.authors = data.book.authors.map((author) =>
+            markdown.renderInline(author),
+         );
+      }
+   }
 
    if (data.thanks) data.thanks = markdown.render(data.thanks);
 

@@ -1,13 +1,14 @@
 {% macro review(book) %}
 <figure class='book-review'>
 {% set cover -%}
+   {%- set url = book.cover | resolvedImage -%}
    {%- if book.link -%}
       <a href='{{book.link}}' class='book-review__cover-link' rel='nofollow'>
-         <img src='{{book.cover}}' alt='cover for {{book.title}}' class='book-review__cover'/>
+         <img src='{{url}}' alt='cover for {{book.title}}' class='book-review__cover'/>
       </a>
    {%- else -%}
-      <a href='{{book.cover}}' class='book-review__cover-link'>
-         <img src='{{book.cover}}' alt='cover for {{book.title}}' class='book-review__cover'/>
+      <a href='{{url}}' class='book-review__cover-link'>
+         <img src='{{url}}' alt='cover for {{book.title}}' class='book-review__cover'/>
       </a>
    {%- endif -%}
 {%- endset %}
@@ -22,7 +23,7 @@
          {%- endif -%}
       {%- endset %}
 
-      {{title | safe}}, {{book.author}} ({{book.year}})
+      {{title | safe}}, {{book.author | safe}} ({{book.year}})
    </section>
    {% if book.review %}
       <section class='book-review__summary'>
