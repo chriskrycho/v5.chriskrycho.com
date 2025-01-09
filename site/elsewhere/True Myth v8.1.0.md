@@ -7,11 +7,16 @@ summary: |
 image: https://cdn.chriskrycho.com/images/true-myth-v8.1.0.png
 
 date: 2024-12-03T17:26:00-0700
+updated: 2025-01-08T17:59:00-0700
 
 tags:
     - software development
     - open-source software
     - TypeScript
+
+qualifiers:
+    audience: |
+        TypeScript developers with an interesting in *even safer* typed programming with a functional flair.
 
 ---
 

@@ -6,7 +6,7 @@ image:
     cdn: true-myth-v8.2.0.png
 
 date: 2025-01-02T21:15:00-0700
-updated: 2025-01-02T21:34:00-0700
+updated: 2025-01-08T18:00:00-0700
 
 tags:
     - open-source software
@@ -15,6 +15,10 @@ tags:
 
 summary: >
     True Myth now has a tool for safe async in TypeScript: a `Task` type, the glorious combination of a `Promise` and a `Result`.
+
+qualifiers:
+    audience: |
+        TypeScript developers with an interesting in *even safer* typed programming with a functional flair.
 
 ---
 
