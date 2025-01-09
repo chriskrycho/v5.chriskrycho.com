@@ -6,7 +6,7 @@ image:
     cdn: true-myth-v8.2.0.png
 
 date: 2025-01-02T21:15:00-0700
-updated: 2025-01-08T18:00:00-0700
+updated: 2025-01-08T18:03:00-0700
 
 tags:
     - open-source software
@@ -24,11 +24,12 @@ qualifiers:
 
 The main thing right up front: I just released [True Myth v8.2.0][release], which includes a brand new `Task` type for type safe async code in TypeScript. It’s like a hybrid between `Promise` and `Result`, or *What `Promise` always should have been™*. You can get it by installing it with your favorite package manager:
 
-| Package manager | Command                       |
-| --------------- | ----------------------------- |
-| npm             | `npm install true-myth@beta`  |
-| yarn            | `yarn add true-myth@beta`     |
-| pnpm            | `pnpm install true-myth@beta` |
+| Package manager | Command                     |
+| --------------- | --------------------------- |
+| npm             | `npm add true-myth@^8.2.0`  |
+| yarn            | `yarn add true-myth@^8.2.0` |
+| pnpm            | `pnpm add true-myth@^8.2.0` |
+| bun             | `bun add true-myth@^8.2.0`  |
 
 [release]: https://github.com/true-myth/true-myth/releases/tag/v8.2.0
 
