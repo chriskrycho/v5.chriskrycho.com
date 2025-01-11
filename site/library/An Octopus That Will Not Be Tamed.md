@@ -4,7 +4,6 @@ subtitle: >
     Modern arguments about the purpose and responsibilities of a corporation turn out not to be new.
 
 date: 2025-01-10T20:48:00-0700
-updated: 2025-01-10T21:03:00-0700
 
 qualifiers:
     audience: |
