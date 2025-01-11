@@ -29,6 +29,9 @@
    {%- if qualifiers.audience -%}
       {{- qualifiers.audience | safe -}}
    {%- endif -%}
+   {%- if qualifiers.disclosure -%}
+      {{- qualifiers.disclosure | safe -}}
+   {%- endif -%}
    {%- if qualifiers.context -%}
       {{- qualifiers.context | safe -}}
    {%- endif -%}

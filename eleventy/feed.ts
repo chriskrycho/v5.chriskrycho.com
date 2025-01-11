@@ -66,9 +66,10 @@ function entryTitleFor(item: Item): string {
 function htmlForQualifiers(qualifiers?: Qualifiers) {
    if (!qualifiers) return '';
 
-   const audience = qualifiers.audience ?? '';
-   const context = qualifiers.context ?? '';
-   const epistemicStatus = qualifiers.epistemic ?? '';
+   let audience = qualifiers.audience ?? '';
+   let disclosure = qualifiers.disclosure ?? '';
+   let context = qualifiers.context ?? '';
+   let epistemicStatus = qualifiers.epistemic ?? '';
 
    // This is guaranteed to be a string here if it exists. Eleventy’s approach
    // does not let me “parse, don’t validate”. Need to finish lx. «sigh» So fail
@@ -78,7 +79,7 @@ function htmlForQualifiers(qualifiers?: Qualifiers) {
 
    let contentNotice = qualifiers.discusses ?? '';
 
-   return audience + context + epistemicStatus + contentNotice + '<hr/>';
+   return audience + disclosure + context + epistemicStatus + contentNotice + '<hr/>';
 }
 
 function contentHtmlFor(

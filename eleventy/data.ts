@@ -119,4 +119,5 @@ export interface Qualifiers {
    context?: string;
    epistemic?: string;
    discusses?: string | string[];
+   disclosure?: string;
 }

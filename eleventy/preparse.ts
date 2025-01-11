@@ -27,6 +27,11 @@ export function preparseYaml(data: Data): Data {
             `${ASSUMED_AUDIENCE} ${data.qualifiers.audience}`,
          );
 
+      if (data.qualifiers.disclosure)
+         data.qualifiers.disclosure = markdown.render(
+            `<b>Full disclosure:</b> ${data.qualifiers.disclosure}`,
+         );
+
       if (data.qualifiers.context)
          data.qualifiers.context = markdown.render(
             `${CONTEXT} ${data.qualifiers.context}`,

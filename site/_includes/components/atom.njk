@@ -57,6 +57,10 @@
                      {{- item.data.qualifiers.audience | safe -}}
                   {%- endif -%}
 
+                  {%- if item.data.qualifiers.disclosure -%}
+                     {{- item.data.qualifiers.disclosure | safe -}}
+                  {%- endif -%}
+
                   {%- if item.data.qualifiers.context -%}
                      {{- item.data.qualifiers.context | safe -}}
                   {%- endif -%}
