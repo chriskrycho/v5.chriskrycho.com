@@ -34,6 +34,15 @@ Speaking of [momentum][momentum]: I just released what I *think* will probably b
 
 With this, `Task` has all the methods and functions we *definitely* want it to have! I can think of other things that might be convenient, but none of them are strictly *necessary*.[^flatten] It is feature complete. Given we started thinking about a `Task` type seven years ago, and the three or four false starts I had, this feels *great*.
 
+As always, you can install it using your favorite package manager:
+
+| Package manager | Command                     |
+| --------------- | --------------------------- |
+| npm             | `npm add true-myth@^8.4.0`  |
+| yarn            | `yarn add true-myth@^8.4.0` |
+| pnpm            | `pnpm add true-myth@^8.4.0` |
+| bun             | `bun add true-myth@^8.4.0`  |
+
 Now, what’s next? Well, we deprecated some things in v8.3.0, and if we update our TS support version range, we can clean up some janky things we do internally to work correctly across the whole range of TypeScript versions we support—currently that is 4.7–5.7, which is quite a large range!
 
 I am also thinking about whether we might want to ship an *integration* package to make [Zod][zod] integration Just Work™. We *could* include that in True Myth itself, but we could also ship a `@true-myth/zod` package or similar. There are definitely some practical tradeoffs around managing multiple packages, and it would be slightly strange to have `true-myth` but also `@true-myth/zod`. We could add a `@true-myth/core`, but why? Every import would just have an extra thing to type! In any case, that is not coupled to the 8.x series.
