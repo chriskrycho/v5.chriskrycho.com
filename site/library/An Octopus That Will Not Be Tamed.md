@@ -4,10 +4,12 @@ subtitle: >
     Modern arguments about the purpose and responsibilities of a corporation turn out not to be new.
 
 date: 2025-01-10T20:48:00-0700
+updated: 2025-01-10T21:03:00-0700
 
 qualifiers:
     audience: |
-        TODO
+        Folks interested in the dynamics of contemporary culture, capitalism, and corporations. And books!
+
     disclosure: |
         I know Kyle just a bit—we went to college together and our circles overlapped a bit, and we’ve run in many of the same orbits (particularly nerdy Christians online) over the past half decade.
 
