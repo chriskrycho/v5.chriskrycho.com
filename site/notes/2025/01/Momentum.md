@@ -1,6 +1,7 @@
 ---
 title: Momentum
 subtitle: On the potential positive power of inertia.
+
 date: 2025-01-11T09:51:00-0700
 
 qualifiers:
@@ -26,7 +27,7 @@ David “underscore” Smith, in his post [Accomplish One Thing][aot]:
 
 This resonates very strongly with me, and you should read [the whole post][aot], because I agree with his recommendations! Along the same lines, I wrote last week that I want this to be [a year of “shipping”][shipping], and in my post [announcing True Myth v8.2][tm-8.2], I wrote:
 
-> None of these will not be especially hard to add or fix, and in fact I already have a first pass done on some of them, but they are not ready to ship—and I *really* wanted to ship this. Shipping begets shipping. Momentum matters. Getting this version out the door got me excited, and I think it will be that much easier to turn around and get those other features out the door.
+> …I *really* wanted to ship this. Shipping begets shipping. Momentum matters. Getting this version out the door got me excited, and I think it will be that much easier to turn around and get those other features out the door.
 
 [shipping]: https://v5.chriskrycho.com/notes/year-of-shipping/
 [tm-8.2]: https://v5.chriskrycho.com/elsewhere/true-myth-v8.2.0now-with-a-task-type/
