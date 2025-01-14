@@ -7,12 +7,12 @@ I help teams with front-end web strategy development, TypeScript adoption and co
 
 ## For Companies
 
-I provide front-end technical strategy, teaching and workshops for TypeScript and Rust, and technical solutions for TypeScript and Rust code bases. My current rate is $1,600/day or $225/hour. (I only book in hour-long increments, and you can choose whether to pay my daily rate or my hourly rate as makes sense to you.)
+I provide front-end technical strategy, teaching and workshops for TypeScript and Rust, and technical solutions for TypeScript and Rust code bases. My current rate is **$200/hour**.
 
 If those are problems you have, [book a free 30-minute session with me][call] or [send me an email][email-30-min] and let’s talk about whether and how I can help you!
 
 [call]: https://calendly.com/chriskrycho/30-minute-meeting
-[email-30-min]: mailto:hello@chriskrycho.com?subject=
+[email-30-min]: mailto:hello@chriskrycho.com?subject=30-minute%20meeting%20request
 
 <figure>
 <img style="max-width: 210px" src="https://cdn.chriskrycho.com/images/30-minute-call.jpeg" />
