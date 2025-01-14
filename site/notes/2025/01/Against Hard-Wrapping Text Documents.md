@@ -6,7 +6,7 @@ subtitle: >
 summary: >
     Yes, it makes things look nicer in a very few, very specific places. But it makes it that much worse everywhere else.
 
-date: 2025-01-12T20:22:00-0700
+date: 2025-01-13T20:22:00-0700
 
 tags:
     - writing
