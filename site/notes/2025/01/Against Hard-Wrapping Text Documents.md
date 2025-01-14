@@ -29,8 +29,8 @@ First, it makes it impossible to use a font for writing that is *not* a monospac
 
 Second, it makes editing extremely annoying. Nearly every change you make requires rewrapping lines. ([Trust me.][rust-book-1]) Then, reviewing those changes (say, on GitHub or GitLab) requires disentangling the *actual* changes.[^formatting] I can say [from *considerable* experience][rust-book-2] that this makes an equally awful experience as authoring this way does.
 
-[rust-book-1]: https://github.com/rust-lang/book/pulls?q=is%3Apr+author%3A%40me+is%3Amerged+
-[rust-book-2]: https://github.com/rust-lang/book/pulls?q=is%3Apr+reviewed-by%3A%40me+is%3Aclosed
+[rust-book-1]: https://github.com/rust-lang/book/pulls?q=is%3Apr+author%3A%40chriskrycho+is%3Amerged+
+[rust-book-2]: https://github.com/rust-lang/book/pulls?q=is%3Apr+reviewed-by%3A%40chriskrycho+is%3Aclosed
 
 The long and short of it is: manually-wrapped lines have a single, very small upside in the form of looking nice in a user interface that doesn’t support line wrapping *and* is wider than the line width at which you manuually wrapped them. Everything else is downside, in my book.
 
