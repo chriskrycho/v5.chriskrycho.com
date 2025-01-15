@@ -7,18 +7,15 @@ I help teams with front-end web strategy development, TypeScript adoption and co
 
 ## For Companies
 
-I provide front-end technical strategy, teaching and workshops for TypeScript and Rust, and technical solutions for TypeScript and Rust code bases. My current rate is **$200/hour**.
+I provide front-end technical strategy, teaching and workshops for TypeScript and Rust, and technical solutions for TypeScript and Rust code bases.
 
-If those are problems you have, [book a free 30-minute session with me][call] or [send me an email][email-30-min] and let’s talk about whether and how I can help you!
+### Front-end technical strategy
 
-[call]: https://calendly.com/chriskrycho/30-minute-meeting
-[email-30-min]: mailto:hello@chriskrycho.com?subject=30-minute%20meeting%20request
+I excel at helping you cut through the noise and find a path forward for your web user interfaces.
 
-<figure>
-<img style="max-width: 210px" src="https://cdn.chriskrycho.com/images/30-minute-call.jpeg" />
-<figcaption>QR code for 30-minute exploratory call</figcaption>
-</figure>
-
+- In 2024, I helped [Subsplash][sub] develop a strategy to modernize and integrate their many apps with multiple front-end technologies.
+- I officially led front-end web development for LinkedIn’s desktop web app 2021–2023, and developed the technical strategy for the same app 2019–2021.
+- In 2018, I created the strategy for Olo’s Serve platform—the strategy that they successfully executed on after my departure.
 
 ### TypeScript
 
@@ -39,7 +36,26 @@ From 2015–2019, I ran the premier Rust podcast, [New Rustacean][nr], which tau
 [trpl]: https://doc.rust-lang.org/book
 [volta]: https://volta.sh
 
+If those are challenges you are facing, [book a free 30-minute session with me][call] or [send me an email][email-30-min] and let’s talk about whether and how I can help you!
+
+[call]: https://calendly.com/chriskrycho/30-minute-meeting
+[email-30-min]: mailto:hello@chriskrycho.com?subject=30-minute%20meeting%20request
+
+<figure>
+<img style="max-width: 210px" src="https://cdn.chriskrycho.com/images/30-minute-call.jpeg" />
+<figcaption>QR code for 30-minute exploratory call</figcaption>
+</figure>
+
+
 ## For Individuals
+
+### Coaching and mentoring
+
+In my time at LinkedIn, I mentored over half a dozen engineers, ranging from apprentices just getting their footing to Staff engineers thinking about how to be effective in their role. I can help you, too!
+
+### Tackle a hard problem
+
+Have a one-off knotty technical challenge in Rust or TypeScript? I can help you solve it!
 
 I provide hour-long slots for $250 each. [Grab an hour with me][call]!
 
@@ -50,17 +66,10 @@ I provide hour-long slots for $250 each. [Grab an hour with me][call]!
 <figcaption>QR code for 1-hour call</figcaption>
 </figure>
 
-### Coaching and mentoring
 
-In my time at LinkedIn, I mentored over half a dozen engineers, ranging from apprentices just getting their footing to Staff engineers thinking about how to be effective in their role. I can help you, too!
+## Follow
 
-### Tackle a hard problem
-
-Have a one-off knotty technical challenge in Rust or TypeScript? I can help you solve it!
-
-## Subscribe
-
-Subscribe to this site [via feed][feed] or [email][email]:
+Follow to this site [via feed][feed] or [email][email]:
 
 [feed]: /feed.xml
 [email]: https://buttondown.email/sympolymathesy
