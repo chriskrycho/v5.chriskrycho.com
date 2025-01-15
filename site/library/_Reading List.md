@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-01-09T11:38:00-0700
+modified: 2025-01-15T08:44:00-0700
 
 ---
 
@@ -65,7 +65,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
-- [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
 - [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—reading alongside my 12-year-old daughter!)
 
 
@@ -81,6 +80,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Scout Mindset: Why Some People See Things Clearly and Others Don't</cite>](https://bookshop.org/a/21126/9780735217553), Julia Galef (new)
 - [<cite>Taming the Octopus: The Long Battle for the Soul of the Corporation</cite>](https://bookshop.org/a/21126/9780393867237), Kyle Edward Williams (new)
+
+### Fiction
+
+- [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
 
 
 ## 2024
