@@ -6,7 +6,7 @@ date: 2025-01-15T19:06:00-0700
 
 qualifiers:
     audience: |
-        This opens with a bit of background from my work teaching async in Rust, but this post doesn’t require you to know anything about Rust, and is aimed first of all at sharing some useful info with JavaScript developres, but you might still benefit from the concepts even if you’re writing something that isn’t JavaScript *or* Rust!
+        This opens with a bit of background from my work teaching async in Rust, but this post doesn’t require you to know anything about Rust, and is aimed first of all at JavaScript developers, but you might still benefit from the concepts even if you’re writing something that isn’t JavaScript *or* Rust!
 
 tags:
     - JavaScript
