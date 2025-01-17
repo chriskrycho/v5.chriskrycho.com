@@ -69,7 +69,7 @@ I provide hour-long slots for $250 each. [Grab an hour with me][call]!
 
 ## Follow
 
-Follow to this site [via feed][feed] or [email][email]:
+Just want to learn from my work? Follow this site [via feed][feed] or [email][email]:
 
 [feed]: /feed.xml
 [email]: https://buttondown.email/sympolymathesy
