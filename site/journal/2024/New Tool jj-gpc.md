@@ -10,6 +10,13 @@ qualifiers:
 
 image: https://cdn.chriskrycho.com/images/jj-gpc.png
 
+tags:
+    - Jujutsu
+    - tools
+    - version control
+    - Rust
+    - AI and ML
+
 updated: 2024-11-29T19:35:00-0700
 updates:
     - at: 2024-11-28T21:30:00-0700
