@@ -37,14 +37,15 @@ cargo install --git https://github.com/chriskrycho/jj-gpc --tag v0.7.1
 
 Between when I shipped the tool and now, [Ollama][oll] added support for using <abbr>JSON</abbr> Schema to control the output of the models you invoke, and [ollama-rs][ollama-rs], the Rust library I use that wraps Ollama, likewise added support for it by way of the lovely [schemars][schemars] crate.
 
-The basic idea is: if you provide a grammar or set of constraints for the output of a model, you can get *much* better results out of a large language model when trying to get out structured data, because it’s possible to validate *at generation time* whether the next token is valid according to the specified grammar. There are two basic approaches to this out there: using actual *grammars*, in roughly [Backus-Naur form][bnf], and using <abbr>JSON</abbr> Schema with constraints on the data structures—but the latter [can include regexes][js-regex-docs], which makes <abbr>JSON</abbr> Schema *roughly* comparable in power to a more formal grammar.
+The basic idea is: if you provide a grammar or set of constraints for the output of a model, you can get *much* better results when trying to get out structured data, because it’s possible to validate *at generation time* whether the next token is valid by checking it against the specified grammar. There are two basic approaches to this out there: using actual *grammars*, in roughly [Backus-Naur form][bnf], and using <abbr>JSON</abbr> Schema with constraints on the data structures—but the latter [can include regexes][js-regex-docs], which makes <abbr>JSON</abbr> Schema *roughly* comparable in power to a more formal grammar.
 
-Now, which one is easier to write *by* hand is no debate: <abbr>BNF</abbr> wins hands down. Which one is easier to programmatically generate is something else entirely, though, because [the schemars crate][schemars] makes it trivial to generate <abbr title="JavaScript Object Notation">JSON</abbr> Schema from Rust data structures, even including fancy bits like regular expression patterns. When I say trivial, I mean it. The whole data structure I defined, after a bit of mucking around, was this:
+Now, which one is easier to write *by hand* is no debate: <abbr title="Backus-Naur form">BNF</abbr> wins hands down. Which one is easier to programmatically generate is something else entirely, though, because [the schemars crate][schemars] makes it trivial to generate <abbr title="JavaScript Object Notation">JSON</abbr> Schema from Rust data structures, even including fancy bits like regular expression patterns. When I say trivial, I mean it. The whole data structure I defined, after a bit of mucking around, was this:
 
 ```rust
 #[derive(JsonSchema, Deserialize, Debug)]
 struct Branch(
-    #[schemars(regex(pattern = "^[a-z]{1,10}+(-[a-z]{1,10}){2,4}$"))] String
+    #[schemars(regex(pattern = "^[a-z]{1,10}+(-[a-z]{1,10}){2,4}$"))]
+    String
 );
 ```
 
@@ -54,7 +55,7 @@ With that in place, I *finally* stopped getting occasional output like `` ```som
 
 The big takeaways for me from this exercise:
 
-1. Being able to use a <abbr title="JavaScript Object Notation">JSON</abbr> Schema like this is super handy for constraining model output. This is old nes to folks who have been hacking on <abbr title="large language model">LLM</abbr>-based tools for a while, and I have *known* about this for quite some time, but it’s always something else to put it into practice, and I thought it would probably be new to at least some of you reading, as well!
+1. Being able to use a <abbr title="JavaScript Object Notation">JSON</abbr> Schema like this is super handy for constraining model output. This is old news to folks who have been hacking on <abbr title="large language model">LLM</abbr>-based tools for a while, and I have *known* about this for quite some time, but it’s always something else to put it into practice, and I thought it would probably be new to at least some of you reading, as well!
 
 2. The schemars library is *fantastic*. I used the inline version of regexes, because that was most convenient, but there are a bunch of other ways to do it, including referring to regexes in scope to refer to by name. Generating a <abbr title="JavaScript Object Notation">JSON</abbr> Schema with it was basically trivial.
 
