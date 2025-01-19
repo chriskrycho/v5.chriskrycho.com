@@ -19,6 +19,7 @@ tags:
     - open-source software
     - software development
     - TypeScript
+    - Year of Shipping
 
 thanks: |
     I am, as ever, grateful to my long-time collaborator [Ben Makuh][ben] for code reviews, discussions, and design input on this library.

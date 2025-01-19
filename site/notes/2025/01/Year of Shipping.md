@@ -11,6 +11,7 @@ summary: >
 tags:
     - working effectively
     - software development
+    - Year of Shipping
 
 ---
 

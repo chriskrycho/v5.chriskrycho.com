@@ -12,6 +12,7 @@ tags:
     - open-source software
     - software development
     - TypeScript
+    - Year of Shipping
 
 summary: >
     True Myth now has a tool for safe async in TypeScript: a `Task` type, the glorious combination of a `Promise` and a `Result`.

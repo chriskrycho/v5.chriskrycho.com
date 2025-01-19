@@ -9,6 +9,7 @@ tags:
     - TypeScript
     - open-source software
     - software development
+    - Year of Shipping
 
 summary: >
     Adding all the bits we didn’t have in the first Task release… and deprecating some mistakes, too.
