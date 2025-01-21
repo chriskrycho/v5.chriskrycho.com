@@ -7,7 +7,13 @@ I help teams with front-end web strategy development, TypeScript adoption and co
 
 ## For Companies
 
-I provide front-end technical strategy, teaching and workshops for TypeScript and Rust, and technical solutions for TypeScript and Rust code bases.
+I provide front-end technical strategy, teaching and workshops for TypeScript and Rust, and technical solutions for TypeScript and Rust code bases—including working effectively in open source projects!
+
+Rates:
+
+| Proprietary work | Open-source work |
+| ---------------- | ---------------- |
+| $200/hour        | $150/hour        |
 
 ### Front-end technical strategy
 
