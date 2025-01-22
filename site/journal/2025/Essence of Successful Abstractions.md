@@ -17,9 +17,13 @@ tags:
 
 thanks: |
     Hat tip to [Kevin Edey][ke] for sharing the article that opens this post in the [CoRecursive Slack][slack] a while back!
-    
+
     [ke]: https://genericjam.com
     [slack]: https://corecursive.com/slack
+
+discuss:
+    hn: https://news.ycombinator.com/item?id=42787531
+    lobsters: https://lobste.rs/s/zltcd9/essence_successful_abstractions
 
 ---
 
