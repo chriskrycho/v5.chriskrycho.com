@@ -4,6 +4,10 @@ subtitle: >
     What should we make of generative <abbr>AI</abbr> systems in software engineering?
 
 date: 2025-01-20T11:18:00-0700
+updated: 2025-01-21T18:10:00-0700
+updates:
+    - at: 2025-01-21T18:10:00-0700
+      changes: Inlined the footnote.
 
 tags:
     - software engineering
@@ -34,6 +38,6 @@ Peter Naur, [Programming as Theory-Building][ptb], 1985:
 
 ## A question
 
-If the second quote is a true and accurate picture of the actual work of programming (as I believe it is), what do we make of the claim in the first quote?[^first] Or, if the claim in the first quote is accurate and obviates or falsifies the claims in the second, how does it do so?
+I actually agree with a fair bit of the *advice* Vella offers—but for the reasons Naur suggests, rather than anything to do with <abbr title="artificial intelligence">AI</abbr>, and I think she draws an extremely silly false dichotomy between “specialising as a code writer” and “product engineers” and paints a picture completely out of step with my own experience of software developers over the past 15 years. However:
 
-[^first]: I actually agree with a fair bit of the *advice* Vella offers—but for the reasons Naur suggests, rather than anything to do with <abbr title="artificial intelligence">AI</abbr>, and I think she draws an extremely silly false dichotomy between “specialising as a code writer” and “product engineers” and paints a picture completely out of step with my own experience of software developers over the past 15 years.
+If the second quote is a true and accurate picture of the actual work of programming (as I believe it is), what do we make of the claim in the first quote? If the claim in the first quote is accurate and obviates or falsifies the claims in the second, how does it do so?
