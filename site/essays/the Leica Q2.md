@@ -103,7 +103,7 @@ Two: cropping in to a 55mm field of view from a 28mm lens is not actually the *s
 
 Three: I rely heavily on the ability to crop in even when using a longer lens (a point I noted when doing [my mini-review][a7iv-review] of [the α7 IV][a7iv] as well). Especially at family gatherings, I will lean on the high resolution of the α7R IV to get a useful image from across the room with my go-to 55mm. The wider your field of view is, the harder that is, because that wider field of view inherently means a subject across the room occupies fewer of the pixels on the sensor. You can still crop in, but you will have much less to work with.
 
-[a7iv-review]: http://localhost:8080/photos/sony-a7-iv/
+[a7iv-review]: https://v5.chriskrycho.com/photos/sony-a7-iv/
 [a7iv]: https://www.sony.com/lr/electronics/interchangeable-lens-cameras/ilce-7m4
 
 There’s a (likely totally-unfounded, alas) rumor that the forthcoming Q3 might have a 50mm variant, which would significantly change the calculus for me. If they shipped a *40mm* variant of the Q3, I would be hard pressed not to empty my pockets instantly. (“Shut up and take my money,” as the meme goes.) As things stand, though, I cannot imagine using this camera on an everyday basis, despite how often I found myself saying things like “Wow, I *really* love this camera” and “I don’t want to send it back.” My wife can attest: both of those phrases came out of my mouth repeatedly.
