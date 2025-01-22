@@ -1,9 +1,13 @@
 ---
-title: Follow
+title: Follow and Connect
 subtitle: >
-  Keep up with my writing.
+  Keep up with my writing or get in touch with me.
 summary: >
-  Atom and JSON Feeds, email subscriptions, and social media links.
+  Contact info, Atom and JSON Feeds, email subscriptions, and social media links.
+
+---
+
+I welcome [emails](mailto:hello@chriskrycho.com) and do my best to respond in a timely fashion! For professional inquiries, see [my services page](/services/), and for speaking inquiries, [my speaking page](/speaking/).
 
 ---
 

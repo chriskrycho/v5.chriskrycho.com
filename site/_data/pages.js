@@ -1,5 +1,6 @@
 module.exports = [
    { type: 'page', title: 'Services', url: '/services/' },
+   { type: 'page', title: 'Speaking', url: '/speaking/' },
    { type: 'separator' },
    { type: 'page', title: 'Essays', url: '/essays/' },
    { type: 'page', title: 'Journal', url: '/journal/' },
@@ -9,10 +10,9 @@ module.exports = [
    { type: 'separator' },
    { type: 'page', title: 'Archive', url: '/archive/' },
    { type: 'separator' },
-   { type: 'page', title: 'Follow', url: '/follow/' },
-   { type: 'page', title: 'Colophon', url: '/colophon/' },
-   { type: 'separator' },
    { type: 'page', title: 'About', url: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', url: '/cv/' },
-   { type: 'page', title: 'Speaking', url: '/speaking/' },
+   { type: 'page', title: 'Follow / Connect', url: '/follow/' },
+   { type: 'separator' },
+   { type: 'page', title: 'Colophon', url: '/colophon/' },
 ];
