@@ -25,6 +25,12 @@
 {% endif %}
 
 {% if qualifiers -%}
+{%- if qualifiers.retraction -%}
+   <div class='retraction' aria-label='Retraction'>
+   {{- qualifiers.retraction | safe -}}
+   </div>
+{%- endif -%}
+
 <div class='qualifiers'>
    {%- if qualifiers.audience -%}
       {{- qualifiers.audience | safe -}}

@@ -52,6 +52,15 @@ export function preparseYaml(data: Data): Data {
             `${EPISTEMIC_STATUS} ${data.qualifiers.epistemic}`,
          );
       }
+
+      if (data.qualifiers.retraction) {
+         if (typeof data.qualifiers.retraction === 'object') {
+            let { title, url } = data.qualifiers.retraction;
+            data.qualifiers.retraction = markdown.render(
+               `<strong>Caveat lector:</strong> I have since retracted this (see [${title}](${url})), but as a matter of policy I leave even work I have retracted publicly available as a matter of record.`,
+            );
+         }
+      }
    }
 
    if (data.updates) {

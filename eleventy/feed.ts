@@ -79,7 +79,21 @@ function htmlForQualifiers(qualifiers?: Qualifiers) {
 
    let contentNotice = qualifiers.discusses ?? '';
 
-   return audience + disclosure + context + epistemicStatus + contentNotice + '<hr/>';
+   // The same goes for retractions!
+   if (typeof qualifiers.retraction === 'object')
+      throw new Error('Invalid `qualifiers.retractions`');
+
+   let retraction = qualifiers.retraction ?? '';
+
+   return (
+      retraction +
+      audience +
+      disclosure +
+      context +
+      epistemicStatus +
+      contentNotice +
+      '<hr/>'
+   );
 }
 
 function contentHtmlFor(

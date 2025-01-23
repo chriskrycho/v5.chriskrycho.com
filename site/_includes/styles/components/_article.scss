@@ -162,6 +162,7 @@
    .footnotes,
    .note,
    .qualifiers,
+   .retraction,
    .quotation,
    .updates {
       margin: {
@@ -492,6 +493,7 @@
    }
 
    aside,
+   .retraction,
    .note,
    .callout {
       &::before {
@@ -512,6 +514,7 @@
    aside,
    .note,
    .qualifiers,
+   .retraction,
    .updates {
       font: {
          family: var(--sans);
@@ -561,6 +564,17 @@
 
       b {
          font-weight: 600;
+      }
+   }
+
+   .retraction {
+      @include fancy-block(var(--note-bg), var(--note-fg));
+      @include extra-vertical();
+      --top-border: var(--note-accent);
+
+      &::before {
+         content: '—/ ' attr(aria-label) ' /—';
+         color: var(--note-accent);
       }
    }
 
@@ -677,6 +691,7 @@
    aside,
    .note,
    .qualifiers,
+   .retraction,
    .callout,
    .updates {
       > {
@@ -694,6 +709,7 @@
    aside,
    .note,
    .qualifiers,
+   .retraction,
    .updates,
    .footnotes {
       --double-margin: var(--double-margin-sans);
@@ -817,6 +833,7 @@
       .article-content {
          aside,
          .qualifiers,
+         .retraction,
          .note,
          .callout,
          .updates {

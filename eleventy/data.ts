@@ -120,4 +120,10 @@ export interface Qualifiers {
    epistemic?: string;
    discusses?: string | string[];
    disclosure?: string;
+   retraction?:
+      | string
+      | {
+           url: string;
+           title: string;
+        };
 }

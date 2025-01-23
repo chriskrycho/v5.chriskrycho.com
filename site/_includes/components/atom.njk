@@ -53,6 +53,10 @@
                      <p><i>{{- item.data.subtitle | safe -}}</i></p>
                   {%- endif -%}
 
+                  {%- if item.data.qualifiers.retraction -%}
+                     {{- item.data.qualifiers.retraction | safe -}}
+                  {%- endif -%}
+
                   {%- if item.data.qualifiers.audience -%}
                      {{- item.data.qualifiers.audience | safe -}}
                   {%- endif -%}
