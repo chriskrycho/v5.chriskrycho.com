@@ -4,6 +4,9 @@ subtitle: >
    A(n attempted/asserted) defense of Aristotelian metaphysics.
 
 qualifiers:
+    retraction:
+        url: /library/retractions-and-revisions-my-review-of-real-essentialism/
+        title: "Retractions and Revisions: My Review of <cite>Real Essentialism</cite>"
     audience: >
         People interested in philosophy and metaphysics.
 
@@ -24,8 +27,11 @@ tags:
     - philosophy
 
 date: 2024-11-24T09:58:00-0700
-updated: 2024-11-24T15:43:00-0700
+updated: 2025-01-23T11:05:00-0700
 updates:
+    - at: 2025-01-23T11:05:00-0700
+      changes: Published a retraction of this review as insufficiently charitable and insufficiently well-read.
+
     - at: 2024-11-24T15:33:00-0700
       changes: >
         Tweaked the wording of the review to clarify that I did not mean there are no good defenses of Aristotelian metaphysics; only that this book is not that, and added a note about the recommended alternative (Wiggins).
