@@ -7,6 +7,9 @@ subtitle: >
 summary: >
     True Myth v8.5 adds a handy new function to allow you to retry any task—with good defaults, and also with great progressive disclosure of complexity.
 
+image:
+    cdn: true-myth-v8.5.0.png
+
 date: 2025-01-24T20:41:00-0700
 
 tags:
@@ -14,6 +17,11 @@ tags:
     - True Myth
     - Year of Shipping
     - software development
+
+
+qualifiers:
+    audience: |
+        TypeScript developers with an interesting in *even safer* typed programming with a functional flair.
 
 thanks: |
      As always, thanks to [Ben Makuh](https://benmakuh.com) for helping me with the design of this—it’s *far* better due to his input, as is the whole library!
