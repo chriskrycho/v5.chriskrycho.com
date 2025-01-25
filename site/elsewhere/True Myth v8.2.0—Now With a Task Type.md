@@ -46,7 +46,7 @@ Now for a few more details:
 
 [neverthrow]: https://github.com/supermacro/neverthrow
 
-If you are a long-time True Myth user, I think you will feel write at home with this library. Working with a `Task` feels a lot like working with a `Result`: they share the overall <abbr>API</abbr> design and our basic design sensibilities.
+If you are a long-time True Myth user, I think you will feel right at home with this library. Working with a `Task` feels a lot like working with a `Result`: they share the overall <abbr>API</abbr> design and our basic design sensibilities.
 
 For a somewhat real-world example, see [this Gist][gist] showing how you could combine this new `Task` type with [Zod][zod] for a robustly type-safe boundary layer between your app or library and some untrusted data source.
 
