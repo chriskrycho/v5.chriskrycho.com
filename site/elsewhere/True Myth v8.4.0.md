@@ -20,6 +20,7 @@ tags:
     - software development
     - TypeScript
     - Year of Shipping
+    - True Myth
 
 thanks: |
     I am, as ever, grateful to my long-time collaborator [Ben Makuh][ben] for code reviews, discussions, and design input on this library.
