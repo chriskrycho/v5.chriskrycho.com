@@ -49,7 +49,7 @@ Part of the difference implied by the assumed reading context of email inbox vs.
 
 [feedbin]: https://feedbin.com
 
-And yet nonetheless, when I am writing and when I am reading, a blog does feel like it has a different assumed *relationship* to its audience that does an email. The intentionality of someone *asking* to get your words in their inbox is much the same as their adding you to their feed reader, but quiet different from their finding a post via some link aggregator or social media.
+Nonetheless, when I am writing and when I am reading, a blog does feel like it has a different assumed *relationship* to its audience that does an email. The intentionality of someone *asking* to get your words in their inbox is much the same as their adding you to their feed reader, but quiet different from their finding a post via some link aggregator or social media.
 
 [^sale]: If your items are always on sale, are they ever on sale?
 
