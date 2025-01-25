@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-01-24T22:03:00-0700
+modified: 2025-01-25T16:03:00-0700
 
 ---
 
@@ -59,12 +59,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
+- [<cite>The Life We're Looking For: Reclaiming Relationship in a Technological World</cite>](https://bookshop.org/a/21126/9780593237342), Andy Crouch (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
 - [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—reading alongside my 12-year-old daughter!)
+- [<cite>Stories of Your Life and Others</cite>], Ted Chiang (new)
 
 
 ### Poetry
@@ -81,7 +83,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Taming the Octopus: The Long Battle for the Soul of the Corporation</cite>](https://bookshop.org/a/21126/9780393867237), Kyle Edward Williams (new)
 - [<cite>The Righteous Mind: Why Good People Are Divided by Politics and Religion</cite>](https://bookshop.org/a/21126/9780307455772), Jonathan Haidt (new)
 
- 
+
 ### Fiction
 
 - [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
