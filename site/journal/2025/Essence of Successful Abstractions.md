@@ -53,9 +53,9 @@ People who are a bit allergic to types often feel constrained by them, but those
 
 [df]: https://dfreeman.io
 
-The same basic thesis applies to our tests, which represent a different set of knowledge than our types. This is the benefit of “test-driven development”, particularly in the red-green cycle: it is a way of encoding knowledge into the program. Test expressiveness works in different ways than type expressiveness, but it is a useful way of evaluating different kinds of and different approaches to testing.
+The same basic thesis applies to our tests, which represent a different set of knowledge than our types. This is the benefit of “test-driven development”, particularly in the red-green cycle: it is a way of encoding knowledge into the program. Test expressiveness works in different ways than type expressiveness, but "What kinds of constraints did this kind of test let me encode?" is a useful way of evaluating different kinds of, and different approaches to, testing.
 
-This is why I like Rust. The complexity of correctly [spatial and temporal safety][sts] has to live somewhere. Rust pushes the majority of that complexity into its type system, and particularly the famed borrow checker. The rest of the complexity it isolates in `unsafe` blocks. Mind: `unsafe` allows you to know where the complexity lives, but it does not tell you where your getting that complexity wrong will *surface*. But the combination of the borrow checker and the isolation that `unsafe` offers *does* allow us to *control* the complexity. We cannot get rid of it. We can only isolate it.
+This is why I like Rust. The complexity of correctly handling [spatial and temporal safety][sts] has to live somewhere. Rust pushes the majority of that complexity into its type system, and particularly the famed borrow checker. The rest of the complexity it isolates in `unsafe` blocks. Mind: `unsafe` allows you to know where the complexity lives, but it does not tell you where your getting that complexity wrong will *surface*. But the combination of the borrow checker and the isolation that `unsafe` offers *does* allow us to *control* the complexity. We cannot get rid of it. We can only isolate it.
 
 [sts]: https://blog.yoshuawuyts.com/temporal-spatial-memory-safety/
 
