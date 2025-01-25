@@ -97,7 +97,7 @@ In other words, we expect that changing how this works will only *improve* thing
 
 [p2]: https://www.typescriptlang.org/play/?moduleResolution=99&target=10&jsx=0&module=199#code/JYWwDg9gTgLgBAJQKYGcCuAbeAzKERwDkMUaSAtCAJ4wAWA9FKpjIQNwBQH2aAdgMYxgEXnBABDMAB4AKgBo4AVQUBRAHwAKJuiwAuRMyyzVahRLAAxXvo0x9MgJRwAvGqUP9yHTCnK46uABvDjhQuCYYNChRbRYAOnMNcysHTgBfLgwkeCzeAHM6FzgNFH0UEmB8p1c4FDjcgtpOLPgYCAAZJHzC5zgpdS1DOwNvKXKoSryTardE2KwFBrpUzOy4CABrAGUK-KKveM2NACJaJAwMCGOnFHEhFGxgVBGWMd2p-yg8KDVmtaXaAcsEU2p1urQNJsdhMqpx6PRQgA9AD8HCAA
 
-If you use True Myth today and have thoughts or feedback on that tentative plan, we would love to hear from you! In the meantime, enjoy v8.4.0 and the ~~fully argumed and operational battle station~~ feature-complete version of `Task`!
+If you use True Myth today and have thoughts or feedback on that tentative plan, we would love to hear from you! In the meantime, enjoy v8.4.0 and the ~~fully armed and operational battle station~~ feature-complete version of `Task`!
 
 
 
