@@ -66,7 +66,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
 - [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—reading alongside my 12-year-old daughter!)
-- [<cite>Stories of Your Life and Others</cite>], Ted Chiang (new)
+- [<cite>Stories of Your Life and Others</cite>](https://bookshop.org/a/21126/9781101972120), Ted Chiang (new)
 
 
 ### Poetry
