@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-01-27T12:37:00-0700
+modified: 2025-01-29T11:11:00-0700
 
 ---
 
@@ -59,6 +59,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
+- [<cite>Tidy First?</cite>](https://bookshop.org/a/21126/9781098151249), Kent Beck (new)
 
 
 ### Fiction
