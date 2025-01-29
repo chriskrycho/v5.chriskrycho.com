@@ -1,6 +1,6 @@
-import JSONFeed from '../../eleventy/feed';
+import JSONFeed from '../../eleventy/feed.ts';
 
-module.exports = class FeedWithoutReply extends JSONFeed {
+export default class FeedWithoutReply extends JSONFeed {
    includeReplyViaEmail = false;
    permalink = '/feeds/without-reply.json';
-};
+}

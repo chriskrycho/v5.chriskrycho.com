@@ -1,4 +1,4 @@
-module.exports = {
+const Config = {
    url: 'https://v5.chriskrycho.com/',
    repo: 'https://github.com/chriskrycho/v5.chriskrycho.com',
    title: {
@@ -25,3 +25,5 @@ module.exports = {
       ],
    },
 };
+
+export default Config;

@@ -2,37 +2,37 @@ import { env } from 'process';
 import { randomBytes } from 'node:crypto';
 
 import { DateTime } from 'luxon';
+import yaml from 'js-yaml';
+import striptags from 'striptags';
+import typeset, { type Options } from 'typeset';
 
-import { Config, Item, UserConfig, Collection, Data } from '../types/eleventy';
-import absoluteUrl from './absolute-url';
-import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year';
-import copyright from './copyright';
-import currentPage from './current-page';
-import { resolvedImage } from './data';
-import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time';
-import isoDate from './iso-date';
-import localeDate from './locale-date';
-import markdown from './markdown';
-import * as PageLinks from './page-links';
-import spacewell from '../lib/spacewell';
-import typeset, { Options } from 'typeset';
-import siteTitle from './site-title';
-import excludingCollection from './excluding-collection';
+import type { Config, Item, Collection, Data } from '../types/eleventy.d.ts';
+
+import absoluteUrl from './absolute-url.ts';
+import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year.ts';
+import copyright from './copyright.ts';
+import currentPage from './current-page.ts';
+import { resolvedImage } from './data.ts';
+import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time.ts';
+import isoDate from './iso-date.ts';
+import localeDate from './locale-date.ts';
+import markdown from './markdown.ts';
+import * as PageLinks from './page-links.ts';
+import spacewell from '../lib/spacewell.ts';
+import siteTitle from './site-title.ts';
+import excludingCollection from './excluding-collection.ts';
 import {
    toCollection,
    collectionName,
    toCollectionName,
    toCollectionUrl,
    toRootCollection,
-} from './collection';
+} from './collection.ts';
 
-import yaml from 'js-yaml';
-
-import './feed'; // for extension of types -- TODO: move those types elsewhere!
-import striptags from 'striptags';
-import niceList from './nice-list';
-import { callout, note, quote } from './shortcodes';
-import { preparseYaml } from './preparse';
+import './feed.ts';
+import niceList from './nice-list.ts';
+import { callout, note, quote } from './shortcodes.ts';
+import { preparseYaml } from './preparse.ts';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
@@ -165,7 +165,7 @@ const renderMarkdown = (content: string): string =>
 const renderInlineMarkdown = (content: string): string =>
    typeset(markdown.renderInline(wellSpaced(content)), typesetOptions);
 
-function config(config: Config): UserConfig {
+export default function configure(config: Config) {
    config.addWatchTarget('scripts');
    config.addWatchTarget('site/_styles');
 
@@ -178,14 +178,14 @@ function config(config: Config): UserConfig {
    config.addFilter('toRootCollection', toRootCollection);
    config.addFilter(
       'topLevel',
-      (obj) =>
+      (obj: {}) =>
          '<ul>' +
          Object.entries(obj)
             .map(([k, v]) => `<li>${k}: ${v}</li>`)
             .join('\n') +
          '</ul>',
    );
-   config.addFilter('stringify', (obj) => JSON.stringify(obj));
+   config.addFilter('stringify', (obj: {}) => JSON.stringify(obj));
    config.addFilter('archiveByYears', archiveByYear);
    config.addFilter('absoluteUrl', absoluteUrl);
    config.addFilter('isoDate', isoDate);
@@ -310,20 +310,17 @@ function config(config: Config): UserConfig {
    });
 
    config.addGlobalData('ENV', process.env.ELEVENTY_RUN_MODE);
-
-   return {
-      dir: {
-         input: 'site',
-         output: 'public',
-         includes: '_includes',
-         layouts: '_layouts',
-      },
-      templateFormats: ['html', 'njk', '11ty.js', 'md'],
-      dataTemplateEngine: 'njk',
-      htmlTemplateEngine: 'njk',
-      markdownTemplateEngine: 'njk',
-   };
 }
 
-// Needs to be this way so that the import resolves as expected in `.eleventy`.
-module.exports = config;
+export const config = {
+   dir: {
+      input: 'site',
+      output: 'public',
+      includes: '_includes',
+      layouts: '_layouts',
+   },
+   templateFormats: ['html', 'njk', '11ty.js', 'md'],
+   dataTemplateEngine: 'njk',
+   htmlTemplateEngine: 'njk',
+   markdownTemplateEngine: 'njk',
+};

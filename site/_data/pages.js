@@ -1,4 +1,4 @@
-module.exports = [
+export default [
    { type: 'page', title: 'Services', url: '/services/' },
    { type: 'page', title: 'Speaking', url: '/speaking/' },
    { type: 'separator' },

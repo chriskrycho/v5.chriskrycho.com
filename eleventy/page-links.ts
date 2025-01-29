@@ -1,4 +1,4 @@
-import SiteConfig from '../site/_data/config';
+import SiteConfig from '../site/_data/config.js';
 
 const corrected = (path: string): string => path.replace(/^\.\//, '');
 

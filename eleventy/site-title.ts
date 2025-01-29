@@ -1,5 +1,4 @@
-import SiteConfig from '../site/_data/config';
-type SiteConfig = typeof SiteConfig;
+import type SiteConfig from '../site/_data/config.ts';
 
 const SEP = ' — ';
 

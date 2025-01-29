@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
-import { Item } from '../types/eleventy';
-import { fromDateOrString, canParseDate } from './date-time';
+import type { Item } from '../types/eleventy.ts';
+import { fromDateOrString, canParseDate } from './date-time.ts';
 
 type Archive = Year[];
 
@@ -19,10 +19,12 @@ export interface Day {
    items: Item[];
 }
 
-export const enum Order {
-   OldFirst = 'OLD_FIRST',
-   NewFirst = 'NEW_FIRST',
-}
+export const Order = {
+   OldFirst: 'OLD_FIRST',
+   NewFirst: 'NEW_FIRST',
+} as const;
+
+export type Order = (typeof Order)[keyof typeof Order];
 
 const YEAR_FORMAT = 'yyyy';
 const MONTH_FORMAT = 'MMM';

@@ -1,6 +1,6 @@
-import JSONFeed from '../../eleventy/feed';
+import JSONFeed from '../../eleventy/feed.ts';
 
-module.exports = class ElsewhereFeed extends JSONFeed {
+export default class ElsewhereFeed extends JSONFeed {
    collection = 'elsewhere';
    title = 'Elsewhere';
-};
+}

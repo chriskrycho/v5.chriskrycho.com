@@ -1,6 +1,6 @@
-import JSONFeed from '../../eleventy/feed';
+import JSONFeed from '../../eleventy/feed.ts';
 
-module.exports = class PhotosFeed extends JSONFeed {
+export default class PhotosFeed extends JSONFeed {
    collection = 'photos';
    title = 'Photos';
-};
+}

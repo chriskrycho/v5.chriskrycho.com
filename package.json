@@ -7,12 +7,14 @@
    "author": "Chris Krycho <hello@chriskrycho.com>",
    "license": "MIT",
    "volta": {
-      "node": "20.14.0",
+      "node": "23.6.1",
       "pnpm": "9.4.0"
    },
+   "type": "module",
    "packageManager": "pnpm@9.4.0",
    "devDependencies": {
-      "@11ty/eleventy": "^2.0.1",
+      "@11ty/dependency-tree-esm": "1.0.2",
+      "@11ty/eleventy": "^3",
       "@rollup/plugin-node-resolve": "^15.3.0",
       "@rollup/plugin-strip": "^3.0.4",
       "@rollup/plugin-terser": "^0.4.4",
@@ -48,9 +50,8 @@
       "sass": "^1.81.0",
       "striptags": "^3.2.0",
       "true-myth": "^7.4.0",
-      "ts-node": "^10.9.2",
       "tslib": "^2.8.1",
-      "typescript": "^5.6.3",
+      "typescript": "^5.7",
       "typeset": "^0.3.4",
       "uslug": "^1.0.4"
    },

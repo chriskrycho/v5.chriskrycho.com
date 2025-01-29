@@ -1,9 +1,7 @@
 import hljs from 'highlight.js';
 import markdownIt from 'markdown-it';
 import abbr from 'markdown-it-abbr';
-// @ts-ignore -- this is silly, but TS incorrectly reports an error when
-// importing this, indicating that it is an ES module not-importable in a CJS
-// module… but it isn't! It has both! 🤷🏻‍♂️
+
 import anchor from 'markdown-it-anchor';
 import defList from 'markdown-it-deflist';
 import footnotes from 'markdown-it-footnote';

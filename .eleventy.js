@@ -1,5 +1,4 @@
-require('ts-node').register({
-   project: 'tsconfig.json',
-});
+import configure, { config } from './eleventy/_config.ts';
 
-module.exports = require('./eleventy/config');
+export default configure;
+export { config };

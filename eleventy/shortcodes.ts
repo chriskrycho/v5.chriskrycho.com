@@ -1,5 +1,6 @@
-import markdown from './markdown';
 import { stripIndents } from 'common-tags';
+
+import markdown from './markdown.ts';
 
 export const note = (content: string, { type = 'Note' } = {}): string =>
    `<section class='note' aria-label='${type}' aria-role='note'>${markdown.render(

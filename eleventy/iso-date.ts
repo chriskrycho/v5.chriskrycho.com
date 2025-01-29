@@ -1,4 +1,4 @@
-import { fromDateOrString } from './date-time';
+import { fromDateOrString } from './date-time.ts';
 
 const isoDate = (date: Date | string): string => {
    if (!date) {

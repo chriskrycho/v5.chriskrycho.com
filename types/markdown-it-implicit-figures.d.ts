@@ -4,9 +4,9 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-import MarkdownIt = require('markdown-it');
-
 declare module 'markdown-it-implicit-figures' {
+   import MarkdownIt = require('markdown-it');
+
    export interface Options {
       /**
          Set `dataType` to `true` to declare the data-type being wrapped,  e.g.:

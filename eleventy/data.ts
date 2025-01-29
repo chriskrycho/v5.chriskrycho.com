@@ -1,4 +1,4 @@
-import { type Dict } from './type-utils';
+import { type Dict } from './type-utils.ts';
 
 interface ItemData {
    title?: string;
@@ -33,7 +33,7 @@ interface ItemData {
 }
 
 /** Extending the base Eleventy item with my own data */
-declare module '../types/eleventy' {
+declare module '../types/eleventy.ts' {
    interface Data extends ItemData {}
 }
 

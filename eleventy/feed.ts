@@ -2,19 +2,19 @@ import striptags from 'striptags';
 import { DateTime } from 'luxon';
 import { Maybe, Result } from 'true-myth';
 
-import { EleventyClass, Item } from '../types/eleventy';
-import JsonFeed, { FeedItem } from '../types/json-feed';
-import absoluteUrl from './absolute-url';
-import { canParseDate } from './date-time';
-import isoDate from './iso-date';
-import siteTitle from './site-title';
-import { toRootCollection } from './collection';
-import markdown from './markdown';
-import localeDate from './locale-date';
-import { type Book, hasAuthors, imageValue, isBook, type Qualifiers } from './data';
+import type { EleventyClass, Item } from '../types/eleventy.d.ts';
+import type { default as JsonFeed, FeedItem } from '../types/json-feed.ts';
+import absoluteUrl from './absolute-url.ts';
+import { canParseDate } from './date-time.ts';
+import isoDate from './iso-date.ts';
+import siteTitle from './site-title.ts';
+import { toRootCollection } from './collection.ts';
+import markdown from './markdown.ts';
+import localeDate from './locale-date.ts';
+import { type Book, hasAuthors, imageValue, isBook, type Qualifiers } from './data.ts';
 
-type BuildInfo = typeof import('../site/_data/build');
-type SiteConfig = typeof import('../site/_data/config');
+type BuildInfo = typeof import('../site/_data/build.ts').default;
+type SiteConfig = typeof import('../site/_data/config.js').default;
 
 /** Defensive function in case handed bad data */
 const optionalString = (value: unknown): string | undefined =>
@@ -280,7 +280,7 @@ interface EleventyData {
 
 type ClassData = ReturnType<NonNullable<EleventyClass['data']>>;
 
-export default class JSONFeed implements EleventyClass {
+class JSONFeed implements EleventyClass {
    declare collection?: string;
    declare title?: string;
    declare permalink?: string;
@@ -317,3 +317,5 @@ export default class JSONFeed implements EleventyClass {
       );
    }
 }
+
+export default JSONFeed;

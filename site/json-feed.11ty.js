@@ -1,3 +1,3 @@
-import JSONFeed from '../eleventy/feed';
+import JSONFeed from '../eleventy/feed.ts';
 
-module.exports = JSONFeed;
+export default class SiteJSONFeed extends JSONFeed {}

@@ -2,15 +2,14 @@
    "$schema": "https://json.schemastore.org/tsconfig",
    "compilerOptions": {
       /* Basic Options */
-      "target": "es2019",
-      "lib": [
-         "es2019",
-         "es2021.intl"
-      ] /* Specify library files to be included in the compilation. */,
+      "target": "esnext",
       "checkJs": true /* Report errors in .js files. */,
       "allowJs": true,
-      "moduleResolution": "Node16",
-      "module": "Node16",
+      "module": "NodeNext",
+      "moduleResolution": "nodenext",
+      "allowImportingTsExtensions": true,
+      "rewriteRelativeImportExtensions": true,
+      "verbatimModuleSyntax": true,
       /* Strict Type-Checking Options */
       "strict": true /* Enable all strict type-checking options. */,
       /* Additional Checks */
@@ -31,7 +30,6 @@
       // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
       // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
       // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
-      /* Experimental Options */
-      "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
+      "noEmit": true
    }
 }

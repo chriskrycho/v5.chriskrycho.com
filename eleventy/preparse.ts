@@ -1,10 +1,10 @@
-import { Data } from 'eleventy';
+import type { Data } from '../types/eleventy.ts';
 
 import Maybe from 'true-myth/maybe';
 
-import markdown from './markdown';
-import niceList from './nice-list';
-import { hasAuthor, hasAuthors } from './data';
+import markdown from './markdown.ts';
+import niceList from './nice-list.ts';
+import { hasAuthor, hasAuthors } from './data.ts';
 
 const ASSUMED_AUDIENCE =
    "<b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed audience</a>:</b>";

@@ -1,4 +1,4 @@
-import { logErr } from '../eleventy/utils';
+import { logErr } from '../eleventy/utils.ts';
 
 const THIN_SP = '&thinsp;';
 // const HAIR_SP = '&hairsp;'

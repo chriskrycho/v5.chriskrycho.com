@@ -59,7 +59,7 @@ interface BrowserSyncConfig {
 
 type Empty = { isEmpty: true; empty: string } | { isEmpty: false };
 
-import { AnyFunction, Dict } from '../eleventy/type-utils';
+import { AnyFunction, Dict } from '../eleventy/type-utils.ts';
 import type { GrayMatterFile, GrayMatterOption } from 'gray-matter';
 
 export type Engine = (input: string) => GrayMatterFile<string>;

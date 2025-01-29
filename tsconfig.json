@@ -1,8 +1,5 @@
 {
    "extends": "./base.tsconfig.json",
-   "compilerOptions": {
-      "noEmit": true /* Do not emit outputs. (BECAUSE WE'RE USING TS-NODE!) */
-   },
-   "include": ["site/**/*.11ty.js", "lib", "eleventy", "types", ".eleventy.ts"],
-   "exclude": ["site/_data/build.js"]
+   "include": ["site/**/*.11ty.*", "lib", "eleventy", "types", ".eleventy.js"],
+   "exclude": ["site/_data/build.ts"]
 }
