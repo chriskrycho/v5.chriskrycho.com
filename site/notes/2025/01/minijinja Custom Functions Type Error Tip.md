@@ -17,7 +17,7 @@ tags:
 
 ---
 
-In between consulting contracts and job applications, I am building out a small personal Rust project that uses [minijinja][mj]. It works extremely well and is quite fast, and I have well over a decade of experience building static sites with [Jinja] and [Nunjucks][n] templates, so this is a reasonable approach (trying not to shave the yak by implementing my own templating layer… at least for now).
+In between consulting contracts and job applications, I am building out a small personal Rust project that uses [minijinja][mj]. It works extremely well and is quite fast, and I have well over a decade of experience building static sites with [Jinja][j] and [Nunjucks][n] templates, so this is a reasonable approach (trying not to shave the yak by implementing my own templating layer… at least for now).
 
 It is possible to work with complex types across minijinja functions using the `ViaDeserialize` trait (though there is a fair bit of implicit conversion necessarily happening there, as implied by the name!). However, that constraint *indirectly* requires that the type you apply it to implement `serde::Deserialize`, and the errors show up not at the site where you try to define a function in terms of a type which does not implement `serde::Deserialize`, but where you try to call minijina’s `Environment::add_function` helper *using* the function you have defined:
 

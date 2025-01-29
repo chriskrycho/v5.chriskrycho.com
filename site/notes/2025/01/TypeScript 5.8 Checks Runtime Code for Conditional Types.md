@@ -5,7 +5,7 @@ subtitle: One of those “if you know, you *know*” releases.
 summary: >
     Historically, conditional types only gave you type safety on the caller side. Now, for a key subset, they give you safety within a function, too.
 
-data: 2025-01-29T13:35:00-0700
+date: 2025-01-29T13:35:00-0700
 
 qualifiers:
     audience: |
