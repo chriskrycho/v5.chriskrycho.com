@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-01-30T08:06:00-0700
+modified: 2025-01-30T09:16:00-0700
 
 ---
 
@@ -81,7 +81,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - [<cite>The Scout Mindset: Why Some People See Things Clearly and Others Don't</cite>](https://bookshop.org/a/21126/9780735217553), Julia Galef (new)
+    - [review](https://v5.chriskrycho.com/library/review-scout-mindset/)
 - [<cite>Taming the Octopus: The Long Battle for the Soul of the Corporation</cite>](https://bookshop.org/a/21126/9780393867237), Kyle Edward Williams (new)
+    - [review](https://v5.chriskrycho.com/library/an-octopus-that-will-not-be-tamed/)
 - [<cite>The Righteous Mind: Why Good People Are Divided by Politics and Religion</cite>](https://bookshop.org/a/21126/9780307455772), Jonathan Haidt (new)
 - [<cite>The Life We're Looking For: Reclaiming Relationship in a Technological World</cite>](https://bookshop.org/a/21126/9780593237342), Andy Crouch (new)
 - [<cite>Tidy First?</cite>](https://bookshop.org/a/21126/9781098151249), Kent Beck (new)
@@ -126,6 +128,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Real Essentialism</cite>](https://bookshop.org/a/21126/9780415872126), David S. Oderberg (new)
     - [review](/library/real-essentialism/)
+    - [retraction](https://v5.chriskrycho.com/library/retractions-and-revisions-my-review-of-real-essentialism/)
 
 - [<cite>The Master and His Emissary: The Divided Brain and the Making of the Western World</cite>](https://bookshop.org/a/21126/9780300245929), Iain McGilchrist (new)
 
