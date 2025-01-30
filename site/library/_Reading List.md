@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-01-29T19:03:00-0700
+modified: 2025-01-30T08:06:00-0700
 
 ---
 
@@ -60,6 +60,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 - [<cite>The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure</cite>](https://bookshop.org/a/21126/9780735224902), Greg Lukianoff and Jonathan Haidt (new)
+- [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 
 
 ### Fiction
@@ -84,7 +85,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Righteous Mind: Why Good People Are Divided by Politics and Religion</cite>](https://bookshop.org/a/21126/9780307455772), Jonathan Haidt (new)
 - [<cite>The Life We're Looking For: Reclaiming Relationship in a Technological World</cite>](https://bookshop.org/a/21126/9780593237342), Andy Crouch (new)
 - [<cite>Tidy First?</cite>](https://bookshop.org/a/21126/9781098151249), Kent Beck (new)
- 
+
 
 ### Fiction
 
