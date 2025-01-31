@@ -1,6 +1,6 @@
 ---
 title: >
-    minijinja Custom Functions Type Error Tip
+    minijinja tip: What That Custom Function’s Type Error Means
 subtitle: >
     If the error message involves `Function`, the problem is really `ViaDeserialize`.
 
