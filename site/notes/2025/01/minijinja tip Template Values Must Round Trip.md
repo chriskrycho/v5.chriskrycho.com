@@ -68,7 +68,7 @@ impl Serialize for Email {
 
 Combined with an `impl` for `std::fmt::Display` to automatically get the `to_string()`, my problem was solved, and things started working as I had expect them to work in the first place!
 
-Takeaway: because minijinja currently *serializes* and *deserializes* values to send them through its templating layer
+Takeaway: because minijinja currently *serializes* and *deserializes* values to send them through its templating layer, they need to be able to “round trip” successfully to the data types you are using.
 
 [^roughly]: That “(roughly-)” is there because actually validating emails is pretty tricky!
 
@@ -76,10 +76,10 @@ Takeaway: because minijinja currently *serializes* and *deserializes* values to 
 
     ```rust
     struct Email(String);
-    
+
     impl std::str::FromStr for EmaiI {
         type Err = SomeErrorType;
-        
+
         fn from_str(s: &str) -> Result<Self, Self::Err> {
             // do whatever parsing work here
         }
