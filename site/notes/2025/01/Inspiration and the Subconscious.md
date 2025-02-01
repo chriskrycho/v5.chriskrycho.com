@@ -3,6 +3,7 @@ title: Inspiration and the Subconscious
 subtitle: A little musical experience report from earlier today.
 
 date: 2025-01-04T16:43:00-0700
+updated: 2025-01-31T17:14:00-0700
 
 summary: >
     Inspiration is not always conscious; sometimes we cannot even say what it is we want to try artistically until we are already trying it.
@@ -22,7 +23,13 @@ tags:
 
 ---
 
-This morning after wrapping up breakfast, I had the urge to walk over to my piano and sketch an idea for a little musical them. On the moment the urge took me, I had no particular idea in mind. I was certainly not thinking of a tune. I was not consciously thinking of anything, really. The moment I opened the keyboard of the piano and set my fingers on the keys, though, a little melody popped out: fully formed as an idea immediately.
+{% note %}
+
+I published a version of this little note as part of an essay on ambition and joy in composing in [my January music newsletter issue](https://newsletter.music.chriskrycho.com/archive/january-2025-always-ambitious-joy-undimmed/).
+
+{% endnote %}
+
+This morning after wrapping up breakfast, I had the urge to walk over to my piano and sketch an idea for a little musical theme. On the moment the urge took me, I had no particular idea in mind. I was certainly not thinking of a tune. I was not consciously thinking of anything, really. The moment I opened the keyboard of the piano and set my fingers on the keys, though, a little melody popped out: fully formed as an idea immediately.
 
 I played it, decided I liked it, played it again to fix it in my mind, then bolted to the other room to grab my iPad and notate it down in [Dorico][dorico-for-ipad] before it got away from me. Three minutes later, I had done just that.
 
