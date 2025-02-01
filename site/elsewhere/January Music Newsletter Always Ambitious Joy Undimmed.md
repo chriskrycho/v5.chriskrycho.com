@@ -16,7 +16,7 @@ tags:
 
 As I do every month, I just published [an issue]({{link}}) of [my composing newsletter][n]. I do not link to it every month (perhaps I should? Feel free to send me an email in reply to this post and tell me one way or another!) but I make an exception for two cases:
 
-1. The first issue of the year seems a good time! I know I have a fair number of new readers here lately, 
+1. The first issue of the year seems a good time! I know I have a fair number of new readers here lately, who may be unaware of it.
 2. Issues where I am particular proud of the essay or where it shares something particularly important. This one goes under “particularly proud of the essay”.
 
 The teaser/hook for the top of the issue is:
