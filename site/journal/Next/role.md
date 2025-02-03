@@ -5,11 +5,16 @@ series:
     part: 1
 
 date: 2023-11-12T21:45:01-0700
-updated: 2024-01-12T16:35:00-0700
+updated: 2025-02-03T13:51:00-0700
 updates:
+    - at: 2025-02-03T13:51:00-0700
+      changes: >
+          Updated the conclusion a bit to be more flexible.
+
     - at: 2024-01-10T07:45:00-0700
       changes: >
           Added a clarifying note about what kinds of ratchets I have in view.
+
     - at: 2024-01-12T16:35:00-0700
       changes: >
           Added some details about how I might relate this next role to my past work with Ember.js.
@@ -66,19 +71,7 @@ This is why I care so much about [Rust](https://www.rust-lang.org). This is why 
 
 Ratchets are incremental improvements, not silver bullets. So was structured programming, though. A change does not have to be a silver bullet to be valuable. It just has to make for better software—and critically, better software that does not require you to be always at your best. Fewer `SEGFAULT`s and fewer vulnerabilities as a result of memory safety is good. Fewer cases of “`undefined` is not a function” is good. [Faster cycle times](https://v4.chriskrycho.com/2018/scales-of-feedback-time-in-software-development.html) on identifying and fixing bugs is good.
 
-So what I am doing next? Hopefully, making a ratchet—and teaching people how to use it, because that combination of craft and education is what I love most, and what I am best at.[^2]
-
-{% note %}
-
-What I have in mind is distinct from two other kinds of “ratchet-building” work:
-
-1. Many product companies are appropriately focused on dramatically raising the experience of people working in those other industries. This is good: Software can be a very powerful ratchet for other industries. Unless the target industry is is software development itself, though, it is not the kind of ratchet I have in mind.
-
-2. Lots of companies are quite rightly interested in ratcheting up their own developers’ experience. I find that extremely admirable, and in fact it is what I spent the past five years doing. Purely internal platform and engineering enablement work is also not the kind of ratchet I have in mind, though.
-
-There are many ways to build ratchets for the software industry, including—but not limited to—open source software. The key is that my aim is specifically (a) to improve the craft of software and (b) in ways that directly benefit whoever I work for *and* contribute to the software industry more generally.
-
-{% endnote %}
+So what I am doing next? Hopefully, building ratchets—and teaching people how to use them, because that combination of craft and education is what I love most, and what I am best at.[^2]
 
 If that’s the kind of thing you’re building—big company or startup, big idea or small-but-awesome—[say hello](mailto:hello@chriskrycho.com?subject=Ratchets)!
 
