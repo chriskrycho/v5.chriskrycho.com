@@ -25,6 +25,7 @@ import {
    toCollectionUrl,
    toRootCollection,
 } from './collection';
+import { roughWordCount } from './word-count';
 
 import yaml from 'js-yaml';
 
@@ -209,6 +210,7 @@ function config(config: Config): UserConfig {
    config.addFilter('isLive', (items: Item[]) => items.filter(isLive));
    config.addFilter('take', (items: Item[], count: number) => items.slice(0, count));
    config.addFilter('niceList', (s: string[]) => niceList(s).unwrapOr(''));
+   config.addFilter('roughWordCount', roughWordCount);
 
    config.addFilter('excerpt', (content: string) => {
       let safe = striptags(content);

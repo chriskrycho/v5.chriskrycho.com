@@ -1,6 +1,7 @@
 {%- macro meta(page, config, titleOverride) -%}
    {%- set pageTitle = titleOverride or page.data.title -%}
    {%- set title = pageTitle | siteTitle(config) | striptags(true) | safe -%}
+   {%- set justContent = page.templateContent | striptags(true) -%}
 
    {%- set image -%}
       {%- if page.data.image -%}
@@ -51,6 +52,8 @@
 
    <meta name="twitter:label1" content="Author" />
    <meta name="twitter:data1" content="Chris Krycho" />
+   <meta name="twitter:label2" content="Length" />
+   <meta name="twitter:data2" content="{{justContent | roughWordCount}}" />
 
    <meta property="og:title" content="{{title}}"/>
    <meta name="twitter:title" content="{{title}}"/>
@@ -67,7 +70,6 @@
       {%- set description = page.data.subtitle -%}
    {%- elif page.templateContent and page.templateContent.length > 0 -%}
       {%- set description -%}
-      {%- set justContent = page.templateContent | striptags(true) -%}
       {%- if justContent.length > 160 -%}
          {{ justContent | truncate(158) }}…
       {%- else -%}
