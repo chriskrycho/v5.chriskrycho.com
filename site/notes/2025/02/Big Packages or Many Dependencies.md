@@ -18,6 +18,10 @@ discuss:
     hn: https://news.ycombinator.com/item?id=42933942
     lobsters: https://lobste.rs/s/ou6ky6/big_packages_many_dependencies
 
+qualifiers:
+    audience: |
+        Software developers. The assumed *background* here is recurring debates across ecosystems like Rust, Python, JavaScript, etc.
+
 ---
 
 There is a fairly fundamental tension in a package ecosystem—
