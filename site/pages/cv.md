@@ -8,9 +8,10 @@ summary: >
 
 ---
 
-[My résumé][resume] has the short version. This page is the *long* version. Why? Because even the best résumés leave a lot to be desired: they lack context and narrative. If you’d like a better idea of how I work, I think you’ll find the rest of this page a lot more helpful.
+[My résumé][resume] has the short version, and [my GitHub profile][github] paints a good picture of my work. This page is a *narrative* version. Why? Because even the best résumés leave a lot to be desired: they lack context and interpretation. If you’d like a really good idea of how I work, I think you’ll this page helpful.
 
 [resume]: https://cdn.chriskrycho.com/resume.pdf
+[github]: https://github.com/chriskrycho
 
 Interested in working with me? Take a look at [the services I offer][services] or feel free to [say hello][email]!
 
