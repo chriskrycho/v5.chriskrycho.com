@@ -4,6 +4,7 @@ subtitle: >
     I have never seen these documented, but they are useful!
 
 date: 2025-02-03T20:12:00-0700
+updated: 2025-02-03T21:16:00-0700
 
 image:
     cdn: twitter-meta-tags.png
@@ -25,10 +26,10 @@ Today I learned about the `twitter:label` and `twitter:data` meta tags. They’r
 They are numbered and go in a pair. For example, for the author and post length info in the screenshot above, I supply these tags:
 
 ```html
-<meta content="twitter:label1" content="Author" />
-<meta content="twitter:data1" content="Chris Krycho" />
-<meta content="twitter:label2" content="Length" />
-<meta content="twitter:data2" content="About 4,000 words" />
+<meta name="twitter:label1" content="Author" />
+<meta name="twitter:data1" content="Chris Krycho" />
+<meta name="twitter:label2" content="Length" />
+<meta name="twitter:data2" content="About 4,000 words" />
 ```
 
 Note the `1` and `2` in the two pairs. Does this extend out to more? Maybe! I have no idea, actually! The only documentation I have found for it is [on this third-party site](https://zhead.dev/meta/), which has as a top-level bullet point describing the site “⚡ 101+ Meta Tags many which have difficult to find documentation.” Sounds about right.
