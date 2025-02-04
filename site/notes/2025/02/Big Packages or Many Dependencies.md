@@ -14,6 +14,10 @@ date: 2025-02-04T08:45:00-0700
 tags:
     - software development
 
+discuss:
+    hn: https://news.ycombinator.com/item?id=42933942
+    lobsters: https://lobste.rs/s/ou6ky6/big_packages_many_dependencies
+
 ---
 
 There is a fairly fundamental tension in a package ecosystem—
