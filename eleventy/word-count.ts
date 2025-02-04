@@ -12,9 +12,5 @@ function round(n: number): number {
       return Math.round(n / 10) * 10;
    }
 
-   if (n < 1000) {
-      return Math.round(n / 50) * 50;
-   }
-
-   return Math.round(n / 500) * 500;
+   return Math.round(n / 50) * 50;
 }
