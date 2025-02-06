@@ -1,5 +1,5 @@
 ---
-title: Today I Learned: Redirect Emails
+title: "Today I Learned: Redirect Emails"
 subtitle: Available in Mac Mail.app and a few other clients.
 
 date: 2025-02-05T21:00:00-0700
