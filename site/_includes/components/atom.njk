@@ -169,9 +169,9 @@
             {%- endfor -%}
             {%- set image -%}
             {%- if item.data.book and item.data.book.cover -%}
-               {{-item.data.book.cover | safe-}}
+               {{-item.data.book.cover | resolvedImage | safe-}}
             {%- elif item.data.image -%}
-               {{-item.image | safe-}}
+               {{-item.image | resolvedImage | safe-}}
             {%- endif -%}
             {%- endset -%}
             {%- if image -%}
