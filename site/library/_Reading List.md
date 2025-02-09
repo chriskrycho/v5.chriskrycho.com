@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-02-06T20:40:00-0700
+modified: 2025-02-09T14:39:00-0700
 
 ---
 
@@ -60,7 +60,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
-- [<cite>Shattered Sword: The Untold Story of the Battle of Midway</cite>](https://bookshop.org/a/21126/9781574889246), Jonathan Parshall and Anthony Tully (new)
+- [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
+- [<cite>Status and Culture: How Our Desire for Social Rank Creates Taste, Identity, Art, Fashion, and Constant Change</cite>](https://bookshop.org/a/21126/9780593296707), W. David Marx (new)
 
 
 ### Fiction
@@ -584,6 +585,10 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Functional Programming in Lean</cite>](https://lean-lang.org/functional_programming_in_lean/title.html), David Thrane Christiansen (new)
 
     This is great, and I worked through about half of it, but then it was time to focus on finding a job, and that meant minimizing outside projects.
+
+- [<cite>Shattered Sword: The Untold Story of the Battle of Midway</cite>](https://bookshop.org/a/21126/9781574889246), Jonathan Parshall and Anthony Tully (new)
+
+    I liked the first chapter of it, and I might return to it, but probably in ebook or paper book form, rather than audiobook.
 
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
