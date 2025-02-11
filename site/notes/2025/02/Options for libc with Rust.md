@@ -27,7 +27,7 @@ thanks: |
 
 - Match the build <abbr title="operating system">OS</abbr> to the target <abbr title="operating system">OS</abbr> so. Variants of this:
 
-    - Get a build machine set up with whatever <abbr title="operating system">OS</abbr> you are using. On GitHub Actions, this might mean specifying (e.g.) `ubuntu-20.04` if that's what your project actually runs on (using `ubuntu-latest` is a recipe for breaking), or at least a version of Linux at least as old as
+    - Get a build machine set up with whatever <abbr title="operating system">OS</abbr> you are using. On GitHub Actions, this might mean specifying (e.g.) `ubuntu-20.04` if that's what your project actually runs on (using `ubuntu-latest` is a recipe for breaking), or at least a version of Linux at least as old as the version on your target machine.
 
     - Use [cross][cross] to cross-compile to a given target. This uses Docker under the hood, which makes it relatively straightforward to use… but also requires installing Docker, so it’s not *small* by any means.
 
