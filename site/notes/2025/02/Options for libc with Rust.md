@@ -3,6 +3,7 @@ title: Options for `libc` with Rust
 subtitle: Summarizing a bunch of good social media responses in one place.
 
 date: 2025-02-10T16:31:00
+updated: 2025-02-11T08:50:00
 
 qualifiers:
     audience: |
@@ -16,7 +17,7 @@ image:
 
 thanks: |
     All the folks who responded to my threads on [Bluesky][b] and [Mastodon][m].
-    
+
     [b]: https://bsky.app/profile/chriskrycho.com/post/3lhrszf46l22q
     [m]: https://mastodon.social/@chriskrycho/113976612382848867
 
@@ -26,13 +27,13 @@ thanks: |
 
 - Match the build <abbr title="operating system">OS</abbr> to the target <abbr title="operating system">OS</abbr> so. Variants of this:
 
-    - Get a build machine set up with whatever <abbr title="operating system">OS</abbr> you are using. On GitHub Actions, this might mean specifying (e.g.) `ubuntu-20.04` if that's what your project actually runs on (using `ubuntu-latest`) is a 
+    - Get a build machine set up with whatever <abbr title="operating system">OS</abbr> you are using. On GitHub Actions, this might mean specifying (e.g.) `ubuntu-20.04` if that's what your project actually runs on (using `ubuntu-latest` is a recipe for breaking), or at least a version of Linux at least as old as
 
-    - Use [cross][cross] to cross-compile to a given target. This uses Docker under the hood, which makes it relatively 
+    - Use [cross][cross] to cross-compile to a given target. This uses Docker under the hood, which makes it relatively straightforward to use… but also requires installing Docker, so it’s not *small* by any means.
 
-    - Build and deploy a dedicated Docker image with the required bits. This is sort of a variant on the previous item.
+    - Build and deploy a dedicated Docker image with the required bits. This is sort of a variant on the previous item. It involves getting thoroughly into the weeds with Docker, but also means you have total control.
 
-- Use [cargo-zigbuild][cz] to use Zig as the linker for the project and then specify the exact glibc version you want.
+- Use [cargo-zigbuild][cz] to use Zig as the linker for the project and then specify the exact glibc version you want.[^zig]
 
 - Manually pick your glibc at runtime, if you control how it is loaded. [(Whoa!)](https://mastodon.social/@robo9k/113978557733917996)
 
@@ -41,3 +42,5 @@ For the little project that motivated the question, I’m debating between actua
 [musl]: https://musl.libc.org
 [cross]: https://github.com/cross-rs/cross
 [cz]: https://github.com/rust-cross/cargo-zigbuild
+
+[^zig]: I hypothesize that all the good stuff Zig is doing around linking and libc may end up being its most significant contribution long-term!
