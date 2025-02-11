@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-02-09T14:39:00-0700
+modified: 2025-02-10T18:08:00-0700
 
 ---
 
@@ -58,7 +58,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
-- [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
 - [<cite>Status and Culture: How Our Desire for Social Rank Creates Taste, Identity, Art, Fashion, and Constant Change</cite>](https://bookshop.org/a/21126/9780593296707), W. David Marx (new)
@@ -90,7 +89,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Tidy First?</cite>](https://bookshop.org/a/21126/9781098151249), Kent Beck (new)
     - [review](https://v5.chriskrycho.com/library/tidy-first/)
 - [<cite>The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure</cite>](https://bookshop.org/a/21126/9780735224902), Greg Lukianoff and Jonathan Haidt (new)
+- [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 
+ 
 ### Fiction
 
 - [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
