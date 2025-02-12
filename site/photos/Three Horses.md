@@ -2,7 +2,7 @@
 title: Three Horses
 
 image:
-    cdn: 2025/three-horses.jpg
+    cdn: 2025/three-horses-thumb.jpg
 
 date: 2025-02-12T13:30:00-0700
 
