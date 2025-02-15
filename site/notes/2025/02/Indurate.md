@@ -1,6 +1,6 @@
 ---
 title: Indurate
-subtitle: A lovely, too-little used word.
+subtitle: A lovely, too-little-used word.
 
 date: 2025-02-14T18:55:00-0700
 
