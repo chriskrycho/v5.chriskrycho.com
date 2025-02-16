@@ -6,6 +6,9 @@ summary: >
 
 date: 2025-02-15T16:39:00-0700
 
+image:
+    cdn: 30km-run.png
+
 tags:
     - running
     - composing
