@@ -8,6 +8,9 @@ date: 2025-02-17T19:35:00-0700
 summary: >
   If you see inscrutable errors about handlers not implementing required traits, check that their return types implement `IntoResponse`!
 
+image:
+  cdn: trait-bounds.png
+
 tags:
   - software development
   - Rust
