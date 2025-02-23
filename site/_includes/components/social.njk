@@ -9,8 +9,7 @@
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover | resolvedImage}}
       {%- elif pageTitle -%}
-         {%- set fullTitle = pageTitle + " – Sympolymathesy, by Chris Krycho" -%}
-         https://cdn.statically.io/og/theme=dark/{{fullTitle | striptags(true) | urlencode}}.png
+         https://opengraph.chriskrycho.com/?page_title={{pageTitle | striptags(true) | urlencode}}.png
       {%- else -%}
          https://cdn.chriskrycho.com/images/sympolymathesy-social.png
       {%- endif -%}
