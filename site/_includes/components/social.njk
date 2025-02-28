@@ -9,7 +9,7 @@
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover | resolvedImage}}
       {%- elif pageTitle -%}
-         https://opengraph.chriskrycho.com/{{pageTitle | striptags(true) | urlencode}}
+         https://opengraph.chriskrycho.com/page-title/{{pageTitle | striptags(true) | urlencode}}
       {%- else -%}
          https://cdn.chriskrycho.com/images/sympolymathesy-social.png
       {%- endif -%}
