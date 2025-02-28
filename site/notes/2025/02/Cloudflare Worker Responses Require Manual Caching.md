@@ -32,7 +32,7 @@ It was a whopping six lines of code to add, thankfully:
 
 ```rust
 let cache = Cache::default();
-let cache_key = request.uri().to_string());
+let cache_key = request.uri().to_string();
 if let Some(resp) = cache.get(&cache_key, false).await? {
     return Ok(resp);
 }
