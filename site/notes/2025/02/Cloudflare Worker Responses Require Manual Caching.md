@@ -39,7 +39,7 @@ if let Some(resp) = cache.get(&cache_key, false).await? {
 
 // Check B2 and rebuild the social media image if need be…
 
-cache.put(&cache_key, response.cloned()?).await?;
+cache.put(&cache_key, response).await?;
 ```
 
 Thenceforth everything Just Worked™ the way I expected it to in the first place!
