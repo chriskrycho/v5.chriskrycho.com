@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-02-23T16:16:00-0700
+modified: 2025-03-01T11:17:00-0700
 
 ---
 
@@ -90,6 +90,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure</cite>](https://bookshop.org/a/21126/9780735224902), Greg Lukianoff and Jonathan Haidt (new)
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 - [<cite>Status and Culture: How Our Desire for Social Rank Creates Taste, Identity, Art, Fashion, and Constant Change</cite>](https://bookshop.org/a/21126/9780593296707), W. David Marx (new)
+- [<cite>The Tech-Wise Family: Everyday Steps for Putting Technology in Its Proper Place</cite>](https://bookshop.org/a/21126/9780801018664), Andy Crouch (new)
  
 
 ### Fiction
