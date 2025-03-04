@@ -7,7 +7,7 @@ qualifiers:
     People working with (or thinking about working with) large language models for code generation.
 
 date: 2025-03-04T09:00:00-0700
-updated: 2025-03-04T14:58:00-0700
+updated: 2025-03-04T15:00:00-0700
 
 tags:
   - software development
@@ -57,7 +57,7 @@ If we grant that these tools can be useful to professionals—again, an argument
 
 ---
 
-I alluded to this in a link earlier, but I think it’s worth bringing back up more explicitly here: [my StaffPlus New York talk][spny] last fall hammers on just why you also ought to be a bit more skeptical about Willison’s advice about code review as well as about <abbr>LLM</abbr>s more generally as part of a *code-authoring* workflow. And again: this without implying they can never be useful or are always wholly bad; but at a minimum to say that the skepticism bar ought to be much higher and we need to think a lot harder about exactly the kinds limitations the non-rant parts of Willison’s post acknowledges!
+I alluded to this in a link earlier, but I think it’s worth bringing back up more explicitly here: [the talk I gave at StaffPlus New York last autumn][spny] explains why you also ought to be a bit more skeptical about Willison’s advice about code review as well as about <abbr>LLM</abbr>s more generally as part of a *code-authoring* workflow. And again: this without implying they can never be useful or are always wholly bad; but at a minimum to say that the skepticism bar ought to be much higher and we need to think a lot harder about exactly the kinds limitations the non-rant parts of Willison’s post acknowledges!
 
 
 
