@@ -1,12 +1,13 @@
 ---
 title: Yes, Hallucinations are the “Least Dangerous”—*Exactly*
-subtitle: A rejoinder to Simon Willison
+subtitle: A rejoinder to Simon Willison’s rant last week.
 
 qualifiers:
   audience: |
     People working with (or thinking about working with) large language models for code generation.
 
 date: 2025-03-04T09:00:00-0700
+updated: 2025-03-04T14:58:00-0700
 
 tags:
   - software development
@@ -22,7 +23,7 @@ Last week, Simon Willison published a blog post that stuck in my craw: [Hallucin
 >
 > The real risk from using LLMs for code is that they’ll make mistakes that *aren’t* instantly caught by the language compiler or interpreter. And these happen *all the time!*
 
-and again:
+And again:
 
 > LLM code will usually look fantastic: good variable names, convincing comments, clear type annotations and a logical structure. This can lull you into a false sense of security, in the same way that a gramatically correct and confident answer from ChatGPT might tempt you to skip fact checking or applying a skeptical eye.
 >
@@ -36,7 +37,7 @@ But then…
 >
 > Those people are loudly declaring that they have under-invested in the crucial skills of reading, understanding and reviewing code written by other people. I suggest getting some more practice in. Reviewing code written for you by LLMs is a great way to do that.
 
-Okay, let’s grant all of that for the sake of argument. There are [significant reasons][spny] to be skeptical about other claims in Willison’s post, not least that “hallucination” is itself misleading in that it suggests the model is doing something different when it gets things wrong than when it gets things right—it is not!—, but I am leaving those aside here to make a different point:
+Okay, let’s grant all of that for the sake of argument. There are [significant reasons][spny] to be skeptical about other claims in Willison’s post,[^reasons] but I am leaving those aside here to make a different point:
 
 [spny]: https://v5.chriskrycho.com/elsewhere/substrate-engineering/
 
@@ -57,3 +58,7 @@ If we grant that these tools can be useful to professionals—again, an argument
 ---
 
 I alluded to this in a link earlier, but I think it’s worth bringing back up more explicitly here: [my StaffPlus New York talk][spny] last fall hammers on just why you also ought to be a bit more skeptical about Willison’s advice about code review as well as about <abbr>LLM</abbr>s more generally as part of a *code-authoring* workflow. And again: this without implying they can never be useful or are always wholly bad; but at a minimum to say that the skepticism bar ought to be much higher and we need to think a lot harder about exactly the kinds limitations the non-rant parts of Willison’s post acknowledges!
+
+
+
+[^reasons]: Not least that “hallucination” is a horribly misleading term. It suggests that a large language model is doing something different when it gets things wrong than when it gets things right—but it is not!
