@@ -8,6 +8,10 @@ updates:
   - at: 2025-03-11T09:21:00-0600
     changes: Added some footnotes and deployed `<abbr>` a few places.
 
+qualifiers:
+  audience: |
+    Folks who use TypeScript—and especially those with an eye to extensions and integrations with TypeScript.
+
 summary: >
     The TypeScript team is rewriting the compiler for speed. This is great! But they chose Go. That’s… weird. Really, really weird.
 
