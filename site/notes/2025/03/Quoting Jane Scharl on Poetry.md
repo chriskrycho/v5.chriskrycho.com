@@ -2,7 +2,7 @@
 title: "Quoting Jane Scharl on <cite>Poetry</cite> Magazine"
 subtitle: Art is not a mere tool for other things.
 
-date: 2025-03-11T14:35:00-0700
+date: 2025-03-11T14:35:00-0600
 
 link: https://wordhoard.substack.com/p/some-observations-on-poetry
 
