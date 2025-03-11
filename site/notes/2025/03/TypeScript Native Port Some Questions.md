@@ -3,10 +3,12 @@ title: "TypeScript Native Port: Some Questions"
 subtitle: Faster is good! The rest of this announcement is… strange.
 
 date: 2025-03-11T09:02:00-0600
-updated: 2025-03-11T09:21:00-0600
+updated: 2025-03-11T09:45:00-0600
 updates:
   - at: 2025-03-11T09:21:00-0600
     changes: Added some footnotes and deployed `<abbr>` a few places.
+  - at: 2025-03-11T09:45:00-0600
+    changes: Added a hypothesis about why the team chose this direction.
 
 qualifiers:
   audience: |
@@ -35,6 +37,11 @@ Some questions that immediately come to mind, however:
 3. **Will this at least come with a native Language Server Protocol implementation?** Some of the above factors could be mitigated by this, and it has been one of the longest-standing challenges for folks looking to integrate.
 
 Suffice it to say I’ll be tuning into the <abbr title="ask me anything">AMA</abbr> later this week on the <abbr>TS</abbr> Discord with considerable curiosity.
+
+---
+
+*Edit, 2025-03-11 09:45am:* A hypothesis about why the team chose this (zero inside info, just a guess): they could *port* to Go, keeping the overall architecture basically unchanged for this initial work. Moving to something like Rust would have been a *rewrite*. I would guess a Rust rewrite would have forced them to revisit their architecture—in many cases significantly so. “Garbage collection or not?” ends up being a really big deal in terms of how your program can naturally be structured.
+
 
 [^jsx]: Because the <abbr>TS</abbr> team built in native support for <span class="all-smcp">JSX</span> and provided no extensibility for parsing, so everybody who had a different templating layer had to build their own—including Vue, Svelte, Angular, and Ember.
 
