@@ -2,7 +2,7 @@
 title: "TypeScript Native Port: Some Questions"
 subtitle: Faster is good! The rest of this announcement is… strange.
 
-date: 2025-03-11T09:02:00-0700
+date: 2025-03-11T09:02:00-0600
 
 summary: >
     The TypeScript team is rewriting the compiler for speed. This is great! But they chose Go. That’s… weird. Really, really weird.
