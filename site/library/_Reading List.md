@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-03-01T11:17:00-0700
+modified: 2025-03-24T15:10:00-0600
 
 ---
 
@@ -60,12 +60,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
+- [<cite>Run Faster from the 5K to the Marathon: How to Be Your Own Best Coach</cite>](https://bookshop.org/a/21126/9780767930208), Brad Hudson and Matt Fitzgerald (new)
+- [<cite>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</cite>](https://bookshop.org/a/21126/9780593655030), Jonathan Haidt (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
-- [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—reading alongside my 12-year-old daughter!)
 - [<cite>Stories of Your Life and Others</cite>](https://bookshop.org/a/21126/9781101972120), Ted Chiang (new)
 
 
@@ -91,11 +92,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
 - [<cite>Status and Culture: How Our Desire for Social Rank Creates Taste, Identity, Art, Fashion, and Constant Change</cite>](https://bookshop.org/a/21126/9780593296707), W. David Marx (new)
 - [<cite>The Tech-Wise Family: Everyday Steps for Putting Technology in Its Proper Place</cite>](https://bookshop.org/a/21126/9780801018664), Andy Crouch (new)
- 
+- [<cite>Not the End of the World:How We Can Be the First Generation to Build a Sustainable Planet</cite>](https://bookshop.org/a/21126/9780316536752), Hannah Ritchie (new)
+
 
 ### Fiction
 
 - [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
+- [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—read alongside my 12-year-old daughter!)
 
 
 ## 2024
