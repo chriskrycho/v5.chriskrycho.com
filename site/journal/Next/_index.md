@@ -10,7 +10,6 @@ tags:
     - LinkedIn
 summary:
     After almost 5 years, I left LinkedIn in early October, and am off on a 3-month sabbatical—before diving into something new in early 2024!
-featured: true
 
 ---
 
