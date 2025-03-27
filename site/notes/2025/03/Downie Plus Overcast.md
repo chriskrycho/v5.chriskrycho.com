@@ -15,9 +15,10 @@ qualifiers:
 
 For years, I have used the command-line utility `yt-dlp` (previously `youtube-dl`) to download video from various sources (not just YouTube!) as audio streams [^dl] that I then upload using [Overcast][o]’s Uploads feature. This lets me listen to a lot of material otherwise only available in video form—and it turns out that many videos make for perfectly good audio content, especially if the presenter does a good job of making the video “channel” a kind of [progressive enhancement][pe] to the “audio” channel—whether intentionally or otherwise! For example, many good conference talks fit this bill quite nicely.
 
-This is one of Overcast’s few premium features, but I use it so much that this feature alone would be enough to get me to pay the $15/year subscription—never mind the developer’s consistent work to keep it fresh and powerful and even, a decade into its life, adding new features.
-
 [o]: https://overcast.fm/
+[pe]: https://v5.chriskrycho.com/journal/progressively-enhanced-talks/
+
+This is one of Overcast’s few premium features, but I use it so much that this feature alone would be enough to get me to pay the $15/year subscription—never mind the developer’s consistent work to keep it fresh and powerful and even, a decade into its life, adding new features.
 
 Recently, I discovered the excellent [Downie][d] app, which does the same thing `yt-dlp` does but in a far, *far* less fussy way. You open a webpage with a video on it in Safari with the Downie extension enabled, or in Downie’s built-in browser view (more on this in a moment), and simply choose what to download:
 
