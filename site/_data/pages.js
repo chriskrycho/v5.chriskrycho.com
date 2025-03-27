@@ -1,10 +1,8 @@
 module.exports = [
-   { type: 'page', title: 'Services', url: '/services/' },
-   { type: 'page', title: 'Speaking', url: '/speaking/' },
-   { type: 'separator' },
    { type: 'page', title: 'About', url: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', url: '/cv/' },
    { type: 'page', title: 'Follow / Connect', url: '/follow/' },
+   { type: 'page', title: 'Speaking', url: '/speaking/' },
    { type: 'separator' },
    { type: 'page', title: 'Essays', url: '/essays/' },
    { type: 'page', title: 'Journal', url: '/journal/' },
