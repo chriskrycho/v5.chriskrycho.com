@@ -1,6 +1,5 @@
 module.exports = [
    { type: 'page', title: 'About', url: '/about/' },
-   { type: 'page', title: 'Follow / Connect', url: '/follow/' },
    { type: 'separator' },
    { type: 'page', title: 'Essays', url: '/essays/' },
    { type: 'page', title: 'Journal', url: '/journal/' },
@@ -12,6 +11,8 @@ module.exports = [
    { type: 'page', title: 'Photos', url: '/photos/' },
    { type: 'separator' },
    { type: 'page', title: 'Archive', url: '/archive/' },
+   { type: 'page', title: 'Follow / Connect', url: '/follow/' },
+   { type: 'separator' },
    { type: 'page', title: 'Curriculum Vitae', url: '/cv/' },
    { type: 'page', title: 'Colophon', url: '/colophon/' },
 ];
