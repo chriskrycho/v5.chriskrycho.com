@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-03-28T20:55:00-0600
+modified: 2025-03-31T18:38:00-0600
 
 ---
 
@@ -60,7 +60,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
-- [<cite>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</cite>](https://bookshop.org/a/21126/9780593655030), Jonathan Haidt (new)
+- [Lifting the Veil: Imagination and the Kingdom of God](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
 
 
 ### Fiction
@@ -93,6 +93,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Tech-Wise Family: Everyday Steps for Putting Technology in Its Proper Place</cite>](https://bookshop.org/a/21126/9780801018664), Andy Crouch (new)
 - [<cite>Not the End of the World:How We Can Be the First Generation to Build a Sustainable Planet</cite>](https://bookshop.org/a/21126/9780316536752), Hannah Ritchie (new)
 - [<cite>Run Faster from the 5K to the Marathon: How to Be Your Own Best Coach</cite>](https://bookshop.org/a/21126/9780767930208), Brad Hudson and Matt Fitzgerald (new)
+- [<cite>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</cite>](https://bookshop.org/a/21126/9780593655030), Jonathan Haidt (new)
 
 
 ### Fiction
