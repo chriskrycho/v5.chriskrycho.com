@@ -8,9 +8,15 @@ qualifiers:
     Other programmers; assumes you know the basics of how JavaScript and other langauges’ modules work.
 
 date: 2025-04-02T11:58:00-0600
+updated: 2025-04-02T16:50:00-0600
 updates:
+  - at: 2025-04-02T16:50:00-0600
+    changes: |
+      Adding a note about Node’s convention, and cleaning up some incoherence earlier in the post.
+
   - at: 2025-04-02T13:05:00-0600
-    changes: Fixing a variety of typos and incomplete thoughts.
+    changes: |
+      Fixing a variety of typos and incomplete thoughts.
 
 ---
 
@@ -68,7 +74,7 @@ And if you try to *run* it, JavaScript will produce the same kind of error at ru
 
 > SyntaxError: Identifier 'Foo' has already been declared
 
-The actual motivating example for this feeling of frustrating, the `Task` type in True Myth, we supply a bunch of functions with names that are nice to use hanging off the namespace: `Task.withRetries`, for example. `withRetries` does not read particularly well alone. Here is a real example from the docs I have been writing:
+The actual motivating example for this feeling of frustration was working on documentation for the `Task` type in True Myth. We supply a bunch of functions with names that are nice to use hanging off the namespace: `Task.withRetries`, for example. `withRetries` does not read particularly well alone. Here is a real example from the docs I have been writing, using just named imports:
 
 ```ts
 import { withRetries, fromPromise } from 'true-myth/task';
@@ -117,11 +123,11 @@ let someFoo = new Foo(true);
 console.log(FooNS.helpWith(someFoo));
 ```
 
-`FooNS` (or `TaskNS`!) is, once again, just kind of gross.
+`FooNS` (or `TaskNS`!) is, once again, just kind of gross, though.
 
 I was just stumped and frustrated. There doesn’t seem to be a great way to do this.
 
-And then I thought about how I would do it in Rust. It would look something like this:
+And then I thought about how I would do it in Rust. It would look something like this (not bothering to show the definition of the `foo` module):
 
 ```rust
 mod foo;
@@ -134,9 +140,9 @@ fn main() {
 }
 ```
 
-Rust has the same restriction that a module is a kind of value, so it could not be `mod Foo` and `use Foo::Foo`. The details are different in some ways from JavaScript, but it comes out to the same thing. But it doesn’t matter, because modules are always lowercase in Rust: `foo`, not `Foo`. So you can import `Foo` and still use `foo` and there is no naming conflict.
+Rust has the same restriction that a module is a kind of value, so it could not be `mod Foo` and `use Foo::Foo`. The details are different in some ways from JavaScript, but it comes out to the same thing. But it doesn’t matter, because modules are always named in lowercase in Rust: `foo`, not `Foo`. So you can import `Foo` and still use `foo` and there is no naming conflict.
 
-Modules in JavaScript are just values—frozen values, but ultimately values like any other. So… why not use the Rust idiom in naming them? From the opening example:
+And then I thought: modules in JavaScript are just values—frozen values, but ultimately values like any other. So… why not use the Rust idiom in naming them, which matches how we name variables in JavaScript and TypeScript in general? From the opening example:
 
 ```ts
 import Foo, * as foo from './foo.js';
@@ -170,3 +176,13 @@ This is actually just really nice. I think it would make a great convention. It 
 I think [the next version][pr] of True Myth’s docs are going to use this exact pattern, and I encourage you to try it out as well! Lowercase your namespaces!
 
 [pr]: https://github.com/true-myth/true-myth/pull/989
+
+---
+
+*Edit (2025-04-02):* It occurred to me after publishing this that there is also good precedent for this in the JavaScript ecosystem: This is how we import Node modules by convention:
+
+```ts
+import fs from 'node:fs';
+```
+
+I didn’t initially think about that because (a) I was thinking about namespace-style imports, not default imports like this, and (b) I have far more commonly seen the capitalized form when used with namespace-style imports. But the Node convention is the “right” one here, I think. Notably, the default exports for Node’s standard library (e.g. `node:fs` above) are just exporting the whole namespace as well.
