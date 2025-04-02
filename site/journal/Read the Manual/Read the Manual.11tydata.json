@@ -3,6 +3,6 @@
    "permalink": "/journal/read-the-manual/{{tool | slug}}/index.html",
    "tags": ["software development", "command line tools"],
    "qualifiers": {
-     "audience": "People interested in learning how the command lines tools on their computer work."
+      "audience": "People interested in learning how the command lines tools on their computer work."
    }
 }

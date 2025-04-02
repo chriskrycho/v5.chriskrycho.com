@@ -1,12 +1,12 @@
 {
-  "actions" : {
-    "clean" : {
-      "enabled" : true,
-      "script" : "yarn clean"
-    },
-    "run" : {
-      "enabled" : true,
-      "script" : "yarn serve"
-    }
-  }
+   "actions": {
+      "clean": {
+         "enabled": true,
+         "script": "yarn clean"
+      },
+      "run": {
+         "enabled": true,
+         "script": "yarn serve"
+      }
+   }
 }

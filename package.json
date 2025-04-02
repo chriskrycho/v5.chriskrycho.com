@@ -13,6 +13,7 @@
    "packageManager": "pnpm@9.4.0",
    "devDependencies": {
       "@11ty/eleventy": "^2.0.1",
+      "@biomejs/biome": "1.9.4",
       "@rollup/plugin-node-resolve": "^15.3.0",
       "@rollup/plugin-strip": "^3.0.4",
       "@rollup/plugin-terser": "^0.4.4",
@@ -43,7 +44,6 @@
       "markdown-it-implicit-figures": "^0.10.0",
       "markdown-it-mark": "^3.0.1",
       "markdown-it-sup": "^1.0.0",
-      "prettier": "^2.8.8",
       "rollup": "^3.29.5",
       "sass": "^1.81.0",
       "striptags": "^3.2.0",
@@ -53,12 +53,6 @@
       "typescript": "^5.6.3",
       "typeset": "^0.3.4",
       "uslug": "^1.0.4"
-   },
-   "prettier": {
-      "singleQuote": true,
-      "printWidth": 90,
-      "trailingComma": "all",
-      "tabWidth": 3
    },
    "scripts": {
       "build:styles": "gulp all",

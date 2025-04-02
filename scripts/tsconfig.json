@@ -1,5 +1,5 @@
 {
-   "extends": "../base.tsconfig.json",
+   "extends": "../base.tsconfig.jsonc",
    "compilerOptions": {
       "removeComments": true,
       "lib": ["dom", "es2019"],

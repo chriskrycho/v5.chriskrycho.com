@@ -37,7 +37,10 @@ import { preparseYaml } from './preparse';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
-const not: Not = (fn) => (...args) => !fn(...args);
+const not: Not =
+   (fn) =>
+   (...args) =>
+      !fn(...args);
 
 type Filter = <T>(pred: (t: T) => boolean) => (values: T[]) => T[];
 const filter: Filter = (pred) => (values) => values.filter(pred);
