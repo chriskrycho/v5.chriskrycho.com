@@ -156,7 +156,7 @@ let customTimeout = (ms: number) =>
 let fetcher = () =>
   task.race([
     task.fromPromise(fetch('https://true-myth.js.org')),
-    task.timer(1_000),
+    customTimeout(1_000),
   ]);
 
 let fetchTask = task.withRetries(fetcher, delay.exponential().take(10));
