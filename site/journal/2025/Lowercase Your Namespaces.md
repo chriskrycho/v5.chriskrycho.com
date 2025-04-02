@@ -8,6 +8,9 @@ qualifiers:
     Other programmers; assumes you know the basics of how JavaScript and other langauges’ modules work.
 
 date: 2025-04-02T11:58:00-0600
+updates:
+  - at: 2025-04-02T13:05:00-0600
+    changes: Fixing a variety of typos and incomplete thoughts.
 
 ---
 
@@ -131,9 +134,9 @@ fn main() {
 }
 ```
 
-Rust has the same restriction that a module is a kind of value, so it could not be `mod Foo` and `use Foo::Foo`. The details are different in some ways from JavaScript, but it comes out to the same thing. But it doesn’t matter, because modules are always lowercase in Rust: `foo`, not `Foo`. So you can
+Rust has the same restriction that a module is a kind of value, so it could not be `mod Foo` and `use Foo::Foo`. The details are different in some ways from JavaScript, but it comes out to the same thing. But it doesn’t matter, because modules are always lowercase in Rust: `foo`, not `Foo`. So you can import `Foo` and still use `foo` and there is no naming conflict.
 
-Modules are just values—frozen values, but value. So… why not use the Rust idiom? From the opening example:
+Modules in JavaScript are just values—frozen values, but ultimately values like ang othet. So… why not use the Rust idiom in naming them? From the opening example:
 
 ```ts
 import Foo, * as foo from './foo.js';
