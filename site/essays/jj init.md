@@ -10,6 +10,8 @@ qualifiers:
 summary: >
   Jujutsu (`jj`) is a new version control system from a software developer at Google. I have been using it full time for 6 months. Here’s why you should switch, too.
 
+featured: true
+  
 thanks: >
   [Waleed Khan (@arxanas)](https://github.com/arxanas), [Joy Reynolds (@joyously)](https://github.com/joyously), and [Isabella Basso (@isinyaaa)](https://github.com/isinyaaa) all took time to read and comment on earlier drafts of this mammoth essay, and it is substantially better for their feedback!
 

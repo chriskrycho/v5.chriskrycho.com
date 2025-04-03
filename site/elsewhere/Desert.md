@@ -22,8 +22,6 @@ image: https://cdn.chriskrycho.com/images/the-desert-splash.jpg
 summary: >
     A new work for solo piano. Less John Williams, more Arvo Pärt. Give it a listen!
 
-featured: true
-
 ---
 
 I am delighted to announce that you can listen to a new piece of music I wrote: The Desert, for solo piano:
