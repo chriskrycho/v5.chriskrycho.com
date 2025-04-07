@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-03-31T18:38:00-0600
+modified: 2025-04-06T18:20:00-0600
 
 ---
 
@@ -60,7 +60,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
-- [Lifting the Veil: Imagination and the Kingdom of God](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
+- [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
+- [<cite>Colonialism: A Moral Reckoning](https://bookshop.org/a/21126/9780008511630), Nigel Biggar (new)
 
 
 ### Fiction
