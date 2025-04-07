@@ -8,21 +8,24 @@ summary: >
 
 ---
 
+The [About](/about/) page has the personal details; this is the deep dive on my professional background.
+
+{% note %}
+
+I’m not currently on the market, but I’m always happy to connect for the future.
+
+{% endnote %}
+
 [My résumé][resume] has the short version, and [my GitHub profile][github] paints a good picture of my work. This page is a *narrative* version. Why? Because even the best résumés leave a lot to be desired: they lack context and interpretation. If you’d like a really good idea of how I work, I think you’ll this page helpful.
 
 [resume]: https://cdn.chriskrycho.com/resume.pdf
 [github]: https://github.com/chriskrycho
 
-Interested in working with me? Take a look at [the services I offer][services] or feel free to [say hello][email]!
-
-[services]: /services
-[email]: mailto:hello@chriskrycho.com?subject=Read%20your%20CV
-
 - [<i>About Me</i>](#about-me)
     - [Philosophy: Ratchets, Not Levers](#philosophy-ratchets-not-levers)
     - [Education](#education)
 - [<i>Work</i>](#work)—not just where I’ve worked and the tech I used, but what I brought to the table and the difference I made:
-    - [2024: Writing and Consulting](#2024-writing-and-consulting)
+    - [2024–2025: Writing and Consulting](#2024-writing-and-consulting)
     - [2023–2024: Mini-Sabbatical](#2023-2024-mini-sabbatical)
     - [2019–2023: LinkedIn](#2019-2023-linkedin)
     - [2016–2018: Olo](#2016-2018-olo)
@@ -78,9 +81,13 @@ Ratchets are incremental improvements, not silver bullets. So was structured pro
 
 ## Work
 
-### 2024: Writing and Consulting
+### 2025: Something new!
 
-Starting in March 2024, I have been working as an independent consultant (you can [hire me!][services]). A few notable engagements:
+I’m currently (as of early April 2025) juuuust about to start something new. Keep your eyes on this space if you’re curious!
+
+### 2024–2025: Writing and Consulting
+
+From March 2024–2025, I worked as an independent consultant. A few notable engagements:
 
 - I have written a new chapter on concurrent programming with `async` and `await` for [<cite>The Rust Programming Language</cite>][trpl], the official Rust book (currently in revision) and have taken over co-maintainership of the book project.
 - I successfully helped [Subsplash][subsplash] develop a front-end technical strategy for their large and successful application.
