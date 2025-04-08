@@ -58,4 +58,4 @@ You can also find me around the web in various contexts. In alphabetical order, 
 For my open source software:
 
 - [GitHub](https://github.com/chriskrycho)
-- [Codeberg](https://codeberg.com/chriskrycho)
+- [Codeberg](https://codeberg.org/chriskrycho)
