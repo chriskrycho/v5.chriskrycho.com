@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-04-06T18:20:00-0600
+modified: 2025-04-13T09:04:00-0600
 
 ---
 
@@ -61,13 +61,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
 - [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
-- [<cite>Colonialism: A Moral Reckoning](https://bookshop.org/a/21126/9780008511630), Nigel Biggar (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
-- [<cite>Stories of Your Life and Others</cite>](https://bookshop.org/a/21126/9781101972120), Ted Chiang (new)
 
 
 ### Poetry
@@ -95,12 +93,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Not the End of the World:How We Can Be the First Generation to Build a Sustainable Planet</cite>](https://bookshop.org/a/21126/9780316536752), Hannah Ritchie (new)
 - [<cite>Run Faster from the 5K to the Marathon: How to Be Your Own Best Coach</cite>](https://bookshop.org/a/21126/9780767930208), Brad Hudson and Matt Fitzgerald (new)
 - [<cite>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</cite>](https://bookshop.org/a/21126/9780593655030), Jonathan Haidt (new)
+- [<cite>Colonialism: A Moral Reckoning](https://bookshop.org/a/21126/9780008511630), Nigel Biggar (new)
 
 
 ### Fiction
 
 - [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
 - [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—read alongside my 12-year-old daughter!)
+- [<cite>Stories of Your Life and Others</cite>](https://bookshop.org/a/21126/9781101972120), Ted Chiang (new)
 
 
 ## 2024
