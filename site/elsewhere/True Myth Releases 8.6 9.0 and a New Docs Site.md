@@ -46,6 +46,11 @@ There’s a bunch here, so I have tucked away some of the details in disclosure 
 
 - [v8.6](#v86)
 - [v9.0](#v90)
+	- [Breaking changes](#breaking-changes)
+	- [No more `unknown` in `Maybe`](#no-more-unknown-in-maybe)
+    - [Changes to `first` and `last`](#changes-to-first-and-last)	
+    - [Re-exported namespaces](#re-exported-namespaces)
+- [The New Documentation](#the-new-documentation)
 
 ## v8.6
 
