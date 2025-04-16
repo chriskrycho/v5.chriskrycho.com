@@ -8,9 +8,14 @@ summary: >
 
 qualifiers:
   audience: |
-    TypeScript developers with an interesting in even safer typed programming with a functional flair. Assumes a fair bit of types knowledge in some of the deep dive bits, but you can get the high level without that!
+    TypeScript developers with an interest in even safer typed programming with a functional flair. Assumes a fair bit of types knowledge in some of the deep dive bits, but you can get the high level without that!
 
 date: 2025-04-15T21:00:00-0600
+updated: 2025-04-16T06:45:00-0600
+updates:
+  - at: 2025-04-16T06:45:00-0600
+    changes: >
+      Fixed some incomplete sentences and tweaked wording and added a link.
 
 tags:
   - TypeScript
@@ -21,7 +26,7 @@ tags:
 
 ---
 
-Like it says on the tin, I shipped three things for [True Myth][tm] today:
+Just like it says on the tin, I shipped three things for [True Myth][tm] today:
 
 - v8.6
 - v9.0
@@ -213,7 +218,7 @@ class TaskImpl<T, E> {
 
 Not shown here: those definitions for `andThen` and `orElse` are actually overloads. We keep the original definitions for the simple case where the caller *does* produce just a single new type.
 
-Because all of those new types are private and not used in a way that is actually exposed anywhere, none of this “leaks” to end users of the library, but it gives us a relatively cheap way to preserve our existing way of approaching these union types while also getting 
+Because all of those new types are private and not used in a way that is actually exposed anywhere, none of this “leaks” to end users of the library, but it gives us a relatively cheap way to preserve our existing way of approaching these union types while also having inference work the way users expect. 
 
 </details>
 
@@ -229,11 +234,13 @@ There are just a handful of significant breaking changes in the release:
 
 2. We now require at least Node 20. As a consequence, **we no longer ship a CommonJS (<abbr>CJS</abbr>) build**, because Node 20 and later can import <abbr title="ECMAScript Modules">ESM</abbr> into <abbr>CJS</abbr> directly.[^finally]
 
-3. Removing deprecated code: I made a handful of mistakes in my initial pass implementing the `task` module, and had to turn around and deprecate those <abbr>API</abbr>s rather quickly—mostly just bad naming choices, but in a few cases more substantially. (See the 
+3. Removing deprecated code: I made a handful of mistakes in my initial pass implementing the `task` module, and had to turn around and deprecate those <abbr>API</abbr>s rather quickly—mostly just bad naming choices, but in a few cases more substantially. (See the [v8.3.0 release notes][v8.3] for details.)
 
 4. Changes to the <abbr>API</abbr> for the `first` and `last` helpers in the `maybe` module, on which [see below](#changes-to-first-and-last).
 
 5. Changes to the namespaces as exported from the root. In the past, we exported the modules with namespace re-exports as `MaybeNS`, `ResultNS`, and `TaskNS`. This was: gross. We fixed it in v9 so modules are now exported with a sensible module-as-lowercase-name convention, and all modules are exported that way. I cover this more [below](#re-exported-namespaces) as well, but wanted to flag it up here as a breaking change.
+
+[v8.3]: https://github.com/true-myth/true-myth/releases/tag/v8.3.0
 
 [^finally]: **_FINALLY!!!_**
 
