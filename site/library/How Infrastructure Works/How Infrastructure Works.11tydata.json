@@ -1,0 +1,14 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/how-infrastructure-works/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "How Infrastructure Works: Inside the Systems That Shape Our World",
+      "cover": {
+         "cdn": "books/how-infrastructure-works.jpg"
+      },
+      "author": "Deb Chachra",
+      "year": 2023,
+      "link": "https://bookshop.org/a/21126/9780593086599"
+   },
+   "tags": ["Deb Chachra", "infrastructure"]
+}
