@@ -33,7 +33,7 @@ The reason this is so useful with <abbr title="JavaScript">JS</abbr> is because 
 [present]: https://v5.chriskrycho.com/journal/is-typescript-good/#:~:text=In%20software%2C%20the,of%20the%20system.
 [tm]: https://github.com/true-myth/true-myth
 
-The <abbr title="TypeScript">TS<abbr> 5.8 beta announcement [post][post] covers this in some detail, including example code, so give it a read. I’m excited, even though the [SemVer policy][semver-ts] policy I use on True Myth (the only library I currently actively maintain) means it’ll be a *while* before we can use it. The day we can will be a good day, though!
+The <abbr title="TypeScript">TS</abbr> 5.8 beta announcement [post][post] covers this in some detail, including example code, so give it a read. I’m excited, even though the [SemVer policy][semver-ts] policy I use on True Myth (the only library I currently actively maintain) means it’ll be a *while* before we can use it. The day we can will be a good day, though!
 
 [semver-ts]: https://semver-ts.org
 
