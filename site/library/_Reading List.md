@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-04-13T09:04:00-0600
+modified: 2025-04-26T16:25:00-0600
 
 ---
 
@@ -94,6 +94,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Run Faster from the 5K to the Marathon: How to Be Your Own Best Coach</cite>](https://bookshop.org/a/21126/9780767930208), Brad Hudson and Matt Fitzgerald (new)
 - [<cite>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</cite>](https://bookshop.org/a/21126/9780593655030), Jonathan Haidt (new)
 - [<cite>Colonialism: A Moral Reckoning](https://bookshop.org/a/21126/9780008511630), Nigel Biggar (new)
+- [<cite>The Endurance Diet</cite>](https://bookshop.org/a/21126/9780738218977), Matt Fitzgerald (new)
 
 
 ### Fiction
