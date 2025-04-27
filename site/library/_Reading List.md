@@ -61,11 +61,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
 - [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
+- [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
+- [<cite>Hood</cite>](https://bookshop.org/a/21126/9781595540881), Stephe Lawhead (new)
 
 
 ### Poetry
