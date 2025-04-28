@@ -6,11 +6,6 @@
    "repository": "https://github.com/chriskrycho/v5.chriskrycho.com",
    "author": "Chris Krycho <hello@chriskrycho.com>",
    "license": "MIT",
-   "volta": {
-      "node": "20.14.0",
-      "pnpm": "9.4.0"
-   },
-   "packageManager": "pnpm@9.4.0",
    "devDependencies": {
       "@11ty/eleventy": "^2.0.1",
       "@biomejs/biome": "1.9.4",
