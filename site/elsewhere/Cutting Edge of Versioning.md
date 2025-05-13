@@ -22,6 +22,7 @@ tags:
     - Semantic Versioning
     - TypeScript
     - Unison
+
 qualifiers:
     context: >
         Today I gave the first of two talks at LambdaConf 2024. This one was particularly born out of [the work I did on SemVer for TypeScript types](https://v5.chriskrycho.com/elsewhere/semver-for-ts-types-beta/) and the work I did to [put Ember on a regular upgrade cadence](https://github.com/emberjs/rfcs/pull/830).
