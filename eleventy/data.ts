@@ -14,6 +14,9 @@ interface ItemData {
    link?: string;
    splash?: string;
    book?: Book;
+   sources?: {
+      [key: string]: Book[];
+   };
    standalonePage?: boolean;
    featured?: boolean;
    draft?: boolean;
@@ -82,7 +85,7 @@ export interface Review {
    };
 }
 
-export interface BookMeta {
+export interface SourceMeta {
    title: string;
    year?: number | string;
    cover?: Image;
@@ -90,7 +93,9 @@ export interface BookMeta {
 }
 
 // Must be a `type` alias because interfaces cannot extend unions.
-export type Book = BookMeta & Author & Review;
+export type Book = SourceMeta & Author & Review;
+
+export type Source = Author & SourceMeta;
 
 export function isBook(maybeBook: unknown): maybeBook is Book {
    if (typeof maybeBook !== 'object' || !maybeBook) {

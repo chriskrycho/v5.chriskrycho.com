@@ -21,6 +21,7 @@ interface Quote {
    source: {
       author?: string;
       title: string;
+      link?: string;
    };
    location?: string;
 }
@@ -47,7 +48,10 @@ export const quote = (content: string, ref: Reference): string => {
    function basicCitation(quote: Quote): string {
       let author = quote.source.author ? `${quote.source.author}, ` : '';
       let location = quote.location ? `, ${quote.location}` : '';
-      return `${author}<cite>${quote.source.title}</cite>${location}`;
+      let source = quote.source.link
+         ? `<a href="${quote.source.link}">${quote.source.title}</a>`
+         : quote.source.title;
+      return `${author}<cite>${source}</cite>${location}`;
    }
 };
 
