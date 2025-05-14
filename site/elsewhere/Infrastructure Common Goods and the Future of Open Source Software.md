@@ -188,7 +188,7 @@ And this is everywhere.
 
 <img src="https://cdn.chriskrycho.com/images/talks/lambdaconf-2025/016.png" loading="lazy">
 
-I wrote this in an app called Ulysses, and I’m presenting it with Apple’s Keynote, and all of this is happening on macOS. Large chunks of these applications were written in an open-source language, Swift, with a bunch of open-source libraries. The `clang` compiler for both Swift and Objective-C is open-source. It uses the open-source <abbr>LLVM</abbr> infrastructure. macOS is closed source but has an open-source core derived from the open-source <cite>BSD</cite> project and <abbr>XNU</abbr> which runs on the open-source Mach kernel.
+I wrote this in an app called Ulysses, and I’m presenting it with Apple’s Keynote, and all of this is happening on macOS. Large chunks of these applications were written in an open-source language, Swift, with a bunch of open-source libraries. The `clang` compiler for both Swift and Objective-C is open-source. It uses the open-source <abbr>LLVM</abbr> infrastructure. macOS is closed source but has an open-source core derived from the open-source <abbr title="Berkeley Software Distribution">BSD</abbr> project and <abbr>XNU</abbr> which runs on the open-source Mach kernel.
 
 </section>
 
@@ -220,7 +220,7 @@ But this is also a very strange way to build *infrastructure*.
 
 <img src="https://cdn.chriskrycho.com/images/talks/lambdaconf-2025/020.png" loading="lazy">
 
-It wasn’t funded like infrastructure. Unlike a bridge or a tunnel, no part of this was directly commissioned for public good—even the parts that benefited from public funding in one way or another like <cite>BSD</cite>. There was no official project by the State of California or the City of Sunnyvale to build a competitor to <abbr title="GNU Compiler Collection">GCC</abbr>.
+It wasn’t funded like infrastructure. Unlike a bridge or a tunnel, no part of this was directly commissioned for public good—even the parts that benefited from public funding in one way or another like <abbr>BSD</abbr>. There was no official project by the State of California or the City of Sunnyvale to build a competitor to <abbr title="GNU Compiler Collection">GCC</abbr>.
 
 And these were also not built using traditional *market* dynamics. <abbr>LLVM</abbr> is not for sale, and never has been. You cannot *buy* a license to Clang. Some open-source software licenses involve exchanges of money… but most do not!
 
