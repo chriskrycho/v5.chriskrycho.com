@@ -1,6 +1,6 @@
 ---
 title: Infrastructure, Common Goods, and the Future of Open Source Software
-subtitle: The LambdaConf 2025 Opening Keynote
+subtitle: My LambdaConf 2025 Opening Keynote
 
 summary: >
   Open-source software is infrastructure—but weird infrastructure. It is high time we started treating it accordingly.
@@ -13,6 +13,8 @@ qualifiers:
 
 image:
   cdn: talks/lambdaconf-2025/001.png
+
+featured: true
 
 tags:
     - software development
