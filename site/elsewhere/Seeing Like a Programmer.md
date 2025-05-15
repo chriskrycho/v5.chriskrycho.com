@@ -1,8 +1,15 @@
 ---
 title: Seeing Like a Programmer (LambdaConf 2024)
 subtitle: Resiliency, Limits, and Moral Hazards in Software Engineering
+
+image:
+    cdn: seeing-like-a-programmer.png
+
+summary: >
+    How do we make good software, and indeed, what makes software good: both as software, and in terms of its place in the world?
+
 date: 2024-05-07T17:40:00-0600
-updated: 2024-07-11T20:10:00-0600
+updated: 2025-05-14T19:53:00-0600
 updates:
     - at: 2024-07-11T20:10:00-0600
       changes: >
