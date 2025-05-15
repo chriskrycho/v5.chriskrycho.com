@@ -6,6 +6,11 @@ summary: >
   Open-source software is infrastructure—but weird infrastructure. It is high time we started treating it accordingly.
 
 date: 2025-05-13T17:50:00-0600
+updated: 2025-05-15T06:55:00-0600
+updates:
+    - at: 2025-05-15T06:55:00-0600
+      changes: >
+        Added a bunch of links and filled in some abbreviations.
 
 qualifiers:
   audience: >
@@ -38,7 +43,7 @@ sources:
 
 ---
 
-Yesterday, I delivered the opening keynote at LambdaConf 2025. What follows are the slides and script for the talk. I will also add a link to the video once it is available.
+I was delighted to deliver the opening keynote at LambdaConf 2025 on May 12, 2025. What follows are the slides and script for the talk. I will also add a link to the video once it is available.
 
 <details><summary>A note on slide image alt text</summary>
 
@@ -190,7 +195,7 @@ And this is everywhere.
 
 <img src="https://cdn.chriskrycho.com/images/talks/lambdaconf-2025/016.png" loading="lazy">
 
-I wrote this in an app called Ulysses, and I’m presenting it with Apple’s Keynote, and all of this is happening on macOS. Large chunks of these applications were written in an open-source language, Swift, with a bunch of open-source libraries. The `clang` compiler for both Swift and Objective-C is open-source. It uses the open-source <abbr>LLVM</abbr> infrastructure. macOS is closed source but has an open-source core derived from the open-source <abbr title="Berkeley Software Distribution">BSD</abbr> project and <abbr>XNU</abbr> which runs on the open-source Mach kernel.
+I wrote this in an app called [Ulysses](https://ulysses.app), and I’m presenting it with Apple’s [Keynote](https://apps.apple.com/us/app/keynote/id409183694?mt=12), and all of this is happening on [macOS](https://en.wikipedia.org/wiki/Macos). Large chunks of these applications were written in an open-source language, [Swift](https://www.swift.org), with a bunch of open-source libraries. The [Clang](https://clang.llvm.org) compiler for both Swift and Objective-C is open-source. It uses the open-source [<abbr title="originally “low-level virtual machine”, now just an “orphaned initialism”">LLVM</abbr>](https://llvm.org) infrastructure. macOS is closed source but has an open-source core derived from the open-source [<abbr title="Berkeley Software Distribution">BSD</abbr>](https://www.bsd.org) project and [<abbr title="X is Not Unix">XNU</abbr>](https://en.wikipedia.org/wiki/Mach_(kernel)) which derives from the open-source [Mach kernel](https://en.wikipedia.org/wiki/Mach_(kernel)).
 
 </section>
 
@@ -198,7 +203,7 @@ I wrote this in an app called Ulysses, and I’m presenting it with Apple’s Ke
 
 <img src="https://cdn.chriskrycho.com/images/talks/lambdaconf-2025/017.png" loading="lazy">
 
-What is more, many of these projects have *significant* contributors from outside Apple. For example <abbr>LLVM</abbr> and `clang` have both had huge amounts contributed by everyone from indie developers to Google—one of Apple’s biggest competitors.
+What is more, many of these projects have *significant* contributors from outside Apple. For example <abbr>LLVM</abbr> and Clang have both had huge amounts contributed by everyone from indie developers to Google—one of Apple’s biggest competitors.
 
 </section>
 
@@ -224,7 +229,7 @@ But this is also a very strange way to build *infrastructure*.
 
 It wasn’t funded like infrastructure. Unlike a bridge or a tunnel, no part of this was directly commissioned for public good—even the parts that benefited from public funding in one way or another like <abbr>BSD</abbr>. There was no official project by the State of California or the City of Sunnyvale to build a competitor to <abbr title="GNU Compiler Collection">GCC</abbr>.
 
-And these were also not built using traditional *market* dynamics. <abbr>LLVM</abbr> is not for sale, and never has been. You cannot *buy* a license to Clang. Some open-source software licenses involve exchanges of money… but most do not!
+And these were also not built using traditional *market* dynamics. <abbr>LLVM</abbr> is not for sale, and never has been. You cannot buy a license to Clang. Some open-source software licenses involve exchanges of money… but most do not!
 
 </section>
 
