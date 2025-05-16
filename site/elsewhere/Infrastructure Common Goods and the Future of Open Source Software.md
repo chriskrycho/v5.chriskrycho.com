@@ -55,6 +55,24 @@ The slide images do not have any alt text associated with them. This is not an o
 
 As always with my talks, the script below is what I wrote ahead of time, but I always end up extemporizing a bit when giving the talk live, so this is a *script* and not a *transcript*.
 
+If you’d like to toggle the visibility of the slides, you can toggle this switch:
+
+<label><input id="toggle-slides" type="checkbox" checked="checked"> Show slides</label>
+
+<script>
+document.querySelector("#toggle-slides").addEventListener("click", () => {
+    document.querySelectorAll(".slide img").forEach((img) => {
+        img.classList.toggle("hidden");
+    });
+});
+</script>
+
+<style>
+.slide img.hidden {
+    display: none;
+}
+</style>
+
 -----
 
 <section class="slide">
