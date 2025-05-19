@@ -3,6 +3,11 @@ title: 2025 Colfax Marathon Race Report
 subtitle: I ran my first marathon today! It went great!
 
 date: 2025-05-18T20:35:00-0600
+updated: 2025-05-19T08:55:00-0600
+updates:
+  - at: 2025-05-19T08:55:00-0600
+    changes: >
+      Restructured things a bit, clarified things here and there, fixed some typos.
 
 tags:
   - running
@@ -40,7 +45,7 @@ The rest of this post is a deep dive into how the race went, including:
     - [Pacing](#pacing)
 - [Conclusion](#conclusion)
 
-Feel free to skip around to what seems interesting to you!
+Feel free to skip around to what seems interesting to you! (*N.b.* there are a number of links throughout to various products I use, and these are all  just regular links, not affiliate links!)
 
 I will summarize by saying that this was an immensely rewarding experience. It is really amazing to see what the human body—your *own* body!—is capable of doing, and equally to see how deeply in tune with your own body you can get by spending the time training and studying how the body works.
 
@@ -83,9 +88,9 @@ Glycogen reserves: your body stores converted glucose, sucrose, etc. as ready-to
 
 </aside>
 
-In the afternoon yesterday, I drove up to Denver to pick up my packet, then hopped over to a friend’s house to stay overnight so I didn’t have to drive back home and then drive up again this morning. We went out and got dinner; I had a chicken salad with tons of fruit in it. Shortly before I bed, I topped the day off with a slice of bread with some preserves on it. Although I didn’t have a good way to measure dinner, my best guess it that I did successfully hit the target carb load of 7g carbs/kg body weight.
+In the afternoon yesterday, I drove up to Denver to pick up my packet, then hopped over to a friend’s house to stay overnight so I didn’t have to drive back home and then drive up again this morning. We went out and got dinner; I had a salad with leafy greens, tons of fruit, and grilled chicken. Shortly before I bed, I topped the day off with a slice of bread with some preserves on it and about 8 ounces of orange juice. Although I didn’t have a good way to measure dinner, my best guess it that I did successfully hit the target carb load of 7g carbs/kg body weight.
 
-I went to bed last night around 8:45pm. I took 3mg melatonin to help me fall asleep, had a fan running in the room for white noise, and I was solidly asleep by about 9:15pm from what [my watch][garmin] reports. That was good, because I got up at 3am today for th esake of being able to eat a good breakfast long enough before the race started!
+I went to bed last night around 8:45pm. I took 3mg melatonin to help me fall asleep, had a fan running in the room for white noise, and I was solidly asleep by about 9:15pm from what [my watch][garmin] reports. That was good, because I got up at 3am today for the sake of being able to eat a good breakfast long enough before the race started!
 
 [garmin]: https://www.garmin.com/en-US/p/780139/pn/010-02641-00/
 
@@ -102,9 +107,17 @@ The race started at 6am. I spent the interval between leaving my car at 5am and 
 
 ### Fueling
 
-As planned, I took my first gel 15 minutes before the race. So let’s talk gels, with a big caveat: different things work for different people. I landed last year on <span class="smcp">AMACX</span>’s drink gels, which I find hit the right balance for me. They go down easily, they don’t require washing down immediately afterward the way Gu does, and they don’t have the weird-to-me texture of things like Science In Sport’s Isotonic gels. For the race today, I used a mix of the <span class="smcp">AMACX</span> Turbo and Drink gels.
+As planned, I took my first gel 15 minutes before the race. So let’s talk gels, with a big caveat: different things work for different people. I landed last year on <span class="all-smcp">AMACX</span>’s drink gels, which I find hit the right balance for me. They go down easily, they don’t require washing down immediately afterward the way Gu does, and they don’t have the weird-to-me texture of things like Science In Sport’s Isotonic gels. For the race today, I used a mix of the <span class="all-smcp">AMACX</span> Turbo and Drink gels.
 
-My fueling strategy was simple: take a gel every 30 minutes, starting 15 minutes before the start of the race. That was enough to put me on track to consume ~80 grams of carbohydrates every hour, which is right in the range that most top-tier athletes are using these days.[^higher] Net, the planned schedule looked like this (*n.b.* these are just regular links, not affiliate links):
+My fueling strategy was simple: take a gel every 30 minutes, starting 15 minutes before the start of the race. That was enough to put me on track to consume roughly 8 grams of carbs per mile, or ~80 grams of carbohydrates every hour, which is right in the range that most top-tier athletes are using these days.[^higher]
+
+<aside>
+
+I think it’s weird to use grams/hour rather than grams/mile as a fueling target. You don’t really burn energy by the hour beyond your baseline metabolic activity. That’s not nothing, but it’s also very small compared to the energy you burn by running. Meanwhile, you *do* burn about the same amount of energy per mile regardless of whether you run it at a 7-minute pace or an  11-minute pace. That number is primarily a factor of your total body mass, and *very* secondarily your running efficiency. It just takes a certain amount of energy to move a certain amount of mass from a physics perspective.
+
+</aside>
+
+Net, the planned schedule looked like this:
 
 | Time | Gel | Caffeinated |
 | ----- | --- | ----------- |
@@ -121,7 +134,7 @@ My fueling strategy was simple: take a gel every 30 minutes, starting 15 minutes
 [rdg]: https://thefeed.com/products/amacx-drink-gel?variant=40201436627007
 [cdg]: https://thefeed.com/products/amacx-drink-gel?variant=40201436659775
 
-I picked that mix mostly for variety and to hit my target carb intake. The Turbo Gels are 40g carbohydrate per gel, and the Drink Gels are 30g carbohydrate per gel, but the Turbo Gels are also a bit pricier, so it made sense to me to use a mix if that worked well to hit my goals, as indeed this mix did. I started out with a bit more of a “bang” and dropped off a bit at the end because the reality is that the last 30 minutes or so are unlikely to get a significant difference between 30g or 40g of carbs. As for ordering: variety and putting my favorite last.
+I picked that mix mostly for variety and to hit my target carb intake. The Turbo Gels are 40g carbohydrate per gel, and the Drink Gels are 30g carbohydrate per gel, but the Turbo Gels are also a fair bit pricier. It made the most sense to me to use a mix if I could hit my goals that way. This mix did! I started out with a bit more of a “bang” and dropped off a bit at the end because the reality is that the last 30 minutes or so are unlikely to get a significant difference between 30g or 40g of carbs. As for ordering: variety and putting my favorite last.
 
 Right around 2¼ miles into the race, I heard the telling and very annoying sound of a gel hitting the ground and knew immediately what had happened because the same thing had happened to me on a training run back in April. Happily I noticed: I would have been sad to be out a gel, especially because I was committed to nailing my fueling plan. I doubled back and picked it up, and lost a solid 10 seconds to it, alas.[^hs] The rest of the race, I made sure that the gels were situated more solidly in the liner pockets of my shorts, and that the outer layer of my shorts was covering them so they wouldn’t slip out. Thankfully, that was the last such mishap, and I stuck pretty exactly to my fueling schedule, plus or minus a minute or two.
 
@@ -155,9 +168,7 @@ I judged that this would probably sort itself out. I also decided that, given wh
 
 Having spent the day reflecting on the race and looking at my pacing, I don’t think I could have paced this much better than I did. Perhaps going out a second or two slower per mile would have given me a tiny bit more juice at the end, but at the end of the day I was running the same kinds of paces at the end of the race as I was at the start. They just *hurt*. That’s how it is supposed to be, though, and as much as I was hurting on those last few miles, I held the pace. That was profoundly satisfying, not least because I spent a bunch of time this season practicing working hard through fatigue.
 
-[^higher]: Some athletes are aiming even higher, but 70–90g/hour[^hour] is a pretty common recommendation.
-
-[^hour]: I think it’s weird to use g/hour rather than g/mile as the target. You don’t really burn energy by the hour beyond your baseline metabolic activity, and while that’s not nothing, it’s also very small compared to the energy you burn by running.
+[^higher]: Some athletes are aiming even higher, but 70–90g/hour is a pretty common recommendation.
 
 ## Conclusion
 
