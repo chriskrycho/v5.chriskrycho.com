@@ -85,7 +85,11 @@ Glycogen reserves: your body stores converted glucose, sucrose, etc. as ready-to
 
 In the afternoon yesterday, I drove up to Denver to pick up my packet, then hopped over to a friend’s house to stay overnight so I didn’t have to drive back home and then drive up again this morning. We went out and got dinner; I had a chicken salad with tons of fruit in it. Shortly before I bed, I topped the day off with a slice of bread with some preserves on it. Although I didn’t have a good way to measure dinner, my best guess it that I did successfully hit the target carb load of 7g carbs/kg body weight.
 
-I got up at 3am today, got dressed, put on my shoes (a pair of [Endorphin Elites][ee]—the originals, not the Elite 2s—that I only bust out for races), and made breakfast: 8 ounces of orange juice, a fried egg, a piece of whole wheat bread with blackberry preserves, two thirds of a cup of Great Grains Raisins, Dates, & Pecans with about a third of a cup of whole milk, and a bottle of [Skratch Labs Hydration Mix][slhm]. Then I sat there and reviewed my pace plans and evaluated how I was feeling and which of them seemed reasonable and doable based on my recent training runs.
+I went to bed last night around 8:45pm. I took 3mg melatonin to help me fall asleep, had a fan running in the room for white noise, and I was solidly asleep by about 9:15pm from what [my watch][garmin] reports. That was good, because I got up at 3am today for th esake of being able to eat a good breakfast long enough before the race started!
+
+[garmin]: https://www.garmin.com/en-US/p/780139/pn/010-02641-00/
+
+I got dressed, put on my shoes (a pair of [Endorphin Elites][ee]—the originals, not the Elite 2s—that I only bust out for races), and made breakfast: 8 ounces of orange juice, a fried egg, a piece of whole wheat bread with blackberry preserves, two thirds of a cup of Great Grains Raisins, Dates, & Pecans with about a third of a cup of whole milk, and a bottle of [Skratch Labs Hydration Mix][slhm]. Then I sat there and reviewed my pace plans and evaluated how I was feeling and which of them seemed reasonable and doable based on my recent training runs.
 
 [ee]: https://www.saucony.com/en/endorphin-elite/54180M.html
 [slhm]: https://thefeed.com/products/skratch-labs-exercise-hydration-mix?variant=47615731912
