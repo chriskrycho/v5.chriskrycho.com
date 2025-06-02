@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-05-27T19:23:00-0400
+modified: 2025-06-01T21:52:00-0600
 
 ---
 
@@ -98,6 +98,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Colonialism: A Moral Reckoning](https://bookshop.org/a/21126/9780008511630), Nigel Biggar (new)
 - [<cite>The Endurance Diet</cite>](https://bookshop.org/a/21126/9780738218977), Matt Fitzgerald (new)
 - [<cite>Things Become Other Things: A Walking Memoir</cite>](https://bookshop.org/a/21126/9780593732540), Craig Mod (new)
+- [<cite>Antimemetics: Why Some Ideas Resist Spreading</cite>](https://darkforest.metalabel.com/antimemetics), Nadia Asparouhova (new)
 
 
 ### Fiction
