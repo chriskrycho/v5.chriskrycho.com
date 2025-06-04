@@ -3,14 +3,14 @@ title: 2025 Colfax Marathon Race Report
 subtitle: I ran my first marathon today! It went great!
 
 date: 2025-05-18T20:35:00-0600
-updated: 2025-06-04T06:41:00-0600
+updated: 2025-06-04T06:48:00-0600
 updates:
   - at: 2025-05-19T08:55:00-0600
     changes: >
       Restructured things a bit, clarified things here and there, fixed some typos.
-  - at: 2025-06-04T06:41:00-0600
+  - at: 2025-06-04T06:48:00-0600
     changes: >
-      Phrasing here and there, a couple small corrections, and adding a few links.
+      More info in a few spots, phrasing here and there, a couple small corrections, and adding a few links.
 
 tags:
   - running
@@ -124,14 +124,14 @@ I think it’s weird to use grams/hour rather than grams/mile as a fueling targe
 
 Net, the planned schedule looked like this:
 
-| Time | Gel | Caffeinated |
-| ----- | --- | ----------- |
-| −0:15:00 | [Cassis Turbo Gel][cassis-tg] | yes |
-| 0:15:00 | [Citrus Turbo Gel][citrus-tg] | no |
-| 0:45:00 | [Strawberry Drink Gel][sdg] | no |
-| 1:15:00 | [Cassis Turbo Gel][cassis-tg] | yes |
-| 1:45:00 | [Raspberry Drink Gel][rdg] | no |
-| 2:15:00 | [Citrus Drink Gel][cdg] | no |
+| Time | Gel | Caffeinated | Carbs |
+| ---- | --- | ----------- | ----- |
+| −0:15:00 | [Cassis Turbo Gel][cassis-tg] | yes | 40g |
+| 0:15:00 | [Citrus Turbo Gel][citrus-tg] | no | 40g |
+| 0:45:00 | [Strawberry Drink Gel][sdg] | no | 30g |
+| 1:15:00 | [Cassis Turbo Gel][cassis-tg] | yes | 40g |
+| 1:45:00 | [Raspberry Drink Gel][rdg] | no | 30g |
+| 2:15:00 | [Citrus Drink Gel][cdg] | no | 30g |
 
 [cassis-tg]: https://thefeed.com/products/amacx-turbo-gel?variant=40201421783103
 [citrus-tg]: https://thefeed.com/products/amacx-turbo-gel?variant=40201421815871
@@ -153,7 +153,7 @@ I also grabbed some of the available [Gatorade Endurance Formula][gef] or some w
 
 Pacing-wise, I went out by feel and aimed to keep the first 10 miles *extremely* comfortable. One small challenge I did not expect here was that the marathon also has a marathon relay that starts at the same time and follows the same course—so the front-runners at the start were mostly a bunch of people running only 6.5 miles, not 26.2! Happily, I realized that before starting and adjusted for it mentally: even more “run your own race” than usual.
 
-The other small challenge I had was technological in nature. I usually try to look occasionally at myheart rate during a race as a sanity check, but in this case my chest strap was giving odd data off and on through the first long stretch of the race, before finally settling down after mile 11, as you can see in this screenshot from Strava:
+The other small challenge I had was technological in nature. I usually try to look occasionally at my heart rate during a race as a sanity check, but in this case my chest strap was giving odd data off and on through the first long stretch of the race, before finally settling down after mile 11, as you can see in this screenshot from Strava:
 
 ![Weird <abbr title="heart rate">HR</abbr> drop-outs and spikes](https://cdn.chriskrycho.com/images/Colfax-HR.png "An image of heart rate over time, with five arrows pointing to drops and spikes at intervals throughout the first eleven miles of the race, followed by more consistent/realistic heart data for the remainder of the race")
 
