@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-06-01T21:52:00-0600
+modified: 2025-06-04T06:19:00-0600
 
 ---
 
@@ -58,7 +58,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
-- [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
 - [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
 - [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
@@ -82,23 +81,40 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Scout Mindset: Why Some People See Things Clearly and Others Don't</cite>](https://bookshop.org/a/21126/9780735217553), Julia Galef (new)
     - [review](https://v5.chriskrycho.com/library/review-scout-mindset/)
+
 - [<cite>Taming the Octopus: The Long Battle for the Soul of the Corporation</cite>](https://bookshop.org/a/21126/9780393867237), Kyle Edward Williams (new)
     - [review](https://v5.chriskrycho.com/library/an-octopus-that-will-not-be-tamed/)
+
 - [<cite>The Righteous Mind: Why Good People Are Divided by Politics and Religion</cite>](https://bookshop.org/a/21126/9780307455772), Jonathan Haidt (new)
+
 - [<cite>The Life We're Looking For: Reclaiming Relationship in a Technological World</cite>](https://bookshop.org/a/21126/9780593237342), Andy Crouch (new)
+
 - [<cite>Tidy First?</cite>](https://bookshop.org/a/21126/9781098151249), Kent Beck (new)
     - [review](https://v5.chriskrycho.com/library/tidy-first/)
+
 - [<cite>The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure</cite>](https://bookshop.org/a/21126/9780735224902), Greg Lukianoff and Jonathan Haidt (new)
+
 - [<cite>Dominion: How the Christian Revolution Remade the World</cite>](https://bookshop.org/a/21126/9781541675599), Tom Holland (new)
+
 - [<cite>Status and Culture: How Our Desire for Social Rank Creates Taste, Identity, Art, Fashion, and Constant Change</cite>](https://bookshop.org/a/21126/9780593296707), W. David Marx (new)
+
 - [<cite>The Tech-Wise Family: Everyday Steps for Putting Technology in Its Proper Place</cite>](https://bookshop.org/a/21126/9780801018664), Andy Crouch (new)
+
 - [<cite>Not the End of the World:How We Can Be the First Generation to Build a Sustainable Planet</cite>](https://bookshop.org/a/21126/9780316536752), Hannah Ritchie (new)
+
 - [<cite>Run Faster from the 5K to the Marathon: How to Be Your Own Best Coach</cite>](https://bookshop.org/a/21126/9780767930208), Brad Hudson and Matt Fitzgerald (new)
+
 - [<cite>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</cite>](https://bookshop.org/a/21126/9780593655030), Jonathan Haidt (new)
+
 - [<cite>Colonialism: A Moral Reckoning](https://bookshop.org/a/21126/9780008511630), Nigel Biggar (new)
+
 - [<cite>The Endurance Diet</cite>](https://bookshop.org/a/21126/9780738218977), Matt Fitzgerald (new)
+
 - [<cite>Things Become Other Things: A Walking Memoir</cite>](https://bookshop.org/a/21126/9780593732540), Craig Mod (new)
+
 - [<cite>Antimemetics: Why Some Ideas Resist Spreading</cite>](https://darkforest.metalabel.com/antimemetics), Nadia Asparouhova (new)
+
+- [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
 
 
 ### Fiction
