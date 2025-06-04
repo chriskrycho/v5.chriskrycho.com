@@ -3,11 +3,14 @@ title: 2025 Colfax Marathon Race Report
 subtitle: I ran my first marathon today! It went great!
 
 date: 2025-05-18T20:35:00-0600
-updated: 2025-05-19T08:55:00-0600
+updated: 2025-06-04T06:41:00-0600
 updates:
   - at: 2025-05-19T08:55:00-0600
     changes: >
       Restructured things a bit, clarified things here and there, fixed some typos.
+  - at: 2025-06-04T06:41:00-0600
+    changes: >
+      Phrasing here and there, a couple small corrections, and adding a few links.
 
 tags:
   - running
@@ -66,15 +69,17 @@ Unfortunately, that nice pleasant maintenance plan ran into the minor hiccup of 
 
 Even so, I decided to go ahead and use the 80/20 Endurance [Level 3 marathon plan][l3marathon]. A bold choice, perhaps, given it was my first marathon and I was coming off of an injury, but one I thought was well-justified by my overall level of fitness and the success I had with the Level 3 [Run Faster][l3rf] and [Half Marathon][l3hm] plans, and that proved correct. I did nearly every workout on the training schedule for the whole season. The only days I missed were when I had an injection to help my back finish resetting and when my <abbr>PT</abbr> assigned me a couple days of rest to help reset my sacrum alignment after identifying some piriformis insertion issues.
 
-Sticking with it was a bit tough in spots. This winter and spring were *quite* snowy and windy both. I ended up with icicles on my beard and eyebrows and eyelashes on one April training run! But I did the work anyway, and in fact extended a bunch of the long run workouts beyond what the 80/20 Endurance plan would have given me, because I had the fitness to do it and I thought—correctly, as it turns out—that it would be helpful come race day. I did make a point to do my long runs on pavement so my legs and feet would get used to absorbing that kind of pounding.
-
 [l3marathon]: https://www.trainingpeaks.com/training-plans/running/marathon/tp-107698/80-20-running-marathon-level-3-hr-based-5-5-to-10-5-hours-per-week
 [l3rf]: https://www.trainingpeaks.com/training-plans/running/tp-303721/80-20-running-2025-edition-run-faster-level-3
 [l3hm]: https://www.trainingpeaks.com/training-plans/running/half-marathon/tp-107716/80-20-running-half-marathon-level-3-hr-based-5-to-9-hours-per-week
 
+Sticking with it was a bit tough in spots. This winter and spring were *quite* snowy and windy. I ended up with icicles on my beard and eyebrows and eyelashes on one April training run! But I did the work anyway, and in fact extended a bunch of the long run workouts beyond what the 80/20 Endurance plan would have given me, because I had the fitness to do it and I thought—correctly, as it turns out—that it would be helpful come race day. I also made a point to do my long runs on pavement so my legs and feet would get used to absorbing that kind of pounding (a tip I got from the very helpful [Master the Marathon course][mtm] from 80/20 Endurance).
+
+[mtm]: https://www.8020endurance.com/mastering-the-marathon/
+
 One other bit of input from the <abbr>PT</abbr> was related to knee issues that seem to be downstream of the piriformis issues which seem themselves to be downstream of the back injury. Net, my right knee developed some relatively mild but quite annoying tendonitis that didn’t bother me while running, but would bother me *after* running. She put me on a regimen that aimed to minimize impact: trail running, low-impact cross-training, and as few hills as possible (a hard task in Colorado).
 
-For the rest of the season, I mostly ran my hard workouts on trails near us, other than my long runs, which I still did on pavement. Nearly all my foundation and recovery work I did on my bike trainer or my actual bike once it got warm enough (far better than the trainer!). On the one hand, previous experience suggests I might have been a bit faster because a bit more resilient had I been able to do more of that work on my feet. On the other hand, it’s quite possible I would have exacerbated the tendonitis to a point where I couldn’t run. Much better to show up healthy and able to run even if a little bit slower than not to be able to show up at all.
+For the rest of the season, I mostly ran my hard workouts on trails near us, other than my long runs, which I still did on pavement. Nearly all my foundation and recovery work I did on my bike trainer or my actual bike once it got warm enough (far better than the trainer!). On the one hand, previous experience suggests I might have been a bit faster because a bit more resilient had I been able to do more of that work on my feet. On the other hand, it’s quite possible I would have exacerbated the tendonitis to a point where I couldn’t run. Much better to show up healthy and able to run—even if a little bit slower—than not to be able to show up at all.
 
 There wasn’t much more to it than that: “just” showing up and doing the work from the plan! The “just” there does a lot of work, though: I averaged 8–10 hours a week of work, with long runs taking me anywhere from 2 hours to nearly 3 hours, and with two days a week doing “doubles”: a hard workout run and a “recovery” run. The biggest weeks saw me doing 80 miles of running or the equivalent cycling mixed in for foundation work. That is a lot of “just” showing up and doing the work! It paid off.
 
@@ -88,7 +93,7 @@ Glycogen reserves: your body stores converted glucose, sucrose, etc. as ready-to
 
 </aside>
 
-In the afternoon yesterday, I drove up to Denver to pick up my packet, then hopped over to a friend’s house to stay overnight so I didn’t have to drive back home and then drive up again this morning. We went out and got dinner; I had a salad with leafy greens, tons of fruit, and grilled chicken. Shortly before I bed, I topped the day off with a slice of bread with some preserves on it and about 8 ounces of orange juice. Although I didn’t have a good way to measure dinner, my best guess it that I did successfully hit the target carb load of 7g carbs/kg body weight.
+In the afternoon yesterday, I drove up to Denver to pick up my packet, then hopped over to a friend’s house to stay overnight so I didn’t have to drive back home and then drive up again this morning. We went out and got dinner; I had a salad with leafy greens, tons of fruit, and grilled chicken. Shortly before I bed, I topped the day off with a slice of bread with some preserves on it and about 8 ounces of orange juice. Although I didn’t have a good way to measure dinner, my best guess is that I did successfully hit the target carb load of 7g carbs/kg body weight.
 
 I went to bed last night around 8:45pm. I took 3mg melatonin to help me fall asleep, had a fan running in the room for white noise, and I was solidly asleep by about 9:15pm from what [my watch][garmin] reports. That was good, because I got up at 3am today for the sake of being able to eat a good breakfast long enough before the race started!
 
@@ -107,7 +112,7 @@ The race started at 6am. I spent the interval between leaving my car at 5am and 
 
 ### Fueling
 
-As planned, I took my first gel 15 minutes before the race. So let’s talk gels, with a big caveat: different things work for different people. I landed last year on <span class="all-smcp">AMACX</span>’s drink gels, which I find hit the right balance for me. They go down easily, they don’t require washing down immediately afterward the way Gu does, and they don’t have the weird-to-me texture of things like Science In Sport’s Isotonic gels. For the race today, I used a mix of the <span class="all-smcp">AMACX</span> Turbo and Drink gels.
+As planned, I took my first gel 15 minutes before the race. So let’s talk gels, with a big caveat: different things work for different people. I landed last year on [<span class="all-smcp">AMACX</span>](https://amacx.com/)’s drink gels, which I find hit the right balance for me. They go down easily, they don’t require washing down immediately afterward the way Gu does, and they don’t have the weird-to-me texture of things like Science In Sport’s Isotonic gels. For the race today, I used a mix of the <span class="all-smcp">AMACX</span> Turbo and Drink gels.
 
 My fueling strategy was simple: take a gel every 30 minutes, starting 15 minutes before the start of the race. That was enough to put me on track to consume roughly 8 grams of carbs per mile, or ~80 grams of carbohydrates every hour, which is right in the range that most top-tier athletes are using these days.[^higher]
 
@@ -124,8 +129,8 @@ Net, the planned schedule looked like this:
 | −0:15:00 | [Cassis Turbo Gel][cassis-tg] | yes |
 | 0:15:00 | [Citrus Turbo Gel][citrus-tg] | no |
 | 0:45:00 | [Strawberry Drink Gel][sdg] | no |
-| 1:15:00 | Cassis Turbo Gel | yes |
-| 1:45:00 | [Raspberry Drink Gel][rdg] | yes |
+| 1:15:00 | [Cassis Turbo Gel][cassis-tg] | yes |
+| 1:45:00 | [Raspberry Drink Gel][rdg] | no |
 | 2:15:00 | [Citrus Drink Gel][cdg] | no |
 
 [cassis-tg]: https://thefeed.com/products/amacx-turbo-gel?variant=40201421783103
@@ -148,7 +153,7 @@ I also grabbed some of the available [Gatorade Endurance Formula][gef] or some w
 
 Pacing-wise, I went out by feel and aimed to keep the first 10 miles *extremely* comfortable. One small challenge I did not expect here was that the marathon also has a marathon relay that starts at the same time and follows the same course—so the front-runners at the start were mostly a bunch of people running only 6.5 miles, not 26.2! Happily, I realized that before starting and adjusted for it mentally: even more “run your own race” than usual.
 
-The other small challenge I had was technological in nature. I usually try to check in to some extent on heart rate as a sanity check, but in this case my chest strap was giving me odd data off and on through the first long stretch of the race before finally settling down after mile 11, as you can see in this screenshot from Strava:
+The other small challenge I had was technological in nature. I usually try to look occasionally at myheart rate during a race as a sanity check, but in this case my chest strap was giving odd data off and on through the first long stretch of the race, before finally settling down after mile 11, as you can see in this screenshot from Strava:
 
 ![Weird <abbr title="heart rate">HR</abbr> drop-outs and spikes](https://cdn.chriskrycho.com/images/Colfax-HR.png "An image of heart rate over time, with five arrows pointing to drops and spikes at intervals throughout the first eleven miles of the race, followed by more consistent/realistic heart data for the remainder of the race")
 
@@ -166,7 +171,7 @@ The most challenging part of the race physically came in mile 25–26, but not i
 
 I judged that this would probably sort itself out. I also decided that, given where I was in the race, I was going to run through it unless and until I *couldn’t*. Gladly, after about a half mile, it just stopped. That judgment was another win from doing the training really diligently this season. I had a few similar experiences (albeit quite different in the details) on long runs, so I knew that a lot of times, those things sort themselves out on their own if you just keep running.
 
-Having spent the day reflecting on the race and looking at my pacing, I don’t think I could have paced this much better than I did. Perhaps going out a second or two slower per mile would have given me a tiny bit more juice at the end, but at the end of the day I was running the same kinds of paces at the end of the race as I was at the start. They just *hurt*. That’s how it is supposed to be, though, and as much as I was hurting on those last few miles, I held the pace. That was profoundly satisfying, not least because I spent a bunch of time this season practicing working hard through fatigue.
+Having spent the day reflecting on the race and looking at my pacing, I don’t think I could have paced this much better than I did. Perhaps going out a second or two slower per mile would have given me a tiny bit more juice at the end, but when all was said and done I was running the same kinds of paces at the end of the race as I was at the start. They just *hurt*. That’s how it is supposed to be, though, and as much as I was hurting on those last few miles, I held the pace. That was profoundly satisfying, not least because I spent a bunch of time this season practicing working hard through fatigue.
 
 [^higher]: Some athletes are aiming even higher, but 70–90g/hour is a pretty common recommendation.
 
