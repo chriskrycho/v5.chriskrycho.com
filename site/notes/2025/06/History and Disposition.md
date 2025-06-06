@@ -15,7 +15,7 @@ qualifiers:
 
 ---
 
-There are, no doubt, many factors contributing to why individuals like or dislike, grvitate toward or away from, <abbr>LLM</abbr>-based “<abbr title="artificial intelligence">AI</abbr>” tools for authoring software. Increasingly, though, I wonder if one of the biggest factors is simply this:
+There are, no doubt, many factors contributing to why individuals like or dislike, gravitate toward or away from, <abbr>LLM</abbr>-based “<abbr title="artificial intelligence">AI</abbr>” tools for authoring software. Increasingly, though, I wonder if one of the biggest factors is simply this:
 
 How much of your work has been, and is, about building new things vs. maintaining existing things? (For a very broad definition of “maintaining”: I do not mean stasis.)
 
