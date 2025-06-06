@@ -19,7 +19,7 @@ qualifiers:
 
 ---
 
-[Jujutsu (jj) v0.30.0][v0.30.0] now attaches a `change-id` header to Git commit objects (as you can see in [this <abbr title="pull request">PR</abbr>][pr], which makes it possible in principle for jj to keep track of which Git commimt corresponds to which jj “change” even when sharing them via Git forges that have no idea what jj is. This is neat!
+[Jujutsu (jj) v0.30.0][v0.30.0] now attaches a `change-id` header to Git commit objects (as you can see in [this <abbr title="pull request">PR</abbr>][pr], which makes it possible in principle for jj to keep track of which Git commit corresponds to which jj “change” even when sharing them via Git forges that have no idea what jj is. This is neat!
 
 [v0.30.0]: https://github.com/jj-vcs/jj/releases/tag/v0.30.0
 
