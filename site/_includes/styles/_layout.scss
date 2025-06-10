@@ -15,7 +15,6 @@ main {
    --padding: var(--main-padding);
    margin: var(--padding);
    width: calc(100% - 2 * var(--padding));
-   transition: 0.7s margin ease-out, 0.7s max-width ease-out;
 }
 
 @media screen {
@@ -61,6 +60,7 @@ main {
             main {
                --padding: 0.25em;
                max-width: calc(100vw - 0.5em - 2px - (100vw - 100%));
+               transition: 0.7s margin ease-out, 0.7s max-width ease-out;
             }
 
             nav {

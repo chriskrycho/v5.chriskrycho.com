@@ -65,6 +65,10 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 @import './color-scheme';
 @import './mixins';
 

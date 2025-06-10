@@ -161,7 +161,7 @@
       -moz-text-decoration-color: transparent;
       text-decoration-color: transparent;
 
-      transition: all var(--transition);
+      transition: color var(--transition), text-decoration var(--transition);
 
       &:hover,
       &:active {
