@@ -25,6 +25,7 @@ I’m not currently on the market, but I’m always happy to connect for the fut
     - [Philosophy: Ratchets, Not Levers](#philosophy-ratchets-not-levers)
     - [Education](#education)
 - [<i>Work</i>](#work)—not just where I’ve worked and the tech I used, but what I brought to the table and the difference I made:
+    - [2025–present: Vanta](#2025-present-vanta)
     - [2024–2025: Writing and Consulting](#2024-writing-and-consulting)
     - [2023–2024: Mini-Sabbatical](#2023-2024-mini-sabbatical)
     - [2019–2023: LinkedIn](#2019-2023-linkedin)
@@ -81,9 +82,9 @@ Ratchets are incremental improvements, not silver bullets. So was structured pro
 
 ## Work
 
-### 2025: Something new!
+### 2025–present: Vanta
 
-I’m currently (as of early April 2025) juuuust about to start something new. Keep your eyes on this space if you’re curious!
+I currently work at [Vanta](https://www.vanta.com), helping improve our developer experience and making our developers more effective.
 
 ### 2024–2025: Writing and Consulting
 
