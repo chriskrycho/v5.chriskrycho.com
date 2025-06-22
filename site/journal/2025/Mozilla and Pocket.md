@@ -29,7 +29,7 @@ If you read between these lines, you’ll notice that there’s a direct connect
 
 ![](https://cdn.chriskrycho.com/images/pocket-home.png)
 
-But saving articles was from the outset the *raison d’etre* for Pocket, and Mozilla tried to bury it in favor of something else that presumably they thought would be a larger and more successful “product” that matched the scale of the company that Mozilla is. “What began as a read-it-later app”,  they assert, “evolved into something much bigger.” That was the whole problem: the mistake that led ultimately to this “difficult decision” by Mozilla. Pocket was a good tool. Its integration with Kobo, another excellent tool, made it that much more valuable to users like me. We didn’t need “something much bigger”. But by trying to turn it into 
+But saving articles was from the outset the *raison d’etre* for Pocket, and Mozilla tried to bury it in favor of something else that presumably they thought would be a larger and more successful “product” that matched the scale of the company that Mozilla is. “What began as a read-it-later app”,  they assert, “evolved into something much bigger.” That was the whole problem: the mistake that led ultimately to this “difficult decision” by Mozilla. Pocket was a good tool. Its integration with Kobo, another excellent tool, made it that much more valuable to users like me. We didn’t need “something much bigger”. But by trying to turn Pocket into something much bigger, Mozilla actually killed it.
 
 Don’t mistake me: there may be room for the kind of discovery-and-curation service Mozilla decided to try to make out of Pocket. But by trying, and failing, to make Pocket into something “bigger”, Mozilla first undercut the thing that made it valuable to its original users.
 
