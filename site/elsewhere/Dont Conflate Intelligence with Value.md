@@ -7,6 +7,8 @@ date: 2025-07-03T08:30:00-0600
 
 link: https://www.christianitytoday.com/2025/07/dont-conflate-intelligence-with-value/
 
+featured: true
+
 tags:
   - AI and ML
   - writing
