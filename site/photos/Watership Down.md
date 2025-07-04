@@ -19,7 +19,5 @@ Our older daughter just read <cite>Watership Down</cite> for the first time. On 
 <tr><th scope="row">Lens</th><td>FE 50mm F1.4 GM</td></tr>
 <tr><th scope="row">Settings</th><td>𝑓/1.4, 1/500 s, <span class="smcp">ISO</span> 200</td></tr>
 </table>
-
-
 </figcaption>
 </figure>
