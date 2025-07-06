@@ -6,7 +6,7 @@ image:
 
 ---
 
-When we took a family vacation to Virginia Beach back in May, I [rented][aff] (*n.b.* affiliate link for LensRentals!) the [Sigma 60–600mm ƒ/4.5–6.3 <span class="all-small-caps">DG DN OS</span> Sports][lens] (yes, that is its real, official name), and got some *fantastic* shots with it. It’s a monster of a lens, but without it, I absolutely would not have gotten a shot like this:
+When we took a family vacation to Virginia Beach back in May, I [rented][aff] (*n.b.* affiliate link for LensRentals!) the [Sigma 60–600mm ƒ/4.5–6.3 <span class="all-smcp">DG DN OS</span> Sports][lens] (yes, that is its real, official name), and got some *fantastic* shots with it. It’s a monster of a lens, but without it, I absolutely would not have gotten a shot like this:
 
 [aff]: https://share.lensrentals.com/x/bZD7Ca
 [lens]: https://www.lensrentals.com/rent/sigma-60-600mm-f4.5-6.3-dg-dn-os-sports-for-sony-e
