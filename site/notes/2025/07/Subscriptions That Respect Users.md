@@ -6,6 +6,7 @@ summary: >
   JetBrains has a sensible model for subscriptions: once you pay for a version, it is yours. Would that other vendors would follow suit.
 
 date: 2025-07-05T19:25:00-0600
+updated: 2025-07-05T19:38:00-0600
 
 image:
   cdn: jetbrains-final-update.png
@@ -23,7 +24,7 @@ Almost fully a decade ago now, JetBrains [introduced][p1] a subscription pricing
 
 > You will receive a perpetual fallback license once you pay for a year up front or 12 consecutive months.
 
-The biggest pain point and problem of subscriptions is that when you stop paying, you lose access to the software. This makes some sense for a hosted service. For a desktop application that does not require ongoing costs, though? It does not. It never has. Paying for updates is reasonable; paying for support likewise; but paying to *get access* has never seemed right. Some of that is the history of software having come in boxes, but some of it is not. Most of it, in fact, is the intuition—the *correct* intuition—that this piece of software, once distributed, no longer imposes any direct costs on the author of the software.
+The biggest pain point and problem of subscriptions is that when you stop paying, you lose access to the software. This makes some sense for a hosted service. For a desktop application that does not require ongoing costs, though? It does not. It never has. Paying for updates is reasonable; paying for support likewise; but paying to *keep access* has never seemed right. Some of that is the history of software having come in boxes, but some of it is not. Most of it, in fact, is the intuition—the *correct* intuition—that this piece of software, once distributed, no longer imposes any direct costs on the author of the software.
 
 The compromise represented by JetBrains’ approach recognizes this. You pay a reasonable cost for what amounts to an up-front purchase of a given version of the product, *and you get permanent access to that version*. If you want ongoing updates, you pay for them. But that’s a fair deal!
 
