@@ -14,7 +14,7 @@ When we took a family vacation to Virginia Beach back in May, I [rented][aff] (*
 <figure>
 <a href="https://cdn.chriskrycho.com/images/2025/05-26-beach-rain-dog.jpg"><img src="https://cdn.chriskrycho.com/images/2025/05-26-beach-rain-dog-thumb.jpg"></a>
 <figcaption>
-<p>A rainy day at Virginia Beach in May; this woman still got her dog some exercise, and the dog was happy as could be. I loved the mix of colors and textures.</p>
+<p>A rainy day at Virginia Beach in May; this woman still got her dog some exercise, and the dog was happy as could be. I loved the mix of colors and textures. <a href="https://cdn.chriskrycho.com/images/2025/05-26-beach-rain-dog.jpg">See it full size.</a></p>
 <table>
 <tr><th scope="row">Camera</th><td>Sony α7R V</td></tr>
 <tr><th scope="row">Lens</th><td>60-600mm F4.5-6.3 DG DN OS | Sports 023</td></tr>
