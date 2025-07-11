@@ -24,4 +24,4 @@ Ben Makuh [writes][post]:
 
 [Read the whole thing.][post]
 
-[post]: https://benmakuh.com/2025/06/we-dont-have-to-reinvent-slavery/)
+[post]: https://benmakuh.com/2025/06/we-dont-have-to-reinvent-slavery/
