@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-06-04T06:19:00-0600
+modified: 2025-07-15T20:23:00-0600
 
 ---
 
@@ -57,16 +57,21 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - [<cite>The Gospel and the Catholic Church</cite>](https://bookshop.org/a/21126/9781598563894), Michael Ramsey (reread)
+
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
+
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
+
 - [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
+
 - [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
+
+- [<cite>Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism</cite>](https://bookshop.org/a/21126/9781250391230), Sarah Wynn-Williams (new)
 
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
-- [<cite>Hood</cite>](https://bookshop.org/a/21126/9781595540881), Stephe Lawhead (new)
 
 
 ### Poetry
@@ -115,6 +120,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Antimemetics: Why Some Ideas Resist Spreading</cite>](https://darkforest.metalabel.com/antimemetics), Nadia Asparouhova (new)
 
 - [<cite>How Infrastructure Works: Inside the Systems That Shape Our World</cite>](https://bookshop.org/a/21126/9780593086599), Deb Chachra (new)
+
+- [<cite>Tolkien and the Great War: The Threshold of Middle Earth</cite>](https://bookshop.org/a/21126/9780618574810), John Garth (new)
 
 
 ### Fiction
@@ -617,6 +624,18 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Shattered Sword: The Untold Story of the Battle of Midway</cite>](https://bookshop.org/a/21126/9781574889246), Jonathan Parshall and Anthony Tully (new)
 
     I liked the first chapter of it, and I might return to it, but probably in ebook or paper book form, rather than audiobook.
+
+- [<cite>The Manager’s Path: A Guide for Tech Leaders Navigating Growth and Change</cite>](https://bookshop.org/a/21126/9781491973899), Camille Fournier
+
+    This is good, but overlaps enough with a lot of the other material I’ve read (in Fournier’s defense: much of it downstream of this seminal book!) that I found myself uninterested in continuing after about half the book.
+
+- [<cite>The Tech Exit: A Practical Guide to Freeing Kids and Teens from Smartphones</cite>](https://bookshop.org/a/21126/9780593736296), Clare Morell
+
+    I think there’s some good here, but it’s packaged up in *far* too extreme a set of terms—terms that I simply disagree with *and* think are out of step with reality. Morell cherry-picks the worst outcomes and ignores the median scenario, which is far different. After the first third of the book, I was out.
+
+- [<cite>Hood</cite>](https://bookshop.org/a/21126/9781595540881), Stephen R. Lawhead (new)
+
+    I last read Lawhead back in high school. I didn’t find his prose to have aged particularly well, alas, and ended up not finishing this before my library loan ran out and not interested in renewing it. Alas.
 
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
