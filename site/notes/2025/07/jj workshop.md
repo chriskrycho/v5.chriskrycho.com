@@ -1,6 +1,6 @@
 ---
 title: jj workshop
-subtitle: A tutorial you can follow to build yiur skills.
+subtitle: A tutorial you can follow to build your skills.
 date: 2025-07-27T20:44:00
 link: https://github.com/jkoppel/jj-workshop
 tags:
