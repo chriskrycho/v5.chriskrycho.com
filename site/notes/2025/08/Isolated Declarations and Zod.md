@@ -4,6 +4,9 @@ title: |
 subtitle: |
     One strategy for using TypeScript’s `isolatedDeclarations` flag with inference-driven libraries like Zod.
 
+image:
+  cdn: zod-schema-isolated.png
+
 date: 2025-08-01T09:14:00-0600
 
 tags:
