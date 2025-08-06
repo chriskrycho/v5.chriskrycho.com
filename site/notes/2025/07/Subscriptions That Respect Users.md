@@ -28,7 +28,7 @@ The biggest pain point and problem of subscriptions is that when you stop paying
 
 The compromise represented by JetBrains’ approach recognizes this. You pay a reasonable cost for what amounts to an up-front purchase of a given version of the product, *and you get permanent access to that version*. If you want ongoing updates, you pay for them. But that’s a fair deal!
 
-I was thinking about this again recently becasue I find myself rather frustrated with both [Adobe Lightroom <abbr title="Creative Cloud">CC</abbr>][al] and [Kaleidoscope][k]. Each is adding features I do not care about *at all*, and which I frankly have no interest in paying for. But because they both run on the “traditional” subscription models, I cannot *stop* paying for them without losing access to them.
+I was thinking about this again recently because I find myself rather frustrated with both [Adobe Lightroom <abbr title="Creative Cloud">CC</abbr>][al] and [Kaleidoscope][k]. Each is adding features I do not care about *at all*, and which I frankly have no interest in paying for. But because they both run on the “traditional” subscription models, I cannot *stop* paying for them without losing access to them.
 
 [al]: https://lightroom.adobe.com
 [k]: https://kaleidoscope.app
