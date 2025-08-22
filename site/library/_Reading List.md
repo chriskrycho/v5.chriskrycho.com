@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-07-15T20:23:00-0600
+modified: 2025-08-21T20:00:00-0600
 
 ---
 
@@ -66,7 +66,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
 
-- [<cite>Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism</cite>](https://bookshop.org/a/21126/9781250391230), Sarah Wynn-Williams (new)
+- [<cite>After Virtue</cite>](https://bookshop.org/a/21126/9780268035044), Alasdair MacIntyre (new)
+
+- [<cite>Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy</cite>](https://bookshop.org/a/21126/9781098100131), Vlad Khononov (new)
 
 
 ### Fiction
@@ -636,6 +638,10 @@ These are books I have started at some point but have (at least for now!) put as
 - [<cite>Hood</cite>](https://bookshop.org/a/21126/9781595540881), Stephen R. Lawhead (new)
 
     I last read Lawhead back in high school. I didn’t find his prose to have aged particularly well, alas, and ended up not finishing this before my library loan ran out and not interested in renewing it. Alas.
+
+- [<cite>Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism</cite>](https://bookshop.org/a/21126/9781250391230), Sarah Wynn-Williams (new)
+
+    I tried this as an audiobook and couldn’t get through it. I suspect I could have made better progress in ebook format. I also found, though, that I wasn’t all that interested in Wynn-Williams’ personal narrative: I picked up the book to hear about Facebook/Meta, not her journey. She seems like a nice person, but not the kind of person about whom I would normally pick up a biography or memoir!
 
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
