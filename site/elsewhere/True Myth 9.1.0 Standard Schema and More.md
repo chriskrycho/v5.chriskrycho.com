@@ -39,38 +39,38 @@ I think the Standard Schema integration is probably the most important of these:
 [zod]: https://zod.dev
 
 
-- With Arktype:
+With Arktype:
 
-    ```ts
-    import { parserFor } from 'true-myth';
-    import { type } from 'arktype';
-    
-    const personSchema = type({
-      age: "number >= 0",
-      "name?": "string",
-    });
-    
-    const personParserZod = z.object({
-      age: z.number().nonnegative(),
-      name: z.string().optional(),
-    });
-    
-    const parsePerson = parserFor(personSchema);
-    ```
+```ts
+import { parserFor } from 'true-myth';
+import { type } from 'arktype';
 
-- With Zod:
+const personSchema = type({
+  age: "number >= 0",
+  "name?": "string",
+});
 
-    ```ts
-    import { parserFor } from 'true-myth';
-    import * as z from 'zod';
-    
-    const personSchema = z.object({
-      age: z.number().nonnegative(),
-      name: z.string().optional(),
-    });
-    
-    const parsePerson = parserFor(personSchema);
-    ```
+const personParserZod = z.object({
+  age: z.number().nonnegative(),
+  name: z.string().optional(),
+});
+
+const parsePerson = parserFor(personSchema);
+```
+
+With Zod:
+
+```ts
+import { parserFor } from 'true-myth';
+import * as z from 'zod';
+
+const personSchema = z.object({
+  age: z.number().nonnegative(),
+  name: z.string().optional(),
+});
+
+const parsePerson = parserFor(personSchema);
+```
 
 Then you can use *either* of those `parsePerson` definitions identically:
 
