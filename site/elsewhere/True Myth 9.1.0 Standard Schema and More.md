@@ -50,11 +50,6 @@ const personSchema = type({
   "name?": "string",
 });
 
-const personParserZod = z.object({
-  age: z.number().nonnegative(),
-  name: z.string().optional(),
-});
-
 const parsePerson = parserFor(personSchema);
 ```
 
