@@ -13,7 +13,7 @@ tags:
 
 ---
 
-While I understand why 1Password pivoted, these past few years, toward enterprise features from the point of view of their business—especially with Apple and others providing decent basic password management—I really, *really* miss the days when 1Password was an exemplary, and awesome, Mac and iOS app. There is no comparable replacement!
+While I understand why 1Password pivoted, these past few years, toward enterprise features from the point of view of their business—especially with Apple and others providing decent basic password management—I really, *really* miss the days when 1Password was an exemplary, and awesome, Mac and iOS app. This pivot made the software worse for me. And there is no comparable replacement!
 
 It’s plausible to me that there wasn’t a sustainable business in the original space 1Password was playing in. Plausible, I say: not especially *persuasive*. It’s hard not to notice that the push into growth came with investment. It’s hard not to conclude that the folks who founded the company wanted to make something bigger than 1Password used to be. _Cf._ Allen Pike’s [Building Something Big][bsb]. I can understand that, to a degree. I like working on big, hard things in software myself. (Though if I could fund indie work on the kinds of things I love to work on, I would.)
 
