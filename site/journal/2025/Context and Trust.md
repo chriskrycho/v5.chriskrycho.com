@@ -1,7 +1,7 @@
 ---
 title: "Context and Trust, or: Test Suites Reflect Teams"
 subtitle: |
-  A mild rejoinder to [Brandur](https://brandur.org)’s recent [mini-rant on testing speed](https://brandur.org/nanoglyphs/043-rails-world-2025), and a meditation on .
+  A mild rejoinder to [Brandur](https://brandur.org)’s recent [mini-rant on testing speed](https://brandur.org/nanoglyphs/043-rails-world-2025), and a meditation on scaling groups of people and products.
   
 qualifiers:
   audience: |
