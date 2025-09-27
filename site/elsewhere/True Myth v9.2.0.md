@@ -59,11 +59,13 @@ The same thing works for nested instances of both `Result` and `Task`. Should be
 
 ---
 
-I noticed yesterday, when releasing v9.2.0, that it has been just over 8 years since we started working on this project! The first commit was September 21, 2017, which feels like a lifetime ago. (I still lived in a different state; it was three jobs ago; my kids were 5 and 3 instead of 13 and 11; I was still actively producing [New Rustacean][nr] and [Winning Slowly][ws]; I had yet to start [composing][] again!) My co-author and fellow maintainer [Ben Makuh][bm] and I had found ourselves frustrated by the lack of first class 
+I noticed yesterday, when releasing v9.2.0, that it has been just over 8 years since we started working on this project! The first commit was September 21, 2017, which feels like a lifetime ago. (I still lived in a different state; it was three jobs ago; my kids were 5 and 3 instead of 13 and 11; I was still actively producing [New Rustacean][nr] and [Winning Slowly][ws]; I had yet to start [composing][c] again!) My co-author and fellow maintainer [Ben Makuh][bm] and I had found ourselves frustrated by the lack of first class 
 TypeScript support in existing libraries ([Folktale][f] and [Sanctuary][s]—both good libraries!) and also wanting a bit more idiomatic <abbr title="JavaScript">JS</abbr>/<abbr title="TypeScript">TS</abbr> code. So… we built it. And here we are, 8 years later, still going strong. That feels pretty good!
 
 [nr]: https://newrustacean.com
 [ws]: https://winningslowly.org
+[c]: https://music.chriskrycho.com
+[bm]: https://benmakuh.com
 [f]: https://folktale.github.io
 [s]: https://sanctuary.js.org
 
