@@ -10,6 +10,8 @@ tags:
 
 ---
 
+One of our social activities in the Vanta offsite back in September was visiting Dallas’ little Museum of Illusions. Most of them weren’t especially interesting *or* photogenic, to be honest, but this one at least checked the second box quite handily.
+
 <figure>
 <a href="https://cdn.chriskrycho.com/images/2025/09-16-illusion.jpg"><img src="https://cdn.chriskrycho.com/images/2025/09-16-illusion-thumb.jpg" alt="Pentagonal bars illuminated in white, apparently infinite in depth in a black space (by dint of mirrors)" /></a>
 <figcaption>
