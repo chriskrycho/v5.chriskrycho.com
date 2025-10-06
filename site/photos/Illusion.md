@@ -2,7 +2,7 @@
 title: Illusion
 date: 2025-10-05T18:33:00-0600
 image:
-  cdn: 2025/09-16-illusion.jpg
+  cdn: 2025/09-16-illusion-thumb.jpg
 
 tags:
   - Sony α7R V
