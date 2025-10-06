@@ -13,7 +13,7 @@ tags:
 At 3Eleven Kitchen and Cocktails in Dallas, at a Vanta all-engineering offsite in September.
 
 <figure>
-<a href="https://cdn.chriskrycho.com/images/2025/09-16-a-good-drink.jpg"><img src="https://cdn.chriskrycho.com/images/2025/09-16-a-good-drink-thumb.jpg" alt="a neighborhood, mountains, and clouds reflecting in a lake " /></a>
+<a href="https://cdn.chriskrycho.com/images/2025/09-16-a-good-drink.jpg"><img src="https://cdn.chriskrycho.com/images/2025/09-16-a-good-drink-thumb.jpg" alt="an Old Fashioned sitting on top of a bar lit up with blue lighting" /></a>
 <figcaption>
 <p>A smoky variant on an Old Fashioned. <a href="https://cdn.chriskrycho.com/images/2025/09-16-a-good-drink.jpg">See it full size.</a></p>
 <table>
