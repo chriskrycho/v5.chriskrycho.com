@@ -1,11 +1,18 @@
 {
-   "index.ignored_file_patterns": ["node_modules", "public", "site/_styles", ".jj"],
-   "prettier.format-on-save": "Disable",
-   "todo.workspace-ignore-paths": ["public"],
-   "workspace.color": 8,
-   "workspace.name": "Sympolymathesy",
-   "workspace.preview_append_paths": true,
-   "workspace.preview_root": "site",
-   "workspace.preview_type": "custom",
-   "workspace.preview_url": "http://localhost:8080/"
+  "index.ignored_file_patterns" : [
+    "node_modules",
+    "public",
+    "site\/_styles",
+    ".jj"
+  ],
+  "prettier.format-on-save" : false,
+  "todo.workspace-ignore-paths" : [
+    "public"
+  ],
+  "workspace.color" : 8,
+  "workspace.name" : "Sympolymathesy",
+  "workspace.preview_append_paths" : true,
+  "workspace.preview_root" : "site",
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:8080\/"
 }
