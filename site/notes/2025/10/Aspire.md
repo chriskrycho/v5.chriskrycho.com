@@ -1,6 +1,6 @@
 ---
 title: Robin Sloan’s “Aspire” Zine
-subtitle: …is sold out, but I’m writing about it anyway
+subtitle: …is sold out, but I’m writing about it anyway.
 date: 2025-10-11T10:40-0600
 
 tags:
