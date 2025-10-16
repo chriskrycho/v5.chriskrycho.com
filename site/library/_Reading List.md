@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-08-21T20:00:00-0600
+modified: 2025-10-15T20:01:00-0600
 
 ---
 
@@ -68,8 +68,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>After Virtue</cite>](https://bookshop.org/a/21126/9780268035044), Alasdair MacIntyre (new)
 
-- [<cite>Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy</cite>](https://bookshop.org/a/21126/9781098100131), Vlad Khononov (new)
+- [<cite>Apple in China: The Capture of the World's Greatest Company</cite>](https://bookshop.org/a/21126/9781668053379), Patrick McGee
 
+- [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
 ### Fiction
 
@@ -125,6 +126,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Tolkien and the Great War: The Threshold of Middle Earth</cite>](https://bookshop.org/a/21126/9780618574810), John Garth (new)
 
+- [<cite>Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy</cite>](https://bookshop.org/a/21126/9781098100131), Vlad Khononov (new)
+
+- [<cite>J.R.R. Tolkien: Author of the Century</cite>](https://bookshop.org/a/21126/9780618257591), Tom Shippey (new)
 
 ### Fiction
 
