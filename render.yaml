@@ -254,6 +254,9 @@ services:
       - type: redirect
         source: /photos/tamron-35-150mm-f2-28-di-iii-vxd/
         destination: /journal/disney-world-2022-camera-gear/tamron-35-150mm-f2-28-di-iii-vxd/
+      - type: redirect
+        source: /photos/birds.md/
+        destination: /photos/birds/
 
       # A future version of my publishing software should embrace the idea that
       # series roots can have feed entries
