@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-10-15T20:01:00-0600
+modified: 2025-10-26T17:03:00-0600
 
 ---
 
@@ -66,8 +66,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
 
-- [<cite>After Virtue</cite>](https://bookshop.org/a/21126/9780268035044), Alasdair MacIntyre (new)
-
 - [<cite>Apple in China: The Capture of the World's Greatest Company</cite>](https://bookshop.org/a/21126/9781668053379), Patrick McGee
 
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
@@ -76,6 +74,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
 
+- [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
 
 ### Poetry
 
@@ -129,6 +128,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy</cite>](https://bookshop.org/a/21126/9781098100131), Vlad Khononov (new)
 
 - [<cite>J.R.R. Tolkien: Author of the Century</cite>](https://bookshop.org/a/21126/9780618257591), Tom Shippey (new)
+
+- [<cite>After Virtue</cite>](https://bookshop.org/a/21126/9780268035044), Alasdair MacIntyre (new)
+
 
 ### Fiction
 
