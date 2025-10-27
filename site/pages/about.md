@@ -48,6 +48,8 @@ Most recently I was a Senior Staff Software Engineer at LinkedIn, working on fro
 
 ## By vocation
 
+### Theologian
+
 I have increasingly come to see much of my *calling* in life as that of the <i>public theologian</i>. Doing public theology means (at least) two things:
 
 - doing theological work *for* the church *in* public
@@ -59,35 +61,46 @@ When I am doing theological work *from* the church *for* the public, I aim for t
 
 These two modes are complements—not competitors. Done well, each benefits the other.
 
+### A composer
+
+I am also a working composer of contemporary classical music—think somewhere between John Williams and Arvo Pärt and you’ll be in the right ballpark. You can find my work at [music.chriskrycho.com](https://music.chriskrycho.com), [Bandcamp](https://chriskrycho.bandcamp.com), [Soundcloud](https://soundcloud.com/chriskrycho), and most streaming services.
+
+In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. That interest lay dormant for most of a decade after college. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, but little else. Then, in 2020, I picked back up my composer’s pen and have not put it down, and now treat it as a serious part of my vocation.
+
+You will also find some writing about composition via [the 'music' tag on this site](/topics/music/), but most ongoing reflection now lives in [my music newsletter](https://newsletter.music.chriskrycho.com).
+
 ## By hobby
 
 ### A writer
 
-Since college, I have written—a *lot*—primarily on various iterations of chriskrycho.com, but also occasionally at [Mere Orthodoxy], and between January 2018 and June 2020 also in [my newsletter]. I increasingly conceive of my public writing along two axes:
+Since college, I have written extensively on iterations of this site and [a 2018–2020 newsletter][atss]. I also have bylines in:
 
-[Mere Orthodoxy]: https://mereorthodoxy.com
-[my newsletter]: https://buttondown.email/chriskrycho
+- [<cite>Christianity Today</cite>][ct]
+- [<cite>Mere Orthodoxy</cite>][mere-o]
+- [<cite>The Gospel Coalition</cite>][tgc]
+
+I increasingly conceive of my public writing along two axes:
+
+[ct]: https://www.christianitytoday.com/search/Chris+Krycho/
+[mere-o]: https://mereorthodoxy.com/author/chris-krycho
+[tgc]: https://www.thegospelcoalition.org/profile/chris-krycho/
+[atss]: https://buttondown.email/chriskrycho
 
 - <i>public theology:</i> writing in line with that vocation of <i>public theologian</i> is the work that I care most about, though it is also the work that is hardest in many ways: it’s where the bar is highest.
 
 - <i>public learning:</i> encouraging a culture of learning by sharing what I’m learning—both so that the things I learn, others gain benefit from, and so that I myself have a good trail to follow in the future!
 
+This site tends to emphasize the latter, with most of the content focused on software development and my various hobbies. The theological work increasingly finds its way into places where I have editors: because I find their input invaluable in helping me say what I ought to and say it *how* I ought to.
+
 ### A runner
 
 Since 2010, I have been a long-distance runner. A bout of mono left me incredibly weak, and a desire to get back in shape to play [Ultimate] with friends led me to spend a lot of time running over the next year. The running stuck: I *miss* playing Ultimate, but nothing stops me from running regularly. I’ve also completed a super sprint triathlon, and cycle regularly… but running is my favorite.
 
+I write race reports and sundry other bits about running and endurance fitness; you can find most of that under the [fitness][fitness] and [running][running] topics on this site.
+
 [Ultimate]: https://en.wikipedia.org/wiki/Ultimate_(sport)
-
-### A composer
-
-In high school and college, I studied and practiced musical composition, mostly in a neoclassical/neoromantic vein. That interest lay dormant for most of a decade after college. I composed the processional for my own wedding as well as both of my little sisters’ weddings and the themes for all of my podcasts, but little else. Then, in 2020, I picked back up my composer’s pen and have not put it down.
-
-My most interesting published work to date is [Fanfare for a New Era of American Spaceflight][fanfare], which I recorded with the Budapest Scoring Orchestra. I am also hard at work on a large-scale symphonic work, along with some chamber works and some church music. Some or all of that may appear here in the future!
-
-Beyond that, you can check out a limited sample of my work [on SoundCloud], as well as [the 'music' tag on this site](/topics/music/).
-
-[fanfare]: https://v5.chriskrycho.com/elsewhere/fanfare-for-a-new-era-of-american-spaceflight-live-recording/
-[on SoundCloud]: https://soundcloud.com/chriskrycho/tracks
+[fitness]: https://v5.chriskrycho.com/topics/fitness/
+[running]: https://v5.chriskrycho.com/topics/running/
 
 ### An erstwhile podcaster
 
