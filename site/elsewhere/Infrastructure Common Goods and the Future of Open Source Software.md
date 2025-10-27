@@ -46,7 +46,7 @@ sources:
 
 ---
 
-I was delighted to deliver the opening keynote at LambdaConf 2025 on May 12, 2025. The abstract:
+I was honored to deliver the opening keynote at LambdaConf 2025 on May 12, 2025. The abstract:
 
 > Over the past decades, open source software has evolved from a novelty—frightening to some, dazzling with promise for others—to the bedrock of nearly all software development. (Consider: Thirty years ago, almost no major programming language was free or open source. Now it is all-but-unthinkable to launch a new language which is closed source, still less to charge for a compiler license.) It is tempting to construe open source projects as commons: cultural and natural resources we all inherit. But they are not. They are infrastructure. It is time we started treating them accordingly. The future of open source software—indeed, the future of software—depends on it.
 
