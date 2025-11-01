@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-10-26T17:03:00-0600
+modified: 2025-10-31T21:22:00-0600
 
 ---
 
@@ -61,8 +61,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
-
-- [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
 
 - [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
 
@@ -130,6 +128,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>J.R.R. Tolkien: Author of the Century</cite>](https://bookshop.org/a/21126/9780618257591), Tom Shippey (new)
 
 - [<cite>After Virtue</cite>](https://bookshop.org/a/21126/9780268035044), Alasdair MacIntyre (new)
+
+- [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
 
 
 ### Fiction
