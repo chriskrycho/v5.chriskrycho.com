@@ -1,7 +1,5 @@
-import { logErr } from '../eleventy/utils';
-
 const THIN_SP = '&thinsp;';
-// const HAIR_SP = '&hairsp;'
+const HAIR_SP = '&hairsp;'
 const EM_DASH = '&mdash;';
 const EN_DASH = '&ndash;';
 
@@ -40,12 +38,15 @@ export function enDashes(content: string): string {
    between the initials.
  */
 export function initials(content: string): string {
-   // TODO: implement this in a way that doesn't mistake ends of
-   //     sentences. Basically, I *think* it should just be anytime
-   //     that the period follows a capital letter, but there may be
-   //     the occasional exception.
-   logErr('`spacewell#initials()` not yet implemented.');
-   return content;
+   // Match capital letter followed by period, directly followed by another
+   // capital letter with period. This handles chains of initials like
+   // "J.R.R." (but not "J. R. R.").
+   //
+   // Use a lookahead to ensure we don't match sentence endings by checking that the next
+   // character is directly another capital letter followed by period.
+   const pattern = /([A-Z])\.(?=[A-Z]\.)/g;
+
+   return content.replace(pattern, `$1.${HAIR_SP}`);
 }
 
 // NOTE: keys are mapped to names of functions in the module.

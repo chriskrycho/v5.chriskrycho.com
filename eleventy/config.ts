@@ -39,8 +39,8 @@ type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) =>
 // prettier-ignore
 const not: Not =
    (fn) =>
-   (...args) =>
-      !fn(...args);
+      (...args) =>
+         !fn(...args);
 
 type Filter = <T>(pred: (t: T) => boolean) => (values: T[]) => T[];
 const filter: Filter = (pred) => (values) => values.filter(pred);
@@ -83,8 +83,8 @@ function addCollectionFromDir(config: Config, path: string): void {
 
 const inCollectionNamed =
    (name: string) =>
-   (item: Item): boolean =>
-      item.data?.collections[name]?.includes(item) ?? false;
+      (item: Item): boolean =>
+         item.data?.collections[name]?.includes(item) ?? false;
 
 function latest(collection: Collection): Item[] {
    const all = collection
@@ -161,7 +161,7 @@ const tags = (collection: Collection): string[] => {
 const typesetOptions: Options = {
    disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
 };
-const wellSpaced = spacewell({ emDashes: true, enDashes: true });
+const wellSpaced = spacewell({ emDashes: true, enDashes: true, initials: true });
 
 const renderMarkdown = (content: string): string =>
    typeset(markdown.render(wellSpaced(content)), typesetOptions);

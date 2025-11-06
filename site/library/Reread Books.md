@@ -10,7 +10,7 @@ tags:
   - The Lord of the Rings
   - The Silmarillion
   - The Hobbit
-  - J. R. R. Tolkien
+  - J.R.R. Tolkien
   - John Webster
 
 ---
