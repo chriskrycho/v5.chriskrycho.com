@@ -28,7 +28,7 @@ book:
 
 ---
 
-Tom Shippey's book <a href="{{book.link}}"><cite>{{book.title}}</cite></a> has long been on my reading back catalog, but I had never gotten around to actually reading it. There was always something slightly higher on the shelf. This past week, though, I was in want of something a little lighter than Alastair MacIntyre's <cote>After Virtue</cite> (which I have almost finished), and decided it was time to read Shippey's book at last. It did not disappoint.
+Tom Shippey's book <a href="{{book.link}}"><cite>{{book.title}}</cite></a> has long been on my reading back catalog, but I had never gotten around to actually reading it. There was always something slightly higher on the shelf. This past week, though, I was in want of something a little lighter than Alastair MacIntyre's <cite>After Virtue</cite> (which I have almost finished), and decided it was time to read Shippey's book at last. It did not disappoint.
 
 Published 25 years ago as it was, <cite>Author of the Century</cite> does not cover everything we now know about Tolkien's writing process and works. Some of those particular details his son Christopher Tolkien only worked out in the final years of his own life; the 2010s saw a number of works dealing with key parts of Tolkien’s myth. But even so, Shippey’s book covers most of what was to be known and it does so in a thoroughly readable fashion.
 
