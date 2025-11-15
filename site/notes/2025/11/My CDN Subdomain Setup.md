@@ -23,7 +23,7 @@ qualifiers:
 
 ---
 
-The short version is: I use [Backblaze B2][b2] for actually hosting the content (because it’s super cheap storage and ingress/egress), [Cloudflare][c] for <abbr>DNS</abbr> (as I do with everything presently), and a Cloudflare [<abbr title="universal resource locator">URL</abbr> Rewrite Rule][rewrite]rewrite to map inbound traffic to that Backblaze bucket.
+The short version is: I use [Backblaze B2][b2] for actually hosting the content (because it’s super cheap storage and ingress/egress), [Cloudflare][c] for <abbr>DNS</abbr> (as I do with everything presently), and a Cloudflare [<abbr title="universal resource locator">URL</abbr> Rewrite Rule][rewrite] rewrite to map inbound traffic to that Backblaze bucket.
 
 [b2]: https://www.backblaze.com/cloud-storage
 [c]: https://www.cloudflare.com
