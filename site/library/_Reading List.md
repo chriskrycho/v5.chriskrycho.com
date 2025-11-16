@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-11-15T11:49:00-0700
+modified: 2025-11-15T20:48:00-0700
 
 ---
 
@@ -62,13 +62,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
 
-- [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
-
-- [<cite>Apple in China: The Capture of the World's Greatest Company</cite>](https://bookshop.org/a/21126/9781668053379), Patrick McGee
+- [<cite>Apple in China: The Capture of the World's Greatest Company</cite>](https://bookshop.org/a/21126/9781668053379), Patrick McGee (new)
 
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
-- [Eccentric Orbits: The Iridium Story](https://bookshop.org/a/21126/9780802126788), John Bloom (new)
+- [<cite>Eccentric Orbits: The Iridium Story</cite>](https://bookshop.org/a/21126/9780802126788), John Bloom (new)
+
+- [<cite>The Magic of Code: How Digital Language Created and Connects Our World—and Shapes Our Future</cite>](https://bookshop.org/a/21126/9781541704480), Samuel Arbesman (new)
 
 ### Fiction
 
@@ -651,6 +651,7 @@ These are books I have started at some point but have (at least for now!) put as
 
     I tried this as an audiobook and couldn’t get through it. I suspect I could have made better progress in ebook format. I also found, though, that I wasn’t all that interested in Wynn-Williams’ personal narrative: I picked up the book to hear about Facebook/Meta, not her journey. She seems like a nice person, but not the kind of person about whom I would normally pick up a biography or memoir!
 
+- [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
