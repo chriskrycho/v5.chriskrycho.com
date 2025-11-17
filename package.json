@@ -29,7 +29,7 @@
       "gulp-dart-sass": "^1.1.0",
       "highlight.js": "^11.10.0",
       "highlightjs-glimmer": "^2.2.2",
-      "js-yaml": "^4.1.0",
+      "js-yaml": "^4.1.1",
       "luxon": "^3.5.0",
       "markdown-it": "^13.0.2",
       "markdown-it-abbr": "^1.0.4",
