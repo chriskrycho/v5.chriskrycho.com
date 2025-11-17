@@ -75,8 +75,8 @@ importers:
         specifier: ^2.2.2
         version: 2.2.2(highlight.js@11.10.0)
       js-yaml:
-        specifier: ^4.1.0
-        version: 4.1.0
+        specifier: ^4.1.1
+        version: 4.1.1
       luxon:
         specifier: ^3.5.0
         version: 3.5.0
@@ -1919,16 +1919,16 @@ packages:
   js-stringify@1.0.2:
     resolution: {integrity: sha512-rtS5ATOo2Q5k1G+DADISilDA6lv79zIiwFd6CcjuIxGKLFm5C+RLImRscVap9k55i+MOZwgliw+NejvkLuGD5g==}
 
-  js-yaml@3.14.1:
-    resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
+  js-yaml@3.14.2:
+    resolution: {integrity: sha512-PMSmkqxr106Xa156c2M265Z+FTrPl+oxd/rgOQy2tijQeK5TxQ43psO1ZCwhVOSdnn+RzkzlRz/eY4BgJBYVpg==}
     hasBin: true
 
   js-yaml@4.0.0:
     resolution: {integrity: sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q==}
     hasBin: true
 
-  js-yaml@4.1.0:
-    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
   jsdom@22.1.0:
@@ -2062,6 +2062,7 @@ packages:
 
   lodash.pick@4.4.0:
     resolution: {integrity: sha512-hXt6Ul/5yWjfklSGvLQl8vM//l3FtyHZeuelpzK6mm99pNvN9yTDruNZPEJZD1oWrqo+izBmB7oUfWgcCX7s4Q==}
+    deprecated: This package is deprecated. Use destructuring assignment syntax instead.
 
   lodash.reduce@4.6.0:
     resolution: {integrity: sha512-6raRe2vxCYBhpBu+B+TtNGUzah+hQjVdu3E17wfusjyrXBka2nBS8OH/gjVZ5PvHOhWmIZTYri09Z6n/QfnNMw==}
@@ -3776,17 +3777,17 @@ snapshots:
       '@webassemblyjs/ast': 1.14.1
       '@xtuc/long': 4.2.2
 
-  '@webpack-cli/configtest@1.2.0(webpack-cli@4.10.0(webpack@5.96.1))(webpack@5.96.1(webpack-cli@4.10.0))':
+  '@webpack-cli/configtest@1.2.0(webpack-cli@4.10.0)(webpack@5.96.1)':
     dependencies:
       webpack: 5.96.1(webpack-cli@4.10.0)
       webpack-cli: 4.10.0(webpack@5.96.1)
 
-  '@webpack-cli/info@1.5.0(webpack-cli@4.10.0(webpack@5.96.1))':
+  '@webpack-cli/info@1.5.0(webpack-cli@4.10.0)':
     dependencies:
       envinfo: 7.14.0
       webpack-cli: 4.10.0(webpack@5.96.1)
 
-  '@webpack-cli/serve@1.7.0(webpack-cli@4.10.0(webpack@5.96.1))':
+  '@webpack-cli/serve@1.7.0(webpack-cli@4.10.0)':
     dependencies:
       webpack-cli: 4.10.0(webpack@5.96.1)
 
@@ -4895,7 +4896,7 @@ snapshots:
 
   gray-matter@4.0.3:
     dependencies:
-      js-yaml: 3.14.1
+      js-yaml: 3.14.2
       kind-of: 6.0.3
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
@@ -5257,7 +5258,7 @@ snapshots:
 
   js-stringify@1.0.2: {}
 
-  js-yaml@3.14.1:
+  js-yaml@3.14.2:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
@@ -5266,7 +5267,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  js-yaml@4.1.0:
+  js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
@@ -6377,7 +6378,7 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.10(webpack@5.96.1(webpack-cli@4.10.0)):
+  terser-webpack-plugin@5.3.10(webpack@5.96.1):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -6489,7 +6490,7 @@ snapshots:
       jshint: 2.13.6
       minimist: 1.2.8
       mocha: 8.4.0
-      terser-webpack-plugin: 5.3.10(webpack@5.96.1(webpack-cli@4.10.0))
+      terser-webpack-plugin: 5.3.10(webpack@5.96.1)
       webpack: 5.96.1(webpack-cli@4.10.0)
       webpack-cli: 4.10.0(webpack@5.96.1)
       xmlserializer: 0.6.1
@@ -6651,9 +6652,9 @@ snapshots:
   webpack-cli@4.10.0(webpack@5.96.1):
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
-      '@webpack-cli/configtest': 1.2.0(webpack-cli@4.10.0(webpack@5.96.1))(webpack@5.96.1(webpack-cli@4.10.0))
-      '@webpack-cli/info': 1.5.0(webpack-cli@4.10.0(webpack@5.96.1))
-      '@webpack-cli/serve': 1.7.0(webpack-cli@4.10.0(webpack@5.96.1))
+      '@webpack-cli/configtest': 1.2.0(webpack-cli@4.10.0)(webpack@5.96.1)
+      '@webpack-cli/info': 1.5.0(webpack-cli@4.10.0)
+      '@webpack-cli/serve': 1.7.0(webpack-cli@4.10.0)
       colorette: 2.0.20
       commander: 7.2.0
       cross-spawn: 7.0.5
@@ -6694,7 +6695,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(webpack@5.96.1(webpack-cli@4.10.0))
+      terser-webpack-plugin: 5.3.10(webpack@5.96.1)
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     optionalDependencies:
