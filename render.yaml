@@ -6,10 +6,17 @@ services:
     - key: SKIP_INSTALL_DEPS
       value: 'true'
     buildCommand: |
-      corepack enable
-      pnpm install --frozen-lockfile
-      pnpm clean
-      pnpm build
+      # Install mise
+      curl https://mise.run | sh
+      export PATH="$HOME/.local/bin:$PATH"
+
+      # Install tools from mise.toml
+      mise install
+
+      # Run build commands using mise
+      mise exec -- pnpm install --frozen-lockfile
+      mise exec -- pnpm clean
+      mise exec -- pnpm build
     staticPublishPath: './public'
     pullRequestPreviewsEnabled: true
     domain: v5.chriskrycho.com

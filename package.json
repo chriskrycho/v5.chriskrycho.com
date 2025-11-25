@@ -49,7 +49,6 @@
       "typeset": "^0.3.5",
       "uslug": "^1.0.4"
    },
-   "packageManager": "pnpm@10.8.1",
    "scripts": {
       "build:styles": "gulp all",
       "build:site": "eleventy --quiet",
