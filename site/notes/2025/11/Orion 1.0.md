@@ -7,6 +7,8 @@ link: https://blog.kagi.com/orion
 tags:
   - Apple
 
+date: 2025-11-25T10:30:00-0700
+
 ---
 
 Today, [Kagi][k] published the 1.0 release of their [Orion browser][o]: stable and ready for everyone in the Apple ecosystem to use. You can read more about it [here]({{link}}):
