@@ -10,6 +10,9 @@ tags:
   - Sony Alpha
   - Sony α7R V
 
+image:
+  cdn: camera-screen-error-message.jpg
+
 ---
 
 This week I was trying to do some video recording directly to my Sony α7R V (for the sake of [the video essay version][video] of [this month’s issue][issue] of [my music newsletter][newsletter]), and could not for the life of me figure out why it kept reporting that 60p was unavailable when I had been recording in 60p literally five minutes earlier. The error message was inscrutable:
