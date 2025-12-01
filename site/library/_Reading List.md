@@ -135,10 +135,13 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Magic of Code: How Digital Language Created and Connects Our World—and Shapes Our Future</cite>](https://bookshop.org/a/21126/9781541704480), Samuel Arbesman (new)
 
+
 ### Fiction
 
 - [<cite>Wind and Truth: Book Five of <b>The Stormlight Archive</b></cite>](https://bookshop.org/a/21126/9781250319180), Brandon Sanderson (new)
+
 - [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—read alongside my 12-year-old daughter!)
+
 - [<cite>Stories of Your Life and Others</cite>](https://bookshop.org/a/21126/9781101972120), Ted Chiang (new)
 
 
