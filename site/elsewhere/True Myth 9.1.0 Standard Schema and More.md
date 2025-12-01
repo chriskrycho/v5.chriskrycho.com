@@ -11,6 +11,7 @@ qualifiers:
         TypeScript developers with an interest in even safer typed programming with a functional flair.
 
 date: 2025-08-24T19:45:00-0600
+updated: 2025-11-30T20:15:00-0700
 
 tags:
     - TypeScript
@@ -42,7 +43,7 @@ I think the Standard Schema integration is probably the most important of these:
 With Arktype:
 
 ```ts
-import { parserFor } from 'true-myth';
+import { parserFor } from 'true-myth/standard-schema';
 import { type } from 'arktype';
 
 const personSchema = type({
@@ -56,7 +57,7 @@ const parsePerson = parserFor(personSchema);
 With Zod:
 
 ```ts
-import { parserFor } from 'true-myth';
+import { parserFor } from 'true-myth/standard-schema';
 import * as z from 'zod';
 
 const personSchema = z.object({
