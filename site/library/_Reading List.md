@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-11-29T20:01:00-0700
+modified: 2025-11-30T19:28:00-0700
 
 ---
 
@@ -67,8 +67,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
 - [<cite>Eccentric Orbits: The Iridium Story</cite>](https://bookshop.org/a/21126/9780802126788), John Bloom (new)
-
-- [<cite>The Magic of Code: How Digital Language Created and Connects Our World—and Shapes Our Future</cite>](https://bookshop.org/a/21126/9781541704480), Samuel Arbesman (new)
 
 - [Proto: How One Ancient Language Went Global](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
@@ -135,6 +133,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Lifting the Veil: Imagination and the Kingdom of God</cite>](https://bookshop.org/a/21126/9781941106228), Malcolm Guite (new)
 
+- [<cite>The Magic of Code: How Digital Language Created and Connects Our World—and Shapes Our Future</cite>](https://bookshop.org/a/21126/9781541704480), Samuel Arbesman (new)
 
 ### Fiction
 
