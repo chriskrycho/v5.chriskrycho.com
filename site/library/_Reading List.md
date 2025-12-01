@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-11-30T20:50:00-0700
+modified: 2025-12-01T11:39:00-0700
 
 ---
 
@@ -66,7 +66,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
-- [Proto: How One Ancient Language Went Global](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
+- [<cite>Proto: How One Ancient Language Went Global</cite>](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
 ### Fiction
 
