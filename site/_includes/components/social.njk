@@ -9,7 +9,11 @@
       {%- elif page.data.book.cover -%}
          {{page.data.book.cover | resolvedImage}}
       {%- elif pageTitle -%}
-         https://opengraph.chriskrycho.com/page-title/{{pageTitle | striptags(true) | urlencode}}
+         {%- if page.data.subtitle -%}
+            https://opengraph.chriskrycho.com/?page_title={{pageTitle | striptags(true) | urlencode}}&subtitle={{page.data.subtitle | striptags(true) | urlencode}}
+         {%- else -%}
+            https://opengraph.chriskrycho.com/?page_title={{pageTitle | striptags(true) | urlencode}}
+         {%- endif -%}
       {%- else -%}
          https://cdn.chriskrycho.com/images/sympolymathesy-social.png
       {%- endif -%}
