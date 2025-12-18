@@ -13,7 +13,7 @@ qualifiers:
 
 ---
 
-<figure class="quote">
+<figure class="quotation">
 
 > Coding agents replace the part of my job that involves typing the code into a computer. I find what's left to be a much more valuable use of my time.
 
