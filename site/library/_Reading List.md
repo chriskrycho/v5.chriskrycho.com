@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-12-01T11:39:00-0700
+modified: 2025-12-24T14:17:00-0700
 
 ---
 
@@ -143,6 +143,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Great Expectations</cite>](https://bookshop.org/a/21126/9780143106272), Charles Dickens (new—read alongside my 12-year-old daughter!)
 
 - [<cite>Stories of Your Life and Others</cite>](https://bookshop.org/a/21126/9781101972120), Ted Chiang (new)
+
+- <cite>Harry Potter and the Sorceror’s Stone</cite>, J.K. Rowling (reread)
 
 
 ## 2024
