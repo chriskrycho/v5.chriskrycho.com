@@ -1,0 +1,8 @@
+{
+   "layout": "post.njk",
+   "permalink": "/journal/2025-in-review/{{page.fileSlug | slug}}/index.html",
+   "series": {
+      "title": "2025 in Review"
+   },
+   "tags": ["annual reflections"]
+}

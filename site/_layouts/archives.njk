@@ -16,9 +16,42 @@ standalonePage: true
 {{item.header(type='archive', title=title, subtitle=subtitle, subscribe=subscribe)}}
 
 {%- if content -%}
-<div class='article-content'>
-   {% block content -%}{{content | safe}}{%- endblock content %}
-</div>
+<article class='content-block post'>
+   {% block header -%}{%- endblock header %}
+   {% block before_content %}{% endblock before_content %}
+   <div class='article-content'>
+      {% block content -%}
+      {% if qualifiers -%}
+      {%- if qualifiers.retraction -%}
+         <div class='retraction' aria-label='Retraction'>
+         {{- qualifiers.retraction | safe -}}
+         </div>
+      {%- endif -%}
+
+      <div class='qualifiers'>
+         {%- if qualifiers.audience -%}
+            {{- qualifiers.audience | safe -}}
+         {%- endif -%}
+         {%- if qualifiers.disclosure -%}
+            {{- qualifiers.disclosure | safe -}}
+         {%- endif -%}
+         {%- if qualifiers.context -%}
+            {{- qualifiers.context | safe -}}
+         {%- endif -%}
+         {%- if qualifiers.epistemic -%}
+            {{- qualifiers.epistemic | safe -}}
+         {%- endif -%}
+         {%- if qualifiers.discusses -%}
+            {{- qualifiers.discusses | safe -}}
+         {%- endif -%}
+      </div>
+      {%- endif %}
+
+      {{content | safe}}
+      {%- endblock content %}
+   </div>
+   {% block after_content %}{% endblock after_content %}
+</article>
 {%- endif -%}
 
 {%- set c = page.inputPath | toCollection(isGhostCollection) -%}

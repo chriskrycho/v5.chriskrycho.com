@@ -252,11 +252,12 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal/Fanfare for a New Era of American Spaceflight');
    addCollectionFromDir(config, 'journal/Ember Template Imports');
    addCollectionFromDir(config, 'journal/Disney World 2022 Camera Gear');
-   addCollectionFromDir(config, 'journal/2022 in Review');
+   addCollectionFromDir(config, 'journal/2022/2022 in Review');
    addCollectionFromDir(config, 'journal/Next');
-   addCollectionFromDir(config, 'journal/2023 in Review');
+   addCollectionFromDir(config, 'journal/2023/2023 in Review');
    addCollectionFromDir(config, 'journal/Read the Code');
    addCollectionFromDir(config, 'journal/Read the Manual');
+   addCollectionFromDir(config, 'journal/2025/2025 in Review');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
    addCollectionFromDir(config, 'library/Confronted by Grace');
