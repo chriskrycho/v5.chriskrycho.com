@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-12-26T09:09:00-0700
+modified: 2025-12-27T08:06:00-0700
 
 ---
 
@@ -70,15 +70,20 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
+
 ### Fiction
 
-- [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J. R. R. Tolkien (new)
+- [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
+
+- [<cite>Harry Potter and the Goblet of Fire</cite>](https://bookshop.org/a/21126/9781546154419), J.K. Rowling (reread)
+
 
 ### Poetry
 
 - [<cite>Ponds</cite>](https://bookshop.org/a/21126/9798385210640), J. C. Scharl (new)
+
 - <cite>Advent: An Anthology</cite>, Hannah Hodgson (new)
 
 
@@ -150,6 +155,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Harry Potter and the Chamber of Secrets</cite>](https://bookshop.org/a/21126/9780545791328), J.K. Rowling (reread)
 
+- [<cite>Harry Potter and the Prisoner of Azkaban</cite>](https://bookshop.org/a/21126/9780545791342), J.K. Rowling (reread)
+
 
 ## 2024
 
@@ -201,7 +208,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Blue Mars</cite>](https://bookshop.org/a/21126/9780593358856), Kim Stanley Robinson (new)
 - [<cite>Our Game</cite>](https://bookshop.org/a/21126/9780345418319), John le Carré (new)
 - [<cite>Moonbound</cite>](https://bookshop.org/a/21126/9780374610609), Robin Sloan (new)
-- [<cite>The Lord of the Rings</cite>][lotr], J. R. R. Tolkien (reread)
+- [<cite>The Lord of the Rings</cite>][lotr], J.R.R. Tolkien (reread)
 - [<cite>The Armageddon Protocol</cite>](https://bookshop.org/a/21126/9781915998002), Dan Moren (new)
 - [<cite>The Mercy of Gods</cite>](https://bookshop.org/a/21126/9780316525572), James S. A. Corey (new)
 - [<cite>A Talent for War</cite>](https://bookshop.org/a/21126/9780441012176), Jack McDevitt (new)
@@ -350,7 +357,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Age of Swords: Book Two of the Legends of the First Empire</cite>](https://bookshop.org/a/21126/9781101965382), Michael J. Sullivan (new)
 
-- [<cite>The Hobbit</cite>][hobbit], J. R. R. Tolkien (reread with my younger daughter)
+- [<cite>The Hobbit</cite>][hobbit], J.R.R. Tolkien (reread with my younger daughter)
 
 
 ## 2021
