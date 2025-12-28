@@ -96,7 +96,7 @@ The choice of representation should not be visible to other users of some piece 
 
 Viewed through that lens, this kind of abstraction is no more and no less valuable in a service that merely shuttles a user identifier along than in a service where users are core concerns for the domain. In both cases: the fact that a user ID is a string (or number, or…) under the hood is besides the point. Relevance to the domain is actually irrelevant!
 
-That is: once you have constructed a `UserId`, you should not be able to check the length of the string that represents it, or concatenate it with some other string, or get a subslice of it, or to call `String.prototype.splice` on it and mutate its contents. None of those are meaningful things to do with an identifier. To the contrary: the only semantics associated with the item are its use *as an identifier*, passed around as a token that other operations can reliably depend on because they can trust it to represent the user and not to behave like a string.
+Once you have constructed a `UserId`, you should not be able to check the length of the string that represents it, or concatenate it with some other string, or get a subslice of it, or to call `String.prototype.splice` on it and mutate its contents. None of those are meaningful things to do with an identifier. To the contrary: the only semantics associated with the item are its use *as an identifier*, passed around as a token that other operations can reliably depend on because they can trust it to represent the user and not to behave like a string.
 
 <aside>
 
