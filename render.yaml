@@ -96,6 +96,9 @@ services:
       - type: redirect
         source: /journal/read-the-code/using-drop-for-safety-in-rust/
         destination: /journal/read-the-code/using-drop-safely-in-rust/
+      - type: redirect
+        source: /journal/domain-wrapper-types/
+        destination: /journal/friendly-little-wrapper-types/
 
       # ...including after I made library collections work correctly
       - type: redirect
