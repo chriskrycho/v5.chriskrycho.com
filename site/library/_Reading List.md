@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-12-27T08:06:00-0700
+modified: 2025-12-29T08:01:00-0700
 
 ---
 
@@ -77,7 +77,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
 
-- [<cite>Harry Potter and the Goblet of Fire</cite>](https://bookshop.org/a/21126/9781546154419), J.K. Rowling (reread)
+- [<cite>Harry Potter and the Order of the Phoenix</cite>](https://bookshop.org/a/21126/9780545791434), J.K. Rowling (reread)
 
 
 ### Poetry
@@ -156,6 +156,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Harry Potter and the Chamber of Secrets</cite>](https://bookshop.org/a/21126/9780545791328), J.K. Rowling (reread)
 
 - [<cite>Harry Potter and the Prisoner of Azkaban</cite>](https://bookshop.org/a/21126/9780545791342), J.K. Rowling (reread)
+
+- [<cite>Harry Potter and the Goblet of Fire</cite>](https://bookshop.org/a/21126/9781546154419), J.K. Rowling (reread)
 
 
 ## 2024
