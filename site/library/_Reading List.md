@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-12-29T08:01:00-0700
+modified: 2025-12-29T21:35:00-0700
 
 ---
 
@@ -61,8 +61,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 
 - [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
-
-- [<cite>Apple in China: The Capture of the World's Greatest Company</cite>](https://bookshop.org/a/21126/9781668053379), Patrick McGee (new)
 
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
@@ -141,6 +139,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Eccentric Orbits: The Iridium Story</cite>](https://bookshop.org/a/21126/9780802126788), John Bloom (new)
 
 - [<cite>The Magic of Code: How Digital Language Created and Connects Our World—and Shapes Our Future</cite>](https://bookshop.org/a/21126/9781541704480), Samuel Arbesman (new)
+
+- [<cite>Apple in China: The Capture of the World's Greatest Company</cite>](https://bookshop.org/a/21126/9781668053379), Patrick McGee (new)
 
 
 ### Fiction
