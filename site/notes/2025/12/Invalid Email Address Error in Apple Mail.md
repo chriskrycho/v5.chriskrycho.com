@@ -15,4 +15,4 @@ The problem, it turned out, was that I had aliases set up with which I can reply
 
 This is a terrible error message, and frankly a dumb design(I would just call it a bug, in fact!), But hopefully this explanation and work around will help someone else out there.
 
-[^mail]: I’d also love to have a better email app but for my purposes—using <abbr title="Internet Message Access Protocol">IMAP</abbr> with [Fastmail](https://join.fastmail.com/4dcac080) (_n.b._: affiliate link)—or <abbr title="JSON Meta Application Protocol">JMAP</abbr> even!—nothing I have tried is better and most are worse. Alas, we ourselves in a world of stagnant app development.
+[^mail]: I’d also love to have a better email app but for my purposes—using <abbr title="Internet Message Access Protocol">IMAP</abbr> with [Fastmail](https://join.fastmail.com/4dcac080) (_n.b._: affiliate link)—or <abbr title="JSON Meta Application Protocol">JMAP</abbr> even!—nothing I have tried is better and most are worse. Alas, we find ourselves in a world of stagnant app development.
