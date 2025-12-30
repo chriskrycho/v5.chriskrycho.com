@@ -10,6 +10,11 @@ qualifiers:
     [ddd]: https://martinfowler.com/bliki/DomainDrivenDesign.html
 
 date: 2025-12-27T15:13:00-0700
+updated: 2025-12-30T09:52:00-0700
+updates:
+  - at: 2025-12-30T09:52:00-0700
+    changes: |
+      Added a bit of content about performance overhead to the relevant footnote.
 
 tags:
   - software development
@@ -113,6 +118,6 @@ It is clean and clear. It takes away all the hooks and handles from the underlyi
 
 Go forth and use little wrapper types like this. They’re cheap-as-free and they’ll make your life much easier in general—and where they add a little friction, it’s for very good reason.
 
-[^transparent]: In Rust I would actually use `#[repr(transparent)]` to make this truly zero-cost at runtime—no wrapper type at all, at runtime, just the checking at compile time.
+[^transparent]: In Rust I would actually use `#[repr(transparent)]` to make this truly zero-cost at runtime—no wrapper type at all, at runtime, just the checking at compile time. I do acknowledge that there *can* be allocation costs from using the wrapper types in something like JavaScript/TypeScript—an extra object allocation for each of these types. That said, unless you are creating many, *many* of these object types, you likely will not notice.
 
 [^ts-assignability]: Looking at you, TypeScript assignability checks with union types.
