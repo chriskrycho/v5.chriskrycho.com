@@ -1,5 +1,5 @@
 const THIN_SP = '&thinsp;';
-const HAIR_SP = '&hairsp;'
+const HAIR_SP = '&hairsp;';
 const EM_DASH = '&mdash;';
 const EN_DASH = '&ndash;';
 

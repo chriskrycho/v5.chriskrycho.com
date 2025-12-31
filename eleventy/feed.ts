@@ -185,19 +185,17 @@ function summaryFor(item: Item): string {
    return item.data?.summary ?? item.data?.subtitle ?? striptags(item.templateContent);
 }
 
+interface FeedItemConfig {
+   config: SiteConfig;
+   includeReplyViaEmail: boolean;
+   photoItemTitles: 'on' | 'off';
+}
+
 /**
    Map 11ty `Item`s into JSON Feed `FeedItem`s.
  */
 const toFeedItemGivenConfig =
-   ({
-      config,
-      includeReplyViaEmail,
-      photoItemTitles,
-   }: {
-      config: SiteConfig;
-      includeReplyViaEmail: boolean;
-      photoItemTitles: 'on' | 'off';
-   }) =>
+   ({ config, includeReplyViaEmail, photoItemTitles }: FeedItemConfig) =>
    (item: Item): FeedItem | null =>
       canParseDate(item.date) && item.data?.standalonePage !== true
          ? {

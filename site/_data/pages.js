@@ -1,6 +1,6 @@
 module.exports = [
    { type: 'page', title: 'About', url: '/about/' },
-   { type: 'page', title: 'Curriculum Vitae', url: '/cv/' }, 
+   { type: 'page', title: 'Curriculum Vitae', url: '/cv/' },
    { type: 'separator' },
    { type: 'page', title: 'Essays', url: '/essays/' },
    { type: 'page', title: 'Journal', url: '/journal/' },
