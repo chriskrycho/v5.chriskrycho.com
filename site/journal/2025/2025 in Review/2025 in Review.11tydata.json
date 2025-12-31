@@ -4,5 +4,6 @@
    "series": {
       "title": "2025 in Review"
    },
-   "tags": ["annual reflections"]
+   "tags": ["annual reflections"],
+   "isGhostCollection": false
 }
