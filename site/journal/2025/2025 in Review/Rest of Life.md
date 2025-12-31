@@ -4,8 +4,12 @@ title: >
 subtitle: >
   Family, happy hours, parties, parenting, church, middle adulthood.
 
-date: 2025-12-31T16:50:00-0700
+date: 2025-12-31T16:56:00-0700
 
+tags:
+  - parenting
+  - family
+  - church
 
 ---
 
