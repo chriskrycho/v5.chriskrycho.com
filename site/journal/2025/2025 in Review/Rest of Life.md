@@ -38,6 +38,6 @@ Perhaps the most notable thing to me in this “everything else” bucket has be
 
 Nothing brought this home to me more forcefully this year than having a few younger adults in the congregation very distinctly connect with Jaimie and me *as* an older couple in their lives. None of that was explicit, and as a result it actually took me a bit to recognize what I was seeing, but once I saw it, I could not *un*-see it. And of course that is true! A decade ago, we were looking at couples a decade ahead of us. The difference is that we’re now in our late 30s, so we can be the couple a decade ahead in life. It is a bit odd to consider that I am only 18 months away from being 40: as much as 30 seemed a big milestone, 40 seems a bigger one—well into middle adulthood.
 
-In so many parts of life, no one really tells you these transitions are coming. we should, though! Again, as I said in the Professional update about the same dynamic in our careers, there is more to say here—I hope to write a little more about this in a dedicated post sometime soon.
+In so many parts of life, no one really tells you these transitions are coming. We should, though! Again, as I said in the Professional update about the same dynamic in our careers, there is more to say here—I hope to write a little more about this in a dedicated post sometime soon.
 
 In all these areas, though, I am glad to be able to say that we are doing well. Not every year have I been able to say that! But for 2025, I can.
