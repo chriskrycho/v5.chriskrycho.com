@@ -29,9 +29,11 @@ Most of my work this year has been focused on making both our codebase and our p
 
 Perhaps the most striking part of these first 8 months at Vanta was looking around and realizing that I am not only a leader, but one of the most senior and experienced leaders at the company. I have been writing software professional since some of my colleagues were in elementary and middle school. There comes a point in all of our lives where we find that we are not just grown-ups, but indeed the people on whose shoulders much of the responsibility falls, because there is no one else who is going to solve any given set of problems. Often no one else even has the experience and context to *see* the problems, still less to figure out how to fix them. That point is one well-taken in general for folks in this age bracket! (More on this some other time soon!)
 
-My “year of shipping” went better and further along some axis than I expected at the start of the year, while seeing much less progress than I might’ve hoped to along others. Unsurprising! This was always going to be an area where I was going to do what I could, when I could, and that often meant following my fancy where it led me, given that it had to come in after work and other commitments. Mainly, then, I did a lot of incremental work on True Myth, the library a friend and I wrote now eight years ago for safer and more robust handling of errors, nothing, and as of late last year also synchrony in TypeScript.
+My “year of shipping” went better and further along some axis than I expected at the start of the year, while seeing much less progress than I might’ve hoped to along others. Unsurprising! This was always going to be an area where I was going to do what I could, when I could, and that often meant following my fancy where it led me, given that it had to come in after work and other commitments. Mainly, then, I did a lot of incremental work on [True Myth][tm], the library a friend and I wrote now eight years ago for safer and more robust handling of errors, nothing, and as of late last year also synchrony in TypeScript.
 
-From the start of the year, True Myth releases included:
+[tm]: https://true-myth.js.org
+
+Since the start of the year, True Myth releases have included:
 
 - a new `Task` type for fallible asynchronous operations, with full parity for the built-in `Promise` in JavaScript as well as an <abbr title="application programming interface">API</abbr> for retries that I really like.
 
