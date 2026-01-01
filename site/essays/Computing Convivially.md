@@ -1,7 +1,7 @@
 ---
 title: Computing, Convivially
 subtitle: >
-  Digital technologies can be terribly destructive, but they can also be gloriously empowering. How do we tools for conviviality rather than means of domination?
+  Digital technologies can be terribly destructive, but they can also be gloriously empowering. How do we shape them into tools for conviviality rather than means of domination?
 
 date: 2026-01-01T10:45:00-0700
 
