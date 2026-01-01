@@ -10,6 +10,15 @@ tags:
   - writing
   - music
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)
+
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. All of the posts are available at the [2025 in Review][series] series page.
+    
+    [series]: https://v5.chriskrycho.com/journal/2025-in-review/
+
 ---
 
 As usual, writing made up a huge part of my work—though not the sort I get paid for—this year. Between an article for <cite>Christianity Today</cite>, my music newsletter, and this site, I ended up writing around 85,000 words all told: no small feat in a year filled with many other responsibilities! I’m always surprised at the end of the year to see just how much writing I have done. At some point I should stop being surprised.

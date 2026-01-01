@@ -11,6 +11,15 @@ tags:
   - family
   - church
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)
+
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. All of the posts are available at the [2025 in Review][series] series page.
+    
+    [series]: https://v5.chriskrycho.com/journal/2025-in-review/
+
 ---
 
 Most of life has been fairly ordinary this year, though “ordinary” by no means dull or uninteresting. Quite the contrary: with an 8<sup>th</sup> grader and a 6<sup>th</sup> grader, our lives are quite full, and full mostly of joy—though I do not always remember that on the days when parenting is hard and tiresome, as inevitably it sometimes is. It is fun watching our little girls turn into young women, even as this transition comes with its own host of new complications and challenges. (Puberty and adolescence: what a ride! With only more to come!)

@@ -12,6 +12,15 @@ tags:
   - health
   - running  
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)
+
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. All of the posts are available at the [2025 in Review][series] series page.
+    
+    [series]: https://v5.chriskrycho.com/journal/2025-in-review/
+
 ---
 
 This was perhaps the strangest year in memory for me in terms of health and fitness. On the one hand, I spent a big part of the year dealing with ongoing challenges related to a herniated disc. On the other hand, *despite* those challenges, I ran my first two marathons and they went smashingly well, and I also completed the longest bike rides I have ever done.

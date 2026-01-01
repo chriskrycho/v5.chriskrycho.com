@@ -10,6 +10,15 @@ tags:
   - software development
   - career
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)
+
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. All of the posts are available at the [2025 in Review][series] series page.
+    
+    [series]: https://v5.chriskrycho.com/journal/2025-in-review/
+
 ---
 
 This year, I had two major areas of “professional” work: [joining Vanta](https://v5.chriskrycho.com/journal/next-vanta/) in April and my [year of shipping](https://v5.chriskrycho.com/topics/year-of-shipping/). Both of these went pretty well overall.

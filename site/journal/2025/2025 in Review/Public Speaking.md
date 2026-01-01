@@ -1,9 +1,20 @@
 ---
 title: >
   2025 in Review: Public Speaking
+summary: Just one thing—but a big one!
+
 date: 2025-12-27T13:45:02-0700
 tags:
   - public speaking
+
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that’s mostly just me, a few years in the future!)
+
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. All of the posts are available at the [2025 in Review][series] series page.
+    
+    [series]: https://v5.chriskrycho.com/journal/2025-in-review/
 
 ---
 
