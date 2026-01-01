@@ -7,7 +7,7 @@ date: 2026-01-01T10:45:00-0700
 
 qualifiers:
   context: |
-    I wrote this for a magazine a couple years ago, and it ended up slipping through the cracks on their publishing docket so I’m publishing it here instead.
+    I wrote this for a magazine a couple years ago, but it ended up not working out, so I’m publishing it here instead.
 
 tags:
   - Big Tech
