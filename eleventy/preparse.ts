@@ -9,7 +9,7 @@ import { hasAuthor, hasAuthors } from './data';
 const ASSUMED_AUDIENCE =
    "<b><a href='https://v4.chriskrycho.com/2018/assumed-audiences.html'>Assumed audience</a>:</b>";
 
-const CONTEXT = '<b>A bit of context:</b>:';
+const CONTEXT = '<b>A bit of context:</b>';
 
 const EPISTEMIC_STATUS =
    "<b><a href='https://v5.chriskrycho.com/journal/epistemic-status/'>Epistemic status</a>:</b>";
