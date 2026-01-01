@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2025-12-31T22:26:00-0700
+modified: 2026-01-01T09:53:00-0700
 
 ---
 
@@ -67,6 +67,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Proto: How One Ancient Language Went Global</cite>](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
+
+- [<cite>Don’t Call It a Comeback: What Happened When I Stopped Chasing PRs, and Started Chasing Happiness](https://bookshop.org/a/21126/9781250344946), Keira D'Amato (new)
 
 
 ### Fiction
@@ -161,7 +163,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Harry Potter and the Order of the Phoenix</cite>](https://bookshop.org/a/21126/9780545791434), J.K. Rowling (reread)
 
- 
+
 ## 2024
 
 ### Non-fiction
