@@ -41,7 +41,7 @@ Since the start of the year, True Myth releases have included:
 
 - a brand new documentation site with many fixes for the existing documentation, though there are sadly still a bunch of broken examples—getting that fixed is one of my personal hopes for 2026.
 
-- a dedicated integration with [Zod](https://zod.dev) and out of the box [Standard Schema](https://standardschema.dev) integration
+- a dedicated integration with [Zod](https://zod.dev) and out of the box [Standard Schema](https://standardschema.dev) integration.
 
 I also published a couple other very small things. The first was a tiny little tool called `jj-gcp` that I built (and still use off and on) that uses <abbr>LLM</abbr>s to generate a branch name for an anonymous `jj` branch before pushing it with `jj git push`. The second was a simple [BBEdit](https://www.barebones.com/products/bbedit/) syntax [definition](https://github.com/chriskrycho/bbedit-jj-syntax "a tiny little bit of software") for [Jujutsu](https://www.jj-vcs.dev/latest/) commit messages.
 
@@ -51,7 +51,7 @@ Yes, I continue to use Jujutsu as my main version control tool. Every single com
 
 </aside>
 
-If you want to poke at any of the details, they’re all listed under [my Year of Shipping topic](https://v5.chriskrycho.com/topics/year-of-shipping) here.
+If you want to poke at any of the details, they’re all listed under [my Year of Shipping topic](https://v5.chriskrycho.com/topics/year-of-shipping).
 
 Looking forward, I hope to make 2026 another such year of shipping, though likely with less focus on True Myth and more on other side projects. I have made a *lot* of progress on getting my extremely bespoke and personal site generator working the way I want, for example, and only have one last yak to shave (I think!)… but it is a very large one. That said, it is also one that I expect to yield dividends for me in a bunch of areas only tangentially related at most to building websites, so I am excited to spend a chunk of the year shaving that last big yak.
 
