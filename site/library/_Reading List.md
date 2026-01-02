@@ -68,7 +68,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
-- [<cite>Don’t Call It a Comeback: What Happened When I Stopped Chasing PRs, and Started Chasing Happiness](https://bookshop.org/a/21126/9781250344946), Keira D'Amato (new)
+- [<cite>Don’t Call It a Comeback: What Happened When I Stopped Chasing <abbr title="personal record">PR</abbr>s, and Started Chasing Happiness](https://bookshop.org/a/21126/9781250344946), Keira D'Amato (new)
 
 
 ### Fiction
