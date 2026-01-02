@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-01-01T09:54:00-0700
+modified: 2026-01-01T20:52:00-0700
 
 ---
 
@@ -77,7 +77,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
 
-- [<cite>Harry Potter and the Half-Blood Prince</cite>](https://bookshop.org/a/21126/9780439784542), J.K. Rowling (reread)
+- [<cite>Harry Potter and the Deathly Hallows</cite>](https://bookshop.org/a/21126/9780545010221), J.K. Rowling (reread)
 
 
 ### Poetry
@@ -86,6 +86,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - <cite>Advent: An Anthology</cite>, Hannah Hodgson (new)
 
+
+## 2026
+
+### Fiction
+
+- [<cite>Harry Potter and the Half-Blood Prince</cite>](https://bookshop.org/a/21126/9780439784542), J.K. Rowling (reread)
 
 ## 2025
 
