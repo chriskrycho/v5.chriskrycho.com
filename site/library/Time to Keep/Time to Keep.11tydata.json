@@ -1,0 +1,17 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/time-to-keep/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "A Time to Keep: Theology, Mortality, and the Shape of a Human Life",
+      "cover": {
+        "cdn": "books/thinking-in-systems.jpg"
+      },
+      "author": "Ephraim Radner",
+      "year": 2017,
+      "link": "https://bookshop.org/a/21126/9781481305457"
+   },
+   "tags": ["Ephraim Radner", "theology", "scripture"],
+   "qualifiers": {
+      "audience": "Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think."
+   }
+}
