@@ -13,6 +13,10 @@ tags:
   - quotes
   - reading notes
 
+qualifiers:
+  audience: |
+    'Little-o' orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
+
 ---
 
 In what has to be one of the more daring moves I’ve come across in years and years, Koyzis drops this thought in his discussion of the plan for the book:
