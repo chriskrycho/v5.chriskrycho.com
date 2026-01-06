@@ -10,7 +10,7 @@ tags:
   - design
 
 qualifiers:
-  audience: >
+  audience: |
     People who think about design, specifically; but more generally anyone who cares about the things we all build and use every day.
 
 date: 2023-10-05T16:22:00-0600
