@@ -4,8 +4,5 @@
    "series": {
       "title": "Things I Was Wrong About"
    },
-   "tags": ["learning"],
-   "qualifiers": {
-      "epistemic": "These are things I *currently* think I’m wrong about. But I’ve changed my mind on them once already, so…"
-   }
+   "tags": ["learning"]
 }

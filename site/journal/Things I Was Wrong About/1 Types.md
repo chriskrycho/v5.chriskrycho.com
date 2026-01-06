@@ -6,8 +6,10 @@ subtitle: >
 summary: >
   I have changed my mind about some topics big and small so far in my life. Today: the value of types for programming.
 qualifiers:
-  audience: >
-    People who care about *actually* learning (in this case, software developers in particular). Also, my wife, who really enjoys hearing me say, “I was wrong.” 😂
+  audience: |
+    People who care about *actually* learning (in this case, software developers in particular). Also, my wife, who really enjoys hearing me say, "I was wrong." 😂
+  epistemic: |
+    These are things I *currently* think I'm wrong about. But I've changed my mind on them once already, so…
 date: 2020-09-26T14:00:00-0600
 updated: 2020-09-28T08:35:00-0600
 series:
