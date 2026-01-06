@@ -3,7 +3,11 @@ title: creaturehood
 date: 2026-01-05T07:10:00-0700
 summary: >
   ‘Human beings are not self-given; they do not “emerge” from something else in a basic way…’
-  
+
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 
