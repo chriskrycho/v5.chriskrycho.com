@@ -11,6 +11,10 @@ tags:
   - rationalism
   - reading notes
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 These claims by Webster on reason are, on the one hand, so thoroughly within the bounds of traditional Christian thinking that they barely need saying—

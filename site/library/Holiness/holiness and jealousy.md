@@ -10,6 +10,10 @@ tags:
   - reading notes
   - quotes
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 Webster here sounds an Athanasian note on God’s holiness and jealousy here—a beautiful, wonderful corrective to our view of holiness as directed against us. God’s holiness is not opposed to us in ourselves, but only insofar as we are trying to destroy ourselves.
