@@ -5,6 +5,10 @@ date: 2024-11-07T11:40:00-0700
 subtitle: >
     Two of my favorite command line tools: copy and paste to the macOS clipboard. (Actually to one of… several clipboards?)
 
+qualifiers:
+  audience: |
+    People interested in learning how the command lines tools on their computer work.
+
 ---
 
 In today’s Read the Manual, we’ll look at two of my favorite macOS CLI tools, `pbcopy` and `pbpaste`. Why both? Because `man pbcopy` and `man pbpaste` launch the same manual page: together they “provide copying and pasting to the pasteboard (the Clipboard) from command line”.
