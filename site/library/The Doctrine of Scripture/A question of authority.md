@@ -7,6 +7,10 @@ summary: >
 tags:
   - reading notes
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 In chapter 3 of <cite>{{book.title}}</cite>, my friend Brad turns to the attributes of Scripture, and in parts 3 and 4 specifically to sufficiency and clarity. Here, Brad’s catholic[^little-c] inclinations are on full display, and while I’m sympathetic to why he ends up where he does, I ultimately must differ with him—and deeply so, if with considerable nuance.

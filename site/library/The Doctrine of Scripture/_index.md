@@ -8,6 +8,10 @@ layout: archives.njk
 standalonePage: true
 order: OLD_FIRST
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 My friend [Brad East][brad] has written [a very interesting book on Scripture][book]: often brilliant, occasionally laugh-out-loud, regularly provocative… and sometimes (rarely) quite wrong! On this page you will find for my notes on and quotes from the book, if you’d like to follow along.

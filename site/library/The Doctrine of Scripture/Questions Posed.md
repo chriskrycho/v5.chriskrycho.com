@@ -7,7 +7,7 @@ summary: >
 tags:
   - reading notes
 qualifiers:
-  audience: >
+  audience: |
     Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 
 ---
