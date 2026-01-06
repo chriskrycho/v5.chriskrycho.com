@@ -10,6 +10,10 @@ tags:
   - reading notes
 feedId: /library/god-without-measure/volume-1/exposition-precedes-disputation/
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 <figure class='quotation'>

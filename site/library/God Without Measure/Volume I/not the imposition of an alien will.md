@@ -8,6 +8,10 @@ tags:
   - reading notes
 feedId: /library/god-without-measure/volume-1/not-the-imposition-of-an-alien-will/
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 Over and over again throughout his oeuvre, Webster reminds his readers that God’s will and rule is not the will and rule of a despot who must impose his will upon would otherwise be in some kind of better freedom, but rather: the very ground of all other being and reality, the faithful pursuit of those who are running headlong into ruin and destruction so that they may be saved from their own deluded self-destruction. Thus:

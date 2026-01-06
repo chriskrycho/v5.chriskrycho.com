@@ -12,6 +12,10 @@ date: 2021-09-07T20:50:00-0600
 tags:
     - book reviews
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 Discovering, and slowly working through, John Webster’s <i>oeuvre</i> remains one of the great joys of the last year. <cite>God and the Works of God</cite> is a lovely collection of papers and essays[^other] on theology proper—first of all, meditations on the divine being: in God's own eternal splendor and self-sufficient joy; and secondarily, on God’s overflowing and gracious works: of creation, redemption, and restoration.

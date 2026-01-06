@@ -8,9 +8,13 @@ tags:
     - creation
     - love
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 book:
     article: >
-        _Non ex aequo_: God’s relation to creatures
+        _Non ex aequo_: God's relation to creatures
 
 ---
 
