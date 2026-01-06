@@ -4,8 +4,8 @@ subtitle: What if we thought of “love” and “justice” like the hypostatic
 summary: >
   Eric Gregory: “A Christian understanding of love and justice takes its inspiration from a vision of God in Christ—a God of both love and justice.…”
 qualifiers:
-  audience: >
-    ‘Little-o’ orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
+  audience: |
+    'Little-o' orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
 date: 2020-09-19T17:55:00-0600
 updated: 2020-09-28T13:45:00-0600
 tags:  

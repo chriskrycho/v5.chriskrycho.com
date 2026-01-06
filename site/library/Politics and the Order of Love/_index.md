@@ -6,6 +6,10 @@ layout: archives.njk
 standalonePage: true
 order: OLD_FIRST
 
+qualifiers:
+  audience: |
+    'Little-o' orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
+
 ---
 
 <section class='note' aria-label='note' aria-role='note'>

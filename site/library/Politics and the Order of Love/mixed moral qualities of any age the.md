@@ -11,6 +11,10 @@ tags:
   - quotes
   - politics
 
+qualifiers:
+  audience: |
+    'Little-o' orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
+
 ---
 
 <figure class="quotation">

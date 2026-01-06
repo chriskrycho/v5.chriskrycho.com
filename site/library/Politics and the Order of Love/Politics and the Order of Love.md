@@ -15,6 +15,10 @@ tags:
   - theology
   - book reviews
 
+qualifiers:
+  audience: |
+    'Little-o' orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
+
 permalink: /library/politics-and-the-order-of-love/review/
 
 ---

@@ -4,8 +4,8 @@ title: >
 subtitle: >
   Summarizing the basic shared commitments of all Augustinian liberals, whatever their many other differences
 qualifiers:
-  audience: >
-    ‘Little-o’ orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
+  audience: |
+    'Little-o' orthodox Christians interested in political theology, or others curious about what a healthier (because more robustly!) Christian political theology might look like.
 
 date: 2020-09-07T10:20:00-0600
 
