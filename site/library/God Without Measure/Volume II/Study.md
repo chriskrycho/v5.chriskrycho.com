@@ -10,6 +10,10 @@ tags:
   - Thomas Aquinas
   - learning
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 A good word for all who would learn and study:

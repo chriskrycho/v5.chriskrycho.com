@@ -9,6 +9,10 @@ tags:
   - courage
   - virtue
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 First, consider with me how much *courage* is a virtue we hear a great deal about in public discourse of various sorts on especially the right, including the religious right. Then read:

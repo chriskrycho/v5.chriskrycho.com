@@ -7,6 +7,10 @@ tags:
   - quotes
 date: 2021-12-20T11:30:00-0700
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 <figure class="quotation">
