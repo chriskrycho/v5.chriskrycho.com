@@ -1,8 +1,5 @@
 {
    "layout": "post.njk",
    "permalink": "/library/god-without-measure/{{page.fileSlug | slug}}/",
-   "tags": ["John Webster", "theology", "God Without Measure"],
-   "qualifiers": {
-      "audience": "Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think."
-   }
+   "tags": ["John Webster", "theology", "God Without Measure"]
 }
