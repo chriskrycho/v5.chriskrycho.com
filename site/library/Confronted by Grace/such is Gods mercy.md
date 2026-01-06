@@ -6,6 +6,10 @@ summary: >
 tags:
     - quotes
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 <figure class='quotation'>

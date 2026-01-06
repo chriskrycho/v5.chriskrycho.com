@@ -12,6 +12,10 @@ date: 2023-11-09T15:45:00-0700
 tags:
     - book reviews
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+    
 ---
 
 This short collection of sermons was one of the last of John Webster’s books published before his untimely death in 2016. It collects 26 sermons preached between 1997 and 2005. The sermons are, as I put it to a friend a few years ago, exactly what you would expect them to be given they were delivered in contexts like chapel sermons Oxford’s Christ Chapel. That is: they are self-contained, relatively brief, across a wide array of texts, and not expressly grounded in the life of any specific church community. That would be a weakness for preaching in a church, but it actually serves as a strength here: each of the sermons ends up pitched at an audience that could just as well be you or me.

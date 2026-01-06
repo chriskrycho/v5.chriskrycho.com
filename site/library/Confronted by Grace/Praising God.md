@@ -6,6 +6,10 @@ date: 2021-08-22T09:10:00-0600
 tags:
     - worship
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 <figure class=quotation>
