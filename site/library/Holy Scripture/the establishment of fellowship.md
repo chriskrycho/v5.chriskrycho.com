@@ -8,6 +8,10 @@ date: 2023-08-04T07:30:00-0600
 tags:
   - quotes
 
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
+
 ---
 
 <figure class='quotation'>

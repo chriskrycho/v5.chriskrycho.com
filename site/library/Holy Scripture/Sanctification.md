@@ -2,7 +2,11 @@
 title: Sanctification
 date: 2023-06-16T21:34:00-0600
 summary: >
-  John Webster: “Sanctification is thus not the extraction of creaturely reality from its creatureliness, but the annexation and ordering of its course so that it may fittingly assist in that work which is proper to God.…”
+  John Webster: "Sanctification is thus not the extraction of creaturely reality from its creatureliness, but the annexation and ordering of its course so that it may fittingly assist in that work which is proper to God.…"
+
+qualifiers:
+  audience: |
+    Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think.
 
 ---
 
