@@ -15,6 +15,13 @@ updated: 2022-12-29T22:23:00-0700
 updates:
   - at: 2022-12-29T22:23:00-0700
     changes: Added a bonus note about writing so. very. much. in December.
+
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all at [the root of this little 'series'](https://v5.chriskrycho.com/journal/2022-in-review/).
+
 ---
 
 Right up front, the things I’m most proud of/think hold up best/most want you to read if you haven’t—many of which I mention elsewhere in rest of the post, but this way they’re all in one place:

@@ -15,6 +15,13 @@ series:
 summary: >
   This was an odd year for me at LinkedIn—not a bad one, but one high on learning, making some (recoverable) mistakes, and dealing with long tails of helping LinkedIn play catch-up.
 date: 2023-01-01T11:45:00-0700
+
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all at [the root of this little 'series'](https://v5.chriskrycho.com/journal/2022-in-review/).
+
 thanks: >
   I mention colleagues obliquely in this post, but here at the end I will name them directly: [Adam Hobson](https://www.linkedin.com/in/adamhobson/), [Sara Chipps](https://www.linkedin.com/in/sarajchipps/), and [Dave Herman](https://www.linkedin.com/in/davidandrewherman/) have all been incredibly helpful—not least by pushing me and challenging me when I needed it!
 

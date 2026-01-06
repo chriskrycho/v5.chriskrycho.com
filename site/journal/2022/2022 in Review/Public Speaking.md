@@ -12,6 +12,13 @@ tags:
   - video
   - podcasting
 date: 2022-12-30T10:32:00-0700
+
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all at [the root of this little 'series'](https://v5.chriskrycho.com/journal/2022-in-review/).
+
 ---
 
 Public speaking of all sorts remains an important part of the work I want to do—writing and speaking are complementary, rather than replacements for each other—and 2022 was a decent year for speaking for me.

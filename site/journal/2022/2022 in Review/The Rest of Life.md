@@ -6,7 +6,7 @@ subtitle: >
 series:
   part: 5
 summary: >
-  Headwinds buffeted me this year: on music, photography, fitness and health. But it was good year financially, for which we’re profoundly grateful; and we found a new church home which has been a balm to our souls, for which we’re even more grateful.
+  Headwinds buffeted me this year: on music, photography, fitness and health. But it was good year financially, for which we're profoundly grateful; and we found a new church home which has been a balm to our souls, for which we're even more grateful.
 tags:
   - fitness
   - health
@@ -17,6 +17,13 @@ tags:
   - self-discipline
   - habits
 date: 2023-01-01T16:51:00-0700
+
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all at [the root of this little 'series'](https://v5.chriskrycho.com/journal/2022-in-review/).
+
 ---
 
 In this, the final entry in my 2022 in Review series, I am going to hit the highlights of “the rest of life”: things not covered in the [Reading][r], [Writing][w], [Public Speaking][ps], or [Professional][p] entries. This is necessarily going to cover a lot of ground, but it’s also not going to cover a lot of the things that *shaped* these things: as in previous entries, I am leaving the personal/familial details private. Suffice it to say: the background to all of this was an immensely challenging year on that front as we dealt with multiple *very* significant (though now resolved, thankfully) health issues.

@@ -11,6 +11,12 @@ series:
 summary: >
   I did manage to hit my goal of 22 books read in 2022—barely. I did not come close to reading everything I wanted, though!
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all at [the root of this little 'series'](https://v5.chriskrycho.com/journal/2022-in-review/).
+
 ---
 
 My reading [aims for the year][aims] and my reading outcomes for the year… diverged. Just a bit. On January 2, I wrote:
