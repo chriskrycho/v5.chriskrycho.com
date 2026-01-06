@@ -12,6 +12,10 @@ standalonePage: true
 date: 2021-11-12T21:00:00-0600
 order: OLD_FIRST
 
+qualifiers:
+  audience: |
+    Other members of the Ember.js and Glimmer.js communities. (Others are welcome to read and chime in, of course, but this is absolutely an "in-house" discussion!)
+
 ---
 
 The Ember and Glimmer community is currently experimenting with designs for components being available in the same file as supporting JavaScript—sometimes described as “single-file components” (or <abbr>SFC</abbr>s). There are some working implementations in the [ember-template-imports][eti] repository, and Ember’s community and leadership has already committed to making *some* move in this space [the strict mode templates <abbr title="request for comments">RFC</abbr>][strict].

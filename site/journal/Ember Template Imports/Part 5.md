@@ -16,6 +16,10 @@ date: 2021-11-15T10:05:00-0700
 
 image: https://cdn.chriskrycho.com/images/template-imports/part-5-styles.png
 
+qualifiers:
+  audience: |
+    Other members of the Ember.js and Glimmer.js communities. (Others are welcome to read and chime in, of course, but this is absolutely an "in-house" discussion!)
+
 templateEngineOverride: md
 
 ---

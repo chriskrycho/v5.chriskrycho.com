@@ -10,6 +10,10 @@ date: 2021-11-11T15:27:00-0700
 tags:
   - testing
 
+qualifiers:
+  audience: |
+    Other members of the Ember.js and Glimmer.js communities. (Others are welcome to read and chime in, of course, but this is absolutely an "in-house" discussion!)
+
 templateEngineOverride: md
 
 ---

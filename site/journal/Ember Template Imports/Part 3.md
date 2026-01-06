@@ -21,6 +21,11 @@ updates:
   - at: 2021-11-15T07:00:00-0700
     changes: >
       Further updated the language servers section to include notes on Vue/Svelte-style blanket imports.
+
+qualifiers:
+  audience: |
+    Other members of the Ember.js and Glimmer.js communities. (Others are welcome to read and chime in, of course, but this is absolutely an "in-house" discussion!)
+
 templateEngineOverride: md
 
 ---

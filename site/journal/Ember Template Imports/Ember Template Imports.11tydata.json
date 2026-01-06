@@ -4,8 +4,5 @@
    "series": {
       "title": "Why Ember Template Imports Should Use a Custom Format"
    },
-   "qualifiers": {
-      "audience": "Other members of the Ember.js and Glimmer.js communities. (Others are welcome to read and chime in, of course, but this is absolutely an “in-house” discussion!)"
-   },
    "tags": ["Ember", "Glimmer", "web development"]
 }

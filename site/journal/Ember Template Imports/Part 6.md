@@ -11,6 +11,10 @@ tags:
   - teaching
   - learning
 
+qualifiers:
+  audience: |
+    Other members of the Ember.js and Glimmer.js communities. (Others are welcome to read and chime in, of course, but this is absolutely an "in-house" discussion!)
+
 ---
 
 Over the past month, I have systematically examined the tradeoffs of the proposed options for Ember and Glimmer’s template imports design:
