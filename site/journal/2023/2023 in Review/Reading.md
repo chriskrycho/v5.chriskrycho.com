@@ -10,6 +10,12 @@ tags:
 summary: >
     I read a lot in 2023—far more than in recent years, and all good or very good books at that!
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all [here](https://v5.chriskrycho.com/journal/2023-in-review/).
+
 ---
 
 This year I finally read all the books I planned to—and then some! At the end of the year, I finished 31  works of nonfiction and 12  this year. I write “finished”, rather than “read”, in the name of pedantic accuracy. Most of the books on [this year’s list](https://v5.chriskrycho.com/library/reading-list/#2023) were books I read start to finish this year, but not all. A fair number of those were books I had started before this year—in two cases as far back as 2020!—and only got across the finish line in 2023. I was glad to get them across the finish line, though! For a few weeks in November and December, I was texting one of my friends an updated count every few days of how many books I was “actively” reading still. The fact that my count is now 8 is a triumph: at various points in the year it was close to 20!

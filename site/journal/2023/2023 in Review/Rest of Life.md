@@ -15,6 +15,12 @@ tags:
 summary: >
     Music, photography, health and fitness, and church life—a full year, and a good one, in these areas, with a lot of growth.
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all [here](https://v5.chriskrycho.com/journal/2023-in-review/).
+
 ---
 
 This entry in my 2023 in review is a smörgåsbord, covering everything I have *not* covered in the other parts of the series: music, photography, health and fitness, and church.

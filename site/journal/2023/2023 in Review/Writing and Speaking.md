@@ -14,6 +14,12 @@ image: https://cdn.chriskrycho.com/images/Monkey%20Patch%20All%20the%20Things.jp
 summary: >
     Writing 70,000 words, publishing a half dozen videos to YouTube, and giving exactly zero talks.
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all [here](https://v5.chriskrycho.com/journal/2023-in-review/).
+
 ---
 
 

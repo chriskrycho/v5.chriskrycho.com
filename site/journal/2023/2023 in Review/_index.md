@@ -9,6 +9,12 @@ series:
 summary: >
     Reflecting on 2023: a year where I quit my job at LinkedIn, wrote a lot, composed a lot of music, and—most happily—rolled with life as it came.
 
+qualifiers:
+  audience: |
+    People who like reading year-in-review summaries. (I always assume that's mostly just me, a few years in the future!)
+  context: |
+    For many years now, I have made it my habit to write up one of these summaries. In this case, I have tried to make it a bit more digestible by breaking into smaller chunks. You can find them all [here](https://v5.chriskrycho.com/journal/2023-in-review/).
+
 sendEmail: true
 
 ---
