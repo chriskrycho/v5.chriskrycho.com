@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-01-05T19:00:00-0700
+modified: 2026-01-10T20:08:00-0700
 
 ---
 
@@ -68,12 +68,16 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
+- [<cite>The Norwegian Method: The Culture, Science, and Humans Behind the Groundbreaking Approach to Elite Endurance Performance</cite>](https://bookshop.org/a/21126/9798989256969), Brad Culp (new)
+
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
+
+- [<cite>Revenge of the Sith</cite>](https://bookshop.org/a/21126/9798217090983), Matthew Stover (reread)
 
 
 ### Poetry
