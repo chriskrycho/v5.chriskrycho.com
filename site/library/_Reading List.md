@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-01-10T20:08:00-0700
+modified: 2026-01-17T15:17:00-0700
 
 ---
 
@@ -68,7 +68,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
-- [<cite>The Norwegian Method: The Culture, Science, and Humans Behind the Groundbreaking Approach to Elite Endurance Performance</cite>](https://bookshop.org/a/21126/9798989256969), Brad Culp (new)
+
 
 
 ### Fiction
@@ -92,6 +92,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 ### Non-fiction
 
 - [<cite>Don’t Call It a Comeback: What Happened When I Stopped Chasing <abbr title="personal record">PR</abbr>s, and Started Chasing Happiness](https://bookshop.org/a/21126/9781250344946), Keira D'Amato (new)
+
+- [<cite>The Norwegian Method: The Culture, Science, and Humans Behind the Groundbreaking Approach to Elite Endurance Performance</cite>](https://bookshop.org/a/21126/9798989256969), Brad Culp (new)
 
 
 ### Fiction
