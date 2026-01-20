@@ -1,7 +1,7 @@
 ---
 title: Thinking About Anything Besides the Big Thing Right Now
 subtitle: |
-  Why I Don’t Write Much About <abbr title="large language model">LLM</abbr>s—and don’t expect that to change much in the near future, either.
+  Why I don’t write much about <abbr title="large language model">LLM</abbr>s—and don’t expect that to change much in the near future, either.
 
 date: 2026-01-19T18:13:00-0700
 
