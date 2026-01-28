@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-01-17T15:17:00-0700
+modified: 2026-01-28T12:36:00-0700
 
 ---
 
@@ -64,7 +64,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
-- [<cite>Proto: How One Ancient Language Went Global</cite>](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
@@ -94,6 +93,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Don’t Call It a Comeback: What Happened When I Stopped Chasing <abbr title="personal record">PR</abbr>s, and Started Chasing Happiness](https://bookshop.org/a/21126/9781250344946), Keira D'Amato (new)
 
 - [<cite>The Norwegian Method: The Culture, Science, and Humans Behind the Groundbreaking Approach to Elite Endurance Performance</cite>](https://bookshop.org/a/21126/9798989256969), Brad Culp (new)
+
+- [<cite>Proto: How One Ancient Language Went Global</cite>](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
 
 ### Fiction
