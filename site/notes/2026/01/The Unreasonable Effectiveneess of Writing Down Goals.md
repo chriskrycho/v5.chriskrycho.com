@@ -12,7 +12,7 @@ tags:
 
 ---
 
-I have mentioned before my habit—sometimes stronger, sometimes weaker, but never fully abandoned—of writing down what I want to do on various time scales: day, week, month (or, at work, quarter), year. For my personal goals, I do this in a modified bullet journal form in a [Leuchtturm1917 A5 dot grid notebook][notebook]. At work, I [regularly][wtwid] use a tool like [Obsidian][o] or [Bear][o]. In every case, I find it quite surprising how effective it can be simply to have *written down* what I want to do.
+I have mentioned before my habit—sometimes stronger, sometimes weaker, but never fully abandoned—of writing down what I want to do on various time scales: day, week, month (or, at work, quarter), year. For my personal goals, I do this in a modified bullet journal form in a [Leuchtturm1917 A5 dot grid notebook][notebook]. At work, I [regularly][wtwid] use a tool like [Obsidian][o] or [Bear][b]. In every case, I find it quite surprising how effective it can be simply to have *written down* what I want to do.
 
 [notebook]: https://www.leuchtturm1917.us/notebook-medium-a5-hardcover-251-numbered-pages-indigo-dotted.html
 [wtwid]: https://v5.chriskrycho.com/journal/writing-down-what-i-do-in-obsidian/
