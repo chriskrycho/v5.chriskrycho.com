@@ -19,7 +19,7 @@ I have mentioned before my habit—sometimes stronger, sometimes weaker, but nev
 [o]: https://obsidian.md
 [b]: https://bear.app
 
-The first reason is that as long as I’m doing it right, writing down mhy goals forces me to decide, of the many things I could do, which I *will* do. Just these three big projects, this year. Just these chunks of those projects, this month. Three times working on each of those this week. This in the morning, that in the evening, today.
+The first reason is that as long as I’m doing it right, writing down my goals forces me to decide, of the many things I could do, which I *will* do. Just these three big projects, this year. Just these chunks of those projects, this month. Three times working on each of those this week. This in the morning, that in the evening, today.
 
 The second reason is that writing it down leaves a mark in my mind no less than on paper. It is as if I am making myself a little promise, and the reminder that those dots are there, waiting to be marked off once I have accomplished the goals, lingers in my thoughts throughout the day. Indeed, even as I write these words, I am very aware of the time and my goal of composing some music this morning: I had better stop writing this and get to that if I am going to accomplish that!
 
