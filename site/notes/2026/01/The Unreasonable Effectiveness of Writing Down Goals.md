@@ -1,9 +1,16 @@
 ---
-title: The (Unreasonable?) Effectiveneess of Writing Down Goals
+title: The (Unreasonable?) Effectiveness of Writing Down Goals
 subtitle: >
     I try to do this every day, and I find it astonishing how much it helps me.
 
+# fix for the typo originally in the title
+feedId: /notes/the-unreasonable-effectiveneess-of-writing-down-goals/
+
 date: 2026-01-29T07:26:00-0700
+updated: 2026-02-01T09:15:00-0700
+updates:
+  - at: 2026-02-01T09:15:00-0700
+    changes: Fixed the title. (“Effectiveneess” is not a word!)
 
 tags:
   - writing
@@ -19,7 +26,7 @@ I have mentioned before my habit—sometimes stronger, sometimes weaker, but nev
 [o]: https://obsidian.md
 [b]: https://bear.app
 
-The first reason is that as long as I’m doing it right, writing down mhy goals forces me to decide, of the many things I could do, which I *will* do. Just these three big projects, this year. Just these chunks of those projects, this month. Three times working on each of those this week. This in the morning, that in the evening, today.
+The first reason is that as long as I’m doing it right, writing down my goals forces me to decide, of the many things I could do, which I *will* do. Just these three big projects, this year. Just these chunks of those projects, this month. Three times working on each of those this week. This in the morning, that in the evening, today.
 
 The second reason is that writing it down leaves a mark in my mind no less than on paper. It is as if I am making myself a little promise, and the reminder that those dots are there, waiting to be marked off once I have accomplished the goals, lingers in my thoughts throughout the day. Indeed, even as I write these words, I am very aware of the time and my goal of composing some music this morning: I had better stop writing this and get to that if I am going to accomplish that!
 

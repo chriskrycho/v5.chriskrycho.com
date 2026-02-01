@@ -99,6 +99,9 @@ services:
       - type: redirect
         source: /journal/domain-wrapper-types/
         destination: /journal/friendly-little-wrapper-types/
+      - type: redirect
+        source: /notes/the-unreasonable-effectiveneess-of-writing-down-goals/
+        destination: /notes/the-unreasonable-effectiveness-of-writing-down-goals/
 
       # ...including after I made library collections work correctly
       - type: redirect

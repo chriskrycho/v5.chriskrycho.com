@@ -21,14 +21,14 @@
             {%- endset -%}
             <title type="html">[{{item.inputPath | toRootCollection}}] {{entryTitle}}</title>
             {%- set updated -%}
-               {% if item.data.updated -%}
+               {%- if item.data.updated -%}
                {{item.data.updated | isoDate}}
                {%- else -%}
                   {{item.date | isoDate}}
                {%- endif -%}
             {%- endset -%}
             <published>{{item.date | isoDate}}</published>
-            <updated>{{updated}}</updated>
+            <updated>{{-updated-}}</updated>
             <link href='{{url}}'/>
             {%- set summary -%}
             {%- if item.data.summary -%}
