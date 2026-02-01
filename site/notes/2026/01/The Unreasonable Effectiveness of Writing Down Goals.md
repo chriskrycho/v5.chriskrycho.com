@@ -1,9 +1,16 @@
 ---
-title: The (Unreasonable?) Effectiveneess of Writing Down Goals
+title: The (Unreasonable?) Effectiveness of Writing Down Goals
 subtitle: >
     I try to do this every day, and I find it astonishing how much it helps me.
 
+# fix for the typo originally in the title
+feedId: /notes/the-unreasonable-effectiveneess-of-writing-down-goals/
+
 date: 2026-01-29T07:26:00-0700
+updated: 2026-02-01T09:15:00-0700
+updates:
+  - at: 2026-02-01T09:15:00-0700
+    changes: Fixed the title. (“Effectiveneess” is not a word!)
 
 tags:
   - writing
