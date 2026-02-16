@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-02-15T16:23:00-0700
+modified: 2026-02-15T20:44:00-0700
 
 ---
 
@@ -65,6 +65,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
+
+- [Making the Presidency: John Adams and the Precedents That Forged the Republic](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
 
 
