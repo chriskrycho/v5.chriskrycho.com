@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-02-15T20:44:00-0700
+modified: 2026-02-22T16:40:00-0700
 
 ---
 
@@ -105,6 +105,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Harry Potter and the Deathly Hallows</cite>](https://bookshop.org/a/21126/9780545010221), J.K. Rowling (reread)
 
 - [<cite>Revenge of the Sith</cite>](https://bookshop.org/a/21126/9798217090983), Matthew Stover (reread)
+
+- [<cite>The Spy Who Came in from the Cold</cite>](https://bookshop.org/a/21126/9780143124757), John le Carré (new)
 
 
 ## 2025
