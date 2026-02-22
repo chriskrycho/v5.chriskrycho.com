@@ -66,7 +66,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
-- [Making the Presidency: John Adams and the Precedents That Forged the Republic](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
+- [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
 
 
