@@ -16,16 +16,16 @@ importers:
         version: 2.3.10
       '@rollup/plugin-node-resolve':
         specifier: ^15.3.1
-        version: 15.3.1(rollup@3.29.5)
+        version: 15.3.1(rollup@3.30.0)
       '@rollup/plugin-strip':
         specifier: ^3.0.4
-        version: 3.0.4(rollup@3.29.5)
+        version: 3.0.4(rollup@3.30.0)
       '@rollup/plugin-terser':
         specifier: ^0.4.4
-        version: 0.4.4(rollup@3.29.5)
+        version: 0.4.4(rollup@3.30.0)
       '@rollup/plugin-typescript':
         specifier: ^11.1.6
-        version: 11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.9.3)
+        version: 11.1.6(rollup@3.30.0)(tslib@2.8.1)(typescript@5.9.3)
       '@types/common-tags':
         specifier: ^1.8.4
         version: 1.8.4
@@ -105,8 +105,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       rollup:
-        specifier: ^3.29.5
-        version: 3.29.5
+        specifier: ^3.30.0
+        version: 3.30.0
       sass:
         specifier: ^1.94.2
         version: 1.94.2
@@ -2770,8 +2770,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  rollup@3.29.5:
-    resolution: {integrity: sha512-GVsDdsbJzzy4S/v3dqWPJ7EfvZJfCHiDqe80IyrF59LYuP+e6U1LJoUqeuqRbwAWoMNoXivMNeNAOf5E22VA1w==}
+  rollup@3.30.0:
+    resolution: {integrity: sha512-kQvGasUgN+AlWGliFn2POSajRQEsULVYFGTvOZmK06d7vCD+YhZztt70kGk3qaeAXeWYL5eO7zx+rAubBc55eA==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -3634,48 +3634,48 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@rollup/plugin-node-resolve@15.3.1(rollup@3.29.5)':
+  '@rollup/plugin-node-resolve@15.3.1(rollup@3.30.0)':
     dependencies:
-      '@rollup/pluginutils': 5.3.0(rollup@3.29.5)
+      '@rollup/pluginutils': 5.3.0(rollup@3.30.0)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
       resolve: 1.22.11
     optionalDependencies:
-      rollup: 3.29.5
+      rollup: 3.30.0
 
-  '@rollup/plugin-strip@3.0.4(rollup@3.29.5)':
+  '@rollup/plugin-strip@3.0.4(rollup@3.30.0)':
     dependencies:
-      '@rollup/pluginutils': 5.3.0(rollup@3.29.5)
+      '@rollup/pluginutils': 5.3.0(rollup@3.30.0)
       estree-walker: 2.0.2
       magic-string: 0.30.21
     optionalDependencies:
-      rollup: 3.29.5
+      rollup: 3.30.0
 
-  '@rollup/plugin-terser@0.4.4(rollup@3.29.5)':
+  '@rollup/plugin-terser@0.4.4(rollup@3.30.0)':
     dependencies:
       serialize-javascript: 6.0.2
       smob: 1.5.0
       terser: 5.44.1
     optionalDependencies:
-      rollup: 3.29.5
+      rollup: 3.30.0
 
-  '@rollup/plugin-typescript@11.1.6(rollup@3.29.5)(tslib@2.8.1)(typescript@5.9.3)':
+  '@rollup/plugin-typescript@11.1.6(rollup@3.30.0)(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
-      '@rollup/pluginutils': 5.3.0(rollup@3.29.5)
+      '@rollup/pluginutils': 5.3.0(rollup@3.30.0)
       resolve: 1.22.11
       typescript: 5.9.3
     optionalDependencies:
-      rollup: 3.29.5
+      rollup: 3.30.0
       tslib: 2.8.1
 
-  '@rollup/pluginutils@5.3.0(rollup@3.29.5)':
+  '@rollup/pluginutils@5.3.0(rollup@3.30.0)':
     dependencies:
       '@types/estree': 1.0.8
       estree-walker: 2.0.2
       picomatch: 4.0.3
     optionalDependencies:
-      rollup: 3.29.5
+      rollup: 3.30.0
 
   '@sindresorhus/slugify@1.1.2':
     dependencies:
@@ -6253,7 +6253,7 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup@3.29.5:
+  rollup@3.30.0:
     optionalDependencies:
       fsevents: 2.3.3
 
