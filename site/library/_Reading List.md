@@ -68,7 +68,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
-- - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (reread)
+- [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
 
 
