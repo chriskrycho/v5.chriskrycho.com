@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-03-01T17:22:00-0700
+modified: 2026-03-02T08:15:00-0700
 
 ---
 
@@ -77,6 +77,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
+
+- [<cite>God’s Junk Drawer</cite>](https://bookshop.org/a/21126/9798874830878), Peter Clines (new)
 
 
 ### Poetry
