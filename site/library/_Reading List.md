@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-03-02T08:15:00-0700
+modified: 2026-03-08T14:33:00-0700
 
 ---
 
@@ -66,8 +66,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
-- [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
-
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
 
@@ -99,6 +97,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Proto: How One Ancient Language Went Global</cite>](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
 - [<cite>Enshittification: Why Everything Suddenly Got Worse and What to Do AboutIt</cite>](https://bookshop.org/a/21126/9780374619329), Cory Doctorow (new)
+
+- [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
 
 ### Fiction
