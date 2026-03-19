@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-03-19T070:58:00-0700
+modified: 2026-03-19T07:58:00-0700
 
 ---
 
