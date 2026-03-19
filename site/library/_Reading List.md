@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-03-08T14:33:00-0700
+modified: 2026-03-19T070:58:00-0700
 
 ---
 
@@ -68,6 +68,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
+- [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
 
 
 ### Fiction
@@ -75,8 +76,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
-
-- [<cite>God’s Junk Drawer</cite>](https://bookshop.org/a/21126/9798874830878), Peter Clines (new)
 
 
 ### Poetry
@@ -110,6 +109,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Revenge of the Sith</cite>](https://bookshop.org/a/21126/9798217090983), Matthew Stover (reread)
 
 - [<cite>The Spy Who Came in from the Cold</cite>](https://bookshop.org/a/21126/9780143124757), John le Carré (new)
+
+- [<cite>God’s Junk Drawer</cite>](https://bookshop.org/a/21126/9798874830878), Peter Clines (new)
 
 
 ## 2025
