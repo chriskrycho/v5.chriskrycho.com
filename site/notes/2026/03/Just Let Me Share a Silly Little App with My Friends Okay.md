@@ -1,5 +1,5 @@
 ---
-title: Just Let Me Share a Fiddly Little App with My Friends, Okay?
+title: Just Let Me Share a Silly Little App with My Friends, Okay?
 subtitle: |
   Having an App Store is fine. *Only* having an App Store is not. Or: **the right to install**.
 
