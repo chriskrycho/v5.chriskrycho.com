@@ -53,10 +53,12 @@
    <meta property="og:url" content="{{url}}"/>
    <meta name="article:author" content="{{config.url}}"/>
 
-   <meta name="twitter:label1" content="Author" />
-   <meta name="twitter:data1" content="Chris Krycho" />
-   <meta name="twitter:label2" content="Length" />
-   <meta name="twitter:data2" content="{{justContent | roughWordCount}}" />
+   <meta name="twitter:label1" content="Length" />
+   <meta name="twitter:data1" content="{{justContent | roughWordCount}}" />
+   {%- if page.data.tags -%}
+   <meta name="twitter:label2" content="Topics" />
+   <meta name="twitter:data2" content="{{page.data.tags | join(', ')}}" />
+   {%- endif -%}
 
    <meta property="og:title" content="{{title}}"/>
    <meta name="twitter:title" content="{{title}}"/>
