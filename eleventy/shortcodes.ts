@@ -17,7 +17,7 @@ interface BibleRef {
    };
 }
 
-interface Quote {
+interface BasicCitation {
    source: {
       author?: string;
       title: string;
@@ -26,10 +26,22 @@ interface Quote {
    location?: string;
 }
 
-type Reference = Quote | BibleRef;
+interface Ibid {
+   source: 'ibid';
+   location: string;
+}
+
+type Reference = BasicCitation | BibleRef | Ibid;
 
 export const quote = (content: string, ref: Reference): string => {
-   let citation = isBibleRef(ref) ? bibleRef(ref) : basicCitation(ref);
+   let citation: string;
+   if (isBibleRef(ref)) {
+      citation = bibleRef(ref);
+   } else if (isBasicCitation(ref)) {
+      citation = basicCitation(ref);
+   } else {
+      citation = `<em>ibid.</em>, ${ref.location}`;
+   }
 
    // Because it's really important here *not* to include indentation so
    // this can run *before* Markdown parsing runs on the rest of it.
@@ -45,7 +57,7 @@ export const quote = (content: string, ref: Reference): string => {
       return `${bible.book} ${bible.passage} (${bible.translation})`;
    }
 
-   function basicCitation(quote: Quote): string {
+   function basicCitation(quote: BasicCitation): string {
       let author = quote.source.author ? `${quote.source.author}, ` : '';
       let location = quote.location ? `, ${quote.location}` : '';
       let source = quote.source.link
@@ -56,5 +68,9 @@ export const quote = (content: string, ref: Reference): string => {
 };
 
 function isBibleRef(ref: Reference): ref is BibleRef {
-   return 'book' in ref.source;
+   return typeof ref.source === 'object' && 'book' in ref.source;
+}
+
+function isBasicCitation(ref: Reference): ref is BasicCitation {
+   return typeof ref.source === 'object' && 'title' in ref.source;
 }
