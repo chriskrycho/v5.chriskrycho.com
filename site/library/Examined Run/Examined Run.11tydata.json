@@ -1,0 +1,13 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/examined-run/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "The Examined Run: Why Good People Make Better Runners",
+      "cover": {
+        "cdn": "books/examined-run.jpg"
+      },
+      "author": "Sabrina B. Little",
+      "year": 2024,
+      "link": "https://bookshop.org/a/21126/9780197678695"
+   }
+}
