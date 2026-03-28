@@ -102,6 +102,9 @@ services:
       - type: redirect
         source: /notes/the-unreasonable-effectiveneess-of-writing-down-goals/
         destination: /notes/the-unreasonable-effectiveness-of-writing-down-goals/
+      - type: redirect
+        source: /library/examined-run/*
+        destination: /library/the-examined-run/*
 
       # ...including after I made library collections work correctly
       - type: redirect

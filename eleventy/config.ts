@@ -274,6 +274,7 @@ function config(config: Config): UserConfig {
    addCollectionFromDir(config, 'library/The Book of the New Sun');
    addCollectionFromDir(config, 'library/The Book of the New Sun/Shadow and Claw');
    addCollectionFromDir(config, 'library/The Doctrine of Scripture');
+   addCollectionFromDir(config, 'library/The Examined Run');
    addCollectionFromDir(config, 'library/Thinking in Systems');
    addCollectionFromDir(config, 'library/Reading Papers in Public');
    addCollectionFromDir(config, 'library/Time to Keep');

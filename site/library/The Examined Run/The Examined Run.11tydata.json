@@ -1,6 +1,6 @@
 {
    "layout": "post.njk",
-   "permalink": "/library/examined-run/{{page.fileSlug | slug}}/index.html",
+   "permalink": "/library/the-examined-run/{{page.fileSlug | slug}}/index.html",
    "book": {
       "title": "The Examined Run: Why Good People Make Better Runners",
       "cover": {
