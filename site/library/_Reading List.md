@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-03-19T07:58:00-0700
+modified: 2026-03-28T08:29:00-0600
 
 ---
 
@@ -68,7 +68,11 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
+- [<cite>Thinking in Systems</cite>][thinking-in-systems], Donella Meadows (reread)
+
 - [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
+
+- [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
 
 
 ### Fiction
@@ -268,7 +272,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Out of the Software Crisis: Systems-Thinking for Software Projects</cite>](https://softwarecrisis.baldurbjarnason.com), Baldur Bjarnason (new)
 
-- [<cite>Thinking in Systems: A Primer</cite>](https://bookshop.org/a/21126/9781603580557), Donella Meadows (new)
+- [<cite>Thinking in Systems: A Primer</cite>][thinking-in-systems], Donella Meadows (new)
 
 - [<cite>Holy Scripture: A Dogmatic Sketch</cite>](https://bookshop.org/a/21126/9780521538466), John Webster (new)
 
@@ -312,6 +316,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind</cite>](https://bookshop.org/a/21126/9780553386691), Daniel J. Siegel, Tina Payne Bryson (new)
 
 - [<cite>Alexander Hamilton</cite>](https://bookshop.org/a/21126/9780143034759), Ron Chernow (new)
+
+[thinking-in-systems]: https://bookshop.org/a/21126/9781603580557
 
 
 ### Fiction
