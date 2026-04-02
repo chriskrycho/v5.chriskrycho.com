@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-03-28T08:29:00-0600
+modified: 2026-04-01T07:58:00-0600
 
 ---
 
@@ -70,8 +70,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Thinking in Systems</cite>][thinking-in-systems], Donella Meadows (reread)
 
-- [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
-
 - [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
 
 
@@ -102,6 +100,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Enshittification: Why Everything Suddenly Got Worse and What to Do AboutIt</cite>](https://bookshop.org/a/21126/9780374619329), Cory Doctorow (new)
 
 - [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
+
+- [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
 
 
 ### Fiction
