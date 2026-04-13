@@ -21,7 +21,7 @@ It’s pretty simple, actually—a confluence of the following factors, in no pa
 
 - They *are* interesting in various ways, but I don’t usually have anything to say that others are not saying better. I think about them a fair bit at work—it’s literally part of my job to think about them, given where I sit in our org—but little if any of that is ready for public consumption.
 
-- I do not believe that anyone is obliged—no matter how heated the moment, and no matter how long they have been writing publicly—to comment on any given topic. Do I have thoughts, many of them deeply considered on <abbr>LLM</abbr>s? Yes. I do. Do I feel obliged to spend more of my time on *that* topic than on others I find more profitable? I do not.
+- I do not believe that anyone is obliged—no matter how heated the moment, and no matter how long they have been writing publicly—to comment on any given topic. Do I have thoughts, many of them deeply considered, on <abbr>LLM</abbr>s? Yes. I do. Do I feel obliged to spend more of my time on *that* topic than on others I find more profitable? I do not.
 
 The running theme here is that I think we are spending far too much of our time and energy on these things culturally. I want to contribute to a culture of thinking about *other* things—things that are more important, more enduring, more fundamental.
 
