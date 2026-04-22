@@ -114,4 +114,4 @@ That pacing is what I am proudest of, in fact: I *did* hold myself back early on
 
 I’m really, *really* happy with this one. I am proud of the work I did in 2025 to qualify for Boston, and even prouder of the work I did to get back to full health so I could use that spot in a way I’m proud of. I am happy to be back in good health, and pleasantly surprised at just how fast I was able to go. Lord willing, I will be staying healthy this time: my Pilates routine is becoming, in the best way, *routine*.
 
-And hey, I (presumably) qualified for Boston 2027 as well as the other 2027 <abbr title="United States (of America)">US</abbr> Major Marathons! Now for a week of rest and easing back into things, and then: onward.
+And hey, as I said at the top, I (presumably) qualified for Boston 2027 as well as the other 2027 <abbr title="United States (of America)">US</abbr> Major Marathons! Now for a week of rest and easing back into things, and then: onward.
