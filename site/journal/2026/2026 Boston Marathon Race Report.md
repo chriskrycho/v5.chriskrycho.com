@@ -91,7 +91,7 @@ Then it was out of the buses and onto the Hopkinton Middle and High School field
 
 ![one of the tents on the fields where we waited](https://cdn.chriskrycho.com/images/2026/boston-marathon/3-tent.jpeg)
 
-We waited there for the better part of an hour—all to the good, with enough time to hydrate a bit more, hit the port-a-johns again, and then walk/jog down the quarter mile to the start line. Unlike your average regional race, there really wasn’t much room to warm up for this. I did what I could, as did lots of the folks around me, but it wasn’t like we had room to jog for a mile and do some strides. More like: do a bunch of high knees, A- and B-skips, and butt-kicks while making my way down to the starting area, and then finding enough room to run up and down the last little hill before we all filed into the corrals.
+We waited there for the better part of an hour—all to the good, with enough time to hydrate a bit more, hit the port-a-johns again, and then walk/jog down the three quarters of a mile to the start line. Unlike your average regional race, there really wasn’t much room to warm up for this. I did what I could, as did lots of the folks around me, but it wasn’t like we had room to jog for a mile and do some strides. More like: do a bunch of high knees, A- and B-skips, and butt-kicks while making my way down to the starting area, and then finding enough room to run up and down the last little hill before we all filed into the corrals.
 
 ![one of the tents on the fields where we waited](https://cdn.chriskrycho.com/images/2026/boston-marathon/4-start-area.jpeg)
 
