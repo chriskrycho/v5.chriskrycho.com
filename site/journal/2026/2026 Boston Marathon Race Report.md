@@ -4,6 +4,7 @@ subtitle: |
     I did it, and I did it *fast*!
 
 date: 2026-04-21T21:11:00-0600
+updated: 2026-04-21T22:13:00-0600
 
 image:
   cdn: 2026/boston-marathon/5-finish-thumb.jpeg
@@ -52,7 +53,9 @@ This is long. It’s primarily for me, to remember! But you’re welcome to read
 
 The build back to this started in earnest in December—after spending October and November trying to work through enough <abbr>PT</abbr> and pain treatment that I could sleep through the night, stand, and walk (much less run) without agonizing nerve pain. But start again I did, however painfully and slowly. I had to ease back in with walk-runs. I spent a lot of time running slower than I’ve run since coming back after a bout of Covid in early 2022.
 
-I decided, given how dicey this was, to hire [a coach][coach] to help me build back in coordination with <abbr>PT</abbr>. It was a very good call!
+I decided, given how dicey this was, to hire [a coach][coach] to help me build back in coordination with <abbr>PT</abbr>. It was a very good call! It turned out this build required a lot of adaptation and flexibility, and having a coach rather than a pre-baked plan helped a ton eith that.
+
+[coach]: https://www.svccoaching.com
 
 I was feeling pretty decent as I came out of December—not *good*, but on track. Then I came down with this year’s variant of norovirus, and I felt awful for a week. It took me another two weeks after that before I could run for more than thirty minutes without having to stop and go to the bathroom mid-run. I kept at it even so, and by February training was back to normal. Slow, but normal. Normal felt good! From that point I was able to do a fairly steady, normal build.
 
@@ -67,6 +70,8 @@ It was, suffice it to say, a very strange build. I never felt like I had meaning
 ### Race weekend
 
 I flew into Boston midday Saturday and used the expo and packet pickup time as a super easy run to loosen up after the plane flight. I then discovered that my hotel room didn’t have a minifridge or a toaster or anything. It just meant I wasn’t going to be eating cereal and toast (much less a fried egg!) like usual on race morning.[^hotel] I did my usual shakeout run Sunday morning, then picked up some coffee, a cup of overnight oats, and a little egg sandwich on an English muffin. After that I walked over to [Church of the Cross][cotc], an Anglican congregation that meets a mile or so from downtown Boston. Along the way: a bagel… with about a third of the cream cheese they had put on it. After church: three hours chatting with a friend over another bagel, this one with avocado and turkey.
+
+[cotc]: https://www.cotcboston.org
 
 On the way back, I improvised and picked up some muffins from Trader Joe’s for race morning. Then I walked to a restaurant that looked good, only to realize that they had nothing that wasn’t going to sit *much* too heavily for race day. I made my way back to the place I’d had dinner on Saturday evening, and ended up ordering a burger and some fries. It was a good burger, but it also ended up being a good reminder that a good burger really isn’t what you want the night before a race. I also pondered a bit the fact that between the shakeout and walking around the city so much, I had put 10 miles and about 20,000 steps on my legs. Whoops.
 
