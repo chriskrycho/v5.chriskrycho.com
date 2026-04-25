@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-04-01T07:58:00-0600
+modified: 2026-04-25T12:25:00-0600
 
 ---
 
@@ -60,8 +60,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>A Time to Keep</cite>](https://bookshop.org/a/21126/9781481305457), Ephraim Radner (new)
 
-- [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
-
 - [<cite>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</cite>](https://bookshop.org/a/21126/9781449373320), Martin Kleppmann (new)
 
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
@@ -72,12 +70,16 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
 
+- [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
+
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
 - [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
+
+- [<cite>Tinker, Tailor, Soldier, Spy</cite>](https://bookshop.org/a/21126/9780143119784), John le Carré
 
 
 ### Poetry
@@ -102,6 +104,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
 - [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
+
+- [<cite>The Rise and Reign of the Mammals: A New History, from the Shadow of the Dinosaurs to Us</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
 
 
 ### Fiction
@@ -707,6 +711,12 @@ These are books I have started at some point but have (at least for now!) put as
     I tried this as an audiobook and couldn’t get through it. I suspect I could have made better progress in ebook format. I also found, though, that I wasn’t all that interested in Wynn-Williams’ personal narrative: I picked up the book to hear about Facebook/Meta, not her journey. She seems like a nice person, but not the kind of person about whom I would normally pick up a biography or memoir!
 
 - [<cite>Sword of the Spirit, Shield of Faith: Religion in American War and Foreign Policy</cite>](https://bookshop.org/a/21126/9781400078585), Andrew Preston (new)
+
+- [<cite>Rebuilding Milo: A Lifter's Guide to Fixing Common Injuries and Building a Strong Foundation for Enhancing Performance</cite>](https://bookshop.org/a/21126/9781628604221), Aaron Horschig (new)
+
+    Got what I needed out of this, set it aside once I had!
+
+
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
