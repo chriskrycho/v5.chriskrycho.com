@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-04-25T12:25:00-0600
+modified: 2026-05-09T13:13:00-0600
 
 ---
 
@@ -22,6 +22,7 @@ Quick links:
 
 - [Planned](#planned)
 - [Started](#started)
+- [2026](#2026)
 - [2025](#2025)
 - [2024](#2024)
 - [2023](#2023)
@@ -31,22 +32,6 @@ Quick links:
 - [2019](#2019)
 - [2018](#2018)
 - [Tabled](#tabled)
-
-
-## Planned
-
-These are books I am *actively* planning to read—not just volumes I’m vaguely interested in, but texts I am committed to reading for some reason.
-
-
-### Non-fiction
-
-- <cite>Created in God’s Image</cite>, Anthony Hoekema (new)
-- [<cite>The Epistle to the Romans</cite>](https://bookshop.org/a/21126/9780195002942), Karl Barth (new)
-
-
-### Fiction
-
-(no specific plans right now!)
 
 
 ## Started
@@ -66,20 +51,15 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
-- [<cite>Thinking in Systems</cite>][thinking-in-systems], Donella Meadows (reread)
-
 - [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
 
 - [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
 
+- [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
-
-- [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
-
-- [<cite>Tinker, Tailor, Soldier, Spy</cite>](https://bookshop.org/a/21126/9780143119784), John le Carré
 
 
 ### Poetry
@@ -119,6 +99,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Spy Who Came in from the Cold</cite>](https://bookshop.org/a/21126/9780143124757), John le Carré (new)
 
 - [<cite>God’s Junk Drawer</cite>](https://bookshop.org/a/21126/9798874830878), Peter Clines (new)
+
+- [<cite>Tinker, Tailor, Soldier, Spy</cite>](https://bookshop.org/a/21126/9780143119784), John le Carré (new)
 
 
 ## 2025
@@ -716,7 +698,9 @@ These are books I have started at some point but have (at least for now!) put as
 
     Got what I needed out of this, set it aside once I had!
 
+- [<cite>The Witchwood Crown</cite>](https://bookshop.org/a/21126/9780756414399), Tad Williams (new)
 
+    I really enjoyed the original trilogy and a friend recommended this highly as a follow-up, but I just couldn’t get into it. After two or three separate attempts, after which I had made my way to only about the 2⁄3 mark, and simply wasn’t interested in what came next. I bailed.
 
 [^kurzweil]: This is where it is for a reason. Don’t @ me.
 
