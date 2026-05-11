@@ -6,12 +6,12 @@ const renderable = (path: string) => encodeURIComponent(corrected(path));
 
 /** Link to the history of the file on GitHub */
 export const history = (path: string): string =>
-   `${SiteConfig.repo}/commits/main/${renderable(path)}`;
+   `${SiteConfig.repo}/commits/canon/${renderable(path)}`;
 
 /** Link to edit the file on GitHub */
 export const edit = (inputPath: string): string =>
-   `${SiteConfig.repo}/edit/main/${renderable(inputPath)}`;
+   `${SiteConfig.repo}/edit/canon/${renderable(inputPath)}`;
 
 /** Link to view the file on GitHub */
 export const source = (inputPath: string): string =>
-   `${SiteConfig.repo}/blob/main/${renderable(inputPath)}`;
+   `${SiteConfig.repo}/blob/canon/${renderable(inputPath)}`;
