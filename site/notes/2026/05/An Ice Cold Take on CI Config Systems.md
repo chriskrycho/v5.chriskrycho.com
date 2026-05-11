@@ -25,7 +25,7 @@ I posted this on social media ([Bluesky][b], [Mastodon][m], [LinkedIn][li]) and 
 [m]: https://mastodon.social/@chriskrycho/116551171174373355
 [li]: https://www.linkedin.com/feed/update/urn:li:activity:7459274954757398528/
 [pkl]: https://pkl-lang.org
-[dhall]; https://dhall-lang.org
+[dhall]: https://dhall-lang.org
 
 Other things to read about that suggest interesting alternatives in the <abbr>CI</abbr> space itself:
 
