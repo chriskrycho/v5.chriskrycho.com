@@ -14,13 +14,13 @@ qualifiers:
 
 ---
 
-Multitasking has always been truly terrible for our ability to think clearly and work effectively. LLM-based “agents” don’t change that; they just offer one more invitation to distraction and split attention. Ignore the hype that says you must be running a multi-agent swarm: do good work instead.
+Multitasking has always been truly terrible for our ability to think clearly and work effectively. <abbr title="large language model">LLM</abbr>-based “agents” don’t change that; they just offer one more invitation to distraction and split attention. Ignore the hype that says you must be running a multi-agent swarm: do good work instead.
 
 ---
 
 *Some notes from my journal this morning, lightly expanded, along these same lines, prompted by finding myself as deeply muddled and distracted-feeling as I have been in a long time yesterday—*
 
-Context switching and *ways* of working with <abbr title="large language model">LLM</abbr>s that exacerbate context switching are not helping me be effective at work. Focus, using “old-fashioned” techniques like closing other windows, using a pomodoro timer, and explicitly prioritizing goals helps.
+Context switching and *ways* of working with <abbr>LLM</abbr>s that exacerbate context switching are not helping me be effective at work. Focus, using “old-fashioned” techniques like closing other windows, using a pomodoro timer, and explicitly prioritizing goals helps.
 
 On <abbr>LLM</abbr>s: it strikes me that their relatively slow response is part of what makes it so easy to get into context-switching brain-fried mode. That 30-second pause, that 3-minute wait: it makes it *so* easy to open Slack or go start reading a document. Even if there are some messages that legitimately warrant a response, even if someone is waiting for me to read and comment on the document, that switch is costly. My focus on the problem at hand is gone, and the likelihood that I will just keep switching after that only increases.
 
