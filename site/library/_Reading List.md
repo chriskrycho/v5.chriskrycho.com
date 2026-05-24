@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-05-09T13:13:00-0600
+modified: 2026-05-23T19:27:00-0600
 
 ---
 
@@ -51,8 +51,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
 
-- [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
-
 - [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
 
 - [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
@@ -86,6 +84,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
 
 - [<cite>The Rise and Reign of the Mammals: A New History, from the Shadow of the Dinosaurs to Us</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
+
+- [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
 
 
 ### Fiction
