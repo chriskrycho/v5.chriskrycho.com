@@ -134,7 +134,7 @@ function saveReadingModePreference(hideNav: boolean): void {
 }
 
 // SAFETY: we immediately check (in debug!) that each cast is correct.
-export default function getElements() {
+function getElements() {
    const Root = $('root');
    assert(Root instanceof HTMLElement, 'misconfigured root element');
 
@@ -181,8 +181,8 @@ function unreachable(value: never): never {
 }
 
 const selectorFor = (item: string): string => `[data-sympolymathesy="${item}"]`;
-export const $ = (item: string) => document.querySelector(selectorFor(item));
-export const $$ = (item: string) => document.querySelectorAll(selectorFor(item));
+const $ = (item: string) => document.querySelector(selectorFor(item));
+const $$ = (item: string) => document.querySelectorAll(selectorFor(item));
 
 /** Defines the class names for the theme */
 const enum Theme {
