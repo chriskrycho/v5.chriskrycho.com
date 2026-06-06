@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-05-23T19:27:00-0600
+modified: 2026-06-06T09:42:00-0600
 
 ---
 
@@ -55,6 +55,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
 
+
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
@@ -101,6 +102,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>God’s Junk Drawer</cite>](https://bookshop.org/a/21126/9798874830878), Peter Clines (new)
 
 - [<cite>Tinker, Tailor, Soldier, Spy</cite>](https://bookshop.org/a/21126/9780143119784), John le Carré (new)
+
+- [<cite>Children of Strife</cite>](https://bookshop.org/a/21126/9780316598965), Adrian Tchaikovsky (new)
 
 
 ## 2025
