@@ -1,4 +1,19 @@
 allowBuilds:
   '@parcel/watcher': true
+minimumReleaseAgeExclude:
+  - nth-check@2.0.1
+  - minimatch@3.0.5
+  - html-minifier@4.0.1
+  - lodash.pick@4.4.1
+  - nanoid@3.3.8
+  - nanoid@3.1.31
+  - diff@5.2.2
+  - js-yaml@4.1.1
+  - markdown-it@14.1.1
+  - minimatch@3.1.3
+  - minimatch@3.1.4
+  - serialize-javascript@7.0.3
+  - lodash@4.17.24
+  - serialize-javascript@7.0.5
 onlyBuiltDependencies:
   - '@parcel/watcher'
