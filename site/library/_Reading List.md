@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-06-06T09:42:00-0600
+modified: 2026-06-07T06:38:00-0600
 
 ---
 
@@ -55,6 +55,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
 
+- [<cite>The Examined Run: Why Good People Make Better Runners</cite>][examined-run], Sabrina B. Little (reread)
+    - [posts on the book](/library/the-examined-run/)
+
 
 ### Fiction
 
@@ -82,11 +85,14 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
-- [<cite>The Examined Run: Why Good People Make Better Runners</cite>](https://bookshop.org/a/21126/9780197678695), Sabrina B. Little (new)
+- [<cite>The Examined Run: Why Good People Make Better Runners</cite>][examined-run], Sabrina B. Little (new)
+    - [posts on the book](/library/the-examined-run/)
 
 - [<cite>The Rise and Reign of the Mammals: A New History, from the Shadow of the Dinosaurs to Us</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
 
 - [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
+
+[examined-run]: https://bookshop.org/a/21126/9780197678695
 
 
 ### Fiction
@@ -470,8 +476,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Shape Up</cite>](https://basecamp.com/shapeup), Ryan Singer (new)
 
 - [<cite>Politics & the Order of Love: An Augustinian Ethic of Democratic Citizenship</cite>](https://bookshop.org/a/21126/9780226307527), Eric Gregory (new)
-    - [posts on the book](/topics/politics-and-the-order-of-love/)
-    - [review](/library/politics-and-the-order-of-love/)
+    - [posts on the book](/library/politics-and-the-order-of-love/)
+    - [review](/library/politics-and-the-order-of-love/review/)
 
 - [<cite>Finding Holy in the Suburbs: Living Faithfully in the Land of Too Much</cite>](https://bookshop.org/a/21126/9780830845453), Ashley Hales (new)
     - [review](/library/finding-holy-in-the-suburbs/)
