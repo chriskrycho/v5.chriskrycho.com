@@ -4,6 +4,11 @@ subtitle: |
     Taking a page (no pun intended!) from Eleanor Konik’s book.
 
 date: 2026-06-06T21:02:00-0600
+updated: 2026-06-07T12:51:00-0600
+updates:
+    - at: 2026-06-07T12:51:00-0600
+      changes: |
+          Substantial copy-level edits to the first couple paragraphs. They were a mess!
 
 qualifiers:
     audience: |
@@ -20,12 +25,12 @@ image:
 
 ---
 
-This evening I started rereading Sabrina B. Little’s excellent [<cite>The Examined Run: Why Good People Make Better Runners</cite>][book] (which I quoted briefly [here][quote] a few months ago) with a two-fold purpose: discussing it with my 14-year-old daughter over the summer so she has good reading to accompany her summer running training, and getting a much firmer grasp on the book’s insights. I’ve been mulling some ways that Little’s thesis and framing—that virtue ethics is a particularly helpful lens for thinking about endurance running specifically and endurance sports more generally—may fit into future endeavors of my own. More on that anon, and all this merely by way of setup—
+This evening I started rereading Sabrina B. Little’s excellent [<cite>The Examined Run</cite>][book] (which I quoted briefly [here][quote] a few months ago) with a two-fold purpose. First, I am discussing it with my 14-year-old daughter over the summer. It will make a good reading complement to her summer running training. Second, I want to get a much firmer grasp on the book’s insights. Little’s thesis is that virtue ethics is a particularly helpful lens for thinking about endurance running specifically and endurance sports more generally. I’ve been mulling some ways that thesis may fit into future endeavors of my own. More on that anon, and all this merely by way of setup—
 
 [book]: https://bookshop.org/a/21126/9780197678695
 [quote]: https://v5.chriskrycho.com/library/the-examined-run/recovery-is-a-hopeful-act/
 
-Back in May, [Eleanor Konik][ek] published [🌲 How to Take Notes on Physical Library Books][notes-on-library-books], and it stuck in my head as a great idea, and far more generally applicable for me than her specific application to library books. The gist is really simple: get a small notebook that “fits” in a book and take notes on that instead of in the book itself. (I’m focused for the rest of this post on that specific bit, but Konik has some very helpful things to say on note-taking _per se_ beyond the question of stationery, so you should [give the whole thing a read][notes-on-library-books].) On the one hand, the advice to use a notebook for taking notes on things you read is obvious.[^notes] On the other hand, I have done many variants of this over the years, but always found them lacking.
+Back in May, [Eleanor Konik][ek] published [🌲 How to Take Notes on Physical Library Books][notes-on-library-books], and it stuck in my head. The gist is really simple: get a small notebook that “fits” in a book and take notes on that instead of in the book itself. This immediately struck me as a great idea, and far more generally applicable for me than her specific application to library books. (I’m focused for the rest of this post on the *notebooks*, but Konik has some very helpful things to say on note-taking more generally. Give [the whole thing][notes-on-library-books] a read!) On the one hand, the advice to use a notebook for taking notes on things you read is obvious.[^notes] On the other hand, I have done many variants of this over the years, but always found them lacking.
 
 [ek]: https://www.eleanorkonik.com
 [notes-on-library-books]: https://www.eleanorkonik.com/p/how-to-take-notes-on-physical-library
