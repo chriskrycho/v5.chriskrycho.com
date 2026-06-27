@@ -39,7 +39,7 @@ In a recent [blog post][post], Casey Liss concluded a discussion of using [Claud
 [post]: https://www.caseyliss.com/2026/6/12/an-old-familiar-feeling
 [cc]: https://claude.com/product/claude-code
 
-My thoughts about this particular experience report aren’t all that complicated: this is one of the reasons I think the chat interface for <abbr title="large language model">LLM</abbr>s is pernicious and bad and should be done away with—even if we solved all the *other* problems with them. But that’s a post for another day; this is just context. Casey and his cohosts discussed the post further on [this week’s episode][697] of <abbr title="Accidental Tech Podcast">ATP</abbr>. [John Siracusa][siracusa] commented that <abbr>LLM</abbr>s are a poor substitute for people, and they ended up discussing the loneliness of indie developer life.
+My thoughts about this particular experience report aren’t all that complicated: this is one of the reasons I think the chat interface for <abbr title="large language model">LLM</abbr>s is pernicious and bad and should be done away with—even if we solved all the *other* problems with them. But that’s a post for another day; this is just context. As Casey and his cohosts discussed the post further on [this week’s episode][697] of <abbr title="Accidental Tech Podcast">ATP</abbr>, [John Siracusa][siracusa] commented that <abbr>LLM</abbr>s are a poor substitute for people, and they ended up discussing the loneliness of indie developer life.
 
 [697]: https://atp.fm/697
 [siracusa]: https://hypercritical.co
