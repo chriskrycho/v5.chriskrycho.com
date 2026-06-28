@@ -5,6 +5,7 @@ subtitle: |
     An idea for indie folks working together.
 
 date: 2026-06-26T21:20:00-0600
+updated: 2026-06-27T19:57:00-0600
 
 tags:
     - working effectively
@@ -58,7 +59,15 @@ Finally, although online communities exist for every vocation imaginable, they g
 
 And so, what if we started *collaboratives*—long-term partnerships between indies, with an aim to tackle not the financial and legal but instead the social and collaboration gaps in indie life? Indies with a shared vocation would commit to be available to each other regularly. Software developers would be ready to do some pair programming or working through a design or architecture problem on a whiteboard. Composers could give each other an ear trying to get unstuck on a particularly challenging transition or orchestration question. Writers could discuss drafts or work through plotting or outlining together. The key is that these kinds of mutually helpful interactions would happen again, and again, and again, because of the commitment to be available to each other consistently and for the long term.
 
-I have a lot of questions about how this might work; after all, the idea is only four hours old. Should this be a legal arrangement parallel to how collectives work—maybe even an adjunct to existing collective setups? How should membership work? Are there dues? What is the expected availability to help out fellow collaborators? How do you deal with the folks who take disproportionate time and energy without giving back? Individual collaboratives could choose different answers to any or all of these, of course, but having some basic guidance for starting out would be helpful.
+I have a lot of questions about how this might work—as you’d expect, given the idea is only four hours old! A few of them:
+
+- Should this be a legal arrangement parallel to how collectives work—maybe even an adjunct to existing collective setups?
+- How should membership work?
+    - Are there dues?
+    - What is the expected availability to help out fellow collaborators?
+    - How do you deal with the folks who take disproportionate time and energy without giving back?
+
+Individual collaboratives could choose different answers to any or all of these, of course, but having some basic guidance for starting out would be helpful.
 
 ---
 
