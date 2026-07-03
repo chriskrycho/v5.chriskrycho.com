@@ -105,6 +105,10 @@ services:
       - type: redirect
         source: /library/examined-run/*
         destination: /library/the-examined-run/*
+      - type: redirect
+        source: /photos/photos-boston-april-2026/
+        destination: /photos/boston-april-2026/
+
 
       # ...including after I made library collections work correctly
       - type: redirect
