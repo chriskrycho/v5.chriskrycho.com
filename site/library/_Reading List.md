@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-07-11T20:06:00-0600
+modified: 2026-07-11T20:22:00-0600
 
 ---
 
@@ -55,6 +55,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Examined Run: Why Good People Make Better Runners</cite>][examined-run], Sabrina B. Little (reread)
     - [posts on the book](/library/the-examined-run/)
+
+- [<cite>The Pleasures of Reading in an Age of Distraction</cite>](https://bookshop.org/a/21126/9780199747498), Alan Jacobs (new)
 
 - [<cite>The Science of Lifting</cite>][lifting-books], Greg Nuckols and Omar Isuf (new)
 
