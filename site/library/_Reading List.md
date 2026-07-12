@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-06-07T06:38:00-0600
+modified: 2026-07-11T20:06:00-0600
 
 ---
 
@@ -53,10 +53,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
 
-- [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
-
 - [<cite>The Examined Run: Why Good People Make Better Runners</cite>][examined-run], Sabrina B. Little (reread)
     - [posts on the book](/library/the-examined-run/)
+
+- [<cite>The Science of Lifting</cite>][lifting-books], Greg Nuckols and Omar Isuf (new)
 
 
 ### Fiction
@@ -92,7 +92,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Sources of Power: How People Make Decisions, 20<sup>th</sup> Anniversary Edition</cite>](https://bookshop.org/a/21126/9780262534291), Gary Klein (new)
 
+- [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
+
+- [<cite>The Art of Lifting</cite>][lifting-books], Greg Nuckols and Omar Isuf (new)
+
 [examined-run]: https://bookshop.org/a/21126/9780197678695
+[lifting-books]: https://www.strongerbyscience.com/art-and-science/
 
 
 ### Fiction
