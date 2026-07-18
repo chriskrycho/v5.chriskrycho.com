@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-07-11T20:22:00-0600
+modified: 2026-07-18T10:17:00-0600
 
 ---
 
@@ -117,6 +117,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Tinker, Tailor, Soldier, Spy</cite>](https://bookshop.org/a/21126/9780143119784), John le Carré (new)
 
 - [<cite>Children of Strife</cite>](https://bookshop.org/a/21126/9780316598965), Adrian Tchaikovsky (new)
+
+- [<cite>Paradox Bound</cite>](https://bookshop.org/a/21126/9781101907030), Peter Clines (new)
 
 
 ## 2025
