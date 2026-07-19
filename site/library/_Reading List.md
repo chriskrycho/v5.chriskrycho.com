@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-07-18T10:17:00-0600
+modified: 2026-07-19T17:40:00-0600
 
 ---
 
@@ -50,8 +50,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Liquid Modernity</cite>](https://bookshop.org/a/21126/9780745624105), Zygmunt Baumann (new)
 
 - [<cite>Designing Your Life: How to Build a Well-Lived, Joyful Life</cite>](https://bookshop.org/a/21126/9781101875322), Dave Evans and Bill Burnett (new)
-
-- [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
 
 - [<cite>The Examined Run: Why Good People Make Better Runners</cite>][examined-run], Sabrina B. Little (reread)
     - [posts on the book](/library/the-examined-run/)
@@ -97,6 +95,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Rise and Fall of the Dinosaurs: A New History of Their Lost World</cite>](https://bookshop.org/a/21126/9780062951557), Steve Brusatte (new)
 
 - [<cite>The Art of Lifting</cite>][lifting-books], Greg Nuckols and Omar Isuf (new)
+
+- [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
 
 [examined-run]: https://bookshop.org/a/21126/9780197678695
 [lifting-books]: https://www.strongerbyscience.com/art-and-science/
