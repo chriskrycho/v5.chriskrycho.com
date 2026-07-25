@@ -2,7 +2,9 @@
    "extends": "./base.tsconfig.jsonc",
    "compilerOptions": {
       "noEmit": true,
-      "allowImportingTsExtensions": true /* Runtime TS uses Node's built-in type stripping. */
+      "allowImportingTsExtensions": true,
+      "erasableSyntaxOnly": true,
+      "verbatimModuleSyntax": true
    },
    "include": ["eleventy.config.ts", "lib", "eleventy", "types"],
    "exclude": ["site/_data/build.js"]
