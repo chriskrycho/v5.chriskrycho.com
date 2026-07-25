@@ -22,10 +22,10 @@
       width: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template: '. year .' auto / minmax(7rem, 1fr) minmax(min-content, 34rem) minmax(
-            7rem,
-            1fr
-         );
+      grid-template: '. year .' auto / minmax(7rem, 1fr) minmax(
+            min-content,
+            34rem
+         ) minmax(7rem, 1fr);
       background-color: var(--bg);
 
       position: sticky;
@@ -161,7 +161,9 @@
       -moz-text-decoration-color: transparent;
       text-decoration-color: transparent;
 
-      transition: color var(--transition), text-decoration var(--transition);
+      transition:
+         color var(--transition),
+         text-decoration var(--transition);
 
       &:hover,
       &:active {

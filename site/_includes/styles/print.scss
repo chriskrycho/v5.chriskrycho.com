@@ -29,8 +29,7 @@ main {
          text-decoration: none;
       }
 
-      a[href*='//']::after
-      {
+      a[href*='//']::after {
          color: var(--link) !important;
          -webkit-text-decoration-color: var(--underline) !important;
          -moz-text-decoration-color: var(--underline) !important;

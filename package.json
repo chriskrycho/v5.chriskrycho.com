@@ -2,11 +2,22 @@
    "name": "v5.chriskrycho.com",
    "version": "1.0.0",
    "description": "The fifth version of chriskrycho.com.",
+   "license": "MIT",
+   "author": "Chris Krycho <hello@chriskrycho.com>",
+   "repository": "https://github.com/chriskrycho/v5.chriskrycho.com",
    "type": "module",
    "main": "index.js",
-   "repository": "https://github.com/chriskrycho/v5.chriskrycho.com",
-   "author": "Chris Krycho <hello@chriskrycho.com>",
-   "license": "MIT",
+   "scripts": {
+      "build:styles": "sass --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
+      "build:site": "eleventy --quiet",
+      "build:scripts": "rolldown -c rolldown.config.mjs",
+      "build": "npm run build:scripts && npm run build:styles && npm run build:site",
+      "watch:styles": "sass --watch --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
+      "watch:site": "eleventy --serve",
+      "watch:scripts": "rolldown --config rolldown.config.mjs --watch",
+      "serve": "env DEV=true eleventy --quiet --serve --incremental",
+      "clean": "rm -rf public"
+   },
    "devDependencies": {
       "@11ty/eleventy": "^2.0.1",
       "@types/common-tags": "^1.8.4",
@@ -40,16 +51,5 @@
       "typescript": "^7.0.2",
       "typeset": "^0.3.5",
       "uslug": "^1.0.4"
-   },
-   "scripts": {
-      "build:styles": "sass --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
-      "build:site": "eleventy --quiet",
-      "build:scripts": "rolldown -c rolldown.config.mjs",
-      "build": "npm run build:scripts && npm run build:styles && npm run build:site",
-      "watch:styles": "sass --watch --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
-      "watch:site": "eleventy --serve",
-      "watch:scripts": "rolldown --config rolldown.config.mjs --watch",
-      "serve": "env DEV=true eleventy --quiet --serve --incremental",
-      "clean": "rm -rf public"
    }
 }

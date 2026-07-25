@@ -1,16 +1,24 @@
 {
-  "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "useTabs": false,
-  "tabWidth": 3,
-  "printWidth": 90,
-  "singleQuote": true,
-  "jsxSingleQuote": false,
-  "quoteProps": "as-needed",
-  "trailingComma": "all",
-  "semi": true,
-  "arrowParens": "always",
-  "bracketSameLine": false,
-  "bracketSpacing": true,
-  "singleAttributePerLine": false,
-  "ignorePatterns": []
+   "$schema": "./node_modules/oxfmt/configuration_schema.json",
+   "useTabs": false,
+   "tabWidth": 3,
+   "printWidth": 90,
+   "singleQuote": true,
+   "jsxSingleQuote": false,
+   "quoteProps": "as-needed",
+   "trailingComma": "all",
+   "semi": true,
+   "arrowParens": "always",
+   "bracketSameLine": false,
+   "bracketSpacing": true,
+   "singleAttributePerLine": false,
+   "ignorePatterns": [],
+   "overrides": [
+      {
+         "files": ["*.yml", "*.yaml"],
+         "options": {
+            "tabWidth": 2
+         }
+      }
+   ]
 }

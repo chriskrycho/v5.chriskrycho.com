@@ -88,7 +88,9 @@
    -webkit-text-decoration-color: var(--underline);
    -moz-text-decoration-color: var(--underline);
    text-decoration-color: var(--underline);
-   transition: color var(--transition), -webkit-text-decoration-color var(--transition),
+   transition:
+      color var(--transition),
+      -webkit-text-decoration-color var(--transition),
       -moz-text-decoration-color var(--transition),
       text-decoration-color var(--transition);
 

@@ -70,7 +70,7 @@ export interface JsonFeed {
     */
    author?: Author;
 
-   /** 
+   /**
       Says whether or not the feed is finished ― that is, whether or not it will ever
       update again. A feed for a temporary event, such as an instance of the Olympics,
       could expire. If the value is true, then it’s expired. Any other value, or the

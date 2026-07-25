@@ -4,7 +4,7 @@
    "book": {
       "title": "The Examined Run: Why Good People Make Better Runners",
       "cover": {
-        "cdn": "books/examined-run.jpg"
+         "cdn": "books/examined-run.jpg"
       },
       "author": "Sabrina B. Little",
       "year": 2024,

@@ -83,8 +83,8 @@ function addCollectionFromDir(config: Config, path: string): void {
 
 const inCollectionNamed =
    (name: string) =>
-      (item: Item): boolean =>
-         item.data?.collections[name]?.includes(item) ?? false;
+   (item: Item): boolean =>
+      item.data?.collections[name]?.includes(item) ?? false;
 
 function latest(collection: Collection): Item[] {
    const all = collection

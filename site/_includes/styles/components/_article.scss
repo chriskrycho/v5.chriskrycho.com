@@ -29,9 +29,11 @@
       text-decoration-color: var(--underline);
       text-decoration-skip-ink: auto;
 
-      transition: -webkit-text-decoration-color var(--transition),
+      transition:
+         -webkit-text-decoration-color var(--transition),
          -moz-text-decoration-color var(--transition),
-         text-decoration-color var(--transition), color var(--transition);
+         text-decoration-color var(--transition),
+         color var(--transition);
 
       &:hover {
          -webkit-text-decoration-color: var(--hover-underline);
@@ -640,7 +642,7 @@
    }
 
    .book-review {
-      margin : {
+      margin: {
          left: auto;
          right: auto;
       }
