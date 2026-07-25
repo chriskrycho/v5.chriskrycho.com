@@ -1,9 +1,9 @@
-@import './_vendor/modularscale';
-
 // https://www.modularscale.com/?1,4&em&1.5
-$modularscale: (
-   base: 1em 4em,
-   ratio: 1.33,
+@forward '_vendor/modularscale' with (
+   $modularscale: (
+      base: 1em 4em,
+      ratio: 1.33,
+   )
 );
 
 $break-0: 520px;

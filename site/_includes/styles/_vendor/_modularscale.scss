@@ -1,17 +1,17 @@
 // Defaults and variables
-@import 'modularscale/vars';
+@forward 'modularscale/vars';
 
 // Core functions
-@import 'modularscale/settings';
-@import 'modularscale/pow';
-@import 'modularscale/strip-units';
-@import 'modularscale/sort';
-@import 'modularscale/target';
-@import 'modularscale/function';
-@import 'modularscale/round-px';
+@forward 'modularscale/settings';
+@forward 'modularscale/pow';
+@forward 'modularscale/strip-units';
+@forward 'modularscale/sort';
+@forward 'modularscale/target';
+@forward 'modularscale/function';
+@forward 'modularscale/round-px';
 
 // Mixins
-@import 'modularscale/respond';
+@forward 'modularscale/respond';
 
 // Syntax sugar
-@import 'modularscale/sugar';
+@forward 'modularscale/sugar';

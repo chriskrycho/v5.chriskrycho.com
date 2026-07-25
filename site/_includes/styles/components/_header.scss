@@ -1,3 +1,5 @@
+@use "../config" as *;
+
 .site-header {
    color: var(--fg);
    background-color: var(--bg);

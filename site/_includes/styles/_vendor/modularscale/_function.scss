@@ -1,3 +1,10 @@
+@use "sass:list";
+@use "pow";
+@use "settings";
+@use "sort";
+@use "target";
+@use "vars";
+
 @use 'sass:math';
 
 @function ms-function(
@@ -5,56 +12,56 @@
    $base: false,
    $ratio: false,
    $thread: false,
-   $settings: $modularscale
+   $settings: vars.$modularscale
 ) {
    // Parse settings
-   $ms-settings: ms-settings($base, $ratio, $thread, $settings);
-   $base: nth($ms-settings, 1);
-   $ratio: nth($ms-settings, 2);
+   $ms-settings: settings.ms-settings($base, $ratio, $thread, $settings);
+   $base: list.nth($ms-settings, 1);
+   $ratio: list.nth($ms-settings, 2);
 
    // Render target values from settings.
-   @if unit($ratio) != '' {
-      $ratio: ms-target($ratio, $base);
+   @if math.unit($ratio) != '' {
+      $ratio: target.ms-target($ratio, $base);
    }
 
    // Fast calc if not multi stranded
-   @if (length($base) == 1) {
-      @return ms-pow($ratio, $v) * $base;
+   @if (list.length($base) == 1) {
+      @return pow.ms-pow($ratio, $v) * $base;
    }
 
    // Create new base array
-   $ms-bases: nth($base, 1);
+   $ms-bases: list.nth($base, 1);
 
    // Normalize base values
-   @for $i from 2 through length($base) {
+   @for $i from 2 through list.length($base) {
       // initial base value
-      $ms-base: nth($base, $i);
+      $ms-base: list.nth($base, $i);
       // If the base is bigger than the main base
-      @if ($ms-base > nth($base, 1)) {
+      @if ($ms-base > list.nth($base, 1)) {
          // divide the value until it aligns with main base.
-         @while ($ms-base > nth($base, 1)) {
+         @while ($ms-base > list.nth($base, 1)) {
             $ms-base: math.div($ms-base, $ratio);
          }
          $ms-base: $ms-base * $ratio;
       }
       // If the base is smaller than the main base.
-      @else if ($ms-base < nth($base, 1)) {
+      @else if ($ms-base < list.nth($base, 1)) {
          // pump up the value until it aligns with main base.
-         @while $ms-base < nth($base, 1) {
+         @while $ms-base < list.nth($base, 1) {
             $ms-base: $ms-base * $ratio;
          }
       }
       // Push into new array
-      $ms-bases: append($ms-bases, $ms-base);
+      $ms-bases: list.append($ms-bases, $ms-base);
    }
 
    // Sort array from smallest to largest.
-   $ms-bases: ms-sort($ms-bases);
+   $ms-bases: sort.ms-sort($ms-bases);
 
    // Find step to use in calculation
-   $vtep: floor(math.div($v, length($ms-bases)));
+   $vtep: math.floor(math.div($v, list.length($ms-bases)));
    // Find base to use in calculation
-   $ms-base: round((math.div($v, length($ms-bases)) - $vtep) * length($ms-bases)) + 1;
+   $ms-base: math.round((math.div($v, list.length($ms-bases)) - $vtep) * list.length($ms-bases)) + 1;
 
-   @return ms-pow($ratio, $vtep) * nth($ms-bases, $ms-base);
+   @return pow.ms-pow($ratio, $vtep) * list.nth($ms-bases, $ms-base);
 }

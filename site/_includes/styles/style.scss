@@ -1,5 +1,6 @@
-@import './reset';
-@import './config';
+@use "sass:meta";
+@use 'reset';
+@use 'config' as *;
 
 * {
    box-sizing: border-box;
@@ -69,12 +70,12 @@ body {
    navigation: auto;
 }
 
-@import './color-scheme';
-@import './mixins';
+@include meta.load-css('color-scheme');
+@include meta.load-css('mixins');
 
-@import './defaults';
+@include meta.load-css('defaults');
 
-@import './components';
-@import './layout';
-@import './typography';
-@import './utils';
+@include meta.load-css('components');
+@include meta.load-css('layout');
+@include meta.load-css('typography');
+@include meta.load-css('utils');

@@ -1,3 +1,5 @@
+@use "../config" as *;
+
 @mixin fancy-block($bg, $fg, $b-l-w: 0px, $b-r-w: 0px) {
    max-width: calc(var(--max-width) + 2 * var(--side-padding));
    padding: {

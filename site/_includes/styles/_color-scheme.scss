@@ -1,6 +1,6 @@
-@import './config';
-@import './syntax-highlighting/a11y-light';
-@import './syntax-highlighting/tomorrow-night-bright';
+@use 'config';
+@use 'syntax-highlighting/a11y-light';
+@use 'syntax-highlighting/tomorrow-night-bright';
 
 @mixin light {
    // Colors
@@ -59,7 +59,7 @@
    --kbd-border: var(--gray-4);
    --kbd-shadow: var(--gray-3);
 
-   @include a11y-light();
+   @include a11y-light.a11y-light();
 }
 
 @mixin dark {
@@ -114,7 +114,7 @@
    --kbd-border: var(--gray-4);
    --kbd-shadow: var(--gray-3);
 
-   @include tomorrow-night-bright();
+   @include tomorrow-night-bright.tomorrow-night-bright();
 
    code,
    pre code {

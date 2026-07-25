@@ -1,3 +1,5 @@
+@use "config" as *;
+
 html {
    background: var(--root-bg);
 }

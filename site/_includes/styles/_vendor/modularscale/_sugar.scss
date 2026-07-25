@@ -1,3 +1,6 @@
+@use "function";
+@use "vars";
+
 // To attempt to avoid conflicts with other libraries
 // all funcitons are namespaced with `ms-`.
 // However, to increase usability, a shorthand function is included here.
@@ -7,7 +10,7 @@
    $base: false,
    $ratio: false,
    $thread: false,
-   $settings: $modularscale
+   $settings: vars.$modularscale
 ) {
-   @return ms-function($v, $base, $ratio, $thread, $settings);
+   @return function.ms-function($v, $base, $ratio, $thread, $settings);
 }

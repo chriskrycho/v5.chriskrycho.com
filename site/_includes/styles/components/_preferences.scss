@@ -1,3 +1,5 @@
+@use "../config";
+
 .preferences {
    font: var(--sans);
    position: fixed;
@@ -78,7 +80,7 @@
       }
 
       &.preferences-form__hide-side-nav {
-         @media screen and (max-width: $reflow) {
+         @media screen and (max-width: config.$reflow) {
             display: none;
          }
       }

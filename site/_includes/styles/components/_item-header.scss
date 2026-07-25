@@ -1,3 +1,4 @@
+@use '../config' as *;
 .item-header {
    width: 100%;
    max-width: var(--max-width);
@@ -7,7 +8,7 @@
       right: auto;
    }
 
-   --line-height: ms(1);
+   --line-height: #{ms(1)};
 
    .item-title {
       line-height: 1;
