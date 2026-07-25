@@ -1,4 +1,4 @@
-import { filterMap, install } from './iterator-helpers.ts';
+import { filterMap, install } from './eleventy/iterator-helpers.ts';
 install();
 
 import { env } from 'process';
@@ -7,37 +7,37 @@ import { randomBytes } from 'node:crypto';
 import { DateTime } from 'luxon';
 import Maybe from 'true-myth/maybe';
 
-import type { Config, Item, UserConfig, Collection, Data } from '../types/eleventy.d.ts';
-import absoluteUrl from './absolute-url.ts';
-import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year.ts';
-import copyright from './copyright.ts';
-import currentPage from './current-page.ts';
-import { resolvedImage } from './data.ts';
-import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time.ts';
-import isoDate from './iso-date.ts';
-import localeDate from './locale-date.ts';
-import markdown from './markdown.ts';
-import * as PageLinks from './page-links.ts';
-import spacewell from '../lib/spacewell.ts';
+import type { Config, Item, UserConfig, Collection, Data } from './types/eleventy.d.ts';
+import absoluteUrl from './eleventy/absolute-url.ts';
+import archiveByYear, { byDate, byUpdated, Order } from './eleventy/archive-by-year.ts';
+import copyright from './eleventy/copyright.ts';
+import currentPage from './eleventy/current-page.ts';
+import { resolvedImage } from './eleventy/data.ts';
+import toDateTime, { canParseDate, fromDateOrString, TZ } from './eleventy/date-time.ts';
+import isoDate from './eleventy/iso-date.ts';
+import localeDate from './eleventy/locale-date.ts';
+import markdown from './eleventy/markdown.ts';
+import * as PageLinks from './eleventy/page-links.ts';
+import spacewell from './lib/spacewell.ts';
 import typeset, { type Options } from 'typeset';
-import siteTitle from './site-title.ts';
-import excludingCollection from './excluding-collection.ts';
+import siteTitle from './eleventy/site-title.ts';
+import excludingCollection from './eleventy/excluding-collection.ts';
 import {
    toCollection,
    collectionName,
    toCollectionName,
    toCollectionUrl,
    toRootCollection,
-} from './collection.ts';
-import { roughWordCount } from './word-count.ts';
+} from './eleventy/collection.ts';
+import { roughWordCount } from './eleventy/word-count.ts';
 
 import yaml from 'js-yaml';
 
-import './feed.ts'; // for extension of types -- TODO: move those types elsewhere!
+import './eleventy/feed.ts'; // for extension of types -- TODO: move those types elsewhere!
 import striptags from 'striptags';
-import niceList from './nice-list.ts';
-import { callout, note, quote } from './shortcodes.ts';
-import { preparseYaml } from './preparse.ts';
+import niceList from './eleventy/nice-list.ts';
+import { callout, note, quote } from './eleventy/shortcodes.ts';
+import { preparseYaml } from './eleventy/preparse.ts';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 const not: Not = (fn) => (...args) => !fn(...args); // oxfmt-ignore
@@ -183,7 +183,7 @@ const renderMarkdown = (content: string): string =>
 const renderInlineMarkdown = (content: string): string =>
    typeset(markdown.renderInline(wellSpaced(content)), typesetOptions);
 
-export const config: UserConfig = {
+const userConfig: UserConfig = {
    dir: {
       input: 'site',
       output: 'public',
@@ -196,7 +196,7 @@ export const config: UserConfig = {
    markdownTemplateEngine: 'njk',
 };
 
-function configure(config: Config): void {
+function configure(config: Config): UserConfig {
    config.addWatchTarget('scripts');
    config.addWatchTarget('site/_styles');
 
@@ -345,6 +345,8 @@ function configure(config: Config): void {
    });
 
    config.addGlobalData('ENV', process.env.ELEVENTY_RUN_MODE);
+
+   return userConfig;
 }
 
 export default configure;

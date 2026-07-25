@@ -9,13 +9,13 @@
    "main": "index.js",
    "scripts": {
       "build:styles": "sass --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
-      "build:site": "eleventy --quiet",
+      "build:site": "eleventy --config=eleventy.config.ts --quiet",
       "build:scripts": "rolldown -c rolldown.config.mjs",
       "build": "npm run build:scripts && npm run build:styles && npm run build:site",
       "watch:styles": "sass --watch --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
-      "watch:site": "eleventy --serve",
+      "watch:site": "eleventy --config=eleventy.config.ts --serve",
       "watch:scripts": "rolldown --config rolldown.config.mjs --watch",
-      "serve": "env DEV=true eleventy --quiet --serve --incremental",
+      "serve": "env DEV=true eleventy --config=eleventy.config.ts --quiet --serve --incremental",
       "clean": "rm -rf public"
    },
    "devDependencies": {

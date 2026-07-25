@@ -4,6 +4,6 @@
       "noEmit": true,
       "allowImportingTsExtensions": true /* Runtime TS uses Node's built-in type stripping. */
    },
-   "include": ["lib", "eleventy", "types"],
+   "include": ["eleventy.config.ts", "lib", "eleventy", "types"],
    "exclude": ["site/_data/build.js"]
 }
