@@ -1,4 +1,4 @@
-import SiteConfig from '../site/_data/config.cjs';
+import SiteConfig from '../site/_data/config.js';
 type SiteConfig = typeof SiteConfig;
 
 const SEP = ' — ';

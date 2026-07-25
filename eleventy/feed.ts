@@ -15,8 +15,8 @@ import localeDate from './locale-date.ts';
 import { type Book, hasAuthors, imageValue, isBook, type Qualifiers } from './data.ts';
 import { filterMap } from './iterator-helpers.ts';
 
-type BuildInfo = typeof import('../site/_data/build.cjs');
-type SiteConfig = typeof import('../site/_data/config.cjs');
+type BuildInfo = (typeof import('../site/_data/build.js'))['default'];
+type SiteConfig = (typeof import('../site/_data/config.js'))['default'];
 
 /** Defensive function in case handed bad data */
 const optionalString = (value: unknown): string | undefined =>

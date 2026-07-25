@@ -183,7 +183,20 @@ const renderMarkdown = (content: string): string =>
 const renderInlineMarkdown = (content: string): string =>
    typeset(markdown.renderInline(wellSpaced(content)), typesetOptions);
 
-function config(config: Config): UserConfig {
+export const config: UserConfig = {
+   dir: {
+      input: 'site',
+      output: 'public',
+      includes: '_includes',
+      layouts: '_layouts',
+   },
+   templateFormats: ['html', 'njk', '11ty.js', 'md'],
+   dataTemplateEngine: 'njk',
+   htmlTemplateEngine: 'njk',
+   markdownTemplateEngine: 'njk',
+};
+
+function configure(config: Config): void {
    config.addWatchTarget('scripts');
    config.addWatchTarget('site/_styles');
 
@@ -332,19 +345,6 @@ function config(config: Config): UserConfig {
    });
 
    config.addGlobalData('ENV', process.env.ELEVENTY_RUN_MODE);
-
-   return {
-      dir: {
-         input: 'site',
-         output: 'public',
-         includes: '_includes',
-         layouts: '_layouts',
-      },
-      templateFormats: ['html', 'njk', '11ty.js', 'md'],
-      dataTemplateEngine: 'njk',
-      htmlTemplateEngine: 'njk',
-      markdownTemplateEngine: 'njk',
-   };
 }
 
-export default config;
+export default configure;

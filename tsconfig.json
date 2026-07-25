@@ -5,5 +5,5 @@
       "allowImportingTsExtensions": true /* Runtime TS uses Node's built-in type stripping. */
    },
    "include": ["lib", "eleventy", "types"],
-   "exclude": ["site/_data/build.cjs"]
+   "exclude": ["site/_data/build.js"]
 }

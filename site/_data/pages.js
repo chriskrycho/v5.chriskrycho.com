@@ -1,4 +1,4 @@
-module.exports = [
+export default [
    { type: 'page', title: 'About', url: '/about/' },
    { type: 'page', title: 'Curriculum Vitae', url: '/cv/' },
    { type: 'separator' },
