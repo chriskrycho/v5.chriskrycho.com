@@ -13,7 +13,7 @@ Otherwise, there is zero tracking—of any sort—on this site.
 
 ## AI
 
-None. Not one word of this site was written by a large language model or even with input from one, and that will always be true.
+Not one word of this site was written by a large language model or even with input from one, and that will always be true. I sometimes use tools that integrate <abbr title="large language model">LLM</abbr>s for grammar checking, but they never get to suggest so much as wording.
 
 I have used <abbr title="large language model">LLM</abbr>s to improve the performance and behavior of the site; where those are meaningful (rather than merely mechanical), they are called out explicitly in Git history.
 
