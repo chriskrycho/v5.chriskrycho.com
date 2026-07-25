@@ -15,6 +15,8 @@ Otherwise, there is zero tracking—of any sort—on this site.
 
 None. Not one word of this site was written by a large language model or even with input from one, and that will always be true.
 
+I have used <abbr title="large language model">LLM</abbr>s to improve the performance and behavior of the site; where those are meaningful (rather than merely mechanical), they are called out explicitly in Git history.
+
 ## Implementation
 
 I built this version of the site with [Eleventy]. You can find the entirety of the implementation (and indeed the entire *history* of the implementation) [on GitHub][repo]. I'm using it with the following plugins:
