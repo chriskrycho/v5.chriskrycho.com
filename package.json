@@ -12,6 +12,7 @@
       "build:site": "eleventy --config=eleventy.config.ts --quiet",
       "build:scripts": "rolldown -c rolldown.config.mjs",
       "build": "npm run build:scripts && npm run build:styles && npm run build:site",
+      "test": "node --test \"lib/**/*.test.ts\"",
       "watch:styles": "sass --watch --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
       "watch:site": "eleventy --config=eleventy.config.ts --serve",
       "watch:scripts": "rolldown --config rolldown.config.mjs --watch",
@@ -30,9 +31,11 @@
       "@types/serve-static": "^1.15.10",
       "@types/uslug": "^1.0.4",
       "common-tags": "^1.8.2",
+      "dom-serializer": "0.1.1",
       "gray-matter": "^4.0.3",
       "highlight.js": "^11.11.1",
       "highlightjs-glimmer": "^2.2.2",
+      "htmlparser2": "3.10.1",
       "js-yaml": "^4.2.0",
       "luxon": "^3.7.2",
       "markdown-it": "^14.2.0",
@@ -49,7 +52,6 @@
       "striptags": "^3.2.0",
       "true-myth": "^9.4.0",
       "typescript": "^7.0.2",
-      "typeset": "^0.3.5",
       "uslug": "^1.0.4"
    }
 }

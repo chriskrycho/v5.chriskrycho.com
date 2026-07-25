@@ -19,7 +19,7 @@ import localeDate from './eleventy/locale-date.ts';
 import markdown from './eleventy/markdown.ts';
 import * as PageLinks from './eleventy/page-links.ts';
 import spacewell from './lib/spacewell.ts';
-import typeset, { type Options } from 'typeset';
+import typeset from './lib/typeset/index.ts';
 import siteTitle from './eleventy/site-title.ts';
 import excludingCollection from './eleventy/excluding-collection.ts';
 import {
@@ -172,16 +172,13 @@ const tags = (collection: Collection): string[] => {
    return Array.from(uniqueTags).sort();
 };
 
-const typesetOptions: Options = {
-   disable: ['smallCaps', 'hyphenate', 'ligatures', 'smallCaps'],
-};
 const wellSpaced = spacewell({ emDashes: true, enDashes: true, initials: true });
 
 const renderMarkdown = (content: string): string =>
-   typeset(markdown.render(wellSpaced(content)), typesetOptions);
+   typeset(markdown.render(wellSpaced(content)));
 
 const renderInlineMarkdown = (content: string): string =>
-   typeset(markdown.renderInline(wellSpaced(content)), typesetOptions);
+   typeset(markdown.renderInline(wellSpaced(content)));
 
 const userConfig: UserConfig = {
    dir: {

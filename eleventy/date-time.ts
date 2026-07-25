@@ -21,7 +21,30 @@ export const toDateTime = (input: string): DateTime => {
 export const canParseDate = (date: unknown): date is string | Date =>
    typeof date === 'string' || date instanceof Date;
 
-export const fromDateOrString = (date: Date | string): DateTime =>
-   typeof date === 'string' ? toDateTime(date) : DateTime.fromJSDate(date, TZ);
+/**
+   Constructing a zoned `DateTime` costs an `Intl.DateTimeFormat.formatToParts`
+   call to resolve the offset, and the sort comparators in `archive-by-year.ts`
+   re-derive both of their operands on every comparison — so the same handful of
+   dates gets parsed O(n log n) times per collection, across ~40 collections.
+   `DateTime` is immutable, so the results are safe to share.
+
+   Keyed on the source value; the numeric branch is negated so that a `Date`
+   whose epoch milliseconds happen to stringify like an ISO date cannot collide
+   with a string key.
+ */
+const parsed = new Map<string | number, DateTime>();
+
+export const fromDateOrString = (date: Date | string): DateTime => {
+   const key = typeof date === 'string' ? date : -date.getTime();
+
+   const cached = parsed.get(key);
+   if (cached) return cached;
+
+   const dateTime =
+      typeof date === 'string' ? toDateTime(date) : DateTime.fromJSDate(date, TZ);
+
+   parsed.set(key, dateTime);
+   return dateTime;
+};
 
 export default toDateTime;
