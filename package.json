@@ -19,7 +19,7 @@
       "clean": "rm -rf public"
    },
    "devDependencies": {
-      "@11ty/eleventy": "^2.0.1",
+      "@11ty/eleventy": "^3.1.6",
       "@types/common-tags": "^1.8.4",
       "@types/js-yaml": "^4.0.9",
       "@types/linkify-it": "3.0.5",
