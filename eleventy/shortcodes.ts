@@ -1,4 +1,4 @@
-import markdown from './markdown';
+import markdown from './markdown.ts';
 import { stripIndents } from 'common-tags';
 
 export const note = (content: string, { type = 'Note' } = {}): string =>

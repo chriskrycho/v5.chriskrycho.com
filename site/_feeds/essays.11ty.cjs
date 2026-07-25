@@ -1,4 +1,4 @@
-import JSONFeed from '../../eleventy/feed';
+const JSONFeed = require('../../eleventy/feed.ts').default;
 
 module.exports = class EssaysFeed extends JSONFeed {
    collection = 'essays';

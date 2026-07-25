@@ -1,4 +1,4 @@
-import { DateTime, DateTimeOptions } from 'luxon';
+import { DateTime, type DateTimeOptions } from 'luxon';
 
 type Parse = (text: string, options?: DateTimeOptions | undefined) => DateTime;
 

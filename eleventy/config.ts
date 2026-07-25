@@ -3,37 +3,37 @@ import { randomBytes } from 'node:crypto';
 
 import { DateTime } from 'luxon';
 
-import { Config, Item, UserConfig, Collection, Data } from '../types/eleventy';
-import absoluteUrl from './absolute-url';
-import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year';
-import copyright from './copyright';
-import currentPage from './current-page';
-import { resolvedImage } from './data';
-import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time';
-import isoDate from './iso-date';
-import localeDate from './locale-date';
-import markdown from './markdown';
-import * as PageLinks from './page-links';
-import spacewell from '../lib/spacewell';
-import typeset, { Options } from 'typeset';
-import siteTitle from './site-title';
-import excludingCollection from './excluding-collection';
+import type { Config, Item, UserConfig, Collection, Data } from '../types/eleventy.d.ts';
+import absoluteUrl from './absolute-url.ts';
+import archiveByYear, { byDate, byUpdated, Order } from './archive-by-year.ts';
+import copyright from './copyright.ts';
+import currentPage from './current-page.ts';
+import { resolvedImage } from './data.ts';
+import toDateTime, { canParseDate, fromDateOrString, TZ } from './date-time.ts';
+import isoDate from './iso-date.ts';
+import localeDate from './locale-date.ts';
+import markdown from './markdown.ts';
+import * as PageLinks from './page-links.ts';
+import spacewell from '../lib/spacewell.ts';
+import typeset, { type Options } from 'typeset';
+import siteTitle from './site-title.ts';
+import excludingCollection from './excluding-collection.ts';
 import {
    toCollection,
    collectionName,
    toCollectionName,
    toCollectionUrl,
    toRootCollection,
-} from './collection';
-import { roughWordCount } from './word-count';
+} from './collection.ts';
+import { roughWordCount } from './word-count.ts';
 
 import yaml from 'js-yaml';
 
-import './feed'; // for extension of types -- TODO: move those types elsewhere!
+import './feed.ts'; // for extension of types -- TODO: move those types elsewhere!
 import striptags from 'striptags';
-import niceList from './nice-list';
-import { callout, note, quote } from './shortcodes';
-import { preparseYaml } from './preparse';
+import niceList from './nice-list.ts';
+import { callout, note, quote } from './shortcodes.ts';
+import { preparseYaml } from './preparse.ts';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
 // prettier-ignore
@@ -333,5 +333,4 @@ function config(config: Config): UserConfig {
    };
 }
 
-// Needs to be this way so that the import resolves as expected in `.eleventy`.
-module.exports = config;
+export default config;
