@@ -1,10 +1,11 @@
-import { install } from './iterator-helpers.ts';
+import { filterMap, install } from './iterator-helpers.ts';
 install();
 
 import { env } from 'process';
 import { randomBytes } from 'node:crypto';
 
 import { DateTime } from 'luxon';
+import Maybe from 'true-myth/maybe';
 
 import type { Config, Item, UserConfig, Collection, Data } from '../types/eleventy.d.ts';
 import absoluteUrl from './absolute-url.ts';
@@ -39,11 +40,7 @@ import { callout, note, quote } from './shortcodes.ts';
 import { preparseYaml } from './preparse.ts';
 
 type Not = <A extends unknown[]>(fn: (...args: A) => boolean) => (...args: A) => boolean;
-// prettier-ignore
-const not: Not =
-   (fn) =>
-      (...args) =>
-         !fn(...args);
+const not: Not = (fn) => (...args) => !fn(...args); // oxfmt-ignore
 
 type Filter = <T>(pred: (t: T) => boolean) => (values: T[]) => T[];
 const filter: Filter = (pred) => (values) => values.filter(pred);
@@ -60,8 +57,6 @@ const isLive = (item: Item) =>
    fromDateOrString(item.date).toSeconds() <= buildTime() &&
    !item.data?.draft;
 
-const isDefined = <A>(a: A | null | undefined): a is A => a != null;
-
 const isStandalonePage = (item: Item) => item.data?.standalonePage ?? false;
 const excludingStandalonePages = not(isStandalonePage);
 const sendEmail = (item: Item) => item.data?.sendEmail ?? true;
@@ -77,9 +72,11 @@ function addCollectionFromDir(config: Config, path: string): void {
    config.addCollection(collectionName({ from: path }), (collections) =>
       collections
          .getAll()
+         .values()
          .filter((item) => item.inputPath.includes(path))
          .filter(isLive)
          .filter(excludingStandalonePages)
+         .toArray()
          .sort(byDate(Order.NewFirst)),
    );
 }
@@ -92,9 +89,11 @@ const inCollectionNamed =
 function latest(collection: Collection): Item[] {
    const all = collection
       .getAll()
+      .values()
       .filter(isLive)
       .filter(excludingStandalonePages)
       .filter(not(feedOnly))
+      .toArray()
       .sort(byDate(Order.NewFirst));
 
    return [
@@ -105,7 +104,9 @@ function latest(collection: Collection): Item[] {
       all.find(inCollectionNamed('notes')),
       all.find(inCollectionNamed('photos')),
    ]
-      .filter(isDefined)
+      .values()
+      [filterMap]((item) => Maybe.of(item))
+      .toArray()
       .sort(byDate(Order.NewFirst));
 }
 
@@ -114,10 +115,12 @@ const hasUpdated = (item: Item) => canParseDate(item.data?.updated);
 function mostRecentlyUpdated(collection: Collection): Item[] {
    const all = collection
       .getAll()
+      .values()
       .filter(isLive)
       .filter(excludingStandalonePages)
       .filter(not(feedOnly))
       .filter(hasUpdated)
+      .toArray()
       .sort(byUpdated(Order.NewFirst));
 
    return [
@@ -127,7 +130,9 @@ function mostRecentlyUpdated(collection: Collection): Item[] {
       all.find(inCollectionNamed('photos')),
       all.find(inCollectionNamed('elsewhere')),
    ]
-      .filter(isDefined)
+      .values()
+      [filterMap]((item) => Maybe.of(item))
+      .toArray()
       .sort(byUpdated(Order.NewFirst));
 }
 
@@ -136,27 +141,33 @@ const isFeatured = (item: Item): boolean => item.data?.featured ?? false;
 const featured = (collection: Collection): Item[] =>
    collection
       .getAll()
+      .values()
       .filter(isLive)
       .filter(excludingStandalonePages)
       .filter(not(feedOnly))
       .filter(isFeatured)
+      .toArray()
       .sort(byDate(Order.NewFirst));
 
 const drafts = (collection: Collection): Item[] =>
    collection
       .getAll()
+      .values()
       .filter((item) => item.data?.draft === true)
       .filter(excludingStandalonePages)
       .filter(not(feedOnly))
+      .toArray()
       .sort(byDate(Order.NewFirst));
 
 const tags = (collection: Collection): string[] => {
-   let uniqueTags = collection.getAll().reduce((tags, item) => {
-      for (let tag of item.data?.tags ?? []) {
-         tags.add(tag);
-      }
-      return tags;
-   }, new Set<string>());
+   let uniqueTags = new Set(
+      collection
+         .getAll()
+         .values()
+         [filterMap]((item) => Maybe.of(item.data?.tags))
+         .flatMap((tags) => tags.values())
+         .toArray(),
+   );
 
    return Array.from(uniqueTags).sort();
 };

@@ -76,6 +76,7 @@ export default function spacewell(
 ): string | ((content: string) => string) {
    function op(c: string): string {
       return (Object.keys(options) as Array<keyof Options>)
+         .values()
          .filter((key) => Boolean(options[key]))
          .reduce((transformed, cfgKey) => FUNCTIONS[cfgKey](transformed), c);
    }

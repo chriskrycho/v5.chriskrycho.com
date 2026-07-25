@@ -13,6 +13,7 @@ import { toRootCollection } from './collection.ts';
 import markdown from './markdown.ts';
 import localeDate from './locale-date.ts';
 import { type Book, hasAuthors, imageValue, isBook, type Qualifiers } from './data.ts';
+import { filterMap } from './iterator-helpers.ts';
 
 type BuildInfo = typeof import('../site/_data/build.cjs');
 type SiteConfig = typeof import('../site/_data/config.cjs');
@@ -258,15 +259,22 @@ const jsonFeed = ({
    feed_url: absoluteUrl(permalink, config.url),
    description: config.description,
    items: items
-      .map(toFeedItemGivenConfig({ config, includeReplyViaEmail, photoItemTitles }))
-      .filter(<T>(item: T | null): item is T => item !== null)
+      .values()
+      [filterMap]((item) =>
+         Maybe.of(
+            toFeedItemGivenConfig({ config, includeReplyViaEmail, photoItemTitles })(item),
+         ),
+      )
+      .toArray()
       .sort(
          ({ date_published: a }, { date_published: b }) =>
             // we want newest first
             DateTime.fromISO(b as string).toMillis() -
             DateTime.fromISO(a as string).toMillis(),
       )
-      .slice(0, 25),
+      .values()
+      .take(25)
+      .toArray(),
 });
 
 interface EleventyData {

@@ -86,7 +86,7 @@ const daysFromDayMap = (
             .andThen((first) =>
                maybe.just({
                   name: dateTimeFromItem(first).toFormat(DAY_FORMAT),
-                  items: items.toSorted(byDate(order)),
+                  items: items.sort(byDate(order)),
                }),
             );
       })
@@ -97,10 +97,16 @@ const monthsFromMonthMap = (
    byEntries: SortedByEntries,
    order: Order,
 ): Month[] =>
-   [...monthMap.entries()].sort(byEntries).map(([, [name, dayMap]]) => ({
-      name,
-      days: daysFromDayMap(dayMap, byEntries, order),
-   }));
+   monthMap
+      .entries()
+      .toArray()
+      .sort(byEntries)
+      .values()
+      .map(([, [name, dayMap]]) => ({
+         name,
+         days: daysFromDayMap(dayMap, byEntries, order),
+      }))
+      .toArray();
 
 const dayMapFromItem = (item: Item, dateTime: DateTime): DayMap =>
    new Map([[dateTime.day, [item]]]);
@@ -160,7 +166,12 @@ const intoYear =
 export default function archiveByYear(items: Item[], order = Order.NewFirst): Archive {
    const byOrder = sortedByEntries(order);
 
-   return [...items.reduce(toYearMap, new Map()).entries()]
+   return items
+      .reduce(toYearMap, new Map())
+      .entries()
+      .toArray()
       .sort(byOrder)
-      .map(intoYear(byOrder, order));
+      .values()
+      .map(intoYear(byOrder, order))
+      .toArray();
 }
