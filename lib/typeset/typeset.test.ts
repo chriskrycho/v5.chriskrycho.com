@@ -36,6 +36,10 @@ for (const fixture of fixtures) {
    });
 }
 
+test('quotes: length-changing replacement before inline sibling preserves sibling text', () => {
+   assert.equal(typeset("<p>6'' <em>high</em></p>"), '<p>6″ <em>high</em></p>');
+});
+
 test('is idempotent over already-typeset output', () => {
    // Not a property of the transforms in general — `punctuation` will happily
    // re-process its own output — but it must hold for the pull/push spans,

@@ -20,15 +20,16 @@ export default function quotes(text: string, node: TextNode): string {
       const parentText = textOf(parent);
 
       if (parentText !== text) {
-         const replaced = replace(parentText);
-
          let start = 0;
          for (const sibling of parent.children) {
             if (sibling === node) break;
             start += textOf(sibling).length;
          }
 
-         return replaced.slice(start, start + text.length);
+         const prefix = parentText.slice(0, start);
+         const throughNode = parentText.slice(0, start + text.length);
+
+         return replace(throughNode).slice(replace(prefix).length);
       }
    }
 
