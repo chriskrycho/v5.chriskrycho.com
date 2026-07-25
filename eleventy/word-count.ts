@@ -8,9 +8,5 @@ export function roughWordCount(source: string): string {
 }
 
 function round(n: number): number {
-   if (n < 100) {
-      return Math.round(n / 10) * 10;
-   }
-
-   return Math.round(n / 50) * 50;
+   return n < 100 ? Math.round(n / 10) * 10 : Math.round(n / 50) * 50;
 }

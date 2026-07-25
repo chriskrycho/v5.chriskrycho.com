@@ -61,12 +61,17 @@ const md = markdownIt({
    .use(mark);
 
 md.renderer.rules.footnote_caption = (tokens, idx): string => {
-   let n = Number(tokens[idx].meta.id + 1).toString();
-
-   if (tokens[idx].meta.subId > 0) {
-      n += ':' + tokens[idx].meta.subId;
+   let token = tokens[idx];
+   if (!token) {
+      throw new Error(
+         `Markdown: missing token at index "${idx}" when building footnote captions`,
+      );
    }
 
+   let n = Number(token.meta.id + 1).toString();
+   if (token.meta.subId > 0) {
+      n += ':' + token.meta.subId;
+   }
    return n;
 };
 

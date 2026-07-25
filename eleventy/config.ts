@@ -1,3 +1,6 @@
+import { install } from './iterator-helpers.ts';
+install();
+
 import { env } from 'process';
 import { randomBytes } from 'node:crypto';
 

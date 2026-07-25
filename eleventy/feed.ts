@@ -25,10 +25,13 @@ const joinAuthors = (authors: string[]): Result<string, string> => {
    switch (authors.length) {
       case 0:
          return Result.err('specified `authors` but passed no values!');
-      case 1:
-         return Result.ok(authors[0]);
+
+      case 1: // stringification handles irrelevant nullability
+         return Result.ok(`${authors[0]}`);
+
       case 2:
          return Result.ok(`${authors[0]} and ${authors[1]}`);
+
       default:
          return Result.ok(
             `${authors.slice(0, authors.length - 1).join(', ')}, and ${

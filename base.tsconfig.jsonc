@@ -2,35 +2,25 @@
    "$schema": "https://json.schemastore.org/tsconfig",
    "compilerOptions": {
       /* Basic Options */
-      "target": "es2019",
-      "lib": [
-         "es2019",
-         "es2021.intl"
-      ] /* Specify library files to be included in the compilation. */,
-      "checkJs": true /* Report errors in .js files. */,
+      "target": "ES2025",
+      "lib": ["ES2025"],
+      "checkJs": true,
       "allowJs": true,
-      "moduleResolution": "Node16",
-      "module": "Node16",
+      "moduleResolution": "nodenext",
+      "module": "node20",
       /* Strict Type-Checking Options */
-      "strict": true /* Enable all strict type-checking options. */,
+      "strict": true,
+      "noUncheckedIndexedAccess": true,
+
       /* Additional Checks */
-      "noUnusedLocals": true /* Report errors on unused locals. */,
-      "noUnusedParameters": true /* Report errors on unused parameters. */,
-      "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
-      "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+
       /* Module Resolution Options */
       "paths": {
-         "*": ["./*", "./types/*"]
+         "*": ["./*", "./types/*"],
       },
-      // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-      "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
-      // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
-      /* Source Map Options */
-      // "sourceRoot": "",                      /* Specify the location where debugger should locate TypeScript files instead of source locations. */
-      // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
-      // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
-      // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
-      /* Experimental Options */
-      "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */
-   }
+   },
 }

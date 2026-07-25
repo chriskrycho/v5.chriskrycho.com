@@ -1,6 +1,8 @@
 import { DateTime } from 'luxon';
 import type { Item } from '../types/eleventy.d.ts';
 import { fromDateOrString, canParseDate } from './date-time.ts';
+import * as maybe from 'true-myth/maybe';
+import { filterMap } from './iterator-helpers.ts';
 
 type Archive = Year[];
 
@@ -72,10 +74,23 @@ const daysFromDayMap = (
    byEntries: SortedByEntries,
    order: Order,
 ): Day[] =>
-   [...dayMap.entries()].sort(byEntries).map(([, items]) => ({
-      name: dateTimeFromItem(items[0]).toFormat(DAY_FORMAT),
-      items: items.slice().sort(byDate(order)),
-   }));
+   dayMap
+      .entries()
+      .toArray()
+      .sort(byEntries)
+      .values()
+      [filterMap](([_index, items]) => {
+         return maybe
+            .first(items)
+            .flatten()
+            .andThen((first) =>
+               maybe.just({
+                  name: dateTimeFromItem(first).toFormat(DAY_FORMAT),
+                  items: items.toSorted(byDate(order)),
+               }),
+            );
+      })
+      .toArray();
 
 const monthsFromMonthMap = (
    monthMap: MonthMap,
