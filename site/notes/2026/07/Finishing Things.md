@@ -9,19 +9,11 @@ tags:
 
 ---
 
-This week I (finally) finished revisions on a chapter I’m contributing to a forthcoming book of essays on education and <abbr title="artificial intelligence">AI</abbr>.
-
-<aside>
-
-More specifically, on the many metaphors we apply to machine learning systems—there’s one!—and how easily they can distort our thinking about what these tools are, including but not limited to <abbr title="large language model">LLM</abbr>s. Yes, this is what [that crowdsourcing][c-blog] I [did][c-bsky] a [while back][c-mstdn] was about!
+This week I (finally) finished revisions on a chapter I’m contributing to a forthcoming book of essays on education and <abbr title="artificial intelligence">AI</abbr>. More specifically, on the many metaphors we apply to machine learning systems—there’s one!—and how easily they can distort our thinking about what these tools are, including but not limited to <abbr title="large language model">LLM</abbr>s. (Yes, this is what [that crowdsourcing][c-blog] I [did][c-bsky] a [while back][c-mstdn] was about!) I signed off on the final revisions twenty minutes ago, and it is *such* a good feeling to have finished this particular thing.
 
 [c-blog]: https://v5.chriskrycho.com/notes/crowd-sourcing-metaphors-for-llms-and-ai/
 [c-bsky]: https://bsky.app/profile/chriskrycho.com/post/3mki3qub6jrev
 [c-mstdn]: https://mastodon.social/@chriskrycho/116476772603248523
-
-</aside>
-
-I signed off on the final revisions twenty minutes ago, and it is *such* a good feeling to have finished this particular thing.
 
 *Finishing things*, in my experience, often has :
 
