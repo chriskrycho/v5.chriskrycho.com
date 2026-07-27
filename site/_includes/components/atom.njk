@@ -32,12 +32,12 @@
             <link href='{{url}}'/>
             {%- set summary -%}
             {%- if item.data.summary -%}
-               {{-item.data.summary-}}
+               {{-item.data.summary | safe-}}
             {%- elif item.data.book.review -%}
                {{-item.data.book.review.rating | safe-}}:
                {{item.data.book.review.summary | striptags(true) | safe-}}
             {%- elif item.data.subtitle -%}
-               {{-item.data.subtitle-}}
+               {{-item.data.subtitle | safe-}}
             {%- else -%}
                {{-item.templateContent | excerpt -}}
             {%- endif -%}
