@@ -277,6 +277,9 @@ services:
       - type: redirect
         source: /photos/birds.md/
         destination: /photos/birds/
+      - type: redirect
+        source: /notes/impressively-capable-impressively-foolish/
+        destination: /journal/impressively-capable-impressively-foolish/
 
       # A future version of my publishing software should embrace the idea that
       # series roots can have feed entries
