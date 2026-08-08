@@ -10,7 +10,7 @@ date: 2026-08-07T21:12:00-0600
 updated: 2026-08-08T05:16:00-0600
 
 qualifiers:
-    audiece: |
+    audience: |
         People open to both the potential and the peril of these tools.
 
 ---
