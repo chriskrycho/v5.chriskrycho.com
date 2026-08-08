@@ -7,6 +7,11 @@ tags:
     - AI and ML
 
 date: 2026-08-07T21:12:00-0600
+updated: 2026-08-08T05:16:00-0600
+
+qualifiers:
+    audiece: |
+        People open to both the potential and the peril of these tools.
 
 ---
 
@@ -23,7 +28,7 @@ Yesterday, I decided to try to use Claude to automate a workflow I do a ton in m
 
 [meta]: https://www.nightbirdsevolve.com
 
-This is the kind of thing that automation was built for, and it seemed like the sort of thing that a tool like Claude ought to be able to do well at. Much of the process of building out the plan went about like normal when working with one of these tools—lots of overcomplicated things to trim down, a fair few . But then when I started trying to figure out how to resolve the “work title” handling, everything went *completely* off the rails.
+This is the kind of thing that automation was built for, and it seemed like the sort of thing that a tool like Claude ought to be able to do well at. Much of the process of building out the plan went about like normal when working with one of these tools—lots of overcomplicated things to trim down, a fair few totally wrong approaches. But then when I started trying to figure out how to resolve the “work title” handling, everything went *completely* off the rails.
 
 It started out fine. Claude (running Opus 5) couldn’t tell what the difference was between my Meta-tagged files and the files as stored in Music, so I nudged it to look at the other classical files in my library, and it noted a corresponding tag on <abbr title="MPEG-4 audio">M4A</abbr> files, did a web search to look up the corresponding <abbr>ID3</abbr> tag (it turns out there is one!) and reported it: `shwm` for <abbr>M4A</abbr>, `TXXX:SHOWMOVEMENT` for <abbr>ID3</abbr>. That would have been the point a human, or a reasonably designed tool, stopped.
 
