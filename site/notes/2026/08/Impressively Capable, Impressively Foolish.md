@@ -1,7 +1,7 @@
 ---
 title: Impressively Capable, Impressively Foolish
 subtitle: |
-    A little report on the state of contemporary <abbr>LLM</abbr>-based tools.
+    A little report on the state of contemporary <abbr title="large language model">LLM</abbr>-based tools.
 
 tags:
     - AI and ML
