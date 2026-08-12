@@ -37,7 +37,7 @@
       "highlight.js": "^11.11.1",
       "highlightjs-glimmer": "^2.2.2",
       "htmlparser2": "3.10.1",
-      "js-yaml": "^4.2.0",
+      "js-yaml": "^4.3.1",
       "luxon": "^3.7.2",
       "markdown-it": "^14.2.0",
       "markdown-it-abbr": "^1.0.4",
