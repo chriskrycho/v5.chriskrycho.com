@@ -15,12 +15,12 @@ This week I (finally) finished revisions on a chapter I’m contributing to a fo
 [c-bsky]: https://bsky.app/profile/chriskrycho.com/post/3mki3qub6jrev
 [c-mstdn]: https://mastodon.social/@chriskrycho/116476772603248523
 
-*Finishing things*, in my experience, often has :
+*Finishing things*, in my experience, often has quite a mix of emotions:
 
-- Satisfaction that the thing is done, when I have done it well. (Not so much if I have not done it well: but I try not to let that happen!)
+- Satisfaction that the thing is done, when I have done it well. Not so much if I have not done it well: but I try not to let that happen!
 
-- Relief that the thing is done: even for projects I love, there often comes a moment when I am ready to finish it, or at least to finish a given phase of it, and move on to something new.
+- Relief that the thing is done. Even for projects I love, there often comes a moment when I am ready to finish it, or at least to finish a given phase of it, and move on to something new.
 
-- A bit of letdown. I most often feel this after finishing a race: months of preparation, capped off in a massive expenditure of effort over the course of a couple of hours. I expect that if or when I get a major [musical work](https://chriskrycho.music) performed, it may have much of the same in it.
+- A bit of letdown. I most often feel this after finishing a race—months of preparation, capped off in a massive expenditure of effort over the course of a couple of hours. I expect that if or when I get a major [musical work](https://chriskrycho.music) performed, it may have much of the same in it.
 
 No letdown on this particular one, but definitely both satisfaction and relief!
