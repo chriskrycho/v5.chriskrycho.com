@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-07-24T19:24:00-0600
+modified: 2026-09-03T20:28:00-0600
 
 ---
 
@@ -56,11 +56,15 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Science of Lifting</cite>][lifting-books], Greg Nuckols and Omar Isuf (new)
 
+- [<cite>The Domain of the Word: Scripture and Theological Reason</cite>](https://bookshop.org/a/21126/9780567014252), John Webster (new)
+
+- [<cite>The Reverse Centaur's Guide to Life After <abbr title="artificial intelligence">AI</abbr>: How to Think About Artificial Intelligence—Before It's Too Late</cite>](https://bookshop.org/a/21126/9780374621568), Cory Doctorow (new)
 
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
+- [<cite>Watership Down</cite>](https://bookshop.org/a/21126/9780743277709), Richard Adams (new)
 
 ### Poetry
 
@@ -97,6 +101,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Apple: The First 50 Years</cite>](https://bookshop.org/a/21126/9781982134594), David Pogue (new)
 
 - [<cite>The Pleasures of Reading in an Age of Distraction</cite>](https://bookshop.org/a/21126/9780199747498), Alan Jacobs (new)
+
+- [<cite>Everything is Tuberculosis: The History and Persistence of Our Deadliest Infection</cite>](https://bookshop.org/a/21126/9780525556572), John Green (new)
 
 [examined-run]: https://bookshop.org/a/21126/9780197678695
 [lifting-books]: https://www.strongerbyscience.com/art-and-science/
