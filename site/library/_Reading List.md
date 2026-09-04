@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-09-03T20:28:00-0600
+modified: 2026-09-03T20:30:00-0600
 
 ---
 
@@ -83,7 +83,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Proto: How One Ancient Language Went Global</cite>](https://bookshop.org/a/21126/9781639732586), Laura Spinney (new)
 
-- [<cite>Enshittification: Why Everything Suddenly Got Worse and What to Do AboutIt</cite>](https://bookshop.org/a/21126/9780374619329), Cory Doctorow (new)
+- [<cite>Enshittification: Why Everything Suddenly Got Worse and What to Do About It</cite>](https://bookshop.org/a/21126/9780374619329), Cory Doctorow (new)
 
 - [<cite>Making the Presidency: John Adams and the Precedents That Forged the Republic</cite>](https://bookshop.org/a/21126/9780197653845), Lindsay M. Chervinsky (new)
 
