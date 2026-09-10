@@ -551,7 +551,7 @@ Frameworks are something of a special case of libraries, because they form the f
 
 2. **Build version-aware tooling as soon as possible.** Trying to bolt it on later, like `cargo-semver-checks` is doing, is *hard*. If you expose it in a first-class way, that makes version-checking tools easier. And people might come up with *other* cool things if that data is available.
 
-3. ** Bake the concept of peer dependencies into your language and package tooling.** Make it easy for library authors to check their compatibility with a whole array of different versions of a framework, and for application developers to pick one of those supported versions, and for all of this to be automate-able. No ecosystem has really solved this yet. If you get it right, though, it will make it much easier for your ecosystem to evolve over time.
+3. **Bake the concept of peer dependencies into your language and package tooling.** Make it easy for library authors to check their compatibility with a whole array of different versions of a framework, and for application developers to pick one of those supported versions, and for all of this to be automate-able. No ecosystem has really solved this yet. If you get it right, though, it will make it much easier for your ecosystem to evolve over time.
 
 # Summary
 
