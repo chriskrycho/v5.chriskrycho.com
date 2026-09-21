@@ -3,6 +3,12 @@ title: Subvert.fm
 subtitle: A co-op for musicians? You have my attention.
 
 date: 2026-09-21T07:44:00-0600
+updated: 2026-09-21T08:14:00-0600
+updates:
+  - at: 2026-09-21T08:14:00-0600
+    changes: >
+        Added a further clarifying note about Thompson’s shift in attitude.
+
 tags:
     - music
     - business models
@@ -31,5 +37,7 @@ I expect I’ll publish [my catalog][music] there after reading through their le
 ---
 
 <abbr title="postscript">P.S.</abbr> Digging up [that Winning Slowly episode][ws] led me to [this old Ben Thompson][stratechery] post: what a jarring contrast that is to read compared to Ben’s turn in the past half decade to insistently *defend* Big Tech’s “economically rational” business choices no matter how they hurt the indies.
+
+**Edit:** This is slightly unfair to Ben, who has continued to articulate the value of niches in the intervening timespan. But only slightly, because he has spent so much of his time articulating (and often justifying) big business choices. It’s not, as far as I can tell, that he doesn’t believe what he wrote about Keating over a decade ago, so much as that his emphasis has shifted significantly. But shifts in emphasis matter!
 
 [stratechery]: https://stratechery.com/2015/niches-problem-subscription-services/
