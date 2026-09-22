@@ -31,7 +31,7 @@ And now they really, *really* [have my attention][infra].
 
 I expect I’ll publish [my catalog][music] there after reading through their legal structure in detail, and if it goes well I will likely recommend it as the new “best place to get my music”.
 
-[infra]: https://v5.chriskrycho.com/elsewhere/infrastructure-common-goods-and-the-future-of-open-source-software/#the-future
+[infra]: https://v5.chriskrycho.com/elsewhere/infrastructure-common-goods-and-the-future-of-open-source-software/#:~:text=If%20instead%20of,a%20Mondragon%20cooperative.
 [music]: https://chriskrycho.music
 
 ---
