@@ -252,6 +252,9 @@ services:
       - type: redirect
         source: /topics/priors
         destination: /topics/hermeneutics/
+      - type: redirect
+        source: /topics/qanda
+        destination: /topics/q-and-a/
 
       # and topics that I turned into collections
       - type: redirect

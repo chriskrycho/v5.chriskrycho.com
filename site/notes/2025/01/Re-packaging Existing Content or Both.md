@@ -6,7 +6,7 @@ subtitle: >
 date: 2025-01-29T12:55:00-0700
 
 tags:
-    - Q&A
+    - Q and A
     - AI and ML
 
 ---

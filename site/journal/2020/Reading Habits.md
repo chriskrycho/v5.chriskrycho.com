@@ -4,7 +4,7 @@ subtitle: How exactly do I go about reading, and *what* do I read these days?
 date: 2020-05-31T18:40:00-0600
 tags:
     - reading
-    - Q & A
+    - Q and A
 qualifiers:
     audience: People interested in reading, habits of reading, and more generally habits of *mind*.
 summary: An acquaintance recently asked, “What are your specific habits for journal/magazine/blog consumption?” I answered.

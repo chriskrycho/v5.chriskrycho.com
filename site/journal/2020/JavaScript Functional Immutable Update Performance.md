@@ -5,7 +5,7 @@ date: 2020-04-09T12:00:00-0600
 tags:
     - JavaScript
     - functional programming
-    - Q & A
+    - Q and A
 summary: >
     Is using array spread or concat too expensive to use? It depends on how much data you have!
 qualifiers:

@@ -6,7 +6,7 @@ summary: >
 
 tags:
     - photography
-    - Q & A
+    - Q and A
     - site meta
     - blogging
     - from my outbox
