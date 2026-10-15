@@ -17,7 +17,7 @@
       "watch:styles": "sass --watch --style=compressed --source-map site/_includes/styles/style.scss:site/_styles/style.css site/_includes/styles/fonts.scss:site/_styles/fonts.css site/_includes/styles/print.scss:site/_styles/print.css",
       "watch:site": "eleventy --config=eleventy.config.ts --serve",
       "watch:scripts": "rolldown --config rolldown.config.mjs --watch",
-      "serve": "env DEV=true eleventy --config=eleventy.config.ts --quiet --serve --incremental",
+      "serve": "env DEV=true eleventy --config=eleventy.config.ts --quiet --serve",
       "clean": "rm -rf public"
    },
    "devDependencies": {
