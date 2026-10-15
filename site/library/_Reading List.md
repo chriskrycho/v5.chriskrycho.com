@@ -60,6 +60,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Christ Our Salvation: Expositions and Proclamations</cite>](https://bookshop.org/a/21126/9781683594208), John Webster (ed. Daniel Bush) (new)
 
+- [<cite>Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity, and Meaningful Work and Play</cite>](https://bookshop.org/a/21126/9780691271781), James C. Scott (new)
+
 - [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
 
 
