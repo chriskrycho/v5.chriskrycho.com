@@ -619,7 +619,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
     [review](https://v4.chriskrycho.com/2019/review-the-themis-files.html)
 
-- [<cite>Red Mars</cite>]https://bookshop.org/a/21126/9780593358825), Kim Stanley Robinson (new)
+- [<cite>Red Mars</cite>](https://bookshop.org/a/21126/9780593358825), Kim Stanley Robinson (new)
     - [review](/library/red-mars/)
 
 - [<cite>Recursion</cite>](https://bookshop.org/a/21126/9781524759797), Blake Crouch (new)
