@@ -8,7 +8,7 @@ tags:
     - theology
 
 qualifiers:
-    audience:
+    audience: |
         Other little-‘o’ orthodox Christians or folks curious about my faith. (This post is not apologetic or explanatory in nature!)
 
 ---
@@ -53,7 +53,7 @@ This is not a recommendation list, for two reasons:
     : A lightbulb kind of read for me. I came to this as a sophomore in college as I was wrestling hard with the many questions my upbringing in a very unhealthy (hyper-charismatic, thoroughly schismatic) congregation had left me. Piper’s contention that God himself is what—who!—we are to enjoy most caught me as exactly what I didn’t know I was seeking.
 
 - [<cite>Above All Earthly Pow’rs</cite>](https://bookshop.org/a/21126/9780802824554), David Wells
-    : The [Desiring God 2006 national conference](https://www.desiringgod.org/series/2006-national-conference/messages) took its title and subject from this book, and I found the preaching at the conference (including from Wells himself) so compelling that I went out and read this. I hardly remember anything of it in detail, but I do remember Wells’ pointed critique of evangelical churches captivated by appeals to lowest-common denominator, market-oriented approaches, and I agreed with them in my bones. (I read the rest of the quintet of related books, but this was the only one that *really* stuck with me… in part because I quickly discovered that Wells had one beat and his books were therefore much of a piece.)
+    : The [Desiring God 2006 national conference](https://www.desiringgod.org/series/2006-national-conference/messages) took its title and subject from this book, and I found the preaching at the conference (including from Wells himself) so compelling that I went out and read this. I hardly remember anything of it in detail, but I do remember Wells’ pointed critique of evangelical churches captivated by appeals to lowest-common denominator, market-oriented approaches, and I agreed with Wells in my bones. (I read the rest of the quintet of related books, but this was the only one that *really* stuck with me… in part because I quickly discovered that Wells had one beat and his books were therefore much of a piece.)
 
 - <cite>Systematic Theology</cite>, Wayne Grudem
     : My first systematic theology, the one that was popular at the time among most baptistic evangelicals. I learned a lot by reading it. This one is one of the few I’ll flag, though, as one I think *so* deeply mistaken on essential points (Trinitarian theology!) that I would actively recommend against it. There are a *lot* of better systematic theologies out there.
@@ -62,10 +62,10 @@ This is not a recommendation list, for two reasons:
     : A book I read while dating Jaimie, and which stamped me deeply in ways I am profoundly grateful for. Thomas’ claim, right there in the subtitle, “What If God Designed Marriage to Make Us Holy More Than to Make Us Happy?”, was deeply helpful as we encountered [some extraordinarily challenging times](https://v3.chriskrycho.com/theology/marriage-depression/) right out of the gate.
 
 - [<cite>Institutes of the Christian Religion</cite>](https://bookshop.org/a/21126/9781598561685), John Calvin
-    : I only finished Books I and II, if I recall correctly, reading through this in the first years after college, but I 
+    : I only finished Books I and II, if I recall correctly, reading through this in the first years after college, but I was deeply formed by those. Calvin, I noted then, was much better than either his critics or, sadly, many of his fans.
 
 - <cite>The Holy Trinity: In Scripture, History, Theology, and Worship</cite>, Robert Letham
-    : A mostly-very-helpful introduction (in an academic sense of “introduction”) to the doctrine of the Trinity. “Mostly”, I say, because Letham advocated (at least the time) for a relatively mild form of eternal submission of the Son to the Father in the Trinity. I remember reading his combined defense of that position and of its implications for male-female relations with some confusion at the time, before my own thinking on that had crystallized (<i>i.e.</i>, landed on classical Trinitarianism!). But on the other hand, “very-helpful” I say because I think Letham’s treatment of the Trinity *was* in the main very good and helpful, not least in its treatment of the East–West relations and the <i>filioque</i> clause.
+    : A mostly-very-helpful introduction (in an academic sense of “introduction”) to the doctrine of the Trinity. “Mostly”, I say, because Letham advocated (at least at the time) for a relatively mild form of eternal submission of the Son to the Father in the Trinity. I remember reading his combined defense of that position and of its implications for male-female relations with some confusion at the time, before my own thinking on that had crystallized (<i>i.e.</i>, landed on classical Trinitarianism!). But on the other hand, “very-helpful” I say because I think Letham’s treatment of the Trinity *was* in the main very good and helpful, not least in its treatment of the East–West relations and the <i>filioque</i> clause.
 
 
 - [<cite>Nine Marks of a Healthy Church</cite>](https://bookshop.org/a/21126/9781433578113), Mark Dever
@@ -75,17 +75,17 @@ This is not a recommendation list, for two reasons:
     : One of two volumes (see the next entry) that I read in parallel in the early 2010s along with many other evangelicals and which informed some of my thinking on the relationship of Christians to culture. Crouch’s telling is in some ways the more general of the two: simply on what and how Christians ought to be *makers* of culture and not only (or possibly at all) *warriors* for it.
 
 - [<cite>To Change the World</cite>](https://bookshop.org/a/21126/9780199730803), James Davison Hunter
-    : The volume which *much* more seriously stamped me on this front. Hunter’s thesis on how culture works and how elites and institutions in particular shape the rest of culture. In many ways a less bright and optimistic volume than Crouch’s, it is also the one that more deeply shaped my own intuitions (I was still [citing](https://winningslowly.org/0.14/) it years [later]())
+    : The volume which *much* more seriously stamped me on this front. Hunter’s thesis on how culture works and how elites and institutions in particular shape the rest of culture. In many ways a less bright and optimistic volume than Crouch’s, it is also the one that more deeply shaped my own intuitions. I not only [wrote on it](https://mereorthodoxy.com/with-a-smile-rejecting-the-victims-stance/) at the time; I  was still [citing](https://winningslowly.org/0.14/) it years later.
 
 - [<cite>Desiring the Kingdom</cite>](https://bookshop.org/a/21126/9781540968838), James K.A. Smith
     : Another soon-after-college read, this one probably my earliest serious introduction to ideas and categories I would now articulate in terms of virtue ethics. Smith’s description is now a bit dated (who goes to the mall?) but the core insights certainly stamped much of how I thought about character development and the importance of liturgies *proper*.
 
 - [<cite>Every Good Endeavor</cite>](https://bookshop.org/a/21126/9781594632822), Tim Keller
-    : By the time I got to this, it was more a confirmation of what I had already come to think about truly Christian work—a standard Protestant view, that “vocation” and good, God-honoring work is not the sole or primary remit of clergy or missionaries, but a real calling for every kind of legitimate “secular” vocation equally—, but it was a *very helpful* confirmation.
+    : By the time I got to this, it was more a confirmation of what I had already come to think about truly Christian work—a standard Protestant view: that “vocation” and good, God-honoring work is not the sole or primary remit of clergy or missionaries, but a real calling for every kind of legitimate “secular” vocation equally—, but it was a *very helpful* confirmation.
 
 - <cite>Christian Origins and the Question of God</cite>
     - [<cite>The Resurrection of the Son of God (Volume 3)</cite>](https://bookshop.org/a/21126/9780800626792), N.T. Wright
-        : I got to this shortly after college, and was quite affected by the seriousness with which Wright took the question of the resurreciton in the context of Jesus’ Jewishness and the Old Testament. Wright’s view of the resurrection as utterly central to the Christian faith was enthralling. This was the first of Wright’s volumes I read (yes, I got here out of order!), and while no doubt others have made equally compelling presentations of the centrality of the resurrection, this was the volume that brought it home for me.
+        : I got to this shortly after college, and was quite affected by the seriousness with which Wright took the question of the resurrection in the context of Jesus’ Jewishness and the Old Testament. Wright’s view of the resurrection as utterly central to the Christian faith was enthralling. This was the first of Wright’s volumes I read (yes, I got here out of order!), and while no doubt others have made equally compelling presentations of the centrality of the resurrection, this was the volume that brought it home for me.
 
     - [<cite>The New Testament and the People of God (Volume 1)</cite>](https://bookshop.org/a/21126/9780800626815), N.T. Wright
         : My introduction to the relationship of first-century Judaism and Christianity.
@@ -97,7 +97,7 @@ This is not a recommendation list, for two reasons:
     : The book that persuaded me that congregationalism was perhaps mistaken. I came out thinking that both Presbyterian and Episcopalian (meaning Orthodox, Catholic, Anglican, Methodist, etc., not the American denomination) cases were stronger than I had previously assumed, with a mild bent toward a Presbyterian view.
 
 - [<cite>On the Incarnation</cite>](https://bookshop.org/a/21126/9780768473551), St. Athanasius
-    : My first patristic reading, and one that stamped me deeply. Athanasius’ case against the Arians is also (and arguably just as importantly) a case *for* the Incarnation as central to our salvation. With Wright on the Resurrection, this was one of two books that substantially broadened my understanding of the work of Christ from a kind of narrow cruci-monism to a 
+    : My first patristic reading, and one that stamped me deeply. Athanasius’ case against the Arians is also (and arguably just as importantly) a case *for* the Incarnation as central to our salvation. With Wright on the Resurrection, this was one of two books that substantially broadened my understanding of the work of Christ from a kind of narrow cruci-monism to a much more robust whole-life-and-work-of-Christ view.
 
 - [<cite>Reading Revelation Responsibly</cite>](https://bookshop.org/a/21126/9781606085608), Michael J. Gorman
     : A seminary read that helped me finish rethinking my eschatology. That hyper-charismatic congregation was unsurprisingly hyper-dispensationalist, too, and this was the capstone to a path of reading my way out of that and into the broader Christian tradition on the book of Revelation specifically and eschatology more generally.
