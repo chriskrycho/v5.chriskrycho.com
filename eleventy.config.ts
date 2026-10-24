@@ -6,6 +6,9 @@ import { randomBytes } from 'node:crypto';
 
 import { DateTime } from 'luxon';
 import Maybe from 'true-myth/maybe';
+import * as result from 'true-myth/result';
+import * as yaml from 'js-yaml';
+import striptags from 'striptags';
 
 import type { Config, Item, UserConfig, Collection, Data } from './types/eleventy.d.ts';
 import absoluteUrl from './eleventy/absolute-url.ts';
@@ -31,10 +34,8 @@ import {
 } from './eleventy/collection.ts';
 import { roughWordCount } from './eleventy/word-count.ts';
 
-import yaml from 'js-yaml';
-
 import './eleventy/feed.ts'; // for extension of types -- TODO: move those types elsewhere!
-import striptags from 'striptags';
+
 import niceList from './eleventy/nice-list.ts';
 import { callout, note, quote } from './eleventy/shortcodes.ts';
 import { preparseYaml } from './eleventy/preparse.ts';
@@ -61,6 +62,8 @@ const isStandalonePage = (item: Item) => item.data?.standalonePage ?? false;
 const excludingStandalonePages = not(isStandalonePage);
 const sendEmail = (item: Item) => item.data?.sendEmail ?? true;
 const feedOnly = (item: Item) => item.data?.feedOnly ?? false;
+
+const loadYaml = result.safe(yaml.load);
 
 /**
    Use a path to create a collection from all items contained within it.
@@ -331,12 +334,22 @@ function configure(config: Config): UserConfig {
    config.setFrontMatterParsingOptions({
       engines: {
          yaml: (s) => {
-            let contents = yaml.load(s);
-            if (typeof contents !== 'object') {
-               throw new Error(`bad YAML data:\n${JSON.stringify(contents)}`);
-            }
-            // SAFETY: effectively all the keys are optional. 🤪
-            return preparseYaml(contents as Data);
+            return loadYaml(s)
+               .andThen((contents) => {
+                  // SAFETY: effectively all the keys are optional. 🤪
+                  return typeof contents === 'object'
+                     ? result.ok(contents as Data)
+                     : result.err(
+                          new Error(`bad YAML data:\n${JSON.stringify(contents)}`),
+                       );
+               })
+               .map(preparseYaml)
+               .match({
+                  Ok: (contents) => contents,
+                  Err: (reason) => {
+                     throw reason;
+                  },
+               });
          },
       },
    });
