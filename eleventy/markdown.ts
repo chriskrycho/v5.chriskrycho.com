@@ -65,6 +65,15 @@ md.renderer.rules.footnote_caption = (tokens, idx): string => {
       );
    }
 
+   if (
+      typeof token.meta?.id !== 'number' ||
+      typeof token.meta?.subId !== 'number'
+   ) {
+      throw new Error(
+         `Markdown: invalid footnote metadata at index "${idx}" when building footnote captions`,
+      );
+   }
+
    let n = Number(token.meta.id + 1).toString();
    if (token.meta.subId > 0) {
       n += ':' + token.meta.subId;

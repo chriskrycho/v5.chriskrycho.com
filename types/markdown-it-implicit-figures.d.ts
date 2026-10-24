@@ -1,5 +1,5 @@
 declare module 'markdown-it-implicit-figures' {
-   import type MarkdownIt from 'markdown-it';
+   import type { MarkdownIt } from 'markdown-it';
 
    export interface Options {
       dataType?: boolean;

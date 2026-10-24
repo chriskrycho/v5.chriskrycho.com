@@ -20,6 +20,10 @@
 
       /* Module Resolution Options */
       "paths": {
+         // markdown-it-anchor@10's declaration uses the legacy CommonJS type
+         // shape and private markdown-it/lib/* paths; route only its types through
+         // our v15-compatible declaration using public package-root types.
+         "markdown-it-anchor": ["./types/markdown-it-anchor.d.ts"],
          "*": ["./*", "./types/*"],
       },
    },
