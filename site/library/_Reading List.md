@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-10-14T20:30:00-0600
+modified: 2026-10-25T20:03:00-0600
 
 ---
 
@@ -60,8 +60,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Christ Our Salvation: Expositions and Proclamations</cite>](https://bookshop.org/a/21126/9781683594208), John Webster (ed. Daniel Bush) (new)
 
-- [<cite>Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity, and Meaningful Work and Play</cite>](https://bookshop.org/a/21126/9780691271781), James C. Scott (new)
-
 - [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
 
 
@@ -112,6 +110,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - <cite>God and AI: A Christian View of Artificial Intelligence</cite>, Brian Dellinger (forthcoming)
 
 - [<cite>The Reverse Centaur's Guide to Life After <abbr title="artificial intelligence">AI</abbr>: How to Think About Artificial Intelligence—Before It's Too Late</cite>](https://bookshop.org/a/21126/9780374621568), Cory Doctorow (new)
+
+- [<cite>Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity, and Meaningful Work and Play</cite>](https://bookshop.org/a/21126/9780691271781), James C. Scott (new)
 
 [examined-run]: https://bookshop.org/a/21126/9780197678695
 [lifting-books]: https://www.strongerbyscience.com/art-and-science/
