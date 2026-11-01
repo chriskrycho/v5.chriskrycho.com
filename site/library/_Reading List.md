@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-10-25T20:03:00-0600
+modified: 2026-10-31T22:00:00-0600
 
 ---
 
@@ -61,6 +61,10 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Christ Our Salvation: Expositions and Proclamations</cite>](https://bookshop.org/a/21126/9781683594208), John Webster (ed. Daniel Bush) (new)
 
 - [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
+
+- [<cite>Athanasius</cite>](https://bookshop.org/a/21126/9780801039423), Peter Leithart (new)
+
+- [<cite>All in Your Head: Illness as Identity, Trauma as Fashion, and the Desire to be Disordered</cite>](https://bookshop.org/a/21126/9781668081037), Fredrik deBoer (new)
 
 
 ### Fiction
