@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-10-31T22:00:00-0600
+modified: 2026-11-07T08:25:00-0600
 
 ---
 
@@ -59,8 +59,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Domain of the Word: Scripture and Theological Reason</cite>](https://bookshop.org/a/21126/9780567014252), John Webster (new)
 
 - [<cite>Christ Our Salvation: Expositions and Proclamations</cite>](https://bookshop.org/a/21126/9781683594208), John Webster (ed. Daniel Bush) (new)
-
-- [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
 
 - [<cite>Athanasius</cite>](https://bookshop.org/a/21126/9780801039423), Peter Leithart (new)
 
@@ -117,6 +115,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Two Cheers for Anarchism: Six Easy Pieces on Autonomy, Dignity, and Meaningful Work and Play</cite>](https://bookshop.org/a/21126/9780691271781), James C. Scott (new)
 
+- [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
+
 [examined-run]: https://bookshop.org/a/21126/9780197678695
 [lifting-books]: https://www.strongerbyscience.com/art-and-science/
 
@@ -138,6 +138,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Children of Strife</cite>](https://bookshop.org/a/21126/9780316598965), Adrian Tchaikovsky (new)
 
 - [<cite>Paradox Bound</cite>](https://bookshop.org/a/21126/9781101907030), Peter Clines (new)
+
+- [<cite>When the Moon Hits Your Eye</cite>](https://bookshop.org/a/21126/9781250348432), John Scalzi (new)
 
 
 ## 2025
