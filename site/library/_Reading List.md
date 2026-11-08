@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-11-07T19:51:00-0700
+modified: 2026-11-08T14:25:00-0700
 
 ---
 
@@ -61,6 +61,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Christ Our Salvation: Expositions and Proclamations</cite>](https://bookshop.org/a/21126/9781683594208), John Webster (ed. Daniel Bush) (new)
 
 - [<cite>Athanasius</cite>](https://bookshop.org/a/21126/9780801039423), Peter Leithart (new)
+
+- [<cite>Resisting Therapy Culture: The Dangers of Pop Psychology and How the Church Can Respond</cite>](https://bookshop.org/a/21126/9781514012680), Matthew Loftus (new)
 
 
 ### Fiction
