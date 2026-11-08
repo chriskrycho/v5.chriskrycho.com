@@ -1,0 +1,16 @@
+{
+   "layout": "post.njk",
+   "permalink": "/library/christ-our-salvation/{{page.fileSlug | slug}}/index.html",
+   "book": {
+      "title": "Christ Our Salvation: Expositions & Proclamations",
+      "cover": "https://cdn.chriskrycho.com/images/books/christ-our-salvation.jpg",
+      "author": "John Webster",
+      "editor": "Daniel Bush",
+      "year": 2015,
+      "link": "https://bookshop.org/a/21126/9781683594208"
+   },
+   "tags": ["John Webster", "theology", "Christ Our Salvation"],
+   "qualifiers": {
+      "audience": "Theologically-orthodox Christians, or folks interested in things that theologically-orthodox Christians think."
+   }
+}

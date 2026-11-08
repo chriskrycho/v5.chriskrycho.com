@@ -287,6 +287,7 @@ function configure(config: Config): UserConfig {
    addCollectionFromDir(config, 'journal/2025/2025 in Review');
    addCollectionFromDir(config, 'essays');
    addCollectionFromDir(config, 'library');
+   addCollectionFromDir(config, 'library/Christ Our Salvation');
    addCollectionFromDir(config, 'library/Confronted by Grace');
    addCollectionFromDir(config, 'library/Eccentric Existence');
    addCollectionFromDir(config, 'library/Holiness');
