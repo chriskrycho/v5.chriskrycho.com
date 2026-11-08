@@ -344,7 +344,12 @@ function configure(config: Config): UserConfig {
                           new Error(`bad YAML data:\n${JSON.stringify(contents)}`),
                        );
                })
-               .map(preparseYaml)
+               .map((data) =>
+                  preparseYaml(data, {
+                     render: renderMarkdown,
+                     renderInline: renderInlineMarkdown,
+                  }),
+               )
                .match({
                   Ok: (contents) => contents,
                   Err: (reason) => {
