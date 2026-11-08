@@ -1,6 +1,6 @@
 ---
 title: God’s law
-subtitle: Very much not—very much better than—what we often think it is.
+subtitle: Very much not—indeed very much better than—what we often think it is.
 date: 2026-11-08T09:04:00-0700
 qualifiers:
   audience: |
