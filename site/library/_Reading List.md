@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-11-07T08:25:00-0600
+modified: 2026-11-07T19:51:00-0600
 
 ---
 
@@ -62,8 +62,6 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Athanasius</cite>](https://bookshop.org/a/21126/9780801039423), Peter Leithart (new)
 
-- [<cite>All in Your Head: Illness as Identity, Trauma as Fashion, and the Desire to be Disordered</cite>](https://bookshop.org/a/21126/9781668081037), Fredrik deBoer (new)
-
 
 ### Fiction
 
@@ -117,6 +115,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
 
+- [<cite>All in Your Head: Illness as Identity, Trauma as Fashion, and the Desire to be Disordered</cite>](https://bookshop.org/a/21126/9781668081037), Fredrik deBoer (new)
+
 [examined-run]: https://bookshop.org/a/21126/9780197678695
 [lifting-books]: https://www.strongerbyscience.com/art-and-science/
 
@@ -139,7 +139,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Paradox Bound</cite>](https://bookshop.org/a/21126/9781101907030), Peter Clines (new)
 
-- [<cite>When the Moon Hits Your Eye</cite>](https://bookshop.org/a/21126/9781250348432), John Scalzi (new)
+- [<cite>When the Moon Hits Your Eye
+</cite>](https://bookshop.org/a/21126/9781250348432), John Scalzi (new)
 
 
 ## 2025
