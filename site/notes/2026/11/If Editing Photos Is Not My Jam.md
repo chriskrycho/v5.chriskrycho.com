@@ -2,6 +2,9 @@
 title: If Editing Photos Is Not My Jam…
 subtitle: …maybe I should rethink my approach to photography.
 
+image:
+    cdn: lightroom.png
+
 date: 2026-11-14T08:45:00-0700
 
 tags:
