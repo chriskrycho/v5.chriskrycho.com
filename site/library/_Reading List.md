@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-11-08T14:25:00-0700
+modified: 2026-11-15T21:25:00-0700
 
 ---
 
@@ -62,7 +62,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 
 - [<cite>Athanasius</cite>](https://bookshop.org/a/21126/9780801039423), Peter Leithart (new)
 
-- [<cite>Resisting Therapy Culture: The Dangers of Pop Psychology and How the Church Can Respond</cite>](https://bookshop.org/a/21126/9781514012680), Matthew Loftus (new)
+
 
 
 ### Fiction
@@ -118,6 +118,8 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>The Running Ground: A Father, a Son, and the Simplest of Sports</cite>](https://bookshop.org/a/21126/9780593244128), Nicholas Thompson (new)
 
 - [<cite>All in Your Head: Illness as Identity, Trauma as Fashion, and the Desire to be Disordered</cite>](https://bookshop.org/a/21126/9781668081037), Fredrik deBoer (new)
+
+- [<cite>Resisting Therapy Culture: The Dangers of Pop Psychology and How the Church Can Respond</cite>](https://bookshop.org/a/21126/9781514012680), Matthew Loftus (new)
 
 [examined-run]: https://bookshop.org/a/21126/9780197678695
 [lifting-books]: https://www.strongerbyscience.com/art-and-science/
