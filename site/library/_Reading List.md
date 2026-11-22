@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-11-16T11:57:00-0700
+modified: 2026-11-21T22:39:00-0700
 
 ---
 
@@ -63,13 +63,12 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>Athanasius</cite>](https://bookshop.org/a/21126/9780801039423), Peter Leithart (new)
 
 
-
-
 ### Fiction
 
 - [<cite>The Legend of Sigurd and Gudrún</cite>](https://bookshop.org/a/21126/9780547394572), J.R.R. Tolkien (new)
 
 - [<cite>Watership Down</cite>](https://bookshop.org/a/21126/9780743277709), Richard Adams (new)
+
 
 ### Poetry
 
@@ -148,6 +147,7 @@ These are books I have actually begun reading. (You will see items move from [<b
 - [<cite>When the Moon Hits Your Eye
 </cite>](https://bookshop.org/a/21126/9781250348432), John Scalzi (new)
 
+- [<cite>All Souls Lost</cite>](https://bookshop.org/a/21126/9781625676610), Dan Moren (new)
 
 ## 2025
 
