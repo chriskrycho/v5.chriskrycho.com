@@ -7,7 +7,7 @@ permalink: /library/reading-list/
 
 # custom value for this page only, so that searches like `rg -l0 'date: <YYYY>`
 # do not include it.
-modified: 2026-11-21T22:39:00-0700
+modified: 2026-11-27T19:14:00-0700
 
 ---
 
@@ -148,6 +148,9 @@ These are books I have actually begun reading. (You will see items move from [<b
 </cite>](https://bookshop.org/a/21126/9781250348432), John Scalzi (new)
 
 - [<cite>All Souls Lost</cite>](https://bookshop.org/a/21126/9781625676610), Dan Moren (new)
+
+- [<cite>Eternity’s Tomb</cite>](https://bookshop.org/a/21126/9781915998026), Dan Moren (new)
+
 
 ## 2025
 
